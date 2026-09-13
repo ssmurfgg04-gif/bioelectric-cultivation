@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "repo": "helix-codec @ local clone (pure JS path, no native addon)",
+    "nativeAddon": false,
+    "cases": 1,
+    "passed": 0,
+    "failed": 1,
+    "totalEncodeMs": 215,
+    "totalDecodeMs": 347,
+    "totalWarnings": 0,
+    "timestamp": "2026-09-13T20:29:25.297Z"
+  },
+  "results": [
+    {
+      "case": "coverage-20x-nosoft",
+      "config": "DEFAULT-illumina",
+      "channel": "sweep",
+      "bytes": 16000,
+      "oligos": 305,
+      "reads": 6100,
+      "coverage": 20,
+      "errMultiplier": 1,
+      "encodeMs": 215,
+      "simulateMs": 36893,
+      "decodeMs": 347,
+      "success": false,
+      "roundtripBytes": 16000,
+      "warnings": 0,
+      "useSoftInfo": false,
+      "oligosRecovered": 204,
+      "oligosErased": 123,
+      "failedInnerRS": 101,
+      "recoveryRate": 0.6688524590163935,
+      "note": "hash mismatch or null data"
+    }
+  ]
+}

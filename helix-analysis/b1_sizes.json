@@ -1,0 +1,83 @@
+{
+  "summary": {
+    "repo": "helix-codec @ local clone (pure JS path, no native addon)",
+    "nativeAddon": false,
+    "cases": 4,
+    "passed": 0,
+    "failed": 4,
+    "totalEncodeMs": 281,
+    "totalDecodeMs": 406,
+    "totalWarnings": 0,
+    "timestamp": "2026-09-13T20:08:07.874Z"
+  },
+  "results": [
+    {
+      "case": "size-1000",
+      "config": "DEFAULT-illumina",
+      "channel": "preset",
+      "bytes": 1000,
+      "oligos": 20,
+      "reads": 400,
+      "coverage": 20,
+      "errMultiplier": 1,
+      "encodeMs": 101,
+      "simulateMs": 2652,
+      "decodeMs": 114,
+      "success": false,
+      "roundtripBytes": 1000,
+      "warnings": 0,
+      "note": "hash mismatch or null data"
+    },
+    {
+      "case": "size-16000",
+      "config": "DEFAULT-illumina",
+      "channel": "preset",
+      "bytes": 16000,
+      "oligos": 305,
+      "reads": 6100,
+      "coverage": 20,
+      "errMultiplier": 1,
+      "encodeMs": 180,
+      "simulateMs": 37489,
+      "decodeMs": 292,
+      "success": false,
+      "roundtripBytes": 16000,
+      "warnings": 0,
+      "note": "hash mismatch or null data"
+    },
+    {
+      "case": "size-1000",
+      "config": "NANOPORE",
+      "channel": "preset",
+      "bytes": 1000,
+      "oligos": 0,
+      "reads": 0,
+      "coverage": 15,
+      "errMultiplier": 1,
+      "encodeMs": -1,
+      "simulateMs": -1,
+      "decodeMs": -1,
+      "success": "error",
+      "roundtripBytes": 0,
+      "warnings": 0,
+      "note": "exception: offset is out of bounds"
+    },
+    {
+      "case": "size-16000",
+      "config": "NANOPORE",
+      "channel": "preset",
+      "bytes": 16000,
+      "oligos": 0,
+      "reads": 0,
+      "coverage": 15,
+      "errMultiplier": 1,
+      "encodeMs": -1,
+      "simulateMs": -1,
+      "decodeMs": -1,
+      "success": "error",
+      "roundtripBytes": 0,
+      "warnings": 0,
+      "note": "exception: offset is out of bounds"
+    }
+  ]
+}
