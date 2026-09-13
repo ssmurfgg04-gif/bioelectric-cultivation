@@ -109,10 +109,12 @@ def main() -> None:
     report = {"python": py, "other": other}
     js = json.dumps(report, indent=2)
     if args.json_out:
+        os.makedirs(os.path.dirname(os.path.abspath(args.json_out)), exist_ok=True)
         open(args.json_out, "w").write(js)
     else:
         print(js)
     if args.dot_out:
+        os.makedirs(os.path.dirname(os.path.abspath(args.dot_out)), exist_ok=True)
         open(args.dot_out, "w").write(to_dot(py["dependencies"]))
     n_mod = len(py["modules"])
     print(f"[codegraph] {n_mod} python modules, "
