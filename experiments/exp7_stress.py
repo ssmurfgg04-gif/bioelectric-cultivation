@@ -92,6 +92,7 @@ def main() -> None:
     print(f"[exp7] shard {i}/{n}: {len(mine)} of {len(grid)} runs")
 
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
+    import json as _json
     results = []
     for k, cfg in enumerate(mine):
         r = run_one(cfg, K=args.K, years=args.years)
@@ -99,8 +100,10 @@ def main() -> None:
         print(f"  [{k+1}/{len(mine)}] lam={cfg['lambda_gap']} kap={cfg['kappa_noise']} "
               f"h={cfg['h_sys']} seed={cfg['seed']} {cfg['cond']:5s} "
               f"median={r['median']:.1f} beta={r['beta_adult']:.3f} best={r['best_model']}")
-        dump_json(os.path.basename(args.out), {"shard": args.shard, "results": results})
-    dump_json(os.path.basename(args.out), {"shard": args.shard, "results": results})
+        with open(args.out, "w") as f:  # incremental flush to the requested path
+            _json.dump({"shard": args.shard, "results": results}, f, indent=2)
+    with open(args.out, "w") as f:
+        _json.dump({"shard": args.shard, "results": results}, f, indent=2)
     print(f"[exp7] wrote {args.out}")
 
 
