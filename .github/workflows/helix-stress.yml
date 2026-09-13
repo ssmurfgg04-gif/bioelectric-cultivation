@@ -1,0 +1,66 @@
+name: helix-codec Stress
+
+# Stress-tests the user's helix-codec repository on runners (native Rust addon
+# + wide matrix that the 2-CPU sandbox cannot run locally). Includes the
+# pure-JS fallback arm to track the F4 portability regression.
+
+on:
+  workflow_dispatch:
+    inputs:
+      helix_ref:
+        description: "helix-codec ref to test"
+        required: false
+        default: "main"
+
+jobs:
+  stress:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include:
+          - { name: "core-vitest", mode: "vitest" }
+          - { name: "js-path-16k", mode: "js", sizes: "1000,16000" }
+          - { name: "js-path-64k-oom-probe", mode: "js", sizes: "64000" }
+          - { name: "js-path-128k", mode: "js", sizes: "128000" }
+          - { name: "native-16k", mode: "native", sizes: "1000,16000" }
+          - { name: "native-128k", mode: "native", sizes: "128000" }
+          - { name: "native-1mb", mode: "native", sizes: "1000000" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: dtolnay/rust-toolchain@stable
+        if: matrix.mode == 'native'
+      - name: Clone helix-codec
+        run: git clone --depth 1 https://github.com/ssmurfgg04-gif/helix-codec /tmp/helix-codec
+      - name: Install deps
+        run: |
+          cd /tmp/helix-codec
+          npm ci --ignore-scripts --no-audit --no-fund
+      - name: Build native addon (required for native arms)
+        if: matrix.mode == 'native'
+        run: |
+          cd /tmp/helix-codec/rust/helix-dna-napi && cargo build --release
+      - name: Run stress arm
+        env:
+          NODE_OPTIONS: --max-old-space-size=5500
+        run: |
+          cd /tmp/helix-codec
+          if [ "${{ matrix.mode }}" = "vitest" ]; then
+            npm test
+          else
+            cp $GITHUB_WORKSPACE/helix-analysis/stress_harness.ts scripts/stress-escalating.ts
+            npx tsx scripts/stress-escalating.ts \
+              --sizes=${{ matrix.sizes }} \
+              --out=$GITHUB_WORKSPACE/results/helix_${{ matrix.name }}.json \
+              2>&1 | tail -40
+          fi
+        timeout-minutes: 30
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: helix-${{ matrix.name }}
+          path: results/

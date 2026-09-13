@@ -1,0 +1,78 @@
+name: Sharded Stress Sweep
+
+# Fans the exp7 aging-parameter sweep across a 24-way matrix (max-parallel 20
+# per the free-tier concurrency limit) and aggregates the artifacts.
+# Trigger from the Actions UI ("Run workflow") or via API dispatch.
+
+on:
+  workflow_dispatch:
+    inputs:
+      shards:
+        description: "number of shards"
+        required: false
+        default: "24"
+      cohort_size:
+        description: "individuals per cohort"
+        required: false
+        default: "150"
+  push:
+    branches: [sweep-trigger]
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run shard ${{ matrix.shard }}/24
+        run: |
+          python -m experiments.exp7_stress \
+            --shard ${{ matrix.shard }}/24 \
+            --out results/sweep/shard_${{ matrix.shard }}.json \
+            --K ${{ github.event.inputs.cohort_size || '150' }}
+        timeout-minutes: 25
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: shard-${{ matrix.shard }}
+          path: results/sweep/shard_${{ matrix.shard }}.json
+
+  aggregate:
+    runs-on: ubuntu-latest
+    needs: sweep
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          path: results/sweep
+          pattern: shard-*
+          merge-multiple: true
+      - name: Aggregate landscape
+        run: |
+          mkdir -p results/figures
+          python -m experiments.aggregate --dir results/sweep
+          cat results/SWEEP_REPORT.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sweep-aggregate
+          path: |
+            results/sweep_summary.json
+            results/SWEEP_REPORT.md
+            results/figures/fig9_sweep_landscape.png
+      - name: Comment summary
+        run: |
+          cat results/sweep_summary.json
