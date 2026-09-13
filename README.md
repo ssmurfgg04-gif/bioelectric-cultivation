@@ -90,9 +90,19 @@ python -m experiments.exp7_stress --shard 0/4 --out results/   # sharded sweep
 
 `.github/workflows/sharded-sweep.yml` fans `exp7` across a 24-way matrix (max-parallel 20) and aggregates artifacts into `results/`. Trigger via Actions UI or API. `.github/workflows/helix-stress.yml` stress-tests the helix-codec repository (RS/LDPC/Viterbi under escalating error loads) on runners so no local CPU is burned.
 
-## Falsification status
+## Results (the falsification ledger)
 
-See `docs/FALSIFICATION.md` — Level 1 (model reproduces known biology: two-headed reprogramming with memory, cancer-normalization boundary), Level 2 (Gompertz-form hazard emerging from channel degradation, cross-species consistency), each with pass/fail criteria and automated tests.
+**Level 1 — reproducing known biology: 9/9 PASS.** Two-headed planarian reprogramming with memory across amputations + dose-response + GJ-block negative control (Durant et al. 2017 structure); the full cancer-normalization matrix including the long-range gap-junction requirement and the locked-driver boundary (Chernet & Levin 2015 structure).
+
+**Level 2 — the aging hypothesis: 7 PASS + 5 diagnosed negatives.**
+- Gompertz-form mortality EMERGES and wins the pre-saturation window (all seeds); Weibull edges the full adult window; mean fitted beta across the 162-run sweep: **0.090/yr** — the empirical human range.
+- Cross-species: Spearman **rho = 1.00** (mouse, rat, naked mole rat, human, bowhead; hydra negligible senescence by preset), robust to +-20% jitter. Documented limitation: Gompertz-family ratio compression (Strehler-Mildvan).
+- I(V;M): **1.55 -> 0.83 bits** as the gap-junction denoiser degrades (aging = information loss, measured).
+- Phi: peaks at intermediate coupling, ~0 for modular systems; **0.12 bits mean on real C. elegans gap-junction motifs** (Cook et al. 2019 connectome).
+- Maintenance: error-corrected write-back extends median lifespan **x1.08-1.10** single-cohort, **x1.13 mean across the 162-run parameter sweep** (24 GitHub runners). One-shot mid-life correction gains nothing; sustained practice does.
+- Honest negatives (recorded, each with root cause + next experiment): fitted beta does not track the engine rate; ratio compression is structural; linearized Phi cannot see coherence; verification does not yet beat local maintenance (mortality is fidelity-insensitive).
+
+Full ledger: `docs/FALSIFICATION.md` · dossier PDF in the release notes.
 
 ## Research dossier
 
