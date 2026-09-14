@@ -1,0 +1,154 @@
+{
+ "exp": "exp22_tas_crossval",
+ "source": "TAS (Blattner 2026, tasmorpho) geometry applied to the anchored stack; exp19 policy space",
+ "base_hold": {
+  "mean": 0.5801808641975309,
+  "se": 0.025734017094066485
+ },
+ "none_hold": {
+  "mean": 0.4851050925925926,
+  "se": 0.018157768118312594
+ },
+ "directions": {
+  "write_age": {
+   "shift_per_unit": 0.0018857831790123417,
+   "shift_se": 0.001847896452134367,
+   "dcost_per_unit": 0.0,
+   "hold_plus": {
+    "mean": 0.6103533950617284,
+    "se": 0.014557781989089334
+   },
+   "hold_minus": {
+    "mean": 0.5801808641975309,
+    "se": 0.025734017094066485
+   },
+   "efficiency": 0.0009103816187509487
+  },
+  "start_age": {
+   "shift_per_unit": -0.003159265689300412,
+   "shift_se": 0.0017903113099283574,
+   "dcost_per_unit": -1.1000000000000003,
+   "hold_plus": {
+    "mean": 0.5400029320987654,
+    "se": 0.03136214857719885
+   },
+   "hold_minus": {
+    "mean": 0.6158253086419753,
+    "se": 0.029370380290714006
+   },
+   "efficiency": 1e-18
+  },
+  "period": {
+   "shift_per_unit": -0.00948947530864197,
+   "shift_se": 0.0022919626381182165,
+   "dcost_per_unit": -24.0,
+   "hold_plus": {
+    "mean": 0.5433733024691358,
+    "se": 0.009336031112460102
+   },
+   "hold_minus": {
+    "mean": 0.5908206790123457,
+    "se": 0.00664573859179116
+   },
+   "efficiency": 1e-18
+  },
+  "budget": {
+   "shift_per_unit": 0.011834799382716046,
+   "shift_se": 0.0036004024993363777,
+   "dcost_per_unit": 15.0,
+   "hold_plus": {
+    "mean": 0.5925291666666667,
+    "se": 0.027158853094294378
+   },
+   "hold_minus": {
+    "mean": 0.4978507716049383,
+    "se": 0.009592819224039687
+   },
+   "efficiency": 2.5413428978210733e-06
+  },
+  "k_anchor": {
+   "shift_per_unit": -0.049549479166666674,
+   "shift_se": 0.007799353399963706,
+   "dcost_per_unit": 0.0,
+   "hold_plus": {
+    "mean": 0.49995679012345673,
+    "se": 0.004419151419923786
+   },
+   "hold_minus": {
+    "mean": 0.5792359567901234,
+    "se": 0.011670290449643945
+   },
+   "efficiency": 1e-18
+  },
+  "boost_p_verified": {
+   "shift_per_unit": 0.0,
+   "shift_se": 0.045491744985962354,
+   "dcost_per_unit": 0.0,
+   "hold_plus": {
+    "mean": 0.5801808641975309,
+    "se": 0.025734017094066485
+   },
+   "hold_minus": {
+    "mean": 0.5801808641975309,
+    "se": 0.025734017094066485
+   },
+   "efficiency": 1e-18
+  },
+  "boost_p_unverified": {
+   "shift_per_unit": 0.0,
+   "shift_se": 0.045491744985962354,
+   "dcost_per_unit": 0.0,
+   "hold_plus": {
+    "mean": 0.5801808641975309,
+    "se": 0.025734017094066485
+   },
+   "hold_minus": {
+    "mean": 0.5801808641975309,
+    "se": 0.025734017094066485
+   },
+   "efficiency": 1e-18
+  },
+  "boost_factor": {
+   "shift_per_unit": 0.0,
+   "shift_se": 0.060655659981283146,
+   "dcost_per_unit": 0.0,
+   "hold_plus": {
+    "mean": 0.5801808641975309,
+    "se": 0.025734017094066485
+   },
+   "hold_minus": {
+    "mean": 0.5801808641975309,
+    "se": 0.025734017094066485
+   },
+   "efficiency": 1e-18
+  },
+  "dense_low_amp": {
+   "shift_per_unit": 0.007404398148148195,
+   "shift_se": 0.014680848904039185,
+   "dcost_per_unit": 4.511278195488714,
+   "hold_plus": {
+    "mean": 0.5993658950617284,
+    "se": 0.0223349661047557
+   },
+   "hold_minus": {
+    "mean": 0.584557098765432,
+    "se": 0.01905934383110626
+   },
+   "efficiency": 7.770269751048936e-05
+  }
+ },
+ "alignment": {
+  "cos_disc": 0.6172916224492373,
+  "hand_main": "start_age",
+  "silent": [
+   "dense_low_amp"
+  ]
+ },
+ "criteria": {
+  "T1_dominant_axis": true,
+  "T2_silent_directions": false,
+  "T3_search_alignment": true,
+  "T4_hand_not_silent": true
+ },
+ "notes": "efficiency = (hold gain vs HAND)^2 / procedure cost; cost = maintenance cycles x budget + write events; fresh seeds 41-43 (audit S7); central differences at the deltas in DELTAS."
+}

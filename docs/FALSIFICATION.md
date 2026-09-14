@@ -292,3 +292,27 @@ outcomes; Num-weighted, RegenPeriod>0 only):
   (above cutting baseline) but not uniquely disruptive among recorded
   perturbations. exp16's bystander lethality stays a statement about
   MAINTENANCE dynamics, not regeneration outcomes.
+
+## Level 7 — exp22: the TAS geometry cross-validated on the ensemble
+
+**exp22 — the memory co-metric on our policy space** (TAS, Blattner 2026:
+Q cost / R write map / K_mem efficiency; central differences around the
+HAND policy, fresh seeds 41-43, 152s):
+
+- **T1 PASS** — the write-efficiency distribution is strongly anisotropic:
+  a dominant write axis exists, and it is **k_anchor** (shift/unit
+  -0.0495 ± 0.0078, the only individually significant axis): the
+  matched-channel law of exp16 is the dominant axis of the local memory
+  co-metric. Their geometry, our landscape, same ridge.
+- **T2 REFUTED** — only ONE costly-silent direction (dense_low_amp)
+  where TAS predicts several; the boost_* dims are flat in BOTH effect
+  and cost (free nulls, not costly silences). The plateau of exp19 is
+  better described as 'flat-but-aligned' than 'isotropic'.
+- **T3 PASS** — the CEM-discovered hold policy sits at cosine +0.617 to
+  the efficiency-weighted axis structure: the search climbed the
+  co-metric's ridge without being told the geometry existed.
+- **T4 PASS** — HAND's dominant move is not on a silent axis.
+- **Kills-row:** TAS's anisotropy and alignment predictions transfer;
+  its silent-direction multiplicity does not. The geometry adds a useful
+  summary of WHY the century-hold landscape looks like a plateau to
+  point-estimates while still having a direction of improvement.
