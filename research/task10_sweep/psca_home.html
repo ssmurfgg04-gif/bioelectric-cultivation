@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">jquery[3.6.0];shiny-css[1.7.1];shiny-javascript[1.7.1];selectize[0.12.4];htmlwidgets[1.5.4];datatables-css[0.0.0];datatables-binding[0.20];crosstalk[1.2.0];bootstrap[3.4.1]</script>
+<script src="shared/jquery.min.js"></script>
+<link href="shared/shiny.min.css" rel="stylesheet" />
+<script src="shared/shiny.min.js"></script>
+<link href="shared/selectize/css/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="shared/selectize/js/selectize.min.js"></script>
+<script src="shared/selectize/accessibility/js/selectize-plugin-a11y.min.js"></script>
+<script src="htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="datatables-binding-0.20/datatables.js"></script>
+<link href="crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="shared/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="shared/bootstrap/accessibility/css/bootstrap-accessibility.min.css" rel="stylesheet" />
+<script src="shared/bootstrap/js/bootstrap.min.js"></script>
+<script src="shared/bootstrap/accessibility/js/bootstrap-accessibility.min.js"></script>  <title></title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-44700378-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-44700378-2');
+</script>
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <span class="navbar-brand"></span>
+        </div>
+        <ul class="nav navbar-nav" data-tabsetid="8667">
+          <li>
+            <a href="#tab-8667-1" data-toggle="tab" data-bs-toggle="tab"></a>
+          </li>
+          <li class="active">
+            <a href="#tab-8667-2" data-toggle="tab" data-bs-toggle="tab" data-value="planaria SC atlas">planaria SC atlas</a>
+          </li>
+          <li>
+            <a href="#tab-8667-3" data-toggle="tab" data-bs-toggle="tab" data-value="t-SNE">t-SNE</a>
+          </li>
+          <li>
+            <a href="#tab-8667-4" data-toggle="tab" data-bs-toggle="tab" data-value="lineage">lineage</a>
+          </li>
+          <li>
+            <a href="#tab-8667-5" data-toggle="tab" data-bs-toggle="tab" data-value="regeneration">regeneration</a>
+          </li>
+          <li>
+            <a href="#tab-8667-6" data-toggle="tab" data-bs-toggle="tab" data-value="downloads">downloads</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="tab-content" data-tabsetid="8667">
+        <div class="tab-pane active" data-value="planaria SC atlas" id="tab-8667-2">
+          <div class="row">
+            <div class="col-sm-12"><h2>Planaria Single Cell Atlas</h2>
+
+<p>PSCA is developed by the <a href="https://www.mdc-berlin.de/n-rajewsky">Rajewsky lab</a> at the <a href="https://www.mdc-berlin.de/bimsb">Berlin Institute for Medical Systems Biology</a> of the <a href="https://www.mdc-berlin.de/">Max Delbrück Center</a> in Berlin. </p>
+
+<p>PSCA supplements the following publication (free access <a href="http://science.sciencemag.org/cgi/content/full/science.aaq1723?ijkey=7UM8g457x5aeQ&amp;keytype=ref&amp;siteid=sci">[full text]</a> <a href="http://science.sciencemag.org/cgi/rapidpdf/360/6391/eaaq1723?ijkey=7UM8g457x5aeQ&amp;keytype=ref&amp;siteid=sci">[pdf]</a>):</p>
+
+<h3>Cell Type Atlas and Lineage Tree of a Whole Complex Animal by Single-Cell Transcriptomics</h3>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mireya Plass<sup>1,†</sup>, Jordi Solana<sup>1,†‡</sup>, F. Alexander Wolf<sup>2</sup>, Salah Ayoub<sup>1</sup>, Aristotelis Misios<sup>1</sup>, Petar Glažar<sup>1</sup>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Benedikt Obermayer<sup>1,⊺</sup>, Fabian J. Theis<sup>2,3</sup>, Christine Kocks<sup>1</sup>, and Nikolaus Rajewsky<sup>1,*</sup></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>1</sup> Systems Biology of Gene Regulatory Elements, BIMSB, MDC<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup> Helmholtz Zentrum München, German Research Center for Environmental Health,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Institute of Computational Biology, Neuherberg, Germany<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>3</sup> Department of Mathematics, Technische Universität München, Germany<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>‡</sup> Present address: Department of Biological and Medical Sciences, Oxford Brookes University, Oxford, UK<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>⊺</sup> Present address: Core Unit Bioinformatics, Berlin Institute of Health, Berlin, Germany<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>*</sup> Corresponding author<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>†</sup> These authors contributed equally to the work</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Science</em>  360 (6391), eaaq1723<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DOI: 10.1126/science.aaq1723</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flatworms of the species <em>Schmidtea mediterranea</em> are immortal –adult animals contain a large pool of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pluripotent stem cells that continuously differentiate to all adult cell types. Therefore, single<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cell transcriptome profiling of adults should reveal mature and progenitor cells. Here, by combining<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perturbation experiments, gene expression analysis, a computational method that predicts future<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cell states from the transcriptional changes, and a novel lineage reconstruction method, we placed<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all major cell types onto a single lineage tree that connects all cells to a single stem cell group.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We characterize gene expression changes during differentiation and discover cell types important for<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regeneration. Our results demonstrate the importance of single cell transcriptome analysis for mapping<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and reconstructing fundamental processes of developmental and regenerative biology at unprecedented<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolution. 
+<br><br>
+Correspondence regarding the publication: <a href="rajewsky@mdc-berlin.de">Nikolaus Rajewsky</a></p>
+
+<p>PSCA-related questions: <a href="petar.glazar@mdc-berlin.de">Petar Glažar</a>
+<br><br></p>
+
+<h4>Features</h4>
+
+<p>PSCA currently offers the following features:</p>
+
+<ul>
+<li><p><strong>t-SNE</strong>: a two-dimensional representation of the <em>S. mediterranea</em> cell atlas, showing the cell type populations identified and allowing to display the expression values of individual genes on the t-SNE. Additionally, we provide a browsable table including all the marker genes identified for each cell cluster.</p></li>
+<li><p><strong>lineage</strong>: representation of gene expression changes in pseudotemporally ordered cells of any of the detected lineages and on the tree.</p></li>
+<li><p><strong>regeneration</strong>: violin plots showing the expression levels per cluster in WT and regeneration samples.</p></li>
+<li><p><strong>downloads</strong>: download additional files to reproduce the analyses performed in the paper included in <a href="https://github.com/rajewsky-lab/planarian_lineages">https://github.com/rajewsky-lab/planarian_lineages</a> as well as additional processed files.
+<br><br><br></p></li>
+</ul>
+
+<h4>Release notes</h4>
+
+<ul>
+<li>2018-02-13 early access enabled</li>
+</ul>
+
+<p><br><br></p>
+</div>
+          </div>
+          <img src="mdc_logo.png" width="300" height="100"/>
+        </div>
+        <div class="tab-pane" data-value="t-SNE" id="tab-8667-3">
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="form-group shiny-input-container">
+                <label class="control-label" id="gene.search.paint-label" for="gene.search.paint">choose a gene to display:</label>
+                <div>
+                  <select id="gene.search.paint" class="form-control"></select>
+                  <script type="application/json" data-for="gene.search.paint">{"maxOptions":20,"plugins":["selectize-plugin-a11y"]}</script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div style="width: 750px;">
+                <div id="paint.gene.plot" class="shiny-plot-output" style="width:100%;height:400px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5 offset-md-2 col-sm-offset-2">
+              <div style="width: 1180px">
+                <div id="tsne.plot" class="shiny-plot-output" style="width:100%;height:400px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="form-group shiny-input-container">
+                <label class="control-label" id="cluster-label" for="cluster">select cluster to see top genes:</label>
+                <div>
+                  <select id="cluster"><option value="neoblast 1" selected>neoblast 1</option>
+<option value="neoblast 2">neoblast 2</option>
+<option value="neoblast 3">neoblast 3</option>
+<option value="neoblast 4">neoblast 4</option>
+<option value="neoblast 5">neoblast 5</option>
+<option value="neoblast 6">neoblast 6</option>
+<option value="neoblast 7">neoblast 7</option>
+<option value="neoblast 8">neoblast 8</option>
+<option value="neoblast 9">neoblast 9</option>
+<option value="neoblast 10">neoblast 10</option>
+<option value="neoblast 11">neoblast 11</option>
+<option value="neoblast 12">neoblast 12</option>
+<option value="neoblast 13">neoblast 13</option>
+<option value="epidermis DVb neoblast">epidermis DVb neoblast</option>
+<option value="pharynx cell type progenitors">pharynx cell type progenitors</option>
+<option value="spp-11+ neurons">spp-11+ neurons</option>
+<option value="npp-18+ neurons">npp-18+ neurons</option>
+<option value="otf+ cells 1">otf+ cells 1</option>
+<option value="ChAT neurons 1">ChAT neurons 1</option>
+<option value="neural progenitors">neural progenitors</option>
+<option value="otf+ cells 2">otf+ cells 2</option>
+<option value="cav-1+ neurons">cav-1+ neurons</option>
+<option value="GABA neurons">GABA neurons</option>
+<option value="ChAT neurons 2">ChAT neurons 2</option>
+<option value="muscle body">muscle body</option>
+<option value="muscle pharynx">muscle pharynx</option>
+<option value="muscle progenitors">muscle progenitors</option>
+<option value="secretory 1">secretory 1</option>
+<option value="secretory 3">secretory 3</option>
+<option value="secretory 4">secretory 4</option>
+<option value="secretory 2">secretory 2</option>
+<option value="early epidermal progenitors">early epidermal progenitors</option>
+<option value="epidermal neoblasts">epidermal neoblasts</option>
+<option value="activated early epidermal progenitors">activated early epidermal progenitors</option>
+<option value="late epidermal progenitors 2">late epidermal progenitors 2</option>
+<option value="late epidermal progenitors 1">late epidermal progenitors 1</option>
+<option value="epidermis DVb">epidermis DVb</option>
+<option value="epidermis">epidermis</option>
+<option value="pharynx cell type">pharynx cell type</option>
+<option value="protonephridia">protonephridia</option>
+<option value="ldlrr-1+ parenchymal cells">ldlrr-1+ parenchymal cells</option>
+<option value="phagocytes">phagocytes</option>
+<option value="aqp+ parenchymal cells">aqp+ parenchymal cells</option>
+<option value="pigment">pigment</option>
+<option value="pgrn+ parenchymal cells">pgrn+ parenchymal cells</option>
+<option value="psap+ parenchymal cells">psap+ parenchymal cells</option>
+<option value="glia">glia</option>
+<option value="goblet cells">goblet cells</option>
+<option value="parenchymal progenitors">parenchymal progenitors</option>
+<option value="psd+ cells">psd+ cells</option>
+<option value="gut progenitors">gut progenitors</option></select>
+                  <script type="application/json" data-for="cluster" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div id="gene.table" style="width:100%; height:auto; " class="datatables html-widget html-widget-output"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" data-value="lineage" id="tab-8667-4">
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="form-group shiny-input-container">
+                <label class="control-label" id="lineage-label" for="lineage">choose a lineage to visualize pseudotime</label>
+                <div>
+                  <select id="lineage" class="form-control"><option value="parenchymal">parenchymal</option>
+<option value="aqp+ parenchymal cells">aqp+ parenchymal cells</option>
+<option value="psap+ parenchymal cells">psap+ parenchymal cells</option>
+<option value="pigment">pigment</option>
+<option value="glia">glia</option>
+<option value="gut">gut</option>
+<option value="phagocytes">phagocytes</option>
+<option value="goblet cells">goblet cells</option>
+<option value="psd+ cells">psd+ cells</option>
+<option value="muscle">muscle</option>
+<option value="muscle pharynx">muscle pharynx</option>
+<option value="muscle body">muscle body</option>
+<option value="neuronal">neuronal</option>
+<option value="GABA neurons">GABA neurons</option>
+<option value="ChAT neurons 2">ChAT neurons 2</option>
+<option value="spp-11+ neurons">spp-11+ neurons</option>
+<option value="npp-18+ neurons">npp-18+ neurons</option>
+<option value="secretory">secretory</option>
+<option value="secretory 1">secretory 1</option>
+<option value="secretory 2">secretory 2</option>
+<option value="secretory 3">secretory 3</option>
+<option value="secretory 4">secretory 4</option>
+<option value="epidermal DVb">epidermal DVb</option>
+<option value="epidermal" selected>epidermal</option>
+<option value="epidermis">epidermis</option>
+<option value="activated early epidermal progenitors">activated early epidermal progenitors</option>
+<option value="pharynx">pharynx</option>
+<option value="protonephridia">protonephridia</option>
+<option value="all neoblasts">all neoblasts</option></select>
+                  <script type="application/json" data-for="lineage">{"plugins":["selectize-plugin-a11y"]}</script>
+                </div>
+              </div>
+              <div class="form-group shiny-input-container">
+                <label class="control-label" id="lineage.genes-label" for="lineage.genes">select one or more genes</label>
+                <div>
+                  <select id="lineage.genes" class="form-control" multiple="multiple"></select>
+                  <script type="application/json" data-for="lineage.genes">{"maxOptions":20,"plugins":["selectize-plugin-a11y"]}</script>
+                </div>
+              </div>
+              <div class="form-group shiny-input-container">
+                <div class="checkbox">
+                  <label>
+                    <input id="lineage.normalize" type="checkbox"/>
+                    <span>normalize to global expression range</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-10">
+              <div id="lineage.pseudotime.plot" class="shiny-plot-output" style="width:100%;height:400px;"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="form-group shiny-input-container">
+                <label class="control-label" id="gene.expr.graph-label" for="gene.expr.graph">choose a gene to display:</label>
+                <div>
+                  <select id="gene.expr.graph" class="form-control"></select>
+                  <script type="application/json" data-for="gene.expr.graph">{"plugins":["selectize-plugin-a11y"]}</script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-10">
+              <div id="gene.expr.graph" class="shiny-plot-output" style="width:100%;height:400px;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" data-value="regeneration" id="tab-8667-5">
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="form-group shiny-input-container">
+                <label class="control-label" id="lineage.reg-label" for="lineage.reg">choose a cluster set to visualize expression levels</label>
+                <div>
+                  <select id="lineage.reg" class="form-control"><option value="default" selected>default</option>
+<option value="parenchymal">parenchymal</option>
+<option value="aqp+ parenchymal cells">aqp+ parenchymal cells</option>
+<option value="psap+ parenchymal cells">psap+ parenchymal cells</option>
+<option value="pigment">pigment</option>
+<option value="glia">glia</option>
+<option value="gut">gut</option>
+<option value="phagocytes">phagocytes</option>
+<option value="goblet cells">goblet cells</option>
+<option value="psd+ cells">psd+ cells</option>
+<option value="muscle">muscle</option>
+<option value="muscle pharynx">muscle pharynx</option>
+<option value="muscle body">muscle body</option>
+<option value="neuronal">neuronal</option>
+<option value="GABA neurons">GABA neurons</option>
+<option value="ChAT neurons 2">ChAT neurons 2</option>
+<option value="spp-11+ neurons">spp-11+ neurons</option>
+<option value="npp-18+ neurons">npp-18+ neurons</option>
+<option value="secretory">secretory</option>
+<option value="secretory 1">secretory 1</option>
+<option value="secretory 2">secretory 2</option>
+<option value="secretory 3">secretory 3</option>
+<option value="secretory 4">secretory 4</option>
+<option value="epidermal DVb">epidermal DVb</option>
+<option value="epidermal">epidermal</option>
+<option value="epidermis">epidermis</option>
+<option value="activated early epidermal progenitors">activated early epidermal progenitors</option>
+<option value="pharynx">pharynx</option>
+<option value="protonephridia">protonephridia</option>
+<option value="all neoblasts">all neoblasts</option></select>
+                  <script type="application/json" data-for="lineage.reg">{"plugins":["selectize-plugin-a11y"]}</script>
+                </div>
+              </div>
+              <div class="form-group shiny-input-container">
+                <label class="control-label" id="violin.gene-label" for="violin.gene">choose a gene to display:</label>
+                <div>
+                  <select id="violin.gene" class="form-control"></select>
+                  <script type="application/json" data-for="violin.gene">{"plugins":["selectize-plugin-a11y"]}</script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div id="regeneration.violins.plot" class="shiny-plot-output" style="width:100%;height:400px;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" data-value="downloads" id="tab-8667-6">
+          <div class="row">
+            <div class="col-sm-12"><h3>Files for reproducing PAGA analyses:</h3>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://bimsbstatic.mdc-berlin.de/rajewsky/PSCA/R_pca_seurat.txt">R_pca_seurat.txt</a></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PC values calculated with Seurat for each cell used in the PAGA analysis.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://bimsbstatic.mdc-berlin.de/rajewsky/PSCA/R_annotation.txt">R_annotation.txt</a></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cell type annotation for each cell used in the PAGA analysis.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://bimsbstatic.mdc-berlin.de/rajewsky/PSCA/colors_dataset.txt">colors_dataset.txt</a></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Color names for each of the clusters used in the PAGA analysis. </p>
+
+<p><br><br><br></p>
+
+<h3>Files for reproducing VELOCYTO analyses:</h3>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://bimsbstatic.mdc-berlin.de/rajewsky/PSCA/Planaria_Seurat_annot.csv">Planaria_Seurat_annot.csv</a></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; annotation file used to perform velocyto analysis</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://bimsbstatic.mdc-berlin.de/rajewsky/PSCA/all_sgete_4GU75.loom.gz">all_sgete_4GU75.loom.gz</a></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; loom file containing the single-cell RNA-seq data used to perform velocyto analysis</p>
+
+<p><br><br><br></p>
+
+<h3>other files:</h3>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://bimsbstatic.mdc-berlin.de/rajewsky/PSCA/dge.txt.gz">dge.txt.gz</a></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DGE matrix containing the expression values of all cells included in the paper.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://bimsbstatic.mdc-berlin.de/rajewsky/PSCA/pseudotime.txt">pseudotime.txt</a></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pseudotime computed for each cell with PAGA. Cells are in the same order as in the dge matrix.</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

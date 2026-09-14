@@ -148,8 +148,58 @@ because death erases, but because no single cell carries the self: the
 pattern lives in the consensus, and the consensus cannot be moved one cell
 at a time.
 
-## Level 5-6 — real-biology validation, causal confirmation
+### exp19 — CEM on the anchored stack: hold, not reach (the century-hold objective)
 
+Fitness = mean over ages 30..100 of alive_fraction x I_recoverable (death is
+ultimate pattern loss), searched over 8 anchored-stack policy dimensions
+including k_anchor (the matched-channel axis). Baselines: HAND (the exp17
+protected-arm policy), NONE (write, never maintain).
+
+| ID | Criterion | Result |
+|---|---|---|
+| H1 | Discovered policy >= 1.05x HAND on held-out hold-score | **NEGATIVE** — 0.582 vs 0.575 (+1.2%): the exp17 hand-built policy is near-optimal on this landscape; CEM confirms rather than improves (echoes exp14 D5's broad-plateau finding — ALL single-dimension ablations shift hold by <= 0.01) |
+| H2 | The search rediscovers the matched-channel law (k_anchor <= 1.0) | **PASS** — k converges to 0.33 from an uninformative start (the exp16 CALIBRATION emerges as a SEARCH RESULT: form fast, pull weak) |
+| H3 | Interior allocation (procedure risk forbids max-therapy) | **PASS** — budget 9 (<12), period 2.5 yr, and the no-risk arm shows the discovered policy gains +8.7% when h_proc removed (the risk term is binding, not cosmetic) |
+| H4 | The hold-optimum differs materially from exp10's reach-optimum | **PASS** — maintenance start 31.5 vs 20.5 (+54%); write at 14.5 (adolescence, not immediately); hold-dense (2.5 yr) but low-amplitude (boost off, factor 1.06): hold is not reach |
+| — | Regime transfer | **NEGATIVE (honest)** — perturbed physics: HAND 0.640 vs discovered 0.634 — the discovered schedule is regime-specific (echoes exp14 D2b) |
+| — | The century-hold value itself | **PASS** — vs no-maintenance: +23% pattern retention held-out (0.582 vs 0.474); the written pattern is held over a century by policy, not luck |
+
+## Level 5 — real-data validation (the no-wetlab layer, exp18)
+
+The first contact between the model and REAL biological data: the public
+planarian single-cell atlases (PSCA 21,612 cells; Fincher 50,456 cells),
+ingested through a literature-grounded gene-ID mapping (planosphere Rosetta
+Stone May 2024 + AHRD 2020 annotations; validated 3/3 against PMC12421698's
+Smed-TRPM-a1/a2/c). The vmem_inference layer's four pre-registered
+predictions, tested on transcriptome-inferred resting potentials:
+
+| ID | Criterion | PSCA (n=10 types) | Fincher (n=7 types) |
+|---|---|---|---|
+| V1 | Neoblasts among the most hyperpolarized cell types (rank <= 30%) | **PASS** — rank 3/10; jackknife 18/20 | **PASS** — rank 1/7; jackknife 20/20 |
+| V2 | Muscle hyperpolarized AND pump-high (the Beane 2013 atlas-testable form) | **NEGATIVE** — hyperpolarized YES, pump expression below median | **NEGATIVE** — pump-high YES, Vm above median (opposite failure mode) |
+| V3 | Phagocytes depolarized AND cation-leak-high | **NEGATIVE** — rank 4/10, cation rank 4 | **PASS** — rank 5/7 + cation top-3 (Cathepsin+ n=7,034 — the better-powered cohort) |
+| V4 | Innexin does NOT predict own-Vm (\|rho\| < 0.35) AND enriched in coupled tissues | **NEGATIVE** — rho +0.42 (co-expression confound); top-3 pigment/phagocyte/parenchymal | **NEGATIVE** — rho +0.75; top-3 muscle/neural (coupled-tissue hit, but the rho fails) |
+
+**Honest read:** one solid confirmation (V1 — the Levin-lab stemness-
+hyperpolarization program, rank-robust across two independent atlases and
+20-draw weight jackknifes), one clean refutation (V2 — the muscle form
+fails in opposite directions on the two atlases; the H,K-ATPase gene never
+resolved in the AHRD annotation, and the anterior-wound spatial claim is
+inherently untestable in dissociated data), one split (V3 — supported by
+the better-powered atlas only; the injury-transient clause is untestable in
+resting data by construction), and one proxy-falsification with mechanism
+(V4 — innexin expression DOES co-vary with inferred Vm across cell types;
+the physiological form — coupling, not own-Vm — requires spatial/functional
+data the atlases cannot provide). Cross-atlas map consistency is moderate
+(Spearman 0.39): the GHK-from-expression method is rank-robust for
+stemness gradients but not an absolute-Vm predictor (neurons predict
+depolarized — gating is invisible to transcriptomes). This is the
+calibration for the fidelity-clock program: dyes, not atlases, carry the
+absolute map.
+
+## Level 6 — wet-lab causal confirmation (the fidelity-clock program)
+
+Designed, pre-registered, not yet run: docs/FIDELITY_CLOCK.md (FC1-FC5).
 Out of scope for computation-only runs by design. The program's position:
 these require wet-lab evidence (planaria are the cheap/fast model organism).
 The computational foundation — the code that decides WHAT to test — is what
@@ -181,3 +231,12 @@ edge over GA on this broad-plateau landscape; and transferred protocols are
 actively destructive, not inert. Each negative points at a specific next
 experiment — and the exp9 audits now bound which cultivation-tier claims are
 worth running at all.
+
+And now the tower has touched real data: V1 (the stemness-hyperpolarization
+prediction) confirmed on two independent public atlases; V2-V4 honestly
+refuted or split with mechanisms named (gating is invisible to
+transcriptomes; dissociated cells have no junctions; spatial claims need
+spatial data); the century-hold search rediscovered the matched-channel law
+and found the hold-landscape to be a plateau the hand-built policy already
+sits on. The wet-lab program that would settle the rest is specified,
+pre-registered, and falsifiable stage by stage (docs/FIDELITY_CLOCK.md).

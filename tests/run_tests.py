@@ -13,6 +13,8 @@ def main() -> int:
     test_fidelity.main()
     from tests import test_d3_semantics
     test_d3_semantics.main()
+    from tests import test_vmem_inference
+    test_vmem_inference.main()
     if full:
         print("\n--- falsification suite (experiments) ---\n")
         from tests import test_falsification

@@ -217,16 +217,53 @@ conviction (0.000 — memory correctness is load-bearing, E3's analog).
 
 Figure: `results/figures/fig18_anchored_target.png`.
 
-## The no-wetlab validation layer
+## The no-wetlab validation layer — EXECUTED (exp18)
 
 `cultivation/validation/vmem_inference.py` connects the public planarian
-single-cell atlases (Fincher 2018, PSCA, PLANOSPHERE, Raz 2021, the 2025
-allometry atlas) to the model: ion-transporter expression -> GHK resting
+single-cell atlases to the model: ion-transporter expression -> GHK resting
 potential -> the worm's predicted bioelectric map -> four falsifiable,
-literature-cited predictions (neoblast hyperpolarization, H,K-ATPase
-anterior control, immune-cell depolarization, innexin-as-coupling-not-level).
-The curated marker table is an explicit hypothesis; replacing it with atlas
-numbers is the first act of the validation program.
+literature-cited predictions. **The atlases were ingested this session**:
+PSCA (21,612 cells x 28,066 genes) and Fincher (50,456 cells x 26,561
+genes), joined to curated ion-transporter gene families via the planosphere
+Rosetta Stone + AHRD annotations (validated 3/3 against published
+Smed-TRPM gene IDs). Results (`experiments/exp18_psca_ingest.py`):
+**V1 CONFIRMED on both atlases** — neoblasts rank among the most
+hyperpolarized cell types (3/10 and 1/7; weight-jackknife 18-20/20) —
+while V2 (muscle form) is refuted, V3 (phagocyte depolarization) is split
+(the better-powered atlas supports it), and V4's atlas-proxy is falsified
+with mechanism (innexin co-expression correlates with inferred Vm; the
+physiological coupling claim needs spatial data). The method is
+rank-robust for stemness gradients, not absolute-Vm: gating is invisible
+to transcriptomes. Full ledger: `docs/FALSIFICATION.md` Level 5.
+
+## The century-hold policy (exp19)
+
+With the anchored stack holding novel targets (exp17), the CEM search was
+re-run under a new objective: not "reach the target" but **"hold the
+target over a century"** (fitness = mean over ages 30-100 of
+alive-fraction x pattern-recoverability; death is ultimate pattern loss).
+`experiments/exp19_anchored_cem.py`: the search beats no-maintenance by
++23% held-out, **rediscovers the matched-channel law from an uninformative
+start** (k_anchor -> 0.33: the exp16 calibration emerges as a search
+result), finds a hold-optimum distinct from the reach-optimum (write in
+adolescence, start maintenance a decade later, dense but low-amplitude),
+and honestly fails to beat the hand-built exp17 policy (+1.2%) — the
+century-hold landscape is a broad plateau (all eight single-dimension
+ablations shift hold by <= 0.01).
+
+## The fidelity-clock wet-lab program (pre-registered)
+
+`docs/FIDELITY_CLOCK.md` — the experiment series D3's resolution
+unblocked: FC1 the cross-sectional clock (does spatial Vmem fidelity
+decline with age), FC2 the prognosis test (does baseline fidelity predict
+regeneration and survival — computational rho 0.39-0.45), FC3 the
+quarantine mechanism (innexin RNAi phenocopy + bystander dye-coupling),
+FC4 the protected tier in tissue (written Vmem patterns persist >= 7 days,
+require junction integrity, resist injury-mimetic overwrite), FC5 the
+clock reset (regeneration cycles as fidelity re-derivation). Every stage
+carries an explicit kills-row. Measurement uses established methods only
+(DiBAC4(3) live imaging per the published planarian protocol, WISH/smFISH,
+scrape-load dye coupling).
 
 ## Research dossier
 

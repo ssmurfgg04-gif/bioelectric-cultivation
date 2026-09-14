@@ -1,0 +1,514 @@
+{
+ "inx_a": {
+  "query": "smedinx",
+  "pmc_ids": [
+   "13322009",
+   "12688102",
+   "12324467",
+   "11521571",
+   "11030423"
+  ],
+  "contexts": [
+   {
+    "pmc_id": "13322009",
+    "note": "smedinx",
+    "gene_id": "dd_Smed_v6_258_0_1",
+    "context": "nment score. Transcripts were then collapsed using genome location before mapping using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &l"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "smedinx",
+    "gene_id": "dd_Smed_v6_289_0_1",
+    "context": "ipts were then collapsed using genome location before mapping using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "smedinx",
+    "gene_id": "dd_Smed_v6_292_0_1",
+    "context": "psed using genome location before mapping using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_R"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "smedinx",
+    "gene_id": "dd_Smed_v6_297_0_1",
+    "context": "cation before mapping using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCou"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "smedinx",
+    "gene_id": "dd_Smed_v6_344_0_1",
+    "context": "g using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCount_RNA &gt;20000 wer"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "smedinx",
+    "gene_id": "dd_Smed_v6_505_0_1",
+    "context": "mics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCount_RNA &gt;20000 were removed from the d"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "smedinx",
+    "gene_id": "dd_Smed_v6_753_0_1",
+    "context": ".0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCount_RNA &gt;20000 were removed from the dataset prior to anal"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "smedinx",
+    "gene_id": "dd_Smed_v6_957_0_1",
+    "context": "ere assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCount_RNA &gt;20000 were removed from the dataset prior to analysis. 10X analysis w"
+   }
+  ],
+  "unique_ids": [
+   "dd_Smed_v6_258_0_1",
+   "dd_Smed_v6_289_0_1",
+   "dd_Smed_v6_292_0_1",
+   "dd_Smed_v6_297_0_1",
+   "dd_Smed_v6_344_0_1",
+   "dd_Smed_v6_505_0_1",
+   "dd_Smed_v6_753_0_1",
+   "dd_Smed_v6_957_0_1"
+  ]
+ },
+ "inx_b": {
+  "query": "innexin AND planarian AND RNAi",
+  "pmc_ids": [
+   "13539150",
+   "13322009",
+   "13309071",
+   "12688102",
+   "12654950"
+  ],
+  "contexts": [
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND planarian AND RNAi",
+    "gene_id": "dd_Smed_v6_258_0_1",
+    "context": "nment score. Transcripts were then collapsed using genome location before mapping using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &l"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND planarian AND RNAi",
+    "gene_id": "dd_Smed_v6_289_0_1",
+    "context": "ipts were then collapsed using genome location before mapping using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND planarian AND RNAi",
+    "gene_id": "dd_Smed_v6_292_0_1",
+    "context": "psed using genome location before mapping using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_R"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND planarian AND RNAi",
+    "gene_id": "dd_Smed_v6_297_0_1",
+    "context": "cation before mapping using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCou"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND planarian AND RNAi",
+    "gene_id": "dd_Smed_v6_344_0_1",
+    "context": "g using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCount_RNA &gt;20000 wer"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND planarian AND RNAi",
+    "gene_id": "dd_Smed_v6_505_0_1",
+    "context": "mics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCount_RNA &gt;20000 were removed from the d"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND planarian AND RNAi",
+    "gene_id": "dd_Smed_v6_753_0_1",
+    "context": ".0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCount_RNA &gt;20000 were removed from the dataset prior to anal"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND planarian AND RNAi",
+    "gene_id": "dd_Smed_v6_957_0_1",
+    "context": "ere assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCount_RNA &gt;20000 were removed from the dataset prior to analysis. 10X analysis w"
+   }
+  ],
+  "unique_ids": [
+   "dd_Smed_v6_258_0_1",
+   "dd_Smed_v6_289_0_1",
+   "dd_Smed_v6_292_0_1",
+   "dd_Smed_v6_297_0_1",
+   "dd_Smed_v6_344_0_1",
+   "dd_Smed_v6_505_0_1",
+   "dd_Smed_v6_753_0_1",
+   "dd_Smed_v6_957_0_1"
+  ]
+ },
+ "inx_c": {
+  "query": "\"gap junction\" AND Schmidtea AND RNAi",
+  "pmc_ids": [],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "inx_d": {
+  "query": "innexin AND flatworm",
+  "pmc_ids": [
+   "13539150",
+   "13482580",
+   "13478360",
+   "13334664",
+   "13322009"
+  ],
+  "contexts": [
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND flatworm",
+    "gene_id": "dd_Smed_v6_258_0_1",
+    "context": "nment score. Transcripts were then collapsed using genome location before mapping using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &l"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND flatworm",
+    "gene_id": "dd_Smed_v6_289_0_1",
+    "context": "ipts were then collapsed using genome location before mapping using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND flatworm",
+    "gene_id": "dd_Smed_v6_292_0_1",
+    "context": "psed using genome location before mapping using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_R"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND flatworm",
+    "gene_id": "dd_Smed_v6_297_0_1",
+    "context": "cation before mapping using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCou"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND flatworm",
+    "gene_id": "dd_Smed_v6_344_0_1",
+    "context": "g using the 10X Genomics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCount_RNA &gt;20000 wer"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND flatworm",
+    "gene_id": "dd_Smed_v6_505_0_1",
+    "context": "mics Cell Ranger 7.2.0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCount_RNA &gt;20000 were removed from the d"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND flatworm",
+    "gene_id": "dd_Smed_v6_753_0_1",
+    "context": ".0 pipeline. Cells were assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCount_RNA &gt;20000 were removed from the dataset prior to anal"
+   },
+   {
+    "pmc_id": "13322009",
+    "note": "innexin AND flatworm",
+    "gene_id": "dd_Smed_v6_957_0_1",
+    "context": "ere assessed for nUMI, nGene, and percent mitochondrial transcript content, which was represented in violin plots. Percent mitochondrial content was based on mitochondrial genes previously reported 80 which are represented in v_6 of the Dresden transcriptome (dd_Smed_v6_258_0_1, dd_Smed_v6_289_0_1, dd_Smed_v6_292_0_1, dd_Smed_v6_297_0_1, dd_Smed_v6_344_0_1, dd_Smed_v6_505_0_1, dd_Smed_v6_753_0_1, dd_Smed_v6_957_0_1) and on the highly abundant mitochondrial transcripts (mtRNA_1, mtRNA_2). 81 Doublets were identified via scDblFinder ( https://bioconductor.org/packages/release/bioc/html/scDblFinder.html ) and removed after basic QC filtering; any cells with nFeature_RNA &lt; 750, nFeature_RNA &gt; 3000, nCount_RNA &lt;1000, or nCount_RNA &gt;20000 were removed from the dataset prior to analysis. 10X analysis w"
+   }
+  ],
+  "unique_ids": [
+   "dd_Smed_v6_258_0_1",
+   "dd_Smed_v6_289_0_1",
+   "dd_Smed_v6_292_0_1",
+   "dd_Smed_v6_297_0_1",
+   "dd_Smed_v6_344_0_1",
+   "dd_Smed_v6_505_0_1",
+   "dd_Smed_v6_753_0_1",
+   "dd_Smed_v6_957_0_1"
+  ]
+ },
+ "nak_a": {
+  "query": "ouabain AND planarian",
+  "pmc_ids": [
+   "13241088",
+   "12272449",
+   "11955281",
+   "11942531",
+   "11591898"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "nak_b": {
+  "query": "ATPase AND Schmidtea AND RNAi",
+  "pmc_ids": [
+   "13400776",
+   "13253666",
+   "13088682",
+   "12984799",
+   "12697309"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "nak_c": {
+  "query": "\"Na,K-ATPase\" AND planarian",
+  "pmc_ids": [
+   "13295820",
+   "12428425",
+   "12409785",
+   "10643713",
+   "10740910"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "vatpase_a": {
+  "query": "\"proton pump\" AND planarian AND RNAi",
+  "pmc_ids": [
+   "10478168",
+   "10472538",
+   "10464501",
+   "10445233",
+   "10187017"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "vatpase_b": {
+  "query": "concanamycin AND planarian",
+  "pmc_ids": [
+   "11942531",
+   "10445233",
+   "7996087",
+   "6687202",
+   "4835977"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "vatpase_c": {
+  "query": "atp6v AND Schmidtea",
+  "pmc_ids": [],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "hk_a": {
+  "query": "omeprazole AND Schmidtea",
+  "pmc_ids": [
+   "10643713",
+   "11217308",
+   "11193041",
+   "10114359",
+   "3278711"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "hk_b": {
+  "query": "\"H,K-ATPase\" AND planarian",
+  "pmc_ids": [
+   "13308630",
+   "13197194",
+   "13113681",
+   "12877998",
+   "12302380"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "hk_c": {
+  "query": "pantoprazole AND regeneration",
+  "pmc_ids": [
+   "13560432",
+   "13555384",
+   "13552080",
+   "13552429",
+   "13549016"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "k_a": {
+  "query": "\"potassium channel\" AND Schmidtea",
+  "pmc_ids": [
+   "13478360",
+   "13311285",
+   "13238120",
+   "13017442",
+   "12860537"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "k_b": {
+  "query": "\"potassium channel\" AND planarian AND RNAi",
+  "pmc_ids": [
+   "13293438",
+   "13238120",
+   "13113681",
+   "13017442",
+   "13017025"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "k_c": {
+  "query": "\"BK channel\" AND planarian",
+  "pmc_ids": [
+   "11237130",
+   "11084373",
+   "8964134",
+   "7363055",
+   "6973152"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "na_a": {
+  "query": "\"sodium channel\" AND flatworm",
+  "pmc_ids": [
+   "13412326",
+   "13311285",
+   "13308536",
+   "13301539",
+   "12178723"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "na_b": {
+  "query": "\"voltage-gated sodium\" AND planarian",
+  "pmc_ids": [
+   "13561373",
+   "13554168",
+   "13475518",
+   "13419396",
+   "13371210"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "na_c": {
+  "query": "SCN AND Schmidtea AND channel",
+  "pmc_ids": [
+   "10725132",
+   "10253995",
+   "9346374",
+   "5889318"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "p2x_a": {
+  "query": "P2X AND flatworm",
+  "pmc_ids": [
+   "13248251",
+   "13144692",
+   "12516192",
+   "11701031",
+   "11550761"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "p2x_b": {
+  "query": "\"purinergic\" AND planarian AND RNAi",
+  "pmc_ids": [
+   "13253666",
+   "10464501",
+   "10187017",
+   "7996087",
+   "7897680"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "cl_a": {
+  "query": "\"chloride channel\" AND flatworm",
+  "pmc_ids": [
+   "13478360",
+   "13164568",
+   "13044900",
+   "12677651",
+   "11657192"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "cl_b": {
+  "query": "anoctamin AND flatworm",
+  "pmc_ids": [
+   "13078365",
+   "8308605",
+   "5945325",
+   "6355031",
+   "6240649"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "ca_a": {
+  "query": "\"calcium channel\" AND Schmidtea AND RNAi",
+  "pmc_ids": [
+   "13400776",
+   "13367911",
+   "12258702",
+   "10478170",
+   "10464501"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "ca_b": {
+  "query": "\"voltage-gated calcium\" AND planarian",
+  "pmc_ids": [
+   "12399484",
+   "13477479",
+   "12443336",
+   "13083982",
+   "13003519"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "rev_a": {
+  "query": "bioelectric AND planarian AND dd_Smed",
+  "pmc_ids": [
+   "9264365",
+   "7153782",
+   "7038108",
+   "4081000"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ },
+ "rev_b": {
+  "query": "membrane voltage AND Schmidtea AND regeneration AND RNAi",
+  "pmc_ids": [
+   "13563047",
+   "13238120",
+   "13063049",
+   "12880550",
+   "12688102"
+  ],
+  "contexts": [
+   {
+    "pmc_id": "13563047",
+    "note": "membrane voltage AND Schmidtea AND regeneration AND RNAi",
+    "gene_id": "dd_Smed_v6_1972_0_1",
+    "context": "nsgene expression in planarians, thus confirming the existence of endogenous barriers to transgene expression. TBK1 regulates a transcriptional response to wounding In order to gain insight into the nature of the barrier, we next focused on characterizing planarian TBK1 as the so far strongest suppressor of NanoLuc expression. Smed TBK1 (hereafter referred to as TBK1) is encoded by the transcript dd_Smed_v6_1972_0_1, which is expressed throughout the organism according to single-cell RNA-sequencing data ( Fincher et al., 2018 ; Plass et al., 2018 ). However, whole-mount fluorescence in situ hybridization (FISH) staining suggested an enriched expression in intestinal cells ( Fig. S2A ). TBK1 displays high sequence similarity to human TBK1 but also to human inhibitor of kappaB kinase epsilon (IKK\u03b5; Fig. S3 ). "
+   },
+   {
+    "pmc_id": "13563047",
+    "note": "membrane voltage AND Schmidtea AND regeneration AND RNAi",
+    "gene_id": "dd_Smed_v6_6162_0_1",
+    "context": "other model organisms. About 26% of the genes (16 out of 60) that we found to be regulated by TBK1 are linked to functions in innate immunity based on sequence homology or functional prediction ( Fig. 4A ). We identified TRAF2, -3 and -5 homologs, which are conserved signal transducers during the innate immune response ( Ha et al., 2009 ) and a peptidoglycan-recognition domain-containing protein (dd_Smed_v6_6162_0_1) that likely has a role in defense against bacteria ( Dziarski and Gupta, 2006 ) ( Fig. 3A ). Upon further inspection of the TBK1-regulated gene products, we noticed a set of ten proteins that all share a comparatively short ORF (\u223c100-250 amino acids), a predicted N-terminal signal peptide and contain repetitive patterns of charged amino acid sequences ( Fig. S6 ). These are all hallmarks of anti"
+   }
+  ],
+  "unique_ids": [
+   "dd_Smed_v6_1972_0_1",
+   "dd_Smed_v6_6162_0_1"
+  ]
+ },
+ "rev_c": {
+  "query": "depolarization AND planarian AND RNAi AND ion",
+  "pmc_ids": [
+   "13380967",
+   "13113681",
+   "12305049",
+   "12214031",
+   "11602525"
+  ],
+  "contexts": [],
+  "unique_ids": []
+ }
+}

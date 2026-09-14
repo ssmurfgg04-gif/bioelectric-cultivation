@@ -381,9 +381,51 @@ The curated marker table is explicitly a HYPOTHESIS (module docstring):
 replacing it with atlas numbers is the first act of the validation program,
 not a refactor.
 
+**EXECUTED (exp18, this session):** the atlases were downloaded (PSCA
+21,612 cells x 28,066 genes from shiny.mdc-berlin.de; Fincher 50,456 cells
+x 26,561 genes from the GSE111764 mirror), the gene-ID gap was closed with
+the planosphere Rosetta Stone (May 2024) + AHRD (2020) annotations (34 K2P
+leak, 251 kv, 61 k_ca, 11 Na/K-ATPase alpha, 75 FaNaC, 8 nav, 165 TRP,
+21 P2X, 43 Cl, 8 Hv1, 159 innexin entries; TRPM validation 3/3 against
+PMC12421698), and V1-V4 were tested against real data: V1 CONFIRMED on
+both atlases (neoblasts among the most hyperpolarized, rank 3/10 and 1/7,
+jackknife-stable); V2 refuted; V3 split (better-powered atlas supports);
+V4's atlas-proxy falsified with mechanism (see FALSIFICATION.md Level 5).
+
+## 9. The century-hold policy and the wet-lab gate (exp19 + FC1-FC5)
+
+Two more pieces landed with the real-data layer:
+
+**The century-hold search (exp19).** With the anchored stack able to hold
+novel targets (exp17), the CEM objective changed from "reach the target"
+to "hold the target over a century" (fitness = mean alive x I_recoverable,
+ages 30-100). The search (a) beats no-maintenance by +23% held-out, (b)
+REDISCOVERS the matched-channel law from an uninformative start (k_anchor
+converges to 0.33 — the exp16 calibration emerges as a search result), (c)
+finds the hold-optimum is a different animal than the reach-optimum (write
+in adolescence at ~14.5, start maintenance a decade later, dense but
+low-amplitude), and (d) honestly fails to beat the hand-built exp17 policy
+(+1.2%): the century-hold landscape is a broad plateau — all eight
+single-dimension ablations move hold by <= 0.01. The policy was already
+sitting on the plateau's heart; the search proved it rather than improved
+it (echoes exp14 D5).
+
+**The fidelity-clock wet-lab program (docs/FIDELITY_CLOCK.md).** D3 was the
+blocker for wet-lab design; it is resolved, and the experiment series is
+now pre-registered: FC1 (does spatial Vmem fidelity decline with age — the
+existence test), FC2 (does baseline fidelity predict regeneration and
+survival — the prognosis test, computational rho 0.39-0.45), FC3 (is the
+mechanism junction-decay quarantine — innexin RNAi phenocopy + bystander
+dye-coupling), FC4 (does a written ectopic Vmem pattern persist >= 7 days
+and require junction integrity — the protected tier in tissue), FC5 (does
+regeneration reset the clock — the re-derivation rejuvenation). Each stage
+carries an explicit kills-row: what result would end which claim. The
+measurement layer uses established methods only (DiBAC4(3) per
+PMC10468776, WISH/smFISH, scrape-load dye coupling).
+
 ---
 
-## 9. How the evidence maps to the claims
+## 10. How the evidence maps to the claims
 
 | Claim | Where it lives |
 |---|---|
@@ -397,6 +439,10 @@ not a refactor.
 | The bioelectric aging clock | `exp8` (T3.2) |
 | The biofield amplification ladder | `exp9` (Audit 1) |
 | Selection vs energy | `exp9` (Audit 2) |
+| The anchored target: protected tier holds written forms for a century | `exp17` (D5-D8) |
+| Real-data validation: V1 confirmed on two public atlases; V2-V4 honest ledger | `exp18` + `research/data/psca` |
+| The century-hold policy: law rediscovered by search, plateau landscape | `exp19` |
+| The wet-lab program, pre-registered | `docs/FIDELITY_CLOCK.md` |
 | The full falsification ledger | `docs/FALSIFICATION.md` |
 | The isomorphism (codec ↔ biology) | `README.md`, `docs/THEORY.md` |
 | 158 verified references | `research/` |

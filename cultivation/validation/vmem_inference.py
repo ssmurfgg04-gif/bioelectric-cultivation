@@ -72,15 +72,29 @@ GENE_WEIGHTS = {
     # hyperpolarizing (K leak / pumps)
     "k_channel_leak":     ("PK", 1.0),    # TASK/2P-domain K+ leak family
     "kv_channel":         ("PK", 0.6),    # voltage-gated K+ (delayed rectifier contribution at rest)
+    "k_ca_channel":       ("PK", 0.30),   # Ca-activated K+ (SK/BK; gated, small rest weight)
     "nak_atpase_alpha":   ("PK", 0.25),   # electrogenic pump (3Na/2K) -> net hyperpolarization
+    "nak_atpase":         ("PK", 0.25),   # atlas class name (AHRD annotation)
     "hk_atpase":          ("PK", 0.9),    # H+/K+ pump (Beane 2013: required for head regen)
     # depolarizing (Na / cation leaks)
     "nav_channel":        ("PNa", 0.7),   # voltage-gated Na+
+    "fana_nav":           ("PNa", 0.50),  # FMRFamide-activated amiloride-sensitive Na+ channel
+                                          # (the flatworm FaNaC family — major depolarizer)
     "trp_cation":         ("PNa", 0.35),  # TRP non-selective cation
     "p2x_purinergic":     ("PNa", 0.20),  # ATP-gated cation (wound signal)
+    "hvcn":               ("PNa", 0.10),  # Hv1 voltage-gated proton channel (rest: mostly closed)
     # chloride (shunting; effectively opposes hyperpolarization at rest)
     "cl_channel":         ("PCl", 0.30),
+    # NOTE "innexin" is deliberately ABSENT: gap junctions couple cells, they
+    # do not set a cell's own resting potential (prediction V4).
 }
+
+# Real-data gene sets (dd_Smed_v6 IDs), built THIS SESSION from the public
+# planosphere Rosetta Stone (May 2024) + AHRD functional annotations (2020):
+# 34 K2P leak, 251 kv, 61 k_ca, 11 Na/K-ATPase alpha, 75 FaNaC, 8 nav,
+# 165 TRP, 21 P2X, 43 Cl, 8 Hv1, 159 innexin entries. See
+# research/data/psca/gene_mining/curated_ion_genes.json and
+# experiments/exp18_psca_ingest.py for the ingestion that consumes them.
 
 # relative marker expression per major cell type (0..1), curated from the
 # atlas marker lists + bioelectric literature (see module docstring).
