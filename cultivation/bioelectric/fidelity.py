@@ -309,9 +309,17 @@ class FidelityCodec:
          and the write is REFUSED. (exp6's gate used agreement-with-archive
          as the trust measure — backwards: it refused to repair exactly
          when repair was most needed.)
-      3. DETECT wrong domains: BP-denoised read vs the genomic archive.
-      4. WRITE archived values (with actuation noise) into senesced or
-         verified-wrong domains, budget-limited.
+      3. DETECT wrong domains: the consensus read (mean of the two
+         verified reads; single-read fill for asymmetric dropouts) vs the
+         genomic archive at cluster granularity. NOT the BP-smoothed read —
+         smoothing smears genuine sharp jumps into adjacent clusters and
+         false-positives them (a bug the batched rewrite exposed: adjacent
+         clusters got flagged wrong and the write budget was wasted on
+         healthy boundary-spanning domains).
+      4. WRITE archived values into senesced or verified-wrong domains,
+         budget-limited, PER-CELL (the genomic archive specifies per-cell
+         positional identity — same source regenerate() re-derives from;
+         writing cluster MEANS would destroy pattern boundaries).
 
     local mode: no archive, no verification. Repairs senesced cells in the
     worst clusters with the noisy BP consensus value — a jumped domain IS
@@ -342,86 +350,103 @@ class FidelityCodec:
 
     def maintain(self, cohort: FidelityAgingCohort, preset: dict,
                  mode: str = "codec") -> dict:
+        """One maintenance cycle, VECTORIZED across all individuals.
+
+        (Rewritten batch-mode: identical semantics to the original
+        per-individual loop — per-cluster actuation noise, budget in cells,
+        refusal per individual — but evaluated as (K, C) array operations.
+        RNG draw order differs from the loop version, so exact trajectories
+        differ; distributions do not.)
+        """
         self.cycles += 1
         rng = cohort.rng
-        C, cl = self.C, self.cluster_len
-        restored = refused = verified = 0
-        verified_mask = np.zeros(cohort.K, bool)
+        K, C, cl = cohort.K, self.C, self.cluster_len
+        alive = cohort.alive
 
-        for i in range(cohort.K):
-            if not cohort.alive[i]:
-                continue
-            theta_i = cohort.theta[i]
-            sen_i = cohort.senesced[i]
+        theta = cohort.theta                      # (K, n)
+        sen = cohort.senesced                     # (K, n)
+        cluster_of = np.arange(cohort.n) // cl    # (n,) cluster index of cell
 
-            # ---- READ twice through the aging channel
-            dead = sen_i.reshape(C, cl).mean(axis=1) > 0.5
-            obs_a = self._cluster_means(theta_i) + rng.normal(
-                0.0, preset["meas_noise_mV"], C)
-            obs_b = self._cluster_means(theta_i) + rng.normal(
-                0.0, preset["meas_noise_mV"], C)
-            read_a = ~dead & (rng.random(C) > preset["dropout"])
-            read_b = ~dead & (rng.random(C) > preset["dropout"])
-            both = read_a & read_b
-            obs = np.where(read_a, obs_a, np.where(read_b, obs_b, 0.0))
-            readable = read_a | read_b
-            # actuation noise: writing (targeted drug/opto) is more precise
-            # than reading (dye imaging) — 0.5x the read noise
-            act_mV = 0.5 * preset["meas_noise_mV"]
+        # ---- READ twice through the aging channel (K, C)
+        cm = theta.reshape(K, C, cl).mean(axis=2)  # (K, C) cluster means
+        dead = sen.reshape(K, C, cl).mean(axis=2) > 0.5
+        obs_a = cm + rng.normal(0.0, preset["meas_noise_mV"], (K, C))
+        obs_b = cm + rng.normal(0.0, preset["meas_noise_mV"], (K, C))
+        read_a = ~dead & (rng.random((K, C)) > preset["dropout"])
+        read_b = ~dead & (rng.random((K, C)) > preset["dropout"])
+        both = read_a & read_b
+        obs = np.where(read_a, obs_a, np.where(read_b, obs_b, 0.0))
+        readable = read_a | read_b
+        # actuation noise: writing (targeted drug/opto) is more precise
+        # than reading (dye imaging) — 0.5x the read noise
+        act_mV = 0.5 * preset["meas_noise_mV"]
 
-            if mode == "codec":
-                # ---- VERIFY the read (consensus of two independent reads)
-                tol = 2.0 * preset["meas_noise_mV"] + 1.0
-                consistent = np.abs(obs_a - obs_b) <= tol
-                cons_frac = float(np.mean(consistent[both])) if both.any() else 0.0
-                # ---- WRITE-PRECISION GATE: refuse when actuation cannot
-                # reliably place symbols (the F3/F5 lessons — no silent
-                # writes, no reckless ones either).
-                if cons_frac < self.threshold or act_mV > 0.35 * self.span:
-                    refused += 1
-                    continue  # channel below symbol reliability — REFUSE
-                verified += 1
-                verified_mask[i] = True
-                denoised = bp_smooth(
-                    obs[None, :], self.A_cluster, readable[None, :],
-                    noise_var=preset["meas_noise_mV"] ** 2, iters=20)[0]
-                # ---- DETECT wrong domains vs the genomic archive
-                archive = self._cluster_means(cohort.theta0)
-                wrong = np.abs(denoised - archive) > 0.5 * self.span
-                writable = dead | wrong
-                write_value = archive
-                write_all = True
-            else:
-                denoised = bp_smooth(
-                    obs[None, :], self.A_cluster, readable[None, :],
-                    noise_var=preset["meas_noise_mV"] ** 2, iters=20)[0]
-                writable = dead
-                write_value = denoised
-                write_all = False
+        # per-cluster noise draw (one actuation value per written cluster,
+        # shared by the cells of that cluster — as in the loop version)
+        act_noise = rng.normal(0.0, act_mV, (K, C))
 
-            order = np.argsort(-writable.astype(int))
-            remaining = self.budget
-            for c in order:
-                if remaining <= 0:
-                    break
-                if not writable[c]:
-                    continue
-                cells = np.arange(c * cl, (c + 1) * cl)
-                hit = cells if write_all else cells[sen_i[cells]]
-                if len(hit) == 0:
-                    continue
-                take = hit[:remaining]
-                # actuation noise: writing (targeted drug/opto) is more
-                # precise than reading (dye imaging) — 0.5x the read noise
-                val = float(write_value[c]) + rng.normal(0.0, act_mV)
-                cohort.theta[i, take] = val
-                cohort.V[i, take] = val
-                cohort.senesced[i, take] = False
-                restored += len(take)
-                remaining -= len(take)
+        if mode == "codec":
+            # ---- VERIFY the read (consensus of two independent reads)
+            tol = 2.0 * preset["meas_noise_mV"] + 1.0
+            consistent = np.abs(obs_a - obs_b) <= tol
+            n_both = both.sum(axis=1)
+            cons_frac = np.where(n_both > 0,
+                                 consistent.sum(axis=1) / np.maximum(n_both, 1),
+                                 0.0)
+            # ---- WRITE-PRECISION GATE: refuse when actuation cannot
+            # reliably place symbols (the F3/F5 lessons — no silent
+            # writes, no reckless ones either).
+            fail = (cons_frac < self.threshold) | (act_mV > 0.35 * self.span)
+            refused_mask = alive & fail     # only alive individuals counted
+            verified_mask = alive & ~fail
+            # ---- DETECT wrong domains: consensus read vs the genomic
+            # archive (regional). The consensus read = mean of the two
+            # verified reads where both are readable, single-read fill
+            # otherwise; unreadable clusters cannot be flagged.
+            archive = self._cluster_means(cohort.theta0)             # (C,)
+            read_cons = np.where(both, 0.5 * (obs_a + obs_b),
+                                 np.where(read_a, obs_a,
+                                          np.where(read_b, obs_b, archive[None, :])))
+            wrong = readable & (np.abs(read_cons - archive[None, :]) > 0.5 * self.span)
+            writable = dead | wrong                                  # (K, C)
+            W = writable[:, cluster_of]                              # (K, n)
+            # per-cell archive write values (boundaries preserved)
+            write_cells = np.broadcast_to(cohort.theta0[None, :], (K, cohort.n))
+        else:
+            refused_mask = np.zeros(K, bool)   # local mode: no verification, no refusal
+            verified_mask = np.zeros(K, bool)
+            denoised = bp_smooth(
+                obs, self.A_cluster, readable,
+                noise_var=preset["meas_noise_mV"] ** 2, iters=20)  # (K, C)
+            writable = dead                                          # (K, C)
+            W = writable[:, cluster_of] & sen                        # (K, n)
+            # local: only the consensus value per cluster is available
+            write_cells = denoised[:, cluster_of]                      # (K, n)
+
+        # ---- budget allocation: cells in priority order (writable clusters
+        # in cluster order, cells within cluster), first `budget` cells
+        # (deterministic stable order — the loop version's argsort was
+        # quicksort-unstable at ties)
+        W = W & verified_mask[:, None] if mode == "codec" else W & alive[:, None]
+        ranks = np.cumsum(W, axis=1)                                  # 1-based rank
+        write_mask = W & (ranks <= self.budget)                      # (K, n)
+
+        # ---- WRITE: per-cluster actuation value + per-cell archive target
+        vals = write_cells + act_noise[:, cluster_of]                 # (K, n)
+        do = write_mask
+        if do.any():
+            cohort.theta = np.where(do, vals, cohort.theta)
+            cohort.V = np.where(do, vals, cohort.V)
+            cohort.senesced = np.where(do, False, cohort.senesced)
+
+        restored_per_i = do.sum(axis=1)
+        restored = int(restored_per_i.sum())
+        refused = int(refused_mask.sum())
+        verified = int(verified_mask.sum())
 
         self.verified += verified
         self.refused += refused
         self.restored += restored
         return {"cycle": self.cycles, "verified": verified, "refused": refused,
-                "restored": restored, "verified_mask": verified_mask.tolist()}
+                "restored": restored, "verified_mask": verified_mask.tolist(),
+                "restored_per_i": restored_per_i.tolist()}

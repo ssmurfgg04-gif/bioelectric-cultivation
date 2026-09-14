@@ -127,11 +127,14 @@ def degrade(preset: dict, factor: float) -> dict:
 
 def run_condition(condition: str, seed: int, K: int = K_INDIV,
                   years: float = YEARS, channel_factor: float = 1.0,
-                  regime: dict | None = None) -> dict:
-    codec = FidelityCodec(n_cells=N_CELLS, budget_per_cycle=BUDGET)
+                  regime: dict | None = None,
+                  cohort_kw: dict | None = None) -> dict:
+    levels = (cohort_kw or {}).get("levels", 7)
+    codec = FidelityCodec(n_cells=N_CELLS, budget_per_cycle=BUDGET,
+                          levels=levels)
     params = AgingParams(n_cells=N_CELLS, target0=fidelity_target(),
                          **(regime or REGIME))
-    ch = FidelityAgingCohort(K=K, params=params, seed=seed)
+    ch = FidelityAgingCohort(K=K, params=params, seed=seed, **(cohort_kw or {}))
     decode_stats: list[dict] = []
 
     def maintain(t, cohort):

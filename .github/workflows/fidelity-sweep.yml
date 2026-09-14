@@ -1,0 +1,71 @@
+name: Fidelity Gate Landscape Sweep
+
+# Fans the exp8 Level-3-gate robustness sweep across a 24-cell physics
+# landscape (jump_rate x f_crit x kappa + 6 probe regimes), one cell per
+# runner, and aggregates the gate-robustness map.
+# Trigger from the Actions UI ("Run workflow") or via API dispatch.
+
+on:
+  workflow_dispatch:
+    inputs:
+      cohort_size:
+        description: "individuals per cohort arm"
+        required: false
+        default: "250"
+  push:
+    branches: [sweep-trigger]
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        cell: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run cell ${{ matrix.cell }}/24
+        run: |
+          python -m experiments.exp8_sweep \
+            --cell ${{ matrix.cell }} \
+            --out results/sweep/cell_${{ matrix.cell }}.json \
+            --K ${{ github.event.inputs.cohort_size || '250' }}
+        timeout-minutes: 30
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fidelity-cell-${{ matrix.cell }}
+          path: results/sweep/cell_${{ matrix.cell }}.json
+
+  aggregate:
+    runs-on: ubuntu-latest
+    needs: sweep
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          path: results/sweep
+          pattern: fidelity-cell-*
+          merge-multiple: true
+      - name: Aggregate gate landscape
+        run: |
+          python -m experiments.aggregate_fidelity --dir results/sweep
+          cat results/FIDELITY_SWEEP_REPORT.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fidelity-sweep-aggregate
+          path: |
+            results/fidelity_sweep_summary.json
+            results/FIDELITY_SWEEP_REPORT.md
+            results/figures/fig10_gate_landscape.png
