@@ -448,6 +448,10 @@ class FidelityCodec:
             cohort.theta = np.where(do, vals, cohort.theta)
             cohort.V = np.where(do, vals, cohort.V)
             cohort.senesced = np.where(do, False, cohort.senesced)
+            # latch-integration hook (LatchingAgingCohort): a write is a
+            # reprogramming event — the somatic anchor latches to it
+            if hasattr(cohort, "on_write"):
+                cohort.on_write(do)
 
         restored_per_i = do.sum(axis=1)
         restored = int(restored_per_i.sum())
@@ -460,3 +464,94 @@ class FidelityCodec:
         return {"cycle": self.cycles, "verified": verified, "refused": refused,
                 "restored": restored, "verified_mask": verified_mask.tolist(),
                 "restored_per_i": restored_per_i.tolist()}
+
+
+# ------------------------------------------------------------- latch layer
+class LatchingAgingCohort(FidelityAgingCohort):
+    """FidelityAgingCohort + exp11's cell-autonomous latching memory.
+
+    The Phase-D integration layer: every theta now carries an ANCHOR (the
+    somatic pattern memory). TIME-SCALE NOTE (the first integration
+    attempt's bug, recorded): exp11's latch rates were calibrated in
+    simulation TIME UNITS (protocols ran 24-150 units); this cohort's t is
+    in YEARS. With unit-scale rates the writes latched over ~24 yr and the
+    k_anchor pull half-healed exp8's permanent jumps (semantics violated
+    at both seams). The defaults here are YEAR-calibrated to the real
+    biophysics: latch dynamics run at DAYS (alpha ~ 20/yr, pinning
+    ~ 50/yr), so:
+
+      - cluster jumps (full-band, 8.57 mV > deadzone 5) latch in within
+        weeks: exp8's 'regional reprogramming is permanent' semantics
+        PRESERVED;
+      - codec writes latch in within weeks (plus the explicit on_write
+        sync hook — exp11's 'written patterns persist' semantics);
+      - sub-deadzone slow erosion (theta drift + Laplacian) is ABSORBED:
+        the layer's gift (exp11's stability semantics);
+      - senesced cells (V pinned at -25) corrupt their own anchors over
+        weeks — biologically honest (a stably-depolarized cell IS
+        reprogrammed; that is why cancers persist) — and the codec's
+        write-hook re-latches the anchor when it repairs them;
+      - regenerate() re-derives theta AND the anchor from the genomic
+        archive (the re-derivation resets the memory too).
+    """
+
+    def __init__(self, *a, alpha_latch: float = 20.0,
+                 deadzone: float = 5.0, k_anchor: float = 50.0, **kw):
+        # the parent constructor runs warmup _integrate calls BEFORE the
+        # anchor exists — gate the latch layer until initialization ends
+        self._latch_ready = False
+        self.alpha_latch = alpha_latch
+        self.deadzone = deadzone
+        self.k_anchor = k_anchor
+        super().__init__(*a, **kw)
+        self.theta_anchor = np.tile(self.theta0, (self.K, 1))
+        self._latch_ready = True
+
+    def _integrate(self, dt: float, g: np.ndarray, sigma: np.ndarray) -> None:
+        super()._integrate(dt, g, sigma)
+        if not self._latch_ready:
+            return
+        # EXACT-EXPONENTIAL updates (unconditionally stable at any rate —
+        # the explicit-Euler version diverged at k_anchor*dt ~ 12.5, which
+        # is exactly what the second integration attempt hit).
+        #
+        # JUNCTION-GATED LATCH (the third-attempt design, pre-registered):
+        # the ablations showed the naive latch's deadzone absorption
+        # suppresses the theta-Laplacian — the gap-junction-mediated
+        # PATTERN PROPAGATION exp8's maintenance relied on for post-write
+        # healing (deadzone=0 restored exp8 exactly; full deadzone cost
+        # 15 yr). The principled composition: the latch engages AS THE
+        # SHARING NETWORK DIES. Healthy junctions (gap_frac -> 1): the
+        # anchor tracks theta continuously (deadzone -> 0, pin -> 0 — the
+        # latch is TRANSPARENT; pure exp8 propagation semantics). Decayed
+        # junctions (gap_frac -> 0, exp8's quarantine regime): the
+        # deadzone and pin engage — the somatic memory freezes the
+        # pattern exactly when propagation can no longer hold it. The two
+        # memory mechanisms become graceful-degradation redundancies
+        # instead of antagonists.
+        dev = self.theta - self.theta_anchor
+        gap_frac = np.clip(g / self.p.g0, 0.0, 1.0)[:, None]
+        dz_eff = self.deadzone * (1.0 - gap_frac)
+        k_eff = self.k_anchor * (1.0 - gap_frac)
+        # anchor follows beyond-effective-deadzone deviation
+        far = np.abs(dev) > dz_eff
+        decay_a = np.exp(-self.alpha_latch * dt)
+        new_dev = np.where(far, dev * decay_a, dev)
+        self.theta_anchor = self.theta - new_dev
+        # theta pinned toward the anchor (only where junctions have decayed)
+        decay_k = np.exp(-k_eff * dt)
+        self.theta = self.theta_anchor + dev * decay_k
+
+    def on_write(self, do: np.ndarray) -> None:
+        """Codec-write hook: a maintenance write is a reprogramming event —
+        the anchor latches to the written value (exp11 semantics; the
+        biophysics of a sustained forced Vmem rewrite)."""
+        if do.any():
+            self.theta_anchor = np.where(do, self.theta, self.theta_anchor)
+
+    def regenerate(self, jitter: float = 1.0, hazard: float = 0.01) -> None:
+        was_alive = self.alive.copy()
+        super().regenerate(jitter, hazard)
+        ka = int(was_alive.sum())
+        if ka:
+            self.theta_anchor[was_alive] = np.tile(self.theta0, (ka, 1))

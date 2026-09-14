@@ -97,14 +97,28 @@ def decode_policy(u) -> dict:
 
 def policy_intervention(policy: dict, n_cells: int = 60,
                         age_preset=None, h_proc: float = H_PROC,
-                        K: int | None = None, boost_cap: float = 8.0):
+                        K: int | None = None, boost_cap: float = 8.0,
+                        decay_tau: float | None = None):
     """Build the intervention callback that EXECUTES a decoded policy.
+
+    decay_tau: the exp12 noreward-physics hook — if set, the policy's
+    AMPLITUDE passively decays with age (budget and boost fade as
+    exp(-t/decay_tau); the schedule itself never adapts — the frozen
+    policy under fading actuation, the aging-stack analog of synaptic
+    decay without practice).
 
     Returns (callback, stats-dict) — stats filled during the run."""
     codec = FidelityCodec(n_cells=n_cells, budget_per_cycle=policy["budget"])
     proc_events = None  # allocated on first call (needs K)
     stats = {"writes": 0, "regens": 0, "boost_apps": 0, "refused": 0}
     rng_local = np.random.default_rng(1234567)
+
+    def decayed(t):
+        if decay_tau is None:
+            return policy["budget"], policy["boost_factor"]
+        f = float(np.exp(-t / decay_tau))
+        return (max(1, int(round(policy["budget"] * f))),
+                1.0 + (policy["boost_factor"] - 1.0) * f)
 
     def intervene(t, cohort):
         nonlocal proc_events
@@ -115,6 +129,9 @@ def policy_intervention(policy: dict, n_cells: int = 60,
         # ---------- scheduled verified maintenance ----------
         if t >= policy["start_age"] - 1e-9 and \
                 abs((t - policy["start_age"]) % policy["period"]) <= 0.26:
+            budget_eff, boost_eff = decayed(t)
+            if budget_eff != codec.budget:
+                codec.budget = budget_eff
             preset = age_preset(t)
             rep = codec.maintain(cohort, preset, mode="codec")
             per_i = np.asarray(rep["restored_per_i"], float)
@@ -123,12 +140,12 @@ def policy_intervention(policy: dict, n_cells: int = 60,
             stats["refused"] += rep["refused"]
             # ---------- channel boost with learned gating ----------
             pv, pu = policy["boost_p_verified"], policy["boost_p_unverified"]
-            if pv > 0 or pu > 0:
+            if (pv > 0 or pu > 0) and boost_eff > 1.0:
                 verified = np.asarray(rep["verified_mask"], bool)
                 draw = rng_local.random(cohort.K)
                 mask = (verified & (draw < pv)) | (~verified & (draw < pu))
                 if mask.any():
-                    cohort.boost_channel(mask, policy["boost_factor"], boost_cap)
+                    cohort.boost_channel(mask, boost_eff, boost_cap)
                     stats["boost_apps"] += int(mask.sum())
 
         # ---------- scheduled full re-derivation ----------
@@ -154,16 +171,21 @@ def policy_intervention(policy: dict, n_cells: int = 60,
 def eval_policy(u, seed: int, K: int = 150, years: float = 110.0,
                 regime: dict | None = None, target0=None, h_proc: float = H_PROC,
                 age_preset=None, boost_cap: float = 8.0,
-                cohort_kw: dict | None = None) -> dict:
+                cohort_kw: dict | None = None,
+                cohort_cls=FidelityAgingCohort,
+                decay_tau: float | None = None) -> dict:
     """Evaluate one policy vector on one cohort. Top-level (picklable).
 
-    cohort_kw: constructor overrides for FidelityAgingCohort (jump_rate,
-    f_crit, k_fail) — the landscape axes of the robustness tests."""
+    cohort_kw: constructor overrides (jump_rate, f_crit, k_fail) — the
+    landscape axes. cohort_cls: the LATCH arm passes LatchingAgingCohort
+    (the exp11 layer grafted onto the aging stack). decay_tau: the exp12
+    noreward-decay hook."""
     policy = decode_policy(u)
     params = AgingParams(n_cells=60, target0=target0(), **(regime or {}))
-    ch = FidelityAgingCohort(K=K, params=params, seed=seed, **(cohort_kw or {}))
+    ch = cohort_cls(K=K, params=params, seed=seed, **(cohort_kw or {}))
     intervene, stats = policy_intervention(
-        policy, age_preset=age_preset, h_proc=h_proc, boost_cap=boost_cap)
+        policy, age_preset=age_preset, h_proc=h_proc, boost_cap=boost_cap,
+        decay_tau=decay_tau)
     s = ch.run(years=years, dt=0.25, intervention=intervene, record=False)
     return {
         "median": s["median_lifespan"],
