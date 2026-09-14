@@ -70,7 +70,48 @@ Pure arithmetic on literature values; no tunable parameters.
 | F5 Selection-level effects are already macro IF real | **OPEN** — an amplified RNG bit IS macroscopic (energy from the supply; the quantum event only selects): this is what PEAR actually measured |
 | F6 The bioelectric layer is the first physical expression point of any consciousness-matter interface | **OPEN, SHARPENED** — the mW-scale ceiling is ~9 orders above the 1.25e-16 J of a bioelectric state transition: IF the interface exists, it shows up in Levin's layer first |
 
-## Level 4-6 — real-biology validation, causal confirmation, consciousness interface
+## Level 4 — the tower: inverse design, novel morphology, interface, scaling, integration (exp10-15)
+
+| Test | Claim | Status |
+|---|---|---|
+| T4.1 | CEM search converges on the policy landscape | **PASS** — exp10: 28x10 evals, best 93.1 on search fitness vs 81.9 best hand-built (+13.6% on paired seeds; +19% vs hand codec) |
+| T4.2 | Discovered policy wins on held-out seeds | **PASS** — exp10 |
+| T4.3 | Discovered policy transfers to a perturbed regime | **PASS** — +3.4% paired gain under perturbed physics |
+| T4.4 | The discovered structure is nontrivial (not hand-guessable) | **PASS** — dense early schedule + verification-gated boost; no hand baseline reaches it |
+| A1 | Novel morphologies reachable (third_eye, dual_zone >= 0.90) | **PASS** — 0.965 / 0.922 |
+| A2 | Latched novel plans persist after clamp release | **PASS** — decay < 0.05 over 500 free units (all six targets) |
+| A3 | Regenerative memory is LOCAL (partial yes, full no) | **PASS** — partial amputation recovers novel identity (with overshoot); full amputation loses it |
+| A4 | Difficulty scales with novel-boundary count | **PASS** — Spearman rho > 0 |
+| A5 | Controls: twoheaded >= 0.90 (Levin anchor), restorative >= 0.95 | **PASS** — 0.94 / 0.97 |
+| B1 | Reflex-only control has a ceiling | **PASS** — exp12 |
+| B2a-c | Training transcends the ceiling x5; coherence (not energy) carries precision; incentive loop tracks | **PASS** — 12% within-band for random vs 100% coherent; loop tracks +10 -> +5 |
+| B3 | Practice sustains the written state | **PASS** |
+| B4a-c | Discrete state flip: trained sticks, untrained doesn't, latch carries sticking | **PASS** — 100% / 0% / 0% |
+| B5a-e | NOREREWARD (Pezzulo 2021): plateau above baseline, not decay to zero; latch carries retention | **PASS** — all five; the somatic latch IS the re-writable memory medium |
+| B6a-c | Bistability (hysteresis), rewritability (A/B/A), bounded hopping | **PASS** — Ryom 2021 latching dynamics reproduced |
+| C1a | Gate vs jump-rate: saturating quadratic, R2 >= 0.9 | **PASS** — R2 = 0.997 (1.25 -> 2.29) |
+| C1b | Gate vs kappa: linear erosion, R2 >= 0.9 | **PASS** — R2 = 0.91 (1.59 -> 1.13) |
+| C2 | Per-cell archive writes shift the cliff knee | **NEGATIVE** — both knees at kappa 0.055; write precision contributes only an additive 0.05-0.07 at low kappa |
+| C3 | Low-difficulty protocols survive exp12's corruption stream; survival anti-correlates with difficulty | **PASS** |
+| C4a | Overshoot scales with latch strength | **NEGATIVE** — overshoot does not scale with k_anchor/alpha_latch |
+| C4b | Overshoot scales with junction sharing | **NEGATIVE** — no scaling with gap coupling either |
+| C4c | Remodeling (overshoot) bounded by the latch | **PASS** — the bound is real even where the scaling is not |
+| D1 | The exp8 gate transfers to the held-out corpus | **PASS** — x1.909 |
+| D2 | Frozen discovered policy beats no-intervention | **PASS** — x1.752 |
+| D2b | Discovered policy beats the hand-built arm on held-out | **NEGATIVE** — x0.895 (111 vs 124): the search found ITS regime's optimum; the milder held-out physics rewards pure maintenance over the discovered regen schedule |
+| D3 | The latch layer composes onto the aging stack | **NEGATIVE** — x0.800 (deadzone-0 ablation x0.858): anchor-pinning fights the codec's writes on senesced cells; the tower's open joint |
+| D4 | The stack tolerates noreward passive decay | **PASS** — x1.000 (decay_tau 80): the latch carries what was written |
+| D5 (AUC) | CEM more sample-efficient than GA at matched budget | **NEGATIVE** — GA AUC 93.6 vs CEM 91.0 (140 evals, CRN): the landscape's broad ~94 plateau is reached by uniform sampling; exp10's own 280-eval CEM sat at 93.1 |
+| D5 (final) | CEM final-best not worse than GA | **PASS** — 94.1 vs 93.9; either search beats hand design by ~19% |
+| E1 | Random policies do not match the discovered one | **PASS** — 0/8 beat it (mean 90.9, best 104.5 vs 111.2) |
+| E2 | No-latch relaxes exactly to the null baseline; latch holds the novel zone | **PASS** — 0.86 = null vs 0.96 native |
+| E3 (sanity) | Shuffled genome leaves default physics untouched | **PASS** — none+shuffled 63.5 == none 63.5 |
+| E3 | Archive correctness is load-bearing | **PASS** — codec+shuffled 48.3 < none 63.5: a wrong archive is worse than no archive |
+| E4 (pre-registered amplitude/inertness) | Transfer <= 0.6x native; transfer >= null - 0.10 | **NEGATIVE x2** — transfers land at 0.75x/0.82x native AND below null (0.69/0.79 vs 0.87/0.86) |
+| E4 (degrade-not-zero, pre-registered) | Transfer degrades but is not annihilated | **PASS** |
+| E4 (sign-flip, POSTHOC) | The intervention's sign flips on the wrong target | **PASS** — native +0.05/+0.10 above null becomes -0.18/-0.07 below it: off-target reprogramming hazard; derived from this run's data, labeled post-hoc |
+
+## Level 5-6 — real-biology validation, causal confirmation
 
 Out of scope for computation-only runs by design. The program's position:
 these require wet-lab evidence (planaria are the cheap/fast model organism).
@@ -80,14 +121,26 @@ this repository provides.
 ## The honest pattern
 
 The strongest results are the reproductions (Level 1: 9/9), the emergence of
-Gompertz-form mortality in the pre-saturation window, and now the Level-3
-gate: under fidelity-dependent mortality, archive-verified maintenance beats
+Gompertz-form mortality in the pre-saturation window, the Level-3 gate: under
+fidelity-dependent mortality, archive-verified maintenance beats
 consensus-only maintenance (x1.09), regeneration rejuvenates (x1.25), the
 bioelectric clock predicts remaining lifespan (rho ~0.45), and the
 two-bottleneck structure (pattern AND channel) emerged as a finding rather
-than an assumption. The remaining negatives are mechanistically understood:
-the slope of mortality is not a simple dial; ratio-compression is structural;
+than an assumption — and now the tower: the gate is a scaling law (R2 0.997),
+novel morphologies are engineerable and persist (0.96, held after release),
+the somatic latch is the re-writable memory medium (noreward plateau, not
+decay), the whole stack composes on held-out physics (x1.91 gate, x1.71
+stack), and the controls hold: no random policy matches the search, no-latch
+relaxes to baseline, a shuffled genome turns maintenance into harm, and
+misapplied protocols flip sign.
+
+The remaining negatives are mechanistically understood: the slope of
+mortality is not a simple dial; ratio-compression is structural;
 coherence-sensitivity needs nonlinear measures; connexin restoration is
-net-harmful in low-noise regimes (quarantine loss). Each negative points at a
-specific next experiment — and the exp9 audits now bound which cultivation-tier
-claims are worth running at all.
+net-harmful in low-noise regimes (quarantine loss); per-cell write precision
+does not shift the channel cliff; the latch does not yet compose with the
+aging stack (x0.80 — the tower's open joint); CEM shows no sample-efficiency
+edge over GA on this broad-plateau landscape; and transferred protocols are
+actively destructive, not inert. Each negative points at a specific next
+experiment — and the exp9 audits now bound which cultivation-tier claims are
+worth running at all.

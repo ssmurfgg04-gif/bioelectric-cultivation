@@ -122,6 +122,31 @@ python -m experiments.exp7_stress --shard 0/4 --out results/   # sharded sweep
 
 Full ledger: `docs/FALSIFICATION.md` · the connected synthesis: `docs/RESEARCH_MAP.md` · dossier PDF in the release notes.
 
+## The Tower (exp10-15): from the gate to an integrated stack
+
+Five layers, each discovered and validated in its own phase, then composed
+end-to-end on a corpus no phase ever saw:
+
+| Layer | Phase | What it contributes | Result |
+|---|---|---|---|
+| L5 consciousness-body interface | exp12 | the retention physics that makes somatic memory a trusted write target: bistable, re-writable, hopping-bounded, decay-tolerant without reward | 16/16 criteria |
+| L4 latching somatic memory | exp11 | written patterns persist indefinitely; novel morphologies (third eye, dual zone) engineered by discovered clamp protocols; amputation memory is local | 5/5 criteria |
+| L3 CEM-discovered policy | exp10 | the intervention schedule itself, found by search under an honest procedure-risk cost model | 4/4 criteria |
+| L2 verified codec | exp8 | consensus-then-archive maintenance — THE GATE | see Level 3 above |
+| L1 fidelity-dependent mortality | exp8 | aging = pattern information loss | see Level 3 above |
+
+**Phase A (exp11) — engineering new body plans.** CEM-discovered sparse voltage-clamp protocols reach a novel mid-trunk organ zone (third eye) at settled fidelity **0.96**, hold it after clamp release (decay < 0.05 over 500 free units), and carry it through partial amputation (novel identity recovers, with overshoot) but not full amputation — positional memory is local, exactly as pre-registered. Difficulty scales with novel-boundary count (Spearman rho > 0). The Levin anchor (two-headed) reproduces at 0.94.
+
+**Phase B (exp12) — the consciousness-body interface.** A controller coupled to the collective's bioelectric state learns to hold a written target under a paired corruption stream: training transcends the reflex ceiling **x5**, coherent (structured) moves carry precision where random moves move only the mean, the incentive loop tracks a moving target, and — the Pezzulo 2021 test — **with the reward loop cut, retention plateaus above baseline rather than decaying to zero**: the somatic latch, not the learning loop, is the re-writable memory medium. Bistability confirmed by hysteresis (path-dependent terminal states), rewritability by the write-A/measure/write-B/measure/rewrite-A test, hopping bounded as Ryom 2021 predicts.
+
+**Phase C (exp13) — the scaling laws.** The codec gate is a smooth monotone law, not a lucky parameter cell: gate value grows 1.25 -> 2.29 with regional corruption pressure (saturating quadratic, **R2 = 0.997**) and erodes 1.59 -> 1.13 with channel noise (linear, **R2 = 0.91**). Honest negatives: per-cell archive writes do NOT shift the channel-capacity cliff knee (only a small additive term); overshoot does not scale with latch strength (it is bounded by it — C4c).
+
+**Phase D (exp14) — the integrated stack on held-out physics.** Composed on a corpus (kappa 0.017, lambda 0.026, jump 0.006, f_crit 0.655, seeds 51-53) that no phase tuned, searched, or validated on: **the gate transfers (x1.91)**, the frozen discovered policy beats no-intervention **x1.75**, the full stack runs at **x1.71** over the pre-gate baseline, and — the exp12 layer's signature — under passive policy decay (the noreward physics) the stack degrades **gracefully at exactly x1.00**: the latch carries what was written. Three honest negatives recorded: the discovered policy loses to the hand-built arm on the milder held-out regime (111 vs 124 — it was optimized under its own regime's constraints); grafting the latch onto the aging stack costs ~20% (the tower's open joint — the layers compose cleanly in the morphology domain, not yet in the aging domain); and the CEM-vs-GA benchmark (Hazan & Levin 2022's "first step" vs the next, 140 evals each, common random numbers) finds **no sample-efficiency separation** — the policy landscape has a broad attainable plateau (~94, +19% above the best hand-built policy) that uniform sampling reaches as fast as adaptive sampling. The honest claim: inverse design beats hand design; the algorithm choice barely matters on this landscape.
+
+**Phase E (exp15) — the falsification controls.** Four controls that could have taken the tower down; 8/11 pre-registered criteria pass: (E1) **0 of 8** random policies beat the discovered one (mean 90.9 vs 111.2 — the win is searched structure); (E2) with the latch rate zeroed, the third-eye pattern relaxes **exactly to the null baseline** (0.86) while the native latch holds 0.96 — the memory, not clamp residue, carries novel morphology; (E3) with the genomic archive permuted (mortality still scored against the true pattern; the none-arm sanity check confirms default physics is untouched), verified maintenance **collapses below doing nothing** (48.3 vs 63.5) — the archive is load-bearing, and a wrong archive is worse than no archive; (E4) cross-species protocol transfer degrades without annihilating (0.69/0.79) and — the finding the pre-registered inertness criterion missed — **the intervention's sign flips**: the wrong protocol actively overwrites correct cells (-0.18 below null), the computational analog of off-target reprogramming hazard.
+
+One-image summary: `results/figures/fig16_tower_summary.png` (policy / scaling law / novel morphology / retention). Per-phase figures: `results/figures/fig10-fig15`.
+
 ## Research dossier
 
 `research/` contains the verified literature (bioelectric morphogenesis, IIT, aging theory, Chinese research landscape) with DOIs verified against Crossref/PubMed responses, plus real C. elegans connectome data (OpenWorm; Cook et al. 2019).

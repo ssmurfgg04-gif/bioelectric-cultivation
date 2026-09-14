@@ -1,0 +1,185 @@
+{
+  "stack": {
+    "arms": {
+      "hand_none": {
+        "medians_by_seed": [
+          63.0,
+          61.75,
+          65.75
+        ],
+        "median": 63.5
+      },
+      "hand_local": {
+        "medians_by_seed": [
+          63.25,
+          68.625,
+          63.5
+        ],
+        "median": 65.125
+      },
+      "hand_codec": {
+        "medians_by_seed": [
+          125.25,
+          124.125,
+          123.5
+        ],
+        "median": 124.29166666666667
+      },
+      "disc_codec": {
+        "medians_by_seed": [
+          111.75,
+          107.5,
+          114.5
+        ],
+        "median": 111.25,
+        "writes": 45580.333333333336,
+        "regens": 1020.0
+      },
+      "disc_decay": {
+        "medians_by_seed": [
+          112.5,
+          110.25,
+          111.0
+        ],
+        "median": 111.25,
+        "writes": 26168.333333333332,
+        "regens": 1042.3333333333333
+      }
+    },
+    "latch_diagnostics": {
+      "hand_latch": 99.41666666666667,
+      "disc_latch": 93.33333333333333,
+      "hand_latch_deadzone0": 106.66666666666667
+    },
+    "gains": {
+      "gate": 1.90850927703135,
+      "policy_vs_none": 1.7519685039370079,
+      "policy_vs_hand": 0.895072075092189,
+      "full_stack": 1.7082533589251438,
+      "decay_cost": 1.0,
+      "latch_cost": 0.7998659068052296,
+      "latch_deadzone0_ablation": 0.8581964465303386
+    },
+    "heldout": {
+      "regime": {
+        "kappa_noise": 0.017,
+        "lambda_gap": 0.026,
+        "mu_theta": 0.03,
+        "h_sys": 0.05,
+        "seed_rate": 6e-05,
+        "h_inflam": 0.03,
+        "mortality_k": 0.1
+      },
+      "cohort": {
+        "jump_rate": 0.006,
+        "f_crit": 0.655
+      },
+      "seeds": [
+        51,
+        52,
+        53
+      ],
+      "K": 300,
+      "years": 170.0,
+      "decay_tau": 80.0
+    }
+  },
+  "criteria": {
+    "D1_gate_holds_heldout": true,
+    "D2_policy_beats_baseline": true,
+    "D2b_policy_beats_hand_strict": false,
+    "D3_latch_composes": false,
+    "D4_noreward_tolerant": true,
+    "D5_cem_sample_efficiency": false,
+    "D5_cem_final_not_worse": true
+  },
+  "benchmark": {
+    "budget_evals": 140,
+    "crn_seeds": [
+      11,
+      12
+    ],
+    "ga": {
+      "best_median": 93.9375,
+      "auc": 93.56696428571429,
+      "evals_to_95pct": 20,
+      "final_mean_pop": 89.190625,
+      "wall_s": 425.16724252700806
+    },
+    "cem": {
+      "best_median": 94.125,
+      "auc": 90.98660714285714,
+      "evals_to_95pct": 60,
+      "wall_s": 421.8890142440796
+    },
+    "ga_curve": [
+      [
+        20,
+        93.5
+      ],
+      [
+        40,
+        93.5
+      ],
+      [
+        60,
+        93.5
+      ],
+      [
+        80,
+        93.5
+      ],
+      [
+        100,
+        93.5
+      ],
+      [
+        120,
+        93.75
+      ],
+      [
+        140,
+        93.9375
+      ]
+    ],
+    "cem_curve": [
+      [
+        20,
+        88.4375
+      ],
+      [
+        40,
+        89.125
+      ],
+      [
+        60,
+        89.6875
+      ],
+      [
+        80,
+        92.25
+      ],
+      [
+        100,
+        92.625
+      ],
+      [
+        120,
+        93.5
+      ],
+      [
+        140,
+        94.125
+      ]
+    ]
+  },
+  "honest_notes": [
+    "The held-out corpus (kappa 0.017, lambda 0.026, jump 0.006, f_crit 0.655, seeds 51-53) was never used by any phase: not exp8's validation, not exp10's search/heldout/perturbed regimes, not exp13's sweeps.",
+    "The discovered policy is LOADED from exp10's results JSON and run FROZEN \u2014 the stack is natively noreward (a fixed schedule executing on latch-backed tissue; no runtime adaptation anywhere).",
+    "The exp12 layer enters as physics, not machinery: the latch's bistability/rewritability laws (B6) are what make the LatchingAgingCohort's writes trustworthy, and the D4 decay arm is exp12's passive-decay law applied to the policy's amplitude.",
+    "D5 runs BOTH algorithms fresh at exactly matched budget (140 evals each, CRN seeds 11/12, identical fitness/bounds) \u2014 the comparison measures the search algorithm, not tuning effort.",
+    "D5 honest reading: on THIS landscape the sample-efficiency criterion is NEGATIVE \u2014 the GA's initial uniform draw already contains a ~93.5-yr policy (the attainable plateau is broad), so its best-so-far curve is flat from eval 20 (AUC 93.6 vs CEM 91.0). The CEM still lands slightly higher on final best (94.1 vs 93.9) and exp10's own 280-eval CEM search plateaued at 93.1 \u2014 the landscape saturates near ~94 for BOTH algorithms, ~+19% above the best hand-built policy (81.9). The honest claim is NOT 'CEM is more sample-efficient than GA'; it is 'inverse design (either algorithm) beats hand design by ~19%, and on broad-plateau landscapes adaptive sampling gains little over uniform sampling at small budgets.'",
+    "D2b honest reading: the discovered policy LOSES to the hand-built codec arm on the held-out corpus (111 vs 124) while WINNING on its search regime (93 vs 82). The hand-policy has no regeneration (regen_start 105 = never); the discovered one regenerates from age 74 \u2014 on the milder held-out physics the pure-maintenance arm simply outlives any regen schedule's procedure hazard. The search found the optimum of ITS regime; regimes differ; transfer is real but imperfect (exp10 T4.3: +3.4% perturbed-regime gain).",
+    "D3 honest reading: grafting the latch layer onto the aging stack COSTS ~20% of lifespan (99.4 vs 124.3 under the hand-codec policy; deadzone-0 ablation recovers only to 106.7). The latch's anchor-pinning fights the codec's maintenance writes on senesced cells (a stably-depolarized senesced cell re-latches its OWN wrong anchor within weeks unless the write hook fires first) \u2014 the two layers are not yet semantically aligned. The stack reported in D1/D2/D4 is the latch-LESS composition (exp8 cohort + exp10 policy + exp12 decay law); the latch composes cleanly in the morphology domain (exp11) but not yet in the aging domain. Recorded as the tower's open joint."
+  ]
+}

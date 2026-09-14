@@ -1,0 +1,85 @@
+{
+  "arms": {
+    "hand_none": {
+      "medians_by_seed": [
+        63.0,
+        61.75,
+        65.75
+      ],
+      "median": 63.5
+    },
+    "hand_local": {
+      "medians_by_seed": [
+        63.25,
+        68.625,
+        63.5
+      ],
+      "median": 65.125
+    },
+    "hand_codec": {
+      "medians_by_seed": [
+        125.25,
+        124.125,
+        123.5
+      ],
+      "median": 124.29166666666667
+    },
+    "disc_codec": {
+      "medians_by_seed": [
+        111.75,
+        107.5,
+        114.5
+      ],
+      "median": 111.25,
+      "writes": 45580.333333333336,
+      "regens": 1020.0
+    },
+    "disc_decay": {
+      "medians_by_seed": [
+        112.5,
+        110.25,
+        111.0
+      ],
+      "median": 111.25,
+      "writes": 26168.333333333332,
+      "regens": 1042.3333333333333
+    }
+  },
+  "latch_diagnostics": {
+    "hand_latch": 99.41666666666667,
+    "disc_latch": 93.33333333333333,
+    "hand_latch_deadzone0": 106.66666666666667
+  },
+  "gains": {
+    "gate": 1.90850927703135,
+    "policy_vs_none": 1.7519685039370079,
+    "policy_vs_hand": 0.895072075092189,
+    "full_stack": 1.7082533589251438,
+    "decay_cost": 1.0,
+    "latch_cost": 0.7998659068052296,
+    "latch_deadzone0_ablation": 0.8581964465303386
+  },
+  "heldout": {
+    "regime": {
+      "kappa_noise": 0.017,
+      "lambda_gap": 0.026,
+      "mu_theta": 0.03,
+      "h_sys": 0.05,
+      "seed_rate": 6e-05,
+      "h_inflam": 0.03,
+      "mortality_k": 0.1
+    },
+    "cohort": {
+      "jump_rate": 0.006,
+      "f_crit": 0.655
+    },
+    "seeds": [
+      51,
+      52,
+      53
+    ],
+    "K": 300,
+    "years": 170.0,
+    "decay_tau": 80.0
+  }
+}
