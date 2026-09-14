@@ -329,7 +329,8 @@ class FidelityCodec:
     def __init__(self, n_clusters: int = 12, n_cells: int = 60,
                  budget_per_cycle: int = 6, levels: int = 7,
                  consistency_threshold: float = 0.70,
-                 per_cell_archive: bool = True):
+                 per_cell_archive: bool = True,
+                 target_source: str = "archive"):
         self.C = n_clusters
         self.n = n_cells
         self.budget = budget_per_cycle
@@ -340,6 +341,19 @@ class FidelityCodec:
         # of per-cell archive values (destroys boundary-preserving write
         # precision — the hypothesized source of the cliff safety margin).
         self.per_cell_archive = per_cell_archive
+        # D3b (exp17): "archive" — the genomic archive is the reference and
+        # write source (the tower's verified semantics); "anchored" — the
+        # SOMATIC MEMORY (theta_anchor) is the reference and write source
+        # wherever the cluster's memory is internally coherent, with the
+        # genomic archive as fallback for incoherent memories. This is the
+        # biological target-morphology semantics: the remembered pattern IS
+        # the target unless the memory itself is corrupted. Without it,
+        # verified maintenance actively ERASES novel morphologies (they
+        # read 'wrong' against the archive and get repaired to factory
+        # default) — the off-target hazard exp17 measures.
+        if target_source not in ("archive", "anchored"):
+            raise ValueError("target_source must be 'archive' or 'anchored'")
+        self.target_source = target_source
         self.cluster_len = n_cells // n_clusters
         A = np.zeros((n_clusters, n_clusters))
         for i in range(n_clusters - 1):
@@ -404,20 +418,39 @@ class FidelityCodec:
             fail = (cons_frac < self.threshold) | (act_mV > 0.35 * self.span)
             refused_mask = alive & fail     # only alive individuals counted
             verified_mask = alive & ~fail
-            # ---- DETECT wrong domains: consensus read vs the genomic
-            # archive (regional). The consensus read = mean of the two
-            # verified reads where both are readable, single-read fill
-            # otherwise; unreadable clusters cannot be flagged.
+            # ---- DETECT wrong domains: consensus read vs the reference
+            # (regional). The consensus read = mean of the two verified
+            # reads where both are readable, single-read fill otherwise;
+            # unreadable clusters cannot be flagged.
             archive = self._cluster_means(cohort.theta0)             # (C,)
+            anchored = (self.target_source == "anchored"
+                        and hasattr(cohort, "theta_anchor"))
+            if anchored:
+                # D3b: the reference is the somatic memory wherever the
+                # cluster's memory is internally coherent (spread <= half
+                # a level); incoherent memories fall back to the archive.
+                anc = cohort.theta_anchor                       # (K, n)
+                anchor_cm = anc.reshape(K, C, cl).mean(axis=2)  # (K, C)
+                anchor_sd = anc.reshape(K, C, cl).std(axis=2)   # (K, C)
+                mem_ok = anchor_sd <= 0.5 * self.span           # (K, C)
+                ref = np.where(mem_ok, anchor_cm, archive[None, :])
+            else:
+                ref = np.broadcast_to(archive, (K, C))
             read_cons = np.where(both, 0.5 * (obs_a + obs_b),
                                  np.where(read_a, obs_a,
-                                          np.where(read_b, obs_b, archive[None, :])))
-            wrong = readable & (np.abs(read_cons - archive[None, :]) > 0.5 * self.span)
+                                          np.where(read_b, obs_b, ref)))
+            wrong = readable & (np.abs(read_cons - ref) > 0.5 * self.span)
             writable = dead | wrong                                  # (K, C)
             W = writable[:, cluster_of]                              # (K, n)
-            # per-cell archive write values (boundaries preserved);
-            # ablated mode: cluster-mean values (boundaries smeared)
-            if self.per_cell_archive:
+            # per-cell write values (boundaries preserved); ablated mode:
+            # cluster-mean values (boundaries smeared); anchored mode:
+            # per-cell MEMORY values in coherent clusters, archive elsewhere
+            if anchored:
+                write_cells = np.where(
+                    mem_ok[:, cluster_of],
+                    np.broadcast_to(anc, (K, cohort.n)),
+                    np.broadcast_to(cohort.theta0[None, :], (K, cohort.n)))
+            elif self.per_cell_archive:
                 write_cells = np.broadcast_to(cohort.theta0[None, :], (K, cohort.n))
             else:
                 write_cells = np.broadcast_to(

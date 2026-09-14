@@ -118,7 +118,8 @@ class SemanticsCohort(LatchingAgingCohort):
     def __init__(self, *a, death_semantics: str = "stasis",
                  latch: str = "v2", broadcast_gain: float = 3.0,
                  broadcast_tau: float = 0.06, transcript_w: float = 1.0,
-                 k_anchor: float | None = None, **kw):
+                 k_anchor: float | None = None,
+                 protect_written: bool = False, **kw):
         if death_semantics not in DEATH_SEMANTICS:
             raise ValueError(f"death_semantics must be one of {DEATH_SEMANTICS}")
         if latch not in LATCH_MODES:
@@ -138,6 +139,8 @@ class SemanticsCohort(LatchingAgingCohort):
         # (see below).
         self._bcast = None
         self._latch_ready = False
+        self.protect_written = protect_written
+        self._anchor_written = None
         if k_anchor is not None:
             kw["k_anchor"] = k_anchor      # explicit override flows to v1 base
         super().__init__(*a, **kw)
@@ -152,6 +155,16 @@ class SemanticsCohort(LatchingAgingCohort):
         if k_anchor is None and self.latch_mode == "v2":
             self.k_anchor = 0.25   # calibrated: composition x1.000 (exp16 C2)
         self._bcast = np.zeros((self.K, self.n))
+        # TWO-TIER MEMORY (exp17): the exp17 tracker-vs-store finding — a
+        # consensus-tracking memory faithfully maintains DRIFT (boundary
+        # blur propagates inward and the codec maintains whatever the
+        # memory says). Deliberate write events must therefore create a
+        # PROTECTED memory tier: cells written by on_write (clamp protocols,
+        # codec repairs, the novel-morphology write) keep their anchors
+        # until a future deliberate write or a regeneration changes them —
+        # Pezzulo & Levin 2021's bistable somatic memories. The unprotected
+        # tier remains the consensus tracker for never-written cells.
+        self._anchor_written = np.zeros((self.K, self.n), bool)
         self._sem_ready = True
         # ledger bookkeeping (information carried by memory vs state)
         self.death_events = 0
@@ -186,18 +199,25 @@ class SemanticsCohort(LatchingAgingCohort):
         gap_frac = np.clip(g / self.p.g0, 0.0, 1.0)[:, None]
         dz_eff = self.deadzone * (1.0 - gap_frac)
         k_eff = self.k_anchor * (1.0 - gap_frac)
-        healthy = ~self.senesced
+        pin_ok = ~self.senesced
+        # two-tier memory: written cells' anchors do NOT track consensus
+        # (protected tier), but the pin still applies — restoring theta
+        # toward the protected anchor is exactly what holds a written
+        # pattern against slow collective erosion
+        track_ok = pin_ok if not (self.protect_written
+                                  and self._anchor_written is not None) \
+            else pin_ok & ~self._anchor_written
         dev = cons - self.theta_anchor                            # collective
-        far = (np.abs(dev) > dz_eff) & healthy
+        far = (np.abs(dev) > dz_eff) & track_ok
         decay_a = np.exp(-self.alpha_latch * dt)
         new_dev = np.where(far, dev * decay_a, dev)
-        # frozen anchors for senesced cells: the anchor they died holding
+        # frozen anchors for senesced + protected cells
         self.theta_anchor = np.where(
-            healthy, cons - new_dev, self.theta_anchor)
+            track_ok, cons - new_dev, self.theta_anchor)
         # pin: PRIVATE deviation from the (possibly updated) anchor shrinks
         decay_k = np.exp(-k_eff * dt)
         self.theta = np.where(
-            healthy,
+            pin_ok,
             self.theta_anchor + (self.theta - self.theta_anchor) * decay_k,
             self.theta)
 
@@ -213,6 +233,24 @@ class SemanticsCohort(LatchingAgingCohort):
         # senesced cells are already pinned; only living tissue is driven
         self.V = np.where(self.senesced, self.V, self.V + dt * drive)
         self._bcast = self._bcast * np.exp(-dt / self.broadcast_tau)
+
+    # ----------------------------------------------------- write semantics
+    def on_write(self, do: np.ndarray) -> None:
+        """Codec-write hook: a maintenance write is a reprogramming event —
+        the anchor latches to the written value (exp11 semantics; the
+        biophysics of a sustained forced Vmem rewrite). With
+        protect_written, the written cells join the PROTECTED memory tier."""
+        if do.any():
+            self.theta_anchor = np.where(do, self.theta, self.theta_anchor)
+            if self.protect_written and self._anchor_written is not None:
+                self._anchor_written = self._anchor_written | do
+
+    def regenerate(self, jitter: float = 1.0, hazard: float = 0.01) -> None:
+        """Re-derivation resets BOTH memory tiers (the planarian cycle:
+        theta, anchors, and the write-protection ledger are all somatic)."""
+        super().regenerate(jitter=jitter, hazard=hazard)
+        if self.protect_written and self._anchor_written is not None:
+            self._anchor_written = np.zeros((self.K, self.n), bool)
 
     # ---------------------------------------------------------- death events
     def step(self, dt: float, g_override: np.ndarray | None = None,

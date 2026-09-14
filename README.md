@@ -187,6 +187,36 @@ grounded in the 2026-09 literature sweep in `research/d3_sweep/`):
 Figure: `results/figures/fig17_d3_semantics.png`. Full ledger:
 `docs/FALSIFICATION.md` Level 5.
 
+## D3b (exp17): the anchored target — keeping a written body plan alive
+
+The D3 answer left one gap: the codec is archive-referenced, so a novel
+morphology (existing only in somatic memory) reads "wrong" every cycle and
+gets repaired to factory default — verified maintenance actively erases
+engineered morphologies (I_recoverable@60: 0.100 vs 0.584 unmaintained;
+and the erasure arm's median lifespan RISES — the hazard is informational,
+not mortal). The fix is the biological target-morphology semantics, built
+as a THREE-TIER memory (`FidelityCodec(target_source="anchored")` +
+`protect_written=True`):
+
+1. **Protected tier** — deliberate writes (clamp protocols, codec repairs)
+   mark their cells; those anchors do not track consensus: bistable
+   somatic memories (Pezzulo & Levin 2021). Result: the written pattern
+   holds at **0.91 recoverable at age 60, 0.90 at age 100**, with median
+   lifespan +20% over no maintenance — a novel body plan survives a
+   century of aging, death broadcasts, and its own maintenance cycles.
+2. **Consensus tier** — never-written cells' anchors track the local
+   collective (the D3 redundancy carrier).
+3. **Genomic archive** — the fallback when a cluster's memory is
+   internally incoherent (corrupted), preserving the exp6/exp8 verified
+   semantics exactly.
+
+Honest negatives on the way (FALSIFICATION.md D5-D8): a tracker memory
+referenced by its own codec faithfully maintains DRIFT (0.126 — the
+feedback-loop trap), and a coherent wrong memory is maintained with full
+conviction (0.000 — memory correctness is load-bearing, E3's analog).
+
+Figure: `results/figures/fig18_anchored_target.png`.
+
 ## The no-wetlab validation layer
 
 `cultivation/validation/vmem_inference.py` connects the public planarian

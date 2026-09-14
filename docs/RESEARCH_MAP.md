@@ -332,9 +332,16 @@ THREE redundant carriers: the collective bioelectric state, the frozen
 anchors of senesced cells (stasis, +2.5% recoverable information vs erasure),
 and the genomic archive. For NOVEL patterns (not in the archive) the carriers
 are only the first two — which is why novel morphologies need active
-maintenance (exp11/exp12), and why the D3b next step (codec writes sourced
-from the latched target, not the genomic archive) is the load-bearing upgrade
-for novel-pattern longevity.
+maintenance (exp11/exp12). **D3b (exp17) closed this gap**: the codec's
+write source is now the memory itself (`target_source="anchored"`) with a
+protected tier for deliberate writes — the written pattern holds at 0.91
+recoverable at 60 / 0.90 at 100 with +20% median lifespan. The full arc is
+closed: a novel body plan can be WRITTEN (exp11), survives cell death
+(exp16: distributed redundancy), and is MAINTAINED for a century (exp17:
+the anchored target). The remaining honest caveats: the tracker-tier trap
+(memory-referenced maintenance of a drifting memory maintains the drift —
+protection must be deliberate-write-gated), and wrong memories are
+maintained with full conviction (correctness is load-bearing).
 
 **The bystander effect is real in the model — and demographically silent.**
 The broadcast semantics (the literature's mechanism: injury depolarization

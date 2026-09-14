@@ -181,8 +181,70 @@ def main() -> int:
     test_ledger_metrics()
     test_v1_arm_matches_original()
     test_semantics_registry()
+    test_anchored_codec_writes_memory()
+    test_protected_tier_holds()
     print("all D3 semantics tests passed\n")
     return 0
+
+
+
+
+def test_anchored_codec_writes_memory():
+    """D3b: the anchored codec restores a senesced cell to its REMEMBERED
+    (novel) value, not the genomic archive value."""
+    from cultivation.bioelectric.fidelity import FidelityCodec
+    ch = _cohort("stasis")
+    # write a novel pattern into one cluster's cells
+    zone = slice(10, 15)
+    ch.theta[:, zone] = -10.0
+    ch.V[:, zone] = -10.0
+    do = np.zeros((ch.K, ch.n), bool)
+    do[:, zone] = True
+    ch.on_write(do)
+    # senesce those cells (theta/V corrupted by pinning)
+    ch.senesced |= do
+    codec = FidelityCodec(n_cells=24, budget_per_cycle=24, levels=7,
+                          target_source="anchored")
+    preset = {"meas_noise_mV": 1.0, "dropout": 0.0, "symbol_err": 0.0}
+    codec.maintain(ch, preset, mode="codec")
+    lv = quantize(ch.theta[:, 12], ch.levels)
+    assert np.all(lv == quantize(-10.0, ch.levels))   # memory, not archive
+    # and the archive codec would have restored -50 (theta0)
+    ch2 = _cohort("stasis")
+    ch2.theta[:, zone] = -10.0
+    ch2.V[:, zone] = -10.0
+    do2 = np.zeros((ch2.K, ch2.n), bool)
+    do2[:, zone] = True
+    ch2.on_write(do2)
+    ch2.senesced |= do2
+    codec2 = FidelityCodec(n_cells=24, budget_per_cycle=24, levels=7,
+                           target_source="archive")
+    codec2.maintain(ch2, preset, mode="codec")
+    lv2 = quantize(ch2.theta[:, 12], ch2.levels)
+    # archive semantics: restored to the GENOMIC value (theta0[12] = -20,
+    # the region-1 level) — the novel -10 pattern erased
+    assert np.all(lv2 == quantize(ch2.theta0[12], ch2.levels))
+    assert not np.any(lv2 == quantize(-10.0, ch2.levels))
+    print("  anchored codec: writes the memory, archive writes theta0: OK")
+
+
+def test_protected_tier_holds():
+    """The protected memory tier does not track consensus drift after a
+    deliberate write (Pezzulo & Levin 2021 bistability)."""
+    ch = _cohort("stasis", protect_written=True)
+    zone = slice(10, 15)
+    ch.theta[:, zone] = -10.0
+    ch.V[:, zone] = -10.0
+    do = np.zeros((ch.K, ch.n), bool)
+    do[:, zone] = True
+    ch.on_write(do)
+    assert ch._anchor_written[:, 12].all()
+    g = np.full(ch.K, ch.p.g0)          # healthy junctions: tracker is on
+    for _ in range(60):
+        ch._integrate(0.25, g, np.zeros(ch.K))
+    lv = quantize(ch.theta_anchor[:, 12], ch.levels)
+    assert np.all(lv == quantize(-10.0, ch.levels))   # held, not tracked
+    print("  protected tier: written anchors hold under consensus drift: OK")
 
 
 if __name__ == "__main__":
