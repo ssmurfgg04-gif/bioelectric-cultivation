@@ -9,6 +9,8 @@ def main() -> int:
     full = "--full" in sys.argv
     from tests import test_units
     test_units.main()
+    from tests import test_fidelity
+    test_fidelity.main()
     if full:
         print("\n--- falsification suite (experiments) ---\n")
         from tests import test_falsification
