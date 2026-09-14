@@ -1,0 +1,164 @@
+[
+    {
+        "Name": "multi_pattern_maintenance",
+        "Title": "Multi-Pattern Maintenance: Resource Allocation Strategies for Competing Bioelectric Memories",
+        "Experiment": "Modify the experiment to maintain multiple distinct patterns in different body regions simultaneously. Create 3 distinct novel patterns in different zones: (1) a stable pattern with low jump susceptibility, (2) a volatile pattern with high jump susceptibility, and (3) a high-turnover pattern with elevated cell death probability. Implement a resource allocation system in the adaptive_policy arm that must distribute a limited total maintenance budget among these competing patterns. Test allocation strategies: (1) fixed priority (e.g., always prioritize pattern A over B over C), (2) dynamic allocation based on current degradation severity (more resources to the most degraded pattern), (3) balanced allocation (equal resources to all patterns), and (4) critical threshold-based (allocate all resources to any pattern below its critical fidelity threshold). Measure individual pattern recoverability at ages 60 and 100, weighted overall pattern integrity (weighted by pattern importance), median lifespan, and resource allocation efficiency. Test the hypothesis that dynamic allocation strategies will outperform fixed allocation strategies in maintaining overall pattern integrity under resource constraints.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 9,
+        "novel": true
+    },
+    {
+        "Name": "adaptive_maintenance_cadence",
+        "Title": "Adaptive Maintenance Cadence: Age-Dependent Checkup Schedules for Century-Scale Pattern Memory",
+        "Experiment": "Vary the maintenance cadence schedule in the adaptive_policy arm: fixed interval, interval growing linearly with age (relaxed geriatric schedule), interval shrinking with age (dense geriatric schedule), and error-triggered maintenance (only act when measured pattern error exceeds a threshold). Compare I_recoverable at 60 and 100, median lifespan, and total restoration budget spent across schedules.",
+        "Interestingness": 8,
+        "Feasibility": 9,
+        "Novelty": 7,
+        "novel": true
+    },
+    {
+        "Name": "budget_severity_allocation",
+        "Title": "Error-Severity-Weighted Budget Allocation in Pattern Maintenance",
+        "Experiment": "Modify the codec budget allocation so that maintenance effort is allocated proportional to detected error severity (cluster deviation from the anchored memory) instead of uniformly. Sweep total budget from 2 to 12 cells per cycle and compare fidelity/lifespan frontiers against uniform allocation.",
+        "Interestingness": 7,
+        "Feasibility": 7,
+        "Novelty": 6,
+        "novel": true
+    },
+    {
+        "Name": "write_timing_robustness",
+        "Title": "Write Timing and the Robustness of Engineered Morphologies to Perturbed Physics",
+        "Experiment": "Sweep the write age (5, 14.5, 25) and the gap between write and maintenance start. Evaluate each policy under both nominal physics and a perturbed regime (higher jump rate, shifted f_crit) to test whether early-written patterns with delayed maintenance transfer better than late-written ones.",
+        "Interestingness": 8,
+        "Feasibility": 8,
+        "Novelty": 7,
+        "novel": true
+    },
+    {
+        "Name": "amplitude_frequency_tradeoff",
+        "Title": "Maintenance Amplitude-Frequency Tradeoff in Century-Scale Bioelectric Pattern Memory",
+        "Experiment": "Implement a maintenance amplitude parameter as a scaling factor (0.5-2.0) applied to correction magnitudes. Test six configurations: (1) high amplitude/low frequency (2.0\u00d7, 2-year intervals), (2) medium amplitude/medium frequency (1.0\u00d7, 1-year intervals), (3) low amplitude/high frequency (0.5\u00d7, 6-month intervals), (4) age-varying (increasing amplitude with age), (5) error-dependent amplitude (higher amplitude for larger deviations), and (6) current baseline. Measure pattern fidelity at ages 60 and 100, median lifespan, and resource consumption. Examine whether the amplitude-frequency landscape forms a broad plateau (like the known hold-optimum landscape) or contains sharp optimal regions. Test robustness under perturbed physics and identify the most efficient maintenance protocol for century-scale pattern memory.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "fidelity_lifespan_tradeoff",
+        "Title": "Balancing Pattern Fidelity and Lifespan: A Multi-Objective Optimization Approach to Maintenance Policy Design",
+        "Experiment": "Implement a multi-objective maintenance policy that allocates resources between pattern maintenance and general cellular health based on different weighting schemes. Create variants of the adaptive_policy arm with the following strategies: (1) fidelity-only (current baseline), (2) balanced (50% of budget for pattern fidelity, 50% for general health), (3) health-prioritized (25% for fidelity, 75% for health), and (4) dynamic allocation (adjust ratio based on age - more fidelity focus in early life, more health focus in later life). For general health, allocate resources to reduce cell death probability and jump frequency. Measure I_recoverable at ages 60 and 100, median lifespan, and resource allocation patterns. Generate Pareto frontiers to identify optimal tradeoff points and test the hypothesis that a balanced approach outperforms fidelity-only strategies in terms of overall organismal fitness.",
+        "Interestingness": 9,
+        "Feasibility": 7,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "gradient_maintenance",
+        "Title": "Gradient Maintenance: Spatial Resource Distribution in Century-Scale Pattern Memory",
+        "Experiment": "Implement a gradient-based maintenance strategy where maintenance intensity decreases linearly from edge to center. Create a weight map where cells at the edge of the pattern zone receive 2\u00d7 the maintenance weight of cells at the center. Compare this against the current baseline (uniform maintenance) by measuring I_recoverable at ages 60 and 100, median lifespan, and resource allocation efficiency. Test the hypothesis that prioritizing edge cells creates a 'protective shell' that prevents pattern erosion from propagating inward, thereby extending overall pattern integrity with equivalent resource expenditure.",
+        "Interestingness": 8,
+        "Feasibility": 9,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "maintenance_history_feedback",
+        "Title": "Maintenance History Feedback: Tracking Intervention Patterns to Enhance Century-Scale Pattern Stability",
+        "Experiment": "Implement a maintenance history tracking system that records the frequency and location of all maintenance interventions. Create variants of the adaptive_policy arm: (1) history-weighted budget (allocate more resources to regions with higher maintenance frequency), (2) stability-schedule (increase maintenance cadence in regions with frequent intervention history), and (3) reset-policy (periodically reset maintenance history to prevent over-weighting certain regions). Compare these against baseline maintenance by measuring I_recoverable at ages 60 and 100, median lifespan, and resource allocation efficiency. Test whether regions with maintenance history become more stable or develop unique maintenance requirements.",
+        "Interestingness": 8,
+        "Feasibility": 8,
+        "Novelty": 9,
+        "novel": true
+    },
+    {
+        "Name": "adaptive_pattern_target",
+        "Title": "Adaptive Pattern Target: Dynamic Maintenance with Evolving Reference Patterns",
+        "Experiment": "Implement a new maintenance policy in the adaptive_policy arm that uses an evolving target pattern instead of a static reference. The policy would: (1) track accumulated deviations from the original pattern over time, (2) periodically update the target pattern to be a weighted average of the original pattern and the current state (with the weight controlled by an 'adaptation_rate' parameter), and (3) maintain against this evolving target. Test adaptation rates from 0.0 (static) to 1.0 (fully adaptive) and update frequencies from 1 to 10 years. Compare against baseline maintenance by measuring I_recoverable at ages 60 and 100 (relative to both original and current targets), median lifespan, and resource consumption. Evaluate whether allowing the target to adapt to accumulated deviations can improve long-term stability while preserving pattern identity.",
+        "Interestingness": 8,
+        "Feasibility": 9,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "regional_maintenance_specialization",
+        "Title": "Regional Maintenance Specialization: Adapting to Localized Bioelectric Heterogeneity in Century-Scale Pattern Memory",
+        "Experiment": "Implement controlled regional heterogeneity within the pattern zone by creating three distinct sub-regions: (1) edge regions with 2\u00d7 higher jump susceptibility, (2) center regions with 2\u00d7 higher turnover rates, and (3) mixed regions with balanced properties. Test two maintenance policies: uniform maintenance (current baseline) and specialized maintenance that allocates resources proportionally to regional vulnerability. Measure both overall and regional I_recoverable at ages 60 and 100, median lifespan, and resource allocation efficiency. Test the hypothesis that specialized maintenance outperforms uniform allocation by addressing region-specific vulnerabilities while maintaining overall pattern integrity.",
+        "Interestingness": 8,
+        "Feasibility": 8,
+        "Novelty": 7,
+        "novel": true
+    },
+    {
+        "Name": "temporal_pattern_maintenance",
+        "Title": "Temporal Pattern Maintenance: Identifying Degradation 'Sentinels' for Century-Scale Bioelectric Pattern Memory",
+        "Experiment": "Implement a maintenance system that identifies and prioritizes 'sentinel' cells - those that consistently show early signs of pattern degradation across multiple maintenance cycles. The system will: (1) track which cells consistently deviate first in each maintenance cycle, (2) maintain a 'sentinel score' for each cell based on its tendency to be among the first to deviate, (3) allocate maintenance resources proportionally to these sentinel scores (higher priority for cells that typically degrade first). Test different scoring methods (e.g., frequency of early deviation, magnitude of early deviation) and allocation strategies. Compare against baseline maintenance by measuring I_recoverable at ages 60 and 100, median lifespan, and resource consumption efficiency. Evaluate whether focusing on degradation 'sentinels' can improve pattern stability with equivalent resources by addressing issues before they propagate to other cells.",
+        "Interestingness": 8,
+        "Feasibility": 8,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "pattern_health_coupling",
+        "Title": "Pattern-Health Coupling: Synergistic Maintenance for Century-Scale Bioelectric Pattern Integrity and Organismal Longevity",
+        "Experiment": "Implement a maintenance coupling approach in the adaptive_policy arm where pattern maintenance interventions simultaneously promote general cellular health through three mechanisms: (1) membrane stabilization (extending target pattern correction to stabilize neighboring cells), (2) stress reduction (reducing cell death probability in maintained regions), and (3) jump suppression (decreasing state jump frequency during maintenance). Test four coupling strengths: (1) pure pattern maintenance (baseline), (2) weak coupling (15% of resources allocated to health effects), (3) moderate coupling (30% of resources), and (4) strong coupling (50% of resources). Measure I_recoverable at ages 60 and 100, median lifespan, and resource allocation patterns. Test the hypothesis that optimal coupling between pattern maintenance and health promotion creates synergistic benefits that exceed what either approach can achieve alone.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "maintenance_degradation_feedback",
+        "Title": "Maintenance Degradation Feedback: Pattern-Dependent Efficacy in Century-Scale Bioelectric Memory",
+        "Experiment": "Implement a feedback mechanism where maintenance effectiveness decreases as pattern degradation increases in the adaptive_policy arm. The maintenance precision will be inversely proportional to the current pattern deviation from target. Test four variants: (1) robust maintenance (minimal efficacy decrease with degradation), (2) moderate maintenance (moderate efficacy decrease), (3) sensitive maintenance (significant efficacy decrease), and (4) baseline (current system). For each variant, measure pattern fidelity at ages 60 and 100, median lifespan, maintenance efficacy over time (as a function of current deviation), and maintenance resource consumption. Track the relationship between pattern degradation and maintenance effectiveness. Test the hypothesis that there exists a critical deviation threshold beyond which maintenance becomes ineffective, creating a potential point of no return for pattern memory.",
+        "Interestingness": 9,
+        "Feasibility": 9,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "adaptive_environmental_resilience",
+        "Title": "Adaptive Environmental Resilience: Maintenance Policies Under Biologically Realistic Stress Cycles",
+        "Experiment": "Implement biologically realistic environmental stress cycles that increase noise, jump frequency, and cell death probability during stress periods. Develop an adaptive maintenance policy that adjusts its cadence and budget based on environmental conditions: increasing maintenance during high-stress periods and reducing it during recovery. Test three stress scenarios: (1) regular seasonal cycles, (2) irregular stress events with varying intensity, and (3) gradually increasing environmental stress (aging acceleration). For each scenario, compare the adaptive policy against a static maintenance baseline. Measure pattern fidelity at ages 60 and 100, median lifespan, resource consumption efficiency, and recovery time after stress events. Test the hypothesis that adaptive maintenance policies that respond to environmental conditions significantly outperform static policies in maintaining pattern integrity over a century of fluctuating conditions.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "predictive_maintenance",
+        "Title": "Predictive Maintenance: Anticipating Pattern Degradation for Century-Scale Bioelectric Memory",
+        "Experiment": "Implement a predictive maintenance system that forecasts pattern degradation trends to anticipate when maintenance will be needed. The system will track the rate of pattern degradation over time using a simple exponential moving average. When the predicted degradation rate indicates that a critical threshold (e.g., I_recoverable < 0.7) will be reached within a lookahead period (e.g., 5 years), maintenance will be triggered. Test different prediction horizons (3, 5, 7 years) and critical thresholds (0.7, 0.6, 0.5) to find the optimal balance between proactive intervention and resource efficiency. Compare against baseline policies (fixed cadence, error-triggered, etc.) by measuring I_recoverable at ages 60 and 100, median lifespan, resource consumption efficiency, and number of maintenance interventions. Test the hypothesis that predictive maintenance can maintain higher pattern fidelity with equivalent or fewer resources than reactive approaches.",
+        "Interestingness": 8,
+        "Feasibility": 9,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "personalized_maintenance_profiles",
+        "Title": "Personalized Maintenance Profiles: Rule-Based Adaptation to Individual Pattern Degradation Characteristics",
+        "Experiment": "Implement a simplified personalization system in the adaptive_policy arm that classifies individuals into 3-5 maintenance profiles based on their early-life degradation patterns. The system will: (1) track pattern degradation rate and stability over the first 25 years, (2) classify individuals into profiles (e.g., 'stable', 'moderate', 'unstable', 'oscillating') using rule-based thresholds, and (3) assign maintenance strategies optimized for each profile (e.g., higher frequency/budget for unstable profiles, lower for stable). Test different classification thresholds and update frequencies. Compare against baseline maintenance by measuring I_recoverable at ages 60 and 100, median lifespan, and resource consumption efficiency. Evaluate whether personalization improves outcomes by adapting to individual differences in bioelectric system stability.",
+        "Interestingness": 8,
+        "Feasibility": 9,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "memory_enhancement_protocols",
+        "Title": "Memory Enhancement Protocols: From Pattern Maintenance to Active Bioelectric Memory Reinforcement",
+        "Experiment": "Implement a new class of proactive maintenance protocols that not only preserve patterns but actively enhance them over time. Modify the adaptive_policy arm to include three enhancement strategies: (1) periodic consolidation - every 10 years, briefly increase the target amplitude by 20% during maintenance, (2) gradual reinforcement - linearly increase target amplitude from WRITE_VAL to 1.5\u00d7WRITE_VAL over the lifespan, and (3) memory potentiation - after each maintenance cycle, increase the stability of corrected cells by reducing their jump probability for 5 years. Include a control condition where enhancement is applied to a random pattern. Test these against baseline maintenance and measure I_recoverable at ages 60 and 100, median lifespan, pattern 'strength' (resistance to deviation), and resource consumption efficiency. Explore whether enhanced patterns show better transfer to perturbed physics regimes and whether the benefits of enhancement justify the additional resource costs.",
+        "Interestingness": 9,
+        "Feasibility": 8,
+        "Novelty": 9,
+        "novel": true
+    },
+    {
+        "Name": "adaptive_pattern_evolution",
+        "Title": "Adaptive Pattern Evolution: Distinguishing Plasticity from Degradation in Century-Scale Bioelectric Memory",
+        "Experiment": "Implement a pattern evolution detection system in the adaptive_policy arm that tracks cell state stability over time. For each cell, maintain a 'stability score' (0-1) based on how consistently it maintains its state over the last 5 maintenance cycles. During maintenance, cells are categorized: (1) stable deviations (stability score > 0.8 and deviation magnitude > 2 levels) - maintain current state, (2) unstable deviations (stability score < 0.3) - restore toward original target, (3) minor deviations (stability score > 0.5 but deviation < 2 levels) - no action. Test three sensitivity thresholds: low (only major changes considered adaptive), medium (moderate changes), high (minor changes). Compare against baseline maintenance by measuring: (1) fidelity to original target at ages 60/100, (2) fidelity to current target (allowing adaptation), (3) median lifespan, and (4) resource efficiency. Test whether adaptive patterns show better transfer to perturbed physics regimes.",
+        "Interestingness": 9,
+        "Feasibility": 7,
+        "Novelty": 9,
+        "novel": true
+    }
+]
