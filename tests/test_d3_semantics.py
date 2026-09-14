@@ -183,6 +183,7 @@ def main() -> int:
     test_semantics_registry()
     test_anchored_codec_writes_memory()
     test_protected_tier_holds()
+    test_multi_zone_ledgers()
     print("all D3 semantics tests passed\n")
     return 0
 
@@ -245,6 +246,31 @@ def test_protected_tier_holds():
     lv = quantize(ch.theta_anchor[:, 12], ch.levels)
     assert np.all(lv == quantize(-10.0, ch.levels))   # held, not tracked
     print("  protected tier: written anchors hold under consensus drift: OK")
+
+
+
+def test_multi_zone_ledgers():
+    """M17: pattern_ledgers reports per-pattern + overall/min for
+    competing memories (the multi-pattern API the AI-Scientist trial
+    needed)."""
+    ch = _cohort("stasis", protect_written=True)
+    za = np.zeros(ch.n, bool); za[10:15] = True      # pattern A zone
+    zb = np.zeros(ch.n, bool); zb[20:24] = True      # pattern B zone
+    ref_a = ch.theta0.copy(); ref_a[za] = -10.0
+    ref_b = ch.theta0.copy(); ref_b[zb] = -55.0
+    # write A everywhere in its zone, B nowhere (an unwritten memory)
+    ch.theta[:, za] = -10.0
+    ch.V[:, za] = -10.0
+    do = np.zeros((ch.K, ch.n), bool)
+    do[:, za] = True
+    ch.on_write(do)
+    out = ch.pattern_ledgers([("A", ref_a, za), ("B", ref_b, zb)])
+    assert 0.9 <= out["A"]["I_recoverable"] <= 1.0, out["A"]
+    assert out["B"]["I_recoverable"] < 0.5, out["B"]   # never written
+    assert out["overall"]["I_recoverable"] == float(
+        (out["A"]["I_recoverable"] + out["B"]["I_recoverable"]) / 2)
+    assert out["overall"]["min_I_recoverable"] == out["B"]["I_recoverable"]
+    print("  multi-zone ledgers (A held, B unwritten, overall+min): OK")
 
 
 if __name__ == "__main__":

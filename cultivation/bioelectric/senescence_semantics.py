@@ -329,6 +329,25 @@ class SemanticsCohort(LatchingAgingCohort):
             "n_cells": int(keep.sum()),
         }
 
+    def pattern_ledgers(self, specs: list) -> dict:
+        """Multi-pattern ledger (M17: the multi-zone API the AI-Scientist
+        trial exposed as missing).
+
+        specs: list of (name, ref, zone) — ref None means the genomic
+        archive theta0, zone None means all cells. Returns
+        {name: <pattern_ledger dict>} plus 'overall': the unweighted
+        mean I_recoverable across patterns, and 'min': the worst-held
+        pattern (the competing-memory bottleneck).
+        """
+        out = {}
+        for name, ref, zone in specs:
+            out[name] = self.pattern_ledger(ref=ref, zone=zone)
+        if out:
+            irs = [v["I_recoverable"] for v in out.values()]
+            out["overall"] = {"I_recoverable": float(np.mean(irs)),
+                              "min_I_recoverable": float(np.min(irs))}
+        return out
+
     def pattern_centroid(self, level: int, zone: np.ndarray) -> float:
         """Mean distance of ALL anchor-carriers of the given novel level
         from the zone center — the spatial-migration signature of
