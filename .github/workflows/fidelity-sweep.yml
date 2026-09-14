@@ -35,7 +35,8 @@ jobs:
           python -m experiments.exp8_sweep \
             --cell ${{ matrix.cell }} \
             --out results/sweep/cell_${{ matrix.cell }}.json \
-            --K ${{ github.event.inputs.cohort_size || '250' }}
+            --K ${{ github.event.inputs.cohort_size || '250' }} \
+            --years ${{ github.event.inputs.years || '170' }}
         timeout-minutes: 30
       - uses: actions/upload-artifact@v4
         if: always()

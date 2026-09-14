@@ -80,9 +80,14 @@ def build_cells() -> list[dict]:
     return cells
 
 
-def run_cell(cell: dict, seeds=SEEDS, K: int = 250, years: float = 130.0) -> dict:
+def run_cell(cell: dict, seeds=SEEDS, K: int = 250, years: float = 170.0) -> dict:
     med: dict[str, list[float]] = {}
     cohort_kw = {}
+    # cohort-constructor axes (NOT AgingParams): jump_rate, f_crit, levels
+    if "jump_rate" in cell:
+        cohort_kw["jump_rate"] = cell["jump_rate"]
+    if "f_crit" in cell:
+        cohort_kw["f_crit"] = cell["f_crit"]
     if cell.get("levels", 7) != 7:
         cohort_kw["levels"] = cell["levels"]
     for seed in seeds:
@@ -90,7 +95,8 @@ def run_cell(cell: dict, seeds=SEEDS, K: int = 250, years: float = 130.0) -> dic
             r = run_condition(
                 cond, seed=seed, K=K, years=years,
                 channel_factor=cell.get("channel_factor", 1.0),
-                regime=cell["regime"], cohort_kw=cohort_kw or None)
+                regime=cell["regime"],
+                cohort_kw=cohort_kw or None)
             med.setdefault(cond, []).append(r["median"])
     m = {c: float(np.mean(v)) for c, v in med.items()}
     out = {
@@ -120,7 +126,7 @@ def main() -> None:
     ap.add_argument("--cell", type=int, required=True, help="cell index 0-23")
     ap.add_argument("--out", type=str, required=True)
     ap.add_argument("--K", type=int, default=250)
-    ap.add_argument("--years", type=float, default=130.0)
+    ap.add_argument("--years", type=float, default=170.0)
     args = ap.parse_args()
 
     setup()
