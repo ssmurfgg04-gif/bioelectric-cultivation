@@ -29,6 +29,10 @@ from __future__ import annotations
 
 import numpy as np
 
+# physiological bounds (Nernst/reversal limits) — see step()
+V_PHYS_MIN = -85.0
+V_PHYS_MAX = 5.0
+
 
 def line_adjacency(n: int, k: int = 1, ring: bool = False) -> np.ndarray:
     """Binary adjacency of a 1D chain (k neighbors each side), optionally ring."""
@@ -154,7 +158,15 @@ class BioElectricCollective:
 
     # ------------------------------------------------------------------ steps
     def step(self, dt: float = 0.1) -> None:
-        """One Euler-Maruyama step of the coupled dynamics."""
+        """One Euler-Maruyama step of the coupled dynamics.
+
+        V and theta are held inside physiological bounds (Nernst/reversal-
+        potential limits: no real membrane sustains |V| beyond ~100 mV).
+        The bounds are INERT for every established experiment (exp1-11
+        dynamics live well inside [-70, -10]); they only clip the
+        pathological excursions a sustained artificial efferent (exp12's
+        mind-body interface) can otherwise integrate without limit.
+        """
         coupling = self.G @ self.V - self.V * self.deg
         dV = self.gamma * (self.theta - self.V) + coupling
         noise = self.noise_std * np.sqrt(dt) * self.rng.standard_normal(self.n)
@@ -170,8 +182,9 @@ class BioElectricCollective:
                 dtheta[active] += rate * (target - self.theta[active])
 
         drift = self.theta_drift * np.sqrt(dt) * self.rng.standard_normal(self.n)
-        self.theta = self.theta + dt * dtheta + drift
-        self.V = Vn
+        self.theta = np.clip(self.theta + dt * dtheta + drift,
+                             V_PHYS_MIN, V_PHYS_MAX)
+        self.V = np.clip(Vn, V_PHYS_MIN - 5.0, V_PHYS_MAX + 5.0)
 
         if self.clamps:
             idx = np.fromiter(self.clamps.keys(), dtype=int)
@@ -192,7 +205,7 @@ class BioElectricCollective:
                 if t % record_every == 0 and k < n_rec:
                     rec[k] = self.V
                     k += 1
-            return rec
+            return rec[:k]  # trim any unfilled tail rows
         for _ in range(steps):
             self.step(dt)
         return None

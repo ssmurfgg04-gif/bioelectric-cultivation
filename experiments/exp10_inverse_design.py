@@ -79,6 +79,12 @@ def _fitness_arg(u):
     return -float(np.mean([r["median"] for r in rs]))
 
 
+def _eval_task(task):
+    """Pool worker: (u, seeds, kw) -> eval_policy_seeds result."""
+    u, seeds, kw = task
+    return eval_policy_seeds(np.asarray(u, float), seeds, **kw)
+
+
 def main(stage: str = "all") -> dict:
     """Stages: 'search' (CEM + checkpoint), 'eval' (held-out + report), 'all'.
     Split so long runs fit within tool timeouts; state persists in
@@ -197,11 +203,65 @@ def main(stage: str = "all") -> dict:
     }
     # paired design: every policy evaluated on the same seeds as the none
     # control; the population-level frailty draw cancels in the ratio.
-    none_by_seed = {s: eval_policy(np.array(NONE_U), seed=s, K=HELDOUT_K,
-                                    **BASE_KW)["median"] for s in HELDOUT_SEEDS}
+    # Batched through the process pool to fit wall-clock budgets.
+    pert_kw = dict(regime=PERTURBED_REGIME, target0=fidelity_target,
+                   age_preset=age_preset, cohort_kw=PERTURBED_COHORT)
+    free_kw = dict(regime=REGIME, target0=fidelity_target, age_preset=age_preset,
+                   h_proc=0.0)
+
+    tasks = []  # (key, u, seeds, kw)
+    for s in HELDOUT_SEEDS:
+        tasks.append((f"none@{s}", NONE_U, (s,), BASE_KW))
+    for name, u in hands.items():
+        tasks.append((f"{name}@base", u, HELDOUT_SEEDS,
+                      dict(BASE_KW, K=HELDOUT_K)))
+    tasks.append(("disc@base", discovered_u, HELDOUT_SEEDS,
+                  dict(BASE_KW, K=HELDOUT_K)))
+    tasks.append(("disc@pert", discovered_u, HELDOUT_SEEDS,
+                  dict(pert_kw, K=HELDOUT_K)))
+    tasks.append(("disc@free", discovered_u, HELDOUT_SEEDS,
+                  dict(free_kw, K=HELDOUT_K)))
+    for s in HELDOUT_SEEDS:
+        tasks.append((f"none_pert@{s}", NONE_U, (s,), pert_kw))
+    for name, u in hands.items():
+        tasks.append((f"{name}@pert", u, HELDOUT_SEEDS,
+                      dict(pert_kw, K=HELDOUT_K)))
+    tasks.append(("besthand@free", hands["codec"], HELDOUT_SEEDS,
+                  dict(free_kw, K=HELDOUT_K)))
+    ref = np.array(HAND_CODEC, float)
+    disc = np.asarray(discovered_u, float)
+    for i, name in enumerate(POLICY_NAMES):
+        u_ab = disc.copy(); u_ab[i] = ref[i]
+        tasks.append((f"ablate:{name}", u_ab, HELDOUT_SEEDS,
+                      dict(BASE_KW, K=HELDOUT_K)))
+        u_so = ref.copy(); u_so[i] = disc[i]
+        tasks.append((f"solo:{name}", u_so, HELDOUT_SEEDS,
+                      dict(BASE_KW, K=HELDOUT_K)))
+
+    print(f"  evaluating {len(tasks)} policy-seed tasks (pool of 2, chunked)...")
+    eval_results = dict(state.get("eval_results", {}))
+    pending = [t for t in tasks if t[0] not in eval_results]
+    CHUNK = 8
+    for c0 in range(0, len(pending), CHUNK):
+        chunk = pending[c0: c0 + CHUNK]
+        with Pool(2) as pool:
+            chunk_results = pool.map(
+                _eval_task,
+                [(list(map(float, np.asarray(u, float))), list(seeds), kw)
+                 for _, u, seeds, kw in chunk])
+        for t, r in zip(chunk, chunk_results):
+            eval_results[t[0]] = r
+        state["eval_results"] = eval_results
+        with open(STATE_PATH, "w") as f:
+            json.dump(state, f, default=float)
+        print(f"    {min(c0 + CHUNK, len(pending))}/{len(pending)} tasks done",
+              flush=True)
+    R = eval_results
+
+    none_by_seed = {s: R[f"none@{s}"]["median"] for s in HELDOUT_SEEDS}
     base_median, base_gain = {}, {}
     for name, u in hands.items():
-        r = eval_policy_seeds(u, HELDOUT_SEEDS, K=HELDOUT_K, **BASE_KW)
+        r = R[f"{name}@base"]
         base_median[name] = r["median"]
         base_gain[name] = float(np.mean(
             [r["medians_by_seed"][i] / none_by_seed[s]
@@ -214,7 +274,7 @@ def main(stage: str = "all") -> dict:
 
     # -------------------------------------------------- 3. held-out + transfer
     print("  held-out evaluation (fresh seeds 21-24, K=300)...")
-    r_disc = eval_policy_seeds(discovered_u, HELDOUT_SEEDS, K=HELDOUT_K, **BASE_KW)
+    r_disc = R["disc@base"]
     disc_gain = float(np.mean(
         [r_disc["medians_by_seed"][i] / none_by_seed[s]
          for i, s in enumerate(HELDOUT_SEEDS)]))
@@ -223,17 +283,14 @@ def main(stage: str = "all") -> dict:
           f"boosts {r_disc['boost_apps']:.0f})")
 
     print("  regime transfer (perturbed physics)...")
-    pert_kw = dict(regime=PERTURBED_REGIME, target0=fidelity_target,
-                   age_preset=age_preset, cohort_kw=PERTURBED_COHORT)
-    none_pert = {s: eval_policy(np.array(NONE_U), seed=s, K=HELDOUT_K,
-                                **pert_kw)["median"] for s in HELDOUT_SEEDS}
-    r_disc_pert = eval_policy_seeds(discovered_u, HELDOUT_SEEDS, K=HELDOUT_K, **pert_kw)
+    none_pert = {s: R[f"none_pert@{s}"]["median"] for s in HELDOUT_SEEDS}
+    r_disc_pert = R["disc@pert"]
     disc_pert_gain = float(np.mean(
         [r_disc_pert["medians_by_seed"][i] / none_pert[s]
          for i, s in enumerate(HELDOUT_SEEDS)]))
     pert_hands, pert_gains = {}, {}
     for name, u in hands.items():
-        r = eval_policy_seeds(u, HELDOUT_SEEDS, K=HELDOUT_K, **pert_kw)
+        r = R[f"{name}@pert"]
         pert_hands[name] = r["median"]
         pert_gains[name] = float(np.mean(
             [r["medians_by_seed"][i] / none_pert[s]
@@ -244,25 +301,17 @@ def main(stage: str = "all") -> dict:
 
     # ------------------------------------------------------ 4. cost sensitivity
     print("  no-procedure-risk sensitivity (h_proc = 0)...")
-    r_disc_free = eval_policy_seeds(discovered_u, HELDOUT_SEEDS, K=HELDOUT_K,
-                                     h_proc=0.0, **BASE_KW)
-    r_hand_free = eval_policy_seeds(hands[best_hand_name], HELDOUT_SEEDS,
-                                     K=HELDOUT_K, h_proc=0.0, **BASE_KW)
+    r_disc_free = R["disc@free"]
+    r_hand_free = R["besthand@free"]
     print(f"    discovered(h=0): {r_disc_free['median']:6.1f}   "
           f"best-hand(h=0): {r_hand_free['median']:6.1f}")
 
     # ------------------------------------------------------------ 5. ablation
     print("  ablation: reset each dimension to the hand reference...")
-    ref = np.array(HAND_CODEC, float)
-    disc = np.asarray(discovered_u, float)
     ablation, solo = {}, {}
-    for i, name in enumerate(POLICY_NAMES):
-        u_ab = disc.copy(); u_ab[i] = ref[i]
-        r = eval_policy_seeds(u_ab, HELDOUT_SEEDS, K=HELDOUT_K, **BASE_KW)
-        ablation[name] = r["median"]
-        u_so = ref.copy(); u_so[i] = disc[i]
-        r2 = eval_policy_seeds(u_so, HELDOUT_SEEDS, K=HELDOUT_K, **BASE_KW)
-        solo[name] = r2["median"]
+    for name in POLICY_NAMES:
+        ablation[name] = R[f"ablate:{name}"]["median"]
+        solo[name] = R[f"solo:{name}"]["median"]
         print(f"    {name:20s}: ablated {ablation[name]:6.1f}  "
               f"solo {solo[name]:6.1f}  (full {r_disc['median']:6.1f})")
     marginal = {n: (r_disc["median"] - ablation[n]) / r_disc["median"]
@@ -368,12 +417,10 @@ def main(stage: str = "all") -> dict:
                        for i, s in enumerate(HELDOUT_SEEDS)]
     disc_pert_gain_seeds = [r_disc_pert["medians_by_seed"][i] / none_pert[s]
                             for i, s in enumerate(HELDOUT_SEEDS)]
-    r_hand = eval_policy_seeds(hands[best_hand_name], HELDOUT_SEEDS,
-                                K=HELDOUT_K, **BASE_KW)
+    r_hand = R[f"{best_hand_name}@base"]
     hand_gain_seeds = [r_hand["medians_by_seed"][i] / none_by_seed[s]
                        for i, s in enumerate(HELDOUT_SEEDS)]
-    r_hand_pert = eval_policy_seeds(hands[best_hand_name], HELDOUT_SEEDS,
-                                     K=HELDOUT_K, **pert_kw)
+    r_hand_pert = R[f"{best_hand_name}@pert"]
     hand_pert_gain_seeds = [r_hand_pert["medians_by_seed"][i] / none_pert[s]
                             for i, s in enumerate(HELDOUT_SEEDS)]
     ax.scatter(hand_gain_seeds, hand_pert_gain_seeds, s=46, color=PALETTE["line2"],

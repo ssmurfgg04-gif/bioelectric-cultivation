@@ -1,0 +1,624 @@
+{
+  "n_cells": 24,
+  "n_landscape": 18,
+  "n_probes": 6,
+  "gate_holds_cells": 24,
+  "gate_hold_fraction": 1.0,
+  "mean_gains": {
+    "codec_vs_none": 1.5722697663936636,
+    "local_vs_none": 1.015199910953035,
+    "codec_vs_local": 1.5483586719623503,
+    "regen_vs_none": 1.652892644350881,
+    "chan_vs_codec": 0.9896482092648263,
+    "chan_vs_blind": 1.0
+  },
+  "cells": [
+    {
+      "kind": "landscape",
+      "jump_rate": 0.003,
+      "f_crit": 0.55,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 111.08333333333333,
+        "local": 112.33333333333333,
+        "codec": 135.29166666666666,
+        "regen": 142.95833333333334,
+        "chan": 134.70833333333334,
+        "blind": 134.70833333333334
+      },
+      "gains": {
+        "codec_vs_none": 1.2179294823705926,
+        "local_vs_none": 1.0112528132033007,
+        "codec_vs_local": 1.2043768545994065,
+        "regen_vs_none": 1.2869467366841711,
+        "chan_vs_codec": 0.9956883276870959,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.005,
+      "f_crit": 0.55,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 89.08333333333333,
+        "local": 92.25,
+        "codec": 131.20833333333334,
+        "regen": 139.75,
+        "chan": 130.58333333333334,
+        "blind": 130.58333333333334
+      },
+      "gains": {
+        "codec_vs_none": 1.4728718428437795,
+        "local_vs_none": 1.0355472404115997,
+        "codec_vs_local": 1.422312556458898,
+        "regen_vs_none": 1.5687558465855942,
+        "chan_vs_codec": 0.9952365830422356,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.005,
+      "f_crit": 0.55,
+      "kappa": 0.03,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 84.54166666666667,
+        "local": 85.83333333333333,
+        "codec": 104.91666666666667,
+        "regen": 106.58333333333333,
+        "chan": 106.70833333333333,
+        "blind": 106.70833333333333
+      },
+      "gains": {
+        "codec_vs_none": 1.2410054213898472,
+        "local_vs_none": 1.0152784622966977,
+        "codec_vs_local": 1.2223300970873787,
+        "regen_vs_none": 1.260719566288812,
+        "chan_vs_codec": 1.017077045274027,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.008,
+      "f_crit": 0.55,
+      "kappa": 0.03,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 70.70833333333333,
+        "local": 70.125,
+        "codec": 103.20833333333333,
+        "regen": 105.29166666666667,
+        "chan": 103.33333333333333,
+        "blind": 103.33333333333333
+      },
+      "gains": {
+        "codec_vs_none": 1.459634649381261,
+        "local_vs_none": 0.991750147318798,
+        "codec_vs_local": 1.471776589423648,
+        "regen_vs_none": 1.489098408956983,
+        "chan_vs_codec": 1.001211142511102,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.003,
+      "f_crit": 0.62,
+      "kappa": 0.03,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 88.45833333333333,
+        "local": 87.20833333333333,
+        "codec": 103.375,
+        "regen": 106.625,
+        "chan": 106.125,
+        "blind": 106.125
+      },
+      "gains": {
+        "codec_vs_none": 1.168629298162977,
+        "local_vs_none": 0.9858690532265661,
+        "codec_vs_local": 1.1853798375537508,
+        "regen_vs_none": 1.2053697597739048,
+        "chan_vs_codec": 1.026602176541717,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.005,
+      "f_crit": 0.62,
+      "kappa": 0.03,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 72.33333333333333,
+        "local": 74.0,
+        "codec": 102.70833333333333,
+        "regen": 104.625,
+        "chan": 103.875,
+        "blind": 103.875
+      },
+      "gains": {
+        "codec_vs_none": 1.419930875576037,
+        "local_vs_none": 1.023041474654378,
+        "codec_vs_local": 1.3879504504504503,
+        "regen_vs_none": 1.4464285714285716,
+        "chan_vs_codec": 1.0113590263691683,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.008,
+      "f_crit": 0.62,
+      "kappa": 0.03,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 60.041666666666664,
+        "local": 60.416666666666664,
+        "codec": 99.29166666666667,
+        "regen": 102.58333333333333,
+        "chan": 99.91666666666667,
+        "blind": 99.91666666666667
+      },
+      "gains": {
+        "codec_vs_none": 1.6537126995142264,
+        "local_vs_none": 1.0062456627342125,
+        "codec_vs_local": 1.6434482758620692,
+        "regen_vs_none": 1.7085357390700902,
+        "chan_vs_codec": 1.0062945866554762,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.003,
+      "f_crit": 0.7,
+      "kappa": 0.03,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 75.33333333333333,
+        "local": 76.25,
+        "codec": 98.33333333333333,
+        "regen": 102.04166666666667,
+        "chan": 101.70833333333333,
+        "blind": 101.70833333333333
+      },
+      "gains": {
+        "codec_vs_none": 1.3053097345132743,
+        "local_vs_none": 1.0121681415929205,
+        "codec_vs_local": 1.2896174863387977,
+        "regen_vs_none": 1.3545353982300887,
+        "chan_vs_codec": 1.034322033898305,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.005,
+      "f_crit": 0.7,
+      "kappa": 0.03,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 60.208333333333336,
+        "local": 61.291666666666664,
+        "codec": 97.625,
+        "regen": 96.79166666666667,
+        "chan": 98.5,
+        "blind": 98.5
+      },
+      "gains": {
+        "codec_vs_none": 1.6214532871972318,
+        "local_vs_none": 1.017993079584775,
+        "codec_vs_local": 1.592794017675051,
+        "regen_vs_none": 1.6076124567474048,
+        "chan_vs_codec": 1.0089628681177978,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.008,
+      "f_crit": 0.7,
+      "kappa": 0.03,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 50.375,
+        "local": 51.583333333333336,
+        "codec": 92.5,
+        "regen": 91.95833333333333,
+        "chan": 93.0,
+        "blind": 93.0
+      },
+      "gains": {
+        "codec_vs_none": 1.836228287841191,
+        "local_vs_none": 1.02398676592225,
+        "codec_vs_local": 1.7932148626817446,
+        "regen_vs_none": 1.8254755996691479,
+        "chan_vs_codec": 1.0054054054054054,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "probe_degraded_channel",
+      "jump_rate": 0.005,
+      "f_crit": 0.62,
+      "kappa": 0.02,
+      "channel_factor": 2.5,
+      "levels": 7,
+      "medians": {
+        "none": 76.66666666666667,
+        "local": 79.83333333333333,
+        "codec": 107.79166666666667,
+        "regen": 140.04166666666666,
+        "chan": 96.125,
+        "blind": 96.125
+      },
+      "gains": {
+        "codec_vs_none": 1.4059782608695652,
+        "local_vs_none": 1.0413043478260868,
+        "codec_vs_local": 1.3502087682672235,
+        "regen_vs_none": 1.8266304347826086,
+        "chan_vs_codec": 0.8917665249323541,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "probe_cliff",
+      "jump_rate": 0.005,
+      "f_crit": 0.62,
+      "kappa": 0.048,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 63.25,
+        "local": 63.291666666666664,
+        "codec": 71.0,
+        "regen": 70.29166666666667,
+        "chan": 73.875,
+        "blind": 73.875
+      },
+      "gains": {
+        "codec_vs_none": 1.1225296442687747,
+        "local_vs_none": 1.0006587615283267,
+        "codec_vs_local": 1.1217906517445688,
+        "regen_vs_none": 1.1113306982872202,
+        "chan_vs_codec": 1.0404929577464788,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.008,
+      "f_crit": 0.55,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 71.54166666666667,
+        "local": 70.75,
+        "codec": 127.45833333333333,
+        "regen": 135.875,
+        "chan": 122.33333333333333,
+        "blind": 122.33333333333333
+      },
+      "gains": {
+        "codec_vs_none": 1.7815958066394872,
+        "local_vs_none": 0.9889341875364006,
+        "codec_vs_local": 1.8015312131919905,
+        "regen_vs_none": 1.8992428654630167,
+        "chan_vs_codec": 0.9597907813010788,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "probe_fast_propagation",
+      "jump_rate": 0.005,
+      "f_crit": 0.62,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 71.91666666666667,
+        "local": 75.0,
+        "codec": 125.66666666666667,
+        "regen": 137.66666666666666,
+        "chan": 122.33333333333333,
+        "blind": 122.33333333333333
+      },
+      "gains": {
+        "codec_vs_none": 1.7473928157589802,
+        "local_vs_none": 1.0428736964078795,
+        "codec_vs_local": 1.6755555555555557,
+        "regen_vs_none": 1.9142526071842407,
+        "chan_vs_codec": 0.9734748010610079,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "probe_weak_inflammaging",
+      "jump_rate": 0.005,
+      "f_crit": 0.62,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 81.75,
+        "local": 79.0,
+        "codec": 131.0,
+        "regen": 138.75,
+        "chan": 128.83333333333334,
+        "blind": 128.83333333333334
+      },
+      "gains": {
+        "codec_vs_none": 1.6024464831804281,
+        "local_vs_none": 0.9663608562691132,
+        "codec_vs_local": 1.6582278481012658,
+        "regen_vs_none": 1.6972477064220184,
+        "chan_vs_codec": 0.9834605597964378,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "probe_coarse_code",
+      "jump_rate": 0.005,
+      "f_crit": 0.62,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 5,
+      "medians": {
+        "none": 79.16666666666667,
+        "local": 84.70833333333333,
+        "codec": 129.20833333333334,
+        "regen": 132.70833333333334,
+        "chan": 129.58333333333334,
+        "blind": 129.58333333333334
+      },
+      "gains": {
+        "codec_vs_none": 1.6321052631578947,
+        "local_vs_none": 1.0699999999999998,
+        "codec_vs_local": 1.5253320216428925,
+        "regen_vs_none": 1.6763157894736842,
+        "chan_vs_codec": 1.0029022895840052,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "probe_heavy_corruption",
+      "jump_rate": 0.012,
+      "f_crit": 0.62,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 50.125,
+        "local": 48.708333333333336,
+        "codec": 108.375,
+        "regen": 114.16666666666667,
+        "chan": 102.16666666666667,
+        "blind": 102.16666666666667
+      },
+      "gains": {
+        "codec_vs_none": 2.162094763092269,
+        "local_vs_none": 0.971737323358271,
+        "codec_vs_local": 2.224978614200171,
+        "regen_vs_none": 2.2776392352452204,
+        "chan_vs_codec": 0.9427143406382161,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.003,
+      "f_crit": 0.62,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 96.29166666666667,
+        "local": 97.45833333333333,
+        "codec": 131.0,
+        "regen": 139.875,
+        "chan": 128.75,
+        "blind": 128.75
+      },
+      "gains": {
+        "codec_vs_none": 1.3604500216356554,
+        "local_vs_none": 1.0121159671138034,
+        "codec_vs_local": 1.3441641727233862,
+        "regen_vs_none": 1.452617914322804,
+        "chan_vs_codec": 0.982824427480916,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.005,
+      "f_crit": 0.62,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 76.66666666666667,
+        "local": 79.875,
+        "codec": 125.83333333333333,
+        "regen": 140.04166666666666,
+        "chan": 123.91666666666667,
+        "blind": 123.91666666666667
+      },
+      "gains": {
+        "codec_vs_none": 1.6413043478260867,
+        "local_vs_none": 1.0418478260869564,
+        "codec_vs_local": 1.575378195096505,
+        "regen_vs_none": 1.8266304347826086,
+        "chan_vs_codec": 0.9847682119205299,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.008,
+      "f_crit": 0.62,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 60.541666666666664,
+        "local": 60.166666666666664,
+        "codec": 121.16666666666667,
+        "regen": 129.125,
+        "chan": 116.91666666666667,
+        "blind": 116.91666666666667
+      },
+      "gains": {
+        "codec_vs_none": 2.0013764624913972,
+        "local_vs_none": 0.993805918788713,
+        "codec_vs_local": 2.0138504155124655,
+        "regen_vs_none": 2.132828630419821,
+        "chan_vs_codec": 0.9649243466299863,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.003,
+      "f_crit": 0.7,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 78.08333333333333,
+        "local": 79.20833333333333,
+        "codec": 123.91666666666667,
+        "regen": 133.20833333333334,
+        "chan": 121.0,
+        "blind": 121.0
+      },
+      "gains": {
+        "codec_vs_none": 1.5869797225186768,
+        "local_vs_none": 1.0144076840981857,
+        "codec_vs_local": 1.5644397685428724,
+        "regen_vs_none": 1.7059765208110995,
+        "chan_vs_codec": 0.976462676529926,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.005,
+      "f_crit": 0.7,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 60.708333333333336,
+        "local": 62.041666666666664,
+        "codec": 118.83333333333333,
+        "regen": 125.41666666666667,
+        "chan": 114.29166666666667,
+        "blind": 114.29166666666667
+      },
+      "gains": {
+        "codec_vs_none": 1.9574468085106382,
+        "local_vs_none": 1.0219629375428962,
+        "codec_vs_local": 1.9153794492948288,
+        "regen_vs_none": 2.065888812628689,
+        "chan_vs_codec": 0.9617812061711081,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.008,
+      "f_crit": 0.7,
+      "kappa": 0.02,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 49.375,
+        "local": 53.375,
+        "codec": 109.08333333333333,
+        "regen": 107.20833333333333,
+        "chan": 103.625,
+        "blind": 103.625
+      },
+      "gains": {
+        "codec_vs_none": 2.209282700421941,
+        "local_vs_none": 1.081012658227848,
+        "codec_vs_local": 2.0437158469945356,
+        "regen_vs_none": 2.171308016877637,
+        "chan_vs_codec": 0.9499618029029794,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    },
+    {
+      "kind": "landscape",
+      "jump_rate": 0.003,
+      "f_crit": 0.55,
+      "kappa": 0.03,
+      "channel_factor": 1.0,
+      "levels": 7,
+      "medians": {
+        "none": 93.33333333333333,
+        "local": 92.83333333333333,
+        "codec": 105.16666666666667,
+        "regen": 108.08333333333333,
+        "chan": 108.75,
+        "blind": 108.75
+      },
+      "gains": {
+        "codec_vs_none": 1.1267857142857145,
+        "local_vs_none": 0.9946428571428572,
+        "codec_vs_local": 1.1328545780969481,
+        "regen_vs_none": 1.1580357142857143,
+        "chan_vs_codec": 1.0340729001584785,
+        "chan_vs_blind": 1.0
+      },
+      "gate_holds": true
+    }
+  ],
+  "verdicts": {
+    "gate_robustness": "the Level-3 gate (codec/local >= 1.03) holds in 24/24 cells (100%) across the physics landscape; mean codec/local x1.548",
+    "regen": "regeneration rejuvenates in 23/24 cells (mean x1.65)",
+    "gating_pays": "verification-gated channel therapy beats blind boosting in 0/24 cells (mean x1.000)",
+    "worst_cell": "probe_cliff",
+    "best_cell": "probe_heavy_corruption"
+  }
+}

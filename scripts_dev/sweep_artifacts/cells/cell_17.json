@@ -1,0 +1,73 @@
+{
+  "kind": "landscape",
+  "jump_rate": 0.008,
+  "f_crit": 0.7,
+  "kappa": 0.03,
+  "channel_factor": 1.0,
+  "regime": {
+    "kappa_noise": 0.03,
+    "lambda_gap": 0.024,
+    "mu_theta": 0.03,
+    "h_sys": 0.05,
+    "seed_rate": 6e-05,
+    "h_inflam": 0.03,
+    "mortality_k": 0.1
+  },
+  "levels": 7,
+  "seeds": [
+    5,
+    6,
+    7
+  ],
+  "K": 250,
+  "years": 170.0,
+  "medians": {
+    "none": 50.375,
+    "local": 51.583333333333336,
+    "codec": 92.5,
+    "regen": 91.95833333333333,
+    "chan": 93.0,
+    "blind": 93.0
+  },
+  "medians_by_seed": {
+    "none": [
+      52.0,
+      48.125,
+      51.0
+    ],
+    "local": [
+      52.125,
+      52.75,
+      49.875
+    ],
+    "codec": [
+      92.5,
+      91.25,
+      93.75
+    ],
+    "regen": [
+      89.25,
+      93.625,
+      93.0
+    ],
+    "chan": [
+      92.0,
+      94.5,
+      92.5
+    ],
+    "blind": [
+      92.0,
+      94.5,
+      92.5
+    ]
+  },
+  "gains": {
+    "codec_vs_none": 1.836228287841191,
+    "local_vs_none": 1.02398676592225,
+    "codec_vs_local": 1.7932148626817446,
+    "regen_vs_none": 1.8254755996691479,
+    "chan_vs_codec": 1.0054054054054054,
+    "chan_vs_blind": 1.0
+  },
+  "gate_holds": true
+}

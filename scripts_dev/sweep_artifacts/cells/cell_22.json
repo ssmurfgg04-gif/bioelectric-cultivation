@@ -1,0 +1,73 @@
+{
+  "kind": "probe_coarse_code",
+  "jump_rate": 0.005,
+  "f_crit": 0.62,
+  "kappa": 0.02,
+  "channel_factor": 1.0,
+  "regime": {
+    "kappa_noise": 0.02,
+    "lambda_gap": 0.024,
+    "mu_theta": 0.03,
+    "h_sys": 0.05,
+    "seed_rate": 6e-05,
+    "h_inflam": 0.03,
+    "mortality_k": 0.1
+  },
+  "levels": 5,
+  "seeds": [
+    5,
+    6,
+    7
+  ],
+  "K": 250,
+  "years": 170.0,
+  "medians": {
+    "none": 79.16666666666667,
+    "local": 84.70833333333333,
+    "codec": 129.20833333333334,
+    "regen": 132.70833333333334,
+    "chan": 129.58333333333334,
+    "blind": 129.58333333333334
+  },
+  "medians_by_seed": {
+    "none": [
+      80.5,
+      78.0,
+      79.0
+    ],
+    "local": [
+      87.0,
+      87.25,
+      79.875
+    ],
+    "codec": [
+      126.125,
+      131.5,
+      130.0
+    ],
+    "regen": [
+      129.125,
+      139.25,
+      129.75
+    ],
+    "chan": [
+      127.75,
+      128.25,
+      132.75
+    ],
+    "blind": [
+      127.75,
+      128.25,
+      132.75
+    ]
+  },
+  "gains": {
+    "codec_vs_none": 1.6321052631578947,
+    "local_vs_none": 1.0699999999999998,
+    "codec_vs_local": 1.5253320216428925,
+    "regen_vs_none": 1.6763157894736842,
+    "chan_vs_codec": 1.0029022895840052,
+    "chan_vs_blind": 1.0
+  },
+  "gate_holds": true
+}

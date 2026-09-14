@@ -81,14 +81,14 @@ def decode_policy(u) -> dict:
     period = max(0.75, round(u[1] * 4) / 4)
     budget = int(round(u[2]))
     regen_period = max(2.0, round(u[3] * 4) / 4)
-    regen_start = u[4]
+    regen_start = round(float(u[4]) * 4) / 4
     return {
         "start_age": start,
         "period": period,
         "budget": budget,
         "regen_period": regen_period,
         "regen_start": regen_start,
-        "regen_never": regen_start >= 100.0,
+        "regen_never": bool(regen_start >= 100.0),
         "boost_p_verified": float(u[5]),
         "boost_p_unverified": float(u[6]),
         "boost_factor": float(u[7]),
