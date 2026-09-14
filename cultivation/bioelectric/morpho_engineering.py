@@ -341,8 +341,12 @@ def discover_protocol(target, seed: int = 0, n: int = N_CELLS,
 
 # -------------------------------------------------------------- regeneration
 def regeneration_test(u, target, seed: int = 0, n: int = N_CELLS,
-                      dt: float = 0.1) -> dict:
+                      dt: float = 0.1,
+                      latch_kw: dict | None = None) -> dict:
     """Establish the novel pattern, then amputate the region carrying it.
+
+    latch_kw: optional overrides (k_anchor, alpha_latch, deadzone, mu_theta)
+    passed to BOTH collectives — the exp13 C4 sweep hooks.
 
     Target-aware arms:
       partial — the distal part of the novel zone removed; novel cells
@@ -354,7 +358,8 @@ def regeneration_test(u, target, seed: int = 0, n: int = N_CELLS,
                 the structure is lost. LOCAL positional memory: no
                 archival backup for internal novel structures.
     """
-    col = LatchingCollective(n=n, seed=seed)
+    kw = latch_kw or {}
+    col = LatchingCollective(n=n, seed=seed, **kw)
     col.set_target(target_wildtype(n))
     col.set_state(target_wildtype(n) + col.rng.normal(0, 2.0, n))
     proto = ClampProtocol(u)
@@ -376,7 +381,7 @@ def regeneration_test(u, target, seed: int = 0, n: int = N_CELLS,
     }
     out = {"zone": [z0, z1]}
     for arm, sl in arms.items():
-        c2 = LatchingCollective(n=n, seed=seed + 100)
+        c2 = LatchingCollective(n=n, seed=seed + 100, **kw)
         c2.set_target(col.theta.copy())
         c2.set_state(col.V.copy())
         c2.set_anchor(col.theta_anchor.copy())

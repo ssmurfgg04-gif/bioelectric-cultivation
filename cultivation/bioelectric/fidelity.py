@@ -328,13 +328,18 @@ class FidelityCodec:
 
     def __init__(self, n_clusters: int = 12, n_cells: int = 60,
                  budget_per_cycle: int = 6, levels: int = 7,
-                 consistency_threshold: float = 0.70):
+                 consistency_threshold: float = 0.70,
+                 per_cell_archive: bool = True):
         self.C = n_clusters
         self.n = n_cells
         self.budget = budget_per_cycle
         self.levels = levels
         self.span = level_span(levels)
         self.threshold = consistency_threshold
+        # ABLATION SWITCH (exp13 C2): False -> write CLUSTER MEANS instead
+        # of per-cell archive values (destroys boundary-preserving write
+        # precision — the hypothesized source of the cliff safety margin).
+        self.per_cell_archive = per_cell_archive
         self.cluster_len = n_cells // n_clusters
         A = np.zeros((n_clusters, n_clusters))
         for i in range(n_clusters - 1):
@@ -410,8 +415,13 @@ class FidelityCodec:
             wrong = readable & (np.abs(read_cons - archive[None, :]) > 0.5 * self.span)
             writable = dead | wrong                                  # (K, C)
             W = writable[:, cluster_of]                              # (K, n)
-            # per-cell archive write values (boundaries preserved)
-            write_cells = np.broadcast_to(cohort.theta0[None, :], (K, cohort.n))
+            # per-cell archive write values (boundaries preserved);
+            # ablated mode: cluster-mean values (boundaries smeared)
+            if self.per_cell_archive:
+                write_cells = np.broadcast_to(cohort.theta0[None, :], (K, cohort.n))
+            else:
+                write_cells = np.broadcast_to(
+                    archive[None, :][:, cluster_of], (K, cohort.n))
         else:
             refused_mask = np.zeros(K, bool)   # local mode: no verification, no refusal
             verified_mask = np.zeros(K, bool)
