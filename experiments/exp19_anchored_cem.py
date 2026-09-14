@@ -234,7 +234,6 @@ def main(stage: str = "all") -> dict:
         state["discovered_u"] = [float(x) for x in best_u]
         state["search_hold"] = -float(best_f)
         state["history"] = [(int(i), float(f)) for i, f, _mu in hist]
-        state["elite_k"] = [float(np.mean([u[4] for u in []])) for u in []]
         with open(STATE, "w") as f:
             json.dump(state, f, indent=1)
 
@@ -303,6 +302,7 @@ def main(stage: str = "all") -> dict:
                         "t in 30..100",
            "discovered_u": disc_u, "discovered_policy": pol,
            "search_hold": state["search_hold"],
+           "_history": state.get("history", []),
            "heldout": state["heldout"], "transfer": state["transfer"],
            "norisk": state["norisk"], "ablations": state["ablations"],
            "criteria": crit}
@@ -334,7 +334,15 @@ def _figure(res):
     ax[0].legend(fontsize=9)
 
     hist = res.get("_history") or []
-    ax[1].axis("off")
+    if hist:
+        its = [h[0] for h in hist]
+        bests = [-h[1] for h in hist]
+        ax[1].plot(its, bests, lw=2.2, color=PALETTE["good"], marker="o",
+                   ms=4)
+        ax[1].set(xlabel="CEM iteration", ylabel="hold (search seeds)",
+                  title="search trace (best-so-far)")
+    else:
+        ax[1].axis("off")
 
     names = list(res["ablations"])
     vals = [res["ablations"][n] - hd["discovered"]["hold_mean"]

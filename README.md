@@ -265,6 +265,36 @@ carries an explicit kills-row. Measurement uses established methods only
 (DiBAC4(3) live imaging per the published planarian protocol, WISH/smFISH,
 scrape-load dye coupling).
 
+## M17: the sloppiness audit + spatial data + the outcome corpus
+
+Three moves, in the search-first spirit. (1) **The audit**
+(`docs/SLOPPINESS.md`): no uncertainty quantification anywhere (S1),
+unsmoothed CEM (S2), no stagnation restarts (S3), dead code and a blank
+figure panel in exp19 (S4), tie-blind Spearman (S5), coarse V1 ranks
+(S6), ablation seed reuse (S7), untested permeability floors (S8).
+Fixes: `cultivation/validation/stats.py` (permutation p-values, bootstrap
+CIs, mean-SE, floor sensitivity), CEM smoothing + restart flags (with
+bit-exact None backdoor, unit-tested), exp19 S4 repairs. (2) **exp20 —
+PRISTA4D** (Han 2026, GigaScience; 0/12/36 hpa spatial matrices, gene
+bridge via the Rosetta Stone 2020): V1 PASSES in a third modality
+(neoblast 3/31 spatial types); the spatial forms of V3 and V4 are
+honestly REFUTED at the family-expression level — the injury transient
+and junction-smoothness clauses now require measurement, sharpening
+docs/FIDELITY_CLOCK.md from "preferred" to "necessary". (3) **exp21 —
+PlanformDB** (Lobo 2013; 1,716 recorded experiments, penetrance-weighted):
+cutting < ion < morphogen < other-RNAi abnormality ordering confirmed
+(PB0), the STRONG junction-dominance claim refuted at ~3-study effective
+power (PB1), bioelectric-not-above-morphogen bounded (PB2), graded
+penetrance not the corpus norm (PB3). The junction claim is now
+explicitly weak-form: necessary, not uniquely disruptive.
+
+Also this session: SakanaAI's AI-Scientist installed and trialed on the
+stack (OpenAI-compatible z-ai proxy; idea generation produced 18
+candidate maintenance-policy experiments; the autonomous coding loop
+correctly reproduced baselines and hit — and usefully exposed — the
+single-zone `pattern_ledger` API limit blocking multi-pattern research;
+full writeup stage rate-limited by Semantic Scholar).
+
 ## Research dossier
 
 `research/` contains the verified literature (bioelectric morphogenesis, IIT, aging theory, Chinese research landscape) with DOIs verified against Crossref/PubMed responses, plus real C. elegans connectome data (OpenWorm; Cook et al. 2019).

@@ -240,3 +240,55 @@ spatial data); the century-hold search rediscovered the matched-channel law
 and found the hold-landscape to be a plateau the hand-built policy already
 sits on. The wet-lab program that would settle the rest is specified,
 pre-registered, and falsifiable stage by stage (docs/FIDELITY_CLOCK.md).
+
+## Level 6 — M17: spatial data and the recorded-outcome corpus (exp20, exp21)
+
+**exp20 — PRISTA4D, the first SPATIAL data** (Han et al. 2026, GigaScience;
+STDS0000399, 0/12/36 hpa spatial matrices; gene bridge dd_Smed_v6 ->
+SMED300 -> SMESG via the planosphere Rosetta Stone 2020, 270 ion genes):
+
+- **V1s PASS (third modality)** — neoblast bins rank 3 of 31 spatially
+  annotated cell types at 0hpa. Stemness-hyperpolarization now confirmed
+  in PSCA, Fincher, AND spatial bins.
+- **V3s REFUTED (spatial transient)** — wound-edge vs interior contrast:
+  +0.8 mV at 0hpa, +0.5 at 12hpa, +1.6 at 36hpa. The intact animal's tips
+  are already edge-depolarized; the injury effect does not cleanly exceed
+  that baseline (12hpa CI -0.42..+1.59 includes 0).
+- **V3c REFUTED (spatial phagocyte clause)** — cathepsin+/phagocyte bins
+  rank 4/31 most HYPERpolarized in space (they were depolarized in
+  Fincher's dissociated atlas). Modality and annotation granularity
+  change the phagocyte clause's sign — V3 stays split, now with a spatial
+  counter-instance.
+- **V4s REFUTED (junction smoothness)** — Spearman(innexin, local Vm
+  roughness) at 12hpa = -0.024 (CI -0.045..-0.004: tiny, sign right) but
+  the kv control is MORE negative (-0.045). No junction-specific smoothness
+  signature above the K-channel family's. At the family-expression level,
+  innexin does not organize the spatial Vm map beyond generic
+  cell-type composition.
+- **Kills-row consequence:** the transcriptome->Vm layer is rank-robust for
+  stemness (V1 x3) but CANNOT resolve the spatial coupling and injury
+  transient clauses — those now REQUIRE measurement (the FC1-FC5 wet-lab
+  program is no longer optional for V3/V4; it is the only route).
+
+**exp21 — PlanformDB, the recorded-outcome corpus** (Lobo et al. 2013,
+PlanformDB 2.5.0: 1,716 experiments, 412 RNAi targets, penetrance-weighted
+outcomes; Num-weighted, RegenPeriod>0 only):
+
+- **PB0 PASS** — cutting baseline (0.487) is the lowest abnormality class
+  < ion_channel (0.736) < morphogen (0.744) < other RNAi (0.788).
+- **PB1 REFUTED** — innexin RNAi experiments (n=9, from 3 publications)
+  show abnormality 0.542, NOT above other RNAi (0.788); MWU p=0.99 in the
+  wrong direction. **Effective power caveat: ~3 independent studies** —
+  this refutes the STRONG form (junction knockdown among the most
+  disruptive perturbations) at low power; the weak form (junctions
+  necessary: 0.542 > 0.487 cutting) survives.
+- **PB2 REFUTED** — ion-class (0.657) below morphogen-class (0.744):
+  recorded outcomes do not rank bioelectric perturbation above morphogen
+  signaling. The bioelectric-dominance framing is bounded.
+- **PB3 REFUTED** — innexin result sets show mixed outcomes in only 3/10
+  cases; the graded-latent-state picture (TAS) is not the corpus norm.
+- **Kills-row consequence:** our junction-load-bearing claim is now
+  explicitly WEAK-form: junctions are necessary for normal patterning
+  (above cutting baseline) but not uniquely disruptive among recorded
+  perturbations. exp16's bystander lethality stays a statement about
+  MAINTENANCE dynamics, not regeneration outcomes.

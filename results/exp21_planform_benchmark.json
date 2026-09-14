@@ -1,0 +1,150 @@
+{
+ "exp": "exp21_planform_benchmark",
+ "source": "PlanformDB 2.5.0 (Lobo 2013), lobolab.umbc.edu",
+ "n_experiments": 1462,
+ "groups": {
+  "cutting": {
+   "mean": 0.48700783716721785,
+   "se": 0.01763601181628354,
+   "n": 549,
+   "n_experiments": 549
+  },
+  "innexin": {
+   "mean": 0.5420138888888889,
+   "se": 0.15842506175760587,
+   "n": 9,
+   "n_experiments": 9
+  },
+  "ion_channel": {
+   "mean": 0.7361538461538462,
+   "se": 0.11902132141213329,
+   "n": 13,
+   "n_experiments": 13
+  },
+  "morphogen": {
+   "mean": 0.7438947262479871,
+   "se": 0.02777947523216061,
+   "n": 184,
+   "n_experiments": 184
+  },
+  "other_rnai": {
+   "mean": 0.7882796177816057,
+   "se": 0.013771430653145516,
+   "n": 707,
+   "n_experiments": 707
+  }
+ },
+ "criteria": {
+  "PB0_cutting_baseline_lowest": true,
+  "PB1_junction_load_bearing": false,
+  "PB2_bioelectric_vs_morphogen": false,
+  "PB3_graded_penetrance": false
+ },
+ "tests": {
+  "PB1_mwu_p": 0.9865706992108257,
+  "PB2_mwu_p": 0.7306651213969091,
+  "PB3_mix_fraction": 0.3,
+  "PB3_n_result_sets": 10
+ },
+ "innexin_experiments": [
+  {
+   "exp": 279,
+   "rnais": [
+    "Smed-inx-11"
+   ],
+   "abnormal": 1.0,
+   "mixed_rs": 0,
+   "n_rs": 1
+  },
+  {
+   "exp": 280,
+   "rnais": [
+    "Smed-inx-11"
+   ],
+   "abnormal": 0.878,
+   "mixed_rs": 1,
+   "n_rs": 2
+  },
+  {
+   "exp": 445,
+   "rnais": [
+    "Dj-inx-5 + 13",
+    "Dj-inx-12"
+   ],
+   "abnormal": 1.0,
+   "mixed_rs": 0,
+   "n_rs": 1
+  },
+  {
+   "exp": 446,
+   "rnais": [
+    "Dj-inx-5 + 13",
+    "Dj-inx-12"
+   ],
+   "abnormal": 0.0,
+   "mixed_rs": 0,
+   "n_rs": 1
+  },
+  {
+   "exp": 447,
+   "rnais": [
+    "Dj-inx-12",
+    "Dj-inx-5 + 13"
+   ],
+   "abnormal": 0.0,
+   "mixed_rs": 0,
+   "n_rs": 1
+  },
+  {
+   "exp": 448,
+   "rnais": [
+    "Dj-inx-5 + 13",
+    "Dj-inx-12"
+   ],
+   "abnormal": 0.2,
+   "mixed_rs": 1,
+   "n_rs": 1
+  },
+  {
+   "exp": 449,
+   "rnais": [
+    "Dj-inx-12",
+    "Dj-inx-5 + 13"
+   ],
+   "abnormal": 0.8,
+   "mixed_rs": 1,
+   "n_rs": 1
+  },
+  {
+   "exp": 450,
+   "rnais": [
+    "Dj-inx-12",
+    "Dj-inx-5 + 13"
+   ],
+   "abnormal": 0.0,
+   "mixed_rs": 0,
+   "n_rs": 1
+  },
+  {
+   "exp": 996,
+   "rnais": [
+    "Smed-inx10"
+   ],
+   "abnormal": 1.0,
+   "mixed_rs": 0,
+   "n_rs": 1
+  }
+ ],
+ "effective_power": {
+  "innexin_n_publications": 3,
+  "n_publications_by_group": {
+   "morphogen": 32,
+   "cutting": 41,
+   "other_rnai": 79,
+   "innexin": 3,
+   "ion_channel": 2
+  },
+  "caveat": "the 9 innexin experiments come from 3 publications (Oviedo 2007, Oviedo 2010, Rink 2011): the effective sample size for PB1 is ~3 independent studies, so the MWU p-value overstates evidence in BOTH directions. The verdict is 'strong form refuted at low power', not 'junctions irrelevant'."
+ },
+ "notes": "abnormal(E) = Num-weighted mean over post-regeneration result sets (RegenPeriod>0) of (1 - freq(Wild type)); day-0 states excluded; experiments classified by most ion-related RNAi target present; no simulation involved \u2014 the database is the test."
+}

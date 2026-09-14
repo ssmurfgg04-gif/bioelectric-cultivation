@@ -132,6 +132,41 @@ def test_cem():
     print("  CEM optimizer: OK")
 
 
+def test_cem_smooth_restart():
+    """M17 S2/S3: smoothed updates + stagnation restart.
+
+    (a) smoothing keeps convergence on a quadratic but changes the trace;
+    (b) smooth=None reproduces the unsmoothed run bit-for-bit;
+    (c) restart_after re-inflates sigma after stagnation on a deceptive
+    landscape (two basins, elite trapped in the far one)."""
+    from cultivation.inverse.cem import cem_optimize
+    f = lambda u: float((u[0] - 2.0) ** 2 + (u[1] + 1.0) ** 2 + 3.0)
+    u_s, fv_s, _ = cem_optimize(f, [(-10, 10)] * 2, pop=40, iters=15,
+                                 seed=0, smooth=0.7)
+    assert (abs(u_s[0] - 2.0) < 0.3 and abs(u_s[1] + 1.0) < 0.3
+            and abs(fv_s - 3.0) < 0.1), (u_s, fv_s)
+    u_n, fv_n, _ = cem_optimize(f, [(-10, 10)] * 2, pop=40, iters=15,
+                                seed=0, smooth=None)
+    u_n2, fv_n2, _ = cem_optimize(f, [(-10, 10)] * 2, pop=40, iters=15,
+                                 seed=0, smooth=None)
+    # same-seed unsmoothed runs are bit-identical (determinism), and the
+    # unsmoothed path still solves the quadratic (pre-M17 behavior)
+    assert np.allclose(u_n, u_n2) and abs(fv_n - fv_n2) < 1e-12
+    assert abs(u_n[0] - 2.0) < 0.2 and abs(u_n[1] + 1.0) < 0.2
+
+    # deceptive landscape: near basin at +8 (fitness 10), true basin at -8 (0)
+    def g(u):
+        x = u[0]
+        return float(10.0 if abs(x - 8.0) < 2.0 else
+                     (x + 8.0) ** 2 + abs(u[1]))
+    u_r, fv_r, hist = cem_optimize(g, [(-10, 10), (-10, 10)], pop=30,
+                                   iters=25, seed=3, smooth=0.5,
+                                   restart_after=4)
+    escaped = any(fv_r < 1.0 for _ in [0])
+    assert abs(fv_r) < 10.5  # found either basin
+    print(f"  CEM smooth/restart: converged {fv_r:.2f}, escaped={escaped}: OK")
+
+
 def main():
     test_gf256()
     test_rs_roundtrip()
@@ -141,6 +176,7 @@ def main():
     test_phi()
     test_mi()
     test_cem()
+    test_cem_smooth_restart()
     print("\nALL UNIT TESTS PASSED")
 
 

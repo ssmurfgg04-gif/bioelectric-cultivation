@@ -18,14 +18,22 @@ import numpy as np
 def cem_optimize(fitness, bounds: list[tuple[float, float]], pop: int = 50,
                  elite_frac: float = 0.2, iters: int = 12,
                  seed: int = 0, verbose: bool = False, pool=None,
-                 checkpoint: str | None = None):
+                 checkpoint: str | None = None,
+                 smooth: float | None = 0.7,
+                 restart_after: int | None = None):
     """Minimize fitness(u) over the box bounds. Returns (best_u, best_f, history).
 
     pool: optional multiprocessing.Pool for parallel fitness evaluation
     (the fitness callable must be picklable — top-level function).
     checkpoint: pickle file updated after EVERY iteration holding the
     full optimizer state (mu, sigma, rng bit-generator state, best-so-far);
-    a killed process resumes EXACTLY where it left off."""
+    a killed process resumes EXACTLY where it left off.
+    smooth: elite-to-mean smoothing alpha (Szita & Lorincz 2006 noisy-CEM
+    fix): mu <- alpha*mu_elite + (1-alpha)*mu_old. None disables smoothing
+    (reproduces the pre-M17 behavior bit-for-bit given the same seed).
+    restart_after: if given and best_f has not improved for this many
+    iterations, re-inflate sigma to a quarter of the range around the
+    current best (stagnation restart)."""
     rng = np.random.default_rng(seed)
     d = len(bounds)
     lo = np.array([b[0] for b in bounds], float)
@@ -36,6 +44,7 @@ def cem_optimize(fitness, bounds: list[tuple[float, float]], pop: int = 50,
     best_u, best_f = None, np.inf
     history = []
     it0 = -1
+    stall, stagnation_ref = 0, np.inf
     if checkpoint and os.path.exists(checkpoint):
         with open(checkpoint, "rb") as f:
             st = pickle.load(f)
@@ -58,8 +67,24 @@ def cem_optimize(fitness, bounds: list[tuple[float, float]], pop: int = 50,
             best_f = float(F[order[0]])
             best_u = U[order[0]].copy()
         elite = U[order[:n_elite]]
-        mu = elite.mean(axis=0)
-        sigma = elite.std(axis=0) + (hi - lo) * 0.02
+        mu_new = elite.mean(axis=0)
+        sigma_new = elite.std(axis=0) + (hi - lo) * 0.02
+        if smooth is not None and it > it0 + 1:
+            mu = smooth * mu_new + (1.0 - smooth) * mu
+            sigma = smooth * sigma_new + (1.0 - smooth) * sigma
+        else:
+            mu, sigma = mu_new, sigma_new
+        if restart_after is not None:
+            if best_f >= stagnation_ref - 1e-12:
+                stall += 1
+            else:
+                stall, stagnation_ref = 0, best_f
+            if stall >= restart_after:
+                sigma = (hi - lo) / 4.0
+                stall = 0
+                if verbose:
+                    print(f"  cem[{it}] stagnation restart: sigma re-inflated",
+                          flush=True)
         history.append((it, best_f, mu.copy()))
         if checkpoint:
             st = {"mu": np.asarray(mu), "sigma": np.asarray(sigma),

@@ -1,0 +1,83 @@
+{
+ "exp": "exp20_prista4d_spatial",
+ "source": "PRISTA4D STDS0000399 (Han 2026, GigaScience); 0hpa/12hpa/36hpa spc matrices, replicate 1",
+ "gene_bridge": "dd_Smed_v6 -> SMED300 -> SMESG via planosphere Rosetta Stone 2020 (orthogene mirror); 270 ion genes, 11 families",
+ "timepoints": {
+  "0hpa": {
+   "n_bins": 17897,
+   "vm_mean": -31.712351542803567,
+   "vm_sd": 13.466737266429883,
+   "contrast": 0.7832375279667723
+  },
+  "12hpa": {
+   "n_bins": 15427,
+   "vm_mean": -33.65194958117207,
+   "vm_sd": 14.815896685762125,
+   "contrast": 0.486149779589347
+  },
+  "36hpa": {
+   "n_bins": 18214,
+   "vm_mean": -33.91460098435991,
+   "vm_sd": 15.09806647278103,
+   "contrast": 1.5953086791461857
+  }
+ },
+ "contrasts": {
+  "0hpa": 0.7832375279667723,
+  "12hpa": 0.486149779589347,
+  "36hpa": 1.5953086791461857
+ },
+ "contrast_ci95_12hpa": [
+  -0.42455244555634264,
+  1.5882619080176381
+ ],
+ "V4s": {
+  "0hpa": {
+   "rho_innexin_roughness": 0.02261080261337324,
+   "rho_kv_roughness": -0.07540944652123868,
+   "ci95_innexin": [
+    0.003539614638633074,
+    0.03998189916751567
+   ]
+  },
+  "12hpa": {
+   "rho_innexin_roughness": -0.023755429824763554,
+   "rho_kv_roughness": -0.045486013437640894,
+   "ci95_innexin": [
+    -0.04516861235894645,
+    -0.0035618722476277666
+   ]
+  },
+  "36hpa": {
+   "rho_innexin_roughness": -0.027052694897663716,
+   "rho_kv_roughness": -0.0727403136966863,
+   "ci95_innexin": [
+    -0.046977411354403024,
+    -0.005185006853459523
+   ]
+  }
+ },
+ "V1s": {
+  "neoblast_rank": 3,
+  "n_anno_types": 31,
+  "order": [
+   "goblet cells",
+   "phagocytes progenitor",
+   "neoblast",
+   "cathepsin+ cells",
+   "gastrovascular cavity progenitor",
+   "cathepsin+ cells progenitor",
+   "goblet cells progenitor",
+   "phagocytes",
+   "parapharyngeal parenchymal 2",
+   "parapharyngeal parenchymal 3"
+  ]
+ },
+ "criteria": {
+  "V3s_injury_depolarization": false,
+  "V3c_phagocyte_depolarized": false,
+  "V4s_junction_smoothness": false,
+  "V1s_neoblast_hyperpolarized_in_space": true
+ },
+ "notes": "per-bin GHK on family-level CP10K-log1p expression (exp18 normalization); edge = outer 12% of long axis; block bootstrap (12 x-slices); no ensemble simulation involved."
+}
