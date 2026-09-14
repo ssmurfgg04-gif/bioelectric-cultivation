@@ -11,6 +11,8 @@ def main() -> int:
     test_units.main()
     from tests import test_fidelity
     test_fidelity.main()
+    from tests import test_d3_semantics
+    test_d3_semantics.main()
     if full:
         print("\n--- falsification suite (experiments) ---\n")
         from tests import test_falsification

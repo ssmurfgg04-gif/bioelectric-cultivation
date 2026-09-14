@@ -169,6 +169,9 @@ class AgingCohort:
         draw = self.rng.random((self.K, self.n))
         newly = (~self.senesced) & (draw < dt * hazard)
         self.senesced |= newly
+        # exposed for death-semantics layers (D3, senescence_semantics.py):
+        # the mask of cells that senesced THIS step — the write-on-death hook
+        self._newly_senesced = newly
 
         # death as a HAZARD proportional to senesced burden (not a threshold):
         # mu_i(t) = k * sen_frac_i(t) ~ k*(s/h)(e^{h t}-1)  =>  Gompertz with

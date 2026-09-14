@@ -293,7 +293,90 @@ signal.
 
 ---
 
-## 7. How the evidence maps to the claims
+## 7. D3 resolved — the write semantics of death (exp16)
+
+The tower's last open joint (T4/D3: "anchor-pinning fights the codec's writes
+on senesced cells") is closed, and the closure produced three findings that
+stand on their own (full ledger: FALSIFICATION.md Level 5):
+
+**The matched-channel law.** The v1 latch failed composition (x0.80) because
+its memory pin (k_anchor = 50/yr) ran ~100x the bandwidth of the gap-junction
+channel it was supposed to back up (~g0*deg ~ 0.4/yr). A backup channel that
+dominates the primary channel is not a redundancy — it is a replacement that
+fights it: the pin decoupled theta from the live V state and chronically
+inflated the |V-theta| senescence hazard (sen@60: 0.048 vs 0.014 no-latch).
+The v2 latch forms memories FAST (alpha_latch ~ 20/yr — jumps and codec
+writes latch within weeks) and pulls WEAKLY (k_anchor = 0.25/yr, calibrated
+by the exp16 C2 sweep: composition x1.000 at 0.25 degrading monotonically to
+x0.881 at 50). Composition with codec maintenance: **x1.000**. Under the
+biologically-corrected death semantics (broadcast): **x0.991**. The somatic
+memory's job is to REMEMBER, not to ENFORCE — enforcement belongs to the
+live channels (junctions, codec); a memory that enforces becomes the
+pathology (the v1 lesson, and a candidate principle for real
+reprogramming-safety: any persistent cell-state memory must be strong enough
+to hold a pattern and weak enough to be outvoted by verified correction).
+
+**The star question, answered in this model's currency.** When a cell dies,
+is the pattern lost, or written somewhere? Four semantics tested:
+erasure (I_recoverable@60 = 0.535), transcription (0.534 — IDENTICAL),
+stasis (0.560), broadcast (0.560). The naive star hypothesis — death is a
+transcription event, the self moves cell-to-cell — fails, and the failure is
+the informative kind: single-cell memory copies are outvoted by the
+collective consensus within weeks (the copied anchor's deviation exceeds the
+deadzone; the consensus re-derives it; alpha_latch = 20/yr erases the copy).
+The pattern is not a collection of cell memories; it is an attractor of the
+collective dynamics. Which means: (a) no single cell's death can erase it
+(redundancy — death is a transition), and (b) no single cell's transcription
+can move it (the self is not cell-local). The pattern survives death through
+THREE redundant carriers: the collective bioelectric state, the frozen
+anchors of senesced cells (stasis, +2.5% recoverable information vs erasure),
+and the genomic archive. For NOVEL patterns (not in the archive) the carriers
+are only the first two — which is why novel morphologies need active
+maintenance (exp11/exp12), and why the D3b next step (codec writes sourced
+from the latched target, not the genomic archive) is the load-bearing upgrade
+for novel-pattern longevity.
+
+**The bystander effect is real in the model — and demographically silent.**
+The broadcast semantics (the literature's mechanism: injury depolarization
+waves, gap-junction bystander effects, SASP spreading — see
+`research/d3_sweep/README.md`) shows a dose-dependent senescence excess at
+strong amplitude and a lethal interaction with junction decay (perturbations
+linger when healing coupling is gone — the model's version of
+connexin-loss-impaired wound healing). But at biological amplitude the four
+semantics are demographically indistinguishable (medians within 0.7 yr): the
+death-write matters for WHERE the pattern lives, not for how long the
+organism lives. Demographics was never going to decide the star question;
+the ledger does.
+
+## 8. The no-wetlab validation program (datasets already public)
+
+The user-facing claim this program answers: "the datasets are available, no
+wetlab needed." The pipeline (`cultivation/validation/vmem_inference.py`)
+connects public planarian single-cell atlases to this repo's predictions:
+
+1. **Ingest** — Fincher et al. 2018 cell-type atlas, the Rajewsky-lab PSCA,
+   PLANOSPHERE (Stowers), Raz et al. 2021, the 2025 allometry atlas: any
+   {cell type: {gene: expression}} matrix goes straight into
+   `infer_vmem()`.
+2. **Infer** — ion-transporter gene weights -> channel-class permeabilities
+   -> Goldman-Hodgkin-Katz resting potential per cell type (method
+   established on neurons: Tripathy 2017, Bernaerts 2025, Huang 2025).
+3. **Predict** — the worm's bioelectric map: which cell types are
+   hyperpolarized (curated-hypothesis pass: neoblasts -53 mV, phagocytes
+   -7 mV) — with four falsifiable, literature-cited predictions (V1-V4)
+   ready to be checked against atlas numbers the moment they are loaded.
+4. **Connect** — the predicted Vmem map is the input the fidelity model
+   needs: band-assignment per cell type -> the fidelity clock's predicted
+   aging trajectory per tissue -> intervention targets ranked by
+   information-theoretic value, not viability alone.
+
+The curated marker table is explicitly a HYPOTHESIS (module docstring):
+replacing it with atlas numbers is the first act of the validation program,
+not a refactor.
+
+---
+
+## 9. How the evidence maps to the claims
 
 | Claim | Where it lives |
 |---|---|

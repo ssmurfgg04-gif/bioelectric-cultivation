@@ -147,6 +147,57 @@ end-to-end on a corpus no phase ever saw:
 
 One-image summary: `results/figures/fig16_tower_summary.png` (policy / scaling law / novel morphology / retention). Per-phase figures: `results/figures/fig10-fig15`.
 
+## D3 resolved (exp16): the write semantics of death
+
+The tower's open joint — the latch layer fought the codec's writes on
+senesced cells (x0.80) — is closed, and the closure turned the star question
+("when a cell dies, is the pattern lost, or written somewhere?") into four
+competing, tested write semantics (`cultivation/bioelectric/senescence_semantics.py`,
+grounded in the 2026-09 literature sweep in `research/d3_sweep/`):
+
+- **The matched-channel law (the engineering fix).** The v1 latch's memory
+  pin ran ~100x the bandwidth of the junction channel it backed up — a
+  dominant "backup" that fights the primary channel and chronically
+  inflates the senescence hazard. The v2 latch forms memories fast
+  (alpha ~ 20/yr) and pulls weakly (k = 0.25/yr, calibrated by the C2
+  sweep: composition x1.000 at 0.25 degrading monotonically to x0.881 at
+  50). **Composition with codec maintenance: x1.000**; under the
+  biologically-corrected death semantics (bystander broadcast): x0.991.
+  The somatic memory's job is to REMEMBER, not to ENFORCE.
+- **The star question, answered in this model's currency.** Four semantics
+  tested against the novel-pattern information ledger: erasure 0.535,
+  transcription 0.534 (identical — the informative negative), stasis 0.560,
+  broadcast 0.560. The naive hypothesis — death is a transcription event,
+  the self moves cell-to-cell — fails because single-cell memory copies
+  are outvoted by the collective consensus within weeks. **The pattern is
+  an attractor of collective dynamics, not a property of individual
+  cells**: no single death can erase it (redundancy — death IS a
+  transition), and no single transcription can move it (the self is not
+  cell-local). The pattern survives through three redundant carriers:
+  collective state, frozen stasis anchors (+2.5% vs erasure), and the
+  genomic archive.
+- **The bystander effect is demographically silent.** The broadcast (the
+  literature's mechanism: injury depolarization waves, gap-junction
+  bystander effects, SASP spreading) shows dose-dependent excess
+  senescence and a lethal interaction with junction decay (perturbations
+  linger when healing coupling is gone), yet the four semantics sit within
+  0.7 yr of each other in median lifespan: the death-write decides WHERE
+  the pattern lives, not HOW LONG the organism lives.
+
+Figure: `results/figures/fig17_d3_semantics.png`. Full ledger:
+`docs/FALSIFICATION.md` Level 5.
+
+## The no-wetlab validation layer
+
+`cultivation/validation/vmem_inference.py` connects the public planarian
+single-cell atlases (Fincher 2018, PSCA, PLANOSPHERE, Raz 2021, the 2025
+allometry atlas) to the model: ion-transporter expression -> GHK resting
+potential -> the worm's predicted bioelectric map -> four falsifiable,
+literature-cited predictions (neoblast hyperpolarization, H,K-ATPase
+anterior control, immune-cell depolarization, innexin-as-coupling-not-level).
+The curated marker table is an explicit hypothesis; replacing it with atlas
+numbers is the first act of the validation program.
+
 ## Research dossier
 
 `research/` contains the verified literature (bioelectric morphogenesis, IIT, aging theory, Chinese research landscape) with DOIs verified against Crossref/PubMed responses, plus real C. elegans connectome data (OpenWorm; Cook et al. 2019).
