@@ -867,3 +867,87 @@ Night-nine queue: M-sheet inheritance-copy fronts; ARZ wound-domain
 readout (M35, Mediator 8 analog); compiler v2 work items; DB
 head_tail re-mapping; S2R3c novel-prediction deposit; quest 001 when
 quota opens.
+
+## M26: the night-nine CONTINUOUS BATCH (exp58-exp70) — the directive changed
+
+The unit of work stopped being "one night." Ten experiments ran back
+to back, push after push, each derived from the ledger's open items
+and the literature.
+
+- exp58 M-SHEET REPAIR (7/7): Saito 2003's abstract INVERTED the
+  exp55 fire rule (induction fires on SAME-SIGN medial-lateral gaps;
+  L-R facing contact is SILENT). IntercalationSheet rebuilt
+  additively: same-sign rule + exposure->commitment + inheritance-copy
+  propagation + field maintenance. exp55's S1/S2/S4 RESOLVED.
+- exp59 M35 ARZ (5/5): M35-as-first-registered REFUTED AS REDUNDANT
+  (the blind-guess base already converges the wound repertoire);
+  M35-A adopted — multi-lineage convergence (K=3, derived not
+  fitted): tail rate 0.917 -> 0.333 vs record 0.40.
+- exp60 THE GENE LAYER (M37, 3/5): the DB's 412 RNAi entries mapped
+  to functional families; the morphogen class was UNDER-INCLUSIVE
+  (dvl/fzd/evi/notum join at 0.815 vs 0.718); the M33 neural channel
+  proven NECESSARY (substrate-gene disruption costs more than
+  junction blockade); N1's deposit falsifier FIRED honestly (generic
+  pooled 0.855 outside the registered band); the neoblast record is
+  GRADED (M37-A registered); neoblast_depleted param added.
+- exp61 COMPILER V2 (4/4): FOUR novel layouts verify zero-search in
+  1.4 s; the R1'' latch-write cuts the minimum window 24 h -> 3 h
+  (8x); lab-executable schedules emit (R6); 100-GENERATION
+  STABILITY with ZERO anchor drift — the exp41 latch re-read path
+  closed structurally.
+- exp62 STAGE-4 SIGNAL-RANGE DIAL (4/5): the coupling-kernel radius
+  is a REAL dial — horizon 5 -> 10 -> 16 -> 24 cells (4.8x, the
+  5->20 target exceeded); the regen cone's write dilutes with k
+  (5.07 -> 2.25 mV); k=4 breaks the third-head verify (the honest
+  D-G4 refutation) — THE CROSS-STAGE RULE: reach is bought with
+  contrast; operating envelope k<=2.
+- exp63 STAGE-5 BLUEPRINT TRANSFER (4/4): the phi_spec layer
+  serialized to JSON and reloaded into fresh hosts; identity 1.0
+  across kernels; survives partial death; refused on non-supporting
+  substrates (R5 at transfer); READER-DEPENDENT (no-readout control
+  0.0). Fine voltage offset ~9.6 mV = the carrier-assistance term.
+- exp64 M37-A/M37-B: M37-A ADOPTED (the neoblast coin — per-animal
+  penetrance from stored state; out-of-plane prediction PASS);
+  M37-B REFUTED (impairment CHANNELS are not interchangeable —
+  plane signatures are channel-specific).
+- exp65 M38-A CO-TUNING: geometry REFUTED (zone width nearly inert);
+  the anchor itself drifts in the unclamped settle; MAINTENANCE
+  CO-TUNING ADOPTED — a 3 h re-clamp schedule verifies k=4 fully.
+  THE RULE: free-running envelope k<=2; beyond it the compiler
+  emits a maintenance schedule. The duty cycle buys reach.
+- exp66 CORPUS SEMANTICS CORRECTED (3/5): the head_tail anomaly was
+  A PLANE MIS-MAP ("Head plus pre-pharyngeal crop" = one contiguous
+  anterior removal); the gj_block|head 0.177 residual OWNED BY THE
+  MIXTURE (pub1 octanol sustained 0.092 — M33-consistent — vs pub20
+  heptanol delayed 0.345); the washout-pulse refutation registered
+  M40.
+- exp67 COMPILER V3 CORPUS LOOP (3/4): the full adopted stack
+  generates every mapped corpus arm; MAE 0.595 -> 0.524 (the first
+  corpus-level improvement since the baseline); both refuted
+  signatures shrink; the plane-rho drop diagnosed as exp37's
+  all-zero artifact.
+- exp68 THE COHERENCE-FORMALIZATION SEARCH (star-search step 1, 2/3):
+  the exp43 constraint tested against dynamics-matched formalizations
+  over a 9-substrate battery — THE BOUNDARY DOES NOT MOVE (no
+  substrate that b2v refuses but the dynamics supports; all five
+  formalizations separate pass/fail). The floating-pattern star is
+  blocked by the DYNAMICS, not the metric.
+- exp69 M40 COMMITMENT-RATE COUPLING (4/4, ADOPTED): the blastema
+  delays commitment under blockade (cell_period x (1 + D(1-r)));
+  the constraint sweep adopts D=2 — the washout record matched
+  (0.00) with the sustained signature UNCHANGED.
+- exp70 ONSET-AWARE CORPUS (4/4): all gj_block experiments
+  classified sustained/delayed/washout; e329 matched exactly;
+  MAE 0.524 -> 0.522.
+
+### Stage scoreboard after the continuous batch
+- Stage 1 炼气 complete | Stage 2 筑基: the GENE LAYER exists (families,
+  coin, channels); corpus MAE 0.595 -> 0.522 with every residual
+  owned | Stage 3 金丹: compiler v2 (4 novel layouts, 3 h window,
+  100-gen stability, lab schedules) + v3 corpus loop | Stage 4 元婴:
+  the dial is real (4.8x reach) with the contrast trade-off RULED
+  (envelope k<=2 free-running; maintenance beyond) | Stage 5 飞升:
+  blueprint transfer 4/4 (digital round-trip, cross-substrate,
+  partial-death survival, reader-dependent); the coherence
+  constraint ROBUST across formalizations (the star stays blocked
+  by the dynamics — the honest step-1 report).
