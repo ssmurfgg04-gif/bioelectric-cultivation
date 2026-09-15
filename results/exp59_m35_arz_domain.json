@@ -1,0 +1,46 @@
+{
+ "exp": "exp59_m35_arz_domain (M35-A amended)",
+ "gates": {
+  "M35-G1_bit_exact_anchor": {
+   "verdict": "PASS",
+   "max_abs_drift": 0.0,
+   "stored": [
+    1.829811998960332,
+    1.7071315850159434,
+    1.7628951722294481
+   ],
+   "reproduced": [
+    1.829811998960332,
+    1.7071315850159434,
+    1.7628951722294481
+   ]
+  },
+  "M35-G2_full_coupling_inert": {
+   "verdict": "PASS",
+   "max_abs_drift": 0.0
+  },
+  "M35-G3_tail_rescue_direction": {
+   "verdict": "PASS",
+   "err_mean_arz0": 7.856070011774517,
+   "err_mean_arz1": 5.745197346563416,
+   "rate_arz0": 0.9166666666666666,
+   "rate_arz1": 0.3333333333333333,
+   "gate": "err_mean decreases AND rate does not increase, w=0 vs w=1, n=12 (power re-registration recorded)"
+  },
+  "M35-G4_head_preservation": {
+   "verdict": "PASS",
+   "rate_at_arz1": 0.0,
+   "err_mean_at_arz1": 1.7635648092068645
+  },
+  "M35-G5_corpus_direction": {
+   "verdict": "PASS",
+   "innexin_tail_rate_arz0": 0.9166666666666666,
+   "innexin_tail_rate_arz1": 0.3333333333333333,
+   "recorded": 0.4,
+   "dist_arz0": 0.5166666666666666,
+   "dist_arz1": 0.06666666666666671,
+   "innexin_head_rate_arz1": 0.0
+  }
+ },
+ "summary": "5/5 gates PASS"
+}

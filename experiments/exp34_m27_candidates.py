@@ -77,7 +77,9 @@ def run_arm(arm: str, seed: int, cut_f: float = 0.5,
             spec_reanchor_p: float = 1.0,
             anchor_from_history: float | None = None,
             spec_reanchor_isolated: float = 1.0,
-            neural_readout: float = 0.0) -> dict:
+            neural_readout: float = 0.0,
+            neural_misanchor: float = 0.0,
+            arz_readout: float = 0.0) -> dict:
     c = make_collective(seed)
     rg = dict(length_gradient=length_gradient,
               commitment_noise_scale=commitment_noise_scale,
@@ -90,7 +92,9 @@ def run_arm(arm: str, seed: int, cut_f: float = 0.5,
               spec_reanchor_p=spec_reanchor_p,
               anchor_from_history=anchor_from_history,
               spec_reanchor_isolated=spec_reanchor_isolated,
-              neural_readout=neural_readout)
+              neural_readout=neural_readout,
+              neural_misanchor=neural_misanchor,
+              arz_readout=arz_readout)
 
     def plane_protocol(plane: str) -> None:
         if plane == "head":

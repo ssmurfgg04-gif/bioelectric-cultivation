@@ -44,6 +44,12 @@ V_PHYS_MAX = 5.0
 # identity has no local pole and stays junction-carried (which is exactly
 # why recorded GJ-blockade phenotypes concentrate at posterior planes).
 NEURAL_SPEC_MIN = -35.0
+# M35-A: the ARZ's multi-lineage convergence — K independent lineage
+# reads averaged into the blastema guess (the three planarian lineages:
+# epidermal, neural, muscle; K derived from the published lineage count,
+# MED42172041, not fitted).
+ARZ_LINEAGES = 3
+ARZ_WIDTH = 2
 
 
 def line_adjacency(n: int, k: int = 1, ring: bool = False) -> np.ndarray:
@@ -166,7 +172,9 @@ class BioElectricCollective:
                anchor_from_history: float | None = None,
                spec_reanchor_isolated: float = 1.0,
                neural_readout: float = 0.0,
-               neural_misanchor: float = 0.0) -> None:
+               neural_misanchor: float = 0.0,
+               arz_readout: float = 0.0,
+               arz_width: int = 2) -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
@@ -385,6 +393,7 @@ class BioElectricCollective:
         iso_draw = 0.0 < iso_p < 1.0 and phi_readout > 0.0
         neural_w = float(neural_readout)
         mis_w = float(neural_misanchor)
+        arz_w = float(arz_readout)
 
         def face_slope(face: int, sign: int) -> tuple[float, float, float, float]:
             """Anchor (theta at the face), per-cell theta trend on the intact
@@ -466,8 +475,27 @@ class BioElectricCollective:
                 theta_new = chain_base + self.rng.normal(0.0, eff_noise) \
                     + wander
                 if r < 1.0:
-                    guess = wound_center + self.rng.normal(
-                        0.0, self.blastema_readout_noise)
+                    # M35-A ARZ READOUT (night nine, amended): the 4D
+                    # atlas's wound-proximal domain CONVERGES multi-lineage
+                    # identity signals (MED42172041). The M25 guess base
+                    # (wound_center) is ALREADY the wound region's stored
+                    # repertoire mean — the first-registered base blend is
+                    # a no-op (recorded as the M35 redundancy discovery).
+                    # The convergence content is VARIANCE REDUCTION: the
+                    # guess averages the ARZ_LINEAGES independent lineage
+                    # reads (epidermal/neural/muscle — the three planarian
+                    # lineages; K derived from the published lineage
+                    # count, not fitted). arz_readout=0.0 is bit-exact
+                    # (single draw, unchanged stream).
+                    guess_base = wound_center
+                    draw = self.rng.normal(0.0, self.blastema_readout_noise)
+                    if arz_w > 0.0:
+                        conv = float(np.mean([
+                            self.rng.normal(0.0,
+                                            self.blastema_readout_noise)
+                            for _ in range(ARZ_LINEAGES)]))
+                        draw = (1.0 - arz_w) * draw + arz_w * conv
+                    guess = guess_base + draw
                     # M33: non-junctional neural/muscle readout for
                     # anterior identities — the pole channel bypasses the
                     # junction network entirely.
