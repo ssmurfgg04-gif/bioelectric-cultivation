@@ -1,0 +1,48 @@
+{
+ "exp": "exp72_cross_tissue_dial",
+ "table": {
+  "chain|k1": {
+   "horizon": 5.0,
+   "volume": 1.98
+  },
+  "chain|k2": {
+   "horizon": 10.0,
+   "volume": 3.94
+  },
+  "chain|k4": {
+   "horizon": 24.0,
+   "volume": 7.8
+  },
+  "grid|k1": {
+   "horizon": 7.0710678118654755,
+   "volume": 6.84
+  },
+  "grid|k2": {
+   "horizon": 7.0710678118654755,
+   "volume": 18.36
+  },
+  "small_world|k1": {
+   "horizon": 5.0,
+   "volume": 2.0
+  },
+  "small_world|k2": {
+   "horizon": 10.0,
+   "volume": 3.96
+  },
+  "small_world|k4": {
+   "horizon": 42.0,
+   "volume": 7.82
+  }
+ },
+ "grid_envelope_errs": {
+  "1": 7.94,
+  "2": 12.2
+ },
+ "volume_rho": 0.594,
+ "criteria": {
+  "XT_G1_rule_transfers": true,
+  "XT_G2_envelope_transfers": true,
+  "XT_G3_volume_collapse": false
+ },
+ "notes": "The Stage-4 dial rule tested across tissue geometries (chain / 2D grid with Moore neighborhoods / small-world). XT-G3 is the unified claim: the horizon is a function of the neighborhood VOLUME (cells within the radius), not the radius or the geometry \u2014 one rule, many tissues. XT-G2 transfers the contrast envelope: whatever the geometry, reach is bought with contrast."
+}

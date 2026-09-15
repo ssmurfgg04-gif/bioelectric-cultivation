@@ -1971,3 +1971,22 @@ Night seven, part 3. exp43's registered follow-up:
   Every component is now individually priced: the window's clamps
   (3 h, necessary), the latch-write (replaces long forcing), the
   trigger (the regen), zero maintenance below k<=2.
+
+## L53 — exp72 STAGE-4 CROSS-TISSUE DIAL (2/3)
+- XT-G1 PASS — THE DIAL RULE TRANSFERS: the horizon is monotone in
+  the coupling radius on EVERY tissue (chain 5 -> 10 -> 24; grid
+  7.1 -> 7.1 saturated-non-decreasing; small-world 5 -> 10 -> 42).
+  First-run correction: the grid's index-distance horizon saturates
+  at the tissue size (55 = the whole unrolled grid) — the geometric
+  (Euclidean) horizon replaces it, registered before the re-run.
+- XT-G2 PASS — THE CONTRAST ENVELOPE TRANSFERS: the grid's settle
+  error is monotone in k (7.94 -> 12.20) — whatever the geometry,
+  reach is bought with contrast (the exp62/exp65 rule is not
+  chain-specific).
+- XT-G3 REFUTED (honest) — NO UNIVERSAL VOLUME LAW: the horizon does
+  NOT collapse onto neighborhood volume (Spearman rho 0.594 < 0.9).
+  The 2D grid SATURATES (the influence fills the tissue at any k)
+  while the small-world's long-range chords JUMP the horizon (42 at
+  k=4). The dial's RULE is universal; the dial's READOUT is
+  tissue-specific (geometry + link redundancy). A real refinement of
+  the Stage-4 rule, not a failure of the dial.
