@@ -4,6 +4,14 @@ Consolidated status + plan for running DeepScientist as the overnight optimizer 
 this repository's intervention search. The install is the bone; everything else is
 wiring. Nothing here is a framework.
 
+> **Current quest (updated): Stage 2 validation** — prove the model predicts the
+> recorded outcomes of already-published experiments. PlanformDB 2.5.0 (in-repo,
+> 1,716 experiments) is the corpus; the wet lab already happened, the comparison is
+> pure computation. Quest spec: `docs/QUEST_STAGE2_VALIDATION.md`. The pilot
+> (`experiments/exp27_stage2_pilot.py`) is already run and seeded night one with a
+> concrete refutation to repair (S2P1: the model regenerates normally without gap
+> junctions — the record says it should not).
+
 ## 1. Where things stand
 
 | Item | Status |
@@ -67,7 +75,8 @@ Neither blocks the main path.
 
 1. `ds doctor --runner opencode` green.
 2. Quest repo initialized with the eval contract script and seeded state
-   (best CEM policy + falsification ledger contents).
+   (exp27 S2P1 refutation, exp21 group stats, falsification ledger contents)
+   per `docs/QUEST_STAGE2_VALIDATION.md`.
 3. Pilot run completes one full step within the per-step timeout.
 4. Overnight run terminates on its own, by cap or by convergence.
 5. Morning readout, readable in five minutes: best snapshot, delta vs seeded

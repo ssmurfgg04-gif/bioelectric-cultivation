@@ -1,0 +1,3489 @@
+{
+ "exp": "exp27_stage2_pilot",
+ "source": "PlanformDB 2.5.0 (Lobo 2013), in-repo .edb",
+ "n_slice_experiments": 558,
+ "n_cutting": 549,
+ "n_innexin": 9,
+ "sim_arms": {
+  "cutting": {
+   "runs": [
+    {
+     "wt_pattern_error": 3.173697401712162,
+     "head_likeness_tail": 0.0,
+     "head_likeness_head": 1.0,
+     "seed": 1,
+     "predicted_abnormal": false
+    },
+    {
+     "wt_pattern_error": 2.959720362887968,
+     "head_likeness_tail": 0.0,
+     "head_likeness_head": 1.0,
+     "seed": 2,
+     "predicted_abnormal": false
+    },
+    {
+     "wt_pattern_error": 3.3514607223308586,
+     "head_likeness_tail": 0.0,
+     "head_likeness_head": 1.0,
+     "seed": 3,
+     "predicted_abnormal": false
+    }
+   ],
+   "wt_pattern_error_mean": 3.1616261623103292,
+   "wt_pattern_error_se": 0.11324665325390935,
+   "head_likeness_tail_mean": 0.0,
+   "head_likeness_tail_se": 0.0,
+   "predicted_abn_rate": 0.0
+  },
+  "innexin_sustained": {
+   "runs": [
+    {
+     "wt_pattern_error": 2.9218519247619716,
+     "head_likeness_tail": 0.0,
+     "head_likeness_head": 1.0,
+     "seed": 1,
+     "predicted_abnormal": false
+    },
+    {
+     "wt_pattern_error": 2.8468300378519498,
+     "head_likeness_tail": 0.0,
+     "head_likeness_head": 1.0,
+     "seed": 2,
+     "predicted_abnormal": false
+    },
+    {
+     "wt_pattern_error": 2.845471510529548,
+     "head_likeness_tail": 0.0,
+     "head_likeness_head": 1.0,
+     "seed": 3,
+     "predicted_abnormal": false
+    }
+   ],
+   "wt_pattern_error_mean": 2.8713844910478232,
+   "wt_pattern_error_se": 0.025236764177091673,
+   "head_likeness_tail_mean": 0.0,
+   "head_likeness_tail_se": 0.0,
+   "predicted_abn_rate": 0.0
+  },
+  "gjblock_restored": {
+   "runs": [
+    {
+     "wt_pattern_error": 3.4120300330732984,
+     "head_likeness_tail": 0.0,
+     "head_likeness_head": 0.9741427499946328,
+     "seed": 1,
+     "predicted_abnormal": false
+    },
+    {
+     "wt_pattern_error": 3.1754528208258366,
+     "head_likeness_tail": 0.0,
+     "head_likeness_head": 0.995577837314967,
+     "seed": 2,
+     "predicted_abnormal": false
+    },
+    {
+     "wt_pattern_error": 3.162167135448647,
+     "head_likeness_tail": 0.0,
+     "head_likeness_head": 0.992735743836828,
+     "seed": 3,
+     "predicted_abnormal": false
+    }
+   ],
+   "wt_pattern_error_mean": 3.249883329782594,
+   "wt_pattern_error_se": 0.0811640158362851,
+   "head_likeness_tail_mean": 0.0,
+   "head_likeness_tail_se": 0.0,
+   "predicted_abn_rate": 0.0
+  }
+ },
+ "recorded": {
+  "cutting_mean_abnormal": 0.48700783716721785,
+  "innexin_mean_abnormal": 0.5420138888888889
+ },
+ "criteria": {
+  "S2P1_ordering": false,
+  "S2P2_cutting_mapping": true,
+  "S2P3_class_match_rate": 0.5,
+  "S2C_restored_control": true
+ },
+ "prediction_rule": "predicted_abnormal iff wt_pattern_error >= 6.0 mV OR head_likeness_tail >= 0.7 (exp1 calibration, pre-registered)",
+ "slice_detail": {
+  "cutting": [
+   {
+    "exp": 129,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 130,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 131,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 132,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 133,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 135,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 136,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 137,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 138,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 139,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 140,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 141,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 142,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 143,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 144,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 145,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 4
+   },
+   {
+    "exp": 146,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 4
+   },
+   {
+    "exp": 147,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 148,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 4
+   },
+   {
+    "exp": 149,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 3
+   },
+   {
+    "exp": 150,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 158,
+    "rnais": [],
+    "abnormal": 0.36,
+    "n_rs": 1
+   },
+   {
+    "exp": 159,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 3
+   },
+   {
+    "exp": 161,
+    "rnais": [],
+    "abnormal": 0.33,
+    "n_rs": 1
+   },
+   {
+    "exp": 165,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 166,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 168,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 169,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 170,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 171,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 172,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 173,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 174,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 175,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 176,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 278,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 294,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 322,
+    "rnais": [],
+    "abnormal": 0.43,
+    "n_rs": 1
+   },
+   {
+    "exp": 323,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 324,
+    "rnais": [],
+    "abnormal": 0.2,
+    "n_rs": 1
+   },
+   {
+    "exp": 325,
+    "rnais": [],
+    "abnormal": 0.17,
+    "n_rs": 1
+   },
+   {
+    "exp": 326,
+    "rnais": [],
+    "abnormal": 0.52,
+    "n_rs": 1
+   },
+   {
+    "exp": 327,
+    "rnais": [],
+    "abnormal": 0.68,
+    "n_rs": 1
+   },
+   {
+    "exp": 328,
+    "rnais": [],
+    "abnormal": 0.19,
+    "n_rs": 1
+   },
+   {
+    "exp": 329,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 330,
+    "rnais": [],
+    "abnormal": 0.56,
+    "n_rs": 1
+   },
+   {
+    "exp": 349,
+    "rnais": [],
+    "abnormal": 0.898,
+    "n_rs": 3
+   },
+   {
+    "exp": 350,
+    "rnais": [],
+    "abnormal": 0.964,
+    "n_rs": 3
+   },
+   {
+    "exp": 351,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 3
+   },
+   {
+    "exp": 352,
+    "rnais": [],
+    "abnormal": 0.602,
+    "n_rs": 3
+   },
+   {
+    "exp": 354,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 3
+   },
+   {
+    "exp": 355,
+    "rnais": [],
+    "abnormal": 0.826,
+    "n_rs": 3
+   },
+   {
+    "exp": 356,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 357,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 358,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 359,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 360,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 361,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 362,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 363,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 364,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 365,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 366,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 367,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 368,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 369,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 370,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 371,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 372,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 373,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 374,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 375,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 376,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 379,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 380,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 383,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 384,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 385,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 386,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 387,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 388,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 389,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 391,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 392,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 393,
+    "rnais": [],
+    "abnormal": 0.78,
+    "n_rs": 1
+   },
+   {
+    "exp": 394,
+    "rnais": [],
+    "abnormal": 0.32,
+    "n_rs": 1
+   },
+   {
+    "exp": 395,
+    "rnais": [],
+    "abnormal": 0.58,
+    "n_rs": 1
+   },
+   {
+    "exp": 398,
+    "rnais": [],
+    "abnormal": 0.76,
+    "n_rs": 1
+   },
+   {
+    "exp": 399,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 400,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 401,
+    "rnais": [],
+    "abnormal": 0.43,
+    "n_rs": 1
+   },
+   {
+    "exp": 402,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 403,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 404,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 405,
+    "rnais": [],
+    "abnormal": 0.26,
+    "n_rs": 1
+   },
+   {
+    "exp": 406,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 407,
+    "rnais": [],
+    "abnormal": 0.12,
+    "n_rs": 1
+   },
+   {
+    "exp": 408,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 409,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 410,
+    "rnais": [],
+    "abnormal": 0.25,
+    "n_rs": 1
+   },
+   {
+    "exp": 411,
+    "rnais": [],
+    "abnormal": 0.92,
+    "n_rs": 1
+   },
+   {
+    "exp": 412,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 413,
+    "rnais": [],
+    "abnormal": 0.37,
+    "n_rs": 1
+   },
+   {
+    "exp": 414,
+    "rnais": [],
+    "abnormal": 0.42,
+    "n_rs": 1
+   },
+   {
+    "exp": 415,
+    "rnais": [],
+    "abnormal": 0.05,
+    "n_rs": 1
+   },
+   {
+    "exp": 416,
+    "rnais": [],
+    "abnormal": 0.28,
+    "n_rs": 1
+   },
+   {
+    "exp": 417,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 1
+   },
+   {
+    "exp": 418,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 419,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 420,
+    "rnais": [],
+    "abnormal": 0.04,
+    "n_rs": 1
+   },
+   {
+    "exp": 421,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 422,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 423,
+    "rnais": [],
+    "abnormal": 0.05,
+    "n_rs": 1
+   },
+   {
+    "exp": 424,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 425,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 426,
+    "rnais": [],
+    "abnormal": 0.35,
+    "n_rs": 1
+   },
+   {
+    "exp": 427,
+    "rnais": [],
+    "abnormal": 0.34,
+    "n_rs": 1
+   },
+   {
+    "exp": 428,
+    "rnais": [],
+    "abnormal": 0.25,
+    "n_rs": 1
+   },
+   {
+    "exp": 429,
+    "rnais": [],
+    "abnormal": 0.55,
+    "n_rs": 1
+   },
+   {
+    "exp": 430,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 431,
+    "rnais": [],
+    "abnormal": 0.58,
+    "n_rs": 1
+   },
+   {
+    "exp": 432,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 433,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 451,
+    "rnais": [],
+    "abnormal": 0.06,
+    "n_rs": 1
+   },
+   {
+    "exp": 452,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 453,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 454,
+    "rnais": [],
+    "abnormal": 0.23,
+    "n_rs": 1
+   },
+   {
+    "exp": 455,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 456,
+    "rnais": [],
+    "abnormal": 0.12,
+    "n_rs": 1
+   },
+   {
+    "exp": 457,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 458,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 459,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 460,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 461,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 480,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 481,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 482,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 483,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 484,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 485,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 486,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 487,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 488,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 489,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 490,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 491,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 492,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 493,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 494,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 516,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 517,
+    "rnais": [],
+    "abnormal": 0.1,
+    "n_rs": 1
+   },
+   {
+    "exp": 518,
+    "rnais": [],
+    "abnormal": 0.55,
+    "n_rs": 1
+   },
+   {
+    "exp": 519,
+    "rnais": [],
+    "abnormal": 0.75,
+    "n_rs": 1
+   },
+   {
+    "exp": 520,
+    "rnais": [],
+    "abnormal": 0.87,
+    "n_rs": 1
+   },
+   {
+    "exp": 521,
+    "rnais": [],
+    "abnormal": 0.95,
+    "n_rs": 1
+   },
+   {
+    "exp": 522,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 523,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 524,
+    "rnais": [],
+    "abnormal": 0.2,
+    "n_rs": 1
+   },
+   {
+    "exp": 525,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 1
+   },
+   {
+    "exp": 526,
+    "rnais": [],
+    "abnormal": 0.8,
+    "n_rs": 1
+   },
+   {
+    "exp": 527,
+    "rnais": [],
+    "abnormal": 0.75,
+    "n_rs": 1
+   },
+   {
+    "exp": 528,
+    "rnais": [],
+    "abnormal": 0.7,
+    "n_rs": 1
+   },
+   {
+    "exp": 529,
+    "rnais": [],
+    "abnormal": 0.95,
+    "n_rs": 1
+   },
+   {
+    "exp": 530,
+    "rnais": [],
+    "abnormal": 0.15,
+    "n_rs": 1
+   },
+   {
+    "exp": 531,
+    "rnais": [],
+    "abnormal": 0.2,
+    "n_rs": 1
+   },
+   {
+    "exp": 532,
+    "rnais": [],
+    "abnormal": 0.22,
+    "n_rs": 1
+   },
+   {
+    "exp": 533,
+    "rnais": [],
+    "abnormal": 0.05,
+    "n_rs": 1
+   },
+   {
+    "exp": 534,
+    "rnais": [],
+    "abnormal": 0.05,
+    "n_rs": 1
+   },
+   {
+    "exp": 535,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 536,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 537,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 538,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 539,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 540,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 541,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 542,
+    "rnais": [],
+    "abnormal": 0.25,
+    "n_rs": 1
+   },
+   {
+    "exp": 543,
+    "rnais": [],
+    "abnormal": 0.12,
+    "n_rs": 1
+   },
+   {
+    "exp": 544,
+    "rnais": [],
+    "abnormal": 0.03,
+    "n_rs": 1
+   },
+   {
+    "exp": 545,
+    "rnais": [],
+    "abnormal": 0.1,
+    "n_rs": 1
+   },
+   {
+    "exp": 546,
+    "rnais": [],
+    "abnormal": 0.38,
+    "n_rs": 1
+   },
+   {
+    "exp": 547,
+    "rnais": [],
+    "abnormal": 0.6,
+    "n_rs": 1
+   },
+   {
+    "exp": 548,
+    "rnais": [],
+    "abnormal": 0.45,
+    "n_rs": 1
+   },
+   {
+    "exp": 549,
+    "rnais": [],
+    "abnormal": 0.15,
+    "n_rs": 1
+   },
+   {
+    "exp": 550,
+    "rnais": [],
+    "abnormal": 0.15,
+    "n_rs": 1
+   },
+   {
+    "exp": 551,
+    "rnais": [],
+    "abnormal": 0.38,
+    "n_rs": 1
+   },
+   {
+    "exp": 552,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 1
+   },
+   {
+    "exp": 553,
+    "rnais": [],
+    "abnormal": 0.38,
+    "n_rs": 1
+   },
+   {
+    "exp": 554,
+    "rnais": [],
+    "abnormal": 0.4,
+    "n_rs": 1
+   },
+   {
+    "exp": 555,
+    "rnais": [],
+    "abnormal": 0.6,
+    "n_rs": 1
+   },
+   {
+    "exp": 556,
+    "rnais": [],
+    "abnormal": 0.65,
+    "n_rs": 1
+   },
+   {
+    "exp": 557,
+    "rnais": [],
+    "abnormal": 0.18,
+    "n_rs": 1
+   },
+   {
+    "exp": 558,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 1
+   },
+   {
+    "exp": 559,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 560,
+    "rnais": [],
+    "abnormal": 0.1,
+    "n_rs": 1
+   },
+   {
+    "exp": 561,
+    "rnais": [],
+    "abnormal": 0.4,
+    "n_rs": 1
+   },
+   {
+    "exp": 562,
+    "rnais": [],
+    "abnormal": 0.13,
+    "n_rs": 1
+   },
+   {
+    "exp": 563,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 564,
+    "rnais": [],
+    "abnormal": 0.85,
+    "n_rs": 1
+   },
+   {
+    "exp": 565,
+    "rnais": [],
+    "abnormal": 0.6,
+    "n_rs": 1
+   },
+   {
+    "exp": 566,
+    "rnais": [],
+    "abnormal": 0.35,
+    "n_rs": 1
+   },
+   {
+    "exp": 567,
+    "rnais": [],
+    "abnormal": 0.25,
+    "n_rs": 1
+   },
+   {
+    "exp": 568,
+    "rnais": [],
+    "abnormal": 0.2,
+    "n_rs": 1
+   },
+   {
+    "exp": 569,
+    "rnais": [],
+    "abnormal": 0.1,
+    "n_rs": 1
+   },
+   {
+    "exp": 570,
+    "rnais": [],
+    "abnormal": 0.1,
+    "n_rs": 1
+   },
+   {
+    "exp": 571,
+    "rnais": [],
+    "abnormal": 0.1,
+    "n_rs": 1
+   },
+   {
+    "exp": 572,
+    "rnais": [],
+    "abnormal": 0.1,
+    "n_rs": 1
+   },
+   {
+    "exp": 573,
+    "rnais": [],
+    "abnormal": 0.1,
+    "n_rs": 1
+   },
+   {
+    "exp": 574,
+    "rnais": [],
+    "abnormal": 0.05,
+    "n_rs": 1
+   },
+   {
+    "exp": 575,
+    "rnais": [],
+    "abnormal": 0.05,
+    "n_rs": 1
+   },
+   {
+    "exp": 586,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 611,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 612,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 613,
+    "rnais": [],
+    "abnormal": 0.47,
+    "n_rs": 1
+   },
+   {
+    "exp": 616,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 706,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 830,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 831,
+    "rnais": [],
+    "abnormal": 0.65,
+    "n_rs": 1
+   },
+   {
+    "exp": 832,
+    "rnais": [],
+    "abnormal": 0.65,
+    "n_rs": 1
+   },
+   {
+    "exp": 833,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 836,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 837,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 838,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 839,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 840,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 841,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 842,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 843,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 856,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 857,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 862,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 863,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 864,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 865,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 866,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 867,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 868,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 869,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 873,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 874,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 875,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 876,
+    "rnais": [],
+    "abnormal": 0.4,
+    "n_rs": 1
+   },
+   {
+    "exp": 886,
+    "rnais": [],
+    "abnormal": 0.15,
+    "n_rs": 2
+   },
+   {
+    "exp": 887,
+    "rnais": [],
+    "abnormal": 0.233,
+    "n_rs": 3
+   },
+   {
+    "exp": 888,
+    "rnais": [],
+    "abnormal": 0.225,
+    "n_rs": 4
+   },
+   {
+    "exp": 889,
+    "rnais": [],
+    "abnormal": 0.35,
+    "n_rs": 5
+   },
+   {
+    "exp": 890,
+    "rnais": [],
+    "abnormal": 0.4,
+    "n_rs": 4
+   },
+   {
+    "exp": 891,
+    "rnais": [],
+    "abnormal": 0.61,
+    "n_rs": 5
+   },
+   {
+    "exp": 893,
+    "rnais": [],
+    "abnormal": 0.375,
+    "n_rs": 4
+   },
+   {
+    "exp": 895,
+    "rnais": [],
+    "abnormal": 0.32,
+    "n_rs": 5
+   },
+   {
+    "exp": 896,
+    "rnais": [],
+    "abnormal": 0.37,
+    "n_rs": 5
+   },
+   {
+    "exp": 897,
+    "rnais": [],
+    "abnormal": 0.45,
+    "n_rs": 6
+   },
+   {
+    "exp": 898,
+    "rnais": [],
+    "abnormal": 0.46,
+    "n_rs": 5
+   },
+   {
+    "exp": 902,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 2
+   },
+   {
+    "exp": 903,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 2
+   },
+   {
+    "exp": 912,
+    "rnais": [],
+    "abnormal": 0.337,
+    "n_rs": 3
+   },
+   {
+    "exp": 913,
+    "rnais": [],
+    "abnormal": 0.337,
+    "n_rs": 3
+   },
+   {
+    "exp": 914,
+    "rnais": [],
+    "abnormal": 0.387,
+    "n_rs": 3
+   },
+   {
+    "exp": 915,
+    "rnais": [],
+    "abnormal": 0.367,
+    "n_rs": 3
+   },
+   {
+    "exp": 916,
+    "rnais": [],
+    "abnormal": 0.367,
+    "n_rs": 3
+   },
+   {
+    "exp": 917,
+    "rnais": [],
+    "abnormal": 0.34,
+    "n_rs": 3
+   },
+   {
+    "exp": 918,
+    "rnais": [],
+    "abnormal": 0.323,
+    "n_rs": 3
+   },
+   {
+    "exp": 919,
+    "rnais": [],
+    "abnormal": 0.32,
+    "n_rs": 1
+   },
+   {
+    "exp": 920,
+    "rnais": [],
+    "abnormal": 0.17,
+    "n_rs": 1
+   },
+   {
+    "exp": 921,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 922,
+    "rnais": [],
+    "abnormal": 0.59,
+    "n_rs": 1
+   },
+   {
+    "exp": 923,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 924,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 925,
+    "rnais": [],
+    "abnormal": 0.83,
+    "n_rs": 1
+   },
+   {
+    "exp": 926,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 927,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 928,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 929,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 933,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 934,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 935,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 936,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 2
+   },
+   {
+    "exp": 937,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 2
+   },
+   {
+    "exp": 948,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 1
+   },
+   {
+    "exp": 985,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 2
+   },
+   {
+    "exp": 986,
+    "rnais": [],
+    "abnormal": 0.51,
+    "n_rs": 2
+   },
+   {
+    "exp": 987,
+    "rnais": [],
+    "abnormal": 0.515,
+    "n_rs": 2
+   },
+   {
+    "exp": 988,
+    "rnais": [],
+    "abnormal": 0.6,
+    "n_rs": 2
+   },
+   {
+    "exp": 989,
+    "rnais": [],
+    "abnormal": 0.86,
+    "n_rs": 2
+   },
+   {
+    "exp": 990,
+    "rnais": [],
+    "abnormal": 0.985,
+    "n_rs": 2
+   },
+   {
+    "exp": 991,
+    "rnais": [],
+    "abnormal": 0.995,
+    "n_rs": 2
+   },
+   {
+    "exp": 992,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 1003,
+    "rnais": [],
+    "abnormal": 0.213,
+    "n_rs": 4
+   },
+   {
+    "exp": 1022,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1023,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1025,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1027,
+    "rnais": [],
+    "abnormal": 0.4,
+    "n_rs": 1
+   },
+   {
+    "exp": 1035,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1040,
+    "rnais": [],
+    "abnormal": 0.04,
+    "n_rs": 1
+   },
+   {
+    "exp": 1088,
+    "rnais": [],
+    "abnormal": 0.9,
+    "n_rs": 2
+   },
+   {
+    "exp": 1089,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 2
+   },
+   {
+    "exp": 1090,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 2
+   },
+   {
+    "exp": 1091,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 2
+   },
+   {
+    "exp": 1092,
+    "rnais": [],
+    "abnormal": 0.07,
+    "n_rs": 1
+   },
+   {
+    "exp": 1098,
+    "rnais": [],
+    "abnormal": 0.08,
+    "n_rs": 1
+   },
+   {
+    "exp": 1100,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1101,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 1102,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 1103,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 1104,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 1105,
+    "rnais": [],
+    "abnormal": 0.81,
+    "n_rs": 2
+   },
+   {
+    "exp": 1106,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1107,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1108,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1109,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1110,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1112,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1114,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1116,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1118,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1119,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1120,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 1121,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 1122,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 1123,
+    "rnais": [],
+    "abnormal": 0.855,
+    "n_rs": 2
+   },
+   {
+    "exp": 1124,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 1125,
+    "rnais": [],
+    "abnormal": 0.515,
+    "n_rs": 2
+   },
+   {
+    "exp": 1249,
+    "rnais": [],
+    "abnormal": 0.833,
+    "n_rs": 3
+   },
+   {
+    "exp": 1250,
+    "rnais": [],
+    "abnormal": 0.833,
+    "n_rs": 3
+   },
+   {
+    "exp": 1257,
+    "rnais": [],
+    "abnormal": 0.02,
+    "n_rs": 1
+   },
+   {
+    "exp": 1258,
+    "rnais": [],
+    "abnormal": 0.13,
+    "n_rs": 1
+   },
+   {
+    "exp": 1259,
+    "rnais": [],
+    "abnormal": 0.12,
+    "n_rs": 1
+   },
+   {
+    "exp": 1268,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 1285,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1493,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1494,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1496,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1503,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1513,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1523,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1524,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1525,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1527,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1528,
+    "rnais": [],
+    "abnormal": 0.22,
+    "n_rs": 1
+   },
+   {
+    "exp": 1529,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1531,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 1533,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1534,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1535,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1536,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1537,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1538,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1539,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1540,
+    "rnais": [],
+    "abnormal": 0.36,
+    "n_rs": 1
+   },
+   {
+    "exp": 1541,
+    "rnais": [],
+    "abnormal": 0.9,
+    "n_rs": 1
+   },
+   {
+    "exp": 1542,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1543,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1544,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1545,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1546,
+    "rnais": [],
+    "abnormal": 0.3,
+    "n_rs": 1
+   },
+   {
+    "exp": 1547,
+    "rnais": [],
+    "abnormal": 0.91,
+    "n_rs": 1
+   },
+   {
+    "exp": 1557,
+    "rnais": [],
+    "abnormal": 0.32,
+    "n_rs": 1
+   },
+   {
+    "exp": 1558,
+    "rnais": [],
+    "abnormal": 0.98,
+    "n_rs": 1
+   },
+   {
+    "exp": 1559,
+    "rnais": [],
+    "abnormal": 0.96,
+    "n_rs": 1
+   },
+   {
+    "exp": 1560,
+    "rnais": [],
+    "abnormal": 0.34,
+    "n_rs": 1
+   },
+   {
+    "exp": 1561,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1562,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1563,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1564,
+    "rnais": [],
+    "abnormal": 0.14,
+    "n_rs": 1
+   },
+   {
+    "exp": 1565,
+    "rnais": [],
+    "abnormal": 0.8,
+    "n_rs": 1
+   },
+   {
+    "exp": 1566,
+    "rnais": [],
+    "abnormal": 0.22,
+    "n_rs": 1
+   },
+   {
+    "exp": 1567,
+    "rnais": [],
+    "abnormal": 0.98,
+    "n_rs": 1
+   },
+   {
+    "exp": 1568,
+    "rnais": [],
+    "abnormal": 0.88,
+    "n_rs": 1
+   },
+   {
+    "exp": 1569,
+    "rnais": [],
+    "abnormal": 0.36,
+    "n_rs": 1
+   },
+   {
+    "exp": 1570,
+    "rnais": [],
+    "abnormal": 0.96,
+    "n_rs": 1
+   },
+   {
+    "exp": 1571,
+    "rnais": [],
+    "abnormal": 0.96,
+    "n_rs": 1
+   },
+   {
+    "exp": 1572,
+    "rnais": [],
+    "abnormal": 0.48,
+    "n_rs": 1
+   },
+   {
+    "exp": 1573,
+    "rnais": [],
+    "abnormal": 0.98,
+    "n_rs": 1
+   },
+   {
+    "exp": 1574,
+    "rnais": [],
+    "abnormal": 0.88,
+    "n_rs": 1
+   },
+   {
+    "exp": 1575,
+    "rnais": [],
+    "abnormal": 0.38,
+    "n_rs": 1
+   },
+   {
+    "exp": 1576,
+    "rnais": [],
+    "abnormal": 0.96,
+    "n_rs": 1
+   },
+   {
+    "exp": 1577,
+    "rnais": [],
+    "abnormal": 0.92,
+    "n_rs": 1
+   },
+   {
+    "exp": 1578,
+    "rnais": [],
+    "abnormal": 0.38,
+    "n_rs": 1
+   },
+   {
+    "exp": 1579,
+    "rnais": [],
+    "abnormal": 0.98,
+    "n_rs": 1
+   },
+   {
+    "exp": 1580,
+    "rnais": [],
+    "abnormal": 0.96,
+    "n_rs": 1
+   },
+   {
+    "exp": 1581,
+    "rnais": [],
+    "abnormal": 0.46,
+    "n_rs": 1
+   },
+   {
+    "exp": 1582,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1583,
+    "rnais": [],
+    "abnormal": 0.96,
+    "n_rs": 1
+   },
+   {
+    "exp": 1584,
+    "rnais": [],
+    "abnormal": 0.74,
+    "n_rs": 1
+   },
+   {
+    "exp": 1585,
+    "rnais": [],
+    "abnormal": 0.28,
+    "n_rs": 1
+   },
+   {
+    "exp": 1586,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 1
+   },
+   {
+    "exp": 1587,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 1
+   },
+   {
+    "exp": 1588,
+    "rnais": [],
+    "abnormal": 0.98,
+    "n_rs": 1
+   },
+   {
+    "exp": 1589,
+    "rnais": [],
+    "abnormal": 0.88,
+    "n_rs": 1
+   },
+   {
+    "exp": 1590,
+    "rnais": [],
+    "abnormal": 0.06,
+    "n_rs": 1
+   },
+   {
+    "exp": 1591,
+    "rnais": [],
+    "abnormal": 0.78,
+    "n_rs": 1
+   },
+   {
+    "exp": 1592,
+    "rnais": [],
+    "abnormal": 0.46,
+    "n_rs": 1
+   },
+   {
+    "exp": 1593,
+    "rnais": [],
+    "abnormal": 0.22,
+    "n_rs": 1
+   },
+   {
+    "exp": 1594,
+    "rnais": [],
+    "abnormal": 0.98,
+    "n_rs": 1
+   },
+   {
+    "exp": 1595,
+    "rnais": [],
+    "abnormal": 0.9,
+    "n_rs": 1
+   },
+   {
+    "exp": 1596,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1597,
+    "rnais": [],
+    "abnormal": 0.52,
+    "n_rs": 1
+   },
+   {
+    "exp": 1598,
+    "rnais": [],
+    "abnormal": 0.22,
+    "n_rs": 1
+   },
+   {
+    "exp": 1599,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1600,
+    "rnais": [],
+    "abnormal": 0.06,
+    "n_rs": 1
+   },
+   {
+    "exp": 1601,
+    "rnais": [],
+    "abnormal": 0.14,
+    "n_rs": 1
+   },
+   {
+    "exp": 1602,
+    "rnais": [],
+    "abnormal": 0.12,
+    "n_rs": 1
+   },
+   {
+    "exp": 1603,
+    "rnais": [],
+    "abnormal": 0.22,
+    "n_rs": 1
+   },
+   {
+    "exp": 1604,
+    "rnais": [],
+    "abnormal": 0.22,
+    "n_rs": 1
+   },
+   {
+    "exp": 1605,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1606,
+    "rnais": [],
+    "abnormal": 0.24,
+    "n_rs": 1
+   },
+   {
+    "exp": 1607,
+    "rnais": [],
+    "abnormal": 0.58,
+    "n_rs": 1
+   },
+   {
+    "exp": 1608,
+    "rnais": [],
+    "abnormal": 0.17,
+    "n_rs": 1
+   },
+   {
+    "exp": 1609,
+    "rnais": [],
+    "abnormal": 0.28,
+    "n_rs": 1
+   },
+   {
+    "exp": 1610,
+    "rnais": [],
+    "abnormal": 0.11,
+    "n_rs": 1
+   },
+   {
+    "exp": 1611,
+    "rnais": [],
+    "abnormal": 0.09,
+    "n_rs": 1
+   },
+   {
+    "exp": 1612,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1613,
+    "rnais": [],
+    "abnormal": 0.85,
+    "n_rs": 1
+   },
+   {
+    "exp": 1614,
+    "rnais": [],
+    "abnormal": 0.04,
+    "n_rs": 1
+   },
+   {
+    "exp": 1615,
+    "rnais": [],
+    "abnormal": 0.25,
+    "n_rs": 1
+   },
+   {
+    "exp": 1616,
+    "rnais": [],
+    "abnormal": 0.42,
+    "n_rs": 1
+   },
+   {
+    "exp": 1617,
+    "rnais": [],
+    "abnormal": 0.4,
+    "n_rs": 1
+   },
+   {
+    "exp": 1618,
+    "rnais": [],
+    "abnormal": 0.42,
+    "n_rs": 1
+   },
+   {
+    "exp": 1619,
+    "rnais": [],
+    "abnormal": 0.05,
+    "n_rs": 1
+   },
+   {
+    "exp": 1620,
+    "rnais": [],
+    "abnormal": 0.99,
+    "n_rs": 1
+   },
+   {
+    "exp": 1621,
+    "rnais": [],
+    "abnormal": 0.31,
+    "n_rs": 1
+   },
+   {
+    "exp": 1622,
+    "rnais": [],
+    "abnormal": 0.21,
+    "n_rs": 1
+   },
+   {
+    "exp": 1623,
+    "rnais": [],
+    "abnormal": 0.28,
+    "n_rs": 1
+   },
+   {
+    "exp": 1624,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1625,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1626,
+    "rnais": [],
+    "abnormal": 0.37,
+    "n_rs": 1
+   },
+   {
+    "exp": 1627,
+    "rnais": [],
+    "abnormal": 0.11,
+    "n_rs": 1
+   },
+   {
+    "exp": 1628,
+    "rnais": [],
+    "abnormal": 0.05,
+    "n_rs": 1
+   },
+   {
+    "exp": 1629,
+    "rnais": [],
+    "abnormal": 0.05,
+    "n_rs": 1
+   },
+   {
+    "exp": 1630,
+    "rnais": [],
+    "abnormal": 0.12,
+    "n_rs": 1
+   },
+   {
+    "exp": 1631,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1632,
+    "rnais": [],
+    "abnormal": 0.83,
+    "n_rs": 1
+   },
+   {
+    "exp": 1633,
+    "rnais": [],
+    "abnormal": 0.31,
+    "n_rs": 1
+   },
+   {
+    "exp": 1634,
+    "rnais": [],
+    "abnormal": 0.36,
+    "n_rs": 1
+   },
+   {
+    "exp": 1635,
+    "rnais": [],
+    "abnormal": 0.13,
+    "n_rs": 1
+   },
+   {
+    "exp": 1636,
+    "rnais": [],
+    "abnormal": 0.11,
+    "n_rs": 1
+   },
+   {
+    "exp": 1637,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1638,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1639,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1640,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1641,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1642,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1643,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1644,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1645,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1646,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1647,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1648,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1649,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1650,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1651,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1652,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1653,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1654,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1655,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1656,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1657,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1658,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1659,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1660,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1661,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1662,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1663,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1664,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1665,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1666,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1667,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 1
+   },
+   {
+    "exp": 1668,
+    "rnais": [],
+    "abnormal": 0.4,
+    "n_rs": 1
+   },
+   {
+    "exp": 1669,
+    "rnais": [],
+    "abnormal": 0.64,
+    "n_rs": 1
+   },
+   {
+    "exp": 1670,
+    "rnais": [],
+    "abnormal": 0.89,
+    "n_rs": 1
+   },
+   {
+    "exp": 1671,
+    "rnais": [],
+    "abnormal": 0.9,
+    "n_rs": 1
+   },
+   {
+    "exp": 1672,
+    "rnais": [],
+    "abnormal": 0.91,
+    "n_rs": 1
+   },
+   {
+    "exp": 1673,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1674,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1675,
+    "rnais": [],
+    "abnormal": 0.25,
+    "n_rs": 1
+   },
+   {
+    "exp": 1676,
+    "rnais": [],
+    "abnormal": 0.6,
+    "n_rs": 1
+   },
+   {
+    "exp": 1677,
+    "rnais": [],
+    "abnormal": 0.18,
+    "n_rs": 1
+   },
+   {
+    "exp": 1678,
+    "rnais": [],
+    "abnormal": 0.14,
+    "n_rs": 1
+   },
+   {
+    "exp": 1679,
+    "rnais": [],
+    "abnormal": 0.4,
+    "n_rs": 1
+   },
+   {
+    "exp": 1680,
+    "rnais": [],
+    "abnormal": 0.22,
+    "n_rs": 1
+   },
+   {
+    "exp": 1681,
+    "rnais": [],
+    "abnormal": 0.38,
+    "n_rs": 1
+   },
+   {
+    "exp": 1682,
+    "rnais": [],
+    "abnormal": 0.14,
+    "n_rs": 1
+   },
+   {
+    "exp": 1683,
+    "rnais": [],
+    "abnormal": 0.4,
+    "n_rs": 1
+   },
+   {
+    "exp": 1684,
+    "rnais": [],
+    "abnormal": 0.3,
+    "n_rs": 1
+   },
+   {
+    "exp": 1685,
+    "rnais": [],
+    "abnormal": 0.4,
+    "n_rs": 1
+   },
+   {
+    "exp": 1686,
+    "rnais": [],
+    "abnormal": 0.66,
+    "n_rs": 1
+   },
+   {
+    "exp": 1687,
+    "rnais": [],
+    "abnormal": 0.4,
+    "n_rs": 1
+   },
+   {
+    "exp": 1688,
+    "rnais": [],
+    "abnormal": 0.25,
+    "n_rs": 1
+   },
+   {
+    "exp": 1689,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1715,
+    "rnais": [],
+    "abnormal": 0.05,
+    "n_rs": 1
+   },
+   {
+    "exp": 1716,
+    "rnais": [],
+    "abnormal": 0.11,
+    "n_rs": 1
+   },
+   {
+    "exp": 1717,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1718,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1719,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1720,
+    "rnais": [],
+    "abnormal": 0.03,
+    "n_rs": 1
+   },
+   {
+    "exp": 1721,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1722,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1723,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1724,
+    "rnais": [],
+    "abnormal": 0.13,
+    "n_rs": 1
+   },
+   {
+    "exp": 1725,
+    "rnais": [],
+    "abnormal": 0.1,
+    "n_rs": 1
+   },
+   {
+    "exp": 1726,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1727,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1728,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1729,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1730,
+    "rnais": [],
+    "abnormal": 0.86,
+    "n_rs": 1
+   },
+   {
+    "exp": 1731,
+    "rnais": [],
+    "abnormal": 0.83,
+    "n_rs": 1
+   },
+   {
+    "exp": 1732,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1733,
+    "rnais": [],
+    "abnormal": 0.86,
+    "n_rs": 1
+   },
+   {
+    "exp": 1734,
+    "rnais": [],
+    "abnormal": 0.63,
+    "n_rs": 1
+   },
+   {
+    "exp": 1735,
+    "rnais": [],
+    "abnormal": 0.55,
+    "n_rs": 1
+   },
+   {
+    "exp": 1736,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1737,
+    "rnais": [],
+    "abnormal": 0.84,
+    "n_rs": 1
+   },
+   {
+    "exp": 1738,
+    "rnais": [],
+    "abnormal": 0.46,
+    "n_rs": 1
+   },
+   {
+    "exp": 1739,
+    "rnais": [],
+    "abnormal": 0.49,
+    "n_rs": 1
+   },
+   {
+    "exp": 1740,
+    "rnais": [],
+    "abnormal": 0.93,
+    "n_rs": 1
+   },
+   {
+    "exp": 1741,
+    "rnais": [],
+    "abnormal": 0.85,
+    "n_rs": 1
+   },
+   {
+    "exp": 1742,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 1
+   },
+   {
+    "exp": 1743,
+    "rnais": [],
+    "abnormal": 0.42,
+    "n_rs": 1
+   },
+   {
+    "exp": 1744,
+    "rnais": [],
+    "abnormal": 0.21,
+    "n_rs": 1
+   },
+   {
+    "exp": 1745,
+    "rnais": [],
+    "abnormal": 0.23,
+    "n_rs": 1
+   },
+   {
+    "exp": 1746,
+    "rnais": [],
+    "abnormal": 0.21,
+    "n_rs": 1
+   },
+   {
+    "exp": 1747,
+    "rnais": [],
+    "abnormal": 0.16,
+    "n_rs": 1
+   },
+   {
+    "exp": 1748,
+    "rnais": [],
+    "abnormal": 0.1,
+    "n_rs": 1
+   },
+   {
+    "exp": 1749,
+    "rnais": [],
+    "abnormal": 0.08,
+    "n_rs": 1
+   },
+   {
+    "exp": 1750,
+    "rnais": [],
+    "abnormal": 0.09,
+    "n_rs": 1
+   },
+   {
+    "exp": 1751,
+    "rnais": [],
+    "abnormal": 0.08,
+    "n_rs": 1
+   },
+   {
+    "exp": 1752,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1753,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1754,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1755,
+    "rnais": [],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1756,
+    "rnais": [],
+    "abnormal": 0.43,
+    "n_rs": 1
+   },
+   {
+    "exp": 1757,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1758,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1759,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1760,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1761,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1762,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1763,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1764,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1765,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1766,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 1767,
+    "rnais": [],
+    "abnormal": 0.75,
+    "n_rs": 1
+   },
+   {
+    "exp": 1768,
+    "rnais": [],
+    "abnormal": 0.31,
+    "n_rs": 1
+   },
+   {
+    "exp": 1787,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 4
+   },
+   {
+    "exp": 1788,
+    "rnais": [],
+    "abnormal": 0.25,
+    "n_rs": 4
+   },
+   {
+    "exp": 1789,
+    "rnais": [],
+    "abnormal": 0.333,
+    "n_rs": 3
+   },
+   {
+    "exp": 1790,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 3
+   },
+   {
+    "exp": 1791,
+    "rnais": [],
+    "abnormal": 0.5,
+    "n_rs": 2
+   },
+   {
+    "exp": 1792,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   },
+   {
+    "exp": 1793,
+    "rnais": [],
+    "abnormal": 1.0,
+    "n_rs": 2
+   }
+  ],
+  "innexin": [
+   {
+    "exp": 279,
+    "rnais": [
+     "Smed-inx-11"
+    ],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 280,
+    "rnais": [
+     "Smed-inx-11"
+    ],
+    "abnormal": 0.878,
+    "n_rs": 2
+   },
+   {
+    "exp": 445,
+    "rnais": [
+     "Dj-inx-5 + 13",
+     "Dj-inx-12"
+    ],
+    "abnormal": 1.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 446,
+    "rnais": [
+     "Dj-inx-5 + 13",
+     "Dj-inx-12"
+    ],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 447,
+    "rnais": [
+     "Dj-inx-12",
+     "Dj-inx-5 + 13"
+    ],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 448,
+    "rnais": [
+     "Dj-inx-5 + 13",
+     "Dj-inx-12"
+    ],
+    "abnormal": 0.2,
+    "n_rs": 1
+   },
+   {
+    "exp": 449,
+    "rnais": [
+     "Dj-inx-12",
+     "Dj-inx-5 + 13"
+    ],
+    "abnormal": 0.8,
+    "n_rs": 1
+   },
+   {
+    "exp": 450,
+    "rnais": [
+     "Dj-inx-12",
+     "Dj-inx-5 + 13"
+    ],
+    "abnormal": 0.0,
+    "n_rs": 1
+   },
+   {
+    "exp": 996,
+    "rnais": [
+     "Smed-inx10"
+    ],
+    "abnormal": 1.0,
+    "n_rs": 1
+   }
+  ]
+ },
+ "notes": "First per-experiment-class sim-vs-DB validation (exp21 was DB-only). Class-level mapping; per-experiment dose/plane variation is the overnight DeepScientist quest (docs/QUEST_STAGE2_VALIDATION.md)."
+}
