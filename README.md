@@ -981,3 +981,31 @@ and the literature.
   repatterning (the eps channel provides redundant slower
   propagation — TC-G6's honest refutation), and the two dials'
   interaction term is the next theory task (TC-G1: Spearman 0.838).
+
+### Stage scoreboard after the protocol/generator batch (exp80-exp83)
+- Stage 2 筑基: GL-G4 CLOSED by record correction (the control hot
+  bias 0.270 measured; the corrected generic target 0.585 puts the
+  N1 protocol's 0.655 inside the band — the protocol was never too
+  weak, the record was too hot; the N1 deposit band retired). GL-G3
+  pool-closed (the M37-A coin: sim 0.695 vs record 0.701) with
+  M37-A' (per-plane coin anchors) the one registered candidate left.
+- Stage 3 金丹: **THE GENERATOR STAR CLOSED** — compiler v4 generates
+  novel multi-zone anatomies (3 classes with no corpus counterpart,
+  verified, 100-gen stable), calibrates its own admissibility
+  envelope from data (test precision 100% at 40% coverage,
+  no leakage), and carries the two-channel law as the
+  OPERATING-POINT ESCAPE (35/35 scale_free refusals verify at the
+  star point — a baseline refusal names the conditions that admit
+  it). The regen-walk limitation found and owned: triggers cannot
+  regenerate novel zones (the graph-native reader regen is future
+  work).
+- Stage 4 元婴: characterized end to end — the maintenance-duty map
+  measured (chain frontier k=2→0.0, k=3→0.25, k=4→0.75, k=5/6→1.0;
+  exp65's k=4@0.67 bracketed); the frontier is TISSUE-SPECIFIC
+  (grid needs continuous clamping, small-world free-runs): the rule
+  is universal, the envelope and the exchange rate are readout-side.
+- Stage 5 飞升: the external storage protocol 6/6 (capture → store →
+  destroy → re-instantiate; byte-exact, substrate-independent,
+  destruction-proof, ageless medium; ES-G6: the architecture is a
+  required part of the protocol) with the wet-lab companion document
+  (docs/STAGE5_EXTERNAL_STORAGE_PROTOCOL.md).

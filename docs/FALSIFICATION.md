@@ -2465,3 +2465,15 @@ Night seven, part 3. exp43's registered follow-up:
   correction (exp83); M40 adopted (exp69); GL-G4 closed (exp83);
   GL-G3 pool-closed with M37-A' registered (the one remaining
   registered candidate in the gene layer).
+
+## L65 — docs milestone: the protocol/generator batch (exp80-exp83)
+- 67/67 tests green re-verified after the batch. The README stage
+  scoreboard updated: Stage-3's generator star closed (v4), Stage-4
+  characterized end to end (the duty map), Stage-5 storage closed
+  (6/6 + the wet-lab companion), Stage-2's GL-G4 closed by record
+  correction with M37-A' the one registered candidate left.
+- Open next (derived from the ledger): M37-A' per-plane coin anchors
+  (the gene layer's last registered candidate); the graph-native
+  multi-zone reader regen (the regen-walk limitation's repair); the
+  two-channel interaction term (TC-G1's Spearman 0.838); the corpus
+  MAE residual (0.522 vs the <0.15 90% target); quest 001 on quota.
