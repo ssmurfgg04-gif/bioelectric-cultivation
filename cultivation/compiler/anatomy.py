@@ -292,7 +292,8 @@ def execute_and_verify(prog: InterventionProgram, spec: AnatomySpec,
                        seed: int = 1, gap_scale: float | None = None,
                        collective_cls=None,
                        latch_spec_blend: float = 1.0,
-                       window_h: float | None = None) -> dict:
+                       window_h: float | None = None,
+                       adjacency=None) -> dict:
     """Run the program in-sim and evaluate its own verification criteria.
 
     latch_spec_blend (compiler v1, R2''): on the latching substrate the
@@ -314,7 +315,8 @@ def execute_and_verify(prog: InterventionProgram, spec: AnatomySpec,
     cls = collective_cls or BioElectricCollective
     gs = prog.preconditions.get("gap_scale", 1.0) \
         if gap_scale is None else gap_scale
-    c = cls(n=100, seed=seed)
+    ckw = {} if adjacency is None else {"adjacency": adjacency}
+    c = cls(n=100, seed=seed, **ckw)
     c.gap_scale = float(gs)
     c.G = c.G0 * float(gs)
     c.deg = c.G.sum(axis=1)

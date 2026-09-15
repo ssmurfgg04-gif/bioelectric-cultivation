@@ -39,14 +39,16 @@ def measure_lightcone(seed: int, n: int = 100,
                       total_hours: float = 24.0,
                       dt: float = 0.1,
                       gap_scale: float = 1.0,
-                      epsilon_mv: float = 0.5) -> dict:
+                      epsilon_mv: float = 0.5,
+                      adjacency=None) -> dict:
     """Paired-trajectory light cone of a single-cell pulse.
 
     Returns horizon(t) profile, final influence profile, and the theta
     residue (memory) after the pulse.
     """
-    a = BioElectricCollective(n=n, seed=seed)
-    b = BioElectricCollective(n=n, seed=seed)
+    kw = {} if adjacency is None else {"adjacency": adjacency}
+    a = BioElectricCollective(n=n, seed=seed, **kw)
+    b = BioElectricCollective(n=n, seed=seed, **kw)
     for c in (a, b):
         c.gap_scale = float(gap_scale)
         c.G = c.G0 * float(gap_scale)
@@ -107,7 +109,8 @@ def regen_lightcone(seed: int, n: int = 100,
                     post_hours: float = 15.0,
                     cell_period: float = 0.8,
                     dt: float = 0.1,
-                    noise: float = 0.6) -> dict:
+                    noise: float = 0.6,
+                    adjacency=None) -> dict:
     """Paired-trajectory light cone of a pulse delivered DURING the
     regeneration window (exp49; the LC-G4 resolution).
 
@@ -131,8 +134,9 @@ def regen_lightcone(seed: int, n: int = 100,
     condition carries the model's exact guess-mix semantics (exp49's
     LC5-G0 equivalence gate).
     """
-    a = BioElectricCollective(n=n, seed=seed)
-    b = BioElectricCollective(n=n, seed=seed)
+    kw = {} if adjacency is None else {"adjacency": adjacency}
+    a = BioElectricCollective(n=n, seed=seed, **kw)
+    b = BioElectricCollective(n=n, seed=seed, **kw)
     for c in (a, b):
         c.gap_scale = float(gap_scale)
         c.G = c.G0 * float(gap_scale)

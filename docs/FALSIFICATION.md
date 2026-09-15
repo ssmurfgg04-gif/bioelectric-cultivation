@@ -1704,3 +1704,33 @@ Night seven, part 3. exp43's registered follow-up:
   pre-R1'' plain-substrate semantics reproduced, not a v2 result.
   Corrected to LatchingCollective (exp47's own usage) before any
   verdict was drawn.
+
+## L43 — exp62 STAGE-4 SIGNAL-RANGE DIAL (M38)
+- THE DIAL: the coupling-kernel radius k (line_adjacency(n, k)) — the
+  innexin coupling footprint as an OPERATING POINT (additive; k=1
+  default bit-exact; instruments gained adjacency passthrough).
+- D-G1 PASS — the pulse light-cone horizon is EXACTLY monotone in k:
+  5 -> 10 -> 16 -> 24 cells (seed-constant, rho=1.0). The baseline
+  reproduces exp42's measured 5-cell cone.
+- D-G2 PASS — EXPANSION FACTOR 4.8x at k=4 (bar 4.0): the user's
+  5 -> 20-cell target EXCEEDED (24 cells).
+- D-G3 PASS — the regen-window cone spans the whole regenerate at
+  every k (the chain re-carries), with the write MAGNITUDE decaying
+  monotonically in k (max residue 5.07 -> 3.59 -> 2.77 -> 2.25 mV):
+  the expanded cone AVERAGES the write. Reach is bought with contrast.
+- D-G4 REFUTED as registered (honest): k=4 breaks the third-head
+  compiler verify (7.34/7.24/7.28 > 6.0). M38-A diagnosis: a longer
+  window does NOT rescue (48 h probe fails 7.2) — the smearing is in
+  the regen READ, not the clamp phase. OPERATING ENVELOPE: k in
+  {1, 2} verified (k=2 errs 4.17/4.08/4.09), k=3 marginal (pattern
+  error passes, zone hold fails), k=4 refused for fine-contrast
+  specs. THE CROSS-STAGE RULE: the Stage-4 range dial and the Stage-3
+  contrast spec are COUPLED design axes — the compiler must co-tune
+  the spec geometry with the dial (M38-A candidate: zone-width
+  scaling with k). The k=1 anchor matched exp61's stored errors to
+  the stored (2-dp) precision; the first anchor check compared
+  full-precision values against rounded constants and was corrected
+  before any verdict.
+- D-G5 PASS (the persist branch): time-to-restore 1.0 h at both k —
+  the faster-healing branch did NOT fire; the payoff that shows is
+  REACH (D-G2/D-G3), recorded honestly.

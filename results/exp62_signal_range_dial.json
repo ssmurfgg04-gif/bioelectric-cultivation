@@ -1,0 +1,114 @@
+{
+ "exp": "exp62_signal_range_dial (M38)",
+ "dial": "coupling-kernel radius k (line_adjacency(n, k)); biology: the innexin coupling footprint",
+ "horizon_table": {
+  "1": [
+   5,
+   5,
+   5
+  ],
+  "2": [
+   10,
+   10,
+   10
+  ],
+  "3": [
+   16,
+   16,
+   16
+  ],
+  "4": [
+   24,
+   24,
+   24
+  ]
+ },
+ "horizon_means": {
+  "1": 5.0,
+  "2": 10.0,
+  "3": 16.0,
+  "4": 24.0
+ },
+ "expansion_factor": 4.8,
+ "regen_cone_table": {
+  "1": {
+   "span_cells": 15,
+   "max_residue_mv": 5.068,
+   "far_end_residue_mv": 2.455
+  },
+  "2": {
+   "span_cells": 15,
+   "max_residue_mv": 3.585,
+   "far_end_residue_mv": 2.153
+  },
+  "3": {
+   "span_cells": 15,
+   "max_residue_mv": 2.767,
+   "far_end_residue_mv": 1.988
+  },
+  "4": {
+   "span_cells": 15,
+   "max_residue_mv": 2.253,
+   "far_end_residue_mv": 1.888
+  }
+ },
+ "stage3_regression": {
+  "k1_bit_exact_vs_exp61_stored_precision": true,
+  "k1_errs_full_precision": [
+   2.6813195214733887,
+   2.5652850409576677,
+   2.592488177427209
+  ],
+  "k4_errs": [
+   7.3391,
+   7.2364,
+   7.2799
+  ],
+  "k4_verified": false,
+  "m38a_probe_window48h_errs": [
+   7.2393,
+   7.2089,
+   7.1772
+  ],
+  "m38a_probe_window48h_verified": false,
+  "operating_envelope": {
+   "2": {
+    "errs": [
+     4.17,
+     4.08,
+     4.09
+    ],
+    "verified": true
+   },
+   "3": {
+    "errs": [
+     5.68,
+     5.59,
+     5.63
+    ],
+    "verified": false
+   }
+  }
+ },
+ "time_to_restore": {
+  "1": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "4": [
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "criteria": {
+  "D_G1_monotone_range": true,
+  "D_G2_expansion_factor": true,
+  "D_G3_regen_cone_expansion": true,
+  "D_G4_no_stage3_regression": false,
+  "D_G5_healing_payoff": true
+ },
+ "lab_instruction": "The dial maps to the coupling FOOTPRINT: widen the junction network's neighbor reach (innexin-expression class up; channel-gating class per the record's drug axes). The compiler emits the setting as a precondition line ('coupling_radius k=4') alongside the R6 schedule.",
+ "notes": "M38: the signal-range dial as an OPERATING POINT (custom adjacency at construction; additive, k=1 default bit-exact). D-G4 REFUTED as registered: expanded coupling DILUTES the identity contrasts \u2014 k=4 breaks the third-head verify (7.3 > 6.0) and the regen-window write magnitude decays monotonically with k (5.07 -> 2.25 mV max residue). The M38-A diagnosis: a longer window does NOT rescue (48 h probe fails 7.2) \u2014 the smearing is in the regen READ, not the clamp phase. OPERATING ENVELOPE: k in {1, 2} verified, k=3 marginal (pattern error passes, zone hold fails), k=4 refused for fine-contrast specs. THE CROSS-STAGE RULE: the range dial and the contrast spec are COUPLED design axes \u2014 reach is bought with contrast (the Stage-4 dial pays the Stage-3 compiler); the compiler must co-tune the spec geometry with the dial (M38-A candidate: zone-width scaling with k). D-G5's faster branch did not fire (1.0 h time-to-restore at both settings \u2014 the payoff that DID show is reach, D-G2/D-G3, not settle speed; recorded honestly)."
+}
