@@ -27,6 +27,8 @@ this coupled system, exactly as in the Levin-group modeling literature
 
 from __future__ import annotations
 
+import hashlib
+
 import numpy as np
 
 # physiological bounds (Nernst/reversal limits) — see step()
@@ -150,7 +152,9 @@ class BioElectricCollective:
                commitment_diffusion: float = 0.0,
                phi_readout: float = 0.0,
                spec_expression_p: float = 1.0,
-               spec_reanchor_p: float = 1.0) -> None:
+               spec_reanchor_p: float = 1.0,
+               anchor_from_history: float | None = None,
+               spec_reanchor_isolated: float = 1.0) -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
@@ -260,6 +264,48 @@ class BioElectricCollective:
         no RNG contact at the default 1.0 or when the phi read is
         inactive (bit-exact).
 
+        `anchor_from_history` (M31 STORED-HISTORY ANCHOR) — replaces the
+        regrow-time re-anchoring coin flip with a property of the
+        fragment's STORAGE HISTORY: the wound-face anchor is AVAILABLE
+        iff the intact face cell's expressed identity still agrees with
+        the identity that BELONGS at that coordinate,
+        |theta[face] - phi_spec[face]| <= anchor_from_history (mV).
+        Literature basis (exp44 research wave): positional information is
+        CONSTITUTIVELY expressed from muscle and reset by wound signaling
+        (Ross et al. 2022) — the read draws on a material state stored in
+        the fragment (Egal-1/microtubule polarity substrate, 2025), not a
+        fresh stochastic event at wound time. Deterministic — ZERO RNG
+        contact; seed-splitting emerges from the seeds' genuinely
+        different noise histories during the settle (real fragments
+        differ the same way), not from regrow-time draws. The two faces
+        of a direction="both" regen each evaluate their own history.
+        Rule order: when anchor_from_history is not None it REPLACES the
+        spec_reanchor_p draw; a face with no intact tissue (or out-of-
+        range coordinate) has NO stored history at the wound face and
+        the spec read stays OFF for that blastema. None default is
+        bit-exact.
+
+        `spec_reanchor_isolated` (M31-A — ISOLATED re-anchoring, exp45
+        amendment) — exp45 REFUTED the registered M31: the model's
+        settle history is seed-INVARIANT at macro scale (face drifts
+        4.14/4.21/4.26 mV across seeds — deterministic deformation
+        dominates), so no stored-state threshold can split seeds; the
+        detrended fine structure does differ per seed but only at
+        ~0.03 mV (micro-scale, un-fittable). The stochastic unit is
+        therefore kept at the regenerate level (exp38's amendment) but
+        its draw is MINTED FROM THE FRAGMENT'S OWN STORED STATE instead
+        of the shared RNG stream: a per-blastema Bernoulli drawn from a
+        dedicated Generator seeded by a blake2b digest of the quantized
+        theta window at the wound face. Deterministic given the stored
+        state (the coin IS a property of the fragment's history — the
+        M31 goal), yet never touches self.rng, so arms that do not use
+        the spec read stay BIT-EXACT (removes exp38's exact blocker:
+        the re-anchor draw shifted the shared stream and flipped the
+        marginal innexin seed). Zero RNG contact of either kind at the
+        default 1.0 or when the phi read is inactive. Priority:
+        anchor_from_history (if armed) > spec_reanchor_isolated (if
+        armed) > spec_reanchor_p (legacy exp38 form).
+
         M25 COUPLING-DEPENDENT READOUT (exp27 S2P1 repair): the inheritance
         read itself runs THROUGH the gap-junction network. At full coupling
         the readout is exactly the stored chain (bit-exact with the previous
@@ -286,6 +332,12 @@ class BioElectricCollective:
         reanchor_draw = 0.0 < float(spec_reanchor_p) < 1.0 \
             and phi_readout > 0.0
         reanchor_p = float(spec_reanchor_p)
+        # M31: history rule, when armed, replaces the regrow-time draw.
+        hist_t = None if anchor_from_history is None else float(anchor_from_history)
+        hist_spec = getattr(self, 'phi_spec', None)
+        # M31-A: isolated re-anchoring draw (minted from stored state).
+        iso_p = float(spec_reanchor_isolated)
+        iso_draw = 0.0 < iso_p < 1.0 and phi_readout > 0.0
 
         def face_slope(face: int, sign: int) -> tuple[float, float, float, float]:
             """Anchor (theta at the face), per-cell theta trend on the intact
@@ -318,9 +370,30 @@ class BioElectricCollective:
             anchor, slope, rep_lo, rep_hi = face_slope(src, sign)
             wander = 0.0
             d = 0
-            # M30 amended: one-time per-blastema spec re-anchoring draw
+            # M30 amended: one-time per-blastema spec re-anchoring —
+            # either the M31 stored-history rule (deterministic, zero RNG)
+            # or the regrow-time Bernoulli draw (exp38 registered form).
             spec_on = True
-            if reanchor_draw:
+            if hist_t is not None and phi_readout > 0.0:
+                if hist_spec is None or not (0 <= src < self.n):
+                    spec_on = False        # no stored history at this face
+                else:
+                    spec_on = abs(self.theta[src] - float(hist_spec[src])) \
+                        <= hist_t
+            elif iso_draw:
+                # M31-A: the coin is minted from the fragment's own stored
+                # state (quantized face window) — deterministic per stored
+                # state, ZERO self.rng contact (other arms stay bit-exact).
+                lo = max(0, src - 2)
+                hi = min(self.n, src + 3)
+                win = np.round(self.theta[lo:hi], 6)
+                digest = hashlib.blake2b(
+                    win.tobytes() + bytes([src & 0xFF]),
+                    digest_size=8).digest()
+                g_iso = np.random.default_rng(
+                    int.from_bytes(digest, 'little'))
+                spec_on = bool(g_iso.random() < iso_p)
+            elif reanchor_draw:
                 spec_on = self.rng.random() < reanchor_p
             for i in order:
                 for _ in range(steps_per_cell):
