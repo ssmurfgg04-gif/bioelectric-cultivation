@@ -1,0 +1,85 @@
+name: Stage 2 nightly validation
+
+# Parallelized Stage 2 (PlanformDB) validation on GitHub runners:
+# runs the pre-registered Stage 2 experiments against the in-repo
+# PlanformDB corpus, uploads the result JSONs as artifacts, and
+# commits any changed results back to main (github-actions bot).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "cultivation/**"
+      - "experiments/**"
+      - "data/planform/**"
+      - ".github/workflows/stage2-nightly.yml"
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 18 * * *" # 18:00 UTC nightly (overnight research window)
+
+permissions:
+  contents: write
+
+jobs:
+  stage2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        experiment: [exp32_m26_repairs, exp33_s2r3_timing]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run ${{ matrix.experiment }} (serial, BLAS pinned)
+        env:
+          OMP_NUM_THREADS: "1"
+          OPENBLAS_NUM_THREADS: "1"
+          MKL_NUM_THREADS: "1"
+        run: python experiments/${{ matrix.experiment }}.py
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ${{ matrix.experiment }}-results
+          path: results/${{ matrix.experiment }}.json
+          if-no-files-found: warn
+
+  commit-results:
+    # Commit any regenerated results so the night's runner output is
+    # never lost (results are deterministic: same seeds, same DB).
+    needs: stage2
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Regenerate both result files locally (deterministic check)
+        env:
+          OMP_NUM_THREADS: "1"
+          OPENBLAS_NUM_THREADS: "1"
+          MKL_NUM_THREADS: "1"
+        run: |
+          python experiments/exp32_m26_repairs.py
+          python experiments/exp33_s2r3_timing.py
+      - name: Commit changed results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results/exp32_m26_repairs.json results/exp33_s2r3_timing.json || true
+          if git diff --cached --quiet; then
+            echo "No result changes — nothing to commit."
+          else
+            git commit -q -m "stage2-nightly: regenerated deterministic results (${GITHUB_SHA::7})"
+            git push
+          fi
