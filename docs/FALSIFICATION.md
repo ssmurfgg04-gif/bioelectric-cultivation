@@ -378,3 +378,128 @@ before the pre-registered full run):
   first-order) and a clean replication guard. Multi-pattern maintenance
   is robust (E4 within noise for all real policies); what cannot be
   bought with budget allocation is a pattern whose cells keep dying.
+
+## Level 9 — exp24: potentiation vs the equilibrium (the AI-Scientist's idea #2, executed honestly)
+
+**exp24 — memory potentiation: can the corruption side of the
+death-restoration equilibrium be attacked where budget allocation could
+not move the restoration side?** (idea #2 'memory_enhancement_protocols'
+strategy 3: "after each maintenance cycle, increase the stability of
+corrected cells by reducing their jump probability for 5 years"; stack
+hook `FidelityAgingCohort.potentiate` / `_pot_until`, bit-exact when
+unused, golden-tested both paths; exp23's exact geometry, seeds 21-23,
+K=200, budgets 1/6 + window sweep w2/w5/w10 + a permanent-potentiation
+ceiling arm; one recorded design probe preceded pre-registration and
+motivated the P7 ceiling criterion):
+
+- **P1 NEGATIVE — the equilibrium does not move at the idea's literal
+  spec.** Potentiation factor 0.25 / window 5yr shifts the volatile
+  pattern's working state by +0.004 (0.795 to 0.800) against the
+  pre-registered 0.046 bar (= 2x exp23's entire allocation-effect
+  ceiling). The probe-explained mechanism: window = cadence means
+  protection covers only last-cycle corrections (~13% of clusters at
+  any moment; coverage@60 = 0.131) — the benefit cannot accumulate.
+- **P7 NEGATIVE — the deep result: even PERMANENT potentiation cannot
+  break the equilibrium.** With protection that never expires and 47%
+  coverage, B's I_V@60 is 0.801 (+0.006). The failure is not the
+  transient coverage geometry — it is structural: potentiation is
+  correction-coupled by construction, so it protects exactly the
+  clusters maintenance already keeps right; the deficit lives in the
+  UNCORRECTED tail (budget-starved corruption) and in mortality
+  selection, neither of which jump-protection touches. The exp23
+  equilibrium now survives attacks from BOTH sides: restoration-side
+  redistribution (allocation, exp23) and corruption-side reduction
+  (potentiation, exp24).
+- **P2 PASS — gating is real but moot.** Random-placement potentiation
+  (the AI-Scientist's own control, same per-cycle pair count) delivers
+  nothing at either budget (+0.007 at 25% coverage, inside the 0.01
+  gate): the enhancement must be lent where correction happened — the
+  ungated-boost hazard (exp8) reproduces in a new modality — but the
+  correctly-gated benefit is ~0 anyway.
+- **P3 PASS — the pattern dissociation confirms the two-bottleneck
+  structure.** Delta_B (+0.004) > Delta_C (+0.001) and > Delta_A
+  (+0.002) at b6: potentiation acts on the jump axis, so the
+  jump-volatile pattern gains the most; C's hazard-driven deficit and
+  A's already-free hold barely move.
+- **P4/P5 PASS — budget coupling and dose-response behave as the
+  coverage mechanism predicts** (b6 delta > b1 delta; 0.5 -> 0.25
+  factor monotone-or-plateau across a flat curve) — the machinery
+  works exactly as designed; it is the equilibrium that refuses.
+- **P6 NEGATIVE with structure — the lifespan window effect is
+  non-monotone.** Transient windows extend median life slightly
+  (pot025 73.0 / pot05 74.0 vs plain 71.8) but long windows actively
+  SHORTEN it (w10 65.9; permanent 66.1 — a 5.7yr COST at 47%
+  coverage). Recorded mechanism hypothesis (unresolved): permanent
+  protection accumulates on maintained clusters while the deficit —
+  and the organ-failure hazard — lives in unmaintained ones; frozen
+  protection may also remove the jump-and-repair cycling whose
+  correction events keep organ fidelity dynamics away from the
+  failure boundary. The failure has shape, not just sign.
+- **R PASS — bit-exact regression.** The plain arm reproduced exp23's
+  published default arm exactly (max per-pattern I_V@60 delta
+  < 0.005, median within 0.5yr, both budgets): the potentiation hook
+  changed nothing when unused, at experiment scale.
+
+- **Kills-row:** the AI-Scientist's memory-enhancement/potentiation
+  research program, executed with pre-registered criteria, is REFUTED
+  in this stack — and the refutation closes a loop: the expression
+  equilibrium is now shown to be immovable from the allocation side
+  (exp23) AND the corruption side (exp24), which is precisely the
+  claim FIDELITY_CLOCK FC1d wagers on (regional turnover ordering).
+  What potentiation bought instead: a gated-vs-ungated replication
+  (P2), a clean dissociation (P3), and a non-monotone mortality cost
+  (P6) — three falsifiable tendrils, not one.
+
+## Level 9 — exp25: the century-hold policy vs competition (the user's stress test)
+
+**exp25 — exp19's CEM-discovered 8-dim century-hold policy transplanted
+into exp23's competing-memory world** (write_age 14.5, start 31.5,
+period 2.5, budget 9, k_anchor 0.326, unverified channel boost 0.369 x
+1.059, procedure risk 3e-5/write-event/yr; seeds 21-23 — held-out for
+the policy AND matched to exp23's regression anchor; 8 arms including
+budget-clamped stress (b2), solo references, and the status-quo
+replication; a first 105yr pass was rejected for pure survivor-censoring
+artifacts in medians and re-run at exp23's 120yr convention — identical
+trajectories, honest re-run):
+
+- **S1 PASS — the policy doesn't just survive competition, it WINS
+  decisively.** Overall hold 0.625 (discovered) vs 0.500 (HAND
+  transplanted): +0.125, median +14.4yr (70.6 vs 56.2). exp19's H1
+  failed by 1.2% in the single-pattern world; the same policy's edge
+  EXPLODES under competition. The single-pattern search world could not
+  reveal competition-robustness — the searched dimensions (2x checkup
+  frequency, richer budget) are exactly the dimensions that matter when
+  memories compete.
+- **S2 PASS — the competition-cost asymmetry, with a sign surprise.**
+  cost(discovered) = -0.026 (BETTER under competition than solo);
+  cost(HAND) = +0.007. Composition caveat recorded: solo scores the
+  volatile B alone, multi scores the mean over A/B/C where two-thirds
+  of the novel load sits on easier zone physics — the within-world
+  comparisons are clean, the cross-world delta carries this term.
+- **S3 PASS — the equilibrium law is policy-invariant.** Under the
+  transplanted policy (weak pull 0.326 + boost therapy): A 0.953 >
+  B 0.852 > C 0.834 at 60 — exp23's E3 physics ordering survives a
+  policy the equilibrium has never seen.
+- **S4 PASS — the schedule survives the starved budget.** At b2
+  (where exp23 measured real competition cost): discovered 0.421 vs
+  HAND 0.354 (+0.067). The advantage is the SCHEDULE (period 2.5,
+  start 31.5), not channel richness alone.
+- **R PASS — bit-exact regression.** The status-quo arm reproduced
+  exp23's published default b6 arm exactly (I_V A/B/C 0.951/0.795/
+  0.780, restored 10088, median 71.8) — the transplant changed nothing
+  when its knobs matched the status quo.
+- **The procedure-risk ledger (recorded):** the discovered policy pays
+  2.3x the write events of HAND (19,367 vs 8,494 restored) under the
+  same 3e-5/write-event/yr hazard and still wins by +0.125 hold; the
+  h_proc-free status-quo arm (0.594) shows HAND-with-risk (0.500)
+  loses 0.094 hold to procedure risk alone — the searched cadence
+  overcomes a procedure load that buries the hand policy.
+
+- **Kills-row:** nothing dies — exp25 is the stack's first all-pass
+  stress test at this scale — but it kills a belief: that exp19's
+  "H1 failed by 1.2%" meant the searched policy was marginal. The
+  century-hold policy is, in fact, the best policy anyone has run in
+  the competing-memory world, and the reason is legible: it searched
+  on the axes (cadence, budget, write timing) that competition
+  punishes. Single-pattern benchmarks UNDER-estimate policies that
+  will serve multi-pattern reality.

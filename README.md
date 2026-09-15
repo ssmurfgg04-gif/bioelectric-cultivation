@@ -359,6 +359,51 @@ falsification table carries three new kill-rows; the two-week protocol
 gains the positive-control gate, the coupling co-measurement pilot, and
 per-region decomposition from day one.
 
+## M20: exp24 — potentiation vs the equilibrium (the AI-Scientist's idea #2: a deep negative)
+
+Can jump-probability reduction break the death-restoration equilibrium
+that budget allocation couldn't move? The AI-Scientist's
+memory-enhancement protocol #3 (reduce the jump probability of
+freshly-corrected clusters) landed as a bit-exact-when-unused stack hook
+(`potentiate()` / `_pot_until`, golden-tested on the active path too)
+and was executed with pre-registered criteria P1-P7 across factor, window,
+placement, and permanence. **The answer is no — and the no is structural:
+even PERMANENT potentiation at 47% coverage moves the volatile pattern's
+working state by +0.006 (bar: 0.046).** The mechanism of the failure is
+legible: potentiation is correction-coupled, so it protects exactly the
+clusters maintenance already keeps right, while the deficit lives in the
+uncorrected tail and in mortality selection — the equilibrium now proven
+immovable from BOTH the restoration side (exp23 allocation) and the
+corruption side (exp24 potentiation), which is precisely FC1d's wager.
+The supporting cast: random placement does nothing (gating real but
+moot), the pattern dissociation confirms the two-bottleneck structure
+(jump-axis help orders B > A > C), and the lifespan window effect is
+NON-MONOTONE — transient windows add 1-2yr, permanent protection COSTS
+5.7yr of median life (a frozen-protection mortality hazard recorded as
+an open mechanistic tendril). Bit-exact regression vs exp23 held (plain
+arm = exp23's default, exactly). 57 unit tests total.
+
+## M21: exp25 — the century-hold policy vs competition (the all-pass stress test)
+
+exp19's CEM-discovered 8-dim century-hold policy (budget 9, period 2.5,
+start 31.5, k_anchor 0.326, unverified boost) transplanted into exp23's
+competing-memory world, against the hand policy, both solo and in
+competition, plus a budget-clamped stress arm and a bit-exact status-quo
+anchor. **All five criteria PASS — and the surprise is the size: under
+competition the discovered policy's hold 0.625 crushes HAND's 0.500
+(+0.125, +14.4yr median) even while paying 2.3x the procedure risk,
+whereas in exp19's single-pattern world the same policy had failed to
+beat HAND by 1.2%.** Single-pattern benchmarks under-estimate policies
+that must serve multi-pattern reality: the searched dimensions (cadence,
+budget, write timing) are exactly the ones competition punishes. The
+equilibrium law survived a policy it had never seen (A > B > C ordering
+invariant under weak-pull + boost), and the schedule kept its edge at
+the starved b2 budget (+0.067) — the advantage is the schedule, not
+channel richness. A first 105yr pass was rejected for pure
+survivor-censoring artifacts in death-age medians (trajectories
+bit-identical, medians not) and re-run at exp23's 120yr convention —
+the honest re-run is recorded in the module docstring.
+
 ## Research dossier
 
 `research/` contains the verified literature (bioelectric morphogenesis, IIT, aging theory, Chinese research landscape) with DOIs verified against Crossref/PubMed responses, plus real C. elegans connectome data (OpenWorm; Cook et al. 2019).
