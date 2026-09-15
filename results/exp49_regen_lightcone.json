@@ -1,0 +1,214 @@
+{
+ "exp": "exp49_regen_lightcone",
+ "stage": "4 \u2014 Nascent Soul (cognitive light cone, regen window)",
+ "instrument": "cultivation/cognitive/lightcone.py::regen_lightcone",
+ "literature_basis": [
+  "Pezzulo/Levin 2017 (PMC28538159): temporary modulation of AMPUTATED fragments permanently rewrites \u2014 the published window is the regen window"
+ ],
+ "arms": {
+  "regen_2h_face": [
+   {
+    "seed": 1,
+    "pulse_cell": 84,
+    "pulse_hours": 2.0,
+    "pulse_during_regen": true,
+    "gap_scale": 1.0,
+    "regen_cells": 15,
+    "far_end_cell": 99,
+    "far_end_residue_mv": 2.4545013917159437,
+    "max_residue_in_regen_mv": 5.067826408248337,
+    "cells_committed_while_pulse_active": 3,
+    "residue_profile": [
+     5.068,
+     3.916,
+     3.268,
+     2.961,
+     2.815,
+     2.736,
+     2.684,
+     2.643,
+     2.605,
+     2.569,
+     2.534,
+     2.5,
+     2.471,
+     2.451,
+     2.455
+    ]
+   },
+   {
+    "seed": 2,
+    "pulse_cell": 84,
+    "pulse_hours": 2.0,
+    "pulse_during_regen": true,
+    "gap_scale": 1.0,
+    "regen_cells": 15,
+    "far_end_cell": 99,
+    "far_end_residue_mv": 2.4310056055503964,
+    "max_residue_in_regen_mv": 5.009228152779933,
+    "cells_committed_while_pulse_active": 3,
+    "residue_profile": [
+     5.009,
+     3.873,
+     3.234,
+     2.932,
+     2.788,
+     2.71,
+     2.659,
+     2.617,
+     2.58,
+     2.544,
+     2.509,
+     2.476,
+     2.447,
+     2.428,
+     2.431
+    ]
+   },
+   {
+    "seed": 3,
+    "pulse_cell": 84,
+    "pulse_hours": 2.0,
+    "pulse_during_regen": true,
+    "gap_scale": 1.0,
+    "regen_cells": 15,
+    "far_end_cell": 99,
+    "far_end_residue_mv": 2.4304138786029483,
+    "max_residue_in_regen_mv": 5.019273139740854,
+    "cells_committed_while_pulse_active": 3,
+    "residue_profile": [
+     5.019,
+     3.878,
+     3.236,
+     2.932,
+     2.787,
+     2.709,
+     2.658,
+     2.617,
+     2.579,
+     2.543,
+     2.509,
+     2.476,
+     2.447,
+     2.427,
+     2.43
+    ]
+   }
+  ],
+  "intact_2h_face_far_end": [
+   1.0998180783872158e-06,
+   1.0793247113838333e-06,
+   1.085024152303049e-06
+  ],
+  "dose": {
+   "0.5": 1.9151182322259335,
+   "2.0": 2.4386402919564296,
+   "6.0": 2.438725450721807
+  },
+  "blocked_2h_face": [
+   {
+    "seed": 1,
+    "pulse_cell": 84,
+    "pulse_hours": 2.0,
+    "pulse_during_regen": true,
+    "gap_scale": 0.05,
+    "regen_cells": 15,
+    "far_end_cell": 99,
+    "far_end_residue_mv": 0.0,
+    "max_residue_in_regen_mv": 0.8664937091810572,
+    "cells_committed_while_pulse_active": 3,
+    "residue_profile": [
+     0.866,
+     0.045,
+     0.002,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "seed": 2,
+    "pulse_cell": 84,
+    "pulse_hours": 2.0,
+    "pulse_during_regen": true,
+    "gap_scale": 0.05,
+    "regen_cells": 15,
+    "far_end_cell": 99,
+    "far_end_residue_mv": 0.0,
+    "max_residue_in_regen_mv": 0.8501967912138717,
+    "cells_committed_while_pulse_active": 3,
+    "residue_profile": [
+     0.85,
+     0.045,
+     0.002,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "seed": 3,
+    "pulse_cell": 84,
+    "pulse_hours": 2.0,
+    "pulse_during_regen": true,
+    "gap_scale": 0.05,
+    "regen_cells": 15,
+    "far_end_cell": 99,
+    "far_end_residue_mv": 0.0,
+    "max_residue_in_regen_mv": 0.8474701894347447,
+    "cells_committed_while_pulse_active": 3,
+    "residue_profile": [
+     0.847,
+     0.044,
+     0.002,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  ],
+  "distance": {
+   "0": 2.4386402919564296,
+   "5": 1.330930601284308e-07,
+   "10": 9.710750722054702e-14
+  }
+ },
+ "criteria": {
+  "LC5_G0_instrument_validity": true,
+  "LC5_G1_2017_protocol_absolute": false,
+  "LC5_G1a_contrast_amendment": true,
+  "LC5_G2_dose_response_registered": true,
+  "LC5_G2a_saturation_amendment": true,
+  "LC5_G3_persistence": true,
+  "LC5_G4_junction_carried": true,
+  "LC5_G5_spatial_structure": true
+ },
+ "notes": "LC-G4's refutation left the rewrite regime unnamed; the 2017 protocol names it: perturbation DURING regeneration. The regen-window cone spans the whole regenerate because the commitment walk re-reads the chain (M25) at every cell \u2014 the pulse rides the write. This closes the loop with the model's own 24h sustained-forcing requirement (the rewrite window IS the walk window) and with Stage 3's R1 (24h clamps): the compiler's window covers the trigger's walk."
+}
