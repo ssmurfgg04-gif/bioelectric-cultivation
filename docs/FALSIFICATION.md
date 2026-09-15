@@ -601,3 +601,87 @@ additive hooks, golden-tested, no RNG consumption).
   (EQ1a) — the correct object is the two-term decomposition
   (alive-state balance x death-timing mixture), and any future
   "equilibrium" claim must name which term it moves.
+
+## Level 11 — exp28: CEM search under competition (searching where the search found something)
+
+**exp28 — the user's Option 3 after exp25.** The transplanted
+century-hold policy won under competition (0.625 vs HAND's 0.500), but
+it was discovered in the SINGLE-pattern world; exp25's robustness
+reading was "maybe the solo optimum is near the competitive optimum."
+exp28 tests that directly: re-run the CEM search itself with fitness
+evaluated in the competitive world. Same 8-dim policy space (exp19's
+bounds verbatim), CEM pop 24 / 10 iters / elite 0.25 / seed 27,
+fitness = mean hold (alive x mean I_rec over A/B/C, ages 30-100,
+exp25's objective) on NEW search seeds (41, 42 — disjoint from every
+previous use), search-world K=150/105yr (exp19's search convention);
+held-out evaluation on exp25's exact convention (seeds 21-23, K=200,
+120yr) across six arms, with the eval ported line-faithful from
+exp25.run_arm. Discovered policy: write_age 20.0, start_age 25.75,
+period 2.75, budget 6, k_anchor 0.128, boost_pv 0.040, boost_pu
+0.727, boost_f 1.572 — vs disc19's write 14.5 / start 31.5 / period
+2.5 / budget 9 / k_anchor 0.326 / boost_pu 0.369 / boost_f 1.059.
+Search converged monotonically 0.563 -> 0.718 over the 10 iterations
+(still improving on the last step — the competitive optimum is not
+certified exhausted, recorded as designed).
+
+- **C1 PASS — RE-SEARCH PAYS, ~3x the bar.** hold(disc28) 0.683 vs
+  hold(disc19) 0.625: +0.058 against the pre-registered +0.02 margin,
+  with every disc28 seed (0.663/0.698/0.688) above every disc19 seed
+  (0.619/0.633/0.623). Median 79.7 vs 70.6yr. The search-world
+  mismatch exp25 bounded from below is nearly 3x bigger than its
+  robustness reading allowed — single-pattern benchmarks do not just
+  under-estimate competitive policies, they under-estimate them by
+  enough that re-searching is worth a full CEM run.
+- **C2 PASS — the competitive optimum is a DIFFERENT policy.**
+  write_age +38% (14.5 -> 20.0) and budget -33% (9 -> 6), both over
+  the 25% divergence bar (start_age -18%, period +10% under it). The
+  divergence direction is legible against exp26's elasticity map:
+  the shared budget SATURATES at b6 (+0.04 elasticity above vs +0.27
+  below), and the competitive search independently landed on budget
+  6 — paying nothing for the b6->b9 capacity disc19 still buys —
+  while starting maintenance 5.75yr earlier (25.75 vs 31.5) and
+  leaning far harder on the procedure-free unverified boost channel
+  (boost_pu 0.727 at 1.572x vs 0.369 at 1.059x). The search read the
+  saturation knee exp26 measured, without being told it existed.
+- **C3 PASS — the matched-channel law rediscovered a THIRD time.**
+  k_anchor 0.128 << 1.0 (exp19 solo: 0.326; exp22 ensemble: weak-pull
+  confirmed). Under competition, with a different policy everywhere
+  else, the anchor still pulls weak — now three independent
+  discoveries from three worlds.
+- **C4 PASS — interiority survives competition.** budget 6 (interior,
+  at the saturation knee), period 2.75 > 1.5: procedure risk still
+  forbids maximum-therapy-forever even when the fitness knows about
+  competing memories.
+- **C5 PASS — zone-physics ordering invariant.** A 0.887 > B 0.845,
+  A > C 0.871 under disc28. Recorded sub-structure: the B/C ordering
+  below A is policy-sensitive — disc19 had B 0.852 > C 0.834, disc28
+  has C 0.871 > B 0.845; the competitive policy trades A's margin
+  (0.887 vs disc19's 0.953) for the hard zones (C +0.037). exp23's
+  law (stable-zone A on top) holds in both; B-vs-C was never claimed.
+- **C6 PASS — the starvation gap WIDENS.** disc28_b2 0.557 vs
+  disc19_b2 0.421 (+0.136 — larger than the full-budget gap +0.058):
+  the competitively searched schedule is what survives a starved
+  budget, and disc28 at budget 2 nearly matches disc19 at budget 9
+  (0.557 vs 0.625).
+- **R PASS — bit-exact harness regression.** disc19 through this
+  module's ported eval reproduces exp25's published disc arm with
+  |delta| = 0.00e+00 (0.6248697... both sides) — the port is
+  trajectory-faithful at experiment scale, so every comparison above
+  is same-code-different-policy.
+- **The efficiency headline:** disc28 restores FEWER cells (17,139 vs
+  19,367, -11.5%) yet holds more (+0.058) and lives longer (+9.1yr
+  median) — the competitive optimum is a SCHEDULE (earlier start,
+  slower cadence, budget at the saturation knee, stronger
+  procedure-free boost), not more therapy. exp25's
+  procedure-risk ledger sharpens: the win comes while REDUCING total
+  procedure exposure.
+- **Kills-row:** exp25's robustness reading ("the solo-discovered
+  policy sits at or near the competitive optimum — search-world
+  mismatch costs almost nothing") is DEAD — the mismatch cost 0.058,
+  ~3x the bar, and the optimal policy itself moved on two axes.
+  Also dead: any benchmark discipline that evaluates policies in an
+  easier world than deployment. What SURVIVES, now three-times
+  confirmed or stronger: the matched-channel weak-pull law (C3, third
+  independent discovery), procedure-risk interiority (C4), the
+  stable-zone-on-top ordering (C5), and the b6 saturation knee
+  (exp26 measured it; the blind search found it).

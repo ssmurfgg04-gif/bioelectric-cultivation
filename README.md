@@ -441,6 +441,32 @@ budget demand and organ-failure death timing — exp23's
 physics one). Default arm bit-exact vs exp23 (R PASS); 7 new unit
 tests (64 total, all green).
 
+## M24: exp28 — CEM search under competition (the benchmark lesson, sealed)
+
+The direct sequel to exp25: if the transplanted century-hold policy won
+under competition, re-run the CEM SEARCH ITSELF with fitness evaluated
+in the competing-memory world. Same 8-dim space, fresh search seeds, and
+a held-out eval ported line-faithful from exp25 (regression anchor:
+bit-exact, |delta| = 0.00e+00). **All seven criteria PASS, and the
+robustness reading dies: the competitively optimal policy is a DIFFERENT
+policy (write_age 20.0 vs 14.5, budget 6 vs 9) and a BETTER one — hold
+0.683 vs the transplant's 0.625 (+0.058, ~3x the pre-registered bar),
+median 79.7 vs 70.6yr, every seed separated.** The divergence is legible
+against exp26's elasticity map: the shared budget saturates at b6, and
+the blind search independently landed exactly on the saturation knee —
+budget 6 — while starting maintenance earlier (25.75 vs 31.5), slowing
+the cadence, and leaning 2x harder on the procedure-free unverified
+boost channel. It wins with FEWER repair writes (17,139 vs 19,367,
+-11.5%): the competitive optimum is a schedule, not more therapy, and
+the starvation gap widens (b2 arms: 0.557 vs 0.421 — disc28 at budget 2
+nearly matches disc19 at budget 9). The matched-channel weak-pull law is
+rediscovered a THIRD independent time (k_anchor 0.128), interiority
+survives, and exp23's stable-zone-on-top ordering holds — with the
+honest sub-structure that the B/C order below A is policy-sensitive.
+Benchmark discipline sealed into the ledger: evaluating policies in an
+easier world than deployment under-estimates them by enough that
+re-searching in the deployment world pays for itself.
+
 ## Research dossier
 
 `research/` contains the verified literature (bioelectric morphogenesis, IIT, aging theory, Chinese research landscape) with DOIs verified against Crossref/PubMed responses, plus real C. elegans connectome data (OpenWorm; Cook et al. 2019).
