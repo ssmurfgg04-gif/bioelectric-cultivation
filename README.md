@@ -620,3 +620,13 @@ falsified); next step is primary-literature extraction (S2R3c).
   architecture — theta (expression) + phi (positional map), the model-
   level form of pattern-memory vs positional-control distinctions.
 - Ledger L17; suite green; exp29/exp31 controls bit-exact throughout.
+
+## M28 addendum: exp35 — QUEST task 6 complete (novel-prediction registry + two plane-awareness candidates)
+
+Forward deposits for every empty runnable cell (the sharp one:
+morphogen|crosspiece 0.00 — removing the re-specified territory should
+fully compensate wnt loss), plus first per-plane compares the model had
+never faced: innexin|head (record 0.00 vs sim 1.00 — head-specific
+protection under junction loss) and ion_channel|trunk (record 0.46 vs
+sim 0.00 — plane-sensitive calibration). Both feed the M28 upgrade.
+research/NOVEL_PREDICTIONS.md + ledger L18.

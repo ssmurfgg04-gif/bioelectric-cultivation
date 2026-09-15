@@ -972,3 +972,35 @@ Model state after tonight: regrow() carries M25 (coupling-dependent
 readout) + M26c (two-face) + M27b (chain commitment diffusion) adopted;
 M26a/M27a length-gradient readouts refuted twice with sharpening
 diagnoses. Suite green; exp29/exp31 controls bit-exact throughout.
+
+## Level 18 — exp35: novel-prediction sweep (QUEST task 6 — deposits + two plane-awareness refutation candidates)
+
+The class-x-plane coverage grid (1,462-outcome corpus) minus the runnable
+sim arms gives two instruments (results/exp35_novel_predictions.json,
+research/NOVEL_PREDICTIONS.md):
+
+- **FORWARD DEPOSITS** (empty cells, pre-registered falsification
+  thresholds): ion_channel|head_tail 1.00, ion_channel|crosspiece 1.00,
+  innexin|head_tail 1.00, gj_block|crosspiece 1.00, and the sharp one —
+  **morphogen|crosspiece 0.00**: the crosspiece cut at f~0.42 removes
+  the wnt-re-specified posterior quarter entirely, so the mechanism
+  predicts FULL compensation at this plane. A future wnt x crosspiece
+  series with high abnormality refutes the mechanism's spatial logic,
+  not a parameter. cutting|lateral recorded as a structural gap (2D
+  cuts on a 1D sheet).
+- **REFUTATION CANDIDATES** (recorded cells, first per-plane compare):
+  (1) innexin|head — recorded 0.00 (n=2) vs sim 1.00 (gap +1.00): head
+  regeneration under junction loss is fully protected in the record;
+  the M25 blind-guess is plane-agnostic -> head-specific readout
+  channel missing. (2) ion_channel|trunk — recorded 0.46 (n=60) vs sim
+  0.00 (gap -0.46): the M27b chain-diffusion calibration crosses
+  threshold at tail but not trunk — plane-sensitive calibration. Both
+  candidates share one theme (the model's corruption mechanisms are
+  plane-blind where the record is plane-aware) and both feed the M28
+  dual-field + plane-dependent readout upgrade.
+
+Process note: the ion_channel|trunk verdict text was pre-written as an
+overshoot expectation; the measurement came out the opposite way and
+the recorded verdict describes the MEASUREMENT (undershoot), with the
+pre-written expectation superseded — recorded here so the swap is in
+the open.

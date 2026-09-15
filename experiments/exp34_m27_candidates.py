@@ -92,6 +92,14 @@ def run_arm(arm: str, seed: int, cut_f: float = 0.5,
         elif plane == "trunk":
             c.amputate(TRUNK, wound_voltage=-30.0, blastema_theta=-40.0)
             c.regrow(TRUNK, cell_period=0.8, dt=DT, noise=0.6, **rg)
+        elif plane == "head_tail":
+            c.amputate(TAILP, wound_voltage=-30.0, blastema_theta=-40.0)
+            c.amputate(HEAD, wound_voltage=-30.0, blastema_theta=-40.0)
+            c.regrow(TAILP, cell_period=0.8, dt=DT, noise=0.6,
+                     **{k: v for k, v in rg.items() if k != "direction"})
+            c.regrow(HEAD, cell_period=0.8, dt=DT, noise=0.6,
+                     direction="backward" if direction == "forward" else direction,
+                     **{k: v for k, v in rg.items() if k != "direction"})
         elif plane == "crosspiece":
             ci = int(round(cut_f * N))
             ci = min(max(ci, 5), N - 1)
@@ -112,8 +120,8 @@ def run_arm(arm: str, seed: int, cut_f: float = 0.5,
             plane = "crosspiece"
         c.run(24, dt=DT)
         plane_protocol(plane)
-    elif arm.startswith("innexin_"):
-        plane = strip(arm[len("innexin_"):], "_m27", "_recheck")
+    elif arm.startswith("innexin_") or arm.startswith("gjblock_"):
+        plane = strip(arm.split("_", 1)[1], "_m27", "_recheck")
         c.block_gap_junctions(0.05)
         c.run(24, dt=DT)
         plane_protocol(plane)
