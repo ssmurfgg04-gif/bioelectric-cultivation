@@ -1934,3 +1934,18 @@ Night seven, part 3. exp43's registered follow-up:
 - The exp66 SG-G2 refutation is thereby REPAIRED: the washout arm
   with the adopted rate law reproduces e329's normal regeneration
   while every calibrated sustained arm is untouched.
+
+## L51 — exp70 ONSET-AWARE CORPUS RE-PASS (4/4)
+- The gj_block class's drug schedules classify ALL 29 experiments:
+  22 sustained / 6 delayed / 1 washout (the exp66 extraction made
+  operational). The washout and delayed arms use the adopted M40
+  rate law (D=2, exp69); the sustained arms carry D=2 (rates
+  unchanged — M40-G2).
+- ON-G1 PASS coverage; ON-G2 PASS — e329's washout arm rates 0.00
+  vs recorded 0.00 (the exp66 SG-G2 refutation now REPAIRED AT
+  CORPUS LEVEL); ON-G3 PASS the delayed<=sustained direction (with
+  the honest note: the delayed tail arm's 3-seed rate 1.00 vs
+  e328's single record 0.19 — the pub20 subset offset persists);
+  ON-G4 PASS — corpus MAE 0.522 < exp67's 0.524 (the running
+  integration metric improves with every adopted mechanism: 0.595
+  exp37 -> 0.524 exp67 -> 0.522 exp70).

@@ -1,0 +1,17 @@
+{
+ "exp": "exp70_onset_corpus",
+ "onset_counts": {
+  "delayed": 6,
+  "washout": 1,
+  "sustained": 22
+ },
+ "mae": 0.5216,
+ "e329_arm": 0.0,
+ "criteria": {
+  "ON_G1_onset_coverage": true,
+  "ON_G2_washout_matches": true,
+  "ON_G3_delayed_cooler": true,
+  "ON_G4_mae_improves": true
+ },
+ "notes": "The onset-aware mapping completes the exp66->exp69 arc: the gj_block class's drug schedules classify into sustained/delayed/washout; the washout and delayed arms use the adopted M40 rate law (D=2). The corpus MAE is the running integration metric for the adopted stack."
+}
