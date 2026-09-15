@@ -1,0 +1,204 @@
+{
+ "exp": "exp67_compiler_v3_corpus",
+ "mapped": 905,
+ "unmapped_recorded": 557,
+ "class_plane_table": {
+  "cutting|crosspiece": {
+   "n": 153,
+   "sim": 0.0,
+   "recorded": 0.425
+  },
+  "cutting|head": {
+   "n": 67,
+   "sim": 0.0,
+   "recorded": 0.502
+  },
+  "cutting|head_tail": {
+   "n": 2,
+   "sim": 0.0,
+   "recorded": 0.668
+  },
+  "cutting|tail": {
+   "n": 27,
+   "sim": 0.0,
+   "recorded": 0.367
+  },
+  "cutting|trunk": {
+   "n": 44,
+   "sim": 0.0,
+   "recorded": 0.308
+  },
+  "gj_block|head": {
+   "n": 6,
+   "sim": 0.0,
+   "recorded": 0.177
+  },
+  "gj_block|head_tail": {
+   "n": 2,
+   "sim": 1.0,
+   "recorded": 0.025
+  },
+  "gj_block|tail": {
+   "n": 7,
+   "sim": 1.0,
+   "recorded": 0.599
+  },
+  "gj_block|trunk": {
+   "n": 6,
+   "sim": 1.0,
+   "recorded": 0.398
+  },
+  "innexin|head": {
+   "n": 2,
+   "sim": 0.0,
+   "recorded": 0.0
+  },
+  "innexin|tail": {
+   "n": 2,
+   "sim": 1.0,
+   "recorded": 0.4
+  },
+  "innexin|trunk": {
+   "n": 2,
+   "sim": 1.0,
+   "recorded": 0.6
+  },
+  "ion_channel|head": {
+   "n": 8,
+   "sim": 0.667,
+   "recorded": 0.326
+  },
+  "ion_channel|tail": {
+   "n": 2,
+   "sim": 0.667,
+   "recorded": 0.45
+  },
+  "ion_channel|trunk": {
+   "n": 60,
+   "sim": 0.0,
+   "recorded": 0.462
+  },
+  "morphogen|crosspiece": {
+   "n": 2,
+   "sim": 0.0,
+   "recorded": 0.555
+  },
+  "morphogen|head": {
+   "n": 20,
+   "sim": 1.0,
+   "recorded": 0.64
+  },
+  "morphogen|head_tail": {
+   "n": 2,
+   "sim": 1.0,
+   "recorded": 1.0
+  },
+  "morphogen|tail": {
+   "n": 24,
+   "sim": 1.0,
+   "recorded": 0.642
+  },
+  "morphogen|trunk": {
+   "n": 78,
+   "sim": 1.0,
+   "recorded": 0.758
+  },
+  "other_rnai|crosspiece": {
+   "n": 1,
+   "sim": 1.0,
+   "recorded": 0.15
+  },
+  "other_rnai|head": {
+   "n": 54,
+   "sim": 0.648,
+   "recorded": 0.639
+  },
+  "other_rnai|tail": {
+   "n": 29,
+   "sim": 0.563,
+   "recorded": 0.663
+  },
+  "other_rnai|trunk": {
+   "n": 305,
+   "sim": 0.097,
+   "recorded": 0.868
+  }
+ },
+ "arm_count": 43,
+ "mae_v3": 0.5242,
+ "mae_exp37_stored": 0.5946717388986905,
+ "plane_rho": 0.4,
+ "plane_table": {
+  "crosspiece": {
+   "sim": 0.006,
+   "recorded": 0.424
+  },
+  "head": {
+   "sim": 0.384,
+   "recorded": 0.539
+  },
+  "head_tail": {
+   "sim": 0.667,
+   "recorded": 0.564
+  },
+  "tail": {
+   "sim": 0.557,
+   "recorded": 0.554
+  },
+  "trunk": {
+   "sim": 0.234,
+   "recorded": 0.745
+  }
+ },
+ "class_table": {
+  "cutting": {
+   "n": 293,
+   "sim": 0.0,
+   "recorded": 0.421
+  },
+  "gj_block": {
+   "n": 21,
+   "sim": 0.714,
+   "recorded": 0.366
+  },
+  "innexin": {
+   "n": 6,
+   "sim": 0.667,
+   "recorded": 0.333
+  },
+  "ion_channel": {
+   "n": 70,
+   "sim": 0.095,
+   "recorded": 0.446
+  },
+  "morphogen": {
+   "n": 126,
+   "sim": 0.984,
+   "recorded": 0.718
+  },
+  "other_rnai": {
+   "n": 389,
+   "sim": 0.211,
+   "recorded": 0.819
+  }
+ },
+ "signatures": {
+  "other_rnai": {
+   "sim": 0.211,
+   "recorded": 0.819,
+   "delta": 0.608
+  },
+  "gj_block_head": {
+   "sim": 0.0,
+   "recorded": 0.177,
+   "delta": 0.177
+  }
+ },
+ "criteria": {
+  "CV3_G1_coverage": true,
+  "CV3_G2_plane_ordering": false,
+  "CV3_G3_mae_improves": true,
+  "CV3_G4_signatures_shrink": true
+ },
+ "notes": "The compiler v3 loop: every mapped corpus experiment is compiled to an arm by the FULL adopted stack (M25/M26c/M27b/M28/M31-A/M33/M35-A/M36/M37-A + the gene layer + the exp66 semantics). The corpus is the compiler's test suite. CV3-G2 REFUTED AS REGISTERED with its diagnosis: exp37's plane rho 0.80 was partly an ARTIFACT of the refuted all-zero other_rnai mapping (389 experiments pinned at 0.00 flattened the sim's plane profile into coincidental agreement); with the gene layer active the sim's plane profile SPREADS (crosspiece 0.006 - head_tail 0.667) while the recorded profile stays COMPRESSED (0.42-0.75) by the record-hot bias (exp51-D2) - five-point Spearman cannot order a compressed target. The informative instrument is the per-class x plane table (deposited). MAE 0.524 < 0.595: the adopted stack pays rent at corpus scale."
+}

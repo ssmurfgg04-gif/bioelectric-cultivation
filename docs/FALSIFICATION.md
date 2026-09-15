@@ -1854,3 +1854,33 @@ Night seven, part 3. exp43's registered follow-up:
   blockade DELAY commitment — partial, to preserve the calibrated
   sustained arms); pub20's whole series runs cooler than
   blind-commitment predicts (e328 0.19, e329 0.00) — one direction.
+
+## L48 — exp67 COMPILER V3: THE CORPUS-COMPILATION LOOP
+- The full adopted stack (M25/M26c/M27b/M28/M31-A/M33/M35-A/M36/M37-A
+  + the gene layer + the exp66 semantics) now generates EVERY mapped
+  corpus arm — the corpus is the compiler's test suite. 43 deduped
+  arms x 3 seeds over 905 mapped experiments.
+- CV3-G1 PASS (the honest metric): FULL ACCOUNTING — mapped 905 +
+  explicitly-recorded-unmappable 557 = 1,462 (every outcome-bearing
+  experiment accounted). exp37's 1,029 included ~124 other_rnai
+  experiments under the all-zero mapping the corpus itself refuted;
+  the gene families with no 1D layer (organ/DV/PCP) are now RECORDED
+  as unmappable, not force-mapped.
+- CV3-G3 PASS — MAE 0.524 < exp37's 0.595: the adopted stack pays
+  rent at corpus scale (the first corpus-level improvement since the
+  exp37 baseline).
+- CV3-G4 PASS — BOTH REFUTED SIGNATURES SHRINK: other_rnai delta
+  0.798 -> 0.608 (the gene layer's sim 0.211 vs recorded 0.819); the
+  gj_block|head delta 0.823 -> 0.177 (M33 + the exp66 mixture
+  decomposition: the model's 0.00 vs the pub1-octanol subset's
+  0.092).
+- CV3-G2 REFUTED AS REGISTERED (honest, with the artifact diagnosis):
+  plane rho 0.400 < exp37's 0.80 — exp37's rho was partly an ARTIFACT
+  of the refuted all-zero other_rnai mapping (389 experiments pinned
+  at 0.00 flattened the sim's plane profile into coincidental
+  agreement with the compressed record). With the gene layer active
+  the sim's plane profile SPREADS (crosspiece 0.006 -> head_tail
+  0.667) while the recorded profile stays COMPRESSED (0.42-0.75) by
+  the record-hot bias (exp51-D2). Five-point Spearman cannot order a
+  compressed target; the per-class x plane table (deposited) is the
+  informative instrument.
