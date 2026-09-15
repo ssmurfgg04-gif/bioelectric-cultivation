@@ -9,6 +9,14 @@ memory tier — the clock can be designed against grounded biology.
 the two-bottleneck law (pattern AND channel), the quarantine effect of
 junction decay, the protected-tier bistability (exp17, +20% median),
 the century-hold policy (exp19: write late, hold dense, weak anchor pull).
+**Sharpened twice since first pre-registration (recorded, not silently
+edited):** (M17) exp20's spatial transcriptomics refuted the
+expression-level forms of the injury-transient and junction-smoothness
+clauses (V3s/V3c/V4s) — several measurements moved from preferred to
+NECESSARY; (M18) exp23's multi-pattern allocation added the two-layer
+capacity law (storage free, expression budget-bound), the regional
+equilibrium prediction, and the multi-write interference clause — each
+carrying its own prediction letters below, tagged (M17)/(M18).
 
 ---
 
@@ -36,6 +44,18 @@ and gates the Ca2+ wave (Chifflet 2005; Liu 2026) — but no one has asked
 whether **spatial pattern fidelity of the Vmem map declines with age and
 predicts organism-level outcome**. That is the fidelity clock.
 
+**(M18) Which layer the clock lives in:** exp23's two-layer capacity law —
+the protected memory tier stores written patterns for free (I_anchor =
+1.000 for every pattern under zero maintenance) while the working state
+(I_V, the fraction of cells whose membrane voltage actually encodes the
+pattern) is the budget-bound, decaying layer. DiBAC reads the WORKING
+STATE. The fidelity clock is therefore a claim about the EXPRESSION
+layer, not the memory layer: an old worm may hold its target morphology
+in (the analog of) stored somatic memory while failing to express it —
+and that failure is the clock. FC1's metric must not be interpretable as
+memory intactness; the regional-expression decomposition below keeps the
+layers separable in principle (FC4 carries the memory-layer test).
+
 ## 2. The central hypothesis (falsifiable, one sentence)
 
 > In aging planaria, the Vmem map loses spatial fidelity (quantization
@@ -53,11 +73,13 @@ generated it.
 |---|---|---|
 | Vmem map | DiBAC4(3) live imaging, calibrated against high-K/valinomycin clamps; ~2 µm resolution, whole-mount | Oviedo et al. 2008 protocol (PMC10468776, PMID 21356693) |
 | Pattern fidelity | The SAME metric as the model: quantize the map into the 7-level scale, score region coherence + boundary sharpness (edge guard analog = exclude wound margins) | exp8 fidelity.py, translated |
-| Channel (coupling) | innexin mRNA spatial map (WISH/smFISH: inx-13, inx-11 and the 82-gene AHRD innexin family from the Rosetta mapping) + functional dye coupling (Lucifer-yellow / scrape-load calcein transfer = the bystander assay) | Nogi 2005/2007; Oviedo 2009; Decrock 2009; Cusato 2003; Spray 2012 |
+| **(M17) Map smoothness** | Spatial autocorrelation length of the quantized map, per region — now a PRIMARY readout, not an imported assumption: exp20 refuted the expression-level form of "innexin expression → smooth map" (V4s: rho ≈ 0.02, sign-inconsistent across 0/12/36 hpa), so the coupling↔smoothness relationship must be MEASURED here | exp20 V4s; this series |
+| Channel (coupling) | innexin mRNA spatial map (WISH/smFISH: inx-13, inx-11 and the 82-gene AHRD innexin family from the Rosetta mapping) + functional dye coupling (Lucifer-yellow / scrape-load calcein transfer = the bystander assay). **(M17) Functional coupling is the load-bearing measurement and must be taken in the SAME animals as the Vmem map; the innexin-expression map is retained as the expression correlate — expected to DISAGREE with function (the V4s lesson; the disagreement is itself a result)** | Nogi 2005/2007; Oviedo 2009; Decrock 2009; Cusato 2003; Spray 2012; exp20 |
 | The write | Controlled Vmem writes: H,K-ATPase manipulation (omeprazole-class), 24h external fields, ion-free media depolarization | Beane 2013; Levin-lab voltage-control toolbox |
 | The archive | genome (unchanged across ages — matched controls) | — |
 | Stem-cell competence | piwi-1/piwi-2 WISH + X1(Xi+EdU) FACS counts | standard neoblast assays |
 | Age staging | body size, fission-event count, lipofuscin/beta-gal, amputation-response latency | planarian aging literature |
+| **(M17) Imaging positive control** | Neoblast-rich regions must read relatively HYPERPOLARIZED in the same DiBAC maps (V1s: neoblast ranks 3/31 spatial annotation types in PRISTA4D-inferred Vm — V1 confirmed in a third modality). A pipeline that cannot see this is broken; cohort labels stay blinded until the positive control passes | exp18 V1 + exp20 V1s |
 
 **Honest limitations on record (from exp18, the first real-data test):**
 transcriptome-level inference of Vm is rank-robust for stemness (V1 PASS,
@@ -66,6 +88,16 @@ false) or absolute mV; DiBAC imaging is slow (minutes) and cannot resolve
 fast transients. The clock claim concerns SLOW spatial structure (aging
 timescale: weeks-months), which DiBAC CAN resolve. We do not extrapolate
 the atlas inference to dynamics; the dyes carry the measurement.
+**(M17 additions from exp20):** (i) the injury-depolarization transient is
+INVISIBLE at family-expression level (V3s refuted: the 0→12 hpa Vm
+contrast did not rise in PRISTA4D) — no expression-derived assay can
+substitute for a direct fast measurement; (ii) innexin-expression maps do
+NOT predict Vm-map smoothness (V4s refuted, rho ≈ 0.02) — junction claims
+require the functional dye-coupling readout; (iii) phagocytes are NOT the
+most depolarized spatial type (V3c refuted) — cell-type Vm ordering from
+expression does not transfer; the only expression-inference claim that
+survived spatial screening is the neoblast-hyperpolarization anchor (V1s,
+now the positive control above).
 
 ## 4. The experiment series
 
@@ -73,17 +105,37 @@ the atlas inference to dynamics; the dyes carry the measurement.
 **Design:** 3 age cohorts (young ~1 mo post-hatch, middle, old — staged by
 size/fission count, n≥30 each, strain-matched, size-matched-across-stagings
 where possible). DiBAC4(3) whole-mount imaging of intact animals (head,
-pre-pharyngeal, tail regions). Compute the fidelity metric per worm.
+pre-pharyngeal, tail regions), WITH same-animal dye-coupling measurement
+(scrape-load calcein — the M17 load-bearing co-measurement) and per-region
+spatial-autocorrelation of the quantized map. Compute the fidelity metric
+per worm; decompose per region. Positive control (neoblast hyperpolarization,
+V1s) must pass before unblinding cohort labels.
 **Pre-registered predictions:**
 - FC1a: fidelity declines monotonically with cohort age (one-sided
   Jonckheere-Terpstra, p<0.05).
 - FC1b: spatial VARIANCE of the quantized map rises with age (the
-  corruption signature).
+  corruption signature). **(M18) Sharpened: the rise is REGIONALLY
+  STRUCTURED, not uniform** — see FC1d.
 - FC1c: age-matched high-fidelity outliers exist (the clock ticks
   independently of calendar age — correlation of fidelity with functional
   age markers > with days-since-hatch).
+- FC1d **(M18, from exp23's equilibrium law):** the regional fidelity
+  deficit ORDERING follows regional cell-turnover burden — high-turnover
+  regions (neoblast-rich) lose expression fidelity FIRST and MOST. In the
+  model the deficit is a death-restoration equilibrium (the steady-state
+  wrong-fraction is set by the regional hazard rate, not by maintenance
+  budget or allocation); if real-worm fidelity decline is instead UNIFORM
+  across regions, the aging vector is not turnover-driven and the
+  model's mechanism does not transfer.
+- FC1e **(M17, from V4s):** the map's spatial autocorrelation and the
+  same-animal dye-coupling range are correlated ACROSS animals (the
+  coupling↔smoothness relationship, measured for the first time).
+  Pre-registered direction: positive. The expression-level form was
+  refuted; this clause tests the FUNCTIONAL form.
 **Falsifies:** the whole program if fidelity does not decline (the
-bioelectric clock is not real in vivo).
+bioelectric clock is not real in vivo). FC1d additionally kills the
+turnover-equilibrium mechanism (though not the clock's existence) if
+regional structure is absent.
 **Cost:** ~6 weeks, one imaging rig, no transgenics. This is the minimal
 viable experiment.
 
@@ -100,6 +152,16 @@ and survival to completion.
   significantly negative, p<0.05).
 - FC2c: fidelity out-predicts neoblast COUNT (the pattern is the bottleneck,
   not the stem-cell pool — regression model comparison, AIC).
+- FC2d **(M17, from V3s):** the amputation-response transient clause.
+  exp20 refuted the expression-level form of injury depolarization (the
+  PRISTA4D 0→12 hpa contrast did not rise); DiBAC cannot resolve the
+  transient's timescale (seconds-minutes). The fast transient is therefore
+  NOT measurable in this series with the current readout — it is
+  explicitly OUT of scope here and carried by: (i) amputation-response
+  latency (behavioral, seconds-minutes) as a coarse surrogate, and (ii) a
+  future collaborator with a fast genetically-encoded voltage indicator
+  (GEVI-class) or double-barrel microelectrode. Recorded so nobody
+  mistakes silence on the transient for evidence against it.
 **Falsifies:** the mortality mechanism (if piwi-1 count out-predicts
 fidelity, the model's causal ordering is inverted in vivo).
 
@@ -124,6 +186,18 @@ innexin-overexpression lines if available).
   re-derivation but mortality SLOWER (the two-bottleneck prediction:
   un-quarantining corruption without repairing it should transiently HURT —
   the connexin-boost hazard T3.1e).
+**(M18) Expectation calibration (so the design is not killed by its own
+optimism):** exp21 bounded the junction claim to WEAK form — junctions
+are NECESSARY for normal patterning (above the cutting baseline) but not
+uniquely disruptive among recorded perturbations (the strong form failed
+  at ~3-study effective power in PlanformDB); do not expect innexin RNAi
+  to be the most abnormal phenotype in the room, expect it above cutting
+  baseline. exp22 adds the geometry: the matched-channel memory axis
+  (k_anchor) dominates the local write co-metric — effect sizes on OTHER
+  axes (boost-type interventions) are expected SMALL and flat; the
+  strongest junction-manipulation effects should sit on the coupling axis
+  itself, and plateau-shaped dose responses are the expected norm, not a
+  failure of the manipulation.
 **Falsifies:** the quarantine mechanism specifically (if corruption stays
 spatially uniform under knockdown, junction decay is not the vector).
 
@@ -142,8 +216,18 @@ pulse / pump-blocker); measure persistence of the written Vmem region.
 - FC4c: a second deliberate write overwrites the first (re-writability),
   while passive depolarization transients (injury-mimetic, ATP bath) do
   NOT (the deliberate-write gate — exp17's core distinction).
+- FC4d **(M18, from exp23 E1):** two simultaneous ectopic writes show
+  LITTLE interference. In the model, competing written patterns share
+  the maintenance channel only marginally (competition cost ≈ 0.02 even
+  at extreme maintenance scarcity, storage layer free — the two-layer
+  capacity law); transfer prediction: writing region 2 does not
+  measurably accelerate the decay of region 1 (paired comparison, effect
+  < the write-to-erase contrast). If simultaneous writes DO interfere,
+  tissue memory capacity is shared in a way the model's protected tier
+  is not — the most informative possible failure.
 **Falsifies:** the protected-tier semantics if writes decay passively or
-if injury-mimetic transients overwrite them.
+if injury-mimetic transients overwrite them; FC4d kills the free-storage
+layer claim if simultaneous writes interfere.
 
 ### FC5 — the clock reset (re-derivation rejuvenation)
 **Design:** aged worms, repeated amputation-regeneration cycles (the
@@ -168,9 +252,12 @@ but not fidelity, the pattern is not the aging-relevant variable).
 | Stage | Kills | If it fails |
 |---|---|---|
 | FC1 | the clock's existence | bioelectric fidelity is not age-structured → the model's mortality law is an artifact of the simulation regime |
+| FC1d | the turnover-equilibrium mechanism (M18) | decline is regionally uniform → the aging vector is not cell-turnover burden |
+| FC1e | the functional coupling↔smoothness link (M17) | autocorrelation is uncoupled from dye-coupling range → the junction-smoothness clause dies at the functional level too |
 | FC2 | the clock's prognostic value | fidelity is descriptive but not predictive → the two-bottleneck law does not transfer |
 | FC3 | the quarantine mechanism | junction decay corrupts uniformly → the island/quarantine architecture is model-specific |
 | FC4 | the protected tier | memories decay passively → bistability claim unsupported in tissue |
+| FC4d | the free-storage layer (M18) | simultaneous writes interfere → tissue memory capacity is shared in a way the model's protected tier is not |
 | FC5 | the rejuvenation route | regeneration resets cells not pattern → the +20% result is a simulation artifact |
 
 ## 6. What the first two weeks look like (FC1 minimal viable protocol)
@@ -186,7 +273,19 @@ but not fidelity, the pattern is not the aging-relevant variable).
    score, edge-guarded) BEFORE unblinding cohort labels — the metric code
    is committed to this repo (cultivation/bioelectric/fidelity.py's
    `pattern_fidelity` translated to 2D images).
-5. Power check from the pilot: if the young-vs-old fidelity effect is
+5. **(M17) Positive-control gate BEFORE any aging analysis:** in the same
+   pilot maps, neoblast-rich regions must read relatively hyperpolarized
+   (the V1s anchor). Pipeline failure stops here — not a biological
+   result.
+6. **(M17) Same-animal coupling co-measurement:** scrape-load calcein on
+   a pilot subset (n=5/cohort) to establish the dye-coupling assay's
+   variance before scaling it into the full FC1 (the load-bearing
+   junction measurement, per V4s).
+7. **(M18) Per-region decomposition from day one:** the fidelity metric,
+   spatial variance, and autocorrelation are computed per region
+   (head/pre-pharyngeal/tail + neoblast-rich masks if WISH is run) — the
+   FC1d ordering test needs the regional table, not a whole-animal scalar.
+8. Power check from the pilot: if the young-vs-old fidelity effect is
    detectable at n=30 with the pilot's variance, proceed to full FC1.
 
 ## 7. Resource & risk register
@@ -218,3 +317,13 @@ annotation existed; the write-protected consolidation model existed and
 matched exp17). The default hypothesis is that 90% of what we're about to
 build has a published method — the job is to find it, cite it, and spend
 the novel effort only on the genuinely open joint.
+
+**Sharpening-round audit trail:** (M17) the spatial sweep found PRISTA4D
+(Han 2026, GigaScience) and used it to test the expression-level forms of
+our spatial predictions BEFORE the wet lab — three of four died there,
+which is the sweep doing its job; (M18) exp23 ran the AI-Scientist's
+multi-pattern idea through the stack first, so the wet-lab program now
+carries layer-explicit (storage vs expression) predictions, a regional
+equilibrium clause, and a multi-write interference clause instead of
+unexamined single-write assumptions. Both rounds are tagged inline above
+— nothing was silently edited.

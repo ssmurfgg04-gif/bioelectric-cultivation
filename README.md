@@ -327,6 +327,38 @@ say which layer they mean. New APIs: per-cluster `jump_mult`, per-cell
 `hazard_boost`, and `FidelityCodec.maintain(alloc=...)` (four policies,
 unit-tested, bit-exact default path). 10 new unit tests (50 total).
 
+## M19: the FIDELITY_CLOCK sharpened — layer-explicit, spatially honest
+
+FC1 (and the series around it) re-registered against everything the
+computational stack now actually knows, every change tagged (M17)/(M18)
+inline — nothing silently edited. The sharpening, clause by clause:
+**(1) the two-layer capacity law (exp23)** — the protected tier stores
+written patterns for free (I_anchor = 1.000 unmaintained) while the
+working state is the budget-bound decaying layer; DiBAC reads the
+working state, so the fidelity clock is a claim about the EXPRESSION
+layer, and the doc now says so before anyone measures the wrong thing.
+**(2) FC1d (new, from exp23's equilibrium law)** — regional fidelity
+deficits should ORDER BY regional turnover burden (death-restoration
+equilibrium); uniform decline kills the model's aging mechanism.
+**(3) FC1e + the measurement table (from exp20's V4s refutation)** —
+functional dye coupling is co-measured in the SAME animals; the
+coupling-to-smoothness relationship is a measured outcome, not an
+imported assumption; innexin-expression maps retained only as the
+expected-to-disagree correlate. **(4) A positive-control gate (from
+V1s)** — neoblast-rich regions must read hyperpolarized in the same
+DiBAC maps BEFORE cohort labels unblind; a pipeline that cannot see the
+one spatial Vm prediction that survived screening is broken, not
+negative. **(5) FC2d (from V3s)** — the fast injury transient is
+explicitly out of scope for DiBAC and assigned to latency surrogates /
+future GEVI collaborators, so nobody reads silence as refutation.
+**(6) FC4d (new, from exp23 E1)** — two simultaneous ectopic writes
+should show little interference (free storage layer); interference
+would mean tissue memory capacity is shared in a way the model's
+protected tier is not — the most informative possible failure. The
+falsification table carries three new kill-rows; the two-week protocol
+gains the positive-control gate, the coupling co-measurement pilot, and
+per-region decomposition from day one.
+
 ## Research dossier
 
 `research/` contains the verified literature (bioelectric morphogenesis, IIT, aging theory, Chinese research landscape) with DOIs verified against Crossref/PubMed responses, plus real C. elegans connectome data (OpenWorm; Cook et al. 2019).
