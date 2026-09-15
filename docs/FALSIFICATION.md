@@ -1182,3 +1182,45 @@ RESOLVED at the mechanism level without new model machinery:
   falsified, and is a formal NOVEL-PREDICTION deposit with a concrete
   experimental design (concentration ladder x regen outcome,
   pre-registered Spearman monotonicity).
+
+## Level 24 — exp41: Stage 3 opens — the anatomical compiler v0 (compilation, not search)
+
+Stage 3 (Golden Core) deliverable: `cultivation/compiler/anatomy.py` —
+declarative AnatomySpec -> InterventionProgram (regions, voltages,
+durations, coupling preconditions, verification criteria) -> in-sim
+execution + self-verification. The adopted Stage-2 mechanisms make the
+inverse map ANALYTIC: the M28 phi layer IS the target representation —
+write the spec, trigger a regen that reads it. Zero search iterations
+(Phase A's CEM is no longer needed for supported anatomy).
+
+GATES (pre-registered; verifier bug process note in the results JSON):
+- **CP-G1 restorative compile: PASS (3/3, spec-err ~3 mV).**
+- **CP-G2 TWO-HEAD COMPILE: PASS (3/3, errs 4.0-4.3) — the Levin
+  anchor phenotype reached by COMPILATION, no search.**
+- **CP-G3 novel-anatomy (ectopic mid-trunk head): REFUTED by 0.22 mV**
+  — the unsupported zone erodes to -26.2 vs the -26.0 bar after clamp
+  release (two-sided boundary Laplacian; a native head has one).
+- **CP-G3' latch amendment (exploratory): REFUTED with a DIFFERENT
+  signature** — on the latching substrate the whole-spec error fails
+  (7.0 mV): the latch's own regrow is anchor-inheriting and does not
+  read the phi spec. Two failures, two mechanisms, one v1 work item:
+  the compiler needs a HYBRID rule (latch the unsupported zone AND
+  phi-read the regen — LatchingCollective.regrow needs spec support).
+- **CP-G4 safety refusal: PASS** — out-of-repertoire specs rejected at
+  compile time (the compiler refuses what the substrate cannot
+  express).
+- **CP-G5 coupling necessity: PASS** — CP-G1's program FAILS
+  verification under gap_scale=0.05 (errs 6.8-10.2 vs <6.0 bar): the
+  emitted junction precondition is load-bearing, M25/M28 consistency
+  holds at the compiled level.
+- PROCESS: the first run's verifier skipped the whole-spec
+  pattern-error gate (substring "pattern error" vs "wt_pattern_error")
+  — caught because blocked runs showed verified=True at err 6.8+;
+  fixed; all verdicts from the fixed verifier. Same species as
+  exp36's float-literal gate bug: execute verification criteria, never
+  parse them.
+
+Verdict: the Golden Core threshold is CROSSED for supported anatomy
+(restore + two-head compile and verified end-to-end, zero search);
+novel unsupported anatomy is the measured frontier (0.22 mV short,
+repair path registered as compiler v1: hybrid latch+spec rule).
