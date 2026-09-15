@@ -1823,3 +1823,34 @@ Night seven, part 3. exp43's registered follow-up:
 - First in-file run correction: the CT-G4 chain reused the CT-G3
   s=2.0 program's clamps against the s=1.0 target (clamp/target
   mismatch, errs ~10) — caught before verdicts, fixed to prog0.
+
+## L47 — exp66 CORPUS SEMANTICS CORRECTED (the gj_block protocols decoded)
+- THE PROTOCOL EXTRACTION (316 drug-schedule entries): the gj_block
+  class is a MIXTURE — pub1 (2010 octanol): SUSTAINED from t=0
+  (start=0, end=0, regen 14); pub20 (2005 heptanol): DELAYED ONSET at
+  2 h (start=2, end=0), then sustained; PLUS e329: a true WASHOUT
+  PULSE (start=0, end=2 — blockade for 2 h, then full coupling).
+- SG-G1 PASS — THE HEAD_TAIL ANOMALY WAS A PLANE MIS-MAP: e421 "Head
+  plus PRE-pharyngeal crop" is ONE CONTIGUOUS anterior removal (the
+  fragment is posterior trunk+tail — head-plane semantics), not a
+  two-end fragment; only the POST-pharyngeal variant (e423) is
+  genuinely both-ends. Remapped, the sustained-blockade head arm
+  (post-M33, 0.00) matches e421's recorded 0.00; the head_tail class
+  shrinks to n=1 and the exp57-D anomaly is CLOSED as a taxonomy
+  artifact, not a model failure.
+- SG-G3 PASS — THE 0.177 RESIDUAL IS OWNED BY THE MIXTURE: pooling
+  gj_block|head BY PUBLICATION gives pub1 0.092 (n=4, delta to the
+  model 0.09) vs the pooled 0.177 (delta 0.177) — the octanol
+  subset's M33-consistent rate was hiding under the heptanol subset's
+  offset. The exp50-A ownership is re-assigned: protocol-onset
+  semantics + cross-publication scoring bias, not a missing
+  mechanism.
+- SG-G2 REFUTED AS REGISTERED (honest): the washout-pulse arm rates
+  0.67 vs e329's recorded 0.00 (n=1) — the chain RE-CARRIES
+  blind-committed identity; exp54's re-absorption was a settle-phase
+  V-pulse phenomenon, not committed identities (~2.5 cells commit
+  blind in the blocked 2 h and propagate). M40 CANDIDATE REGISTERED:
+  commitment-rate coupling to coupling state (cells under acute
+  blockade DELAY commitment — partial, to preserve the calibrated
+  sustained arms); pub20's whole series runs cooler than
+  blind-commitment predicts (e328 0.19, e329 0.00) — one direction.

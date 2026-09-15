@@ -1,0 +1,2559 @@
+{
+ "exp": "exp66_corpus_semantics (gj_block protocols decoded)",
+ "protocol_classes": {
+  "pub1_2010_octanol": "sustained from t=0 (start=0, end=0)",
+  "pub20_2005_heptanol": "delayed onset at 2 h (start=2, end=0), then sustained",
+  "e329_washout_pulse": "blockade 0->2 h then washout (start=0, end=2)"
+ },
+ "mis_map": {
+  "e421": "Head plus PRE-pharyngeal crop = ONE contiguous anterior removal -> REMAPPED to head-plane semantics (was head_tail)",
+  "e423": "Head plus POST-pharyngeal crop = genuinely two-ended -> head_tail stays"
+ },
+ "drug_schedule_table": [
+  {
+   "eid": 295,
+   "manipulation": "Pharynx fragment with slanted anterior",
+   "pub": 4,
+   "drug": "Potassium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 296,
+   "manipulation": "Pharynx fragment with slanted anterior",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 297,
+   "manipulation": "Pharynx fragment with slanted anterior",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 297,
+   "manipulation": "Pharynx fragment with slanted anterior",
+   "pub": 4,
+   "drug": "Potassium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 322,
+   "manipulation": "Pharyngeal crop",
+   "pub": 20,
+   "drug": "Heptanol",
+   "start_h": 2.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 324,
+   "manipulation": "Pharyngeal crop",
+   "pub": 20,
+   "drug": "Hexanol",
+   "start_h": 2.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 325,
+   "manipulation": "Head crop",
+   "pub": 20,
+   "drug": "Heptanol",
+   "start_h": 2.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 326,
+   "manipulation": "Pre-pharyngeal crop",
+   "pub": 20,
+   "drug": "Heptanol",
+   "start_h": 2.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 327,
+   "manipulation": "Pharyngeal crop",
+   "pub": 20,
+   "drug": "Heptanol",
+   "start_h": 2.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 328,
+   "manipulation": "Post-pharyngeal crop",
+   "pub": 20,
+   "drug": "Heptanol",
+   "start_h": 2.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 329,
+   "manipulation": "Tail crop",
+   "pub": 20,
+   "drug": "Heptanol",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 391,
+   "manipulation": "Head crop",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 3.0
+  },
+  {
+   "eid": 392,
+   "manipulation": "Pre-pharyngeal crop",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 3.0
+  },
+  {
+   "eid": 393,
+   "manipulation": "Pharyngeal crop",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 3.0
+  },
+  {
+   "eid": 394,
+   "manipulation": "Post-pharyngeal crop",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 3.0
+  },
+  {
+   "eid": 395,
+   "manipulation": "Tail crop",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 3.0
+  },
+  {
+   "eid": 397,
+   "manipulation": "Pharyngeal crop",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 3.0
+  },
+  {
+   "eid": 398,
+   "manipulation": "Pre-pharyngeal",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 3.0
+  },
+  {
+   "eid": 399,
+   "manipulation": "Prepharyngeal 2/3",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 3.0
+  },
+  {
+   "eid": 400,
+   "manipulation": "Head amputation",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 3.0
+  },
+  {
+   "eid": 401,
+   "manipulation": "Prepharyngeal 1/3",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 3.0
+  },
+  {
+   "eid": 403,
+   "manipulation": "Lateral removal, left",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 3.0
+  },
+  {
+   "eid": 405,
+   "manipulation": "Right offset lateral crop",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 3.0
+  },
+  {
+   "eid": 411,
+   "manipulation": "Pharynx fragment with slanted anterior",
+   "pub": 4,
+   "drug": "Ivermectin",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 412,
+   "manipulation": "Pharynx fragment with slanted anterior",
+   "pub": 4,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 413,
+   "manipulation": "Pharynx fragment with slanted anterior",
+   "pub": 4,
+   "drug": "Chloride",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 413,
+   "manipulation": "Pharynx fragment with slanted anterior",
+   "pub": 4,
+   "drug": "Ivermectin",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 414,
+   "manipulation": "Pharynx fragment with slanted anterior",
+   "pub": 4,
+   "drug": "Nicardipine",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 415,
+   "manipulation": "Head crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 416,
+   "manipulation": "Pre-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 417,
+   "manipulation": "Pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 418,
+   "manipulation": "Post-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 419,
+   "manipulation": "Tail crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 420,
+   "manipulation": "Head crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 421,
+   "manipulation": "Head plus pre-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 422,
+   "manipulation": "Head plus pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 423,
+   "manipulation": "Head plus post-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 424,
+   "manipulation": "Notch, double",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 425,
+   "manipulation": "Notch, double, cut",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 426,
+   "manipulation": "Notch, CNS left",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 427,
+   "manipulation": "Notch, CNS left, cut",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 428,
+   "manipulation": "Notch, CNS double",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 429,
+   "manipulation": "Notch, CNS double, cut",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 430,
+   "manipulation": "Center remove",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 431,
+   "manipulation": "Center remove, cut",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 432,
+   "manipulation": "Zig zag side removals",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 433,
+   "manipulation": "Axis removal",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 434,
+   "manipulation": "Post-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 435,
+   "manipulation": "Post-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.13,
+   "end_h": 0.0
+  },
+  {
+   "eid": 436,
+   "manipulation": "Post-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.25,
+   "end_h": 0.0
+  },
+  {
+   "eid": 437,
+   "manipulation": "Post-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.5,
+   "end_h": 0.0
+  },
+  {
+   "eid": 438,
+   "manipulation": "Post-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 1.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 439,
+   "manipulation": "Post-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 2.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 440,
+   "manipulation": "Post-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 3.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 441,
+   "manipulation": "Head plus post-pharyngeal crop, VNC disruption",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 442,
+   "manipulation": "Head plus post-pharyngeal crop, VNC disruption",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 443,
+   "manipulation": "Head plus post-pharyngeal crop, VNC disruption",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 444,
+   "manipulation": "Head plus post-pharyngeal crop, VNC disruption",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 452,
+   "manipulation": "Post-pharyngeal, CNS notch left",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 453,
+   "manipulation": "Post-pharyngeal, CNS notch left, notch right",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 455,
+   "manipulation": "Post-pharyngeal, CNS double notch",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 516,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 517,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 518,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 519,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 520,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 521,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 522,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 523,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": -2.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 524,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.25
+  },
+  {
+   "eid": 525,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.5
+  },
+  {
+   "eid": 526,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.75
+  },
+  {
+   "eid": 527,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 1.0
+  },
+  {
+   "eid": 528,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 1.25
+  },
+  {
+   "eid": 529,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 530,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.25,
+   "end_h": 0.5
+  },
+  {
+   "eid": 531,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.25,
+   "end_h": 0.75
+  },
+  {
+   "eid": 532,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.25,
+   "end_h": 2.25
+  },
+  {
+   "eid": 533,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.5,
+   "end_h": 0.75
+  },
+  {
+   "eid": 534,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.5,
+   "end_h": 2.5
+  },
+  {
+   "eid": 535,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.75,
+   "end_h": 1.0
+  },
+  {
+   "eid": 536,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.75,
+   "end_h": 2.75
+  },
+  {
+   "eid": 537,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "EGTA",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 538,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 539,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 540,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 541,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 542,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "EGTA",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 542,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 543,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 543,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 544,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 544,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 545,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 545,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 546,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 546,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 547,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 547,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 548,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 548,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 549,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 549,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 550,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 550,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 551,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 551,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "EGTA",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 552,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 552,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "EGTA",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 553,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 553,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 554,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 554,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 555,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 555,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 556,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 556,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Calcium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 557,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 558,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 558,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Potassium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 559,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Potassium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 560,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.75
+  },
+  {
+   "eid": 561,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.75
+  },
+  {
+   "eid": 561,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Potassium",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 562,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Nicardipine",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 562,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 1.0
+  },
+  {
+   "eid": 563,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Nicardipine",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 564,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 565,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Donepezil",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 566,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Ivermectin",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 567,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "EGTA",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 568,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Imidacloprid",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 569,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "FK506",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 570,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "KN93",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 571,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Nicardipine",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 572,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Cyclosporin A",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 573,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Thapsigargin",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 574,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "Verapamil",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 575,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "L-Glutamate",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 580,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 581,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 582,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 583,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 584,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 586,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 587,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 588,
+   "manipulation": "Trunk crop",
+   "pub": 25,
+   "drug": "PZQ",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 606,
+   "manipulation": "Trunk crop",
+   "pub": 28,
+   "drug": "Hermes[EGFP-Gtdap-1]",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 607,
+   "manipulation": "Wild type",
+   "pub": 28,
+   "drug": "Hermes[EGFP-Gtdap-1]",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 612,
+   "manipulation": "Head amputation",
+   "pub": 30,
+   "drug": "U0126",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 613,
+   "manipulation": "Head amputation",
+   "pub": 30,
+   "drug": "U0126",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 616,
+   "manipulation": "Head amputation",
+   "pub": 30,
+   "drug": "U0126",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 617,
+   "manipulation": "Head amputation",
+   "pub": 30,
+   "drug": "U0126",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 642,
+   "manipulation": "Wild type",
+   "pub": 32,
+   "drug": "Rapamycin",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 643,
+   "manipulation": "Trunk crop",
+   "pub": 32,
+   "drug": "Rapamycin",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 644,
+   "manipulation": "Trunk crop",
+   "pub": 32,
+   "drug": "Rapamycin",
+   "start_h": 0.0,
+   "end_h": 14.0
+  },
+  {
+   "eid": 648,
+   "manipulation": "Wild type",
+   "pub": 32,
+   "drug": "Rapamycin",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 704,
+   "manipulation": "Trunk crop",
+   "pub": 37,
+   "drug": "SCH-28080",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 706,
+   "manipulation": "Wild type",
+   "pub": 38,
+   "drug": "Retinoic Acid",
+   "start_h": 0.0,
+   "end_h": 10.0
+  },
+  {
+   "eid": 830,
+   "manipulation": "Head crop",
+   "pub": 38,
+   "drug": "Retinoic Acid",
+   "start_h": 0.0,
+   "end_h": 10.0
+  },
+  {
+   "eid": 831,
+   "manipulation": "Tail crop",
+   "pub": 38,
+   "drug": "Retinoic Acid",
+   "start_h": 0.0,
+   "end_h": 10.0
+  },
+  {
+   "eid": 832,
+   "manipulation": "Trunk crop",
+   "pub": 38,
+   "drug": "Retinoic Acid",
+   "start_h": 0.0,
+   "end_h": 10.0
+  },
+  {
+   "eid": 833,
+   "manipulation": "Tail crop",
+   "pub": 38,
+   "drug": "Retinoic Acid",
+   "start_h": 0.0,
+   "end_h": 0.08
+  },
+  {
+   "eid": 836,
+   "manipulation": "Tail crop",
+   "pub": 38,
+   "drug": "Retinoic Acid",
+   "start_h": 3.0,
+   "end_h": 3.08
+  },
+  {
+   "eid": 837,
+   "manipulation": "Tail crop",
+   "pub": 38,
+   "drug": "Retinoic Acid",
+   "start_h": 4.0,
+   "end_h": 4.08
+  },
+  {
+   "eid": 838,
+   "manipulation": "Tail crop",
+   "pub": 38,
+   "drug": "Retinoic Acid",
+   "start_h": 5.0,
+   "end_h": 5.08
+  },
+  {
+   "eid": 839,
+   "manipulation": "Tail crop",
+   "pub": 38,
+   "drug": "Retinoic Acid",
+   "start_h": 6.0,
+   "end_h": 6.08
+  },
+  {
+   "eid": 840,
+   "manipulation": "Tail crop",
+   "pub": 38,
+   "drug": "Retinoic Acid",
+   "start_h": 7.0,
+   "end_h": 7.08
+  },
+  {
+   "eid": 841,
+   "manipulation": "Tail crop",
+   "pub": 38,
+   "drug": "Retinoic Acid",
+   "start_h": 1.0,
+   "end_h": 1.08
+  },
+  {
+   "eid": 842,
+   "manipulation": "Tail crop",
+   "pub": 38,
+   "drug": "Retinoic Acid",
+   "start_h": 2.0,
+   "end_h": 2.08
+  },
+  {
+   "eid": 856,
+   "manipulation": "Trunk crop",
+   "pub": 40,
+   "drug": "Rapamycin",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 857,
+   "manipulation": "Wild type",
+   "pub": 40,
+   "drug": "Rapamycin",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 858,
+   "manipulation": "Trunk crop",
+   "pub": 40,
+   "drug": "Rapamycin",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 859,
+   "manipulation": "Trunk crop",
+   "pub": 40,
+   "drug": "Rapamycin",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 860,
+   "manipulation": "Trunk crop",
+   "pub": 40,
+   "drug": "Rapamycin",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 872,
+   "manipulation": "Trunk crop",
+   "pub": 39,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 873,
+   "manipulation": "Trunk crop",
+   "pub": 39,
+   "drug": "TEM",
+   "start_h": 0.0,
+   "end_h": 0.03
+  },
+  {
+   "eid": 874,
+   "manipulation": "Trunk crop",
+   "pub": 39,
+   "drug": "TEM",
+   "start_h": 2.0,
+   "end_h": 2.03
+  },
+  {
+   "eid": 876,
+   "manipulation": "Trunk crop",
+   "pub": 39,
+   "drug": "TEM",
+   "start_h": 5.0,
+   "end_h": 5.03
+  },
+  {
+   "eid": 993,
+   "manipulation": "Head amputation",
+   "pub": 46,
+   "drug": "SP600125",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 994,
+   "manipulation": "Head amputation",
+   "pub": 46,
+   "drug": "AS601245",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 995,
+   "manipulation": "Trunk crop",
+   "pub": 46,
+   "drug": "SP600125",
+   "start_h": 2.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1063,
+   "manipulation": "Head crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1068,
+   "manipulation": "Pre-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1069,
+   "manipulation": "Pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1070,
+   "manipulation": "Post-pharyngeal crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1071,
+   "manipulation": "Tail crop",
+   "pub": 1,
+   "drug": "Octanol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1088,
+   "manipulation": "Wild type",
+   "pub": 55,
+   "drug": "Chelidonine",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1089,
+   "manipulation": "Head crop",
+   "pub": 55,
+   "drug": "Chelidonine",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1090,
+   "manipulation": "Trunk crop",
+   "pub": 55,
+   "drug": "Chelidonine",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1091,
+   "manipulation": "Tail crop",
+   "pub": 55,
+   "drug": "Chelidonine",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1229,
+   "manipulation": "Postpharyngeal and 1/2 pharynx",
+   "pub": 66,
+   "drug": "Alcohol 1.5%",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1230,
+   "manipulation": "Postpharyngeal and 1/2 pharynx",
+   "pub": 66,
+   "drug": "Water",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1419,
+   "manipulation": "Pre-existing and Ectopic Pharynx Amputation",
+   "pub": 83,
+   "drug": "Sodium Azide",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1557,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1558,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1559,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1560,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1561,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1562,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1563,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1564,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1565,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1566,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1567,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1568,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1569,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1570,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1571,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1572,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1573,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1574,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1575,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1576,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1577,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1578,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1579,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1580,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1581,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1582,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1583,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloretone",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1584,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloroform",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1585,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloroform",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1586,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloroform",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1587,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloroform",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1588,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloroform",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1589,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloroform",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1590,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Ether",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1591,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Ether",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1592,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Ether",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1593,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Ether",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1594,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Ether",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1595,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Ether",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1596,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloral hydrate",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1597,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloral hydrate",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1598,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloral hydrate",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1599,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloral hydrate",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1600,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloral hydrate",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1601,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Chloral hydrate",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1602,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Ethyl alcohol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1603,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Ethyl alcohol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1604,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Ethyl alcohol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1605,
+   "manipulation": "Anterior 4-5/12 crosspiece",
+   "pub": 99,
+   "drug": "Ethyl alcohol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1606,
+   "manipulation": "Anterior 5/12 crosspiece",
+   "pub": 99,
+   "drug": "Ethyl alcohol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1607,
+   "manipulation": "Anterior 6/12 crosspiece",
+   "pub": 99,
+   "drug": "Ethyl alcohol",
+   "start_h": 0.0,
+   "end_h": 0.0
+  },
+  {
+   "eid": 1608,
+   "manipulation": "Anterior 1/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Colchicine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1609,
+   "manipulation": "Anterior 2/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Colchicine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1610,
+   "manipulation": "Anterior 3/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Colchicine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1611,
+   "manipulation": "Anterior 4/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Colchicine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1612,
+   "manipulation": "Anterior 1/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1613,
+   "manipulation": "Anterior 2/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1614,
+   "manipulation": "Anterior 3/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1615,
+   "manipulation": "Anterior 4/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1616,
+   "manipulation": "Anterior 1/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1617,
+   "manipulation": "Anterior 2/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1618,
+   "manipulation": "Anterior 3/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1619,
+   "manipulation": "Anterior 4/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1620,
+   "manipulation": "Anterior 1/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1621,
+   "manipulation": "Anterior 2/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1622,
+   "manipulation": "Anterior 3/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1623,
+   "manipulation": "Anterior 4/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1624,
+   "manipulation": "Anterior 5/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Colchicine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1625,
+   "manipulation": "Anterior 6/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1626,
+   "manipulation": "Anterior 1/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1627,
+   "manipulation": "Anterior 2/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1628,
+   "manipulation": "Anterior 3/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1629,
+   "manipulation": "Anterior 4/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1630,
+   "manipulation": "Anterior 5/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1631,
+   "manipulation": "Anterior 6/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1632,
+   "manipulation": "Anterior 1/4 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1633,
+   "manipulation": "Anterior 2/4 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1634,
+   "manipulation": "Anterior 3/4 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1635,
+   "manipulation": "Anterior 4/4 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1636,
+   "manipulation": "Anterior 1/2 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1637,
+   "manipulation": "Anterior 2/2 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1715,
+   "manipulation": "Anterior 1/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Colchicine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1716,
+   "manipulation": "Anterior 2/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Colchicine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1717,
+   "manipulation": "Anterior 3/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Colchicine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1718,
+   "manipulation": "Anterior 4/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Colchicine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1719,
+   "manipulation": "Anterior 6/6 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Colchicine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1720,
+   "manipulation": "Anterior 1/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1721,
+   "manipulation": "Anterior 2/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1722,
+   "manipulation": "Anterior 3/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1723,
+   "manipulation": "Anterior 4/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1724,
+   "manipulation": "Anterior 1/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1725,
+   "manipulation": "Anterior 2/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1726,
+   "manipulation": "Anterior 3/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1727,
+   "manipulation": "Anterior 4/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1728,
+   "manipulation": "Anterior 1/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1729,
+   "manipulation": "Anterior 2/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1730,
+   "manipulation": "Anterior 3/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1731,
+   "manipulation": "Anterior 4/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1732,
+   "manipulation": "Anterior 1/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1733,
+   "manipulation": "Anterior 2/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1734,
+   "manipulation": "Anterior 3/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1735,
+   "manipulation": "Anterior 4/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1736,
+   "manipulation": "Anterior 1/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1737,
+   "manipulation": "Anterior 2/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1738,
+   "manipulation": "Anterior 3/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1739,
+   "manipulation": "Anterior 4/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1740,
+   "manipulation": "Anterior 1/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1741,
+   "manipulation": "Anterior 2/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1742,
+   "manipulation": "Anterior 3/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1743,
+   "manipulation": "Anterior 4/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1744,
+   "manipulation": "Anterior 1/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1745,
+   "manipulation": "Anterior 2/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1746,
+   "manipulation": "Anterior 3/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1747,
+   "manipulation": "Anterior 4/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1748,
+   "manipulation": "Anterior 1/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1749,
+   "manipulation": "Anterior 2/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1750,
+   "manipulation": "Anterior 3/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1751,
+   "manipulation": "Anterior 4/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1752,
+   "manipulation": "Anterior 1/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1753,
+   "manipulation": "Anterior 2/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1754,
+   "manipulation": "Anterior 3/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  },
+  {
+   "eid": 1755,
+   "manipulation": "Anterior 4/8 crosspiece, exclude head",
+   "pub": 100,
+   "drug": "Demecolcine",
+   "start_h": 0.0,
+   "end_h": 2.0
+  }
+ ],
+ "sim_arms": {
+  "sustained_blockade_head_postM33_rate": 0.0,
+  "washout_pulse_tail_rate": 0.6666666666666666
+ },
+ "publication_decomposition": {
+  "pub1_head_mean": 0.0925,
+  "pub20_head_mean": 0.345,
+  "pooled_head": 0.1767,
+  "delta_pub1": 0.0925,
+  "delta_pooled": 0.1767
+ },
+ "criteria": {
+  "SG_G1_mis_map_correction": true,
+  "SG_G2_washout_pulse_arm": false,
+  "SG_G3_publication_decomposition": true
+ },
+ "notes": "The gj_block|head 0.177 residual is OWNED BY THE MIXTURE: the class pools a 2010 octanol series (sustained, head mean 0.0925 \u2014 the M33 protection IS in the record) with a 2005 heptanol series (delayed onset, head mean 0.345). The head_tail anomaly (model 0.67 vs recorded 0.025) was A PLANE MIS-MAP: 'Head plus pre-pharyngeal crop' is one contiguous anterior removal, not a two-end fragment. The washout pulse (e329: block 2h then full coupling) regenerates normally in the record (0.00) \u2014 the model's re-absorption semantics tested as the registered arm."
+}
