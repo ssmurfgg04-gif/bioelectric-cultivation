@@ -1138,3 +1138,20 @@ for the 1D sheet); (2) the penetrance sharpness the model carries
 registered as the M32 candidate: promote the 6.0 mV threshold /
 blastema_readout_noise from hand-picked to pre-registered-fitted (the
 exp29 watch-item) — the shift table is the fitting target.
+
+## Level 22 — exp39: direct comparison to the published voltage record (6/6 direction MATCH)
+
+QUEST task "direct comparison with Levin's published voltage
+measurements" COMPLETE via Europe PMC abstracts (free channel; the
+z-ai backend is quota-gated). Honest scope: planarian absolute mV is
+unpublished (dye ratios), so the test is every published
+DIRECTION/ORDERING claim vs the model's fresh-extracted quantity:
+depolarized head (Beane 2011) MATCH; hyperpolarizing channel
+dysfunction -> abnormal (Beane 2013) MATCH; posterior depolarization ->
+ectopic head, HL 0.95 (Oviedo 2010) MATCH; junction blockade -> mixed
+outcomes via M25 (Oviedo 2007) MATCH; wound depolarization MATCH;
+stochastic identical-perturbation outcomes (Pezzulo/Levin 2021; exp38
+re-anchor seed-split + exp12 latch) MATCH. 6/6, zero mismatches ->
+PASS. Permanent record: research/LEVIN_VOLTAGE_COMPARISON.md. Named
+remaining gaps: absolute-value fidelity (untestable), organ-size
+scaling, neoblast gradient substrate.
