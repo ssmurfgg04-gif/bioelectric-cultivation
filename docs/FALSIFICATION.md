@@ -1297,3 +1297,162 @@ phase of the roadmap is not free — the substrate co-defines which
 anatomies are reachable, which is precisely what a real Ascension
 answer looks like: substrate independence of MECHANISM, substrate
 conditioning of FORM.
+
+## Level 27 — exp45: M31 stored-history anchor (registered form REFUTED with a sharp diagnosis; M31-A isolated re-anchoring ADOPTED — all 6 amendment gates PASS)
+
+Night-six queue #1. The user research directive ran FIRST (exp44): the
+literature basis for M31 is Ross et al. 2022 (positional information is
+CONSTITUTIVELY expressed from muscle and reset by wound signaling — the
+read draws on stored material state) plus the 2025 Egal-1/microtubule
+papers (the substrate is physical, in the fragment).
+
+- REGISTERED M31 (anchor_from_history = |theta[face] - phi_spec[face]| <=
+  t): REFUTED at every t in {1.0..4.0} mV. THE DIAGNOSIS IS THE FINDING:
+  the model's settle history is seed-INVARIANT at macro scale — face
+  drifts 4.14/4.21/4.26 mV across seeds (spread 0.12 mV on a 4.2 mV
+  deterministic deformation). The detrended fine structure DOES differ
+  per seed but only at ~0.03 mV (micro-scale, un-fittable). No stored-
+  state threshold can split seeds: in this model, per-seed variation
+  lives in REGEN-TIME draws, not in settle-history differences.
+- M31-A ISOLATED RE-ANCHORING (spec_reanchor_isolated): the stochastic
+  unit stays at the regenerate level (exp38's amendment) but the draw is
+  MINTED FROM the fragment's own stored state — a blake2b digest of the
+  quantized theta window at the wound face seeds a dedicated Generator.
+  Deterministic per stored state (the coin IS the fragment's history —
+  the M31 goal), ZERO self.rng contact, which removes exp38's exact
+  blocker (the re-anchor draw shifted the shared stream and flipped the
+  marginal innexin seed).
+- GATES: A1 seed-split PASS (q=0.50: cross_a rate 1.00 -> 0.33);
+  A2 collateral lock PASS; A3 bins b/c/d lock PASS; A4 innexin preserved
+  with drift 0.00 mV (the exp38 blocker GONE); A5 stream neutrality PASS
+  (bit-same-if-True on every seed whose draw came out True); A6 draw
+  straddle [True, False, True] verified as the split's CAUSE.
+- STATUS: M31-A ADOPTED (exploratory->adopted mapping q=0.50,
+  recorded target 0.52 — pointwise fit not claimed, record runs hot).
+
+## Level 28 — exp46: M33 non-junctional neural/muscle polarity channel (ALL 5 GATES PASS — the innexin|head gap, the last unexplained Stage-2 arm signature, RESOLVED)
+
+Night-six queue #2. Literature basis (exp44): Lobo, Emmons-Bell & Levin
+2019 (the head-tail axis is controlled by the net polarity of neurons;
+the morphogen vector-transport field coincides with nerve axon
+alignment — a channel that does not run through gap junctions) plus the
+2025 egal-1/microtubule notum papers (anterior-facing wound polarity via
+muscle substrate).
+
+- MECHANISM: `neural_readout` w — when the committing cell's spec
+  identity is ANTERIOR (spec[i] >= NEURAL_SPEC_MIN = -35 mV, the
+  head/trunk fate-axis midpoint), the M25 blind guess is blended with a
+  direct neural read of the spec. Posterior identities do NOT qualify
+  (no local pole) — which is exactly why recorded GJ-blockade
+  phenotypes concentrate at posterior planes.
+- GATES: G1 innexin_head 1.00 -> 0.00 (record 0.00) PASS; G2 posterior
+  immunity PASS (innexin_tail 0.67 preserved, bit-exact vs w=0, exp31
+  drift 2.4e-3 mV); G3 full-coupling inertness PASS; G4 dose monotone
+  (11.33 > 4.80 > 1.77) PASS; G5 zero collateral PASS.
+- REGISTERED NOVEL PREDICTION: gjblock_head moves toward normal under
+  the channel (record per_plane head 0.566 mixed — the next corpus pass
+  can test the plane-resolved signature).
+- GATE-SPEC CORRECTION (recorded honestly): the first G2/G3/G5
+  evaluation compared w=1.0 arms at phi=0.75 against exp31 arms at
+  phi=0 (wrong reference — different phi). Corrected to within-phi
+  references (same arm at w=0.0, both phi=0.75) with exp31 as the
+  rate/drift check. The mechanism claim was unchanged; the reference
+  arms were wrong.
+
+## Level 29 — exp47: compiler v1 — the hybrid latch+spec rule (CP-G3' RESOLVED) + R5 substrate-aware partitioning (ALL 6 GATES PASS)
+
+Night-six queue #3. Literature basis (exp44): Pezzulo/Levin 2017 — the
+cryptic phenotype is "stored ... via global patterns of cellular resting
+potential" and is "functionally instructive": the STORED GRADIENT is
+what regeneration reads; experimental reversals reset it (the switch is
+state-writable).
+
+- v0 FAILURE DECODED: the latch chased the clamps partway in 24h
+  (head_native zone mean -30.4 vs the -20 bar) — the window ended with
+  the stored gradient HALF-WRITTEN. The 2017 semantics say the protocol
+  must END with the gradient SET.
+- R1'' LATCH-WRITE: the program ends the window with latch := spec for
+  every zone (explicit emitted step). R2'' HYBRID READ: the latching
+  regen writes anchor <- (1-blend)*inherited + blend*spec[i].
+- CV1-G1 PASS: the ectopic third-head compile now verifies 3/3 (errs
+  2.68/2.57/2.59 vs v0's 7.0/6.93/7.15). THE GOLDEN CORE THRESHOLD IS
+  NOW FULLY CROSSED: restorative + two-head + ectopic novel anatomy,
+  all zero-search.
+- CV1-G2 (registered disjunction) resolved: the WRITE alone is
+  sufficient (blend=0.0 also verifies 3/3) — R2'' is decorative for
+  this anatomy class (the latch write covers the ectopic zone directly;
+  the regen's tail inheritance already reads the written trunk latch).
+  Decomposition honest; R2'' retained for spec-carrying regens.
+- CV1-G3 no regression PASS (restore + two-head 3/3); CV1-G4 safety
+  refusal + coupling necessity unchanged PASS.
+- R5 SUBSTRATE-AWARE PARTITIONING: compile-time boundary-to-volume
+  check with R5_MAX=0.10. Measured ratios: path 0.0101 (1/99), grid
+  0.0611 (11/180), random-3 0.3533 (53/150), scale-free 0.4873 (96/197).
+  R5-G1 PASS: the refusal boundary reproduces exp43's measured
+  attractor-existence signature exactly (path/grid COMPILABLE,
+  random-3/scale-free REFUSED). R5-G2 PASS: margin >= 1.5x on both
+  sides (0.061 < 0.10 < 0.353). THE COMPILER IS THE SUBSTRATE ADAPTER
+  exp43 called for — with an audit-ready refusal reason.
+
+## Level 30 — exp48: M32 record-calibrated threshold fit (single-threshold hypothesis REFUTED; the corpus residual is STRUCTURAL)
+
+Night-six queue #4. Literature basis (exp44): Pezzulo/Levin 2017 — the
+graded population rate is "a constant ratio ... due NOT to partial
+penetrance of treatment" but to a hidden multistable switch: the
+per-animal binary outcome rule is CORRECT; the fit tests only where the
+all-or-nothing line sits.
+
+- PRE-REGISTERED FIT: train {morphogen, innexin, gj_block}, held-out
+  {ion_channel}, structural {cutting, other_rnai} (sim 0.00 at every c
+  — threshold-insensitive, no mechanism layer), grid 6.0-14.0 mV.
+- G1 PASS: unique interior optimum at c=13.0 mV (train MAE 0.313 ->
+  0.154, strictly below both neighbours). G2 PASS.
+- G3 REFUTED: the fit generalizes WORSE to the held-out ion_channel
+  class (MAE 0.446 at 13.0 vs 0.192 at legacy 6.0) — no single
+  threshold fits all classes.
+- VERDICT: M32-as-single-threshold REFUTED. The exp37 symmetric
+  calibration signature is STRUCTURAL (per-class mechanism gaps: no
+  gene-expression layer for cutting/other_rnai; per-class mV misfit for
+  the perturbation classes), NOT a threshold artifact. The 6.0 mV slice
+  threshold and the corpus are jointly identified only per-class.
+- G4 PASS: the M31-A Stage-2 split survives ANY threshold (cross_a
+  errors straddle at 13.0, rate 1/3) — the Stage-2 slice calibration is
+  robust to the corpus fit outcome.
+- M34 CANDIDATE REGISTERED: a gene-expression class layer (the missing
+  mechanism for cutting/other_rnai underprediction) — the night-seven
+  structural work item.
+
+## Level 31 — exp49: the regen-window light cone (LC-G4 RESOLVED — the rewrite regime is the REGEN WINDOW; the cone is directional)
+
+Night-six queue #5. Literature basis (exp44): Pezzulo/Levin 2017 — the
+permanent rewrite follows "temporary modulation of regenerative
+bioelectric dynamics in AMPUTATED trunk fragments": the published
+perturbation window sits INSIDE the regenerative window. LC-G4's
+refutation had left the rewrite regime unnamed; the literature names it.
+
+- INSTRUMENT: `regen_lightcone` (paired trajectories, same amputation
+  both sides, one cell of B clamped while the commitment walk runs).
+  LC5-G0 validity PASS (zero-divergence at pulse_hours=0; the inlined
+  walk is the model's walk — first run's blocked-arm anomaly was
+  diagnosed as a missing M25 guess-mix in the inlined walk and the
+  instrument corrected; the model's r-mix decays the delta x0.05 per
+  commit under blockade).
+- G1 REFUTED as registered (regen-window far-end residue 2.44 mV < the
+  3.0 bar) — G1' contrast amendment PASS: 2.44 mV vs 0.00 for the SAME
+  pulse on the INTACT collective (>5x with intact < 1.0). THE 2017
+  PROTOCOL IS EXPLAINED BY ONE MECHANISM: the pulse rides the write —
+  the commitment walk re-reads the chain at every cell, so a perturbed
+  wound face propagates into every subsequently committed identity.
+- G2'/saturation PASS: dose monotone 0.5 -> 2.0 h then SATURATES
+  (2 -> 6 h flat) — the M30 chain-re-carries signature reappearing at
+  the light-cone level.
+- G3 PASS: the shift persists the 15h post-regen settle (the rewrite is
+  STORED identity, not transient V).
+- G4 PASS: collapses to 0.00 under gap_scale=0.05 — junction-carried
+  (M25 consistency at the cognitive level).
+- G5 PASS + NOVEL PREDICTION: the cone is DIRECTIONALLY ASYMMETRIC —
+  2.44 mV when the pulse sits at the wound face, 0.00 when it sits just
+  5 cells anterior. The regen-window cone spans the whole regenerate
+  FORWARD but is razor-narrow BACKWARD. Falsifiable with
+  regeneration-window optogenetics: only wound-adjacent perturbations
+  should rewrite the regenerate.

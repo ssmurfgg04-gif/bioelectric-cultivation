@@ -223,3 +223,28 @@ DeepScientist binary itself is still pending install on the user's box)
 4. M32: pre-registered-fitted threshold (exp37's shift table is the fitting target; exp29 watch-item).
 5. 24h-pulse light cone (LC-G4's power diagnosis: whole-body cone + residue).
 6. ds quest 001 via zai runner when quota opens (watcher v2 still pointed at it).
+
+## Night six — 2026-09-15 (executed directly by the research agent; research directive first per the user's standing instruction)
+
+### Seeded state at nightfall
+- main @ 51d3706 (all five stages opened night four/five); night-six queue registered.
+
+### Work log
+- **N6.1 exp44 RESEARCH WAVE** (the user's standing directive: "you could already have answers on the web — search deeply, piece them together"): 14 Europe PMC queries mapped to the queue; raw abstracts in research/NIGHT_SIX_RESEARCH.md; the pieced-together answers in research/NIGHT_SIX_SYNTHESIS.md. Four items got direct literature answers: M31 (Ross 2022 constitutive positional info + wound reset), innexin|head (Lobo 2019 neural vector transport + egal-1/microtubule 2025), compiler v1 (Pezzulo/Levin 2017 cryptic gradient — the stored gradient is what regen reads), 24h window (the same 2017 protocol perturbs DURING regeneration). Pushed 5152956.
+- **N6.2 exp45 M31** (L27): registered stored-history threshold REFUTED — the settle history is seed-INVARIANT at macro scale (drifts 4.14/4.21/4.26, spread 0.12 mV). AMENDED M31-A isolated re-anchoring: the per-blastema draw is minted from the fragment's own stored state (blake2b digest of the quantized face window) — deterministic per fragment, ZERO self.rng contact — ALL 6 GATES PASS at q=0.50 (split 1.00->0.33, collaterals 0.00, innexin drift 0.00, straddle [T,F,T]). ADOPTED. collective.py: anchor_from_history + spec_reanchor_isolated (additive, bit-exact at defaults). Pushed 6ee40da.
+- **N6.3 exp46 M33** (L28): non-junctional neural/muscle polarity channel — ALL 5 GATES PASS. innexin_head 1.00->0.00 (record 0.00); posterior immunity (tail 0.67 bit-exact); full-coupling inert; dose monotone; zero collateral. The exp35 innexin|head +1.00 gap — the LAST unexplained Stage-2 arm signature — RESOLVED. Novel prediction: gjblock_head toward normal. collective.py: neural_readout + NEURAL_SPEC_MIN. Pushed 3e105f9.
+- **N6.4 exp47 compiler v1** (L29): CP-G3' RESOLVED — v0's latch chased the clamps halfway (window ended with the gradient HALF-WRITTEN); R1'' latch-write ends the window with latch := spec (the 2017 state-writable-gradient semantics): ectopic third-head verifies 3/3 (errs ~2.6 vs ~7.0). Registered disjunction resolved: the WRITE alone suffices (R2'' blend decorative for this class). R5 substrate-aware partitioning (b2v <= 0.10) reproduces exp43's signature exactly (path 0.0101/grid 0.0611 compilable; random-3 0.3533/scale-free 0.4873 refused; margins >=1.5x). ALL 6 GATES PASS. THE GOLDEN CORE THRESHOLD IS FULLY CROSSED. anatomy.py + morpho_engineering.py hybrid regen. Pushed f99b33f.
+- **N6.5 exp48 M32** (L30): single-threshold REFUTED on the held-out class (train optimum 13.0 mV, MAE 0.313->0.154, but ion_channel generalizes worse: 0.446 vs 0.192) — the corpus residual is STRUCTURAL (per-class mechanism gaps), not a threshold artifact. G4: the M31-A split survives any threshold (straddles at 13.0). M34 (gene-expression class layer) registered. Pure re-analysis. Pushed 8e17ea3.
+- **N6.6 exp49 regen-window light cone** (L31): LC-G4 RESOLVED — the rewrite regime is the REGEN WINDOW. 2h pulse during the walk writes 2.44 mV across the whole regenerate (intact: 0.00 — contrast amendment PASS); persists 15h; collapses to 0.00 under blockade (the instrument's missing guess-mix was caught via the blocked-arm profile and corrected — the model's r-mix decays the delta x0.05/commit); dose saturates (chain-re-carries at the light-cone level); DIRECTIONALLY ASYMMETRIC cone (face 2.44 vs 5-anterior 0.00) — novel optogenetics prediction. Pushed 853bb5b.
+- **N6.7 Docs**: FALSIFICATION L27-L31, README night-six inventory, this log.
+
+### Stage scoreboard after night six
+- Stage 1 炼气 complete | Stage 2 筑基 COMPLETE at slice+corpus-instrument level (every arm-level signature explained) | Stage 3 金丹 compiler v1 verified incl. ectopic novel anatomy (Golden Core threshold fully crossed) | Stage 4 元婴 light cone complete (rewrite regime named; directional-cone prediction) | Stage 5 飞升 mechanism universal / form substrate-conditioned, enforced at compile time.
+
+### Night-seven queue (priority order)
+1. M34: gene-expression class layer (the structural gap exp48 pinned — cutting/other_rnai underprediction at corpus scale).
+2. M31-A fragment-size correlation scan (the night-five prediction: small regenerates all-or-nothing, large concentrate near the mean — now testable with the adopted mechanism).
+3. R5 per-substrate eps/mu calibration (the compiler's per-substrate operating point, exp43's registered follow-up).
+4. Corpus re-pass with M33: the gjblock_head plane-resolved prediction (toward normal) against PlanformDB.
+5. Directional-cone optogenetics prediction write-up (exp49 G5) as a formal novel-prediction deposit.
+6. ds quest 001 via the zai runner when quota opens (watcher v2 still pointed at it).

@@ -761,3 +761,63 @@ compiler v0, restorative + two-head compilation verified, novel-anatomy
 frontier measured | Stage 4 (元婴): light cone measured, memory
 cone-bounded | Stage 5 (飞升): mechanism universal, form
 substrate-conditioned (compiler R5 registered).
+
+## Night six (2026-09-15) — the phase inventory after completion of the night-six queue
+
+Research directive FIRST (exp44): 14 targeted Europe PMC queries mapped
+to the night-six queue; the published answers pieced together in
+`research/NIGHT_SIX_SYNTHESIS.md` (Ross 2022 constitutive positional
+info; Lobo 2019 axon-aligned vector transport; egal-1/microtubule notum
+2025; Pezzulo/Levin 2017 cryptic-gradient + multistable-switch + regen-
+window protocol; 2026 graph-wound hybrid framework). Then:
+
+- **exp45 (L27)**: M31 registered form REFUTED (settle history is
+  seed-invariant at macro scale — face drifts 4.14/4.21/4.26 mV, spread
+  0.12 mV); **M31-A isolated re-anchoring ADOPTED** (all 6 gates PASS at
+  q=0.50): the per-blastema coin is MINTED from the fragment's own
+  stored state (blake2b of the quantized face window) — deterministic
+  per fragment, zero self.rng contact, exp38's innexin seed-flip blocker
+  gone (drift 0.00).
+- **exp46 (L28)**: **M33 neural/muscle polarity channel — ALL 5 GATES
+  PASS**. The anterior pole is a constitutive junction-INDEPENDENT
+  identity source (Lobo 2019; egal-1/microtubules 2025): under blockade,
+  anterior-identity cells read the spec directly (innexin_head 1.00 ->
+  0.00, record 0.00); posterior identities stay junction-carried
+  (innexin_tail 0.67 preserved bit-exact). The exp35 innexin|head +1.00
+  gap — the LAST unexplained Stage-2 arm signature — is resolved.
+  Novel prediction: gjblock_head moves toward normal.
+- **exp47 (L29)**: **COMPILER v1 — ALL 6 GATES PASS; CP-G3' RESOLVED**.
+  v0's latch chased the clamps halfway (window ended with the stored
+  gradient HALF-WRITTEN); R1'' latch-write (latch := spec at window end,
+  per the 2017 state-writable gradient semantics) fixes it: ectopic
+  third-head compile verifies 3/3 (errs ~2.6 vs ~7.0). R5 substrate-
+  aware partitioning (b2v <= 0.10) reproduces exp43's signature exactly
+  with >=1.5x margins — the compiler IS the substrate adapter. THE
+  GOLDEN CORE THRESHOLD IS FULLY CROSSED: restorative + two-head +
+  ectopic novel anatomy, all zero-search.
+- **exp48 (L30)**: M32 single-threshold REFUTED on the held-out class
+  (train optimum 13.0 mV generalizes worse to ion_channel) — the corpus
+  residual is STRUCTURAL (per-class mechanism gaps), not a threshold
+  artifact; the 2017 constant-ratio finding confirms the binary
+  per-animal rule. M34 candidate registered (gene-expression layer).
+- **exp49 (L31)**: **LC-G4 RESOLVED** — the rewrite regime is the REGEN
+  WINDOW (the 2017 protocol's own window). A 2h pulse during the
+  commitment walk writes a 2.44 mV identity shift across the whole
+  regenerate (intact same pulse: 0.00); persists 15h; collapses to 0.00
+  under blockade; dose monotone then saturating (the chain-re-carries
+  signature at the light-cone level); DIRECTIONALLY ASYMMETRIC (face
+  2.44 vs 5-cells-anterior 0.00) — a novel falsifiable prediction for
+  regeneration-window optogenetics.
+
+Stage inventory after night six:
+Stage 1 (炼气) complete | Stage 2 (筑基) **COMPLETE at slice + corpus
+instrument level**: every arm-level signature now explained (innexin|head
+via M33; penetrance via M31-A; corpus residual diagnosed structural) |
+Stage 3 (金丹) **compiler v1 verified including ectopic novel anatomy**
+(R5 substrate adapter in) | Stage 4 (元婴) light cone complete with the
+rewrite regime named and a directional-cone prediction | Stage 5 (飞升)
+mechanism universal + form substrate-conditioned, now enforced at
+compile time. Night-seven queue: M34 gene-expression class layer,
+M31-A fragment-size correlation scan, R5 per-substrate eps/mu
+calibration, corpus re-pass with M33 (gjblock_head prediction), quest
+001 via zai runner when quota opens.
