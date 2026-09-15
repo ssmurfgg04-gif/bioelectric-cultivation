@@ -204,6 +204,14 @@ class FidelityAgingCohort(AgingCohort):
         mult = getattr(self, "jump_mult", None)
         rate = (self.jump_rate if mult is None
                 else self.jump_rate * np.asarray(mult, float))
+        # exp24 hook: optional TRANSIENT per-(animal, cluster) potentiation
+        # (memory enhancement — the AI-Scientist's protocol #3): freshly-
+        # written clusters get a reduced jump susceptibility for a window
+        # (see potentiate()). Absent, or expired everywhere -> all-1.0
+        # multipliers -> bit-exact with the unpotentiated draw.
+        until = getattr(self, "_pot_until", None)
+        if until is not None:
+            rate = rate * np.where(self.t < until, self._pot_factor, 1.0)
         draws = self.rng.random((K, C)) < rate * dt
         if not draws.any():
             return
@@ -252,6 +260,39 @@ class FidelityAgingCohort(AgingCohort):
         self.channel_boost = np.where(mask,
                                       np.minimum(self.channel_boost * factor, cap),
                                       self.channel_boost)
+
+    def potentiate(self, do: np.ndarray, window: float = 5.0,
+                   factor: float = 0.5) -> int:
+        """exp24 — memory potentiation on freshly-written clusters.
+
+        The AI-Scientist's memory-enhancement protocol #3 (idea #2,
+        426f320): after each maintenance cycle, corrected clusters get a
+        TRANSIENT jump-susceptibility reduction (`factor`) for `window`
+        years — stability is lent where correction just happened. A
+        re-write inside the window restarts it (max semantics: the window
+        never shortens). Consumed by _apply_jumps as
+        rate *= (factor while t < until, else 1.0).
+
+        do: the maintenance cycle's ACTUAL write mask (K, n) — potentiation
+        is correction-coupled by construction (the random-placement
+        control arm builds a scrambled mask and reuses this method).
+        No RNG consumption — pure bookkeeping, bit-exact when unused.
+        Returns the number of newly-potentiated (animal, cluster) pairs.
+        """
+        if window <= 0.0 or factor >= 1.0:
+            return 0
+        if not hasattr(self, "_pot_until"):
+            self._pot_until = np.zeros((self.K, self.n_clusters))
+            self._pot_factor = 1.0      # inert until a real potentiation
+        cl = self.cluster_len
+        wrote = np.zeros((self.K, self.n_clusters), bool)
+        rows, cols = np.nonzero(do)
+        wrote[rows, cols // cl] = True
+        new = wrote & (self.t + window > self._pot_until)
+        self._pot_until = np.where(new, self.t + window, self._pot_until)
+        if new.any():
+            self._pot_factor = float(factor)   # last effective call wins
+        return int(new.sum())
 
     def regenerate(self, jitter: float = 1.0, hazard: float = 0.01) -> None:
         """Full re-derivation of the pattern from the genomic archive.
