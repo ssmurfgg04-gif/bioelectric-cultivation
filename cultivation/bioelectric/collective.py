@@ -174,7 +174,8 @@ class BioElectricCollective:
                neural_readout: float = 0.0,
                neural_misanchor: float = 0.0,
                arz_readout: float = 0.0,
-               arz_width: int = 2) -> None:
+               arz_width: int = 2,
+               neoblast_depleted: float = 0.0) -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
@@ -394,6 +395,12 @@ class BioElectricCollective:
         neural_w = float(neural_readout)
         mis_w = float(neural_misanchor)
         arz_w = float(arz_readout)
+        # M37 GENE LAYER: neoblast depletion — the regenerating tissue
+        # cannot re-express identity (the planarian neoblast requirement,
+        # smedwi-1/piwi-family RNAi: wound closes, blastema absent or
+        # uncommitted — scar semantics). Blend the committed identity
+        # toward the wound baseline; nb=0 bit-exact, nb=1 pure scar.
+        nb_w = float(neoblast_depleted)
 
         def face_slope(face: int, sign: int) -> tuple[float, float, float, float]:
             """Anchor (theta at the face), per-cell theta trend on the intact
@@ -514,6 +521,12 @@ class BioElectricCollective:
                         guess = (1.0 - neural_w * mis_w) * guess \
                             + neural_w * mis_w * nread
                     theta_new = r * theta_new + (1.0 - r) * guess
+                if nb_w > 0.0:
+                    # M37: neoblast-depleted commitment — the wound seals
+                    # WITHOUT identity restoration (deterministic blend,
+                    # no stream change; the identity information is
+                    # simply absent, which is the biological claim).
+                    theta_new = (1.0 - nb_w) * theta_new + nb_w * wound_center
                 self.theta[i] = theta_new
                 self.V[i] = theta_new
                 src = i

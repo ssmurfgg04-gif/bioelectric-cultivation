@@ -1602,3 +1602,74 @@ Night seven, part 3. exp43's registered follow-up:
 - D. gjblock|head_tail LEDGERED: model 0.67 vs recorded 0.025 (n=2) —
   protocol-semantics miss diagnosed (the DB's head_tail class may not
   be both-faces-under-continuous-blockade); DB re-mapping queued.
+
+## L39 — exp58 M-sheet repair (night nine)
+- Saito 2003 (10.1002/dvdy.10246) full abstract INVERTS the exp55 fire
+  rule: induction fires on SAME-SIGN medial-lateral juxtaposition gaps
+  (lateral tissues abutting medial), while L-R facing contact is
+  STRUCTURALLY SILENT — exp55 had encoded the refuted asymmetry
+  hypothesis. IntercalationSheet rebuilt additively (exp55 stays
+  reproducible): same-sign fire rule + leaky exposure->commitment
+  (plastic cells, AP pinned — the exp55-D2 attractor) +
+  organizer-bearing inheritance-copy propagation (the exp27 chain in
+  2D) + field maintenance (ablated organizers ADOPT the host field —
+  semantics correction registered before the re-run).
+- 7/7 gates PASS: complete ectopic head 1.0/depth 5; local one-sided
+  band 0.2/depth 1 (side re-registered per corrected geometry, matches
+  the published figure); true-isograft null 0.0 (arm re-registered);
+  ablated source starves; native axis intact; depth ordering; and the
+  L-R silence gate 0.0 EXACT. G8 exploratory gap-graft: 0.2 local band,
+  consistent with Saito's intercalary-compensation opening line,
+  recorded honestly against the registered no-commit guess.
+- exp55's three refutations (S1/S2/S4) RESOLVED.
+
+## L40 — exp59 M35 ARZ domain readout (night nine)
+- M35-as-first-registered REFUTED AS REDUNDANT (honest discovery):
+  wound_center = mean(theta[wound region]) means the M25 "blind guess"
+  base ALREADY converges the wound region's own stored repertoire —
+  the face-window base blend is a geometric no-op (tail errors
+  bit-identical across weights).
+- AMENDED M35-A ADOPTED (5/5 gates PASS): the atlas's ARZ content is
+  MULTI-LINEAGE CONVERGENCE — variance reduction across K=3 lineage
+  reads (K derived from the published lineage count, not fitted).
+  Tail-face rescue direction confirmed (err 7.86->5.75, rate
+  0.917->0.333 vs record 0.40); head preservation exact (0.0);
+  full-coupling inert; bit-exact anchor to exp50 to 1e-9.
+
+## L41 — exp60 M37 GENE LAYER (the Stage-2 gene identity map)
+- The DB's RNAi table (412 entries) mapped to functional families via
+  pre-registered keyword rules (neoblast/wnt_pos/wnt_ant/neural/
+  generic/control + unmappable dv_hh_notch/organ_identity/pcp).
+  Metric amendment registered BEFORE the arms ran: regional failures
+  measured on the regen region (exp56 principle — whole-animal error
+  dilutes regional failure: nb=1.0 tail whole-animal 4.81 < 6.0 while
+  the region is ~10 mV off).
+- GL-G2 PASS — the exp37 morphogen class was UNDER-INCLUSIVE:
+  dvl/fzd/evi/notum (keyword-missed Wnt genes) join morphogen
+  semantics at 0.815 vs the class's 0.718 (within the 0.4 bar).
+- GL-G5 PASS — THE M33 NEURAL CHANNEL IS NECESSARY (the reverse
+  test): gene-level disruption of its substrate (netrin/robo/slit
+  family) costs more than junction blockade at the head (recorded
+  0.705, n=23, vs gj_block|head 0.177); sim-side, disabling the
+  readout under blockade makes head regen fully abnormal (1.00) vs
+  the M33 rescue (0.00).
+- GL-G3 REFUTED as registered: neoblast-family record is HIGH but not
+  sharp (pooled 0.701 n=70, trunk 0.812, irr-plane 0.375 drag) — the
+  binary scar semantics (sim 1.00) overshoots a GRADED record. The
+  M31-A lesson repeats: per-animal all-or-nothing, population graded.
+  M37-A candidate REGISTERED: the neoblast layer should mint a
+  per-animal failure coin from the fragment's stored state (the M31-A
+  penetrance mechanism), not a deterministic scar.
+- GL-G4 REFUTED — exp51's N1 deposit falsifier FIRED exactly as
+  registered: the mapped generic family pooled 0.855 (n=406) lands
+  OUTSIDE the deposited band [0.22, 0.67]. Diagnosis: the N1 protocol
+  (gamma*0.7) is too WEAK (trunk record 0.900 vs sim 0.67); direction
+  confirmed (0.00 -> 0.67 closes most of the gap); residual owned by
+  the record-hot bias P (one-sided per exp51-D2; control RNAi itself
+  records 0.321 vs sim 0.00). M37-B candidate REGISTERED: the
+  ion-strength protocol (measured trunk 1.00 at exp40 (1.0,1.0))
+  applied to the generic family, expected trunk ~1.00 vs record 0.90.
+- Exploratory: su(H) dose family all 1.00 (n<=4 per variant — no
+  gradient resolvable). The exact pooled sim-vs-record table deposited
+  per family (control 0.321/0.0 record_hot; generic 0.863/0.655
+  record_hot; neoblast 0.799/1.0 sim_hot; wnt_pos 0.822/1.0 sim_hot).

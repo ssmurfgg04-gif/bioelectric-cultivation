@@ -1,0 +1,421 @@
+{
+ "exp": "exp60_gene_layer (M37)",
+ "taxonomy_counts": {
+  "already_mapped": 11,
+  "wnt_ant": 8,
+  "wnt_pos": 24,
+  "dv_hh_notch": 45,
+  "generic": 244,
+  "organ_identity": 29,
+  "neoblast": 32,
+  "neural": 8,
+  "control": 4,
+  "pcp": 7
+ },
+ "ungrounded_names": [
+  "Smed-hunchback",
+  "Smed-ndl-3",
+  "Smed-smd1"
+ ],
+ "pooled_recorded_by_family": {
+  "neoblast": {
+   "n": 70,
+   "n_experiments": 70,
+   "recorded_rate": 0.7014103468547912
+  },
+  "wnt_pos": {
+   "n": 18,
+   "n_experiments": 18,
+   "recorded_rate": 0.805
+  },
+  "wnt_ant": {
+   "n": 1,
+   "n_experiments": 1,
+   "recorded_rate": 1.0
+  },
+  "neural": {
+   "n": 23,
+   "n_experiments": 23,
+   "recorded_rate": 0.7047826086956522
+  },
+  "generic": {
+   "n": 406,
+   "n_experiments": 406,
+   "recorded_rate": 0.8547659248565513
+  },
+  "control": {
+   "n": 25,
+   "n_experiments": 25,
+   "recorded_rate": 0.2696
+  }
+ },
+ "plane_table": {
+  "control|head": {
+   "n": 5,
+   "rate": 0.0,
+   "exps": 5
+  },
+  "control|lateral": {
+   "n": 3,
+   "rate": 0.0,
+   "exps": 3
+  },
+  "control|none": {
+   "n": 1,
+   "rate": 0.0,
+   "exps": 1
+  },
+  "control|tail": {
+   "n": 6,
+   "rate": 0.495,
+   "exps": 6
+  },
+  "control|trunk": {
+   "n": 10,
+   "rate": 0.377,
+   "exps": 10
+  },
+  "generic|crosspiece": {
+   "n": 1,
+   "rate": 0.15,
+   "exps": 1
+  },
+  "generic|head": {
+   "n": 30,
+   "rate": 0.659,
+   "exps": 30
+  },
+  "generic|irr": {
+   "n": 15,
+   "rate": 1.0,
+   "exps": 15
+  },
+  "generic|lateral": {
+   "n": 3,
+   "rate": 0.933,
+   "exps": 3
+  },
+  "generic|none": {
+   "n": 86,
+   "rate": 0.796,
+   "exps": 86
+  },
+  "generic|tail": {
+   "n": 19,
+   "rate": 0.742,
+   "exps": 19
+  },
+  "generic|trunk": {
+   "n": 252,
+   "rate": 0.9,
+   "exps": 252
+  },
+  "neoblast|head": {
+   "n": 5,
+   "rate": 0.75,
+   "exps": 5
+  },
+  "neoblast|irr": {
+   "n": 18,
+   "rate": 0.375,
+   "exps": 18
+  },
+  "neoblast|none": {
+   "n": 17,
+   "rate": 0.846,
+   "exps": 17
+  },
+  "neoblast|tail": {
+   "n": 2,
+   "rate": 0.74,
+   "exps": 2
+  },
+  "neoblast|trunk": {
+   "n": 28,
+   "rate": 0.812,
+   "exps": 28
+  },
+  "neural|head": {
+   "n": 12,
+   "rate": 0.752,
+   "exps": 12
+  },
+  "neural|none": {
+   "n": 6,
+   "rate": 0.787,
+   "exps": 6
+  },
+  "neural|tail": {
+   "n": 1,
+   "rate": 0.0,
+   "exps": 1
+  },
+  "neural|trunk": {
+   "n": 4,
+   "rate": 0.617,
+   "exps": 4
+  },
+  "wnt_ant|head": {
+   "n": 1,
+   "rate": 1.0,
+   "exps": 1
+  },
+  "wnt_pos|head": {
+   "n": 1,
+   "rate": 1.0,
+   "exps": 1
+  },
+  "wnt_pos|lateral": {
+   "n": 2,
+   "rate": 1.0,
+   "exps": 2
+  },
+  "wnt_pos|none": {
+   "n": 3,
+   "rate": 0.603,
+   "exps": 3
+  },
+  "wnt_pos|tail": {
+   "n": 1,
+   "rate": 0.67,
+   "exps": 1
+  },
+  "wnt_pos|trunk": {
+   "n": 11,
+   "rate": 0.819,
+   "exps": 11
+  }
+ },
+ "fam_sim_record": {
+  "control": {
+   "recorded_rate": 0.321,
+   "sim_rate": 0.0,
+   "n": 21,
+   "direction": "record_hot"
+  },
+  "generic": {
+   "recorded_rate": 0.863,
+   "sim_rate": 0.655,
+   "n": 302,
+   "direction": "record_hot"
+  },
+  "neoblast": {
+   "recorded_rate": 0.799,
+   "sim_rate": 1.0,
+   "n": 35,
+   "direction": "sim_hot"
+  },
+  "wnt_pos": {
+   "recorded_rate": 0.822,
+   "sim_rate": 1.0,
+   "n": 13,
+   "direction": "sim_hot"
+  },
+  "wnt_ant": {
+   "recorded_rate": 1.0,
+   "sim_rate": 1.0,
+   "n": 1,
+   "direction": "sim_hot"
+  }
+ },
+ "morphogen_reference": {
+  "n": 126,
+  "recorded_rate": 0.7177113462669018
+ },
+ "sim_arms": {
+  "('control', 'trunk', 0.5)": {
+   "err_mean": 3.2438813956018877,
+   "regen_region_err_mean": 2.3980292207950673,
+   "pred_abn_rate": 0.0
+  },
+  "('control', 'tail', 0.5)": {
+   "err_mean": 3.2349309433678997,
+   "regen_region_err_mean": 2.4477092877475566,
+   "pred_abn_rate": 0.0
+  },
+  "('control', 'head', 0.5)": {
+   "err_mean": 3.434428838772869,
+   "regen_region_err_mean": 5.761568025684661,
+   "pred_abn_rate": 0.0
+  },
+  "('generic', 'trunk', 0.5)": {
+   "err_mean": 6.758237229251404,
+   "regen_region_err_mean": 12.36992785250861,
+   "pred_abn_rate": 0.6666666666666666
+  },
+  "('generic', 'head', 0.5)": {
+   "err_mean": 5.800761292274658,
+   "regen_region_err_mean": 10.635807019712308,
+   "pred_abn_rate": 0.3333333333333333
+  },
+  "('generic', 'tail', 0.5)": {
+   "err_mean": 9.887676945594755,
+   "regen_region_err_mean": 19.902794450527296,
+   "pred_abn_rate": 1.0
+  },
+  "('generic', 'crosspiece', 0.12)": {
+   "err_mean": 16.789803196885593,
+   "regen_region_err_mean": 14.585539551935724,
+   "pred_abn_rate": 0.6666666666666666
+  },
+  "('neoblast', 'trunk', 0.5)": {
+   "err_mean": 4.874069650250624,
+   "regen_region_err_mean": 9.654957664488393,
+   "pred_abn_rate": 1.0
+  },
+  "('neoblast', 'head', 0.5)": {
+   "err_mean": 8.025618582278069,
+   "regen_region_err_mean": 19.430574637598458,
+   "pred_abn_rate": 1.0
+  },
+  "('neoblast', 'tail', 0.5)": {
+   "err_mean": 4.903326108712274,
+   "regen_region_err_mean": 9.819688560545739,
+   "pred_abn_rate": 1.0
+  },
+  "('wnt_pos', 'trunk', 0.5)": {
+   "err_mean": 13.049636395046761,
+   "regen_region_err_mean": 2.398029608677294,
+   "pred_abn_rate": 1.0
+  },
+  "('wnt_pos', 'head', 0.5)": {
+   "err_mean": 13.098689264766259,
+   "regen_region_err_mean": 5.761568025684661,
+   "pred_abn_rate": 1.0
+  },
+  "('wnt_pos', 'tail', 0.5)": {
+   "err_mean": 12.574232228628839,
+   "regen_region_err_mean": 24.3733048382977,
+   "pred_abn_rate": 1.0
+  },
+  "('wnt_ant', 'head', 0.5)": {
+   "err_mean": 12.845139289166339,
+   "regen_region_err_mean": 24.81517375631562,
+   "pred_abn_rate": 1.0
+  }
+ },
+ "neural_necessity": {
+  "off_rate": 1.0,
+  "on_rate": 0.0
+ },
+ "su_h_dose_family": {
+  "Smed-su(H): Inject 3x": [
+   {
+    "plane": "trunk",
+    "n": 1,
+    "recorded": 1.0
+   }
+  ],
+  "Smed-su(H): Inject 3x + Inject Reg.": [
+   {
+    "plane": "trunk",
+    "n": 1,
+    "recorded": 1.0
+   }
+  ],
+  "Smed-su(H): Inject 3x + Soak Reg.": [
+   {
+    "plane": "trunk",
+    "n": 1,
+    "recorded": 1.0
+   }
+  ],
+  "Smed-su(H): Inject 10x": [
+   {
+    "plane": "trunk",
+    "n": 1,
+    "recorded": 1.0
+   }
+  ],
+  "Smed-su(H)FL: Inject 3x": [
+   {
+    "plane": "none",
+    "n": 1,
+    "recorded": 1.0
+   },
+   {
+    "plane": "trunk",
+    "n": 1,
+    "recorded": 1.0
+   },
+   {
+    "plane": "head",
+    "n": 1,
+    "recorded": 1.0
+   }
+  ],
+  "Smed-su(H)": [
+   {
+    "plane": "none",
+    "n": 1,
+    "recorded": 1.0
+   },
+   {
+    "plane": "trunk",
+    "n": 1,
+    "recorded": 1.0
+   },
+   {
+    "plane": "none",
+    "n": 1,
+    "recorded": 1.0
+   },
+   {
+    "plane": "trunk",
+    "n": 1,
+    "recorded": 1.0
+   }
+  ],
+  "Dj-su(H)": [
+   {
+    "plane": "trunk",
+    "n": 1,
+    "recorded": 1.0
+   }
+  ],
+  "Smed-su(H)FL": [
+   {
+    "plane": "trunk",
+    "n": 1,
+    "recorded": 1.0
+   },
+   {
+    "plane": "none",
+    "n": 1,
+    "recorded": 1.0
+   }
+  ],
+  "Smed-su(H)R1": [
+   {
+    "plane": "trunk",
+    "n": 1,
+    "recorded": 1.0
+   },
+   {
+    "plane": "none",
+    "n": 1,
+    "recorded": 1.0
+   }
+  ],
+  "Smed-su(H)R2": [
+   {
+    "plane": "trunk",
+    "n": 1,
+    "recorded": 1.0
+   },
+   {
+    "plane": "none",
+    "n": 1,
+    "recorded": 1.0
+   }
+  ]
+ },
+ "criteria": {
+  "GL_G1_taxonomy_exhaustive": true,
+  "GL_G2_wnt_ext_remap": true,
+  "GL_G3_neoblast_sharp_null": false,
+  "GL_G4_n1_deposit_test": false,
+  "GL_G5_neural_channel_necessity": true
+ },
+ "notes": "M37: the gene layer maps the DB's RNAi vocabulary to representable protocols. Metric amendment registered BEFORE the arms ran: regional failures measured on the regen region (exp56 principle; the whole-animal error dilutes regional failure: nb=1.0 tail whole-animal 4.81 < 6.0 while the region itself is ~10 mV off). GL-G4 is exp51's N1 deposit test: the registered falsifier FIRED \u2014 the mapped generic family pooled 0.855 (n=410) lands OUTSIDE the deposited band [0.22, 0.67]: the N1 generic-impairment protocol is too weak (trunk record 0.900 vs sim 0.67); the DIRECTION is confirmed (sim 0.00 -> 0.67 closes most of the gap; residual owned by the record-hot bias P, one-sided per exp51-D2) and the ion-strength protocol (measured trunk 1.00 at exp40 (1.0, 1.0)) is registered as the M37-B dose candidate, expected trunk ~1.00 vs record 0.90. GL-G3 REFUTED as registered: the neoblast family's record is HIGH but not sharp (pooled 0.70, trunk 0.81, irr-plane 0.375 drag) \u2014 the binary scar semantics overshoots a graded record; the M31-A penetrance mechanism (per-animal coin from stored state) is registered as the M37-A candidate: the neoblast layer should carry stochastic per-animal regeneration failure, not a deterministic scar. GL-G2 CONFIRMED the exp37 morphogen class was under-inclusive (dvl/fzd/evi/notum join its semantics at 0.815 vs 0.718). GL-G5 crossed: the M33 neural channel is NECESSARY (its substrate's gene-level disruption costs more than junction blockade at the head: recorded 0.705 vs gj_block|head 0.177)."
+}
