@@ -1949,3 +1949,25 @@ Night seven, part 3. exp43's registered follow-up:
   ON-G4 PASS — corpus MAE 0.522 < exp67's 0.524 (the running
   integration metric improves with every adopted mechanism: 0.595
   exp37 -> 0.524 exp67 -> 0.522 exp70).
+
+## L52 — exp71 STAGE-3 MINIMALITY (3/4)
+- THE LADDER (third-head / two-head, 3 seeds): full clamps+latch
+  verifies (errs 2.1-2.7); novel-zones-only FAILS (4.4-4.7 — the
+  unclamped native zones sag past the zone-hold bar); latch-only
+  (no clamps) FAILS at 5.1-5.7 (close, but the zone holds miss);
+  regen-only catastrophic (19-21). MIN-G2 REFUTED as registered:
+  the R1'' state write replaces the LONG forcing, not the HELD
+  WINDOW — the expression layer must be held while the protocol
+  runs; the state write alone cannot form the anatomy.
+- MIN-G1 PASS (downward closure: verification is monotone in
+  program inclusion); MIN-G3 PASS (the pruning rule emits the
+  minimal program).
+- MIN-G4 PASS — THE MINIMAL PRODUCT IS 100-GENERATION STABLE
+  (6/6, cycles_to_failure None): the latch-only-formed anatomy,
+  once formed, holds as stably as the full program's. The forcing
+  is needed only during FORMATION, never during HOLDING.
+- THE MINIMAL PROGRAM (assembled from exp61+exp71): 3 h clamped
+  window (the minimum window) + the state write + the trigger.
+  Every component is now individually priced: the window's clamps
+  (3 h, necessary), the latch-write (replaces long forcing), the
+  trigger (the regen), zero maintenance below k<=2.

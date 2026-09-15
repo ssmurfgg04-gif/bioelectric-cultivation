@@ -1,0 +1,138 @@
+{
+ "exp": "exp71_minimality",
+ "ladder": {
+  "third_head": {
+   "full": {
+    "verdicts": [
+     true,
+     true,
+     true
+    ],
+    "errs": [
+     2.68,
+     2.57,
+     2.59
+    ]
+   },
+   "novel": {
+    "verdicts": [
+     false,
+     false,
+     false
+    ],
+    "errs": [
+     4.69,
+     4.64,
+     4.6
+    ]
+   },
+   "latch": {
+    "verdicts": [
+     false,
+     false,
+     false
+    ],
+    "errs": [
+     5.65,
+     5.57,
+     5.54
+    ]
+   },
+   "regen_v0": {
+    "verdicts": [
+     false,
+     false,
+     false
+    ],
+    "errs": [
+     19.05,
+     19.09,
+     19.02
+    ]
+   }
+  },
+  "two_head": {
+   "full": {
+    "verdicts": [
+     true,
+     true,
+     true
+    ],
+    "errs": [
+     2.21,
+     2.12,
+     2.12
+    ]
+   },
+   "novel": {
+    "verdicts": [
+     false,
+     false,
+     false
+    ],
+    "errs": [
+     4.44,
+     4.41,
+     4.35
+    ]
+   },
+   "latch": {
+    "verdicts": [
+     false,
+     false,
+     false
+    ],
+    "errs": [
+     5.17,
+     5.15,
+     5.07
+    ]
+   },
+   "regen_v0": {
+    "verdicts": [
+     false,
+     false,
+     false
+    ],
+    "errs": [
+     20.77,
+     20.59,
+     20.83
+    ]
+   }
+  }
+ },
+ "stability": {
+  "third_head": {
+   "cycles_to_failure": [
+    null,
+    null,
+    null
+   ],
+   "err_final": [
+    5.49,
+    5.47,
+    5.44
+   ]
+  },
+  "two_head": {
+   "cycles_to_failure": [
+    null,
+    null,
+    null
+   ],
+   "err_final": [
+    4.84,
+    4.83,
+    4.88
+   ]
+  }
+ },
+ "criteria": {
+  "MIN_G1_downward_closure": true,
+  "MIN_G2_state_write_program": false,
+  "MIN_G3_pruning_rule": true,
+  "MIN_G4_minimal_stability": true
+ },
+ "notes": "Stage-3 minimality: the R1'' state write replaces the sustained forcing on the latching substrate \u2014 if the latch-only program verifies, the minimal rewrite protocol is EXTRACT (no clamps) -> WRITE (the state) -> TRIGGER (the regen). The 2017 cryptic-gradient semantics at its minimal end: the protocol IS the state write. MIN-G4 asks whether the minimal program's anatomy is also generationally stable (it should be \u2014 the anchor mechanism is identical; only the window's route to it differs)."
+}
