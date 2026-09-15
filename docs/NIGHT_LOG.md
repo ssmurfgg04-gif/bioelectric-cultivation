@@ -68,3 +68,33 @@ DeepScientist binary itself is still pending install on the user's box)
    hand it this file + `docs/QUEST_STAGE2_VALIDATION.md` as the quest
    repo seed; its eval contract is exp27/29's `run_arm` + criteria tuple
    for the widened slice.
+
+---
+
+# Night two — 2026-09-15 (executed directly by the research agent; ds/opencode binaries still absent from sandbox)
+
+## Seeded state at nightfall
+- exp29 repair ON MAIN (pending push: afb7cf1 + night-two commits; old token rotated, new token needed from user).
+- Quest tasks 3-4 open: widen slice to ion_channel + morphogen classes, per-experiment amputation planes.
+- M25 model state: coupling-dependent blastema readout (M1) + junction-gated theta diffusion (M2).
+
+## Work log
+- **N2.1 Mining.** FK-graph mapped (RemoveAction.FromAction -> ManipulationAction linked list; *AreaPoint polygons are per-figure frames — unusable without per-image registration, curated NAMES are the ground truth). plane taxonomy pre-registered in planform_mining.py BEFORE any class-x-plane outcome query; drug->protocol map pre-registered (octanol/heptanol/hexanol -> GJ block; EGTA/nicardipine/K/PZQ/SCH-28080 -> ion channel). Corpus: 1,462 outcome-bearing experiments; coverage 0.84.
+- **N2.2 Model patch.** regrow(direction='backward') for head-face regeneration — additive, bit-exact at default. Suite green; exp29 re-run: cutting 3.16 == 3.16, all four S2R criteria still PASS.
+- **N2.3 exp31 run.** 31 arms x 3 seeds. Results: S2W1 PASS (widened ordering), S2W5 PASS (controls), S2W6 PASS (coverage 0.84), S2W7 exploratory PASS (recorded crosspiece gradient rho=-0.164 p=0.043 — sim direction matches, penetrance 2x overshoots), S2W2/S2W3/S2W4 REFUTED with diagnostics (length-gradient missing; criterion wrong-bio vs plane-invariant record; junction-channel asymmetry artifact). Ledger L14, README M26.
+- **N2.4 Bone step retry** — see final section below.
+
+## Night-three queue (priority order)
+1. S2W3b re-registration (plane-invariant AP-morphogen criterion) + re-run — cheap, immediate.
+2. M26 candidates, one at a time, each pre-registered with exp27-unchanged discipline:
+   a. LENGTH-GRADIENT readout: regrow identity interpolation with distance decay (fixes cross_a overshoot; predicted signature: bin-a pred-abn drops 1.00 -> ~0.5, recorded 0.52).
+   b. VMEM-GATED COMMITMENT: channel state widens blastema_readout_noise (fixes S2W4; predicted signature: ion_channel arms 0.00 -> >0.3 while cutting arms stay 0.00).
+   c. POSTERIOR-FACE regrow for trunk planes (wnt_trunk recorded 0.768 unreachable by one-face topology).
+3. S2R3 dose-response literature check (PlanformDB dose-resolved innexin experiments).
+4. QUEST task 6: novel-prediction sweep over recorded-NO-data cells.
+5. Push pending: user supplies fresh GitHub token -> push afb7cf1 + night-two commits in one go.
+
+## Carryover notes
+- Cross-bin medians used for sim arms: a 0.167, b 0.417, c 0.667, d 1.0.
+- The specificity clause mistake (S2W3) is a process lesson: pre-register BIOLOGY-LEVEL alternatives (where the identity change shows up), not just thresholds.
+- Recorded plane means for reference: cutting tail 0.367 / head 0.502 / trunk 0.308 / cross 0.425; morphogen trunk 0.768; intact-RNAi (none) 0.777.

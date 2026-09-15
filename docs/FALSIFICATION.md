@@ -767,3 +767,76 @@ improvement is the search-seed-overfit signature. What survives: the
 disc28 baseline as the eval-contract starting point, and the checkpoint
 discipline that made the continuation free (a killed process resumes
 EXACTLY — exercised for real when the sandbox reaped the first attempt).
+
+## Level 14 — exp31: Stage 2 widened (ion_channel + morphogen classes, per-experiment amputation planes)
+
+Night two (QUEST tasks 3-4): the class-level pilot became per-experiment.
+planform_mining.py mines every experiment's amputation PLANE from the
+curated Manipulation name (head/tail/trunk/head_tail/crosspiece-with-cut-
+position/graft/irr/lateral/none), enriches the junction slice with
+GJ-blocker drug experiments (octanol/heptanol/hexanol -> innexin protocol;
+23 drug experiments join the 9 RNAi ones), and splits the morphogen class
+into the AP-polarity subclass (wnt/beta-catenin/apc/axin, 143 experiments)
+the 1D sheet can actually speak to. One additive model change, pre-registered
+and bit-exact-at-default: `regrow(direction='backward')` so a head
+amputation's blastema reads the trunk boundary BEHIND it (forward default
+bit-exact; suite green; exp29 controls re-verified 3.16 == 3.16 this
+session). 31 arms x 3 seeds; thresholds unchanged (6.0 mV / 0.7); corpus
+1,462 outcome-bearing experiments; protocol coverage 0.84 (S2W6 PASS).
+
+- **S2W1 PASS — TAIL-PLANE BIOELECTRIC ORDERING (widened S2P1).** Pooled
+  sim pred-abn over innexin/gjblock/ion_channel tail arms 0.44 vs cutting
+  0.00; recorded tail-plane bioelectric 0.535 vs cutting 0.367. The exp29
+  repair generalizes: junction loss corrupts regeneration MORE than the
+  cut itself, in sim and record, now on the widened slice (11 bioelectric
+  tail experiments, up from 2).
+- **S2W2 REFUTED — ANTERIOR CROSSPIECE OVERSHOOT.** cutting_cross_a (cut
+  at f=0.167) predicts abnormal at rate 1.00 (err 16.4 mV): the chain
+  readout extends the head-identity boundary over 83 regrown cells with
+  no positional decay. The record shows the same DIRECTION — recorded
+  abnormal rises toward anterior cuts (cross f<=0.25: 0.520 vs f>0.75:
+  0.266; Spearman rho=-0.164, p=0.043, n=153, S2W7) — but at HALF the
+  sim's penetrance. The S2W2 all-arms gate was misregistered (it assumed
+  the recorded baseline stays <0.5 per plane; the record itself is 0.52
+  in bin a). Diagnosis: the model's chain inheritance lacks a
+  LENGTH GRADIENT — real blastemas interpolate identity over ~tens of
+  cells (M26 candidate: distance-decaying boundary readout).
+- **S2W3 REFUTED — SPECIFICITY CLAUSE WRONG-BIO, MODEL RIGHT.** The
+  pre-registered criterion expected wnt RNAi to matter ONLY at tail
+  wounds (wnt_head == cutting_head). The sim flagged wnt_head abnormal
+  (1.00) because the posterior re-specification to head identity is
+  plane-invariant — and the RECORD AGREES with the sim, not the
+  criterion: recorded AP-morphogen abnormal is flat across planes (head
+  0.640, tail 0.642) and far above cutting (0.41). beta-catenin RNAi
+  makes the whole axis head-forming regardless of which end is cut; the
+  model captured that, the criterion did not. Repair: re-register as
+  S2W3b (wnt_head > cutting_head AND wnt_tail > cutting_tail AND
+  recorded AP > cutting) on night three — never silently swapped.
+- **S2W4 REFUTED — JUNCTION-CHANNEL ASYMMETRY IS A MODEL ARTIFACT.** The
+  ion-channel protocol (gamma x0.5 + noise x3 — impaired homeostatic
+  relaxation, noisier Vmem) produces ZERO abnormality at every plane
+  (err 3.4-4.0 mV), while junction loss produces 0.67. The record has
+  them COMPARABLE (ion_channel 0.45 pooled vs cutting 0.41; tail plane
+  0.45 vs 0.37). In the model, only gap_scale gates the blastema readout
+  and theta propagation; channel-level dysfunction cannot corrupt
+  regeneration at all. M26 candidate: Vmem-dependent blastema
+  commitment — channel RNAi should widen the blastema's identity guess
+  the way junction loss does (blastema_readout_noise as a function of
+  channel state, not only junction state).
+- **S2W5 PASS — CONTROLS.** restored_tail 0.00 (S2C replication in the
+  widened harness); intact arms (cutting/innexion/ion_channel none) all
+  0.00 — no spurious abnormality without cutting.
+- **S2W7 PASS-EXPLORATORY — RECORDED CROSSPIECE GRADIENT.** rho=-0.164
+  (p=0.043, n=153): more-anterior cuts are more abnormal in the record —
+  the model's first per-experiment PLANE prediction with graded
+  registry, direction-confirmed, penetrance-overshot.
+
+Also dead tonight: (a) the one-face regrow topology — recorded trunk
+posterior-face phenotypes (wnt_trunk two-headed: recorded 0.768 at
+trunk plane) are unreachable by forward-only extension (probe recorded,
+ungated); (b) intact-animal RNAi phenotype formation (none-plane recorded
+0.777 pooled — the sheet has no abnormality channel without amputation).
+What survives: the widened harness (31 arms, 0.84 coverage), the
+drug-enriched junction slice, the plane-gradient instrument, and three
+sharpened M26 candidates (length-gradient readout, Vmem-gated commitment,
+posterior-face regeneration) — the night-three queue.

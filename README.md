@@ -511,3 +511,49 @@ two live in docs/NIGHT_LOG.md, not in any chat.
 ## License
 
 MIT.
+
+## M26: exp31 — night two: the slice widens, the record sharpens the repair list
+
+QUEST tasks 3-4 delivered: per-experiment amputation planes
+(`experiments/planform_mining.py` — curated-name taxonomy: head/tail/trunk/
+head_tail/crosspiece-with-cut-position/graft/irr/lateral/none), the
+GJ-blocker drug experiments folded into the junction slice (octanol/
+heptanol/hexanol -> innexin protocol; 23 drug + 9 RNAi experiments), the
+AP-polarity morphogen subclass split out (wnt/beta-catenin/apc/axin, 143
+experiments), and one additive bit-exact-at-default model parameter:
+`regrow(direction='backward')` — a head amputation's blastema reads the
+trunk boundary behind it (suite green; exp29 controls re-verified bit-exact
+this session).
+
+31 arms x 3 seeds against 1,462 outcome-bearing experiments, protocol
+coverage 0.84, thresholds untouched. Scoreboard (results/
+exp31_stage2_widened.json, ledger L14):
+
+- **S2W1 PASS** — tail-plane bioelectric ordering holds on the widened
+  slice: sim pooled bioelectric 0.44 vs cutting 0.00; recorded 0.535 vs
+  0.367. The exp29 repair generalizes.
+- **S2W7 (exploratory) PASS** — first graded per-experiment plane
+  prediction: recorded abnormality rises toward anterior crosspiece cuts
+  (0.520 at f<=0.25 vs 0.266 at f>0.75; rho=-0.164, p=0.043, n=153) —
+  same direction as the sim, half the penetrance.
+- **S2W2 REFUTED** — the model overshoots anterior crosspieces (1.00 vs
+  recorded 0.52): chain inheritance has no length gradient. M26 candidate:
+  distance-decaying boundary readout.
+- **S2W3 REFUTED (criterion wrong-bio, model right)** — the record says
+  AP-morphogen loss is plane-invariant (head 0.640 ~ tail 0.642), exactly
+  the sim's posterior-re-specification behavior; the pre-registered
+  specificity clause assumed tail-wound-only. Re-registered as S2W3b for
+  night three — never silently swapped.
+- **S2W4 REFUTED** — the model's ion-channel protocol (gamma x0.5, noise
+  x3) produces ZERO regeneration corruption while junction loss produces
+  0.67; the record has them comparable (0.45 vs 0.41). The junction >>
+  channel asymmetry is a model artifact. M26 candidate: Vmem-gated
+  blastema commitment (channel state should widen the identity guess the
+  way junction state does).
+- **S2W5 PASS** — restored-block and intact-baseline controls all clean.
+
+Night-three queue: S2W3b re-registration, M26 mechanism candidates
+(length-gradient readout, Vmem-gated commitment, posterior-face
+regeneration), dose-resolved innexin literature check against S2R3's
+monotone prediction, and the recorded-NO-data novel-prediction sweep
+(QUEST task 6).

@@ -135,13 +135,20 @@ class BioElectricCollective:
         self.theta[region] = blastema_theta
 
     def regrow(self, region: slice, cell_period: float = 0.8, dt: float = 0.1,
-               noise: float = 0.6) -> None:
+               noise: float = 0.6, direction: str = "forward") -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
         identity of the last committed cell — so what regrows is whatever the
         remaining tissue REMEMBERS. This is the mechanism that makes
         reprogramming memory empirically testable (Durant et al. 2017).
+
+        `direction` names which wound face the chain extends from:
+        "forward" (default, historical behavior — blastema grows tail-ward
+        from the anterior boundary cell) or "backward" (head-ward from the
+        posterior boundary cell — a head amputation's blastema reads the
+        trunk boundary BEHIND it). At gap_scale == 1.0 and direction ==
+        "forward" the mechanism is bit-exact with the pre-M25 chain.
 
         M25 COUPLING-DEPENDENT READOUT (exp27 S2P1 repair): the inheritance
         read itself runs THROUGH the gap-junction network. At full coupling
@@ -156,12 +163,20 @@ class BioElectricCollective:
         idx = list(np.arange(self.n)[region])
         if not idx:
             return
-        boundary = idx[0] - 1
-        src = boundary if boundary >= 0 else idx[0]
+        if direction == "forward":
+            boundary = idx[0] - 1
+            src = boundary if boundary >= 0 else idx[0]
+            order = idx
+        elif direction == "backward":
+            boundary = idx[-1] + 1
+            src = boundary if boundary < self.n else idx[-1]
+            order = list(reversed(idx))
+        else:
+            raise ValueError(direction)
         steps_per_cell = max(1, int(round(cell_period / dt)))
         r = float(self.gap_scale)  # junction health at regen onset
         wound_center = float(np.mean(self.theta[idx]))
-        for i in idx:
+        for i in order:
             for _ in range(steps_per_cell):
                 self.step(dt)
             theta_new = self.theta[src] + self.rng.normal(0.0, noise)

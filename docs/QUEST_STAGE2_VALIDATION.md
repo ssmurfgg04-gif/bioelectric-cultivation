@@ -89,3 +89,16 @@ That is a precise, falsifiable gap — night one's opening task.
 - The sim is a 100-cell species-agnostic sheet; the DB spans species
   (S. mediterranea, D. japonica, G. tigrina). Cross-species mapping is
   deliberately out of scope for night one.
+
+---
+
+## Night-two status (2026-09-15): tasks 3-4 DELIVERED
+
+exp31 (`experiments/exp31_stage2_widened.py` + `experiments/planform_mining.py`):
+per-experiment planes mined from curated manipulation names, drug-enriched
+junction slice, AP-morphogen subclass, 31 arms x 3 seeds, coverage 0.84 of
+the 1,462-outcome corpus. Widened ordering HOLDS (S2W1); recorded
+crosspiece plane gradient found and direction-matched (S2W7); three
+refutations with diagnostics + three M26 mechanism candidates in
+FALSIFICATION.md L14 and README M26. Task 5's score-fix-score loop
+continues night three (queue in docs/NIGHT_LOG.md).
