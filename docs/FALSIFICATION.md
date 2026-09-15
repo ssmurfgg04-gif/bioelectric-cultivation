@@ -1990,3 +1990,50 @@ Night seven, part 3. exp43's registered follow-up:
   k=4). The dial's RULE is universal; the dial's READOUT is
   tissue-specific (geometry + link redundancy). A real refinement of
   the Stage-4 rule, not a failure of the dial.
+
+## L54 — exp73 ACTIVE SUBSTRATE RENORMALIZATION (the star-search step 2; 2/6 as registered, with a structured partial star hit)
+- THE MECHANISM (L49's registered candidate, built): conflict-driven
+  rewiring DURING the write — each round: one exp68 write attempt, then
+  degree-preserving double-edge swaps with Metropolis acceptance on
+  total junction conflict (T=100 mV^2), HARD connectivity constraint.
+  Target-blind by construction (the rule reads only (A, V) — the
+  transjunctional drop, the real connexin-remodeling signal).
+- SR-G1 PASS — exact static anchors (exp68 reproduced to 0.01 mV on
+  all 10 arms).
+- SR-G2 REFUTED AS REGISTERED — but THE PARTIAL STAR HIT: 4/6 fail
+  arms BECOME WRITABLE: torus|fixed 8.47 -> 1.96 (first writable round
+  2), torus|bfs 8.20 -> 3.36, random3|fixed 11.19 -> 3.99, random3|bfs
+  7.72 -> 3.33 — degrees preserved EXACTLY, connectivity every round,
+  fresh-seed hold (hold_err ~= verdict_err; SR-G4 HOLDS for these
+  arms). THE BOUNDARY MOVES FOR THE HOMOGENEOUS-DEGREE SUBSTRATES.
+- THE WALL (the new discovery): scale_free is IMMOVABLE (11.92 ->
+  10.58, 11.44 -> 9.32; b2v stuck 0.38-0.49). Diagnosis: the residual
+  constraint is the DEGREE SEQUENCE. The BA hubs straddle the label
+  boundary; under degree conservation a degree-d hub has unavoidable
+  crossing into the other region. The coherence constraint DECOMPOSES:
+  (a) the wiring ARRANGEMENT is renormalizable (exp73's mechanism),
+  (b) the degree BUDGET is not (under conservation).
+- SR-G3 REFUTED with diagnosis: reversed-pattern rewiring also helps
+  the original (random3|bfs reversed 1.43 < matched 3.33) — the
+  mechanism is GENERIC COMPARTMENTALIZATION (junction remodeling
+  localizes coupling; ANY spatially smooth pattern benefits), not
+  instance-specific memory. The substrate coheres with the pattern
+  CLASS (spatially smooth), not the instance.
+- SR-G5 as registered REFUTED (4/6); the refined semantics holds: for
+  every arm where the DYNAMICS moved, b2v moved below 0.10 too
+  (0.010-0.047) — metric and dynamics track together on renormalized
+  substrates; scale_free: BOTH refuse (no metric-dynamics
+  disagreement anywhere). The compiler's R5 survives as the right
+  metric for remodeled tissue.
+- SR-G6 price deposited: rounds-to-first-writable 2-9 (the
+  renormalization cost curve).
+- CTRL shattering ablation: even with connectivity off, scale_free
+  forms only 2 components and STILL FAILS (degree conservation blocks
+  disconnection — hubs keep their edges). The trivial escape is closed
+  too.
+- THE STAR REFRAME: coherence is a PROCESS (the substrate renormalizes
+  toward the pattern), and the residual boundary is the degree budget.
+  Next (exp74): the RENORMALIZATION LADDER — relax degree conservation
+  (junction pruning: connexin down-regulation, also real biology) with
+  connectivity preserved; measure the minimal residual cut; find the
+  last wall.
