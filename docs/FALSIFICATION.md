@@ -316,3 +316,65 @@ HAND policy, fresh seeds 41-43, 152s):
   its silent-direction multiplicity does not. The geometry adds a useful
   summary of WHY the century-hold landscape looks like a plateau to
   point-estimates while still having a direction of improvement.
+
+## Level 8 — exp23: multi-pattern allocation (the AI-Scientist's best idea, executed honestly)
+
+**exp23 — competing bioelectric memories under a shared maintenance
+budget** (the AI-Scientist trial's top idea, unblocked by the
+multi-zone `pattern_ledgers` API; budget sweep 1/2/4/6 cells/cycle =
+the scarcity dial; K=200, 120yr, seeds 21-23; cluster-aligned scrambled
+zones C/A/B/birth of 15 cells; three probes fixed geometry and metric
+before the pre-registered full run):
+
+- **E1 NEGATIVE (directionally present, sub-threshold)** — the
+  competition cost on the volatile pattern B at the tightest budget
+  (1 cell/cycle) is 0.023 (solo 0.604 vs competing 0.581), below the
+  pre-registered 0.05 bar; at budget 6 it vanishes (0.780 vs 0.795 —
+  the channel is rich enough that competition is invisible; bootstrap
+  CIs overlap in both cases). Expression capacity is *effectively*
+  per-pattern at planarian scale: the maintenance channel is not the
+  binding constraint between memories; each pattern's deficit is set by
+  its own physics.
+- **E2 REFUTED** — no allocation policy (balanced / fixed priority /
+  severity-weighted / critical-threshold) beats the status-quo
+  cell-order allocation on min-I_V@60 at ANY budget (all within 0.02,
+  all marginally WORSE); dynamic does not beat static (overall-I_V at
+  budget 1: dynamic mean 0.674 vs fixed 0.677). The AI-Scientist's
+  central hypothesis — allocation strategy matters under constraint —
+  fails in this stack.
+- **E3 PASS (the load-bearing result)** — physics dominates policy by
+  more than an order of magnitude: at budget 1 under balanced
+  allocation the stable pattern holds 0.963, the volatile 0.571, the
+  high-turnover 0.485 — a 0.48 spread vs the 0.02 policy spread. The
+  mechanism (from the write audit + alive-only ledgers): the
+  high-turnover pattern's deficit is a DEATH-RESTORATION EQUILIBRIUM
+  (cells die at 2x hazard, get restored, die again — the steady-state
+  wrong-fraction is set by the hazard rate, and allocation only shifts
+  the restoration lag); among LIVING individuals C's expression
+  (0.670) actually exceeds B's (0.653) — C's all-K deficit is driven
+  by mortality selection, not expression failure.
+- **E4 NEGATIVE (marginal, one arm)** — every policy arm at every
+  budget clears the no-maintenance median (49.0 yr; e.g. 51.5 at
+  budget 1, 71.8 at budget 6); the single failure is the solo_B control
+  itself at budget 1 (48.2 vs 49.0): a single-pattern codec at extreme
+  scarcity is slightly worse than no codec — the tracker-maintains-
+  drift trap (exp17 P2a) burns the tiny budget on unwritten zones.
+- **R PASS (bit-exact regression)** — solo17 re-ran exp17's
+  anchored_protected arm with identical seeds/K/horizon/budget:
+  median 73.8 yr and I_rec@60 0.907, EXACTLY the published values. The
+  additive hooks (jump_mult, hazard_boost, alloc) changed nothing when
+  unused, at experiment scale.
+- **The two-layer capacity finding (carries forward)** — the protected
+  memory tier stores every written pattern for free (I_anchor = 1.000
+  for all three patterns under NO maintenance, verified pure-cluster
+  geometry): STORAGE is per-pattern and free; EXPRESSION (I_V) is the
+  scarce, budget-bound layer. Any wet-lab claim about "memory capacity"
+  must specify which layer it means.
+
+- **Kills-row:** the AI-Scientist's multi-pattern-allocation research
+  program, executed with pre-registered criteria on this stack, does
+  NOT yield an allocation-policy result — the honest outcome is a
+  negative with a mechanism (equilibrium-dominated expression, physics
+  first-order) and a clean replication guard. Multi-pattern maintenance
+  is robust (E4 within noise for all real policies); what cannot be
+  bought with budget allocation is a pattern whose cells keep dying.

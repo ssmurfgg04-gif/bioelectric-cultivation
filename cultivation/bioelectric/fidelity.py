@@ -198,7 +198,13 @@ class FidelityAgingCohort(AgingCohort):
         if self.jump_rate <= 0.0:
             return
         K, C, cl = self.K, self.n_clusters, self.cluster_len
-        draws = self.rng.random((K, C)) < self.jump_rate * dt
+        # exp23 hook: optional PER-CLUSTER susceptibility multiplier (zone
+        # heterogeneity — a stable vs a volatile region). Scalar when the
+        # attribute is absent -> bit-exact with the original draw.
+        mult = getattr(self, "jump_mult", None)
+        rate = (self.jump_rate if mult is None
+                else self.jump_rate * np.asarray(mult, float))
+        draws = self.rng.random((K, C)) < rate * dt
         if not draws.any():
             return
         rows, cols = np.nonzero(draws)
@@ -368,7 +374,7 @@ class FidelityCodec:
         return x.reshape(self.C, self.cluster_len).mean(axis=1)
 
     def maintain(self, cohort: FidelityAgingCohort, preset: dict,
-                 mode: str = "codec") -> dict:
+                 mode: str = "codec", alloc: dict | None = None) -> dict:
         """One maintenance cycle, VECTORIZED across all individuals.
 
         (Rewritten batch-mode: identical semantics to the original
@@ -376,6 +382,11 @@ class FidelityCodec:
         refusal per individual — but evaluated as (K, C) array operations.
         RNG draw order differs from the loop version, so exact trajectories
         differ; distributions do not.)
+
+        alloc (exp23, optional): multi-pattern budget allocation. When
+        given, the budget's priority order over writable cells follows the
+        POLICY instead of plain cell order — see _alloc_ranks. None (the
+        default, all prior experiments) is bit-exact unchanged.
         """
         self.cycles += 1
         rng = cohort.rng
@@ -471,7 +482,10 @@ class FidelityCodec:
         # (deterministic stable order — the loop version's argsort was
         # quicksort-unstable at ties)
         W = W & verified_mask[:, None] if mode == "codec" else W & alive[:, None]
-        ranks = np.cumsum(W, axis=1)                                  # 1-based rank
+        if alloc is None:
+            ranks = np.cumsum(W, axis=1)                              # 1-based rank
+        else:
+            ranks = self._alloc_ranks(W, alloc)                       # exp23
         write_mask = W & (ranks <= self.budget)                      # (K, n)
 
         # ---- WRITE: per-cluster actuation value + per-cell archive target
@@ -494,9 +508,89 @@ class FidelityCodec:
         self.verified += verified
         self.refused += refused
         self.restored += restored
-        return {"cycle": self.cycles, "verified": verified, "refused": refused,
-                "restored": restored, "verified_mask": verified_mask.tolist(),
-                "restored_per_i": restored_per_i.tolist()}
+        out = {"cycle": self.cycles, "verified": verified, "refused": refused,
+               "restored": restored, "verified_mask": verified_mask.tolist(),
+               "restored_per_i": restored_per_i.tolist()}
+        if alloc is not None:
+            # exp23: where the budget went (allocation bookkeeping)
+            g = np.asarray(alloc["groups"], int)
+            out["restored_by_group"] = [
+                int(do[:, g == gid].sum()) for gid in range(int(g.max()) + 1)]
+        return out
+
+    def _alloc_ranks(self, W: np.ndarray, alloc: dict) -> np.ndarray:
+        """exp23 — policy-driven budget priority over writable cells.
+
+        alloc = {"groups": (n,) int group id per cell (the competing
+        patterns; e.g. 0=background, 1..3 = novel zones),
+        "policy": one of:
+
+          "balanced"  round-robin interleave — equal shares per group;
+          "fixed"     static priority, "order" = group ids best-first
+                      (all of group 1's writable cells outrank group 2's);
+          "severity"  weighted round-robin: per-individual budget shares
+                      track each group's DETECTED demand (writable count) —
+                      shares proportional to need, per cycle;
+          "critical"  if any group's detected-need FRACTION exceeds
+                      "critical_frac" (default 0.5), ALL budget goes to the
+                      worst such group this cycle; otherwise balanced.
+
+        Returns (K, n) 1-based priority rank among writable cells
+        (rank 1 = written first), ties broken deterministically by cell
+        index. The alloc=None path (cell order) is untouched and
+        bit-exact with every prior experiment.
+        """
+        K, n = W.shape
+        g = np.asarray(alloc["groups"], int)
+        G = int(g.max()) + 1
+        policy = alloc.get("policy", "balanced")
+        if policy not in ("balanced", "fixed", "severity", "critical"):
+            raise ValueError(f"unknown alloc policy: {policy}")
+        # in-group position of each cell (by cell index) + group sizes
+        ingrp = np.zeros(n, int)
+        gsize = np.zeros(G, int)
+        for gid in range(G):
+            m = g == gid
+            ingrp[m] = np.arange(int(m.sum()))
+            gsize[gid] = int(m.sum())
+        # per-individual detected demand (writable cells) per group (K, G)
+        demand = np.stack([W[:, g == gid].sum(axis=1)
+                           for gid in range(G)], axis=1)
+        if policy == "fixed":
+            order = list(alloc.get("order", range(G)))
+            orank = np.empty(G)
+            for i, gid in enumerate(order):
+                orank[gid] = i
+            prio = np.broadcast_to(
+                orank[g][None, :] * n + ingrp[None, :], (K, n)).astype(float)
+        elif policy == "severity":
+            # weighted round-robin: a group with demand d gets shares ~ d
+            # (step = total/demand -> smaller step = tighter spacing =
+            # more of that group's cells fall under any budget cutoff)
+            tot = demand.sum(axis=1, keepdims=True)                # (K, 1)
+            # finite stand-in for inf (inf*0 = nan would break ranks);
+            # 1e9 is unreachable by any real step (= tot/demand <= n)
+            step = np.where(demand > 0,
+                            tot / np.maximum(demand, 1e-9), 1e9)
+            prio = (step[:, g] * ingrp[None, :]
+                    + g[None, :] * 1e-6
+                    + np.arange(n)[None, :] * 1e-9)               # (K, n)
+        elif policy == "critical":
+            frac = demand / np.maximum(gsize[None, :], 1)          # (K, G)
+            worst = frac.argmax(axis=1)                            # (K,)
+            crit = frac.max(axis=1) >= alloc.get("critical_frac", 0.5)
+            BIG = float(G * n + 1)
+            bal = (ingrp[None, :] * G + g[None, :]).astype(float)
+            fix = ((g[None, :] != worst[:, None]).astype(float) * BIG
+                   + g[None, :] * n + ingrp[None, :])
+            prio = np.where(crit[:, None], fix, bal)
+        else:  # balanced — round-robin interleave across groups
+            prio = (ingrp[None, :] * G + g[None, :]).astype(float)
+        # rank of cell j = 1 + #writable cells with strictly higher
+        # priority (vectorized pairwise; n=60 -> (K, n, n) is small)
+        lt = prio[:, None, :] < prio[:, :, None]   # [k, j, i]: i outranks j
+        ranks = 1 + (W[:, None, :] & lt).sum(axis=2)
+        return ranks.astype(np.int64)
 
 
 # ------------------------------------------------------------- latch layer

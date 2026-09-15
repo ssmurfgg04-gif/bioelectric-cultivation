@@ -166,6 +166,12 @@ class AgingCohort:
                 0.0,
             )
         )
+        # exp23 hook: optional PER-CELL senescence multiplier (zone
+        # heterogeneity — e.g. a high-turnover region). Additive and
+        # bit-exact when the attribute is absent.
+        hb = getattr(self, "hazard_boost", None)
+        if hb is not None:
+            hazard = hazard * np.asarray(hb, float)
         draw = self.rng.random((self.K, self.n))
         newly = (~self.senesced) & (draw < dt * hazard)
         self.senesced |= newly

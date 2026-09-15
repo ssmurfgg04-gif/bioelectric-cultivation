@@ -295,6 +295,38 @@ correctly reproduced baselines and hit — and usefully exposed — the
 single-zone `pattern_ledger` API limit blocking multi-pattern research;
 full writeup stage rate-limited by Semantic Scholar).
 
+## M18: exp23 — multi-pattern allocation (the AI-Scientist's best idea, cashed in)
+
+The AI-Scientist trial's top-scored idea (multi-pattern maintenance),
+unblocked by the multi-zone `pattern_ledgers` API it itself forced into
+existence. Three competing novel patterns (stable / volatile /
+high-turnover physics, cluster-aligned scrambled zones) + the birth
+pattern share ONE anchored+protected codec budget; the budget (1/2/4/6
+cells/cycle) is the scarcity dial; allocation policies (balanced,
+fixed-priority, severity-weighted, critical-threshold) compete against
+the status-quo cell-order allocation. K=200, 120yr, seeds 21-23, 5
+pre-registered criteria, bootstrap CIs, alive-only ledgers, a bit-exact
+in-session replication of exp17's anchored_protected arm (solo17:
+median 73.8 yr, I_rec@60 0.907 — EXACTLY the published values).
+
+**The honest outcome is a negative with a mechanism.** E1: the
+competition cost on the volatile pattern is real but small (0.02 at
+budget 1, gone by budget 6) — expression capacity is effectively
+per-pattern at planarian scale. E2 REFUTED: no allocation policy beats
+the status quo anywhere (policy spread 0.02). E3 PASS (the load-bearing
+result): physics dominates policy by 20x — the high-turnover pattern's
+deficit is a death-restoration EQUILIBRIUM set by its own hazard rate;
+among living individuals its expression is fine (0.670), its all-K
+deficit is mortality selection. E4: multi-pattern maintenance still
+pays at every budget for every real policy (median 51.5-71.8 vs 49.0
+unmaintained). **The two-layer capacity finding: the protected memory
+tier stores all three written patterns for free (I_anchor = 1.000 with
+zero maintenance) — storage is per-pattern and free, expression (I_V)
+is the budget-bound scarce resource.** "Memory capacity" claims must
+say which layer they mean. New APIs: per-cluster `jump_mult`, per-cell
+`hazard_boost`, and `FidelityCodec.maintain(alloc=...)` (four policies,
+unit-tested, bit-exact default path). 10 new unit tests (50 total).
+
 ## Research dossier
 
 `research/` contains the verified literature (bioelectric morphogenesis, IIT, aging theory, Chinese research landscape) with DOIs verified against Crossref/PubMed responses, plus real C. elegans connectome data (OpenWorm; Cook et al. 2019).
