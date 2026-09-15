@@ -404,6 +404,43 @@ survivor-censoring artifacts in death-age medians (trajectories
 bit-identical, medians not) and re-run at exp23's 120yr convention —
 the honest re-run is recorded in the module docstring.
 
+## M23: exp26 — equilibrium attribution (the balance point taken apart)
+
+The user's move after both edge attacks failed: stop attacking the
+death-restoration equilibrium, take it apart. 24 arms on exp23's exact
+geometry swept every primitive class — substrate, restoration, death
+channels, zone coupling, channel noise, and a new architecture axis
+(cluster granularity, n_clusters 4/12/20 via a bit-exact constructor
+hook) — plus a four-arm flux-composite compensation protocol and a new
+corruption-source instrument (per-cluster jump timestamps + per-cell
+repair timestamps; every wrong cell at ledger age classified
+senescence / jump / non-jump). **The verdict rewrites the story: the
+equilibrium is made of SENESCENCE, not jumps** — B's 20.5% wrong cells
+at 60 are 15.4% senescence / 2.0% jump / 3.0% other; C's are 17.9% /
+0.3%. That is why exp23's allocation (re-slicing a budget whose binding
+consumer is senesced-cluster repair, and which SATURATES at b6: the
+b6->b12 elasticity is +0.04 vs +0.27 below) and exp24's potentiation
+(protecting a 2% corruption channel — its +0.0056 delta is now
+postdicted to the third decimal by the instrumented share x 0.75 x
+0.47 coverage = +0.0072) both failed. The levers that DO move it:
+**cluster granularity (the architecture answer: arch4 B 0.645 vs arch20
+B 0.819, a 0.174 swing — a senesced cluster costs cluster_len budget
+cells to repair, so storage granularity is the exchange rate between
+senescence burden and repair capacity), channel noise (the capacity
+cliff, elasticity -0.37), and the death channels (k_fail=0 lifts B
++0.036 and median +17yr).** The flux-ratio conservation law is
+falsified as a complete description (EQ1a NEGATIVE) with a beautiful
+dissociation: the four Phi-equal compensation arms restore ALIVE-only
+fidelity above default (0.905-0.921 vs 0.876) while their all-K ledger
+collapses (0.644-0.743) — the balance point is a two-term object,
+alive-state balance x death-timing mixture, and death (medians 28-47 vs
+71.8) freezes corruption into the ledger. Zone coupling is real and
+large (EQ6 NEGATIVE: C's hazard 8x crushes B to 0.572 through shared
+budget demand and organ-failure death timing — exp23's
+"competition-invisible-at-b6" was an allocation statement, not a
+physics one). Default arm bit-exact vs exp23 (R PASS); 7 new unit
+tests (64 total, all green).
+
 ## Research dossier
 
 `research/` contains the verified literature (bioelectric morphogenesis, IIT, aging theory, Chinese research landscape) with DOIs verified against Crossref/PubMed responses, plus real C. elegans connectome data (OpenWorm; Cook et al. 2019).

@@ -503,3 +503,101 @@ trajectories, honest re-run):
   on the axes (cadence, budget, write timing) that competition
   punishes. Single-pattern benchmarks UNDER-estimate policies that
   will serve multi-pattern reality.
+
+## Level 10 — exp26: equilibrium attribution (taking the balance point apart)
+
+**exp26 — the attribution experiment the user asked for after both edge
+attacks failed.** exp23 moved the restoration side (allocation, ceiling
+0.023); exp24 moved the corruption side (potentiation, +0.0056
+permanent); the death-restoration equilibrium did not move. So instead
+of attacking it again, exp26 takes it apart: 24 arms on exp23's exact
+multi-pattern geometry (seeds 21-23, K=200, 120yr; the default arm is
+the bit-exact regression anchor), sweeping every primitive class —
+substrate (jump rate x0.25-4), restoration (budget 12, period 1.25-10),
+death channels (k_fail 0-0.6, mortality_k/4), zone coupling (C's hazard
+1-8), channel noise (x0.5-2), architecture (cluster granularity
+n_clusters 4/12/20) — plus a four-arm flux-composite compensation
+protocol (Phi = corruption cells/yr / restoration cells/yr held at its
+default 0.34 while both sides multiply) and a new corruption-source
+instrument (every wrong zone cell at ledger age classified senescence /
+jump / non-jump from per-cluster jump and per-cell repair timestamps —
+additive hooks, golden-tested, no RNG consumption).
+
+- **EQ1a NEGATIVE — the flux ratio is NOT the invariant.** The four
+  Phi-equal compensation arms land at B I_V@60 0.736/0.743/0.644/0.666
+  vs default 0.795: preserving the corruption:repair ratio does NOT
+  preserve the balance point. But the dissociation is the finding: the
+  ALIVE-ONLY fidelity of the same arms is 0.905/0.898/0.915/0.921 —
+  HIGHER than default's 0.876. The alive-state equilibrium IS
+  flux-compensated; the all-K LEDGER equilibrium is not, because the
+  compensation arms' animals die young (medians 47.2/45.6/28.1/27.9 vs
+  71.8) and death freezes corrupted states into the ledger. The
+  death-restoration equilibrium decomposes into two terms: an
+  alive-state balance (flux-like) x a death-timing mixture (what Phi
+  misses).
+- **EQ1b PASS — the contrast that makes EQ1a meaningful:** 4x
+  uncompensated corruption breaks the balance point brutally
+  (B 0.795 -> 0.530, median 71.8 -> 28.3).
+- **EQ2 PASS (flux_equivalent branch) — neither dwell nor capacity
+  dominates the residual:** budget-route vs period-route compensation
+  differ by 0.007 (0.736 vs 0.743) at 2x, 0.022 at 4x — under the
+  pre-registered asymmetry bars. The two restoration routes buy the
+  same alive-state fidelity.
+- **EQ3 NEGATIVE — the alive/all-K gap is not primarily fidelity-death
+  driven.** gap(B)@60: default +0.081, k_fail=0 +0.053 (65% of
+  default — above the 50% bar), mortality_k/4 +0.063 (78%). The
+  selection is SHARED between the two death channels; killing the
+  fidelity channel alone leaves most of the freeze mixture in place.
+- **EQ4 PASS, branch (b) — ARCHITECTURE IS A PRIMARY LEVER.** Cluster
+  granularity at fixed zone physics and (analytically) fixed per-cell
+  jump flux: arch4 (cluster_len 15) B 0.645 / median 48.4 vs default
+  (len 5) 0.795 / 71.8 vs arch20 (len 3) 0.819 / 81.6 — ordered by
+  fineness, max swing 0.174 (4x the 0.046 physics bar). The mechanism
+  is legible in the source ledger: arch4's senescence share of wrong
+  cells is 0.313 vs arch20's 0.132 — a senesced cluster costs
+  cluster_len budget cells to repair, so coarse storage pays the
+  senescence burden at a terrible exchange rate. "How patterns are
+  stored" — the user's architecture hypothesis — is the biggest
+  stack-internal lever anyone has found (only channel noise x2, the
+  capacity cliff, is bigger).
+- **EQ5 PASS — exp24's potentiation failure is now ARITHMETIC.** The
+  instrumented jump-source share of B's wrong cells at 60 is 0.0202;
+  predicted permanent-potentiation delta = 0.0202 x 0.75 x 0.4738 =
+  +0.0072 vs exp24's observed +0.0056 (within the 0.01 bar). exp23 and
+  exp24 attacked a 2%-share corruption channel from both sides — THAT
+  is why the equilibrium did not move. It was never jump-made.
+- **EQ6 NEGATIVE — zone equilibria are COUPLED.** C's hazard 2x -> 8x
+  drops B's all-K I_V@60 from 0.795 to 0.572 (and C itself to 0.387,
+  median 47.6) — far outside the 0.01 modularity bar. The coupling
+  channels: C's senescence inflates the shared writable demand, and
+  C's organ-failure deaths freeze corruption into everyone's ledger.
+  exp23 E1's "competition invisible at b6" was an ALLOCATION-policy
+  statement; PHYSICS coupling through a neighbor zone's hazard is
+  real and large at the same budget.
+- **R PASS — bit-exact regression:** default reproduced exp23's
+  published arm exactly (A/B/C 0.951/0.795/0.780, restored 10088,
+  median 71.8).
+
+- **The corruption-source ledger (the instrument's headline table,
+  default arm @60):** B's 20.5% wrong = 15.4% senescence + 2.0% jump +
+  3.0% non-jump; C's 22.0% = 17.9% senescence + 0.3% jump; A's 4.9%
+  = 0.0% senescence + 0.6% jump + 4.3% non-jump. **SENESCENCE, not
+  jumps, is what the death-restoration equilibrium is made of** —
+  which finally explains the exp23/exp24 immunity: allocation
+  re-slices a budget whose binding consumer is senesced-cluster
+  repair, and potentiation protects against a 2% corruption channel.
+- **The elasticity ranking (log-log on B's all-K I_V@60):** noise
+  -0.37 (the capacity cliff), budget +0.27 (b2->b6, exp23's curve)
+  but +0.04 b6->b12 (SATURATED at the default — capacity is not the
+  binding term at b6), jump_rate -0.12, hazC -0.12, period -0.10,
+  k_fail -0.02. The equilibrium's marginal levers are the death-side
+  and the exchange rate, not the restoration total.
+- **Kills-row:** the "equilibrium-bound means immovable" reading is
+  dead — it is movable by architecture (+0.174), by channel physics,
+  by death channels (+0.036 at k_fail=0), and by zone-hazard
+  coupling; what is NOT movable is anything routed through the jump
+  channel (2% share) or the allocation of a saturated budget. Also
+  dead: the flux-ratio conservation law as a complete description
+  (EQ1a) — the correct object is the two-term decomposition
+  (alive-state balance x death-timing mixture), and any future
+  "equilibrium" claim must name which term it moves.

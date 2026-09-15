@@ -108,7 +108,8 @@ class FidelityAgingCohort(AgingCohort):
     def __init__(self, K: int = 300, params: AgingParams | None = None, seed: int = 0,
                  levels: int = 7, jump_rate: float = 0.005,
                  f_crit: float = 0.62, k_fail: float = 0.30,
-                 snapshot_ages: tuple = (30.0, 40.0, 50.0, 60.0)):
+                 snapshot_ages: tuple = (30.0, 40.0, 50.0, 60.0),
+                 n_clusters: int = 12):
         super().__init__(K=K, params=params, seed=seed)
         self.levels = levels
         self.span = level_span(levels)
@@ -116,7 +117,14 @@ class FidelityAgingCohort(AgingCohort):
         self.f_crit = f_crit
         self.k_fail = k_fail
         self.snapshot_ages = list(snapshot_ages)
-        self.n_clusters = 12
+        # exp26 hook: cluster granularity is now a constructor axis (the
+        # architecture lever — cells per corruption/repair event). Default
+        # 12 = every prior experiment, bit-exact. Must divide n_cells
+        # cleanly (cluster boundaries are the codec's read/write units).
+        if n_clusters <= 0 or self.n % n_clusters != 0:
+            raise ValueError(
+                f"n_clusters={n_clusters} must divide n_cells={self.n}")
+        self.n_clusters = n_clusters
         self.cluster_len = self.n // self.n_clusters
         self.channel_boost = np.ones(K)
 
@@ -216,6 +224,11 @@ class FidelityAgingCohort(AgingCohort):
         if not draws.any():
             return
         rows, cols = np.nonzero(draws)
+        # exp26 hook: optional jump-event audit (the corruption-source
+        # instrument — last jump time per (animal, cluster)). Pure
+        # bookkeeping, no RNG consumption, bit-exact when off.
+        if getattr(self, "_jump_audit_on", False):
+            self._last_jump[rows, cols] = self.t
         for k, c in zip(rows, cols):
             if not self.alive[k]:
                 continue
