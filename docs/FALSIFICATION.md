@@ -1256,3 +1256,44 @@ Verdict: the influence structure of the collective is a cognitive
 object — propagation, junction-scaled integration, cone-bounded memory
 — measured on the same substrate that regenerates (Pezzulo & Levin
 2021's scaling claim, now quantitative in this model).
+
+## Level 26 — exp43: Stage 5 opens — substrate independence (the mechanism transfers everywhere; the ATTRACTOR is substrate-conditioned — a measured transfer condition)
+
+Stage 5 (Ascension) deliverable: `cultivation/substrate/graph.py` —
+GraphCollective (the same ODEs on an arbitrary adjacency: path, 2D
+lattice, random 3-regular, scale-free) + regrow_graph (BFS
+regeneration through graph edges, M25-consistent blind-guess under
+blockade).
+
+REGISTERED GATES: all three REFUTED as naively registered — and the
+refutation is the finding:
+- The identity labeling (nodes 0..24 = head) is an attractor ONLY where
+  it is coherent with the substrate: path 1.8 mV, grid 5.6-5.9 mV PASS;
+  random-regular 8.6-11.2, scale-free 11.3-11.9 FAIL. Scattered labels
+  are not attractors on any substrate (alternating head/trunk cells
+  would fail on the chain too).
+- The BFS-coherent amendment improves everything one notch (random-
+  regular regen 4.2-4.5 mV at gap=1 — the machinery works) but
+  scale-free still fails (7.7 mV) and degree-normalized coupling does
+  NOT rescue it (probed: 11.3 mV unchanged). The invariant is
+  BOUNDARY-TO-VOLUME RATIO: scale-free BFS communities are
+  expander-like (huge boundaries), the Laplacian outvotes the label no
+  matter the per-edge conductance.
+- What transferred UNIVERSALLY (the Ascension half): the dynamics, the
+  M25 blind-guess corruption under blockade (12-22 mV on every
+  topology), and the graph regeneration machinery (BFS inheritance,
+  gap=1 errs 1.1-4.5 on path/grid/random). The failure is never the
+  mechanism — it is the existence condition of the target pattern.
+
+RESOLVED CLAIM (replaces the naive one): the formalism is
+substrate-independent UP TO an anatomical coherence condition — the
+target pattern must be a low-boundary-to-volume partition of the
+substrate (a spectral/graph-geometric property). The Stage-3 compiler
+is the substrate-adapter: compiling an AnatomySpec onto a substrate
+REQUIRES choosing identity partitions that satisfy the coherence
+condition (compiler rule R5 candidate: substrate-aware partitioning,
+night-six queue with per-substrate eps/mu calibration). The last
+phase of the roadmap is not free — the substrate co-defines which
+anatomies are reachable, which is precisely what a real Ascension
+answer looks like: substrate independence of MECHANISM, substrate
+conditioning of FORM.
