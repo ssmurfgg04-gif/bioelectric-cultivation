@@ -1,0 +1,84 @@
+{
+ "exp": "exp51_m34_decomposition",
+ "heterogeneity_table": {
+  "cutting": {
+   "n_total": 625,
+   "n_unrepresented": 332,
+   "heterogeneity_fraction": 0.531
+  },
+  "other_rnai": {
+   "n_total": 901,
+   "n_unrepresented": 388,
+   "heterogeneity_fraction": 0.431
+  },
+  "gj_block": {
+   "n_total": 37,
+   "n_unrepresented": 16,
+   "heterogeneity_fraction": 0.432
+  },
+  "innexin": {
+   "n_total": 12,
+   "n_unrepresented": 6,
+   "heterogeneity_fraction": 0.5
+  },
+  "ion_channel": {
+   "n_total": 78,
+   "n_unrepresented": 8,
+   "heterogeneity_fraction": 0.103
+  },
+  "morphogen": {
+   "n_total": 242,
+   "n_unrepresented": 87,
+   "heterogeneity_fraction": 0.36
+  }
+ },
+ "record_hot_plane_table": {
+  "cutting|crosspiece": {
+   "recorded": 0.425,
+   "sim": 0.0
+  },
+  "cutting|head": {
+   "recorded": 0.502,
+   "sim": 0.0
+  },
+  "cutting|trunk": {
+   "recorded": 0.308,
+   "sim": 0.0
+  },
+  "cutting|tail": {
+   "recorded": 0.367,
+   "sim": 0.0
+  },
+  "other_rnai|trunk": {
+   "recorded": 0.836,
+   "sim": 0.0
+  },
+  "other_rnai|tail": {
+   "recorded": 0.707,
+   "sim": 0.0
+  },
+  "other_rnai|head": {
+   "recorded": 0.668,
+   "sim": 0.0
+  },
+  "other_rnai|crosspiece": {
+   "recorded": 0.15,
+   "sim": 0.0
+  }
+ },
+ "gene_layer_deposit": {
+  "trunk_rate": 0.6666666666666666,
+  "head_full_coupling_rate": 0.3333333333333333,
+  "blocked_head_neural_rate": 0.0,
+  "blocked_tail_rate": 1.0,
+  "protocol": "gamma x0.7 + commitment_diffusion 1.5 (generic partial homeostatic impairment, no ion-channel specificity)"
+ },
+ "criteria": {
+  "M34_D1_heterogeneity_computable": true,
+  "M34_D2_record_hot_one_sided": true,
+  "M34_D3_decomposition_exhaustive": true,
+  "M34_N1_gene_layer_deposit": true,
+  "M34_N2_chained_head_prediction": true
+ },
+ "notes": "M34's honest scope: the corpus residual is DECOMPOSED, not modeled away. H (protocol heterogeneity) is measured per class; G (the gene layer) is a registered falsifiable deposit for when the DB's gene identities get mapped; P (publication bias) is bounded by the canonical-subset vs plane-pool comparison (exp31 subsets recorded 0.00 where the full plane pools record 0.31-0.50). The exp37 symmetric signature is thereby owned: mechanism where mechanisms exist, measurement where they do not."
+}
