@@ -1884,3 +1884,31 @@ Night seven, part 3. exp43's registered follow-up:
   the record-hot bias (exp51-D2). Five-point Spearman cannot order a
   compressed target; the per-class x plane table (deposited) is the
   informative instrument.
+
+## L49 — exp68 THE COHERENCE-FORMALIZATION SEARCH (star-search step 1)
+- THE STAR QUESTION: is the exp43/R5 coherence constraint a fact of
+  the DYNAMICS or an artifact of b2v's density normalization? The
+  dynamics-matched alternatives (the unnormalized Laplacian's label
+  energy E = crossing x contrast^2, the per-node mean force,
+  algebraic connectivity, conductance) computed over a 9-substrate
+  battery (path/ring/circulant4/grid/torus/random-3/random-6/
+  scale-free/small-world) x two labelings (fixed-index, BFS-coherent).
+- CF-G1 PASS: the exp43 calibration anchors reproduce EXACTLY (path
+  1.77 / grid 5.69 / random-3 11.19 / scale-free 11.92 vs the stored
+  1.8/5.6/11.2/11.9).
+- CF-G2 — THE BOUNDARY DOES NOT MOVE: no (substrate, labeling) exists
+  where b2v refuses but the dynamics supports. The constraint is
+  ROBUST across the formalization battery. THE HONEST STEP-1 REPORT:
+  the coherence constraint is NOT YET FORMALIZATION-DEPENDENT — the
+  naive floating-pattern star stays blocked by the DYNAMICS, not by
+  the metric. The 101% path needs a new MECHANISM (e.g., active
+  substrate renormalization — the substrate rewiring itself to
+  support the pattern), not a re-metricization.
+- CF-G3 PASS — ALL FIVE FORMALIZATIONS SEPARATE the pass/fail sets
+  (b2v pass [0.010, 0.072] / fail [0.110, 0.487]; label energy
+  [900-11,700] / [19,800-86,400]; mean force; lambda2; conductance).
+  The torus (b2v 0.110, err 8.47) sits just over the R5 limit and
+  fails; the dense random-6 (b2v 0.024, err 3.82) passes — the
+  destroyer is the LABEL STRUCTURE (community coherence), not degree
+  or density. The R5 limit 0.10 is well-placed: it sits inside the
+  separation gap on every metric.

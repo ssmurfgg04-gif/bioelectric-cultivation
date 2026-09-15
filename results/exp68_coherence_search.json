@@ -1,0 +1,272 @@
+{
+ "exp": "exp68_coherence_search (the star-search step 1)",
+ "anchors": {
+  "path": {
+   "mean_err": 1.77,
+   "pass": true
+  },
+  "grid2d": {
+   "mean_err": 5.69,
+   "pass": true
+  },
+  "random3": {
+   "mean_err": 11.19,
+   "pass": false
+  },
+  "scale_free": {
+   "mean_err": 11.92,
+   "pass": false
+  }
+ },
+ "battery_table": {
+  "path|fixed": {
+   "b2v": 0.010101010101010102,
+   "label_energy": 900.0,
+   "mean_force": 9.0,
+   "lambda2": 0.001,
+   "conductance": 0.0204,
+   "crossing": 1,
+   "sim_err": 1.77,
+   "sim_pass": true
+  },
+  "path|bfs": {
+   "b2v": 0.010101010101010102,
+   "label_energy": 900.0,
+   "mean_force": 9.0,
+   "lambda2": 0.001,
+   "conductance": 0.0204,
+   "crossing": 1,
+   "sim_err": 1.77,
+   "sim_pass": true
+  },
+  "ring|fixed": {
+   "b2v": 0.02,
+   "label_energy": 1800.0,
+   "mean_force": 18.0,
+   "lambda2": 0.0039,
+   "conductance": 0.04,
+   "crossing": 2,
+   "sim_err": 2.47,
+   "sim_pass": true
+  },
+  "ring|bfs": {
+   "b2v": 0.02,
+   "label_energy": 1800.0,
+   "mean_force": 18.0,
+   "lambda2": 0.0039,
+   "conductance": 0.04,
+   "crossing": 2,
+   "sim_err": 2.39,
+   "sim_pass": true
+  },
+  "circulant4|fixed": {
+   "b2v": 0.020202020202020204,
+   "label_energy": 3600.0,
+   "mean_force": 36.0,
+   "lambda2": 0.0176,
+   "conductance": 0.0408,
+   "crossing": 4,
+   "sim_err": 3.13,
+   "sim_pass": true
+  },
+  "circulant4|bfs": {
+   "b2v": 0.030303030303030304,
+   "label_energy": 5400.0,
+   "mean_force": 54.0,
+   "lambda2": 0.0176,
+   "conductance": 0.0625,
+   "crossing": 6,
+   "sim_err": 3.79,
+   "sim_pass": true
+  },
+  "grid2d|fixed": {
+   "b2v": 0.06111111111111111,
+   "label_energy": 9900.0,
+   "mean_force": 99.0,
+   "lambda2": 0.0979,
+   "conductance": 0.1294,
+   "crossing": 11,
+   "sim_err": 5.69,
+   "sim_pass": true
+  },
+  "grid2d|bfs": {
+   "b2v": 0.07222222222222222,
+   "label_energy": 11700.0,
+   "mean_force": 117.0,
+   "lambda2": 0.0979,
+   "conductance": 0.1494,
+   "crossing": 13,
+   "sim_err": 5.58,
+   "sim_pass": true
+  },
+  "torus|fixed": {
+   "b2v": 0.11,
+   "label_energy": 19800.0,
+   "mean_force": 198.0,
+   "lambda2": 0.382,
+   "conductance": 0.22,
+   "crossing": 22,
+   "sim_err": 8.47,
+   "sim_pass": false
+  },
+  "torus|bfs": {
+   "b2v": 0.14,
+   "label_energy": 25200.0,
+   "mean_force": 252.0,
+   "lambda2": 0.382,
+   "conductance": 0.28,
+   "crossing": 28,
+   "sim_err": 8.2,
+   "sim_pass": false
+  },
+  "random3|fixed": {
+   "b2v": 0.35333333333333333,
+   "label_energy": 47700.0,
+   "mean_force": 477.0,
+   "lambda2": 0.2085,
+   "conductance": 0.7067,
+   "crossing": 53,
+   "sim_err": 11.19,
+   "sim_pass": false
+  },
+  "random3|bfs": {
+   "b2v": 0.15333333333333332,
+   "label_energy": 20700.0,
+   "mean_force": 207.0,
+   "lambda2": 0.2085,
+   "conductance": 0.3067,
+   "crossing": 23,
+   "sim_err": 7.72,
+   "sim_pass": false
+  },
+  "random6|fixed": {
+   "b2v": 0.023728813559322035,
+   "label_energy": 6300.0,
+   "mean_force": 63.0,
+   "lambda2": 0.0406,
+   "conductance": 0.0483,
+   "crossing": 7,
+   "sim_err": 3.82,
+   "sim_pass": true
+  },
+  "random6|bfs": {
+   "b2v": 0.04067796610169491,
+   "label_energy": 10800.0,
+   "mean_force": 108.0,
+   "lambda2": 0.0406,
+   "conductance": 0.0857,
+   "crossing": 12,
+   "sim_err": 5.0,
+   "sim_pass": true
+  },
+  "scale_free|fixed": {
+   "b2v": 0.4873096446700508,
+   "label_energy": 86400.0,
+   "mean_force": 864.0,
+   "lambda2": 0.5953,
+   "conductance": 0.5053,
+   "crossing": 96,
+   "sim_err": 11.92,
+   "sim_pass": false
+  },
+  "scale_free|bfs": {
+   "b2v": 0.45685279187817257,
+   "label_energy": 81000.0,
+   "mean_force": 810.0,
+   "lambda2": 0.5953,
+   "conductance": 0.5233,
+   "crossing": 90,
+   "sim_err": 11.44,
+   "sim_pass": false
+  },
+  "small_world|fixed": {
+   "b2v": 0.07,
+   "label_energy": 6300.0,
+   "mean_force": 63.0,
+   "lambda2": 0.0025,
+   "conductance": 0.1429,
+   "crossing": 7,
+   "sim_err": 4.57,
+   "sim_pass": true
+  },
+  "small_world|bfs": {
+   "b2v": 0.03,
+   "label_energy": 2700.0,
+   "mean_force": 27.0,
+   "lambda2": 0.0025,
+   "conductance": 0.0588,
+   "crossing": 3,
+   "sim_err": 2.97,
+   "sim_pass": true
+  }
+ },
+ "star_hits": [],
+ "separators": {
+  "b2v": {
+   "pass_range": [
+    0.01,
+    0.072
+   ],
+   "fail_range": [
+    0.11,
+    0.487
+   ],
+   "separates": true,
+   "direction": "pass_low"
+  },
+  "label_energy": {
+   "pass_range": [
+    900.0,
+    11700.0
+   ],
+   "fail_range": [
+    19800.0,
+    86400.0
+   ],
+   "separates": true,
+   "direction": "pass_low"
+  },
+  "mean_force": {
+   "pass_range": [
+    9.0,
+    117.0
+   ],
+   "fail_range": [
+    198.0,
+    864.0
+   ],
+   "separates": true,
+   "direction": "pass_low"
+  },
+  "lambda2": {
+   "pass_range": [
+    0.001,
+    0.098
+   ],
+   "fail_range": [
+    0.208,
+    0.595
+   ],
+   "separates": true,
+   "direction": "pass_low"
+  },
+  "conductance": {
+   "pass_range": [
+    0.02,
+    0.149
+   ],
+   "fail_range": [
+    0.22,
+    0.707
+   ],
+   "separates": true,
+   "direction": "pass_low"
+  }
+ },
+ "criteria": {
+  "CF_G1_anchors_reproduced": true,
+  "CF_G2_boundary_moves": false,
+  "CF_G3_separator_table": true
+ },
+ "notes": "The star-search step 1: the exp43 coherence constraint tested against the DYNAMICS-MATCHED formalizations (the unnormalized Laplacian's label energy and per-node force vs b2v's density normalization). CF-G2 is the boundary question: a substrate the b2v metric refuses but the dynamics supports MOVES the coherence boundary (the compiler's R5 would adopt the better metric as M41); none found -> the constraint is robust across the battery and the honest report is 'not yet formalization-dependent' \u2014 the naive floating-pattern star stays blocked by the dynamics, not by the metric."
+}
