@@ -194,3 +194,206 @@ class BioelectricSheet:
         mid = (cs.start + cs.stop) // 2
         return (self.head_fraction((rs, slice(cs.start, mid))),
                 self.head_fraction((rs, slice(mid, cs.stop))))
+
+
+# ---------------------------------------------------------------------------
+# Night-nine M-SHEET REPAIR (ledger L36's registered candidate, concretized
+# from the Saito 2003 FULL abstract — research/NIGHT_NINE_RESEARCH.md).
+#
+# THREE grounded corrections over the night-eight class:
+#   1. SAME-SIGN FIRE RULE (Saito 2003 verbatim): induction fires where
+#      same-side (same-sign ML) values with a missing intermediate range
+#      abut ("ectopic structures were always formed only on the left side
+#      of the graft, where lateral tissues abutted onto the medial
+#      tissues"); opposite-sign L-R contact is STRUCTURALLY SILENT ("no
+#      morphologic change ... where left-sided tissues faced onto
+#      right-sided tissues"). The night-eight rule encoded the asymmetry
+#      hypothesis — the hypothesis Saito refuted.
+#   2. COMMITMENT + INHERITANCE-COPY (exp55 D2/D3): the juxtaposition
+#      front is a REGENERATION front — cells integrate a leaky exposure
+#      E; at E >= budget_commit a PLASTIC cell COMMITS (identity pinned —
+#      the attractor D2 found missing). ORGANIZER-BEARING fronts (a graft
+#      carrying the midline source) propagate the commitment by
+#      inheritance-copy (the exp27 chain walk in 2D); sourceless fronts
+#      commit the local junction band only; ablated fronts starve.
+#   3. FIELD MAINTENANCE / WOUND-DOMAIN PLASTICITY (the 2D ARZ principle,
+#      night-nine M35): living tissue MAINTAINS its positional field —
+#      the host is homeostatic toward the native ramp; non-source grafts
+#      are homeostatic toward their transplanted values; only the
+#      ABLATED graft (carries_source=False) blends passively. Plasticity
+#      (commit/copy-reception) is a property of the implantation
+#      footprint — host tissue under its own sources never commits
+#      ("the native axis is homeostatic, not inductive").
+# ---------------------------------------------------------------------------
+
+class IntercalationSheet(BioelectricSheet):
+    """The corrected M-L intercalation sheet (night nine)."""
+
+    def __init__(self, h: int = 40, w: int = 24, seed: int = 0):
+        super().__init__(h=h, w=w, seed=seed)
+        self.committed = np.zeros((self.h, self.w), dtype=bool)
+        self.commit_val = np.zeros((self.h, self.w))
+        self.exposure = np.zeros((self.h, self.w))
+        self.plastic = np.zeros((self.h, self.w), dtype=bool)
+        self._native_ml = self.theta_ml.copy()   # sourced host equilibrium
+        self._native_ap = self.theta_ap.copy()   # host identity equilibrium
+        self._graft_maintain: list[tuple[int, int, int, int, np.ndarray]] = []
+        self._graft_ap: list[tuple[int, int, int, int, np.ndarray]] = []
+        self._graft_ablate: list[tuple[int, int, int, int]] = []
+        self.copy_events = 0
+
+    # ---------------------------------------------------------------- graft
+    def graft(self, donor: dict, r0: int, c0: int,
+              carries_source: bool | None = None) -> None:
+        """Transplant with field-maintenance semantics:
+          source donor      -> values FROZEN (organizer broadcasts);
+          other grafts      -> values MAINTAINED (homeostatic toward the
+                               transplanted field — living tissue);
+          carries_source=False -> ABLATION: values blend passively (the
+                               disrupted-source analog).
+        The footprint is marked PLASTIC (commit/copy-reception allowed)."""
+        bh, bw = donor["ap"].shape
+        r1, c1 = min(r0 + bh, self.h), min(c0 + bw, self.w)
+        bh2, bw2 = r1 - r0, c1 - c0
+        super().graft(donor, r0, c0, carries_source=carries_source)
+        self.plastic[r0:r1, c0:c1] = True
+        active = donor["contains_midline"] if carries_source is None \
+            else bool(carries_source)
+        if carries_source is False:
+            # ABLATION: the disrupted-source implant loses its own axis
+            # and ADOPTS THE HOST FIELD (an ablated organizer does not
+            # passively hold a gradient; whichever organizer is present
+            # maintains the field) — registered semantics correction.
+            self._graft_ablate.append((r0, r1, c0, c1))
+        elif not active:
+            # non-source graft: MAINTAIN its transplanted fields
+            # (ML positional values AND AP identity — living tissue)
+            self._graft_maintain.append(
+                (r0, r1, c0, c1, donor["ml"][:bh2, :bw2].copy()))
+            self._graft_ap.append(
+                (r0, r1, c0, c1, donor["ap"][:bh2, :bw2].copy()))
+
+    def _apply_field_maintenance(self, restore_gain: float) -> None:
+        """Host cells restore toward the native ramp; maintained grafts
+        restore toward their transplanted values; ablated regions blend
+        (no action). Frozen sources are re-imposed by _apply_graft_sources
+        (called by the ML substep)."""
+        host = (~self.plastic)
+        self.theta_ml[host] += restore_gain * (
+            self._native_ml[host] - self.theta_ml[host])
+        for (r0, r1, c0, c1) in self._graft_ablate:
+            # ablated tissue adopts the host's native field
+            self.theta_ml[r0:r1, c0:c1] += restore_gain * (
+                self._native_ml[r0:r1, c0:c1] - self.theta_ml[r0:r1, c0:c1])
+        for (r0, r1, c0, c1, vals) in self._graft_maintain:
+            seg = self.theta_ml[r0:r1, c0:c1]
+            self.theta_ml[r0:r1, c0:c1] = seg + restore_gain * (vals - seg)
+        # AP identity maintenance (uncommitted cells only — committed
+        # cells are pinned by the commitment layer): sharp identity
+        # boundaries instead of diffusion smear (the exp55 D2 lesson
+        # applied to the identity field itself)
+        free = (~self.committed)
+        self.theta_ap[host & free] += restore_gain * (
+            self._native_ap[host & free] - self.theta_ap[host & free])
+        for (r0, r1, c0, c1, vals) in self._graft_ap:
+            m = free[r0:r1, c0:c1]
+            seg = self.theta_ap[r0:r1, c0:c1]
+            self.theta_ap[r0:r1, c0:c1] = np.where(
+                m, seg + restore_gain * (vals - seg), seg)
+
+    # ---------------------------------------------------------- intercalation
+    def intercalate_regen(self, steps: int = 400, diffusion: float = 0.05,
+                          drive_gain: float = 0.5,
+                          discontinuity_thresh: float = 0.2,
+                          budget_commit: float = 20.0,
+                          budget_copy: float = 10.0,
+                          copy_cadence: int = 40,
+                          leak: float = 0.01,
+                          restore_gain: float = 0.1) -> dict:
+        """The corrected regeneration-front intercalation.
+
+        Per step: ML diffusion + frozen sources + field maintenance;
+        SAME-SIGN fire rule (drive on same-sign edges whose |dML| exceeds
+        the physiological gradient); leaky exposure integration; commitment
+        (plastic & E >= budget_commit, value pinned to HEAD_V);
+        ORGANIZER-BEARING inheritance-copy (only while the graft carries an
+        active source AND the front exposure stays >= budget_copy: one
+        uncommitted plastic neighbor per committed cell per cadence);
+        passive AP diffusion with committed cells PINNED.
+
+        Returns a trace: fire_steps, right_junction_drive (the G7
+        structural-silence probe), commit_step, copies."""
+        trace = {"fire_steps": 0, "right_junction_drive": 0.0,
+                 "commit_step": None, "copies": 0}
+        for step in range(steps):
+            lap_ml = self._lap(self.theta_ml)
+            self.theta_ml += diffusion * lap_ml
+            self._apply_graft_sources()
+            self._apply_field_maintenance(restore_gain)
+            self._apply_pins()
+            # same-sign fire rule (Saito-corrected)
+            sgn = np.sign(self.theta_ml)
+            same = (sgn[:, :-1] * sgn[:, 1:]) > 0
+            excess = (np.abs(self.theta_ml[:, :-1]
+                             - self.theta_ml[:, 1:])
+                      - discontinuity_thresh)
+            fire = same & (excess > 0)
+            drive = fire * excess
+            trace["fire_steps"] += int(fire.any())
+            # G7 probe: drive at each graft's RIGHT junction edge (the
+            # opposite-sign L-R contact — must be structurally silent)
+            for (r0, r1, c0, c1, _v) in (self._graft_sources
+                                         + self._graft_maintain):
+                if c1 < self.w:
+                    trace["right_junction_drive"] += float(
+                        drive[r0:r1, c1 - 1].sum())
+            # exposure integration (leaky accumulator)
+            dl = np.zeros_like(self.exposure)
+            dr = np.zeros_like(self.exposure)
+            dl[:, :-1] += drive
+            dr[:, 1:] += drive
+            self.exposure = (1.0 - leak) * self.exposure + (dl + dr)
+            # commitment: plastic, uncommitted, exposure past budget
+            new_c = (self.plastic & (~self.committed)
+                     & (self.exposure >= budget_commit))
+            if new_c.any() and trace["commit_step"] is None:
+                trace["commit_step"] = step
+            self.committed |= new_c
+            self.commit_val[new_c] = HEAD_V
+            # inheritance-copy: ONLY organizer-bearing fronts propagate
+            front_active = float(self.exposure.max()) >= budget_copy
+            if self._graft_sources and front_active \
+                    and step % copy_cadence == 0:
+                for (i, j) in np.argwhere(self.committed & self.plastic):
+                    for (ni, nj) in ((i - 1, j), (i + 1, j),
+                                     (i, j - 1), (i, j + 1)):
+                        if (0 <= ni < self.h and 0 <= nj < self.w
+                                and self.plastic[ni, nj]
+                                and not self.committed[ni, nj]):
+                            self.committed[ni, nj] = True
+                            self.commit_val[ni, nj] = self.commit_val[i, j]
+                            self.copy_events += 1
+                            trace["copies"] += 1
+                            break
+            # AP substep: passive diffusion; committed cells PINNED
+            lap_ap = self._lap(self.theta_ap)
+            self.theta_ap += diffusion * lap_ap
+            self.theta_ap[self.committed] = self.commit_val[self.committed]
+            self._apply_pins()
+        return trace
+
+    # --------------------------------------------------------------- readout
+    def committed_fraction(self, region: tuple[slice, slice]) -> float:
+        seg = self.committed[region[0], region[1]]
+        return float(np.mean(seg))
+
+    def column_depth(self, region: tuple[slice, slice],
+                     thresh: float = 0.5) -> int:
+        """Number of graft columns with committed fraction >= thresh."""
+        rs, cs = region
+        depth = 0
+        for j in range(cs.start, cs.stop):
+            col = self.committed[rs, j]
+            if col.size and float(np.mean(col)) >= thresh:
+                depth += 1
+        return depth
