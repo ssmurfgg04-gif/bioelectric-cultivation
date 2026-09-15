@@ -2262,3 +2262,61 @@ Night seven, part 3. exp43's registered follow-up:
   0.083-0.125; Spearman 0.730 with the plateau rows off-diagonal) —
   honestly: the single-ratio law is dead; the two-channel law is the
   candidate.
+
+## L60 — exp79 THE TWO-CHANNEL LAW AND THE UNIVERSAL READER (the star-search step 8; 4/6 — THE STAR CROSSED AT THE MODEL LEVEL)
+- THE GRID (3 arms x gamma in {0.25, 4, 64} x mu in {0.015..0}): the
+  two dials are INDEPENDENT and each reaches writability — scale_free
+  flips at (gamma=4, mu<=0.0015) OR (gamma=64, mu<=0.005); torus
+  writes at (gamma=4, mu=0.005). The plateau of exp78 was exactly the
+  theta homogenization number mu*deg*T.
+- TC-G2 PASS — the homogenization number is QUANTITATIVE: the formula
+  err_theta = imbalance_i*(1-exp(-mu*deg_i*T)) reproduces the
+  plateau's mu-dependence (7/9 points in tolerance).
+- TC-G1 REFUTED as an exact law (Spearman 0.838 < 0.90; boundary
+  agreement exactly 80%): the channels INTERACT (V follows the
+  diffusing theta; the max-of-terms form is the right first-order law
+  but not the final one). Registered: the interaction term is the
+  next theory task.
+- TC-G3 PASS — **THE STAR POINT**: scale_free|fixed writes with NO
+  remodeling at (gamma=64, mu=0): verdict 0.57, hold 0.57. The
+  exp43/R5 coherence boundary is NOT a wall — it is an ARCHITECTURE
+  REQUIREMENT: identity strength (256x baseline) + a non-diffusing
+  anchor makes ANY substrate coherent with the pattern. The 101%
+  mechanism the handoff asked for: the boundary moves when the
+  identity rides a channel the coupling cannot hijack.
+- TC-G4 PASS — **THE UNIVERSAL READER**: head regen at w=0 (every
+  shell junction electrically silent): pure inheritance 24.7,
+  junction-carried spec 23.8 (both read the WRONG parents), the
+  NON-JUNCTIONAL anterior read (M33) restores identity AT COMMITMENT
+  — and the full composition (reader + anchor + strength, gamma=64,
+  mu=0, w=0) regenerates the head at V 0.43 / theta 0.44 THROUGH ZERO
+  JUNCTIONS. The reader path is closed at the model level: the
+  universal reader is the positional spec read on a channel the
+  coupling does not share — the architecture the window-leak theorem
+  demanded, already carried by the model as M33.
+- TC-G5 PASS — the reader's domain is anterior-only (trunk regen at
+  w=0 stays failed at 9.10: no local pole, no non-junctional read) —
+  the recorded posterior-biased GJ-blockade phenotypes (the exp60/66
+  corpus semantics) reproduced as a structural theorem.
+- TC-G6 REFUTED with the diagnosis: the price of the anchor is NOT
+  propagation loss — the eps channel (V-mediated homeostatic drag)
+  provides REDUNDANT slower propagation, so the wound repattern
+  converges identically at 240 t.u. (8.76 vs 8.76). The anchor's
+  true price is the RATE of organic repatterning (eps-only), and the
+  redundancy itself is a finding: the identity has two propagation
+  paths (direct theta-diffusion and V-mediated drag); the write
+  window (24 t.u.) is exactly where eps is too slow to matter —
+  which is why the two-channel law binds at write time and not at
+  homeostatic time.
+- THE STAR-SEARCH LEDGER (exp68 -> exp79): step 1 the constraint is
+  formalization-robust; steps 2-6 every LOCAL remodeling mechanism
+  (rewire/prune/grow/shed/thin) fails the hub regime, each with a
+  diagnosed signal pathology (degree dilution, smear corruption,
+  self-extinguishing reference, bridge wall, source-blindness); step
+  7 the two-channel structure found (V-ratio + theta homogenization);
+  step 8 the star crossed by ARCHITECTURE: strong identity +
+  non-diffusing anchor + non-junctional read. THE REFRAME IS NOW A
+  RESULT: "any substrate coherent with the pattern" = any substrate,
+  GIVEN an identity architecture that does not share a channel with
+  the coupling. The star is not no-substrate; it is any-substrate-
+  with-the-right-identity-physics.
