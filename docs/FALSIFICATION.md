@@ -2208,3 +2208,57 @@ Night seven, part 3. exp43's registered follow-up:
   collapse all flip points onto the y variable; the star's mechanism
   candidate is the IDENTITY/COUPLING RATIO, a real physiological dial
   (channel expression vs junction load).
+
+## L59 — exp78 THE COHERENCE PHASE DIAGRAM (the star-search step 7; 2/6 as registered — and the second channel found)
+- SETUP: gamma sweep {0.25..256} x 8 arms (no remodeling; adaptive
+  sub-stepping above gamma=0.25 preserves the Euler stability the
+  64/256 rows need — the first run's 51 mV blowups were integration
+  instability, diagnosed and fixed; the gamma=0.25 rows stay
+  bit-consistent with the ledger anchors); uniform cut-thinning sweep
+  w in {1..0}; the per-edge read instrument regrow_w (PD-G0 bit-exact
+  at W=1: 14.004712 vs 14.004712).
+- PD-G1 REFUTED — GAMMA ALONE CANNOT FLIP THE HUB ARMS: torus and
+  random3|bfs flip at gamma*=4 (8.47 -> 5.38, 7.72 -> 5.43 — THE
+  BOUNDARY MOVES WITH IDENTITY STRENGTH for them), but random3|fixed
+  plateaus at 8.05 and scale_free at 9.17 — INVARIANT from gamma=16
+  to gamma=256.
+- PD-G3 REFUTED the same way: cut-thinning plateaus (scale_free
+  7.74 at w=0) — thinning kills the electrical hijack and the error
+  DOES NOT GO BELOW THE PLATEAU.
+- PD-G7 THE ATTRIBUTION (the discovery): the plateau is the THETA
+  CHANNEL. At gamma=256, mu=0 takes scale_free 9.17 -> 0.16 mV,
+  random3|fixed 8.05 -> 0.07, torus 4.76 -> 0.04. THE IDENTITY LAYER
+  ITSELF DIFFUSES THROUGH THE JUNCTIONS (dtheta = ... + mu*lap_theta):
+  within one 24 t.u. window the hub's theta homogenizes with its
+  neighborhood (rate mu*deg = 1.5/t.u. for the degree-99 hub —
+  e^-35 dead), and gamma then faithfully HOLDS V to the hijacked
+  theta. The V-channel law (y = g_cut/(gamma+g_total), boundary
+  y* ~ 0.25) is REAL and the mean-field bounds the V-hijack exactly;
+  the plateau was the second hijack riding the SAME junctions through
+  the identity variable.
+- THE COMPLETE LAW (registered for exp79): writability requires BOTH
+  channels quiet: (1) V-channel: gamma > g_cut*(CONTRAST/bar - 1);
+  (2) theta-channel: mu*T*deg_cut << 1 (the local homogenization
+  number). The first yields to gamma and to G-thinning; the second
+  yields ONLY to removing A-crossings (why exp73's rewiring fixed
+  torus/random3 and could never fix the hubs) or to a NON-DIFFUSING
+  identity anchor (mu=0 = the M28 phi_spec semantics — the spec does
+  not ride the junctions). THE STAR'S ESCAPE IS AN ARCHITECTURE, NOT
+  A DIAL: identity must ride a channel the coupling cannot hijack.
+- PD-G4 REFUTED, AND THE REFUTATION IS A THEOREM: on one dial, write
+  error falls with thinning (21.0 -> 15.3) but the regen read does
+  not starve symmetrically — on a BINARY pattern the boundary
+  junction is BOTH the write's leak AND the read's window (same edge,
+  same channel, both directions). An amputated region whose external
+  neighbors are the OTHER identity inherits the WRONG identity
+  through intact junctions (25.7 at w=1) — the read is only as good
+  as the parent's identity, and the hijack is only as bad as the
+  neighbor's identity: ONE quantity. The escapes are structural:
+  (a) the non-junctional spec read (phi_spec), (b) rectifying
+  junctions (real connexins rectify), (c) time-gated coupling (open
+  for the commitment window, closed for holding — the exp65
+  maintenance semantics). Registered for exp79.
+- PD-G2/PD-G5 REFUTED as single-channel laws (the y-band misses low:
+  0.083-0.125; Spearman 0.730 with the plateau rows off-diagonal) —
+  honestly: the single-ratio law is dead; the two-channel law is the
+  candidate.
