@@ -2083,3 +2083,38 @@ Night seven, part 3. exp43's registered follow-up:
   Prediction: scale_free becomes writable when cells that cannot hold
   their identity shed their most-conflicting junctions. If refuted,
   the wall is deeper than sensing (log what remains).
+
+## L56 — exp75 RUNG 4: DRAG-DRIVEN REMODELING (the star-search step 4; 2/6 — and the refutation IS the discovery)
+- THE REGISTERED PREDICTION REFUTED, SPECTACULARLY: the homeostatic
+  drag |V - theta| NEVER FIRES — mean drag ~1.9-2.1 mV on the FAIL
+  arms (threshold 8), hot cells = 0, shed = 0, the wall arms never
+  move (11.92, 11.44; b2v 0.487/0.457 unchanged; edges 197->197).
+- THE DIAGNOSIS (a mechanism theorem in disguise): THE DRAG SIGNAL IS
+  SELF-EXTINGUISHING. theta is PLASTIC (eps = 0.04; relaxation time 25
+  t.u. ~= the 24 t.u. write window): while the junction field smears
+  V, the homeostatic plasticity drags theta AFTER it — by the tail,
+  theta ~= smeared V everywhere. The cell's reference frame moves with
+  the hijack. THE HIJACK REWRITES THE REFERENCE: a single-timescale
+  tissue cannot locally detect its own incoherence, because the
+  incoherence corrupts the very variable that would measure it.
+  (Corollary: the drag DID separate weakly — fail arms 1.9-2.1 vs pass
+  arms 0.3-1.3 mV — but ~4x too weak, suppressed by exactly the
+  plasticity that defines theta.)
+- THE THEOREM SHAPING UP (the star-search's real product): COHERENCE
+  REQUIRES AN ANCHOR SLOWER THAN THE HIJACK. The codebase already
+  carries the two-timescale structure — M28's dual field (theta = the
+  expression layer, phi_spec = the positional spec captured at pattern
+  set). The star search has now INDEPENDENTLY re-derived why the dual
+  field must exist: not as a convenience but as a necessity — without
+  a slow anchor, identity maintenance is undetectable in principle.
+- DR-G1 REFUTED (no separation at the registered threshold); DR-G2/3/4
+  REFUTED (the mechanism never engaged — zero shedding everywhere, so
+  the controls trivially held); DR-G5 PASS (both metrics still track:
+  b2v 0.487/0.457 with the dynamics refusing; nothing moved).
+- NEXT (exp76, rung 5): THE SLOW ANCHOR. Two-timescale identity: the
+  frozen (or 40x-slower) anchor = M28's phi_spec semantics, captured
+  at write start; the remodeling signal becomes the SLOW drag
+  |V - theta_slow|. Registered prediction: scale_free becomes
+  writable. The theorem contrast is the gate: single-timescale (eps_slow
+  = eps) must fail (reproduces exp75), frozen must work — the
+  timescale separation IS the mechanism that moves the boundary.
