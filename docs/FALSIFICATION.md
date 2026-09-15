@@ -1793,3 +1793,33 @@ Night seven, part 3. exp43's registered follow-up:
   The first arm's mis-specification (cns/diff without the gamma*0.5
   + noise*3 base) was caught and BOTH arms recorded before the
   verdict.
+
+## L46 — exp65 M38-A CO-TUNING: GEOMETRY REFUTED, MAINTENANCE ADOPTED
+- (a) GEOMETRY CO-TUNING REFUTED: the err(k, s) grid (k in {2,3,4} x
+  zone-width scale s in {1.0,1.5,2.0}) shows zone width is nearly
+  INERT (k=4: 7.29 -> 7.09 at s=2; k=3 ~5.5 flat). The error lives
+  at the NATIVE head|trunk boundary, not the scaled ectopic zone —
+  widening the spec's zones does not touch where the smear is.
+  CT-G1/CT-G2 REFUTED as registered; the verified free-running
+  envelope stays k <= 2.
+- (b) THE DIAGNOSIS CHAIN (registered after the geometry refusal):
+  the failure is the UNCLAMPED SETTLE — at wide k the V field's
+  contrasts decay faster than the latch holds, and the ANCHOR ITSELF
+  drifts (measured: the ectopic eye's anchor -20 -> -26 over 15 h).
+  LATCH-STRENGTH co-tuning is insufficient: k_anchor x8 errs 6.9;
+  the FROZEN anchor (alpha_latch=0 + k_anchor x4) holds the MEMORY
+  (pattern error 5.94 < 6.0) but the EXPRESSION still sags past the
+  zone-hold check (the coupling bath pulls V off the latched spec).
+- (c) MAINTENANCE CO-TUNING ADOPTED (CT-G4 PASS): a 3 h-period
+  re-clamp schedule (2 h clamped per cycle — the exp58
+  living-tissue-maintains-its-field lesson at the dial level)
+  verifies the k=4 third-head FULLY (errs 3.89-3.94, pattern error
+  AND all zone holds, 3/3 seeds).
+- THE FINAL RULE (deposited): the free-running operating envelope is
+  k <= 2; beyond it the compiler must EMIT A MAINTENANCE SCHEDULE
+  whose duty cycle scales with the dial. Range expansion converts a
+  self-holding anatomy into a MAINTENANCE-DEPENDENT anatomy; the
+  duty cycle is the currency that buys reach.
+- First in-file run correction: the CT-G4 chain reused the CT-G3
+  s=2.0 program's clamps against the s=1.0 target (clamp/target
+  mismatch, errs ~10) — caught before verdicts, fixed to prog0.

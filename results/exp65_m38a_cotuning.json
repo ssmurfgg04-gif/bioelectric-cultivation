@@ -1,0 +1,116 @@
+{
+ "exp": "exp65_m38a_cotuning",
+ "grid": {
+  "k2_s1.0": {
+   "errs": [
+    4.168,
+    4.081,
+    4.091
+   ],
+   "mean": 4.114,
+   "verified": true
+  },
+  "k2_s1.5": {
+   "errs": [
+    4.156,
+    4.055,
+    4.117
+   ],
+   "mean": 4.11,
+   "verified": true
+  },
+  "k2_s2.0": {
+   "errs": [
+    4.118,
+    4.094,
+    4.07
+   ],
+   "mean": 4.094,
+   "verified": true
+  },
+  "k3_s1.0": {
+   "errs": [
+    5.685,
+    5.589,
+    5.627
+   ],
+   "mean": 5.633,
+   "verified": false
+  },
+  "k3_s1.5": {
+   "errs": [
+    5.568,
+    5.441,
+    5.514
+   ],
+   "mean": 5.508,
+   "verified": false
+  },
+  "k3_s2.0": {
+   "errs": [
+    5.631,
+    5.572,
+    5.571
+   ],
+   "mean": 5.591,
+   "verified": false
+  },
+  "k4_s1.0": {
+   "errs": [
+    7.339,
+    7.236,
+    7.28
+   ],
+   "mean": 7.285,
+   "verified": false
+  },
+  "k4_s1.5": {
+   "errs": [
+    7.224,
+    7.09,
+    7.15
+   ],
+   "mean": 7.154,
+   "verified": false
+  },
+  "k4_s2.0": {
+   "errs": [
+    7.128,
+    7.071,
+    7.071
+   ],
+   "mean": 7.09,
+   "verified": false
+  }
+ },
+ "s_star_k4": null,
+ "ct4_diagnosis_chain": {
+  "k_anchor_x8": [
+   6.919,
+   6.81,
+   6.85
+  ],
+  "frozen_anchor": [
+   5.936,
+   5.851,
+   5.872
+  ],
+  "maintenance_3h": [
+   3.939,
+   3.889,
+   3.898
+  ]
+ },
+ "ct4_verified": {
+  "k_anchor_x8": false,
+  "frozen_anchor": false,
+  "maintenance_3h": true
+ },
+ "criteria": {
+  "CT_G1_scaling_monotone": false,
+  "CT_G2_envelope_extension": false,
+  "CT_G3_compile_time_integration": true,
+  "CT_G4_maintenance_cotuning": true
+ },
+ "notes": "M38-A VERDICTS: (a) GEOMETRY co-tuning REFUTED \u2014 zone width is nearly inert (k=4: 7.29 -> 7.09 at s=2; the error lives at the NATIVE head|trunk boundary, not the scaled zone). (b) LATCH-STRENGTH co-tuning INSUFFICIENT - the anchor itself drifts during the unclamped settle (the ectopic eye's anchor -20 -> -26); freezing the anchor (alpha=0 + k_anchor x4) holds the MEMORY (pattern error 5.9 < 6.0) but the EXPRESSION still sags past the zone-hold check. (c) MAINTENANCE FORCING ADOPTED: a 3h period (2h clamped per cycle) verifies k=4 fully (3/3 seeds, pattern error AND zone holds). THE FINAL RULE: the free-running envelope is k <= 2; beyond it the compiler must emit a MAINTENANCE SCHEDULE (duty cycle scales with the dial) - range expansion converts a self-holding anatomy into a maintenance-dependent one. The duty cycle is the currency that buys reach."
+}
