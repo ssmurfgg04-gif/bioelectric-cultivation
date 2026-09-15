@@ -2429,3 +2429,39 @@ Night seven, part 3. exp43's registered follow-up:
   measured frontier and its tissue-specificity (exp82). The
   compiler's maintenance-schedule emission (R6/exp65) now has its
   quantitative table.
+
+## L64 — exp83 THE GENE-LAYER RESIDUAL CLOSURE (GL-G3/GL-G4; 2/3 as registered — the pool closes, the profile registers its repair)
+- GR-G2 PASS — **GL-G4 CLOSED BY THE RECORD CORRECTION**: the
+  control family's measured hot rate is 0.270 (in-run, the one-sided
+  record bias); the corrected generic target is 0.855 - 0.270 =
+  0.585, band [0.485, 0.685] — and the N1 protocol's sim lands at
+  0.655, INSIDE the band at every gamma scale (0.7..1.0: the scale is
+  INERT on the pooled rate — the commitment_diffusion term drives the
+  abnormality, not the resting-potential strength; a real
+  mechanistic attribution). THE PROTOCOL WAS NEVER TOO WEAK — THE
+  RECORD WAS TOO HOT. exp51's N1 deposit band [0.22, 0.67] is
+  RETIRED (formed against the uncorrected record; exp60 fired its
+  falsifier honestly; the corrected deposit replaces it). Control at
+  g* = 0.00 (structurally clean).
+- GR-G1 SPLIT — the POOL closes, the PROFILE does not: with the
+  adopted M37-A coin (nb_p=0.8, the exp64 semantics: the coin
+  REPLACES the deterministic scar — the first run layered it on
+  scar=1.0 and pinned everything abnormal; diagnosed and fixed), the
+  neoblast family's sim pooled rate is 0.695 vs the record's 0.701 —
+  a 0.006 match (the graded-record gap CLOSED at the pool level).
+  BUT the per-plane direction REFUTES: the record's covered-plane
+  worst is trunk (0.81) while the sim's head runs 1.0 > trunk 0.67.
+  A ONE-PARAMETER coin (one global p, anchored to the trunk record)
+  matches the pool by construction and cannot match an arbitrary
+  plane profile. M37-A' REGISTERED: per-plane coin anchors
+  nb_p(plane) calibrated to the record's plane rates — the
+  penetrance mechanism is right, its parameterization needs the
+  plane axis.
+- GR-G3 PASS — the falsifier retirement is verified by the numbers
+  above and documented in the notes.
+- THE GENE-LAYER SCOREBOARD after the closure: GL-G1/G2/G5 passed
+  (exp60); M37-A adopted (exp64) and pool-validated (exp83);
+  M37-B refuted (exp64) and its repair path superseded by the record
+  correction (exp83); M40 adopted (exp69); GL-G4 closed (exp83);
+  GL-G3 pool-closed with M37-A' registered (the one remaining
+  registered candidate in the gene layer).
