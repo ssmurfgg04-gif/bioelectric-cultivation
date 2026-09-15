@@ -203,3 +203,113 @@ def regen_lightcone(seed: int, n: int = 100,
             if pulse_during_regen and pulse_hours > 0 else 0),
         "residue_profile": [round(float(residue[i]), 3) for i in idx],
     }
+
+
+def regen_pulse_timing(seed: int, n: int = 100,
+                       regen_slice: slice | None = None,
+                       pulse_cell: int | None = None,
+                       start_hours: float = 0.0,
+                       pulse_hours: float = 3.0,
+                       pulse_v: float = 0.0,
+                       gap_scale: float = 1.0,
+                       settle_hours: float = 24.0,
+                       post_hours: float = 15.0,
+                       cell_period: float = 0.8,
+                       dt: float = 0.1,
+                       noise: float = 0.6) -> dict:
+    """Paired-trajectory PULSE-START-TIME instrument (exp54; the night-eight
+    critical-window test).
+
+    Durant et al. 2019 (MED30799071, Biophys J): depolarizing the injured
+    tissue during the FIRST 3 h of regeneration alters gene expression by
+    6 h and double-heads the animal DESPITE washout — the polarity decision
+    medium lives at the START of the regen window. ZENODO:18358611 adds the
+    structural form: response curves share a saturation plateau, an
+    onset/closure point, and a FINITE transition width, and LATE
+    perturbations fail regardless of strength.
+
+    This instrument scans the pulse START TIME along the commitment walk
+    (the model's decision medium): paired trajectories, same amputation,
+    B's pulse cell clamped from start_hours to start_hours + pulse_hours
+    of walk time. The walk mirrors regrow's forward formula VERBATIM
+    (chain draw, M25 r-mix, identical RNG draw order), so the start=0,
+    dur=2 arm reproduces exp49's regen_lightcone result.
+
+    The model's mechanism makes a specific prediction: only cells committed
+    while the wound face is displaced (directly or via diffusive leak into
+    the last committed cell) inherit the delta, so the stored identity
+    shift must DECAY with pulse start time — early pulses ride the chain,
+    late pulses meet a chain that has already moved past the face.
+    """
+    a = BioElectricCollective(n=n, seed=seed)
+    b = BioElectricCollective(n=n, seed=seed)
+    for c in (a, b):
+        c.gap_scale = float(gap_scale)
+        c.G = c.G0 * float(gap_scale)
+        c.deg = c.G.sum(axis=1)
+        c.run(settle_hours, dt=dt)              # settle both identically
+    if regen_slice is None:
+        regen_slice = slice(int(n * 0.85), n)
+    idx = list(np.arange(n)[regen_slice])
+    if pulse_cell is None:
+        pulse_cell = idx[0] - 1                 # the wound face
+    steps_per_cell = max(1, int(round(cell_period / dt)))
+    start_steps = max(0, int(round(start_hours / dt)))
+    end_steps = start_steps + max(1, int(round(pulse_hours / dt))) \
+        if pulse_hours > 0 else start_steps
+
+    a.amputate(regen_slice, wound_voltage=-30.0, blastema_theta=-40.0)
+    b.amputate(regen_slice, wound_voltage=-30.0, blastema_theta=-40.0)
+
+    # regrow's walk preamble (wound state for the M25 blind guess)
+    r = float(a.gap_scale)
+    wound_center_a = float(np.mean(a.theta[idx]))
+    wound_center_b = float(np.mean(b.theta[idx]))
+    src = idx[0] - 1 if idx[0] - 1 >= 0 else idx[0]
+    steps_done = 0
+    clamped = False
+    for i in idx:
+        for _ in range(steps_per_cell):
+            if not clamped and start_steps <= steps_done < end_steps:
+                b.clamp(np.array([pulse_cell]), pulse_v)
+                clamped = True
+            if clamped and steps_done >= end_steps:
+                b.release_clamps()
+                clamped = False
+            a.step(dt)
+            b.step(dt)
+            steps_done += 1
+        theta_a = a.theta[src] + a.rng.normal(0.0, noise)
+        theta_b = b.theta[src] + b.rng.normal(0.0, noise)
+        if r < 1.0:
+            guess_a = wound_center_a + a.rng.normal(
+                0.0, a.blastema_readout_noise)
+            guess_b = wound_center_b + b.rng.normal(
+                0.0, b.blastema_readout_noise)
+            theta_a = r * theta_a + (1.0 - r) * guess_a
+            theta_b = r * theta_b + (1.0 - r) * guess_b
+        a.theta[i] = theta_a
+        a.V[i] = theta_a
+        b.theta[i] = theta_b
+        b.V[i] = theta_b
+        src = i
+    if clamped:
+        b.release_clamps()
+        clamped = False
+    a.run(post_hours, dt=dt)
+    b.run(post_hours, dt=dt)
+
+    residue = np.abs(b.theta - a.theta)
+    return {
+        "seed": seed,
+        "pulse_cell": int(pulse_cell),
+        "start_hours": float(start_hours),
+        "pulse_hours": float(pulse_hours),
+        "gap_scale": float(gap_scale),
+        "walk_span_hours": float(len(idx) * cell_period),
+        "regen_cells": len(idx),
+        "mean_shift_in_regen_mv": float(np.mean(residue[idx])),
+        "far_end_residue_mv": float(residue[idx[-1]]),
+        "max_residue_in_regen_mv": float(np.max(residue[idx])),
+        "residue_profile": [round(float(residue[i]), 3) for i in idx],
+    }
