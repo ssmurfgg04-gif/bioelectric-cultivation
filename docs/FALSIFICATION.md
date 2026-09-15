@@ -2320,3 +2320,42 @@ Night seven, part 3. exp43's registered follow-up:
   GIVEN an identity architecture that does not share a channel with
   the coupling. The star is not no-substrate; it is any-substrate-
   with-the-right-identity-physics.
+
+## L61 — exp80 THE EXTERNAL STORAGE PROTOCOL (Stage-5 90% item; 6/6 — CLOSED)
+- THE PROTOCOL (four steps, machine-checked): CAPTURE (the
+  identity-at-coordinate map serialized to JSON — the M28 phi_spec
+  semantics) -> STORE (bytes; the medium is ageless) -> DESTROY (the
+  source substrate discarded entirely) -> RE-INSTANTIATE (the
+  protocol's operating point: the L60 star architecture, gamma=64,
+  mu=0).
+- ES-G1 PASS — byte-exact through the file (818 bytes).
+- ES-G2 PASS — substrate-independent: the chain-stored pattern
+  re-instantiates on grid (0.10 mV) AND scale_free (0.57 mV).
+- ES-G3 PASS — TOTAL DESTRUCTION: different size (n=150),
+  different topology (random-regular), fresh seeds — positional
+  resampling carries the spec's coordinate semantics; err 0.36.
+  The pattern is not a property of any cell, tissue, or substrate
+  (D3 taken to the medium level).
+- ES-G4 PASS — the FORM regenerates on the destination: amputation +
+  the non-junctional anterior read regrows the loaded identity
+  (V 0.62 / theta 0.62). The storage carries the spec; the
+  reader+architecture make the form.
+- ES-G5 PASS — 1,000 storage generations, zero byte drift: the
+  medium does not age; the holding conditions are required only
+  AFTER loading.
+- ES-G6 PASS (the load-bearing gate) — the same file at the BASELINE
+  operating point FAILS on scale_free (11.92): the medium alone is
+  not the pattern; the re-instantiation architecture is a required
+  part of the protocol. The L60 theorem in protocol form.
+- THE WET-LAB COMPANION (docs/STAGE5_EXTERNAL_STORAGE_PROTOCOL.md):
+  the four steps mapped onto the verified anchors — capture via the
+  4D atlas readout (MED42172041), the 3 h write window (Durant,
+  MED30799071), the gene-layer families as the strength module
+  (exp60), M33 as the anchor module, the graft bank (Saito 2003) and
+  the cryptic state (M31) as biological media. Residuals named: the
+  64x channel lock is not a validated wet protocol; the multi-field
+  capture schema; the shared coordinate convention.
+- Stage-5 90% scoreboard: external storage CLOSED; the star
+  (any-substrate coherence) CLOSED at the model level (L60); the
+  remaining 90% residuals are the corpus MAE (Stage 2's 0.522 ->
+  <0.15 target) and the compiler's real-model validation.
