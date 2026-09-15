@@ -1525,3 +1525,80 @@ Night seven, part 3. exp43's registered follow-up:
 - ND-L34-directional-cone deposited to research/NOVEL_PREDICTIONS.md
   (the exp49 G5 optogenetics protocol), alongside the gene-layer and
   M33xM34 chained deposits.
+
+## L35 — exp54 pulse-timing critical window (night eight)
+- The model's polarity decision medium is the FIRST COMMITMENT: a 3h
+  pulse starting at t=0 writes 3.00 mV across the whole regenerate
+  (full-chain capture); ANY later start (>= 1h) drops to ~0.5 mV
+  (diffusive leak only) — and that minority capture is RE-ABSORBED by
+  the collective attractor (far end 0.00); post-walk pulses write
+  exactly 0.
+- PT-G1..G5 ALL PASS: monotone curve, early saturation plateau, late
+  failure, finite transition width (the ZENODO:18358611 fixed-shape
+  form); 3h sufficiency (0.91 of the 6h write — Durant MED30799071's
+  "kick-start" maps to the first blastema cell's DIRECT wound-face
+  read); 6h deadline; persistence + blockade collapse; size collapse
+  across n=60/100/140 (Spearman ~1.0).
+
+## L36 — exp55 graft/lateral 2D sheet (night eight)
+- BUILT: cultivation/bioelectric/sheet.py — two independent position
+  fields (AP identity + ML positional value), midline-as-source, grafts
+  transplant stored fields. S3 isograft (0.00) + S5 native-axis
+  integrity PASS.
+- S1/S2/S4 REFUTED with a precise 3-part diagnosis: (D1) the
+  physiological midline zero-crossing fires a naive sign-opposition
+  drive via diffusion asymmetry — fixed by the discontinuity-threshold
+  rule (contrast above the physiological gradient; the native axis is
+  homeostatic, not inductive); (D2, load-bearing) a pure-diffusion AP
+  field cannot HOLD induced identity — the L-R juxtaposition front
+  fires and warms the contact to -32 mV but the contrast front decays
+  under host blending and the band relaxes back (no attractor at the
+  sheet level); (D3) a one-sided edge drive cannot fill the graft
+  (equilibrium ~-35 mV mid-graft, below threshold).
+- M-SHEET REPAIR REGISTERED (night nine): the intercalation front as a
+  REGENERATION front — commitment at the front + INHERITANCE-COPY
+  propagation (the exp27 chain mechanism in 2D), gated by sustained
+  front activity (the fixed-shape exposure axis).
+
+## L37 — exp56 the reader perturbation test (night eight)
+- THE SYMBOL-GROUNDING EXPERIMENT, 6/6 GATES PASS (ZENODO:21459264:
+  "perturb the reader, not the pattern"):
+  SG-G1 same bit-identical stored pattern, reader ON restores (0.00) vs
+  OFF (1.00) — SAME PATTERN, DIFFERENT FORM; SG-G1t posterior immunity
+  by design; SG-G1c clamped-carrier replicate; SG-G2 full coupling:
+  carrier suffices, reader inert; SG-G3 THE LOOKUP IS THE DECODER —
+  reversing phi_spec with the carrier untouched makes the TAIL fully
+  head-like (1.000) while the head fails (mirror form); SG-G4'
+  destroyed carrier + reader ON restores the FORM (hl 0.946, delta
+  16.1 mV).
+- DISCOVERED: the CARRIER-ASSISTANCE term — the reader alone decides
+  identity but not full precision (restored head ~6 mV depolarized of
+  spec: the corrupted blind-guess baseline feeds the M25 r-mix).
+  Meaning is in the reader; fine precision is carrier-assisted. A
+  testable refinement of the grounding claim, not a failure of it.
+- Two arm-design corrections caught en route and recorded: the rescue
+  arm is the HEAD plane (the first run's tail-plane "refutation" was
+  exp46's posterior immunity reproduced exactly), and the corruption
+  metric must be the regen region, not the deliberately-corrupted whole
+  body.
+
+## L38 — exp57 night-eight closing batch
+- A. TAS CRYPTIC RE-CUT INTERVAL: TA-G1 PASS (naive 0.917 vs re-cut
+  1.00 abnormal across 12 seeds at the M31-A q=0.75 regime; seed 3
+  discordant — first regen NORMAL at 5.94 mV, re-cut ABNORMAL at 6.42;
+  seed 4's error DROPS 10.74 -> 7.42 — the hidden state shifts re-challenge
+  outcomes in both directions, the challenge-sensitive interval below
+  the immediate threshold EXISTS as PPRPPR1216581 predicts); TA-G2 PASS
+  (bit-exact replay 12/12 — stable re-challenge ratios as deterministic
+  stored-state readouts).
+- B. UNDERDAMPED PCG RECOVERY: WEAK — max wound-face overshoot 0.296 mV
+  (neither the atlas's >= 0.5 underdamped nor < 0.1 overdamped);
+  registered as a calibration-target measurement, not tuned.
+- C. M36 MIS-ANCHORED POLE (egal-1 direction, MED41099308): 3/3 PASS —
+  collective.py gains additive `neural_misanchor` (bit-exact at 0.0,
+  suite 64 green): tail-plane blockade regen becomes FULLY head-like
+  (hl 1.000 — the two-headed direction), head plane unchanged, full
+  coupling inert.
+- D. gjblock|head_tail LEDGERED: model 0.67 vs recorded 0.025 (n=2) —
+  protocol-semantics miss diagnosed (the DB's head_tail class may not
+  be both-faces-under-continuous-blockade); DB re-mapping queued.

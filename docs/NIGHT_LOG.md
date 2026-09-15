@@ -268,3 +268,20 @@ DeepScientist binary itself is still pending install on the user's box)
 2. gjblock_head_tail anomaly (recorded 0.025, n=2): both-faces cut + blockade predicts near-normal in the model too? Test and ledger.
 3. graft/lateral protocol representations (the sim's largest H gap — a 2D sheet lattice for lateral cuts).
 4. ds quest 001 via zai runner when quota opens.
+
+## Night eight — 2026-09-15 (research-grounded wave; executed directly per the standing directive)
+
+- **N8.1 exp53/53b/53c RESEARCH WAVE** (6 sources — "europe pmc is good but theres more"): 60+ hits; the directive's claims verified at abstract level; one citation corrected (PMID 30824103 is a coconut-cellulose paper; the real 3h-window record is MED30799071 / 10.1016/j.bpj.2019.01.029); both Zenodo deposits + TAS + 4D atlas + neurobots + synthetic-memory verified. Synthesis: research/NIGHT_EIGHT_SYNTHESIS.md. Pushed fc1d1ae.
+- **N8.2 exp54 pulse-timing critical window** (L35): 5/5 PASS — first-commitment decision medium, fixed-shape geometry, 3h sufficiency, 6h deadline, size collapse. Pushed c10b646.
+- **N8.3 exp55 graft/lateral 2D sheet** (L36): sheet.py built; S3+S5 PASS; S1/S2/S4 REFUTED w/ 3-part diagnosis; M-sheet repair registered (night nine). Pushed d7f0808.
+- **N8.4 exp56 reader perturbation** (L37): 6/6 PASS — the symbol-grounding test crossed; the lookup is the decoder (mirror form at 1.000); carrier-assistance term discovered. Pushed 7b23e0f.
+- **N8.5 exp57 closing batch** (L38): TAS cryptic interval PASS + bit-exact replays; underdamped WEAK (calibration target); M36 mis-anchored pole 3/3 PASS (neural_misanchor, bit-exact at default); head_tail anomaly ledgered. Pushed 15f93a5.
+- **N8.6 Docs**: ledger L35-L38, README, this log.
+
+### Night-nine queue (priority order)
+1. M-sheet repair: intercalation fronts as regeneration fronts (commitment + inheritance-copy propagation, exposure-gated) — resolve exp55's S1/S2/S4.
+2. M35 ARZ candidate: wound-proximal zone readout (multi-lineage convergence at the face; Mediator 8 analog) — target the atlas's ARZ signature without a free failure knob.
+3. Compiler v2 work items (the exp41 failure structure): latch re-read path for regenerated latches.
+4. DB head_tail protocol re-mapping (exp57-D's diagnosis) + S2R3c novel-prediction deposit.
+5. Overshoot calibration target: can the model's PCG recovery reach the atlas's underdamped class without breaking established signatures? (register, do not tune silently)
+6. ds quest 001 via zai runner when quota opens (watcher v2 still pointed at it).

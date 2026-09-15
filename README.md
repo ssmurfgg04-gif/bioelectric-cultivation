@@ -821,3 +821,49 @@ compile time. Night-seven queue: M34 gene-expression class layer,
 M31-A fragment-size correlation scan, R5 per-substrate eps/mu
 calibration, corpus re-pass with M33 (gjblock_head prediction), quest
 001 via zai runner when quota opens.
+
+## Night eight — the research-grounded wave (2026-09-15)
+
+Research directive first, broadened past Europe PMC to six free sources
+(Europe PMC + PubMed E-utilities + Crossref + arXiv + OpenAlex + Zenodo;
+exp53/53b/53c): the directive's key claims were VERIFIED at abstract
+level, with one citation corrected (the 3h-window paper's PMID was wrong
+— the real record is MED30799071 / DOI 10.1016/j.bpj.2019.01.029). The
+verified anchors: Durant 2019 3h window; Saito 2003 M-L intercalation
+(10.1002/dvdy.10246); the 4D atlas (MED42172041 — ARZ, Mediator 8,
+underdamped PCG, verbatim); the TAS geometric memory model
+(PPRPPR1216581); both 2026 Zenodo deposits (symbol grounding 21459264,
+coupling response geometry 18358611); neurobots (MED41717829) and
+synthetic-construct memory (PPRPPR1219439). Synthesis with
+pre-registered build gates: research/NIGHT_EIGHT_SYNTHESIS.md.
+
+Experiments (all deterministic-gated, suite 64 green):
+- exp54 pulse-timing critical window: 5/5 PASS — the decision medium is
+  the FIRST COMMITMENT (3h pulse at t=0 writes 3.00 mV full-chain;
+  any later start ~0.5 mV and re-absorbed; post-walk exactly 0);
+  fixed-shape geometry confirmed; 3h sufficiency; 6h deadline; size
+  collapse.
+- exp55 graft/lateral 2D sheet: module built (two fields, midline
+  source); isograft + native-axis integrity PASS; induction gates
+  REFUTED with a 3-part diagnosis (D1 artifact found+fixed: the
+  physiological zero-crossing must not fire; D2 pure-diffusion AP
+  cannot HOLD identity — no sheet-level attractor; D3 one-sided edge
+  drive cannot fill the graft). M-sheet repair registered (night nine:
+  inheritance-copy fronts with the exposure gate).
+- exp56 THE READER PERTURBATION TEST: 6/6 PASS — same pattern,
+  different form by the reader alone; the lookup is the decoder
+  (scrambled phi_spec -> MIRROR FORM: tail fully head-like at 1.000);
+  destroyed carrier + reader restores the form; carrier-assistance
+  precision term discovered (~6 mV).
+- exp57 closing batch: TAS cryptic re-cut interval PASS (discordant
+  seed: normal 5.94 -> abnormal 6.42 on re-cut; bit-exact replay 12/12
+  — stable re-challenge ratios); underdamped recovery WEAK (0.296 mV,
+  calibration target); M36 mis-anchored pole 3/3 PASS (egal-1
+  direction: tail becomes fully head-like under blockade);
+  gjblock|head_tail ledgered (model 0.67 vs recorded 0.025, n=2 —
+  protocol-semantics miss).
+
+Night-nine queue: M-sheet inheritance-copy fronts; ARZ wound-domain
+readout (M35, Mediator 8 analog); compiler v2 work items; DB
+head_tail re-mapping; S2R3c novel-prediction deposit; quest 001 when
+quota opens.
