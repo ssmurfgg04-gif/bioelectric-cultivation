@@ -1224,3 +1224,35 @@ Verdict: the Golden Core threshold is CROSSED for supported anatomy
 (restore + two-head compile and verified end-to-end, zero search);
 novel unsupported anatomy is the measured frontier (0.22 mV short,
 repair path registered as compiler v1: hybrid latch+spec rule).
+
+## Level 25 — exp42: Stage 4 opens — the cognitive light cone (junction-carried, dose-monotone rho=1.00; memory is cone-bounded)
+
+Stage 4 (Nascent Soul) deliverable:
+`cultivation/cognitive/lightcone.py` — paired-trajectory instrument
+(same seed => identical noise => divergence IS influence; zero Monte
+Carlo averaging). Single-cell 2h pulse, 24h observation, gap scan.
+
+- **LC-G1 PASS** — the horizon grows with time at gap=1.0 (finite
+  propagation speed, every seed).
+- **LC-G2 PASS** — under blockade the horizon collapses to 1 cell
+  (<25% chain): the collective is cognitively FRAGMENTED when junctions
+  are down — the M25 story at the cognitive level.
+- **LC-G3 PASS (rho = 1.00)** — final horizon monotone in gap_scale
+  (5/3/2/1 cells at gap 1.0/0.5/0.25/0.05): the light cone is
+  junction-scaled, the same monotone shape S2R3 predicts for
+  regeneration and exp40 measured on the channel axis. Three axes, one
+  dose-response shape.
+- **LC-G4 REFUTED as registered, with a power diagnosis, not a memory
+  failure** — theta residue at half-chain is 0.0 because the 2h
+  pulse's cone NEVER REACHES half-chain (5 cells); the residue WITHIN
+  the cone is large (36-42 mV max). Memory is CONE-BOUNDED. The
+  amended reading (supported by the same data): transient forcing
+  casts a local cone; WHOLE-BODY integration requires the sustained
+  (24h) forcing protocol — the light-cone instrument now EXPLAINS the
+  model's own rewrite-window requirement (exp1 T1.3) instead of
+  assuming it. Follow-up registered: 24h-pulse cone measurement.
+
+Verdict: the influence structure of the collective is a cognitive
+object — propagation, junction-scaled integration, cone-bounded memory
+— measured on the same substrate that regenerates (Pezzulo & Levin
+2021's scaling claim, now quantitative in this model).
