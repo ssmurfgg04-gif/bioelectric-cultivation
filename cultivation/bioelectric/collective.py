@@ -176,7 +176,8 @@ class BioElectricCollective:
                arz_readout: float = 0.0,
                arz_width: int = 2,
                neoblast_depleted: float = 0.0,
-               neoblast_coin_p: float | None = None) -> None:
+               neoblast_coin_p: float | None = None,
+               commitment_delay: float = 0.0) -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
@@ -374,8 +375,15 @@ class BioElectricCollective:
         idx = list(np.arange(self.n)[region])
         if not idx:
             return
-        steps_per_cell = max(1, int(round(cell_period / dt)))
         r = float(self.gap_scale)  # junction health at regen onset
+        # M40 COMMITMENT-RATE COUPLING (exp69): the blastema's
+        # commitment rate scales with the readout quality — under
+        # junction blockade (r < 1) each commitment takes longer
+        # (cells do not lock identities they cannot read). Pure rate
+        # law on the inter-commit dynamics; D=0 bit-exact.
+        steps_per_cell = max(1, int(round(
+            cell_period * (1.0 + float(commitment_delay) * (1.0 - r))
+            / dt)))
         wound_center = float(np.mean(self.theta[idx]))
         eff_noise = float(noise) * float(commitment_noise_scale)
         g = float(length_gradient)

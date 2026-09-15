@@ -1,0 +1,34 @@
+{
+ "exp": "exp69_m40_commitment_delay",
+ "rate_law": "cell_period_eff = cell_period * (1 + D*(1-r)); D=0 bit-exact",
+ "constraint_sweep": {
+  "1.0": {
+   "washout_rate": 1.0,
+   "sustained_rate": 1.0,
+   "ok": false
+  },
+  "2.0": {
+   "washout_rate": 0.0,
+   "sustained_rate": 1.0,
+   "ok": true
+  },
+  "4.0": {
+   "washout_rate": 0.0,
+   "sustained_rate": 1.0,
+   "ok": true
+  },
+  "8.0": {
+   "washout_rate": 0.0,
+   "sustained_rate": 1.0,
+   "ok": true
+  }
+ },
+ "adopted_D": 2.0,
+ "criteria": {
+  "M40_G1_bit_exact": true,
+  "M40_G2_constraint_sweep": true,
+  "M40_G3_dose_monotone": true,
+  "M40_G4_m33_rescue_survives": true
+ },
+ "notes": "M40: commitment-rate coupling to coupling state \u2014 the exp66-registered candidate for the washout-pulse refutation. The constraint sweep is the honest adoption instrument: D must simultaneously satisfy the washout record (e329: 0.00 at n=1) AND preserve the calibrated sustained-blockade signature (exp27/31)."
+}

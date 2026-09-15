@@ -1912,3 +1912,25 @@ Night seven, part 3. exp43's registered follow-up:
   destroyer is the LABEL STRUCTURE (community coherence), not degree
   or density. The R5 limit 0.10 is well-placed: it sits inside the
   separation gap on every metric.
+
+## L50 — exp69 M40 COMMITMENT-RATE COUPLING: ADOPTED (4/4)
+- THE MECHANISM: cell_period_eff = cell_period x (1 + D x (1 - r)) —
+  the blastema's commitment rate scales with the readout quality
+  (cells do not lock identities they cannot read). Pure rate law on
+  the inter-commit dynamics; collective.py gains commitment_delay
+  (bit-exact at D=0).
+- M40-G1 PASS: bit-exact at D=0.
+- M40-G2 PASS — THE CONSTRAINT SWEEP (the honest adoption instrument):
+  D in {1, 2, 4, 8} must satisfy the washout record (e329: 0.00 at
+  n=1, bar <= 0.34) WHILE the sustained-blockade tail signature stays
+  within +-0.34 of its D=0 value. D=2.0 is the first to satisfy both
+  (washout 0.00; sustained delta 0.00 — the calibrated arms are
+  UNCHANGED, the rate law acts only where coupling is restored
+  mid-walk).
+- M40-G3 PASS — DOSE MONOTONICITY at D=2: blockade windows {1, 2, 3,
+  sustained} -> {0.00, 0.00, 0.67, 1.00} — matching pub20's own
+  direction (e329 washout 0.00 < e328 delayed 0.19 < sustained).
+- M40-G4 PASS: the M33 head rescue survives at the adopted D (0.00).
+- The exp66 SG-G2 refutation is thereby REPAIRED: the washout arm
+  with the adopted rate law reproduces e329's normal regeneration
+  while every calibrated sustained arm is untouched.
