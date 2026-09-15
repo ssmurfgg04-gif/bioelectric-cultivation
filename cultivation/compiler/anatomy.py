@@ -56,6 +56,18 @@ WINDOW_H = 24.0            # sustained-forcing window (R1)
 PHI_ADOPTED = 0.75         # exp36 adopted mapping (R2)
 GJ_PRECONDITION = 1.0      # exp36/exp39 coupling requirement (R3)
 
+# R5 (substrate-aware partitioning, exp47): a target partition is
+# compilable on a substrate iff its boundary-to-volume ratio (crossing
+# edges / total edges) is <= R5_MAX. Calibration = exp43's measured
+# attractor-existence signature (path 1.8 mV PASS, grid 5.6 mV PASS,
+# random-3-regular 11.2 mV FAIL, scale-free 11.9 mV FAIL): the head|trunk
+# partition's ratios are ~0.010 (path) and ~0.033 (grid) for the passing
+# substrates vs ~0.38 (random-3) for the failing ones — R5_MAX=0.10 sits
+# strictly between with margin on both sides (exp47 R5-G2). Literature:
+# substrate-conditioned pattern support is expected (2026 hybrid framework;
+# robustness as a design property, PMC38505634).
+R5_MAX = 0.10
+
 
 @dataclass
 class Zone:
@@ -73,6 +85,7 @@ class AnatomySpec:
     amputate_plane: str | None = None   # tail|head|trunk|head_tail|None
     cut_f: float = 0.5                  # for crosspiece-style planes
     spec_name: str = "unnamed"
+    somatic_latch: bool = False         # R1'': emit the latch-write step
 
     def validate(self) -> list[str]:
         errs = []
@@ -98,6 +111,7 @@ class InterventionProgram:
     preconditions: dict = field(default_factory=dict)  # R3
     rejected: list[str] = field(default_factory=list)  # R4
     checks: list[dict] = field(default_factory=list)   # verification criteria
+    latch_write: list[dict] = field(default_factory=list)  # R1'' (v1)
 
     def describe(self) -> str:
         if self.rejected:
@@ -145,6 +159,27 @@ def compile_anatomy(spec: AnatomySpec, n: int = 100) -> InterventionProgram:
                           "rationale": "M25/M28: the positional spec read "
                                        "runs through the junction network"}
 
+    # R1'' (compiler v1, exp47): the LATCH-WRITE step. Per Pezzulo/Levin
+    # 2017 the stored bioelectric gradient is what regeneration reads —
+    # so the rewrite protocol must END with the stored gradient SET to
+    # the target (the experimental 'reversal' is a deliberate state
+    # write, not a wait). Emitted for every zone when the spec requests
+    # the somatic latch substrate; execute_and_verify applies it after
+    # the 24h window and before the trigger.
+    prog.latch_write = []
+    if spec.somatic_latch:
+        for z in spec.zones:
+            i0, i1 = int(round(z.f0 * n)), int(round(z.f1 * n))
+            prog.latch_write.append({
+                "zone": z.name, "i0": i0, "i1": max(i1, i0 + 1),
+                "voltage": float(z.voltage),
+            })
+        prog.preconditions["somatic_latch"] = True
+        prog.preconditions["latch_rationale"] = (
+            "R1'': the stored gradient must hold the target — the "
+            "window ends with the latch WRITTEN to the spec (exp47; "
+            "Pezzulo/Levin 2017 cryptic-gradient semantics)")
+
     # verification criteria (what verify() will test)
     for z in spec.zones:
         prog.checks.append({
@@ -160,10 +195,70 @@ def compile_anatomy(spec: AnatomySpec, n: int = 100) -> InterventionProgram:
     return prog
 
 
+def substrate_partition_check(spec: AnatomySpec, adjacency: np.ndarray,
+                              r5_max: float = R5_MAX) -> dict:
+    """R5 (compiler v1, exp47): substrate-aware partitioning.
+
+    The compiler is the SUBSTRATE ADAPTER (exp43): a target anatomy is
+    compilable on a substrate only if the identity partition it defines
+    is COHERENT with that substrate's connectivity — measured as the
+    partition's boundary-to-volume ratio (crossing edges / total edges).
+    exp43's measured attractor-existence signature is the calibration:
+    path and 2D grid support the head|trunk partition; random-3-regular
+    and scale-free do not (errors 11-12 mV vs 2-6 mV).
+
+    Returns an audit-ready dict: ratio, counts, limit, and the compile
+    decision. Called by the compiler when a substrate is declared; a
+    refusal names the measured ratio and the limit (R4 discipline for
+    substrates: refuse what the substrate cannot support).
+    """
+    n = adjacency.shape[0]
+    identity = np.full(n, -1, dtype=int)   # -1 = unzoned (default identity)
+    for k, z in enumerate(spec.zones):
+        i0, i1 = int(round(z.f0 * n)), int(round(z.f1 * n))
+        identity[i0:min(max(i1, i0 + 1), n)] = k
+    total = int(np.sum(np.triu(adjacency, 1)))
+    crossing = 0
+    for i in range(n):
+        for j in np.where(adjacency[i] > 0)[0]:
+            if j > i and identity[i] != identity[j]:
+                crossing += 1
+    ratio = crossing / total if total else 0.0
+    ok = ratio <= r5_max
+    return {
+        "substrate_compilable": bool(ok),
+        "boundary_to_volume": round(ratio, 4),
+        "crossing_edges": crossing, "total_edges": total,
+        "r5_max": r5_max,
+        "rationale": (
+            "R5: the attractor must be coherent with the connectivity "
+            "structure (exp43: mechanism universal, form "
+            "substrate-conditioned)"),
+    } if ok else {
+        "substrate_compilable": bool(ok),
+        "boundary_to_volume": round(ratio, 4),
+        "crossing_edges": crossing, "total_edges": total,
+        "r5_max": r5_max,
+        "rationale": (
+            f"R5 REFUSAL: partition b2v {ratio:.3f} > limit {r5_max} — "
+            "this substrate cannot support the target partition "
+            "(exp43 signature)"),
+    }
+
+
 def execute_and_verify(prog: InterventionProgram, spec: AnatomySpec,
                        seed: int = 1, gap_scale: float | None = None,
-                       collective_cls=None) -> dict:
-    """Run the program in-sim and evaluate its own verification criteria."""
+                       collective_cls=None,
+                       latch_spec_blend: float = 1.0) -> dict:
+    """Run the program in-sim and evaluate its own verification criteria.
+
+    latch_spec_blend (compiler v1, R2''): on the latching substrate the
+    regeneration writes the blended identity into the latch,
+    anchor <- (1-blend)*anchor_inherited + blend*spec[i]; blend=1.0 (the
+    v1 adopted mapping) makes the regen READ the latch that R1'' has
+    just written — the stored gradient carries the spec (Pezzulo/Levin
+    2017). blend=0.0 reproduces the exp41 v0 latch behavior.
+    """
     from cultivation.bioelectric.collective import BioElectricCollective
     from cultivation.bioelectric.morphospace import (
         wildtype_target, head_likeness,
@@ -195,23 +290,33 @@ def execute_and_verify(prog: InterventionProgram, spec: AnatomySpec,
         "head_tail": [TAILP, HEAD],
     }
     regen_meta = None
+    latching = hasattr(c, "theta_anchor")
+    if latching and prog.latch_write:
+        # R1'' LATCH-WRITE: the window ends with the stored gradient SET
+        # to the spec (the v0 latch only chased the clamps partway —
+        # exp41's CP-G3' failure signature, zone means ~10 mV short).
+        for lw in prog.latch_write:
+            c.theta_anchor[lw["i0"]:lw["i1"]] = lw["voltage"]
     if spec.amputate_plane:
         phi = prog.regen["phi_readout"]
         # R1' execution semantics: on the latching substrate the regen
-        # uses the substrate's own anchor-inheriting regrow (the latch
-        # carries positional memory; the phi readout is the plain-
-        # substrate path).
-        latching = hasattr(c, "theta_anchor")
+        # uses the substrate's own anchor-inheriting regrow; v1 (R2''):
+        # the regen READS the latch that R1'' has written, blended with
+        # the spec at latch_spec_blend (1.0 = the stored gradient IS the
+        # spec — the 2017 cryptic-gradient semantics).
         for plane in planes[spec.amputate_plane]:
             c.amputate(plane, wound_voltage=-30.0, blastema_theta=-40.0)
             if latching:
-                c.regrow(plane, cell_period=0.8, dt=0.1, noise=0.6)
+                c.regrow(plane, cell_period=0.8, dt=0.1, noise=0.6,
+                         spec=target, latch_spec_blend=latch_spec_blend)
             else:
                 c.regrow(plane, cell_period=0.8, dt=0.1, noise=0.6,
                          direction="both" if plane is TRUNK else "forward",
                          phi_readout=phi, spec_reanchor_p=1.0)
             regen_meta = {"plane": str(plane), "phi": phi,
-                          "substrate": "latching" if latching else "plain"}
+                          "substrate": "latching" if latching else "plain",
+                          "latch_spec_blend": latch_spec_blend
+                          if latching else None}
     c.run(15, dt=0.1)   # settle after regen (exp29 protocol tail)
 
     results = {"err_vs_spec_target": c.pattern_error(target),

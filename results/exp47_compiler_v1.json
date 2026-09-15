@@ -1,0 +1,474 @@
+{
+ "exp": "exp47_compiler_v1",
+ "stage": "3 \u2014 Golden Core (anatomical compiler v1)",
+ "compiler": "cultivation/compiler/anatomy.py",
+ "rules_v1": {
+  "R1''": "latch-write: window ends with latch := spec (every zone, latching substrate)",
+  "R2''": "hybrid regen read: anchor <- (1-blend)*inherited + blend*spec[i]; v1 adopted blend=1.0",
+  "R5": "substrate-aware partitioning: b2v <= 0.10 calibrated to exp43's measured signature"
+ },
+ "literature_basis": [
+  "Pezzulo/Levin 2017 (PMC28538159): cryptic phenotype stored via global resting potential; gradient is what regen reads",
+  "exp43 (L26): mechanism universal, form substrate-conditioned"
+ ],
+ "runs": {
+  "CV1_G1_ectopic_latch_blend1": [
+   {
+    "err_vs_spec_target": 2.6813195214733887,
+    "final_mean_vmem": -38.09869568349415,
+    "zone head_native holds -20.0 mV": {
+     "zone_mean": -20.859269749898107,
+     "ok": true
+    },
+    "zone head_ectopic_midtrunk holds -20.0 mV": {
+     "zone_mean": -22.424986424953183,
+     "ok": true
+    },
+    "zone trunk_a holds -50.0 mV": {
+     "zone_mean": -48.441985759863954,
+     "ok": true
+    },
+    "zone trunk_b holds -50.0 mV": {
+     "zone_mean": -49.579332825759636,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 2.6813195214733887,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "latching",
+     "latch_spec_blend": 1.0
+    }
+   },
+   {
+    "err_vs_spec_target": 2.5652850409576677,
+    "final_mean_vmem": -38.135118102630194,
+    "zone head_native holds -20.0 mV": {
+     "zone_mean": -20.86276298399037,
+     "ok": true
+    },
+    "zone head_ectopic_midtrunk holds -20.0 mV": {
+     "zone_mean": -22.163807620689298,
+     "ok": true
+    },
+    "zone trunk_a holds -50.0 mV": {
+     "zone_mean": -48.630631545859714,
+     "ok": true
+    },
+    "zone trunk_b holds -50.0 mV": {
+     "zone_mean": -49.67182476089316,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 2.5652850409576677,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "latching",
+     "latch_spec_blend": 1.0
+    }
+   },
+   {
+    "err_vs_spec_target": 2.592488177427209,
+    "final_mean_vmem": -38.07985283759696,
+    "zone head_native holds -20.0 mV": {
+     "zone_mean": -20.778643883028504,
+     "ok": true
+    },
+    "zone head_ectopic_midtrunk holds -20.0 mV": {
+     "zone_mean": -22.242972064355175,
+     "ok": true
+    },
+    "zone trunk_a holds -50.0 mV": {
+     "zone_mean": -48.64794922339799,
+     "ok": true
+    },
+    "zone trunk_b holds -50.0 mV": {
+     "zone_mean": -49.547890531267385,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 2.592488177427209,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "latching",
+     "latch_spec_blend": 1.0
+    }
+   }
+  ],
+  "CV1_G2_ectopic_latch_blend0": [
+   {
+    "err_vs_spec_target": 2.6863922096638104,
+    "final_mean_vmem": -38.03765932685348,
+    "zone head_native holds -20.0 mV": {
+     "zone_mean": -20.859269749898107,
+     "ok": true
+    },
+    "zone head_ectopic_midtrunk holds -20.0 mV": {
+     "zone_mean": -22.424986424953183,
+     "ok": true
+    },
+    "zone trunk_a holds -50.0 mV": {
+     "zone_mean": -48.441985759863954,
+     "ok": true
+    },
+    "zone trunk_b holds -50.0 mV": {
+     "zone_mean": -49.42674193415795,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 2.6863922096638104,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "latching",
+     "latch_spec_blend": 0.0
+    }
+   },
+   {
+    "err_vs_spec_target": 2.6129844055593328,
+    "final_mean_vmem": -38.04509115478656,
+    "zone head_native holds -20.0 mV": {
+     "zone_mean": -20.86276298399037,
+     "ok": true
+    },
+    "zone head_ectopic_midtrunk holds -20.0 mV": {
+     "zone_mean": -22.163807620689298,
+     "ok": true
+    },
+    "zone trunk_a holds -50.0 mV": {
+     "zone_mean": -48.630631545859714,
+     "ok": true
+    },
+    "zone trunk_b holds -50.0 mV": {
+     "zone_mean": -49.44675739128409,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 2.6129844055593328,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "latching",
+     "latch_spec_blend": 0.0
+    }
+   },
+   {
+    "err_vs_spec_target": 3.176333519331909,
+    "final_mean_vmem": -37.42262427712777,
+    "zone head_native holds -20.0 mV": {
+     "zone_mean": -20.778643883028504,
+     "ok": true
+    },
+    "zone head_ectopic_midtrunk holds -20.0 mV": {
+     "zone_mean": -22.242972064355175,
+     "ok": true
+    },
+    "zone trunk_a holds -50.0 mV": {
+     "zone_mean": -48.64794922339799,
+     "ok": true
+    },
+    "zone trunk_b holds -50.0 mV": {
+     "zone_mean": -47.904819130094445,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 3.176333519331909,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "latching",
+     "latch_spec_blend": 0.0
+    }
+   }
+  ],
+  "CV1_G3_restore": [
+   {
+    "err_vs_spec_target": 3.0253298099793127,
+    "final_mean_vmem": -43.07982262396314,
+    "zone head holds -20.0 mV": {
+     "zone_mean": -24.595578899265853,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -49.241237198862244,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 3.0253298099793127,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain",
+     "latch_spec_blend": null
+    }
+   },
+   {
+    "err_vs_spec_target": 3.1002696328443062,
+    "final_mean_vmem": -42.9931781601272,
+    "zone head holds -20.0 mV": {
+     "zone_mean": -24.600376869923583,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -49.12411192352841,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 3.1002696328443062,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain",
+     "latch_spec_blend": null
+    }
+   },
+   {
+    "err_vs_spec_target": 2.8284734407372167,
+    "final_mean_vmem": -43.20173472360661,
+    "zone head holds -20.0 mV": {
+     "zone_mean": -24.508027553948033,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -49.43297044682614,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 2.8284734407372167,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain",
+     "latch_spec_blend": null
+    }
+   }
+  ],
+  "CV1_G3_twohead": [
+   {
+    "err_vs_spec_target": 4.105122503730674,
+    "final_mean_vmem": -37.101935276228915,
+    "zone head_anterior holds -20.0 mV": {
+     "zone_mean": -24.595578899265853,
+     "ok": true
+    },
+    "zone head_posterior holds -20.0 mV": {
+     "zone_mean": -25.285975777345325,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -49.263093214152235,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 4.105122503730674,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain",
+     "latch_spec_blend": null
+    }
+   },
+   {
+    "err_vs_spec_target": 4.001491514152153,
+    "final_mean_vmem": -37.015290812392976,
+    "zone head_anterior holds -20.0 mV": {
+     "zone_mean": -24.600376869923583,
+     "ok": true
+    },
+    "zone head_posterior holds -20.0 mV": {
+     "zone_mean": -24.79121209946732,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -49.334787140090505,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 4.001491514152153,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain",
+     "latch_spec_blend": null
+    }
+   },
+   {
+    "err_vs_spec_target": 4.278184743767297,
+    "final_mean_vmem": -37.223847375872396,
+    "zone head_anterior holds -20.0 mV": {
+     "zone_mean": -24.508027553948033,
+     "ok": true
+    },
+    "zone head_posterior holds -20.0 mV": {
+     "zone_mean": -25.792428236986645,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -49.297466856277445,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 4.278184743767297,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain",
+     "latch_spec_blend": null
+    }
+   }
+  ],
+  "CV1_G4_blocked": [
+   {
+    "err_vs_spec_target": 6.834555534945102,
+    "final_mean_vmem": -41.79012630058353,
+    "zone head holds -20.0 mV": {
+     "zone_mean": -23.968775590959254,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -47.73057653712495,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 6.834555534945102,
+     "ok": false
+    },
+    "program_verified": false,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain",
+     "latch_spec_blend": null
+    }
+   },
+   {
+    "err_vs_spec_target": 6.717523227065522,
+    "final_mean_vmem": -42.65732899250832,
+    "zone head holds -20.0 mV": {
+     "zone_mean": -23.973591411292535,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -48.88524151958025,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 6.717523227065522,
+     "ok": false
+    },
+    "program_verified": false,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain",
+     "latch_spec_blend": null
+    }
+   },
+   {
+    "err_vs_spec_target": 10.209785360144167,
+    "final_mean_vmem": -40.180392144317715,
+    "zone head holds -20.0 mV": {
+     "zone_mean": -23.871597138759544,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -45.61665714617044,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 10.209785360144167,
+     "ok": false
+    },
+    "program_verified": false,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain",
+     "latch_spec_blend": null
+    }
+   }
+  ]
+ },
+ "r5_checks": {
+  "path": {
+   "substrate_compilable": true,
+   "boundary_to_volume": 0.0101,
+   "crossing_edges": 1,
+   "total_edges": 99,
+   "r5_max": 0.1,
+   "rationale": "R5: the attractor must be coherent with the connectivity structure (exp43: mechanism universal, form substrate-conditioned)"
+  },
+  "grid_2d": {
+   "substrate_compilable": true,
+   "boundary_to_volume": 0.0611,
+   "crossing_edges": 11,
+   "total_edges": 180,
+   "r5_max": 0.1,
+   "rationale": "R5: the attractor must be coherent with the connectivity structure (exp43: mechanism universal, form substrate-conditioned)"
+  },
+  "random_regular_3": {
+   "substrate_compilable": false,
+   "boundary_to_volume": 0.3533,
+   "crossing_edges": 53,
+   "total_edges": 150,
+   "r5_max": 0.1,
+   "rationale": "R5 REFUSAL: partition b2v 0.353 > limit 0.1 \u2014 this substrate cannot support the target partition (exp43 signature)"
+  },
+  "scale_free": {
+   "substrate_compilable": false,
+   "boundary_to_volume": 0.4873,
+   "crossing_edges": 96,
+   "total_edges": 197,
+   "r5_max": 0.1,
+   "rationale": "R5 REFUSAL: partition b2v 0.487 > limit 0.1 \u2014 this substrate cannot support the target partition (exp43 signature)"
+  }
+ },
+ "criteria": {
+  "CV1_G1_cp_g3p_resolved": true,
+  "CV1_G2_rule_decomposition": true,
+  "CV1_G3_no_regression": true,
+  "CV1_G4_safety_coupling_unchanged": true,
+  "R5_G1_signature_reproduction": true,
+  "R5_G2_calibration_margin": true
+ },
+ "notes": "CP-G3' v0 failure decoded: the latch chased the clamps partway in 24h (zone means ~10 mV short) \u2014 the window ended with the stored gradient HALF-WRITTEN. v1 fixes the semantics per the 2017 literature: the protocol ENDS with the gradient SET (R1''), and the regen reads the written latch blended with the spec (R2''). R5 makes the compiler the substrate adapter exp43 called for: partition coherence with connectivity is a compile-time check with an audit-ready refusal reason."
+}

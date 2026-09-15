@@ -119,21 +119,35 @@ class LatchingCollective(BioElectricCollective):
         self.theta_anchor[region] = blastema_theta
 
     def regrow(self, region: slice, cell_period: float = 0.8, dt: float = 0.1,
-               noise: float = 0.6) -> None:
+               noise: float = 0.6, spec: np.ndarray | None = None,
+               latch_spec_blend: float = 0.0) -> None:
         """Regrowth inherits BOTH theta and the anchor from the boundary
-        cell — positional memory is carried by surviving tissue."""
+        cell — positional memory is carried by surviving tissue.
+
+        v1 hybrid rule (R2'', exp47): when `spec` is given and
+        0 < latch_spec_blend <= 1, the committed cell's latch is written
+        as anchor <- (1-blend)*anchor_inherited + blend*spec[i] — the
+        regeneration READS the latch that R1'' has written and carries
+        the spec forward IN the stored gradient (Pezzulo/Levin 2017:
+        the stored bioelectric gradient is what regeneration reads).
+        blend=0.0 (default) is the exp41 v0 behavior (bit-exact)."""
         idx = list(np.arange(self.n)[region])
         if not idx:
             return
         boundary = idx[0] - 1
         src = boundary if boundary >= 0 else idx[0]
         steps_per_cell = max(1, int(round(cell_period / dt)))
+        blend = float(latch_spec_blend)
         for i in idx:
             for _ in range(steps_per_cell):
                 self.step(dt)
             self.theta[i] = self.theta[src] + self.rng.normal(0.0, noise)
-            self.theta_anchor[i] = self.theta_anchor[src] \
-                + self.rng.normal(0.0, noise)
+            anchor_new = self.theta_anchor[src] + self.rng.normal(0.0, noise)
+            if spec is not None and 0.0 < blend <= 1.0 \
+                    and 0 <= i < len(spec):
+                anchor_new = (1.0 - blend) * anchor_new \
+                    + blend * float(spec[i])
+            self.theta_anchor[i] = anchor_new
             self.V[i] = self.theta[i]
             src = i
 
