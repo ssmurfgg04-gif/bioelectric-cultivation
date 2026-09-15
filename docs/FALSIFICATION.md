@@ -1673,3 +1673,34 @@ Night seven, part 3. exp43's registered follow-up:
   gradient resolvable). The exact pooled sim-vs-record table deposited
   per family (control 0.321/0.0 record_hot; generic 0.863/0.655
   record_hot; neoblast 0.799/1.0 sim_hot; wnt_pos 0.822/1.0 sim_hot).
+
+## L42 — exp61 COMPILER V2 (Stage-3 90% push)
+- CP2-G1 PASS — ARBITRARY LAYOUTS: all 4 specs (v1 third-head re-run,
+  dual novel band at -30 — a cell STATE absent from WT, ladder
+  segmentation with 3 novel rungs, custom 4-zone mixed identity)
+  verify 3/3 seeds each, ZERO search, 1.4 s wall for the whole suite
+  (errs 2.4-3.5 mV, bar 6.0). The compiler is no longer a two-shape
+  demo: it compiles any in-repertoire zone layout.
+- CP2-G2 PASS — MINIMUM WINDOW: the R1'' latch-write (state write vs
+  chase) cuts the minimum rewrite window 24 h -> 3 h (8x): ALL specs
+  verify at every window down to 3 h. The 2017 cryptic-gradient
+  semantics pays its rent: the protocol's cost is the state write,
+  not the sustained chase.
+- CP2-G3 PASS — SCHEDULE EMISSION: every compiled program emits a
+  schema-valid lab-executable schedule (step/agent/action/timing/
+  concentration-class; classes anchored to exp40's measured dose grid
+  and the record's octanol-class baths — no invented numbers).
+- CP2-G4 PASS — 100-GENERATION STABILITY (the night-nine queue's
+  exp41 latch RE-READ path): 100 re-amputation generations on the
+  latching substrate, ZERO anchor drift (slope 0.0, 6/6 seed-spec
+  runs, cycles_to_failure None everywhere). The answer to the exp41
+  failure structure: the re-written latch does NOT compound drift —
+  the boundary anchor is FROZEN below the latch deadzone and the
+  regen copies it forward bit-exactly each generation. Stability is
+  structural, not tuned.
+- First-run correction recorded honestly: the v2 specs ran once on the
+  plain (non-latching) substrate because execute_and_verify defaulted
+  collective_cls=None — the 4.35 mV third-head "failure" was the
+  pre-R1'' plain-substrate semantics reproduced, not a v2 result.
+  Corrected to LatchingCollective (exp47's own usage) before any
+  verdict was drawn.

@@ -112,6 +112,7 @@ class InterventionProgram:
     rejected: list[str] = field(default_factory=list)  # R4
     checks: list[dict] = field(default_factory=list)   # verification criteria
     latch_write: list[dict] = field(default_factory=list)  # R1'' (v1)
+    schedule: list[dict] = field(default_factory=list)  # R6 (v2): lab dosing schedule
 
     def describe(self) -> str:
         if self.rejected:
@@ -128,6 +129,10 @@ class InterventionProgram:
         lines.append(
             f"  3. PRECONDITION: gap junctions >= {self.preconditions.get('gap_scale')} "
             f"(junction-carried spec read)")
+        for st in self.schedule:
+            lines.append(
+                f"  SCHEDULE {st['step']}. {st['agent']}: {st['action']}"
+                f" ({st['timing']}; {st['concentration_class']})")
         for k in self.checks:
             lines.append(f"  VERIFY: {k['what']} ({k['criterion']})")
         return "\n".join(lines)
@@ -192,6 +197,43 @@ def compile_anatomy(spec: AnatomySpec, n: int = 100) -> InterventionProgram:
             "what": "regenerated tissue matches the spec (pattern error)",
             "criterion": "wt_pattern_error vs spec-derived target < 6.0 mV",
         })
+
+    # R6 (compiler v2): the LAB-EXECUTABLE schedule — step-by-step
+    # agents/timing/concentration CLASSES a real lab could translate.
+    # Concentrations are emitted as CLASSES anchored to measured dose
+    # axes (exp40's (cns, diffusion) grid; the record's octanol-class
+    # baths), not invented numbers.
+    step = 0
+    if spec.somatic_latch:
+        step += 1
+        prog.schedule.append({
+            "step": step, "agent": "Vmem clamp (ion-channel modulation)",
+            "action": "hold spec zones at their target voltages",
+            "timing": f"0-{WINDOW_H:.0f} h sustained",
+            "concentration_class": "exp40 grid (cns,diffusion) per |delta| > 5 mV",
+        })
+        step += 1
+        prog.schedule.append({
+            "step": step, "agent": "somatic latch write (window end)",
+            "action": "set stored gradient := spec in every zone",
+            "timing": f"at {WINDOW_H:.0f} h, before the trigger",
+            "concentration_class": "state write (no agent)",
+        })
+    step += 1
+    prog.schedule.append({
+        "step": step, "agent": "GJ health precondition",
+        "action": "verify gap-junction conductance >= 1.0 (M25/M28)",
+        "timing": "immediately before the trigger",
+        "concentration_class": "octanol-free; heptanol-class bath ONLY if blockade arm",
+    })
+    step += 1
+    if spec.amputate_plane:
+        prog.schedule.append({
+            "step": step, "agent": "trigger",
+            "action": f"amputate {spec.amputate_plane} plane; regrow reads the spec",
+            "timing": f"t = {WINDOW_H:.0f} h",
+            "concentration_class": "none (mechanical)",
+        })
     return prog
 
 
@@ -249,7 +291,8 @@ def substrate_partition_check(spec: AnatomySpec, adjacency: np.ndarray,
 def execute_and_verify(prog: InterventionProgram, spec: AnatomySpec,
                        seed: int = 1, gap_scale: float | None = None,
                        collective_cls=None,
-                       latch_spec_blend: float = 1.0) -> dict:
+                       latch_spec_blend: float = 1.0,
+                       window_h: float | None = None) -> dict:
     """Run the program in-sim and evaluate its own verification criteria.
 
     latch_spec_blend (compiler v1, R2''): on the latching substrate the
@@ -258,6 +301,11 @@ def execute_and_verify(prog: InterventionProgram, spec: AnatomySpec,
     v1 adopted mapping) makes the regen READ the latch that R1'' has
     just written — the stored gradient carries the spec (Pezzulo/Levin
     2017). blend=0.0 reproduces the exp41 v0 latch behavior.
+
+    window_h (compiler v2): the rewrite-window duration override for
+    the MINIMUM-STEPS study; None keeps the v1 24 h window (bit-exact).
+    The clamp entries state the compile-time window; the override only
+    shortens how long the clamps actually hold before latch+trigger.
     """
     from cultivation.bioelectric.collective import BioElectricCollective
     from cultivation.bioelectric.morphospace import (
@@ -278,9 +326,10 @@ def execute_and_verify(prog: InterventionProgram, spec: AnatomySpec,
         target[i0:i1] = z.voltage
 
     # R1: sustained clamps through the rewrite window
+    win = WINDOW_H if window_h is None else float(window_h)
     for cl in prog.clamps:
         c.clamp(slice(cl["i0"], cl["i1"]), cl["voltage"])
-    c.run(WINDOW_H, dt=0.1)
+    c.run(win, dt=0.1)
     c.release_clamps()
 
     # R2: trigger the spec-reading regrow
@@ -338,3 +387,85 @@ def execute_and_verify(prog: InterventionProgram, spec: AnatomySpec,
     results["program_verified"] = bool(ok_all and not prog.rejected)
     results["regen"] = regen_meta
     return results
+
+
+# ------------------------------------------------------------------ v2
+def recut_stability(prog: InterventionProgram, spec: AnatomySpec,
+                    seed: int = 1, generations: int = 100,
+                    settle_h: float = 15.0) -> dict:
+    """CP2 (compiler v2) — THE LATCH RE-READ PATH ACROSS GENERATIONS.
+
+    After a verified program, repeatedly re-amputate the SAME plane and
+    regrow with the latch-spec read (the v1 R2'' semantics). Each
+    generation's regen REWRITES the latch inside the regen zone from the
+    boundary anchor — the exp41-failure-structure question is whether
+    that re-written latch HOLDS the spec (the stored gradient survives
+    its own re-reads) or compounds drift.
+
+    Returns the per-generation pattern error vs the spec target, the
+    anchor drift in the regen zone, and the cycles-to-failure (err
+    crossing 6.0 mV; None if the full horizon holds).
+    """
+    from cultivation.bioelectric.morpho_engineering import (
+        LatchingCollective,
+    )
+    from experiments.exp32_m26_repairs import HEAD, TAILP, TRUNK
+    from cultivation.bioelectric.morphospace import wildtype_target
+
+    c = LatchingCollective(n=100, seed=seed)
+    c.gap_scale = float(prog.preconditions.get("gap_scale", 1.0))
+    c.G = c.G0 * c.gap_scale
+    c.deg = c.G.sum(axis=1)
+
+    target = wildtype_target(100)
+    for z in spec.zones:
+        i0 = int(round(z.f0 * 100))
+        i1 = max(int(round(z.f1 * 100)), i0 + 1)
+        target[i0:i1] = z.voltage
+
+    # run the program once (verify semantics)
+    for cl in prog.clamps:
+        c.clamp(slice(cl["i0"], cl["i1"]), cl["voltage"])
+    c.run(WINDOW_H, dt=0.1)
+    c.release_clamps()
+    if prog.latch_write:
+        for lw in prog.latch_write:
+            c.theta_anchor[lw["i0"]:lw["i1"]] = lw["voltage"]
+    planes = {"tail": [TAILP], "head": [HEAD], "trunk": [TRUNK],
+              "head_tail": [TAILP, HEAD]}
+    if spec.amputate_plane:
+        for plane in planes[spec.amputate_plane]:
+            c.amputate(plane, wound_voltage=-30.0, blastema_theta=-40.0)
+            c.regrow(plane, cell_period=0.8, dt=0.1, noise=0.6,
+                     spec=target, latch_spec_blend=1.0)
+    c.run(settle_h, dt=0.1)
+
+    errs, anchor_drift = [float(c.pattern_error(target))], []
+    regen_zone = planes[spec.amputate_plane or "tail"][0]
+    cycles_to_failure = None
+    for gen in range(1, generations + 1):
+        for plane in planes[spec.amputate_plane or "tail"]:
+            c.amputate(plane, wound_voltage=-30.0, blastema_theta=-40.0)
+            c.regrow(plane, cell_period=0.8, dt=0.1, noise=0.6,
+                     spec=target, latch_spec_blend=1.0)
+        c.run(settle_h, dt=0.1)
+        e = float(c.pattern_error(target))
+        ad = float(np.mean(np.abs(
+            c.theta_anchor[regen_zone] - target[regen_zone])))
+        errs.append(e)
+        anchor_drift.append(ad)
+        if cycles_to_failure is None and e >= 6.0:
+            cycles_to_failure = gen
+    return {
+        "seed": seed,
+        "err_generation_0": errs[0],
+        "err_final": errs[-1],
+        "max_err": max(errs),
+        "anchor_drift_final": anchor_drift[-1] if anchor_drift else None,
+        "anchor_drift_slope": (float(np.polyfit(
+            np.arange(1, len(anchor_drift) + 1), anchor_drift, 1)[0])
+            if len(anchor_drift) > 2 else None),
+        "cycles_to_failure": cycles_to_failure,
+        "errs_head": [round(e, 3) for e in errs[:10]],
+        "errs_tail": [round(e, 3) for e in errs[-5:]],
+    }

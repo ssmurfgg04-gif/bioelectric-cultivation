@@ -1,0 +1,109 @@
+{
+ "exp": "exp61_compiler_v2",
+ "cp2_g1_layouts": {
+  "v1_third_head": {
+   "errs": [
+    2.68,
+    2.57,
+    2.59
+   ],
+   "verified_all_seeds": true
+  },
+  "novel_dual_band": {
+   "errs": [
+    2.43,
+    2.33,
+    2.38
+   ],
+   "verified_all_seeds": true
+  },
+  "novel_ladder": {
+   "errs": [
+    3.46,
+    3.49,
+    3.48
+   ],
+   "verified_all_seeds": true
+  },
+  "novel_custom4": {
+   "errs": [
+    3.31,
+    3.22,
+    3.34
+   ],
+   "verified_all_seeds": true
+  }
+ },
+ "cp2_g1_wall_seconds": 1.4,
+ "cp2_g2_window_scan": {
+  "24.0": {
+   "v1_third_head": true,
+   "novel_dual_band": true,
+   "novel_ladder": true,
+   "novel_custom4": true
+  },
+  "12.0": {
+   "v1_third_head": true,
+   "novel_dual_band": true,
+   "novel_ladder": true,
+   "novel_custom4": true
+  },
+  "6.0": {
+   "v1_third_head": true,
+   "novel_dual_band": true,
+   "novel_ladder": true,
+   "novel_custom4": true
+  },
+  "3.0": {
+   "v1_third_head": true,
+   "novel_dual_band": true,
+   "novel_ladder": true,
+   "novel_custom4": true
+  }
+ },
+ "cp2_g2_min_window_h": 3.0,
+ "cp2_g3_schedule_ok": true,
+ "cp2_g4_stability": {
+  "v1_third_head": [
+   {
+    "cycles_to_failure": null,
+    "err_final": 2.68,
+    "anchor_drift_slope": 0.0
+   },
+   {
+    "cycles_to_failure": null,
+    "err_final": 2.74,
+    "anchor_drift_slope": 0.0
+   },
+   {
+    "cycles_to_failure": null,
+    "err_final": 2.66,
+    "anchor_drift_slope": 0.0
+   }
+  ],
+  "novel_dual_band": [
+   {
+    "cycles_to_failure": null,
+    "err_final": 2.45,
+    "anchor_drift_slope": 0.0
+   },
+   {
+    "cycles_to_failure": null,
+    "err_final": 2.48,
+    "anchor_drift_slope": 0.0
+   },
+   {
+    "cycles_to_failure": null,
+    "err_final": 2.48,
+    "anchor_drift_slope": 0.0
+   }
+  ]
+ },
+ "criteria": {
+  "CP2_G1_arbitrary_layouts": true,
+  "CP2_G2_minimum_window": true,
+  "CP2_G3_schedule_emission": true,
+  "CP2_G4_100_generation_stability": true
+ },
+ "notes": "Compiler v2: R6 schedule emission (lab-executable agents/timing/concentration CLASSES anchored to exp40's measured dose grid and the record's octanol-class baths \u2014 no invented numbers), window override for the minimum-steps study, and the recut_stability instrument measuring the latch RE-READ path (each generation's regen rewrites the latch from the boundary anchor; the drift slope is the exp41-failure-structure answer)."
+}
