@@ -1,0 +1,71 @@
+{
+ "exp": "exp30_cem_continuation",
+ "baseline": "disc28 (exp28), user-suggested preset",
+ "protocol": {
+  "iters_total": 20,
+  "continued_from": "exp28_cem.ckpt",
+  "pop": 24,
+  "elite_frac": 0.25,
+  "seed": 27,
+  "search_seeds": [
+   41,
+   42
+  ]
+ },
+ "disc28": {
+  "policy": {
+   "write_age": 20.0,
+   "start_age": 25.75,
+   "period": 2.75,
+   "budget": 6,
+   "k_anchor": 0.12848544781639437,
+   "boost_pv": 0.039697539629462396,
+   "boost_pu": 0.7267642902919527,
+   "boost_f": 1.572455408132535,
+   "h_proc": 3e-05
+  },
+  "search_hold": 0.7179664814814815,
+  "heldout_hold": 0.6828005787037036,
+  "heldout_by_seed": [
+   0.6626572222222222,
+   0.6975084722222222,
+   0.6882360416666666
+  ],
+  "median": 79.70833333333333
+ },
+ "continued_best": {
+  "policy": {
+   "write_age": 19.0,
+   "start_age": 23.75,
+   "period": 2.25,
+   "budget": 5,
+   "k_anchor": 0.10458935465822969,
+   "boost_pv": 0.01497329255416327,
+   "boost_pu": 0.35522987215869023,
+   "boost_f": 1.4454986712949145,
+   "h_proc": 3e-05
+  },
+  "search_fitness": -0.740380987654321,
+  "search_hold": 0.740380987654321,
+  "heldout_hold": 0.6906804861111112,
+  "heldout_by_seed": [
+   0.7145421527777778,
+   0.7097559027777778,
+   0.6477434027777778
+  ],
+  "median": 81.625
+ },
+ "heldout_delta": 0.007879907407407627,
+ "criteria": {
+  "X1_continuation_pays": false,
+  "X2_search_improvement": true,
+  "X3_schedule_divergence": false
+ },
+ "schedule_shifts": {
+  "write_age": 0.05,
+  "start_age": 0.07766990291262135,
+  "period": 0.18181818181818182,
+  "budget": 0.16666666666666666
+ },
+ "notes": "Exact checkpoint resume (mu/sigma/best/rng state). Held-out world identical to exp28/exp25 for comparability. Search-side improvement without held-out improvement = search-seed overfit, recorded."
+}

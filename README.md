@@ -467,6 +467,43 @@ Benchmark discipline sealed into the ledger: evaluating policies in an
 easier world than deployment under-estimates them by enough that
 re-searching in the deployment world pays for itself.
 
+## M25: exp29 + exp30 — night one: the record repairs the model, the search is certified exhausted
+
+The first full overnight run of the DeepScientist quest
+(docs/QUEST_STAGE2_VALIDATION.md), two threads, executed end-to-end.
+
+Thread 1 — **exp29, the Stage 2 repair.** exp27's refutation became a repair
+work order: PlanformDB says innexin loss must corrupt regeneration, but the
+model regenerated NORMALLY with junctions blocked (2.87 mV) — regeneration
+was junction-blind (cell-autonomous pattern extension, un-gated theta
+diffusion). Two additive changes in `collective.py`, both bit-exact at full
+coupling: M1 blastema readout through the junction network (under blockade a
+committing cell falls back to the wound default plus a broad fate-axis
+guess, spread 18 mV); M2 pattern propagation is junction-carried (theta
+diffusion scales with gap_scale). Full test suite green before and after;
+cutting arm bit-exact (3.16 == 3.16). exp27 re-run UNCHANGED: **S2P1 flips**
+(innexin_sustained 2.87 -> 6.03 mV) with all controls intact — and the
+repair emits two NEW testable predictions: monotone dose-response of
+regeneration corruption under partial knockdown (3.28 / 3.93 / 4.54 / 6.03
+mV at gap 1.0 / 0.5 / 0.25 / 0.05) and endogenous graded penetrance (1/3
+seeds abnormal at full blockade) — the mixed outcomes the record actually
+shows. Lesson sealed into the ledger: a refutation against published data
+is a model-repair work order, not an embarrassment.
+
+Thread 2 — **exp30, the CEM continuation.** exp28's checkpoint resumed
+EXACTLY (mu/sigma/best/rng state) for 10 more iterations at protocol.
+Search-world hold improved 0.7180 -> 0.7404, but held-out the continued
+best is 0.6907 vs disc28's 0.6828 (+0.0079, under the +0.02 bar): **X1
+REFUTED — disc28 is certified at (or within 0.02 of) the competitive
+optimum**, and the search-side gain was mostly search-seed overfit. The
++0.008 and median 79.7 -> 81.6yr are kept (free, from the preserved
+checkpoint); the re-search question is closed at this protocol. Harness
+verified end-to-end: disc28 reproduces exp28's published 0.683 exactly
+through the resumed path.
+
+The night log starts the memory-carryover wire: per-run lessons for night
+two live in docs/NIGHT_LOG.md, not in any chat.
+
 ## Research dossier
 
 `research/` contains the verified literature (bioelectric morphogenesis, IIT, aging theory, Chinese research landscape) with DOIs verified against Crossref/PubMed responses, plus real C. elegans connectome data (OpenWorm; Cook et al. 2019).

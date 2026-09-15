@@ -1,0 +1,90 @@
+{
+ "exp": "exp29_stage2_repair",
+ "before_1f15966": {
+  "cutting": {
+   "err": 3.16,
+   "pred_abn": 0.0
+  },
+  "innexin_sustained": {
+   "err": 2.87,
+   "pred_abn": 0.0
+  },
+  "gjblock_restored": {
+   "err": 3.25,
+   "pred_abn": 0.0
+  },
+  "criteria": {
+   "S2P1": false,
+   "S2P2": true,
+   "S2P3": 0.5,
+   "S2C": true
+  }
+ },
+ "after": {
+  "cutting": {
+   "err_mean": 3.1616261623103292,
+   "err_se": 0.11324665325390935,
+   "pred_abn_rate": 0.0,
+   "per_seed": [
+    3.173697401712162,
+    2.959720362887968,
+    3.3514607223308586
+   ]
+  },
+  "innexin_sustained": {
+   "err_mean": 6.03403719734531,
+   "err_se": 0.18408724802996645,
+   "pred_abn_rate": 0.3333333333333333,
+   "per_seed": [
+    5.956566371024469,
+    6.384482488378753,
+    5.761062732632711
+   ]
+  },
+  "gjblock_restored": {
+   "err_mean": 3.1956169881475236,
+   "err_se": 0.08108555703594864,
+   "pred_abn_rate": 0.0,
+   "per_seed": [
+    3.35763001516023,
+    3.120810231743287,
+    3.108410717539053
+   ]
+  }
+ },
+ "dose_response": {
+  "1.0": {
+   "err_mean": 3.2785618060696464,
+   "err_se": 0.029479158054017515,
+   "pred_abn_rate": 0.0
+  },
+  "0.5": {
+   "err_mean": 3.925953815245513,
+   "err_se": 0.024588039084997588,
+   "pred_abn_rate": 0.0
+  },
+  "0.25": {
+   "err_mean": 4.535867156583251,
+   "err_se": 0.02537765014800673,
+   "pred_abn_rate": 0.0
+  },
+  "0.05": {
+   "err_mean": 6.03403719734531,
+   "err_se": 0.18408724802996645,
+   "pred_abn_rate": 0.3333333333333333
+  }
+ },
+ "criteria": {
+  "S2R1_repair": true,
+  "S2R2_no_collateral": true,
+  "S2R3_dose_response": true,
+  "S2R4_graded_penetrance": true
+ },
+ "mechanism": [
+  "M1 blastema readout through junction network (blastema_readout_noise=18.0 mV; no RNG draws at gap_scale=1.0)",
+  "M2 theta diffusion gated by gap_scale (pattern propagation is junction-carried)"
+ ],
+ "exp27_sha256": "c0ad5a65ff49cf609e7e10cad8267756993c7da89bcc3004fd536797f8e310df",
+ "exp27_unchanged": true,
+ "notes": "S2P1 flips with thresholds untouched. Marginal at the seed level (1/3 seeds cross 6.0 mV) \u2014 the model now produces GRADED outcomes under sustained innexin loss, matching the mixed penetrance PlanformDB records (exp21 PB3). Dose-response is the model's new testable prediction for partial knockdown."
+}

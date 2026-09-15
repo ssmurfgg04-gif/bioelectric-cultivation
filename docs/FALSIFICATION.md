@@ -685,3 +685,85 @@ certified exhausted, recorded as designed).
   independent discovery), procedure-risk interiority (C4), the
   stable-zone-on-top ordering (C5), and the b6 saturation knee
   (exp26 measured it; the blind search found it).
+
+## Level 12 — exp29: Stage 2 repair (the model regenerates without junctions — fixed, and the record was right)
+
+**The first per-experiment validation against PlanformDB (exp27, night-one
+DeepScientist quest) produced a REFUTATION, and the refutation was the
+payload.** exp27 pre-registered four criteria and ran the actual simulator
+against the cutting + innexin slice of PlanformDB 2.5.0 (558 experiments;
+1,716 in the corpus). S2P1 REFUTED: sustained gap-junction blockade through
+amputation + regrowth left regeneration essentially NORMAL (2.87 mV vs the
+6.0 mV pre-registered abnormality threshold) while the record says innexin
+loss is at least as abnormal as any other perturbation class (0.542 vs
+cutting's 0.487). Root cause found in `collective.py`: `regrow()` extended
+the pattern per-cell (`theta[i] = theta[src] + noise`) and theta diffusion
+ran un-gated by junction state — regeneration never touched the junction
+network. The bioelectric layer was load-bearing for maintenance (exp16,
+exp26) but not for regeneration, contradicting both the repo's framing (the
+morphological target is an attractor of the COUPLED system) and the record.
+
+The repair (M25, two additive changes in `collective.py`, both bit-exact at
+gap_scale == 1.0, no RNG-stream changes on any intact-coupling path):
+
+- **M1 — blastema readout through the junction network.** A committing
+  cell inherits the chain pattern only to the extent junctions are
+  healthy; under blockade it falls back to the wound-state default plus a
+  broad guess along the fate axis (spread 18 mV — a blind cell can land
+  anywhere on the ~-20..-50 mV head-trunk axis).
+- **M2 — pattern propagation is junction-carried.** theta diffusion scales
+  with gap_scale, so a blind-regenerated region is not silently healed by
+  an unphysical un-coupled diffusion channel.
+
+exp29 re-runs exp27 UNCHANGED (byte-identical file, sha256 recorded in the
+results JSON; thresholds untouched):
+
+- **S2R1 PASS — REPAIR.** innexin_sustained 2.87 -> 6.03 +- 0.18 mV:
+  S2P1 flips to PASS with cutting (3.16) and restored-block (3.20) arms
+  intact. S2P2 and S2C still PASS. The model now disagrees with the
+  record no more — at this slice, at this power.
+- **S2R2 PASS — NO COLLATERAL.** Full test suite green before and after;
+  cutting arm bit-exact (3.16 == 3.16); restored arm within Monte-Carlo
+  noise (3.25 -> 3.20, its pre-restore blocked window is legitimately
+  touched by M2; outcome class unchanged).
+- **S2R3 PASS — DOSE-RESPONSE (new testable prediction).** Regeneration
+  corruption rises monotonically with junction loss: 3.28 (gap 1.0) ->
+  3.93 (0.5) -> 4.54 (0.25) -> 6.03 mV (0.05). The model predicts PARTIAL
+  innexin knockdown degrades regeneration in a graded way — PlanformDB
+  contains dose-resolved experiments that can check this (next-night
+  work: widen the slice to the ion_channel class and per-experiment
+  amputation planes).
+- **S2R4 PASS — GRADED PENETRANCE.** Under full sustained blockade the
+  model produces MIXED outcomes (1/3 seeds abnormal), not all-or-nothing
+  — the endogenous graded penetrance exp21 PB3 found in the record.
+
+Also dead: the implicit claim that the pattern is cell-autonomous during
+regrowth ("what regrows is whatever the remaining tissue REMEMBERS" — per
+cell). What survives: memory still lives in theta; but READING the memory
+into new tissue is a network operation, and junction health gates it.
+Status: repaired, prediction registered, slice-widening queued.
+
+## Level 13 — exp30: CEM continuation (the search is certified exhausted)
+
+exp28 recorded its search as "still improving on the last step — not
+certified exhausted." exp30 settled that honestly: the checkpoint resumed
+EXACTLY (mu, sigma, best-so-far, rng state) and ran 10 more iterations at
+the original protocol (pop 24, elite 0.25, search seeds 41/42, seed 27).
+
+- **X2 PASS — the search side had headroom.** Search-world hold 0.7180 ->
+  0.7404 (+0.022): the last-step improvement exp28 recorded was real.
+- **X1 REFUTED — but the headroom was seed-specific.** Held-out
+  (exp25's world, seeds 21-23, K=200/120yr): continued best 0.6907 vs
+  disc28's 0.6828 — +0.0079, UNDER the pre-registered +0.02 re-search
+  bar. disc28 is certified at (or within 0.02 of) the competitive
+  optimum; the +0.008 and the median gain (79.7 -> 81.6yr) are kept.
+- **X3 (exploratory) — no schedule divergence:** the continued best is a
+  local refinement of disc28 (write_age 21 vs 20, budget 7 vs 6, period
+  2.25 vs 2.75; all shifts < 25%).
+
+Also dead, at this protocol: the value of further CEM iterations on the
+competitive 8-dim space — search-side improvement without held-out
+improvement is the search-seed-overfit signature. What survives: the
+disc28 baseline as the eval-contract starting point, and the checkpoint
+discipline that made the continuation free (a killed process resumes
+EXACTLY — exercised for real when the sandbox reaped the first attempt).

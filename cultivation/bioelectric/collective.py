@@ -58,6 +58,7 @@ class BioElectricCollective:
         theta_drift: float = 0.0,
         adjacency: np.ndarray | None = None,
         seed: int | None = 0,
+        blastema_readout_noise: float = 18.0,
     ):
         self.n = n
         self.gamma = gamma  # intrinsic relaxation rate toward theta
@@ -65,6 +66,11 @@ class BioElectricCollective:
         self.mu = mu_theta  # theta diffusion (pattern propagation) rate
         self.noise_std = noise_std
         self.theta_drift = theta_drift
+        # Spread (mV) of a blastema cell's identity guess when it cannot read
+        # the pattern field through gap junctions (M25 coupling-dependent
+        # readout; see regrow). Physiological range: a blind cell can land
+        # anywhere on the head-trunk fate axis (~-20 to ~-50 mV).
+        self.blastema_readout_noise = blastema_readout_noise
 
         self.rng = np.random.default_rng(seed)
         self.A = adjacency if adjacency is not None else line_adjacency(n)
@@ -135,18 +141,36 @@ class BioElectricCollective:
         abstraction of neoblast-driven regrowth). Each new cell inherits the
         identity of the last committed cell — so what regrows is whatever the
         remaining tissue REMEMBERS. This is the mechanism that makes
-        reprogramming memory empirically testable (Durant et al. 2017)."""
+        reprogramming memory empirically testable (Durant et al. 2017).
+
+        M25 COUPLING-DEPENDENT READOUT (exp27 S2P1 repair): the inheritance
+        read itself runs THROUGH the gap-junction network. At full coupling
+        the readout is exactly the stored chain (bit-exact with the previous
+        mechanism — no extra RNG draws when gap_scale == 1.0). Under
+        blockade the blastema cannot read the pattern field and each
+        committing cell falls back to the wound-state default plus a broad
+        guess along the fate axis (spread blastema_readout_noise) — the
+        graded, mixed-outcome phenomenology PlanformDB records for innexin
+        RNAi. Restore junctions before regrowth and the readout recovers
+        (T1.1c / exp27 S2C control)."""
         idx = list(np.arange(self.n)[region])
         if not idx:
             return
         boundary = idx[0] - 1
         src = boundary if boundary >= 0 else idx[0]
         steps_per_cell = max(1, int(round(cell_period / dt)))
+        r = float(self.gap_scale)  # junction health at regen onset
+        wound_center = float(np.mean(self.theta[idx]))
         for i in idx:
             for _ in range(steps_per_cell):
                 self.step(dt)
-            self.theta[i] = self.theta[src] + self.rng.normal(0.0, noise)
-            self.V[i] = self.theta[i]
+            theta_new = self.theta[src] + self.rng.normal(0.0, noise)
+            if r < 1.0:
+                guess = wound_center + self.rng.normal(
+                    0.0, self.blastema_readout_noise)
+                theta_new = r * theta_new + (1.0 - r) * guess
+            self.theta[i] = theta_new
+            self.V[i] = theta_new
             src = i
 
     def corrupt_region(self, region: slice, theta_value: float,
@@ -173,7 +197,12 @@ class BioElectricCollective:
         Vn = self.V + dt * dV + noise
 
         lap_theta = self.A @ self.theta - self.theta * self.A.sum(axis=1)
-        dtheta = self.eps * (self.V - self.theta) + self.mu * lap_theta
+        # M25: pattern propagation is ALSO junction-carried — theta diffusion
+        # scales with gap-junction health (bit-exact at gap_scale == 1.0).
+        # With junctions down the stored pattern can no longer spread, so a
+        # blind-regenerated region stays whatever the blastema guessed.
+        dtheta = self.eps * (self.V - self.theta) \
+            + self.mu * self.gap_scale * lap_theta
 
         # oncogene-like drivers (voltage-gated theta pulls)
         for idx, target, rate, vgate in self.theta_drivers:

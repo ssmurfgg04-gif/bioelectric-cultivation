@@ -38,59 +38,59 @@
   "innexin_sustained": {
    "runs": [
     {
-     "wt_pattern_error": 2.9218519247619716,
+     "wt_pattern_error": 5.956566371024469,
      "head_likeness_tail": 0.0,
      "head_likeness_head": 1.0,
      "seed": 1,
      "predicted_abnormal": false
     },
     {
-     "wt_pattern_error": 2.8468300378519498,
+     "wt_pattern_error": 6.384482488378753,
      "head_likeness_tail": 0.0,
      "head_likeness_head": 1.0,
      "seed": 2,
-     "predicted_abnormal": false
+     "predicted_abnormal": true
     },
     {
-     "wt_pattern_error": 2.845471510529548,
+     "wt_pattern_error": 5.761062732632711,
      "head_likeness_tail": 0.0,
      "head_likeness_head": 1.0,
      "seed": 3,
      "predicted_abnormal": false
     }
    ],
-   "wt_pattern_error_mean": 2.8713844910478232,
-   "wt_pattern_error_se": 0.025236764177091673,
+   "wt_pattern_error_mean": 6.03403719734531,
+   "wt_pattern_error_se": 0.18408724802996645,
    "head_likeness_tail_mean": 0.0,
    "head_likeness_tail_se": 0.0,
-   "predicted_abn_rate": 0.0
+   "predicted_abn_rate": 0.3333333333333333
   },
   "gjblock_restored": {
    "runs": [
     {
-     "wt_pattern_error": 3.4120300330732984,
+     "wt_pattern_error": 3.35763001516023,
      "head_likeness_tail": 0.0,
-     "head_likeness_head": 0.9741427499946328,
+     "head_likeness_head": 0.9778323163473064,
      "seed": 1,
      "predicted_abnormal": false
     },
     {
-     "wt_pattern_error": 3.1754528208258366,
+     "wt_pattern_error": 3.120810231743287,
      "head_likeness_tail": 0.0,
-     "head_likeness_head": 0.995577837314967,
+     "head_likeness_head": 0.999313239440472,
      "seed": 2,
      "predicted_abnormal": false
     },
     {
-     "wt_pattern_error": 3.162167135448647,
+     "wt_pattern_error": 3.108410717539053,
      "head_likeness_tail": 0.0,
-     "head_likeness_head": 0.992735743836828,
+     "head_likeness_head": 0.996427829077286,
      "seed": 3,
      "predicted_abnormal": false
     }
    ],
-   "wt_pattern_error_mean": 3.249883329782594,
-   "wt_pattern_error_se": 0.0811640158362851,
+   "wt_pattern_error_mean": 3.1956169881475236,
+   "wt_pattern_error_se": 0.08108555703594864,
    "head_likeness_tail_mean": 0.0,
    "head_likeness_tail_se": 0.0,
    "predicted_abn_rate": 0.0
@@ -101,7 +101,7 @@
   "innexin_mean_abnormal": 0.5420138888888889
  },
  "criteria": {
-  "S2P1_ordering": false,
+  "S2P1_ordering": true,
   "S2P2_cutting_mapping": true,
   "S2P3_class_match_rate": 0.5,
   "S2C_restored_control": true
