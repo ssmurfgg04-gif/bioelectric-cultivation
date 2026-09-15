@@ -1,0 +1,82 @@
+{
+ "exp": "exp63_blueprint_transfer (M39)",
+ "blueprint_format": "phi_spec_v1 (JSON, 6-dp quantized, round-trip bit-exact to 1e-12)",
+ "round_trip_serialization_err": 0.0,
+ "g1_identity": [
+  1.0,
+  1.0,
+  1.0
+ ],
+ "g1_err_vs_donor": [
+  9.6727,
+  9.6002,
+  9.5549
+ ],
+ "g2_identity": [
+  1.0,
+  1.0,
+  1.0
+ ],
+ "g2_r5_refusal": {
+  "substrate_compilable": false,
+  "boundary_to_volume": 0.3533,
+  "crossing_edges": 53,
+  "total_edges": 150,
+  "r5_max": 0.1,
+  "rationale": "R5 REFUSAL: partition b2v 0.353 > limit 0.1 \u2014 this substrate cannot support the target partition (exp43 signature)"
+ },
+ "g3_identity": [
+  1.0,
+  1.0,
+  1.0
+ ],
+ "g4_identity": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "criteria": {
+  "BT_G1_digital_round_trip": true,
+  "BT_G2_cross_substrate_transfer": true,
+  "BT_G3_survives_partial_death": true,
+  "BT_G4_reader_dependence": true
+ },
+ "transfer_protocol_schedule": [
+  {
+   "step": 1,
+   "agent": "extraction",
+   "action": "read the donor's positional layer (phi_spec)",
+   "timing": "any time the pattern is settled",
+   "concentration_class": "none (read-only)"
+  },
+  {
+   "step": 2,
+   "agent": "storage",
+   "action": "serialize to JSON (the digital blueprint)",
+   "timing": "static",
+   "concentration_class": "none"
+  },
+  {
+   "step": 3,
+   "agent": "load",
+   "action": "overwrite the host's positional layer",
+   "timing": "before the trigger",
+   "concentration_class": "none"
+  },
+  {
+   "step": 4,
+   "agent": "verify the language",
+   "action": "R5 partition check on the host substrate",
+   "timing": "compile time; REFUSE if b2v > 0.10",
+   "concentration_class": "none"
+  },
+  {
+   "step": 5,
+   "agent": "trigger",
+   "action": "amputate + regrow with phi_readout=0.75",
+   "timing": "after load",
+   "concentration_class": "octanol-free (the read is junction-carried)"
+  }
+ ],
+ "notes": "M39: the blueprint is the phi_spec layer, serialized digitally and reloaded into fresh hosts. The transfer respects the project's corrected goal (exp43/exp56): the blueprint moves to any body that speaks the same language - the language being the partition-supporting substrate (R5) PLUS the reader (phi_readout; BT-G4's no-reader control must fail). Partial-death survival (BT-G3) is the positional layer re-deriving killed regions from surviving boundaries."
+}

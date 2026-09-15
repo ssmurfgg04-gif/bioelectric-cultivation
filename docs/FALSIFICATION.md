@@ -1734,3 +1734,32 @@ Night seven, part 3. exp43's registered follow-up:
 - D-G5 PASS (the persist branch): time-to-restore 1.0 h at both k —
   the faster-healing branch did NOT fire; the payoff that shows is
   REACH (D-G2/D-G3), recorded honestly.
+
+## L44 — exp63 STAGE-5 BLUEPRINT TRANSFER (M39)
+- THE BLUEPRINT: the phi_spec positional layer, serialized to JSON
+  (6-dp quantized) and reloaded into fresh hosts. The donor carries a
+  NOVEL anatomy (two-headed — a form the host cannot reach alone); a
+  WT donor would have conflated blueprint-driven restoration with the
+  host's own dynamics (first-run correction, registered before the
+  re-run, together with confining the corruption span to the
+  triggered region — the first run's wide corruption left dead error
+  where no trigger regenerates).
+- BT-G1 PASS — DIGITAL ROUND-TRIP: serialization bit-exact (0.00);
+  identity transfer tail head-likeness 1.0/1.0/1.0 — the host builds
+  the donor's posterior-head anatomy from the serialized blueprint.
+- BT-G2 PASS — CROSS-SUBSTRATE TRANSFER: chain(k=1) blueprint ->
+  chain(k=2) host, identity 1.0 across seeds; the random-3 host is
+  REFUSED at compile time (R5 b2v 0.3533 > 0.10) — the blueprint
+  moves only to bodies whose connectivity supports the partition.
+- BT-G3 PASS — SURVIVES PARTIAL DEATH: a mid-tissue slice killed
+  after reload re-derives from the positional layer + surviving
+  boundary (identity 1.0).
+- BT-G4 PASS — READER DEPENDENCE (exp56 discipline at the transfer
+  level): the SAME loaded blueprint with the readout disabled leaves
+  the host's tail tail-like (identity 0.0) — the blueprint needs a
+  compatible READER, not just data. "Same body that speaks the same
+  language" = partition-supporting substrate (R5) PLUS reader.
+- HONEST RESIDUAL: identity transfers sharply (1.0) while fine
+  voltage precision does not (err vs donor ~9.6 mV — the M28 blend
+  lands the transferred zone between trunk and head values); the
+  exp56 carrier-assistance term at the transfer level.
