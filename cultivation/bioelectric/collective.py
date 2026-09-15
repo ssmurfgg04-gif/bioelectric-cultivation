@@ -148,7 +148,9 @@ class BioElectricCollective:
                gradient_window: int = 5,
                gradient_clip: bool = False,
                commitment_diffusion: float = 0.0,
-               phi_readout: float = 0.0) -> None:
+               phi_readout: float = 0.0,
+               spec_expression_p: float = 1.0,
+               spec_reanchor_p: float = 1.0) -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
@@ -227,6 +229,37 @@ class BioElectricCollective:
         like the chain read (M25). Deterministic — no new RNG draws;
         0.0 default is bit-exact.
 
+        `spec_expression_p` (M30 STOCHASTIC SPEC EXPRESSION) — per-cell
+        expression probability of the spec read: when 0 < p < 1 and the
+        phi read is active, EACH committing cell draws u ~ U(0,1) and
+        reads phi_spec only if u < p (cells that fail to re-express the
+        positional spec fall back to pure chain inheritance for that
+        cell). Rationale: exp36 found the deterministic spec read gives
+        SHARP binary penetrance (chain->spec transition between weight 0
+        and 0.2) while the record is graded (cross_a 0.52) — neoblast
+        spec re-expression is stochastic at the cell level, so the
+        effective per-seed spec fraction is Binomial(L, p): larger
+        regenerates concentrate near the mean, small ones are
+        all-or-nothing, and the binary 6 mV outcome threshold then
+        splits seeds. The draw is GATED (no RNG contact at p == 1.0 or
+        when the phi read is inactive) so every existing trajectory is
+        bit-exact at the default.
+
+        `spec_reanchor_p` (M30 AMENDED — regenerate-level stochastic
+        re-anchoring) — exp38's per-cell version was REFUTED as
+        registered: silencing individual cells does not grade the
+        pattern because the chain RE-CARRIES the spec blend (each
+        committed cell writes its blended value, so the next cell
+        inherits it — expression failures do not accumulate; the error
+        stayed ~3 mV at every p and no seed split). The stochastic unit
+        must therefore be the regenerate, not the cell: the wound-face
+        re-anchoring of the positional read (M28) is a ONE-TIME event
+        per blastema, drawn ~ Bernoulli(spec_reanchor_p) at the start of
+        each walk. A blastema that fails to re-anchor reads NO spec for
+        its whole regenerate (pure chain inheritance). One parameter;
+        no RNG contact at the default 1.0 or when the phi read is
+        inactive (bit-exact).
+
         M25 COUPLING-DEPENDENT READOUT (exp27 S2P1 repair): the inheritance
         read itself runs THROUGH the gap-junction network. At full coupling
         the readout is exactly the stored chain (bit-exact with the previous
@@ -245,6 +278,14 @@ class BioElectricCollective:
         wound_center = float(np.mean(self.theta[idx]))
         eff_noise = float(noise) * float(commitment_noise_scale)
         g = float(length_gradient)
+        # M30: expression draw only when the spec read is active AND the
+        # probability is genuinely stochastic — zero RNG contact otherwise.
+        expr_draw = 0.0 < float(spec_expression_p) < 1.0 \
+            and phi_readout > 0.0
+        expr_p = float(spec_expression_p)
+        reanchor_draw = 0.0 < float(spec_reanchor_p) < 1.0 \
+            and phi_readout > 0.0
+        reanchor_p = float(spec_reanchor_p)
 
         def face_slope(face: int, sign: int) -> tuple[float, float, float, float]:
             """Anchor (theta at the face), per-cell theta trend on the intact
@@ -277,6 +318,10 @@ class BioElectricCollective:
             anchor, slope, rep_lo, rep_hi = face_slope(src, sign)
             wander = 0.0
             d = 0
+            # M30 amended: one-time per-blastema spec re-anchoring draw
+            spec_on = True
+            if reanchor_draw:
+                spec_on = self.rng.random() < reanchor_p
             for i in order:
                 for _ in range(steps_per_cell):
                     self.step(dt)
@@ -288,10 +333,14 @@ class BioElectricCollective:
                         extrap = min(max(extrap, rep_lo), rep_hi)
                     chain_base = (1.0 - g) * chain_base + g * extrap
                 spec = getattr(self, 'phi_spec', None)
-                if phi_readout > 0.0 and spec is not None:
-                    w = phi_readout * r
-                    chain_base = (1.0 - w) * chain_base \
-                        + w * float(spec[i])
+                if phi_readout > 0.0 and spec is not None and spec_on:
+                    expressed = True
+                    if expr_draw:
+                        expressed = self.rng.random() < expr_p
+                    if expressed:
+                        w = phi_readout * r
+                        chain_base = (1.0 - w) * chain_base \
+                            + w * float(spec[i])
                 if commitment_diffusion > 0.0:
                     wander += self.rng.normal(0.0, commitment_diffusion)
                 theta_new = chain_base + self.rng.normal(0.0, eff_noise) \

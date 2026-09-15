@@ -72,7 +72,9 @@ def run_arm(arm: str, seed: int, cut_f: float = 0.5,
             gradient_window: int = 5,
             gradient_clip: bool = False,
             commitment_diffusion: float = 0.0,
-            phi_readout: float = 0.0) -> dict:
+            phi_readout: float = 0.0,
+            spec_expression_p: float = 1.0,
+            spec_reanchor_p: float = 1.0) -> dict:
     c = make_collective(seed)
     rg = dict(length_gradient=length_gradient,
               commitment_noise_scale=commitment_noise_scale,
@@ -80,7 +82,9 @@ def run_arm(arm: str, seed: int, cut_f: float = 0.5,
               gradient_window=gradient_window,
               gradient_clip=gradient_clip,
               commitment_diffusion=commitment_diffusion,
-              phi_readout=phi_readout)
+              phi_readout=phi_readout,
+              spec_expression_p=spec_expression_p,
+              spec_reanchor_p=spec_reanchor_p)
 
     def plane_protocol(plane: str) -> None:
         if plane == "head":
@@ -116,8 +120,10 @@ def run_arm(arm: str, seed: int, cut_f: float = 0.5,
                 return plane[: -len(s)]
         return plane
 
-    SUF = ("_m27", "_g1", "_inert", "_m28", "_recheck",
-           "_p70", "_p75", "_p80", "_p85", "_p90")
+    SUF = ("_m27", "_g1", "_inert", "_m28", "_recheck", "_m30",
+           "_p70", "_p75", "_p80", "_p85", "_p90",
+           "_q55", "_q65", "_q72", "_q80", "_q90",
+           "_r40", "_r45", "_r50", "_r55", "_r60")
 
     if arm.startswith("cutting_"):
         plane = strip(arm[len("cutting_"):], *SUF)

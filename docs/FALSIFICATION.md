@@ -1043,3 +1043,49 @@ deterministic; bit-exact at default — verify gate 1e-9, suite green).
 Adopted mapping candidate: phi_readout = 0.75 for the length-gradient
 slice. The M26a/M27a refutations stand as diagnostics that led here;
 the exp31 S2W2 sim-side overshoot is resolved with zero collateral.
+
+## Level 20 — exp38: M30 stochastic spec-expression (per-cell REFUTED with a mechanism insight; regenerate-level re-anchoring splits seeds but flips a marginal innexin seed — NOT adopted)
+
+Registered BEFORE any arm ran (recorded references are exp31/exp36's
+published values only). Question left open by L19: penetrance is binary
+under the deterministic phi read while the record is graded (cross_a
+0.52). M30 candidate: make the spec read stochastic.
+
+- **REGISTERED (per-cell Bernoulli, spec_expression_p): REFUTED — and
+  the refutation IS the finding.** At every p in {0.55..0.90} cross_a
+  stayed 0.00 with err ~3 mV: silencing individual cells cannot grade
+  the pattern because the chain RE-CARRIES the spec blend — each
+  committed cell writes its blended value and the next cell inherits
+  it, so expression failures do not accumulate. One expressing cell
+  seeds the whole regenerate. (This also explains WHY the phi
+  transition is sharp: the chain is an amplifier, not an averager.)
+- **AMENDED (exploratory, exp36 precedent): per-blastema re-anchoring
+  draw (spec_reanchor_p) — one-time Bernoulli per walk on the wound-face
+  re-anchoring of the positional read.** Seed-splitting EXISTS
+  (M30-A1 PASS: q=0.55 and 0.60 give cross_a 0.67, the closest
+  achievable to the recorded 0.52 at 3-seed resolution; |gap| 0.15);
+  collateral lock PASS (tail/head/trunk/restored 0.00 at every q);
+  bins b/c/d unchanged at 0.00 (A3 PASS — the recorded 0.43/0.27/0.27
+  residual remains, recorded not hidden).
+- **G4 (innexin preserved) REFUTED — marginal-seed RNG-stream
+  artifact.** The anchor draw consumes RNG, shifting the noise stream
+  under blockade (where the spec read weight is only phi x gap =
+  0.0375 and biologically near-inert); per-seed innexin errors moved
+  <= 1.34 mV (within the registered 1.5 mV tolerance) but the
+  threshold-marginal seed crossed 6.0 mV and the rate flipped off the
+  exp31 value 2/3. A fix that flips a previously-PASS criterion is not
+  a fix: **M30 amended is NOT adopted.**
+- **Next-step signature (M31 candidate, night-six queue):** anchor
+  availability must be a property of the fragment's STORED HISTORY, not
+  a fresh draw at regrow — per-cell anchor availability captured at
+  pattern set (alongside phi_spec, same D3 distributed-property logic),
+  so a fragment inherits its anchor readiness from the tissue it kept.
+  Prediction: seed-splitting WITHOUT any regrow-time RNG (stream-neutral
+  under blockade by construction), and anchor availability should
+  correlate with fragment size — the recorded monotone bin gradient.
+- Inertness held: phi_readout=0 + spec_expression_p=0.5 consumes no RNG;
+  cutting_tail per-seed errors bit-exact vs exp31 (G5 PASS).
+- Model state: spec_expression_p and spec_reanchor_p added to regrow()
+  additively, both bit-exact at defaults (verify gate 1e-9, suite green
+  before and after). Both remain in the model as inert-at-default
+  parameters with their verdicts recorded here.
