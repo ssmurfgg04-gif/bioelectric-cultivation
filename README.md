@@ -645,3 +645,119 @@ honestly: the model's penetrance is binary (no phi value seed-splits
 cross_a), the record's is graded (0.52) — night-five candidate: a
 stochastic spec-expression layer on top (mechanism untouched). Ledger
 L19; adopted mapping candidate phi_readout=0.75.
+
+## M30: exp38 — stochastic spec-expression: per-cell REFUTED (the chain re-carries the spec), regenerate-level re-anchoring splits seeds but flips a marginal innexin seed — not adopted
+
+The L19 penetrance residual attacked with two stochastic units.
+Registered per-cell Bernoulli: REFUTED at every p — the chain
+RE-CARRIES the spec blend (each committed cell writes its blended
+value; the next inherits it), so expression failures cannot accumulate;
+one expressing cell seeds the whole regenerate. That is ALSO why the
+phi transition is sharp: the chain is an amplifier, not an averager.
+Amended per-blastema re-anchoring (spec_reanchor_p): seed-splitting
+PASSES (q=0.55 -> cross_a 0.67, closest to recorded 0.52 at 3-seed
+grain), collateral lock PASS, bins-unchanged PASS — but the anchor
+draw shifts the RNG stream under blockade and flips the
+threshold-marginal innexin seed (drift 1.34 mV, within tolerance, rate
+off 2/3): NOT adopted — a fix that flips a previously-PASS criterion
+is not a fix. M31 registered: anchor availability as STORED FRAGMENT
+HISTORY (per-cell, captured at pattern set — stream-neutral by
+construction). Ledger L20.
+
+## exp37 — the full-corpus sweep (QUEST task 4 complete): 1,029/1,462 experiments mapped per-experiment
+
+The class-level pilot became a per-experiment instrument: every
+outcome-bearing PlanformDB experiment mapped to (class protocol, plane,
+recorded cut fraction), 36 unique arms at the ADOPTED model state.
+Coverage 0.704 PASS; plane ordering rho=+0.80 PASS; controls bit-exact
+PASS. Class ordering REFUTED (other_rnai n=513: recorded 0.80 vs sim
+0.00 — no gene-expression layer + class-dependent selection bias) and
+absolute MAE REFUTED (0.595) with a SYMMETRIC signature: no-perturbation
+classes undershoot (+0.80/+0.42), perturbation classes overshoot
+(gj_block -0.52, innexin -0.56, morphogen -0.27, ion -0.19 — the
+binary-penetrance residual quantified at corpus scale). M32 registered:
+promote the 6.0 mV threshold to pre-registered-fitted (the exp29
+watch-item). Ledger L21.
+
+## exp39 — direct comparison to the published voltage record: 6/6 direction MATCH
+
+Every published DIRECTION claim vs the model's fresh-extracted
+quantity: depolarized head (Beane 2011), hyperpolarization->abnormal
+(Beane 2013), posterior-depol ectopic head HL 0.95 (Oviedo 2010),
+junction-block mixed outcomes via M25 (Oviedo 2007), wound
+depolarization, stochastic identical-perturbation outcomes (Pezzulo &
+Levin 2021; exp38 seed-split + exp12 latch). Zero mismatches. Honest
+scope: planarian absolute mV is unpublished (dye ratios) — the model's
+absolute scale is an exp1 calibration choice. Permanent record:
+research/LEVIN_VOLTAGE_COMPARISON.md. Ledger L22.
+
+## exp40 — channel dose scan: ion|trunk resolved; S2R3c closed (untested, not falsified)
+
+The (cns x diffusion) grid is MONOTONE in diffusion (trunk 0.00 ->
+0.33 -> 0.67 -> 1.00) — the model's own dose-response curve. The 1/3
+cell (cns=1, diff=1.0) brackets the recorded ion|trunk 0.46 at distance
+0.13 with tail/head calibrations intact: exp35's refutation candidate
+RESOLVED (it was a plane-protocol artifact — exp37's two-face trunk
+had already moved the gap -0.46 -> +0.21). S2R3c: no partial-dose
+regeneration curve exists in the DB (L16) OR the published literature
+(supramaximal doses, timing ladders only) — S2R3's monotone prediction
+stands UNTESTED and is a formal novel-prediction deposit. Ledger L23.
+
+## STAGE 3 (金丹) — the anatomical compiler v0 (exp41): compilation, not search
+
+cultivation/compiler/anatomy.py: declarative AnatomySpec ->
+InterventionProgram (regions, voltages, durations, coupling
+preconditions, verification criteria) -> in-sim execution +
+self-verification. The M28 phi layer IS the target representation —
+write the spec, trigger a regen that reads it; zero CEM iterations.
+Results: CP-G1 restorative compile PASS (3/3, ~3 mV); CP-G2 TWO-HEAD
+compile PASS (the Levin anchor reached by compilation); CP-G4 safety
+refusal PASS; CP-G5 coupling necessity PASS (the program fails under
+blockade — the precondition is load-bearing); CP-G3 ectopic
+novel-anatomy REFUTED by 0.22 mV (two-sided Laplacian erosion of
+unsupported zones) with the latch amendment REFUTED under a different
+signature (latch regen doesn't read phi) — compiler v1 work item: the
+hybrid latch+spec rule. PROCESS: verifier substring bug caught+fixed
+(execute criteria, never parse them). Ledger L24.
+
+## STAGE 4 (元婴) — the cognitive light cone (exp42): junction-carried, dose-monotone rho=1.00
+
+cultivation/cognitive/lightcone.py: paired-trajectory instrument (same
+seed => divergence IS influence; zero averaging). Single-cell 2h pulse,
+gap scan: propagation PASS, cognitive fragmentation under blockade
+PASS, junction-scaled dose-response PASS (rho=1.00; horizon 5/3/2/1
+cells at gap 1.0/0.5/0.25/0.05 — the third axis with the S2R3/exp40
+monotone shape). LC-G4 REFUTED with a power diagnosis: the 2h pulse's
+cone never reaches half-chain; the residue WITHIN the cone is 36-42 mV
+— memory is CONE-BOUNDED, and the instrument now EXPLAINS the model's
+own 24h sustained-forcing requirement instead of assuming it. Ledger
+L25.
+
+## STAGE 5 (飞升) — substrate independence (exp43): mechanism transfers everywhere, form is substrate-conditioned
+
+cultivation/substrate/graph.py: GraphCollective (path / 2D lattice /
+random 3-regular / scale-free) + regrow_graph (BFS regeneration,
+M25-consistent). All gates REFUTED as naively registered — and the
+diagnosis is the Ascension finding: identity labels are attractors
+only when coherent with the substrate's connection structure (path
+1.8/grid 5.6 PASS; scattered labels fail everywhere; BFS-coherent
+amendment improves one notch; degree normalization probed and does
+NOT rescue scale-free — the invariant is the BOUNDARY-TO-VOLUME RATIO
+of the target partition). What transferred universally: the dynamics,
+the M25 blind-guess corruption (12-22 mV on every topology), the regen
+machinery (1.1-4.5 mV on coherent topologies). Resolved claim:
+substrate-independent MECHANISM, substrate-conditioned FORM — the
+compiler must become the substrate-adapter (rule R5: substrate-aware
+partitioning + per-substrate calibration, night-six queue). Ledger L26.
+
+## Night four/five (2026-09-15) — the phase inventory
+
+All five stages now have run results on main:
+Stage 1 (炼气) ~95% | Stage 2 (筑基): per-experiment instrument
+delivered, corpus-scaled ordering, ion|trunk resolved, Levin 6/6,
+dose-response closed; remaining: innexin|head plane-dependent readout,
+M31 stored anchor availability, M32 threshold fitting | Stage 3 (金丹):
+compiler v0, restorative + two-head compilation verified, novel-anatomy
+frontier measured | Stage 4 (元婴): light cone measured, memory
+cone-bounded | Stage 5 (飞升): mechanism universal, form
+substrate-conditioned (compiler R5 registered).
