@@ -1004,3 +1004,42 @@ overshoot expectation; the measurement came out the opposite way and
 the recorded verdict describes the MEASUREMENT (undershoot), with the
 pre-written expectation superseded — recorded here so the swap is in
 the open.
+
+## Level 19 — exp36: M28 dual-field phi layer (length-gradient refutation RESOLVED at mechanism level; penetrance is binary)
+
+The M28 mechanism (registered in L17): the collective captures
+`phi_spec` — identity-at-coordinate — at pattern set (the D3 distributed
+collective property made operational: theta = expression layer, phi_spec
+= positional layer); `regrow(phi_readout=w)` blends chain inheritance
+with the spec at weight w * gap_scale (junction-carried, M25-consistent;
+deterministic; bit-exact at default — verify gate 1e-9, suite green).
+
+- **LENGTH-GRADIENT REFUTATION RESOLVED.** cross_a: 1.00 (M26a/M27a)
+  -> 0.00 at every phi_readout in {0.70..0.90} AND the registered
+  amendment scan {0.20..0.60} (err 22.02 -> 4.55 at phi=0.2, 2.79 at
+  0.9). The head-only fragment now regenerates a complete animal — the
+  spec provides the positional information the stored theta cannot
+  (exp34's structural diagnosis answered: the map is a separate
+  distributed layer, not a readout of theta). Zero collateral: tail/
+  head/trunk 0.00 and restored 0.00 at every value (G2 PASS);
+  innexin_tail rate preserved with ~0.002 mV drift (G3 PASS after
+  fixing a float-equality gate bug — 2/3 vs the 0.67 literal).
+- **PENETRANCE IS BINARY — the residual gap is now precise.** G1/G4
+  REFUTED: no phi value yields seed-splitting; the chain->spec
+  transition is sharp (between phi=0 and 0.2 the bin-a error falls
+  22 -> 4.55 mV, crossing the 6.0 threshold without ever straddling
+  it per-seed). The record's graded penetrance (0.52/0.43/0.27/0.27)
+  is NOT reproduced: the model undershoots all bins (0.00). The
+  mechanism is right; the penetrance model is incomplete. Night-five
+  candidate: a STOCHASTIC SPEC-EXPRESSION layer (per-seed spec
+  availability scaled by fragment size / expression noise) on TOP of
+  the phi readout — mechanism untouched.
+- Process: the registered scan {0.70..0.90} was amended downward
+  {0.20..0.60} AFTER it ran, labelled exploratory in the results JSON;
+  G1 was evaluated on the REGISTERED scan only and stands REFUTED.
+  The G3 gate originally compared the rate to the literal 0.67
+  (float bug, spurious REFUTED); fixed to exact-fraction comparison.
+
+Adopted mapping candidate: phi_readout = 0.75 for the length-gradient
+slice. The M26a/M27a refutations stand as diagnostics that led here;
+the exp31 S2W2 sim-side overshoot is resolved with zero collateral.

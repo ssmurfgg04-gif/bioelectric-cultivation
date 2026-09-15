@@ -168,3 +168,19 @@ DeepScientist binary itself is still pending install on the user's box)
 4. QUEST task 6: novel-prediction sweep over recorded-NO cells.
 5. ds quest on the bioelectric repo when `ds doctor --runner zai` is
    green (quota watcher running).
+- **N3.9 exp36 M28 phi scan.** Length-gradient refutation RESOLVED
+  (cross_a 1.00->0.00, zero collateral, innexin preserved); penetrance
+  binary vs recorded graded — night-five candidate: stochastic
+  spec-expression layer. L19. Adopted candidate mapping phi=0.75.
+- **N3.10 Pushed M29 (phi layer + scan).**
+
+## Night-five queue (updated)
+1. Stochastic spec-expression layer: per-seed spec availability (fragment
+   size x expression noise) on top of phi_readout — target: cross_a
+   seed-splitting (~0.52), bins b/c/d graded (0.43/0.27/0.27).
+2. Plane-dependent readout for innexin|head (record 0.00 vs sim 1.00):
+   head-specific readout channel (exp35 L18 candidate).
+3. Channel-slice dose scan (cns x diffusion grid) against ion trunk 0.46.
+4. S2R3c: ExperimentDrug timing semantics from primary literature.
+5. ds quest on the bioelectric repo when `ds doctor --runner zai` is
+   green (quota watcher still running).

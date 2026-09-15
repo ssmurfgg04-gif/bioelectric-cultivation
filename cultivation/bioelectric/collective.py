@@ -96,6 +96,13 @@ class BioElectricCollective:
     # ------------------------------------------------------------------ state
     def set_target(self, theta: np.ndarray) -> None:
         self.theta = np.asarray(theta, dtype=float).copy()
+        # M28: the identity-at-coordinate SPEC is captured when the animal's
+        # pattern is first set — a distributed collective property (D3: the
+        # pattern survives cell death as a distributed property, not a cell
+        # property). theta is the expression layer; phi_spec is what belongs
+        # at each body coordinate. Only read when regrow(phi_readout > 0).
+        if getattr(self, "phi_spec", None) is None:
+            self.phi_spec = self.theta.copy()
 
     def set_state(self, V: np.ndarray) -> None:
         self.V = np.asarray(V, dtype=float).copy()
@@ -140,7 +147,8 @@ class BioElectricCollective:
                commitment_noise_scale: float = 1.0,
                gradient_window: int = 5,
                gradient_clip: bool = False,
-               commitment_diffusion: float = 0.0) -> None:
+               commitment_diffusion: float = 0.0,
+               phi_readout: float = 0.0) -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
@@ -208,6 +216,17 @@ class BioElectricCollective:
         ion arms at 0.00 while the record shows 0.45. Zero new RNG draws
         when 0.0.
 
+        `phi_readout` (M28 DUAL-FIELD) — identity-at-coordinate spec
+        readout: the committing cell at body coordinate i blends its chain
+        inheritance with phi_spec[i], the identity that BELONGS at that
+        coordinate (the distributed collective spec captured at pattern
+        set — D3: the pattern survives fragmentation as a distributed
+        property; theta is the expression layer, phi_spec the positional
+        layer). The read is junction-carried: w = phi_readout *
+        gap_scale, so junction blockade silences the spec read exactly
+        like the chain read (M25). Deterministic — no new RNG draws;
+        0.0 default is bit-exact.
+
         M25 COUPLING-DEPENDENT READOUT (exp27 S2P1 repair): the inheritance
         read itself runs THROUGH the gap-junction network. At full coupling
         the readout is exactly the stored chain (bit-exact with the previous
@@ -268,6 +287,11 @@ class BioElectricCollective:
                     if gradient_clip and rep_lo < rep_hi:
                         extrap = min(max(extrap, rep_lo), rep_hi)
                     chain_base = (1.0 - g) * chain_base + g * extrap
+                spec = getattr(self, 'phi_spec', None)
+                if phi_readout > 0.0 and spec is not None:
+                    w = phi_readout * r
+                    chain_base = (1.0 - w) * chain_base \
+                        + w * float(spec[i])
                 if commitment_diffusion > 0.0:
                     wander += self.rng.normal(0.0, commitment_diffusion)
                 theta_new = chain_base + self.rng.normal(0.0, eff_noise) \

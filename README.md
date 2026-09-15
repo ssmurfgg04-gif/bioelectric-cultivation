@@ -630,3 +630,18 @@ never faced: innexin|head (record 0.00 vs sim 1.00 — head-specific
 protection under junction loss) and ion_channel|trunk (record 0.46 vs
 sim 0.00 — plane-sensitive calibration). Both feed the M28 upgrade.
 research/NOVEL_PREDICTIONS.md + ledger L18.
+
+## M29: exp36 — the dual-field layer lands: crosspiece refutation resolved, penetrance binary
+
+M28 implemented: `phi_spec` (identity-at-coordinate, captured at pattern
+set — D3's distributed memory made operational) + `regrow(phi_readout=)`
+blending chain inheritance with the spec, junction-carried (M25-
+consistent), bit-exact at default. Result: cutting_cross_a 1.00 -> 0.00
+with ZERO collateral (tail/head/trunk/restored all 0.00 at every scan
+value; innexin rate preserved) — the S2W2 overshoot is resolved at the
+mechanism level, answering exp34's structural diagnosis (the map is a
+separate distributed layer, not a readout of theta). Residual recorded
+honestly: the model's penetrance is binary (no phi value seed-splits
+cross_a), the record's is graded (0.52) — night-five candidate: a
+stochastic spec-expression layer on top (mechanism untouched). Ledger
+L19; adopted mapping candidate phi_readout=0.75.

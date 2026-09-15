@@ -71,14 +71,16 @@ def run_arm(arm: str, seed: int, cut_f: float = 0.5,
             direction: str = "forward",
             gradient_window: int = 5,
             gradient_clip: bool = False,
-            commitment_diffusion: float = 0.0) -> dict:
+            commitment_diffusion: float = 0.0,
+            phi_readout: float = 0.0) -> dict:
     c = make_collective(seed)
     rg = dict(length_gradient=length_gradient,
               commitment_noise_scale=commitment_noise_scale,
               direction=direction,
               gradient_window=gradient_window,
               gradient_clip=gradient_clip,
-              commitment_diffusion=commitment_diffusion)
+              commitment_diffusion=commitment_diffusion,
+              phi_readout=phi_readout)
 
     def plane_protocol(plane: str) -> None:
         if plane == "head":
@@ -114,19 +116,30 @@ def run_arm(arm: str, seed: int, cut_f: float = 0.5,
                 return plane[: -len(s)]
         return plane
 
+    SUF = ("_m27", "_g1", "_inert", "_m28", "_recheck",
+           "_p70", "_p75", "_p80", "_p85", "_p90")
+
     if arm.startswith("cutting_"):
-        plane = strip(arm[len("cutting_"):], "_m27", "_g1", "_inert")
+        plane = strip(arm[len("cutting_"):], *SUF)
         if plane.startswith("cross_"):
             plane = "crosspiece"
         c.run(24, dt=DT)
         plane_protocol(plane)
     elif arm.startswith("innexin_") or arm.startswith("gjblock_"):
-        plane = strip(arm.split("_", 1)[1], "_m27", "_recheck")
+        plane = strip(arm.split("_", 1)[1], *SUF)
         c.block_gap_junctions(0.05)
         c.run(24, dt=DT)
         plane_protocol(plane)
+    elif arm.startswith("restored_tail"):
+        c.block_gap_junctions(0.05)
+        c.run(24, dt=DT)
+        c.restore_gap_junctions(1.0)
+        c.run(20, dt=DT)
+        c.amputate(TAILP, wound_voltage=-30.0, blastema_theta=-40.0)
+        c.regrow(TAILP, cell_period=0.8, dt=DT, noise=0.6, **rg)
+        c.run(15, dt=DT)
     elif arm.startswith("ion_channel_"):
-        plane = strip(arm[len("ion_channel_"):], "_m27")
+        plane = strip(arm[len("ion_channel_"):], *SUF)
         c.gamma *= 0.5
         c.noise_std *= 3.0
         c.run(24, dt=DT)
