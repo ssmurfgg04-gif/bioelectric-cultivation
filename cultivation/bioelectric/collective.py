@@ -165,7 +165,8 @@ class BioElectricCollective:
                spec_reanchor_p: float = 1.0,
                anchor_from_history: float | None = None,
                spec_reanchor_isolated: float = 1.0,
-               neural_readout: float = 0.0) -> None:
+               neural_readout: float = 0.0,
+               neural_misanchor: float = 0.0) -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
@@ -334,6 +335,22 @@ class BioElectricCollective:
         full coupling (the guess branch is unused when r >= 1.0) and at
         the default 0.0 (bit-exact; no extra draws).
 
+        `neural_misanchor` (M36 — MIS-ANCHORED POLE, exp57 egal-1 analog):
+        the polarity substrate that CONFINES the anterior pole channel to
+        anterior identities (Egal-1/microtubule longitudinal-muscle
+        asymmetry, MED41099308: egal-1 RNAi or microtubule
+        destabilization -> ECTOPIC notum at POSTERIOR-facing wounds ->
+        posterior heads) is broken. When 0 < neural_misanchor <= 1, the
+        pole channel's read at EVERY committing cell blends the guess
+        with the ANTERIOR POLE's spec value (spec[0], the head program)
+        instead of the cell's own identity: a posterior-facing wound
+        under blockade ACTS LIKE an anterior wound — the two-headed
+        direction. The weight multiplies neural_readout's (w =
+        neural_readout * neural_misanchor semantics: misanchor REPLACES
+        the identity test, the pole read itself draws spec[0]). Inert at
+        the default 0.0 (bit-exact) and at full coupling (the guess
+        branch is unused when r >= 1.0).
+
         M25 COUPLING-DEPENDENT READOUT (exp27 S2P1 repair): the inheritance
         read itself runs THROUGH the gap-junction network. At full coupling
         the readout is exactly the stored chain (bit-exact with the previous
@@ -367,6 +384,7 @@ class BioElectricCollective:
         iso_p = float(spec_reanchor_isolated)
         iso_draw = 0.0 < iso_p < 1.0 and phi_readout > 0.0
         neural_w = float(neural_readout)
+        mis_w = float(neural_misanchor)
 
         def face_slope(face: int, sign: int) -> tuple[float, float, float, float]:
             """Anchor (theta at the face), per-cell theta trend on the intact
@@ -459,6 +477,14 @@ class BioElectricCollective:
                         nread = float(spec[i]) \
                             + self.rng.normal(0.0, eff_noise)
                         guess = (1.0 - neural_w) * guess + neural_w * nread
+                    elif neural_w > 0.0 and mis_w > 0.0 and spec is not None:
+                        # M36: mis-anchored pole — the confinement is
+                        # broken; the wound reads the head program
+                        # regardless of position (egal-1 direction).
+                        nread = float(spec[0]) \
+                            + self.rng.normal(0.0, eff_noise)
+                        guess = (1.0 - neural_w * mis_w) * guess \
+                            + neural_w * mis_w * nread
                     theta_new = r * theta_new + (1.0 - r) * guess
                 self.theta[i] = theta_new
                 self.V[i] = theta_new
