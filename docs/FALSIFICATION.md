@@ -2161,3 +2161,50 @@ Night seven, part 3. exp43's registered follow-up:
   (8.15, from 11.19 — improved but still failing; the drag-shed alone
   is insufficient for random3: its bridges block at cut ~9 while its
   error needs rewiring, not just shedding — rung 1 remains its fix).
+
+## L58 — exp77 RUNG 6: CONDUCTANCE REMODELING (the star-search step 6; 2/6 — the refutations converge on the real variable)
+- THE CORRECTED THEOREM CONTRAST, HONESTLY SCORED REFUTED AS FIRED:
+  eps_slow = 0.04 leaves 25 hot cells (not <=2) — the anchor crawled
+  toward the hijacked V at rate eps (tau = 25 t.u. ~ the whole write
+  window) and had NOT converged by the tail (residual ~38% of 30 mV >
+  8). THE DEEPER FACT the contrast exposed: in exp75 theta tracked V
+  because theta rides the JUNCTION DIFFUSION CHANNEL (mu * lap_theta
+  at rate mu*deg — fast on a hub), not because of eps. THE ANCHOR
+  ESCAPES THE HIJACK ONLY IF IT DOES NOT RIDE THE COUPLING CHANNEL:
+  the two-timescale structure must split the JUNCTIONAL term, not just
+  the rate. (Theorem refined: a memory that propagates through the
+  channel that hijacks the field is hijacked with it.)
+- THINNING MOVES THE WALL AGAIN, AND STALLS AGAIN: scale_free|fixed
+  11.92 -> 9.66 (G/G0 0.699), |bfs 11.44 -> 8.75 (0.713). The thin
+  budget exhausts in ~15 rounds — the hot cells' max-conflict x W
+  edges are not the cut edges (the smear redistributes per-edge
+  conflict into the regions' interiors): the local signal again
+  cannot find the hijack's SOURCE. A ~19-20 hot cells persist forever
+  at G/G0 0.70: the tissue feels the incoherence and cannot act on
+  it. A UNCHANGED (verified array-equal), degrees exact.
+- TH-G4 REFUTED: random3|fixed under pure thinning 7.26 (from 11.19,
+  improved, still failing) — random3 needs REWIRING (its repair is
+  rung 1); the rungs are COMPLEMENTARY moves, not alternatives.
+- TH-G5: the topology metrics are indeed blind on the thinned
+  substrate (b2v 0.487 with the verdict improving) BUT M41 DID NOT
+  FIRE — the dynamics refuses too (9.66 > 6.0): wc = 0.51 tracks the
+  refusal. THE METRIC TABLE IS THE PRODUCT: wc separates ALL 16
+  points perfectly (static pass [0.010-0.072] / fail [0.110-0.487]
+  inherited from exp68 + thinned arms 0.451/0.512 fail). The
+  conductance-weighted crossing is promoted to the working coherence
+  metric.
+- THE CONVERGENCE (five rungs, one lesson): every local, cell-
+  autonomous rule (rewire / prune / grow / shed / thin) FAILS in the
+  high-degree regime because NO LOCAL SIGNAL IDENTIFIES THE HIJACK'S
+  SOURCE IN A SMEARED FIELD. And the mean-field fixed point says why
+  the wall exists at all: V* = (gamma*theta + G*V_nb)/(gamma + G) —
+  the error at a boundary cell = CONTRAST * g_cut / (gamma + g_cut +
+  g_home). WRITABILITY IS A PHASE RATIO: y = g_cut / (gamma + g_home)
+  <~ 0.25 (substrate-free in mean-field). The hub fails because its
+  g_cut = 10 while gamma = 0.25 — no rewiring of OTHER edges changes
+  the hub's own y; only (a) thinning ITS cut conductance, or
+  (b) STRENGTHENING THE IDENTITY (gamma), moves it. NEXT (exp78): THE
+  COHERENCE PHASE DIAGRAM — sweep gamma and the thinning floor f,
+  collapse all flip points onto the y variable; the star's mechanism
+  candidate is the IDENTITY/COUPLING RATIO, a real physiological dial
+  (channel expression vs junction load).
