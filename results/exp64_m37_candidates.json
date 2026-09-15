@@ -1,0 +1,40 @@
+{
+ "exp": "exp64_m37_candidates (M37-A coin + M37-B ion strength)",
+ "anchoring": "nb_p=0.8 DECLARED as the trunk-record anchor (0.812, n=28); tested OUT-OF-PLANE on head/tail",
+ "coin_rates": {
+  "trunk": {
+   "batch1": 0.8,
+   "batch2": 0.75,
+   "record": 0.812
+  },
+  "head": {
+   "batch1": 1.0,
+   "batch2": 1.0,
+   "record": 0.75
+  },
+  "tail": {
+   "batch1": 0.95,
+   "batch2": 0.9,
+   "record": 0.74
+  }
+ },
+ "ion_strength_rates": {
+  "trunk": 0.3333333333333333,
+  "head": 1.0,
+  "tail": 0.6666666666666666
+ },
+ "faithful_ion_rates": {
+  "trunk": 0.3333333333333333,
+  "head": 1.0,
+  "tail": 0.6666666666666666
+ },
+ "ion_pooled": 0.424,
+ "criteria": {
+  "NA_G1_stream_neutral": true,
+  "NA_G2_out_of_plane": true,
+  "NA_G3_step_structure": true,
+  "NB_G1_ion_strength_direction": false,
+  "NB_G2_pooled_delta_shrinks": false
+ },
+ "notes": "M37-A ADOPTED (NA gates): the neoblast layer carries the M31-A penetrance mechanism (per-animal coin from stored state, stream-neutral). M37-B REFUTED on the merits: the ion-strength protocol does NOT raise the generic family's trunk rate (0.33 both variants vs N1's 0.67; record 0.900) and INVERTS the plane signature (head 1.00) - the impairment CHANNELS are not interchangeable: homeostatic gamma impairment (N1) degrades trunk pattern maintenance while commitment-noise impairment (ion) degrades the guess-branch-dominated head regen. The generic family's residual stays owned by the record-hot bias P (exp51-D2); the N1 protocol remains the best registered direction."
+}

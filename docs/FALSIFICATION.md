@@ -1763,3 +1763,33 @@ Night seven, part 3. exp43's registered follow-up:
   voltage precision does not (err vs donor ~9.6 mV — the M28 blend
   lands the transferred zone between trunk and head values); the
   exp56 carrier-assistance term at the transfer level.
+
+## L45 — exp64 M37-A ADOPTED / M37-B REFUTED
+- M37-A ADOPTED (3/3): the neoblast layer carries the M31-A
+  penetrance mechanism — a per-animal FAILURE COIN minted from the
+  fragment's own stored state (blake2b digest of the quantized face
+  window + a family salt; ZERO self.rng contact; collective.py gains
+  neoblast_coin_p, bit-exact at None). NA-G1 stream neutrality (p=0
+  bit-identical to no-coin; p=1 reproduces the deterministic scar
+  exactly). NA-G2 OUT-OF-PLANE PREDICTION (the anchoring discipline:
+  nb_p=0.8 DECLARED as the trunk-record anchor 0.812, then tested on
+  the OTHER planes): trunk 0.80/0.75 vs record 0.812; head 1.00 vs
+  0.75 (at the band edge, n=5 stated); tail 0.95/0.90 vs 0.74 (n=2)
+  — all within the registered ±0.25 bands. NA-G3 step structure:
+  per-seed outcomes bimodal, independent 20-seed batches agree
+  within 0.15 — the M31-A signature (per-animal all-or-nothing,
+  population graded) reproduced in the gene layer.
+- M37-B REFUTED on the merits: the ion-strength protocol does NOT
+  raise the generic family's trunk rate toward the record (0.33 in
+  BOTH the first cns-only arm and the corrected FAITHFUL exp37 ion
+  protocol — both recorded — vs the N1 protocol's 0.67; record
+  0.900) and INVERTS the plane signature (head 0.33 -> 1.00).
+  FINDING: the impairment CHANNELS are not interchangeable —
+  homeostatic gamma impairment degrades trunk pattern maintenance;
+  commitment-noise impairment degrades the guess-branch-dominated
+  head regen. Plane signatures are channel-specific. The generic
+  family's residual stays owned by the record-hot bias P
+  (exp51-D2); the N1 protocol remains the best registered direction.
+  The first arm's mis-specification (cns/diff without the gamma*0.5
+  + noise*3 base) was caught and BOTH arms recorded before the
+  verdict.

@@ -175,7 +175,8 @@ class BioElectricCollective:
                neural_misanchor: float = 0.0,
                arz_readout: float = 0.0,
                arz_width: int = 2,
-               neoblast_depleted: float = 0.0) -> None:
+               neoblast_depleted: float = 0.0,
+               neoblast_coin_p: float | None = None) -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
@@ -401,6 +402,29 @@ class BioElectricCollective:
         # uncommitted — scar semantics). Blend the committed identity
         # toward the wound baseline; nb=0 bit-exact, nb=1 pure scar.
         nb_w = float(neoblast_depleted)
+        # M37-A: the per-animal neoblast FAILURE COIN — minted from the
+        # fragment's own stored state (the M31-A stream-neutral rule,
+        # ZERO self.rng contact): a quantized face-window digest seeds
+        # an isolated RNG; u < p declares the whole animal neoblast-
+        # failed (scar) for this regen. Per-animal all-or-nothing,
+        # population graded — the record's penetrance structure.
+        src0 = idx[0] - 1
+        if src0 < 0:
+            src0 = idx[0] if idx else None
+        coin_u = None
+        if neoblast_coin_p is not None and src0 is not None \
+                and 0 <= src0 < self.n:
+            lo = max(0, src0 - 2)
+            hi = min(self.n, src0 + 3)
+            win = np.round(self.theta[lo:hi], 6)
+            digest = hashlib.blake2b(
+                win.tobytes() + bytes([src0 & 0xFF, 0x4E]),
+                digest_size=8).digest()
+            g_coin = np.random.default_rng(
+                int.from_bytes(digest, 'little'))
+            coin_u = float(g_coin.random())
+            if coin_u < float(neoblast_coin_p):
+                nb_w = 1.0
 
         def face_slope(face: int, sign: int) -> tuple[float, float, float, float]:
             """Anchor (theta at the face), per-cell theta trend on the intact
