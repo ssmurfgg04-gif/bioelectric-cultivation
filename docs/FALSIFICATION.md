@@ -896,3 +896,40 @@ Net: the model gains one mechanism (two-face regrowth), the ledger
 gains two sharpened candidates with predicted signatures, and the
 re-registered morphogen criterion passes both sides. Suite green
 throughout; exp29/exp31 controls bit-exact.
+
+## Level 16 — exp33: S2R3a drug-timing response (the dose axis the DB actually has — unresolved at n=1, honestly)
+
+exp29's S2R3 predicted a monotone junction-loss dose-response (3.28 ->
+3.93 -> 4.54 -> 6.03 mV at gap_scale 1.0/0.5/0.25/0.05). PlanformDB 2.5.0
+carries NO concentrations (ExperimentDrug: Id/Experiment/Drug/StartTime/
+EndTime only) — the concentration axis is a literature task. But 45
+GJ-blocker rows carry exposure TIMING, 13 with nonzero values; semantics
+assumption RECORDED BEFORE the outcome query: (t,0) = pre-treatment
+pulse, junctions restored during regeneration; (0,t) = blocked through
+regeneration; (0,0) = unspecified.
+
+- **S2R3a-1 REFUTED AS REGISTERED -> UNRESOLVED.** The M25 mechanism
+  predicts restoration timing matters (S2C logic per experiment):
+  washout-before-regen should be LESS abnormal than regen-covered.
+  Recorded: washout mean 0.365 (n=6 outcome-bearing: heptanol 2h pulses
+  on head/tail/trunk, hexanol 1x) vs regen-covered mean 0.000 (n=1:
+  heptanol (0,2) tail). Direction is OPPOSITE to the registered gate —
+  BUT the critical arm has n=1 and the timing semantics are
+  unverified against the primary literature; a single fully-normal
+  (0,2)-tail experiment is equally consistent with "EndTime semantics
+  mean the block washes out DURING early regeneration". Verdict:
+  unresolved, low-power, not a clean mechanism kill; the mechanism's
+  restoration-side sim counterpart (S2C 0.00) remains intact.
+- **Instrumentation findings recorded:** (a) the octanol pulse series
+  (exps 435-440, Oviedo 2010 Fig 2A; pre-treatments 0.13/0.25/0.5/1/2/3h)
+  is the natural duration-response ladder but is RegenPeriod=0 in the
+  DB (no regeneration outcome recorded) — unusable for the regen
+  metric; (b) 32/45 GJ rows are (0,0) timing-unspecified; (c) S2R3b
+  (concentration monotonicity) requires primary-literature extraction
+  (Oviedo & Beane 2009; Fasciani 2014) — queued as S2R3c (resolve
+  timing semantics + extract dose series).
+
+What survives: the exp29 dose-response prediction is UNTESTED (not
+falsified) by this corpus; the timing-semantics question is now a
+concrete, cheap next step; the per-experiment drug-timing instrument
+exists (experiments/exp33_s2r3_timing.py).

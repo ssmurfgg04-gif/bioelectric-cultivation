@@ -591,3 +591,15 @@ Remaining night-three queue: dose-resolved innexin literature check
 (S2R3), recorded-NO-data novel-prediction sweep (QUEST task 6), and the
 DeepScientist zai-runner wiring (branch `zai-runner-wiring` on the fork;
 doctor green is quota-gated on the z-ai backend).
+
+## M27 addendum: exp33 — the dose axis the DB actually has (S2R3a unresolved, honestly)
+
+PlanformDB 2.5.0 carries no drug concentrations — but 45 GJ-blocker rows
+carry exposure timing. The M25 mechanism's per-experiment restoration
+prediction (washout-before-regen recovers, S2C logic) went the WRONG way
+at n=1 on the critical arm (washout 0.365/n=6 vs regen-covered 0.000/n=1)
+— registered as REFUTED-as-registered, downgraded to UNRESOLVED on power
++ semantics grounds (ledger L16). The Oviedo 2010 octanol pulse ladder
+(0.13–3h) is RegenPeriod=0 in the DB — no regeneration outcome recorded.
+S2R3's monotone dose-response prediction remains UNTESTED (not
+falsified); next step is primary-literature extraction (S2R3c).

@@ -143,3 +143,9 @@ DeepScientist binary itself is still pending install on the user's box)
 4. QUEST task 6: novel-prediction sweep over recorded-NO data cells.
 5. ds quest on the bioelectric repo once `ds doctor --runner zai` is
    green (quota-gated).
+
+- **N3.5 exp33 S2R3a.** Timing-semantics pre-registration -> query ->
+  directional miss at n=1 (washout 0.365 vs regen-covered 0.000) ->
+  ledger L16: REFUTED-as-registered, downgraded UNRESOLVED; octanol
+  pulse ladder RegenPeriod=0; S2R3b/c queued (literature extraction).
+- **N3.6 Pushed: M27 + exp33 (main) and zai wiring (fork branch).**
