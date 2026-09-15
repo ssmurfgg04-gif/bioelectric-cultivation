@@ -2037,3 +2037,49 @@ Night seven, part 3. exp43's registered follow-up:
   (junction pruning: connexin down-regulation, also real biology) with
   connectivity preserved; measure the minimal residual cut; find the
   last wall.
+
+## L55 — exp74 THE RENORMALIZATION LADDER (the star-search step 3; 4/6)
+- THE LADDER: relax the degree budget rung by rung, every move local
+  and target-blind — rung 1 REWIRE (exp73), rung 2 +PRUNE (conflict-
+  thresholded dissolution, threshold (0.3xcontrast)^2, connectivity
+  hard), rung 3 +GROW (Hebbian agreement wiring, budget = 1x initial
+  edges). Each rung continues from the previous wiring.
+- RL-G1 PASS — rung-1 anchor reproduces exp73 (torus 1.96 / random3
+  3.99 PASS, scale_free 10.58 FAIL).
+- RL-G2 REFUTED — THE LADDER DOES NOT CLIMB FOR scale_free: rung 2
+  prunes only ~21 edges then starves (10.46 -> 9.26), rung 3 grows
+  197 edges and gets WORSE (10.17, b2v 0.3756 -> 0.4075). NOT
+  WRITABLE AT ANY RUNG.
+- THE DIAGNOSIS (the new wall): the LOCAL REMODELING SIGNALS ARE
+  SMEAR-CORRUPTED. (a) Per-edge conflict is DEGREE-DILUTED — a hub
+  with 50 cross edges carries only a small drop per edge (the pull is
+  shared), so every edge sits below the prune threshold while the
+  tissue is globally incoherent: the tissue cannot SENSE its own
+  incoherence. (b) V-agreement growth is corrupted by the smear — in
+  the smeared field, cells ACROSS the true boundary both sit near the
+  midpoint and "agree", so growth WIRES ACROSS the boundary (cut 134 ->
+  152 edges); the incoherence is SELF-MASKING: the field corrupts the
+  very signals that would repair it.
+- RL-G4 REFUTED (scale_free fails verdict and hold); the movable arms
+  hold (hold ~= verdict on all four).
+- RL-G5a PASS — the fraction metric tracks every moved arm (b2v
+  0.0067-0.08 < 0.10; failed arms 0.35-0.41). RL-G5b PASS — the
+  ABSOLUTE crossing separates the pass/fail sets completely (pass
+  [1,2,9,16] vs fail [134,152]) — both metric forms survive the
+  ladder; no M41 yet.
+- RL-G7 PASS — no regression: the pass controls shed NOTHING (path
+  99->99, grid2d 180->180 edges; the threshold rule is need-driven,
+  exactly as registered).
+- THE RESIDUAL CUT (readout capacity, RL-G3 deposited): torus|bfs 2
+  bridges (1 head component), random3|fixed 9 bridges (2 head comps —
+  the minimum is 2, the tissue spent 9), random3|bfs 1 bridge (1 comp
+  — MINIMAL). The write-coherence vs readout-bandwidth trade-off is
+  now measurable in bridges.
+- THE CANDIDATE SIGNAL THAT ESCAPES THE SMEAR: the homeostatic drag
+  |V_i - theta_i| — per-cell (not per-edge, undiluted), fully local
+  (a cell knows its own channel-set target and its achieved voltage),
+  target-blind. It reads the smear DIRECTLY (theta = binary label, V =
+  smeared; drag = the error). exp75 = rung 4: DRAG-DRIVEN REMODELING.
+  Prediction: scale_free becomes writable when cells that cannot hold
+  their identity shed their most-conflicting junctions. If refuted,
+  the wall is deeper than sensing (log what remains).
