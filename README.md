@@ -951,3 +951,33 @@ and the literature.
   partial-death survival, reader-dependent); the coherence
   constraint ROBUST across formalizations (the star stays blocked
   by the dynamics — the honest step-1 report).
+
+### Stage scoreboard after the STAR-SEARCH ARC (exp73-exp79)
+- Stage 5 飞升: **THE STAR IS CROSSED AT THE MODEL LEVEL.** The
+  star-search arc ran eight steps: (1) the coherence constraint is
+  formalization-robust (exp68); (2-6) every LOCAL remodeling
+  mechanism fails the hub regime with a diagnosed signal pathology —
+  rewiring moves the boundary for homogeneous-degree substrates
+  (torus 8.47 -> 1.96) but hubs are walled (exp73); the ladder's
+  prune/grow/thin rungs all stall — the local signals are
+  degree-diluted, smear-corrupted, self-extinguishing, bridge-walled,
+  source-blind (exp74-77); (7) the phase diagram finds the TWO-CHANNEL
+  structure: the V-channel ratio g_cut/(gamma+g_total) AND the theta
+  homogenization number mu*deg*T — the identity layer diffuses
+  through the same junctions and hijacks itself (exp78: mu=0 takes
+  scale_free 9.17 -> 0.16 mV); (8) **the star point**: (gamma=64,
+  mu=0) writes ANY substrate with NO remodeling (scale_free 0.57
+  verdict, 0.57 hold) and the UNIVERSAL READER — the non-junctional
+  anterior read (M33) + anchor + strength — regenerates the head
+  through ZERO junctions (V 0.43 / theta 0.44) (exp79).
+- **The reframe is now a result**: the star was never "no substrate" —
+  it is "any substrate coherent with the pattern", and the boundary is
+  an ARCHITECTURE REQUIREMENT, not a wall: strong identity + a
+  non-diffusing anchor + a read on a channel the coupling cannot
+  hijack. The reader's domain is anterior-only (trunk regen fails at
+  w=0) — the recorded posterior-biased GJ-blockade phenotypes
+  reproduced as a structural theorem.
+- The price is named: the anchor's cost is the RATE of organic
+  repatterning (the eps channel provides redundant slower
+  propagation — TC-G6's honest refutation), and the two dials'
+  interaction term is the next theory task (TC-G1: Spearman 0.838).
