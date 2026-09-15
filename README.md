@@ -603,3 +603,20 @@ at n=1 on the critical arm (washout 0.365/n=6 vs regen-covered 0.000/n=1)
 (0.13–3h) is RegenPeriod=0 in the DB — no regeneration outcome recorded.
 S2R3's monotone dose-response prediction remains UNTESTED (not
 falsified); next step is primary-literature extraction (S2R3c).
+
+## M28 (candidate registered): exp34 — chain commitment diffusion adopted; the length-gradient problem is structural
+
+- **M27B ADOPTED** — chain-accumulating commitment diffusion
+  (`commitment_diffusion`): identity noise random-walks along the chain
+  and compounds (sd ~ diffusion*sqrt(d)). ion_channel_tail 0.00 -> 1.00;
+  ion pooled 0.665 ~ junction 0.67 (record: 0.45 vs 0.41) — the S2W4
+  junction>>channel artifact is resolved. Channel slice now needs
+  penetrance dampening (sim 1.00 vs recorded 0.45), not mechanism.
+- **M27A REFUTED (structural)** — whole-fragment secant + identity-
+  repertoire clip leaves cross_a at 1.00: the head plateau dominates the
+  fragment's stored theta; the tail-ward trend was amputated away. No
+  stored-pattern readout can recover what the record (0.52) shows head
+  fragments regenerate. Registered M28 candidate: DUAL-FIELD
+  architecture — theta (expression) + phi (positional map), the model-
+  level form of pattern-memory vs positional-control distinctions.
+- Ledger L17; suite green; exp29/exp31 controls bit-exact throughout.

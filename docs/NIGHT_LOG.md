@@ -149,3 +149,22 @@ DeepScientist binary itself is still pending install on the user's box)
   ledger L16: REFUTED-as-registered, downgraded UNRESOLVED; octanol
   pulse ladder RegenPeriod=0; S2R3b/c queued (literature extraction).
 - **N3.6 Pushed: M27 + exp33 (main) and zai wiring (fork branch).**
+- **N3.7 exp34 M27 candidates.** M27b chain diffusion ADOPTED (ion_tail
+  0.00->1.00, S2W4 artifact resolved); M27a REFUTED structurally
+  (head-fragment theta carries no tail-ward trend) -> M28 dual-field
+  candidate registered (theta expression + phi positional map). L17.
+- **N3.8 Pushed exp34 + M27 params.**
+
+## Night-four queue (updated)
+1. M28 DUAL-FIELD: add phi (positional-coordinate layer) — fragment-
+   surviving, re-anchors at wound faces; regrow identity = phi readout
+   blended with theta chain (M25 coupling gating applies to BOTH
+   readouts). Target: cross_a 1.00 -> ~0.5 without moving tail/head/trunk
+   (they are already 0.00) and keeping restored/intact controls 0.00.
+2. Channel-slice penetrance dampening: cns/diffusion mapping for
+   ion_channel arms to land ~0.45 instead of 1.00 (dose-style scan).
+3. S2R3c: resolve ExperimentDrug timing semantics from primary
+   literature; extract the octanol/heptanol dose series.
+4. QUEST task 6: novel-prediction sweep over recorded-NO cells.
+5. ds quest on the bioelectric repo when `ds doctor --runner zai` is
+   green (quota watcher running).

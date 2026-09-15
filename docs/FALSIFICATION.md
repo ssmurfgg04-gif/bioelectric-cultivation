@@ -933,3 +933,42 @@ What survives: the exp29 dose-response prediction is UNTESTED (not
 falsified) by this corpus; the timing-semantics question is now a
 concrete, cheap next step; the per-experiment drug-timing instrument
 exists (experiments/exp33_s2r3_timing.py).
+
+## Level 17 — exp34: M27 candidates (chain commitment diffusion ADOPTED; the length-gradient problem is STRUCTURAL)
+
+Second wave of the night-three repair evaluation, same discipline
+(pre-registered gates in `experiments/exp34_m27_candidates.py`;
+bit-exact gate + full suite green before the run).
+
+- **M27B ADOPTED — CHAIN-ACCUMULATING COMMITMENT DIFFUSION.** The exp32
+  diagnosis (i.i.d. noise averages out) was fixed mechanically:
+  identity noise now random-walks ALONG the chain (wander += N(0,
+  commitment_diffusion) per committed cell; sd ~ diffusion*sqrt(d)),
+  compounding through sequential inheritance — the coherent-corruption
+  channel junction loss already had. ion_channel_tail 0.00 -> 1.00
+  (err 9.19 +/- 1.67 mV), ion_channel_head 0.33; cutting/innexin arms
+  bit-exact unchanged (default-inertness gate PASS). The S2W4 artifact
+  (sim ion 0.00 vs junction 0.67) is RESOLVED: ion pooled 0.665 is now
+  COMPARABLE to junction 0.67, matching the record's 0.45 vs 0.41.
+  Adopted mapping for the ion protocol: cns=3.0, diffusion=1.5.
+  Penetrance overshoot recorded honestly (sim 1.00 vs recorded 0.45 —
+  the channel slice now needs penetrance dampening, not mechanism).
+- **M27A REFUTED AGAIN — AND THE DIAGNOSIS IS STRUCTURAL.** The
+  whole-fragment secant + repertoire clip leaves cross_a at 1.00 (err
+  22.02, unchanged from M26a): a head-only fragment's stored theta
+  contains almost NO tail-ward trend (the head plateau dominates the
+  profile; the depolarization trend lives in the CUT-OFF cells). No
+  readout of the stored pattern alone can reconstruct positional
+  information that was amputated away — yet the record shows head
+  fragments regenerate tails at 0.52 penetrance. This is evidence for a
+  DUAL-FIELD architecture (M28 candidate): theta = expression layer
+  (what the cell commits to), phi = positional-coordinate layer
+  (body-wide, fragment-surviving, re-anchoring at wound faces) — the
+  model-level form of Levin-lab positional-control distinctions
+  (pattern memory vs positional map).Bins b/c/d <= 0.34 and all plane
+  collaterals 0.00 (no collateral from the new params).
+
+Model state after tonight: regrow() carries M25 (coupling-dependent
+readout) + M26c (two-face) + M27b (chain commitment diffusion) adopted;
+M26a/M27a length-gradient readouts refuted twice with sharpening
+diagnoses. Suite green; exp29/exp31 controls bit-exact throughout.

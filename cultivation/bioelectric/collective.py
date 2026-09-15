@@ -137,7 +137,10 @@ class BioElectricCollective:
     def regrow(self, region: slice, cell_period: float = 0.8, dt: float = 0.1,
                noise: float = 0.6, direction: str = "forward",
                length_gradient: float = 0.0,
-               commitment_noise_scale: float = 1.0) -> None:
+               commitment_noise_scale: float = 1.0,
+               gradient_window: int = 5,
+               gradient_clip: bool = False,
+               commitment_diffusion: float = 0.0) -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
@@ -179,6 +182,32 @@ class BioElectricCollective:
         heal both faces, producing the two-headed / two-tailed phenotypes
         the one-face topology cannot reach).
 
+        M27 ADDITIVE PARAMETERS (night three, second wave; each bit-exact
+        at default):
+
+        `gradient_window` — the positional-trend measurement span for the
+        length-gradient readout: 5 (default) = the M26a five-cell window
+        adjacent to the wound face; 0 = WHOLE-FRAGMENT secant (theta at
+        the far end of the intact side vs theta at the face). exp32's
+        refutation diagnosis: a head-only fragment's 5-cell face window
+        sits on the head plateau (slope ~0) so the extrapolation is a
+        no-op exactly where the recorded refutation lives; the secant
+        over the WHOLE fragment carries the head->trunk depolarization
+        trend instead.
+        `gradient_clip` — saturate the extrapolated identity to the
+        intact side's own identity repertoire [min(theta), max(theta)]
+        (intrinsic fate-axis bounds: the fragment cannot commit a cell
+        OUTSIDE the identity range it actually stores). No external
+        target knowledge.
+        `commitment_diffusion` — CHAIN-ACCUMULATING commitment error
+        (M27 candidate #2): per-cell identity noise that random-walks
+        ALONG the chain (wander += N(0, diffusion) each committed cell),
+        so commitment error COMPOUNDS through sequential inheritance
+        (sd ~ diffusion * sqrt(d)) instead of averaging out — the
+        exp32 diagnosis of why i.i.d. commitment noise (M26b) left the
+        ion arms at 0.00 while the record shows 0.45. Zero new RNG draws
+        when 0.0.
+
         M25 COUPLING-DEPENDENT READOUT (exp27 S2P1 repair): the inheritance
         read itself runs THROUGH the gap-junction network. At full coupling
         the readout is exactly the stored chain (bit-exact with the previous
@@ -198,25 +227,36 @@ class BioElectricCollective:
         eff_noise = float(noise) * float(commitment_noise_scale)
         g = float(length_gradient)
 
-        def face_slope(face: int, sign: int) -> tuple[float, float]:
-            """Anchor (theta at the face) + per-cell theta trend measured on
-            the intact side of the face (sign -1: anterior tissue, +1:
-            posterior tissue). Deterministic — no RNG contact."""
+        def face_slope(face: int, sign: int) -> tuple[float, float, float, float]:
+            """Anchor (theta at the face), per-cell theta trend on the intact
+            side of the face, and the intact side's identity-repertoire
+            [lo, hi] for gradient clipping. sign -1: anterior tissue,
+            +1: posterior tissue. Deterministic — no RNG contact.
+            gradient_window 0 => whole-fragment secant; window w => w-cell
+            window adjacent to the face (M26a behavior when w == 5)."""
             if sign < 0:
-                lo, hi = max(0, face - 5), face  # intact cells face-5..face-1
+                lo = max(0, face - gradient_window) if gradient_window > 0 else 0
+                hi = face  # intact cells lo..face-1
             else:
-                lo, hi = face + 1, min(self.n, face + 6)
-            if hi - lo < 1 or (sign < 0 and face - 1 < 0) \
-                    or (sign > 0 and face + 1 > self.n - 1):
-                return float(self.theta[face if 0 <= face < self.n
-                                        else (idx[0] if sign < 0 else idx[-1])]), 0.0
+                lo = face + 1
+                hi = min(self.n, face + 1 + gradient_window) if gradient_window > 0 else self.n
+            no_tissue = (hi - lo < 1) or (sign < 0 and face - 1 < 0) \
+                or (sign > 0 and face + 1 > self.n - 1)
+            fallback = float(self.theta[face if 0 <= face < self.n
+                                        else (idx[0] if sign < 0 else idx[-1])])
+            if no_tissue:
+                return fallback, 0.0, fallback, fallback
             vals = self.theta[lo:hi]
-            slope = float((vals[-1] - vals[0]) / max(1, len(vals) - 1)) \
-                if len(vals) > 1 else 0.0
-            return float(self.theta[face]), slope
+            if len(vals) > 1:
+                slope = float((vals[-1] - vals[0]) / (len(vals) - 1))
+            else:
+                slope = 0.0
+            anchor = float(self.theta[face])
+            return anchor, slope, float(np.min(vals)), float(np.max(vals))
 
         def walk(order: list[int], src: int, sign: int) -> None:
-            anchor, slope = face_slope(src, sign)
+            anchor, slope, rep_lo, rep_hi = face_slope(src, sign)
+            wander = 0.0
             d = 0
             for i in order:
                 for _ in range(steps_per_cell):
@@ -224,9 +264,14 @@ class BioElectricCollective:
                 d += 1
                 chain_base = self.theta[src]
                 if g > 0.0:
-                    chain_base = (1.0 - g) * chain_base \
-                        + g * (anchor + slope * d)
-                theta_new = chain_base + self.rng.normal(0.0, eff_noise)
+                    extrap = anchor + slope * d
+                    if gradient_clip and rep_lo < rep_hi:
+                        extrap = min(max(extrap, rep_lo), rep_hi)
+                    chain_base = (1.0 - g) * chain_base + g * extrap
+                if commitment_diffusion > 0.0:
+                    wander += self.rng.normal(0.0, commitment_diffusion)
+                theta_new = chain_base + self.rng.normal(0.0, eff_noise) \
+                    + wander
                 if r < 1.0:
                     guess = wound_center + self.rng.normal(
                         0.0, self.blastema_readout_noise)
