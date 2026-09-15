@@ -200,3 +200,26 @@ DeepScientist binary itself is still pending install on the user's box)
   zai-runner-wiring force-pushed with the fix (d227b4e). `ds doctor
   --runner zai` reaches a REAL end-to-end probe — everything green
   except the externally quota-gated model call.
+
+## Night four/five — 2026-09-15 (executed directly by the research agent; z-ai backend quota-gated all day — quest 001 executed by the primary agent per the user's standing fallback directive)
+
+### Seeded state at nightfall
+- main @ a237145; fork zai-runner-wiring @ d227b4e; quest 001 registered (runner zai), blocked on 429.
+
+### Work log
+- **N4.1 ZAI quota resolved per user directive.** Probe confirmed 429 on chat + web_search. Fallback: the primary research agent executed quest 001's goal directly (this night); Europe PMC free REST used for all literature fetches (no key, not rate-limited). The zai runner stays wired for when quota opens.
+- **N4.2 exp38 M30** (ledger L20): per-cell spec-expression REFUTED — the chain RE-CARRIES the spec blend (the mechanism insight behind the sharp phi transition). Amended per-blastema re-anchoring splits seeds (q=0.55 -> 0.67) but flips the marginal innexin seed via RNG-stream shift -> NOT adopted. M31: anchor availability as stored fragment history.
+- **N4.3 exp37 full sweep** (L21): 1,029/1,462 experiments mapped per-experiment (coverage 0.704, 36 arms, adopted state). Plane ordering rho +0.80 PASS; class ordering REFUTED (other_rnai 0.80 vs sim 0.00 — missing gene layer + bias); MAE 0.595 REFUTED with the SYMMETRIC signature (no-perturbation undershoots, perturbation overshoots). M32: threshold fitting.
+- **N4.4 exp39 Levin comparison** (L22): 6/6 published direction claims MATCH (Beane 2011/2013, Oviedo 2007/2010, Pezzulo/Levin 2021). Absolute mV honestly scoped unpublished.
+- **N4.5 exp40 dose scan** (L23): grid monotone in diffusion; ion|trunk RESOLVED at (cns=1, diff=1.0); S2R3c closed — untested not falsified, novel-prediction deposit.
+- **N4.6 exp41 Stage 3 compiler** (L24): restorative + two-head compilation verified 3/3 (zero search); safety refusal PASS; coupling precondition load-bearing PASS; ectopic novel-anatomy REFUTED by 0.22 mV + latch amendment REFUTED (different signature) -> v1 hybrid latch+spec rule. Verifier substring bug caught+fixed.
+- **N4.7 exp42 Stage 4 light cone** (L25): propagation + fragmentation + junction-scaled dose-response (rho=1.00) PASS; memory CONE-BOUNDED (LC-G4 refuted w/ power diagnosis) — the instrument explains the 24h rewrite requirement.
+- **N4.8 exp43 Stage 5 substrate independence** (L26): mechanism transfers universally (M25 corruption 12-22 mV, regen 1.1-4.5 mV); attractor existence is substrate-conditioned (boundary-to-volume ratio of the target partition; degree normalization probed, insufficient). Compiler R5 (substrate-aware partitioning) registered.
+
+### Night-six queue (priority order)
+1. M31: stored per-cell anchor availability at pattern set (stream-neutral penetrance; prediction: seed-splitting without regrow-time RNG, fragment-size correlation).
+2. innexin|head plane-dependent readout (exp35's +1.00 gap — the head-specific protection channel).
+3. Compiler v1: hybrid latch+spec rule (CP-G3' signature), then R5 substrate-aware partitioning + per-substrate eps/mu calibration (exp43 signature).
+4. M32: pre-registered-fitted threshold (exp37's shift table is the fitting target; exp29 watch-item).
+5. 24h-pulse light cone (LC-G4's power diagnosis: whole-body cone + residue).
+6. ds quest 001 via zai runner when quota opens (watcher v2 still pointed at it).
