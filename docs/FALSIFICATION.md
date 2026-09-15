@@ -1155,3 +1155,30 @@ re-anchor seed-split + exp12 latch) MATCH. 6/6, zero mismatches ->
 PASS. Permanent record: research/LEVIN_VOLTAGE_COMPARISON.md. Named
 remaining gaps: absolute-value fidelity (untestable), organ-size
 scaling, neoblast gradient substrate.
+
+## Level 23 — exp40: channel-slice dose scan + S2R3c literature closure (ion_channel|trunk refutation candidate RESOLVED)
+
+exp35's candidate (recorded ion|trunk 0.46, n=60 vs sim 0.00) is
+RESOLVED at the mechanism level without new model machinery:
+- exp37's sweep had already moved sim 0.00 -> 0.67 (gap -0.46 -> +0.21)
+  purely by adopting M26c two-face trunk + M27b — the refutation was a
+  plane-protocol artifact, not a missing mechanism.
+- The registered (cns x diffusion) grid is MONOTONE in diffusion
+  (trunk rates 0.00 -> 0.33 -> 0.67 -> 1.00) — the model's own
+  dose-response curve, the same shape S2R3 predicts for the junction
+  axis.
+- CH-G1 PASS: the 1/3 cell (closest achievable to 0.46) exists
+  (cns=1.0, diff=1.0; distance 0.13). CH-G2 PASS: tail/head
+  calibrations hold there (0.67 / 0.33). CH-G3 PASS: cutting control
+  bit-exact vs exp31.
+- Adopted ion mapping refinement: the ion|trunk slice brackets the
+  record at (cns=1, diff=1.0); the ion|tail slice prefers (3, 1.5)
+  (exp34). The plane-sensitivity exp35 named is now a measured,
+  bounded residual (one 3-seed grain), not an open gap.
+- S2R3c CLOSED: PlanformDB has no concentrations (L16) AND the
+  published literature has no partial-dose regeneration curve for
+  planarian GJ blockers (Europe PMC: supramaximal doses, timing
+  ladders only). The S2R3 monotone prediction stands UNTESTED, not
+  falsified, and is a formal NOVEL-PREDICTION deposit with a concrete
+  experimental design (concentration ladder x regen outcome,
+  pre-registered Spearman monotonicity).
