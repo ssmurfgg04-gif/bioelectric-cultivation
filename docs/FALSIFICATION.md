@@ -2118,3 +2118,46 @@ Night seven, part 3. exp43's registered follow-up:
   writable. The theorem contrast is the gate: single-timescale (eps_slow
   = eps) must fail (reproduces exp75), frozen must work — the
   timescale separation IS the mechanism that moves the boundary.
+
+## L57 — exp76 RUNG 5: THE SLOW ANCHOR (the star-search step 5; 1/7 as registered, with the wall precisely located and one implementation bug owned)
+- THE SLOW DRAG WORKS: with the frozen anchor the signal separates
+  (fail arms mean slow drag 9.8/9.3 mV, 35 hot cells; path 0.58 mV, 2
+  hot) and shedding ENGAGES: scale_free|fixed 11.92 -> 8.45 (61
+  junctions shed, cut 197 -> 136), scale_free|bfs 11.44 -> 7.27 (89
+  shed, cut -> 27, b2v 0.250). First movement of the hub wall by a
+  cell-autonomous rule.
+- BUT THE PREDICTION REFUTED — THE SHED STALLS AT THE BRIDGE WALL:
+  after the shed phase, EVERY remaining cut edge is a connectivity
+  bridge (blocked counter: 801 / 600 consecutive connectivity-blocked
+  shed attempts); error freezes at 8.4 / 7.3, above the 6.0 bar. The
+  tissue has shed all it can without disconnecting, and 27-61 bridges
+  still carry enough hijack to break the write.
+- THE WALL, NOW EXACTLY LOCATED: not the degree budget (rung 5 sheds
+  degree freely), not the sensing (the frozen anchor fires) — THE
+  CONNECTIVITY ITSELF: anatomical unity forces electrical coupling,
+  and the bridges carry the hijack. THE ESCAPE (registered as rung 6):
+  anatomical bridges and electrical coupling are SEPARABLE variables
+  (A vs G in the model's own equations; the theta/identity read
+  propagates through mu*A and never touches G). CONDUCTANCE
+  REMODELING: keep the bridge, down-regulate the channel (connexin
+  gating — the most directly biological remodeling move: minutes, not
+  hours). The write-coherence vs readout-bandwidth trade becomes a
+  CONTINUOUS dial instead of a topological wall.
+- AN IMPLEMENTATION BUG OWNED (the honesty protocol): AN-G1/AN-G7 as
+  coded could not fire the theorem contrast — the eps_slow=0.04 anchor
+  was relaxed toward its CAPTURED VALUE (lbl), never toward V, so it
+  never felt the hijack (anchor drift 0.00 by construction, hot=35
+  even at eps_slow=eps). The registered single-timescale-fails
+  contrast is UNTESTED, not passed. exp77 re-registers it with the
+  corrected dynamics: the anchor must be dragged BY THE VOLTAGE (a_v
+  += eps_slow * (V - a_v)) — at eps_slow = eps it is theta (exp75's
+  failure must reproduce); at 0 it is the frozen spec.
+- AN-G6 PASS: the metrics still track (b2v 0.449/0.250 with the
+  dynamics refusing — no disagreement). AN-G2 REFUTED as registered
+  (grid2d's 19 hot cells exceed the pass-arm bound — the threshold
+  reads depth of failure, and grid2d sits near the bar; the honest
+  bound is on SHEDS, which grid2d limits to 20 harmless ones).
+  AN-G5 REFUTED honestly: random3|fixed BREAKS under pure anchor-shed
+  (8.15, from 11.19 — improved but still failing; the drag-shed alone
+  is insufficient for random3: its bridges block at cut ~9 while its
+  error needs rewiring, not just shedding — rung 1 remains its fix).
