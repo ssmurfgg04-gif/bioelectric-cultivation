@@ -135,7 +135,9 @@ class BioElectricCollective:
         self.theta[region] = blastema_theta
 
     def regrow(self, region: slice, cell_period: float = 0.8, dt: float = 0.1,
-               noise: float = 0.6, direction: str = "forward") -> None:
+               noise: float = 0.6, direction: str = "forward",
+               length_gradient: float = 0.0,
+               commitment_noise_scale: float = 1.0) -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
@@ -150,6 +152,33 @@ class BioElectricCollective:
         trunk boundary BEHIND it). At gap_scale == 1.0 and direction ==
         "forward" the mechanism is bit-exact with the pre-M25 chain.
 
+        M26 ADDITIVE PARAMETERS (night three; each bit-exact at default):
+
+        `length_gradient` g in [0,1] — INTRINSIC positional-information
+        readout (M26a): a committing cell at distance d past the wound face
+        blends chain inheritance with a linear EXTRAPOLATION of the stored
+        theta trend measured over the intact tissue adjacent to the face
+        (Wolpert-style positional cue; no external target knowledge). g=0
+        keeps pure chain inheritance (bit-exact pre-M26 walk). Fixes the
+        crosspiece length-gradient refutation (S2W2's cross_a overshoot:
+        sim 1.00 vs recorded 0.52 — a pure chain cannot know how MUCH was
+        removed; a gradient readout can).
+
+        `commitment_noise_scale` — Vmem-gated blastema COMMITMENT (M26b):
+        multiplies the per-cell identity noise. Ion-channel dysfunction
+        (impaired homeostatic relaxation, noisy Vmem) degrades the
+        commitment signal itself, not the stored pattern — recorded
+        ion_channel experiments are as abnormal as junction loss (0.45 vs
+        0.41) while the sim's stored pattern stays intact (0.00). The arm
+        chooses the scale; default 1.0 is bit-exact.
+
+        `direction="both"` (M26c) — TWO-FACE trunk regeneration: splits the
+        region at the midpoint; the anterior half regenerates forward from
+        the anterior face, the posterior half backward from the posterior
+        face (two independent blastemas — mid-body removals in the record
+        heal both faces, producing the two-headed / two-tailed phenotypes
+        the one-face topology cannot reach).
+
         M25 COUPLING-DEPENDENT READOUT (exp27 S2P1 repair): the inheritance
         read itself runs THROUGH the gap-junction network. At full coupling
         the readout is exactly the stored chain (bit-exact with the previous
@@ -163,30 +192,67 @@ class BioElectricCollective:
         idx = list(np.arange(self.n)[region])
         if not idx:
             return
-        if direction == "forward":
-            boundary = idx[0] - 1
-            src = boundary if boundary >= 0 else idx[0]
-            order = idx
-        elif direction == "backward":
-            boundary = idx[-1] + 1
-            src = boundary if boundary < self.n else idx[-1]
-            order = list(reversed(idx))
-        else:
-            raise ValueError(direction)
         steps_per_cell = max(1, int(round(cell_period / dt)))
         r = float(self.gap_scale)  # junction health at regen onset
         wound_center = float(np.mean(self.theta[idx]))
-        for i in order:
-            for _ in range(steps_per_cell):
-                self.step(dt)
-            theta_new = self.theta[src] + self.rng.normal(0.0, noise)
-            if r < 1.0:
-                guess = wound_center + self.rng.normal(
-                    0.0, self.blastema_readout_noise)
-                theta_new = r * theta_new + (1.0 - r) * guess
-            self.theta[i] = theta_new
-            self.V[i] = theta_new
-            src = i
+        eff_noise = float(noise) * float(commitment_noise_scale)
+        g = float(length_gradient)
+
+        def face_slope(face: int, sign: int) -> tuple[float, float]:
+            """Anchor (theta at the face) + per-cell theta trend measured on
+            the intact side of the face (sign -1: anterior tissue, +1:
+            posterior tissue). Deterministic — no RNG contact."""
+            if sign < 0:
+                lo, hi = max(0, face - 5), face  # intact cells face-5..face-1
+            else:
+                lo, hi = face + 1, min(self.n, face + 6)
+            if hi - lo < 1 or (sign < 0 and face - 1 < 0) \
+                    or (sign > 0 and face + 1 > self.n - 1):
+                return float(self.theta[face if 0 <= face < self.n
+                                        else (idx[0] if sign < 0 else idx[-1])]), 0.0
+            vals = self.theta[lo:hi]
+            slope = float((vals[-1] - vals[0]) / max(1, len(vals) - 1)) \
+                if len(vals) > 1 else 0.0
+            return float(self.theta[face]), slope
+
+        def walk(order: list[int], src: int, sign: int) -> None:
+            anchor, slope = face_slope(src, sign)
+            d = 0
+            for i in order:
+                for _ in range(steps_per_cell):
+                    self.step(dt)
+                d += 1
+                chain_base = self.theta[src]
+                if g > 0.0:
+                    chain_base = (1.0 - g) * chain_base \
+                        + g * (anchor + slope * d)
+                theta_new = chain_base + self.rng.normal(0.0, eff_noise)
+                if r < 1.0:
+                    guess = wound_center + self.rng.normal(
+                        0.0, self.blastema_readout_noise)
+                    theta_new = r * theta_new + (1.0 - r) * guess
+                self.theta[i] = theta_new
+                self.V[i] = theta_new
+                src = i
+
+        if direction == "forward":
+            boundary = idx[0] - 1
+            src = boundary if boundary >= 0 else idx[0]
+            walk(idx, src, -1)
+        elif direction == "backward":
+            boundary = idx[-1] + 1
+            src = boundary if boundary < self.n else idx[-1]
+            walk(list(reversed(idx)), src, +1)
+        elif direction == "both":
+            h = len(idx) // 2
+            fwd_b = idx[0] - 1
+            fwd_src = fwd_b if fwd_b >= 0 else idx[0]
+            walk(idx[:h], fwd_src, -1)
+            bwd_b = idx[-1] + 1
+            bwd_src = bwd_b if bwd_b < self.n else idx[-1]
+            walk(list(reversed(idx[h:])), bwd_src, +1)
+        else:
+            raise ValueError(direction)
 
     def corrupt_region(self, region: slice, theta_value: float,
                        V_value: float | None = None) -> None:

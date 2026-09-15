@@ -840,3 +840,59 @@ What survives: the widened harness (31 arms, 0.84 coverage), the
 drug-enriched junction slice, the plane-gradient instrument, and three
 sharpened M26 candidates (length-gradient readout, Vmem-gated commitment,
 posterior-face regeneration) — the night-three queue.
+
+## Level 15 — exp32: M26 repair candidates (one adopted, two sharpened, one criterion honestly re-registered)
+
+Night three (2026-09-15). Pre-registered gates in
+`experiments/exp32_m26_repairs.py` BEFORE tonight's arms ran; recorded
+references are exp31's published cells only. Bit-exact gate first:
+`scripts_dev/verify_m26_bitexact.py` re-runs exp29's cutting/innexin
+per-seed errors through the patched collective — 1e-9 identical — and the
+full suite is green. Two process catches this session, both recorded:
+(a) an added 15h post-regen relaxation run flipped the innexin rate
+0.67 -> 0.33 and broke bit-exactness — caught by gates M26B-G2/G3,
+protocol corrected to exp31's read-immediately-after-regrow discipline
+before any verdict was recorded; (b) the run crash on arm-name parsing
+was fixed without touching gates.
+
+Verdicts (results/exp32_m26_repairs.json):
+
+- **M26C ADOPTED — TWO-FACE TRUNK REGENERATION.** `regrow(direction=
+  'both')`: mid-body removals now heal from BOTH faces (two independent
+  blastemas). cutting_trunk@both 0.00 (gate <= 0.34, recorded trunk
+  0.308); wnt_trunk@both 1.00 and apc_trunk@both 1.00 (gate >= 0.67;
+  recorded wnt_trunk 0.768) — the recorded two-headed/two-tailed trunk
+  phenotypes are REACHABLE for the first time. The one-face topology
+  from exp31's dead-list is repaired, additively, bit-exact at default.
+- **S2W3b PASS x3 — THE RE-REGISTRATION HOLDS.** (1) recorded AP-
+  morphogen plane means are plane-INVARIANT (head 0.636 / tail 0.652 /
+  trunk 0.768; spread 0.132 <= 0.15) — the S2W3 specificity clause was
+  wrong-bio, as exp31 diagnosed; (2) pooled AP-morphogen 0.724 > cutting
+  0.512; (3) sim plane-invariance: wnt_tail (exp31) 1.00 == wnt_trunk@both
+  1.00, apc_head 1.00 == apc_trunk@both 1.00 (|diff| <= 0.34). The
+  morphogen polarity criterion is now validated on BOTH sides under the
+  corrected biology. Never silently swapped — re-registered, gated, passed.
+- **M26A REFUTED AS IMPLEMENTED — local extrapolation is a no-op where
+  it matters.** cutting_cross_a @ g=1.0: 1.00 (err 21.95), identical to
+  g=0 (D(1)=D(0)=1.45). Diagnosis: a head-only fragment's adjacent-cell
+  slope is ~0 (plateau), so linear extrapolation degenerates to chain
+  inheritance exactly where the refutation lives (recorded bin a 0.52).
+  No collateral (tail/head/trunk bit-exact unchanged). M27 candidate #1:
+  SATURATED extrapolation clipped to the fragment's own identity
+  repertoire (intrinsic fate-axis bounds), plus graded penetrance — the
+  recorded bin gradient (0.52/0.43/0.27/0.27) is a remaining-fraction
+  law, and the mechanism must be length-aware beyond the local slope.
+- **M26B REFUTED AS IMPLEMENTED — i.i.d. commitment noise averages out.
+  ** ion_channel_tail @ cns=3.0: err 2.9 -> 4.09 mV (real, right
+  direction) but pred-abn 0.00 vs recorded 0.45. Diagnosis: independent
+  per-cell identity noise washes out across the regrown segment (15-cell
+  average); junction loss corrupts ALL cells coherently through the
+  blind-guess fallback. M27 candidate #2: CHAIN-ACCUMULATING commitment
+  diffusion — identity noise that random-walks ALONG the chain (sd
+  ~ cns*noise*sqrt(d)) instead of i.i.d., matching how a blastema's
+  commitment error compounds through sequential inheritance.
+
+Net: the model gains one mechanism (two-face regrowth), the ledger
+gains two sharpened candidates with predicted signatures, and the
+re-registered morphogen criterion passes both sides. Suite green
+throughout; exp29/exp31 controls bit-exact.

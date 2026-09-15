@@ -557,3 +557,37 @@ Night-three queue: S2W3b re-registration, M26 mechanism candidates
 regeneration), dose-resolved innexin literature check against S2R3's
 monotone prediction, and the recorded-NO-data novel-prediction sweep
 (QUEST task 6).
+
+## M27: exp32 — night three: one repair adopted, two sharpened, one criterion re-registered
+
+Night three delivered the M26 candidates as pre-registered gates
+(`experiments/exp32_m26_repairs.py`, ledger L15). Model state: `regrow()`
+now speaks two-face regeneration — `direction='both'` heals mid-body
+removals from both wound faces (two independent blastemas), additively,
+bit-exact at default (exp29 controls re-verified to 1e-9 before the run;
+full suite green).
+
+- **M26C ADOPTED** — two-face trunk regeneration: wnt_trunk@both 1.00,
+  apc_trunk@both 1.00 (recorded 0.768); cutting_trunk@both 0.00 (recorded
+  0.308). The recorded two-headed/two-tailed phenotypes are reachable.
+- **S2W3b PASS x3** — the re-registered morphogen criterion
+  (plane-INVARIANCE, not plane-gradient) passes on both sides: recorded
+  spread 0.132 <= 0.15; pooled morphogen 0.724 > cutting 0.512; sim
+  wnt_tail == wnt_trunk@both == 1.00.
+- **M26A REFUTED as implemented** — local linear extrapolation is a no-op
+  on head-only fragments (slope ~0): cross_a stays 1.00 vs recorded 0.52.
+  M27 candidate: saturated extrapolation clipped to the fragment's own
+  identity repertoire + graded penetrance.
+- **M26B REFUTED as implemented** — i.i.d. commitment noise (cns=3)
+  averages out across the segment (err 2.9 -> 4.09 mV, rate still 0.00 vs
+  recorded 0.45). M27 candidate: chain-accumulating commitment diffusion
+  (sd ~ sqrt(d)), matching how blastema commitment error compounds.
+
+Process notes recorded in the ledger: a 15h post-regen protocol drift
+was caught by the bit-exactness gates (innexin 0.67 -> 0.33) and
+corrected before any verdict was recorded — the gates did their job.
+
+Remaining night-three queue: dose-resolved innexin literature check
+(S2R3), recorded-NO-data novel-prediction sweep (QUEST task 6), and the
+DeepScientist zai-runner wiring (branch `zai-runner-wiring` on the fork;
+doctor green is quota-gated on the z-ai backend).

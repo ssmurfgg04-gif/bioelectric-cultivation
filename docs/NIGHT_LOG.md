@@ -98,3 +98,48 @@ DeepScientist binary itself is still pending install on the user's box)
 - Cross-bin medians used for sim arms: a 0.167, b 0.417, c 0.667, d 1.0.
 - The specificity clause mistake (S2W3) is a process lesson: pre-register BIOLOGY-LEVEL alternatives (where the identity change shows up), not just thresholds.
 - Recorded plane means for reference: cutting tail 0.367 / head 0.502 / trunk 0.308 / cross 0.425; morphogen trunk 0.768; intact-RNAi (none) 0.777.
+
+# Night three — 2026-09-15 (user directive: do all remaining phases; push first; wire zai-sdk into DeepScientist; no opencode)
+
+## Seeded state at nightfall
+- main == origin/main at 1da7ca5 (M26 night two pushed FIRST — nothing at risk).
+- DeepScientist zai-runner wiring: DONE (branch `zai-runner-wiring` on
+  ssmurfgg04-gif/DeepScientist fork). bin/zai-agent.mjs (headless agent
+  CLI -> local OpenAI-compatible proxy -> z-ai-web-dev-sdk), ZaiRunner +
+  _probe_zai_runner wired via scripts/wire_zai_runner.py (idempotent,
+  applied to site-packages + npm copy + source clone; 17/17 anchors).
+  `ds doctor --runner zai` performs a REAL end-to-end HELLO probe; the
+  z-ai backend is hard rate-limited today (34x 429, zero successes) —
+  quota watcher polls every 15 min and will fire doctor on the first
+  green probe (scripts/quota_watch.sh, log: zai-selftest/quota_watch.log).
+
+## Work log
+- **N3.1 Bit-exact gate.** verify_m26_bitexact.py: exp29 cutting/innexin
+  per-seed errors reproduce to 1e-9 through the M26-patched collective;
+  suite green (unit + fidelity + D3 semantics + vmem_inference).
+- **N3.2 M26 model patch (additive, bit-exact at defaults).** regrow()
+  gains length_gradient (intrinsic positional-info extrapolation),
+  commitment_noise_scale (Vmem-gated commitment), direction='both'
+  (two-face trunk regrowth). No RNG-sequence changes at defaults.
+- **N3.3 exp32 (pre-registered gates -> run).** Protocol-drift catch: an
+  added 15h post-regen run flipped innexin 0.67->0.33 and broke bit-exact
+  gates — corrected to exp31's read-immediately discipline BEFORE
+  verdicts. Results: M26C ADOPTED (wnt_trunk@both 1.00, apc_trunk@both
+  1.00, cutting_trunk@both 0.00); S2W3b PASS x3 (plane-invariance
+  re-registration holds both sides); M26A REFUTED as implemented (local
+  slope no-op on head fragments; cross_a 1.00 vs 0.52); M26B REFUTED as
+  implemented (i.i.d. noise averages out; err 4.09, rate 0.00 vs 0.45).
+- **N3.4 Ledger L15 + README M27.**
+
+## Night-four queue
+1. M27 candidate #1: SATURATED length-gradient extrapolation clipped to
+   the fragment's own identity repertoire (intrinsic fate-axis bounds) +
+   graded penetrance — target: cross_a 1.00 -> ~0.5, D(g1) < D(g0).
+2. M27 candidate #2: chain-accumulating commitment diffusion (sd ~
+   cns*noise*sqrt(d)) — target: ion_channel_tail rate 0.00 -> ~0.45
+   without moving cutting arms.
+3. S2R3 dose-resolved innexin check against the exp29 monotone
+   prediction (3.28 -> 3.93 -> 4.54 -> 6.03 mV).
+4. QUEST task 6: novel-prediction sweep over recorded-NO data cells.
+5. ds quest on the bioelectric repo once `ds doctor --runner zai` is
+   green (quota-gated).
