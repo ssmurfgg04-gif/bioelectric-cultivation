@@ -1,0 +1,106 @@
+{
+ "exp": "exp50_m33_oos_m31a_structure",
+ "part_a": {
+  "recorded_planes": {
+   "gj_block_head": 0.177,
+   "gj_block_tail": 0.599,
+   "innexin_head": 0.0,
+   "innexin_tail": 0.4
+  },
+  "pre_m33_gjblock_head_rate": 1.0,
+  "post_m33_gjblock_head": {
+   "err_mean": 1.766612918735241,
+   "err_se": 0.035463536299992424,
+   "err_per_seed": [
+    1.829811998960332,
+    1.7071315850159434,
+    1.7628951722294481
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "criteria": {
+   "M33_C1_direction": true,
+   "M33_C2_out_of_sample_fit": true,
+   "M33_C3_innexin_match": true
+  }
+ },
+ "part_b": {
+  "q_adopted": 0.5,
+  "n_seeds": 9,
+  "sim_bins": {
+   "a": {
+    "rate": 0.3333333333333333,
+    "err_mean": 7.118900992341158,
+    "err_per_seed": [
+     2.8137695631269106,
+     14.108421519109296,
+     2.898255259297216,
+     17.97825918018002,
+     3.0036423784997126,
+     14.585788189613835,
+     2.820126165401338,
+     2.9352793576855385,
+     2.9265673181565446
+    ]
+   },
+   "b": {
+    "rate": 0.0,
+    "err_mean": 4.087500838043905,
+    "err_per_seed": [
+     4.529718455763314,
+     3.6163318499071604,
+     5.047160944090748,
+     5.324240072297064,
+     3.2489112405201204,
+     3.67666515419408,
+     3.6401108738432884,
+     4.323630068314452,
+     3.3807388834649177
+    ]
+   },
+   "c": {
+    "rate": 0.0,
+    "err_mean": 3.225189382361935,
+    "err_per_seed": [
+     3.148336313402626,
+     3.185537133528642,
+     3.6792023786520605,
+     3.057948795097342,
+     3.112325058791192,
+     3.1336136639627323,
+     3.3610180019503173,
+     3.16730340086215,
+     3.181419695010353
+    ]
+   },
+   "d": {
+    "rate": 0.0,
+    "err_mean": 2.9194677806726013,
+    "err_per_seed": [
+     2.9500069869535905,
+     2.916010732382096,
+     2.942646566153001,
+     2.9745583136510025,
+     2.952309539089921,
+     2.8347907275516895,
+     2.894090615330753,
+     2.889448341454353,
+     2.9213482034870033
+    ]
+   }
+  },
+  "recorded_bins": {
+   "a": 0.52,
+   "b": 0.432,
+   "c": 0.269,
+   "d": 0.266
+  },
+  "spearman_rho": 0.7745966692414834,
+  "criteria": {
+   "M31_B1_split_stability": true,
+   "M31_B2_direction_rho": true,
+   "M31_B3_step_structure": true
+  }
+ },
+ "notes": "Part A: the corpus CONFIRMS the M33 prediction out-of-sample (registered in exp46 before the plane-resolved rates were examined): gj_block|head 0.177 is the lowest plane rate, gj_block|tail 0.599 the highest \u2014 the anterior-pole protection asymmetry is in the record. Part B: the penetrance structure is a STEP (split only where chain-only fails), not a grade \u2014 the night-five graded-b/c/d target is refuted at the mechanism level and the residual belongs to the measurement layer (exp51/M34: protocol heterogeneity + record-hot publication bias)."
+}
