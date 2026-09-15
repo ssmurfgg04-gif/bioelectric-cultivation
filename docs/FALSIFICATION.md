@@ -1089,3 +1089,52 @@ under the deterministic phi read while the record is graded (cross_a
   additively, both bit-exact at defaults (verify gate 1e-9, suite green
   before and after). Both remain in the model as inert-at-default
   parameters with their verdicts recorded here.
+
+## Level 21 — exp37: full-corpus sweep (QUEST task 4 — the per-experiment instrument over all 1,462 outcome-bearing experiments)
+
+The class-level pilot (exp31, 31 arms on bin medians) became a
+per-experiment instrument: every outcome-bearing PlanformDB experiment
+mapped individually to (class protocol, plane, recorded cut fraction),
+36 unique arms deduped and run at the ADOPTED model state (M27b ion
+params, M26c two-face trunk, phi=0.75 crosspiece, exp27/31 protocols
+elsewhere). GATES (pre-registered before the run):
+
+- **G1 coverage >= 0.70: PASS — 1,029/1,462 experiments mapped
+  (n-weighted 0.704).** Unmappable remainder recorded, not hidden, each
+  a named missing layer: other_rnai|none 141 + graft 135 + irr 52 +
+  lateral 46 + non-AP morphogen 29 + none-plane 18 (no gene-expression
+  layer, no 2D sheet, no neoblasts, no DV/eye/brain axis).
+- **G3 plane ordering rho > 0: PASS (rho = +0.80 over trunk/head/
+  crosspiece/tail).** The model's plane structure holds at full-corpus
+  scale.
+- **G5 controls: PASS** — sweep cutting_tail per-seed errors bit-exact
+  vs exp31 (the sweep reuses the adopted protocol, not a re-derivation).
+- **G2 class ordering: REFUTED (rho = -0.15).** Driver: other_rnai
+  (n=513, 35% of the corpus) — recorded 0.80 abnormal vs sim 0.00. The
+  model has no gene-expression layer: non-bioelectric RNAi is mapped to
+  the wound-only protocol and predicts cutting-like cleanliness, while
+  the record runs hot (RNAi studies are published BECAUSE the phenotype
+  fired — class-dependent selection bias the cutting slice does not
+  carry).
+- **G4 absolute calibration: REFUTED (outcome-weighted MAE 0.595 > the
+  0.34 one-seed grain).** The failure is SYMMETRIC and diagnostic
+  (exploratory shift table): no-perturbation classes UNDERSHOOT
+  (other_rnai +0.80, cutting +0.42 — bias + missing gene layer) while
+  perturbation classes OVERSHOOT (gj_block -0.52, innexin -0.56,
+  morphogen -0.27, ion_channel -0.19 — the binary penetrance fires the
+  abnormal arm more often than the record; the M30/M31 residual
+  quantified at corpus scale).
+- Within-class plane ordering (exploratory): morphogen +0.71,
+  ion_channel +0.50 (low n), cutting/other_rnai undefined (sim constant
+  at 0.00 — nothing to correlate), gj_block -0.77 (n=21).
+
+Verdict: the instrument works and the model's ORDERING structure
+survives full-corpus scale (G3), but two absolute-calibration gaps are
+now measured, not suspected: (1) the gene-expression layer the model
+does not have (fix: honest claim-scoping — Stage 2 validation claims
+are conditional on bioelectric classes; a gene layer is out of scope
+for the 1D sheet); (2) the penetrance sharpness the model carries
+(fix: M31 stored anchor availability — next mechanism wave). Also
+registered as the M32 candidate: promote the 6.0 mV threshold /
+blastema_readout_noise from hand-picked to pre-registered-fitted (the
+exp29 watch-item) — the shift table is the fitting target.
