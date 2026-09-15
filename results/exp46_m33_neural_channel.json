@@ -1,0 +1,268 @@
+{
+ "exp": "exp46_m33_neural_channel",
+ "mechanism": "neural_readout \u2014 non-junctional neural/muscle polarity channel for ANTERIOR identities: the M25 blind guess is blended with a direct spec read, guess <- (1-w)*guess + w*(spec[i] + N(0, eff_noise)), only when spec[i] >= NEURAL_SPEC_MIN (-35 mV). Posterior identities have no local pole and stay junction-carried",
+ "literature_basis": [
+  "Lobo, Emmons-Bell & Levin 2019 (PMC30990801): axon-aligned vector transport controls the head-tail axis",
+  "egal-1/microtubules 2025 (PMC41099308/9): anterior-facing wound notum via muscle microtubule substrate"
+ ],
+ "phi_readout": 0.75,
+ "w_scan": [
+  0.5,
+  1.0
+ ],
+ "sim_arms": {
+  "innexin_head_n50": {
+   "err_mean": 4.804914625722891,
+   "err_se": 0.14251641467671705,
+   "err_per_seed": [
+    5.048426920429983,
+    4.554865426718904,
+    4.811451530019786
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "innexin_tail_n50": {
+   "err_mean": 6.38259703606262,
+   "err_se": 0.31795710376913655,
+   "err_per_seed": [
+    6.211978320446968,
+    6.998431699509132,
+    5.937381088231759
+   ],
+   "pred_abn_rate": 0.6666666666666666
+  },
+  "gjblock_tail_n50": {
+   "err_mean": 6.38259703606262,
+   "err_se": 0.31795710376913655,
+   "err_per_seed": [
+    6.211978320446968,
+    6.998431699509132,
+    5.937381088231759
+   ],
+   "pred_abn_rate": 0.6666666666666666
+  },
+  "cutting_head_n50": {
+   "err_mean": 2.6123130223275504,
+   "err_se": 0.011639014970539227,
+   "err_per_seed": [
+    2.635560011250687,
+    2.5996487887252857,
+    2.601730267006678
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_tail_n50": {
+   "err_mean": 3.0781011764607413,
+   "err_se": 0.010165611407886362,
+   "err_per_seed": [
+    3.082758738904791,
+    3.058633279160334,
+    3.0929115113170997
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_trunk_n50": {
+   "err_mean": 3.099224890142301,
+   "err_se": 0.01806026878989707,
+   "err_per_seed": [
+    3.096221996398697,
+    3.069553321469189,
+    3.1318993525590173
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "restored_tail_n50": {
+   "err_mean": 3.1307507263783596,
+   "err_se": 0.04236945297063474,
+   "err_per_seed": [
+    3.215489530339952,
+    3.088267471590803,
+    3.0884951772043245
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_a_n50": {
+   "err_mean": 2.8555776789734773,
+   "err_se": 0.024392793954383898,
+   "err_per_seed": [
+    2.8137695631269106,
+    2.8547082144963065,
+    2.898255259297216
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "innexin_head_n100": {
+   "err_mean": 1.766612918735241,
+   "err_se": 0.035463536299992424,
+   "err_per_seed": [
+    1.829811998960332,
+    1.7071315850159434,
+    1.7628951722294481
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "innexin_tail_n100": {
+   "err_mean": 6.38259703606262,
+   "err_se": 0.31795710376913655,
+   "err_per_seed": [
+    6.211978320446968,
+    6.998431699509132,
+    5.937381088231759
+   ],
+   "pred_abn_rate": 0.6666666666666666
+  },
+  "gjblock_tail_n100": {
+   "err_mean": 6.38259703606262,
+   "err_se": 0.31795710376913655,
+   "err_per_seed": [
+    6.211978320446968,
+    6.998431699509132,
+    5.937381088231759
+   ],
+   "pred_abn_rate": 0.6666666666666666
+  },
+  "cutting_head_n100": {
+   "err_mean": 2.6123130223275504,
+   "err_se": 0.011639014970539227,
+   "err_per_seed": [
+    2.635560011250687,
+    2.5996487887252857,
+    2.601730267006678
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_tail_n100": {
+   "err_mean": 3.0781011764607413,
+   "err_se": 0.010165611407886362,
+   "err_per_seed": [
+    3.082758738904791,
+    3.058633279160334,
+    3.0929115113170997
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_trunk_n100": {
+   "err_mean": 3.099224890142301,
+   "err_se": 0.01806026878989707,
+   "err_per_seed": [
+    3.096221996398697,
+    3.069553321469189,
+    3.1318993525590173
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "restored_tail_n100": {
+   "err_mean": 3.1307507263783596,
+   "err_se": 0.04236945297063474,
+   "err_per_seed": [
+    3.215489530339952,
+    3.088267471590803,
+    3.0884951772043245
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_a_n100": {
+   "err_mean": 2.8555776789734773,
+   "err_se": 0.024392793954383898,
+   "err_per_seed": [
+    2.8137695631269106,
+    2.8547082144963065,
+    2.898255259297216
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "innexin_head_n00": {
+   "err_mean": 11.334506252474872,
+   "err_se": 0.5314297803391217,
+   "err_per_seed": [
+    10.308343095518941,
+    11.607807273414197,
+    12.087368388491475
+   ],
+   "pred_abn_rate": 1.0
+  },
+  "innexin_tail_n00": {
+   "err_mean": 6.38259703606262,
+   "err_se": 0.31795710376913655,
+   "err_per_seed": [
+    6.211978320446968,
+    6.998431699509132,
+    5.937381088231759
+   ],
+   "pred_abn_rate": 0.6666666666666666
+  },
+  "gjblock_tail_n00": {
+   "err_mean": 6.38259703606262,
+   "err_se": 0.31795710376913655,
+   "err_per_seed": [
+    6.211978320446968,
+    6.998431699509132,
+    5.937381088231759
+   ],
+   "pred_abn_rate": 0.6666666666666666
+  },
+  "cutting_head_n00": {
+   "err_mean": 2.6123130223275504,
+   "err_se": 0.011639014970539227,
+   "err_per_seed": [
+    2.635560011250687,
+    2.5996487887252857,
+    2.601730267006678
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_tail_n00": {
+   "err_mean": 3.0781011764607413,
+   "err_se": 0.010165611407886362,
+   "err_per_seed": [
+    3.082758738904791,
+    3.058633279160334,
+    3.0929115113170997
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_trunk_n00": {
+   "err_mean": 3.099224890142301,
+   "err_se": 0.01806026878989707,
+   "err_per_seed": [
+    3.096221996398697,
+    3.069553321469189,
+    3.1318993525590173
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "restored_tail_n00": {
+   "err_mean": 3.1307507263783596,
+   "err_se": 0.04236945297063474,
+   "err_per_seed": [
+    3.215489530339952,
+    3.088267471590803,
+    3.0884951772043245
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_a_n00": {
+   "err_mean": 2.8555776789734773,
+   "err_se": 0.024392793954383898,
+   "err_per_seed": [
+    2.8137695631269106,
+    2.8547082144963065,
+    2.898255259297216
+   ],
+   "pred_abn_rate": 0.0
+  }
+ },
+ "criteria": {
+  "M33_G1_gap_resolved": true,
+  "M33_G2_posterior_immunity": true,
+  "M33_G3_full_coupling_inertness": true,
+  "M33_G4_dose_monotonicity": true,
+  "M33_G5_no_collateral": true
+ },
+ "recorded_reference": {
+  "innexin_head": 0.0,
+  "innexin_tail": 0.67
+ },
+ "prediction_rule": "unchanged from exp27: abnormal iff pattern_error >= 6.0 mV OR head_likeness(tail) >= 0.7",
+ "notes": "exp35's innexin|head +1.00 gap was the last unexplained Stage-2 arm-level signature; M33 resolves it with the literature-mandated asymmetry (anterior pole = constitutive junction-independent identity source; posterior identity has no local pole). The same channel predicts gjblock_head moves toward normal \u2014 a REGISTERED NOVEL PREDICTION for the next corpus pass."
+}

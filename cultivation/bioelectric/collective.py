@@ -35,6 +35,16 @@ import numpy as np
 V_PHYS_MIN = -85.0
 V_PHYS_MAX = 5.0
 
+# M33 neural/muscle polarity channel: the fate-axis midpoint between the
+# WT head identity (-20 mV) and the WT trunk/tail identity (-50 mV). Only
+# ANTERIOR identities (spec >= this line) qualify for the non-junctional
+# readout — the literature asymmetry: the anterior pole is a constitutive,
+# junction-independent identity source (notum+ wound response, axon-aligned
+# vector transport, Egal-1/microtubule muscle substrate), while posterior
+# identity has no local pole and stays junction-carried (which is exactly
+# why recorded GJ-blockade phenotypes concentrate at posterior planes).
+NEURAL_SPEC_MIN = -35.0
+
 
 def line_adjacency(n: int, k: int = 1, ring: bool = False) -> np.ndarray:
     """Binary adjacency of a 1D chain (k neighbors each side), optionally ring."""
@@ -154,7 +164,8 @@ class BioElectricCollective:
                spec_expression_p: float = 1.0,
                spec_reanchor_p: float = 1.0,
                anchor_from_history: float | None = None,
-               spec_reanchor_isolated: float = 1.0) -> None:
+               spec_reanchor_isolated: float = 1.0,
+               neural_readout: float = 0.0) -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
@@ -306,6 +317,23 @@ class BioElectricCollective:
         anchor_from_history (if armed) > spec_reanchor_isolated (if
         armed) > spec_reanchor_p (legacy exp38 form).
 
+        `neural_readout` (M33 — NON-JUNCTIONAL NEURAL/MUSCLE POLARITY
+        CHANNEL, exp46) — the anterior pole is a constitutive,
+        junction-INDEPENDENT identity source: wound-induced notum at
+        anterior-facing wounds via the Egal-1/microtubule muscle
+        substrate (2025), axon-aligned morphogen vector transport whose
+        field coincides with nerve alignment (Lobo et al. 2019). When
+        0 < w < 1 and the committing cell's spec identity is ANTERIOR
+        (spec[i] >= NEURAL_SPEC_MIN), the M25 blind-guess fallback is
+        blended with a direct neural read of the spec,
+        guess <- (1-w)*guess + w*(spec[i] + N(0, eff_noise)) — the cell
+        is no longer blind even with junctions down. Posterior
+        identities do NOT qualify (no local pole — the recorded
+        GJ-blockade phenomenology concentrates at posterior planes,
+        innexin|tail 0.67 abnormal while innexin|head 0.00). Inert at
+        full coupling (the guess branch is unused when r >= 1.0) and at
+        the default 0.0 (bit-exact; no extra draws).
+
         M25 COUPLING-DEPENDENT READOUT (exp27 S2P1 repair): the inheritance
         read itself runs THROUGH the gap-junction network. At full coupling
         the readout is exactly the stored chain (bit-exact with the previous
@@ -338,6 +366,7 @@ class BioElectricCollective:
         # M31-A: isolated re-anchoring draw (minted from stored state).
         iso_p = float(spec_reanchor_isolated)
         iso_draw = 0.0 < iso_p < 1.0 and phi_readout > 0.0
+        neural_w = float(neural_readout)
 
         def face_slope(face: int, sign: int) -> tuple[float, float, float, float]:
             """Anchor (theta at the face), per-cell theta trend on the intact
@@ -421,6 +450,15 @@ class BioElectricCollective:
                 if r < 1.0:
                     guess = wound_center + self.rng.normal(
                         0.0, self.blastema_readout_noise)
+                    # M33: non-junctional neural/muscle readout for
+                    # anterior identities — the pole channel bypasses the
+                    # junction network entirely.
+                    if neural_w > 0.0 and spec is not None \
+                            and 0 <= i < self.n \
+                            and float(spec[i]) >= NEURAL_SPEC_MIN:
+                        nread = float(spec[i]) \
+                            + self.rng.normal(0.0, eff_noise)
+                        guess = (1.0 - neural_w) * guess + neural_w * nread
                     theta_new = r * theta_new + (1.0 - r) * guess
                 self.theta[i] = theta_new
                 self.V[i] = theta_new
