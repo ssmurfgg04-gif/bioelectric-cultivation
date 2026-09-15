@@ -1,0 +1,92 @@
+{
+ "exp": "exp52_r5_calibration",
+ "stage": "5 \u2014 Ascension (per-substrate calibration)",
+ "mu_scan": [
+  0.005,
+  0.01,
+  0.015,
+  0.03,
+  0.06
+ ],
+ "detail": {
+  "path": {
+   "mean_err_by_mu": {
+    "0.005": 4.13,
+    "0.010": 4.13,
+    "0.015": 4.13,
+    "0.030": 4.15,
+    "0.060": 4.2
+   },
+   "best_mu": 0.01,
+   "best_err": 4.13
+  },
+  "grid_2d": {
+   "mean_err_by_mu": {
+    "0.005": 7.51,
+    "0.010": 7.75,
+    "0.015": 7.96,
+    "0.030": 8.47,
+    "0.060": 9.23
+   },
+   "best_mu": 0.005,
+   "best_err": 7.51
+  },
+  "random_regular_3": {
+   "mean_err_by_mu": {
+    "0.005": 11.85,
+    "0.010": 12.08,
+    "0.015": 12.23,
+    "0.030": 12.5,
+    "0.060": 12.74
+   },
+   "best_mu": 0.005,
+   "best_err": 11.85
+  },
+  "scale_free": {
+   "mean_err_by_mu": {
+    "0.005": 12.35,
+    "0.010": 12.55,
+    "0.015": 12.67,
+    "0.030": 12.86,
+    "0.060": 12.97
+   },
+   "best_mu": 0.005,
+   "best_err": 12.35
+  }
+ },
+ "operating_points": {
+  "path": {
+   "status": "IN",
+   "mu": 0.01,
+   "err": 4.13
+  },
+  "grid_2d": {
+   "status": "MARGINAL-OUT",
+   "mu": 0.005,
+   "err": 7.51
+  },
+  "random_regular_3": {
+   "status": "REFUSED",
+   "mu": 0.005,
+   "err": 11.85
+  },
+  "scale_free": {
+   "status": "REFUSED",
+   "mu": 0.005,
+   "err": 12.35
+  }
+ },
+ "novel_prediction_deposit": {
+  "id": "ND-L34-directional-cone",
+  "claim": "Regeneration-window bioelectric perturbations rewrite the regenerate ONLY from wound-adjacent sites: a 2h pulse at the wound face during the commitment walk shifts the whole regenerate's stored identity (2.44 mV at the far end); the same pulse 5 cells anterior shifts nothing (0.00). The regen-window cone is aligned with the commitment direction.",
+  "protocol": "Planarian regeneration with regeneration-window illumination/depolarization matched for dose at two sites: wound-adjacent vs body-far. Prediction: wound-adjacent perturbation raises the ectopic/abnormal phenotype rate relative to body-far and sham; body-far does not differ from sham.",
+  "source": "exp49 LC5-G5 (ledger L31); model: cultivation/cognitive/lightcone.py::regen_lightcone",
+  "registered": "2026-09-15"
+ },
+ "criteria": {
+  "R5_C1_refusal_robust_to_mu": true,
+  "R5_C2_passing_substrates_have_window": false,
+  "R5_C2a_calibration_table_amendment": true
+ },
+ "notes": "The R5 refusal boundary is not a tuning artifact: no mu in the scan rescues the incoherent partitions, while the coherent substrates have calibration windows. The compiler can now quote per-substrate operating points (path/grid best mu) alongside the R5 refusal."
+}

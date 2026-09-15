@@ -248,3 +248,23 @@ DeepScientist binary itself is still pending install on the user's box)
 4. Corpus re-pass with M33: the gjblock_head plane-resolved prediction (toward normal) against PlanformDB.
 5. Directional-cone optogenetics prediction write-up (exp49 G5) as a formal novel-prediction deposit.
 6. ds quest 001 via the zai runner when quota opens (watcher v2 still pointed at it).
+
+## Night seven — 2026-09-15 (continued directly per the standing "finish, no half work" directive)
+
+- **N7.1 exp50** (L32): M33 OUT-OF-SAMPLE CONFIRMED by the corpus (gj_block|head 0.177 lowest vs tail 0.599 highest — the anterior-pole asymmetry is IN the record; post-M33 sim 4.6x closer; innexin|head exact). M31-A 9-seed structure: split stable 0.33, rho 0.77, step structure confirmed (b/c/d 0.00 — graded target refuted at mechanism level). Penetrance story COMPLETE.
+- **N7.2 exp51** (L33): M34 decomposition — H measured per class (cutting 0.531 etc.), record-hot bias one-sided 8/8 planes, ownership partitioned; gene-layer deposit N1 (0.67 trunk, band [0.22,0.67]); M33xM34 chained N2 PASS (head+neural 0.00 vs tail 1.00 under impairment+blockade; first form honestly restated).
+- **N7.3 exp52** (L34): R5 calibration — C1 PASS (no mu rescues random-3/scale-free: refusal robust); C2 refuted -> C2' table (path IN 4.13@mu=0.01, grid MARGINAL-OUT 7.51, failures REFUSED); b2v refined: necessary, not sufficient under wound recovery. Directional-cone + gene-layer + chained deposits written to research/NOVEL_PREDICTIONS.md.
+- **N7.4 Docs**: L32-L34, this log, deposits.
+
+### Stage scoreboard after night seven
+- Stage 2: every corpus residual OWNED (mechanism or measurement layer, named and measured).
+- Stage 3: compiler v1 + per-substrate calibration table + robust refusals.
+- Stage 4: directional-cone prediction deposited (falsifiable in vivo).
+- Stage 5: b2v coherence refined (necessary-not-sufficient), per-substrate operating points delivered.
+- Stage 1-5 all remain honest: every adopted mechanism bit-exact-gated; every refutation ledgered with its diagnosis.
+
+### Night-eight queue
+1. M35 candidate (from exp49's saturation): the light-cone dose saturation suggests the commitment walk has a CRITICAL window fraction — characterize it (pulse-start-time scan inside the walk: early vs late pulses).
+2. gjblock_head_tail anomaly (recorded 0.025, n=2): both-faces cut + blockade predicts near-normal in the model too? Test and ledger.
+3. graft/lateral protocol representations (the sim's largest H gap — a 2D sheet lattice for lateral cuts).
+4. ds quest 001 via zai runner when quota opens.

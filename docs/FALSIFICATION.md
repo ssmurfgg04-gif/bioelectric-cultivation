@@ -1456,3 +1456,72 @@ refutation had left the rewrite regime unnamed; the literature names it.
   FORWARD but is razor-narrow BACKWARD. Falsifiable with
   regeneration-window optogenetics: only wound-adjacent perturbations
   should rewrite the regenerate.
+
+## Level 32 — exp50: M33 confirmed OUT-OF-SAMPLE by the corpus + the penetrance structure closed (all gates PASS)
+
+Night seven, part 1. exp46 registered "gjblock_head moves toward
+normal" BEFORE the plane-resolved rates were examined; exp37's rows
+then confirmed the prediction independently:
+
+- The recorded gj_block|head rate is 0.177 (n=6) — the LOWEST gj_block
+  plane rate — while gj_block|tail is 0.599 (n=7), the highest. The
+  anterior-pole protection asymmetry M33 predicts EXISTS IN THE RECORD.
+- M33-C1 direction PASS; M33-C2 out-of-sample fit PASS (post-M33 sim
+  0.00 is 4.6x closer to 0.177 than the pre-M33 1.00); M33-C3 PASS
+  (innexin|head 0.000 matched exactly).
+- M31-A at 9 seeds: bin-a split statistically stable (rate 0.33, B1),
+  direction rho=0.77 (B2), and the honest STEP-STRUCTURE confirmation
+  (B3): bins b/c/d sit at 0.00 — the night-five "graded b/c/d" target
+  is REFUTED at the mechanism level. The penetrance story is COMPLETE:
+  mechanism (M31-A, adopted), structure (a step, not a grade), and
+  residual ownership (the measurement layer, L33).
+
+## Level 33 — exp51: M34 — the corpus residual DECOMPOSED, not modeled away (all gates PASS; two deposits)
+
+Night seven, part 2. exp48 proved the residual is structural; M34's
+honest scope is the decomposition plus falsifiable deposits:
+
+- D1 PASS: protocol heterogeneity H measured per class (cutting 0.531,
+  other_rnai 0.431, gj_block 0.432, innexin 0.500, ion_channel 0.103,
+  morphogen 0.360 — graft/lateral/irregular/unmappable protocols the
+  sim does not represent).
+- D2 PASS: the record-hot bias direction is ONE-SIDED across all 8
+  plane cells (recorded > sim everywhere) — measured, not assumed.
+- D3 PASS: residual ownership partitioned — cutting -> H (protocol) +
+  P (bias); other_rnai -> G (the gene layer); perturbation classes ->
+  P.
+- N1 DEPOSIT: a generic gene-RNAi perturbation (gamma x0.7 +
+  commitment diffusion 1.5) predicts trunk-cut abnormality at 0.67 —
+  band [0.22, 0.67] registered against the day the DB maps gene
+  identities.
+- N2 PASS (after one honest restatement): the M33xM34 CHAINED
+  prediction — under gene impairment WITH blockade, head+neural
+  channel 0.00 vs tail 1.00: anterior-pole protection survives generic
+  gene impairment. The first registered form mis-scoped M33 (the
+  channel acts on the blocked blind-guess branch, not full-coupling
+  commitment noise; the full-coupling head arm shows a mild wander
+  tail, 0.33, recorded).
+
+THE EXP37 SYMMETRIC SIGNATURE IS NOW FULLY OWNED: mechanism where
+mechanisms exist, measurement where they do not.
+
+## Level 34 — exp52: R5 per-substrate calibration — the refusal is not a tuning artifact; the b2v boundary refined
+
+Night seven, part 3. exp43's registered follow-up:
+
+- R5-C1 PASS (the load-bearing result): NO mu in the scan
+  {0.005..0.060} rescues random-3-regular (best 11.85 mV) or
+  scale-free (best 12.35 mV) — the incoherence is a property of the
+  (substrate, partition) pair. The compiler's refusal is robust.
+- R5-C2 REFUTED as registered, honestly: grid_2d's wound-recovery best
+  is 7.51 mV (mu=0.005) — above the 6.0 bar (exp43's 5.6 was WITHOUT
+  the 20%-scattered-node wound). R5-C2' amendment: the calibration
+  table is the deliverable — path IN (4.13 @ mu=0.01), grid
+  MARGINAL-OUT (7.51 @ mu=0.005), random-3/scale-free REFUSED.
+- REFINEMENT OF R5: the b2v boundary is NECESSARY for attractor
+  existence but not SUFFICIENT for wound-recovery within the decision
+  bar — the compiler's per-substrate calibration now carries both the
+  b2v check (compile time) and the best-mu operating table (audit).
+- ND-L34-directional-cone deposited to research/NOVEL_PREDICTIONS.md
+  (the exp49 G5 optogenetics protocol), alongside the gene-layer and
+  M33xM34 chained deposits.
