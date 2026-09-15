@@ -184,3 +184,19 @@ DeepScientist binary itself is still pending install on the user's box)
 4. S2R3c: ExperimentDrug timing semantics from primary literature.
 5. ds quest on the bioelectric repo when `ds doctor --runner zai` is
    green (quota watcher still running).
+- **N3.11 DeepScientist quest registered.** Quest 001 created (runner:
+  zai, default_runner switched in config.yaml), goal = night-five queue
+  (stochastic spec-expression, innexin|head plane-dependent readout,
+  channel dose scan) with the house discipline inline. `ds run` preflight
+  correctly refuses while the z-ai backend is 429-ing. Watcher v2
+  (scripts/quota_watch.sh) polls every 15 min: on first green probe it
+  runs `ds doctor --runner zai`, and when green launches quest 001 and
+  babysits it until the 19:00 UTC (22:00 Nairobi) cutoff.
+- **N3.12 Wiring bugs fixed (fork branch).** Two wire_zai_runner anchor
+  bugs shipped earlier were caught when the launcher rebuilt its venv:
+  metadata.py entry landed outside the dict (IndentationError); the
+  daemon import got glued onto a prefix anchor (ImportError). Both fixed
+  in all trees, patcher now carries a py_compile gate; fork branch
+  zai-runner-wiring force-pushed with the fix (d227b4e). `ds doctor
+  --runner zai` reaches a REAL end-to-end probe — everything green
+  except the externally quota-gated model call.
