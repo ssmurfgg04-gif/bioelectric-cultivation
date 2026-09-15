@@ -2398,3 +2398,34 @@ Night seven, part 3. exp43's registered follow-up:
   evolution never made — CLOSED at the model level), prices every
   intervention, calibrates its own admissibility envelope from data,
   and emits the coherence law as a precondition.
+
+## L63 — exp82 THE MAINTENANCE-DUTY MAP (Stage-4 full characterization; 4/5)
+- THE MAP: form the s=2.0 ectopic-head pattern (24 h clamps + latch),
+  hold 15 t.u. under 3 h maintenance cycles at duty in {0, 0.1, 0.25,
+  0.5, 0.75, 1.0}, sweep the chain's coupling radius k in {2..6};
+  grid and small-world run the duty axis at native topology (the k
+  axis is chain-native — registered before the run).
+- THE CHAIN FRONTIER (MD-G5, the currency curve): k=2 -> duty 0.0
+  (free-running), k=3 -> 0.25, k=4 -> 0.75, k=5 -> 1.0, k=6 -> 1.0.
+  exp65's k=4 @ duty 0.67 is bracketed exactly (0.5 fails, 0.75
+  holds). The exchange rate between reach and maintenance is now a
+  MEASURED CURVE, not a rule of thumb: the first step beyond the
+  envelope is cheap (0.25), the last step to k=5 costs everything.
+- MD-G1 PASS — the frontier is monotone. MD-G2 PASS — the
+  free-running corner (k=2 at duty 0) confirmed as the map's origin
+  on the chain. MD-G3 PASS — the ceiling (duty 1.0 sustains every
+  k): the map is bounded [free-running, continuous-clamp].
+- MD-G4 REFUTED — THE FRONTIER IS TISSUE-SPECIFIC: at the same form,
+  the grid needs duty 1.0 (continuous clamping — the exp72 grid was
+  the hardest tissue and stays hardest) while the small-world
+  free-runs (duty 0.0 — the long chords carry the pattern). The
+  honest refinement of exp72's lesson: the dial's RULE (monotone in
+  k, monotone in duty) is universal; the ENVELOPE and the FRONTIER
+  are readout-side (tissue geometry). The currency's EXCHANGE RATE
+  depends on the tissue.
+- Stage-4 scoreboard after the map: the dial characterized end to
+  end — the reach dial (exp62), the maintenance co-tuning (exp65),
+  the cross-tissue rule (exp72), and now the full duty map with the
+  measured frontier and its tissue-specificity (exp82). The
+  compiler's maintenance-schedule emission (R6/exp65) now has its
+  quantitative table.
