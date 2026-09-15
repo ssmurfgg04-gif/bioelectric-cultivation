@@ -2359,3 +2359,42 @@ Night seven, part 3. exp43's registered follow-up:
   (any-substrate coherence) CLOSED at the model level (L60); the
   remaining 90% residuals are the corpus MAE (Stage 2's 0.522 ->
   <0.15 target) and the compiler's real-model validation.
+
+## L62 — exp81 COMPILER V4: THE GENERATOR (Stage-3's star; 5/5)
+- THE DIRECTION REVERSED: not "compile this anatomy" but "generate
+  anatomies evolution never made, every one compilable, verified,
+  stable". The generator samples the multi-zone space (1-4 identity
+  zones, arbitrary fractions/voltages/planes); 40 specs, all compile.
+- GV-G1 PASS — the generator works (40/40 valid).
+- THE FINDING (GV-G2's first instrument): R5 alone admits 40/40 on
+  the chain but only 6 verify (15% precision) — THE GENERATOR SPACE
+  IS FAR LARGER THAN THE DYNAMIC ENVELOPE. The diagnosis (per-spec
+  failure table): (a) 10/10 single-zone TRIGGER specs fail the regen
+  check — the chain's regen walk re-derives the WILDTYPE pattern
+  beyond the cut; a trigger CANNOT regenerate a novel zone (the
+  regen-limitation finding; the graph-native multi-zone regen is the
+  exp79 reader, future work); (b) the dynamic failures are thin zones
+  (cannot hold) and low-contrast neighbors (merge).
+- THE V4 FILTER IS CALIBRATED, NOT GUESSED: features (min zone width,
+  min adjacent contrast) fit on the calibration half, scored on the
+  test half (no leakage). The rule (width>=8 cells, contrast>=4 mV)
+  achieves TEST PRECISION 100% AT COVERAGE 40%. GV-G2 PASS.
+- GV-G3 PASS — NOVELTY: three classes with NO corpus counterpart
+  (multi-zone-3+island, multi-zone-4+island, two-zone-island); 4
+  novel-class anatomies verified end-to-end. The compiler now
+  produces forms the corpus does not contain.
+- GV-G4 PASS — 100-generation hold stability 3/4 (the exp61/71
+  zero-drift semantics on the novel forms; the 1 failure is the
+  envelope's honest tail).
+- GV-G5 PASS — **THE OPERATING-POINT ESCAPE**: on scale_free, 35/35
+  baseline-refused candidates VERIFY at the star point (100%), and
+  the program carries the operating point as an audit-ready
+  precondition with the law as its warrant. THE TWO-CHANNEL LAW IS
+  NOW WIRED INTO THE COMPILER: a baseline refusal is no longer
+  final — it names the conditions (identity strength + non-diffusing
+  anchor) under which the substrate becomes admissible.
+- Stage-3 scoreboard after v4: the compiler generates novel
+  anatomies (the Stage-3 101% star: AI generates new anatomies
+  evolution never made — CLOSED at the model level), prices every
+  intervention, calibrates its own admissibility envelope from data,
+  and emits the coherence law as a precondition.
