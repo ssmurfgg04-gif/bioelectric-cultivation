@@ -2733,3 +2733,53 @@ Night seven, part 3. exp43's registered follow-up:
   sim.
 - NEXT (derived): the exp40 dose-axis wiring (the morphogen arms);
   quest 001 on the restored quota; the Stage-4 frontier completion.
+
+## L71 — exp89 THE UNIVERSAL COMPILER (4/5 — R5' BORN: the refusal is a price tag; the chain-carry contamination found)
+- THE DESIGN: exp87's v5 program semantics (the R1 memory write, the
+  M33-gated reader at w=1.0, the star operating point) executed
+  across the full 7-substrate battery (exp73's battery, verbatim)
+  with the per-substrate canon (the BFS-order labeling — exp43's
+  framing) and the BFS regen walk with the per-cell domain gate.
+- UC-G1 PASS — **THE R5 SIGNATURE REPRODUCES AT DEFAULT (7/7)**: at
+  (gamma=1, mu=0.015) the program verifies exactly where the
+  compiler's own partition check admits it (path/grid2d/random6/
+  small_world pass; torus/random3/scale_free fail — the exp43
+  signature, now on the regen path, not just the write path).
+- UC-G2 PASS — **THE STAR LIFT (7/7)**: at (gamma=64, mu=0) the same
+  program verifies on EVERY substrate — errors 0.25-0.63 mV, the
+  refused substrates included. **R5' (the conditional rule) is born:
+  the partition refusal is an OPERATING-POINT statement, not a wall
+  — "not writable at your operating point; the star architecture
+  buys it."** The two-channel law's writability boundary and the
+  compiler's refusal are the same object at two operating points.
+- UC-G3 PASS — **THE DOMAIN IS SUBSTRATE-INDEPENDENT (7/7)**: the
+  below-line program fails on every substrate EVEN at the star
+  point — the M33 gate is identity-based (the neural line), not
+  connectivity-based; the operating-point rule and the domain rule
+  are ORTHOGONAL. (Instrument note, in-run: the first pass filtered
+  the amputation region by domain — the below-line program then
+  verified WRITE-ONLY with no regen at all; the trigger amputates
+  the zone region regardless of domain.)
+- UC-G4 PASS — STABILITY: 3/3 star-point programs hold 100
+  generations on the R5-REFUSED substrates (random3/scale_free/
+  torus) — the zero-remodeling semantics holds where exp43 said no
+  attractor exists, because the star point is the architecture that
+  creates it.
+- UC-G5 REFUTED honestly — **THE CHAIN-CARRY CONTAMINATION**: the
+  multi-zone program errs 5.77-8.5 mV on every substrate (bar 6.0).
+  The mechanism: the BFS walk's below-line GAP cells (canon -50)
+  inherit from the last committed cell — which is the NOVEL zone
+  (-30) — the M25 inheritance chain carries THROUGH the novel zone
+  and contaminates the canon gaps. exp87's chain runs never hit it
+  (the face-anchored walk); the graph interior has no intact face.
+  Root: the program's write_spec_layer OVERWRITES the distributed
+  memory (phi_spec := the novel target), so the below-line cells'
+  correct source (the canon memory, D3) is gone — the chain is all
+  they have, and the chain is contaminated. REGISTERED REPAIR: the
+  two-source read — the pole read (above-line, constitutive) plus
+  the canon read (the pre-program distributed memory preserved
+  outside the spec-layer write) for the below-line cells; the
+  graph-native analog of the chain's face anchor.
+- NEXT (derived): exp90 the two-source read (the canon-source
+  repair); the exp40 dose-axis wiring (exp88's registered repair);
+  quest 001 on the restored quota.
