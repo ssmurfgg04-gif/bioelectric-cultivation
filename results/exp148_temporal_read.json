@@ -1,0 +1,3031 @@
+{
+ "exp": "exp148_temporal_read",
+ "claim": "the temporal read \u2014 TC1 (per-edge raw presence-transition counts over the read window, zero knobs) + TC2 (exp145's PN1/PN2 projected time-average PLUS the flip-clock matrix as a structure feature alongside the averaged coupling) + TC3 (exp142's executor verbatim) \u2014 consumes the flip SCHEDULE the static time-average discards: the exp145 read is verdict-blind on flip-clock adversarial pairs whose time-averages are bitwise identical, the temporal read separates the schedule classes at the verdict level, decode fidelity on paired schedule classes sits within the exp142 bar, and the read reduces bit-exactly to exp145's read wherever the medium is static",
+ "pre_registration": {
+  "temporal_rule": [
+   "TC1 flip-clock channel: f_ij = raw per-undirected-edge presence-transition count over the read window (|W_t| > 0, symmetrized); F = symmetrized transition-count matrix, zero diagonal \u2014 no normalization constant (zero knobs)",
+   "TC2 extended projection: A_ext = A + F with A = exp145's PN1/PN2 projected time-average VERBATIM (rho >= 0.5 -> Im branch else Re); the flip clock enters as a structure feature alongside the averaged coupling",
+   "TC3 structure+dynamics: exp142's execute_signed VERBATIM on A_ext \u2014 no new executor code"
+  ],
+  "media": {
+   "battery": "static ring 1.0 + K_CHORDS flip edges (-b ON / 0 OFF, T=2400, c=1200 ON-frames per edge); class = schedule: 'per' one contiguous bout (f=2) vs 'aper' seeded scattered subset (f in [1120,1280]); per-edge ON-counts identical => time-average BIT-identical across the pair",
+   "grid": "FlipGridMedium: M=(B*w+(B*w)^T)/2 on exp137's connected 4% support; every edge flips with shared per-edge counts c_e~{2,3,4} of T=32; shared base seeds 148_000+i \u2014 the class enters only through the schedule shape"
+  },
+  "dose_ladder": [
+   1792.0,
+   1920.0,
+   2048.0,
+   2176.0
+  ],
+  "ladder_disclosure": "temporal effective chords = f_e - b/2 (the flip clock as raw counts alongside the time-averaged carrier -b/2): 'per' <= -894, strictly past exp142's largest deposited negative-fail dose (F3@256) => predicted majority FAIL; 'aper' in [+32, +384], inside the deposited positive-verify regime (exp142 positives verify at all doses <= 256; exp145's phase arm verifies +384 chords on the same executor) => predicted majority VERIFY; schedule seeds 11 + 4*family_index + dose_index, fixed a priori",
+  "aper_window": [
+   1120.0,
+   1280.0
+  ],
+  "gates": {
+   "N1_static_read_blind": {
+    "pass": true,
+    "n_pairs": 12,
+    "required": 11,
+    "phase_verdict_blind_pairs": 12,
+    "sign_verdict_blind_pairs": 12,
+    "magnitude_blind_pairs": 12
+   },
+   "N2_temporal_separates": {
+    "pass": true,
+    "separated_pairs": [
+     "F1_zone_tail@1792",
+     "F1_zone_tail@1920",
+     "F1_zone_tail@2048",
+     "F1_zone_tail@2176",
+     "F2_zone_head@1792",
+     "F2_zone_head@1920",
+     "F2_zone_head@2048",
+     "F2_zone_head@2176",
+     "F3_canon_boundary@1792",
+     "F3_canon_boundary@1920",
+     "F3_canon_boundary@2048",
+     "F3_canon_boundary@2176"
+    ],
+    "n_separated": 12,
+    "required": 10
+   },
+   "N3_schedule_fidelity": {
+    "pass": false,
+    "pooled_temporal_median": 0.685,
+    "bar": 0.6,
+    "n_decodes": 60,
+    "sign_cross_class_blind": {
+     "outcome_identical": 30,
+     "n_compared": 30
+    }
+   },
+   "N4_strict_superset": {
+    "pass": true,
+    "torus_bit_identical": true,
+    "torus_verify_preserved": true,
+    "signed_bit_identical": 12,
+    "signed_pairs": 12,
+    "complex_bit_identical": 12,
+    "complex_pairs": 12,
+    "complex_branch_map_imag": [
+     1,
+     2
+    ],
+    "reactive_bit_identical": 18,
+    "reactive_pairs": 18,
+    "reduction": "static media: flip counts all zero => F = 0 => A_ext = A bitwise => exp145's read"
+   }
+  }
+ },
+ "config": {
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "spec": "MULTI (exp94)",
+  "frontier": "walk",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "control": "torus (exp73 battery)",
+  "probe_seed": 7,
+  "k_chords": 6,
+  "T_battery": 2400,
+  "c_battery": 1200,
+  "T_grid": 32,
+  "grid_base_seed": 148000,
+  "n3_bar": 0.6
+ },
+ "control": {
+  "substrate": "torus",
+  "phase_errs": [
+   0.55,
+   0.51,
+   0.55
+  ],
+  "temporal_errs": [
+   0.55,
+   0.51,
+   0.55
+  ],
+  "bit_identical": true,
+  "verify_preserved": true
+ },
+ "n4_classes": {
+  "signed": {
+   "instances": [
+    {
+     "i": 0,
+     "seed": 1,
+     "rho": 0.0,
+     "branch": "real",
+     "phase_err": 0.61,
+     "temporal_err": 0.61,
+     "bit_identical": true
+    },
+    {
+     "i": 0,
+     "seed": 2,
+     "rho": 0.0,
+     "branch": "real",
+     "phase_err": 0.57,
+     "temporal_err": 0.57,
+     "bit_identical": true
+    },
+    {
+     "i": 0,
+     "seed": 3,
+     "rho": 0.0,
+     "branch": "real",
+     "phase_err": 0.5,
+     "temporal_err": 0.5,
+     "bit_identical": true
+    },
+    {
+     "i": 1,
+     "seed": 1,
+     "rho": 0.0,
+     "branch": "real",
+     "phase_err": 0.61,
+     "temporal_err": 0.61,
+     "bit_identical": true
+    },
+    {
+     "i": 1,
+     "seed": 2,
+     "rho": 0.0,
+     "branch": "real",
+     "phase_err": 0.52,
+     "temporal_err": 0.52,
+     "bit_identical": true
+    },
+    {
+     "i": 1,
+     "seed": 3,
+     "rho": 0.0,
+     "branch": "real",
+     "phase_err": 0.58,
+     "temporal_err": 0.58,
+     "bit_identical": true
+    },
+    {
+     "i": 2,
+     "seed": 1,
+     "rho": 0.0,
+     "branch": "real",
+     "phase_err": 0.53,
+     "temporal_err": 0.53,
+     "bit_identical": true
+    },
+    {
+     "i": 2,
+     "seed": 2,
+     "rho": 0.0,
+     "branch": "real",
+     "phase_err": 0.58,
+     "temporal_err": 0.58,
+     "bit_identical": true
+    },
+    {
+     "i": 2,
+     "seed": 3,
+     "rho": 0.0,
+     "branch": "real",
+     "phase_err": 0.59,
+     "temporal_err": 0.59,
+     "bit_identical": true
+    },
+    {
+     "i": 3,
+     "seed": 1,
+     "rho": 0.0,
+     "branch": "real",
+     "phase_err": 0.59,
+     "temporal_err": 0.59,
+     "bit_identical": true
+    },
+    {
+     "i": 3,
+     "seed": 2,
+     "rho": 0.0,
+     "branch": "real",
+     "phase_err": 0.54,
+     "temporal_err": 0.54,
+     "bit_identical": true
+    },
+    {
+     "i": 3,
+     "seed": 3,
+     "rho": 0.0,
+     "branch": "real",
+     "phase_err": 0.5,
+     "temporal_err": 0.5,
+     "bit_identical": true
+    }
+   ],
+   "bit_identical_pairs": 12,
+   "n_pairs": 12,
+   "branch_map_imag": []
+  },
+  "complex_phase": {
+   "instances": [
+    {
+     "i": 0,
+     "seed": 1,
+     "rho": 0.4845,
+     "branch": "real",
+     "phase_err": 0.52,
+     "temporal_err": 0.52,
+     "bit_identical": true
+    },
+    {
+     "i": 0,
+     "seed": 2,
+     "rho": 0.4845,
+     "branch": "real",
+     "phase_err": 0.51,
+     "temporal_err": 0.51,
+     "bit_identical": true
+    },
+    {
+     "i": 0,
+     "seed": 3,
+     "rho": 0.4845,
+     "branch": "real",
+     "phase_err": 0.53,
+     "temporal_err": 0.53,
+     "bit_identical": true
+    },
+    {
+     "i": 1,
+     "seed": 1,
+     "rho": 0.5104,
+     "branch": "imag",
+     "phase_err": 0.51,
+     "temporal_err": 0.51,
+     "bit_identical": true
+    },
+    {
+     "i": 1,
+     "seed": 2,
+     "rho": 0.5104,
+     "branch": "imag",
+     "phase_err": 0.49,
+     "temporal_err": 0.49,
+     "bit_identical": true
+    },
+    {
+     "i": 1,
+     "seed": 3,
+     "rho": 0.5104,
+     "branch": "imag",
+     "phase_err": 0.52,
+     "temporal_err": 0.52,
+     "bit_identical": true
+    },
+    {
+     "i": 2,
+     "seed": 1,
+     "rho": 0.5125,
+     "branch": "imag",
+     "phase_err": 0.57,
+     "temporal_err": 0.57,
+     "bit_identical": true
+    },
+    {
+     "i": 2,
+     "seed": 2,
+     "rho": 0.5125,
+     "branch": "imag",
+     "phase_err": 0.52,
+     "temporal_err": 0.52,
+     "bit_identical": true
+    },
+    {
+     "i": 2,
+     "seed": 3,
+     "rho": 0.5125,
+     "branch": "imag",
+     "phase_err": 0.53,
+     "temporal_err": 0.53,
+     "bit_identical": true
+    },
+    {
+     "i": 3,
+     "seed": 1,
+     "rho": 0.4837,
+     "branch": "real",
+     "phase_err": 0.52,
+     "temporal_err": 0.52,
+     "bit_identical": true
+    },
+    {
+     "i": 3,
+     "seed": 2,
+     "rho": 0.4837,
+     "branch": "real",
+     "phase_err": 0.5,
+     "temporal_err": 0.5,
+     "bit_identical": true
+    },
+    {
+     "i": 3,
+     "seed": 3,
+     "rho": 0.4837,
+     "branch": "real",
+     "phase_err": 0.52,
+     "temporal_err": 0.52,
+     "bit_identical": true
+    }
+   ],
+   "bit_identical_pairs": 12,
+   "n_pairs": 12,
+   "branch_map_imag": [
+    1,
+    2
+   ]
+  },
+  "reactive_grid_subset": {
+   "instances": [
+    {
+     "n": 100,
+     "i": 0,
+     "s": 1,
+     "seed": 1,
+     "phase_err": 0.61,
+     "temporal_err": 0.61,
+     "bit_identical": true
+    },
+    {
+     "n": 100,
+     "i": 0,
+     "s": 1,
+     "seed": 2,
+     "phase_err": 0.54,
+     "temporal_err": 0.54,
+     "bit_identical": true
+    },
+    {
+     "n": 100,
+     "i": 0,
+     "s": 1,
+     "seed": 3,
+     "phase_err": 0.56,
+     "temporal_err": 0.56,
+     "bit_identical": true
+    },
+    {
+     "n": 100,
+     "i": 0,
+     "s": -1,
+     "seed": 1,
+     "phase_err": 0.57,
+     "temporal_err": 0.57,
+     "bit_identical": true
+    },
+    {
+     "n": 100,
+     "i": 0,
+     "s": -1,
+     "seed": 2,
+     "phase_err": 0.56,
+     "temporal_err": 0.56,
+     "bit_identical": true
+    },
+    {
+     "n": 100,
+     "i": 0,
+     "s": -1,
+     "seed": 3,
+     "phase_err": 0.56,
+     "temporal_err": 0.56,
+     "bit_identical": true
+    },
+    {
+     "n": 100,
+     "i": 1,
+     "s": 1,
+     "seed": 1,
+     "phase_err": 0.53,
+     "temporal_err": 0.53,
+     "bit_identical": true
+    },
+    {
+     "n": 100,
+     "i": 1,
+     "s": 1,
+     "seed": 2,
+     "phase_err": 0.56,
+     "temporal_err": 0.56,
+     "bit_identical": true
+    },
+    {
+     "n": 100,
+     "i": 1,
+     "s": 1,
+     "seed": 3,
+     "phase_err": 0.48,
+     "temporal_err": 0.48,
+     "bit_identical": true
+    },
+    {
+     "n": 100,
+     "i": 1,
+     "s": -1,
+     "seed": 1,
+     "phase_err": 0.54,
+     "temporal_err": 0.54,
+     "bit_identical": true
+    },
+    {
+     "n": 100,
+     "i": 1,
+     "s": -1,
+     "seed": 2,
+     "phase_err": 0.58,
+     "temporal_err": 0.58,
+     "bit_identical": true
+    },
+    {
+     "n": 100,
+     "i": 1,
+     "s": -1,
+     "seed": 3,
+     "phase_err": 0.52,
+     "temporal_err": 0.52,
+     "bit_identical": true
+    },
+    {
+     "n": 400,
+     "i": 8,
+     "s": 1,
+     "seed": 1,
+     "phase_err": 0.62,
+     "temporal_err": 0.62,
+     "bit_identical": true
+    },
+    {
+     "n": 400,
+     "i": 8,
+     "s": 1,
+     "seed": 2,
+     "phase_err": 0.71,
+     "temporal_err": 0.71,
+     "bit_identical": true
+    },
+    {
+     "n": 400,
+     "i": 8,
+     "s": 1,
+     "seed": 3,
+     "phase_err": 0.64,
+     "temporal_err": 0.64,
+     "bit_identical": true
+    },
+    {
+     "n": 400,
+     "i": 8,
+     "s": -1,
+     "seed": 1,
+     "phase_err": 0.62,
+     "temporal_err": 0.62,
+     "bit_identical": true
+    },
+    {
+     "n": 400,
+     "i": 8,
+     "s": -1,
+     "seed": 2,
+     "phase_err": 0.68,
+     "temporal_err": 0.68,
+     "bit_identical": true
+    },
+    {
+     "n": 400,
+     "i": 8,
+     "s": -1,
+     "seed": 3,
+     "phase_err": 0.65,
+     "temporal_err": 0.65,
+     "bit_identical": true
+    }
+   ],
+   "bit_identical_pairs": 18,
+   "n_pairs": 18
+  }
+ },
+ "grid": {
+  "flip_per": {
+   "instances": [
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.63,
+     "err_native": 0.63,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.65,
+     "err_native": 0.65,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.72,
+     "err_native": 0.72,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.71,
+     "err_native": 0.71,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.69,
+     "err_native": 0.69,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.67,
+     "err_native": 0.67,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.71,
+     "err_native": 0.71,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.58,
+     "err_native": 0.58,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.58,
+     "err_native": 0.58,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.68,
+     "err_native": 0.68,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.63,
+     "err_native": 0.63,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.62,
+     "err_native": 0.62,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.69,
+     "err_native": 0.69,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.73,
+     "err_native": 0.73,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.71,
+     "err_native": 1.71,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.71,
+     "err_native": 1.71,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.72,
+     "err_native": 1.72,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.7,
+     "err_native": 1.7,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.68,
+     "err_native": 1.68,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.74,
+     "err_native": 1.74,
+     "verified": true
+    }
+   ],
+   "flip_counts": [
+    {
+     "n": 100,
+     "f_min": 1,
+     "f_max": 1,
+     "f_median": 1.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 1,
+     "f_max": 1,
+     "f_median": 1.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 1,
+     "f_max": 1,
+     "f_median": 1.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 1,
+     "f_max": 1,
+     "f_median": 1.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 1,
+     "f_max": 1,
+     "f_median": 1.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 1,
+     "f_max": 1,
+     "f_median": 1.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 1,
+     "f_max": 1,
+     "f_median": 1.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 1,
+     "f_max": 1,
+     "f_median": 1.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 400,
+     "f_min": 1,
+     "f_max": 1,
+     "f_median": 1.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 400,
+     "f_min": 1,
+     "f_max": 1,
+     "f_median": 1.0,
+     "n_flip_edges": 6
+    }
+   ],
+   "temporal_median": 0.69,
+   "temporal_max": 1.74,
+   "err_native_median": 0.6916269876753218,
+   "verify_rate": 1.0
+  },
+  "flip_aper": {
+   "instances": [
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.67,
+     "err_native": 0.67,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.77,
+     "err_native": 0.77,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.67,
+     "err_native": 0.67,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.69,
+     "err_native": 0.69,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.78,
+     "err_native": 0.78,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.82,
+     "err_native": 0.82,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.68,
+     "err_native": 0.68,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.74,
+     "err_native": 0.74,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.68,
+     "err_native": 0.68,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.67,
+     "err_native": 0.67,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.62,
+     "err_native": 0.62,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.62,
+     "err_native": 0.62,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.71,
+     "err_native": 0.71,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.65,
+     "err_native": 0.65,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.75,
+     "err_native": 0.75,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.62,
+     "err_native": 0.62,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.64,
+     "err_native": 0.64,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.67,
+     "err_native": 0.67,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.64,
+     "err_native": 0.64,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.72,
+     "err_native": 1.72,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.72,
+     "err_native": 1.72,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.73,
+     "err_native": 1.73,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.71,
+     "err_native": 1.71,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.69,
+     "err_native": 1.69,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.75,
+     "err_native": 1.75,
+     "verified": true
+    }
+   ],
+   "flip_counts": [
+    {
+     "n": 100,
+     "f_min": 4,
+     "f_max": 4,
+     "f_median": 4.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 3,
+     "f_max": 4,
+     "f_median": 4.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 3,
+     "f_max": 4,
+     "f_median": 4.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 3,
+     "f_max": 4,
+     "f_median": 4.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 4,
+     "f_max": 4,
+     "f_median": 4.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 3,
+     "f_max": 4,
+     "f_median": 4.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 4,
+     "f_max": 4,
+     "f_median": 4.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 100,
+     "f_min": 4,
+     "f_max": 4,
+     "f_median": 4.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 400,
+     "f_min": 4,
+     "f_max": 4,
+     "f_median": 4.0,
+     "n_flip_edges": 6
+    },
+    {
+     "n": 400,
+     "f_min": 4,
+     "f_max": 4,
+     "f_median": 4.0,
+     "n_flip_edges": 6
+    }
+   ],
+   "temporal_median": 0.68,
+   "temporal_max": 1.75,
+   "err_native_median": 0.6827775738364484,
+   "verify_rate": 1.0
+  }
+ },
+ "probes": {
+  "pairs": [
+   {
+    "family": "F1_zone_tail",
+    "dose": 1792.0,
+    "sched_seed": 11,
+    "f_per": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "f_aper": [
+     1201,
+     1228,
+     1202,
+     1209,
+     1218,
+     1206
+    ],
+    "projection_bit_identical": {
+     "magnitude": true,
+     "phase": true,
+     "rho": true
+    },
+    "effective_chords": {
+     "per": [
+      -894.0,
+      -894.0,
+      -894.0,
+      -894.0,
+      -894.0,
+      -894.0
+     ],
+     "aper": [
+      305.0,
+      332.0,
+      306.0,
+      313.0,
+      322.0,
+      310.0
+     ]
+    },
+    "arms": {
+     "per_mag": {
+      "errs": [
+       3.78,
+       3.78,
+       3.76
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "per_sign": {
+      "errs": [
+       13.87,
+       13.86,
+       13.87
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_phase": {
+      "errs": [
+       13.87,
+       13.86,
+       13.87
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_temporal": {
+      "errs": [
+       13.87,
+       13.87,
+       13.87
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_mag": {
+      "errs": [
+       3.78,
+       3.78,
+       3.76
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "aper_sign": {
+      "errs": [
+       13.87,
+       13.86,
+       13.87
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_phase": {
+      "errs": [
+       13.87,
+       13.86,
+       13.87
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_temporal": {
+      "errs": [
+       3.31,
+       3.3,
+       3.29
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     }
+    },
+    "magnitude_blind": true,
+    "sign_verdict_blind": true,
+    "phase_verdict_blind": true,
+    "temporal_separated": true
+   },
+   {
+    "family": "F1_zone_tail",
+    "dose": 1920.0,
+    "sched_seed": 12,
+    "f_per": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "f_aper": [
+     1165,
+     1207,
+     1184,
+     1223,
+     1208,
+     1199
+    ],
+    "projection_bit_identical": {
+     "magnitude": true,
+     "phase": true,
+     "rho": true
+    },
+    "effective_chords": {
+     "per": [
+      -958.0,
+      -958.0,
+      -958.0,
+      -958.0,
+      -958.0,
+      -958.0
+     ],
+     "aper": [
+      205.0,
+      247.0,
+      224.0,
+      263.0,
+      248.0,
+      239.0
+     ]
+    },
+    "arms": {
+     "per_mag": {
+      "errs": [
+       3.82,
+       3.79,
+       3.81
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "per_sign": {
+      "errs": [
+       13.86,
+       13.87,
+       13.87
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_phase": {
+      "errs": [
+       13.86,
+       13.87,
+       13.87
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_temporal": {
+      "errs": [
+       13.87,
+       13.87,
+       13.87
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_mag": {
+      "errs": [
+       3.82,
+       3.79,
+       3.81
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "aper_sign": {
+      "errs": [
+       13.86,
+       13.87,
+       13.87
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_phase": {
+      "errs": [
+       13.86,
+       13.87,
+       13.87
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_temporal": {
+      "errs": [
+       3.12,
+       3.11,
+       3.11
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     }
+    },
+    "magnitude_blind": true,
+    "sign_verdict_blind": true,
+    "phase_verdict_blind": true,
+    "temporal_separated": true
+   },
+   {
+    "family": "F1_zone_tail",
+    "dose": 2048.0,
+    "sched_seed": 13,
+    "f_per": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "f_aper": [
+     1215,
+     1203,
+     1201,
+     1208,
+     1190,
+     1195
+    ],
+    "projection_bit_identical": {
+     "magnitude": true,
+     "phase": true,
+     "rho": true
+    },
+    "effective_chords": {
+     "per": [
+      -1022.0,
+      -1022.0,
+      -1022.0,
+      -1022.0,
+      -1022.0,
+      -1022.0
+     ],
+     "aper": [
+      191.0,
+      179.0,
+      177.0,
+      184.0,
+      166.0,
+      171.0
+     ]
+    },
+    "arms": {
+     "per_mag": {
+      "errs": [
+       3.82,
+       3.8,
+       3.78
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "per_sign": {
+      "errs": [
+       13.87,
+       13.87,
+       13.86
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_phase": {
+      "errs": [
+       13.87,
+       13.87,
+       13.86
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_temporal": {
+      "errs": [
+       13.87,
+       13.86,
+       13.86
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_mag": {
+      "errs": [
+       3.82,
+       3.8,
+       3.78
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "aper_sign": {
+      "errs": [
+       13.87,
+       13.87,
+       13.86
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_phase": {
+      "errs": [
+       13.87,
+       13.87,
+       13.86
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_temporal": {
+      "errs": [
+       2.88,
+       2.88,
+       2.89
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     }
+    },
+    "magnitude_blind": true,
+    "sign_verdict_blind": true,
+    "phase_verdict_blind": true,
+    "temporal_separated": true
+   },
+   {
+    "family": "F1_zone_tail",
+    "dose": 2176.0,
+    "sched_seed": 14,
+    "f_per": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "f_aper": [
+     1180,
+     1224,
+     1181,
+     1220,
+     1210,
+     1170
+    ],
+    "projection_bit_identical": {
+     "magnitude": true,
+     "phase": true,
+     "rho": true
+    },
+    "effective_chords": {
+     "per": [
+      -1086.0,
+      -1086.0,
+      -1086.0,
+      -1086.0,
+      -1086.0,
+      -1086.0
+     ],
+     "aper": [
+      92.0,
+      136.0,
+      93.0,
+      132.0,
+      122.0,
+      82.0
+     ]
+    },
+    "arms": {
+     "per_mag": {
+      "errs": [
+       3.83,
+       3.85,
+       3.81
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "per_sign": {
+      "errs": [
+       13.87,
+       13.86,
+       13.86
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_phase": {
+      "errs": [
+       13.87,
+       13.86,
+       13.86
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_temporal": {
+      "errs": [
+       13.87,
+       13.86,
+       13.87
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_mag": {
+      "errs": [
+       3.83,
+       3.85,
+       3.81
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "aper_sign": {
+      "errs": [
+       13.87,
+       13.86,
+       13.86
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_phase": {
+      "errs": [
+       13.87,
+       13.86,
+       13.86
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_temporal": {
+      "errs": [
+       2.43,
+       2.42,
+       2.42
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     }
+    },
+    "magnitude_blind": true,
+    "sign_verdict_blind": true,
+    "phase_verdict_blind": true,
+    "temporal_separated": true
+   },
+   {
+    "family": "F2_zone_head",
+    "dose": 1792.0,
+    "sched_seed": 15,
+    "f_per": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "f_aper": [
+     1225,
+     1148,
+     1193,
+     1234,
+     1224,
+     1161
+    ],
+    "projection_bit_identical": {
+     "magnitude": true,
+     "phase": true,
+     "rho": true
+    },
+    "effective_chords": {
+     "per": [
+      -894.0,
+      -894.0,
+      -894.0,
+      -894.0,
+      -894.0,
+      -894.0
+     ],
+     "aper": [
+      329.0,
+      252.0,
+      297.0,
+      338.0,
+      328.0,
+      265.0
+     ]
+    },
+    "arms": {
+     "per_mag": {
+      "errs": [
+       1.33,
+       1.34,
+       1.34
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "per_sign": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_phase": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_temporal": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_mag": {
+      "errs": [
+       1.33,
+       1.34,
+       1.34
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "aper_sign": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_phase": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_temporal": {
+      "errs": [
+       1.21,
+       1.19,
+       1.21
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     }
+    },
+    "magnitude_blind": true,
+    "sign_verdict_blind": true,
+    "phase_verdict_blind": true,
+    "temporal_separated": true
+   },
+   {
+    "family": "F2_zone_head",
+    "dose": 1920.0,
+    "sched_seed": 16,
+    "f_per": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "f_aper": [
+     1190,
+     1184,
+     1191,
+     1192,
+     1208,
+     1203
+    ],
+    "projection_bit_identical": {
+     "magnitude": true,
+     "phase": true,
+     "rho": true
+    },
+    "effective_chords": {
+     "per": [
+      -958.0,
+      -958.0,
+      -958.0,
+      -958.0,
+      -958.0,
+      -958.0
+     ],
+     "aper": [
+      230.0,
+      224.0,
+      231.0,
+      232.0,
+      248.0,
+      243.0
+     ]
+    },
+    "arms": {
+     "per_mag": {
+      "errs": [
+       1.35,
+       1.36,
+       1.34
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "per_sign": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_phase": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_temporal": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_mag": {
+      "errs": [
+       1.35,
+       1.36,
+       1.34
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "aper_sign": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_phase": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_temporal": {
+      "errs": [
+       1.19,
+       1.15,
+       1.14
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     }
+    },
+    "magnitude_blind": true,
+    "sign_verdict_blind": true,
+    "phase_verdict_blind": true,
+    "temporal_separated": true
+   },
+   {
+    "family": "F2_zone_head",
+    "dose": 2048.0,
+    "sched_seed": 17,
+    "f_per": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "f_aper": [
+     1200,
+     1181,
+     1173,
+     1194,
+     1161,
+     1206
+    ],
+    "projection_bit_identical": {
+     "magnitude": true,
+     "phase": true,
+     "rho": true
+    },
+    "effective_chords": {
+     "per": [
+      -1022.0,
+      -1022.0,
+      -1022.0,
+      -1022.0,
+      -1022.0,
+      -1022.0
+     ],
+     "aper": [
+      176.0,
+      157.0,
+      149.0,
+      170.0,
+      137.0,
+      182.0
+     ]
+    },
+    "arms": {
+     "per_mag": {
+      "errs": [
+       1.33,
+       1.35,
+       1.34
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "per_sign": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_phase": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_temporal": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_mag": {
+      "errs": [
+       1.33,
+       1.35,
+       1.34
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "aper_sign": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_phase": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_temporal": {
+      "errs": [
+       1.06,
+       1.1,
+       1.08
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     }
+    },
+    "magnitude_blind": true,
+    "sign_verdict_blind": true,
+    "phase_verdict_blind": true,
+    "temporal_separated": true
+   },
+   {
+    "family": "F2_zone_head",
+    "dose": 2176.0,
+    "sched_seed": 18,
+    "f_per": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "f_aper": [
+     1248,
+     1134,
+     1228,
+     1190,
+     1201,
+     1171
+    ],
+    "projection_bit_identical": {
+     "magnitude": true,
+     "phase": true,
+     "rho": true
+    },
+    "effective_chords": {
+     "per": [
+      -1086.0,
+      -1086.0,
+      -1086.0,
+      -1086.0,
+      -1086.0,
+      -1086.0
+     ],
+     "aper": [
+      160.0,
+      46.0,
+      140.0,
+      102.0,
+      113.0,
+      83.0
+     ]
+    },
+    "arms": {
+     "per_mag": {
+      "errs": [
+       1.37,
+       1.39,
+       1.36
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "per_sign": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_phase": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_temporal": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_mag": {
+      "errs": [
+       1.37,
+       1.39,
+       1.36
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "aper_sign": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_phase": {
+      "errs": [
+       14.94,
+       14.94,
+       14.94
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_temporal": {
+      "errs": [
+       0.99,
+       0.95,
+       0.99
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     }
+    },
+    "magnitude_blind": true,
+    "sign_verdict_blind": true,
+    "phase_verdict_blind": true,
+    "temporal_separated": true
+   },
+   {
+    "family": "F3_canon_boundary",
+    "dose": 1792.0,
+    "sched_seed": 19,
+    "f_per": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "f_aper": [
+     1223,
+     1175,
+     1196,
+     1172,
+     1188,
+     1243
+    ],
+    "projection_bit_identical": {
+     "magnitude": true,
+     "phase": true,
+     "rho": true
+    },
+    "effective_chords": {
+     "per": [
+      -894.0,
+      -894.0,
+      -894.0,
+      -894.0,
+      -894.0,
+      -894.0
+     ],
+     "aper": [
+      327.0,
+      279.0,
+      300.0,
+      276.0,
+      292.0,
+      347.0
+     ]
+    },
+    "arms": {
+     "per_mag": {
+      "errs": [
+       2.71,
+       2.69,
+       2.7
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "per_sign": {
+      "errs": [
+       18.9,
+       18.36,
+       16.65
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_phase": {
+      "errs": [
+       18.9,
+       18.36,
+       16.65
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_temporal": {
+      "errs": [
+       20.43,
+       18.36,
+       17.24
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_mag": {
+      "errs": [
+       2.71,
+       2.69,
+       2.7
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "aper_sign": {
+      "errs": [
+       18.9,
+       18.36,
+       16.65
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_phase": {
+      "errs": [
+       18.9,
+       18.36,
+       16.65
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_temporal": {
+      "errs": [
+       2.3,
+       2.32,
+       2.36
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     }
+    },
+    "magnitude_blind": true,
+    "sign_verdict_blind": true,
+    "phase_verdict_blind": true,
+    "temporal_separated": true
+   },
+   {
+    "family": "F3_canon_boundary",
+    "dose": 1920.0,
+    "sched_seed": 20,
+    "f_per": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "f_aper": [
+     1181,
+     1152,
+     1185,
+     1190,
+     1191,
+     1210
+    ],
+    "projection_bit_identical": {
+     "magnitude": true,
+     "phase": true,
+     "rho": true
+    },
+    "effective_chords": {
+     "per": [
+      -958.0,
+      -958.0,
+      -958.0,
+      -958.0,
+      -958.0,
+      -958.0
+     ],
+     "aper": [
+      221.0,
+      192.0,
+      225.0,
+      230.0,
+      231.0,
+      250.0
+     ]
+    },
+    "arms": {
+     "per_mag": {
+      "errs": [
+       2.71,
+       2.72,
+       2.71
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "per_sign": {
+      "errs": [
+       18.9,
+       19.93,
+       19.93
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_phase": {
+      "errs": [
+       18.9,
+       19.93,
+       19.93
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_temporal": {
+      "errs": [
+       19.93,
+       16.65,
+       16.04
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_mag": {
+      "errs": [
+       2.71,
+       2.72,
+       2.71
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "aper_sign": {
+      "errs": [
+       18.9,
+       19.93,
+       19.93
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_phase": {
+      "errs": [
+       18.9,
+       19.93,
+       19.93
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_temporal": {
+      "errs": [
+       2.15,
+       2.12,
+       2.18
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     }
+    },
+    "magnitude_blind": true,
+    "sign_verdict_blind": true,
+    "phase_verdict_blind": true,
+    "temporal_separated": true
+   },
+   {
+    "family": "F3_canon_boundary",
+    "dose": 2048.0,
+    "sched_seed": 21,
+    "f_per": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "f_aper": [
+     1225,
+     1206,
+     1217,
+     1189,
+     1179,
+     1175
+    ],
+    "projection_bit_identical": {
+     "magnitude": true,
+     "phase": true,
+     "rho": true
+    },
+    "effective_chords": {
+     "per": [
+      -1022.0,
+      -1022.0,
+      -1022.0,
+      -1022.0,
+      -1022.0,
+      -1022.0
+     ],
+     "aper": [
+      201.0,
+      182.0,
+      193.0,
+      165.0,
+      155.0,
+      151.0
+     ]
+    },
+    "arms": {
+     "per_mag": {
+      "errs": [
+       2.72,
+       2.73,
+       2.72
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "per_sign": {
+      "errs": [
+       17.81,
+       17.81,
+       17.81
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_phase": {
+      "errs": [
+       17.81,
+       17.81,
+       17.81
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_temporal": {
+      "errs": [
+       17.81,
+       18.9,
+       17.81
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_mag": {
+      "errs": [
+       2.72,
+       2.73,
+       2.72
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "aper_sign": {
+      "errs": [
+       17.81,
+       17.81,
+       17.81
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_phase": {
+      "errs": [
+       17.81,
+       17.81,
+       17.81
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_temporal": {
+      "errs": [
+       2.05,
+       2.07,
+       2.03
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     }
+    },
+    "magnitude_blind": true,
+    "sign_verdict_blind": true,
+    "phase_verdict_blind": true,
+    "temporal_separated": true
+   },
+   {
+    "family": "F3_canon_boundary",
+    "dose": 2176.0,
+    "sched_seed": 22,
+    "f_per": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "f_aper": [
+     1158,
+     1187,
+     1189,
+     1209,
+     1184,
+     1219
+    ],
+    "projection_bit_identical": {
+     "magnitude": true,
+     "phase": true,
+     "rho": true
+    },
+    "effective_chords": {
+     "per": [
+      -1086.0,
+      -1086.0,
+      -1086.0,
+      -1086.0,
+      -1086.0,
+      -1086.0
+     ],
+     "aper": [
+      70.0,
+      99.0,
+      101.0,
+      121.0,
+      96.0,
+      131.0
+     ]
+    },
+    "arms": {
+     "per_mag": {
+      "errs": [
+       2.75,
+       2.74,
+       2.73
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "per_sign": {
+      "errs": [
+       17.81,
+       17.24,
+       17.24
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_phase": {
+      "errs": [
+       17.81,
+       17.24,
+       17.24
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "per_temporal": {
+      "errs": [
+       18.9,
+       18.36,
+       16.04
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_mag": {
+      "errs": [
+       2.75,
+       2.74,
+       2.73
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     },
+     "aper_sign": {
+      "errs": [
+       17.81,
+       17.24,
+       17.24
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_phase": {
+      "errs": [
+       17.81,
+       17.24,
+       17.24
+      ],
+      "verify": [
+       0,
+       0,
+       0
+      ],
+      "majority": false
+     },
+     "aper_temporal": {
+      "errs": [
+       1.56,
+       1.52,
+       1.57
+      ],
+      "verify": [
+       1,
+       1,
+       1
+      ],
+      "majority": true
+     }
+    },
+    "magnitude_blind": true,
+    "sign_verdict_blind": true,
+    "phase_verdict_blind": true,
+    "temporal_separated": true
+   }
+  ],
+  "n_pairs": 12,
+  "phase_verdict_blind_pairs": 12,
+  "sign_verdict_blind_pairs": 12,
+  "magnitude_blind_pairs": 12,
+  "separated_pairs": [
+   "F1_zone_tail@1792",
+   "F1_zone_tail@1920",
+   "F1_zone_tail@2048",
+   "F1_zone_tail@2176",
+   "F2_zone_head@1792",
+   "F2_zone_head@1920",
+   "F2_zone_head@2048",
+   "F2_zone_head@2176",
+   "F3_canon_boundary@1792",
+   "F3_canon_boundary@1920",
+   "F3_canon_boundary@2048",
+   "F3_canon_boundary@2176"
+  ],
+  "n_separated": 12
+ },
+ "gates": {
+  "N1_static_read_blind": {
+   "pass": true,
+   "n_pairs": 12,
+   "required": 11,
+   "phase_verdict_blind_pairs": 12,
+   "sign_verdict_blind_pairs": 12,
+   "magnitude_blind_pairs": 12
+  },
+  "N2_temporal_separates": {
+   "pass": true,
+   "separated_pairs": [
+    "F1_zone_tail@1792",
+    "F1_zone_tail@1920",
+    "F1_zone_tail@2048",
+    "F1_zone_tail@2176",
+    "F2_zone_head@1792",
+    "F2_zone_head@1920",
+    "F2_zone_head@2048",
+    "F2_zone_head@2176",
+    "F3_canon_boundary@1792",
+    "F3_canon_boundary@1920",
+    "F3_canon_boundary@2048",
+    "F3_canon_boundary@2176"
+   ],
+   "n_separated": 12,
+   "required": 10
+  },
+  "N3_schedule_fidelity": {
+   "pass": false,
+   "pooled_temporal_median": 0.685,
+   "bar": 0.6,
+   "n_decodes": 60,
+   "sign_cross_class_blind": {
+    "outcome_identical": 30,
+    "n_compared": 30
+   }
+  },
+  "N4_strict_superset": {
+   "pass": true,
+   "torus_bit_identical": true,
+   "torus_verify_preserved": true,
+   "signed_bit_identical": 12,
+   "signed_pairs": 12,
+   "complex_bit_identical": 12,
+   "complex_pairs": 12,
+   "complex_branch_map_imag": [
+    1,
+    2
+   ],
+   "reactive_bit_identical": 18,
+   "reactive_pairs": 18,
+   "reduction": "static media: flip counts all zero => F = 0 => A_ext = A bitwise => exp145's read"
+  }
+ },
+ "verdict": "3/4 gates",
+ "rejections": 0,
+ "runtime_s": 554.5
+}
