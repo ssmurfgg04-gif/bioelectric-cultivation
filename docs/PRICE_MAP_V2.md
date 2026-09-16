@@ -29,8 +29,8 @@ on walk-taxed cells.)
 | ladder | GAMMA0 | 5.01 | (8, 0.015) | 3.98 | 4.0 | tolerant | 3.6168 |
 | random6 | GAMMA0 | 5.54 | (8, 0.015) | 4.83 | 4.0 | tolerant | 2.0378 |
 | barbell | GAMMA0 | 2.20 | (4, 0) | 3.77 | 4.0 | tolerant | 12.1007 |
-| bipartite | GEOMETRY | 4.76 | (32, 0) | 4.47 | - | tolerant | 32.5 |
-| complete | GEOMETRY | 5.42 | (32, 0) | 5.21 | - | tolerant | 25.0289 |
+| bipartite | GEOMETRY | 4.76 | (32, 0) | 4.47 | - | mandatory-silence | 32.5 |
+| complete | GEOMETRY | 5.42 | (32, 0) | 5.21 | - | mandatory-silence | 25.0289 |
 
 ## The oracle's domain statement (exp114)
 

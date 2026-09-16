@@ -48,8 +48,15 @@ CLASSES_V2 = {
     "GEOMETRY": ["bipartite", "complete"],
 }
 CLASS_OF = {n: c for c, ms in CLASSES_V2.items() for n in ms}
-MU_REQ = {n: ("mandatory-silence" if CLASS_OF[n] == "MU0_SILENCE"
-              else "tolerant") for n in CLASS_OF}
+# mu requirement CORRECTED in exp124 (ledger L105): exp117's
+# class-based fill labeled GEOMETRY "tolerant" — but exp100's
+# deposited gamma ladders show bipartite/complete REFUSE at every
+# gamma at default mu (rate 0.0 through gamma_64): their (32, 0)
+# cell needs mu silence like the middle band. Only DEFAULT0
+# (verifies at (1, 0.015)) and GAMMA0 (verifies at their priced
+# gamma with default mu) are mu-tolerant.
+MU_REQ = {n: ("tolerant" if CLASS_OF[n] in ("DEFAULT0", "GAMMA0")
+              else "mandatory-silence") for n in CLASS_OF}
 
 
 def main() -> dict:
