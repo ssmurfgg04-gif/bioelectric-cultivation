@@ -1,0 +1,296 @@
+{
+ "exp": "exp117_price_map_v2",
+ "members": [
+  {
+   "name": "path",
+   "class_v1": "DEFAULT",
+   "class_v2": "DEFAULT0",
+   "deployed_cell_err": 2.91,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    1.0,
+    0.015
+   ],
+   "frozen_cell_err": 2.04,
+   "speed_buyback": null,
+   "mu_requirement": "tolerant",
+   "v2_ratio": null
+  },
+  {
+   "name": "path200",
+   "class_v1": "DEFAULT",
+   "class_v2": "DEFAULT0",
+   "deployed_cell_err": 2.38,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    1.0,
+    0.015
+   ],
+   "frozen_cell_err": 1.48,
+   "speed_buyback": null,
+   "mu_requirement": "tolerant",
+   "v2_ratio": null
+  },
+  {
+   "name": "cycle",
+   "class_v1": "DEFAULT",
+   "class_v2": "DEFAULT0",
+   "deployed_cell_err": 3.67,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    1.0,
+    0.015
+   ],
+   "frozen_cell_err": 2.66,
+   "speed_buyback": null,
+   "mu_requirement": "tolerant",
+   "v2_ratio": null
+  },
+  {
+   "name": "small_world",
+   "class_v1": "DEFAULT",
+   "class_v2": "DEFAULT0",
+   "deployed_cell_err": 4.23,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    1.0,
+    0.015
+   ],
+   "frozen_cell_err": 3.02,
+   "speed_buyback": null,
+   "mu_requirement": "tolerant",
+   "v2_ratio": null
+  },
+  {
+   "name": "star",
+   "class_v1": "V_PRICED",
+   "class_v2": "DEFAULT0",
+   "deployed_cell_err": 5.42,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    1.0,
+    0.015
+   ],
+   "frozen_cell_err": 5.71,
+   "speed_buyback": 2.0,
+   "mu_requirement": "tolerant",
+   "v2_ratio": 4.0202
+  },
+  {
+   "name": "torus",
+   "class_v1": "TWO_DIAL",
+   "class_v2": "MU0_SILENCE",
+   "deployed_cell_err": 3.81,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    1.0,
+    0.0
+   ],
+   "frozen_cell_err": 5.54,
+   "speed_buyback": 4.0,
+   "mu_requirement": "mandatory-silence",
+   "v2_ratio": 4.8083
+  },
+  {
+   "name": "torus_elong",
+   "class_v1": "TWO_DIAL",
+   "class_v2": "MU0_SILENCE",
+   "deployed_cell_err": 3.76,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    1.0,
+    0.0
+   ],
+   "frozen_cell_err": 5.47,
+   "speed_buyback": 4.0,
+   "mu_requirement": "mandatory-silence",
+   "v2_ratio": 5.7276
+  },
+  {
+   "name": "random3",
+   "class_v1": "TWO_DIAL",
+   "class_v2": "MU0_SILENCE",
+   "deployed_cell_err": 3.62,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    1.0,
+    0.0
+   ],
+   "frozen_cell_err": 5.16,
+   "speed_buyback": 4.0,
+   "mu_requirement": "mandatory-silence",
+   "v2_ratio": 7.5118
+  },
+  {
+   "name": "random8",
+   "class_v1": "TWO_DIAL",
+   "class_v2": "MU0_SILENCE",
+   "deployed_cell_err": 3.96,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    1.0,
+    0.0
+   ],
+   "frozen_cell_err": 5.28,
+   "speed_buyback": 4.0,
+   "mu_requirement": "mandatory-silence",
+   "v2_ratio": 2.8826
+  },
+  {
+   "name": "scale_free",
+   "class_v1": "TWO_DIAL",
+   "class_v2": "MU0_SILENCE",
+   "deployed_cell_err": 3.59,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    1.0,
+    0.0
+   ],
+   "frozen_cell_err": 5.94,
+   "speed_buyback": 4.0,
+   "mu_requirement": "mandatory-silence",
+   "v2_ratio": 8.6209
+  },
+  {
+   "name": "scale_free200",
+   "class_v1": "TWO_DIAL",
+   "class_v2": "MU0_SILENCE",
+   "deployed_cell_err": 3.93,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    1.0,
+    0.0
+   ],
+   "frozen_cell_err": 5.91,
+   "speed_buyback": 4.0,
+   "mu_requirement": "mandatory-silence",
+   "v2_ratio": 13.1494
+  },
+  {
+   "name": "tree",
+   "class_v1": "V_PRICED",
+   "class_v2": "GAMMA0",
+   "deployed_cell_err": 5.35,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    16.0,
+    0.015
+   ],
+   "frozen_cell_err": 4.52,
+   "speed_buyback": 4.0,
+   "mu_requirement": "tolerant",
+   "v2_ratio": 6.2312
+  },
+  {
+   "name": "grid2d",
+   "class_v1": "V_PRICED",
+   "class_v2": "GAMMA0",
+   "deployed_cell_err": 4.99,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    16.0,
+    0.015
+   ],
+   "frozen_cell_err": 4.38,
+   "speed_buyback": 4.0,
+   "mu_requirement": "tolerant",
+   "v2_ratio": 4.174
+  },
+  {
+   "name": "grid_elong",
+   "class_v1": "V_PRICED",
+   "class_v2": "GAMMA0",
+   "deployed_cell_err": 5.58,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    16.0,
+    0.015
+   ],
+   "frozen_cell_err": 4.98,
+   "speed_buyback": 4.0,
+   "mu_requirement": "tolerant",
+   "v2_ratio": 5.1403
+  },
+  {
+   "name": "ladder",
+   "class_v1": "V_PRICED",
+   "class_v2": "GAMMA0",
+   "deployed_cell_err": 5.01,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    8.0,
+    0.015
+   ],
+   "frozen_cell_err": 3.98,
+   "speed_buyback": 4.0,
+   "mu_requirement": "tolerant",
+   "v2_ratio": 3.6168
+  },
+  {
+   "name": "random6",
+   "class_v1": "V_PRICED",
+   "class_v2": "GAMMA0",
+   "deployed_cell_err": 5.54,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    8.0,
+    0.015
+   ],
+   "frozen_cell_err": 4.83,
+   "speed_buyback": 4.0,
+   "mu_requirement": "tolerant",
+   "v2_ratio": 2.0378
+  },
+  {
+   "name": "barbell",
+   "class_v1": "TWO_DIAL",
+   "class_v2": "GAMMA0",
+   "deployed_cell_err": 2.2,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    4.0,
+    0.0
+   ],
+   "frozen_cell_err": 3.77,
+   "speed_buyback": 4.0,
+   "mu_requirement": "tolerant",
+   "v2_ratio": 12.1007
+  },
+  {
+   "name": "bipartite",
+   "class_v1": "TWO_DIAL",
+   "class_v2": "GEOMETRY",
+   "deployed_cell_err": 4.76,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    32.0,
+    0.0
+   ],
+   "frozen_cell_err": 4.47,
+   "speed_buyback": null,
+   "mu_requirement": "tolerant",
+   "v2_ratio": 32.5
+  },
+  {
+   "name": "complete",
+   "class_v1": "TWO_DIAL",
+   "class_v2": "GEOMETRY",
+   "deployed_cell_err": 5.42,
+   "deployed_cell_rate": 1.0,
+   "frozen_cell": [
+    32.0,
+    0.0
+   ],
+   "frozen_cell_err": 5.21,
+   "speed_buyback": null,
+   "mu_requirement": "tolerant",
+   "v2_ratio": 25.0289
+  }
+ ],
+ "oracle_rho": 0.63,
+ "criteria": {
+  "PM_G1_no_holes": true,
+  "PM_G2_class_consistency": true,
+  "PM_G3_artifact_complete": true
+ }
+}
