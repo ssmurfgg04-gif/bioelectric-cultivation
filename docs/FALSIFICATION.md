@@ -2829,3 +2829,62 @@ Night seven, part 3. exp43's registered follow-up:
 - NEXT (derived): the exp40 dose-axis wiring (exp88's registered
   repair); quest 001 on the restored quota; the docs milestone for
   the session's arc (the scoreboard refresh).
+
+## L73 — exp91 THE DOSE-AXIS REFUTATION + THE AMPLITUDE AXIS (3/6 — L70's registered repair REFUTED BY SATURATION as pre-registered; the amplitude axis born with a threshold structure; the corpus decoded MAE 0.304 -> 0.290)
+
+- THE REGISTERED REPAIR, TESTED AS REGISTERED (Stage A): exp88's
+  L70 repair — the exp40 (cns x diffusion) grid at regrow on the
+  full-corruption morphogen arms — ran verbatim (30 cells x 3 seeds,
+  wnt|trunk; corners on wnt|crosspiece / apc|trunk). The design
+  review (pre-run) predicted the failure mode and the run confirmed
+  it: the wnt/apc verdict fires PRE-regrow from the corruption
+  itself (pattern_error >= 6.0 or head_likeness >= 0.7 already true
+  before any regrow), so the commitment kwargs act on ~15 cells that
+  cannot change the verdict.
+- DA-G1 REFUTED — no grid cell lands in the pinned partial band
+  [0.00, 0.50] (the block: 17 morphogen rows mapped to wnt|trunk
+  with recorded < 0.5, eids 120-1706, span [0.00, 0.45], mean
+  0.189); the grid is FLAT 1.0 across all 30 cells.
+- DA-G2 REFUTED-BY-SATURATION (the named branch): flat grid ->
+  Spearman undefined. The exp40 shape does not transfer to a
+  saturated arm.
+- DA-G3 REFUTED on one sub-check, honestly owned: the two
+  load-bearing controls PASS (default-kwargs bit-exact True —
+  explicit (cns=1, diff=0) is stream-neutral; dose protocol-scoped
+  True — cutting|trunk inert to d=0.3), but the "kwargs live"
+  sub-check is VACUOUS AS REGISTERED — it instrumented the boolean
+  verdict, which cannot move under saturation. Registered-gate
+  defect owned: the live check needed the continuous instrument
+  (per-seed pattern errors). Secondary finding rescuing L70
+  partially: the Stage-A corners show the commitment grid IS live
+  where the verdict is unsaturated (wnt|crosspiece 0.0 -> 0.667 at
+  (3, 1.5)) — the repair works on unsaturated slices, dies on
+  saturated ones.
+- DA-G4 PASS — THE AMPLITUDE AXIS IS MONOTONE: the migrated repair
+  doses the corruption amplitude (theta interpolation toward the
+  adopted full push; d=1.0 bit-exact vs exp88's arm; d=0.0 the
+  plain protocol arm; zero new core code): wnt|trunk rates
+  [0, 0, 1, 1, 1] across d in {0, 0.25, 0.5, 0.75, 1.0}, Spearman
+  0.866. apc|trunk mirrors [0, 0, 1, 1, 1]; wnt|crosspiece stays 0
+  (its phi_readout=0.75 regime resists the push at all doses —
+  deposited as the slice's dose-response).
+- DA-G5 PASS — the partial band is reached, with the structure
+  named: the sim's amplitude response is a THRESHOLD between
+  d=0.25 and d=0.5, not a graded curve at the registered grain
+  (rates in {0, 1}); the record's partial block (mean 0.189) sits
+  below the sim's threshold — the graded edge (1/3, 2/3 rates) is
+  registered for exp92's fine ladder (d in [0.25, 0.5], 7 seeds).
+- DA-G6 PASS — the corpus re-scored at the adopted d*=0.0 (closest
+  to the block mean; one cell for the family, no re-selection, no
+  new exclusions): decoded MAE 0.304 -> 0.290; raw 0.365 -> 0.436 —
+  BOTH frames deposited because the family-level mapping is
+  structurally wrong in opposite directions: the record's morphogen
+  block is BIMODAL (30 rows at 1.0, 17 rows at < 0.5) and no single
+  family dose fits both modes. The row-level mapping (by RNAi
+  combination structure) is exp92's registered design.
+- 67/67 tests untouched (no core edit; the corpus runner is
+  experiment-local).
+- NEXT (derived): exp92 the fine amplitude ladder + the row-level
+  dose mapping + the unsaturated-slice rescue test (the commitment
+  grid on wnt|crosspiece as a positive control); then R5' across
+  the substrate battery; multi-zone regen scale-up.
