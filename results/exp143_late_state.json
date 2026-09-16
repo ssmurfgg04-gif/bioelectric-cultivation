@@ -1,0 +1,420 @@
+{
+ "exp": "exp143_late_state",
+ "claim": "exp140's one gap \u2014 the g64@36 late-control break, unencoded in the mean-field (span-theta-dev, intact-V-dev) read \u2014 is (or is not) absorbed by a ONE-degree-of-freedom extension of exp140's frozen six-cell separator with a single additional state feature (profile shape / residual-mu exposure / pre-settle read / margin-to-bar noise statistic)",
+ "pre_registered": {
+  "anchors": {
+   "break": [
+    "g1_t0",
+    "g4_t48",
+    "g16_t52",
+    "g16_t72",
+    "g64_t36"
+   ],
+   "rescue": [
+    "g4_t36",
+    "g16_t48",
+    "g64_t34"
+   ]
+  },
+  "extension_forms": {
+   "A_pivot": "score = s6 + wz*(z - z0); z0 = fit-cell mean",
+   "B_free_bias": "score = s6 + a*z + c (exact 2D LP)"
+  },
+  "s6_frozen": "exp140's six-cell refit; base plane never refit",
+  "constraint_set": "six fit cells + g16@72 break + g64@36 break",
+  "feature_order": [
+   "Z1_profile_gradient",
+   "Z2_profile_spectral_triplet",
+   "Z3_residual_mu_exposure",
+   "Z4_pre_settle_read",
+   "Z5_dct_k1_alone",
+   "Z6_margin_to_bar"
+  ],
+  "loo_protocol": "drop each anchor, refit the extension on 7, classify the dropped one",
+  "disclosure": "form A was the initially-run operationalization and returned EMPTY for every feature; form B was added before the deposited run to rule out a pivot-choice artifact; both reported"
+ },
+ "fidelity": {
+  "vs_exp135": [
+   {
+    "cell": "g1_t0",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g4_t48",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g16_t52",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g16_t72",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g64_t36",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g4_t36",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g16_t48",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g64_t34",
+    "max_abs_scalar_diff": 0.0
+   }
+  ],
+  "vs_exp140": [
+   {
+    "cell": "g1_t0",
+    "max_abs_readout_diff": 0.0
+   },
+   {
+    "cell": "g4_t48",
+    "max_abs_readout_diff": 0.0
+   },
+   {
+    "cell": "g16_t52",
+    "max_abs_readout_diff": 0.0
+   },
+   {
+    "cell": "g16_t72",
+    "max_abs_readout_diff": 0.0
+   },
+   {
+    "cell": "g64_t36",
+    "max_abs_readout_diff": 0.0
+   },
+   {
+    "cell": "g4_t36",
+    "max_abs_readout_diff": 0.0
+   },
+   {
+    "cell": "g16_t48",
+    "max_abs_readout_diff": 0.0
+   },
+   {
+    "cell": "g64_t34",
+    "max_abs_readout_diff": 0.0
+   }
+  ]
+ },
+ "base_separator": {
+  "w": [
+   0.292959,
+   0.364971
+  ],
+  "b": -4.625846,
+  "margin": 0.234003,
+  "matches_deposit_1e-3": true,
+  "s6_g64_t36": -0.8184,
+  "s6_g16_t72": 1.3141
+ },
+ "anchors": [
+  {
+   "cell": "g1_t0",
+   "g": 1.0,
+   "t": 0.0,
+   "deposited": "break",
+   "x": 4.4199,
+   "y": 9.4268,
+   "err": 7.2426,
+   "s6": 0.1095,
+   "latch_phase": "window",
+   "t_pre": 82.4,
+   "exposure": 0.0,
+   "x_pre": 3.3133,
+   "y_pre": 8.9823,
+   "shape_grad": 4.1759,
+   "spec3": 13.0866,
+   "spec_c1": 0.8937,
+   "margin_to_bar": -1.2426
+  },
+  {
+   "cell": "g4_t48",
+   "g": 4.0,
+   "t": 48.0,
+   "deposited": "break",
+   "x": 3.2664,
+   "y": 10.3527,
+   "err": 6.3533,
+   "s6": 0.1095,
+   "latch_phase": "walk",
+   "t_pre": 82.4,
+   "exposure": 3.4458,
+   "x_pre": 2.9113,
+   "y_pre": 10.2511,
+   "shape_grad": 3.0425,
+   "spec3": 11.8586,
+   "spec_c1": 0.1347,
+   "margin_to_bar": -0.3533
+  },
+  {
+   "cell": "g16_t52",
+   "g": 16.0,
+   "t": 52.0,
+   "deposited": "break",
+   "x": 4.1388,
+   "y": 9.8035,
+   "err": 6.2668,
+   "s6": 0.1647,
+   "latch_phase": "walk",
+   "t_pre": 59.04,
+   "exposure": 5.8052,
+   "x_pre": 4.0636,
+   "y_pre": 9.7731,
+   "shape_grad": 4.2807,
+   "spec3": 13.2256,
+   "spec_c1": 0.8971,
+   "margin_to_bar": -0.2668
+  },
+  {
+   "cell": "g16_t72",
+   "g": 16.0,
+   "t": 72.0,
+   "deposited": "break",
+   "x": 6.9087,
+   "y": 10.7296,
+   "err": 8.1722,
+   "s6": 1.3141,
+   "latch_phase": "settle",
+   "t_pre": 59.04,
+   "exposure": 9.892,
+   "x_pre": 5.1135,
+   "y_pre": 10.1688,
+   "shape_grad": 6.3572,
+   "spec3": 19.1078,
+   "spec_c1": 0.6241,
+   "margin_to_bar": -2.1722
+  },
+  {
+   "cell": "g64_t36",
+   "g": 64.0,
+   "t": 36.0,
+   "deposited": "break",
+   "x": 2.7771,
+   "y": 8.203,
+   "err": 4.9037,
+   "s6": -0.8184,
+   "latch_phase": "settle",
+   "t_pre": 34.306,
+   "exposure": 3.5445,
+   "x_pre": 2.2426,
+   "y_pre": 7.9893,
+   "shape_grad": 3.0609,
+   "spec3": 7.5514,
+   "spec_c1": 0.9005,
+   "margin_to_bar": 1.0963
+  },
+  {
+   "cell": "g4_t36",
+   "g": 4.0,
+   "t": 36.0,
+   "deposited": "rescue",
+   "x": 2.3102,
+   "y": 9.4821,
+   "err": 5.6411,
+   "s6": -0.4884,
+   "latch_phase": "walk",
+   "t_pre": 82.4,
+   "exposure": 1.3094,
+   "x_pre": 1.8088,
+   "y_pre": 9.33,
+   "shape_grad": 2.2181,
+   "spec3": 7.3626,
+   "spec_c1": -1.4205,
+   "margin_to_bar": 0.3589
+  },
+  {
+   "cell": "g16_t48",
+   "g": 16.0,
+   "t": 48.0,
+   "deposited": "rescue",
+   "x": 3.5372,
+   "y": 9.5352,
+   "err": 5.8682,
+   "s6": -0.1095,
+   "latch_phase": "walk",
+   "t_pre": 59.04,
+   "exposure": 4.8635,
+   "x_pre": 3.4588,
+   "y_pre": 9.5003,
+   "shape_grad": 3.5528,
+   "spec3": 11.2021,
+   "spec_c1": 0.7145,
+   "margin_to_bar": 0.1318
+  },
+  {
+   "cell": "g64_t34",
+   "g": 64.0,
+   "t": 34.0,
+   "deposited": "rescue",
+   "x": 2.1853,
+   "y": 7.9674,
+   "err": 4.5633,
+   "s6": -1.0778,
+   "latch_phase": "walk",
+   "t_pre": 34.306,
+   "exposure": 2.8157,
+   "x_pre": 2.1491,
+   "y_pre": 7.9521,
+   "shape_grad": 2.4359,
+   "spec3": 6.4888,
+   "spec_c1": 0.7537,
+   "margin_to_bar": 1.4367
+  }
+ ],
+ "i2b_2d_infeasibility": {
+  "best_gap": -0.4455,
+  "pass": true
+ },
+ "features": [
+  {
+   "feature": "Z1_profile_gradient",
+   "key": "shape_grad",
+   "z0": 3.284312,
+   "form_A_pivot": "EMPTY_interval",
+   "form_B_free_bias": {
+    "feasible": false,
+    "f_min": 0.587421,
+    "a": -0.305383,
+    "binding_break_idx": 4,
+    "binding_rescue_idx": 0,
+    "binding_break": "g64_t36",
+    "binding_rescue": "g4_t36"
+   },
+   "feasible_8of8": false,
+   "gates": {
+    "I1": false
+   },
+   "g64t36_score_before": -0.8184
+  },
+  {
+   "feature": "Z2_profile_spectral_triplet",
+   "key": "spec3",
+   "z0": 10.537381,
+   "form_A_pivot": "EMPTY_interval",
+   "form_B_free_bias": {
+    "feasible": false,
+    "f_min": 0.349769,
+    "a": -0.104449,
+    "binding_break_idx": 4,
+    "binding_rescue_idx": 0,
+    "binding_break": "g64_t36",
+    "binding_rescue": "g4_t36"
+   },
+   "feasible_8of8": false,
+   "gates": {
+    "I1": false
+   },
+   "g64t36_score_before": -0.8184
+  },
+  {
+   "feature": "Z3_residual_mu_exposure",
+   "key": "exposure",
+   "z0": 3.039952,
+   "form_A_pivot": "EMPTY_interval",
+   "form_B_free_bias": {
+    "feasible": false,
+    "f_min": 0.654691,
+    "a": -0.145249,
+    "binding_break_idx": 4,
+    "binding_rescue_idx": 0,
+    "binding_break": "g64_t36",
+    "binding_rescue": "g4_t36"
+   },
+   "feasible_8of8": false,
+   "gates": {
+    "I1": false
+   },
+   "g64t36_score_before": -0.8184
+  },
+  {
+   "feature": "Z4_pre_settle_read",
+   "key": "x_pre",
+   "z0": 2.950823,
+   "form_A_pivot": "EMPTY_interval",
+   "form_B_free_bias": {
+    "feasible": false,
+    "f_min": 0.455683,
+    "a": -0.289602,
+    "binding_break_idx": 4,
+    "binding_rescue_idx": 0,
+    "binding_break": "g64_t36",
+    "binding_rescue": "g4_t36"
+   },
+   "feasible_8of8": false,
+   "gates": {
+    "I1": false
+   },
+   "g64t36_score_before": -0.8184
+  },
+  {
+   "feature": "Z5_dct_k1_alone",
+   "key": "spec_c1",
+   "z0": 0.32889,
+   "form_A_pivot": "EMPTY_interval",
+   "form_B_free_bias": {
+    "feasible": false,
+    "f_min": 0.638617,
+    "a": 0.377785,
+    "binding_break_idx": 4,
+    "binding_rescue_idx": 1,
+    "binding_break": "g64_t36",
+    "binding_rescue": "g16_t48"
+   },
+   "feasible_8of8": false,
+   "gates": {
+    "I1": false
+   },
+   "g64t36_score_before": -0.8184
+  },
+  {
+   "feature": "Z6_margin_to_bar",
+   "key": "m2b",
+   "z0": 0.010783,
+   "form_A_pivot": "EMPTY_interval",
+   "form_B_free_bias": {
+    "feasible": false,
+    "f_min": 0.348836,
+    "a": 0.373317,
+    "binding_break_idx": 4,
+    "binding_rescue_idx": 1,
+    "binding_break": "g64_t36",
+    "binding_rescue": "g16_t48"
+   },
+   "feasible_8of8": false,
+   "gates": {
+    "I1": false
+   },
+   "g64t36_score_before": -0.8184
+  }
+ ],
+ "designated_feature": null,
+ "gates": {
+  "I1_one_feature_absorption_loo": false,
+  "I2_both_positive_interpretable": false,
+  "I3_edges_repredicted": false,
+  "I4_transfer_holds": false
+ },
+ "noise_stationary_rms_argument": {
+  "chain_sim_noise": "none (exp135: noise omitted)",
+  "v_noise_stationary_rms": "< 1 mV (exp135 docstring)",
+  "inheritance_noise_iid_mv": 0.6,
+  "deterministic_margin_at_g64t36": 1.0963,
+  "reading": "the mean-field state sits ~1.1 mV under the 6.0 bar at g64@36 while the harness's omitted noise channels are of comparable magnitude (<1 mV stationary + 0.6 mV iid inheritance) \u2014 the deposited P=1.0 break is decidable by sub-margin noise statistics, not by the mean state alone"
+ },
+ "criteria": {
+  "I1": false,
+  "I2": false,
+  "I3": false,
+  "I4": false
+ },
+ "verdict": "REFUTED \u2014 the late control is not in the mean-field state",
+ "diagnosis": "REFUTATION: no registered one-feature extension absorbs the g64@36 miss \u2014 under EITHER operationalization (A: the registered pivot family, every interval EMPTY; B: the canonical free-bias form, every exact LP infeasible). The exact min-violation certificates (line units): Z1_profile_gradient: min f = 0.587421 (binds g64_t36 vs g4_t36); Z2_profile_spectral_triplet: min f = 0.349769 (binds g64_t36 vs g4_t36); Z3_residual_mu_exposure: min f = 0.654691 (binds g64_t36 vs g4_t36); Z4_pre_settle_read: min f = 0.455683 (binds g64_t36 vs g4_t36); Z5_dct_k1_alone: min f = 0.638617 (binds g64_t36 vs g16_t48); Z6_margin_to_bar: min f = 0.348836 (binds g64_t36 vs g16_t48). The mechanism is a TWO-SIDED PINCER on every state direction, repeating exp140's R5 piercing geometry one dimension up: rescue g16@48 \u2014 the fit set's closest rescue to the six-cell line (score -0.110) \u2014 sits ABOVE break g64@36 on all four state directions (gradient 3.553 vs 3.061, spectral triplet 11.20 vs 7.55, mu-exposure 4.86 vs 3.55, pre-settle x 3.46 vs 2.24), killing every positive weight; while the same-gamma-bracket rescues g4@36 and g64@34 sit BELOW the breaks g4@48/g64@36 (gradient 2.22/2.44 vs 3.04/3.06, exposure 1.31/2.82 vs 3.45/3.55, pre-settle 1.81/2.15 vs 2.91/2.24), killing every negative weight \u2014 and each direction's own LP binds exactly there (Z1-Z4: g64@36 vs g4@36, same latch hour 36, neighbouring gamma). The margin-to-bar statistic inverts instead (Z5-Z6 bind g64@36 vs g16@48): rescue g16@48 sits 0.13 mV under the 6.0 bar and rescue g64@34 sits 1.44 mV under, while the BREAK g64@36 sits 1.10 mV under \u2014 the deterministic scalars do not order the labels at all. A latch-phase binary (settle vs walk/window) is excluded by construction: it is constant on the fit set, where both labels occur. The late control is NOT in the mean-field chain state under any registered one-feature extension \u2014 the state-space family now carries a domination certificate spanning the base plane AND five additional state directions, consistent with exp140's deposit (direct-sim scalar 4.904 < 6.0 bar, 0.760 x-units short). REGISTERED NEXT: the noise-carrying state \u2014 a stochastic chain (V-noise stationary RMS < 1 mV, inheritance noise 0.6 mV iid, per exp135) in which the deposited P=1.0 break at g64@36 becomes decidable as sub-margin noise statistics rather than mean-state geometry.",
+ "notes": "exp143's sim is exp140.simulate_instrumented's verbatim copy plus observation-only probes (exposure accumulator, pre-settle snapshot, profile descriptors at read); asserted equal to exp135.simulate() (<1e-9, four deposited scalars) AND exp140.simulate_instrumented() (<1e-12, eight readouts) at every anchor. One degree of freedom; the base plane is never refitted."
+}
