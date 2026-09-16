@@ -1,0 +1,218 @@
+{
+ "exp": "exp120_kernel_shape",
+ "P_break": {
+  "grid2d_default_t0": 0.0,
+  "grid2d_default_t6": 0.0,
+  "grid2d_default_t12": 0.0,
+  "grid2d_default_t18": 0.0,
+  "grid2d_default_t24": 0.0,
+  "grid2d_default_t36": 0.0,
+  "grid2d_default_t48": 0.0,
+  "grid2d_default_t72": 0.0,
+  "grid2d_gamma64_t0": 0.0,
+  "grid2d_gamma64_t6": 0.0,
+  "grid2d_gamma64_t12": 0.0,
+  "grid2d_gamma64_t18": 0.0,
+  "grid2d_gamma64_t24": 0.0,
+  "grid2d_gamma64_t36": 0.0,
+  "grid2d_gamma64_t48": 0.0,
+  "grid2d_gamma64_t72": 1.0,
+  "grid2d_mu03_t0": 0.0,
+  "grid2d_mu03_t6": 0.0,
+  "grid2d_mu03_t12": 0.0,
+  "grid2d_mu03_t18": 0.0,
+  "grid2d_mu03_t24": 0.0,
+  "grid2d_mu03_t36": 0.0,
+  "grid2d_mu03_t48": 0.0,
+  "grid2d_mu03_t72": 1.0,
+  "torus_default_t0": 0.0,
+  "torus_default_t6": 0.0,
+  "torus_default_t12": 0.0,
+  "torus_default_t18": 0.0,
+  "torus_default_t24": 0.0,
+  "torus_default_t36": 0.0,
+  "torus_default_t48": 1.0,
+  "torus_default_t72": 1.0,
+  "torus_gamma64_t0": 0.0,
+  "torus_gamma64_t6": 0.0,
+  "torus_gamma64_t12": 0.0,
+  "torus_gamma64_t18": 0.0,
+  "torus_gamma64_t24": 0.0,
+  "torus_gamma64_t36": 0.0,
+  "torus_gamma64_t48": 1.0,
+  "torus_gamma64_t72": 1.0,
+  "torus_mu03_t0": 0.0,
+  "torus_mu03_t6": 0.0,
+  "torus_mu03_t12": 0.0,
+  "torus_mu03_t18": 0.0,
+  "torus_mu03_t24": 0.0,
+  "torus_mu03_t36": 1.0,
+  "torus_mu03_t48": 1.0,
+  "torus_mu03_t72": 1.0,
+  "path_default_t0": 0.0,
+  "path_default_t6": 0.0,
+  "path_default_t12": 0.0,
+  "path_default_t18": 0.0,
+  "path_default_t24": 0.0,
+  "path_default_t36": 0.0,
+  "path_default_t48": 0.0,
+  "path_default_t72": 0.0,
+  "path_gamma64_t0": 0.0,
+  "path_gamma64_t6": 0.0,
+  "path_gamma64_t12": 0.0,
+  "path_gamma64_t18": 0.0,
+  "path_gamma64_t24": 0.0,
+  "path_gamma64_t36": 0.0,
+  "path_gamma64_t48": 0.0,
+  "path_gamma64_t72": 0.0,
+  "path_mu03_t0": 0.0,
+  "path_mu03_t6": 0.0,
+  "path_mu03_t12": 0.0,
+  "path_mu03_t18": 0.0,
+  "path_mu03_t24": 0.0,
+  "path_mu03_t36": 0.0,
+  "path_mu03_t48": 0.0,
+  "path_mu03_t72": 0.0
+ },
+ "curves": {
+  "grid2d": {
+   "default": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gamma64": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "mu03": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "torus": {
+   "default": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "gamma64": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "mu03": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "path": {
+   "default": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gamma64": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "mu03": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "fits": {
+  "grid2d": {
+   "default": null,
+   "gamma64": {
+    "L": 0.125,
+    "tc": 200.0,
+    "kappa": 3.4
+   },
+   "mu03": {
+    "L": 0.125,
+    "tc": 200.0,
+    "kappa": 3.4
+   }
+  },
+  "torus": {
+   "default": {
+    "L": 0.25,
+    "tc": 198.2,
+    "kappa": 0.9
+   },
+   "gamma64": {
+    "L": 0.25,
+    "tc": 198.2,
+    "kappa": 0.9
+   },
+   "mu03": {
+    "L": 0.375,
+    "tc": 199.9,
+    "kappa": 1.4
+   }
+  },
+  "path": {
+   "default": null,
+   "gamma64": null,
+   "mu03": null
+  }
+ },
+ "criteria": {
+  "CG_G1_shape_invariance": false,
+  "CG_G2_no_late_rescue": false,
+  "CG_G3_tc_shift": false
+ },
+ "notes": "CG-P1/P2 on graph substrates: sustained gap-junction blockade applied at onset t during the standard regeneration; P(break) over 8 seeds; decreasing logistic fits compared across substrates (kappa/L invariance), strength arm (gamma 64 at onset \u2014 no late rescue), and the commitment-diffusion shift (mu 0.03). Record references: tc~20 h, kappa~10 h, L~0.75."
+}
