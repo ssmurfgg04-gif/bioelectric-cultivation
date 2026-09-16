@@ -1,0 +1,1824 @@
+{
+ "exp": "exp154_law_formal",
+ "pre_registered": "gates FIDELITY, V1-V4 + falsification conditions + domain in docstring, written before any run",
+ "torus_battery": [
+  {
+   "cell": "g1@0",
+   "gamma": 1.0,
+   "t0": 0.0,
+   "err": 7.242571,
+   "err_span": 6.24407,
+   "err_intact": 9.426773,
+   "th_span_dev": 4.419927,
+   "x": 4.419927,
+   "y": 9.426773,
+   "repaired_verdict": "break",
+   "deposited_verdict": "break",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 74763.2265
+  },
+  {
+   "cell": "g1@6",
+   "gamma": 1.0,
+   "t0": 6.0,
+   "err": 7.363216,
+   "err_span": 6.223501,
+   "err_intact": 9.802232,
+   "th_span_dev": 4.397837,
+   "x": 4.397837,
+   "y": 9.802232,
+   "repaired_verdict": "break",
+   "deposited_verdict": "break",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 74278.6317
+  },
+  {
+   "cell": "g1@12",
+   "gamma": 1.0,
+   "t0": 12.0,
+   "err": 7.487794,
+   "err_span": 6.199041,
+   "err_intact": 10.186147,
+   "th_span_dev": 4.372069,
+   "x": 4.372069,
+   "y": 10.186147,
+   "repaired_verdict": "break",
+   "deposited_verdict": "break",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 73694.4463
+  },
+  {
+   "cell": "g1@18",
+   "gamma": 1.0,
+   "t0": 18.0,
+   "err": 7.611415,
+   "err_span": 6.174064,
+   "err_intact": 10.559659,
+   "th_span_dev": 4.345951,
+   "x": 4.345951,
+   "y": 10.559659,
+   "repaired_verdict": "break",
+   "deposited_verdict": "break",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 73080.1226
+  },
+  {
+   "cell": "g1@24",
+   "gamma": 1.0,
+   "t0": 24.0,
+   "err": 7.729616,
+   "err_span": 6.150539,
+   "err_intact": 10.909,
+   "th_span_dev": 4.32143,
+   "x": 4.32143,
+   "y": 10.909,
+   "repaired_verdict": "break",
+   "deposited_verdict": "break",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 72484.485
+  },
+  {
+   "cell": "g4@0",
+   "gamma": 4.0,
+   "t0": 0.0,
+   "err": 3.794722,
+   "err_span": 3.140125,
+   "err_intact": 5.164635,
+   "th_span_dev": 2.145691,
+   "x": 2.145691,
+   "y": 5.164635,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 34146.2921
+  },
+  {
+   "cell": "g4@12",
+   "gamma": 4.0,
+   "t0": 12.0,
+   "err": 4.503552,
+   "err_span": 3.081625,
+   "err_intact": 7.031569,
+   "th_span_dev": 2.094224,
+   "x": 2.094224,
+   "y": 7.031569,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 32941.2768
+  },
+  {
+   "cell": "g4@24",
+   "gamma": 4.0,
+   "t0": 24.0,
+   "err": 5.08887,
+   "err_span": 3.025655,
+   "err_intact": 8.43576,
+   "th_span_dev": 2.045889,
+   "x": 2.045889,
+   "y": 8.43576,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 31903.4938
+  },
+  {
+   "cell": "g4@26",
+   "gamma": 4.0,
+   "t0": 26.0,
+   "err": 5.174424,
+   "err_span": 3.022416,
+   "err_intact": 8.629431,
+   "th_span_dev": 2.043538,
+   "x": 2.043538,
+   "y": 8.629431,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 31887.8518
+  },
+  {
+   "cell": "g4@30",
+   "gamma": 4.0,
+   "t0": 30.0,
+   "err": 5.364411,
+   "err_span": 3.070867,
+   "err_intact": 9.004699,
+   "th_span_dev": 2.112361,
+   "x": 2.112361,
+   "y": 9.004699,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 34689.592
+  },
+  {
+   "cell": "g4@34",
+   "gamma": 4.0,
+   "t0": 34.0,
+   "err": 5.542654,
+   "err_span": 3.14937,
+   "err_intact": 9.325489,
+   "th_span_dev": 2.222112,
+   "x": 2.222112,
+   "y": 9.325489,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 38667.3956
+  },
+  {
+   "cell": "g4@36",
+   "gamma": 4.0,
+   "t0": 36.0,
+   "err": 5.641057,
+   "err_span": 3.215089,
+   "err_intact": 9.482081,
+   "th_span_dev": 2.310221,
+   "x": 2.310221,
+   "y": 9.482081,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 41665.4553
+  },
+  {
+   "cell": "g4@48",
+   "gamma": 4.0,
+   "t0": 48.0,
+   "err": 6.353343,
+   "err_span": 3.956427,
+   "err_intact": 10.352679,
+   "th_span_dev": 3.266425,
+   "x": 3.266425,
+   "y": 10.352679,
+   "repaired_verdict": "break",
+   "deposited_verdict": "break",
+   "verdict_match": true,
+   "m_len": 734,
+   "m_sum": 70686.2499
+  },
+  {
+   "cell": "g16@0",
+   "gamma": 16.0,
+   "t0": 0.0,
+   "err": 1.138506,
+   "err_span": 0.898644,
+   "err_intact": 1.617815,
+   "th_span_dev": 0.526826,
+   "x": 0.526826,
+   "y": 1.617815,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 834,
+   "m_sum": 9696.7141
+  },
+  {
+   "cell": "g16@24",
+   "gamma": 16.0,
+   "t0": 24.0,
+   "err": 3.676968,
+   "err_span": 0.854487,
+   "err_intact": 6.935439,
+   "th_span_dev": 0.494671,
+   "x": 0.494671,
+   "y": 6.935439,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 834,
+   "m_sum": 8842.0319
+  },
+  {
+   "cell": "g16@36",
+   "gamma": 16.0,
+   "t0": 36.0,
+   "err": 4.583891,
+   "err_span": 1.5723,
+   "err_intact": 8.434367,
+   "th_span_dev": 1.33985,
+   "x": 1.33985,
+   "y": 8.434367,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 834,
+   "m_sum": 33702.9953
+  },
+  {
+   "cell": "g16@48",
+   "gamma": 16.0,
+   "t0": 48.0,
+   "err": 5.868219,
+   "err_span": 3.680315,
+   "err_intact": 9.535187,
+   "th_span_dev": 3.53722,
+   "x": 3.53722,
+   "y": 9.535187,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 834,
+   "m_sum": 97365.769
+  },
+  {
+   "cell": "g16@52",
+   "gamma": 16.0,
+   "t0": 52.0,
+   "err": 6.266844,
+   "err_span": 4.27227,
+   "err_intact": 9.803468,
+   "th_span_dev": 4.13884,
+   "x": 4.13884,
+   "y": 9.803468,
+   "repaired_verdict": "break",
+   "deposited_verdict": "break",
+   "verdict_match": true,
+   "m_len": 834,
+   "m_sum": 114644.9122
+  },
+  {
+   "cell": "g16@56",
+   "gamma": 16.0,
+   "t0": 56.0,
+   "err": 6.659466,
+   "err_span": 4.846496,
+   "err_intact": 10.037314,
+   "th_span_dev": 4.717197,
+   "x": 4.717197,
+   "y": 10.037314,
+   "repaired_verdict": "break",
+   "deposited_verdict": "break",
+   "verdict_match": true,
+   "m_len": 834,
+   "m_sum": 131007.4384
+  },
+  {
+   "cell": "g16@58",
+   "gamma": 16.0,
+   "t0": 58.0,
+   "err": 6.864063,
+   "err_span": 5.147744,
+   "err_intact": 10.141754,
+   "th_span_dev": 5.01959,
+   "x": 5.01959,
+   "y": 10.141754,
+   "repaired_verdict": "break",
+   "deposited_verdict": "break",
+   "verdict_match": true,
+   "m_len": 834,
+   "m_sum": 139164.2247
+  },
+  {
+   "cell": "g16@72",
+   "gamma": 16.0,
+   "t0": 72.0,
+   "err": 8.321652,
+   "err_span": 7.192531,
+   "err_intact": 10.798689,
+   "th_span_dev": 7.120558,
+   "x": 7.120558,
+   "y": 10.798689,
+   "repaired_verdict": "break",
+   "deposited_verdict": "break",
+   "verdict_match": true,
+   "m_len": 834,
+   "m_sum": 165579.5748
+  },
+  {
+   "cell": "g64@0",
+   "gamma": 64.0,
+   "t0": 0.0,
+   "err": 0.243512,
+   "err_span": 0.191617,
+   "err_intact": 0.346915,
+   "th_span_dev": 0.086216,
+   "x": 0.086216,
+   "y": 0.346915,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 1434,
+   "m_sum": 3216.6437
+  },
+  {
+   "cell": "g64@16",
+   "gamma": 64.0,
+   "t0": 16.0,
+   "err": 2.666509,
+   "err_span": 0.185401,
+   "err_intact": 5.122637,
+   "th_span_dev": 0.082922,
+   "x": 0.082922,
+   "y": 5.122637,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 1434,
+   "m_sum": 3035.6992
+  },
+  {
+   "cell": "g64@24",
+   "gamma": 64.0,
+   "t0": 24.0,
+   "err": 3.377573,
+   "err_span": 0.182985,
+   "err_intact": 6.493174,
+   "th_span_dev": 0.081648,
+   "x": 0.081648,
+   "y": 6.493174,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 1434,
+   "m_sum": 2968.1812
+  },
+  {
+   "cell": "g64@28",
+   "gamma": 64.0,
+   "t0": 28.0,
+   "err": 3.728221,
+   "err_span": 0.567798,
+   "err_intact": 7.113961,
+   "th_span_dev": 0.506237,
+   "x": 0.506237,
+   "y": 7.113961,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 1434,
+   "m_sum": 24560.5759
+  },
+  {
+   "cell": "g64@31",
+   "gamma": 64.0,
+   "t0": 31.0,
+   "err": 4.112823,
+   "err_span": 1.404811,
+   "err_intact": 7.570572,
+   "th_span_dev": 1.345036,
+   "x": 1.345036,
+   "y": 7.570572,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 1434,
+   "m_sum": 74161.8189
+  },
+  {
+   "cell": "g64@34",
+   "gamma": 64.0,
+   "t0": 34.0,
+   "err": 4.563269,
+   "err_span": 2.246493,
+   "err_intact": 7.967367,
+   "th_span_dev": 2.185345,
+   "x": 2.185345,
+   "y": 7.967367,
+   "repaired_verdict": "rescue",
+   "deposited_verdict": "rescue",
+   "verdict_match": true,
+   "m_len": 1434,
+   "m_sum": 128344.9973
+  },
+  {
+   "cell": "g64@36",
+   "gamma": 64.0,
+   "t0": 36.0,
+   "err": 6.939797,
+   "err_span": 5.789105,
+   "err_intact": 9.368139,
+   "th_span_dev": 5.75871,
+   "x": 5.75871,
+   "y": 9.368139,
+   "repaired_verdict": "break",
+   "deposited_verdict": "break",
+   "verdict_match": true,
+   "m_len": 1434,
+   "m_sum": 254091.1386
+  }
+ ],
+ "battery_verdict_match": {
+  "n_match": 28,
+  "n": 28,
+  "mismatches": []
+ },
+ "fidelity_exp149": {
+  "n_cells": 13,
+  "max_abs_scalar_diff": 0.0,
+  "tol": 1e-06,
+  "per_cell": [
+   {
+    "cell": "g1@0",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g4@36",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g4@48",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g16@48",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g16@52",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g16@72",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g64@0",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g64@16",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g64@24",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g64@28",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g64@31",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g64@34",
+    "max_abs_scalar_diff": 0.0
+   },
+   {
+    "cell": "g64@36",
+    "max_abs_scalar_diff": 0.0
+   }
+  ],
+  "pass": true
+ },
+ "v1_kappa_refit": {
+  "protocol": "exp135 verbatim: debt on repaired m_traj, fit_interval, n_region=73",
+  "n_primary_taus": 8,
+  "primary_taus": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   32.0,
+   64.0,
+   128.0,
+   1000000000.0
+  ],
+  "n_refine_taus": 16,
+  "feasible_taus": [
+   1.0
+  ],
+  "feasible_primary": false,
+  "stable": true,
+  "kappa_intersection": [
+   2.33412,
+   2.354511
+  ],
+  "verdict": "STATE-SPACE LAW STANDS ALONE: the kappa interval is EMPTY at every PRIMARY tau (exp135's deposited grid, all >= 2 h) on the repaired trajectories; a 0.87%-wide corner survives ONLY at the off-grid tau_p = 1 h (kappa in (2.3341, 2.3545)) \u2014 the near-Markovian extreme whose tau->0 limit is exp134's already-refuted per-step exposure class, so this is NOT a revival of the deposited scalar family. The emptiness is STRUCTURAL, not marginal: at every tau >= 1.5 the same binding pair (break-binding g16@72, rescue-binding g64@24) orders the kernel debts WRONG by a factor 1.19-1.31 \u2014 no (kappa, tau_p) in the family can place g16@72 above g64@24",
+  "table": [
+   {
+    "tau_p": 1.0,
+    "kmin": 2.33412,
+    "kmax": 2.354511,
+    "feasible": true,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 1.5,
+    "kmin": 1.592317,
+    "kmax": 1.588304,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 2.0,
+    "kmin": 1.212188,
+    "kmax": 1.199427,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 3.0,
+    "kmin": 0.825965,
+    "kmax": 0.806683,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 4.0,
+    "kmin": 0.630681,
+    "kmax": 0.609001,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 5.0,
+    "kmin": 0.512876,
+    "kmax": 0.490322,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 6.0,
+    "kmin": 0.434097,
+    "kmax": 0.411595,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 8.0,
+    "kmin": 0.335413,
+    "kmax": 0.314735,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 10.0,
+    "kmin": 0.276231,
+    "kmax": 0.258459,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 12.0,
+    "kmin": 0.236962,
+    "kmax": 0.222299,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 16.0,
+    "kmin": 0.188515,
+    "kmax": 0.179347,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 20.0,
+    "kmin": 0.16016,
+    "kmax": 0.155146,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 24.0,
+    "kmin": 0.141762,
+    "kmax": 0.139806,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 32.0,
+    "kmin": 0.121719,
+    "kmax": 0.12164,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 40.0,
+    "kmin": 0.116709,
+    "kmax": 0.111328,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 48.0,
+    "kmin": 0.113424,
+    "kmax": 0.104712,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 64.0,
+    "kmin": 0.10938,
+    "kmax": 0.096747,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 96.0,
+    "kmin": 0.105407,
+    "kmax": 0.08913,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 128.0,
+    "kmin": 0.103448,
+    "kmax": 0.085454,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 192.0,
+    "kmin": 0.101507,
+    "kmax": 0.08187,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 256.0,
+    "kmin": 0.100544,
+    "kmax": 0.080111,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 512.0,
+    "kmin": 0.099107,
+    "kmax": 0.077517,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 1024.0,
+    "kmin": 0.098393,
+    "kmax": 0.07624,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 1000000000.0,
+    "kmin": 0.097681,
+    "kmax": 0.074975,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   }
+  ]
+ },
+ "v2_noise_arithmetic": {
+  "cell": "g64@36",
+  "bar_mV": 6.0,
+  "old_base_err_mirror": 4.903739,
+  "old_needed_excess_mV2": 11.9533,
+  "exp147_measured_capacities_mV2": {
+   "V_only": 0.00694,
+   "inherit_only": 0.12734,
+   "both": 0.15454
+  },
+  "old_shortfall_factor_recomputed": 89.0,
+  "exp147_deposited_ledger_factor": 89.0,
+  "old_factor_note": "needed / (excess_V + excess_inh); exp147's deposited 89.0 used the same quantities at its rounding \u2014 the factor is the ledger's '~89x' and is now MOOT",
+  "repaired_base_err": 6.9398,
+  "repaired_needed_excess_mV2": 0.0,
+  "repaired_surplus_mV2": 12.1608,
+  "unbreak_capacity_factor": 78.7,
+  "rescue_side_headroom": [
+   {
+    "cell": "g4@0",
+    "err": 3.7947,
+    "needed_excess_to_break_mV2": 21.6001,
+    "capacity_over_needed": 0.01
+   },
+   {
+    "cell": "g4@12",
+    "err": 4.5036,
+    "needed_excess_to_break_mV2": 15.718,
+    "capacity_over_needed": 0.01
+   },
+   {
+    "cell": "g4@24",
+    "err": 5.0889,
+    "needed_excess_to_break_mV2": 10.1034,
+    "capacity_over_needed": 0.02
+   },
+   {
+    "cell": "g4@26",
+    "err": 5.1744,
+    "needed_excess_to_break_mV2": 9.2253,
+    "capacity_over_needed": 0.02
+   },
+   {
+    "cell": "g4@30",
+    "err": 5.3644,
+    "needed_excess_to_break_mV2": 7.2231,
+    "capacity_over_needed": 0.02
+   },
+   {
+    "cell": "g4@34",
+    "err": 5.5427,
+    "needed_excess_to_break_mV2": 5.279,
+    "capacity_over_needed": 0.03
+   },
+   {
+    "cell": "g4@36",
+    "err": 5.6411,
+    "needed_excess_to_break_mV2": 4.1785,
+    "capacity_over_needed": 0.04
+   },
+   {
+    "cell": "g16@0",
+    "err": 1.1385,
+    "needed_excess_to_break_mV2": 34.7038,
+    "capacity_over_needed": 0.0
+   },
+   {
+    "cell": "g16@24",
+    "err": 3.677,
+    "needed_excess_to_break_mV2": 22.4799,
+    "capacity_over_needed": 0.01
+   },
+   {
+    "cell": "g16@36",
+    "err": 4.5839,
+    "needed_excess_to_break_mV2": 14.9879,
+    "capacity_over_needed": 0.01
+   },
+   {
+    "cell": "g16@48",
+    "err": 5.8682,
+    "needed_excess_to_break_mV2": 1.564,
+    "capacity_over_needed": 0.1
+   },
+   {
+    "cell": "g64@0",
+    "err": 0.2435,
+    "needed_excess_to_break_mV2": 35.9407,
+    "capacity_over_needed": 0.0
+   },
+   {
+    "cell": "g64@16",
+    "err": 2.6665,
+    "needed_excess_to_break_mV2": 28.8897,
+    "capacity_over_needed": 0.01
+   },
+   {
+    "cell": "g64@24",
+    "err": 3.3776,
+    "needed_excess_to_break_mV2": 24.592,
+    "capacity_over_needed": 0.01
+   },
+   {
+    "cell": "g64@28",
+    "err": 3.7282,
+    "needed_excess_to_break_mV2": 22.1004,
+    "capacity_over_needed": 0.01
+   },
+   {
+    "cell": "g64@31",
+    "err": 4.1128,
+    "needed_excess_to_break_mV2": 19.0847,
+    "capacity_over_needed": 0.01
+   },
+   {
+    "cell": "g64@34",
+    "err": 4.5633,
+    "needed_excess_to_break_mV2": 15.1766,
+    "capacity_over_needed": 0.01
+   }
+  ],
+  "verdict": "NOISE QUESTION CLOSED: on the repaired base the g64@36 crossing needs ZERO noise excess \u2014 the deterministic full-mu run sits 0.94 mV (12.16 mV^2) above the bar; the harness's own channels (~0.155 mV^2) are 78.5x too small to un-break it and >=10x too small to flip any rescue anchor \u2014 noise is a spectator in BOTH directions; the crossing is explained deterministically (the settle never checks the mu-latch)",
+  "pass": true
+ },
+ "v3_law": {
+  "name": "THE DEADLINE LAW (half-plane form, repaired base)",
+  "state": "x = RMS(theta[span] - target[span]) at the read (span-theta-dev); y = RMS(V[intact] - target[intact]) at the read (intact-V-dev); read = end of the harness-verbatim protocol (window + amputation + 8-sub-step walk + UNLATCHED settle)",
+  "form": "break  iff  w1*x + w2*y + b > 0",
+  "w": [
+   0.2929593665516177,
+   0.36497133297649853
+  ],
+  "b": -4.625846252433797,
+  "margin_mV": 0.2340028121331917,
+  "norm_w": 0.4680056242663834,
+  "fit": "exact 2D hard-margin (perpendicular bisector of the closest break-hull/rescue-hull pair), exp140 machinery on exp149's repaired anchor states",
+  "anchors": [
+   {
+    "cell": "g1_t0",
+    "x": 4.419927,
+    "y": 9.426773,
+    "deposited": "break",
+    "score": 0.109515,
+    "margin_mV": 0.234003,
+    "placed": "break"
+   },
+   {
+    "cell": "g4_t48",
+    "x": 3.266425,
+    "y": 10.352679,
+    "deposited": "break",
+    "score": 0.109515,
+    "margin_mV": 0.234003,
+    "placed": "break"
+   },
+   {
+    "cell": "g16_t52",
+    "x": 4.13884,
+    "y": 9.803468,
+    "deposited": "break",
+    "score": 0.16465,
+    "margin_mV": 0.351813,
+    "placed": "break"
+   },
+   {
+    "cell": "g16_t72",
+    "x": 7.120558,
+    "y": 10.798689,
+    "deposited": "break",
+    "score": 1.4014,
+    "margin_mV": 2.994408,
+    "placed": "break"
+   },
+   {
+    "cell": "g64_t36",
+    "x": 5.75871,
+    "y": 9.368139,
+    "deposited": "break",
+    "score": 0.480324,
+    "margin_mV": 1.026321,
+    "placed": "break"
+   },
+   {
+    "cell": "g4_t36",
+    "x": 2.310221,
+    "y": 9.482081,
+    "deposited": "rescue",
+    "score": -0.488358,
+    "margin_mV": -1.043487,
+    "placed": "rescue"
+   },
+   {
+    "cell": "g16_t48",
+    "x": 3.53722,
+    "y": 9.535187,
+    "deposited": "rescue",
+    "score": -0.109515,
+    "margin_mV": -0.234003,
+    "placed": "rescue"
+   },
+   {
+    "cell": "g64_t34",
+    "x": 2.185345,
+    "y": 7.967367,
+    "deposited": "rescue",
+    "score": -1.077769,
+    "margin_mV": -2.302897,
+    "placed": "rescue"
+   }
+  ],
+  "all_placed": true,
+  "loo_refit": [
+   {
+    "held_out": "g1_t0",
+    "feasible": true,
+    "w": [
+     0.29171,
+     0.463378
+    ],
+    "b": -5.60015,
+    "margin": 0.273777,
+    "both_positive": true,
+    "held_out_placed": "break",
+    "held_out_correct": true
+   },
+   {
+    "held_out": "g4_t48",
+    "feasible": true,
+    "w": [
+     0.60162,
+     0.268281
+    ],
+    "b": -4.903133,
+    "margin": 0.329364,
+    "both_positive": true,
+    "held_out_placed": "rescue",
+    "held_out_correct": false
+   },
+   {
+    "held_out": "g16_t52",
+    "feasible": true,
+    "w": [
+     0.292959,
+     0.364971
+    ],
+    "b": -4.625846,
+    "margin": 0.234003,
+    "both_positive": true,
+    "held_out_placed": "break",
+    "held_out_correct": true
+   },
+   {
+    "held_out": "g4_t36",
+    "feasible": true,
+    "w": [
+     0.292959,
+     0.364971
+    ],
+    "b": -4.625846,
+    "margin": 0.234003,
+    "both_positive": true,
+    "held_out_placed": "rescue",
+    "held_out_correct": true
+   },
+   {
+    "held_out": "g16_t48",
+    "feasible": true,
+    "w": [
+     0.956204,
+     0.870598
+    ],
+    "b": -11.300257,
+    "margin": 0.646581,
+    "both_positive": true,
+    "held_out_placed": "break",
+    "held_out_correct": false
+   },
+   {
+    "held_out": "g64_t34",
+    "feasible": true,
+    "w": [
+     0.292959,
+     0.364971
+    ],
+    "b": -4.625846,
+    "margin": 0.234003,
+    "both_positive": true,
+    "held_out_placed": "rescue",
+    "held_out_correct": true
+   }
+  ],
+  "loo_ok": true,
+  "loo_strict_incl_heldout_placement": false,
+  "loo_strict_note": "STRICT DIAGNOSTIC (reported, not gated): requiring each LOO refit to also place its own held-out cell correctly fails \u2014 the bracket set has TWO hinge cells: without g4@48 the refit places it rescue-side, without g16@48 the refit places it break-side (their (x,y) are mutual neighbors across the boundary). The 8-anchor law itself is untouched: 8/8 anchors, 28/28 torus battery, 0 false breaks on transfer",
+  "loo_verbatim_machinery": [
+   {
+    "held_out": "g1_t0",
+    "feasible_verbatim": true
+   },
+   {
+    "held_out": "g4_t48",
+    "feasible_verbatim": true
+   },
+   {
+    "held_out": "g16_t52",
+    "feasible_verbatim": false
+   },
+   {
+    "held_out": "g4_t36",
+    "feasible_verbatim": true
+   },
+   {
+    "held_out": "g16_t48",
+    "feasible_verbatim": true
+   },
+   {
+    "held_out": "g64_t34",
+    "feasible_verbatim": true
+   }
+  ],
+  "hull_bug_note": "LOO feasibility uses max_margin_fixed (exp140's machinery with the degenerate 2-vertex point_in_hull branch corrected to require collinearity); the verbatim machinery's verdicts are deposited alongside (loo_verbatim_machinery) \u2014 the g16_t52 refit is the spurious infeasible",
+  "falsification_conditions": [
+   "F-1 one new torus cell at the deposited operating points whose harness-verbatim deterministic verdict (err >= 6.0) disagrees with the law's placement",
+   "F-2 any refit of the current 8-anchor set that loses feasibility or both-positivity (collapse onto one axis = the refuted scalar family returning)",
+   "F-3 a V1 'revived' verdict that later fails the tau refinement stability demotes the scalar corollary only, not the state-space law",
+   "F-4 one false break on any grid2d/path transfer cell falsifies the kernel-free domain claim"
+  ]
+ },
+ "gates_v3_pass": true,
+ "v4_domain": {
+  "substrates": {
+   "torus": 100,
+   "grid2d": 100,
+   "path": 100
+  },
+  "operating_points": {
+   "gammas": [
+    1.0,
+    4.0,
+    16.0,
+    64.0
+   ],
+   "onsets": {
+    "g1": [
+     0.0,
+     6.0,
+     12.0,
+     18.0,
+     24.0
+    ],
+    "g4": [
+     0.0,
+     12.0,
+     24.0,
+     26.0,
+     30.0,
+     34.0,
+     36.0,
+     48.0
+    ],
+    "g16": [
+     0.0,
+     24.0,
+     36.0,
+     48.0,
+     52.0,
+     56.0,
+     58.0
+    ],
+    "g64": [
+     0.0,
+     16.0,
+     24.0,
+     28.0,
+     31.0,
+     34.0
+    ]
+   }
+  },
+  "protocol": "exp124 window(24h) + amputation + 8-sub-step walk + UNLATCHED settle (D1 left harness-verbatim)",
+  "determinism_deltas": [
+   "noise_std=0 (draw executes)",
+   "V <- canon after spec write (draw executes)",
+   "commitment N(0,0.6) draw discarded"
+  ],
+  "transfer": {
+   "grid2d": {
+    "n_cells": 26,
+    "false_breaks": 0,
+    "status": "0 false breaks \u2014 non-contradiction CONFIRMED on repaired states",
+    "closest_to_break_margin": -3.2844,
+    "closest_to_break_cell": "g1_t24",
+    "deepest_rescue_margin": -9.7371,
+    "deepest_rescue_cell": "g64_t0",
+    "direct_err_max": 5.62,
+    "direct_err_breaks": 0,
+    "spearman_score_vs_direct_err": 0.9781,
+    "cells": [
+     {
+      "cell": "g1_t0",
+      "x": 4.1142,
+      "y": 4.3962,
+      "score": -1.8161,
+      "direct_err": 5.485,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g1_t6",
+      "x": 4.1055,
+      "y": 4.4843,
+      "score": -1.7864,
+      "direct_err": 5.498,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g1_t12",
+      "x": 4.0865,
+      "y": 4.6875,
+      "score": -1.7179,
+      "direct_err": 5.528,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g1_t18",
+      "x": 4.0635,
+      "y": 4.9447,
+      "score": -1.6307,
+      "direct_err": 5.571,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g1_t24",
+      "x": 4.0402,
+      "y": 5.2198,
+      "score": -1.5371,
+      "direct_err": 5.62,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t0",
+      "x": 1.8719,
+      "y": 2.1893,
+      "score": -3.2784,
+      "direct_err": 2.634,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t12",
+      "x": 1.8491,
+      "y": 2.6717,
+      "score": -3.109,
+      "direct_err": 2.733,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t24",
+      "x": 1.8131,
+      "y": 3.4925,
+      "score": -2.82,
+      "direct_err": 2.945,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t26",
+      "x": 1.808,
+      "y": 3.6002,
+      "score": -2.7822,
+      "direct_err": 2.976,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t30",
+      "x": 1.8546,
+      "y": 3.7826,
+      "score": -2.702,
+      "direct_err": 3.057,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t34",
+      "x": 2.0356,
+      "y": 4.0097,
+      "score": -2.5661,
+      "direct_err": 3.221,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t36",
+      "x": 2.1592,
+      "y": 4.1421,
+      "score": -2.4815,
+      "direct_err": 3.326,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t48",
+      "x": 3.2863,
+      "y": 4.6907,
+      "score": -1.9511,
+      "direct_err": 4.101,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t0",
+      "x": 0.4385,
+      "y": 0.6281,
+      "score": -4.2681,
+      "direct_err": 0.729,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t24",
+      "x": 0.4226,
+      "y": 2.3751,
+      "score": -3.6352,
+      "direct_err": 1.387,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t36",
+      "x": 1.5178,
+      "y": 3.4284,
+      "score": -2.9299,
+      "direct_err": 2.295,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t48",
+      "x": 3.1419,
+      "y": 4.1665,
+      "score": -2.1848,
+      "direct_err": 3.538,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t52",
+      "x": 3.7518,
+      "y": 4.3309,
+      "score": -1.9461,
+      "direct_err": 4.007,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t56",
+      "x": 4.3616,
+      "y": 4.4678,
+      "score": -1.7174,
+      "direct_err": 4.486,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t58",
+      "x": 4.6776,
+      "y": 4.5271,
+      "score": -1.6032,
+      "direct_err": 4.733,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g64_t0",
+      "x": 0.0722,
+      "y": 0.1307,
+      "score": -4.557,
+      "direct_err": 0.155,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g64_t16",
+      "x": 0.071,
+      "y": 1.2424,
+      "score": -4.1516,
+      "direct_err": 0.66,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g64_t24",
+      "x": 0.0702,
+      "y": 2.028,
+      "score": -3.8651,
+      "direct_err": 1.063,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g64_t28",
+      "x": 0.5734,
+      "y": 2.4882,
+      "score": -3.5497,
+      "direct_err": 1.397,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g64_t31",
+      "x": 1.1592,
+      "y": 2.8409,
+      "score": -3.2494,
+      "direct_err": 1.8,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g64_t34",
+      "x": 1.8898,
+      "y": 3.1369,
+      "score": -2.9273,
+      "direct_err": 2.329,
+      "placed": "rescue"
+     }
+    ]
+   },
+   "path": {
+    "n_cells": 26,
+    "false_breaks": 0,
+    "status": "0 false breaks \u2014 non-contradiction CONFIRMED on repaired states",
+    "closest_to_break_margin": -7.6493,
+    "closest_to_break_cell": "g1_t24",
+    "deepest_rescue_margin": -9.8411,
+    "deepest_rescue_cell": "g64_t0",
+    "direct_err_max": 1.874,
+    "direct_err_breaks": 0,
+    "spearman_score_vs_direct_err": 0.9897,
+    "cells": [
+     {
+      "cell": "g1_t0",
+      "x": 1.2807,
+      "y": 1.5863,
+      "score": -3.6717,
+      "direct_err": 1.822,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g1_t6",
+      "x": 1.2783,
+      "y": 1.6142,
+      "score": -3.6622,
+      "direct_err": 1.827,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g1_t12",
+      "x": 1.2728,
+      "y": 1.6799,
+      "score": -3.6399,
+      "direct_err": 1.839,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g1_t18",
+      "x": 1.2661,
+      "y": 1.7642,
+      "score": -3.6111,
+      "direct_err": 1.855,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g1_t24",
+      "x": 1.2592,
+      "y": 1.8551,
+      "score": -3.5799,
+      "direct_err": 1.874,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t0",
+      "x": 0.526,
+      "y": 0.7234,
+      "score": -4.2077,
+      "direct_err": 0.785,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t12",
+      "x": 0.5201,
+      "y": 0.8806,
+      "score": -4.1521,
+      "direct_err": 0.823,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t24",
+      "x": 0.5105,
+      "y": 1.1589,
+      "score": -4.0533,
+      "direct_err": 0.905,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t26",
+      "x": 0.5131,
+      "y": 1.2023,
+      "score": -4.0367,
+      "direct_err": 0.921,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t30",
+      "x": 0.5687,
+      "y": 1.3014,
+      "score": -3.9843,
+      "direct_err": 0.981,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t34",
+      "x": 0.6182,
+      "y": 1.3903,
+      "score": -3.9373,
+      "direct_err": 1.035,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t36",
+      "x": 0.642,
+      "y": 1.4306,
+      "score": -3.9156,
+      "direct_err": 1.06,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g4_t48",
+      "x": 0.8102,
+      "y": 1.6288,
+      "score": -3.794,
+      "direct_err": 1.212,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t0",
+      "x": 0.1258,
+      "y": 0.2008,
+      "score": -4.5157,
+      "direct_err": 0.213,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t24",
+      "x": 0.1215,
+      "y": 0.7721,
+      "score": -4.3085,
+      "direct_err": 0.44,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t36",
+      "x": 0.3652,
+      "y": 1.1625,
+      "score": -4.0946,
+      "direct_err": 0.7,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t48",
+      "x": 0.7211,
+      "y": 1.4287,
+      "score": -3.8932,
+      "direct_err": 0.987,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t52",
+      "x": 0.8943,
+      "y": 1.4977,
+      "score": -3.8173,
+      "direct_err": 1.118,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t56",
+      "x": 1.0994,
+      "y": 1.5595,
+      "score": -3.7346,
+      "direct_err": 1.27,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g16_t58",
+      "x": 1.2104,
+      "y": 1.5882,
+      "score": -3.6916,
+      "direct_err": 1.355,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g64_t0",
+      "x": 0.0199,
+      "y": 0.0393,
+      "score": -4.6057,
+      "direct_err": 0.043,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g64_t16",
+      "x": 0.0196,
+      "y": 0.3937,
+      "score": -4.4764,
+      "direct_err": 0.208,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g64_t24",
+      "x": 0.0194,
+      "y": 0.6559,
+      "score": -4.3808,
+      "direct_err": 0.343,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g64_t28",
+      "x": 0.1315,
+      "y": 0.8226,
+      "score": -4.2871,
+      "direct_err": 0.445,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g64_t31",
+      "x": 0.2632,
+      "y": 0.9345,
+      "score": -4.2077,
+      "direct_err": 0.54,
+      "placed": "rescue"
+     },
+     {
+      "cell": "g64_t34",
+      "x": 0.4829,
+      "y": 1.0339,
+      "score": -4.107,
+      "direct_err": 0.687,
+      "placed": "rescue"
+     }
+    ]
+   }
+  },
+  "torus_curve_28": {
+   "cells": [
+    {
+     "cell": "g1@0",
+     "gamma": 1.0,
+     "t0": 0.0,
+     "deposited": "break",
+     "score": 0.1095,
+     "placed": "break"
+    },
+    {
+     "cell": "g1@6",
+     "gamma": 1.0,
+     "t0": 6.0,
+     "deposited": "break",
+     "score": 0.2401,
+     "placed": "break"
+    },
+    {
+     "cell": "g1@12",
+     "gamma": 1.0,
+     "t0": 12.0,
+     "deposited": "break",
+     "score": 0.3726,
+     "placed": "break"
+    },
+    {
+     "cell": "g1@18",
+     "gamma": 1.0,
+     "t0": 18.0,
+     "deposited": "break",
+     "score": 0.5013,
+     "placed": "break"
+    },
+    {
+     "cell": "g1@24",
+     "gamma": 1.0,
+     "t0": 24.0,
+     "deposited": "break",
+     "score": 0.6216,
+     "placed": "break"
+    },
+    {
+     "cell": "g4@0",
+     "gamma": 4.0,
+     "t0": 0.0,
+     "deposited": "rescue",
+     "score": -2.1123,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g4@12",
+     "gamma": 4.0,
+     "t0": 12.0,
+     "deposited": "rescue",
+     "score": -1.446,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g4@24",
+     "gamma": 4.0,
+     "t0": 24.0,
+     "deposited": "rescue",
+     "score": -0.9477,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g4@26",
+     "gamma": 4.0,
+     "t0": 26.0,
+     "deposited": "rescue",
+     "score": -0.8777,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g4@30",
+     "gamma": 4.0,
+     "t0": 30.0,
+     "deposited": "rescue",
+     "score": -0.7206,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g4@34",
+     "gamma": 4.0,
+     "t0": 34.0,
+     "deposited": "rescue",
+     "score": -0.5713,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g4@36",
+     "gamma": 4.0,
+     "t0": 36.0,
+     "deposited": "rescue",
+     "score": -0.4884,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g4@48",
+     "gamma": 4.0,
+     "t0": 48.0,
+     "deposited": "break",
+     "score": 0.1095,
+     "placed": "break"
+    },
+    {
+     "cell": "g16@0",
+     "gamma": 16.0,
+     "t0": 0.0,
+     "deposited": "rescue",
+     "score": -3.8811,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g16@24",
+     "gamma": 16.0,
+     "t0": 24.0,
+     "deposited": "rescue",
+     "score": -1.9497,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g16@36",
+     "gamma": 16.0,
+     "t0": 36.0,
+     "deposited": "rescue",
+     "score": -1.155,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g16@48",
+     "gamma": 16.0,
+     "t0": 48.0,
+     "deposited": "rescue",
+     "score": -0.1095,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g16@52",
+     "gamma": 16.0,
+     "t0": 52.0,
+     "deposited": "break",
+     "score": 0.1647,
+     "placed": "break"
+    },
+    {
+     "cell": "g16@56",
+     "gamma": 16.0,
+     "t0": 56.0,
+     "deposited": "break",
+     "score": 0.4194,
+     "placed": "break"
+    },
+    {
+     "cell": "g16@58",
+     "gamma": 16.0,
+     "t0": 58.0,
+     "deposited": "break",
+     "score": 0.5461,
+     "placed": "break"
+    },
+    {
+     "cell": "g16@72",
+     "gamma": 16.0,
+     "t0": 72.0,
+     "deposited": "break",
+     "score": 1.4014,
+     "placed": "break"
+    },
+    {
+     "cell": "g64@0",
+     "gamma": 64.0,
+     "t0": 0.0,
+     "deposited": "rescue",
+     "score": -4.474,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g64@16",
+     "gamma": 64.0,
+     "t0": 16.0,
+     "deposited": "rescue",
+     "score": -2.7319,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g64@24",
+     "gamma": 64.0,
+     "t0": 24.0,
+     "deposited": "rescue",
+     "score": -2.2321,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g64@28",
+     "gamma": 64.0,
+     "t0": 28.0,
+     "deposited": "rescue",
+     "score": -1.8811,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g64@31",
+     "gamma": 64.0,
+     "t0": 31.0,
+     "deposited": "rescue",
+     "score": -1.4688,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g64@34",
+     "gamma": 64.0,
+     "t0": 34.0,
+     "deposited": "rescue",
+     "score": -1.0778,
+     "placed": "rescue"
+    },
+    {
+     "cell": "g64@36",
+     "gamma": 64.0,
+     "t0": 36.0,
+     "deposited": "break",
+     "score": 0.4803,
+     "placed": "break"
+    }
+   ],
+   "all_placed": true
+  },
+  "predicted_edges": {
+   "g1": 0.0,
+   "g4": 48.0,
+   "g16": 52.0,
+   "g64": null
+  },
+  "deposited_curve": "0/48/52/>34",
+  "edges_match_deposit": true,
+  "out_of_scope": [
+   "SignedMedium / A-NN-violating OOD classes",
+   "spliced and blockade arms",
+   "non-MULTI targets",
+   "substrates outside the exp112 battery"
+  ],
+  "pass": true
+ },
+ "gates": {
+  "V1_kappa_refit_deposited_stable_check": true,
+  "V2_noise_question_closed": true,
+  "V3_law_8of8_and_LOO_stable": true,
+  "V3_strict_heldout_diagnostic": false,
+  "V4_domain_and_transfer": true
+ },
+ "gates_passed": "4/4 (core) + strict diagnostic FAIL",
+ "verdict": "LAW-FORMALIZED: the deadline law is deposited as the half-plane break iff 0.2930*x + 0.3650*y + -4.6258 > 0 on the repaired base \u2014 8/8 anchors placed, LOO 6/6 feasible + both-positive at margin >= 0.2 (strict held-out-placement diagnostic FAILS on two hinge cells g4@48/g16@48 \u2014 deposited as the law's known LOO fragility), kernel-free transfer 0 false breaks on grid2d+path, torus curve 28/28 with edges 0/48/52/>34 reproduced; the scalar family stays closed (empty at every primary tau; structural debt-ordering violation g16@72-vs-g64@24; off-grid tau=1.0 corner only); the noise question is CLOSED (the g64@36 crossing is deterministic on the full-mu base; exp147's 89x shortfall was an artifact of the latched mirror base)",
+ "wall_s": 4.2
+}
