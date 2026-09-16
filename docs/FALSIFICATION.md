@@ -3603,3 +3603,36 @@ Night seven, part 3. exp43's registered follow-up:
   perimeter/volume scaling, re-audited against the exp104 sizes
   (the v2 oracle must price grid2d's n=784 cell INTO the V band —
   the v1 transfer failure).
+
+## L88 — exp106 WALK-DURATION DRIFT KILLED + THE ORACLE'S V2 LANDING (4/5 — the steps probe is a clean NULL: spc=2 reproduces the base errors EXACTLY (3.82/4.86, delta +1.04 unchanged, level effect 0.00), so the rebuild's mid-walk exposure contributes nothing and the torus's rising price stays OPEN with the candidate list shrunk; the v2 oracle (crossing/sqrt(edges)) lands 3/3 — Spearman 0.81 across the battery, size-stable on 2D, the v1 n=784 failure repaired)
+
+- PART A (WJ-G1 REFUTED, WJ-G2 PASS): steps_per_cell 8 -> 2
+  quarters the walk's sim-time and moves NOTHING (3.82/4.86 both
+  settings; the level effect 0.00 mV). The drift mechanism is
+  dead — deterministic mid-walk exposure does not touch the
+  committed identity at (4, 0) (mu=0 cuts theta diffusion; gamma-4
+  pins V fast). The torus's +1.04 mV size trend survives with the
+  candidate list now: commitment noise (killed, exp105), walk
+  exposure (killed, exp106), window pinning (halves it, exp105).
+  The residual trend is REAL, small (4.86 at n=784, well inside
+  the bar), and honestly OPEN — registered for exp107 with the
+  remaining suspect: the zone-band GEOMETRY under index
+  refinement (f-boundaries round onto lattice rows; the
+  spec/canon bands' relative shapes change with r).
+- PART B (3/3 — THE V2 ORACLE): v2 = crossing_edges / sqrt(edges)
+  cancels the perimeter/volume scaling. WJ-G3 PASS: size-stable on
+  the 2D families (grid2d 4.17/4.19/3.99/4.14, rel std 0.019;
+  torus 4.81/4.85/4.38/4.50, rel std 0.043); path decays 0.60 ->
+  0.21 — the documented 1D boundary law, excluded by design. WJ-G4
+  PASS: v2's cross-substrate Spearman vs the dial class is 0.81 —
+  BETTER than v1's 0.73 (the sqrt(edges) factor corrects the
+  dense-substrate distortion v1 carried). WJ-G5 PASS: grid2d's
+  n=784 v2 (4.14) lands inside the n=100 V-band (2.04, 6.23) —
+  the v1 transfer failure is repaired.
+- THE ORACLE ARC, CLOSED: v0 the chain-era boolean (refused 16/19
+  of its executor's verifications); v1 the raw ratio as price
+  (Spearman 0.73 at n=100, size-fragile); v2 the normalized
+  boundary term (Spearman 0.81, size-stable on 2D, the 1D decay
+  documented as physics). The compile decision's final form: the
+  v2 boundary term NAMES THE PRICE, the dials pay it, and nothing
+  on the battery has refused.

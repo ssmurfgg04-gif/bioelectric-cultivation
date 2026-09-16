@@ -1,0 +1,60 @@
+{
+ "exp": "exp106_drift_and_oracle_v2",
+ "arms": {
+  "torus_n100_spc8": {
+   "rate": 1.0,
+   "err": 3.82
+  },
+  "torus_n100_spc2": {
+   "rate": 1.0,
+   "err": 3.82
+  },
+  "torus_n784_spc8": {
+   "rate": 1.0,
+   "err": 4.86
+  },
+  "torus_n784_spc2": {
+   "rate": 1.0,
+   "err": 4.86
+  }
+ },
+ "deltas": {
+  "spc8": 1.04,
+  "spc2": 1.04,
+  "level_effect": 0.0
+ },
+ "oracle_v2": {
+  "spearman_v2_cost_n100": 0.811,
+  "grid2d_v2_by_n": [
+   4.174,
+   4.193,
+   3.99,
+   4.14
+  ],
+  "torus_v2_by_n": [
+   4.808,
+   4.849,
+   4.384,
+   4.495
+  ],
+  "path_v2_by_n": [
+   0.603,
+   0.43,
+   0.3,
+   0.214
+  ],
+  "v_band_n100": [
+   2.038,
+   6.231
+  ],
+  "grid2d_n784_v2": 4.14
+ },
+ "criteria": {
+  "WJ_G1_drift_named": false,
+  "WJ_G2_level_bounded": true,
+  "WJ_G3_v2_size_stable": true,
+  "WJ_G4_v2_cross_substrate": true,
+  "WJ_G5_v1_failure_repaired": true
+ },
+ "notes": "exp105's registered pair: the steps-per-cell probe (walk-duration drift vs the torus's rising price) and the size-normalized oracle v2 (crossing/sqrt(edges)). Default steps_per_cell=8 is bit-exact (tree 0.56 / star 8.53 re-verified in-run)."
+}

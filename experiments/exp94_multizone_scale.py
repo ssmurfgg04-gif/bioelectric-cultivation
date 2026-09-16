@@ -190,7 +190,8 @@ def execute_two_source_n(spec: AnatomySpec, adjacency: np.ndarray,
                          frontier_mode: str = "zones",
                          return_trace: bool = False,
                          return_state: bool = False,
-                         commit_noise: float = 0.6) -> dict:
+                         commit_noise: float = 0.6,
+                         steps_per_cell: int = 8) -> dict:
     """exp90's execute_two_source generalized over n (and, since
     exp95, over the operating point — default STAR, which is what
     exp94's deposited results used; since exp96, an optional
