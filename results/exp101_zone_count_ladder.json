@@ -1,0 +1,102 @@
+{
+ "exp": "exp101_zone_count_ladder",
+ "arms": {
+  "path_k3": {
+   "rate": 1.0,
+   "err": 2.91
+  },
+  "path_k4": {
+   "rate": 1.0,
+   "err": 3.51
+  },
+  "path_k5": {
+   "rate": 1.0,
+   "err": 3.24
+  },
+  "path_k6": {
+   "rate": 1.0,
+   "err": 3.59
+  },
+  "grid2d_k3": {
+   "rate": 1.0,
+   "err": 5.0
+  },
+  "grid2d_k4": {
+   "rate": 0.0,
+   "err": 6.07
+  },
+  "grid2d_k5": {
+   "rate": 0.0,
+   "err": 6.74
+  },
+  "grid2d_k6": {
+   "rate": 0.0,
+   "err": 6.25
+  },
+  "torus_k3": {
+   "rate": 1.0,
+   "err": 3.82
+  },
+  "torus_k4": {
+   "rate": 1.0,
+   "err": 3.97
+  },
+  "torus_k5": {
+   "rate": 1.0,
+   "err": 4.27
+  },
+  "torus_k6": {
+   "rate": 1.0,
+   "err": 3.93
+  },
+  "path_k6_below": {
+   "rate": 0.0,
+   "err": 4.44
+  },
+  "grid2d_k4_dial_64_0": {
+   "rate": 1.0,
+   "err": 0.58
+  },
+  "grid2d_k5_dial_64_0": {
+   "rate": 1.0,
+   "err": 0.62
+  },
+  "grid2d_k6_dial_64_0": {
+   "rate": 1.0,
+   "err": 0.61
+  },
+  "grid2d_k4_dial_4_0": {
+   "rate": 1.0,
+   "err": 3.43
+  },
+  "grid2d_k5_dial_4_0": {
+   "rate": 1.0,
+   "err": 3.77
+  },
+  "grid2d_k6_dial_4_0": {
+   "rate": 1.0,
+   "err": 3.52
+  }
+ },
+ "partition": {
+  "path_k3": true,
+  "path_k4": true,
+  "path_k5": false,
+  "path_k6": false,
+  "grid2d_k3": false,
+  "grid2d_k4": false,
+  "grid2d_k5": false,
+  "grid2d_k6": false,
+  "torus_k3": false,
+  "torus_k4": false,
+  "torus_k5": false,
+  "torus_k6": false
+ },
+ "criteria": {
+  "ZC_G1_six_zones_hold": false,
+  "ZC_G2_compiler_agrees": false,
+  "ZC_G3_domain_rule_scales": true,
+  "ZC_G4_within_budget": true
+ },
+ "notes": "The compiler's zone-resolution limit: k in {3,4,5,6} all-at--30 zone specs on one substrate per exp100 reader-price class, each at its own minimal operating cell (path DEFAULT, grid2d V(64), torus TWO(4,0)). k=3 is the deposited MULTI verbatim."
+}

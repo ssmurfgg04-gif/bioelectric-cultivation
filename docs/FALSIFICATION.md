@@ -3363,3 +3363,55 @@ Night seven, part 3. exp43's registered follow-up:
   executor's (does the compiler's R5 partition over-promise?); the
   failure mode of the first zone-count refusal (uniform sag vs
   zone-merge).
+
+## L83 — exp101 THE ZONE-COUNT LADDER (2/4 as registered — and both refutations are the payload: the grid's zone-resolution "limit" is a PRICE one dial buys (six zones verify at 0.58-0.62 mV at (64, 0)), and the compiler's R5 partition check is exposed as a chain-era artifact that UNDER-promises 10 of 12 pairs against its own executor; exp102 registered: R5 recalibrated from boolean gate to price oracle)
+
+- THE LADDER (k in {3,4,5,6} all-at--30 specs, one substrate per
+  exp100 reader-price class, each at its OWN minimal cell):
+  path (DEFAULT (1, 0.015)): k3 2.91 / k4 3.51 / k5 3.24 / k6 3.59,
+  ALL VERIFY — a chain holds six zones at its default cell.
+  torus (TWO (4, 0)): 3.82 / 3.97 / 4.27 / 3.93, ALL VERIFY.
+  grid2d (V (64, 0.015)): k3 5.00 VERIFIES; k4 6.07 / k5 6.74 /
+  k6 6.25 — 0/3 each, JUST over the 6.0 bar.
+- THE DIAL DIAGNOSTIC (deposited as the *_dial arms): the grid's
+  zone-count refusal is a PRICE, not a boundary — at (64, 0) the
+  k4/k5/k6 specs verify at 0.58/0.62/0.61 mV (BETTER than the k3
+  5.00 at (64, 0.015): the mu cut removes the theta sag entirely,
+  and wider zone coverage leaves fewer canon-gap cells to sag);
+  at (4, 0) they verify at 3.43-3.77. The zone-resolution limit on
+  the grid was ONE DIAL away the whole time. ZC-G1 refuted at the
+  minimal cells, repaired in-run: the reader holds SIX zones at
+  n=100 on all three substrates at SOME operating point.
+- ZC-G3 PASS (the k=6 below-line variant, zone z2 at -59: 0/2 on
+  path — the M33 domain rule scales with zone count); ZC-G4 PASS
+  (k=6 err within 2x of k=3 everywhere — resolution has a bounded
+  price on the minimal-cell path too).
+- THE PARTITION DISCONNECT (the second payload, ZC-G2 REFUTED with
+  the opposite sign from the registered concern): the compiler's
+  R5 substrate_partition_check refuses 10 of the 12 (substrate, k)
+  pairs deposited today — grid2d and torus at EVERY k including 3,
+  path at k5/k6 — while the executor VERIFIES those pairs at the
+  mapped operating points (9 of the 10 at the minimal cell alone).
+  The check measures the identity partition's boundary-to-volume
+  ratio (crossing edges / total edges) against R5_MAX, calibrated
+  by exp43's WRITE-path attractor signature in the chain era —
+  before the two-channel law, the dials, and the two-source read.
+  The position-addressed read does not need the lateral attractor
+  coherence the ratio measures. THE CHECK IS REFUSED BY ITS OWN
+  EXECUTOR. (Deposit note: exp94's r5_partition console values are
+  not in the results JSON — results/ gitignore gap, flagged; the
+  disconnect stands on exp101's fresh 12-pair deposit.)
+- REGISTERED (exp102): R5 RECALIBRATED — from boolean gate to
+  PRICE ORACLE. The ratio is not useless, it is misread: the
+  registered gates (a) formalize the boolean's false-refusal count
+  against executor verdicts; (b) test whether the ratio PREDICTS
+  the reader's dial cost (Spearman >= 0.6 across the 19 substrates
+  of exp100's map — the classes look ratio-ordered: degree-2
+  chains DEFAULT, grids/trees V-priced, dense cliques two-dial);
+  (c) test whether the ratio orders the two-dial brackets; (d)
+  test the oracle's degree-flatness on the star family (the ratio
+  is degree-constant on stars — every spoke edge crosses to the
+  unzoned hub — matching exp99's flat map). If the oracle holds,
+  R5's compile decision becomes: the ratio NAMES THE PRICE, the
+  dials pay it — a refusal only when the price exceeds the dial
+  plane (none found battery-wide).
