@@ -3309,3 +3309,57 @@ Night seven, part 3. exp43's registered follow-up:
   milestone was pushed before the incident — the push-each-
   milestone discipline IS the disaster-recovery plan. The token
   rotation flag is now elevated: rotate before the next session.
+
+## L82 — exp100 THE READER'S PRICE MAP (3/3 — exp93's taxonomy measured for the READER across the full 19-substrate battery: 4 DEFAULT / 6 V_PRICED / 9 TWO_DIAL, ZERO refusals; the tag tracks lateral connectivity; the reader prices >= the writer on every shared substrate; the dense extremes forced an in-run bracket extension, owned)
+
+- THE MAP (adaptive ladders, 3-seed default cells, 2-seed ladder
+  screens + 3-seed confirms; deposited per cell):
+  DEFAULT (4): path (2.91), path200 (2.38), cycle (3.67),
+  small_world (4.23) — the low-degree lateral topologies verify at
+  the reader's own default cell (1, 0.015).
+  V_PRICED (6): star gamma_min=2, ladder 32, random6 32, grid2d 64,
+  grid_elong 64, tree 64.
+  TWO_DIAL (9): (4,0) random3/random8/scale_free/scale_free200/
+  torus/torus_elong; (16,0) barbell; (32,0) bipartite/complete.
+  PM-G1 PASS (19/19 classes), PM-G2 PASS (zero refusals), PM-G3
+  PASS (3 classes present).
+- THE STRATIFICATION'S SHAPE: the tag tracks LATERAL
+  CONNECTIVITY — degree-2 chains and rings hold at default; branching
+  and grid topologies need the V pinning (gamma up); random, hub,
+  and dense families need theta cut AND V pinned. The star is the
+  CHEAPEST V-priced member (gamma 2): after the coverage repair its
+  spokes each have exactly one edge to pin — the "worst" write-path
+  topology is the best-priced V-member on the reader. The inversion
+  the maps produce is the point: price is a per-path property, not
+  a substrate constant.
+- THE CROSS-PATH ASYMMETRY (new, deposited): on all 7 substrates
+  shared with exp93's WRITE-path taxonomy, the reader's tag is >=
+  the writer's (path =, small_world =, random3 = (4,0),
+  scale_free = (4,0); grid2d DEFAULT -> V(64); random6 DEFAULT ->
+  V(32); torus one-dial theta -> TWO_DIAL). Strictly higher on 3 of
+  7. The mechanism is structural: the reader's verify bar includes
+  the post-window settle the writer never faces — the pattern must
+  HOLD after the forcing releases, so every sag the writer can
+  ignore becomes a price.
+- THE BRACKET EXTENSION (owned, in-run): the registered two-dial
+  probe {(4,0), (16,0)} came from exp93's WRITE-path stratification;
+  bipartite and complete priced ABOVE it (their (64, 0) verifies,
+  exp94 MS-G1, were never in question) — the bracket extended with
+  {(32, 0), (64, 0)} and both confirm at (32, 0) x 3 seeds. The
+  dense extremes are the reader's most expensive members: a K60
+  clique's every cell couples to 59 others — the sag the dials
+  fight is the whole-clique mean, not a local neighborhood's.
+- ARC CONSEQUENCE: R5' is now MEASURED on both paths and the full
+  battery — the reader's operating point is no longer a convention:
+  (64, 0) was paying the MAXIMUM price for every substrate; the map
+  says 15 of 19 verify for less. The dials are a budget, and the
+  budget is now published per substrate, per path.
+- REGISTERED (exp101): THE ZONE-COUNT LADDER — the compiler's
+  zone-resolution limit. MULTI carries 3 zones; how many can the
+  two-source read hold? 4/5/6-zone MULTI variants at n=100 on three
+  representative substrates (path, grid2d, torus) x 3 seeds at each
+  substrate's minimal cell from this map. Gates: the max zone count
+  per substrate deposited; the partition check's verdicts vs the
+  executor's (does the compiler's R5 partition over-promise?); the
+  failure mode of the first zone-count refusal (uniform sag vs
+  zone-merge).
