@@ -1,0 +1,4091 @@
+{
+ "exp": "exp144_audit_operating_points (workstream J)",
+ "claim": "per-invention operating-point selection over a price-map-v2-derived ladder extended off-pole revives the exp136/exp141 generator claim (L121's registered repair); the emitted cell is part of the compiled program",
+ "pre_registration": {
+  "gates": {
+   "J1": ">=1 candidate clears the FULL novelty clause (NOV_lib > N* AND nov_splice > N*) AND passes the audit at some rung",
+   "J2": "C2 unchanged: >=8/10 delivered pass the two-channel audit at the selected rung",
+   "J3": "C3 unchanged: >=8/10 delivered decode+hold at the emitted rung",
+   "J4": "ladder frozen+deposited before the search; selection = argmin over frozen rungs; provenance complete; superset of exp136's ladder"
+  },
+  "cohort_rule": "all C1-eligible (gate-bearing, uncapped) + diagnostic fill of highest-J splice-failing lib-novel candidates to 24",
+  "ladder_frozen_at": "stage ladder_deposit, before search candidate 1"
+ },
+ "extended_ladder": {
+  "rungs": [
+   [
+    1.0,
+    0.0
+   ],
+   [
+    1.0,
+    0.015
+   ],
+   [
+    4.0,
+    0.0
+   ],
+   [
+    4.0,
+    0.015
+   ],
+   [
+    16.0,
+    0.0
+   ],
+   [
+    16.0,
+    0.015
+   ],
+   [
+    32.0,
+    0.0
+   ],
+   [
+    64.0,
+    0.0
+   ],
+   [
+    64.0,
+    0.015
+   ]
+  ],
+  "cost_key": "gamma/4 + (1.0 if mu>0 else 0)",
+  "rung_costs": {
+   "(1.0,0.0)": 0.25,
+   "(1.0,0.015)": 1.25,
+   "(4.0,0.0)": 1.0,
+   "(4.0,0.015)": 2.0,
+   "(16.0,0.0)": 4.0,
+   "(16.0,0.015)": 5.0,
+   "(32.0,0.0)": 8.0,
+   "(64.0,0.0)": 16.0,
+   "(64.0,0.015)": 17.0
+  },
+  "provenance": {
+   "(1.0,0.0)": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+   "(1.0,0.015)": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+   "(4.0,0.0)": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+   "(4.0,0.015)": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+   "(16.0,0.0)": "deposited \u2014 exp136 audit ladder",
+   "(16.0,0.015)": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+   "(32.0,0.0)": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+   "(64.0,0.0)": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+   "(64.0,0.015)": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)"
+  },
+  "per_rung_pass_counts": {
+   "(1.0,0.0)": 24,
+   "(1.0,0.015)": 24,
+   "(4.0,0.0)": 24,
+   "(4.0,0.015)": 24,
+   "(16.0,0.0)": 24,
+   "(16.0,0.015)": 24,
+   "(32.0,0.0)": 24,
+   "(64.0,0.0)": 24,
+   "(64.0,0.015)": 24
+  }
+ },
+ "metric": {
+  "n_star": 82.288,
+  "CUT_TOL": 0.01,
+  "library_size": 72,
+  "splice_family": 48564,
+  "tol_note": "CUT_TOL 0.01 in exp136 (repaired) and here \u2014 L121's cross-tol flag resolved; N* 82.288 re-derived identically"
+ },
+ "replication_of_exp141": {
+  "rounds_match": true,
+  "pool_size_match": true,
+  "rounds": [
+   {
+    "round": 0,
+    "match": true
+   },
+   {
+    "round": 1,
+    "match": true
+   },
+   {
+    "round": 2,
+    "match": true
+   },
+   {
+    "round": 3,
+    "match": true
+   },
+   {
+    "round": 4,
+    "match": true
+   },
+   {
+    "round": 5,
+    "match": true
+   }
+  ],
+  "pool_size": 253,
+  "exp141_pool_size": 253
+ },
+ "funnel": {
+  "pool": 253,
+  "lib_novel": 96,
+  "splice_clear": 0,
+  "delivered": 0,
+  "audit_pass_delivered": 0,
+  "decode_pass_delivered": 0,
+  "gate_bearing_audit_pass_all": 0
+ },
+ "cohort": [
+  {
+   "name": "c-01",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.91,
+     0.971,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -28.6
+    ],
+    [
+     0.735,
+     0.919,
+     -42.7
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 2,
+    "min_v": -42.7,
+    "max_v": -28.6,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.0833,
+   "nov_lib": 88.98,
+   "nov_splice": 61.5,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.749,
+     "eT": 0.247,
+     "quad": 0.788,
+     "pass": true,
+     "full": 0.749
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.749,
+     "eT": 0.829,
+     "quad": 1.117,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.302,
+     "eT": 0.119,
+     "quad": 0.325,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.302,
+     "eT": 0.829,
+     "quad": 0.882,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.118,
+     "eT": 0.081,
+     "quad": 0.143,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.118,
+     "eT": 0.838,
+     "quad": 0.847,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.067,
+     "eT": 0.054,
+     "quad": 0.086,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.045,
+     "eT": 0.039,
+     "quad": 0.06,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.045,
+     "eT": 0.834,
+     "quad": 0.836,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.06,
+    "eV": 0.045,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    3.828,
+    3.861,
+    3.933
+   ],
+   "hold_errs": [
+    3.926,
+    3.871,
+    4.026
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-02",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.91,
+     0.99,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -30.8
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -40.8,
+    "max_v": -30.8,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.0879,
+   "nov_lib": 88.94,
+   "nov_splice": 47.16,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.75,
+     "eT": 0.247,
+     "quad": 0.79,
+     "pass": true,
+     "full": 0.75
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.75,
+     "eT": 0.831,
+     "quad": 1.119,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.3,
+     "eT": 0.119,
+     "quad": 0.322,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.3,
+     "eT": 0.825,
+     "quad": 0.878,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.118,
+     "eT": 0.081,
+     "quad": 0.143,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.118,
+     "eT": 0.835,
+     "quad": 0.843,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.065,
+     "eT": 0.054,
+     "quad": 0.085,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.045,
+     "eT": 0.039,
+     "quad": 0.059,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.045,
+     "eT": 0.829,
+     "quad": 0.83,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.059,
+    "eV": 0.045,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    2.748,
+    2.764,
+    2.868
+   ],
+   "hold_errs": [
+    2.843,
+    2.873,
+    2.986
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-03",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.91,
+     0.971,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -28.6
+    ],
+    [
+     0.748,
+     0.919,
+     -42.7
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 2,
+    "min_v": -42.7,
+    "max_v": -28.6,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.1009,
+   "nov_lib": 83.05,
+   "nov_splice": 62.11,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.755,
+     "eT": 0.247,
+     "quad": 0.794,
+     "pass": true,
+     "full": 0.755
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.755,
+     "eT": 0.84,
+     "quad": 1.129,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.305,
+     "eT": 0.119,
+     "quad": 0.327,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.305,
+     "eT": 0.832,
+     "quad": 0.886,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.119,
+     "eT": 0.081,
+     "quad": 0.144,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.119,
+     "eT": 0.839,
+     "quad": 0.847,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.067,
+     "eT": 0.054,
+     "quad": 0.086,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.046,
+     "eT": 0.039,
+     "quad": 0.06,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.046,
+     "eT": 0.835,
+     "quad": 0.836,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.06,
+    "eV": 0.046,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    3.757,
+    3.796,
+    3.86
+   ],
+   "hold_errs": [
+    3.864,
+    3.804,
+    3.959
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-04",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.91,
+     0.971,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -28.6
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -40.8,
+    "max_v": -28.6,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.1085,
+   "nov_lib": 86.02,
+   "nov_splice": 47.79,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.768,
+     "eT": 0.247,
+     "quad": 0.807,
+     "pass": true,
+     "full": 0.768
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.768,
+     "eT": 0.851,
+     "quad": 1.146,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.309,
+     "eT": 0.119,
+     "quad": 0.331,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.309,
+     "eT": 0.848,
+     "quad": 0.902,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.12,
+     "eT": 0.081,
+     "quad": 0.145,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.12,
+     "eT": 0.856,
+     "quad": 0.864,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.067,
+     "eT": 0.054,
+     "quad": 0.086,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.046,
+     "eT": 0.039,
+     "quad": 0.06,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.046,
+     "eT": 0.851,
+     "quad": 0.853,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.06,
+    "eV": 0.046,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    2.44,
+    2.523,
+    2.557
+   ],
+   "hold_errs": [
+    2.592,
+    2.575,
+    2.672
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-05",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.91,
+     0.99,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -28.6
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -40.8,
+    "max_v": -28.6,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.1267,
+   "nov_lib": 88.86,
+   "nov_splice": 47.08,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.775,
+     "eT": 0.247,
+     "quad": 0.813,
+     "pass": true,
+     "full": 0.775
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.775,
+     "eT": 0.858,
+     "quad": 1.156,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.31,
+     "eT": 0.119,
+     "quad": 0.331,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.31,
+     "eT": 0.854,
+     "quad": 0.909,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.12,
+     "eT": 0.081,
+     "quad": 0.145,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.12,
+     "eT": 0.864,
+     "quad": 0.872,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.066,
+     "eT": 0.054,
+     "quad": 0.085,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.045,
+     "eT": 0.039,
+     "quad": 0.06,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.045,
+     "eT": 0.857,
+     "quad": 0.858,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.06,
+    "eV": 0.045,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    2.753,
+    2.77,
+    2.874
+   ],
+   "hold_errs": [
+    2.862,
+    2.889,
+    3.006
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-06",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.893,
+     0.99,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -28.6
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -40.8,
+    "max_v": -28.6,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.1292,
+   "nov_lib": 88.75,
+   "nov_splice": 63.94,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.775,
+     "eT": 0.247,
+     "quad": 0.814,
+     "pass": true,
+     "full": 0.775
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.775,
+     "eT": 0.86,
+     "quad": 1.158,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.31,
+     "eT": 0.119,
+     "quad": 0.332,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.31,
+     "eT": 0.854,
+     "quad": 0.909,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.118,
+     "eT": 0.081,
+     "quad": 0.143,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.118,
+     "eT": 0.86,
+     "quad": 0.868,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.067,
+     "eT": 0.054,
+     "quad": 0.086,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.045,
+     "eT": 0.039,
+     "quad": 0.06,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.045,
+     "eT": 0.858,
+     "quad": 0.859,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.06,
+    "eV": 0.045,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    3.05,
+    3.028,
+    3.167
+   ],
+   "hold_errs": [
+    3.124,
+    3.153,
+    3.275
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-07",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.91,
+     0.99,
+     -39.3
+    ],
+    [
+     0.237,
+     0.325,
+     -28.6
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -39.3,
+    "max_v": -28.6,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.1746,
+   "nov_lib": 88.92,
+   "nov_splice": 47.04,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.806,
+     "eT": 0.247,
+     "quad": 0.843,
+     "pass": true,
+     "full": 0.806
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.806,
+     "eT": 0.892,
+     "quad": 1.202,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.321,
+     "eT": 0.119,
+     "quad": 0.342,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.321,
+     "eT": 0.891,
+     "quad": 0.948,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.123,
+     "eT": 0.081,
+     "quad": 0.147,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.123,
+     "eT": 0.901,
+     "quad": 0.909,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.067,
+     "eT": 0.054,
+     "quad": 0.086,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.045,
+     "eT": 0.039,
+     "quad": 0.06,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.045,
+     "eT": 0.895,
+     "quad": 0.896,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.06,
+    "eV": 0.045,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    3.14,
+    3.157,
+    3.263
+   ],
+   "hold_errs": [
+    3.231,
+    3.259,
+    3.375
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-08",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.16,
+     0.327,
+     -51.0
+    ],
+    [
+     0.831,
+     0.878,
+     -48.6
+    ],
+    [
+     0.627,
+     0.698,
+     -55.5
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 3,
+    "min_v": -55.5,
+    "max_v": -48.6,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.3737,
+   "nov_lib": 85.38,
+   "nov_splice": 60.03,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.924,
+     "eT": 0.247,
+     "quad": 0.957,
+     "pass": true,
+     "full": 0.924
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.924,
+     "eT": 1.026,
+     "quad": 1.381,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.373,
+     "eT": 0.119,
+     "quad": 0.391,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.373,
+     "eT": 1.03,
+     "quad": 1.095,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.131,
+     "eT": 0.081,
+     "quad": 0.154,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.131,
+     "eT": 1.028,
+     "quad": 1.037,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.07,
+     "eT": 0.054,
+     "quad": 0.088,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.048,
+     "eT": 0.039,
+     "quad": 0.062,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.048,
+     "eT": 1.029,
+     "quad": 1.031,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.062,
+    "eV": 0.048,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    9.099,
+    9.119,
+    9.077
+   ],
+   "hold_errs": [
+    8.927,
+    8.95,
+    8.909
+   ],
+   "decode_stable_seeds": "0/3",
+   "decode_pass": false
+  },
+  {
+   "name": "c-09",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.91,
+     0.971,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -28.6
+    ],
+    [
+     0.30075058922279646,
+     0.416,
+     -57.4
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 2,
+    "min_v": -57.4,
+    "max_v": -28.6,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.3755,
+   "nov_lib": 88.08,
+   "nov_splice": 39.12,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.939,
+     "eT": 0.247,
+     "quad": 0.971,
+     "pass": true,
+     "full": 0.939
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.939,
+     "eT": 1.042,
+     "quad": 1.403,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.373,
+     "eT": 0.119,
+     "quad": 0.391,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.373,
+     "eT": 1.06,
+     "quad": 1.123,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.13,
+     "eT": 0.081,
+     "quad": 0.153,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.13,
+     "eT": 1.072,
+     "quad": 1.08,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.074,
+     "eT": 0.054,
+     "quad": 0.092,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.049,
+     "eT": 0.039,
+     "quad": 0.063,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.049,
+     "eT": 1.08,
+     "quad": 1.081,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.063,
+    "eV": 0.049,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    3.774,
+    3.736,
+    3.799
+   ],
+   "hold_errs": [
+    3.941,
+    3.861,
+    3.995
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-10",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -35.2
+    ],
+    [
+     0.43,
+     0.621,
+     -53.9
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.8027276328817403,
+     0.893,
+     -38.1
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 3,
+    "min_v": -53.9,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 2
+   },
+   "J": 1.3874,
+   "nov_lib": 85.01,
+   "nov_splice": 65.37,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.946,
+     "eT": 0.247,
+     "quad": 0.978,
+     "pass": true,
+     "full": 0.946
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.946,
+     "eT": 1.055,
+     "quad": 1.417,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.384,
+     "eT": 0.119,
+     "quad": 0.402,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.384,
+     "eT": 1.083,
+     "quad": 1.149,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.142,
+     "eT": 0.081,
+     "quad": 0.163,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.142,
+     "eT": 1.106,
+     "quad": 1.115,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.082,
+     "eT": 0.054,
+     "quad": 0.098,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.048,
+     "eT": 0.039,
+     "quad": 0.062,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.048,
+     "eT": 1.099,
+     "quad": 1.1,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.062,
+    "eV": 0.048,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    4.438,
+    4.516,
+    4.494
+   ],
+   "hold_errs": [
+    4.433,
+    4.45,
+    4.496
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-11",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.16,
+     0.327,
+     -52.5
+    ],
+    [
+     0.831,
+     0.878,
+     -50.8
+    ],
+    [
+     0.627,
+     0.698,
+     -53.2
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 3,
+    "min_v": -53.2,
+    "max_v": -50.8,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.3986,
+   "nov_lib": 85.21,
+   "nov_splice": 60.24,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.947,
+     "eT": 0.247,
+     "quad": 0.978,
+     "pass": true,
+     "full": 0.947
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.947,
+     "eT": 1.05,
+     "quad": 1.414,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.381,
+     "eT": 0.119,
+     "quad": 0.399,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.381,
+     "eT": 1.057,
+     "quad": 1.124,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.132,
+     "eT": 0.081,
+     "quad": 0.155,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.132,
+     "eT": 1.056,
+     "quad": 1.064,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.071,
+     "eT": 0.054,
+     "quad": 0.089,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.049,
+     "eT": 0.039,
+     "quad": 0.062,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.049,
+     "eT": 1.058,
+     "quad": 1.059,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.062,
+    "eV": 0.049,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    9.502,
+    9.516,
+    9.484
+   ],
+   "hold_errs": [
+    9.339,
+    9.354,
+    9.324
+   ],
+   "decode_stable_seeds": "0/3",
+   "decode_pass": false
+  },
+  {
+   "name": "c-12",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.16,
+     0.327,
+     -52.5
+    ],
+    [
+     0.831,
+     0.878,
+     -50.8
+    ],
+    [
+     0.627,
+     0.698,
+     -55.5
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 3,
+    "min_v": -55.5,
+    "max_v": -50.8,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.4036,
+   "nov_lib": 85.39,
+   "nov_splice": 60.21,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.964,
+     "eT": 0.247,
+     "quad": 0.995,
+     "pass": true,
+     "full": 0.964
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.964,
+     "eT": 1.069,
+     "quad": 1.44,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.388,
+     "eT": 0.119,
+     "quad": 0.406,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.388,
+     "eT": 1.077,
+     "quad": 1.144,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.134,
+     "eT": 0.081,
+     "quad": 0.157,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.134,
+     "eT": 1.076,
+     "quad": 1.084,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.072,
+     "eT": 0.054,
+     "quad": 0.09,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.049,
+     "eT": 0.039,
+     "quad": 0.063,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.049,
+     "eT": 1.077,
+     "quad": 1.078,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.063,
+    "eV": 0.049,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    9.578,
+    9.59,
+    9.553
+   ],
+   "hold_errs": [
+    9.416,
+    9.429,
+    9.394
+   ],
+   "decode_stable_seeds": "0/3",
+   "decode_pass": false
+  },
+  {
+   "name": "c-13",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.16,
+     0.327,
+     -52.5
+    ],
+    [
+     0.831,
+     0.878,
+     -48.6
+    ],
+    [
+     0.627,
+     0.698,
+     -55.5
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 3,
+    "min_v": -55.5,
+    "max_v": -48.6,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.4043,
+   "nov_lib": 85.36,
+   "nov_splice": 60.19,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.965,
+     "eT": 0.247,
+     "quad": 0.997,
+     "pass": true,
+     "full": 0.965
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.965,
+     "eT": 1.072,
+     "quad": 1.442,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.389,
+     "eT": 0.119,
+     "quad": 0.406,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.389,
+     "eT": 1.078,
+     "quad": 1.146,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.135,
+     "eT": 0.081,
+     "quad": 0.157,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.135,
+     "eT": 1.077,
+     "quad": 1.085,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.072,
+     "eT": 0.054,
+     "quad": 0.09,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.049,
+     "eT": 0.039,
+     "quad": 0.063,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.049,
+     "eT": 1.079,
+     "quad": 1.08,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.063,
+    "eV": 0.049,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    9.578,
+    9.593,
+    9.556
+   ],
+   "hold_errs": [
+    9.413,
+    9.431,
+    9.395
+   ],
+   "decode_stable_seeds": "0/3",
+   "decode_pass": false
+  },
+  {
+   "name": "c-14",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.7728358093209716,
+     0.857,
+     -29.3
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 0,
+    "min_v": -32.4,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 2
+   },
+   "J": 1.4051,
+   "nov_lib": 92.33,
+   "nov_splice": 49.87,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.012,
+     "eT": 0.247,
+     "quad": 1.042,
+     "pass": true,
+     "full": 1.012
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.012,
+     "eT": 1.126,
+     "quad": 1.514,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.407,
+     "eT": 0.119,
+     "quad": 0.424,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.407,
+     "eT": 1.161,
+     "quad": 1.23,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.145,
+     "eT": 0.081,
+     "quad": 0.166,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.145,
+     "eT": 1.182,
+     "quad": 1.191,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.084,
+     "eT": 0.054,
+     "quad": 0.1,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.049,
+     "eT": 0.039,
+     "quad": 0.063,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.049,
+     "eT": 1.18,
+     "quad": 1.181,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.063,
+    "eV": 0.049,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    1.467,
+    1.516,
+    1.526
+   ],
+   "hold_errs": [
+    2.123,
+    2.069,
+    2.09
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-15",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.682,
+     0.784,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.7728358093209716,
+     0.857,
+     -29.3
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 0,
+    "min_v": -32.4,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 2
+   },
+   "J": 1.4051,
+   "nov_lib": 92.33,
+   "nov_splice": 49.87,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.012,
+     "eT": 0.247,
+     "quad": 1.042,
+     "pass": true,
+     "full": 1.012
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.012,
+     "eT": 1.126,
+     "quad": 1.514,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.407,
+     "eT": 0.119,
+     "quad": 0.424,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.407,
+     "eT": 1.161,
+     "quad": 1.23,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.145,
+     "eT": 0.081,
+     "quad": 0.166,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.145,
+     "eT": 1.182,
+     "quad": 1.191,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.084,
+     "eT": 0.054,
+     "quad": 0.1,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.049,
+     "eT": 0.039,
+     "quad": 0.063,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.049,
+     "eT": 1.18,
+     "quad": 1.181,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.063,
+    "eV": 0.049,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    1.467,
+    1.516,
+    1.526
+   ],
+   "hold_errs": [
+    2.123,
+    2.069,
+    2.09
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-16",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.306,
+     0.361,
+     -53.5
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -53.5,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 2
+   },
+   "J": 1.4056,
+   "nov_lib": 82.47,
+   "nov_splice": 53.17,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.019,
+     "eT": 0.247,
+     "quad": 1.048,
+     "pass": true,
+     "full": 1.019
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.019,
+     "eT": 1.118,
+     "quad": 1.512,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.388,
+     "eT": 0.119,
+     "quad": 0.406,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.388,
+     "eT": 1.143,
+     "quad": 1.207,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.143,
+     "eT": 0.081,
+     "quad": 0.165,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.143,
+     "eT": 1.176,
+     "quad": 1.184,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.084,
+     "eT": 0.054,
+     "quad": 0.1,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.05,
+     "eT": 0.039,
+     "quad": 0.064,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.05,
+     "eT": 1.173,
+     "quad": 1.174,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.064,
+    "eV": 0.05,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    1.855,
+    1.724,
+    1.878
+   ],
+   "hold_errs": [
+    2.457,
+    2.429,
+    2.489
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-17",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.16,
+     0.327,
+     -52.5
+    ],
+    [
+     0.831,
+     0.878,
+     -50.8
+    ],
+    [
+     0.436,
+     0.507,
+     -55.5
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 3,
+    "min_v": -55.5,
+    "max_v": -50.8,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.4068,
+   "nov_lib": 82.32,
+   "nov_splice": 57.58,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.962,
+     "eT": 0.247,
+     "quad": 0.994,
+     "pass": true,
+     "full": 0.962
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.962,
+     "eT": 1.068,
+     "quad": 1.437,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.388,
+     "eT": 0.119,
+     "quad": 0.406,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.388,
+     "eT": 1.077,
+     "quad": 1.145,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.135,
+     "eT": 0.081,
+     "quad": 0.158,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.135,
+     "eT": 1.076,
+     "quad": 1.085,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.072,
+     "eT": 0.054,
+     "quad": 0.09,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.049,
+     "eT": 0.039,
+     "quad": 0.063,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.049,
+     "eT": 1.077,
+     "quad": 1.078,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.063,
+    "eV": 0.049,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    9.576,
+    9.607,
+    9.57
+   ],
+   "hold_errs": [
+    9.413,
+    9.442,
+    9.407
+   ],
+   "decode_stable_seeds": "0/3",
+   "decode_pass": false
+  },
+  {
+   "name": "c-18",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.682,
+     0.81,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 0,
+    "min_v": -32.4,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.4083,
+   "nov_lib": 92.62,
+   "nov_splice": 51.06,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.015,
+     "eT": 0.247,
+     "quad": 1.045,
+     "pass": true,
+     "full": 1.015
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.015,
+     "eT": 1.127,
+     "quad": 1.517,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.404,
+     "eT": 0.119,
+     "quad": 0.421,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.404,
+     "eT": 1.16,
+     "quad": 1.228,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.145,
+     "eT": 0.081,
+     "quad": 0.166,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.145,
+     "eT": 1.185,
+     "quad": 1.193,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.084,
+     "eT": 0.054,
+     "quad": 0.099,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.048,
+     "eT": 0.039,
+     "quad": 0.062,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.048,
+     "eT": 1.18,
+     "quad": 1.181,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.062,
+    "eV": 0.048,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    1.49,
+    1.489,
+    1.519
+   ],
+   "hold_errs": [
+    2.072,
+    2.048,
+    2.096
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-19",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.237,
+     0.325,
+     -28.6
+    ],
+    [
+     0.748,
+     0.919,
+     -42.7
+    ],
+    [
+     0.742,
+     0.815,
+     -28.2
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -42.7,
+    "max_v": -28.2,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.4097,
+   "nov_lib": 82.61,
+   "nov_splice": 59.61,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.002,
+     "eT": 0.247,
+     "quad": 1.033,
+     "pass": true,
+     "full": 1.002
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.002,
+     "eT": 1.105,
+     "quad": 1.492,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.402,
+     "eT": 0.119,
+     "quad": 0.419,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.402,
+     "eT": 1.133,
+     "quad": 1.202,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.143,
+     "eT": 0.081,
+     "quad": 0.165,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.143,
+     "eT": 1.149,
+     "quad": 1.157,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.079,
+     "eT": 0.054,
+     "quad": 0.096,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.049,
+     "eT": 0.039,
+     "quad": 0.063,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.049,
+     "eT": 1.144,
+     "quad": 1.145,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.063,
+    "eV": 0.049,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    2.494,
+    2.537,
+    2.607
+   ],
+   "hold_errs": [
+    2.847,
+    2.818,
+    2.895
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-20",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 0,
+    "min_v": -32.4,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.4101,
+   "nov_lib": 83.75,
+   "nov_splice": 50.79,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.014,
+     "eT": 0.247,
+     "quad": 1.044,
+     "pass": true,
+     "full": 1.014
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.014,
+     "eT": 1.131,
+     "quad": 1.52,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.408,
+     "eT": 0.119,
+     "quad": 0.425,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.408,
+     "eT": 1.162,
+     "quad": 1.232,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.146,
+     "eT": 0.081,
+     "quad": 0.167,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.146,
+     "eT": 1.186,
+     "quad": 1.194,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.086,
+     "eT": 0.054,
+     "quad": 0.101,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.05,
+     "eT": 0.039,
+     "quad": 0.064,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.05,
+     "eT": 1.184,
+     "quad": 1.185,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.064,
+    "eV": 0.05,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    1.495,
+    1.478,
+    1.537
+   ],
+   "hold_errs": [
+    2.058,
+    2.043,
+    2.085
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-21",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -35.2
+    ],
+    [
+     0.43,
+     0.621,
+     -53.9
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 2,
+    "min_v": -53.9,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.4159,
+   "nov_lib": 82.33,
+   "nov_splice": 60.96,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.024,
+     "eT": 0.247,
+     "quad": 1.054,
+     "pass": true,
+     "full": 1.024
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.024,
+     "eT": 1.143,
+     "quad": 1.535,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.413,
+     "eT": 0.119,
+     "quad": 0.429,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.413,
+     "eT": 1.174,
+     "quad": 1.245,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.146,
+     "eT": 0.081,
+     "quad": 0.167,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.146,
+     "eT": 1.196,
+     "quad": 1.205,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.086,
+     "eT": 0.054,
+     "quad": 0.101,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.051,
+     "eT": 0.039,
+     "quad": 0.064,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.051,
+     "eT": 1.196,
+     "quad": 1.197,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.064,
+    "eV": 0.051,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    3.065,
+    3.138,
+    3.035
+   ],
+   "hold_errs": [
+    3.195,
+    3.263,
+    3.212
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-22",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.43,
+     0.591,
+     -53.9
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -53.9,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.4165,
+   "nov_lib": 82.42,
+   "nov_splice": 54.86,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.028,
+     "eT": 0.247,
+     "quad": 1.057,
+     "pass": true,
+     "full": 1.028
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.028,
+     "eT": 1.146,
+     "quad": 1.54,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.413,
+     "eT": 0.119,
+     "quad": 0.43,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.413,
+     "eT": 1.176,
+     "quad": 1.247,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.146,
+     "eT": 0.081,
+     "quad": 0.167,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.146,
+     "eT": 1.197,
+     "quad": 1.206,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.086,
+     "eT": 0.054,
+     "quad": 0.102,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.051,
+     "eT": 0.039,
+     "quad": 0.064,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.051,
+     "eT": 1.198,
+     "quad": 1.199,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.064,
+    "eV": 0.051,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    2.189,
+    2.17,
+    2.188
+   ],
+   "hold_errs": [
+    2.593,
+    2.614,
+    2.634
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-23",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.43,
+     0.621,
+     -53.9
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -53.9,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.4168,
+   "nov_lib": 82.43,
+   "nov_splice": 61.08,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.028,
+     "eT": 0.247,
+     "quad": 1.057,
+     "pass": true,
+     "full": 1.028
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.028,
+     "eT": 1.146,
+     "quad": 1.539,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.415,
+     "eT": 0.119,
+     "quad": 0.431,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.415,
+     "eT": 1.178,
+     "quad": 1.249,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.147,
+     "eT": 0.081,
+     "quad": 0.168,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.147,
+     "eT": 1.199,
+     "quad": 1.208,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.086,
+     "eT": 0.054,
+     "quad": 0.102,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.051,
+     "eT": 0.039,
+     "quad": 0.064,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.051,
+     "eT": 1.198,
+     "quad": 1.199,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.064,
+    "eV": 0.051,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    2.292,
+    2.296,
+    2.269
+   ],
+   "hold_errs": [
+    2.679,
+    2.711,
+    2.706
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "c-24",
+   "role": "splice_failed_fill",
+   "zones": [
+    [
+     0.91,
+     0.971,
+     -40.8
+    ],
+    [
+     0.237,
+     0.365,
+     -28.6
+    ],
+    [
+     0.748,
+     0.919,
+     -42.7
+    ],
+    [
+     0.742,
+     0.815,
+     -27.2
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 2,
+    "min_v": -42.7,
+    "max_v": -27.2,
+    "noncanon_adjacent_boundaries": 2
+   },
+   "J": 1.4204,
+   "nov_lib": 84.18,
+   "nov_splice": 63.32,
+   "min_pairwise_D": Infinity,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.034,
+     "eT": 0.247,
+     "quad": 1.063,
+     "pass": true,
+     "full": 1.034
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.034,
+     "eT": 1.139,
+     "quad": 1.538,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.416,
+     "eT": 0.119,
+     "quad": 0.432,
+     "pass": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.416,
+     "eT": 1.178,
+     "quad": 1.249,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.142,
+     "eT": 0.081,
+     "quad": 0.164,
+     "pass": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.142,
+     "eT": 1.189,
+     "quad": 1.197,
+     "pass": true
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.083,
+     "eT": 0.054,
+     "quad": 0.099,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.05,
+     "eT": 0.039,
+     "quad": 0.064,
+     "pass": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.05,
+     "eT": 1.193,
+     "quad": 1.194,
+     "pass": true
+    }
+   ],
+   "audit_pass": true,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decomposition": {
+    "best_rung": [
+     64.0,
+     0.0
+    ],
+    "best_quad": 0.064,
+    "eV": 0.05,
+    "eT": 0.039,
+    "channel": "V_dominated"
+   },
+   "decode_errs": [
+    3.263,
+    3.276,
+    3.338
+   ],
+   "hold_errs": [
+    3.512,
+    3.443,
+    3.607
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  }
+ ],
+ "diagnostics": {
+  "ev_vs_etheta_decomposition_failed": {},
+  "channel_counts_all_fails": {
+   "V_dominated": 0,
+   "theta_dominated": 0
+  },
+  "spearman_nov_vs_best_rung_quad": -0.607,
+  "splice_kills_upstream": true,
+  "star_only_degradation": false
+ },
+ "criteria": {
+  "J1_minimum_revival": false,
+  "J2_C2_two_channel_audit": false,
+  "J3_C3_decode_stability": false,
+  "J4_no_free_parameter": true,
+  "C1_novelty_generation": false,
+  "C4_zero_anatomy_special": false
+ },
+ "gate_clauses_passed": 1,
+ "wall_s": 261.0,
+ "notes": "Instruments are exp136/exp141's imported verbatim; the ONLY change is the audit's operating point (extended frozen ladder + per-invention argmin selection). If J1 is REFUTED with gate-bearing candidates audited, the refutation localizes the killer INSIDE the audit channels (see the eV/eT decomposition); if the splice scan cleared nothing, the killer sits upstream of the audit, in the anti-recombination clause \u2014 exp141's audit never ran (its deposited funnel implies this), which this experiment tests directly."
+}
