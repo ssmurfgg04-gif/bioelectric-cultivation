@@ -1,0 +1,56 @@
+name: Experiment Batch
+
+# Generic matrix-dispatch runner fleet. Each matrix entry is an object:
+#   {"module": "exp135_walk_chain", "args": "--gamma 1 --n 400", "job_id": "B-g1"}
+# Dispatch via REST:
+#   curl -X POST -H "Authorization: token $TOKEN" \
+#     https://api.github.com/repos/ssmurfgg04-gif/bioelectric-cultivation/actions/workflows/experiments.yml/dispatches \
+#     -d '{"ref":"main","inputs":{"batch_id":"b1","workstream":"B","job_matrix":"{\"include\":[{\"module\":\"...\",\"args\":\"...\",\"job_id\":\"...\"}]}"}}'
+# Artifacts land as "<batch_id>-<job_id>" containing results/ written by the run.
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_id:
+        description: "batch identifier"
+        required: true
+      workstream:
+        description: "workstream label (A-E)"
+        required: true
+      job_matrix:
+        description: "JSON matrix object with include list of {module, args, job_id}"
+        required: true
+
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix: ${{ fromJSON(inputs.job_matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run ${{ matrix.module }} [${{ matrix.job_id }}]
+        env:
+          BATCH_ID: ${{ inputs.batch_id }}
+          WORKSTREAM: ${{ inputs.workstream }}
+        run: |
+          mkdir -p results/batches/${{ inputs.batch_id }}
+          python -m experiments.${{ matrix.module }} ${{ matrix.args }} \
+            --out results/batches/${{ inputs.batch_id }}/${{ matrix.job_id }}.json \
+          || python -m experiments.${{ matrix.module }} ${{ matrix.args }}
+      - name: Collect results
+        run: |
+          if [ -d results ]; then find results -type f | head -50; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.batch_id }}-${{ matrix.job_id }}
+          path: results/
+          if-no-files-found: warn
+          retention-days: 14
