@@ -1043,3 +1043,58 @@ and the literature.
   dynamics-limited; the overlap correction honestly retired; the
   writability boundary 100%; the price attributed to the propagation
   panel where exp62/65 measured it) (exp84).
+
+---
+
+### Stage scoreboard after the corpus-and-boundary batch (exp91-exp96)
+
+Ledger L73-L78. The batch: the named corpus residual closed as a
+RECORD property, the refusal price battery, the reader's scale-up,
+and the reader's domain boundary mechanized. Figures:
+`docs/figures/fig91_amplitude_axis.png`,
+`docs/figures/fig92_corpus_residual.png`.
+
+- Stage 2 金丹: **THE MORPHOGEN RESIDUAL IS A RECORD PROPERTY, NOT A
+  SIM GAP.** exp91 refuted L70's registered repair BY SATURATION as
+  pre-registered (the exp40 commitment grid is verdict-inert on the
+  full-corruption morphogen arms — the verdict fires pre-regrow;
+  flat 1.0 across 30 cells) and birthed the AMPLITUDE axis (the
+  corruption theta interpolation; monotone, Spearman 0.866,
+  threshold at d~0.4). exp92's fine ladder resolves the graded edge
+  (3/7 rate at d=0.40), the row-level class rule lands below bar
+  (phi 0.375 — the record's dose structure is gene-specific beyond
+  canonical classes), and the lesson chain (family -> class ->
+  within-class) terminates in the DB itself: NO DRUG CONCENTRATIONS
+  (exp33, L16) — the row-level dose is unknowable from the record.
+  Decoded MAE 0.304 -> 0.290; the leading residuals are now the
+  record's own variance floors. The sim-side Stage-2 queue is EMPTY.
+- Stage 3 金丹: **R5' IS NOW A MEASURED PRICE HIERARCHY — AND
+  BOUNDED.** exp93 prices every refusal as a dial distance in three
+  classes: writable-at-default (path/grid2d/random6/small_world),
+  theta-channel-priced (torus — the gamma ladder FAILS through 64 at
+  default mu and mu->0 alone buys it; the compiler-path attribution
+  reverses exp78's write-path finding), two-dial-priced (random3,
+  scale_free at the cheap bracket (4, 0) — the star point is
+  overkill on the verify path). exp94 scales the two-source read to
+  12 NEW topologies (11/12 verify, errors 0.49-3.34 mV; n=200
+  size scale included; no backdoor 12/12; canon load-bearing 12/12).
+  exp95+exp96 close the last refusal honestly: the deg-99 star is
+  an ARCHITECTURE refusal — no (gamma, mu) cell buys it (0/8), the
+  zones HOLD (the pole read fires), and the gaps/intact tissue
+  relax through the single-point integrator; a one-value clamp
+  cannot hold a heterogeneous pattern (the anchored floor is the
+  same 8.5). THE READER'S DOMAIN RULE, FINAL FORM: the two-source
+  read generalizes everywhere except the single-integrator extreme
+  — the boundary is topological, not a channel setting.
+- Method: three in-run instrument repairs owned this batch (the
+  dose-class keying no-op; the RNAi-knockout scoping; the
+  canon-value-sign guard that silently degraded exp94's first pass
+  0/12) — each exposed by a uniform-failure or bit-identical
+  signature and repaired before the gates were read. The honesty
+  discipline held: 2 of 6 experiments landed below their
+  registered bars and were deposited as refutations with the
+  mechanism named (exp95, exp96).
+- Open next: exp97 the per-edge hub anchor (an architecture
+  extension — the reader's open frontier); quest 001 literature
+  follow-up on the live zai stream; the token rotation (flagged,
+  non-blocking).
