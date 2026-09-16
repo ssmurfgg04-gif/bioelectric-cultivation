@@ -185,10 +185,14 @@ BELOW = AnatomySpec(
 
 def execute_two_source_n(spec: AnatomySpec, adjacency: np.ndarray,
                          seed: int, with_canon: bool = True,
-                         op: dict | None = None) -> dict:
+                         op: dict | None = None,
+                         anchor: list | None = None) -> dict:
     """exp90's execute_two_source generalized over n (and, since
     exp95, over the operating point — default STAR, which is what
-    exp94's deposited results used)."""
+    exp94's deposited results used; since exp96, an optional
+    settle-anchor: [(cell, voltage), ...] clamped through the 15h
+    settle and released 1h before the read — the exp75-77 slow-anchor
+    theorem applied to the reader)."""
     n = adjacency.shape[0]
     _op = op if op is not None else STAR
     gamma, mu = _op["gamma"], _op["mu"]
@@ -263,7 +267,13 @@ def execute_two_source_n(spec: AnatomySpec, adjacency: np.ndarray,
                 theta_new = c.theta[src] + c.rng.normal(0.0, 0.6)
             c.theta[i] = theta_new
             c.V[i] = theta_new
+    if anchor:
+        for cell_i, v in anchor:
+            c.clamp(slice(cell_i, cell_i + 1), v)
     c.run(15.0, dt=dt)
+    if anchor:
+        c.release_clamps()
+        c.run(1.0, dt=dt)
     per_zone = {}
     ok_all = True
     for z in spec.zones:

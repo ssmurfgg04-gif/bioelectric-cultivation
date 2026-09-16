@@ -3067,3 +3067,44 @@ Night seven, part 3. exp43's registered follow-up:
   12/12 and the exp75-77 theorem closes on the reader arc.
 - 67/67 tests untouched (exp94's executor gained a backward-
   compatible op kwarg; exp94's deposited results unchanged).
+
+## L78 — exp96 THE HUB ANCHOR (1/4 — the simple anchor REFUTED and the boundary MECHANIZED: all zones HOLD on the star; the failure is the gaps/intact tissue relaxing through the single-point integrator; a one-value clamp cannot hold a heterogeneous pattern)
+
+- THE REGISTERED REPAIR, TESTED AND REFUTED: clamping the hub to
+  its canon identity through the 15h settle (released 1h before the
+  read) leaves the star's multi-program error at the exp95 floor
+  (8.51 vs 8.53) — HA-G1/HA-G2/HA-G4 REFUTED. HA-G3 PASS (the
+  anchor is harmless: tree 0.52 / cycle 0.53 still verify).
+- THE DIAGNOSTIC THAT LOCALIZES THE MECHANISM (one-run, deposited):
+  per-zone means on the failed star run are z0 -29.7 / z1 -29.9 /
+  z2 -30.0 — ALL THREE ZONES HOLD. The pole read fires fine; the
+  rebuilt zone cells are exact. The pattern error (8.53) lives in
+  the GAP cells (between zones) and the INTACT spokes (76-99):
+  they relax toward the hub's mean during the settle — the hub
+  integrates the entire disc and the -20/-50 identity of the
+  non-zone tissue decays toward the -30 zone average.
+- WHY THE ANCHOR CANNOT WORK (the theorem's boundary, now stated
+  precisely): the hub's correct state IS one value (canon -20) —
+  clamping it changes nothing structural, because the drift is in
+  the SPOKES coupling THROUGH the hub; a one-value clamp just
+  re-biases which way the averaging pulls (the anchored floor is
+  the same 8.5 by error redistribution). Holding the spokes would
+  be the whole-pattern clamp — the trivial non-mechanism. The
+  exp75-77 anchor theorem applies when ONE node's slow state
+  anchors MANY; the star is the inverse case — ONE node
+  integrating MANY, which no per-cell program vocabulary (clamps,
+  walks, reads) can hold heterogeneous identity against.
+- THE READER'S DOMAIN RULE, FINAL FORM: the two-source read
+  generalizes to every topology tested (exp90's 7 + exp94's 11/12)
+  EXCEPT the single-integrator extreme (deg -> n). The boundary is
+  mechanized: local per-cell programs cannot preserve a
+  heterogeneous pattern against a topology whose single node
+  averages the whole sheet. The star graph is to the reader what
+  the scale_free hub was to the write path (exp73-79) — but THERE
+  the dials bought it, and HERE they cannot: the integration is
+  topological, not a channel setting.
+- REGISTERED (exp97, optional — an architecture extension, not a
+  quick run): a per-edge hub anchor (the hub speaks a different
+  value to each neighbor — beyond the current program vocabulary;
+  the minimal architecture that can hold the star). Deposited as
+  the reader's open frontier; the 67/67 suite untouched.
