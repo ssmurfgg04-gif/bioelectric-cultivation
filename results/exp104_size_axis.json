@@ -1,0 +1,100 @@
+{
+ "exp": "exp104_size_axis",
+ "arms": {
+  "path_n100": {
+   "rate": 1.0,
+   "err": 2.91
+  },
+  "path_n196": {
+   "rate": 1.0,
+   "err": 2.38
+  },
+  "path_n400": {
+   "rate": 1.0,
+   "err": 1.97
+  },
+  "path_n784": {
+   "rate": 1.0,
+   "err": 1.66
+  },
+  "grid2d_n100": {
+   "rate": 1.0,
+   "err": 5.0
+  },
+  "grid2d_n196": {
+   "rate": 1.0,
+   "err": 4.71
+  },
+  "grid2d_n400": {
+   "rate": 1.0,
+   "err": 4.6
+  },
+  "grid2d_n784": {
+   "rate": 1.0,
+   "err": 4.73
+  },
+  "torus_n100": {
+   "rate": 1.0,
+   "err": 3.82
+  },
+  "torus_n196": {
+   "rate": 1.0,
+   "err": 4.08
+  },
+  "torus_n400": {
+   "rate": 1.0,
+   "err": 4.4
+  },
+  "torus_n784": {
+   "rate": 1.0,
+   "err": 4.86
+  }
+ },
+ "sizes_used": {
+  "path": [
+   100,
+   196,
+   400,
+   784
+  ],
+  "grid2d": [
+   100,
+   196,
+   400,
+   784
+  ],
+  "torus": [
+   100,
+   196,
+   400,
+   784
+  ]
+ },
+ "ratios": {
+  "path": [
+   0.0606,
+   0.0308,
+   0.015,
+   0.0077
+  ],
+  "grid2d": [
+   0.3111,
+   0.2198,
+   0.1447,
+   0.1065
+  ],
+  "torus": [
+   0.34,
+   0.2449,
+   0.155,
+   0.1135
+  ]
+ },
+ "criteria": {
+  "SZ_G1_default_scales": true,
+  "SZ_G2_grid_at_scale": true,
+  "SZ_G3_torus_holds": true,
+  "SZ_G4_oracle_size_stable": false
+ },
+ "notes": "The price's n-scaling: 3 substrate families x 4 sizes x 3 seeds at their exp100 mapped minimal cells (path DEFAULT, grid2d V(64, 0.015), torus TWO(4, 0)). k=3 MULTI verbatim; the sag is the mean-field question."
+}

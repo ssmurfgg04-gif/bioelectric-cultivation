@@ -3503,3 +3503,51 @@ Night seven, part 3. exp43's registered follow-up:
   becomes a map: does DEFAULT survive at n=400/800 on path (its
   n=200 err 2.38 was BETTER than n=100's 2.91 — the sag dilutes?),
   and does the oracle's ratio hold its class calls across n?
+
+## L86 — exp104 THE SIZE AXIS (3/4 — the DEFAULT price DECAYS with size exactly as the mean-field picture predicts: path 2.91 -> 2.38 -> 1.97 -> 1.66 from n=100 to 784; the grid's V price is size-flat; the torus's two-dial price RISES; the ratio is class-stable but not size-invariant — BFS-order zones drift quasi-geometrically, owned)
+
+- THE MAP (k=3 MULTI verbatim, mapped exp100 cells, 3 seeds):
+  path (1, 0.015): 2.91 / 2.38 / 1.97 / 1.66 — ALL VERIFY, err
+  MONOTONE DOWN. The DEFAULT class does not just survive size, it
+  improves: the theta sag is a mean-field drag and bigger discs
+  dilute it (the per-zone mean averages ~1/sqrt(n) more noise
+  too). n=784 chain: the reader's cheapest run on the books.
+  grid2d (64, 0.015): 5.00 / 4.71 / 4.60 / 4.73 — verifies at
+  every size, err SIZE-FLAT: the grid's residual is its own local
+  pinning need, not a dilutable drag.
+  torus (4, 0): 3.82 / 4.08 / 4.40 / 4.86 — verifies at every
+  size but the price RISES. A real structural trend (well above
+  the noise floor), mechanism UNREGISTERED: candidate is the
+  commitment-noise compounding along the BFS walk order (the
+  exp32 sqrt(d) law) acting on the (4, 0) cell's weak gamma-4
+  pinning — registered, not claimed.
+- SZ-G4 REFUTED AND OWNED (the oracle's size transfer): the
+  boundary-to-volume ratio is NOT n-invariant at the registered
+  0.02 bar (path std 0.0203, grid2d 0.078, torus 0.087). The
+  cause: the identity partition rides labeling_bfs ORDER, and BFS
+  order is only quasi-geometric under lattice refinement — the
+  zone-boundary placement shifts, crossings drift. THE HONEST
+  VERDICT: the class calls TRANSFER (every family's ratios stay
+  inside its exp102 class band), but oracle v1 is calibrated at
+  n=100 and its ratio is class-level, not ratio-level, across
+  size. The 0.02 bar assumed a cleaner invariant than BFS-order
+  zones provide — the bar was miscalibrated, the transfer holds
+  at the class level it was built for.
+- ARC CONSEQUENCE: the reader's dial budget is now mapped over
+  THREE axes — substrate (19 substrates, exp100), zone count
+  (through 12, exp101/exp103), and size (to n=784, exp104) — with
+  no refusal anywhere and the prices' shapes deposited (decay on
+  the DEFAULT path, flat under pinning, rising on the two-dial
+  torus). The compiler's operating manual now says: read the
+  ratio, pick the cell, pay the tag.
+- REGISTERED (exp105): THE TORUS'S RISING PRICE — the mechanism
+  probe. The two live candidates: (a) BFS-walk commitment-noise
+  compounding (the exp32 sqrt(d) law acting through the walk's
+  inheritance fallback on longer orders) — test by re-running the
+  torus n-ladder with the commitment noise OFF (the spec-read
+  branch dominates on the torus; the probe: does the n-trend
+  flatten when the walk's noise scale drops?); (b) the (4, 0)
+  cell's gamma-4 window pinning losing ground on longer windows —
+  test by the (16, 0) cell's n-trend (stronger pinning should
+  flatten the rise). Whichever flattens the trend names the
+  mechanism; deposit both ladders.
