@@ -1,0 +1,1358 @@
+{
+ "exp": "exp142_sign_read",
+ "claim": "the minimum semantics extension of the universal reader \u2014 sign-preserving symmetrize (R3) + the signed-weight rule (R1 structure on |A|, R2 signed dynamics) \u2014 carries SIGN into the decode: fidelity on exp137's two degraded classes, sign-flip adversarial separation at the verdict level, and a strict-superset in-domain control",
+ "pre_registration": {
+  "signed_weight_rule": [
+   "R1 structure on |A|: canon labeling labeling_bfs_n(|A|), dt = star_dt(gamma, max_i sum_j |A_ij|), frontier and BFS traversal on |A[i,j]| > 0 (the exp137-named A[i]>0 filter dropped)",
+   "R2 sign in the dynamics: the coupling consumes the SIGNED matrix (GraphCollective on A as-is); no commit-time reflection is invented",
+   "R3 projection: Re(W_t) -> (R+R^T)/2 -> time-average, zero diagonal (the ONLY change from exp137's |W_t| front-end); bit-identical to exp137 on all-positive real media"
+  ],
+  "gates": {
+   "H1_fidelity_improves": {
+    "pass": true,
+    "signed_median": 0.575,
+    "signed_bar": 0.6,
+    "signed_exp137": 0.685,
+    "complex_median": 0.525,
+    "complex_bar": 0.63,
+    "complex_exp137": 0.715
+   },
+   "H2_verdict_separation": {
+    "pass": true,
+    "n_pairs": 12,
+    "n_probes": 24,
+    "magnitude_sign_blind_pairs": 12,
+    "separated_pairs": [
+     "F1_zone_tail@64",
+     "F1_zone_tail@256",
+     "F2_zone_head@64",
+     "F2_zone_head@256",
+     "F3_canon_boundary@256"
+    ],
+    "verdict_changed_vs_magnitude": [
+     "F1_zone_tail@64",
+     "F1_zone_tail@256",
+     "F2_zone_head@64",
+     "F2_zone_head@256",
+     "F3_canon_boundary@256"
+    ]
+   },
+   "H3_strict_superset": {
+    "pass": true,
+    "bit_identical": true,
+    "mag_median": 0.55,
+    "sign_median": 0.55,
+    "verify_mag": 1.0,
+    "verify_sign": 1.0,
+    "backstop_pass": true
+   },
+   "H4_zero_rejections": {
+    "pass": true,
+    "rejections": 0,
+    "n_decodes": 210
+   }
+  },
+  "dose_ladder": [
+   4.0,
+   16.0,
+   64.0,
+   256.0
+  ],
+  "carrier_families": [
+   "F1_zone_tail",
+   "F2_zone_head",
+   "F3_canon_boundary"
+  ]
+ },
+ "config": {
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "spec": "MULTI (exp94)",
+  "frontier": "walk",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "control": "torus (exp73 battery)",
+  "probe_seed": 7,
+  "k_chords": 6
+ },
+ "control": {
+  "substrate": "torus",
+  "magnitude_errs": [
+   0.55,
+   0.51,
+   0.55
+  ],
+  "sign_errs": [
+   0.55,
+   0.51,
+   0.55
+  ],
+  "magnitude_verify": 1.0,
+  "sign_verify": 1.0,
+  "bit_identical": true,
+  "mag_median": 0.55,
+  "sign_median": 0.55,
+  "backstop_pass": true
+ },
+ "ood": {
+  "signed": {
+   "rejections": 0,
+   "err_median": 0.575,
+   "err_max": 0.67,
+   "err_native_median": 0.5726486379075164,
+   "verify_rate": 1.0,
+   "instances": [
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.57,
+     "err_native": 0.57,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.5,
+     "err_native": 0.5,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.52,
+     "err_native": 0.52,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.58,
+     "err_native": 0.58,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.53,
+     "err_native": 0.53,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.58,
+     "err_native": 0.58,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.59,
+     "err_native": 0.59,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.59,
+     "err_native": 0.59,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.54,
+     "err_native": 0.54,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.5,
+     "err_native": 0.5,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.55,
+     "err_native": 0.55,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.56,
+     "err_native": 0.56,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.51,
+     "err_native": 0.51,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.48,
+     "err_native": 0.48,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.49,
+     "err_native": 0.49,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.53,
+     "err_native": 0.53,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.54,
+     "err_native": 0.54,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.52,
+     "err_native": 0.52,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.58,
+     "err_native": 0.58,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.54,
+     "err_native": 0.54,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 0.64,
+     "err_native": 0.64,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 0.67,
+     "err_native": 0.67,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 0.64,
+     "err_native": 0.64,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 0.64,
+     "err_native": 0.64,
+     "verified": true
+    }
+   ]
+  },
+  "complex_phase": {
+   "rejections": 0,
+   "err_median": 0.525,
+   "err_max": 0.62,
+   "err_native_median": 0.5256462734275926,
+   "verify_rate": 1.0,
+   "instances": [
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.52,
+     "err_native": 0.52,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.51,
+     "err_native": 0.51,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.53,
+     "err_native": 0.53,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.54,
+     "err_native": 0.54,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.49,
+     "err_native": 0.49,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.54,
+     "err_native": 0.54,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.47,
+     "err_native": 0.47,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.52,
+     "err_native": 0.52,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.49,
+     "err_native": 0.49,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.52,
+     "err_native": 0.52,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.5,
+     "err_native": 0.5,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.52,
+     "err_native": 0.52,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.53,
+     "err_native": 0.53,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.59,
+     "err_native": 0.59,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.44,
+     "err_native": 0.44,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.49,
+     "err_native": 0.49,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.53,
+     "err_native": 0.53,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.48,
+     "err_native": 0.48,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.54,
+     "err_native": 0.54,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.57,
+     "err_native": 0.57,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.49,
+     "err_native": 0.49,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.51,
+     "err_native": 0.51,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.51,
+     "err_native": 0.51,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.56,
+     "err_native": 0.56,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 0.62,
+     "err_native": 0.62,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 0.62,
+     "err_native": 0.62,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 0.62,
+     "err_native": 0.62,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 0.62,
+     "err_native": 0.62,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 0.62,
+     "err_native": 0.62,
+     "verified": true
+    }
+   ]
+  }
+ },
+ "exp137_reference": {
+  "signed_median": 0.685,
+  "complex_phase_median": 0.715
+ },
+ "probes": {
+  "pairs": [
+   {
+    "family": "F1_zone_tail",
+    "dose": 4.0,
+    "n_chords": 6,
+    "magnitude_sign_blind": true,
+    "sign_separated": false,
+    "verdict_changed_vs_magnitude": false,
+    "arms": {
+     "magnitude+": {
+      "errs": [
+       0.48,
+       0.59,
+       0.48
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "magnitude-": {
+      "errs": [
+       0.48,
+       0.59,
+       0.48
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign+": {
+      "errs": [
+       0.48,
+       0.59,
+       0.48
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign-": {
+      "errs": [
+       0.52,
+       0.58,
+       0.48
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     }
+    }
+   },
+   {
+    "family": "F1_zone_tail",
+    "dose": 16.0,
+    "n_chords": 6,
+    "magnitude_sign_blind": true,
+    "sign_separated": false,
+    "verdict_changed_vs_magnitude": false,
+    "arms": {
+     "magnitude+": {
+      "errs": [
+       0.81,
+       0.83,
+       0.91
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "magnitude-": {
+      "errs": [
+       0.81,
+       0.83,
+       0.91
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign+": {
+      "errs": [
+       0.81,
+       0.83,
+       0.91
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign-": {
+      "errs": [
+       1.19,
+       1.1,
+       1.13
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     }
+    }
+   },
+   {
+    "family": "F1_zone_tail",
+    "dose": 64.0,
+    "n_chords": 6,
+    "magnitude_sign_blind": true,
+    "sign_separated": true,
+    "verdict_changed_vs_magnitude": true,
+    "arms": {
+     "magnitude+": {
+      "errs": [
+       1.93,
+       1.9,
+       1.93
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "magnitude-": {
+      "errs": [
+       1.93,
+       1.9,
+       1.93
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign+": {
+      "errs": [
+       1.93,
+       1.9,
+       1.93
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign-": {
+      "errs": [
+       8.89,
+       8.98,
+       8.85
+      ],
+      "verify": [
+       false,
+       false,
+       false
+      ],
+      "majority": false
+     }
+    }
+   },
+   {
+    "family": "F1_zone_tail",
+    "dose": 256.0,
+    "n_chords": 6,
+    "magnitude_sign_blind": true,
+    "sign_separated": true,
+    "verdict_changed_vs_magnitude": true,
+    "arms": {
+     "magnitude+": {
+      "errs": [
+       3.18,
+       3.16,
+       3.17
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "magnitude-": {
+      "errs": [
+       3.18,
+       3.16,
+       3.17
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign+": {
+      "errs": [
+       3.18,
+       3.16,
+       3.17
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign-": {
+      "errs": [
+       13.86,
+       13.87,
+       13.87
+      ],
+      "verify": [
+       false,
+       false,
+       false
+      ],
+      "majority": false
+     }
+    }
+   },
+   {
+    "family": "F2_zone_head",
+    "dose": 4.0,
+    "n_chords": 6,
+    "magnitude_sign_blind": true,
+    "sign_separated": false,
+    "verdict_changed_vs_magnitude": false,
+    "arms": {
+     "magnitude+": {
+      "errs": [
+       0.51,
+       0.58,
+       0.48
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "magnitude-": {
+      "errs": [
+       0.51,
+       0.58,
+       0.48
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign+": {
+      "errs": [
+       0.51,
+       0.58,
+       0.48
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign-": {
+      "errs": [
+       0.53,
+       0.58,
+       0.49
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     }
+    }
+   },
+   {
+    "family": "F2_zone_head",
+    "dose": 16.0,
+    "n_chords": 6,
+    "magnitude_sign_blind": true,
+    "sign_separated": false,
+    "verdict_changed_vs_magnitude": false,
+    "arms": {
+     "magnitude+": {
+      "errs": [
+       0.66,
+       0.62,
+       0.63
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "magnitude-": {
+      "errs": [
+       0.66,
+       0.62,
+       0.63
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign+": {
+      "errs": [
+       0.66,
+       0.62,
+       0.63
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign-": {
+      "errs": [
+       1.07,
+       1.01,
+       1.08
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     }
+    }
+   },
+   {
+    "family": "F2_zone_head",
+    "dose": 64.0,
+    "n_chords": 6,
+    "magnitude_sign_blind": true,
+    "sign_separated": true,
+    "verdict_changed_vs_magnitude": true,
+    "arms": {
+     "magnitude+": {
+      "errs": [
+       0.94,
+       1.0,
+       0.95
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "magnitude-": {
+      "errs": [
+       0.94,
+       1.0,
+       0.95
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign+": {
+      "errs": [
+       0.94,
+       1.0,
+       0.95
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign-": {
+      "errs": [
+       6.21,
+       6.35,
+       6.17
+      ],
+      "verify": [
+       false,
+       false,
+       false
+      ],
+      "majority": false
+     }
+    }
+   },
+   {
+    "family": "F2_zone_head",
+    "dose": 256.0,
+    "n_chords": 6,
+    "magnitude_sign_blind": true,
+    "sign_separated": true,
+    "verdict_changed_vs_magnitude": true,
+    "arms": {
+     "magnitude+": {
+      "errs": [
+       1.26,
+       1.28,
+       1.25
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "magnitude-": {
+      "errs": [
+       1.26,
+       1.28,
+       1.25
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign+": {
+      "errs": [
+       1.26,
+       1.28,
+       1.25
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign-": {
+      "errs": [
+       13.68,
+       13.69,
+       13.69
+      ],
+      "verify": [
+       false,
+       false,
+       false
+      ],
+      "majority": false
+     }
+    }
+   },
+   {
+    "family": "F3_canon_boundary",
+    "dose": 4.0,
+    "n_chords": 6,
+    "magnitude_sign_blind": true,
+    "sign_separated": false,
+    "verdict_changed_vs_magnitude": false,
+    "arms": {
+     "magnitude+": {
+      "errs": [
+       0.51,
+       0.61,
+       0.43
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "magnitude-": {
+      "errs": [
+       0.51,
+       0.61,
+       0.43
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign+": {
+      "errs": [
+       0.51,
+       0.61,
+       0.43
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign-": {
+      "errs": [
+       0.46,
+       0.55,
+       0.47
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     }
+    }
+   },
+   {
+    "family": "F3_canon_boundary",
+    "dose": 16.0,
+    "n_chords": 6,
+    "magnitude_sign_blind": true,
+    "sign_separated": false,
+    "verdict_changed_vs_magnitude": false,
+    "arms": {
+     "magnitude+": {
+      "errs": [
+       0.71,
+       0.65,
+       0.73
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "magnitude-": {
+      "errs": [
+       0.71,
+       0.65,
+       0.73
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign+": {
+      "errs": [
+       0.71,
+       0.65,
+       0.73
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign-": {
+      "errs": [
+       0.66,
+       0.68,
+       0.78
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     }
+    }
+   },
+   {
+    "family": "F3_canon_boundary",
+    "dose": 64.0,
+    "n_chords": 6,
+    "magnitude_sign_blind": true,
+    "sign_separated": false,
+    "verdict_changed_vs_magnitude": false,
+    "arms": {
+     "magnitude+": {
+      "errs": [
+       1.27,
+       1.31,
+       1.37
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "magnitude-": {
+      "errs": [
+       1.27,
+       1.31,
+       1.37
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign+": {
+      "errs": [
+       1.27,
+       1.31,
+       1.37
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign-": {
+      "errs": [
+       5.27,
+       4.96,
+       4.75
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     }
+    }
+   },
+   {
+    "family": "F3_canon_boundary",
+    "dose": 256.0,
+    "n_chords": 6,
+    "magnitude_sign_blind": true,
+    "sign_separated": true,
+    "verdict_changed_vs_magnitude": true,
+    "arms": {
+     "magnitude+": {
+      "errs": [
+       2.2,
+       2.22,
+       2.22
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "magnitude-": {
+      "errs": [
+       2.2,
+       2.22,
+       2.22
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign+": {
+      "errs": [
+       2.2,
+       2.22,
+       2.22
+      ],
+      "verify": [
+       true,
+       true,
+       true
+      ],
+      "majority": true
+     },
+     "sign-": {
+      "errs": [
+       16.04,
+       16.65,
+       16.65
+      ],
+      "verify": [
+       false,
+       false,
+       false
+      ],
+      "majority": false
+     }
+    }
+   }
+  ],
+  "n_pairs": 12,
+  "n_probes": 24,
+  "magnitude_sign_blind_pairs": 12,
+  "separated_pairs": [
+   "F1_zone_tail@64",
+   "F1_zone_tail@256",
+   "F2_zone_head@64",
+   "F2_zone_head@256",
+   "F3_canon_boundary@256"
+  ],
+  "verdict_changed_vs_magnitude": [
+   "F1_zone_tail@64",
+   "F1_zone_tail@256",
+   "F2_zone_head@64",
+   "F2_zone_head@256",
+   "F3_canon_boundary@256"
+  ]
+ },
+ "gates": {
+  "H1_fidelity_improves": {
+   "pass": true,
+   "signed_median": 0.575,
+   "signed_bar": 0.6,
+   "signed_exp137": 0.685,
+   "complex_median": 0.525,
+   "complex_bar": 0.63,
+   "complex_exp137": 0.715
+  },
+  "H2_verdict_separation": {
+   "pass": true,
+   "n_pairs": 12,
+   "n_probes": 24,
+   "magnitude_sign_blind_pairs": 12,
+   "separated_pairs": [
+    "F1_zone_tail@64",
+    "F1_zone_tail@256",
+    "F2_zone_head@64",
+    "F2_zone_head@256",
+    "F3_canon_boundary@256"
+   ],
+   "verdict_changed_vs_magnitude": [
+    "F1_zone_tail@64",
+    "F1_zone_tail@256",
+    "F2_zone_head@64",
+    "F2_zone_head@256",
+    "F3_canon_boundary@256"
+   ]
+  },
+  "H3_strict_superset": {
+   "pass": true,
+   "bit_identical": true,
+   "mag_median": 0.55,
+   "sign_median": 0.55,
+   "verify_mag": 1.0,
+   "verify_sign": 1.0,
+   "backstop_pass": true
+  },
+  "H4_zero_rejections": {
+   "pass": true,
+   "rejections": 0,
+   "n_decodes": 210
+  }
+ },
+ "verdict": "4/4 gates",
+ "runtime_s": 48.7
+}
