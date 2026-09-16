@@ -1,0 +1,1630 @@
+{
+ "exp": "exp137_universal_reader",
+ "claim": "M33-class reading generalizes to media outside the 19-type domain with zero rejections and bounded quality loss (one reader configuration, no per-medium re-tuning)",
+ "config": {
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "spec": "MULTI (exp94)",
+  "frontier": "walk",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "projection": "magnitude -> symmetrize -> time-average -> pairwise (|w_e|/(|e|-1) factorization)",
+  "contract": [
+   "A-SYM",
+   "A-NN",
+   "A-REAL",
+   "A-PAIR",
+   "A-STAT",
+   "A-CW"
+  ]
+ },
+ "in_domain": {
+  "path": {
+   "err_median": 0.51,
+   "errs": [
+    0.57,
+    0.51,
+    0.5
+   ],
+   "verify_rate": 1.0
+  },
+  "grid2d": {
+   "err_median": 0.49,
+   "errs": [
+    0.49,
+    0.49,
+    0.5
+   ],
+   "verify_rate": 1.0
+  },
+  "torus": {
+   "err_median": 0.55,
+   "errs": [
+    0.55,
+    0.51,
+    0.55
+   ],
+   "verify_rate": 1.0
+  },
+  "random3": {
+   "err_median": 0.55,
+   "errs": [
+    0.6,
+    0.51,
+    0.55
+   ],
+   "verify_rate": 1.0
+  },
+  "random6": {
+   "err_median": 0.48,
+   "errs": [
+    0.48,
+    0.57,
+    0.47
+   ],
+   "verify_rate": 1.0
+  },
+  "scale_free": {
+   "err_median": 0.69,
+   "errs": [
+    0.71,
+    0.69,
+    0.65
+   ],
+   "verify_rate": 1.0
+  },
+  "small_world": {
+   "err_median": 0.49,
+   "errs": [
+    0.55,
+    0.47,
+    0.49
+   ],
+   "verify_rate": 1.0
+  },
+  "tree": {
+   "err_median": 0.51,
+   "errs": [
+    0.59,
+    0.49,
+    0.51
+   ],
+   "verify_rate": 1.0
+  },
+  "star": {
+   "err_median": 1.02,
+   "errs": [
+    1.01,
+    1.03,
+    1.02
+   ],
+   "verify_rate": 1.0
+  },
+  "cycle": {
+   "err_median": 0.51,
+   "errs": [
+    0.57,
+    0.51,
+    0.5
+   ],
+   "verify_rate": 1.0
+  },
+  "ladder": {
+   "err_median": 0.5,
+   "errs": [
+    0.56,
+    0.48,
+    0.5
+   ],
+   "verify_rate": 1.0
+  },
+  "barbell": {
+   "err_median": 0.87,
+   "errs": [
+    0.87,
+    0.87,
+    0.87
+   ],
+   "verify_rate": 1.0
+  },
+  "complete": {
+   "err_median": 3.37,
+   "errs": [
+    3.37,
+    3.41,
+    3.31
+   ],
+   "verify_rate": 1.0
+  },
+  "bipartite": {
+   "err_median": 2.9,
+   "errs": [
+    2.88,
+    2.9,
+    2.95
+   ],
+   "verify_rate": 1.0
+  },
+  "grid_elong": {
+   "err_median": 0.52,
+   "errs": [
+    0.54,
+    0.47,
+    0.52
+   ],
+   "verify_rate": 1.0
+  },
+  "torus_elong": {
+   "err_median": 0.55,
+   "errs": [
+    0.55,
+    0.53,
+    0.55
+   ],
+   "verify_rate": 1.0
+  },
+  "random8": {
+   "err_median": 0.56,
+   "errs": [
+    0.56,
+    0.66,
+    0.56
+   ],
+   "verify_rate": 1.0
+  },
+  "path200": {
+   "err_median": 0.48,
+   "errs": [
+    0.52,
+    0.46,
+    0.48
+   ],
+   "verify_rate": 1.0
+  },
+  "scale_free200": {
+   "err_median": 0.61,
+   "errs": [
+    0.61,
+    0.64,
+    0.6
+   ],
+   "verify_rate": 1.0
+  }
+ },
+ "in_domain_pooled_median_err": 0.55,
+ "raw_probes": {
+  "dag": {
+   "violated": [
+    "A-SYM"
+   ],
+   "probe": "ran",
+   "warnings": [],
+   "err": 1.18,
+   "verified": true,
+   "coerced": false
+  },
+  "signed": {
+   "violated": [
+    "A-NN"
+   ],
+   "probe": "ran",
+   "warnings": [],
+   "err": 1.52,
+   "verified": true,
+   "coerced": false
+  },
+  "complex_phase": {
+   "violated": [
+    "A-REAL"
+   ],
+   "probe": "ran",
+   "warnings": [
+    "ComplexWarning",
+    "ComplexWarning",
+    "ComplexWarning",
+    "ComplexWarning",
+    "ComplexWarning",
+    "ComplexWarning"
+   ],
+   "err": 2.08,
+   "verified": true,
+   "coerced": true
+  },
+  "hypergraph": {
+   "violated": [
+    "A-PAIR"
+   ],
+   "probe": "interface-absent",
+   "note": "no n x n coupling object exists to pass \u2014 A-PAIR violation blocks invocation itself"
+  },
+  "time_varying": {
+   "violated": [
+    "A-STAT"
+   ],
+   "proxy": "first snapshot (most favorable static choice)",
+   "probe": "ran",
+   "warnings": [],
+   "err": 0.66,
+   "verified": true,
+   "coerced": false
+  },
+  "open_world": {
+   "violated": [
+    "A-CW",
+    "A-STAT"
+   ],
+   "proxy": "first realized snapshot (union unobservable)",
+   "probe": "ran",
+   "warnings": [],
+   "err": 1.48,
+   "verified": true,
+   "coerced": false
+  }
+ },
+ "ood": {
+  "dag": {
+   "violated": [
+    "A-SYM"
+   ],
+   "rejections": 0,
+   "err_median": 0.6,
+   "err_max": 1.24,
+   "err_native_median": 0.6012925601447501,
+   "verify_rate": 1.0,
+   "instances": [
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.62,
+     "err_native": 0.62,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.65,
+     "err_native": 0.65,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.58,
+     "err_native": 0.58,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.64,
+     "err_native": 0.64,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.54,
+     "err_native": 0.54,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.56,
+     "err_native": 0.56,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.55,
+     "err_native": 0.55,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.63,
+     "err_native": 0.63,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.57,
+     "err_native": 0.57,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.64,
+     "err_native": 0.64,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.58,
+     "err_native": 0.58,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.53,
+     "err_native": 0.53,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.63,
+     "err_native": 0.63,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.52,
+     "err_native": 0.52,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.55,
+     "err_native": 0.55,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.59,
+     "err_native": 0.59,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.55,
+     "err_native": 0.55,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.45,
+     "err_native": 0.45,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.56,
+     "err_native": 0.56,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.22,
+     "err_native": 1.22,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.19,
+     "err_native": 1.19,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.19,
+     "err_native": 1.19,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.24,
+     "err_native": 1.24,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.23,
+     "err_native": 1.23,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.22,
+     "err_native": 1.22,
+     "verified": true
+    }
+   ]
+  },
+  "signed": {
+   "violated": [
+    "A-NN"
+   ],
+   "rejections": 0,
+   "err_median": 0.685,
+   "err_max": 1.69,
+   "err_native_median": 0.6851280482816104,
+   "verify_rate": 1.0,
+   "instances": [
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.67,
+     "err_native": 0.67,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.74,
+     "err_native": 0.74,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.71,
+     "err_native": 0.71,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.67,
+     "err_native": 0.67,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.58,
+     "err_native": 0.58,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.67,
+     "err_native": 0.67,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.71,
+     "err_native": 0.71,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.71,
+     "err_native": 0.71,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.67,
+     "err_native": 0.67,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.71,
+     "err_native": 0.71,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.78,
+     "err_native": 0.78,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.77,
+     "err_native": 0.77,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.59,
+     "err_native": 0.59,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.63,
+     "err_native": 0.63,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.71,
+     "err_native": 0.71,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.56,
+     "err_native": 0.56,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.69,
+     "err_native": 1.69,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.64,
+     "err_native": 1.64,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.64,
+     "err_native": 1.64,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.66,
+     "err_native": 1.66,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.68,
+     "err_native": 1.68,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.68,
+     "err_native": 1.68,
+     "verified": true
+    }
+   ]
+  },
+  "complex_phase": {
+   "violated": [
+    "A-REAL"
+   ],
+   "rejections": 0,
+   "err_median": 0.715,
+   "err_max": 1.72,
+   "err_native_median": 0.7139436489631965,
+   "verify_rate": 1.0,
+   "instances": [
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.72,
+     "err_native": 0.72,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.73,
+     "err_native": 0.73,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.72,
+     "err_native": 0.72,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.71,
+     "err_native": 0.71,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.72,
+     "err_native": 0.72,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.64,
+     "err_native": 0.64,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.69,
+     "err_native": 0.69,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.65,
+     "err_native": 0.65,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.74,
+     "err_native": 0.74,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.63,
+     "err_native": 0.63,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.64,
+     "err_native": 0.64,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.68,
+     "err_native": 0.68,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.78,
+     "err_native": 0.78,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.76,
+     "err_native": 0.76,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.75,
+     "err_native": 0.75,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.72,
+     "err_native": 0.72,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.6,
+     "err_native": 1.6,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.62,
+     "err_native": 1.62,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.61,
+     "err_native": 1.61,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.69,
+     "err_native": 1.69,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.72,
+     "err_native": 1.72,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.71,
+     "err_native": 1.71,
+     "verified": true
+    }
+   ]
+  },
+  "hypergraph": {
+   "violated": [
+    "A-PAIR"
+   ],
+   "rejections": 0,
+   "err_median": 0.59,
+   "err_max": 0.69,
+   "err_native_median": 0.5857774860195554,
+   "verify_rate": 1.0,
+   "instances": [
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.59,
+     "err_native": 0.59,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.69,
+     "err_native": 0.69,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.63,
+     "err_native": 0.63,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.57,
+     "err_native": 0.57,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.55,
+     "err_native": 0.55,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.52,
+     "err_native": 0.52,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.54,
+     "err_native": 0.54,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.58,
+     "err_native": 0.58,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.56,
+     "err_native": 0.56,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.62,
+     "err_native": 0.62,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.68,
+     "err_native": 0.68,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.69,
+     "err_native": 0.69,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.59,
+     "err_native": 0.59,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.57,
+     "err_native": 0.57,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.64,
+     "err_native": 0.64,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.56,
+     "err_native": 0.56,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.49,
+     "err_native": 0.49,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.57,
+     "err_native": 0.57,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.57,
+     "err_native": 0.57,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.56,
+     "err_native": 0.56,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.5,
+     "err_native": 0.5,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 0.59,
+     "err_native": 0.59,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 0.59,
+     "err_native": 0.59,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 0.57,
+     "err_native": 0.57,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 0.59,
+     "err_native": 0.59,
+     "verified": true
+    }
+   ]
+  },
+  "time_varying": {
+   "violated": [
+    "A-STAT"
+   ],
+   "rejections": 0,
+   "err_median": 0.72,
+   "err_max": 1.9,
+   "err_native_median": 0.7208639212837544,
+   "verify_rate": 1.0,
+   "instances": [
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.72,
+     "err_native": 0.72,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.75,
+     "err_native": 0.75,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.61,
+     "err_native": 0.61,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.65,
+     "err_native": 0.65,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.71,
+     "err_native": 0.71,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.67,
+     "err_native": 0.67,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.7,
+     "err_native": 0.7,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.72,
+     "err_native": 0.72,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.75,
+     "err_native": 0.75,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.72,
+     "err_native": 0.72,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.73,
+     "err_native": 0.73,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.75,
+     "err_native": 0.75,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.71,
+     "err_native": 0.71,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.75,
+     "err_native": 0.75,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.79,
+     "err_native": 0.79,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.82,
+     "err_native": 0.82,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.66,
+     "err_native": 0.66,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.73,
+     "err_native": 0.73,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.86,
+     "err_native": 1.86,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.89,
+     "err_native": 1.89,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.9,
+     "err_native": 1.9,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.86,
+     "err_native": 1.86,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.89,
+     "err_native": 1.89,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.89,
+     "err_native": 1.89,
+     "verified": true
+    }
+   ]
+  },
+  "open_world": {
+   "violated": [
+    "A-CW",
+    "A-STAT"
+   ],
+   "rejections": 0,
+   "err_median": 0.56,
+   "err_max": 1.03,
+   "err_native_median": 0.5552809885628752,
+   "verify_rate": 1.0,
+   "instances": [
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.48,
+     "err_native": 0.48,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.47,
+     "err_native": 0.47,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.53,
+     "err_native": 0.53,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.48,
+     "err_native": 0.48,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.58,
+     "err_native": 0.58,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.53,
+     "err_native": 0.53,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.55,
+     "err_native": 0.55,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.56,
+     "err_native": 0.56,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.59,
+     "err_native": 0.59,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.52,
+     "err_native": 0.52,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.53,
+     "err_native": 0.53,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.56,
+     "err_native": 0.56,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.51,
+     "err_native": 0.51,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.56,
+     "err_native": 0.56,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.55,
+     "err_native": 0.55,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.47,
+     "err_native": 0.47,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.56,
+     "err_native": 0.56,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.54,
+     "err_native": 0.54,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.58,
+     "err_native": 0.58,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.54,
+     "err_native": 0.54,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 1,
+     "err": 0.53,
+     "err_native": 0.53,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 2,
+     "err": 0.6,
+     "err_native": 0.6,
+     "verified": true
+    },
+    {
+     "n": 100,
+     "seed": 3,
+     "err": 0.63,
+     "err_native": 0.63,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.0,
+     "err_native": 1.0,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.01,
+     "err_native": 1.01,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 1.03,
+     "err_native": 1.03,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 1,
+     "err": 1.0,
+     "err_native": 1.0,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 2,
+     "err": 1.02,
+     "err_native": 1.02,
+     "verified": true
+    },
+    {
+     "n": 400,
+     "seed": 3,
+     "err": 0.99,
+     "err_native": 0.99,
+     "verified": true
+    }
+   ]
+  }
+ },
+ "ood_pooled_median_err": 0.65,
+ "gates": {
+  "D1_domain": {
+   "pass": true,
+   "n_classes": 6,
+   "distinct_violation_sets": 6
+  },
+  "D2_zero_rejections": {
+   "pass": true,
+   "rejections": 0,
+   "n_decodes": 180
+  },
+  "D3_bounded_fidelity": {
+   "pass": true,
+   "ood_median_err": 0.65,
+   "in_domain_median_err": 0.55,
+   "bound_ratio": 2.0,
+   "ratio_realized": 1.1818181818181817
+  },
+  "D4_one_configuration": {
+   "pass": true,
+   "audit": "one projection function, one executor call site, op=STAR, spec=MULTI, frontier=walk, seeds=(1,2,3) for all classes and the baseline"
+  }
+ },
+ "verdict": "4/4 gates",
+ "runtime_s": 67.5
+}
