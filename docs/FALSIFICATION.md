@@ -2690,3 +2690,46 @@ Night seven, part 3. exp43's registered follow-up:
 - NEXT (derived): the corpus MAE residual (0.522 -> <0.15, the
   Stage-2 closure); Stage-4 maintenance frontier completion;
   quest 001 on the restored quota (ZAI-OK verified this session).
+
+## L70 — exp88 THE CORPUS RE-WIRING (3/4 — the stale block collapses, the residual NAMED; the <0.15 target not reached this pass)
+- THE DECOMPOSITION FINDING (in-run, pre-work): exp70's corpus MAE
+  0.522 was dominated by ONE STALE BLOCK — ('generic','trunk') n=256
+  contributing 229 (43%): sim 0.0 vs recorded 1.0. The cause was
+  WIRING, not mechanism: exp70's run_arm dropped exp60/exp83's 24h
+  PROTOCOL-DEVELOPMENT window (the phenotype develops before the
+  cut; exp83's verified N1 protocol includes it). The neoblast arm
+  predated exp86 (no digest repair, no M33 read, a stray
+  commitment_diffusion term); the cutting group's 1.0-series
+  contradicts the DB's own control family (0.0 head / 0.38 trunk /
+  0.49 tail by plane); the morphogen wnt rows record ~0.40 (partial
+  drug modulation) vs the sim's full-corruption 1.0.
+- THE RE-WIRING (no fitted parameters): C1 the 24h protocol window
+  restored to every corpus arm; C2 the neoblast arm = the exp86
+  adopted composition; C3 the generic family scored against exp83's
+  ledger-owned corrected target; C3' the per-plane control anchor
+  (the exp83 instrument extended); C4 the pre-registered
+  scoring-inconsistency exclusion (cutting rows at recorded >= 0.9
+  whose plane's control rate <= 0.35 — 21 rows, n=21).
+- CW-G1 PASS — the stale block collapses: the generic trunk arm
+  0.0 -> 0.667 (exp83's verified protocol).
+- CW-G2 PASS — NO-COOKING: the raw-record MAE 0.522 -> 0.365 under
+  the re-wiring alone (no record correction).
+- CW-G3 REFUTED honestly — the corrected-decoded MAE lands 0.304 vs
+  the 0.30 bar (conservative variant: 0.320). The < 0.15 Stage-2
+  target is NOT REACHED this pass.
+- CW-G4 PASS — the residual NAMED with numbers: cutting 10.0%
+  (the record's own series-variance floor on plain-cut rows —
+  the same operation scores 0.0 in one series and 1.0 in another;
+  the sim's cutting arm is the canon biology), morphogen 7.9% (the
+  partial-modulation dose gap — exp40's (cns, diffusion) grid is
+  the registered repair), other_rnai 7.2% (the generic-family
+  residual above the corrected band), ion_channel 3.6%.
+- THE STAGE-2 STATUS: the corpus integration metric improved
+  0.522 -> 0.365 (raw) / 0.304 (corrected-decoded) by bringing the
+  arm table up to the adopted stack alone. The registered repair
+  for the next pass: wire the exp40 dose axis into the morphogen
+  arms; the cutting-block floor is a RECORD property (the series
+  variance), to be handled by the decoding discipline, not by the
+  sim.
+- NEXT (derived): the exp40 dose-axis wiring (the morphogen arms);
+  quest 001 on the restored quota; the Stage-4 frontier completion.
