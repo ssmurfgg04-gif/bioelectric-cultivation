@@ -1,0 +1,4933 @@
+{
+ "exp": "exp150_generator_complete (workstream P)",
+ "claim": "applying the corpus-defines-threshold rule a THIRD time (elite pool -> N*_pool) repairs C4's miscalibrated diversity bar, and decode-stable emission pricing (R3) completes the generator: the 101% Stage-3 test (C1-C4 unchanged) on the final delivered set",
+ "verdict": "THE GENERATOR LANDS",
+ "stage_order": [
+  "bar_deposit",
+  "search",
+  "funnel",
+  "pool_bar",
+  "selection",
+  "audit+pricing",
+  "attribution",
+  "gates"
+ ],
+ "bars": {
+  "n_star_lib": 82.288,
+  "n_star_splice": 20.14,
+  "n_star_pool": 33.776,
+  "rule": "95th-pct NN, library_nn_stats semantics verbatim on each corpus in the chain: library -> N*_lib, splice family -> N*_splice, delivered-eligible elite pool -> N*_pool",
+  "c4_uses": "N*_pool \u2014 the delivered set is drawn from the elite pool's own corpus; the greedy filter and the gate use the SAME bar (deposited pre-selection)",
+  "pool_corpus": {
+   "size": 96,
+   "nn_percentiles": {
+    "P0": 0.0,
+    "P50": 9.963,
+    "P70": 18.058,
+    "P90": 29.16,
+    "P95": 33.776,
+    "P99": 38.475,
+    "P100": 46.908
+   }
+  },
+  "nn_histogram_pool": {
+   "bin_edges": [
+    0.0,
+    2.35,
+    4.69,
+    7.04,
+    9.38,
+    11.73,
+    14.07,
+    16.42,
+    18.76,
+    21.11,
+    23.45,
+    25.8,
+    28.14,
+    30.49,
+    32.84,
+    35.18,
+    37.53,
+    39.87,
+    42.22,
+    44.56,
+    46.91
+   ],
+   "counts": [
+    42,
+    0,
+    0,
+    4,
+    5,
+    2,
+    11,
+    5,
+    6,
+    3,
+    3,
+    4,
+    5,
+    0,
+    2,
+    2,
+    1,
+    0,
+    0,
+    1
+   ]
+  }
+ },
+ "pre_registered": {
+  "clause": "deliver iff NOV_lib > N*_lib AND nov_splice > N*_splice AND dist(f, delivered) > N*_pool for all already-delivered (repaired C4); cap 10",
+  "emission_cost_key_change": "emitted = argmin rung_cost over rungs with quad < 6.0 AND decode 3/3 (decode_err < 6.0 AND hold_err < 6.0 at ALL seeds); fallback cheapest audit-passing rung (exp146 rule) flagged audit_only_fallback; audit, ladder, rung_cost, ERR_BAR, AUDIT_SEEDS unchanged"
+ },
+ "verification_harness": {
+  "family_pairs_400_max_abs_diff": 1.4210854715202004e-14,
+  "n_star_splice_matches_exp146": true
+ },
+ "replication_of_exp141": {
+  "rounds_match": true,
+  "pool_size_match": true,
+  "rounds": [
+   {
+    "round": 0,
+    "match": true
+   },
+   {
+    "round": 1,
+    "match": true
+   },
+   {
+    "round": 2,
+    "match": true
+   },
+   {
+    "round": 3,
+    "match": true
+   },
+   {
+    "round": 4,
+    "match": true
+   },
+   {
+    "round": 5,
+    "match": true
+   }
+  ],
+  "pool_size": 253,
+  "exp141_pool_size": 253
+ },
+ "pipeline_cross_checks": {
+  "old_rule_redelivery_matches_exp146_7": true,
+  "n_star_splice_matches_exp146": true,
+  "d2_d6_(1,0)_errs_bit_identical": true
+ },
+ "funnel": {
+  "pool": 253,
+  "lib_novel": 96,
+  "splice_clear": 96,
+  "delivered_repaired": 10,
+  "delivered_old_rule": 7
+ },
+ "crowding_map_exp146_to_exp150": [
+  {
+   "exp146": "d-01",
+   "exp150": "d-01"
+  },
+  {
+   "exp146": "d-02",
+   "exp150": "d-03"
+  },
+  {
+   "exp146": "d-03",
+   "exp150": "d-05"
+  },
+  {
+   "exp146": "d-04",
+   "exp150": null,
+   "outcome": "cap_reached_first",
+   "note": "the cap of 10 filled at J 1.4365 < this candidate's J 1.4563; never evaluated by the greedy"
+  },
+  {
+   "exp146": "d-05",
+   "exp150": null,
+   "outcome": "cap_reached_first",
+   "note": "the cap of 10 filled at J 1.4365 < this candidate's J 1.5864; never evaluated by the greedy"
+  },
+  {
+   "exp146": "d-06",
+   "exp150": null,
+   "outcome": "cap_reached_first",
+   "note": "the cap of 10 filled at J 1.4365 < this candidate's J 1.5896; never evaluated by the greedy"
+  },
+  {
+   "exp146": "d-07",
+   "exp150": null,
+   "outcome": "cap_reached_first",
+   "note": "the cap of 10 filled at J 1.4365 < this candidate's J 1.6626; never evaluated by the greedy"
+  }
+ ],
+ "attribution_d2_d6": [
+  {
+   "name": "d-02",
+   "J_exp146": 1.3737,
+   "zones": [
+    [
+     0.16,
+     0.327,
+     -51.0
+    ],
+    [
+     0.831,
+     0.878,
+     -48.6
+    ],
+    [
+     0.627,
+     0.698,
+     -55.5
+    ]
+   ],
+   "in_exp150_delivered": "d-03",
+   "at_exp146_rung_(1,0)": {
+    "quad": 0.957,
+    "decode_errs": [
+     9.099,
+     9.119,
+     9.077
+    ],
+    "hold_errs": [
+     8.927,
+     8.95,
+     8.909
+    ],
+    "decode_err_mean": 9.098,
+    "hold_err_mean": 8.928,
+    "erosion_increment_mean": -0.17,
+    "decode_stable_seeds": "0/3",
+    "write_read_path": "FAILS \u2014 post-settle read error alone >= 6.0 before any hold",
+    "erosion_path_increment": "-0.170 mV over 100 t.u. (small vs the write/read failure)",
+    "attribution": "WRITE/READ path dominant: decode_err already exceeds the bar at settle; hold adds little",
+    "cross_check": "quad + decode/hold errs bit-identical (rounded) to the exp146 deposit"
+   },
+   "repricing_rescue": {
+    "rescued": false,
+    "mode": "audit_only_fallback",
+    "rescue_rung": null,
+    "rescue_cost": null,
+    "rescue_quad": null,
+    "rescue_decode_errs": null,
+    "rescue_hold_errs": null,
+    "fallback_emitted_cell": [
+     1.0,
+     0.0
+    ],
+    "audit_passing_and_dec333_rungs": [],
+    "per_rung_dec333": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "per_rung_pass": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "provenance": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+     "cost": 0.25,
+     "eV": 0.924,
+     "eT": 0.247,
+     "quad": 0.957,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.099,
+      9.119,
+      9.077
+     ],
+     "hold_errs": [
+      8.927,
+      8.95,
+      8.909
+     ],
+     "decode_err_mean": 9.098,
+     "hold_err_mean": 8.928,
+     "erosion_increment_mean": -0.17,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+     "cost": 1.25,
+     "eV": 0.924,
+     "eT": 1.026,
+     "quad": 1.381,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      8.763,
+      8.767,
+      8.735
+     ],
+     "hold_errs": [
+      8.464,
+      8.465,
+      8.447
+     ],
+     "decode_err_mean": 8.755,
+     "hold_err_mean": 8.458,
+     "erosion_increment_mean": -0.297,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+     "cost": 1.0,
+     "eV": 0.373,
+     "eT": 0.119,
+     "quad": 0.391,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.316,
+      9.356,
+      9.306
+     ],
+     "hold_errs": [
+      9.234,
+      9.266,
+      9.225
+     ],
+     "decode_err_mean": 9.326,
+     "hold_err_mean": 9.242,
+     "erosion_increment_mean": -0.084,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+     "cost": 2.0,
+     "eV": 0.373,
+     "eT": 1.03,
+     "quad": 1.095,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      8.88,
+      8.91,
+      8.864
+     ],
+     "hold_errs": [
+      8.625,
+      8.631,
+      8.609
+     ],
+     "decode_err_mean": 8.885,
+     "hold_err_mean": 8.621,
+     "erosion_increment_mean": -0.263,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder",
+     "cost": 4.0,
+     "eV": 0.131,
+     "eT": 0.081,
+     "quad": 0.154,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.368,
+      9.318,
+      9.456
+     ],
+     "hold_errs": [
+      9.323,
+      9.277,
+      9.41
+     ],
+     "decode_err_mean": 9.381,
+     "hold_err_mean": 9.337,
+     "erosion_increment_mean": -0.044,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+     "cost": 5.0,
+     "eV": 0.131,
+     "eT": 1.028,
+     "quad": 1.037,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      8.961,
+      8.928,
+      9.055
+     ],
+     "hold_errs": [
+      8.671,
+      8.65,
+      8.768
+     ],
+     "decode_err_mean": 8.981,
+     "hold_err_mean": 8.696,
+     "erosion_increment_mean": -0.285,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "provenance": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+     "cost": 8.0,
+     "eV": 0.07,
+     "eT": 0.054,
+     "quad": 0.088,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.462,
+      9.499,
+      9.356
+     ],
+     "hold_errs": [
+      9.433,
+      9.463,
+      9.342
+     ],
+     "decode_err_mean": 9.439,
+     "hold_err_mean": 9.413,
+     "erosion_increment_mean": -0.026,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+     "cost": 16.0,
+     "eV": 0.048,
+     "eT": 0.039,
+     "quad": 0.062,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.406,
+      9.36,
+      9.384
+     ],
+     "hold_errs": [
+      9.389,
+      9.36,
+      9.367
+     ],
+     "decode_err_mean": 9.383,
+     "hold_err_mean": 9.372,
+     "erosion_increment_mean": -0.011,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)",
+     "cost": 17.0,
+     "eV": 0.048,
+     "eT": 1.029,
+     "quad": 1.031,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      9.144,
+      9.106,
+      9.13
+     ],
+     "hold_errs": [
+      8.777,
+      8.763,
+      8.766
+     ],
+     "decode_err_mean": 9.127,
+     "hold_err_mean": 8.769,
+     "erosion_increment_mean": -0.358,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    }
+   ]
+  },
+  {
+   "name": "d-06",
+   "J_exp146": 1.5896,
+   "zones": [
+    [
+     0.169,
+     0.346,
+     -51.9
+    ],
+    [
+     0.801,
+     0.976,
+     -16.4
+    ],
+    [
+     0.336,
+     0.535,
+     -53.8
+    ],
+    [
+     0.732,
+     0.81,
+     -24.6
+    ]
+   ],
+   "in_exp150_delivered": null,
+   "at_exp146_rung_(1,0)": {
+    "quad": 1.531,
+    "decode_errs": [
+     9.001,
+     9.137,
+     9.058
+    ],
+    "hold_errs": [
+     9.012,
+     9.13,
+     9.051
+    ],
+    "decode_err_mean": 9.065,
+    "hold_err_mean": 9.065,
+    "erosion_increment_mean": -0.001,
+    "decode_stable_seeds": "0/3",
+    "write_read_path": "FAILS \u2014 post-settle read error alone >= 6.0 before any hold",
+    "erosion_path_increment": "-0.001 mV over 100 t.u. (small vs the write/read failure)",
+    "attribution": "WRITE/READ path dominant: decode_err already exceeds the bar at settle; hold adds little",
+    "cross_check": "quad + decode/hold errs bit-identical (rounded) to the exp146 deposit"
+   },
+   "repricing_rescue": {
+    "rescued": false,
+    "mode": "audit_only_fallback",
+    "rescue_rung": null,
+    "rescue_cost": null,
+    "rescue_quad": null,
+    "rescue_decode_errs": null,
+    "rescue_hold_errs": null,
+    "fallback_emitted_cell": [
+     1.0,
+     0.0
+    ],
+    "audit_passing_and_dec333_rungs": [],
+    "per_rung_dec333": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "per_rung_pass": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "provenance": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+     "cost": 0.25,
+     "eV": 1.511,
+     "eT": 0.247,
+     "quad": 1.531,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.001,
+      9.137,
+      9.058
+     ],
+     "hold_errs": [
+      9.012,
+      9.13,
+      9.051
+     ],
+     "decode_err_mean": 9.065,
+     "hold_err_mean": 9.065,
+     "erosion_increment_mean": -0.001,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+     "cost": 1.25,
+     "eV": 1.511,
+     "eT": 1.669,
+     "quad": 2.251,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      8.963,
+      9.069,
+      9.015
+     ],
+     "hold_errs": [
+      8.993,
+      9.074,
+      9.028
+     ],
+     "decode_err_mean": 9.016,
+     "hold_err_mean": 9.032,
+     "erosion_increment_mean": 0.016,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+     "cost": 1.0,
+     "eV": 0.596,
+     "eT": 0.119,
+     "quad": 0.608,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.097,
+      9.212,
+      9.126
+     ],
+     "hold_errs": [
+      9.082,
+      9.156,
+      9.1
+     ],
+     "decode_err_mean": 9.145,
+     "hold_err_mean": 9.113,
+     "erosion_increment_mean": -0.032,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+     "cost": 2.0,
+     "eV": 0.596,
+     "eT": 1.707,
+     "quad": 1.808,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      8.992,
+      9.077,
+      9.017
+     ],
+     "hold_errs": [
+      9.043,
+      9.079,
+      9.067
+     ],
+     "decode_err_mean": 9.029,
+     "hold_err_mean": 9.063,
+     "erosion_increment_mean": 0.034,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder",
+     "cost": 4.0,
+     "eV": 0.189,
+     "eT": 0.081,
+     "quad": 0.205,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.14,
+      9.143,
+      9.233
+     ],
+     "hold_errs": [
+      9.092,
+      9.096,
+      9.194
+     ],
+     "decode_err_mean": 9.172,
+     "hold_err_mean": 9.127,
+     "erosion_increment_mean": -0.044,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+     "cost": 5.0,
+     "eV": 0.189,
+     "eT": 1.717,
+     "quad": 1.728,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      8.998,
+      8.958,
+      9.051
+     ],
+     "hold_errs": [
+      9.032,
+      8.993,
+      9.093
+     ],
+     "decode_err_mean": 9.003,
+     "hold_err_mean": 9.04,
+     "erosion_increment_mean": 0.037,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "provenance": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+     "cost": 8.0,
+     "eV": 0.112,
+     "eT": 0.054,
+     "quad": 0.124,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.285,
+      9.23,
+      9.103
+     ],
+     "hold_errs": [
+      9.265,
+      9.199,
+      9.088
+     ],
+     "decode_err_mean": 9.206,
+     "hold_err_mean": 9.184,
+     "erosion_increment_mean": -0.022,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+     "cost": 16.0,
+     "eV": 0.059,
+     "eT": 0.039,
+     "quad": 0.071,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.141,
+      9.158,
+      9.209
+     ],
+     "hold_errs": [
+      9.128,
+      9.153,
+      9.2
+     ],
+     "decode_err_mean": 9.169,
+     "hold_err_mean": 9.16,
+     "erosion_increment_mean": -0.009,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)",
+     "cost": 17.0,
+     "eV": 0.059,
+     "eT": 1.722,
+     "quad": 1.723,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      9.009,
+      9.013,
+      9.053
+     ],
+     "hold_errs": [
+      9.018,
+      9.034,
+      9.046
+     ],
+     "decode_err_mean": 9.025,
+     "hold_err_mean": 9.033,
+     "erosion_increment_mean": 0.008,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    }
+   ]
+  }
+ ],
+ "delivered": [
+  {
+   "name": "d-01",
+   "zones": [
+    [
+     0.91,
+     0.971,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -28.6
+    ],
+    [
+     0.735,
+     0.919,
+     -42.7
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 2,
+    "min_v": -42.7,
+    "max_v": -28.6,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.0833,
+   "nov_lib": 88.98,
+   "nov_splice": 61.499,
+   "min_pairwise_D": 56.35,
+   "search_cell": [
+    1.0,
+    0.015
+   ],
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "provenance": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+     "cost": 0.25,
+     "eV": 0.749,
+     "eT": 0.247,
+     "quad": 0.788,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      3.828,
+      3.861,
+      3.933
+     ],
+     "hold_errs": [
+      3.926,
+      3.871,
+      4.026
+     ],
+     "decode_err_mean": 3.874,
+     "hold_err_mean": 3.941,
+     "erosion_increment_mean": 0.067,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0,
+     "full": 0.749
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+     "cost": 1.25,
+     "eV": 0.749,
+     "eT": 0.829,
+     "quad": 1.117,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      3.872,
+      3.9,
+      3.962
+     ],
+     "hold_errs": [
+      4.034,
+      3.965,
+      4.111
+     ],
+     "decode_err_mean": 3.911,
+     "hold_err_mean": 4.036,
+     "erosion_increment_mean": 0.125,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+     "cost": 1.0,
+     "eV": 0.302,
+     "eT": 0.119,
+     "quad": 0.325,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      3.733,
+      3.746,
+      3.853
+     ],
+     "hold_errs": [
+      3.778,
+      3.752,
+      3.889
+     ],
+     "decode_err_mean": 3.777,
+     "hold_err_mean": 3.806,
+     "erosion_increment_mean": 0.029,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+     "cost": 2.0,
+     "eV": 0.302,
+     "eT": 0.829,
+     "quad": 0.882,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      3.799,
+      3.82,
+      3.904
+     ],
+     "hold_errs": [
+      3.965,
+      3.933,
+      4.045
+     ],
+     "decode_err_mean": 3.841,
+     "hold_err_mean": 3.981,
+     "erosion_increment_mean": 0.14,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder",
+     "cost": 4.0,
+     "eV": 0.118,
+     "eT": 0.081,
+     "quad": 0.143,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      3.832,
+      3.783,
+      3.7
+     ],
+     "hold_errs": [
+      3.818,
+      3.798,
+      3.713
+     ],
+     "decode_err_mean": 3.772,
+     "hold_err_mean": 3.777,
+     "erosion_increment_mean": 0.005,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+     "cost": 5.0,
+     "eV": 0.118,
+     "eT": 0.838,
+     "quad": 0.847,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      3.892,
+      3.835,
+      3.755
+     ],
+     "hold_errs": [
+      4.036,
+      4.011,
+      3.94
+     ],
+     "decode_err_mean": 3.827,
+     "hold_err_mean": 3.996,
+     "erosion_increment_mean": 0.168,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "provenance": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+     "cost": 8.0,
+     "eV": 0.067,
+     "eT": 0.054,
+     "quad": 0.086,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      3.762,
+      3.759,
+      3.786
+     ],
+     "hold_errs": [
+      3.776,
+      3.749,
+      3.785
+     ],
+     "decode_err_mean": 3.769,
+     "hold_err_mean": 3.77,
+     "erosion_increment_mean": 0.001,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+     "cost": 16.0,
+     "eV": 0.045,
+     "eT": 0.039,
+     "quad": 0.06,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      3.71,
+      3.693,
+      3.759
+     ],
+     "hold_errs": [
+      3.711,
+      3.692,
+      3.759
+     ],
+     "decode_err_mean": 3.721,
+     "hold_err_mean": 3.721,
+     "erosion_increment_mean": 0.0,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)",
+     "cost": 17.0,
+     "eV": 0.045,
+     "eT": 0.834,
+     "quad": 0.836,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      3.753,
+      3.72,
+      3.779
+     ],
+     "hold_errs": [
+      3.948,
+      3.941,
+      3.965
+     ],
+     "decode_err_mean": 3.751,
+     "hold_err_mean": 3.951,
+     "erosion_increment_mean": 0.201,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emission_mode": "repriced_full",
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "emitted_cost": 0.25,
+   "emitted_quad": 0.788,
+   "emitted_cell_old_rule": [
+    1.0,
+    0.0
+   ],
+   "repriced": false,
+   "decode_errs": [
+    3.828,
+    3.861,
+    3.933
+   ],
+   "hold_errs": [
+    3.926,
+    3.871,
+    4.026
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "d-02",
+   "zones": [
+    [
+     0.91,
+     0.99,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -30.8
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -40.8,
+    "max_v": -30.8,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.0879,
+   "nov_lib": 88.94,
+   "nov_splice": 47.159,
+   "min_pairwise_D": 58.9,
+   "search_cell": [
+    1.0,
+    0.015
+   ],
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "provenance": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+     "cost": 0.25,
+     "eV": 0.75,
+     "eT": 0.247,
+     "quad": 0.79,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.748,
+      2.764,
+      2.868
+     ],
+     "hold_errs": [
+      2.843,
+      2.873,
+      2.986
+     ],
+     "decode_err_mean": 2.793,
+     "hold_err_mean": 2.901,
+     "erosion_increment_mean": 0.107,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0,
+     "full": 0.75
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+     "cost": 1.25,
+     "eV": 0.75,
+     "eT": 0.831,
+     "quad": 1.119,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.877,
+      2.872,
+      2.972
+     ],
+     "hold_errs": [
+      3.024,
+      3.028,
+      3.15
+     ],
+     "decode_err_mean": 2.907,
+     "hold_err_mean": 3.068,
+     "erosion_increment_mean": 0.161,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+     "cost": 1.0,
+     "eV": 0.3,
+     "eT": 0.119,
+     "quad": 0.322,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.592,
+      2.603,
+      2.717
+     ],
+     "hold_errs": [
+      2.626,
+      2.661,
+      2.773
+     ],
+     "decode_err_mean": 2.637,
+     "hold_err_mean": 2.686,
+     "erosion_increment_mean": 0.049,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+     "cost": 2.0,
+     "eV": 0.3,
+     "eT": 0.825,
+     "quad": 0.878,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.756,
+      2.757,
+      2.861
+     ],
+     "hold_errs": [
+      2.923,
+      2.931,
+      3.036
+     ],
+     "decode_err_mean": 2.791,
+     "hold_err_mean": 2.963,
+     "erosion_increment_mean": 0.172,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder",
+     "cost": 4.0,
+     "eV": 0.118,
+     "eT": 0.081,
+     "quad": 0.143,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.65,
+      2.591,
+      2.619
+     ],
+     "hold_errs": [
+      2.661,
+      2.588,
+      2.622
+     ],
+     "decode_err_mean": 2.62,
+     "hold_err_mean": 2.624,
+     "erosion_increment_mean": 0.004,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+     "cost": 5.0,
+     "eV": 0.118,
+     "eT": 0.835,
+     "quad": 0.843,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.773,
+      2.726,
+      2.739
+     ],
+     "hold_errs": [
+      2.971,
+      2.917,
+      2.931
+     ],
+     "decode_err_mean": 2.746,
+     "hold_err_mean": 2.94,
+     "erosion_increment_mean": 0.194,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "provenance": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+     "cost": 8.0,
+     "eV": 0.065,
+     "eT": 0.054,
+     "quad": 0.085,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.642,
+      2.683,
+      2.704
+     ],
+     "hold_errs": [
+      2.634,
+      2.668,
+      2.683
+     ],
+     "decode_err_mean": 2.676,
+     "hold_err_mean": 2.662,
+     "erosion_increment_mean": -0.015,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+     "cost": 16.0,
+     "eV": 0.045,
+     "eT": 0.039,
+     "quad": 0.059,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.635,
+      2.679,
+      2.712
+     ],
+     "hold_errs": [
+      2.63,
+      2.671,
+      2.709
+     ],
+     "decode_err_mean": 2.675,
+     "hold_err_mean": 2.67,
+     "erosion_increment_mean": -0.005,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)",
+     "cost": 17.0,
+     "eV": 0.045,
+     "eT": 0.829,
+     "quad": 0.83,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.704,
+      2.72,
+      2.746
+     ],
+     "hold_errs": [
+      2.932,
+      2.944,
+      2.959
+     ],
+     "decode_err_mean": 2.723,
+     "hold_err_mean": 2.945,
+     "erosion_increment_mean": 0.222,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emission_mode": "repriced_full",
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "emitted_cost": 0.25,
+   "emitted_quad": 0.79,
+   "emitted_cell_old_rule": [
+    1.0,
+    0.0
+   ],
+   "repriced": false,
+   "decode_errs": [
+    2.748,
+    2.764,
+    2.868
+   ],
+   "hold_errs": [
+    2.843,
+    2.873,
+    2.986
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "d-03",
+   "zones": [
+    [
+     0.16,
+     0.327,
+     -51.0
+    ],
+    [
+     0.831,
+     0.878,
+     -48.6
+    ],
+    [
+     0.627,
+     0.698,
+     -55.5
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 3,
+    "min_v": -55.5,
+    "max_v": -48.6,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.3737,
+   "nov_lib": 85.38,
+   "nov_splice": 60.031,
+   "min_pairwise_D": 35.54,
+   "search_cell": [
+    1.0,
+    0.015
+   ],
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "provenance": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+     "cost": 0.25,
+     "eV": 0.924,
+     "eT": 0.247,
+     "quad": 0.957,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.099,
+      9.119,
+      9.077
+     ],
+     "hold_errs": [
+      8.927,
+      8.95,
+      8.909
+     ],
+     "decode_err_mean": 9.098,
+     "hold_err_mean": 8.928,
+     "erosion_increment_mean": -0.17,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0,
+     "full": 0.924
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+     "cost": 1.25,
+     "eV": 0.924,
+     "eT": 1.026,
+     "quad": 1.381,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      8.763,
+      8.767,
+      8.735
+     ],
+     "hold_errs": [
+      8.464,
+      8.465,
+      8.447
+     ],
+     "decode_err_mean": 8.755,
+     "hold_err_mean": 8.458,
+     "erosion_increment_mean": -0.297,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+     "cost": 1.0,
+     "eV": 0.373,
+     "eT": 0.119,
+     "quad": 0.391,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.316,
+      9.356,
+      9.306
+     ],
+     "hold_errs": [
+      9.234,
+      9.266,
+      9.225
+     ],
+     "decode_err_mean": 9.326,
+     "hold_err_mean": 9.242,
+     "erosion_increment_mean": -0.084,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+     "cost": 2.0,
+     "eV": 0.373,
+     "eT": 1.03,
+     "quad": 1.095,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      8.88,
+      8.91,
+      8.864
+     ],
+     "hold_errs": [
+      8.625,
+      8.631,
+      8.609
+     ],
+     "decode_err_mean": 8.885,
+     "hold_err_mean": 8.621,
+     "erosion_increment_mean": -0.263,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder",
+     "cost": 4.0,
+     "eV": 0.131,
+     "eT": 0.081,
+     "quad": 0.154,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.368,
+      9.318,
+      9.456
+     ],
+     "hold_errs": [
+      9.323,
+      9.277,
+      9.41
+     ],
+     "decode_err_mean": 9.381,
+     "hold_err_mean": 9.337,
+     "erosion_increment_mean": -0.044,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+     "cost": 5.0,
+     "eV": 0.131,
+     "eT": 1.028,
+     "quad": 1.037,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      8.961,
+      8.928,
+      9.055
+     ],
+     "hold_errs": [
+      8.671,
+      8.65,
+      8.768
+     ],
+     "decode_err_mean": 8.981,
+     "hold_err_mean": 8.696,
+     "erosion_increment_mean": -0.285,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "provenance": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+     "cost": 8.0,
+     "eV": 0.07,
+     "eT": 0.054,
+     "quad": 0.088,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.462,
+      9.499,
+      9.356
+     ],
+     "hold_errs": [
+      9.433,
+      9.463,
+      9.342
+     ],
+     "decode_err_mean": 9.439,
+     "hold_err_mean": 9.413,
+     "erosion_increment_mean": -0.026,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+     "cost": 16.0,
+     "eV": 0.048,
+     "eT": 0.039,
+     "quad": 0.062,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.406,
+      9.36,
+      9.384
+     ],
+     "hold_errs": [
+      9.389,
+      9.36,
+      9.367
+     ],
+     "decode_err_mean": 9.383,
+     "hold_err_mean": 9.372,
+     "erosion_increment_mean": -0.011,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)",
+     "cost": 17.0,
+     "eV": 0.048,
+     "eT": 1.029,
+     "quad": 1.031,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      9.144,
+      9.106,
+      9.13
+     ],
+     "hold_errs": [
+      8.777,
+      8.763,
+      8.766
+     ],
+     "decode_err_mean": 9.127,
+     "hold_err_mean": 8.769,
+     "erosion_increment_mean": -0.358,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emission_mode": "audit_only_fallback",
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "emitted_cost": 0.25,
+   "emitted_quad": 0.957,
+   "emitted_cell_old_rule": [
+    1.0,
+    0.0
+   ],
+   "repriced": false,
+   "decode_errs": [
+    9.099,
+    9.119,
+    9.077
+   ],
+   "hold_errs": [
+    8.927,
+    8.95,
+    8.909
+   ],
+   "decode_stable_seeds": "0/3",
+   "decode_pass": false
+  },
+  {
+   "name": "d-04",
+   "zones": [
+    [
+     0.91,
+     0.971,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -28.6
+    ],
+    [
+     0.30075058922279646,
+     0.416,
+     -57.4
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 2,
+    "min_v": -57.4,
+    "max_v": -28.6,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.3755,
+   "nov_lib": 88.08,
+   "nov_splice": 39.119,
+   "min_pairwise_D": 60.2,
+   "search_cell": [
+    1.0,
+    0.015
+   ],
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "provenance": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+     "cost": 0.25,
+     "eV": 0.939,
+     "eT": 0.247,
+     "quad": 0.971,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      3.774,
+      3.736,
+      3.799
+     ],
+     "hold_errs": [
+      3.941,
+      3.861,
+      3.995
+     ],
+     "decode_err_mean": 3.77,
+     "hold_err_mean": 3.932,
+     "erosion_increment_mean": 0.163,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0,
+     "full": 0.939
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+     "cost": 1.25,
+     "eV": 0.939,
+     "eT": 1.042,
+     "quad": 1.403,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      4.071,
+      3.996,
+      4.079
+     ],
+     "hold_errs": [
+      4.327,
+      4.218,
+      4.359
+     ],
+     "decode_err_mean": 4.049,
+     "hold_err_mean": 4.301,
+     "erosion_increment_mean": 0.253,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+     "cost": 1.0,
+     "eV": 0.373,
+     "eT": 0.119,
+     "quad": 0.391,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      3.497,
+      3.492,
+      3.555
+     ],
+     "hold_errs": [
+      3.579,
+      3.565,
+      3.632
+     ],
+     "decode_err_mean": 3.515,
+     "hold_err_mean": 3.592,
+     "erosion_increment_mean": 0.077,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+     "cost": 2.0,
+     "eV": 0.373,
+     "eT": 1.06,
+     "quad": 1.123,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      3.894,
+      3.845,
+      3.929
+     ],
+     "hold_errs": [
+      4.163,
+      4.09,
+      4.193
+     ],
+     "decode_err_mean": 3.89,
+     "hold_err_mean": 4.149,
+     "erosion_increment_mean": 0.259,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder",
+     "cost": 4.0,
+     "eV": 0.13,
+     "eT": 0.081,
+     "quad": 0.153,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      3.525,
+      3.441,
+      3.545
+     ],
+     "hold_errs": [
+      3.54,
+      3.448,
+      3.576
+     ],
+     "decode_err_mean": 3.504,
+     "hold_err_mean": 3.522,
+     "erosion_increment_mean": 0.018,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+     "cost": 5.0,
+     "eV": 0.13,
+     "eT": 1.072,
+     "quad": 1.08,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      3.844,
+      3.767,
+      3.849
+     ],
+     "hold_errs": [
+      4.137,
+      4.071,
+      4.158
+     ],
+     "decode_err_mean": 3.82,
+     "hold_err_mean": 4.122,
+     "erosion_increment_mean": 0.302,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "provenance": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+     "cost": 8.0,
+     "eV": 0.074,
+     "eT": 0.054,
+     "quad": 0.092,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      3.509,
+      3.53,
+      3.506
+     ],
+     "hold_errs": [
+      3.52,
+      3.539,
+      3.514
+     ],
+     "decode_err_mean": 3.515,
+     "hold_err_mean": 3.525,
+     "erosion_increment_mean": 0.01,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+     "cost": 16.0,
+     "eV": 0.049,
+     "eT": 0.039,
+     "quad": 0.063,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      3.349,
+      3.456,
+      3.407
+     ],
+     "hold_errs": [
+      3.36,
+      3.453,
+      3.41
+     ],
+     "decode_err_mean": 3.404,
+     "hold_err_mean": 3.408,
+     "erosion_increment_mean": 0.004,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)",
+     "cost": 17.0,
+     "eV": 0.049,
+     "eT": 1.08,
+     "quad": 1.081,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      3.541,
+      3.643,
+      3.586
+     ],
+     "hold_errs": [
+      3.935,
+      4.029,
+      3.973
+     ],
+     "decode_err_mean": 3.59,
+     "hold_err_mean": 3.979,
+     "erosion_increment_mean": 0.389,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emission_mode": "repriced_full",
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "emitted_cost": 0.25,
+   "emitted_quad": 0.971,
+   "emitted_cell_old_rule": [
+    1.0,
+    0.0
+   ],
+   "repriced": false,
+   "decode_errs": [
+    3.774,
+    3.736,
+    3.799
+   ],
+   "hold_errs": [
+    3.941,
+    3.861,
+    3.995
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "d-05",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -35.2
+    ],
+    [
+     0.43,
+     0.621,
+     -53.9
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.8027276328817403,
+     0.893,
+     -38.1
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 3,
+    "min_v": -53.9,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 2
+   },
+   "J": 1.3874,
+   "nov_lib": 85.01,
+   "nov_splice": 65.369,
+   "min_pairwise_D": 37.38,
+   "search_cell": [
+    1.0,
+    0.015
+   ],
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "provenance": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+     "cost": 0.25,
+     "eV": 0.946,
+     "eT": 0.247,
+     "quad": 0.978,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      4.438,
+      4.516,
+      4.494
+     ],
+     "hold_errs": [
+      4.433,
+      4.45,
+      4.496
+     ],
+     "decode_err_mean": 4.482,
+     "hold_err_mean": 4.46,
+     "erosion_increment_mean": -0.023,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0,
+     "full": 0.946
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+     "cost": 1.25,
+     "eV": 0.946,
+     "eT": 1.055,
+     "quad": 1.417,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      4.415,
+      4.482,
+      4.465
+     ],
+     "hold_errs": [
+      4.526,
+      4.512,
+      4.58
+     ],
+     "decode_err_mean": 4.454,
+     "hold_err_mean": 4.54,
+     "erosion_increment_mean": 0.086,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+     "cost": 1.0,
+     "eV": 0.384,
+     "eT": 0.119,
+     "quad": 0.402,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      4.535,
+      4.598,
+      4.616
+     ],
+     "hold_errs": [
+      4.477,
+      4.52,
+      4.547
+     ],
+     "decode_err_mean": 4.583,
+     "hold_err_mean": 4.515,
+     "erosion_increment_mean": -0.068,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+     "cost": 2.0,
+     "eV": 0.384,
+     "eT": 1.083,
+     "quad": 1.149,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      4.389,
+      4.451,
+      4.465
+     ],
+     "hold_errs": [
+      4.44,
+      4.46,
+      4.501
+     ],
+     "decode_err_mean": 4.435,
+     "hold_err_mean": 4.467,
+     "erosion_increment_mean": 0.032,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder",
+     "cost": 4.0,
+     "eV": 0.142,
+     "eT": 0.081,
+     "quad": 0.163,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      4.715,
+      4.689,
+      4.58
+     ],
+     "hold_errs": [
+      4.651,
+      4.623,
+      4.515
+     ],
+     "decode_err_mean": 4.661,
+     "hold_err_mean": 4.596,
+     "erosion_increment_mean": -0.065,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+     "cost": 5.0,
+     "eV": 0.142,
+     "eT": 1.106,
+     "quad": 1.115,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      4.493,
+      4.445,
+      4.34
+     ],
+     "hold_errs": [
+      4.513,
+      4.443,
+      4.341
+     ],
+     "decode_err_mean": 4.426,
+     "hold_err_mean": 4.432,
+     "erosion_increment_mean": 0.006,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "provenance": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+     "cost": 8.0,
+     "eV": 0.082,
+     "eT": 0.054,
+     "quad": 0.098,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      4.727,
+      4.693,
+      4.728
+     ],
+     "hold_errs": [
+      4.692,
+      4.663,
+      4.698
+     ],
+     "decode_err_mean": 4.716,
+     "hold_err_mean": 4.684,
+     "erosion_increment_mean": -0.032,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+     "cost": 16.0,
+     "eV": 0.048,
+     "eT": 0.039,
+     "quad": 0.062,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      4.703,
+      4.774,
+      4.831
+     ],
+     "hold_errs": [
+      4.671,
+      4.757,
+      4.812
+     ],
+     "decode_err_mean": 4.769,
+     "hold_err_mean": 4.747,
+     "erosion_increment_mean": -0.023,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)",
+     "cost": 17.0,
+     "eV": 0.048,
+     "eT": 1.099,
+     "quad": 1.1,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      4.49,
+      4.553,
+      4.589
+     ],
+     "hold_errs": [
+      4.457,
+      4.468,
+      4.478
+     ],
+     "decode_err_mean": 4.544,
+     "hold_err_mean": 4.468,
+     "erosion_increment_mean": -0.076,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emission_mode": "repriced_full",
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "emitted_cost": 0.25,
+   "emitted_quad": 0.978,
+   "emitted_cell_old_rule": [
+    1.0,
+    0.0
+   ],
+   "repriced": false,
+   "decode_errs": [
+    4.438,
+    4.516,
+    4.494
+   ],
+   "hold_errs": [
+    4.433,
+    4.45,
+    4.496
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "d-06",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.7728358093209716,
+     0.857,
+     -29.3
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 0,
+    "min_v": -32.4,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 2
+   },
+   "J": 1.4051,
+   "nov_lib": 92.33,
+   "nov_splice": 49.873,
+   "min_pairwise_D": 43.96,
+   "search_cell": [
+    4.0,
+    0.0
+   ],
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "provenance": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+     "cost": 0.25,
+     "eV": 1.012,
+     "eT": 0.247,
+     "quad": 1.042,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      1.467,
+      1.516,
+      1.526
+     ],
+     "hold_errs": [
+      2.123,
+      2.069,
+      2.09
+     ],
+     "decode_err_mean": 1.503,
+     "hold_err_mean": 2.094,
+     "erosion_increment_mean": 0.592,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0,
+     "full": 1.012
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+     "cost": 1.25,
+     "eV": 1.012,
+     "eT": 1.126,
+     "quad": 1.514,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.159,
+      2.193,
+      2.192
+     ],
+     "hold_errs": [
+      2.94,
+      2.861,
+      2.904
+     ],
+     "decode_err_mean": 2.181,
+     "hold_err_mean": 2.902,
+     "erosion_increment_mean": 0.72,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+     "cost": 1.0,
+     "eV": 0.407,
+     "eT": 0.119,
+     "quad": 0.424,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      0.714,
+      0.757,
+      0.786
+     ],
+     "hold_errs": [
+      1.164,
+      1.157,
+      1.163
+     ],
+     "decode_err_mean": 0.752,
+     "hold_err_mean": 1.161,
+     "erosion_increment_mean": 0.409,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+     "cost": 2.0,
+     "eV": 0.407,
+     "eT": 1.161,
+     "quad": 1.23,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      1.883,
+      1.903,
+      1.901
+     ],
+     "hold_errs": [
+      2.617,
+      2.577,
+      2.588
+     ],
+     "decode_err_mean": 1.896,
+     "hold_err_mean": 2.594,
+     "erosion_increment_mean": 0.698,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder",
+     "cost": 4.0,
+     "eV": 0.145,
+     "eT": 0.081,
+     "quad": 0.166,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      0.48,
+      0.481,
+      0.536
+     ],
+     "hold_errs": [
+      0.547,
+      0.539,
+      0.628
+     ],
+     "decode_err_mean": 0.499,
+     "hold_err_mean": 0.571,
+     "erosion_increment_mean": 0.072,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+     "cost": 5.0,
+     "eV": 0.145,
+     "eT": 1.182,
+     "quad": 1.191,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      1.656,
+      1.635,
+      1.65
+     ],
+     "hold_errs": [
+      2.475,
+      2.477,
+      2.455
+     ],
+     "decode_err_mean": 1.647,
+     "hold_err_mean": 2.469,
+     "erosion_increment_mean": 0.822,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "provenance": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+     "cost": 8.0,
+     "eV": 0.084,
+     "eT": 0.054,
+     "quad": 0.1,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      0.474,
+      0.47,
+      0.395
+     ],
+     "hold_errs": [
+      0.486,
+      0.516,
+      0.439
+     ],
+     "decode_err_mean": 0.446,
+     "hold_err_mean": 0.48,
+     "erosion_increment_mean": 0.034,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+     "cost": 16.0,
+     "eV": 0.049,
+     "eT": 0.039,
+     "quad": 0.063,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      0.501,
+      0.452,
+      0.476
+     ],
+     "hold_errs": [
+      0.49,
+      0.466,
+      0.472
+     ],
+     "decode_err_mean": 0.476,
+     "hold_err_mean": 0.476,
+     "erosion_increment_mean": -0.0,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)",
+     "cost": 17.0,
+     "eV": 0.049,
+     "eT": 1.18,
+     "quad": 1.181,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      1.22,
+      1.252,
+      1.214
+     ],
+     "hold_errs": [
+      2.316,
+      2.35,
+      2.291
+     ],
+     "decode_err_mean": 1.229,
+     "hold_err_mean": 2.319,
+     "erosion_increment_mean": 1.09,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emission_mode": "repriced_full",
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "emitted_cost": 0.25,
+   "emitted_quad": 1.042,
+   "emitted_cell_old_rule": [
+    1.0,
+    0.0
+   ],
+   "repriced": false,
+   "decode_errs": [
+    1.467,
+    1.516,
+    1.526
+   ],
+   "hold_errs": [
+    2.123,
+    2.069,
+    2.09
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "d-07",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.306,
+     0.361,
+     -53.5
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -53.5,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 2
+   },
+   "J": 1.4056,
+   "nov_lib": 82.47,
+   "nov_splice": 53.166,
+   "min_pairwise_D": 42.18,
+   "search_cell": [
+    4.0,
+    0.0
+   ],
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "provenance": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+     "cost": 0.25,
+     "eV": 1.019,
+     "eT": 0.247,
+     "quad": 1.048,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      1.855,
+      1.724,
+      1.878
+     ],
+     "hold_errs": [
+      2.457,
+      2.429,
+      2.489
+     ],
+     "decode_err_mean": 1.819,
+     "hold_err_mean": 2.458,
+     "erosion_increment_mean": 0.639,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0,
+     "full": 1.019
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+     "cost": 1.25,
+     "eV": 1.019,
+     "eT": 1.118,
+     "quad": 1.512,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.588,
+      2.515,
+      2.623
+     ],
+     "hold_errs": [
+      3.471,
+      3.453,
+      3.497
+     ],
+     "decode_err_mean": 2.575,
+     "hold_err_mean": 3.474,
+     "erosion_increment_mean": 0.898,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+     "cost": 1.0,
+     "eV": 0.388,
+     "eT": 0.119,
+     "quad": 0.406,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      1.159,
+      0.99,
+      1.185
+     ],
+     "hold_errs": [
+      1.484,
+      1.366,
+      1.49
+     ],
+     "decode_err_mean": 1.112,
+     "hold_err_mean": 1.446,
+     "erosion_increment_mean": 0.335,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+     "cost": 2.0,
+     "eV": 0.388,
+     "eT": 1.143,
+     "quad": 1.207,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.236,
+      2.175,
+      2.278
+     ],
+     "hold_errs": [
+      3.14,
+      3.097,
+      3.156
+     ],
+     "decode_err_mean": 2.229,
+     "hold_err_mean": 3.131,
+     "erosion_increment_mean": 0.902,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder",
+     "cost": 4.0,
+     "eV": 0.143,
+     "eT": 0.081,
+     "quad": 0.165,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      0.972,
+      0.934,
+      1.06
+     ],
+     "hold_errs": [
+      1.03,
+      0.972,
+      1.119
+     ],
+     "decode_err_mean": 0.989,
+     "hold_err_mean": 1.04,
+     "erosion_increment_mean": 0.051,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+     "cost": 5.0,
+     "eV": 0.143,
+     "eT": 1.176,
+     "quad": 1.184,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      1.983,
+      1.916,
+      2.014
+     ],
+     "hold_errs": [
+      2.987,
+      2.965,
+      3.018
+     ],
+     "decode_err_mean": 1.971,
+     "hold_err_mean": 2.99,
+     "erosion_increment_mean": 1.019,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "provenance": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+     "cost": 8.0,
+     "eV": 0.084,
+     "eT": 0.054,
+     "quad": 0.1,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      0.967,
+      0.906,
+      0.866
+     ],
+     "hold_errs": [
+      0.996,
+      0.936,
+      0.906
+     ],
+     "decode_err_mean": 0.913,
+     "hold_err_mean": 0.946,
+     "erosion_increment_mean": 0.033,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+     "cost": 16.0,
+     "eV": 0.05,
+     "eT": 0.039,
+     "quad": 0.064,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      0.886,
+      0.891,
+      0.79
+     ],
+     "hold_errs": [
+      0.884,
+      0.904,
+      0.787
+     ],
+     "decode_err_mean": 0.856,
+     "hold_err_mean": 0.858,
+     "erosion_increment_mean": 0.002,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)",
+     "cost": 17.0,
+     "eV": 0.05,
+     "eT": 1.173,
+     "quad": 1.174,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      1.519,
+      1.505,
+      1.42
+     ],
+     "hold_errs": [
+      2.824,
+      2.815,
+      2.769
+     ],
+     "decode_err_mean": 1.481,
+     "hold_err_mean": 2.803,
+     "erosion_increment_mean": 1.322,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emission_mode": "repriced_full",
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "emitted_cost": 0.25,
+   "emitted_quad": 1.048,
+   "emitted_cell_old_rule": [
+    1.0,
+    0.0
+   ],
+   "repriced": false,
+   "decode_errs": [
+    1.855,
+    1.724,
+    1.878
+   ],
+   "hold_errs": [
+    2.457,
+    2.429,
+    2.489
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "d-08",
+   "zones": [
+    [
+     0.16,
+     0.327,
+     -52.5
+    ],
+    [
+     0.831,
+     0.878,
+     -50.8
+    ],
+    [
+     0.436,
+     0.507,
+     -55.5
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 3,
+    "min_v": -55.5,
+    "max_v": -50.8,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.4068,
+   "nov_lib": 82.32,
+   "nov_splice": 57.575,
+   "min_pairwise_D": 35.54,
+   "search_cell": [
+    4.0,
+    0.0
+   ],
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "provenance": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+     "cost": 0.25,
+     "eV": 0.962,
+     "eT": 0.247,
+     "quad": 0.994,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.576,
+      9.607,
+      9.57
+     ],
+     "hold_errs": [
+      9.413,
+      9.442,
+      9.407
+     ],
+     "decode_err_mean": 9.585,
+     "hold_err_mean": 9.421,
+     "erosion_increment_mean": -0.164,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0,
+     "full": 0.962
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+     "cost": 1.25,
+     "eV": 0.962,
+     "eT": 1.068,
+     "quad": 1.437,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      9.25,
+      9.268,
+      9.241
+     ],
+     "hold_errs": [
+      8.968,
+      8.974,
+      8.962
+     ],
+     "decode_err_mean": 9.253,
+     "hold_err_mean": 8.968,
+     "erosion_increment_mean": -0.285,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+     "cost": 1.0,
+     "eV": 0.388,
+     "eT": 0.119,
+     "quad": 0.406,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.787,
+      9.834,
+      9.791
+     ],
+     "hold_errs": [
+      9.709,
+      9.747,
+      9.708
+     ],
+     "decode_err_mean": 9.804,
+     "hold_err_mean": 9.721,
+     "erosion_increment_mean": -0.083,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+     "cost": 2.0,
+     "eV": 0.388,
+     "eT": 1.077,
+     "quad": 1.145,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      9.365,
+      9.406,
+      9.367
+     ],
+     "hold_errs": [
+      9.123,
+      9.137,
+      9.117
+     ],
+     "decode_err_mean": 9.38,
+     "hold_err_mean": 9.126,
+     "erosion_increment_mean": -0.254,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder",
+     "cost": 4.0,
+     "eV": 0.135,
+     "eT": 0.081,
+     "quad": 0.158,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.835,
+      9.8,
+      9.936
+     ],
+     "hold_errs": [
+      9.792,
+      9.759,
+      9.891
+     ],
+     "decode_err_mean": 9.857,
+     "hold_err_mean": 9.814,
+     "erosion_increment_mean": -0.043,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+     "cost": 5.0,
+     "eV": 0.135,
+     "eT": 1.076,
+     "quad": 1.085,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      9.444,
+      9.422,
+      9.546
+     ],
+     "hold_errs": [
+      9.17,
+      9.152,
+      9.268
+     ],
+     "decode_err_mean": 9.471,
+     "hold_err_mean": 9.196,
+     "erosion_increment_mean": -0.275,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "provenance": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+     "cost": 8.0,
+     "eV": 0.072,
+     "eT": 0.054,
+     "quad": 0.09,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.946,
+      9.927,
+      9.806
+     ],
+     "hold_errs": [
+      9.918,
+      9.896,
+      9.794
+     ],
+     "decode_err_mean": 9.893,
+     "hold_err_mean": 9.869,
+     "erosion_increment_mean": -0.024,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+     "cost": 16.0,
+     "eV": 0.049,
+     "eT": 0.039,
+     "quad": 0.063,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      9.839,
+      9.818,
+      9.863
+     ],
+     "hold_errs": [
+      9.824,
+      9.818,
+      9.846
+     ],
+     "decode_err_mean": 9.84,
+     "hold_err_mean": 9.829,
+     "erosion_increment_mean": -0.011,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)",
+     "cost": 17.0,
+     "eV": 0.049,
+     "eT": 1.077,
+     "quad": 1.078,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      9.584,
+      9.575,
+      9.617
+     ],
+     "hold_errs": [
+      9.235,
+      9.251,
+      9.266
+     ],
+     "decode_err_mean": 9.592,
+     "hold_err_mean": 9.25,
+     "erosion_increment_mean": -0.342,
+     "decode_stable_seeds": "0/3",
+     "n_ok": 0,
+     "dec333": false,
+     "full_valid": false,
+     "n_rejected": 0
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emission_mode": "audit_only_fallback",
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "emitted_cost": 0.25,
+   "emitted_quad": 0.994,
+   "emitted_cell_old_rule": [
+    1.0,
+    0.0
+   ],
+   "repriced": false,
+   "decode_errs": [
+    9.576,
+    9.607,
+    9.57
+   ],
+   "hold_errs": [
+    9.413,
+    9.442,
+    9.407
+   ],
+   "decode_stable_seeds": "0/3",
+   "decode_pass": false
+  },
+  {
+   "name": "d-09",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.5163865424585871,
+     0.582,
+     -58.7
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -58.7,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.4303,
+   "nov_lib": 89.0,
+   "nov_splice": 54.288,
+   "min_pairwise_D": 37.38,
+   "search_cell": [
+    4.0,
+    0.0
+   ],
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "provenance": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+     "cost": 0.25,
+     "eV": 1.071,
+     "eT": 0.247,
+     "quad": 1.1,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.616,
+      2.562,
+      2.608
+     ],
+     "hold_errs": [
+      2.948,
+      2.944,
+      2.964
+     ],
+     "decode_err_mean": 2.595,
+     "hold_err_mean": 2.952,
+     "erosion_increment_mean": 0.356,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0,
+     "full": 1.071
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+     "cost": 1.25,
+     "eV": 1.071,
+     "eT": 1.193,
+     "quad": 1.603,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      3.087,
+      3.052,
+      3.089
+     ],
+     "hold_errs": [
+      3.583,
+      3.589,
+      3.598
+     ],
+     "decode_err_mean": 3.076,
+     "hold_err_mean": 3.59,
+     "erosion_increment_mean": 0.514,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+     "cost": 1.0,
+     "eV": 0.432,
+     "eT": 0.119,
+     "quad": 0.447,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.244,
+      2.177,
+      2.224
+     ],
+     "hold_errs": [
+      2.397,
+      2.338,
+      2.396
+     ],
+     "decode_err_mean": 2.215,
+     "hold_err_mean": 2.377,
+     "erosion_increment_mean": 0.162,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+     "cost": 2.0,
+     "eV": 0.432,
+     "eT": 1.228,
+     "quad": 1.302,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.873,
+      2.825,
+      2.865
+     ],
+     "hold_errs": [
+      3.357,
+      3.318,
+      3.361
+     ],
+     "decode_err_mean": 2.854,
+     "hold_err_mean": 3.345,
+     "erosion_increment_mean": 0.491,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder",
+     "cost": 4.0,
+     "eV": 0.153,
+     "eT": 0.081,
+     "quad": 0.173,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.172,
+      2.279,
+      2.144
+     ],
+     "hold_errs": [
+      2.181,
+      2.282,
+      2.175
+     ],
+     "decode_err_mean": 2.198,
+     "hold_err_mean": 2.213,
+     "erosion_increment_mean": 0.015,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+     "cost": 5.0,
+     "eV": 0.153,
+     "eT": 1.252,
+     "quad": 1.261,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.711,
+      2.765,
+      2.687
+     ],
+     "hold_errs": [
+      3.266,
+      3.304,
+      3.249
+     ],
+     "decode_err_mean": 2.721,
+     "hold_err_mean": 3.273,
+     "erosion_increment_mean": 0.552,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "provenance": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+     "cost": 8.0,
+     "eV": 0.089,
+     "eT": 0.054,
+     "quad": 0.104,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.141,
+      2.253,
+      2.191
+     ],
+     "hold_errs": [
+      2.142,
+      2.262,
+      2.194
+     ],
+     "decode_err_mean": 2.195,
+     "hold_err_mean": 2.199,
+     "erosion_increment_mean": 0.004,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+     "cost": 16.0,
+     "eV": 0.05,
+     "eT": 0.039,
+     "quad": 0.064,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.256,
+      2.106,
+      2.124
+     ],
+     "hold_errs": [
+      2.255,
+      2.104,
+      2.134
+     ],
+     "decode_err_mean": 2.162,
+     "hold_err_mean": 2.164,
+     "erosion_increment_mean": 0.002,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)",
+     "cost": 17.0,
+     "eV": 0.05,
+     "eT": 1.246,
+     "quad": 1.247,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.524,
+      2.416,
+      2.411
+     ],
+     "hold_errs": [
+      3.203,
+      3.13,
+      3.137
+     ],
+     "decode_err_mean": 2.45,
+     "hold_err_mean": 3.156,
+     "erosion_increment_mean": 0.706,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emission_mode": "repriced_full",
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "emitted_cost": 0.25,
+   "emitted_quad": 1.1,
+   "emitted_cell_old_rule": [
+    1.0,
+    0.0
+   ],
+   "repriced": false,
+   "decode_errs": [
+    2.616,
+    2.562,
+    2.608
+   ],
+   "hold_errs": [
+    2.948,
+    2.944,
+    2.964
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "d-10",
+   "zones": [
+    [
+     0.91,
+     0.971,
+     -40.8
+    ],
+    [
+     0.237,
+     0.365,
+     -28.6
+    ],
+    [
+     0.748,
+     0.919,
+     -42.7
+    ],
+    [
+     0.742,
+     0.815,
+     -27.2
+    ],
+    [
+     0.904,
+     0.946,
+     -34.2
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 2,
+    "min_v": -42.7,
+    "max_v": -27.2,
+    "noncanon_adjacent_boundaries": 3
+   },
+   "J": 1.4365,
+   "nov_lib": 86.67,
+   "nov_splice": 64.62,
+   "min_pairwise_D": 56.35,
+   "search_cell": [
+    4.0,
+    0.0
+   ],
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "provenance": "NEW cross \u2014 price-map v2 MU0_SILENCE cell (exp100/exp113 deposited (1, 0))",
+     "cost": 0.25,
+     "eV": 1.07,
+     "eT": 0.247,
+     "quad": 1.098,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.506,
+      2.482,
+      2.54
+     ],
+     "hold_errs": [
+      2.795,
+      2.734,
+      2.869
+     ],
+     "decode_err_mean": 2.509,
+     "hold_err_mean": 2.799,
+     "erosion_increment_mean": 0.29,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0,
+     "full": 1.07
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; price-map DEFAULT0",
+     "cost": 1.25,
+     "eV": 1.07,
+     "eT": 1.18,
+     "quad": 1.593,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.854,
+      2.849,
+      2.894
+     ],
+     "hold_errs": [
+      3.435,
+      3.404,
+      3.539
+     ],
+     "decode_err_mean": 2.866,
+     "hold_err_mean": 3.46,
+     "erosion_increment_mean": 0.594,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; GAMMA0 mu-silent",
+     "cost": 1.0,
+     "eV": 0.432,
+     "eT": 0.119,
+     "quad": 0.448,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.375,
+      2.335,
+      2.399
+     ],
+     "hold_errs": [
+      2.414,
+      2.352,
+      2.435
+     ],
+     "decode_err_mean": 2.37,
+     "hold_err_mean": 2.4,
+     "erosion_increment_mean": 0.03,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113 priced GAMMA0 at (4..16, .015 or 0))",
+     "cost": 2.0,
+     "eV": 0.432,
+     "eT": 1.22,
+     "quad": 1.294,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.642,
+      2.622,
+      2.688
+     ],
+     "hold_errs": [
+      3.163,
+      3.159,
+      3.235
+     ],
+     "decode_err_mean": 2.651,
+     "hold_err_mean": 3.186,
+     "erosion_increment_mean": 0.535,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder",
+     "cost": 4.0,
+     "eV": 0.148,
+     "eT": 0.081,
+     "quad": 0.168,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.561,
+      2.487,
+      2.435
+     ],
+     "hold_errs": [
+      2.487,
+      2.465,
+      2.394
+     ],
+     "decode_err_mean": 2.494,
+     "hold_err_mean": 2.449,
+     "erosion_increment_mean": -0.045,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 GAMMA0 default-mu arm (exp113)",
+     "cost": 5.0,
+     "eV": 0.148,
+     "eT": 1.231,
+     "quad": 1.24,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.598,
+      2.551,
+      2.465
+     ],
+     "hold_errs": [
+      3.089,
+      3.096,
+      3.009
+     ],
+     "decode_err_mean": 2.538,
+     "hold_err_mean": 3.064,
+     "erosion_increment_mean": 0.526,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "provenance": "NEW \u2014 price-map v2 GEOMETRY cell (exp100 (32, 0))",
+     "cost": 8.0,
+     "eV": 0.086,
+     "eT": 0.054,
+     "quad": 0.101,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.494,
+      2.527,
+      2.461
+     ],
+     "hold_errs": [
+      2.465,
+      2.484,
+      2.438
+     ],
+     "decode_err_mean": 2.494,
+     "hold_err_mean": 2.462,
+     "erosion_increment_mean": -0.032,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "provenance": "deposited \u2014 exp136 audit ladder; exp112 walk-speed fast arm",
+     "cost": 16.0,
+     "eV": 0.051,
+     "eT": 0.039,
+     "quad": 0.064,
+     "pass": true,
+     "silent": true,
+     "decode_errs": [
+      2.521,
+      2.392,
+      2.512
+     ],
+     "hold_errs": [
+      2.504,
+      2.38,
+      2.492
+     ],
+     "decode_err_mean": 2.475,
+     "hold_err_mean": 2.459,
+     "erosion_increment_mean": -0.016,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "provenance": "NEW cross \u2014 walk-speed fast arm at default mu (exp112: gamma buys speed at default mu)",
+     "cost": 17.0,
+     "eV": 0.051,
+     "eT": 1.233,
+     "quad": 1.234,
+     "pass": true,
+     "silent": false,
+     "decode_errs": [
+      2.43,
+      2.331,
+      2.432
+     ],
+     "hold_errs": [
+      2.952,
+      2.925,
+      2.979
+     ],
+     "decode_err_mean": 2.398,
+     "hold_err_mean": 2.952,
+     "erosion_increment_mean": 0.554,
+     "decode_stable_seeds": "3/3",
+     "n_ok": 3,
+     "dec333": true,
+     "full_valid": true,
+     "n_rejected": 0
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emission_mode": "repriced_full",
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "emitted_cost": 0.25,
+   "emitted_quad": 1.098,
+   "emitted_cell_old_rule": [
+    1.0,
+    0.0
+   ],
+   "repriced": false,
+   "decode_errs": [
+    2.506,
+    2.482,
+    2.54
+   ],
+   "hold_errs": [
+    2.795,
+    2.734,
+    2.869
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  }
+ ],
+ "anatomy_programs": [
+  {
+   "name": "d-01",
+   "anatomy": [
+    [
+     0.91,
+     0.971,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -28.6
+    ],
+    [
+     0.735,
+     0.919,
+     -42.7
+    ]
+   ],
+   "rung": [
+    1.0,
+    0.0
+   ],
+   "rung_cost": 0.25,
+   "quad": 0.788,
+   "decode_errs": [
+    3.828,
+    3.861,
+    3.933
+   ],
+   "hold_errs": [
+    3.926,
+    3.871,
+    4.026
+   ],
+   "decode_stable_seeds": "3/3",
+   "emission_mode": "repriced_full",
+   "old_rule_rung": [
+    1.0,
+    0.0
+   ],
+   "J": 1.0833,
+   "nov_lib": 88.98,
+   "nov_splice": 61.499
+  },
+  {
+   "name": "d-02",
+   "anatomy": [
+    [
+     0.91,
+     0.99,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -30.8
+    ]
+   ],
+   "rung": [
+    1.0,
+    0.0
+   ],
+   "rung_cost": 0.25,
+   "quad": 0.79,
+   "decode_errs": [
+    2.748,
+    2.764,
+    2.868
+   ],
+   "hold_errs": [
+    2.843,
+    2.873,
+    2.986
+   ],
+   "decode_stable_seeds": "3/3",
+   "emission_mode": "repriced_full",
+   "old_rule_rung": [
+    1.0,
+    0.0
+   ],
+   "J": 1.0879,
+   "nov_lib": 88.94,
+   "nov_splice": 47.159
+  },
+  {
+   "name": "d-03",
+   "anatomy": [
+    [
+     0.16,
+     0.327,
+     -51.0
+    ],
+    [
+     0.831,
+     0.878,
+     -48.6
+    ],
+    [
+     0.627,
+     0.698,
+     -55.5
+    ]
+   ],
+   "rung": [
+    1.0,
+    0.0
+   ],
+   "rung_cost": 0.25,
+   "quad": 0.957,
+   "decode_errs": [
+    9.099,
+    9.119,
+    9.077
+   ],
+   "hold_errs": [
+    8.927,
+    8.95,
+    8.909
+   ],
+   "decode_stable_seeds": "0/3",
+   "emission_mode": "audit_only_fallback",
+   "old_rule_rung": [
+    1.0,
+    0.0
+   ],
+   "J": 1.3737,
+   "nov_lib": 85.38,
+   "nov_splice": 60.031
+  },
+  {
+   "name": "d-04",
+   "anatomy": [
+    [
+     0.91,
+     0.971,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -28.6
+    ],
+    [
+     0.30075058922279646,
+     0.416,
+     -57.4
+    ]
+   ],
+   "rung": [
+    1.0,
+    0.0
+   ],
+   "rung_cost": 0.25,
+   "quad": 0.971,
+   "decode_errs": [
+    3.774,
+    3.736,
+    3.799
+   ],
+   "hold_errs": [
+    3.941,
+    3.861,
+    3.995
+   ],
+   "decode_stable_seeds": "3/3",
+   "emission_mode": "repriced_full",
+   "old_rule_rung": [
+    1.0,
+    0.0
+   ],
+   "J": 1.3755,
+   "nov_lib": 88.08,
+   "nov_splice": 39.119
+  },
+  {
+   "name": "d-05",
+   "anatomy": [
+    [
+     0.23,
+     0.334,
+     -35.2
+    ],
+    [
+     0.43,
+     0.621,
+     -53.9
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.8027276328817403,
+     0.893,
+     -38.1
+    ]
+   ],
+   "rung": [
+    1.0,
+    0.0
+   ],
+   "rung_cost": 0.25,
+   "quad": 0.978,
+   "decode_errs": [
+    4.438,
+    4.516,
+    4.494
+   ],
+   "hold_errs": [
+    4.433,
+    4.45,
+    4.496
+   ],
+   "decode_stable_seeds": "3/3",
+   "emission_mode": "repriced_full",
+   "old_rule_rung": [
+    1.0,
+    0.0
+   ],
+   "J": 1.3874,
+   "nov_lib": 85.01,
+   "nov_splice": 65.369
+  },
+  {
+   "name": "d-06",
+   "anatomy": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.7728358093209716,
+     0.857,
+     -29.3
+    ]
+   ],
+   "rung": [
+    1.0,
+    0.0
+   ],
+   "rung_cost": 0.25,
+   "quad": 1.042,
+   "decode_errs": [
+    1.467,
+    1.516,
+    1.526
+   ],
+   "hold_errs": [
+    2.123,
+    2.069,
+    2.09
+   ],
+   "decode_stable_seeds": "3/3",
+   "emission_mode": "repriced_full",
+   "old_rule_rung": [
+    1.0,
+    0.0
+   ],
+   "J": 1.4051,
+   "nov_lib": 92.33,
+   "nov_splice": 49.873
+  },
+  {
+   "name": "d-07",
+   "anatomy": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.306,
+     0.361,
+     -53.5
+    ]
+   ],
+   "rung": [
+    1.0,
+    0.0
+   ],
+   "rung_cost": 0.25,
+   "quad": 1.048,
+   "decode_errs": [
+    1.855,
+    1.724,
+    1.878
+   ],
+   "hold_errs": [
+    2.457,
+    2.429,
+    2.489
+   ],
+   "decode_stable_seeds": "3/3",
+   "emission_mode": "repriced_full",
+   "old_rule_rung": [
+    1.0,
+    0.0
+   ],
+   "J": 1.4056,
+   "nov_lib": 82.47,
+   "nov_splice": 53.166
+  },
+  {
+   "name": "d-08",
+   "anatomy": [
+    [
+     0.16,
+     0.327,
+     -52.5
+    ],
+    [
+     0.831,
+     0.878,
+     -50.8
+    ],
+    [
+     0.436,
+     0.507,
+     -55.5
+    ]
+   ],
+   "rung": [
+    1.0,
+    0.0
+   ],
+   "rung_cost": 0.25,
+   "quad": 0.994,
+   "decode_errs": [
+    9.576,
+    9.607,
+    9.57
+   ],
+   "hold_errs": [
+    9.413,
+    9.442,
+    9.407
+   ],
+   "decode_stable_seeds": "0/3",
+   "emission_mode": "audit_only_fallback",
+   "old_rule_rung": [
+    1.0,
+    0.0
+   ],
+   "J": 1.4068,
+   "nov_lib": 82.32,
+   "nov_splice": 57.575
+  },
+  {
+   "name": "d-09",
+   "anatomy": [
+    [
+     0.23,
+     0.334,
+     -32.4
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.5163865424585871,
+     0.582,
+     -58.7
+    ]
+   ],
+   "rung": [
+    1.0,
+    0.0
+   ],
+   "rung_cost": 0.25,
+   "quad": 1.1,
+   "decode_errs": [
+    2.616,
+    2.562,
+    2.608
+   ],
+   "hold_errs": [
+    2.948,
+    2.944,
+    2.964
+   ],
+   "decode_stable_seeds": "3/3",
+   "emission_mode": "repriced_full",
+   "old_rule_rung": [
+    1.0,
+    0.0
+   ],
+   "J": 1.4303,
+   "nov_lib": 89.0,
+   "nov_splice": 54.288
+  },
+  {
+   "name": "d-10",
+   "anatomy": [
+    [
+     0.91,
+     0.971,
+     -40.8
+    ],
+    [
+     0.237,
+     0.365,
+     -28.6
+    ],
+    [
+     0.748,
+     0.919,
+     -42.7
+    ],
+    [
+     0.742,
+     0.815,
+     -27.2
+    ],
+    [
+     0.904,
+     0.946,
+     -34.2
+    ]
+   ],
+   "rung": [
+    1.0,
+    0.0
+   ],
+   "rung_cost": 0.25,
+   "quad": 1.098,
+   "decode_errs": [
+    2.506,
+    2.482,
+    2.54
+   ],
+   "hold_errs": [
+    2.795,
+    2.734,
+    2.869
+   ],
+   "decode_stable_seeds": "3/3",
+   "emission_mode": "repriced_full",
+   "old_rule_rung": [
+    1.0,
+    0.0
+   ],
+   "J": 1.4365,
+   "nov_lib": 86.67,
+   "nov_splice": 64.62
+  }
+ ],
+ "silent_freebie_check": {
+  "rule": "flag only \u2014 exp136's C2/C3 wording carries no exclusion; exp146 readings deposited alongside",
+  "flagged": [],
+  "nonsilent_pass": 10
+ },
+ "gates": {
+  "P1_bar_deposit_order": true,
+  "C1_novelty_generation": true,
+  "C2_audit": true,
+  "C3_decode": true,
+  "C4_pool_diversity": true
+ },
+ "gate_clauses_passed": 5,
+ "stage3_test": {
+  "c_gates_passed": 4,
+  "landed": true
+ },
+ "delivered_nov_splice_verbatim_recheck": {
+  "0": {
+   "fast": 61.499377,
+   "verbatim": 61.499377
+  },
+  "1": {
+   "fast": 47.159053,
+   "verbatim": 47.159053
+  },
+  "2": {
+   "fast": 60.031443,
+   "verbatim": 60.031443
+  },
+  "3": {
+   "fast": 39.119264,
+   "verbatim": 39.119264
+  },
+  "4": {
+   "fast": 65.369199,
+   "verbatim": 65.369199
+  },
+  "5": {
+   "fast": 49.873375,
+   "verbatim": 49.873375
+  },
+  "6": {
+   "fast": 53.166227,
+   "verbatim": 53.166227
+  },
+  "7": {
+   "fast": 57.575391,
+   "verbatim": 57.575391
+  },
+  "8": {
+   "fast": 54.287667,
+   "verbatim": 54.287667
+  },
+  "9": {
+   "fast": 64.619743,
+   "verbatim": 64.619743
+  }
+ },
+ "wall_s": 202.0,
+ "notes": "Instruments exp136/exp141/exp144/exp146 imported verbatim. New objects only: N*_pool's derivation corpus, the C4 bar swap (N*_lib -> N*_pool, greedy and gate consistent), the emission feasible-set extension (decode 3/3), the d-2/d-6 attribution readouts. The old-rule greedy re-run reproduces exp146's 7 delivered zone keys exactly; d-2/d-6's (1,0) quad and decode/hold errs are bit-identical (rounded) to the exp146 deposit."
+}
