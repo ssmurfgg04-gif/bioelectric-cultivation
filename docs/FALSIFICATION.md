@@ -2984,3 +2984,46 @@ Night seven, part 3. exp43's registered follow-up:
 - NEXT (derived): exp94 the multi-zone regen scale-up (the exp90
   two-source read beyond the 7-substrate battery); the reader
   extension to new topologies (the handoff's open item #6).
+
+## L76 — exp94 THE MULTI-ZONE REGEN SCALE-UP (4/4 — the two-source read GENERALIZES: 11/12 new topologies verify including the n=200 scale; the deg-99 star is the reader's boundary, named)
+
+- THE IN-RUN INSTRUMENT BUG (owned, the diagnostic chain): the first
+  pass failed 0/12 UNIFORMLY (errors 8.5-14.6 on every new
+  substrate INCLUDING path200, whose family verifies at 0.25 mV) —
+  the uniform signature exposed the executor, not the mechanism.
+  The phase-by-phase trace (canon/target/clamps/post-window state
+  all bit-equal vs exp90's executor on the old battery) localized
+  the divergence to the walk's canon branch: my added guard
+  `canon_src[i] > 0` is NEVER TRUE because phi_spec_canon holds
+  NEGATIVE voltages (mean -42.5) — the guard silently degraded
+  every below-line cell to the wound-state chain read (the exp89
+  UC-G5 failure mode, recreated by instrument). The canon gate is
+  the SOURCE's existence (the attribute), never the value's sign.
+  Repaired; the old battery reproduces exp90's 0.49-0.57.
+- THE K=8 FALLBACK (owned): the pairing model fails at k>=8, n=100
+  (exp73's note); the dense case runs as the deterministic degree-8
+  circulant.
+- MS-G1 PASS — 11/12 new substrates verify (>= 2/3 seeds, star
+  point): tree 0.52 / cycle 0.53 / ladder 0.52 / barbell 0.88 /
+  complete-K60 3.34 / bipartite-K50,50 2.92 / grid_elong 0.50 /
+  torus_elong 0.53 / circulant-k8 0.59 / path200 0.49 /
+  scale_free200 0.61 mV. The dense extremes cost more (K60 3.34,
+  bipartite 2.92) but hold inside the bar.
+- MS-G2 PASS — NO BACKDOOR 12/12: the below-line variant fails on
+  every new substrate — the M33 domain rule survives the scale.
+- MS-G3 PASS — THE CANON SOURCE IS LOAD-BEARING 12/12: the
+  stripped-canon variant fails on every new substrate — the
+  two-source structure (not the chain) carries the regen.
+- MS-G4 PASS — THE SIZE SCALE: both n=200 variants verify (path200
+  0.49, scale_free200 0.61) — the reader scales in n.
+- THE NAMED BOUNDARY: the deg-99 STAR fails (8.53 mV, the only
+  refusal) — the hub extreme where the V-channel ratio (the hub's
+  g_total ~ n·g makes it a V-sink during the 15h settle) drags the
+  rebuilt spokes off their canon values. Registered: exp95 tests
+  the prediction that the boundary is an OPERATING-POINT statement
+  (R5' again) — at lower gamma (the ratio closer to 1) the spokes
+  should hold; if (4, 0) or (1, 0) verifies the star, the reader
+  generalizes 12/12 and the boundary is priced, not absolute.
+- NEXT (derived): exp95 the star-boundary pricing (the deg->n
+  limit vs the operating point); the docs milestone (the
+  scoreboard refresh with L73-L76 + the two new figures).
