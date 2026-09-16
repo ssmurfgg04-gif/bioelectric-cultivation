@@ -1,0 +1,73 @@
+{
+ "exp": "exp122_settle_rescue",
+ "arms": {
+  "walk_only": {
+   "errs": [
+    8.84,
+    8.86,
+    8.82,
+    8.86,
+    8.84,
+    8.9,
+    8.82,
+    8.89
+   ],
+   "mean_err": 8.85,
+   "P_break": 1.0
+  },
+  "settle_only": {
+   "errs": [
+    8.81,
+    8.82,
+    8.77,
+    8.82,
+    8.79,
+    8.88,
+    8.79,
+    8.86
+   ],
+   "mean_err": 8.82,
+   "P_break": 1.0
+  },
+  "sustained": {
+   "errs": [
+    6.35,
+    6.32,
+    6.34,
+    6.35,
+    6.34,
+    6.41,
+    6.34,
+    6.4
+   ],
+   "mean_err": 6.36,
+   "P_break": 1.0
+  },
+  "control": {
+   "errs": [
+    9.98,
+    10.01,
+    9.97,
+    10.01,
+    9.98,
+    10.05,
+    9.96,
+    10.03
+   ],
+   "mean_err": 10.0,
+   "P_break": 1.0
+  }
+ },
+ "P_break": {
+  "walk_only": 1.0,
+  "settle_only": 1.0,
+  "sustained": 1.0,
+  "control": 1.0
+ },
+ "walk_end_h": 82.4,
+ "criteria": {
+  "SR_G1_seed_survivable": false,
+  "SR_G2_rescue_ordering": false
+ },
+ "notes": "The 2x2 phase structure at the torus's closure edge (onset 48 h): walk-only blockade with a rescuing settle, settle-only blockade, sustained, and the unblocked control. Completes the exp108-122 chain: walk tax seeds, mu silence protects, settle coupling re-smooths, the closure edge is where the seed meets the freeze."
+}
