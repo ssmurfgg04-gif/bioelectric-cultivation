@@ -1,0 +1,189 @@
+{
+ "exp": "exp110_frozen_walk_probe",
+ "arms": {
+  "real": {
+   "n100": 3.37,
+   "n196": 3.77,
+   "n400": 4.22,
+   "n784": 4.76
+  },
+  "frozen": {
+   "n100": 1.93,
+   "n196": 1.65,
+   "n400": 1.33,
+   "n784": 1.17
+  },
+  "idealized": {
+   "n100": 1.46,
+   "n196": 1.21,
+   "n400": 0.93,
+   "n784": 0.81
+  },
+  "spectra": {
+   "real_n100": {
+    "committed": {
+     "low": 0.147,
+     "mid": 0.309,
+     "high": 0.544,
+     "abs_low": 0.3
+    },
+    "intact": {
+     "low": 0.331,
+     "mid": 0.093,
+     "high": 0.576,
+     "abs_low": 1.38
+    }
+   },
+   "frozen_n100": {
+    "committed": {
+     "low": 0.121,
+     "mid": 0.314,
+     "high": 0.565,
+     "abs_low": 0.03
+    },
+    "intact": {
+     "low": 0.305,
+     "mid": 0.088,
+     "high": 0.606,
+     "abs_low": 0.18
+    }
+   },
+   "real_n196": {
+    "committed": {
+     "low": 0.361,
+     "mid": 0.154,
+     "high": 0.485,
+     "abs_low": 1.47
+    },
+    "intact": {
+     "low": 0.295,
+     "mid": 0.128,
+     "high": 0.577,
+     "abs_low": 1.77
+    }
+   },
+   "frozen_n196": {
+    "committed": {
+     "low": 0.2,
+     "mid": 0.171,
+     "high": 0.629,
+     "abs_low": 0.05
+    },
+    "intact": {
+     "low": 0.246,
+     "mid": 0.11,
+     "high": 0.644,
+     "abs_low": 0.1
+    }
+   },
+   "real_n400": {
+    "committed": {
+     "low": 0.44,
+     "mid": 0.124,
+     "high": 0.435,
+     "abs_low": 2.85
+    },
+    "intact": {
+     "low": 0.416,
+     "mid": 0.099,
+     "high": 0.485,
+     "abs_low": 3.65
+    }
+   },
+   "frozen_n400": {
+    "committed": {
+     "low": 0.267,
+     "mid": 0.158,
+     "high": 0.576,
+     "abs_low": 0.08
+    },
+    "intact": {
+     "low": 0.285,
+     "mid": 0.079,
+     "high": 0.636,
+     "abs_low": 0.09
+    }
+   },
+   "real_n784": {
+    "committed": {
+     "low": 0.464,
+     "mid": 0.086,
+     "high": 0.449,
+     "abs_low": 4.98
+    },
+    "intact": {
+     "low": 0.496,
+     "mid": 0.131,
+     "high": 0.373,
+     "abs_low": 5.1
+    }
+   },
+   "frozen_n784": {
+    "committed": {
+     "low": 0.188,
+     "mid": 0.137,
+     "high": 0.675,
+     "abs_low": 0.04
+    },
+    "intact": {
+     "low": 0.268,
+     "mid": 0.102,
+     "high": 0.63,
+     "abs_low": 0.06
+    }
+   }
+  },
+  "walk_drift": {
+   "real_n100_s1": 2.47,
+   "real_n100_s2": 2.48,
+   "real_n100_s3": 2.46,
+   "frozen_n100_s1": 0.0,
+   "frozen_n100_s2": 0.0,
+   "frozen_n100_s3": 0.0,
+   "real_n196_s1": 3.48,
+   "real_n196_s2": 3.5,
+   "real_n196_s3": 3.51,
+   "frozen_n196_s1": 0.0,
+   "frozen_n196_s2": 0.0,
+   "frozen_n196_s3": 0.0,
+   "real_n400_s1": 4.66,
+   "real_n400_s2": 4.65,
+   "real_n400_s3": 4.65,
+   "frozen_n400_s1": 0.0,
+   "frozen_n400_s2": 0.0,
+   "frozen_n400_s3": 0.0,
+   "real_n784_s1": 5.32,
+   "real_n784_s2": 5.32,
+   "real_n784_s3": 5.32,
+   "frozen_n784_s1": 0.0,
+   "frozen_n784_s2": 0.0,
+   "frozen_n784_s3": 0.0
+  }
+ },
+ "deltas": {
+  "real": 1.39,
+  "frozen": -0.76,
+  "idealized": -0.65
+ },
+ "levels": {
+  "real": 4.03,
+  "frozen": 1.52,
+  "drop": 0.62
+ },
+ "low_band_growth": {
+  "real": {
+   "committed": 16.6,
+   "intact": 3.7
+  },
+  "frozen": {
+   "committed": 1.33,
+   "intact": 0.33
+  }
+ },
+ "criteria": {
+  "FW_G1_localization": "the walk's wound-field exposure IS the seed carrier (frozen walk collapses the trend and the level)",
+  "FW_G2_class_spectra": "deposited",
+  "FW_G3_probe_sanity": true
+ },
+ "notes": "The walk's inter-commit steps cut (spc=0) with the static instrument: separates the wound-field exposure channel from the window-output channel; class-split spectra of (theta_end - target) deposited per arm per size with absolute low-band power for the growth comparison."
+}

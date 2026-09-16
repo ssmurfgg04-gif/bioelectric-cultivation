@@ -1,0 +1,102 @@
+{
+ "exp": "exp111_protocol_calibration",
+ "arms": {
+  "torus_deployed_n100": {
+   "rate": 1.0,
+   "err": 3.82
+  },
+  "torus_frozen_sett_n100": {
+   "rate": 1.0,
+   "err": 2.51
+  },
+  "torus_static_post_n100": {
+   "err": 3.37
+  },
+  "torus_frozen_stat_n100": {
+   "err": 1.93
+  },
+  "torus_deployed_n196": {
+   "rate": 1.0,
+   "err": 4.08
+  },
+  "torus_frozen_sett_n196": {
+   "rate": 1.0,
+   "err": 2.12
+  },
+  "torus_static_post_n196": {
+   "err": 3.77
+  },
+  "torus_frozen_stat_n196": {
+   "err": 1.65
+  },
+  "torus_deployed_n400": {
+   "rate": 1.0,
+   "err": 4.4
+  },
+  "torus_frozen_sett_n400": {
+   "rate": 1.0,
+   "err": 1.7
+  },
+  "torus_static_post_n400": {
+   "err": 4.22
+  },
+  "torus_frozen_stat_n400": {
+   "err": 1.33
+  },
+  "torus_deployed_n784": {
+   "rate": 1.0,
+   "err": 4.86
+  },
+  "torus_frozen_sett_n784": {
+   "rate": 1.0,
+   "err": 1.48
+  },
+  "torus_static_post_n784": {
+   "err": 4.76
+  },
+  "torus_frozen_stat_n784": {
+   "err": 1.17
+  },
+  "grid2d_deployed_n100": {
+   "rate": 1.0,
+   "err": 0.49
+  },
+  "grid2d_frozen_sett_n100": {
+   "rate": 1.0,
+   "err": 0.49
+  },
+  "grid2d_static_post_n100": {
+   "err": 0.49
+  },
+  "grid2d_frozen_stat_n100": {
+   "err": 0.49
+  },
+  "grid2d_deployed_n400": {
+   "rate": 1.0,
+   "err": 0.5
+  },
+  "grid2d_frozen_sett_n400": {
+   "rate": 1.0,
+   "err": 0.51
+  },
+  "grid2d_static_post_n400": {
+   "err": 0.5
+  },
+  "grid2d_frozen_stat_n400": {
+   "err": 0.5
+  }
+ },
+ "criteria": {
+  "PC_G1_frozen_survives_settle": true,
+  "PC_G2_grid2d_protocol_robust": true,
+  "PC_G3_domain_closure_robust": true,
+  "PC_G4_frozen_never_costs_more": true
+ },
+ "grid2d_deltas": {
+  "deployed": 0.01,
+  "frozen_sett": 0.02,
+  "static_post": 0.01,
+  "frozen_stat": 0.01
+ },
+ "notes": "The price map's protocol calibration: the deployed read (spc=8 + 15 h settle) vs the frozen-walk operating point (spc=0) on the torus (4, 0) trend and the size-flat grid2d (64, 0). Walk_speed enters as a candidate dial for the compiler's price map."
+}
