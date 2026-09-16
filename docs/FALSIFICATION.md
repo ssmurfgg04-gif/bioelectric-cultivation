@@ -2477,3 +2477,49 @@ Night seven, part 3. exp43's registered follow-up:
   multi-zone reader regen (the regen-walk limitation's repair); the
   two-channel interaction term (TC-G1's Spearman 0.838); the corpus
   MAE residual (0.522 vs the <0.15 90% target); quest 001 on quota.
+
+## L66 — exp84 THE TWO-CHANNEL INTERACTION TERM (5/5 — the star's quantitative law CLOSED)
+- The design: direct channel ablation on exp79's full 45-point grid
+  (3 plateau arms x 3 gamma x 5 mu, 3 seeds) — four configs per
+  point: FULL (both channels), V-ONLY (mu=0, the hijack channel
+  alone), THETA-ONLY (the V-junctional coupling removed inside step,
+  diffusion alone with the drive relay intact), NEITHER (both off).
+- IL-G1 PASS — the decomposition is CLEAN: the neither-panel error
+  <= 0.56 mV at every point (both channels off -> no erosion beyond
+  noise; the ablation machinery is load-bearing).
+- IL-G2 PASS — **THE LAW IS QUADRATURE**: the measured channel
+  erosions compose as err = sqrt(eV^2 + eT^2) — Spearman 0.999,
+  median relative error 2.7% across the 45 points; the torus holdout
+  (fitted only on scale_free+random3) lands at rho 1.000, 3.1%. For
+  calibration, exp79's mean-field max(V-term, theta-term) scored
+  0.838 — the failure was never the dynamics, it was the FORMULAS:
+  each mean-field term bounds its channel's single-channel limit,
+  and the theta formula's (1-exp(-mu*deg*T)) saturation overpredicts
+  the measured mu-dependence by up to 7x at mid mu.
+- IL-G3 — the overlap correction (max + kappa*min) is RETIRED
+  honestly: kappa*=0.15 improves the holdout by only 1%; the L2
+  stands alone. The interaction delta (full - max(eV,eT)) is a small
+  positive (median +0.19 mV, IQR [+0.05, +0.55]) — the two channels
+  erode the pattern amplitude through INDEPENDENT paths and compose
+  quadratically (the same mathematics as independent noise sources):
+  sub-additive vs sum, super-additive vs max.
+- IL-G4 PASS — the writability boundary (err < 6.0) under the L2
+  composition: 100% agreement on the grid.
+- IL-G5 — THE PRICE ATTRIBUTED (TC-G6's failed form retired): the
+  four-config wound-repattern panel (scale_free, 240 t.u., no
+  clamps) is CHANNEL-INVARIANT — full 9.79, V-only 9.80,
+  theta-only 9.81, neither 11.44 mV. No single channel carries the
+  unclamped wound repattern; even both channels open do not recover
+  it on scale_free at the long window. exp79's price form (mu=0.015
+  works, mu=0 fails) was mis-specified at the panel level: the
+  anchor architecture's price (mu=0 kills organic propagation) is a
+  property of the PATTERN-PROPAGATION panel (exp62/exp65's reach
+  dial and the maintenance schedules), not of wound repattern. The
+  price is hereby attributed to the propagation panel where it was
+  originally measured.
+- THE STAR'S QUANTITATIVE LAW, final form: writability = (V-channel
+  hijack ratio below the bar) AND (theta homogenization below the
+  bar), with the two measured erosions composing as
+  err = sqrt(eV^2 + eT^2); the boundary is the L2 radius < 6.0 mV.
+  The compiler's operating-point audit (exp81's R5/R6 precondition)
+  now runs on the closed law.
