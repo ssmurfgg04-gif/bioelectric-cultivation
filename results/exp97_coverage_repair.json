@@ -1,0 +1,115 @@
+{
+ "exp": "exp97_coverage_repair",
+ "arms": {
+  "star_zones_star_pt": {
+   "rate": 0.0,
+   "err": 8.53,
+   "post_walk_err": 8.52,
+   "post_settle_err": 8.53
+  },
+  "star_walk_star_pt": {
+   "rate": 1.0,
+   "err": 1.02,
+   "post_walk_err": 0.91,
+   "post_settle_err": 1.02
+  },
+  "star_walk_below": {
+   "rate": 0.0,
+   "err": 3.75,
+   "post_walk_err": 3.69,
+   "post_settle_err": 3.75
+  },
+  "star_walk_nocanon": {
+   "rate": 0.0,
+   "err": 11.66,
+   "post_walk_err": 11.66,
+   "post_settle_err": 11.66
+  },
+  "tree_walk": {
+   "rate": 1.0,
+   "err": 0.53,
+   "post_walk_err": 0.52,
+   "post_settle_err": 0.53
+  },
+  "cycle_walk": {
+   "rate": 1.0,
+   "err": 0.53,
+   "post_walk_err": 0.53,
+   "post_settle_err": 0.53
+  },
+  "grid_walk": {
+   "rate": 1.0,
+   "err": 0.51,
+   "post_walk_err": 0.49,
+   "post_settle_err": 0.51
+  },
+  "star_walk_state": {
+   "rate": 1.0,
+   "err": 1.01,
+   "post_walk_err": 0.9,
+   "post_settle_err": 1.01,
+   "decomposition": {
+    "hub": 8.73,
+    "z0": 0.63,
+    "gap_head": 0.71,
+    "gap_trunk_a": 0.56,
+    "z1": 0.64,
+    "gap_trunk_b": 0.51,
+    "z2": 0.46,
+    "intact": 0.19
+   },
+   "zone_means": {
+    "z0": {
+     "mean": -29.7,
+     "ok": true
+    },
+    "z1": {
+     "mean": -30.0,
+     "ok": true
+    },
+    "z2": {
+     "mean": -30.0,
+     "ok": true
+    }
+   }
+  },
+  "star_zones_state": {
+   "rate": 0.0,
+   "err": 8.53,
+   "post_walk_err": 8.52,
+   "post_settle_err": 8.53,
+   "decomposition": {
+    "hub": 8.72,
+    "z0": 0.65,
+    "gap_head": 19.93,
+    "gap_trunk_a": 10.07,
+    "z1": 0.71,
+    "gap_trunk_b": 10.05,
+    "z2": 0.68,
+    "intact": 0.19
+   },
+   "zone_means": {
+    "z0": {
+     "mean": -29.7,
+     "ok": true
+    },
+    "z1": {
+     "mean": -29.9,
+     "ok": true
+    },
+    "z2": {
+     "mean": -30.0,
+     "ok": true
+    }
+   }
+  }
+ },
+ "criteria": {
+  "CV_G1_artifact_pinned": true,
+  "CV_G2_repair_buys_star": true,
+  "CV_G3_pattern_static": true,
+  "CV_G4_repair_universal": true,
+  "CV_G5_domain_rule_survives": true
+ },
+ "notes": "The probe refuted L77-L78's settle-homogenization mechanism: the star's 8.5 floor is ~32 amputated-never-rebuilt gap cells at blastema -40 (the frontier enumerated over the zone union on a laterally disconnected region). The repair enumerates the blastema frontier over the amputation range (frontier_mode='walk', default 'zones' bit-exact). The registered per-edge hub anchor is MOOTED by the probe (cells that were never rebuilt need reads, not signaling architecture); 3 seeds, 2 for controls."
+}

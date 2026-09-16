@@ -186,13 +186,28 @@ BELOW = AnatomySpec(
 def execute_two_source_n(spec: AnatomySpec, adjacency: np.ndarray,
                          seed: int, with_canon: bool = True,
                          op: dict | None = None,
-                         anchor: list | None = None) -> dict:
+                         anchor: list | None = None,
+                         frontier_mode: str = "zones",
+                         return_trace: bool = False,
+                         return_state: bool = False) -> dict:
     """exp90's execute_two_source generalized over n (and, since
     exp95, over the operating point — default STAR, which is what
     exp94's deposited results used; since exp96, an optional
     settle-anchor: [(cell, voltage), ...] clamped through the 15h
     settle and released 1h before the read — the exp75-77 slow-anchor
-    theorem applied to the reader)."""
+    theorem applied to the reader; since exp97, the blastema-frontier
+    enumeration mode).
+
+    frontier_mode="zones" (default — BIT-EXACT with every deposited
+    run) enumerates wound-frontier candidates over the zone union
+    only. frontier_mode="walk" enumerates over the whole amputation
+    range: on topologies whose amputated region is laterally
+    DISCONNECTED (the star — every spoke's only neighbor is the
+    intact hub), every amputated cell borders intact tissue and is a
+    wound-frontier cell; the zones mode leaves the inter-zone gaps
+    amputated and NEVER rebuilt (the exp97 probe: ~32 wound cells at
+    blastema -40 carry ~93% of the star's 8.5 mV floor — an executor
+    coverage artifact, not an architecture boundary)."""
     n = adjacency.shape[0]
     _op = op if op is not None else STAR
     gamma, mu = _op["gamma"], _op["mu"]
@@ -227,7 +242,13 @@ def execute_two_source_n(spec: AnatomySpec, adjacency: np.ndarray,
         steps_per_cell = 8
         parent_of: dict[int, int] = {}
         frontier: list[int] = []
-        for i in reg_idx:
+        # exp97: the blastema frontier is the amputated cells ADJACENT
+        # TO INTACT TISSUE — on a connected region that is the zone
+        # union's boundary cells (the old enumeration, bit-exact); on
+        # a disconnected region it is every amputated cell.
+        frontier_domain = (reg_idx if frontier_mode == "zones"
+                           else reg_walk)
+        for i in frontier_domain:
             nbrs = [j for j in np.where(c.A[i] > 0)[0]
                     if j not in region_set]
             if nbrs:
@@ -267,6 +288,9 @@ def execute_two_source_n(spec: AnatomySpec, adjacency: np.ndarray,
                 theta_new = c.theta[src] + c.rng.normal(0.0, 0.6)
             c.theta[i] = theta_new
             c.V[i] = theta_new
+    trace: dict = {}
+    if return_trace:
+        trace["post_walk_err"] = round(c.pattern_error(target), 2)
     if anchor:
         for cell_i, v in anchor:
             c.clamp(slice(cell_i, cell_i + 1), v)
@@ -285,8 +309,15 @@ def execute_two_source_n(spec: AnatomySpec, adjacency: np.ndarray,
         ok_all &= ok
     err = float(c.pattern_error(target))
     ok_all &= err < ERR_BAR
-    return {"program_verified": bool(ok_all), "per_zone": per_zone,
-            "err_vs_target": round(err, 2)}
+    out = {"program_verified": bool(ok_all), "per_zone": per_zone,
+           "err_vs_target": round(err, 2)}
+    if return_trace:
+        trace["post_settle_err"] = round(c.pattern_error(target), 2)
+        out["trace"] = trace
+    if return_state:
+        out["final_state"] = {"V": c.V.tolist(),
+                              "target": target.tolist()}
+    return out
 
 
 def labeling_bfs_n(A: np.ndarray) -> np.ndarray:

@@ -1046,13 +1046,15 @@ and the literature.
 
 ---
 
-### Stage scoreboard after the corpus-and-boundary batch (exp91-exp96)
+### Stage scoreboard after the corpus-and-boundary batch (exp91-exp97)
 
-Ledger L73-L78. The batch: the named corpus residual closed as a
+Ledger L73-L79. The batch: the named corpus residual closed as a
 RECORD property, the refusal price battery, the reader's scale-up,
-and the reader's domain boundary mechanized. Figures:
+the boundary hunt — and the coverage repair that dissolved it. Figures:
 `docs/figures/fig91_amplitude_axis.png`,
 `docs/figures/fig92_corpus_residual.png`.
+New deliverable: `docs/STAGE5_WETLAB_COMPANION_PROTOCOL.md` (W1-W5
+pre-registered bench gates).
 
 - Stage 2 金丹: **THE MORPHOGEN RESIDUAL IS A RECORD PROPERTY, NOT A
   SIM GAP.** exp91 refuted L70's registered repair BY SATURATION as
@@ -1078,23 +1080,28 @@ and the reader's domain boundary mechanized. Figures:
   overkill on the verify path). exp94 scales the two-source read to
   12 NEW topologies (11/12 verify, errors 0.49-3.34 mV; n=200
   size scale included; no backdoor 12/12; canon load-bearing 12/12).
-  exp95+exp96 close the last refusal honestly: the deg-99 star is
-  an ARCHITECTURE refusal — no (gamma, mu) cell buys it (0/8), the
-  zones HOLD (the pole read fires), and the gaps/intact tissue
-  relax through the single-point integrator; a one-value clamp
-  cannot hold a heterogeneous pattern (the anchored floor is the
-  same 8.5). THE READER'S DOMAIN RULE, FINAL FORM: the two-source
-  read generalizes everywhere except the single-integrator extreme
-  — the boundary is topological, not a channel setting.
-- Method: three in-run instrument repairs owned this batch (the
+  exp95+exp96 chased the last refusal (the deg-99 star) into an
+  ARCHITECTURE story — and exp97's decomposition probe REFUTED it:
+  the star's 8.5 mV floor was ~32 amputated-never-rebuilt gap cells
+  at blastema -40 (the blastema frontier was enumerated over the
+  zone union; on a laterally disconnected region the walk BFS
+  dead-ends and the inter-zone gaps are never rebuilt). The settle
+  moves NOTHING (8.52 -> 8.53 -> 8.53 — static error). The
+  backward-compatible repair (frontier_mode='walk') verifies the
+  star at 1.02 mV, 3/3 seeds, is universal (tree/cycle/grid still
+  ~0.5), and the domain rule survives full coverage (below-line
+  0/2, no-canon 0/2). THE READER'S DOMAIN RULE, ACTUAL FINAL FORM:
+  12/12 — no topological boundary exists on this battery; R5'
+  reopens UNBOUNDED (no architecture refusal on the books).
+- Method: four in-run instrument repairs owned this batch (the
   dose-class keying no-op; the RNAi-knockout scoping; the
   canon-value-sign guard that silently degraded exp94's first pass
-  0/12) — each exposed by a uniform-failure or bit-identical
-  signature and repaired before the gates were read. The honesty
-  discipline held: 2 of 6 experiments landed below their
-  registered bars and were deposited as refutations with the
-  mechanism named (exp95, exp96).
-- Open next: exp97 the per-edge hub anchor (an architecture
-  extension — the reader's open frontier); quest 001 literature
-  follow-up on the live zai stream; the token rotation (flagged,
-  non-blocking).
+  0/12; and exp97's blastema-frontier enumeration — the largest,
+  it invalidated exp95 and exp96's star arms and was killed by a
+  decomposition probe before any new mechanism was built on it).
+  The honesty discipline held: the boundary story was the batch's
+  most confident claim and it did not survive its own probe.
+- Open next: exp98 the star's TRUE price ladder under the repaired
+  executor (exp95's grid measured the artifact and is invalidated);
+  quest 001 daemon rebuild (down in this env — flagged, non-
+  blocking); the token rotation (flagged, non-blocking).

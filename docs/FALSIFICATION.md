@@ -3108,3 +3108,87 @@ Night seven, part 3. exp43's registered follow-up:
   value to each neighbor — beyond the current program vocabulary;
   the minimal architecture that can hold the star). Deposited as
   the reader's open frontier; the 67/67 suite untouched.
+
+## L79 — exp97 THE COVERAGE REPAIR (5/5 — the probe that REFUTES L77-L78's mechanism: the star's 8.5 floor was ~32 amputated-never-rebuilt cells at wound state, an EXECUTOR COVERAGE ARTIFACT; the repair verifies the star at 1.02 mV and the reader's domain is 12/12 — there is NO topological boundary)
+
+- THE FORK DECISION (owned, per the standing order that a flagged
+  fork is a decision point): L78 registered exp97 as a per-edge hub
+  anchor. The pre-design probe MOOTED the registered design — you
+  do not build signaling architecture for cells that were never
+  rebuilt. exp97 was re-aimed at what the probe actually found.
+- THE PROBE (one run, decomposition deposited in
+  results/exp97_coverage_repair.json as the two *_state arms): the
+  star's error is STATIC — post-walk 8.52 -> post-settle 8.53 ->
+  post-release-1h 8.53. Nothing relaxes through anything. The
+  deposited 8.53 decomposes exactly: head-gap cells 12-24 at -40 vs
+  target -20 (12 x 399), trunk-gaps 25-29 + 46-59 at -40 vs -50
+  (19 x 101), boundary cell 12 (361), hub drag (79 — the hub is
+  intact but was dragged ~9 mV off canon by integrating the wound
+  cells during the window/walk), z1 residual (106). The coverage
+  hole is ~93-97% of the squared error.
+- THE MECHANISM: the amputation range reg_walk spans the inter-zone
+  gaps (cells 2-75), but the blastema frontier was enumerated over
+  the ZONE UNION reg_idx only. On a laterally CONNECTED region the
+  BFS walks through the region and covers the gaps; on the star
+  every spoke's only neighbor is the intact hub, so the BFS
+  dead-ends and ~32 amputated cells sit at blastema theta -40
+  forever. The executor promised the pattern the compiler had
+  already certified (exp94's R5 partition check: star COMPILABLE).
+- WHAT DIES (the honest kill list): exp94's star row (0/3, 8.53 ->
+  actually 3/3, 1.02 under repair); exp95 ENTIRELY — the pricing
+  grid measured the artifact (the errors-decrease-with-gamma trend
+  was gamma pinning the REBUILT cells harder against the static
+  wound mass, not hub-sink physics); exp96's star arms (the anchor
+  "failed" against a coverage hole — nothing moves in the settle,
+  so no settle-side intervention could ever matter); the L77-L78
+  mechanism story (single-point integration, the anti-reader
+  topology, the topological boundary). WHAT STANDS: exp93's price
+  hierarchy (the star was never in it), exp96's HA-G3 (tree/cycle
+  anchored no-harm), the two-source architecture itself
+  (exp89/exp90), R5' on the write path, the corpus result.
+- THE REPAIR (backward-compatible): frontier_mode="walk" in
+  execute_two_source_n enumerates the wound frontier over the whole
+  amputation range — the honest blastema semantics (every amputated
+  cell adjacent to intact tissue IS a frontier cell; on the star,
+  that is all of them). Default "zones" is BIT-EXACT with every
+  deposited run (re-verified in-run: tree seed 1 = 0.56, star
+  zones-mode = 8.53). The 67/67 suite untouched.
+- THE GATES 5/5: CV-G1 the artifact pinned (zones-mode 0/3 at
+  8.53); CV-G2 the repair buys the star (3/3 at 1.02 mV — the
+  predicted 0.5-1.5 band: the residual is the hub's window-drag
+  and z1's committed spread, not gaps); CV-G3 static under repair
+  (post-walk 0.91 -> post-settle 1.02 — noise, no homogenization);
+  CV-G4 the repair is universal (tree 0.53 / cycle 0.53 /
+  grid_elong 0.51, all 3/3); CV-G5 the domain rule survives full
+  coverage (below-line z1=-59: 0/2 — the M33 boundary is real;
+  no-canon: 0/2 at 11.66 — the canon source is load-bearing).
+- THE READER'S DOMAIN RULE, ACTUAL FINAL FORM: 12/12 — exp90's 7 +
+  exp94's 12 INCLUDING the star. No topological boundary exists on
+  this battery. The boundary hunt produced a better instrument, not
+  a boundary — the exp75-79 write-path lesson in miniature: the
+  refusal that survives scrutiny is the one you can build, and this
+  one dissolved under decomposition. R5' ("refusal is a price tag")
+  reopens UNBOUNDED — no architecture refusal is currently on the
+  books.
+- REGISTERED (exp98): the star's TRUE price ladder. exp95's
+  (gamma, mu) grid is INVALIDATED (it measured the artifact); under
+  the repaired executor, run {1, 4, 16, 64} x {0.015, 0} x 3 seeds
+  on the star: does the star price like the two-dial class
+  (random3/scale_free at (4,0)), the theta-priced torus class
+  (gamma ladder fails through 64), or writable-at-default? The
+  per-edge hub anchor stays retired unless a REAL refusal
+  (verified-read failure under full coverage) reappears.
+- ALSO DEPOSITED (subagent 2-b, parallel): the Stage-5 WET-LAB
+  COMPANION PROTOCOL (docs/STAGE5_WETLAB_COMPANION_PROTOCOL.md) —
+  W1-W5 pre-registered bench gates: the octanol/heptanol dose
+  ladder (the record has no concentrations; the dosing table IS the
+  deliverable), the two-source anterior/posterior asymmetry, the
+  price hierarchy across tissue contexts, the minimal multi-zone
+  stripe write, and the record deposit schema. Written against
+  L73-L76 only; the L77-L78 mechanism story excluded per this
+  entry.
+- INFRA NOTES (flagged, non-blocking): the push token needs
+  rotation; quest 001's daemon is DOWN in this environment (ds
+  --status unhealthy, UI bundles missing, no quest state dirs) —
+  the zai proxy on :8787 is green; quest runs stay foreground-only
+  until the daemon is rebuilt.
