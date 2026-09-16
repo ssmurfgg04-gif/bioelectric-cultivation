@@ -1,0 +1,3541 @@
+{
+ "title": "Levin voltage series \u2014 the machine-readable deep mine of published planarian (and adjacent-model) Vmem measurements",
+ "created": "2026-09-16",
+ "agent": "subagent-levin-series (Task ID 5-a)",
+ "protocol": "mined from the repo's own artifacts (PlanformDB 2.5.0 rows via direct SQL; results/exp39_levin_voltage.json; research corpus) + targeted Europe PMC abstract/full-text retrieval and web search this session (raw fetches in /tmp/levin_series); NO experiments run, NO existing files modified",
+ "honest_scope": [
+  "Zero absolute mV values are published for planarian tissues in 70+ years (Marsh-Beams 1952 -> 2026); the planarian record is DiBAC4(3) RELATIVE polarities + outcome frequencies + timing kernels. vmem_mv is null for every planarian row.",
+  "Absolute values exist only in adjacent models (Xenopus: -19.4 mV impalement delta, C11) and in the lab's own simulator (BETSE band, C13).",
+  "PlanformDB ExperimentDrug carries NO concentrations (exp33's L16 finding); drug start/end are times under exp33's registered hours-reading \u2014 unit ambiguity for the Oviedo 2010 Fig 2A kernel is owned in research/levin_voltage_series.md (T1).",
+  "Durant 2019's per-arm double-headed percentages are paywalled (abstract-level only); the 3 h/6 h hooks are verified.",
+  "Emmons-Bell 2015's per-species head-shape frequencies live in figures, not text (100% control fidelity + 123 uM dose verified from text).",
+  "Molano single-author bioRxiv barium preprints (2023/2024, non-peer-reviewed) were NOT resolvable this session beyond subagent 2-b's deposit note; excluded from the series."
+ ],
+ "counts": {
+  "total_entries": 119,
+  "by_kind": {
+   "exp39 direction-match pair": 6,
+   "recorded-outcome": 99,
+   "published direction claim": 4,
+   "published quantitative series": 3,
+   "published timing claim": 1,
+   "measurement-method anchor": 1,
+   "review anchor": 1,
+   "classic record": 1,
+   "absolute mV measurement": 1,
+   "modeling values": 1,
+   "stack-side inference constants": 1
+  },
+  "planformdb_rows": 99,
+  "with_absolute_mv": 2
+ },
+ "stack_constants_for_targets": {
+  "dV/dt": "gamma*(theta-V) + sum_j G_ij(V_j-V_i) + eta",
+  "dtheta/dt": "eps*(V-theta) + mu*sum_j A_ij(theta_j-theta_i)",
+  "defaults": {
+   "gamma": 0.25,
+   "g_gap": 0.2,
+   "eps": 0.04,
+   "mu_theta": 0.015
+  },
+  "two_channel_law_exp84": "err = sqrt(eV^2 + eT^2); writability boundary < 6.0 mV (Spearman 0.999, median rel err 2.7%)",
+  "mu_silence_deadline_exp120_124": "torus D(gamma): gamma1 never rescues, gamma4 -> 48 h, gamma16 -> 72 h, gamma64 -> 36 h; mu doubling 48 -> 36 -> 12 h; conjunctive (both channels must be cut, exp123); analytic rate per mode = mu*lambda + eps*gamma*lambda/(gamma + g*lambda)",
+  "dose_axes_exp91_92": "amplitude axis d: threshold between 0.25 and 0.5, graded window d in [0.35, 0.45] (3/7 rate at 0.40); decoded corpus MAE 0.290 mV",
+  "exp54_write_window": "3 h pulse at t=0 writes 3.00 mV; any later start ~0.5 mV; 12 h start = 0; 3 h sufficiency ratio 0.91"
+ },
+ "series": [
+  {
+   "id": "V1_head_depolarized_vs_trunk",
+   "kind": "exp39 direction-match pair (published claim vs model quantity)",
+   "source": "H,K-ATPase-mediated depolarization essential for anterior gene expression; depolarization drives head formation (Beane 2011, PMID 21276941)",
+   "pmid_or_doi": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "region_or_tissue": "AP axis / wound face",
+   "manipulation": "see published claim",
+   "vmem_mv": null,
+   "timepoint": null,
+   "n_if_stated": 3,
+   "direction_signature": "MATCH",
+   "model_quantity": {
+    "head_vmem_mV": -24.859522940576216,
+    "tail_vmem_mV": -50.25690149582484
+   }
+  },
+  {
+   "id": "V2_hyperpolarization_abnormal",
+   "kind": "exp39 direction-match pair (published claim vs model quantity)",
+   "source": "H,K-ATPase RNAi hyperpolarizes -> shrunken heads, disproportional anatomy (Beane 2013, PMID 23250205)",
+   "pmid_or_doi": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "region_or_tissue": "AP axis / wound face",
+   "manipulation": "see published claim",
+   "vmem_mv": null,
+   "timepoint": null,
+   "n_if_stated": 3,
+   "direction_signature": "MATCH",
+   "model_quantity": {
+    "ion_channel_tail_abn_rate": 1.0,
+    "cutting_tail_abn_rate": 0.0
+   }
+  },
+  {
+   "id": "V3_posterior_depol_ectopic_head",
+   "kind": "exp39 direction-match pair (published claim vs model quantity)",
+   "source": "GJ/neural modulation induces ectopic ANTERIOR blastemas at posterior wounds (Oviedo 2010, PMID 20026026)",
+   "pmid_or_doi": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "region_or_tissue": "AP axis / wound face",
+   "manipulation": "see published claim",
+   "vmem_mv": null,
+   "timepoint": null,
+   "n_if_stated": 3,
+   "direction_signature": "MATCH",
+   "model_quantity": {
+    "posterior_depol_head_likeness_tail": 0.9462486413762442,
+    "threshold": 0.7
+   }
+  },
+  {
+   "id": "V4_junction_block_graded",
+   "kind": "exp39 direction-match pair (published claim vs model quantity)",
+   "source": "innexin smedinx-11 RNAi inhibits regeneration (mixed/graded outcomes); AP neoblast gradient (Oviedo 2007, PMID 17670787)",
+   "pmid_or_doi": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "region_or_tissue": "AP axis / wound face",
+   "manipulation": "see published claim",
+   "vmem_mv": null,
+   "timepoint": null,
+   "n_if_stated": 3,
+   "direction_signature": "MATCH",
+   "model_quantity": {
+    "innexin_tail_abn_rate": 0.6666666666666666,
+    "err_per_seed_mV": [
+     6.21,
+     7.0,
+     5.94
+    ],
+    "mechanism": "M25 blastema blind-guess under blockade"
+   }
+  },
+  {
+   "id": "V5_wound_depolarized",
+   "kind": "exp39 direction-match pair (published claim vs model quantity)",
+   "source": "wounds depolarize relative to intact tissue (wound-current literature; implied by Beane 2011 wound-polarity manipulations, PMID 21276941)",
+   "pmid_or_doi": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "region_or_tissue": "AP axis / wound face",
+   "manipulation": "see published claim",
+   "vmem_mv": null,
+   "timepoint": null,
+   "n_if_stated": 3,
+   "direction_signature": "MATCH",
+   "model_quantity": {
+    "wound_face_vmem_mV": -38.02933652459853,
+    "intact_tail_vmem_mV": -50.25690149582484,
+    "settled_body_mean_mV": -43.63232637821335
+   }
+  },
+  {
+   "id": "V6_stochastic_identical_perturbation",
+   "kind": "exp39 direction-match pair (published claim vs model quantity)",
+   "source": "stochastic regenerative phenotypes under identical bioelectric perturbation; bistable pattern memories (Pezzulo/Levin 2021, PMID 33550952)",
+   "pmid_or_doi": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "region_or_tissue": "AP axis / wound face",
+   "manipulation": "see published claim",
+   "vmem_mv": null,
+   "timepoint": null,
+   "n_if_stated": 3,
+   "direction_signature": "MATCH",
+   "model_quantity": {
+    "exp38_reanchor_q055_err_per_seed": [
+     16.511613247609013,
+     14.659963768027408,
+     2.810797813672374
+    ],
+    "exp12_bistability": "latch verified (exp12 B6)"
+   }
+  },
+  {
+   "id": "DB-415",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 415,
+   "db_figure_panel": "Oviedo 2010 Fig. 1A, 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 132,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.95
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.05
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-416",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 416,
+   "db_figure_panel": "Oviedo 2010 Fig. 1A, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pre-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 118,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.72
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.28
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-417",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 417,
+   "db_figure_panel": "Oviedo 2010 Fig. 1A, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 115,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.5
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.5
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-418",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 418,
+   "db_figure_panel": "Oviedo 2010 Fig. 1A, 4",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 145,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-419",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 419,
+   "db_figure_panel": "Oviedo 2010 Fig. 1A, 5",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Tail crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 178,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-420",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 420,
+   "db_figure_panel": "Oviedo 2010 Fig. 1B, 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 119,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.96
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.04
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-421",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 421,
+   "db_figure_panel": "Oviedo 2010 Fig. 1B, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head plus pre-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 168,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-422",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 422,
+   "db_figure_panel": "Oviedo 2010 Fig. 1B, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head plus pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 107,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-423",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 423,
+   "db_figure_panel": "Oviedo 2010 Fig. 1B, 4",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head plus post-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 109,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.05
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.95
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-424",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 424,
+   "db_figure_panel": "Oviedo 2010 Fig. 1C, 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Notch, double",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 13,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-425",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 425,
+   "db_figure_panel": "Oviedo 2010 Fig. 1C, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Notch, double, cut",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 13,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-426",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 426,
+   "db_figure_panel": "Oviedo 2010 Fig. 1C, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Notch, CNS left",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 23,
+   "outcome_frequencies": [
+    {
+     "outcome": "Side head",
+     "frequency": 0.35
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.65
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-427",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 427,
+   "db_figure_panel": "Oviedo 2010 Fig. 1C, 4",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Notch, CNS left, cut",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 23,
+   "outcome_frequencies": [
+    {
+     "outcome": "Side protrusion",
+     "frequency": 0.13
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.17
+    },
+    {
+     "outcome": "Side head",
+     "frequency": 0.04
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.66
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-428",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 428,
+   "db_figure_panel": "Oviedo 2010 Fig. 1C, 5",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Notch, CNS double",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 8,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.75
+    },
+    {
+     "outcome": "Side protrusion",
+     "frequency": 0.25
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-429",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 429,
+   "db_figure_panel": "Oviedo 2010 Fig. 1C, 6",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Notch, CNS double, cut",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 9,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.45
+    },
+    {
+     "outcome": "Side head",
+     "frequency": 0.11
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.44
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-430",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 430,
+   "db_figure_panel": "Oviedo 2010 Fig. 1C, 7",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Center remove",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 14,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-431",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 431,
+   "db_figure_panel": "Oviedo 2010 Fig. 1C, 8",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Center remove, cut",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 24,
+   "outcome_frequencies": [
+    {
+     "outcome": "Middle head",
+     "frequency": 0.25
+    },
+    {
+     "outcome": "Middle head, double head",
+     "frequency": 0.04
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.42
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.29
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-432",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 432,
+   "db_figure_panel": "Oviedo 2010 Fig. 1C, 9",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Zig zag side removals",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 13,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double side heads",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "unclassified | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-433",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 433,
+   "db_figure_panel": "Oviedo 2010 Fig. 1C, 10",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Axis removal",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 20,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-434",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 434,
+   "db_figure_panel": "Oviedo 2010 Fig. 2A, 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 10,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.0
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-435",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 435,
+   "db_figure_panel": "Oviedo 2010 Fig. 2A, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.13, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.13,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 10,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.15
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.85
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-436",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 436,
+   "db_figure_panel": "Oviedo 2010 Fig. 2A, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.25, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.25,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 10,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.9
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.1
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-437",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 437,
+   "db_figure_panel": "Oviedo 2010 Fig. 2A, 4",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.5, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.5,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 10,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.58
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.42
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-438",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 438,
+   "db_figure_panel": "Oviedo 2010 Fig. 2A, 5",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 1.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     1.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 10,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.9
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.1
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-439",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 439,
+   "db_figure_panel": "Oviedo 2010 Fig. 2A, 6",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 2.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     2.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 10,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.1
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.9
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-440",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 440,
+   "db_figure_panel": "Oviedo 2010 Fig. 2A, 7",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 3.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     3.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 10,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.9
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.1
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-441",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 441,
+   "db_figure_panel": "Oviedo 2010 Fig. 2B, 1 (VNC disruption at t=0)",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head plus post-pharyngeal crop, VNC disruption",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 10,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.18
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.82
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-442",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 442,
+   "db_figure_panel": "Oviedo 2010 Fig. 2B, 2 (VNC disruption at t=0.125days)",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head plus post-pharyngeal crop, VNC disruption",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 10,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.25
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.75
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-443",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 443,
+   "db_figure_panel": "Oviedo 2010 Fig. 2B, 3 (VNC disruption at t=0.5days)",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head plus post-pharyngeal crop, VNC disruption",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 10,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.8
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.2
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-444",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 444,
+   "db_figure_panel": "Oviedo 2010 Fig. 2B, 4 (VNC disruption at t=1 day)",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head plus post-pharyngeal crop, VNC disruption",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 10,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-445",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 445,
+   "db_figure_panel": "Oviedo 2010 Fig. 3B",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Wild type",
+   "manipulation": "drugs=[]; rnaic=['Dj-inx-5 + 13', 'Dj-inx-12']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 35.0
+   },
+   "n_if_stated": 14,
+   "outcome_frequencies": [
+    {
+     "outcome": "Ectopic pharynxes, 2 posterior, ectopic brains",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "posterior-ectopic | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-446",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 446,
+   "db_figure_panel": "Oviedo 2010 Fig. 3D, 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head crop",
+   "manipulation": "drugs=[]; rnaic=['Dj-inx-5 + 13', 'Dj-inx-12']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 35.0
+   },
+   "n_if_stated": 20,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-447",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 447,
+   "db_figure_panel": "Oviedo 2010 Fig. 3D, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pre-pharyngeal crop",
+   "manipulation": "drugs=[]; rnaic=['Dj-inx-12', 'Dj-inx-5 + 13']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 35.0
+   },
+   "n_if_stated": 20,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-448",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 448,
+   "db_figure_panel": "Oviedo 2010 Fig. 3D, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharyngeal crop",
+   "manipulation": "drugs=[]; rnaic=['Dj-inx-5 + 13', 'Dj-inx-12']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 35.0
+   },
+   "n_if_stated": 21,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.2
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.8
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-449",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 449,
+   "db_figure_panel": "Oviedo 2010 Fig. 3D, 4",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[]; rnaic=['Dj-inx-12', 'Dj-inx-5 + 13']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 35.0
+   },
+   "n_if_stated": 18,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.2
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.8
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-450",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 450,
+   "db_figure_panel": "Oviedo 2010 Fig. 3D, 5",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Tail crop",
+   "manipulation": "drugs=[]; rnaic=['Dj-inx-12', 'Dj-inx-5 + 13']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 35.0
+   },
+   "n_if_stated": 20,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-451",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 451,
+   "db_figure_panel": "Oviedo 2010 Fig. 4A, 1-1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal, CNS notch left",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 13,
+   "outcome_frequencies": [
+    {
+     "outcome": "Side head",
+     "frequency": 0.06
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.94
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-452",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 452,
+   "db_figure_panel": "Oviedo 2010 Fig. 4A, 1-2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal, CNS notch left",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 13,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-453",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 453,
+   "db_figure_panel": "Oviedo 2010 Fig. 4A, 2-2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal, CNS notch left, notch right",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 45,
+   "outcome_frequencies": [
+    {
+     "outcome": "Triple head",
+     "frequency": 0.34
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.66
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-454",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 454,
+   "db_figure_panel": "Oviedo 2010 Fig. 4A, 2-1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal, CNS notch left, notch right",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 45,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.77
+    },
+    {
+     "outcome": "Side head",
+     "frequency": 0.23
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-455",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 455,
+   "db_figure_panel": "Oviedo 2010 Fig. 4A, 3-2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal, CNS double notch",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 38,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.31
+    },
+    {
+     "outcome": "Triple head",
+     "frequency": 0.47
+    },
+    {
+     "outcome": "Quadruple head",
+     "frequency": 0.22
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-456",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 456,
+   "db_figure_panel": "Oviedo 2010 Fig. 4A, 3-1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal, CNS double notch",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 38,
+   "outcome_frequencies": [
+    {
+     "outcome": "Side head",
+     "frequency": 0.12
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.88
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-457",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 457,
+   "db_figure_panel": "Oviedo 2010 Fig. 5, 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Quadruple heads & all heads amputated",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 26,
+   "outcome_frequencies": [
+    {
+     "outcome": "Quadruple head",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-458",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 458,
+   "db_figure_panel": "Oviedo 2010 Fig. 5, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Triple head & all heads amputated",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 19,
+   "outcome_frequencies": [
+    {
+     "outcome": "Triple head",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-459",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 459,
+   "db_figure_panel": "Oviedo 2010 Fig. 5, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Double head, longitudinal cut",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 48,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-460",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 460,
+   "db_figure_panel": "Oviedo 2010 Fig. 5, 4",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Double head, both heads amputated",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 72,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-461",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 461,
+   "db_figure_panel": "Oviedo 2010 Fig. 5, 5",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Double head, one head amputated",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 24,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-476",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 476,
+   "db_figure_panel": "Oviedo 2010 Fig. S5B, 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Double head, diagonal midline",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 46,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.5
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.5
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-477",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 477,
+   "db_figure_panel": "Oviedo 2010 Fig. S5B, 4",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Double head, head crop",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 120,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-478",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 478,
+   "db_figure_panel": "Oviedo 2010 Fig. S5B, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Double head, midline",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 72,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.1
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.9
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-479",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 479,
+   "db_figure_panel": "Oviedo 2010 Fig. S5B, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Double head, pharyngeal crop",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 48,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.9
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.1
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-1062",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 1062,
+   "db_figure_panel": "Oviedo 2010 Fig. S9B, 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head crop",
+   "manipulation": "drugs=[]; rnaic=['Dj-bcatenin']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 15,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, one pharynx",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-1063",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 1063,
+   "db_figure_panel": "Oviedo 2010 Fig. S9B, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=['Dj-bcatenin']",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 8,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-1064",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 1064,
+   "db_figure_panel": "Oviedo 2010 Fig. S9B, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pre-pharyngeal crop",
+   "manipulation": "drugs=[]; rnaic=['Dj-bcatenin']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 14,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, one pharynx",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-1065",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 1065,
+   "db_figure_panel": "Oviedo 2010 Fig. S9B, 5",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharyngeal crop",
+   "manipulation": "drugs=[]; rnaic=['Dj-bcatenin']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 20,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, one pharynx",
+     "frequency": 0.9
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.1
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-1066",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 1066,
+   "db_figure_panel": "Oviedo 2010 Fig. S9B, 7",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[]; rnaic=['Dj-bcatenin']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 15,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, one pharynx",
+     "frequency": 0.6
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.4
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-1067",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 1067,
+   "db_figure_panel": "Oviedo 2010 Fig. S9B, 9",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Tail crop",
+   "manipulation": "drugs=[]; rnaic=['Dj-bcatenin']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 15,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-1068",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 1068,
+   "db_figure_panel": "Oviedo 2010 Fig. S9B, 4",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pre-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=['Dj-bcatenin']",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 8,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, one pharynx",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-1069",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 1069,
+   "db_figure_panel": "Oviedo 2010 Fig. S9B, 6",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=['Dj-bcatenin']",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 11,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, one pharynx",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "ectopic-anterior | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-1070",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 1070,
+   "db_figure_panel": "Oviedo 2010 Fig. S9B, 8",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=['Dj-bcatenin']",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 11,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, one pharynx",
+     "frequency": 0.91
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.09
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-1071",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026)",
+   "db_experiment_id": 1071,
+   "db_figure_panel": "Oviedo 2010 Fig. S9B, 10",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Tail crop",
+   "manipulation": "drugs=[('Octanol', 0.0, 0.0)]; rnaic=['Dj-bcatenin']",
+   "drug_start_end": [
+    [
+     "Octanol",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 8,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | octanol GJ-block / VNC disruption / innexin RNAi: ectopic-anterior (DH) vs wt; Fig2A = pre-treatment-time kernel"
+  },
+  {
+   "id": "DB-294",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 294,
+   "db_figure_panel": "Beane 2011 Text p. 81",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Headless, small tail fragment removed",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 11,
+   "outcome_frequencies": [
+    {
+     "outcome": "Headless",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "anterior-failure | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-295",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 295,
+   "db_figure_panel": "Beane 2011 Text p. 82 - 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharynx fragment with slanted anterior",
+   "manipulation": "drugs=[('Potassium', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Potassium",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 30,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-296",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 296,
+   "db_figure_panel": "Beane 2011 Text p. 82 - 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharynx fragment with slanted anterior",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 1,
+   "outcome_frequencies": [
+    {
+     "outcome": "Headless",
+     "frequency": 0.53
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.47
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-297",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 297,
+   "db_figure_panel": "Beane 2011 Text p. 82 - 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharynx fragment with slanted anterior",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 0.0), ('Potassium', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     0.0
+    ],
+    [
+     "Potassium",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 0.0
+   },
+   "n_if_stated": 1,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.94
+    },
+    {
+     "outcome": "Headless",
+     "frequency": 0.06
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-391",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 391,
+   "db_figure_panel": "Beane 2011 Fig. 1D, 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head crop",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     3.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 120,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    },
+    {
+     "outcome": "Headless",
+     "frequency": 0.0
+    },
+    {
+     "outcome": "Cyclop",
+     "frequency": 0.0
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-392",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 392,
+   "db_figure_panel": "Beane 2011 Fig. 1D, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pre-pharyngeal crop",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     3.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 138,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    },
+    {
+     "outcome": "Headless",
+     "frequency": 0.0
+    },
+    {
+     "outcome": "Cyclop",
+     "frequency": 0.0
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-393",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 393,
+   "db_figure_panel": "Beane 2011 Fig. 1D, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharyngeal crop",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     3.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 175,
+   "outcome_frequencies": [
+    {
+     "outcome": "Cyclop",
+     "frequency": 0.11
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.22
+    },
+    {
+     "outcome": "Headless",
+     "frequency": 0.67
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-394",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 394,
+   "db_figure_panel": "Beane 2011 Fig. 1D, 4",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     3.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 111,
+   "outcome_frequencies": [
+    {
+     "outcome": "Cyclop",
+     "frequency": 0.16
+    },
+    {
+     "outcome": "Headless",
+     "frequency": 0.16
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.68
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-395",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 395,
+   "db_figure_panel": "Beane 2011 Fig. 1D, 5",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Tail crop",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     3.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 106,
+   "outcome_frequencies": [
+    {
+     "outcome": "Headless",
+     "frequency": 0.4
+    },
+    {
+     "outcome": "Cyclop",
+     "frequency": 0.18
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.42
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-396",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 396,
+   "db_figure_panel": "Beane 2011 Fig. 3B, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharyngeal crop",
+   "manipulation": "drugs=[]; rnaic=['Dj-bcatenin']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 1,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, one pharynx",
+     "frequency": 0.67
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.33
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-397",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 397,
+   "db_figure_panel": "Beane 2011 Fig. 3B, 4",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharyngeal crop",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=['Dj-bcatenin']",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     3.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 1,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, one pharynx",
+     "frequency": 0.25
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.75
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-398",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 398,
+   "db_figure_panel": "Beane 2011 Fig. 4A, 1-4",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pre-pharyngeal",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     3.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 1,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.24
+    },
+    {
+     "outcome": "Cyclop",
+     "frequency": 0.13
+    },
+    {
+     "outcome": "Headless",
+     "frequency": 0.63
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-399",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 399,
+   "db_figure_panel": "Beane 2011 Fig. 4A, 1-2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Prepharyngeal 2/3",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     3.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 1,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-400",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 400,
+   "db_figure_panel": "Beane 2011 Fig. 4A, 1-1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head amputation",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     3.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 1,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-401",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 401,
+   "db_figure_panel": "Beane 2011 Fig. 4A, 1-3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Prepharyngeal 1/3",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     3.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 1,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.57
+    },
+    {
+     "outcome": "Cyclop",
+     "frequency": 0.29
+    },
+    {
+     "outcome": "Headless",
+     "frequency": 0.14
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-402",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 402,
+   "db_figure_panel": "Beane 2011 Fig. 4B, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Lateral removal, left",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 1,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-403",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 403,
+   "db_figure_panel": "Beane 2011 Fig. 4B, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Lateral removal, left",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     3.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 42,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-404",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 404,
+   "db_figure_panel": "Beane 2011 Fig. 4C, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Right offset lateral crop",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 1,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-405",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 405,
+   "db_figure_panel": "Beane 2011 Fig. 4C, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Right offset lateral crop",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     3.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 43,
+   "outcome_frequencies": [
+    {
+     "outcome": "Headless",
+     "frequency": 0.26
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.74
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-406",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 406,
+   "db_figure_panel": "Beane 2011 Fig. 4D, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Side prepharynx",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 1,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-407",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 407,
+   "db_figure_panel": "Beane 2011 Fig. 4D, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Side prepharynx",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 34,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.88
+    },
+    {
+     "outcome": "Headless",
+     "frequency": 0.12
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-408",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 408,
+   "db_figure_panel": "Beane 2011 Fig. 5A",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Headless, anterior wound",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 16,
+   "outcome_frequencies": [
+    {
+     "outcome": "Headless",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "anterior-failure | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-409",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 409,
+   "db_figure_panel": "Beane 2011 Fig. 5B",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Headless, small anterior wedge removal",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 4,
+   "outcome_frequencies": [
+    {
+     "outcome": "Cyclop",
+     "frequency": 0.75
+    },
+    {
+     "outcome": "Headless",
+     "frequency": 0.25
+    }
+   ],
+   "direction_signature": "anterior-failure | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-410",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 410,
+   "db_figure_panel": "Beane 2011 Fig. 5C",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Headless, large anterior wedge removal",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 24,
+   "outcome_frequencies": [
+    {
+     "outcome": "Headless",
+     "frequency": 0.25
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.75
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-411",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 411,
+   "db_figure_panel": "Beane 2011 Fig. 6B, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharynx fragment with slanted anterior",
+   "manipulation": "drugs=[('Ivermectin', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Ivermectin",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 11,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, one pharynx",
+     "frequency": 0.92
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.08
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-412",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 412,
+   "db_figure_panel": "Beane 2011 Fig. 6B, 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharynx fragment with slanted anterior",
+   "manipulation": "drugs=[('SCH-28080', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "SCH-28080",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 13,
+   "outcome_frequencies": [
+    {
+     "outcome": "Headless",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "anterior-failure | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-413",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 413,
+   "db_figure_panel": "Beane 2011 Fig. 6B, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharynx fragment with slanted anterior",
+   "manipulation": "drugs=[('Chloride', 0.0, 0.0), ('Ivermectin', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Chloride",
+     0.0,
+     0.0
+    ],
+    [
+     "Ivermectin",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 6,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.63
+    },
+    {
+     "outcome": "Double head, one pharynx",
+     "frequency": 0.37
+    }
+   ],
+   "direction_signature": "ectopic-anterior; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-414",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization)",
+   "pmid_or_doi": "doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941)",
+   "db_experiment_id": 414,
+   "db_figure_panel": "Beane 2011 Fig. 7",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharynx fragment with slanted anterior",
+   "manipulation": "drugs=[('Nicardipine', 0.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Nicardipine",
+     0.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 61,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.58
+    },
+    {
+     "outcome": "Headless",
+     "frequency": 0.08
+    },
+    {
+     "outcome": "Cyclop",
+     "frequency": 0.34
+    }
+   ],
+   "direction_signature": "anterior-failure; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) -> ectopic-anterior"
+  },
+  {
+   "id": "DB-279",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Newmark PA, Nicotra ML, Levin M, Sanchez Alvarado A (2007) Development (smedinx-11)",
+   "pmid_or_doi": "doi:10.1242/dev.006635 (PMID 17670787)",
+   "db_experiment_id": 279,
+   "db_figure_panel": "Oviedo 2007 Fig. 3A",
+   "species": "Schmidtea mediterranea",
+   "region_or_tissue": "Trunk crop",
+   "manipulation": "drugs=[]; rnaic=['Smed-inx-11']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 21.0
+   },
+   "n_if_stated": 30,
+   "outcome_frequencies": [
+    {
+     "outcome": "Trunk remnant",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "regeneration-failure | innexin smedinx-11 RNAi: regeneration failure + AP neoblast gradient"
+  },
+  {
+   "id": "DB-280",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Oviedo NJ, Newmark PA, Nicotra ML, Levin M, Sanchez Alvarado A (2007) Development (smedinx-11)",
+   "pmid_or_doi": "doi:10.1242/dev.006635 (PMID 17670787)",
+   "db_experiment_id": 280,
+   "db_figure_panel": "Oviedo 2007 Fig. 3B",
+   "species": "Schmidtea mediterranea",
+   "region_or_tissue": "Wild type",
+   "manipulation": "drugs=[]; rnaic=['Smed-inx-11']",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 14.0
+   },
+   "n_if_stated": 0,
+   "outcome_frequencies": [
+    {
+     "outcome": "Contracted pre-pharyngeal",
+     "frequency": 1.0
+    },
+    {
+     "outcome": "Reduced posterior",
+     "frequency": 0.87
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.13
+    }
+   ],
+   "direction_signature": "wt; morphology-defect | innexin smedinx-11 RNAi: regeneration failure + AP neoblast gradient"
+  },
+  {
+   "id": "DB-322",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line)",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150)",
+   "db_experiment_id": 322,
+   "db_figure_panel": "Nogi 2005 Fig. 10III, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharyngeal crop",
+   "manipulation": "drugs=[('Heptanol', 2.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Heptanol",
+     2.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 7.0
+   },
+   "n_if_stated": 423,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.57
+    },
+    {
+     "outcome": "Tailless, two pharynxes",
+     "frequency": 0.25
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.18
+    }
+   ],
+   "direction_signature": "ectopic-anterior; posterior-failure; wt | heptanol/hexanol GJ-block amputation-level series: DH / tailless / wt fractions"
+  },
+  {
+   "id": "DB-323",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line)",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150)",
+   "db_experiment_id": 323,
+   "db_figure_panel": "Nogi 2005 Fig. 10III, 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharyngeal crop",
+   "manipulation": "no drug/rnai recorded (control or mechanical manipulation)",
+   "drug_start_end": [],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 7.0
+   },
+   "n_if_stated": 107,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | heptanol/hexanol GJ-block amputation-level series: DH / tailless / wt fractions"
+  },
+  {
+   "id": "DB-324",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line)",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150)",
+   "db_experiment_id": 324,
+   "db_figure_panel": "Nogi 2005 Fig. 10III, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharyngeal crop",
+   "manipulation": "drugs=[('Hexanol', 2.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Hexanol",
+     2.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 7.0
+   },
+   "n_if_stated": 1,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.8
+    },
+    {
+     "outcome": "Tailless, two pharynxes",
+     "frequency": 0.2
+    }
+   ],
+   "direction_signature": "posterior-failure; wt | heptanol/hexanol GJ-block amputation-level series: DH / tailless / wt fractions"
+  },
+  {
+   "id": "DB-325",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line)",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150)",
+   "db_experiment_id": 325,
+   "db_figure_panel": "Nogi 2005 Fig. 10IB, 1",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Head crop",
+   "manipulation": "drugs=[('Heptanol', 2.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Heptanol",
+     2.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 20.0
+   },
+   "n_if_stated": 54,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 0.83
+    },
+    {
+     "outcome": "Tailless, two pharynxes",
+     "frequency": 0.17
+    }
+   ],
+   "direction_signature": "posterior-failure; wt | heptanol/hexanol GJ-block amputation-level series: DH / tailless / wt fractions"
+  },
+  {
+   "id": "DB-326",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line)",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150)",
+   "db_experiment_id": 326,
+   "db_figure_panel": "Nogi 2005 Fig. 10IB, 2",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pre-pharyngeal crop",
+   "manipulation": "drugs=[('Heptanol', 2.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Heptanol",
+     2.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 20.0
+   },
+   "n_if_stated": 71,
+   "outcome_frequencies": [
+    {
+     "outcome": "Tailless, two pharynxes",
+     "frequency": 0.36
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.48
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.08
+    },
+    {
+     "outcome": "Double head, incomplete, two pharynxes",
+     "frequency": 0.08
+    }
+   ],
+   "direction_signature": "ectopic-anterior; posterior-failure; wt | heptanol/hexanol GJ-block amputation-level series: DH / tailless / wt fractions"
+  },
+  {
+   "id": "DB-327",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line)",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150)",
+   "db_experiment_id": 327,
+   "db_figure_panel": "Nogi 2005 Fig. 10IB, 3",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Pharyngeal crop",
+   "manipulation": "drugs=[('Heptanol', 2.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Heptanol",
+     2.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 20.0
+   },
+   "n_if_stated": 111,
+   "outcome_frequencies": [
+    {
+     "outcome": "Double head, incomplete, two pharynxes",
+     "frequency": 0.05
+    },
+    {
+     "outcome": "Double head, two pharynxes",
+     "frequency": 0.04
+    },
+    {
+     "outcome": "Tailless, two pharynxes",
+     "frequency": 0.59
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.32
+    }
+   ],
+   "direction_signature": "ectopic-anterior; posterior-failure; wt | heptanol/hexanol GJ-block amputation-level series: DH / tailless / wt fractions"
+  },
+  {
+   "id": "DB-328",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line)",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150)",
+   "db_experiment_id": 328,
+   "db_figure_panel": "Nogi 2005 Fig. 10IB, 4",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Post-pharyngeal crop",
+   "manipulation": "drugs=[('Heptanol', 2.0, 0.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Heptanol",
+     2.0,
+     0.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 20.0
+   },
+   "n_if_stated": 86,
+   "outcome_frequencies": [
+    {
+     "outcome": "Tailless, two pharynxes",
+     "frequency": 0.19
+    },
+    {
+     "outcome": "Wild type",
+     "frequency": 0.81
+    }
+   ],
+   "direction_signature": "posterior-failure; wt | heptanol/hexanol GJ-block amputation-level series: DH / tailless / wt fractions"
+  },
+  {
+   "id": "DB-329",
+   "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+   "source": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line)",
+   "pmid_or_doi": "doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150)",
+   "db_experiment_id": 329,
+   "db_figure_panel": "Nogi 2005 Fig. 10IB, 5",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "Tail crop",
+   "manipulation": "drugs=[('Heptanol', 0.0, 2.0)]; rnaic=[]",
+   "drug_start_end": [
+    [
+     "Heptanol",
+     0.0,
+     2.0
+    ]
+   ],
+   "vmem_mv": null,
+   "vmem_mv_note": "absolute planarian mV unpublished; DiBAC4(3) ratios are relative (see kind)",
+   "timepoint": {
+    "regen_period_days": 20.0
+   },
+   "n_if_stated": 57,
+   "outcome_frequencies": [
+    {
+     "outcome": "Wild type",
+     "frequency": 1.0
+    }
+   ],
+   "direction_signature": "wt | heptanol/hexanol GJ-block amputation-level series: DH / tailless / wt fractions"
+  },
+  {
+   "id": "C01-beane2011-claim",
+   "kind": "published direction claim (abstract)",
+   "source": "Beane 2011 Chem Biol: H,K-ATPase-mediated depolarization essential for anterior gene expression and brain induction; H,K-ATPase-independent depolarization (ivermectin) drives head formation even at posterior-facing wounds",
+   "pmid_or_doi": "PMID 21276941 / doi:10.1016/j.chembiol.2010.11.012",
+   "species": "Dugesia japonica",
+   "region_or_tissue": "wound faces / blastema",
+   "manipulation": "SCH-28080 (H,K-ATPase inhibitor, hyperpolarizes); ivermectin (Cl- channel opener, depolarizes)",
+   "vmem_mv": null,
+   "timepoint": "0-3 d drug window (DB eids 391-395)",
+   "n_if_stated": "106-175/arm (DB)",
+   "direction_signature": "depolarization -> anterior identity; hyperpolarization -> anterior failure (opposing pair)"
+  },
+  {
+   "id": "C02-beane2013-claim",
+   "kind": "published direction claim (abstract)",
+   "source": "Beane 2013 Development: H,K-ATPase RNAi hyperpolarizes; no blastema-amount effect yet tiny shrunken heads + proportionally oversized pharynges; link = missing apoptosis-mediated size remodeling",
+   "pmid_or_doi": "PMID 23250205 / doi:10.1242/dev.086900",
+   "species": "D. japonica",
+   "region_or_tissue": "head/pharynx",
+   "manipulation": "H,K-ATPase RNAi (hyperpolarization)",
+   "vmem_mv": null,
+   "timepoint": "regeneration period",
+   "n_if_stated": null,
+   "direction_signature": "hyperpolarization -> identity preserved, SIZE/organ-scaling failure (the model's named missing layer)"
+  },
+  {
+   "id": "C03-durant2017-numbers",
+   "kind": "published quantitative series (OA full text mined this session)",
+   "source": "Durant 2017 Biophys J: temporary bioelectric modulation of trunk fragments stochastically yields a CONSTANT ratio of double-headed to cryptic-normal regenerates; ratio across all experiments close to 25:75%; cryptic state stored >months via global resting-potential gradient (DiBAC); experimental reversal of bioelectric state resets to WT; rare radial morphs 2.1% excluded",
+   "pmid_or_doi": "PMID 28538159 / doi:10.1016/j.bpj.2017.04.011",
+   "species": "D. japonica",
+   "region_or_tissue": "pharyngeal (trunk) fragments",
+   "manipulation": "octanol (8-OH) 10 uL into 500 mL = 127 uM final, stated as in Oviedo et al; SCH-28080 also used",
+   "vmem_mv": null,
+   "vmem_mv_note": "gradient stored globally; DiBAC relative",
+   "timepoint": "months of fission rounds",
+   "n_if_stated": "pooled, 3 technical replicates",
+   "direction_signature": "GJ-block at posterior wound -> ectopic-anterior (DH) 25% / cryptic-normal 75%; bistable switch with same ratio on re-cut"
+  },
+  {
+   "id": "C04-durant2019-window",
+   "kind": "published timing claim (abstract; MED30799071)",
+   "source": "Durant 2019 Biophys J: bioelectric signaling at 3 h is crucial; depolarizing the injured tissue during the FIRST 3 h alters gene expression by 6 h and yields double-headed phenotype despite confirmed ionophore (nigericin) washout; earliest circuit elements demarcate anterior vs posterior wounds by 6 h",
+   "pmid_or_doi": "PMID 30799071 / doi:10.1016/j.bpj.2019.01.029",
+   "species": "planaria",
+   "region_or_tissue": "injured tissue / both wound faces",
+   "manipulation": "nigericin depolarizing pulse, first 3 h",
+   "vmem_mv": null,
+   "timepoint": "3 h window; 6 h transcriptional deadline; 10 d anatomy",
+   "n_if_stated": null,
+   "direction_signature": "early depolarization write-window; late = inert; washout-proof"
+  },
+  {
+   "id": "C05-eb2015-numbers",
+   "kind": "published quantitative series (OA full text mined this session)",
+   "source": "Emmons-Bell 2015 IJMS: octanol (8 uL in 500 mL = 123 uM stated) after decapitation stochastically induces species-specific head anatomies (S. mediterranea-/D. japonica-/P. felina-like) in wild-type G. dorotocephala; control regeneration has 100% shape fidelity; DiBAC imaging (1.9 mM stock, 1:1000 = 0.19 uM, >30 min soak) shows partially-disrupted isopotential regions; shape remodels back to species-appropriate within several weeks",
+   "pmid_or_doi": "PMID 26610482 / doi:10.3390/ijms161126065",
+   "species": "Girardia dorotocephala",
+   "region_or_tissue": "head (post-decapitation)",
+   "manipulation": "octanol GJ blockade, transient",
+   "vmem_mv": null,
+   "timepoint": "regeneration + weeks of remodeling",
+   "n_if_stated": null,
+   "direction_signature": "GJ-block -> stochastic multi-attractor head-shape switch; bioelectric gradient co-transformed"
+  },
+  {
+   "id": "C06-eb2019-numbers",
+   "kind": "published quantitative series (OA full text mined this session)",
+   "source": "Emmons-Bell 2019 iScience: D. japonica in 1 mM BaCl2 (universal K+ channel blocker): anterior tissue degenerates within 72 h; continued exposure -> regeneration of heads INSENSITIVE to BaCl2 over ~35 d; adaptation tied to Cl-/Ca2+ channels and TRPM (reversal by blockade)",
+   "pmid_or_doi": "PMID 31765995 / doi:10.1016/j.isci.2019.11.014",
+   "species": "D. japonica",
+   "region_or_tissue": "anterior tissue",
+   "manipulation": "chronic barium chloride 1 mM",
+   "vmem_mv": null,
+   "timepoint": "48-72 h onset; ~35 d adaptation",
+   "n_if_stated": "N>50 x 3 replicates",
+   "direction_signature": "K+-flux inhibition -> anterior degeneration then physiological adaptation (error-correction layer)"
+  },
+  {
+   "id": "C07-oviedo2008-method",
+   "kind": "measurement-method anchor",
+   "source": "Live Imaging of Planarian Membrane Potential Using DiBAC4(3) (CSH Protocols 2008; N.J. Oviedo author) \u2014 the field's standard relative-voltage measurement; no absolute mV anchoring exists",
+   "pmid_or_doi": "PMID 21356693",
+   "species": "planaria",
+   "region_or_tissue": "whole animal",
+   "manipulation": "DiBAC4(3) live imaging",
+   "vmem_mv": null,
+   "timepoint": null,
+   "n_if_stated": null,
+   "direction_signature": "relative dye-ratio polarity only (the reason the record is a DIRECTION record)"
+  },
+  {
+   "id": "C08-durant2016-review",
+   "kind": "review anchor (OA)",
+   "source": "Durant 2016 Regeneration 3:101-113 'Physiological controls of large-scale patterning in planarian regeneration': overview of bioelectric signaling via ion channels and GJs in planaria",
+   "pmid_or_doi": "PMID 27499881 / doi:10.1002/reg2.54",
+   "species": "planaria",
+   "region_or_tissue": "AP axis",
+   "manipulation": "n/a (review)",
+   "vmem_mv": null,
+   "timepoint": null,
+   "n_if_stated": null,
+   "direction_signature": "framework: voltage prepattern -> morphology"
+  },
+  {
+   "id": "C09-pezzulo2021-claim",
+   "kind": "published direction claim (abstract)",
+   "source": "Pezzulo, LaPalme, Durant, Levin 2021 Phil Trans R Soc B: stochastic regenerative phenotypes reinterpreted via bistable bioelectric memory circuits; bioelectric changes storable in tissue for over one week (long-term re-writable memory medium)",
+   "pmid_or_doi": "PMID 33550952 / doi:10.1098/rstb.2019.0765",
+   "species": "planaria",
+   "region_or_tissue": "somatic tissue",
+   "manipulation": "bioelectric perturbation, identical protocol",
+   "vmem_mv": null,
+   "timepoint": ">1 week storage",
+   "n_if_stated": null,
+   "direction_signature": "identical perturbation -> split outcomes (bistability); memory stored >1 week"
+  },
+  {
+   "id": "C10-marsh-beams-1952",
+   "kind": "classic record (abstract absent from 1952 record)",
+   "source": "Marsh G & Beams HW 1952 J Cell Comp Physiol 'Electrical control of morphogenesis in regenerating Dugesia tigrina I. Relation of axial polarity to field strength' \u2014 the founding quantitative claim: externally applied field strength determines/regenerates axial polarity",
+   "pmid_or_doi": "doi:10.1002/jcp.1030390203 (PMID 14946235)",
+   "species": "Dugesia tigrina",
+   "region_or_tissue": "whole fragment",
+   "manipulation": "applied DC electric field, strength-varied",
+   "vmem_mv": null,
+   "timepoint": null,
+   "n_if_stated": null,
+   "direction_signature": "field-strength-dependent polarity control (direction of endogenous gradient = instructive)"
+  },
+  {
+   "id": "C11-chernet2013-xenopus",
+   "kind": "absolute mV measurement (other regenerative model; OA full text mined this session)",
+   "source": "Chernet & Levin 2013 DMM: depolarized Vmem is the signature of induced tumor-like structures (Gli1/KrasG12D/Xrel3/p53); GlyRF99A + 70 mM Cl- forces hyperpolarization measured at -19.4 mV vs untreated siblings by electrophysiological impalement (n=5, P<0.001); hyperpolarization suppresses ITLS incidence",
+   "pmid_or_doi": "PMID 23471912 / doi:10.1242/dmm.010835",
+   "species": "Xenopus laevis",
+   "region_or_tissue": "ITLS regions vs surrounding tissue",
+   "manipulation": "GlyRF99A chloride-channel expression in 70 mM Cl- (hyperpolarizing); ivermectin (depolarizing, 4-fold ITLS increase)",
+   "vmem_mv": -19.4,
+   "vmem_mv_note": "DELTA vs sibling controls (electrode impalement); DiBAC4(3)/CC2-DMPE relative signatures elsewhere",
+   "timepoint": "stage 15 tadpoles",
+   "n_if_stated": "n=5 (impalement); hundreds per incidence arm",
+   "direction_signature": "hyperpolarization delta -19.4 mV -> oncogene-driven ITLS suppressed; depolarization -> ITLS promoted"
+  },
+  {
+   "id": "C12-chernet2014-xenopus",
+   "kind": "published direction claim (abstract)",
+   "source": "Chernet & Levin 2014 Oncotarget: resting potentials of DISTANT somatic cells control oncogene (KRAS) tumorigenesis at long range \u2014 hyperpolarizing remote cells normalizes incidence",
+   "pmid_or_doi": "PMID 24830454 / doi:10.18632/oncotarget.1935",
+   "species": "Xenopus laevis",
+   "region_or_tissue": "remote somatic cells -> ITLS",
+   "manipulation": "long-range GJ-mediated bioelectric state change",
+   "vmem_mv": null,
+   "timepoint": "stage 15-45",
+   "n_if_stated": "N=341 (KRAS-only arm quoted)",
+   "direction_signature": "remote hyperpolarization -> tumor normalization (non-local coupling)"
+  },
+  {
+   "id": "C13-betse-pietak-levin",
+   "kind": "modeling values (Levin-lab simulator, OA full text mined this session; often cited as Pietak & Levin 2017)",
+   "source": "Pietak & Levin 'Exploring Instructive Physiological Signaling with the Bioelectric Tissue Simulation Engine' (BETSE): resting Vmem of the calibrated cell model -63.7 mV; simulated cell/env and Vmem range -10 to -80 mV; excitable panel: -70 mV resting fires AP-like signals, -18 mV self-excites (~100 ms period), -57 mV cell is BISTABLE \u2014 a single forced depolarization transitions it to a stable depolarized ~-14 mV state; GJ voltage-gating half-closed parameter 15 mV",
+   "pmid_or_doi": "PMID 27458581 / doi:10.3389/fbioe.2016.00055",
+   "species": "in-silico multicellular tissue (planaria-anchored platform)",
+   "region_or_tissue": "cell ensembles with GJ coupling",
+   "manipulation": "channel expression panels (NaV/KV1/KV2), forced depolarization",
+   "vmem_mv": {
+    "range_mv": [
+     -80,
+     -10
+    ],
+    "resting_mv": -63.7,
+    "bistable_pair_mv": [
+     -57,
+     -14
+    ],
+    "gj_gating_half_closed_mv": 15
+   },
+   "timepoint": "steady state",
+   "n_if_stated": null,
+   "direction_signature": "bistability between hyperpolarized and depolarized resting states via channel/GJ dynamics \u2014 the modeling-scale anchor for absolute values"
+  },
+  {
+   "id": "C14-vmem-inference-layer",
+   "kind": "stack-side inference constants (repo module, not published measurement)",
+   "source": "cultivation/validation/vmem_inference.py: GHK inference from ion-transporter expression; E_K ~ -90 mV pull for K-leak/pumps; RT/F = 26.7 mV; H,K-ATPase strongest hyperpolarizing weight (Beane 2013 grounding); innexins = coupling not Vm-setting",
+   "pmid_or_doi": "repo module (tests/test_vmem_inference.py)",
+   "species": "S. mediterranea (atlas-grounded)",
+   "region_or_tissue": "per cell type",
+   "manipulation": "expression -> permeability -> GHK",
+   "vmem_mv": null,
+   "vmem_mv_note": "module emits predicted absolute maps; the T5 target tests them against C13's band",
+   "timepoint": null,
+   "n_if_stated": null,
+   "direction_signature": "hyperpolarizing (K leak, Na/K pump, H/K pump) vs depolarizing (NaV, TRP, P2X) gene classes"
+  }
+ ]
+}
