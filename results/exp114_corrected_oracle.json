@@ -1,0 +1,59 @@
+{
+ "exp": "exp114_corrected_oracle",
+ "spearman_class_ordinal": 0.63,
+ "references": {
+  "exp102_raw_class": 0.73,
+  "exp106_v2": 0.811
+ },
+ "class_means": {
+  "DEFAULT0": {
+   "v2_mean": 1.39,
+   "cost_mean": 0.0,
+   "members": [
+    "path",
+    "path200",
+    "cycle",
+    "small_world",
+    "star"
+   ]
+  },
+  "MU0": {
+   "v2_mean": 7.117,
+   "cost_mean": 4.0,
+   "members": [
+    "torus",
+    "torus_elong",
+    "random3",
+    "random8",
+    "scale_free",
+    "scale_free200"
+   ]
+  },
+  "GAMMA0": {
+   "v2_mean": 5.55,
+   "cost_mean": 34.0,
+   "members": [
+    "tree",
+    "grid2d",
+    "grid_elong",
+    "ladder",
+    "random6",
+    "barbell"
+   ]
+  },
+  "GEOMETRY": {
+   "v2_mean": 28.764,
+   "cost_mean": 54.0,
+   "members": [
+    "bipartite",
+    "complete"
+   ]
+  }
+ },
+ "criteria": {
+  "OR_G1_oracle_survives": true,
+  "OR_G2_class_monotonicity": false,
+  "OR_G3_pair_dominates": true
+ },
+ "notes": "The v2 oracle re-tested under its own class-ordinal instrument on the walk-tax-free re-priced map (19 members, lexicographic gamma/mu ladder costs). The geometry pair's domination is the semantic check."
+}
