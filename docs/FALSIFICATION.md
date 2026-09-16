@@ -2944,3 +2944,43 @@ Night seven, part 3. exp43's registered follow-up:
 - NEXT (derived): R5' across the substrate battery (the refusal
   price, open item #4); multi-zone regen scale-up (open item #5);
   quest 001 literature follow-up (the zai stream is live).
+
+## L75 — exp93 THE REFUSAL PRICE BATTERY (4/4 — R5' characterized: the price is a dial distance, and it STRATIFIES INTO THREE CLASSES; the star point is overkill on the verify path)
+
+- THE INSTRUMENT: exp89's machinery verbatim (the uc-in program,
+  exp73's 7-substrate battery, 3 seeds); for every substrate
+  REFUSED at the default operating point (gamma=1, mu=0.015), two
+  one-dial ladders (gamma at default mu; mu at default gamma) plus
+  the registered two-dial probe {(4,0), (16,0)}.
+- RP-G1 PASS — the R5 partition reproduces 7/7 (the default verify
+  agrees with the compiler's own partition check; writable at
+  default: path 2.0 / grid2d 5.67 / random6 4.49 / small_world 3.64
+  mV; refused: torus 8.0 / random3 9.11 / scale_free 11.08).
+- RP-G2 PASS — the star lift reproduces 7/7 (errors 0.25-0.63 mV).
+- RP-G3 PASS — every refusal is priced on the ladders. THE PRICE
+  HIERARCHY (the deposit's core):
+  * class I — WRITABLE AT DEFAULT (price 0): path, grid2d,
+    random6, small_world.
+  * class II — THETA-CHANNEL PRICED (mu->0 alone buys it, the
+    gamma ladder FAILS at every gamma <= 64 at default mu): torus.
+    The compiler-path attribution REVERSES exp78's write-path
+    finding for torus (there gamma*=4 flipped it) — different path,
+    different dominant channel; both are honest channel
+    attributions of the same two-channel law.
+  * class III — TWO-DIAL PRICED: random3 and scale_free verify at
+    the registered probe (gamma=4, mu=0); NEITHER dial alone
+    suffices for either.
+- RP-G4 PASS — the stratification's hub prediction holds:
+  scale_free's gamma ladder fails through 64 at default mu (the
+  exp78 theta-channel plateau, now measured on the WRITE path).
+- THE STAR POINT IS OVERKILL ON THE VERIFY PATH: the cheapest
+  two-dial price is (4, 0), 4 gamma-fold below the star's (64, 0),
+  with the same verify outcome. R5' final form: the refusal price
+  is a CHANNEL-STRATIFIED dial distance — class II refusals are
+  pure theta-channel debts (unbounded fold: mu must reach exactly
+  zero), class III refusals are joint debts the V-channel ratio
+  and the theta homogenization pay together.
+- 67/67 tests untouched (exp89 machinery reused read-only).
+- NEXT (derived): exp94 the multi-zone regen scale-up (the exp90
+  two-source read beyond the 7-substrate battery); the reader
+  extension to new topologies (the handoff's open item #6).
