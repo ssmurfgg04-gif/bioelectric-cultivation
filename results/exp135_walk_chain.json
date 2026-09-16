@@ -1,0 +1,442 @@
+{
+ "exp": "exp135_walk_chain",
+ "model": {
+  "form": "accumulated chain debt D(t*) = int_{24h}^{T_read} exp(-(T_read-s)/tau_p) m(s) ds, m(s) = sum over injected span cells of |theta_i - target_i|; predicted_error = kappa D / 73; break iff > 6.0; deterministic mean-field walk chain (harness Euler update, multi-source BFS order, 8 sub-steps/cell, injection at target), non-resetting state",
+  "free_params": [
+   "kappa (transfer)",
+   "tau_p (persistence, h)"
+  ],
+  "tau_grid": [
+   2.0,
+   4.0,
+   8.0,
+   16.0,
+   32.0,
+   64.0,
+   128.0,
+   1000000000.0
+  ]
+ },
+ "fit": {
+  "per_tau": [
+   {
+    "tau_p": 2.0,
+    "kmin": 1.2952884448570097,
+    "kmax": 1.1994274934117628,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 4.0,
+    "kmin": 0.6603527045895146,
+    "kmax": 0.6090013738053989,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 8.0,
+    "kmin": 0.3700711141479114,
+    "kmax": 0.314735031908315,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 16.0,
+    "kmin": 0.24758711331332367,
+    "kmax": 0.17934705431805567,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 32.0,
+    "kmin": 0.19524043247647863,
+    "kmax": 0.12164032238475021,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 64.0,
+    "kmin": 0.17163754744564502,
+    "kmax": 0.09674702147620036,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 128.0,
+    "kmin": 0.16050834213409662,
+    "kmax": 0.08545436355061882,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   },
+   {
+    "tau_p": 1000000000.0,
+    "kmin": 0.14983473585824228,
+    "kmax": 0.07497501636275773,
+    "feasible": false,
+    "binding_break": "g16_t72",
+    "binding_rescue": "g64_t24"
+   }
+  ],
+  "feasible": false,
+  "tau_p_star": 4.0,
+  "kappa_interval": null,
+  "kappa_star": null
+ },
+ "torus_curve": [
+  {
+   "cell": "g1_t0",
+   "D": 1062.77,
+   "pred_err": NaN,
+   "direct_err": 7.243,
+   "deposited": "break",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g1_t6",
+   "D": 1058.02,
+   "pred_err": NaN,
+   "direct_err": 7.363,
+   "deposited": "break",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g1_t12",
+   "D": 1052.1,
+   "pred_err": NaN,
+   "direct_err": 7.488,
+   "deposited": "break",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g1_t18",
+   "D": 1045.79,
+   "pred_err": NaN,
+   "direct_err": 7.611,
+   "deposited": "break",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g1_t24",
+   "D": 1039.59,
+   "pred_err": NaN,
+   "direct_err": 7.73,
+   "deposited": "break",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g4_t0",
+   "D": 492.87,
+   "pred_err": NaN,
+   "direct_err": 3.795,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g4_t12",
+   "D": 479.27,
+   "pred_err": NaN,
+   "direct_err": 4.504,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g4_t24",
+   "D": 467.37,
+   "pred_err": NaN,
+   "direct_err": 5.089,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g4_t26",
+   "D": 465.96,
+   "pred_err": NaN,
+   "direct_err": 5.174,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g4_t30",
+   "D": 478.04,
+   "pred_err": NaN,
+   "direct_err": 5.364,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g4_t34",
+   "D": 495.17,
+   "pred_err": NaN,
+   "direct_err": 5.543,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g4_t36",
+   "D": 508.61,
+   "pred_err": NaN,
+   "direct_err": 5.641,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g4_t48",
+   "D": 694.49,
+   "pred_err": NaN,
+   "direct_err": 6.353,
+   "deposited": "break",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g16_t0",
+   "D": 116.0,
+   "pred_err": NaN,
+   "direct_err": 1.139,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g16_t24",
+   "D": 107.38,
+   "pred_err": NaN,
+   "direct_err": 3.677,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g16_t36",
+   "D": 242.46,
+   "pred_err": NaN,
+   "direct_err": 4.584,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g16_t48",
+   "D": 719.21,
+   "pred_err": NaN,
+   "direct_err": 5.868,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g16_t52",
+   "D": 889.76,
+   "pred_err": NaN,
+   "direct_err": 6.267,
+   "deposited": "break",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g16_t56",
+   "D": 1084.21,
+   "pred_err": NaN,
+   "direct_err": 6.659,
+   "deposited": "break",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g16_t58",
+   "D": 1197.13,
+   "pred_err": NaN,
+   "direct_err": 6.864,
+   "deposited": "break",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g16_t72",
+   "D": 1746.27,
+   "pred_err": NaN,
+   "direct_err": 8.172,
+   "deposited": "break",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g64_t0",
+   "D": 17.84,
+   "pred_err": NaN,
+   "direct_err": 0.244,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g64_t16",
+   "D": 16.94,
+   "pred_err": NaN,
+   "direct_err": 2.667,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g64_t24",
+   "D": 16.6,
+   "pred_err": NaN,
+   "direct_err": 3.378,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g64_t28",
+   "D": 83.45,
+   "pred_err": NaN,
+   "direct_err": 3.728,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g64_t31",
+   "D": 259.7,
+   "pred_err": NaN,
+   "direct_err": 4.113,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g64_t34",
+   "D": 484.76,
+   "pred_err": NaN,
+   "direct_err": 4.563,
+   "deposited": "rescue",
+   "predicted": "rescue"
+  },
+  {
+   "cell": "g64_t36",
+   "D": 663.28,
+   "pred_err": NaN,
+   "direct_err": 4.904,
+   "deposited": "break",
+   "predicted": "rescue"
+  }
+ ],
+ "predicted_edges": {
+  "g1": null,
+  "g4": null,
+  "g16": null,
+  "g64": null
+ },
+ "per_gamma_fits": {
+  "g1": {
+   "kmin": 0.4213180577707058,
+   "kmax": null,
+   "feasible": true,
+   "note": "break-only (no rescue cell)"
+  },
+  "g4": {
+   "kmin": 0.6306810468929797,
+   "kmax": 0.8611760001119783,
+   "feasible": true
+  },
+  "g16": {
+   "kmin": 0.49226742081697683,
+   "kmax": 0.6090013738053989,
+   "feasible": true
+  },
+  "g64": {
+   "kmin": 0.6603527045895146,
+   "kmax": 0.9035488082263774,
+   "feasible": true
+  }
+ },
+ "ablation": {
+  "kmin": 0.1450957425590153,
+  "kmax": 0.03733402093584818,
+  "feasible": false,
+  "binding_break": "g4_t48",
+  "binding_rescue": "g64_t0"
+ },
+ "transfer": {
+  "grid2d": {
+   "n_cells": 26,
+   "agree": 0,
+   "mismatches": [
+    "g1_t0 pred nan",
+    "g1_t6 pred nan",
+    "g1_t12 pred nan",
+    "g1_t18 pred nan",
+    "g1_t24 pred nan",
+    "g4_t0 pred nan",
+    "g4_t12 pred nan",
+    "g4_t24 pred nan"
+   ]
+  },
+  "path": {
+   "n_cells": 26,
+   "agree": 0,
+   "mismatches": [
+    "g1_t0 pred nan",
+    "g1_t6 pred nan",
+    "g1_t12 pred nan",
+    "g1_t18 pred nan",
+    "g1_t24 pred nan",
+    "g4_t0 pred nan",
+    "g4_t12 pred nan",
+    "g4_t24 pred nan"
+   ]
+  }
+ },
+ "direct_sim_edges": {
+  "g1": 0.0,
+  "g4": 48.0,
+  "g16": 52.0,
+  "g64": null
+ },
+ "decomposition": {
+  "g16_t48": {
+   "err": 5.868,
+   "err_span": 3.68,
+   "err_intact": 9.535,
+   "th_span_dev": 3.537
+  },
+  "g16_t52": {
+   "err": 6.267,
+   "err_span": 4.272,
+   "err_intact": 9.803,
+   "th_span_dev": 4.139
+  },
+  "g4_t36": {
+   "err": 5.641,
+   "err_span": 3.215,
+   "err_intact": 9.482,
+   "th_span_dev": 2.31
+  },
+  "g4_t48": {
+   "err": 6.353,
+   "err_span": 3.956,
+   "err_intact": 10.353,
+   "th_span_dev": 3.266
+  },
+  "g1_t0": {
+   "err": 7.243,
+   "err_span": 6.244,
+   "err_intact": 9.427,
+   "th_span_dev": 4.42
+  },
+  "g64_t34": {
+   "err": 4.563,
+   "err_span": 2.246,
+   "err_intact": 7.967,
+   "th_span_dev": 2.185
+  }
+ },
+ "marginal_rates": {
+  "dD_dt_g16_transition": 42.64,
+  "kappa_rate_mV_per_h_g16": NaN,
+  "dD_dt_g4_transition": 15.49,
+  "kappa_rate_mV_per_h_g4": NaN,
+  "empirical_demand_mV_per_h": 1.5
+ },
+ "criteria": {
+  "B1_curve_reproduced": false,
+  "B2_sign_rising": false,
+  "B3_single_fit_no_refit": false,
+  "B4_ablation_discriminates": true
+ },
+ "notes": "The walk-chain accumulation model (L114's registered object): the deadline as a threshold crossing of the persistence-kernel integral of the chain's theta-mismatch, the chain simulated as the harness's own deterministic walk with non-resetting state."
+}

@@ -1,0 +1,169 @@
+{
+ "exp": "exp136_generator_v6 (novel-anatomy invention)",
+ "claim": "the compiler can invent anatomies evolution never made (novel beyond the frozen reference library's own internal spread) that still decode under the two-channel law (measured quadrature audit below the 6.0 mV operating bar; two-source read re-derivation)",
+ "metric": {
+  "distance": "100 * d_struct + d_rms; d_struct = tolerant boundary-set |Delta|/|cup| (match tol 0.02); d_rms = profile RMS (mV) at n=100",
+  "N_STAR_rule": "95th percentile of within-library nearest-neighbor distances",
+  "n_star": 82.288,
+  "library_nn": {
+   "min": 0.0,
+   "median": 49.81,
+   "p95": 82.29,
+   "max": 90.21
+  },
+  "library": [
+   "wt",
+   "twoheaded",
+   "third_eye",
+   "dual_zone",
+   "ladder",
+   "mirror",
+   "anchor_corrupted",
+   "multi_exp94",
+   "exp81_gen000",
+   "exp81_gen001",
+   "exp81_gen002",
+   "exp81_gen003",
+   "exp81_gen004",
+   "exp81_gen005",
+   "exp81_gen006",
+   "exp81_gen007",
+   "exp81_gen008",
+   "exp81_gen009",
+   "exp81_gen010",
+   "exp81_gen011",
+   "exp81_gen012",
+   "exp81_gen013",
+   "exp81_gen014",
+   "exp81_gen015",
+   "exp81_gen016",
+   "exp81_gen017",
+   "exp81_gen018",
+   "exp81_gen019",
+   "exp81_gen020",
+   "exp81_gen021",
+   "exp81_gen022",
+   "exp81_gen023",
+   "exp81_gen024",
+   "exp81_gen025",
+   "exp81_gen026",
+   "exp81_gen027",
+   "exp81_gen028",
+   "exp81_gen029",
+   "exp81_gen030",
+   "exp81_gen031",
+   "exp81_gen032",
+   "exp81_gen033",
+   "exp81_gen034",
+   "exp81_gen035",
+   "exp81_gen036",
+   "exp81_gen037",
+   "exp81_gen038",
+   "exp81_gen039",
+   "exp87_00",
+   "exp87_01",
+   "exp87_02",
+   "exp87_03",
+   "exp87_04",
+   "exp87_05",
+   "exp87_06",
+   "exp87_07",
+   "exp87_08",
+   "exp87_09",
+   "exp87_10",
+   "exp87_11",
+   "exp87_12",
+   "exp87_13",
+   "exp87_14",
+   "exp87_15",
+   "exp87_16",
+   "exp87_17",
+   "exp87_18",
+   "exp87_19",
+   "exp87_20",
+   "exp87_21",
+   "exp87_22",
+   "exp87_23"
+  ],
+  "library_size": 72,
+  "splice_family": 48564,
+  "anti_recombination": "distance to every single-crossover splice (c in 0.05..0.95) > N_STAR"
+ },
+ "search": {
+  "space": "1-4 disjoint zones, width >= 0.04, gap >= 0.02, voltages on a 1 mV grid in [-35, -15] (the pole-read domain), span <= 0.90",
+  "score": "J = quad_err_search + 5.0 * relu(N_STAR - NOV_lib)",
+  "search_cells": [
+   [
+    1.0,
+    0.015
+   ],
+   [
+    4.0,
+    0.0
+   ]
+  ],
+  "seeding": "60 stratified seeds (zone count x axis thirds x voltage bands); 4 generations x 36 (12 elites + mutations with library-cut rejection sampling)",
+  "rounds": [
+   {
+    "round": 0,
+    "n": 96,
+    "n_novel": 15,
+    "median_J": 56.43382603346776,
+    "best_J": 1.271783758357274
+   },
+   {
+    "round": 1,
+    "n": 48,
+    "n_novel": 34,
+    "median_J": 1.8679814972107476,
+    "best_J": 1.184666315508919
+   },
+   {
+    "round": 2,
+    "n": 48,
+    "n_novel": 27,
+    "median_J": 1.675457094312895,
+    "best_J": 1.0997809596797485
+   },
+   {
+    "round": 3,
+    "n": 48,
+    "n_novel": 30,
+    "median_J": 1.574774770871782,
+    "best_J": 1.0997809596797485
+   },
+   {
+    "round": 4,
+    "n": 48,
+    "n_novel": 28,
+    "median_J": 1.5071426446011182,
+    "best_J": 1.0699214907209222
+   },
+   {
+    "round": 5,
+    "n": 48,
+    "n_novel": 31,
+    "median_J": 1.299048907493084,
+    "best_J": 1.013953074794521
+   }
+  ],
+  "pool_size": 254
+ },
+ "inventions": [],
+ "quadrature_validity_on_invented_map": {
+  "spearman_quad_vs_full": null,
+  "note": "exp84's composition law re-tested on the invented anatomies at their emitted cells (diagnostic, not a gate)"
+ },
+ "criteria": {
+  "C1_novelty_generation": false,
+  "C2_two_channel_audit": false,
+  "C3_decode_stability": false,
+  "C4_zero_anatomy_special": false
+ },
+ "star_only_degradation": false,
+ "delivered_count": 0,
+ "audit_pass_count": 0,
+ "decode_pass_count": 0,
+ "wall_s": 196.5,
+ "notes": "The audit prices WRITABILITY (exp84's measured channel ablations: start at the invented pattern, let each channel erode for the 24 h window, compose in quadrature); C3 prices RE-DERIVATION (the exp90 two-source read after amputation of the zone span, then a 100 t.u. hold). The operating-point ladder is the price map's cells; the emitted cell is the cheapest passing rung and is part of the compiled program."
+}
