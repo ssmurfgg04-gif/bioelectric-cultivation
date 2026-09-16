@@ -1,0 +1,1310 @@
+{
+ "exp": "exp146_splice_bar (workstream L)",
+ "claim": "re-deriving the anti-recombination bar from the splice family's OWN internal spread (the corpus-defines-threshold rule applied to the corpus the library induces) repairs the L124-localized killer and revives the exp136 generator claim",
+ "branch": "PARTIAL (delivery 7): C1 verdict per its own wording; binding stage identified",
+ "stage_order": [
+  "bar_deposit",
+  "search",
+  "funnel",
+  "audit",
+  "gates"
+ ],
+ "pre_registered_clause": "clear iff NOV_lib > N*_lib AND nov_splice > N*_splice",
+ "n_star_lib": 82.288,
+ "n_star_splice": 20.14,
+ "bar_ratio": 0.2448,
+ "family": {
+  "size": 48564,
+  "distinct_profiles": 16116,
+  "duplicate_classes": 2985,
+  "singletons": 13131,
+  "max_class_size": 2098,
+  "members_in_duplicate_classes": 35433
+ },
+ "nn_percentiles": {
+  "P50": 0.0,
+  "P60": 0.0,
+  "P70": 0.0,
+  "P80": 6.708,
+  "P90": 14.382,
+  "P95": 20.14,
+  "P99": 33.334,
+  "P100": 100.033
+ },
+ "verification_harness": {
+  "family_pairs_4000_max_abs_diff": 2.842170943040401e-14,
+  "family_pairs_reverse_2000_max_abs_diff": 1.4210854715202004e-14,
+  "candidate_x_family_6x4000_max_abs_diff": 2.842170943040401e-14,
+  "nov_splice_full_family": [
+   {
+    "fast": 37.797051796,
+    "verbatim": 37.797051796
+   },
+   {
+    "fast": 30.81253727,
+    "verbatim": 30.81253727
+   }
+  ],
+  "singleton_nn_12_verbatim_max_abs_diff": 0.0
+ },
+ "delivered_nov_splice_verbatim_recheck": {
+  "0": {
+   "fast": 61.499377,
+   "verbatim": 61.499377
+  },
+  "1": {
+   "fast": 60.031443,
+   "verbatim": 60.031443
+  },
+  "2": {
+   "fast": 65.369199,
+   "verbatim": 65.369199
+  },
+  "3": {
+   "fast": 59.674067,
+   "verbatim": 59.674067
+  },
+  "4": {
+   "fast": 64.912472,
+   "verbatim": 64.912472
+  },
+  "5": {
+   "fast": 64.995071,
+   "verbatim": 64.995071
+  },
+  "6": {
+   "fast": 53.656,
+   "verbatim": 53.656
+  }
+ },
+ "replication_of_exp141": {
+  "rounds_match": true,
+  "pool_size_match": true,
+  "rounds": [
+   {
+    "round": 0,
+    "match": true
+   },
+   {
+    "round": 1,
+    "match": true
+   },
+   {
+    "round": 2,
+    "match": true
+   },
+   {
+    "round": 3,
+    "match": true
+   },
+   {
+    "round": 4,
+    "match": true
+   },
+   {
+    "round": 5,
+    "match": true
+   }
+  ],
+  "pool_size": 253,
+  "exp141_pool_size": 253
+ },
+ "funnel": {
+  "pool": 253,
+  "lib_novel": 96,
+  "splice_clear_new_bar": 96,
+  "splice_clear_old_bar": 0,
+  "delivered": 7,
+  "audit_pass_delivered": 7,
+  "nonsilent_pass_delivered": 7,
+  "decode_pass_delivered": 5,
+  "silent_only_flagged": []
+ },
+ "delivered": [
+  {
+   "name": "d-01",
+   "zones": [
+    [
+     0.91,
+     0.971,
+     -40.8
+    ],
+    [
+     0.237,
+     0.325,
+     -28.6
+    ],
+    [
+     0.735,
+     0.919,
+     -42.7
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 2,
+    "min_v": -42.7,
+    "max_v": -28.6,
+    "noncanon_adjacent_boundaries": 1
+   },
+   "J": 1.0833,
+   "nov_lib": 88.98,
+   "nov_splice": 61.499,
+   "min_pairwise_D": 92.16,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.749,
+     "eT": 0.247,
+     "quad": 0.788,
+     "pass": true,
+     "silent": true,
+     "full": 0.749
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.749,
+     "eT": 0.829,
+     "quad": 1.117,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.302,
+     "eT": 0.119,
+     "quad": 0.325,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.302,
+     "eT": 0.829,
+     "quad": 0.882,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.118,
+     "eT": 0.081,
+     "quad": 0.143,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.118,
+     "eT": 0.838,
+     "quad": 0.847,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.067,
+     "eT": 0.054,
+     "quad": 0.086,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.045,
+     "eT": 0.039,
+     "quad": 0.06,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.045,
+     "eT": 0.834,
+     "quad": 0.836,
+     "pass": true,
+     "silent": false
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decode_errs": [
+    3.828,
+    3.861,
+    3.933
+   ],
+   "hold_errs": [
+    3.926,
+    3.871,
+    4.026
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "d-02",
+   "zones": [
+    [
+     0.16,
+     0.327,
+     -51.0
+    ],
+    [
+     0.831,
+     0.878,
+     -48.6
+    ],
+    [
+     0.627,
+     0.698,
+     -55.5
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 3,
+    "min_v": -55.5,
+    "max_v": -48.6,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.3737,
+   "nov_lib": 85.38,
+   "nov_splice": 60.031,
+   "min_pairwise_D": 100.61,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.924,
+     "eT": 0.247,
+     "quad": 0.957,
+     "pass": true,
+     "silent": true,
+     "full": 0.924
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.924,
+     "eT": 1.026,
+     "quad": 1.381,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.373,
+     "eT": 0.119,
+     "quad": 0.391,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.373,
+     "eT": 1.03,
+     "quad": 1.095,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.131,
+     "eT": 0.081,
+     "quad": 0.154,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.131,
+     "eT": 1.028,
+     "quad": 1.037,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.07,
+     "eT": 0.054,
+     "quad": 0.088,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.048,
+     "eT": 0.039,
+     "quad": 0.062,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.048,
+     "eT": 1.029,
+     "quad": 1.031,
+     "pass": true,
+     "silent": false
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decode_errs": [
+    9.099,
+    9.119,
+    9.077
+   ],
+   "hold_errs": [
+    8.927,
+    8.95,
+    8.909
+   ],
+   "decode_stable_seeds": "0/3",
+   "decode_pass": false
+  },
+  {
+   "name": "d-03",
+   "zones": [
+    [
+     0.23,
+     0.334,
+     -35.2
+    ],
+    [
+     0.43,
+     0.621,
+     -53.9
+    ],
+    [
+     0.682,
+     0.796,
+     -29.2
+    ],
+    [
+     0.228,
+     0.297,
+     -18.4
+    ],
+    [
+     0.8027276328817403,
+     0.893,
+     -38.1
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 3,
+    "min_v": -53.9,
+    "max_v": -18.4,
+    "noncanon_adjacent_boundaries": 2
+   },
+   "J": 1.3874,
+   "nov_lib": 85.01,
+   "nov_splice": 65.369,
+   "min_pairwise_D": 92.16,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 0.946,
+     "eT": 0.247,
+     "quad": 0.978,
+     "pass": true,
+     "silent": true,
+     "full": 0.946
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 0.946,
+     "eT": 1.055,
+     "quad": 1.417,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.384,
+     "eT": 0.119,
+     "quad": 0.402,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.384,
+     "eT": 1.083,
+     "quad": 1.149,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.142,
+     "eT": 0.081,
+     "quad": 0.163,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.142,
+     "eT": 1.106,
+     "quad": 1.115,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.082,
+     "eT": 0.054,
+     "quad": 0.098,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.048,
+     "eT": 0.039,
+     "quad": 0.062,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.048,
+     "eT": 1.099,
+     "quad": 1.1,
+     "pass": true,
+     "silent": false
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decode_errs": [
+    4.438,
+    4.516,
+    4.494
+   ],
+   "hold_errs": [
+    4.433,
+    4.45,
+    4.496
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "d-04",
+   "zones": [
+    [
+     0.522,
+     0.665,
+     -34.7
+    ],
+    [
+     0.847,
+     0.987,
+     -52.5
+    ],
+    [
+     0.18,
+     0.336,
+     -18.9
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -52.5,
+    "max_v": -18.9,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.4563,
+   "nov_lib": 90.52,
+   "nov_splice": 59.674,
+   "min_pairwise_D": 88.77,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.084,
+     "eT": 0.247,
+     "quad": 1.112,
+     "pass": true,
+     "silent": true,
+     "full": 1.084
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.084,
+     "eT": 1.202,
+     "quad": 1.619,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.434,
+     "eT": 0.119,
+     "quad": 0.45,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.434,
+     "eT": 1.218,
+     "quad": 1.293,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.153,
+     "eT": 0.081,
+     "quad": 0.173,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.153,
+     "eT": 1.23,
+     "quad": 1.24,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.086,
+     "eT": 0.054,
+     "quad": 0.101,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.053,
+     "eT": 0.039,
+     "quad": 0.066,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.053,
+     "eT": 1.227,
+     "quad": 1.228,
+     "pass": true,
+     "silent": false
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decode_errs": [
+    1.76,
+    1.785,
+    1.746
+   ],
+   "hold_errs": [
+    2.382,
+    2.404,
+    2.322
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "d-05",
+   "zones": [
+    [
+     0.785,
+     0.957,
+     -28.7
+    ],
+    [
+     0.425,
+     0.509,
+     -27.1
+    ],
+    [
+     0.563,
+     0.694,
+     -47.4
+    ],
+    [
+     0.19,
+     0.274,
+     -23.4
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -47.4,
+    "max_v": -23.4,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.5864,
+   "nov_lib": 90.48,
+   "nov_splice": 64.912,
+   "min_pairwise_D": 84.23,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.439,
+     "eT": 0.247,
+     "quad": 1.46,
+     "pass": true,
+     "silent": true,
+     "full": 1.439
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.439,
+     "eT": 1.59,
+     "quad": 2.145,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.573,
+     "eT": 0.119,
+     "quad": 0.585,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.573,
+     "eT": 1.644,
+     "quad": 1.741,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.183,
+     "eT": 0.081,
+     "quad": 0.201,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.183,
+     "eT": 1.66,
+     "quad": 1.671,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.099,
+     "eT": 0.054,
+     "quad": 0.113,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.061,
+     "eT": 0.039,
+     "quad": 0.072,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.061,
+     "eT": 1.668,
+     "quad": 1.669,
+     "pass": true,
+     "silent": false
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decode_errs": [
+    2.141,
+    2.163,
+    2.206
+   ],
+   "hold_errs": [
+    3.035,
+    3.044,
+    3.031
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  },
+  {
+   "name": "d-06",
+   "zones": [
+    [
+     0.169,
+     0.346,
+     -51.9
+    ],
+    [
+     0.801,
+     0.976,
+     -16.4
+    ],
+    [
+     0.336,
+     0.535,
+     -53.8
+    ],
+    [
+     0.732,
+     0.81,
+     -24.6
+    ]
+   ],
+   "tags": {
+    "nondisjoint": true,
+    "overlap": true,
+    "touching": false,
+    "n_below_line_zones": 2,
+    "min_v": -53.8,
+    "max_v": -16.4,
+    "noncanon_adjacent_boundaries": 2
+   },
+   "J": 1.5896,
+   "nov_lib": 91.37,
+   "nov_splice": 64.995,
+   "min_pairwise_D": 88.77,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.511,
+     "eT": 0.247,
+     "quad": 1.531,
+     "pass": true,
+     "silent": true,
+     "full": 1.511
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.511,
+     "eT": 1.669,
+     "quad": 2.251,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.596,
+     "eT": 0.119,
+     "quad": 0.608,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.596,
+     "eT": 1.707,
+     "quad": 1.808,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.189,
+     "eT": 0.081,
+     "quad": 0.205,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.189,
+     "eT": 1.717,
+     "quad": 1.728,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.112,
+     "eT": 0.054,
+     "quad": 0.124,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.059,
+     "eT": 0.039,
+     "quad": 0.071,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.059,
+     "eT": 1.722,
+     "quad": 1.723,
+     "pass": true,
+     "silent": false
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decode_errs": [
+    9.001,
+    9.137,
+    9.058
+   ],
+   "hold_errs": [
+    9.012,
+    9.13,
+    9.051
+   ],
+   "decode_stable_seeds": "0/3",
+   "decode_pass": false
+  },
+  {
+   "name": "d-07",
+   "zones": [
+    [
+     0.555,
+     0.662,
+     -19.3
+    ],
+    [
+     0.196,
+     0.303,
+     -37.5
+    ],
+    [
+     0.78,
+     0.919,
+     -26.4
+    ]
+   ],
+   "tags": {
+    "nondisjoint": false,
+    "overlap": false,
+    "touching": false,
+    "n_below_line_zones": 1,
+    "min_v": -37.5,
+    "max_v": -19.3,
+    "noncanon_adjacent_boundaries": 0
+   },
+   "J": 1.6626,
+   "nov_lib": 85.74,
+   "nov_splice": 53.656,
+   "min_pairwise_D": 84.23,
+   "ladder": [
+    {
+     "cell": [
+      1.0,
+      0.0
+     ],
+     "cost": 0.25,
+     "eV": 1.628,
+     "eT": 0.247,
+     "quad": 1.647,
+     "pass": true,
+     "silent": true,
+     "full": 1.628
+    },
+    {
+     "cell": [
+      1.0,
+      0.015
+     ],
+     "cost": 1.25,
+     "eV": 1.628,
+     "eT": 1.797,
+     "quad": 2.425,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      4.0,
+      0.0
+     ],
+     "cost": 1.0,
+     "eV": 0.646,
+     "eT": 0.119,
+     "quad": 0.657,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      4.0,
+      0.015
+     ],
+     "cost": 2.0,
+     "eV": 0.646,
+     "eT": 1.864,
+     "quad": 1.973,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      16.0,
+      0.0
+     ],
+     "cost": 4.0,
+     "eV": 0.21,
+     "eT": 0.081,
+     "quad": 0.225,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      16.0,
+      0.015
+     ],
+     "cost": 5.0,
+     "eV": 0.21,
+     "eT": 1.889,
+     "quad": 1.901,
+     "pass": true,
+     "silent": false
+    },
+    {
+     "cell": [
+      32.0,
+      0.0
+     ],
+     "cost": 8.0,
+     "eV": 0.11,
+     "eT": 0.054,
+     "quad": 0.122,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.0
+     ],
+     "cost": 16.0,
+     "eV": 0.064,
+     "eT": 0.039,
+     "quad": 0.075,
+     "pass": true,
+     "silent": true
+    },
+    {
+     "cell": [
+      64.0,
+      0.015
+     ],
+     "cost": 17.0,
+     "eV": 0.064,
+     "eT": 1.89,
+     "quad": 1.892,
+     "pass": true,
+     "silent": false
+    }
+   ],
+   "audit_pass": true,
+   "nonsilent_pass": true,
+   "silent_only": false,
+   "emitted_cell": [
+    1.0,
+    0.0
+   ],
+   "decode_errs": [
+    4.542,
+    4.66,
+    4.607
+   ],
+   "hold_errs": [
+    4.833,
+    4.897,
+    4.834
+   ],
+   "decode_stable_seeds": "3/3",
+   "decode_pass": true
+  }
+ ],
+ "silent_freebie_check": {
+  "rule": "a delivered invention verifying ONLY at mu=0 rungs is flagged silent_only and excluded from the C2/C3 counts (primary reading: numerator AND denominator; secondary: numerator only)",
+  "flagged": [],
+  "c2_primary": false,
+  "c3_primary": false,
+  "c2_secondary": false,
+  "c3_secondary": false
+ },
+ "gates": {
+  "L1_bar_deposit_order": true,
+  "L2_minimum_revival": true,
+  "L3_C2_audit": false,
+  "L4_C3_decode": false,
+  "C1_novelty_generation": false,
+  "C4_zero_anatomy_special": false
+ },
+ "gate_clauses_passed": 2,
+ "partial_deposit": {
+  "delivery": 7,
+  "c1_verdict_per_wording": false,
+  "binding_stage": "C4 pairwise filter or audit"
+ },
+ "wall_s": 174.8,
+ "notes": "Instruments are exp136/exp141/exp144's imported verbatim; the ONLY changes are (a) the splice bar's derivation corpus (the family itself, same 95th-pct NN rule and metric, verified exactly against the verbatim metric before any selection) and (b) the silent-freebie check, which is part of gates L2/L3/L4 by pre-registration. The delivered candidates' nov_splice values are re-verified with the verbatim metric before the gates are evaluated."
+}
