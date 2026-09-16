@@ -1009,3 +1009,37 @@ and the literature.
   destruction-proof, ageless medium; ES-G6: the architecture is a
   required part of the protocol) with the wet-lab companion document
   (docs/STAGE5_EXTERNAL_STORAGE_PROTOCOL.md).
+
+### Stage scoreboard after the quantitative-law batch (exp84-exp90)
+- Stage 2 筑基: **THE GENE LAYER IS CLOSED END TO END.** The record's
+  plane profile is statistically FLAT (exp85: trunk-head z=0.32 — the
+  profile could never refute a one-parameter coin); the coin-digest
+  ARTIFACT found and repaired (the head-plane window was wound-state
+  constant, u=0.212 for every seed — penetrance had saturated);
+  the head-plane fragility was REGEN-layer biology (b_head=0.70 coin-
+  off), repaired by the M33-gated read (0.70→0.00) — the pool
+  recomposes at 0.767 vs 0.799 with NO per-plane parameters (exp86).
+  The corpus re-wired to the adopted stack: MAE 0.522 → 0.365 raw /
+  0.304 corrected-decoded (the stale 24h protocol window was 43% of
+  the residual); the remaining gaps NAMED (the exp40 dose axis; the
+  record's own series-variance floor) with the repair registered
+  (exp88).
+- Stage 3 金丹: **THE COMPILER IS UNIVERSAL.** v5 connects the reader
+  (the R1 memory write + the exp79 reader weight + the M33 gate;
+  zone errors 6-16 → 0.29 mV; five instrument findings owned) and
+  emits its own operating point (R7': the star point as a
+  precondition). R5' BORN: the partition refusal is a PRICE TAG, not
+  a wall — at the default operating point the exp43 signature
+  reproduces 7/7, at the star point EVERY substrate verifies
+  (0.25-0.63 mV), and the M33 domain stays substrate-independent
+  (7/7) — the two rules are orthogonal (exp89). The two-source read
+  closes the multi-region novel regen UNIVERSALLY (7/7 substrates,
+  0.49-0.70 mV; no backdoor; the canon source load-bearing) — the
+  final rule set R1/R1'/R2/R3/R4/R5/R5'/R6/R7/R7' + two sources
+  (exp90).
+- Stage 5 飞升: **THE TWO-CHANNEL LAW IS QUANTITATIVELY CLOSED** —
+  err = sqrt(eV² + eθ²) (Spearman 0.999, med rel 2.7%, holdout torus
+  rho 1.000; the mean-field 0.838 was formula-limited, not
+  dynamics-limited; the overlap correction honestly retired; the
+  writability boundary 100%; the price attributed to the propagation
+  panel where exp62/65 measured it) (exp84).
