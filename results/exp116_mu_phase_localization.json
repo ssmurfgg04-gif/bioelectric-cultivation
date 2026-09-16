@@ -1,0 +1,108 @@
+{
+ "exp": "exp116_mu_phase_localization",
+ "arms": {
+  "torus_oo": {
+   "rate": 1.0,
+   "err": 5.54
+  },
+  "torus_w1s1": {
+   "rate": 0.0,
+   "err": 8.02
+  },
+  "torus_w1s0": {
+   "rate": 0.0,
+   "err": 6.41
+  },
+  "torus_w0s1": {
+   "rate": 0.0,
+   "err": 7.53
+  },
+  "torus_elong_oo": {
+   "rate": 1.0,
+   "err": 5.47
+  },
+  "torus_elong_w1s1": {
+   "rate": 0.0,
+   "err": 7.82
+  },
+  "torus_elong_w1s0": {
+   "rate": 0.0,
+   "err": 6.26
+  },
+  "torus_elong_w0s1": {
+   "rate": 0.0,
+   "err": 7.4
+  },
+  "random3_oo": {
+   "rate": 1.0,
+   "err": 5.16
+  },
+  "random3_w1s1": {
+   "rate": 0.0,
+   "err": 7.39
+  },
+  "random3_w1s0": {
+   "rate": 0.333,
+   "err": 6.01
+  },
+  "random3_w0s1": {
+   "rate": 0.0,
+   "err": 6.9
+  },
+  "random8_oo": {
+   "rate": 1.0,
+   "err": 5.28
+  },
+  "random8_w1s1": {
+   "rate": 0.0,
+   "err": 7.45
+  },
+  "random8_w1s0": {
+   "rate": 0.0,
+   "err": 6.09
+  },
+  "random8_w0s1": {
+   "rate": 0.0,
+   "err": 6.94
+  },
+  "scale_free_oo": {
+   "rate": 1.0,
+   "err": 5.94
+  },
+  "scale_free_w1s1": {
+   "rate": 0.0,
+   "err": 8.48
+  },
+  "scale_free_w1s0": {
+   "rate": 0.0,
+   "err": 6.87
+  },
+  "scale_free_w0s1": {
+   "rate": 0.0,
+   "err": 7.91
+  },
+  "scale_free200_oo": {
+   "rate": 1.0,
+   "err": 5.91
+  },
+  "scale_free200_w1s1": {
+   "rate": 0.0,
+   "err": 8.52
+  },
+  "scale_free200_w1s0": {
+   "rate": 0.0,
+   "err": 6.93
+  },
+  "scale_free200_w0s1": {
+   "rate": 0.0,
+   "err": 7.88
+  }
+ },
+ "verdict": "both phases contribute (no clean attribution)",
+ "criteria": {
+  "MP_G1_phase_attribution": false,
+  "MP_G2_corner_anchoring": true,
+  "MP_G3_no_runaway": true
+ },
+ "notes": "The mu channel's contamination phase localized by a 2x2 (window-mu x settle-mu) at default gamma on the six MU0 members under the frozen walk."
+}
