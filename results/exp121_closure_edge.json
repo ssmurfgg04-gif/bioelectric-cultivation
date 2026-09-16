@@ -1,0 +1,91 @@
+{
+ "exp": "exp121_closure_edge",
+ "arms": {
+  "mu_ladder": {
+   "mu0.015_t0": 0.0,
+   "mu0.015_t6": 0.0,
+   "mu0.015_t12": 0.0,
+   "mu0.015_t18": 0.0,
+   "mu0.015_t24": 0.0,
+   "mu0.015_t36": 0.0,
+   "mu0.015_t48": 1.0,
+   "mu0.015_t72": 1.0,
+   "mu0.03_t0": 0.0,
+   "mu0.03_t6": 0.0,
+   "mu0.03_t12": 0.0,
+   "mu0.03_t18": 0.0,
+   "mu0.03_t24": 0.0,
+   "mu0.03_t36": 1.0,
+   "mu0.03_t48": 1.0,
+   "mu0.03_t72": 1.0,
+   "mu0.06_t0": 0.0,
+   "mu0.06_t6": 0.0,
+   "mu0.06_t12": 1.0,
+   "mu0.06_t18": 1.0,
+   "mu0.06_t24": 1.0,
+   "mu0.06_t36": 1.0,
+   "mu0.06_t48": 1.0,
+   "mu0.06_t72": 1.0
+  },
+  "fine_null": {
+   "grid2d": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "path": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "break_decomp": {
+   "blocked": {
+    "err": 6.36,
+    "zone_rms": 3.34,
+    "gap_rms": 3.0,
+    "intact_rms": 11.05,
+    "break_rate": 1.0
+   },
+   "control": {
+    "err": 9.23,
+    "zone_rms": 6.17,
+    "gap_rms": 9.34,
+    "intact_rms": 12.36,
+    "break_rate": 1.0
+   }
+  },
+  "refit": {
+   "mu0.015": {
+    "L": 1.0,
+    "tc": 42.9,
+    "kappa": 0.4
+   },
+   "mu0.03": {
+    "L": 1.0,
+    "tc": 30.8,
+    "kappa": 0.4
+   },
+   "mu0.06": {
+    "L": 1.0,
+    "tc": 9.5,
+    "kappa": 0.2
+   }
+  }
+ },
+ "edges": {
+  "0.015": 48.0,
+  "0.03": 36.0,
+  "0.06": 12.0
+ },
+ "dominant_class": {
+  "name": "intact",
+  "rms": 11.05
+ },
+ "criteria": {
+  "CE_G1_break_localization": "intact",
+  "CE_G2_monotone_edge_shift": true,
+  "CE_G3_fine_null_holds": true
+ },
+ "notes": "The torus's closure edge: class decomposition at onset 48 (blockade vs control), the corrected decreasing-kernel refit (1 - P(break)), and the mu edge-shift ladder {0.015, 0.03, 0.06}; the null substrates re-checked at fine onsets."
+}
