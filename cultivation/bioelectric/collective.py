@@ -133,7 +133,18 @@ class BioElectricCollective:
         phi_spec ABSENT (the bare constructor never sets it), so the
         read was never connected to the compiled target — the
         'write-only compile' diagnosis was an instrument gap, not a
-        walk limitation."""
+        walk limitation.
+
+        exp90 (the two-source read): the PRE-PROGRAM memory is
+        preserved as phi_spec_canon — the D3 distributed property the
+        below-line cells' regen reads (the graph-native analog of the
+        chain walk's face anchor). exp89's UC-G5 finding: without it,
+        the below-line cells fall back to the inheritance chain,
+        which carries the last committed NOVEL zone's identity into
+        the canon gaps (the chain-carry contamination)."""
+        prev = getattr(self, "phi_spec", None)
+        if prev is not None:
+            self.phi_spec_canon = np.asarray(prev, dtype=float).copy()
         self.phi_spec = np.asarray(spec_map, dtype=float).copy()
 
     def set_state(self, V: np.ndarray) -> None:

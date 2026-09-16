@@ -2783,3 +2783,49 @@ Night seven, part 3. exp43's registered follow-up:
 - NEXT (derived): exp90 the two-source read (the canon-source
   repair); the exp40 dose-axis wiring (exp88's registered repair);
   quest 001 on the restored quota.
+
+## L72 — exp90 THE TWO-SOURCE READ (4/4 — the multi-zone regen closes UNIVERSALLY; the exp89 UC-G5 diagnosis corrected)
+- THE DIAGNOSIS CORRECTION (in-run, instrumented): exp89's UC-G5
+  "chain-carry contamination" was the WRONG mechanism — the errors
+  were bit-identical with and without the canon read because the
+  multi program's GAP cells (between the zones) were amputated (the
+  physical cut is contiguous: slice[first zone, last zone]) but the
+  walk only rebuilt the ZONE cells — the gaps sat at WOUND state
+  (theta -40, V -30) through the settle. The real defect: an
+  amputate/walk-region mismatch. exp89's ledger entry stands as
+  deposited; this entry supersedes its mechanism attribution.
+- THE REPAIR (two pieces):
+  1. the core's write_spec_layer preserves the pre-program memory
+     as phi_spec_canon (additive; inert when no spec layer existed);
+  2. the walk rebuilds the WHOLE amputated range, with the per-cell
+     source gate: the pole read (phi_spec[i], above the line, w=1.0)
+     + the canon read (phi_spec_canon[i], below the line) + the
+     inheritance chain only when the canon memory is absent.
+- TS-G1 PASS — **THE MULTI-ZONE PROGRAM VERIFIES 7/7 SUBSTRATES**
+  (errors 0.49-0.70 mV, from exp89's 5.77-8.5): the multi-region
+  novel-anatomy regen is UNIVERSAL at the star point — path, grid,
+  torus, random3, random6, scale_free, small_world — the substrates
+  exp43 said could not hold the partitions.
+- TS-G2 PASS — the pole read is unaffected (the single-zone
+  in-domain program 7/7).
+- TS-G3 PASS — NO BACKDOOR: the below-line novel zone still fails
+  7/7 — the canon read gives each cell its own coordinate identity,
+  never the novel spec; the M33 domain rule survives the repair
+  intact (the two sources are orthogonal: the constitutive pole
+  above the line, the coordinate memory below it).
+- TS-G4 PASS — THE CANON SOURCE IS LOAD-BEARING: stripping
+  phi_spec_canon alone (the establishment, clamps, walk, dynamics
+  identical) returns the failure on 6/7 substrates (errors
+  8.05-14.05; random3 passes at 4.04 — the inheritance chain
+  happens to carry canon there, an honest per-substrate note).
+- 67/67 tests green after the core edit.
+- THE ARC, now closed end to end: exp43 (the form is
+  substrate-conditioned) -> exp79 (the star point writes any
+  substrate) -> exp87 (the reader connected, the operating point
+  emitted) -> exp89 (R5' the conditional refusal; the domain
+  orthogonal) -> exp90 (the two-source read: the multi-region novel
+  regen universal). The compiler's final rule set: R1/R1'/R2/R3/R4/
+  R5/R5'/R6/R7/R7' + the two-source read.
+- NEXT (derived): the exp40 dose-axis wiring (exp88's registered
+  repair); quest 001 on the restored quota; the docs milestone for
+  the session's arc (the scoreboard refresh).
