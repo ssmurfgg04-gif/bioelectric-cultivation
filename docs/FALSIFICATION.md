@@ -3636,3 +3636,5 @@ Night seven, part 3. exp43's registered follow-up:
   documented as physics). The compile decision's final form: the
   v2 boundary term NAMES THE PRICE, the dials pay it, and nothing
   on the battery has refused.
+
+## L89 — exp107 THE GEOMETRY PROBE (the exoneration: the torus's rising price is INVARIANT under zone-f-offset — the offset arm reproduces the base trend to 0.01-0.11 mV per size (delta +0.68 vs +0.67); boundary placement on the lattice is dead as the mechanism; the candidate ledger for the +0.7-1.0 mV size trend is now: commitment noise DEAD (exp105), walk exposure DEAD (exp106), zone-band geometry DEAD (exp107), window pinning HALVES it (exp105, gamma 16: level -2.7 mV, delta +0.58) — the residual lives in the window/settle MEAN-FIELD itself and is registered open for exp108 with that framing. The trend's magnitude: 4.40 mV at n=784, inside the 6.0 bar, verified 3/3 at every size and offset — a precision question, not a viability question. Probe deposited as results/exp107_geometry_probe.json; analytic follow-ups (the mean-field decomposition of the window drift) carry the exp108 registration.)
