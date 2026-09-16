@@ -1,0 +1,129 @@
+{
+ "exp": "exp99_degree_ladder",
+ "arms": {
+  "deg49_default_1_0.015": {
+   "rate": 0.0,
+   "err": 6.3
+  },
+  "deg49_onedial_gamma2": {
+   "rate": 1.0,
+   "err": 5.52
+  },
+  "deg49_onedial_mu0.01": {
+   "rate": 1.0,
+   "err": 5.69
+  },
+  "deg49_twodial_4_0": {
+   "rate": 1.0,
+   "err": 2.65
+  },
+  "deg49_anchor_64_0": {
+   "rate": 1.0,
+   "err": 0.94
+  },
+  "deg74_default_1_0.015": {
+   "rate": 0.0,
+   "err": 6.34
+  },
+  "deg74_onedial_gamma2": {
+   "rate": 1.0,
+   "err": 5.48
+  },
+  "deg74_onedial_mu0.01": {
+   "rate": 1.0,
+   "err": 5.68
+  },
+  "deg74_twodial_4_0": {
+   "rate": 1.0,
+   "err": 2.31
+  },
+  "deg74_anchor_64_0": {
+   "rate": 1.0,
+   "err": 0.99
+  },
+  "deg99_default_1_0.015": {
+   "rate": 0.0,
+   "err": 6.26
+  },
+  "deg99_onedial_gamma2": {
+   "rate": 1.0,
+   "err": 5.41
+  },
+  "deg99_onedial_mu0.01": {
+   "rate": 1.0,
+   "err": 5.58
+  },
+  "deg99_twodial_4_0": {
+   "rate": 1.0,
+   "err": 2.11
+  },
+  "deg99_anchor_64_0": {
+   "rate": 1.0,
+   "err": 1.02
+  },
+  "deg149_default_1_0.015": {
+   "rate": 0.0,
+   "err": 6.23
+  },
+  "deg149_onedial_gamma2": {
+   "rate": 1.0,
+   "err": 5.34
+  },
+  "deg149_onedial_mu0.01": {
+   "rate": 1.0,
+   "err": 5.53
+  },
+  "deg149_twodial_4_0": {
+   "rate": 1.0,
+   "err": 1.87
+  },
+  "deg149_anchor_64_0": {
+   "rate": 1.0,
+   "err": 1.03
+  },
+  "deg199_default_1_0.015": {
+   "rate": 0.0,
+   "err": 6.22
+  },
+  "deg199_onedial_gamma2": {
+   "rate": 1.0,
+   "err": 5.35
+  },
+  "deg199_onedial_mu0.01": {
+   "rate": 1.0,
+   "err": 5.52
+  },
+  "deg199_twodial_4_0": {
+   "rate": 1.0,
+   "err": 1.75
+  },
+  "deg199_anchor_64_0": {
+   "rate": 1.0,
+   "err": 0.98
+  }
+ },
+ "map": {
+  "default_errs": {
+   "49": 6.3,
+   "74": 6.34,
+   "99": 6.26,
+   "149": 6.23,
+   "199": 6.22
+  },
+  "spearman_degree_default_err": -0.9,
+  "anchor_errs": {
+   "49": 0.94,
+   "74": 0.99,
+   "99": 1.02,
+   "149": 1.03,
+   "199": 0.98
+  }
+ },
+ "criteria": {
+  "DL_G1_flat_map": false,
+  "DL_G2_one_dial_survival": true,
+  "DL_G3_no_boundary_through_199": true,
+  "DL_G4_anchor_holds": true
+ },
+ "notes": "The price-vs-degree map: 5 star degrees x 5 operating cells under the repaired executor. The registered prediction is FLAT (per-spoke coupling rates are degree-independent; the hub's faster integration does not propagate to the spoke side). A rising map would be the first real reader boundary, degree deposited."
+}

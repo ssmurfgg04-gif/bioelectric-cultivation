@@ -3248,3 +3248,64 @@ Night seven, part 3. exp43's registered follow-up:
   where one dial stops buying? If yes, the two-dial probe brackets
   the first REAL boundary with its price — if no, the map is flat
   and R5' closes as degree-invariant.
+
+## L81 — exp99 THE DEGREE LADDER (3/4 — the price-vs-degree map is FLAT: the one-dial tags verify at EVERY degree through deg-199, the anchor holds 0.94-1.03 mV across the ladder; R5' closes DEGREE-INVARIANT; the rising-boundary prediction is refuted and DL-G1's band is owned as miscalibrated)
+
+- THE MAP: 5 star degrees {49, 74, 99, 149, 199} x 5 cells x 3
+  seeds. The DEFAULT cell refuses everywhere (rate 0/3, err
+  6.22-6.34) — the marginal theta sag is a FIXED FEATURE of the
+  star family, not a degree effect. The ONE-DIAL tags (gamma 2 at
+  default mu; mu 0.01 at gamma 1) verify 3/3 at EVERY degree
+  (errs 5.34-5.68) — the tag does not move. The two-dial (4, 0)
+  improves with degree (2.31 -> 1.75 — more spokes, more
+  averaging partners for the rebuilt cells); the (64, 0) anchor is
+  degree-invariant at 0.94-1.03 (exp97's 1.02 sits mid-ladder).
+- DL-G1 REFUTED AS REGISTERED, CONFIRMED IN SUBSTANCE (owned):
+  Spearman(degree, default err) = -0.90 — but the MAGNITUDE is
+  6.30 -> 6.22, a 0.08 mV drift over a 4-fold degree range (1.3%
+  of the err). The registered dichotomy (flat |rho| < 0.6 vs
+  rising rho >= 0.6) never allowed for a consistently-tiny
+  negative trend sitting on a 0.1 mV noise floor — the band was an
+  effect-size question measured with a rank-correlation gate.
+  Owned: the gate was miscalibrated; the scientific result is the
+  flat map (no degree dependence worth the name), the negative rho
+  deposited for completeness. Next effect-size claims get
+  effect-size gates.
+- THE MECHANISM, CONFIRMED: the per-spoke coupling rates are
+  degree-independent (each spoke sees the hub through ONE edge on
+  each channel); the hub's faster integration at higher degree
+  does not propagate back to the spoke side. The single-point
+  integrator's price is a property of the TOPOLOGY CLASS (hub vs
+  lateral), not of its degree.
+- GATES: DL-G2 PASS (one-dial survival at every degree); DL-G3
+  PASS (no boundary through deg 199); DL-G4 PASS (the anchor
+  holds, mean err < 2.0 everywhere); DL-G1 refuted-as-registered /
+  flat-in-substance (owned above).
+- ARC CONSEQUENCE: the reader's boundary map is CLOSED and EMPTY —
+  19/19 battery topologies verify at some operating point (exp97's
+  repair + exp98's ladder + exp99's degree map), the worst tag on
+  the books is one dial, and the tag is degree-invariant through
+  n=200. R5' ("refusal is a price tag") has no counterexample left
+  in the compiled domain. The per-edge hub anchor stays retired.
+- REGISTERED (exp100): THE READER'S PRICE MAP — exp93's taxonomy
+  was measured on the WRITE path (exp89's uc-in program); the
+  READER's (two-source, exp90's) taxonomy is only annotated
+  (default-class path at 2.91, exp98; the star one-dial, exp98;
+  the battery ran at (64, 0) by convention). Run the adaptive
+  ladder per battery substrate (exp90's 7 + exp94's 12): default
+  cell (1, 0.015) x 3 seeds; refusals climb the exp93 ladders
+  (gamma at default mu; mu at gamma 1; the two-dial probe). The
+  deposit: the reader's price class per substrate — the map that
+  turns the (64, 0) convention into a measured operating point.
+- INFRA INCIDENT (owned, recovered): between the exp98 push and
+  exp99's first run, the local repo was hard-rolled-back to
+  2f01d22 (the exp91-batch pre-session commit) by an unknown actor
+  (prime suspect: the timed-out figures subagent's session; no
+  rogue process found alive afterward). origin/main was never
+  touched (85ef5a8 throughout); `git reset --hard origin/main`
+  restored the full tree bit-exact; exp99 (untracked at the
+  moment) survived. core.filemode=false re-applied to kill the
+  mode-churn noise the rollback re-enabled. THE LESSON: every
+  milestone was pushed before the incident — the push-each-
+  milestone discipline IS the disaster-recovery plan. The token
+  rotation flag is now elevated: rotate before the next session.
