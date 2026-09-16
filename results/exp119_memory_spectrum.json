@@ -1,0 +1,113 @@
+{
+ "exp": "exp119_memory_spectrum",
+ "spectra": {
+  "spectrum_grid2d": {
+   "share": 0.017,
+   "top_mode": 31,
+   "top_sens": 1.237,
+   "bottom_sens": 0.626,
+   "second_bottom": 0.629,
+   "base_err": 1.11,
+   "sens_head": [
+    0.626,
+    0.629,
+    0.65,
+    0.653,
+    0.654
+   ],
+   "sens_tail": [
+    1.166,
+    1.168,
+    1.177,
+    1.237,
+    1.237
+   ]
+  },
+  "spectrum_torus": {
+   "share": 0.018,
+   "top_mode": 1,
+   "top_sens": 1.026,
+   "bottom_sens": 0.327,
+   "second_bottom": 0.37,
+   "base_err": 1.46,
+   "sens_head": [
+    0.327,
+    0.37,
+    0.387,
+    0.483,
+    0.494
+   ],
+   "sens_tail": [
+    0.973,
+    0.982,
+    1.005,
+    1.016,
+    1.026
+   ]
+  },
+  "spectrum_path": {
+   "share": 0.012,
+   "top_mode": 7,
+   "top_sens": 1.71,
+   "bottom_sens": 1.265,
+   "second_bottom": 1.309,
+   "base_err": 0.32,
+   "sens_head": [
+    1.265,
+    1.309,
+    1.35,
+    1.35,
+    1.355
+   ],
+   "sens_tail": [
+    1.705,
+    1.705,
+    1.706,
+    1.707,
+    1.71
+   ]
+  },
+  "spectrum_star": {
+   "share": 0.013,
+   "top_mode": 60,
+   "top_sens": 1.027,
+   "bottom_sens": 0.315,
+   "second_bottom": 0.757,
+   "base_err": 1.567,
+   "sens_head": [
+    0.315,
+    0.757,
+    0.775,
+    0.782,
+    0.811
+   ],
+   "sens_tail": [
+    0.968,
+    0.974,
+    0.974,
+    0.976,
+    1.027
+   ]
+  }
+ },
+ "silence": {
+  "static": {
+   "top": {
+    "pred_err": 3.209
+   },
+   "low": {
+    "pred_err": 2.287
+   }
+  },
+  "dynamic": {
+   "top": 3.48,
+   "low": 2.556
+  }
+ },
+ "criteria": {
+  "MS_G1_anisotropy": "REFUTED",
+  "MS_G2_silent_directions": false,
+  "MS_G3_instrument_validity": true
+ },
+ "notes": "TAS-P1's accessible core on the stack's machinery: the identity-sensitivity spectrum per substrate (static instrument, SF-G1-exact), matched-norm perturbations along top/low modes, and the static-vs-dynamic crosscheck through the real 15 h settle. TAS's exact K_mem form was not retrievable; no replica claimed."
+}
