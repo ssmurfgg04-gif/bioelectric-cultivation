@@ -3027,3 +3027,43 @@ Night seven, part 3. exp43's registered follow-up:
 - NEXT (derived): exp95 the star-boundary pricing (the deg->n
   limit vs the operating point); the docs milestone (the
   scoreboard refresh with L73-L76 + the two new figures).
+
+## L77 — exp95 THE STAR-BOUNDARY PRICING (0/3 — the refutation that CLOSES R5' honestly: the deg-99 hub refusal is ARCHITECTURAL, not an operating-point statement; the hub is a single-point integrator; exp96 registered on the anchor theorem)
+
+- THE REGISTERED PREDICTION, REFUTED ALL THREE WAYS: (SB-G1) no
+  (gamma, mu) cell in the grid {1,4,16,64} x {0.015, 0} verifies
+  the star — the boundary is NOT priced within the dial plane;
+  (SB-G2) the mu clause holds (mu=0.015 fails at every gamma) but
+  no (gamma, 0) cell verifies either — the dials are necessary and
+  jointly INSUFFICIENT; (SB-G3) the registered reversal was
+  BACKWARDS — the errors DECREASE with gamma (9.01 -> 8.53,
+  Spearman -1.0): the original ratio law holds (higher gamma ->
+  weaker hub coupling), the head researcher's registered
+  hub-sink reasoning was wrong and is owned.
+- THE MECHANISM THE DATA NAMES (the deposit's core): the star's
+  failure is not the dials' — it is the TOPOLOGY. Every rebuilt
+  spoke's only neighbor is the hub; during the settle each spoke's
+  V relaxes toward the hub, and the hub integrates the entire disc
+  (one node averaging 99 edges). The settle therefore homogenizes
+  the pattern through the hub at ANY operating point — the target's
+  spatial identity (zones at -30 vs gaps at -20/-50) is destroyed
+  by single-point integration, leaving the ~8.5-9 mV floor. The
+  star is the anti-reader topology: maximal integration, zero
+  lateral coupling.
+- THE ARC CONSEQUENCE: R5' ("the refusal is an operating-point
+  statement") is now BOUNDED, not universal — it held on 11/12 of
+  exp94's battery and on all of exp89's; the deg-99 star is an
+  ARCHITECTURE refusal. The two-channel law's writability boundary
+  and the reader's domain boundary are the same object only up to
+  topology: the dials move along the channels; they cannot remove
+  the integrator.
+- THE REGISTERED REPAIR (exp96, the anchor theorem returns): the
+  exp75-77 theorem — coherence requires an anchor slower than the
+  hijack — applied to the reader: CLAMP THE HUB to its canon
+  identity during the settle (the program already owns clamp
+  machinery; the hub is intact tissue). Prediction: with the
+  hub anchored, the spokes relax to the canon hub and the multi
+  program verifies at the star point; the reader generalizes
+  12/12 and the exp75-77 theorem closes on the reader arc.
+- 67/67 tests untouched (exp94's executor gained a backward-
+  compatible op kwarg; exp94's deposited results unchanged).

@@ -184,10 +184,14 @@ BELOW = AnatomySpec(
 
 
 def execute_two_source_n(spec: AnatomySpec, adjacency: np.ndarray,
-                         seed: int, with_canon: bool = True) -> dict:
-    """exp90's execute_two_source generalized over n."""
+                         seed: int, with_canon: bool = True,
+                         op: dict | None = None) -> dict:
+    """exp90's execute_two_source generalized over n (and, since
+    exp95, over the operating point — default STAR, which is what
+    exp94's deposited results used)."""
     n = adjacency.shape[0]
-    gamma, mu = STAR["gamma"], STAR["mu"]
+    _op = op if op is not None else STAR
+    gamma, mu = _op["gamma"], _op["mu"]
     dt = star_dt(gamma, float(adjacency.sum(axis=1).max()))
     canon = labeling_bfs_n(adjacency)
     target = spec_target_n(spec, canon, n)
