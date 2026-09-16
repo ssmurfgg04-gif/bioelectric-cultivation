@@ -2523,3 +2523,50 @@ Night seven, part 3. exp43's registered follow-up:
   err = sqrt(eV^2 + eT^2); the boundary is the L2 radius < 6.0 mV.
   The compiler's operating-point audit (exp81's R5/R6 precondition)
   now runs on the closed law.
+
+## L67 — exp85 M37-A' ON TRIAL (4/5 — the coin EXONERATED, the repair RE-TARGETED to the regen layer)
+- The trial design: before running the registered per-plane anchors,
+  exp85 asked whether exp83's profile refutation was REAL or POWER —
+  the refutation ran on 3 seeds/plane (realized coin se ~0.23; the
+  head 1.0 / trunk 0.667 inversion is inside that noise), and the
+  record's own plane profile (trunk 0.812 n=28, head 0.750 n=5, tail
+  0.740 n=2) may be flat. A pre-registered binding disposition rule
+  covered all four outcomes before any run.
+- UP-G1 PASS — **THE RECORD'S PROFILE IS STATISTICALLY FLAT**: the
+  plane z-scores against the pooled null are head -0.26, tail -0.20,
+  trunk +0.13; the trunk-head gap is z = 0.32. The record CANNOT
+  resolve a plane axis at 2 sigma. exp83's direction gate demanded
+  an ordering the record itself does not support.
+- UP-G2 REFUTED honestly — and the refutation is the finding: the
+  uniform coin (nb_p=0.8, exp64's anchor) at 24 fresh seeds/plane
+  lands INSIDE the sampling-aware per-plane tolerances (head 1.0 vs
+  tol 0.48; trunk 0.75 vs tol 0.245; tail 0.833 vs tol 0.708) and
+  the POOL matches at 0.790 vs 0.799 (a 0.009 match, UP-G3 PASS) —
+  but the DIRECTION gate still fails: sim head 1.0 > trunk 0.75.
+- THE ATTRIBUTION (Panel E, the registered rule's investigation
+  branch): the coin is EXONERATED — the biology baseline with the
+  coin OFF is b_head = 0.70 vs trunk 0.00, tail 0.00 (n=10): the
+  sim's HEAD regen is intrinsically fragile. The head err profile
+  along the regen axis is [7.8, 6.4, 5.2] (flat-to-declining, no
+  inheritance decay) vs trunk [1.0, 2.7, 2.5] — TARGET-INTRINSIC
+  (read-side): the head plane's regen read does not reproduce the
+  sharp anterior target from the first inherited cell onward. The
+  dominant fired criterion is 'err' (70%). (The naive direction
+  probe — flipping the walk flag — was rejected as CONFOUNDED in
+  this machinery: the flag determines which face has committed
+  neighbors; the err-profile probe attributes without touching the
+  walk.)
+- UP-G4 DISPOSITION (binding rule, investigation branch): **M37-A'
+  REFUTED AS MIS-TARGETED** — per-plane penetrance anchors would
+  compensate (p_head would drop to 0.167) for a biology the
+  penetrance layer does not own. The repair RE-REGISTERS to the
+  regen layer: the head-plane regen read's identity sharpness. THE
+  GENE LAYER CLOSES: the coin's rates are plane-flat, the pool
+  matches at adequate n (0.009), and the plane inversion belongs to
+  the regen machinery where it can actually be repaired.
+- UP-G5 PASS — the baseline deposited (head 0.70 / trunk 0.00 /
+  tail 0.00, n=10 each) with the seed count and the criteria split.
+- NEXT (derived): the regen-read upgrade — the non-junctional spec
+  read (M33, the exp79-verified architecture) applied to the chain
+  regen walk; it targets the head-plane read fragility (exp85) and
+  the graph regen-walk limitation (exp81) with one mechanism.
