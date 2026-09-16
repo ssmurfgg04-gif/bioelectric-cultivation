@@ -1,0 +1,85 @@
+{
+ "exp": "exp98_star_price_ladder",
+ "arms": {
+  "star_default_1_0.015": {
+   "rate": 0.0,
+   "err": 6.26
+  },
+  "star_gamma_2_mu_default": {
+   "rate": 1.0,
+   "err": 5.41
+  },
+  "star_gamma_4_mu_default": {
+   "rate": 1.0,
+   "err": 4.88
+  },
+  "star_gamma_8_mu_default": {
+   "rate": 1.0,
+   "err": 4.52
+  },
+  "star_gamma_16_mu_default": {
+   "rate": 1.0,
+   "err": 4.37
+  },
+  "star_gamma_32_mu_default": {
+   "rate": 1.0,
+   "err": 4.23
+  },
+  "star_gamma_64_mu_default": {
+   "rate": 1.0,
+   "err": 4.1
+  },
+  "star_mu_0.01_gamma1": {
+   "rate": 1.0,
+   "err": 5.58
+  },
+  "star_mu_0.005_gamma1": {
+   "rate": 1.0,
+   "err": 4.81
+  },
+  "star_mu_0.002_gamma1": {
+   "rate": 1.0,
+   "err": 4.3
+  },
+  "star_mu_0_gamma1": {
+   "rate": 1.0,
+   "err": 3.93
+  },
+  "star_twodial_4_0": {
+   "rate": 1.0,
+   "err": 2.11
+  },
+  "star_twodial_16_0": {
+   "rate": 1.0,
+   "err": 1.6
+  },
+  "path_default_sanity": {
+   "rate": 1.0,
+   "err": 2.91
+  }
+ },
+ "class": {
+  "call": "V_PRICED",
+  "cheapest_verifying_cell": 2.0,
+  "gamma_ladder_rates": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "mu_ladder_rates": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "criteria": {
+  "SL_G1_writable_somewhere": true,
+  "SL_G3_channel_signature": true,
+  "SL_G4_default_point_sanity": true
+ },
+ "notes": "exp95's grid measured the coverage artifact and is invalidated; this is the star's price ladder under the repaired executor (frontier_mode='walk'). exp93's ladder convention verbatim; the two-source read's first run at the DEFAULT operating point (the reader has only ever run at the (64, 0) star point); 3 seeds."
+}

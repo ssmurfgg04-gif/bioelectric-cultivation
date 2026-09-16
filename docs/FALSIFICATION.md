@@ -3192,3 +3192,59 @@ Night seven, part 3. exp43's registered follow-up:
   --status unhealthy, UI bundles missing, no quest state dirs) —
   the zai proxy on :8787 is green; quest runs stay foreground-only
   until the daemon is rebuilt.
+
+## L80 — exp98 THE STAR'S TRUE PRICE LADDER (3/3 boolean gates + the class call — the repaired star is ONE-DIAL-PRICED ON EITHER CHANNEL: gamma 2 at default mu, or mu 0.01 at gamma 1; the default refusal is a marginal uniform theta sag, NOT a boundary; R5' now has its cleanest price tag)
+
+- THE CLASS CALL (exp93's ladder convention, V ladder checked
+  first): V_PRICED with gamma_min = 2 (price 1.0 log2 fold-unit
+  above the default (1, 0.015)). THE FULL STATEMENT the deposit
+  carries: the mu ladder ALSO verifies one dial down (mu_max 0.01
+  at gamma 1 — fold-price log2(1.5) = 0.58, CHEAPER by the fold
+  metric); both one-dial cells are marginal verifies (err 5.41 and
+  5.58 vs the 6.0 bar) while both dials (4, 0) 2.11 / (16, 0) 1.6 /
+  the exp97 star point (64, 0) 1.02 verify with margin. The star
+  joins exp93's taxonomy as the first substrate priced on the
+  V channel by the ladder order — with the honest note that the
+  theta route is the cheaper tag.
+- THE DEFAULT REFUSAL'S SIGNATURE (one-run x 3 deposited): at
+  (1, 0.015) the star fails 0/3 with err 6.23-6.27 — and ALL THREE
+  ZONES HOLD within their bar (means -32.3 to -33.1 vs target -30):
+  a UNIFORM ~2.7-3 mV sag across the rebuilt pattern, the theta
+  channel pulling every rebuilt cell toward the hub's integrated
+  mean (each spoke's only theta-neighbor is the hub; the hub
+  integrates 99 thetas at 99*mu). L77-L78 had the right suspect on
+  the wrong channel: the single-point integration is REAL — on
+  THETA, where no clamp-and-release of V can touch it, and it
+  PRICES at one dial instead of refusing.
+- THE LADDER SHAPES: gamma ladder at default mu verifies at every
+  gamma >= 2 with errors MONOTONE DECREASING (5.41 -> 4.10) — the
+  same trend exp95 saw and misattributed to hub-sink physics; under
+  the repaired executor it reads cleanly: higher gamma pins V to
+  the committed theta harder against the mu pull. Mu ladder at
+  gamma 1: verifies at every mu <= 0.01, errors falling to 3.93 at
+  mu = 0. The theta channel carries the star's residual everywhere.
+- THE READER'S DEFAULT CELL IS REAL (SL-G4): path(100) verifies at
+  (1, 0.015), 3/3, err 2.91 — the two-source read had only ever run
+  at the (64, 0) star point; the default cell verifies on a
+  default-class substrate, so the star's default refusal is a
+  PRICE, not a reader-wide gap.
+- GATES: SL-G1 PASS (writable somewhere — 12 of 13 star cells
+  verify); SL-G2 the class call deposited (V_PRICED, gamma_min 2;
+  mu route noted cheaper); SL-G3 PASS on the fallback branch —
+  weak as registered (the gamma ladder's RATES are trivially
+  monotone at 1.0; the informative signature is the ERR trend and
+  the uniform sag, both deposited); SL-G4 PASS.
+- ARC CONSEQUENCE: R5' ("refusal is a price tag") now holds on the
+  ENTIRE reader battery with no exceptions: every substrate in
+  exp90's 7 + exp94's 12 verifies at SOME operating point, and the
+  worst tag on the books is one dial (the star, on either channel).
+  No architecture refusal exists anywhere in the compiled-reader
+  domain. The per-edge hub anchor stays retired.
+- REGISTERED (exp99): THE DEGREE LADDER — the boundary map open
+  item. Stars of degree {9, 19, 49, 99, 199 (n=200)} x the cells
+  that matter (default; the one-dial cells gamma 2 and mu 0.01; the
+  two-dial (4, 0)): does the one-dial price RISE with degree (the
+  hub's theta integration scales with deg), and is there a degree
+  where one dial stops buying? If yes, the two-dial probe brackets
+  the first REAL boundary with its price — if no, the map is flat
+  and R5' closes as degree-invariant.
