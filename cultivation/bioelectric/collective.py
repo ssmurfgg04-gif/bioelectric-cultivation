@@ -122,6 +122,20 @@ class BioElectricCollective:
         if getattr(self, "phi_spec", None) is None:
             self.phi_spec = self.theta.copy()
 
+    def write_spec_layer(self, spec_map: np.ndarray) -> None:
+        """Compiler v5 (exp87): the R1 MEMORY write — install the
+        program's identity map as the spec layer (phi_spec), leaving
+        the expression layers (theta, V) untouched. The M28 spec was
+        write-once at pattern-set; a compiled program is a DELIBERATE
+        identity-map write (the R1 clamps write the expression layer,
+        this writes the memory the regen read consults). exp87's
+        finding: exp81's verify runs executed the trigger regen with
+        phi_spec ABSENT (the bare constructor never sets it), so the
+        read was never connected to the compiled target — the
+        'write-only compile' diagnosis was an instrument gap, not a
+        walk limitation."""
+        self.phi_spec = np.asarray(spec_map, dtype=float).copy()
+
     def set_state(self, V: np.ndarray) -> None:
         self.V = np.asarray(V, dtype=float).copy()
 

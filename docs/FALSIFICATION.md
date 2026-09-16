@@ -2624,3 +2624,69 @@ Night seven, part 3. exp43's registered follow-up:
   regen-walk limitation + exp86's chain machinery are the same
   architecture — carry the M33-gated read into regrow_graph);
   corpus MAE residual; compiler v5.
+
+## L69 — exp87 COMPILER V5: THE READER CONNECTED (5/5 — the exp81 write-only limitation RETIRES; the domain rule R7 verified)
+- THE INSTRUMENT FINDINGS (all in-run, before any gate fired, each
+  verified by direct measurement):
+  F1. exp81's verify executed the trigger regen on a BARE collective
+      — phi_spec ABSENT (the constructor never sets it) — the walk's
+      spec read returned None and the blend never fired: the trigger
+      regen was PURE INHERITANCE. "The regen walk re-derives the
+      WILDTYPE beyond the cut" was never a walk limitation; the read
+      was never CONNECTED to the compiled target. v4's write-only
+      sidestep patched an instrument gap.
+  F2. The corpus blend (phi=0.75) carries an inheritance term that
+      is actively WRONG for a novel zone (nothing to inherit — the
+      face identity is not the spec); exp79's verified reader
+      commits at w=1.0, and v5 adopts it.
+  F3. The programs never specified an OPERATING POINT; the rebuilt
+      zones eroded during the walk/settle under the two-channel
+      dynamics (a -20 zone in a -50 surround). exp79's star result
+      IS the answer: v5 emits (gamma=64, mu=0) as the R7'
+      operating-point precondition — and the erosion freezes
+      (zone errors drop from 6-16 mV to 0.29-0.73).
+  F4. The bare collective is FLAT -50 — no wildtype body plan — so
+      every trunk-plane program carried a constant +15 RMS ghost
+      (25 head cells x |(-50)-(-20)| / sqrt(100)). The verify must
+      establish the canon animal first.
+  F5. A zone that overhangs its amputated slice keeps clamp-era
+      residue OUTSIDE the slice, and the residue sits near the spec
+      by construction — the verification reads residue, not program.
+      The instrument requires zones fully contained in the slice.
+- CV-G1 PASS — **THE READER CONNECTED**: v4 reproduces the failure
+  (0/6); v5 (the R1 memory write via write_spec_layer + the exp79
+  reader weight + the M33 gate + the star point) verifies 6/6 with
+  whole-body error 0.29 mV. The write-only limitation RETIRES.
+- CV-G2 PASS — **THE DOMAIN RULE (R7)**: 8 below-line specs beyond
+  the carried identity's resolution: the gated read refuses ALL 8
+  on the plain substrate (the walk re-derives the canon — the gate
+  holds); the latch substrate verifies 8/8 (the R1'' machinery
+  covers the domain gap). The read's domain is structural (exp79
+  TC-G5, exp86) and now carries a compile rule: below-line zones
+  REQUIRE the latch.
+- CV-G3 PASS — **THE MULTI-REGION COMPOSITION**: 10 mixed-domain
+  specs: the latch verifies 10/10 end-to-end; the plain substrate
+  shows the DOMAIN SPLIT in 10/10 (the above-line zone within bar
+  through the read, the below-line zone outside bar through the
+  refusal) — the domain rule is a property of the READ, not of the
+  substrate.
+- CV-G4 PASS — **THE GRAPH SUBSTRATE**: the multi-region reader on
+  the grid (R5-passing) at the star point: 5/5 specs restore ALL
+  above-line zones (in-zone theta err 0.5-0.7 mV) through one BFS
+  walk with the per-cell domain gate; the below-line zones fail
+  exactly as the rule demands (7.0-9.7 mV — the carried canon).
+- CV-G5 PASS — STABILITY: 4/4 compiled anatomies hold 100
+  generations at the star point (the TC-G3 zero-remodeling
+  semantics applied to compiled anatomy).
+- 67/67 tests green after the core additions (write_spec_layer —
+  additive and inert; the exp86 coin-window repair unchanged).
+- THE STAGE-3 SCOREBOARD after v5: the compiler WRITES, REGENERATES,
+  and STATES ITS OPERATING POINT — R1 (clamps) + R1' (latch) + R2
+  (trigger, now reading the connected spec layer) + R3 (coupling
+  preconditions) + R4 (repertoire) + R5 (substrate partitioning) +
+  R6 (maintenance schedules) + R7 (the domain-to-substrate rule) +
+  R7' (the operating-point rule). The generator's space, the
+  dynamic envelope, and the read's domain are one audited pipeline.
+- NEXT (derived): the corpus MAE residual (0.522 -> <0.15, the
+  Stage-2 closure); Stage-4 maintenance frontier completion;
+  quest 001 on the restored quota (ZAI-OK verified this session).
