@@ -189,7 +189,8 @@ def execute_two_source_n(spec: AnatomySpec, adjacency: np.ndarray,
                          anchor: list | None = None,
                          frontier_mode: str = "zones",
                          return_trace: bool = False,
-                         return_state: bool = False) -> dict:
+                         return_state: bool = False,
+                         commit_noise: float = 0.6) -> dict:
     """exp90's execute_two_source generalized over n (and, since
     exp95, over the operating point — default STAR, which is what
     exp94's deposited results used; since exp96, an optional
@@ -275,7 +276,7 @@ def execute_two_source_n(spec: AnatomySpec, adjacency: np.ndarray,
             canon_src = getattr(c, "phi_spec_canon", None) \
                 if with_canon else None
             if c.phi_spec[i] >= NEURAL_SPEC_MIN:
-                theta_new = c.phi_spec[i] + c.rng.normal(0.0, 0.6)
+                theta_new = c.phi_spec[i] + c.rng.normal(0.0, commit_noise)
             elif canon_src is not None:
                 # the canon read's gate is the SOURCE's existence (the
                 # attribute), never the value's sign — phi_spec_canon
@@ -283,9 +284,9 @@ def execute_two_source_n(spec: AnatomySpec, adjacency: np.ndarray,
                 # degrades every below-line cell to the wound-state
                 # chain read (the exp89 UC-G5 failure mode, owned
                 # in-run)
-                theta_new = canon_src[i] + c.rng.normal(0.0, 0.6)
+                theta_new = canon_src[i] + c.rng.normal(0.0, commit_noise)
             else:
-                theta_new = c.theta[src] + c.rng.normal(0.0, 0.6)
+                theta_new = c.theta[src] + c.rng.normal(0.0, commit_noise)
             c.theta[i] = theta_new
             c.V[i] = theta_new
     trace: dict = {}

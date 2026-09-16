@@ -1,0 +1,65 @@
+{
+ "exp": "exp105_torus_rising_price",
+ "arms": {
+  "pin_16_0_n100": {
+   "rate": 1.0,
+   "err": 1.26
+  },
+  "pin_16_0_n196": {
+   "rate": 1.0,
+   "err": 1.33
+  },
+  "pin_16_0_n400": {
+   "rate": 1.0,
+   "err": 1.47
+  },
+  "pin_16_0_n784": {
+   "rate": 1.0,
+   "err": 1.84
+  },
+  "noise02_4_0_n100": {
+   "rate": 1.0,
+   "err": 3.81
+  },
+  "noise02_4_0_n196": {
+   "rate": 1.0,
+   "err": 4.08
+  },
+  "noise02_4_0_n400": {
+   "rate": 1.0,
+   "err": 4.4
+  },
+  "noise02_4_0_n784": {
+   "rate": 1.0,
+   "err": 4.86
+  },
+  "combo_16_0_noise02_n100": {
+   "rate": 1.0,
+   "err": 1.16
+  },
+  "combo_16_0_noise02_n196": {
+   "rate": 1.0,
+   "err": 1.24
+  },
+  "combo_16_0_noise02_n400": {
+   "rate": 1.0,
+   "err": 1.42
+  },
+  "combo_16_0_noise02_n784": {
+   "rate": 1.0,
+   "err": 1.8
+  }
+ },
+ "trend_deltas": {
+  "pin_16_0": 0.58,
+  "noise02_4_0": 1.05,
+  "combo_16_0_noise02": 0.64
+ },
+ "flatteners": [],
+ "criteria": {
+  "TP_G1_mechanism_named": false,
+  "TP_G2_probe_validity": true,
+  "TP_G3_noise_sanity": true
+ },
+ "notes": "The torus's two-dial price rises with size (exp104: +1.04 mV from n=100 to 784). The probe arms: stronger gamma (16, 0), reduced walk commitment noise (0.2), and the combo. Whichever flattens the trend names the mechanism (pinning vs commitment-noise compounding)."
+}

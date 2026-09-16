@@ -3551,3 +3551,55 @@ Night seven, part 3. exp43's registered follow-up:
   test by the (16, 0) cell's n-trend (stronger pinning should
   flatten the rise). Whichever flattens the trend names the
   mechanism; deposit both ladders.
+
+## L86 CORRECTIONS (owned, before exp105's entry is read)
+
+- THE SZ-G4 MECHANISM WAS MISATTRIBUTED: the ratio's size decay
+  (path 0.061 -> 0.008, grid2d 0.311 -> 0.107, torus 0.340 ->
+  0.114) is NOT BFS-order drift — substrate_partition_check maps
+  the zones onto RAW CELL INDICES (identity[i0:i1], row-major on
+  grids), and the decay is the boundary-to-volume SCALING LAW
+  itself: the crossing count is O(1) on the chain and
+  O(perimeter) ~ O(sqrt(n)) on grids while total edges are O(n).
+  The ratio behaves like a real physical boundary term — and that
+  is exactly why it cannot be size-invariant.
+- THE CLASS-TRANSFER CLAIM WAS OVERGENEROUS: at n=784 grid2d's
+  ratio (0.107) lands in the oracle's DEFAULT band while its
+  measured price stays V (4.73 at (64, 0.015)) — the measured
+  price did NOT decay with the ratio. Oracle v1 is an n=100
+  instrument; a size-free oracle needs a normalized boundary term
+  (boundary length / sqrt(volume)) — registered as exp106's second
+  deliverable.
+
+## L87 — exp105 THE TORUS'S RISING PRICE (2/3 — both registered mechanisms REJECTED as the full story: commitment noise is INERT (delta +1.05 = base exactly) and stronger pinning only HALVES the rise (+0.58 at gamma 16, level -2.7 mV); the surviving candidate is WALK-DURATION DRIFT — the rebuild's sim-time scales with n; exp106 registered with the steps-per-cell probe)
+
+- THE PROBES (torus r in {10, 14, 20, 28}, 3 seeds, the base arm
+  exp104's deposit): noise02_4_0 = 3.81/4.08/4.40/4.86 —
+  INDISTINGUISHABLE from base (delta +1.05): the walk's 0.6 mV
+  commitment noise contributes nothing on the torus (the spec read
+  dominates every rebuilt cell; the exp32 compounding law has no
+  purchase here). pin_16_0: level collapses (3.82 -> ~1.16) but
+  the trend SURVIVES at half strength (delta +0.58) — window
+  pinning buys level, not trend. combo = pin alone (+0.64): the
+  rise is noise-independent. TP-G1 REFUTED as registered (no
+  flattener); TP-G2 PASS (every arm verifies at every size);
+  TP-G3 PASS (noise sanity: 3.81 vs 3.82).
+- THE SURVIVING CANDIDATE (named, not claimed): WALK-DURATION
+  DRIFT. The rebuild runs steps_per_cell=8 pre-steps per committed
+  cell at the substrate's dt — the walk's sim-time is ~8 x dt x
+  0.74n, which scales LINEARLY with n (47 time units at n=100,
+  464 at n=784 on the torus). Already-rebuilt cells DRIFT
+  deterministically (V-coupling to not-yet-rebuilt wound neighbors
+  and back) for that duration — a per-cell exposure that grows
+  with n. It explains why the rise ACCELERATES with n in every arm
+  (+0.26/+0.32/+0.46 in the base) and why pinning only halves it
+  (stronger gamma pins harder against the same exposure).
+- REGISTERED (exp106): (a) THE STEPS-PER-CELL PROBE — a
+  backward-compatible steps_per_cell kwarg (default 8, bit-exact);
+  if the n-trend flattens at steps_per_cell=2, walk-duration drift
+  is the mechanism (the probe predicts err(n) becomes
+  walk-time-invariant); (b) THE ORACLE'S SIZE NORMALIZATION — a
+  boundary-length/sqrt(volume) ratio term that cancels the
+  perimeter/volume scaling, re-audited against the exp104 sizes
+  (the v2 oracle must price grid2d's n=784 cell INTO the V band —
+  the v1 transfer failure).
