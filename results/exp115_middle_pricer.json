@@ -1,0 +1,176 @@
+{
+ "exp": "exp115_middle_pricer",
+ "arms": {
+  "mu_ladder": {
+   "torus_mu0.01_spc0": {
+    "rate": 0.0,
+    "err": 7.43
+   },
+   "torus_mu0.01_spc8": {
+    "rate": 0.0,
+    "err": 9.48
+   },
+   "torus_mu0_spc0": {
+    "rate": 1.0,
+    "err": 5.54
+   },
+   "torus_mu0_spc8": {
+    "rate": 0.0,
+    "err": 7.27
+   },
+   "torus_elong_mu0.01_spc0": {
+    "rate": 0.0,
+    "err": 7.27
+   },
+   "torus_elong_mu0.01_spc8": {
+    "rate": 0.0,
+    "err": 9.24
+   },
+   "torus_elong_mu0_spc0": {
+    "rate": 1.0,
+    "err": 5.47
+   },
+   "torus_elong_mu0_spc8": {
+    "rate": 0.0,
+    "err": 7.17
+   },
+   "random3_mu0.01_spc0": {
+    "rate": 0.0,
+    "err": 6.87
+   },
+   "random3_mu0.01_spc8": {
+    "rate": 0.0,
+    "err": 8.9
+   },
+   "random3_mu0_spc0": {
+    "rate": 1.0,
+    "err": 5.16
+   },
+   "random3_mu0_spc8": {
+    "rate": 0.0,
+    "err": 6.83
+   },
+   "random8_mu0.01_spc0": {
+    "rate": 0.0,
+    "err": 6.93
+   },
+   "random8_mu0.01_spc8": {
+    "rate": 0.0,
+    "err": 9.13
+   },
+   "random8_mu0_spc0": {
+    "rate": 1.0,
+    "err": 5.28
+   },
+   "random8_mu0_spc8": {
+    "rate": 0.0,
+    "err": 6.92
+   },
+   "scale_free_mu0.01_spc0": {
+    "rate": 0.0,
+    "err": 7.88
+   },
+   "scale_free_mu0.01_spc8": {
+    "rate": 0.0,
+    "err": 8.93
+   },
+   "scale_free_mu0_spc0": {
+    "rate": 1.0,
+    "err": 5.94
+   },
+   "scale_free_mu0_spc8": {
+    "rate": 0.0,
+    "err": 6.76
+   },
+   "scale_free200_mu0.01_spc0": {
+    "rate": 0.0,
+    "err": 7.91
+   },
+   "scale_free200_mu0.01_spc8": {
+    "rate": 0.0,
+    "err": 9.64
+   },
+   "scale_free200_mu0_spc0": {
+    "rate": 1.0,
+    "err": 5.91
+   },
+   "scale_free200_mu0_spc8": {
+    "rate": 0.0,
+    "err": 7.41
+   }
+  },
+  "predictors": {
+   "rhos": {
+    "mean_degree": -0.431,
+    "lambda2": -0.655,
+    "v2": -0.305
+   },
+   "mean_degree": {
+    "torus": 4.0,
+    "torus_elong": 4.0,
+    "random3": 3.0,
+    "random8": 7.82,
+    "scale_free": 3.94,
+    "scale_free200": 3.97,
+    "barbell": 12.54,
+    "ladder": 2.96,
+    "random6": 5.9,
+    "tree": 1.98,
+    "grid2d": 3.6,
+    "grid_elong": 3.5
+   },
+   "lambda2": {
+    "torus": 0.382,
+    "torus_elong": 0.0979,
+    "random3": 0.2085,
+    "random8": 0.0691,
+    "scale_free": 0.5953,
+    "scale_free200": 0.5803,
+    "barbell": 0.0,
+    "ladder": 0.0039,
+    "random6": 0.0406,
+    "tree": 0.0117,
+    "grid2d": 0.0979,
+    "grid_elong": 0.0246
+   },
+   "v2": {
+    "torus": 4.8083,
+    "torus_elong": 5.7276,
+    "random3": 7.5118,
+    "random8": 2.8826,
+    "scale_free": 8.6209,
+    "scale_free200": 13.1494,
+    "barbell": 12.1007,
+    "ladder": 3.6168,
+    "random6": 2.0378,
+    "tree": 6.2312,
+    "grid2d": 4.174,
+    "grid_elong": 5.1403
+   },
+   "costs": {
+    "torus": 4,
+    "torus_elong": 4,
+    "random3": 4,
+    "random8": 4,
+    "scale_free": 4,
+    "scale_free200": 4,
+    "barbell": 24,
+    "ladder": 30,
+    "random6": 30,
+    "tree": 40,
+    "grid2d": 40,
+    "grid_elong": 40
+   }
+  }
+ },
+ "criteria": {
+  "MB_G1_mu_price_shallow": false,
+  "MB_G2_mu_price_speed_dependent": false,
+  "MB_G3_middle_predictor": {
+   "best": "v2",
+   "rho": -0.305,
+   "pass": false
+  }
+ },
+ "notes": "The middle band's pricer: the mu ladder at both walk speeds on the six MU0 members (shallow? speed-dependent?) and three candidate predictors (mean degree, lambda_2, v2) against the ordinal middle costs."
+}
