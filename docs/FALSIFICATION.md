@@ -2888,3 +2888,59 @@ Night seven, part 3. exp43's registered follow-up:
   dose mapping + the unsaturated-slice rescue test (the commitment
   grid on wnt|crosspiece as a positive control); then R5' across
   the substrate battery; multi-zone regen scale-up.
+
+## L74 — exp92 THE FINE LADDER + THE ROW-LEVEL DOSE MAPPING (2/4 — the graded edge EXISTS; the rescue confirmed; the class rule below bar; the split-frames verdict closes the morphogen residual's mechanism queue)
+
+- FL-G1 PASS — THE GRADED EDGE EXISTS: the 7-seed fine ladder
+  (d in {0.25..0.50}, wnt|trunk) resolves exp91's threshold into
+  [0, 0, 0, 0.429, 1, 1] — the graded window is d in [0.35, 0.45]
+  with the 3/7 rate at d=0.40. The record's partial block (mean
+  0.105 on the 11 modulator-class rows) sits inside the sim's
+  reachable regime; the pre-registered selection picked d_par=0.25
+  (rate 0.000, closest to the block mean).
+- FL-G2 REFUTED — THE CANONICAL CLASS RULE IS BELOW BAR: phi 0.375
+  (50/78 mapped wnt|trunk rows) between effector-class membership
+  (beta-catenin/apc/axin) and recorded >= 0.9 — directionally right,
+  under the registered 0.4 bar. The record's dose structure is
+  gene-specific beyond the canonical classes (effector RNAi rows
+  with partial phenotypes exist, e.g. Dj-betacateninB+Dj-ndk 0.11).
+  Deposited as the measured concordance.
+- FL-G4 PASS — THE UNSATURATED-SLICE RESCUE: the full commitment
+  grid on wnt|crosspiece (d=1.0) moves the verdict to 0.667 (from
+  the 0.0 corner) — L70's registered repair has its positive
+  control: the exp40 grid works where the verdict is unsaturated.
+- FL-G3 REFUTED ON A SPLIT VERDICT, with two in-run repairs owned:
+  (1) the first pass keyed arms without the dose class and
+  reproduced exp88's mapping BIT-IDENTICALLY (0.365/0.304) — the
+  row-level test was a NO-OP; repaired to dose-classed arm keys.
+  (2) the second pass dosed the other_rnai wnt_pos/wnt_ant RNAi
+  rows — raw worsened (0.381); repaired to the registered scoping:
+  the partial-penetration dose applies to the morphogen DRUG rows
+  only, the RNAI KNOCKOUT rows stay at the full arm. The final
+  reading: decoded 0.304 -> 0.290 (beats L70), raw 0.365 -> 0.371
+  (+0.006) — the both-frames bar missed by the raw frame alone.
+- THE LESSON CHAIN (the deposit's core): family-level mapping
+  (exp91) -> class-level mapping (exp92) -> the residual is
+  WITHIN-CLASS heterogeneity — the modulator block's own spread
+  (raw 0.05-0.45) disagrees with itself across frames: raw wants
+  d ~ 0.40 (rate 0.429), corrected wants d ~ 0.0 (the corrected
+  block sits at the control floor). The n-targets count check
+  (1 target vs 2+ against the recorded values) shows no monotone
+  structure — no pre-registerable within-class rule exists without
+  anchoring on the recorded values (cooking). The morphogen
+  residual closes as a RECORD property: the drug-dose identity of
+  each row is not in the DB (exp33, L16 — no concentrations), so
+  the row-level dose is unknowable from the record's structure
+  alone.
+- THE CORPUS STATUS (the Stage-2 honest scoreboard): decoded MAE
+  0.290 (from exp70's 0.522, exp88's 0.304); the leading residuals
+  are now cutting (10.0% share — the record's series-variance
+  floor, a decoding-discipline property) and other_rnai (7.2%) —
+  the morphogen block is down to 6.5% and mechanism-closed. The
+  < 0.15 target requires record-side decoding discipline, not new
+  sim mechanisms — the sim-side residual queue for Stage 2 is
+  EMPTY.
+- 67/67 tests untouched (experiment-local machinery).
+- NEXT (derived): R5' across the substrate battery (the refusal
+  price, open item #4); multi-zone regen scale-up (open item #5);
+  quest 001 literature follow-up (the zai stream is live).
