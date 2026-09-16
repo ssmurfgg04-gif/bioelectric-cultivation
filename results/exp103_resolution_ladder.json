@@ -1,0 +1,74 @@
+{
+ "exp": "exp103_resolution_ladder",
+ "arms": {
+  "path_k8": {
+   "rate": 1.0,
+   "err": 4.57
+  },
+  "path_k10": {
+   "rate": 1.0,
+   "err": 2.74
+  },
+  "path_k12": {
+   "rate": 1.0,
+   "err": 3.24
+  },
+  "torus_k8": {
+   "rate": 1.0,
+   "err": 3.22
+  },
+  "torus_k10": {
+   "rate": 1.0,
+   "err": 2.4
+  },
+  "torus_k12": {
+   "rate": 1.0,
+   "err": 2.61
+  },
+  "grid2d_k8": {
+   "rate": 1.0,
+   "err": 0.59
+  },
+  "grid2d_k10": {
+   "rate": 1.0,
+   "err": 0.58
+  },
+  "grid2d_k12": {
+   "rate": 1.0,
+   "err": 0.58
+  },
+  "path_k12_below": {
+   "rate": 0.0,
+   "err": 4.25
+  }
+ },
+ "schedule": {
+  "8": 0.1,
+  "10": 0.09,
+  "12": 0.075
+ },
+ "ratios": {
+  "path": [
+   0.1616,
+   0.1414,
+   0.1717
+  ],
+  "torus": [
+   0.63,
+   0.61,
+   0.62
+  ],
+  "grid2d": [
+   0.5889,
+   0.5667,
+   0.5778
+  ]
+ },
+ "criteria": {
+  "RS_G1_path_finest": true,
+  "RS_G2_grid_star_point": true,
+  "RS_G3_oracle_k_scaling": false,
+  "RS_G4_domain_rule_k12": true
+ },
+ "notes": "The zone-resolution ladder continued: k in {8, 10, 12} with the width schedule keeping zones non-overlapping across f 0.02..0.95; one substrate per exp100 price class at its minimal cell. The coverage confound (k and width jointly) is inherent and deposited."
+}

@@ -3459,3 +3459,47 @@ Night seven, part 3. exp43's registered follow-up:
   non-verifying zone count at the minimal cell, or none through
   12), the err-vs-k trend, and the oracle's k-scaling (the ratio
   rises with k — does the price rise with it?).
+
+## L85 — exp103 THE RESOLUTION LADDER, CONTINUED (3/4 — NO substrate binds through TWELVE zones: path k=12 at 3.24 mV on its DEFAULT cell, torus 2.61, the star-point grid 0.58 at every count; the oracle's k-scaling claim refuted by a schedule-rounding artifact and owned as overreach; the design lesson: resolution ladders need a fixed-coverage schedule)
+
+- THE LADDER (k in {8, 10, 12}, width schedule 0.100/0.090/0.075
+  keeping zones non-overlapping across f 0.02..0.95, one substrate
+  per exp100 price class at its minimal cell):
+  path (1, 0.015): 4.57 / 2.74 / 3.24 — ALL VERIFY. The chain
+  resolves TWELVE zones on its DEFAULT cell; no dial needed.
+  torus (4, 0): 3.22 / 2.40 / 2.61 — ALL VERIFY.
+  grid2d (64, 0): 0.59 / 0.58 / 0.58 — the mu-cut grid is
+  essentially PERFECT at every resolution (the exp101 k=4..6
+  refusal at (64, 0.015) was entirely the theta sag; with mu cut
+  the grid does not care how many zones it holds).
+- RS-G3 REFUTED AND OWNED (the oracle's k-scaling): the ratio is
+  NOT monotone in k — path [0.162, 0.141, 0.172], torus [0.630,
+  0.610, 0.620], grid2d [0.589, 0.567, 0.578], every substrate
+  DIPS at k=10. The artifact: the k=10 width schedule leaves
+  ~0.3-cell inter-zone gaps, which int(round()) collapses —
+  adjacent zones share boundary edges and the crossing count
+  drops below the k=8 gap-separated layout. The deeper ownership:
+  the ratio was validated ACROSS substrates at a fixed spec
+  (exp102); extending it WITHIN a k-ladder was overreach, and the
+  err does not track the ratio within-substrate anyway (path
+  4.57 -> 2.74 -> 3.24 — the k x width coverage confound strikes:
+  k=8 carries w=0.100 coverage 0.80, k=10 only 0.90 in 10 zones...
+  the coverage AND the boundary geometry move together). DESIGN
+  LESSON for the ledger: a resolution claim needs a fixed-coverage
+  schedule (fix the total zoned fraction, vary only the count);
+  the ratio's domain is fixed-spec cross-substrate pricing.
+- RS-G1/RS-G2 PASS (path and grid2d hold the finest zoning);
+  RS-G4 PASS (the k=12 below-line variant, zone z5 at -59: 0/2 —
+  the M33 rule holds where zones nearly touch).
+- THE RESOLUTION STORY, deposited: the reader's zone capacity at
+  n=100 is >= 12 zones on every class representative — resolution
+  is bounded by CELL COUNT (zone width vs identity noise), not by
+  zone count per se, and the dial plane buys out the one substrate
+  that needed it. exp94's 3-zone program was never near a limit.
+- REGISTERED (exp104): THE SIZE AXIS — the price's n-scaling.
+  path/grid2d/torus at n in {100, 200, 400, 800} (grids and tori
+  aspect-matched 2:1), k=3 MULTI, each at its minimal exp100 cell
+  (grid2d at (64, 0)). exp94's n-scale (2 substrates at (64, 0))
+  becomes a map: does DEFAULT survive at n=400/800 on path (its
+  n=200 err 2.38 was BETTER than n=100's 2.91 — the sag dilutes?),
+  and does the oracle's ratio hold its class calls across n?
