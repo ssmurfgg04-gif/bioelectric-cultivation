@@ -1,0 +1,249 @@
+{
+ "exp": "exp139_levin_voltage",
+ "task": "Levin T5: voltage-series cross-validation \u2014 partition the 119-entry Levin voltage series into 5 regime families, run the stack's predictors per family, and test the stack's absolute-calibration and qualitative ordering predictions against the record (research/levin_voltage_series.md T5).",
+ "partition": {
+  "rule": "per-row manipulation record only (drug_start_end / rnaic in the manipulation string); curated entries by explicit pre-registered table; the shared direction_signature template is NOT a per-row regime tag (owned)",
+  "counts": {
+   "A": 30,
+   "B": 57,
+   "C": 21,
+   "D": 5,
+   "E": 6
+  },
+  "curated_assignment": {
+   "V1_head_depolarized_vs_trunk": "A",
+   "V5_wound_depolarized": "A",
+   "C10-marsh-beams-1952": "A",
+   "V3_posterior_depol_ectopic_head": "B",
+   "V4_junction_block_graded": "B",
+   "C03-durant2017-numbers": "B",
+   "C05-eb2015-numbers": "B",
+   "V2_hyperpolarization_abnormal": "C",
+   "C01-beane2011-claim": "C",
+   "C02-beane2013-claim": "C",
+   "C06-eb2019-numbers": "C",
+   "V6_stochastic_identical_perturbation": "D",
+   "C04-durant2019-window": "D",
+   "C09-pezzulo2021-claim": "D",
+   "C07-oviedo2008-method": "E",
+   "C08-durant2016-review": "E",
+   "C11-chernet2013-xenopus": "E",
+   "C12-chernet2014-xenopus": "E",
+   "C13-betse-pietak-levin": "E",
+   "C14-vmem-inference-layer": "E"
+  },
+  "fam_a_composition_note": "FAM-A is the residue family (naive controls + octanol-lineage re-cut persistence rows + b-catenin/notch RNAi + field claim) \u2014 heterogeneous by construction, owned"
+ },
+ "stack_by_family": {
+  "A_intact_polarity": {
+   "head_vmem_mV": -24.859522940576216,
+   "trunk_vmem_mV": -50.25690149582484,
+   "wound_face_vmem_mV": -38.02933652459853,
+   "settled_mean_mV": -43.63232637821335,
+   "cutting_arm_abn_rate": 0.0,
+   "head_minus_trunk_mV": 25.397378555248626,
+   "wound_minus_intact_tail_mV": 12.227564971226315,
+   "wound_minus_settled_mean_mV": 5.602989853614822
+  },
+  "B_gj_blocked": {
+   "gj_arm_abn_rate_tail": 0.6666666666666666,
+   "ea_by_plane": {
+    "head": 0.0,
+    "trunk": 0.0,
+    "tail": 0.0
+   },
+   "abn_by_plane": {
+    "head": 1.0,
+    "trunk": 1.0,
+    "tail": 0.6666666666666666
+   }
+  },
+  "C_hyperpolarization": {
+   "ion_arm_abn_rate_tail": 1.0,
+   "af_by_plane": {
+    "head": 0.3333333333333333,
+    "trunk": 0.6666666666666666,
+    "tail": 1.0
+   },
+   "abn_by_plane": {
+    "head": 0.3333333333333333,
+    "trunk": 0.6666666666666666,
+    "tail": 1.0
+   }
+  },
+  "D_depolarization": {
+   "posterior_depol_ea_rate": 1.0,
+   "hl_per_seed": [
+    0.9763,
+    0.9309,
+    0.9316
+   ]
+  },
+  "E_absolute_scale": {
+   "ghk_map_mV": {
+    "neoblast (stem)": -52.976,
+    "intestine (goblet)": -39.764,
+    "neuron (cholinergic)": -39.368,
+    "muscle (parenchymal)": -31.919,
+    "secretory / gland": -31.776,
+    "epidermis (early prog)": -16.885,
+    "phagocyte / immune": -7.134
+   },
+   "ghk_inside_betse_band": {
+    "neoblast (stem)": true,
+    "intestine (goblet)": true,
+    "neuron (cholinergic)": true,
+    "muscle (parenchymal)": true,
+    "secretory / gland": true,
+    "epidermis (early prog)": true,
+    "phagocyte / immune": false
+   },
+   "betse_band": [
+    -80.0,
+    -10.0
+   ],
+   "betse_bistable_swing_mV": 43.0,
+   "chernet_delta_mV": 19.4
+  }
+ },
+ "measured_by_family": {
+  "metric": "mean over the family's DB rows of (1 - P(Wild type))",
+  "A": 0.5055555555555556,
+  "B": 0.39094339622641516,
+  "C": 0.3170588235294118,
+  "D": 0.645,
+  "row_counts_db_only": {
+   "A": 27,
+   "B": 53,
+   "C": 17,
+   "D": 2,
+   "E": 0
+  }
+ },
+ "gates": {
+  "LV_A1": {
+   "verdict": "PASS",
+   "partition_total": 119,
+   "ids_unique": true,
+   "mv_entries_in_E": true,
+   "calibration_deltas": {
+    "head": 0.0,
+    "tail": 0.0,
+    "wound": 0.0
+   },
+   "tolerance": 0.125
+  },
+  "LV_G1": {
+   "verdict": "PARTIAL",
+   "e_stack": [
+    0.0,
+    0.6666666666666666,
+    1.0,
+    1.0
+   ],
+   "e_meas": [
+    0.5055555555555556,
+    0.39094339622641516,
+    0.3170588235294118,
+    0.645
+   ],
+   "spearman": -0.10540925533894598,
+   "zones": {
+    "pass": 0.4,
+    "refute": -0.6
+   }
+  },
+  "LV_G2": {
+   "verdict": "RECALIBRATION TARGET (calibration class, not falsification \u2014 the T5 md's own clause)",
+   "sub_gates": {
+    "a_trio_in_band": true,
+    "b_head_trunk_vs_swing": true,
+    "c_wound_depol_vs_chernet": true,
+    "d_ghk_all_in_band": false
+   },
+   "head_minus_trunk_mV": 25.397378555248626,
+   "wound_minus_intact_tail_mV": 12.227564971226315,
+   "ghk_outside_band": {
+    "phagocyte / immune": -7.13
+   }
+  },
+  "LV_G3": {
+   "verdict": "PASS",
+   "signs": {
+    "S1_head_gt_trunk": true,
+    "S2_wound_gt_settled": true,
+    "S3_gj_gt_cutting": true,
+    "S4_ion_gt_cutting": true
+   }
+  },
+  "LV_G4": {
+   "verdict": "PARTIAL",
+   "rho_B_octanol": null,
+   "rho_C_headless": 0.6488856845230502,
+   "sim_b_ea_by_pub_order": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "pub_b": [
+    0.05,
+    0.28,
+    0.5,
+    1.0,
+    0.0
+   ],
+   "sim_c_abn_by_pub_order": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.6666666666666666,
+    1.0,
+    1.0
+   ],
+   "pub_c": [
+    0.0,
+    0.0,
+    0.67,
+    0.16,
+    0.4
+   ],
+   "zones": {
+    "pass": 0.4,
+    "refute": -0.3
+   }
+  }
+ },
+ "not_gated_scope": {
+  "price_map_v2": {
+   "oracle_rho_deposited": 0.63,
+   "scope_note": "the v2 oracle prices stack SUBSTRATES (19 members, class-level); the exp139 family arms run on the deployed DEFAULT0 sheet cell (1, 0.015) \u2014 no per-biological-family pricing column exists, so a family-level v2 test would be an instrument mismatch. Deposited as a scope boundary, not gated."
+  },
+  "deadline_map": {
+   "record_kernels": {
+    "durant2019_write_window_h": 3.0,
+    "octanol_kernel_edge_h": "12-24 (exp130 units resolution)",
+    "barium_onset_h": "48-72 (C06)"
+   },
+   "stack_predictors": {
+    "exp54_write_window_h": 3.0,
+    "exp124_125_deadline_band_h": "36-72 (gamma-dependent)"
+   },
+   "scope_note": "exp130 REFUTED the direct kernel fit (the stack's deadline is a rescue curve; Oviedo's kernel is a damage kernel \u2014 Spearman -0.660) and exp131 landed the ion-arm plane ordering (0.649). No new timing gate is registered here; exp130's refutation stands as the timing arc's verdict."
+  }
+ },
+ "criteria": {
+  "LV_A1_partition_anchor": true,
+  "LV_G1_cross_family_ordering": "PARTIAL",
+  "LV_G2_absolute_anchor": "RECALIBRATION",
+  "LV_G3_sign_battery": "PASS",
+  "LV_G4_per_plane_ordering": "PARTIAL"
+ },
+ "verdict": "2/5 gates PASS (A1 PASS, G1 PARTIAL, G2 RECALIBRATION, G3 PASS, G4 PARTIAL)",
+ "notes": "The stack makes NO quantitative absolute-Vmem prediction for the planarian families (the record has none \u2014 0 absolute mV in 70+ years); the cross-family test is therefore the families' outcome-deviation ordering and the sign battery, with the absolute test confined to FAM-E (BETSE band, bistable swing, Chernet delta). The GHK map's depolarized tail (phagocyte -7.13 mV) overshoots the BETSE tissue band \u2014 the named recalibration target, pre-registered as calibration class by the T5 md itself. D-family n=2 (ivermectin + its chloride rescue, the slanted-pharynx protocol); A-family composition heterogeneous (residue family, owned).",
+ "sources": {
+  "record": "research/levin_voltage_series.json (119 entries)",
+  "arms": "experiments/exp39_levin_voltage.py V1-V5 arms (verbatim); experiments/exp131_ion_plane_ordering.py (plane geometry + flags); exp29-S2R3 gap_scale mapping (GJ blockade 0.05)",
+  "predictors": "cultivation/validation/vmem_inference.py (GHK, P2); results/price_map_v2.json + exp114/exp117 (scope, not gated); exp124/125 deadline map (scope, not gated; exp130's refutation owned)"
+ }
+}
