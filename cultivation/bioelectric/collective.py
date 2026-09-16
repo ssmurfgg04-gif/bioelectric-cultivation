@@ -177,7 +177,9 @@ class BioElectricCollective:
                arz_width: int = 2,
                neoblast_depleted: float = 0.0,
                neoblast_coin_p: float | None = None,
-               commitment_delay: float = 0.0) -> None:
+               commitment_delay: float = 0.0,
+               spec_min: float | None = None,
+               spec_read_bypass_gap: bool = False) -> None:
         """Regeneration: the blastema EXTENDS THE STORED PATTERN outward from
         the wound boundary, one committing cell at a time (tissue-growth
         abstraction of neoblast-driven regrowth). Each new cell inherits the
@@ -416,9 +418,20 @@ class BioElectricCollective:
         # an isolated RNG; u < p declares the whole animal neoblast-
         # failed (scar) for this regen. Per-animal all-or-nothing,
         # population graded — the record's penetrance structure.
+        # exp86 REPAIR: the digest window must carry the animal's
+        # STATE. For a fully-anterior region (idx[0] == 0) the old
+        # fallback centered the window on the WOUND cell idx[0] — a
+        # constant state, hence a constant digest and a constant
+        # draw: the coin's penetrance SATURATED on the head plane
+        # (u = 0.212 for every seed; measured in-run). The window now
+        # centers on an INTACT face cell: the anterior face when it
+        # exists (bit-exact with the old code for every region with
+        # idx[0] > 0 — same src0, same window), else the posterior
+        # intact face.
         src0 = idx[0] - 1
         if src0 < 0:
-            src0 = idx[0] if idx else None
+            src0 = (idx[-1] + 1) if (len(idx) and idx[-1] + 1 < self.n) \
+                else (idx[0] if idx else None)
         coin_u = None
         if neoblast_coin_p is not None and src0 is not None \
                 and 0 <= src0 < self.n:
@@ -501,12 +514,15 @@ class BioElectricCollective:
                         extrap = min(max(extrap, rep_lo), rep_hi)
                     chain_base = (1.0 - g) * chain_base + g * extrap
                 spec = getattr(self, 'phi_spec', None)
-                if phi_readout > 0.0 and spec is not None and spec_on:
+                if phi_readout > 0.0 and spec is not None and spec_on \
+                        and (spec_min is None
+                             or float(spec[i]) >= spec_min):
                     expressed = True
                     if expr_draw:
                         expressed = self.rng.random() < expr_p
                     if expressed:
-                        w = phi_readout * r
+                        w = phi_readout if spec_read_bypass_gap \
+                            else phi_readout * r
                         chain_base = (1.0 - w) * chain_base \
                             + w * float(spec[i])
                 if commitment_diffusion > 0.0:

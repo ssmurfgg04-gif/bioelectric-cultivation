@@ -2570,3 +2570,57 @@ Night seven, part 3. exp43's registered follow-up:
   read (M33, the exp79-verified architecture) applied to the chain
   regen walk; it targets the head-plane read fragility (exp85) and
   the graph regen-walk limitation (exp81) with one mechanism.
+
+## L68 — exp86 THE REGEN-READ UPGRADE (5/5 — the exp85 repair CLOSES; a coin-digest ARTIFACT found and repaired)
+- THE IN-RUN FINDING FIRST: the composition panel of the first pass
+  exposed a DEFECT in the adopted M37-A coin machinery — the
+  digest window for a fully-anterior region (idx[0]==0) landed
+  inside the WOUND state (constant theta), so the coin's draw was a
+  CONSTANT on the head plane: u = 0.212 for every seed (measured,
+  Panel E), i.e. the coin fired 100% on head regardless of nb_p —
+  penetrance SATURATED. exp85's direction-gate failure (head 1.0 at
+  n=24) was this artifact ON TOP of the real biology (0.7 coin-off
+  fragility); exp83's trunk-anchored pool closure is untouched (the
+  trunk window was already intact-side and varies by seed). THE
+  CORE REPAIR: the digest window now centers on an INTACT face cell
+  (the anterior face when it exists — bit-exact with the old code
+  for every region with idx[0]>0, same src0 same window — else the
+  posterior intact face). 67/67 tests green after both core edits.
+- RR-G1 PASS — **THE HEAD-PLANE FRAGILITY CLOSES**: the M33-gated
+  read (phi_readout=0.75, spec_min=NEURAL_SPEC_MIN,
+  spec_read_bypass_gap=True) drops b_head from 0.70 to 0.00 (n=10)
+  while trunk/tail stay 0.00 — the read repairs the read-side
+  fragility and touches nothing else (the M33 domain discipline,
+  TC-G5's chain analog: the read fires only where the stored
+  identity is above the neural line).
+- RR-G2 PASS — **JUNCTION INDEPENDENCE, both operating points**: at
+  gap_scale=0.2 the M25 guess carries (1-r)=0.8 of the committed
+  identity and the blend is diluted (no_read 1.0, blend 1.0) — the
+  M33 POLE read in the guess path (neural_readout, the
+  non-junctional anterior read) restores b_head to 0.00. The same
+  architecture now covers both operating points: the spec blend at
+  healthy junctions, the pole read through the guess at damaged
+  junctions — the read that does not ride the junction, at both.
+- RR-G3 PASS — **THE GENE LAYER RECOMPOSED**: coin (nb_p=0.8) + the
+  upgraded read at 24 fresh seeds/plane: head 0.83 / trunk 0.75 /
+  tail 0.83 — the direction gate passes (head <= trunk + 2*se_sim)
+  and the pool lands 0.767 vs the record's 0.799 (a 0.032 match).
+  The plane profile is now flat-and-consistent — the coin's
+  penetrance (repaired digest) plus the repaired read produce the
+  record's structure with no per-plane parameters.
+- RR-G4 PASS — NO REGRESSION: the control arm stays structurally
+  0.00 under the upgraded read; the generic family's sim pooled
+  rate 0.623 inside the corrected band [0.485, 0.685] (the exp83
+  record correction holds through the read upgrade).
+- PE-G1 PASS — the digest artifact VERIFIED and deposited (old
+  window u [0.212 x4] vs repaired [0.308, 0.419, 0.206, 0.696]).
+- THE GENE-LAYER SCOREBOARD, final: GL-G1/G2/G5 (exp60); M37-A
+  adopted (exp64), pool-validated (exp83), digest repaired (exp86);
+  M37-B refuted (exp64), superseded by the record correction
+  (exp83); M37-A' refuted as mis-targeted (exp85); M40 adopted
+  (exp69); GL-G3 closed (pool + profile, exp86); GL-G4 closed
+  (exp83). THE GENE LAYER IS CLOSED END TO END.
+- NEXT (derived): the graph-native multi-region reader (exp81's
+  regen-walk limitation + exp86's chain machinery are the same
+  architecture — carry the M33-gated read into regrow_graph);
+  corpus MAE residual; compiler v5.
