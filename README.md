@@ -1046,14 +1046,18 @@ and the literature.
 
 ---
 
-### Stage scoreboard after the corpus-and-boundary batch (exp91-exp97)
+### Stage scoreboard after the corpus-and-boundary batch (exp91-exp106)
 
-Ledger L73-L79. The batch: the named corpus residual closed as a
-RECORD property, the refusal price battery, the reader's scale-up,
-the boundary hunt — and the coverage repair that dissolved it. Figures:
+Ledger L73-L88. The batch: the corpus residual closed as a RECORD
+property, the refusal price battery, the reader's scale-up, the
+boundary hunt — and the coverage repair that dissolved it; then the
+dial budget mapped over three axes (substrate x zone-count x size)
+and the oracle arc closed. Figures:
 `docs/figures/fig91_amplitude_axis.png`,
-`docs/figures/fig92_corpus_residual.png`.
-New deliverable: `docs/STAGE5_WETLAB_COMPANION_PROTOCOL.md` (W1-W5
+`docs/figures/fig92_corpus_residual.png`,
+`docs/figures/fig97_coverage_repair.png`,
+`docs/figures/fig100_reader_price_map.png`.
+Deliverable: `docs/STAGE5_WETLAB_COMPANION_PROTOCOL.md` (W1-W5
 pre-registered bench gates).
 
 - Stage 2 金丹: **THE MORPHOGEN RESIDUAL IS A RECORD PROPERTY, NOT A
@@ -1101,7 +1105,43 @@ pre-registered bench gates).
   decomposition probe before any new mechanism was built on it).
   The honesty discipline held: the boundary story was the batch's
   most confident claim and it did not survive its own probe.
-- Open next: exp98 the star's TRUE price ladder under the repaired
-  executor (exp95's grid measured the artifact and is invalidated);
-  quest 001 daemon rebuild (down in this env — flagged, non-
-  blocking); the token rotation (flagged, non-blocking).
+- Open next: exp107 the torus's residual size trend (the last
+  unmechanized number on the books — candidates killed: commitment
+  noise, walk exposure; pinning halves it); quest 001 daemon
+  rebuild (down in this env — flagged, non-blocking); the token
+  rotation (ELEVATED — rotate before the next session).
+
+### Stage scoreboard, batch 2 (exp97-exp106, ledger L79-L88)
+
+- THE COVERAGE REPAIR (exp97, 5/5): the deg-99 star's 8.5 mV floor
+  was ~32 amputated-never-rebuilt gap cells (the blastema frontier
+  enumerated over the zone union on a laterally disconnected
+  region) — the settle is INERT, the L77-L78 homogenization story
+  refuted by decomposition. The repair (frontier_mode='walk',
+  default bit-exact) verifies the star at 1.02 mV 3/3; the reader's
+  domain is 12/12 — NO topological boundary.
+- THE PRICE MAPS (exp98/exp99/exp100, 3/3 + 3/4 + 3/3): the star is
+  one-dial-priced on EITHER channel (gamma 2 or mu 0.01 — the
+  default refusal a marginal uniform theta sag, all zones holding);
+  the map is degree-FLAT through deg-199 (R5' closes
+  degree-invariant); the reader's full 19-substrate taxonomy: 4
+  DEFAULT / 6 V_PRICED / 9 TWO_DIAL, ZERO refusals, and the
+  reader's tag >= the writer's on all 7 shared substrates.
+- THE RESOLUTION + SIZE AXES (exp101/exp103/exp104): six zones hold
+  everywhere at SOME operating point (the grid's k>=4 refusal is
+  one dial away — 0.58 mV at (64, 0)); twelve zones hold on every
+  class representative; the DEFAULT price DECAYS with size (path
+  2.91 -> 1.66 at n=784) while the torus's two-dial price RISES
+  (mechanism probed exp105/exp106: noise inert, walk exposure dead,
+  pinning halves — the residual trend honestly open).
+- THE ORACLE ARC CLOSED (exp102/exp106, 4/4 + 4/5): the chain-era
+  R5 boolean refused 16/19 executor-verified substrates; the raw
+  ratio prices the battery (Spearman 0.73); the normalized boundary
+  term crossing/sqrt(edges) is the v2 oracle (Spearman 0.81,
+  size-stable on 2D, the n=784 transfer failure repaired). The
+  compile decision's final form: the v2 boundary term NAMES THE
+  PRICE, the dials pay it — nothing on the books refuses.
+- Method: the boundary story — the batch's most confident claim —
+  did not survive its own probe; two gate miscalibrations owned
+  (the DL-G1 band, the SZ-G4 bar); one local hard-rollback
+  recovered bit-exact from origin (push-each-milestone held).
