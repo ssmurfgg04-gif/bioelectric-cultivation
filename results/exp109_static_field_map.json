@@ -1,0 +1,268 @@
+{
+ "exp": "exp109_static_field_map",
+ "arms": {
+  "real": {
+   "n100_s1": {
+    "err": 3.39,
+    "zone_rms": 2.36,
+    "gap_rms": 3.03,
+    "intact_rms": 4.8,
+    "bands": {
+     "low": 0.108,
+     "mid": 0.286,
+     "high": 0.606
+    }
+   },
+   "n100_s2": {
+    "err": 3.34,
+    "zone_rms": 2.23,
+    "gap_rms": 2.95,
+    "intact_rms": 4.82,
+    "bands": {
+     "low": 0.134,
+     "mid": 0.254,
+     "high": 0.612
+    }
+   },
+   "n100_s3": {
+    "err": 3.37,
+    "zone_rms": 2.45,
+    "gap_rms": 2.88,
+    "intact_rms": 4.8,
+    "bands": {
+     "low": 0.111,
+     "mid": 0.264,
+     "high": 0.625
+    }
+   },
+   "n196_s1": {
+    "err": 3.78,
+    "zone_rms": 2.71,
+    "gap_rms": 3.46,
+    "intact_rms": 5.24,
+    "bands": {
+     "low": 0.25,
+     "mid": 0.18,
+     "high": 0.57
+    }
+   },
+   "n196_s2": {
+    "err": 3.78,
+    "zone_rms": 2.67,
+    "gap_rms": 3.47,
+    "intact_rms": 5.26,
+    "bands": {
+     "low": 0.264,
+     "mid": 0.172,
+     "high": 0.564
+    }
+   },
+   "n196_s3": {
+    "err": 3.74,
+    "zone_rms": 2.46,
+    "gap_rms": 3.5,
+    "intact_rms": 5.27,
+    "bands": {
+     "low": 0.255,
+     "mid": 0.174,
+     "high": 0.571
+    }
+   },
+   "n400_s1": {
+    "err": 4.23,
+    "zone_rms": 2.99,
+    "gap_rms": 3.79,
+    "intact_rms": 5.96,
+    "bands": {
+     "low": 0.387,
+     "mid": 0.144,
+     "high": 0.47
+    }
+   },
+   "n400_s2": {
+    "err": 4.21,
+    "zone_rms": 3.02,
+    "gap_rms": 3.71,
+    "intact_rms": 5.95,
+    "bands": {
+     "low": 0.38,
+     "mid": 0.144,
+     "high": 0.476
+    }
+   },
+   "n400_s3": {
+    "err": 4.22,
+    "zone_rms": 3.0,
+    "gap_rms": 3.75,
+    "intact_rms": 5.94,
+    "bands": {
+     "low": 0.383,
+     "mid": 0.15,
+     "high": 0.467
+    }
+   },
+   "n784_s1": {
+    "err": 4.76,
+    "zone_rms": 3.61,
+    "gap_rms": 4.54,
+    "intact_rms": 6.28,
+    "bands": {
+     "low": 0.421,
+     "mid": 0.128,
+     "high": 0.451
+    }
+   },
+   "n784_s2": {
+    "err": 4.76,
+    "zone_rms": 3.61,
+    "gap_rms": 4.52,
+    "intact_rms": 6.28,
+    "bands": {
+     "low": 0.418,
+     "mid": 0.13,
+     "high": 0.452
+    }
+   },
+   "n784_s3": {
+    "err": 4.76,
+    "zone_rms": 3.63,
+    "gap_rms": 4.53,
+    "intact_rms": 6.28,
+    "bands": {
+     "low": 0.422,
+     "mid": 0.128,
+     "high": 0.449
+    }
+   }
+  },
+  "idealized": {
+   "n100": {
+    "err": 1.46,
+    "zone_rms": 1.25,
+    "gap_rms": 1.61,
+    "intact_rms": 1.55,
+    "bands": {
+     "low": 0.03,
+     "mid": 0.312,
+     "high": 0.659
+    }
+   },
+   "n196": {
+    "err": 1.21,
+    "zone_rms": 0.95,
+    "gap_rms": 1.39,
+    "intact_rms": 1.31,
+    "bands": {
+     "low": 0.169,
+     "mid": 0.195,
+     "high": 0.636
+    }
+   },
+   "n400": {
+    "err": 0.93,
+    "zone_rms": 0.69,
+    "gap_rms": 1.01,
+    "intact_rms": 1.13,
+    "bands": {
+     "low": 0.21,
+     "mid": 0.093,
+     "high": 0.696
+    }
+   },
+   "n784": {
+    "err": 0.81,
+    "zone_rms": 0.61,
+    "gap_rms": 0.89,
+    "intact_rms": 0.96,
+    "bands": {
+     "low": 0.123,
+     "mid": 0.089,
+     "high": 0.789
+    }
+   }
+  },
+  "canon_flat": {
+   "n100": {
+    "err": 7.11,
+    "zone_rms": 1.29,
+    "gap_rms": 12.22,
+    "intact_rms": 1.56,
+    "bands": {
+     "low": 0.509,
+     "mid": 0.135,
+     "high": 0.356
+    }
+   },
+   "n196": {
+    "err": 8.16,
+    "zone_rms": 0.96,
+    "gap_rms": 14.09,
+    "intact_rms": 1.32,
+    "bands": {
+     "low": 0.746,
+     "mid": 0.094,
+     "high": 0.16
+    }
+   },
+   "n400": {
+    "err": 6.95,
+    "zone_rms": 0.72,
+    "gap_rms": 12.03,
+    "intact_rms": 1.13,
+    "bands": {
+     "low": 0.831,
+     "mid": 0.053,
+     "high": 0.116
+    }
+   },
+   "n784": {
+    "err": 7.05,
+    "zone_rms": 0.64,
+    "gap_rms": 12.24,
+    "intact_rms": 0.96,
+    "bands": {
+     "low": 0.868,
+     "mid": 0.032,
+     "high": 0.099
+    }
+   }
+  }
+ },
+ "dynamic_post_walk": {
+  "n100_s1": 3.39,
+  "n100_s2": 3.32,
+  "n100_s3": 3.37,
+  "n196_s1": 3.77,
+  "n196_s2": 3.78,
+  "n196_s3": 3.73,
+  "n400_s1": 4.22,
+  "n400_s2": 4.22,
+  "n400_s3": 4.21,
+  "n784_s1": 4.76,
+  "n784_s2": 4.76,
+  "n784_s3": 4.77
+ },
+ "deltas": {
+  "idealized": -0.65,
+  "canon_flat": -0.06,
+  "shrink_frac": 0.91
+ },
+ "dominant_bands": {
+  "100": "high",
+  "196": "high",
+  "400": "high",
+  "784": "high"
+ },
+ "criteria": {
+  "SF_G1_instrument_validity": true,
+  "SF_G2_localization": {
+   "100": "high",
+   "196": "high",
+   "400": "high",
+   "784": "high"
+  },
+  "SF_G3_canon_flat_mechanism": false,
+  "SF_G4_clean_pattern_floor": false
+ },
+ "notes": "The frozen-theta settle fixed point solved directly (V* = gamma(gamma I + L_G)^-1 theta) on captured real patterns, idealized patterns, and canon-flattened patterns; the error field eigen-decomposed on the torus's exact DFT modes and deposited by |k| band. Low-k = reservoir bleed across the span; mid-k = the canon diamond's wrap scatter; high-k = local kernel smearing of the zone-boundary discontinuities."
+}
