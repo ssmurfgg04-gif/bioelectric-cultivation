@@ -1,0 +1,166 @@
+{
+ "exp": "exp102_r5_price_oracle",
+ "rows": {
+  "path": {
+   "ratio": 0.0606,
+   "boolean": true,
+   "class": "DEFAULT",
+   "ordinal_cost": 0.0,
+   "sub_cost": 0.0
+  },
+  "grid2d": {
+   "ratio": 0.3111,
+   "boolean": false,
+   "class": "V_PRICED",
+   "ordinal_cost": 1.0,
+   "sub_cost": 64.0
+  },
+  "torus": {
+   "ratio": 0.34,
+   "boolean": false,
+   "class": "TWO_DIAL",
+   "ordinal_cost": 2.0,
+   "sub_cost": 2.0
+  },
+  "random3": {
+   "ratio": 0.6133,
+   "boolean": false,
+   "class": "TWO_DIAL",
+   "ordinal_cost": 2.0,
+   "sub_cost": 2.0
+  },
+  "random6": {
+   "ratio": 0.1186,
+   "boolean": false,
+   "class": "V_PRICED",
+   "ordinal_cost": 1.0,
+   "sub_cost": 32.0
+  },
+  "scale_free": {
+   "ratio": 0.6142,
+   "boolean": false,
+   "class": "TWO_DIAL",
+   "ordinal_cost": 2.0,
+   "sub_cost": 2.0
+  },
+  "small_world": {
+   "ratio": 0.13,
+   "boolean": false,
+   "class": "DEFAULT",
+   "ordinal_cost": 0.0,
+   "sub_cost": 0.0
+  },
+  "tree": {
+   "ratio": 0.6263,
+   "boolean": false,
+   "class": "V_PRICED",
+   "ordinal_cost": 1.0,
+   "sub_cost": 64.0
+  },
+  "star": {
+   "ratio": 0.404,
+   "boolean": false,
+   "class": "V_PRICED",
+   "ordinal_cost": 1.0,
+   "sub_cost": 2.0
+  },
+  "cycle": {
+   "ratio": 0.06,
+   "boolean": true,
+   "class": "DEFAULT",
+   "ordinal_cost": 0.0,
+   "sub_cost": 0.0
+  },
+  "ladder": {
+   "ratio": 0.2973,
+   "boolean": false,
+   "class": "V_PRICED",
+   "ordinal_cost": 1.0,
+   "sub_cost": 32.0
+  },
+  "barbell": {
+   "ratio": 0.4833,
+   "boolean": false,
+   "class": "TWO_DIAL",
+   "ordinal_cost": 2.0,
+   "sub_cost": 2.33
+  },
+  "complete": {
+   "ratio": 0.5949,
+   "boolean": false,
+   "class": "TWO_DIAL",
+   "ordinal_cost": 2.0,
+   "sub_cost": 2.67
+  },
+  "bipartite": {
+   "ratio": 0.65,
+   "boolean": false,
+   "class": "TWO_DIAL",
+   "ordinal_cost": 2.0,
+   "sub_cost": 2.67
+  },
+  "grid_elong": {
+   "ratio": 0.3886,
+   "boolean": false,
+   "class": "V_PRICED",
+   "ordinal_cost": 1.0,
+   "sub_cost": 64.0
+  },
+  "torus_elong": {
+   "ratio": 0.405,
+   "boolean": false,
+   "class": "TWO_DIAL",
+   "ordinal_cost": 2.0,
+   "sub_cost": 2.0
+  },
+  "random8": {
+   "ratio": 0.1458,
+   "boolean": false,
+   "class": "TWO_DIAL",
+   "ordinal_cost": 2.0,
+   "sub_cost": 2.0
+  },
+  "path200": {
+   "ratio": 0.0302,
+   "boolean": true,
+   "class": "DEFAULT",
+   "ordinal_cost": 0.0,
+   "sub_cost": 0.0
+  },
+  "scale_free200": {
+   "ratio": 0.6599,
+   "boolean": false,
+   "class": "TWO_DIAL",
+   "ordinal_cost": 2.0,
+   "sub_cost": 2.0
+  }
+ },
+ "stats": {
+  "spearman_ratio_ordinal_cost": 0.73,
+  "class_mean_ratios": {
+   "DEFAULT": 0.0702,
+   "V_PRICED": 0.3576,
+   "TWO_DIAL": 0.5007
+  },
+  "bracket_mean_ratios": {
+   "2.0": 0.463,
+   "2.33": 0.4833,
+   "2.67": 0.6224
+  },
+  "star_family_ratios": [
+   0.4082,
+   0.4054,
+   0.404,
+   0.4027,
+   0.402
+  ],
+  "star_family_std": 0.0022
+ },
+ "criteria": {
+  "RO_G1_boolean_dead": true,
+  "RO_G2_oracle_rises": true,
+  "RO_G3_oracle_resolves": true,
+  "RO_G4_degree_flat_stars": true
+ },
+ "notes": "The chain-era R5 boolean refused 10/12 executor-verified (substrate, k) pairs (exp101). This audit tests the ratio as a PRICE ORACLE for the reader's dial cost across the 19-substrate battery (exp100's deposited map). Analytic \u2014 no sim runs."
+}

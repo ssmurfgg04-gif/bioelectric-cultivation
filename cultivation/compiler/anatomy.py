@@ -275,7 +275,15 @@ def substrate_partition_check(spec: AnatomySpec, adjacency: np.ndarray,
         "rationale": (
             "R5: the attractor must be coherent with the connectivity "
             "structure (exp43: mechanism universal, form "
-            "substrate-conditioned)"),
+            "substrate-conditioned). exp102 RECALIBRATION: the "
+            "boolean is a WRITE-path-era gate and REFUSES substrates "
+            "the two-source read verifiably compiles (16/19 refuse "
+            "vs executor verdicts) — advisory only, never called on "
+            "the compile path. The ratio itself is the reader's "
+            "PRICE ORACLE (Spearman 0.73 with the dial class; "
+            "class means 0.07/0.36/0.50; bracket-ordered; "
+            "degree-flat on stars): read it as the dial cost the "
+            "(gamma, mu) plane must pay, not as a refusal."),
     } if ok else {
         "substrate_compilable": bool(ok),
         "boundary_to_volume": round(ratio, 4),

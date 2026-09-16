@@ -3415,3 +3415,47 @@ Night seven, part 3. exp43's registered follow-up:
   R5's compile decision becomes: the ratio NAMES THE PRICE, the
   dials pay it — a refusal only when the price exceeds the dial
   plane (none found battery-wide).
+
+## L84 — exp102 R5 RECALIBRATED: THE PRICE ORACLE (4/4 — the chain-era boolean is dead as a gate (16/19 false refusals) and the boundary-to-volume ratio is reborn as the reader's PRICE ORACLE: Spearman 0.73 with the dial class, class means monotone, brackets ordered, degree-flat on stars; the compile decision's new form: the ratio NAMES THE PRICE, the dials pay it)
+
+- RO-G1 PASS — the boolean is dead: substrate_partition_check at
+  the default R5_MAX refuses 16 of the 19 battery substrates whose
+  minimal cells ALL verify (exp100). It never gates the compile
+  path (advisory-only, caller audit deposited) — the refusals were
+  printouts, not blocks — but as a feasibility statement it is
+  refuted by its own executor on 84% of the battery.
+- RO-G2 PASS — the oracle rises: Spearman(boundary-to-volume,
+  ordinal dial cost) = 0.73 across the 19. The named outliers,
+  both directions, deposited with the rows: random6 (ratio 0.119)
+  and random8 (0.146) price ABOVE their ratio (the k-offset
+  circulants are boundary-thin yet dial-hungry — the exp73 pairing
+  caveat's family); the star (0.404) prices BELOW its ratio (the
+  unzoned hub puts every zone-spoke edge in the crossing count —
+  the pre-declared artifact; post-repair its spokes have one edge
+  to pin, gamma 2).
+- RO-G3 PASS — the oracle resolves: class-mean ratios monotone
+  (DEFAULT 0.07 < V_PRICED 0.358 < TWO_DIAL 0.501) AND the
+  two-dial brackets ordered ((4,0) mean 0.463 < (16,0) 0.483 <
+  (32,0) 0.622) — the dense extremes the exp100 bracket extension
+  caught are exactly the ratio's top tail.
+- RO-G4 PASS — degree-flat on stars: the star-family ratio is
+  0.402-0.408 (std 0.0022) across deg {49..199} — matching exp99's
+  degree-invariant price map. The oracle's star pricing is a
+  property of the topology CLASS, as the mechanism says.
+- THE RECALIBRATION (the compile decision's new form, annotated in
+  substrate_partition_check's docstring): the boolean stays as the
+  exp43/exp47 WRITE-path-era signature it was calibrated to be;
+  for the two-source read, the ratio NAMES THE PRICE (oracle
+  v1: DEFAULT below ~0.15, V_PRICED through ~0.45, TWO_DIAL above,
+  outliers named), the dials pay it, and a refusal exists only
+  where the price exceeds the dial plane — never observed
+  battery-wide. R5's slogan survives both paths intact: refusal is
+  a price tag.
+- REGISTERED (exp103): THE RESOLUTION LADDER, CONTINUED — path and
+  torus held 6 zones at their minimal cells (exp101); push to
+  k in {8, 10, 12} on path and torus (the two cheapest members)
+  plus grid2d at (64, 0): where does zone-resolution actually BIND
+  on the cheap substrates? Deposit the k* per substrate (the first
+  non-verifying zone count at the minimal cell, or none through
+  12), the err-vs-k trend, and the oracle's k-scaling (the ratio
+  rises with k — does the price rise with it?).
