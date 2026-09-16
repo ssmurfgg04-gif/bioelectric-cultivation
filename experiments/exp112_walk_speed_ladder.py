@@ -71,8 +71,8 @@ from experiments.exp73_active_renormalization import (
 )
 from experiments.exp90_two_source_read import star_dt
 from experiments.exp94_multizone_scale import (
-    MULTI, barbell_adj, bipartite_adj, complete_adj, ladder_adj,
-    scale_free, star_adj, tree_adj,
+    MULTI, barbell_adj, bipartite_adj, complete_adj, cycle_adj,
+    ladder_adj, scale_free, star_adj, tree_adj,
 )
 from experiments.exp100_reader_price_map import make_battery
 from cultivation.bioelectric.sheet import TRUNK_V, HEAD_V
@@ -125,6 +125,7 @@ def build_battery() -> dict:
     battery = dict(make_battery())
     battery.update({
         "tree": tree_adj(100), "star": star_adj(100),
+        "cycle": cycle_adj(100),
         "ladder": ladder_adj(100), "barbell": barbell_adj(100),
         "complete": complete_adj(60), "bipartite": bipartite_adj(100),
         "grid_elong": grid_2d(5, 20), "torus_elong": torus(5, 20),
