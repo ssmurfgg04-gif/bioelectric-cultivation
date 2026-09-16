@@ -1,0 +1,85 @@
+{
+ "exp": "exp123_channel_split",
+ "P_break": {
+  "full_t0": 0.0,
+  "full_t6": 0.0,
+  "full_t12": 0.0,
+  "full_t18": 0.0,
+  "full_t24": 0.0,
+  "full_t36": 0.0,
+  "full_t48": 1.0,
+  "full_t72": 1.0,
+  "mu_only_t0": 1.0,
+  "mu_only_t6": 1.0,
+  "mu_only_t12": 1.0,
+  "mu_only_t18": 1.0,
+  "mu_only_t24": 1.0,
+  "mu_only_t36": 1.0,
+  "mu_only_t48": 1.0,
+  "mu_only_t72": 1.0,
+  "g_only_t0": 1.0,
+  "g_only_t6": 1.0,
+  "g_only_t12": 1.0,
+  "g_only_t18": 1.0,
+  "g_only_t24": 1.0,
+  "g_only_t36": 1.0,
+  "g_only_t48": 1.0,
+  "g_only_t72": 1.0,
+  "control_t0": 1.0,
+  "control_t6": 1.0,
+  "control_t12": 1.0,
+  "control_t18": 1.0,
+  "control_t24": 1.0,
+  "control_t36": 1.0,
+  "control_t48": 1.0,
+  "control_t72": 1.0
+ },
+ "curves": {
+  "full": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "mu_only": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "g_only": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "control": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "criteria": {
+  "CS_G1_theta_channel": false,
+  "CS_G2_v_channel_inert": true,
+  "CS_G3_harness_continuity": true
+ },
+ "notes": "The causal split of the mu-silence deadline: mu-only (c.mu = 0 from onset, coupling intact) vs g-only (G/deg scaled, gap_scale held at 1.0 \u2014 theta diffusion intact) vs the full blockade vs control. The record's drug mapping is exact iff CS-G1 and CS-G2 both hold."
+}
