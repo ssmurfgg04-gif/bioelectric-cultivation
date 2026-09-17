@@ -1,0 +1,4765 @@
+{
+ "exp": "exp156_write_path (workstream B)",
+ "claim": "the exp153 decode floor (~8-10 mV at all 9 rungs on the 6-member failing class) enters at ONE stage of the write/read path \u2014 the clamp-release residual (S-REL regen walk's canon fallback) \u2014 is mechanically localizable to unreadable-clash cells, is removed by a one-constant counterfactual (CF-1), and yields a zero-knob structural rule (R_W canon-clash mass) that replaces the scalar vmin bar",
+ "verdict": "THE WRITE-PATH DISSECTION LANDS \u2014 the ~9 mV decode floor is the S-REL canon-fallback identity overwrite of unreadable deep zone writes (stage B: clamp-release residual, 0.966-0.991 of decode_err^2 on the failing class); CF-1 (spec-floor -35 -> -60) removes it (6/6 below bar); the mechanism-derived R_W canon-clash rule predicts the cohort 6/6 fails with 0 FP \u2014 the scalar vmin bar is replaced by a structural one",
+ "stage_order": [
+  "gates+rule declared (docstring + module constants, before any decode call)",
+  "w4_repricing_original10",
+  "dissection_emitted_rungs",
+  "w1_stage_attribution",
+  "w2_mechanism+cf1",
+  "w3_structural_rule",
+  "rung_invariance_sweep"
+ ],
+ "pre_registered": {
+  "gates": {
+   "W1": "for EACH of the 6 failing members (seed-mean, deposited emitted rung) the SAME one stage carries >= 80% of decode_err^2 (telescoping decomposition E_A + E_B + E_C = decode_err^2)",
+   "W2": "(a) >= 90% of the dominant stage's squared increment on unreadable-clash cells (f < -35.0 AND f != canon) per failing member; (b) CF-1 (spec-adoption floor -35 -> -60 mV, one branch constant) removes the floor: >= 5/6 fails to seed-mean decode_err < 6.0",
+   "W3": "R_W (canon-clash mass > 36.0 mV^2; constants frozen pre-exp153) predicts the cohort's deposited verdicts at >= 5/6 fails hit, <= 1 false positive",
+   "W4": "original-10 re-pricing bit-exact vs the exp153 deposit (3 dp, all 9 rungs, emitted rung+mode+verdict) AND dissect-replica decode readout == deposit at all 24 emitted rungs (3/3 seeds)"
+  },
+  "failing_class": [
+   "d-03",
+   "d-08",
+   "d-12",
+   "d-19",
+   "d-22",
+   "d-24"
+  ],
+  "stages": [
+   "A_write_commitment",
+   "B_clamp_release",
+   "C_read_reconstruction"
+  ],
+  "stage_defs": {
+   "A_write_commitment": "end of the 24 h clamped window (phi_spec := f by write_spec_layer; clamps hold the zone cells at v)",
+   "B_clamp_release": "release_clamps + amputate(span) + the spec-reading regen walk (adopt phi_spec[i] if >= -35.0 else canon fallback)",
+   "C_read_reconstruction": "the 15 h settle to the decode read (pattern_error(f))"
+  },
+  "rule": {
+   "name": "R_W canon-clash mass rule",
+   "predicts": "decode-FAIL",
+   "form": "clash_mass(f) > 36.0 mV^2",
+   "clash_mass_def": "mean_i( (f[i] - canon[i])^2 * [f[i] < -35.0] ); canon = wildtype_target(100) (the frozen phi_spec_canon the S-REL regen walk reads)",
+   "constants": {
+    "clash_floor_mV": -35.0,
+    "clash_floor_source": "NEURAL_SPEC_MIN (collective.py:46), frozen",
+    "canon_source": "wildtype_target(100), frozen",
+    "bar_mV2": 36.0,
+    "bar_source": "the frozen C3 bar 6.0 mV (exp136 ERR_BAR) squared"
+   },
+   "derivation": "W1/W2 mechanism: the decode floor IS the S-REL canon-fallback overwrite of unreadable deep zone writes; its mass is computable from the anatomy alone (f vs frozen canon below the frozen read floor). An anatomy fails decode exactly when that ONE mechanism's mass alone exceeds the WHOLE C3 error budget. No decoded verdict and no decoded error entered the fit; the constants predate exp153.",
+   "fitted_on": "nothing (zero fitted knobs; all three constants are pre-existing frozen repo constants)"
+  },
+  "cf1": {
+   "patch": "spec-adoption floor NEURAL_SPEC_MIN (-35.0) -> -60.0 mV in the S-REL walk's adoption branch only",
+   "rationale": "-60.0 < every written zone value in the cohort (max |v| = 58.7); noise draws and all other steps unchanged",
+   "not_the_frozen_instrument": true
+  }
+ },
+ "pre_registration_order_evidence": {
+  "docstring_gates_byte": 2849,
+  "rule_const_byte": 8038,
+  "first_decode_byte": 11027,
+  "order_held": true
+ },
+ "w4_instrument_check": {
+  "original10_repricing": [
+   {
+    "name": "d-01",
+    "max_ddec": 0.0,
+    "max_dhold": 0.0,
+    "max_dquad": 0.0,
+    "emitted_match": true,
+    "verdict_match": true,
+    "ok": true
+   },
+   {
+    "name": "d-02",
+    "max_ddec": 0.0,
+    "max_dhold": 0.0,
+    "max_dquad": 0.0,
+    "emitted_match": true,
+    "verdict_match": true,
+    "ok": true
+   },
+   {
+    "name": "d-03",
+    "max_ddec": 0.0,
+    "max_dhold": 0.0,
+    "max_dquad": 0.0,
+    "emitted_match": true,
+    "verdict_match": true,
+    "ok": true
+   },
+   {
+    "name": "d-04",
+    "max_ddec": 0.0,
+    "max_dhold": 0.0,
+    "max_dquad": 0.0,
+    "emitted_match": true,
+    "verdict_match": true,
+    "ok": true
+   },
+   {
+    "name": "d-05",
+    "max_ddec": 0.0,
+    "max_dhold": 0.0,
+    "max_dquad": 0.0,
+    "emitted_match": true,
+    "verdict_match": true,
+    "ok": true
+   },
+   {
+    "name": "d-06",
+    "max_ddec": 0.0,
+    "max_dhold": 0.0,
+    "max_dquad": 0.0,
+    "emitted_match": true,
+    "verdict_match": true,
+    "ok": true
+   },
+   {
+    "name": "d-07",
+    "max_ddec": 0.0,
+    "max_dhold": 0.0,
+    "max_dquad": 0.0,
+    "emitted_match": true,
+    "verdict_match": true,
+    "ok": true
+   },
+   {
+    "name": "d-08",
+    "max_ddec": 0.0,
+    "max_dhold": 0.0,
+    "max_dquad": 0.0,
+    "emitted_match": true,
+    "verdict_match": true,
+    "ok": true
+   },
+   {
+    "name": "d-09",
+    "max_ddec": 0.0,
+    "max_dhold": 0.0,
+    "max_dquad": 0.0,
+    "emitted_match": true,
+    "verdict_match": true,
+    "ok": true
+   },
+   {
+    "name": "d-10",
+    "max_ddec": 0.0,
+    "max_dhold": 0.0,
+    "max_dquad": 0.0,
+    "emitted_match": true,
+    "verdict_match": true,
+    "ok": true
+   }
+  ],
+  "replica_bitexact_all24_emitted_rungs": true,
+  "phi_write_bitidentity_all24": true
+ },
+ "dissection": [
+  {
+   "name": "d-01",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 0.7937,
+     "E_B_mV2": 14.0534,
+     "E_C_mV2": -0.1908,
+     "total_mV2": 14.6564,
+     "shares": {
+      "A_write_commitment": 0.0542,
+      "B_clamp_release": 0.9589,
+      "C_read_reconstruction": -0.013
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.891,
+     "e_rel_rms": 3.853,
+     "e_decode_rms": 3.828,
+     "eb_clash_share": 0.963,
+     "n_clash_cells": 23,
+     "clash_cell_idx": [
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    },
+    {
+     "E_A_mV2": 0.8258,
+     "E_B_mV2": 13.6247,
+     "E_C_mV2": 0.4575,
+     "total_mV2": 14.908,
+     "shares": {
+      "A_write_commitment": 0.0554,
+      "B_clamp_release": 0.9139,
+      "C_read_reconstruction": 0.0307
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.909,
+     "e_rel_rms": 3.801,
+     "e_decode_rms": 3.861,
+     "eb_clash_share": 0.9542,
+     "n_clash_cells": 23,
+     "clash_cell_idx": [
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    },
+    {
+     "E_A_mV2": 0.7649,
+     "E_B_mV2": 14.9018,
+     "E_C_mV2": -0.195,
+     "total_mV2": 15.4717,
+     "shares": {
+      "A_write_commitment": 0.0494,
+      "B_clamp_release": 0.9632,
+      "C_read_reconstruction": -0.0126
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.875,
+     "e_rel_rms": 3.958,
+     "e_decode_rms": 3.933,
+     "eb_clash_share": 0.9621,
+     "n_clash_cells": 23,
+     "clash_cell_idx": [
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.053,
+    "B_clamp_release": 0.9453,
+    "C_read_reconstruction": 0.0017
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 0.795,
+    "B_clamp_release": 14.193,
+    "C_read_reconstruction": 0.024
+   },
+   "mean_eb_clash_share": 0.9598,
+   "n_clash_cells": 23,
+   "clash_cell_idx": [
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-02",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 0.8111,
+     "E_B_mV2": 6.772,
+     "E_C_mV2": -0.0327,
+     "total_mV2": 7.5504,
+     "shares": {
+      "A_write_commitment": 0.1074,
+      "B_clamp_release": 0.8969,
+      "C_read_reconstruction": -0.0043
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.901,
+     "e_rel_rms": 2.754,
+     "e_decode_rms": 2.748,
+     "eb_clash_share": 0.9291,
+     "n_clash_cells": 8,
+     "clash_cell_idx": [
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98
+     ]
+    },
+    {
+     "E_A_mV2": 0.8433,
+     "E_B_mV2": 6.7,
+     "E_C_mV2": 0.0958,
+     "total_mV2": 7.6391,
+     "shares": {
+      "A_write_commitment": 0.1104,
+      "B_clamp_release": 0.8771,
+      "C_read_reconstruction": 0.0125
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.918,
+     "e_rel_rms": 2.746,
+     "e_decode_rms": 2.764,
+     "eb_clash_share": 0.9089,
+     "n_clash_cells": 8,
+     "clash_cell_idx": [
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98
+     ]
+    },
+    {
+     "E_A_mV2": 0.7975,
+     "E_B_mV2": 7.4149,
+     "E_C_mV2": 0.0111,
+     "total_mV2": 8.2234,
+     "shares": {
+      "A_write_commitment": 0.097,
+      "B_clamp_release": 0.9017,
+      "C_read_reconstruction": 0.0014
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.893,
+     "e_rel_rms": 2.866,
+     "e_decode_rms": 2.868,
+     "eb_clash_share": 0.9135,
+     "n_clash_cells": 8,
+     "clash_cell_idx": [
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.1049,
+    "B_clamp_release": 0.8919,
+    "C_read_reconstruction": 0.0032
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 0.817,
+    "B_clamp_release": 6.962,
+    "C_read_reconstruction": 0.025
+   },
+   "mean_eb_clash_share": 0.9172,
+   "n_clash_cells": 8,
+   "clash_cell_idx": [
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-03",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": false,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 0.9593,
+     "E_B_mV2": 82.0076,
+     "E_C_mV2": -0.1828,
+     "total_mV2": 82.7841,
+     "shares": {
+      "A_write_commitment": 0.0116,
+      "B_clamp_release": 0.9906,
+      "C_read_reconstruction": -0.0022
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.979,
+     "e_rel_rms": 9.109,
+     "e_decode_rms": 9.099,
+     "eb_clash_share": 0.9957,
+     "n_clash_cells": 29,
+     "clash_cell_idx": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      83,
+      84,
+      85,
+      86,
+      87
+     ]
+    },
+    {
+     "E_A_mV2": 1.026,
+     "E_B_mV2": 82.8721,
+     "E_C_mV2": -0.7398,
+     "total_mV2": 83.1582,
+     "shares": {
+      "A_write_commitment": 0.0123,
+      "B_clamp_release": 0.9966,
+      "C_read_reconstruction": -0.0089
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.013,
+     "e_rel_rms": 9.16,
+     "e_decode_rms": 9.119,
+     "eb_clash_share": 0.9934,
+     "n_clash_cells": 29,
+     "clash_cell_idx": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      83,
+      84,
+      85,
+      86,
+      87
+     ]
+    },
+    {
+     "E_A_mV2": 1.0538,
+     "E_B_mV2": 81.1263,
+     "E_C_mV2": 0.2104,
+     "total_mV2": 82.3905,
+     "shares": {
+      "A_write_commitment": 0.0128,
+      "B_clamp_release": 0.9847,
+      "C_read_reconstruction": 0.0026
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.027,
+     "e_rel_rms": 9.065,
+     "e_decode_rms": 9.077,
+     "eb_clash_share": 0.994,
+     "n_clash_cells": 29,
+     "clash_cell_idx": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      83,
+      84,
+      85,
+      86,
+      87
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.0122,
+    "B_clamp_release": 0.9906,
+    "C_read_reconstruction": -0.0028
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.013,
+    "B_clamp_release": 82.002,
+    "C_read_reconstruction": -0.237
+   },
+   "mean_eb_clash_share": 0.9944,
+   "n_clash_cells": 29,
+   "clash_cell_idx": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-04",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 0.5839,
+     "E_B_mV2": 13.175,
+     "E_C_mV2": 0.4821,
+     "total_mV2": 14.241,
+     "shares": {
+      "A_write_commitment": 0.041,
+      "B_clamp_release": 0.9251,
+      "C_read_reconstruction": 0.0339
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.764,
+     "e_rel_rms": 3.709,
+     "e_decode_rms": 3.774,
+     "eb_clash_share": 0.9596,
+     "n_clash_cells": 18,
+     "clash_cell_idx": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    },
+    {
+     "E_A_mV2": 0.5732,
+     "E_B_mV2": 13.0719,
+     "E_C_mV2": 0.3101,
+     "total_mV2": 13.9552,
+     "shares": {
+      "A_write_commitment": 0.0411,
+      "B_clamp_release": 0.9367,
+      "C_read_reconstruction": 0.0222
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.757,
+     "e_rel_rms": 3.694,
+     "e_decode_rms": 3.736,
+     "eb_clash_share": 0.9531,
+     "n_clash_cells": 18,
+     "clash_cell_idx": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    },
+    {
+     "E_A_mV2": 0.5913,
+     "E_B_mV2": 13.8188,
+     "E_C_mV2": 0.0255,
+     "total_mV2": 14.4356,
+     "shares": {
+      "A_write_commitment": 0.041,
+      "B_clamp_release": 0.9573,
+      "C_read_reconstruction": 0.0018
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.769,
+     "e_rel_rms": 3.796,
+     "e_decode_rms": 3.799,
+     "eb_clash_share": 0.952,
+     "n_clash_cells": 18,
+     "clash_cell_idx": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.041,
+    "B_clamp_release": 0.9397,
+    "C_read_reconstruction": 0.0193
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 0.583,
+    "B_clamp_release": 13.355,
+    "C_read_reconstruction": 0.273
+   },
+   "mean_eb_clash_share": 0.9549,
+   "n_clash_cells": 18,
+   "clash_cell_idx": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-05",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 0.7812,
+     "E_B_mV2": 18.9583,
+     "E_C_mV2": -0.0467,
+     "total_mV2": 19.6928,
+     "shares": {
+      "A_write_commitment": 0.0397,
+      "B_clamp_release": 0.9627,
+      "C_read_reconstruction": -0.0024
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.884,
+     "e_rel_rms": 4.443,
+     "e_decode_rms": 4.438,
+     "eb_clash_share": 0.9306,
+     "n_clash_cells": 31,
+     "clash_cell_idx": [
+      30,
+      31,
+      32,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88
+     ]
+    },
+    {
+     "E_A_mV2": 0.8749,
+     "E_B_mV2": 19.7724,
+     "E_C_mV2": -0.2564,
+     "total_mV2": 20.391,
+     "shares": {
+      "A_write_commitment": 0.0429,
+      "B_clamp_release": 0.9697,
+      "C_read_reconstruction": -0.0126
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.935,
+     "e_rel_rms": 4.544,
+     "e_decode_rms": 4.516,
+     "eb_clash_share": 0.936,
+     "n_clash_cells": 31,
+     "clash_cell_idx": [
+      30,
+      31,
+      32,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88
+     ]
+    },
+    {
+     "E_A_mV2": 0.8726,
+     "E_B_mV2": 19.9369,
+     "E_C_mV2": -0.6134,
+     "total_mV2": 20.1962,
+     "shares": {
+      "A_write_commitment": 0.0432,
+      "B_clamp_release": 0.9872,
+      "C_read_reconstruction": -0.0304
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.934,
+     "e_rel_rms": 4.562,
+     "e_decode_rms": 4.494,
+     "eb_clash_share": 0.9336,
+     "n_clash_cells": 31,
+     "clash_cell_idx": [
+      30,
+      31,
+      32,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.0419,
+    "B_clamp_release": 0.9732,
+    "C_read_reconstruction": -0.0151
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 0.843,
+    "B_clamp_release": 19.556,
+    "C_read_reconstruction": -0.305
+   },
+   "mean_eb_clash_share": 0.9334,
+   "n_clash_cells": 31,
+   "clash_cell_idx": [
+    30,
+    31,
+    32,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-06",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.0045,
+     "E_B_mV2": 0.878,
+     "E_C_mV2": 0.2686,
+     "total_mV2": 2.1512,
+     "shares": {
+      "A_write_commitment": 0.467,
+      "B_clamp_release": 0.4082,
+      "C_read_reconstruction": 0.1249
+     },
+     "dominant_stage": "A_write_commitment",
+     "e_write_rms": 1.002,
+     "e_rel_rms": 1.372,
+     "e_decode_rms": 1.467,
+     "eb_clash_share": 0.0,
+     "n_clash_cells": 0,
+     "clash_cell_idx": []
+    },
+    {
+     "E_A_mV2": 1.062,
+     "E_B_mV2": 0.8449,
+     "E_C_mV2": 0.3903,
+     "total_mV2": 2.2972,
+     "shares": {
+      "A_write_commitment": 0.4623,
+      "B_clamp_release": 0.3678,
+      "C_read_reconstruction": 0.1699
+     },
+     "dominant_stage": "A_write_commitment",
+     "e_write_rms": 1.031,
+     "e_rel_rms": 1.381,
+     "e_decode_rms": 1.516,
+     "eb_clash_share": 0.0,
+     "n_clash_cells": 0,
+     "clash_cell_idx": []
+    },
+    {
+     "E_A_mV2": 1.0504,
+     "E_B_mV2": 0.9802,
+     "E_C_mV2": 0.2982,
+     "total_mV2": 2.3288,
+     "shares": {
+      "A_write_commitment": 0.451,
+      "B_clamp_release": 0.4209,
+      "C_read_reconstruction": 0.128
+     },
+     "dominant_stage": "A_write_commitment",
+     "e_write_rms": 1.025,
+     "e_rel_rms": 1.425,
+     "e_decode_rms": 1.526,
+     "eb_clash_share": 0.0,
+     "n_clash_cells": 0,
+     "clash_cell_idx": []
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.4601,
+    "B_clamp_release": 0.399,
+    "C_read_reconstruction": 0.1409
+   },
+   "dominant_stage": "A_write_commitment",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.039,
+    "B_clamp_release": 0.901,
+    "C_read_reconstruction": 0.319
+   },
+   "mean_eb_clash_share": 0.0,
+   "n_clash_cells": 0,
+   "clash_cell_idx": [],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-07",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 0.7974,
+     "E_B_mV2": 2.103,
+     "E_C_mV2": 0.5391,
+     "total_mV2": 3.4394,
+     "shares": {
+      "A_write_commitment": 0.2318,
+      "B_clamp_release": 0.6114,
+      "C_read_reconstruction": 0.1567
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.893,
+     "e_rel_rms": 1.703,
+     "e_decode_rms": 1.855,
+     "eb_clash_share": 0.657,
+     "n_clash_cells": 5,
+     "clash_cell_idx": [
+      31,
+      32,
+      33,
+      34,
+      35
+     ]
+    },
+    {
+     "E_A_mV2": 0.8352,
+     "E_B_mV2": 1.7447,
+     "E_C_mV2": 0.3929,
+     "total_mV2": 2.9728,
+     "shares": {
+      "A_write_commitment": 0.281,
+      "B_clamp_release": 0.5869,
+      "C_read_reconstruction": 0.1322
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.914,
+     "e_rel_rms": 1.606,
+     "e_decode_rms": 1.724,
+     "eb_clash_share": 0.582,
+     "n_clash_cells": 5,
+     "clash_cell_idx": [
+      31,
+      32,
+      33,
+      34,
+      35
+     ]
+    },
+    {
+     "E_A_mV2": 0.8922,
+     "E_B_mV2": 1.9505,
+     "E_C_mV2": 0.6842,
+     "total_mV2": 3.527,
+     "shares": {
+      "A_write_commitment": 0.253,
+      "B_clamp_release": 0.553,
+      "C_read_reconstruction": 0.194
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.945,
+     "e_rel_rms": 1.686,
+     "e_decode_rms": 1.878,
+     "eb_clash_share": 0.5935,
+     "n_clash_cells": 5,
+     "clash_cell_idx": [
+      31,
+      32,
+      33,
+      34,
+      35
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.2553,
+    "B_clamp_release": 0.5838,
+    "C_read_reconstruction": 0.161
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 0.842,
+    "B_clamp_release": 1.933,
+    "C_read_reconstruction": 0.539
+   },
+   "mean_eb_clash_share": 0.6108,
+   "n_clash_cells": 5,
+   "clash_cell_idx": [
+    31,
+    32,
+    33,
+    34,
+    35
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-08",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": false,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.0318,
+     "E_B_mV2": 90.9908,
+     "E_C_mV2": -0.3163,
+     "total_mV2": 91.7063,
+     "shares": {
+      "A_write_commitment": 0.0113,
+      "B_clamp_release": 0.9922,
+      "C_read_reconstruction": -0.0034
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.016,
+     "e_rel_rms": 9.593,
+     "e_decode_rms": 9.576,
+     "eb_clash_share": 0.9955,
+     "n_clash_cells": 29,
+     "clash_cell_idx": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      83,
+      84,
+      85,
+      86,
+      87
+     ]
+    },
+    {
+     "E_A_mV2": 1.0921,
+     "E_B_mV2": 91.931,
+     "E_C_mV2": -0.7229,
+     "total_mV2": 92.3002,
+     "shares": {
+      "A_write_commitment": 0.0118,
+      "B_clamp_release": 0.996,
+      "C_read_reconstruction": -0.0078
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.045,
+     "e_rel_rms": 9.645,
+     "e_decode_rms": 9.607,
+     "eb_clash_share": 0.9934,
+     "n_clash_cells": 29,
+     "clash_cell_idx": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      83,
+      84,
+      85,
+      86,
+      87
+     ]
+    },
+    {
+     "E_A_mV2": 1.1155,
+     "E_B_mV2": 90.0973,
+     "E_C_mV2": 0.3797,
+     "total_mV2": 91.5926,
+     "shares": {
+      "A_write_commitment": 0.0122,
+      "B_clamp_release": 0.9837,
+      "C_read_reconstruction": 0.0041
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.056,
+     "e_rel_rms": 9.551,
+     "e_decode_rms": 9.57,
+     "eb_clash_share": 0.9939,
+     "n_clash_cells": 29,
+     "clash_cell_idx": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      83,
+      84,
+      85,
+      86,
+      87
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.0118,
+    "B_clamp_release": 0.9906,
+    "C_read_reconstruction": -0.0024
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.08,
+    "B_clamp_release": 91.006,
+    "C_read_reconstruction": -0.22
+   },
+   "mean_eb_clash_share": 0.9943,
+   "n_clash_cells": 29,
+   "clash_cell_idx": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-09",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.0589,
+     "E_B_mV2": 5.5397,
+     "E_C_mV2": 0.2463,
+     "total_mV2": 6.8448,
+     "shares": {
+      "A_write_commitment": 0.1547,
+      "B_clamp_release": 0.8093,
+      "C_read_reconstruction": 0.036
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.029,
+     "e_rel_rms": 2.569,
+     "e_decode_rms": 2.616,
+     "eb_clash_share": 0.8317,
+     "n_clash_cells": 6,
+     "clash_cell_idx": [
+      52,
+      53,
+      54,
+      55,
+      56,
+      57
+     ]
+    },
+    {
+     "E_A_mV2": 1.1511,
+     "E_B_mV2": 5.2011,
+     "E_C_mV2": 0.2102,
+     "total_mV2": 6.5625,
+     "shares": {
+      "A_write_commitment": 0.1754,
+      "B_clamp_release": 0.7926,
+      "C_read_reconstruction": 0.032
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.073,
+     "e_rel_rms": 2.52,
+     "e_decode_rms": 2.562,
+     "eb_clash_share": 0.816,
+     "n_clash_cells": 6,
+     "clash_cell_idx": [
+      52,
+      53,
+      54,
+      55,
+      56,
+      57
+     ]
+    },
+    {
+     "E_A_mV2": 1.1297,
+     "E_B_mV2": 5.5606,
+     "E_C_mV2": 0.1107,
+     "total_mV2": 6.801,
+     "shares": {
+      "A_write_commitment": 0.1661,
+      "B_clamp_release": 0.8176,
+      "C_read_reconstruction": 0.0163
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.063,
+     "e_rel_rms": 2.587,
+     "e_decode_rms": 2.608,
+     "eb_clash_share": 0.8253,
+     "n_clash_cells": 6,
+     "clash_cell_idx": [
+      52,
+      53,
+      54,
+      55,
+      56,
+      57
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.1654,
+    "B_clamp_release": 0.8065,
+    "C_read_reconstruction": 0.0281
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.113,
+    "B_clamp_release": 5.434,
+    "C_read_reconstruction": 0.189
+   },
+   "mean_eb_clash_share": 0.8243,
+   "n_clash_cells": 6,
+   "clash_cell_idx": [
+    52,
+    53,
+    54,
+    55,
+    56,
+    57
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-10",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.0478,
+     "E_B_mV2": 5.1357,
+     "E_C_mV2": 0.0979,
+     "total_mV2": 6.2813,
+     "shares": {
+      "A_write_commitment": 0.1668,
+      "B_clamp_release": 0.8176,
+      "C_read_reconstruction": 0.0156
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.024,
+     "e_rel_rms": 2.487,
+     "e_decode_rms": 2.506,
+     "eb_clash_share": 0.7544,
+     "n_clash_cells": 10,
+     "clash_cell_idx": [
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      95,
+      96
+     ]
+    },
+    {
+     "E_A_mV2": 1.0954,
+     "E_B_mV2": 4.6918,
+     "E_C_mV2": 0.3712,
+     "total_mV2": 6.1585,
+     "shares": {
+      "A_write_commitment": 0.1779,
+      "B_clamp_release": 0.7618,
+      "C_read_reconstruction": 0.0603
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.047,
+     "e_rel_rms": 2.406,
+     "e_decode_rms": 2.482,
+     "eb_clash_share": 0.731,
+     "n_clash_cells": 10,
+     "clash_cell_idx": [
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      95,
+      96
+     ]
+    },
+    {
+     "E_A_mV2": 1.0616,
+     "E_B_mV2": 5.3021,
+     "E_C_mV2": 0.0865,
+     "total_mV2": 6.4502,
+     "shares": {
+      "A_write_commitment": 0.1646,
+      "B_clamp_release": 0.822,
+      "C_read_reconstruction": 0.0134
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.03,
+     "e_rel_rms": 2.523,
+     "e_decode_rms": 2.54,
+     "eb_clash_share": 0.7335,
+     "n_clash_cells": 10,
+     "clash_cell_idx": [
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      95,
+      96
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.1698,
+    "B_clamp_release": 0.8005,
+    "C_read_reconstruction": 0.0298
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.068,
+    "B_clamp_release": 5.043,
+    "C_read_reconstruction": 0.185
+   },
+   "mean_eb_clash_share": 0.7396,
+   "n_clash_cells": 10,
+   "clash_cell_idx": [
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    95,
+    96
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-11",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 0.7434,
+     "E_B_mV2": 9.11,
+     "E_C_mV2": 0.5847,
+     "total_mV2": 10.438,
+     "shares": {
+      "A_write_commitment": 0.0712,
+      "B_clamp_release": 0.8728,
+      "C_read_reconstruction": 0.056
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.862,
+     "e_rel_rms": 3.139,
+     "e_decode_rms": 3.231,
+     "eb_clash_share": 0.8633,
+     "n_clash_cells": 25,
+     "clash_cell_idx": [
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95
+     ]
+    },
+    {
+     "E_A_mV2": 0.7759,
+     "E_B_mV2": 9.1526,
+     "E_C_mV2": 0.4326,
+     "total_mV2": 10.3611,
+     "shares": {
+      "A_write_commitment": 0.0749,
+      "B_clamp_release": 0.8834,
+      "C_read_reconstruction": 0.0418
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.881,
+     "e_rel_rms": 3.151,
+     "e_decode_rms": 3.219,
+     "eb_clash_share": 0.8549,
+     "n_clash_cells": 25,
+     "clash_cell_idx": [
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95
+     ]
+    },
+    {
+     "E_A_mV2": 0.7242,
+     "E_B_mV2": 9.7551,
+     "E_C_mV2": 0.2177,
+     "total_mV2": 10.6969,
+     "shares": {
+      "A_write_commitment": 0.0677,
+      "B_clamp_release": 0.912,
+      "C_read_reconstruction": 0.0203
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.851,
+     "e_rel_rms": 3.237,
+     "e_decode_rms": 3.271,
+     "eb_clash_share": 0.8796,
+     "n_clash_cells": 25,
+     "clash_cell_idx": [
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.0713,
+    "B_clamp_release": 0.8894,
+    "C_read_reconstruction": 0.0394
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 0.748,
+    "B_clamp_release": 9.339,
+    "C_read_reconstruction": 0.412
+   },
+   "mean_eb_clash_share": 0.8659,
+   "n_clash_cells": 25,
+   "clash_cell_idx": [
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-12",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": false,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.1378,
+     "E_B_mV2": 97.5184,
+     "E_C_mV2": -0.0346,
+     "total_mV2": 98.6216,
+     "shares": {
+      "A_write_commitment": 0.0115,
+      "B_clamp_release": 0.9888,
+      "C_read_reconstruction": -0.0004
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.067,
+     "e_rel_rms": 9.933,
+     "e_decode_rms": 9.931,
+     "eb_clash_share": 0.9951,
+     "n_clash_cells": 39,
+     "clash_cell_idx": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98
+     ]
+    },
+    {
+     "E_A_mV2": 1.1947,
+     "E_B_mV2": 99.0608,
+     "E_C_mV2": -0.4016,
+     "total_mV2": 99.854,
+     "shares": {
+      "A_write_commitment": 0.012,
+      "B_clamp_release": 0.9921,
+      "C_read_reconstruction": -0.004
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.093,
+     "e_rel_rms": 10.013,
+     "e_decode_rms": 9.993,
+     "eb_clash_share": 0.9941,
+     "n_clash_cells": 39,
+     "clash_cell_idx": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98
+     ]
+    },
+    {
+     "E_A_mV2": 1.232,
+     "E_B_mV2": 98.4595,
+     "E_C_mV2": -0.5085,
+     "total_mV2": 99.183,
+     "shares": {
+      "A_write_commitment": 0.0124,
+      "B_clamp_release": 0.9927,
+      "C_read_reconstruction": -0.0051
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.11,
+     "e_rel_rms": 9.985,
+     "e_decode_rms": 9.959,
+     "eb_clash_share": 0.994,
+     "n_clash_cells": 39,
+     "clash_cell_idx": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.012,
+    "B_clamp_release": 0.9912,
+    "C_read_reconstruction": -0.0032
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.188,
+    "B_clamp_release": 98.346,
+    "C_read_reconstruction": -0.315
+   },
+   "mean_eb_clash_share": 0.9944,
+   "n_clash_cells": 39,
+   "clash_cell_idx": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-13",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.1369,
+     "E_B_mV2": 9.446,
+     "E_C_mV2": 0.1556,
+     "total_mV2": 10.7384,
+     "shares": {
+      "A_write_commitment": 0.1059,
+      "B_clamp_release": 0.8796,
+      "C_read_reconstruction": 0.0145
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.066,
+     "e_rel_rms": 3.253,
+     "e_decode_rms": 3.277,
+     "eb_clash_share": 0.8916,
+     "n_clash_cells": 23,
+     "clash_cell_idx": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    },
+    {
+     "E_A_mV2": 1.1938,
+     "E_B_mV2": 9.9141,
+     "E_C_mV2": 0.439,
+     "total_mV2": 11.5469,
+     "shares": {
+      "A_write_commitment": 0.1034,
+      "B_clamp_release": 0.8586,
+      "C_read_reconstruction": 0.038
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.093,
+     "e_rel_rms": 3.333,
+     "e_decode_rms": 3.398,
+     "eb_clash_share": 0.898,
+     "n_clash_cells": 23,
+     "clash_cell_idx": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    },
+    {
+     "E_A_mV2": 1.1377,
+     "E_B_mV2": 9.8883,
+     "E_C_mV2": 0.7158,
+     "total_mV2": 11.7418,
+     "shares": {
+      "A_write_commitment": 0.0969,
+      "B_clamp_release": 0.8421,
+      "C_read_reconstruction": 0.061
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.067,
+     "e_rel_rms": 3.321,
+     "e_decode_rms": 3.427,
+     "eb_clash_share": 0.8862,
+     "n_clash_cells": 23,
+     "clash_cell_idx": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.1021,
+    "B_clamp_release": 0.8601,
+    "C_read_reconstruction": 0.0378
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.156,
+    "B_clamp_release": 9.749,
+    "C_read_reconstruction": 0.437
+   },
+   "mean_eb_clash_share": 0.8919,
+   "n_clash_cells": 23,
+   "clash_cell_idx": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-14",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.0609,
+     "E_B_mV2": 1.4465,
+     "E_C_mV2": 0.5895,
+     "total_mV2": 3.0968,
+     "shares": {
+      "A_write_commitment": 0.3426,
+      "B_clamp_release": 0.4671,
+      "C_read_reconstruction": 0.1904
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.03,
+     "e_rel_rms": 1.583,
+     "e_decode_rms": 1.76,
+     "eb_clash_share": 0.573,
+     "n_clash_cells": 14,
+     "clash_cell_idx": [
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98
+     ]
+    },
+    {
+     "E_A_mV2": 1.0908,
+     "E_B_mV2": 1.738,
+     "E_C_mV2": 0.3569,
+     "total_mV2": 3.1858,
+     "shares": {
+      "A_write_commitment": 0.3424,
+      "B_clamp_release": 0.5455,
+      "C_read_reconstruction": 0.112
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.044,
+     "e_rel_rms": 1.682,
+     "e_decode_rms": 1.785,
+     "eb_clash_share": 0.5526,
+     "n_clash_cells": 14,
+     "clash_cell_idx": [
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98
+     ]
+    },
+    {
+     "E_A_mV2": 1.1277,
+     "E_B_mV2": 1.4253,
+     "E_C_mV2": 0.4965,
+     "total_mV2": 3.0496,
+     "shares": {
+      "A_write_commitment": 0.3698,
+      "B_clamp_release": 0.4674,
+      "C_read_reconstruction": 0.1628
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.062,
+     "e_rel_rms": 1.598,
+     "e_decode_rms": 1.746,
+     "eb_clash_share": 0.4926,
+     "n_clash_cells": 14,
+     "clash_cell_idx": [
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.3516,
+    "B_clamp_release": 0.4933,
+    "C_read_reconstruction": 0.1551
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.093,
+    "B_clamp_release": 1.537,
+    "C_read_reconstruction": 0.481
+   },
+   "mean_eb_clash_share": 0.5394,
+   "n_clash_cells": 14,
+   "clash_cell_idx": [
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-15",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.0855,
+     "E_B_mV2": 4.987,
+     "E_C_mV2": 0.179,
+     "total_mV2": 6.2516,
+     "shares": {
+      "A_write_commitment": 0.1736,
+      "B_clamp_release": 0.7977,
+      "C_read_reconstruction": 0.0286
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.042,
+     "e_rel_rms": 2.464,
+     "e_decode_rms": 2.5,
+     "eb_clash_share": 0.8466,
+     "n_clash_cells": 14,
+     "clash_cell_idx": [
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97
+     ]
+    },
+    {
+     "E_A_mV2": 1.1194,
+     "E_B_mV2": 4.9688,
+     "E_C_mV2": 0.42,
+     "total_mV2": 6.5082,
+     "shares": {
+      "A_write_commitment": 0.172,
+      "B_clamp_release": 0.7635,
+      "C_read_reconstruction": 0.0645
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.058,
+     "e_rel_rms": 2.467,
+     "e_decode_rms": 2.551,
+     "eb_clash_share": 0.8376,
+     "n_clash_cells": 14,
+     "clash_cell_idx": [
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97
+     ]
+    },
+    {
+     "E_A_mV2": 1.1477,
+     "E_B_mV2": 4.3795,
+     "E_C_mV2": 0.6112,
+     "total_mV2": 6.1384,
+     "shares": {
+      "A_write_commitment": 0.187,
+      "B_clamp_release": 0.7135,
+      "C_read_reconstruction": 0.0996
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.071,
+     "e_rel_rms": 2.351,
+     "e_decode_rms": 2.478,
+     "eb_clash_share": 0.8304,
+     "n_clash_cells": 14,
+     "clash_cell_idx": [
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.1775,
+    "B_clamp_release": 0.7582,
+    "C_read_reconstruction": 0.0642
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.118,
+    "B_clamp_release": 4.778,
+    "C_read_reconstruction": 0.403
+   },
+   "mean_eb_clash_share": 0.8382,
+   "n_clash_cells": 14,
+   "clash_cell_idx": [
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-16",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.0478,
+     "E_B_mV2": 5.9807,
+     "E_C_mV2": 0.3974,
+     "total_mV2": 7.4259,
+     "shares": {
+      "A_write_commitment": 0.1411,
+      "B_clamp_release": 0.8054,
+      "C_read_reconstruction": 0.0535
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.024,
+     "e_rel_rms": 2.651,
+     "e_decode_rms": 2.725,
+     "eb_clash_share": 0.748,
+     "n_clash_cells": 8,
+     "clash_cell_idx": [
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    },
+    {
+     "E_A_mV2": 1.0954,
+     "E_B_mV2": 5.7729,
+     "E_C_mV2": 0.6648,
+     "total_mV2": 7.5332,
+     "shares": {
+      "A_write_commitment": 0.1454,
+      "B_clamp_release": 0.7663,
+      "C_read_reconstruction": 0.0883
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.047,
+     "e_rel_rms": 2.621,
+     "e_decode_rms": 2.745,
+     "eb_clash_share": 0.7586,
+     "n_clash_cells": 8,
+     "clash_cell_idx": [
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    },
+    {
+     "E_A_mV2": 1.0616,
+     "E_B_mV2": 6.4844,
+     "E_C_mV2": 0.4451,
+     "total_mV2": 7.9911,
+     "shares": {
+      "A_write_commitment": 0.1328,
+      "B_clamp_release": 0.8115,
+      "C_read_reconstruction": 0.0557
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.03,
+     "e_rel_rms": 2.747,
+     "e_decode_rms": 2.827,
+     "eb_clash_share": 0.7408,
+     "n_clash_cells": 8,
+     "clash_cell_idx": [
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.1398,
+    "B_clamp_release": 0.7944,
+    "C_read_reconstruction": 0.0658
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.068,
+    "B_clamp_release": 6.079,
+    "C_read_reconstruction": 0.502
+   },
+   "mean_eb_clash_share": 0.7491,
+   "n_clash_cells": 8,
+   "clash_cell_idx": [
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-17",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.3712,
+     "E_B_mV2": 23.486,
+     "E_C_mV2": 0.6706,
+     "total_mV2": 25.5278,
+     "shares": {
+      "A_write_commitment": 0.0537,
+      "B_clamp_release": 0.92,
+      "C_read_reconstruction": 0.0263
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.171,
+     "e_rel_rms": 4.986,
+     "e_decode_rms": 5.053,
+     "eb_clash_share": 0.9438,
+     "n_clash_cells": 12,
+     "clash_cell_idx": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+     ]
+    },
+    {
+     "E_A_mV2": 1.4666,
+     "E_B_mV2": 23.827,
+     "E_C_mV2": 1.0491,
+     "total_mV2": 26.3427,
+     "shares": {
+      "A_write_commitment": 0.0557,
+      "B_clamp_release": 0.9045,
+      "C_read_reconstruction": 0.0398
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.211,
+     "e_rel_rms": 5.029,
+     "e_decode_rms": 5.133,
+     "eb_clash_share": 0.9543,
+     "n_clash_cells": 12,
+     "clash_cell_idx": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+     ]
+    },
+    {
+     "E_A_mV2": 1.4655,
+     "E_B_mV2": 22.9964,
+     "E_C_mV2": 1.0846,
+     "total_mV2": 25.5464,
+     "shares": {
+      "A_write_commitment": 0.0574,
+      "B_clamp_release": 0.9002,
+      "C_read_reconstruction": 0.0425
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.211,
+     "e_rel_rms": 4.946,
+     "e_decode_rms": 5.054,
+     "eb_clash_share": 0.9454,
+     "n_clash_cells": 12,
+     "clash_cell_idx": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.0556,
+    "B_clamp_release": 0.9082,
+    "C_read_reconstruction": 0.0362
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.434,
+    "B_clamp_release": 23.436,
+    "C_read_reconstruction": 0.935
+   },
+   "mean_eb_clash_share": 0.9478,
+   "n_clash_cells": 12,
+   "clash_cell_idx": [
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-18",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.4481,
+     "E_B_mV2": 1.2728,
+     "E_C_mV2": 0.809,
+     "total_mV2": 3.5298,
+     "shares": {
+      "A_write_commitment": 0.4102,
+      "B_clamp_release": 0.3606,
+      "C_read_reconstruction": 0.2292
+     },
+     "dominant_stage": "A_write_commitment",
+     "e_write_rms": 1.203,
+     "e_rel_rms": 1.65,
+     "e_decode_rms": 1.879,
+     "eb_clash_share": 0.0,
+     "n_clash_cells": 0,
+     "clash_cell_idx": []
+    },
+    {
+     "E_A_mV2": 1.5689,
+     "E_B_mV2": 1.6693,
+     "E_C_mV2": 0.394,
+     "total_mV2": 3.6321,
+     "shares": {
+      "A_write_commitment": 0.4319,
+      "B_clamp_release": 0.4596,
+      "C_read_reconstruction": 0.1085
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.253,
+     "e_rel_rms": 1.799,
+     "e_decode_rms": 1.906,
+     "eb_clash_share": 0.0,
+     "n_clash_cells": 0,
+     "clash_cell_idx": []
+    },
+    {
+     "E_A_mV2": 1.5089,
+     "E_B_mV2": 1.7543,
+     "E_C_mV2": 0.4149,
+     "total_mV2": 3.6781,
+     "shares": {
+      "A_write_commitment": 0.4102,
+      "B_clamp_release": 0.477,
+      "C_read_reconstruction": 0.1128
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.228,
+     "e_rel_rms": 1.806,
+     "e_decode_rms": 1.918,
+     "eb_clash_share": 0.0,
+     "n_clash_cells": 0,
+     "clash_cell_idx": []
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.4174,
+    "B_clamp_release": 0.4324,
+    "C_read_reconstruction": 0.1502
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.509,
+    "B_clamp_release": 1.565,
+    "C_read_reconstruction": 0.539
+   },
+   "mean_eb_clash_share": 0.0,
+   "n_clash_cells": 0,
+   "clash_cell_idx": [],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-19",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": false,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 2.0424,
+     "E_B_mV2": 62.2141,
+     "E_C_mV2": -0.0526,
+     "total_mV2": 64.2039,
+     "shares": {
+      "A_write_commitment": 0.0318,
+      "B_clamp_release": 0.969,
+      "C_read_reconstruction": -0.0008
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.429,
+     "e_rel_rms": 8.016,
+     "e_decode_rms": 8.013,
+     "eb_clash_share": 0.9769,
+     "n_clash_cells": 29,
+     "clash_cell_idx": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91
+     ]
+    },
+    {
+     "E_A_mV2": 2.0882,
+     "E_B_mV2": 63.4758,
+     "E_C_mV2": -0.1513,
+     "total_mV2": 65.4128,
+     "shares": {
+      "A_write_commitment": 0.0319,
+      "B_clamp_release": 0.9704,
+      "C_read_reconstruction": -0.0023
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.445,
+     "e_rel_rms": 8.097,
+     "e_decode_rms": 8.088,
+     "eb_clash_share": 0.9766,
+     "n_clash_cells": 29,
+     "clash_cell_idx": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91
+     ]
+    },
+    {
+     "E_A_mV2": 2.0073,
+     "E_B_mV2": 62.8228,
+     "E_C_mV2": -0.1819,
+     "total_mV2": 64.6482,
+     "shares": {
+      "A_write_commitment": 0.031,
+      "B_clamp_release": 0.9718,
+      "C_read_reconstruction": -0.0028
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.417,
+     "e_rel_rms": 8.052,
+     "e_decode_rms": 8.04,
+     "eb_clash_share": 0.9758,
+     "n_clash_cells": 29,
+     "clash_cell_idx": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.0316,
+    "B_clamp_release": 0.9704,
+    "C_read_reconstruction": -0.002
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 2.046,
+    "B_clamp_release": 62.838,
+    "C_read_reconstruction": -0.129
+   },
+   "mean_eb_clash_share": 0.9764,
+   "n_clash_cells": 29,
+   "clash_cell_idx": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-20",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.8092,
+     "E_B_mV2": 10.4036,
+     "E_C_mV2": 0.2926,
+     "total_mV2": 12.5054,
+     "shares": {
+      "A_write_commitment": 0.1447,
+      "B_clamp_release": 0.8319,
+      "C_read_reconstruction": 0.0234
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.345,
+     "e_rel_rms": 3.495,
+     "e_decode_rms": 3.536,
+     "eb_clash_share": 0.8858,
+     "n_clash_cells": 8,
+     "clash_cell_idx": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+     ]
+    },
+    {
+     "E_A_mV2": 1.7786,
+     "E_B_mV2": 10.9992,
+     "E_C_mV2": -0.0105,
+     "total_mV2": 12.7672,
+     "shares": {
+      "A_write_commitment": 0.1393,
+      "B_clamp_release": 0.8615,
+      "C_read_reconstruction": -0.0008
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.334,
+     "e_rel_rms": 3.575,
+     "e_decode_rms": 3.573,
+     "eb_clash_share": 0.8622,
+     "n_clash_cells": 8,
+     "clash_cell_idx": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+     ]
+    },
+    {
+     "E_A_mV2": 1.8125,
+     "E_B_mV2": 11.1612,
+     "E_C_mV2": -0.1465,
+     "total_mV2": 12.8272,
+     "shares": {
+      "A_write_commitment": 0.1413,
+      "B_clamp_release": 0.8701,
+      "C_read_reconstruction": -0.0114
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.346,
+     "e_rel_rms": 3.602,
+     "e_decode_rms": 3.582,
+     "eb_clash_share": 0.8775,
+     "n_clash_cells": 8,
+     "clash_cell_idx": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.1418,
+    "B_clamp_release": 0.8545,
+    "C_read_reconstruction": 0.0037
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.8,
+    "B_clamp_release": 10.855,
+    "C_read_reconstruction": 0.045
+   },
+   "mean_eb_clash_share": 0.8752,
+   "n_clash_cells": 8,
+   "clash_cell_idx": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-21",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 1.7899,
+     "E_B_mV2": 2.1451,
+     "E_C_mV2": 0.6477,
+     "total_mV2": 4.5826,
+     "shares": {
+      "A_write_commitment": 0.3906,
+      "B_clamp_release": 0.4681,
+      "C_read_reconstruction": 0.1413
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.338,
+     "e_rel_rms": 1.984,
+     "e_decode_rms": 2.141,
+     "eb_clash_share": 0.3001,
+     "n_clash_cells": 13,
+     "clash_cell_idx": [
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+     ]
+    },
+    {
+     "E_A_mV2": 1.7582,
+     "E_B_mV2": 2.3874,
+     "E_C_mV2": 0.5342,
+     "total_mV2": 4.6799,
+     "shares": {
+      "A_write_commitment": 0.3757,
+      "B_clamp_release": 0.5101,
+      "C_read_reconstruction": 0.1142
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.326,
+     "e_rel_rms": 2.036,
+     "e_decode_rms": 2.163,
+     "eb_clash_share": 0.3029,
+     "n_clash_cells": 13,
+     "clash_cell_idx": [
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+     ]
+    },
+    {
+     "E_A_mV2": 1.8248,
+     "E_B_mV2": 2.0187,
+     "E_C_mV2": 1.0233,
+     "total_mV2": 4.8668,
+     "shares": {
+      "A_write_commitment": 0.3749,
+      "B_clamp_release": 0.4148,
+      "C_read_reconstruction": 0.2103
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.351,
+     "e_rel_rms": 1.96,
+     "e_decode_rms": 2.206,
+     "eb_clash_share": 0.3128,
+     "n_clash_cells": 13,
+     "clash_cell_idx": [
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.3804,
+    "B_clamp_release": 0.4643,
+    "C_read_reconstruction": 0.1553
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 1.791,
+    "B_clamp_release": 2.184,
+    "C_read_reconstruction": 0.735
+   },
+   "mean_eb_clash_share": 0.3053,
+   "n_clash_cells": 13,
+   "clash_cell_idx": [
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-22",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": false,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 2.0403,
+     "E_B_mV2": 78.7395,
+     "E_C_mV2": 0.243,
+     "total_mV2": 81.0227,
+     "shares": {
+      "A_write_commitment": 0.0252,
+      "B_clamp_release": 0.9718,
+      "C_read_reconstruction": 0.003
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.428,
+     "e_rel_rms": 8.988,
+     "e_decode_rms": 9.001,
+     "eb_clash_share": 0.9776,
+     "n_clash_cells": 37,
+     "clash_cell_idx": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+     ]
+    },
+    {
+     "E_A_mV2": 2.0393,
+     "E_B_mV2": 80.5521,
+     "E_C_mV2": 0.8875,
+     "total_mV2": 83.4789,
+     "shares": {
+      "A_write_commitment": 0.0244,
+      "B_clamp_release": 0.9649,
+      "C_read_reconstruction": 0.0106
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.428,
+     "e_rel_rms": 9.088,
+     "e_decode_rms": 9.137,
+     "eb_clash_share": 0.9779,
+     "n_clash_cells": 37,
+     "clash_cell_idx": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+     ]
+    },
+    {
+     "E_A_mV2": 2.1537,
+     "E_B_mV2": 78.8925,
+     "E_C_mV2": 0.9998,
+     "total_mV2": 82.046,
+     "shares": {
+      "A_write_commitment": 0.0263,
+      "B_clamp_release": 0.9616,
+      "C_read_reconstruction": 0.0122
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.468,
+     "e_rel_rms": 9.003,
+     "e_decode_rms": 9.058,
+     "eb_clash_share": 0.9783,
+     "n_clash_cells": 37,
+     "clash_cell_idx": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.0253,
+    "B_clamp_release": 0.9661,
+    "C_read_reconstruction": 0.0086
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 2.078,
+    "B_clamp_release": 79.395,
+    "C_read_reconstruction": 0.71
+   },
+   "mean_eb_clash_share": 0.9779,
+   "n_clash_cells": 37,
+   "clash_cell_idx": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-23",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": true,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 0.8183,
+     "E_B_mV2": 12.3554,
+     "E_C_mV2": 0.3816,
+     "total_mV2": 13.5553,
+     "shares": {
+      "A_write_commitment": 0.0604,
+      "B_clamp_release": 0.9115,
+      "C_read_reconstruction": 0.0281
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.905,
+     "e_rel_rms": 3.63,
+     "e_decode_rms": 3.682,
+     "eb_clash_share": 0.878,
+     "n_clash_cells": 11,
+     "clash_cell_idx": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    },
+    {
+     "E_A_mV2": 0.8385,
+     "E_B_mV2": 12.2058,
+     "E_C_mV2": 0.9341,
+     "total_mV2": 13.9784,
+     "shares": {
+      "A_write_commitment": 0.06,
+      "B_clamp_release": 0.8732,
+      "C_read_reconstruction": 0.0668
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.916,
+     "e_rel_rms": 3.612,
+     "e_decode_rms": 3.739,
+     "eb_clash_share": 0.8775,
+     "n_clash_cells": 11,
+     "clash_cell_idx": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    },
+    {
+     "E_A_mV2": 0.802,
+     "E_B_mV2": 12.4607,
+     "E_C_mV2": 0.5235,
+     "total_mV2": 13.7862,
+     "shares": {
+      "A_write_commitment": 0.0582,
+      "B_clamp_release": 0.9039,
+      "C_read_reconstruction": 0.038
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 0.896,
+     "e_rel_rms": 3.642,
+     "e_decode_rms": 3.713,
+     "eb_clash_share": 0.8759,
+     "n_clash_cells": 11,
+     "clash_cell_idx": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.0595,
+    "B_clamp_release": 0.8962,
+    "C_read_reconstruction": 0.0443
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 0.82,
+    "B_clamp_release": 12.341,
+    "C_read_reconstruction": 0.613
+   },
+   "mean_eb_clash_share": 0.8771,
+   "n_clash_cells": 11,
+   "clash_cell_idx": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96
+   ],
+   "phi_write_ok": true
+  },
+  {
+   "name": "d-24",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_pass": false,
+   "replica_bitexact": true,
+   "per_seed": [
+    {
+     "E_A_mV2": 2.0242,
+     "E_B_mV2": 92.6367,
+     "E_C_mV2": -0.2757,
+     "total_mV2": 94.3853,
+     "shares": {
+      "A_write_commitment": 0.0214,
+      "B_clamp_release": 0.9815,
+      "C_read_reconstruction": -0.0029
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.423,
+     "e_rel_rms": 9.729,
+     "e_decode_rms": 9.715,
+     "eb_clash_share": 0.9826,
+     "n_clash_cells": 45,
+     "clash_cell_idx": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+     ]
+    },
+    {
+     "E_A_mV2": 2.0841,
+     "E_B_mV2": 92.2527,
+     "E_C_mV2": 0.6301,
+     "total_mV2": 94.9669,
+     "shares": {
+      "A_write_commitment": 0.0219,
+      "B_clamp_release": 0.9714,
+      "C_read_reconstruction": 0.0066
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.444,
+     "e_rel_rms": 9.713,
+     "e_decode_rms": 9.745,
+     "eb_clash_share": 0.9824,
+     "n_clash_cells": 45,
+     "clash_cell_idx": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+     ]
+    },
+    {
+     "E_A_mV2": 2.0553,
+     "E_B_mV2": 92.2652,
+     "E_C_mV2": -0.0204,
+     "total_mV2": 94.3001,
+     "shares": {
+      "A_write_commitment": 0.0218,
+      "B_clamp_release": 0.9784,
+      "C_read_reconstruction": -0.0002
+     },
+     "dominant_stage": "B_clamp_release",
+     "e_write_rms": 1.434,
+     "e_rel_rms": 9.712,
+     "e_decode_rms": 9.711,
+     "eb_clash_share": 0.9804,
+     "n_clash_cells": 45,
+     "clash_cell_idx": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+     ]
+    }
+   ],
+   "mean_shares": {
+    "A_write_commitment": 0.0217,
+    "B_clamp_release": 0.9771,
+    "C_read_reconstruction": 0.0012
+   },
+   "dominant_stage": "B_clamp_release",
+   "mean_E_mV2": {
+    "A_write_commitment": 2.055,
+    "B_clamp_release": 92.385,
+    "C_read_reconstruction": 0.111
+   },
+   "mean_eb_clash_share": 0.9818,
+   "n_clash_cells": 45,
+   "clash_cell_idx": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61
+   ],
+   "phi_write_ok": true
+  }
+ ],
+ "w1_attribution": [
+  {
+   "name": "d-03",
+   "dominant_stage": "B_clamp_release",
+   "share": 0.9906
+  },
+  {
+   "name": "d-08",
+   "dominant_stage": "B_clamp_release",
+   "share": 0.9906
+  },
+  {
+   "name": "d-12",
+   "dominant_stage": "B_clamp_release",
+   "share": 0.9912
+  },
+  {
+   "name": "d-19",
+   "dominant_stage": "B_clamp_release",
+   "share": 0.9704
+  },
+  {
+   "name": "d-22",
+   "dominant_stage": "B_clamp_release",
+   "share": 0.9661
+  },
+  {
+   "name": "d-24",
+   "dominant_stage": "B_clamp_release",
+   "share": 0.9771
+  }
+ ],
+ "w2_mechanism": {
+  "stage": "B_clamp_release",
+  "code_path": "the S-REL spec-reading regen walk's adoption branch \u2014 exp136_generator_v6.decode: `if c.phi_spec[i] >= NEURAL_SPEC_MIN: adopt phi_spec[i] else canon_src[i]` \u2014 with NEURAL_SPEC_MIN = -35.0 (cultivation/bioelectric/collective.py:46) and canon_src = phi_spec_canon = wildtype (the pre-write D3 canon set by set_target)",
+  "mechanism": "CANON-FALLBACK IDENTITY OVERWRITE: any zone written deeper than the read floor (v < -35 mV) is UNREADABLE by the regen walk \u2014 the walk rebuilds those cells from the WILDTYPE canon instead of the written spec. Wherever the canon identity differs from the write, the clamp-release step REPLACES the committed value with wildtype: head-span writes (cells 0-24, canon -20 mV) take a ~15-31 mV identity flip per cell, trunk writes a 0-9 mV one. The write itself (S-WRITE) commits (phi_spec == f bit-identical; window-end RMS ~1 mV) \u2014 the floor enters when the clamps RELEASE and the read rebuilds.",
+  "falsifiable_condition": "CF-1: lowering the ONE branch constant (the spec-adoption floor) to -60 mV \u2014 below every written zone value \u2014 makes the deep writes readable and must REMOVE the floor (>= 5/6 fails below the frozen 6.0 bar). If the floor survives CF-1, this mechanism claim is FALSE."
+ },
+ "w2a_localization": [
+  {
+   "name": "d-03",
+   "eb_clash_share": 0.9944
+  },
+  {
+   "name": "d-08",
+   "eb_clash_share": 0.9943
+  },
+  {
+   "name": "d-12",
+   "eb_clash_share": 0.9944
+  },
+  {
+   "name": "d-19",
+   "eb_clash_share": 0.9764
+  },
+  {
+   "name": "d-22",
+   "eb_clash_share": 0.9779
+  },
+  {
+   "name": "d-24",
+   "eb_clash_share": 0.9818
+  }
+ ],
+ "w2b_cf1_fails": [
+  {
+   "name": "d-03",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_errs": [
+    9.099,
+    9.119,
+    9.077
+   ],
+   "cf1_decode_errs": [
+    1.591,
+    1.644,
+    1.63
+   ],
+   "cf1_hold_errs": [
+    2.054,
+    2.074,
+    2.056
+   ],
+   "cf1_decode_err_mean": 1.622,
+   "flips_below_bar": true
+  },
+  {
+   "name": "d-08",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_errs": [
+    9.576,
+    9.607,
+    9.57
+   ],
+   "cf1_decode_errs": [
+    1.645,
+    1.698,
+    1.692
+   ],
+   "cf1_hold_errs": [
+    2.135,
+    2.158,
+    2.143
+   ],
+   "cf1_decode_err_mean": 1.678,
+   "flips_below_bar": true
+  },
+  {
+   "name": "d-12",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_errs": [
+    9.931,
+    9.993,
+    9.959
+   ],
+   "cf1_decode_errs": [
+    1.839,
+    1.877,
+    1.868
+   ],
+   "cf1_hold_errs": [
+    2.3,
+    2.33,
+    2.354
+   ],
+   "cf1_decode_err_mean": 1.861,
+   "flips_below_bar": true
+  },
+  {
+   "name": "d-19",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_errs": [
+    8.013,
+    8.088,
+    8.04
+   ],
+   "cf1_decode_errs": [
+    2.181,
+    2.208,
+    2.197
+   ],
+   "cf1_hold_errs": [
+    2.968,
+    3.036,
+    2.98
+   ],
+   "cf1_decode_err_mean": 2.195,
+   "flips_below_bar": true
+  },
+  {
+   "name": "d-22",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_errs": [
+    9.001,
+    9.137,
+    9.058
+   ],
+   "cf1_decode_errs": [
+    2.501,
+    2.535,
+    2.479
+   ],
+   "cf1_hold_errs": [
+    3.331,
+    3.377,
+    3.321
+   ],
+   "cf1_decode_err_mean": 2.505,
+   "flips_below_bar": true
+  },
+  {
+   "name": "d-24",
+   "cell": [
+    1.0,
+    0.0
+   ],
+   "deposited_decode_errs": [
+    9.715,
+    9.745,
+    9.711
+   ],
+   "cf1_decode_errs": [
+    2.462,
+    2.523,
+    2.508
+   ],
+   "cf1_hold_errs": [
+    3.338,
+    3.33,
+    3.367
+   ],
+   "cf1_decode_err_mean": 2.498,
+   "flips_below_bar": true
+  }
+ ],
+ "w2b_cf1_pass_harm_check": [
+  {
+   "name": "d-01",
+   "deposited_decode_err_mean": 3.874,
+   "cf1_decode_err_mean": 1.258,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-02",
+   "deposited_decode_err_mean": 2.793,
+   "cf1_decode_err_mean": 1.302,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-04",
+   "deposited_decode_err_mean": 3.77,
+   "cf1_decode_err_mean": 1.538,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-05",
+   "deposited_decode_err_mean": 4.483,
+   "cf1_decode_err_mean": 1.402,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-06",
+   "deposited_decode_err_mean": 1.503,
+   "cf1_decode_err_mean": 1.503,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-07",
+   "deposited_decode_err_mean": 1.819,
+   "cf1_decode_err_mean": 1.544,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-09",
+   "deposited_decode_err_mean": 2.595,
+   "cf1_decode_err_mean": 1.539,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-10",
+   "deposited_decode_err_mean": 2.509,
+   "cf1_decode_err_mean": 1.587,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-11",
+   "deposited_decode_err_mean": 3.24,
+   "cf1_decode_err_mean": 1.593,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-13",
+   "deposited_decode_err_mean": 3.367,
+   "cf1_decode_err_mean": 1.617,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-14",
+   "deposited_decode_err_mean": 1.764,
+   "cf1_decode_err_mean": 1.494,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-15",
+   "deposited_decode_err_mean": 2.51,
+   "cf1_decode_err_mean": 1.481,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-16",
+   "deposited_decode_err_mean": 2.766,
+   "cf1_decode_err_mean": 1.811,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-17",
+   "deposited_decode_err_mean": 5.08,
+   "cf1_decode_err_mean": 1.862,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-18",
+   "deposited_decode_err_mean": 1.901,
+   "cf1_decode_err_mean": 1.901,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-20",
+   "deposited_decode_err_mean": 3.564,
+   "cf1_decode_err_mean": 2.091,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-21",
+   "deposited_decode_err_mean": 2.17,
+   "cf1_decode_err_mean": 1.99,
+   "stays_below_bar": true
+  },
+  {
+   "name": "d-23",
+   "deposited_decode_err_mean": 3.711,
+   "cf1_decode_err_mean": 2.178,
+   "stays_below_bar": true
+  }
+ ],
+ "w3_rule_evaluation": [
+  {
+   "name": "d-01",
+   "clash_mass_mV2": 13.824,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 28.6,
+   "vmean_zone": 37.37,
+   "n_deep_zones_gt35": 2
+  },
+  {
+   "name": "d-02",
+   "clash_mass_mV2": 6.771,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 30.8,
+   "vmean_zone": 35.8,
+   "n_deep_zones_gt35": 1
+  },
+  {
+   "name": "d-03",
+   "clash_mass_mV2": 88.785,
+   "r_w_predicted_fail": true,
+   "actual_fail": true,
+   "hit": true,
+   "vmin_zone": 48.6,
+   "vmean_zone": 51.7,
+   "n_deep_zones_gt35": 3
+  },
+  {
+   "name": "d-04",
+   "clash_mass_mV2": 11.65,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 28.6,
+   "vmean_zone": 42.27,
+   "n_deep_zones_gt35": 2
+  },
+  {
+   "name": "d-05",
+   "clash_mass_mV2": 22.206,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 18.4,
+   "vmean_zone": 34.96,
+   "n_deep_zones_gt35": 3
+  },
+  {
+   "name": "d-06",
+   "clash_mass_mV2": 0.0,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 18.4,
+   "vmean_zone": 27.32,
+   "n_deep_zones_gt35": 0
+  },
+  {
+   "name": "d-07",
+   "clash_mass_mV2": 0.613,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 18.4,
+   "vmean_zone": 33.38,
+   "n_deep_zones_gt35": 1
+  },
+  {
+   "name": "d-08",
+   "clash_mass_mV2": 97.712,
+   "r_w_predicted_fail": true,
+   "actual_fail": true,
+   "hit": true,
+   "vmin_zone": 50.8,
+   "vmean_zone": 52.93,
+   "n_deep_zones_gt35": 3
+  },
+  {
+   "name": "d-09",
+   "clash_mass_mV2": 4.541,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 18.4,
+   "vmean_zone": 34.67,
+   "n_deep_zones_gt35": 1
+  },
+  {
+   "name": "d-10",
+   "clash_mass_mV2": 5.956,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 27.2,
+   "vmean_zone": 34.7,
+   "n_deep_zones_gt35": 2
+  },
+  {
+   "name": "d-11",
+   "clash_mass_mV2": 8.962,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 27.2,
+   "vmean_zone": 37.56,
+   "n_deep_zones_gt35": 3
+  },
+  {
+   "name": "d-12",
+   "clash_mass_mV2": 105.658,
+   "r_w_predicted_fail": true,
+   "actual_fail": true,
+   "hit": true,
+   "vmin_zone": 42.0,
+   "vmean_zone": 51.4,
+   "n_deep_zones_gt35": 5
+  },
+  {
+   "name": "d-13",
+   "clash_mass_mV2": 9.854,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 27.2,
+   "vmean_zone": 35.33,
+   "n_deep_zones_gt35": 2
+  },
+  {
+   "name": "d-14",
+   "clash_mass_mV2": 0.875,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 18.9,
+   "vmean_zone": 35.37,
+   "n_deep_zones_gt35": 1
+  },
+  {
+   "name": "d-15",
+   "clash_mass_mV2": 4.082,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 18.9,
+   "vmean_zone": 36.33,
+   "n_deep_zones_gt35": 1
+  },
+  {
+   "name": "d-16",
+   "clash_mass_mV2": 5.831,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 16.9,
+   "vmean_zone": 31.24,
+   "n_deep_zones_gt35": 2
+  },
+  {
+   "name": "d-17",
+   "clash_mass_mV2": 23.546,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 28.4,
+   "vmean_zone": 33.52,
+   "n_deep_zones_gt35": 2
+  },
+  {
+   "name": "d-18",
+   "clash_mass_mV2": 0.0,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 18.4,
+   "vmean_zone": 26.67,
+   "n_deep_zones_gt35": 0
+  },
+  {
+   "name": "d-19",
+   "clash_mass_mV2": 65.296,
+   "r_w_predicted_fail": true,
+   "actual_fail": true,
+   "hit": true,
+   "vmin_zone": 28.6,
+   "vmean_zone": 40.33,
+   "n_deep_zones_gt35": 3
+  },
+  {
+   "name": "d-20",
+   "clash_mass_mV2": 13.861,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 19.3,
+   "vmean_zone": 28.45,
+   "n_deep_zones_gt35": 1
+  },
+  {
+   "name": "d-21",
+   "clash_mass_mV2": 0.879,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 23.4,
+   "vmean_zone": 31.65,
+   "n_deep_zones_gt35": 1
+  },
+  {
+   "name": "d-22",
+   "clash_mass_mV2": 84.622,
+   "r_w_predicted_fail": true,
+   "actual_fail": true,
+   "hit": true,
+   "vmin_zone": 16.4,
+   "vmean_zone": 36.67,
+   "n_deep_zones_gt35": 2
+  },
+  {
+   "name": "d-23",
+   "clash_mass_mV2": 8.359,
+   "r_w_predicted_fail": false,
+   "actual_fail": false,
+   "hit": true,
+   "vmin_zone": 28.6,
+   "vmean_zone": 42.5,
+   "n_deep_zones_gt35": 2
+  },
+  {
+   "name": "d-24",
+   "clash_mass_mV2": 97.755,
+   "r_w_predicted_fail": true,
+   "actual_fail": true,
+   "hit": true,
+   "vmin_zone": 16.4,
+   "vmean_zone": 37.34,
+   "n_deep_zones_gt35": 3
+  }
+ ],
+ "w3_summary": {
+  "fails_hit": 6,
+  "false_positives": 0,
+  "tp": 6,
+  "pass_mass_range": [
+   0.0,
+   23.546
+  ],
+  "fail_mass_range": [
+   65.296,
+   105.658
+  ],
+  "rule_bar_mV2": 36.0,
+  "bar_inside_gap": true
+ },
+ "w3_contrast_detectors": {
+  "R_U_vmin_lt_45 (exp153)": {
+   "fails_hit": 2,
+   "false_pos": 0,
+   "lands_w3_bar": false
+  },
+  "naive deep-pair (>=2 zones |v|>35) (L132 form)": {
+   "fails_hit": 6,
+   "false_pos": 9,
+   "lands_w3_bar": false
+  }
+ },
+ "rung_invariance_sweep": {
+  "d-03": [
+   {
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "decode_err_mean": 9.098,
+    "mean_shares": {
+     "A_write_commitment": 0.012,
+     "B_clamp_release": 0.991,
+     "C_read_reconstruction": -0.003
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     1.0,
+     0.015
+    ],
+    "decode_err_mean": 8.755,
+    "mean_shares": {
+     "A_write_commitment": 0.02,
+     "B_clamp_release": 0.991,
+     "C_read_reconstruction": -0.01
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     4.0,
+     0.0
+    ],
+    "decode_err_mean": 9.326,
+    "mean_shares": {
+     "A_write_commitment": 0.001,
+     "B_clamp_release": 1.0,
+     "C_read_reconstruction": -0.002
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     4.0,
+     0.015
+    ],
+    "decode_err_mean": 8.885,
+    "mean_shares": {
+     "A_write_commitment": 0.006,
+     "B_clamp_release": 1.006,
+     "C_read_reconstruction": -0.012
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     16.0,
+     0.0
+    ],
+    "decode_err_mean": 9.381,
+    "mean_shares": {
+     "A_write_commitment": 0.0,
+     "B_clamp_release": 1.0,
+     "C_read_reconstruction": -0.0
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     16.0,
+     0.015
+    ],
+    "decode_err_mean": 8.981,
+    "mean_shares": {
+     "A_write_commitment": 0.003,
+     "B_clamp_release": 1.011,
+     "C_read_reconstruction": -0.015
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     32.0,
+     0.0
+    ],
+    "decode_err_mean": 9.439,
+    "mean_shares": {
+     "A_write_commitment": 0.0,
+     "B_clamp_release": 1.001,
+     "C_read_reconstruction": -0.001
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     64.0,
+     0.0
+    ],
+    "decode_err_mean": 9.383,
+    "mean_shares": {
+     "A_write_commitment": 0.0,
+     "B_clamp_release": 1.0,
+     "C_read_reconstruction": -0.0
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     64.0,
+     0.015
+    ],
+    "decode_err_mean": 9.127,
+    "mean_shares": {
+     "A_write_commitment": 0.003,
+     "B_clamp_release": 1.026,
+     "C_read_reconstruction": -0.029
+    },
+    "dominant": "B_clamp_release"
+   }
+  ],
+  "d-01": [
+   {
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "decode_err_mean": 3.874,
+    "mean_shares": {
+     "A_write_commitment": 0.053,
+     "B_clamp_release": 0.945,
+     "C_read_reconstruction": 0.002
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     1.0,
+     0.015
+    ],
+    "decode_err_mean": 3.911,
+    "mean_shares": {
+     "A_write_commitment": 0.074,
+     "B_clamp_release": 0.918,
+     "C_read_reconstruction": 0.008
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     4.0,
+     0.0
+    ],
+    "decode_err_mean": 3.777,
+    "mean_shares": {
+     "A_write_commitment": 0.006,
+     "B_clamp_release": 0.998,
+     "C_read_reconstruction": -0.004
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     4.0,
+     0.015
+    ],
+    "decode_err_mean": 3.841,
+    "mean_shares": {
+     "A_write_commitment": 0.022,
+     "B_clamp_release": 0.969,
+     "C_read_reconstruction": 0.009
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     16.0,
+     0.0
+    ],
+    "decode_err_mean": 3.772,
+    "mean_shares": {
+     "A_write_commitment": 0.001,
+     "B_clamp_release": 1.0,
+     "C_read_reconstruction": -0.001
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     16.0,
+     0.015
+    ],
+    "decode_err_mean": 3.827,
+    "mean_shares": {
+     "A_write_commitment": 0.013,
+     "B_clamp_release": 0.967,
+     "C_read_reconstruction": 0.02
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     32.0,
+     0.0
+    ],
+    "decode_err_mean": 3.769,
+    "mean_shares": {
+     "A_write_commitment": 0.0,
+     "B_clamp_release": 1.002,
+     "C_read_reconstruction": -0.002
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     64.0,
+     0.0
+    ],
+    "decode_err_mean": 3.721,
+    "mean_shares": {
+     "A_write_commitment": 0.0,
+     "B_clamp_release": 1.002,
+     "C_read_reconstruction": -0.002
+    },
+    "dominant": "B_clamp_release"
+   },
+   {
+    "cell": [
+     64.0,
+     0.015
+    ],
+    "decode_err_mean": 3.751,
+    "mean_shares": {
+     "A_write_commitment": 0.012,
+     "B_clamp_release": 0.969,
+     "C_read_reconstruction": 0.019
+    },
+    "dominant": "B_clamp_release"
+   }
+  ]
+ },
+ "gates": {
+  "W1_stage_attribution": true,
+  "W2_mechanism_named_and_falsified_probe": true,
+  "W2a_clash_localization": true,
+  "W2b_cf1_removes_floor": true,
+  "W3_structural_rule": true,
+  "W4_instrument_check": true
+ },
+ "gates_passed": "4/4 core (W2 = W2a AND W2b)",
+ "registered_next": [
+  "repair candidate for the C3 binder: make the S-REL walk read the spec it was written (CF-1's floor change OR an explicit spec-vs-canon arbitration that preserves exp90's chain-carry protection) \u2014 re-price the generator's C3 under the repair before any adoption",
+  "adopt R_W as the generator-side structural pre-filter (replaces R_U's scalar vmin bar; 24/24 on the exp153 cohort, zero fitted knobs) and confirm on a FRESH expanded delivery (L132's never-tuned discipline)",
+  "the head-clash reading is testable wet: a deep (-50 mV) write inside a depolarized (head-like) field should fail regeneration memory exactly where the same write in trunk-like tissue succeeds"
+ ],
+ "wall_s": 71.4,
+ "notes": "Instruments exp136/exp144/exp150 imported verbatim (price_rung, emit_rung, decode reused as-is; the dissect replica adds three snapshot copies and ZERO rng draws \u2014 bit-exactness asserted against the deposit at all 24 emitted rungs). Zones come from the exp153 DEPOSIT (no search re-run). New objects only: the telescoping three-stage decomposition, the dissect/CF-1 replicas, the pre-registered R_W rule + its clash-mass statistic, the W-gate readouts. R_W's constants (read floor -35.0, canon wildtype, bar 6.0^2) are pre-existing frozen repo constants \u2014 the rule was never tuned on any verdict."
+}
