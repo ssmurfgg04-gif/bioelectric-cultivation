@@ -1,0 +1,609 @@
+{
+ "bank_pointer": "results/wetlab_companion_bank.json",
+ "census_rule": [
+  {
+   "fields": [
+    "species"
+   ],
+   "item": "species",
+   "rule": "non-null"
+  },
+  {
+   "fields": [
+    "blocker",
+    "vehicle"
+   ],
+   "item": "blocker_or_vehicle",
+   "rule": "at least one non-null (L339 'blocker (and vehicle)')"
+  },
+  {
+   "fields": [
+    "concentration_mM",
+    "concentration_frac_c_full"
+   ],
+   "item": "concentration",
+   "rule": "at least one non-null (L340 'mM, and fraction of C_full')"
+  },
+  {
+   "fields": [
+    "exposure_window_start_rel_amputation",
+    "exposure_window_end_rel_amputation",
+    "exposure_mode"
+   ],
+   "item": "exposure_window",
+   "rule": "(start AND end non-null) OR mode non-null (L341 offers start/end or the sustained-or-pulse mode encoding)"
+  },
+  {
+   "fields": [
+    "amputation_plane"
+   ],
+   "item": "amputation_plane",
+   "rule": "non-null"
+  },
+  {
+   "fields": [
+    "phenotype_score"
+   ],
+   "item": "phenotype_score",
+   "rule": "non-null (a Durant-rubric penetrance; structure layer constrains it to [0,1])"
+  },
+  {
+   "fields": [
+    "n"
+   ],
+   "item": "n",
+   "rule": "non-null"
+  }
+ ],
+ "counts": {
+  "accepted": 0,
+  "imported": 119,
+  "rejected": 119
+ },
+ "criteria": {
+  "GATE-S1": "protocol read; bank scaffold built with the field-provenance table deposited; zero fields without provenance; schema validates the empty bank",
+  "GATE-S2": "Levin series imported 119/119, per-entry provenance (source deposit key + sha256 of the source record); census-failing entries on the reject list (reject count a FINDING); every accepted entry validates",
+  "GATE-S3": "write/read-back byte-identical on the full bank; validator accepts every round-tripped entry and rejects a mutated probe (one field corrupted per probe x every required field)",
+  "GATE-S4": "no source deposit mutated; deterministic bank filename under results/; re-run reproduces the bank byte-identically"
+ },
+ "deposit_path": "results/exp203_wetlab_scaffold.json",
+ "exp": "exp203_wetlab_scaffold",
+ "extended_fields": [
+  "dye_coupling_fraction",
+  "rig_calibration_constants",
+  "blocker_batch",
+  "blind_scoring_rubric_version"
+ ],
+ "field_provenance": [
+  {
+   "field": "bank",
+   "protocol_line": "L334",
+   "quote": "**The deposit schema.** Machine-readable (CSV + JSON), keyed to PlanformDB's"
+  },
+  {
+   "field": "protocol",
+   "protocol_line": "L313",
+   "quote": "## 5. W5 — THE RECORD PROPERTY (what the dosing table adds back)"
+  },
+  {
+   "field": "protocol_sha256",
+   "protocol_line": "L334-L336",
+   "quote": "**The deposit schema.** Machine-readable (CSV + JSON), keyed to PlanformDB's experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "schema_version",
+   "protocol_line": "L334-L336",
+   "quote": "**The deposit schema.** Machine-readable (CSV + JSON), keyed to PlanformDB's experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "field_provenance",
+   "protocol_line": "L335",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the"
+  },
+  {
+   "field": "required_fields",
+   "protocol_line": "L338-L344",
+   "quote": "- species - blocker (and vehicle) - concentration (mM, and fraction of C_full) - exposure window (start / end relative to amputation; sustained or pulse) - amputation plane (pre-pharyngeal / trunk / post-pharyngeal) - phenotype score (Durant-database rubric, plane-resolved penetrance) - n"
+  },
+  {
+   "field": "extended_fields",
+   "protocol_line": "L346-L348",
+   "quote": "Extended columns per row: measured dye-coupling fraction (the functional dial), the rig's intensity->mV calibration constants, blocker batch, and the blind-scoring rubric version. Deposited with the publication (supplementary"
+  },
+  {
+   "field": "census_rule",
+   "protocol_line": "L338-L344",
+   "quote": "- species - blocker (and vehicle) - concentration (mM, and fraction of C_full) - exposure window (start / end relative to amputation; sustained or pulse) - amputation plane (pre-pharyngeal / trunk / post-pharyngeal) - phenotype score (Durant-database rubric, plane-resolved penetrance) - n"
+  },
+  {
+   "field": "import_source",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "import_rules",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "entries",
+   "protocol_line": "L329",
+   "quote": "Every W1/W2/W3 animal contributes one row with the measured dose identity"
+  },
+  {
+   "field": "rejects",
+   "protocol_line": "L11-L13",
+   "quote": "**Ledger discipline:** every section is a pre-registered prediction with an explicit pass/fail gate, registered before the first animal is dosed. A failed gate is REPORTED, not iterated past — the FALSIFICATION.md discipline applies"
+  },
+  {
+   "field": "counts",
+   "protocol_line": "L338-L344",
+   "quote": "- species - blocker (and vehicle) - concentration (mM, and fraction of C_full) - exposure window (start / end relative to amputation; sustained or pulse) - amputation plane (pre-pharyngeal / trunk / post-pharyngeal) - phenotype score (Durant-database rubric, plane-resolved penetrance) - n"
+  },
+  {
+   "field": "species",
+   "protocol_line": "L338",
+   "quote": "- species"
+  },
+  {
+   "field": "blocker",
+   "protocol_line": "L339",
+   "quote": "- blocker (and vehicle)"
+  },
+  {
+   "field": "vehicle",
+   "protocol_line": "L339",
+   "quote": "- blocker (and vehicle)"
+  },
+  {
+   "field": "concentration_mM",
+   "protocol_line": "L340",
+   "quote": "- concentration (mM, and fraction of C_full)"
+  },
+  {
+   "field": "concentration_frac_c_full",
+   "protocol_line": "L340",
+   "quote": "- concentration (mM, and fraction of C_full)"
+  },
+  {
+   "field": "exposure_window_start_rel_amputation",
+   "protocol_line": "L341",
+   "quote": "- exposure window (start / end relative to amputation; sustained or pulse)"
+  },
+  {
+   "field": "exposure_window_end_rel_amputation",
+   "protocol_line": "L341",
+   "quote": "- exposure window (start / end relative to amputation; sustained or pulse)"
+  },
+  {
+   "field": "exposure_mode",
+   "protocol_line": "L341",
+   "quote": "- exposure window (start / end relative to amputation; sustained or pulse)"
+  },
+  {
+   "field": "amputation_plane",
+   "protocol_line": "L342",
+   "quote": "- amputation plane (pre-pharyngeal / trunk / post-pharyngeal)"
+  },
+  {
+   "field": "phenotype_score",
+   "protocol_line": "L343",
+   "quote": "- phenotype score (Durant-database rubric, plane-resolved penetrance)"
+  },
+  {
+   "field": "n",
+   "protocol_line": "L344",
+   "quote": "- n"
+  },
+  {
+   "field": "dye_coupling_fraction",
+   "protocol_line": "L346",
+   "quote": "Extended columns per row: measured dye-coupling fraction (the functional"
+  },
+  {
+   "field": "rig_calibration_constants",
+   "protocol_line": "L346-L347",
+   "quote": "Extended columns per row: measured dye-coupling fraction (the functional dial), the rig's intensity->mV calibration constants, blocker batch, and the"
+  },
+  {
+   "field": "blocker_batch",
+   "protocol_line": "L347",
+   "quote": "dial), the rig's intensity->mV calibration constants, blocker batch, and the"
+  },
+  {
+   "field": "blind_scoring_rubric_version",
+   "protocol_line": "L347-L348",
+   "quote": "dial), the rig's intensity->mV calibration constants, blocker batch, and the blind-scoring rubric version. Deposited with the publication (supplementary"
+  },
+  {
+   "field": "provenance",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "provenance.source_deposit",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "provenance.source_record",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "provenance.source_key",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "provenance.source_record_sha256",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "census_missing",
+   "protocol_line": "L338-L344",
+   "quote": "- species - blocker (and vehicle) - concentration (mM, and fraction of C_full) - exposure window (start / end relative to amputation; sustained or pulse) - amputation plane (pre-pharyngeal / trunk / post-pharyngeal) - phenotype score (Durant-database rubric, plane-resolved penetrance) - n"
+  }
+ ],
+ "gates": {
+  "GATE-S1": {
+   "asserts": {
+    "field_provenance_quotes_verified": 34,
+    "protocol_lines_unchanged": true,
+    "scaffold_validates_empty_bank": true,
+    "zero_fields_without_provenance": true
+   },
+   "detail": {
+    "extended_fields": [
+     "dye_coupling_fraction",
+     "rig_calibration_constants",
+     "blocker_batch",
+     "blind_scoring_rubric_version"
+    ],
+    "protocol_sha256": "89041a79f8a55818ab6a412933b46b2c25084c842434cee7709d7bc6d1dd462f",
+    "provenance_rows": 34,
+    "required_fields": [
+     "species",
+     "blocker",
+     "vehicle",
+     "concentration_mM",
+     "concentration_frac_c_full",
+     "exposure_window_start_rel_amputation",
+     "exposure_window_end_rel_amputation",
+     "exposure_mode",
+     "amputation_plane",
+     "phenotype_score",
+     "n"
+    ]
+   },
+   "verdict": "PASS"
+  },
+  "GATE-S2": {
+   "asserts": {
+    "bank_validates": true,
+    "every_accepted_entry_validates": true,
+    "every_reject_structure_clean_census_named": true,
+    "exp139_entry_count_119": true,
+    "ids_unique_complete": true,
+    "imported_119_of_119": true,
+    "per_entry_provenance_sha_verified": true,
+    "series_len_119": true
+   },
+   "detail": {
+    "counts": {
+     "accepted": 0,
+     "imported": 119,
+     "rejected": 119
+    },
+    "finding": "reject count is a FINDING (pre-registered), not a gate failure",
+    "population_census": {
+     "amputation_plane": 119,
+     "blind_scoring_rubric_version": 0,
+     "blocker": 64,
+     "blocker_batch": 0,
+     "concentration_frac_c_full": 0,
+     "concentration_mM": 0,
+     "dye_coupling_fraction": 0,
+     "exposure_mode": 0,
+     "exposure_window_end_rel_amputation": 64,
+     "exposure_window_start_rel_amputation": 64,
+     "n": 104,
+     "phenotype_score": 99,
+     "rig_calibration_constants": 0,
+     "species": 119,
+     "vehicle": 0
+    },
+    "reject_census_summary": {
+     "blocker_or_vehicle": 55,
+     "concentration": 119,
+     "exposure_window": 55,
+     "n": 15,
+     "phenotype_score": 20
+    }
+   },
+   "verdict": "PASS"
+  },
+  "GATE-S3": {
+   "asserts": {
+    "bank_revalidates_after_round_trip": true,
+    "every_round_tripped_entry_accepted": true,
+    "field_coverage_zero_unprovenanced": true,
+    "fixture_accepted": true,
+    "negative_controls_all_fail": true,
+    "round_trip_byte_identical": true
+   },
+   "detail": {
+    "bank_bytes": 113140,
+    "bank_path": "results/wetlab_companion_bank.json",
+    "negative_controls": [
+     {
+      "corrupted_field": "species",
+      "corruption": null,
+      "rejected": true
+     },
+     {
+      "corrupted_field": "blocker",
+      "corruption": null,
+      "rejected": true
+     },
+     {
+      "corrupted_field": "vehicle",
+      "corruption": 123,
+      "rejected": true
+     },
+     {
+      "corrupted_field": "concentration_mM",
+      "corruption": -1.0,
+      "rejected": true
+     },
+     {
+      "corrupted_field": "concentration_frac_c_full",
+      "corruption": 1.5,
+      "rejected": true
+     },
+     {
+      "corrupted_field": "exposure_window_start_rel_amputation",
+      "corruption": "t0",
+      "rejected": true
+     },
+     {
+      "corrupted_field": "exposure_window_end_rel_amputation",
+      "corruption": "t1",
+      "rejected": true
+     },
+     {
+      "corrupted_field": "exposure_mode",
+      "corruption": "fortnight",
+      "rejected": true
+     },
+     {
+      "corrupted_field": "amputation_plane",
+      "corruption": "brain",
+      "rejected": true
+     },
+     {
+      "corrupted_field": "phenotype_score",
+      "corruption": 1.5,
+      "rejected": true
+     },
+     {
+      "corrupted_field": "n",
+      "corruption": 0,
+      "rejected": true
+     },
+     {
+      "corrupted_field": "provenance",
+      "corruption": "DELETE",
+      "rejected": true
+     }
+    ]
+   },
+   "verdict": "PASS"
+  },
+  "GATE-S4": {
+   "asserts": {
+    "deterministic_bank_filename": true,
+    "no_source_deposit_mutated": true,
+    "rerun_byte_identical": true,
+    "written_bank_equals_rerun": true
+   },
+   "detail": {
+    "source_hashes": {
+     "exp139": {
+      "path": "results/exp139_levin_voltage.json",
+      "present": true,
+      "sha256": "3bca0d584311f4576dcf75ac94b8c3dd452a82428f4e20aadec56adf28cc8a6f"
+     },
+     "exp39": {
+      "path": "results/exp39_levin_voltage.json",
+      "present": true,
+      "sha256": "0d65402a843a34c30389163eb923725aabc1a35b6eb196c60ebb28f8d66e978d"
+     },
+     "protocol": {
+      "path": "docs/STAGE5_WETLAB_COMPANION_PROTOCOL.md",
+      "present": true,
+      "sha256": "89041a79f8a55818ab6a412933b46b2c25084c842434cee7709d7bc6d1dd462f"
+     },
+     "series": {
+      "path": "research/levin_voltage_series.json",
+      "present": true,
+      "sha256": "25608eb168c1b9154fb5f3ca485897122a0b33d9102c05b67d01f7dfce9f8f6f"
+     }
+    }
+   },
+   "verdict": "PASS"
+  }
+ },
+ "gates_all_pass": true,
+ "import_anchor": {
+  "deposit": "results/exp139_levin_voltage.json",
+  "deposit_sha256": "3bca0d584311f4576dcf75ac94b8c3dd452a82428f4e20aadec56adf28cc8a6f",
+  "exp139_partition_counts": {
+   "A": 30,
+   "B": 57,
+   "C": 21,
+   "D": 5,
+   "E": 6
+  },
+  "exp139_partition_total": 119,
+  "exp139_sources_record": "research/levin_voltage_series.json (119 entries)",
+  "exp39_reference": "the series protocol names results/exp39_levin_voltage.json among its mining sources (the V1-V6 direction-match pairs); the file is untracked in git, hashed for hygiene when present",
+  "series_counts": {
+   "by_kind": {
+    "absolute mV measurement": 1,
+    "classic record": 1,
+    "exp39 direction-match pair": 6,
+    "measurement-method anchor": 1,
+    "modeling values": 1,
+    "published direction claim": 4,
+    "published quantitative series": 3,
+    "published timing claim": 1,
+    "recorded-outcome": 99,
+    "review anchor": 1,
+    "stack-side inference constants": 1
+   },
+   "planformdb_rows": 99,
+   "total_entries": 119,
+   "with_absolute_mv": 2
+  },
+  "series_file": "research/levin_voltage_series.json",
+  "series_len": 119,
+  "series_sha256": "25608eb168c1b9154fb5f3ca485897122a0b33d9102c05b67d01f7dfce9f8f6f"
+ },
+ "import_rules": {
+  "amputation_plane": "plane_of_manipulation(record['region_or_tissue'])['plane'] — the protocol's keyed plane taxonomy (L335; rules pre-registered 2026-09-15 in experiments/planform_mining.py), applied verbatim",
+  "blind_scoring_rubric_version": "null — not stated in the source deposit (extended column, L347-348)",
+  "blocker": "'; '-joined drug names from the record's drug_start_end tuples (PlanformDB ExperimentDrug names via the series; the protocol's keyed drug taxonomy, L335); null when the record states no drugs (no drug_start_end field, an empty list, or RNAi-only/cutting-only rows)",
+  "blocker_batch": "null — not stated in the source deposit (extended column, L347)",
+  "concentration_frac_c_full": "null — same absence as concentration_mM",
+  "concentration_mM": "null — the source deposit carries no concentration anywhere (exp33/L16: PlanformDB has no drug concentrations; re-verified by exp197). This column is the record hole the wetlab companion exists to fill",
+  "dye_coupling_fraction": "null — not stated in the source deposit (extended column, L346)",
+  "exposure_mode": "null — not stated per-row in the structured source",
+  "exposure_window_end_rel_amputation": "max over the record's drug_start_end tuples of position 2 (EndTime), verbatim uninterpreted (StartTime/EndTime semantics are the source deposit's own; e.g. EndTime 0.0 is deposited as recorded)",
+  "exposure_window_start_rel_amputation": "min over the record's drug_start_end tuples of position 1 (StartTime), verbatim uninterpreted",
+  "n": "n_if_stated verbatim when it is an integer >= 1, else null (non-integer or non-positive source values are unmappable to the schema's n and are left unpopulated; the exact source record is recoverable via provenance.source_record_sha256)",
+  "phenotype_score": "1 - sum(frequency for outcome_frequencies entries whose outcome == 'Wild type') — the record's pre-registered abnormal rule (exp21: abnormal(E) = 1 - freq(Wild type); exp139's deposited reading of the same rows); null when the record states no outcome frequencies",
+  "provenance": "source_deposit = the task's named import source (results/exp139_levin_voltage.json); source_record = the series deposit its sources.record line points to (research/levin_voltage_series.json#series); source_key = the record's own id; source_record_sha256 = sha256 of the canonical JSON of the exact source record",
+  "rig_calibration_constants": "null — not stated in the source deposit (extended column, L346-347)",
+  "species": "verbatim source record 'species' (119/119 non-null in the series)",
+  "vehicle": "null — no structured vehicle field exists in the source deposit"
+ },
+ "job": "all",
+ "negative_controls": [
+  {
+   "corrupted_field": "species",
+   "corruption": null,
+   "rejected": true
+  },
+  {
+   "corrupted_field": "blocker",
+   "corruption": null,
+   "rejected": true
+  },
+  {
+   "corrupted_field": "vehicle",
+   "corruption": 123,
+   "rejected": true
+  },
+  {
+   "corrupted_field": "concentration_mM",
+   "corruption": -1.0,
+   "rejected": true
+  },
+  {
+   "corrupted_field": "concentration_frac_c_full",
+   "corruption": 1.5,
+   "rejected": true
+  },
+  {
+   "corrupted_field": "exposure_window_start_rel_amputation",
+   "corruption": "t0",
+   "rejected": true
+  },
+  {
+   "corrupted_field": "exposure_window_end_rel_amputation",
+   "corruption": "t1",
+   "rejected": true
+  },
+  {
+   "corrupted_field": "exposure_mode",
+   "corruption": "fortnight",
+   "rejected": true
+  },
+  {
+   "corrupted_field": "amputation_plane",
+   "corruption": "brain",
+   "rejected": true
+  },
+  {
+   "corrupted_field": "phenotype_score",
+   "corruption": 1.5,
+   "rejected": true
+  },
+  {
+   "corrupted_field": "n",
+   "corruption": 0,
+   "rejected": true
+  },
+  {
+   "corrupted_field": "provenance",
+   "corruption": "DELETE",
+   "rejected": true
+  }
+ ],
+ "notes": "Census reading (disclosed): the protocol's W5 schema has exactly two column classes — the seven bullets (L338-344, required) and the extended columns (L346-348) — so the required-field census checks all seven bullets. The record's rows carry NO concentrations anywhere (exp33/L16; re-verified exp197), so the census rejects every record row on the dose-identity column: the reject count IS the quantified record hole this bank exists to fill, deposited per row with reasons. At accepted=0 the accepted-validate clause is vacuous by this pre-registered design; the validator's accept path is exercised non-vacuously by the G3 fixture, and its reject path by the 12 negative controls. StartTime/EndTime are deposited verbatim uninterpreted (the source deposit's own semantics). results/exp39_levin_voltage.json is a series mining source but untracked in git; hashed for hygiene when present. Smoke runs (permitted, discarded) write results/exp203_wetlab_scaffold_smoke.json and results/wetlab_companion_bank_smoke.json only.",
+ "population_census": {
+  "amputation_plane": 119,
+  "blind_scoring_rubric_version": 0,
+  "blocker": 64,
+  "blocker_batch": 0,
+  "concentration_frac_c_full": 0,
+  "concentration_mM": 0,
+  "dye_coupling_fraction": 0,
+  "exposure_mode": 0,
+  "exposure_window_end_rel_amputation": 64,
+  "exposure_window_start_rel_amputation": 64,
+  "n": 104,
+  "phenotype_score": 99,
+  "rig_calibration_constants": 0,
+  "species": 119,
+  "vehicle": 0
+ },
+ "protocol": {
+  "path": "docs/STAGE5_WETLAB_COMPANION_PROTOCOL.md",
+  "role": "the ONLY schema source; every bank field traces to a protocol line via field_provenance",
+  "sha256": "89041a79f8a55818ab6a412933b46b2c25084c842434cee7709d7bc6d1dd462f"
+ },
+ "reject_census_summary": {
+  "blocker_or_vehicle": 55,
+  "concentration": 119,
+  "exposure_window": 55,
+  "n": 15,
+  "phenotype_score": 20
+ },
+ "required_fields": [
+  "species",
+  "blocker",
+  "vehicle",
+  "concentration_mM",
+  "concentration_frac_c_full",
+  "exposure_window_start_rel_amputation",
+  "exposure_window_end_rel_amputation",
+  "exposure_mode",
+  "amputation_plane",
+  "phenotype_score",
+  "n"
+ ],
+ "smoke": false,
+ "sources": {
+  "import_source": "results/exp139_levin_voltage.json (its own entry count asserted == 119)",
+  "phenotype_rule": "experiments/exp21_planform_benchmark.py (abnormal(E) = 1 - freq(Wild type), pre-registered) via exp139's deposited reading",
+  "plane_drug_taxonomy": "experiments/planform_mining.py (pre-registered 2026-09-15; the protocol keys the schema to it, L335)",
+  "protocol": "docs/STAGE5_WETLAB_COMPANION_PROTOCOL.md (the ONLY schema source; W5 deposit schema L334-348)",
+  "series_mining_source": "results/exp39_levin_voltage.json (untracked; hashed when present)",
+  "series_records": "research/levin_voltage_series.json#series (the deposit exp139's sources.record points to; 119 entries)"
+ },
+ "task": "THE WETLAB COMPANION DEPOSIT SCAFFOLD (L170's registered next): the Stage-5 wetlab companion protocol's schema read, the bank format implemented, and the FIRST deposit imported — exp139's 119-entry Levin voltage series — validated end to end",
+ "verdict": "PASS 4/4 gates — the wetlab companion bank scaffolded from the protocol (every field line-traced), first deposit imported: 119/119 accounted, 0 accepted / 119 census-rejected (the record's missing dose axis, quantified per row); round-trip byte-identical, negative controls all fail, hygiene clean"
+}

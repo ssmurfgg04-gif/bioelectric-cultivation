@@ -1,0 +1,3552 @@
+{
+ "bank": "wetlab_companion",
+ "census_rule": [
+  {
+   "fields": [
+    "species"
+   ],
+   "item": "species",
+   "rule": "non-null"
+  },
+  {
+   "fields": [
+    "blocker",
+    "vehicle"
+   ],
+   "item": "blocker_or_vehicle",
+   "rule": "at least one non-null (L339 'blocker (and vehicle)')"
+  },
+  {
+   "fields": [
+    "concentration_mM",
+    "concentration_frac_c_full"
+   ],
+   "item": "concentration",
+   "rule": "at least one non-null (L340 'mM, and fraction of C_full')"
+  },
+  {
+   "fields": [
+    "exposure_window_start_rel_amputation",
+    "exposure_window_end_rel_amputation",
+    "exposure_mode"
+   ],
+   "item": "exposure_window",
+   "rule": "(start AND end non-null) OR mode non-null (L341 offers start/end or the sustained-or-pulse mode encoding)"
+  },
+  {
+   "fields": [
+    "amputation_plane"
+   ],
+   "item": "amputation_plane",
+   "rule": "non-null"
+  },
+  {
+   "fields": [
+    "phenotype_score"
+   ],
+   "item": "phenotype_score",
+   "rule": "non-null (a Durant-rubric penetrance; structure layer constrains it to [0,1])"
+  },
+  {
+   "fields": [
+    "n"
+   ],
+   "item": "n",
+   "rule": "non-null"
+  }
+ ],
+ "counts": {
+  "accepted": 0,
+  "imported": 119,
+  "rejected": 119
+ },
+ "entries": [],
+ "extended_fields": [
+  "dye_coupling_fraction",
+  "rig_calibration_constants",
+  "blocker_batch",
+  "blind_scoring_rubric_version"
+ ],
+ "field_provenance": [
+  {
+   "field": "bank",
+   "protocol_line": "L334",
+   "quote": "**The deposit schema.** Machine-readable (CSV + JSON), keyed to PlanformDB's"
+  },
+  {
+   "field": "protocol",
+   "protocol_line": "L313",
+   "quote": "## 5. W5 — THE RECORD PROPERTY (what the dosing table adds back)"
+  },
+  {
+   "field": "protocol_sha256",
+   "protocol_line": "L334-L336",
+   "quote": "**The deposit schema.** Machine-readable (CSV + JSON), keyed to PlanformDB's experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "schema_version",
+   "protocol_line": "L334-L336",
+   "quote": "**The deposit schema.** Machine-readable (CSV + JSON), keyed to PlanformDB's experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "field_provenance",
+   "protocol_line": "L335",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the"
+  },
+  {
+   "field": "required_fields",
+   "protocol_line": "L338-L344",
+   "quote": "- species - blocker (and vehicle) - concentration (mM, and fraction of C_full) - exposure window (start / end relative to amputation; sustained or pulse) - amputation plane (pre-pharyngeal / trunk / post-pharyngeal) - phenotype score (Durant-database rubric, plane-resolved penetrance) - n"
+  },
+  {
+   "field": "extended_fields",
+   "protocol_line": "L346-L348",
+   "quote": "Extended columns per row: measured dye-coupling fraction (the functional dial), the rig's intensity->mV calibration constants, blocker batch, and the blind-scoring rubric version. Deposited with the publication (supplementary"
+  },
+  {
+   "field": "census_rule",
+   "protocol_line": "L338-L344",
+   "quote": "- species - blocker (and vehicle) - concentration (mM, and fraction of C_full) - exposure window (start / end relative to amputation; sustained or pulse) - amputation plane (pre-pharyngeal / trunk / post-pharyngeal) - phenotype score (Durant-database rubric, plane-resolved penetrance) - n"
+  },
+  {
+   "field": "import_source",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "import_rules",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "entries",
+   "protocol_line": "L329",
+   "quote": "Every W1/W2/W3 animal contributes one row with the measured dose identity"
+  },
+  {
+   "field": "rejects",
+   "protocol_line": "L11-L13",
+   "quote": "**Ledger discipline:** every section is a pre-registered prediction with an explicit pass/fail gate, registered before the first animal is dosed. A failed gate is REPORTED, not iterated past — the FALSIFICATION.md discipline applies"
+  },
+  {
+   "field": "counts",
+   "protocol_line": "L338-L344",
+   "quote": "- species - blocker (and vehicle) - concentration (mM, and fraction of C_full) - exposure window (start / end relative to amputation; sustained or pulse) - amputation plane (pre-pharyngeal / trunk / post-pharyngeal) - phenotype score (Durant-database rubric, plane-resolved penetrance) - n"
+  },
+  {
+   "field": "species",
+   "protocol_line": "L338",
+   "quote": "- species"
+  },
+  {
+   "field": "blocker",
+   "protocol_line": "L339",
+   "quote": "- blocker (and vehicle)"
+  },
+  {
+   "field": "vehicle",
+   "protocol_line": "L339",
+   "quote": "- blocker (and vehicle)"
+  },
+  {
+   "field": "concentration_mM",
+   "protocol_line": "L340",
+   "quote": "- concentration (mM, and fraction of C_full)"
+  },
+  {
+   "field": "concentration_frac_c_full",
+   "protocol_line": "L340",
+   "quote": "- concentration (mM, and fraction of C_full)"
+  },
+  {
+   "field": "exposure_window_start_rel_amputation",
+   "protocol_line": "L341",
+   "quote": "- exposure window (start / end relative to amputation; sustained or pulse)"
+  },
+  {
+   "field": "exposure_window_end_rel_amputation",
+   "protocol_line": "L341",
+   "quote": "- exposure window (start / end relative to amputation; sustained or pulse)"
+  },
+  {
+   "field": "exposure_mode",
+   "protocol_line": "L341",
+   "quote": "- exposure window (start / end relative to amputation; sustained or pulse)"
+  },
+  {
+   "field": "amputation_plane",
+   "protocol_line": "L342",
+   "quote": "- amputation plane (pre-pharyngeal / trunk / post-pharyngeal)"
+  },
+  {
+   "field": "phenotype_score",
+   "protocol_line": "L343",
+   "quote": "- phenotype score (Durant-database rubric, plane-resolved penetrance)"
+  },
+  {
+   "field": "n",
+   "protocol_line": "L344",
+   "quote": "- n"
+  },
+  {
+   "field": "dye_coupling_fraction",
+   "protocol_line": "L346",
+   "quote": "Extended columns per row: measured dye-coupling fraction (the functional"
+  },
+  {
+   "field": "rig_calibration_constants",
+   "protocol_line": "L346-L347",
+   "quote": "Extended columns per row: measured dye-coupling fraction (the functional dial), the rig's intensity->mV calibration constants, blocker batch, and the"
+  },
+  {
+   "field": "blocker_batch",
+   "protocol_line": "L347",
+   "quote": "dial), the rig's intensity->mV calibration constants, blocker batch, and the"
+  },
+  {
+   "field": "blind_scoring_rubric_version",
+   "protocol_line": "L347-L348",
+   "quote": "dial), the rig's intensity->mV calibration constants, blocker batch, and the blind-scoring rubric version. Deposited with the publication (supplementary"
+  },
+  {
+   "field": "provenance",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "provenance.source_deposit",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "provenance.source_record",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "provenance.source_key",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "provenance.source_record_sha256",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "census_missing",
+   "protocol_line": "L338-L344",
+   "quote": "- species - blocker (and vehicle) - concentration (mM, and fraction of C_full) - exposure window (start / end relative to amputation; sustained or pulse) - amputation plane (pre-pharyngeal / trunk / post-pharyngeal) - phenotype score (Durant-database rubric, plane-resolved penetrance) - n"
+  }
+ ],
+ "import_rules": {
+  "amputation_plane": "plane_of_manipulation(record['region_or_tissue'])['plane'] — the protocol's keyed plane taxonomy (L335; rules pre-registered 2026-09-15 in experiments/planform_mining.py), applied verbatim",
+  "blind_scoring_rubric_version": "null — not stated in the source deposit (extended column, L347-348)",
+  "blocker": "'; '-joined drug names from the record's drug_start_end tuples (PlanformDB ExperimentDrug names via the series; the protocol's keyed drug taxonomy, L335); null when the record states no drugs (no drug_start_end field, an empty list, or RNAi-only/cutting-only rows)",
+  "blocker_batch": "null — not stated in the source deposit (extended column, L347)",
+  "concentration_frac_c_full": "null — same absence as concentration_mM",
+  "concentration_mM": "null — the source deposit carries no concentration anywhere (exp33/L16: PlanformDB has no drug concentrations; re-verified by exp197). This column is the record hole the wetlab companion exists to fill",
+  "dye_coupling_fraction": "null — not stated in the source deposit (extended column, L346)",
+  "exposure_mode": "null — not stated per-row in the structured source",
+  "exposure_window_end_rel_amputation": "max over the record's drug_start_end tuples of position 2 (EndTime), verbatim uninterpreted (StartTime/EndTime semantics are the source deposit's own; e.g. EndTime 0.0 is deposited as recorded)",
+  "exposure_window_start_rel_amputation": "min over the record's drug_start_end tuples of position 1 (StartTime), verbatim uninterpreted",
+  "n": "n_if_stated verbatim when it is an integer >= 1, else null (non-integer or non-positive source values are unmappable to the schema's n and are left unpopulated; the exact source record is recoverable via provenance.source_record_sha256)",
+  "phenotype_score": "1 - sum(frequency for outcome_frequencies entries whose outcome == 'Wild type') — the record's pre-registered abnormal rule (exp21: abnormal(E) = 1 - freq(Wild type); exp139's deposited reading of the same rows); null when the record states no outcome frequencies",
+  "provenance": "source_deposit = the task's named import source (results/exp139_levin_voltage.json); source_record = the series deposit its sources.record line points to (research/levin_voltage_series.json#series); source_key = the record's own id; source_record_sha256 = sha256 of the canonical JSON of the exact source record",
+  "rig_calibration_constants": "null — not stated in the source deposit (extended column, L346-347)",
+  "species": "verbatim source record 'species' (119/119 non-null in the series)",
+  "vehicle": "null — no structured vehicle field exists in the source deposit"
+ },
+ "import_source": {
+  "deposit": "results/exp139_levin_voltage.json",
+  "deposit_sha256": "3bca0d584311f4576dcf75ac94b8c3dd452a82428f4e20aadec56adf28cc8a6f",
+  "exp139_partition_counts": {
+   "A": 30,
+   "B": 57,
+   "C": 21,
+   "D": 5,
+   "E": 6
+  },
+  "exp139_partition_total": 119,
+  "exp139_sources_record": "research/levin_voltage_series.json (119 entries)",
+  "exp39_reference": "the series protocol names results/exp39_levin_voltage.json among its mining sources (the V1-V6 direction-match pairs); the file is untracked in git, hashed for hygiene when present",
+  "series_counts": {
+   "by_kind": {
+    "absolute mV measurement": 1,
+    "classic record": 1,
+    "exp39 direction-match pair": 6,
+    "measurement-method anchor": 1,
+    "modeling values": 1,
+    "published direction claim": 4,
+    "published quantitative series": 3,
+    "published timing claim": 1,
+    "recorded-outcome": 99,
+    "review anchor": 1,
+    "stack-side inference constants": 1
+   },
+   "planformdb_rows": 99,
+   "total_entries": 119,
+   "with_absolute_mv": 2
+  },
+  "series_file": "research/levin_voltage_series.json",
+  "series_len": 119,
+  "series_sha256": "25608eb168c1b9154fb5f3ca485897122a0b33d9102c05b67d01f7dfce9f8f6f"
+ },
+ "protocol": "docs/STAGE5_WETLAB_COMPANION_PROTOCOL.md",
+ "protocol_sha256": "89041a79f8a55818ab6a412933b46b2c25084c842434cee7709d7bc6d1dd462f",
+ "rejects": [
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 3,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "V1_head_depolarized_vs_trunk",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "4d71f37e3653acc24659dfdf787aa63945b8ee65d789198540ecd3fcf9541a2c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 3,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "V2_hyperpolarization_abnormal",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "c3a218288e94b836a52ffb1f44077bf2a4df5f57626d942378106185d2e26b41"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 3,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "V3_posterior_depol_ectopic_head",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "017dcdd0cf91f4b958b9f056f0e496bf070f9ab4cbe890bfc39a24bec2378fc9"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 3,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "V4_junction_block_graded",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "18fbd1c22d15d9bc5c5cee76e4cc42084cc4fe36b9498d202cf5fb4714ff046d"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 3,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "V5_wound_depolarized",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "e4191fdec0baba89720aa61d3f4cb89decc47107ca1640fd2d95492fb4ce770b"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 3,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "V6_stochastic_identical_perturbation",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "ee60c144b64e104ebce560f59ab4e21fa9194e7586de163a3a2a8f4885b9dc63"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 132,
+   "phenotype_score": 0.050000000000000044,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-415",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "12e75ed9266122ca833d085e0c16ec505b477a1e8a60c19f0d60206dd1fa23a8"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 118,
+   "phenotype_score": 0.28,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-416",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "aa809a0e2fe5e559b13086c6d8bab27cb03e08bb3f2751ed921645a6e5bacae7"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 115,
+   "phenotype_score": 0.5,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-417",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "4ecfdb534fb9a5dd51affb972f11d4e9ee753c7da9f62ed17456bb2e327154e2"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 145,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-418",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "dac4f984694c6146e1ff66144e5a71816d324f578e050623009c4033d1b80eef"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 178,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-419",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "23d737c8f5e5816c3926d344e479cf37a5e8bb242e34f001d4bde8fccaa08579"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 119,
+   "phenotype_score": 0.040000000000000036,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-420",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "e3355243da9cbf62fa21df9982446961de251f863ce11e2af4e081e98a7edae3"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 168,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-421",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "281248e1f146e4fa7db3e96c83f1dd678354cb5e5eb1b2377e8b782072803f1c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 107,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-422",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "84b1b6e8e477f7eae5bee12c2caf4b931cf3475056d8d61500dbe3ca9ad08cb0"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 109,
+   "phenotype_score": 0.050000000000000044,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-423",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "992b902aec506dfc4bef7e81ab94de51626b6237eaafa136ade6a82f38a1b22e"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 13,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-424",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "41585b1d24e835711a946f42a70376a41abee0be81f39b1ba994ccbc071b472e"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 13,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-425",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "7ffda53ba1aedc3a6d6752d4e7c09683984c59312158461c5063ebd8f545a806"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 23,
+   "phenotype_score": 0.35,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-426",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "d81777c7e2515af686c751ba4fb3f8b1156918f44c1c1b91587bda08dc00d72e"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 23,
+   "phenotype_score": 0.33999999999999997,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-427",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "ec5799abb815ddc6fae3922e2011f1dc3608d879fd43a2ccfeccdb5551a33a6b"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 8,
+   "phenotype_score": 0.25,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-428",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "ee0e7092e42573e7e5c54ecf8b57ab1463592b30ea6ce032613af775c04c595a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 9,
+   "phenotype_score": 0.55,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-429",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "070a681fd04cdfec5926477c4f62e487aaf06afd2f5ec66fad16c6a4a65dc82b"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 14,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-430",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "8622d89185971f36d9e0cda2963bc04923ecc0881effeefe78b063e5e10daf37"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 24,
+   "phenotype_score": 0.5800000000000001,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-431",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "576de41815857817fd2b08c55bf540799bdb64d9b20f99df6d003782f9d80c6a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 13,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-432",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "23d84b1cd2458be4caa4d34b2265f557f714c93d0d8078779f56dcd936c7f791"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 20,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-433",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "8238e91af45c34be9ec8ed21f2b7336e78348e6bb516b2401c22798309eed68a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 10,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-434",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "d788d1e9079ca5fe187fa56c12e585e5ce98b3387f252dac56c03f6d061ffdc0"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.13,
+   "n": 10,
+   "phenotype_score": 0.85,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-435",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "acc2cda7da63519f216dffee123efc8d8d5ecfd93be5a0de5c1f5d60f4e3fac8"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.25,
+   "n": 10,
+   "phenotype_score": 0.9,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-436",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "9f2d0cf55e06a977c282c0333a2ea6394e761c596af238e8328cfef51d4a448d"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.5,
+   "n": 10,
+   "phenotype_score": 0.5800000000000001,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-437",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "8da67a3c0af1292ae45e242b783ce3e00dbabedafa864f274e6d66d49140b7a2"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 1.0,
+   "n": 10,
+   "phenotype_score": 0.09999999999999998,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-438",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "feec1770ef8cf12471f66f2eb2376bc7429d5ea0d26c10fd0106a278c9a17cc0"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 10,
+   "phenotype_score": 0.09999999999999998,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-439",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "fef63702fbb233c61ad447ab92d29aacb9bd1beaf43dadd4aced9160e6c020d3"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 3.0,
+   "n": 10,
+   "phenotype_score": 0.09999999999999998,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-440",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "730a65ec418b31600dd9881f36627fef41862534bc8e9a91326c591823c1737b"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 10,
+   "phenotype_score": 0.18000000000000005,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-441",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "a561b8e222adb6fcad8c200f7c0352522273021b3f09074ad4fcca07bf15f75c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 10,
+   "phenotype_score": 0.75,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-442",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "4da194d5a5f5eef494723aef3787fe27eebc07f838b9f4454fab8b940ef41a75"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 10,
+   "phenotype_score": 0.19999999999999996,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-443",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "73d349695ad55de8757120fc1b5beb36686d1d943628b243f1801ff1fd18bc86"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 10,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-444",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "6bf67b60c1515b02bd4524bc9ec256ca3558cc919624c4874b7d164588732e5c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "none",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 14,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-445",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "3d0a4881dd4ffc5433e1eff46adc0c650547af56a5b5e738aab9b3abccca1720"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 20,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-446",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "d6e55597617ff22e525452553d80424c6e7d7081e2223423cd25d9421dc54135"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 20,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-447",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "b9b0819016909ca5bdb535a7ab9aed8de550e164647850b9e0fbf63eb3f51094"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 21,
+   "phenotype_score": 0.19999999999999996,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-448",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "f4692ded1e0ab75becfdfb56d602ea257749e75fe0288a921c9ee5fcabf67b8c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 18,
+   "phenotype_score": 0.8,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-449",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "d4fcd7733ab6fcb819b52555795398f5428893b301673c6d7d64d6452bce42d5"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 20,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-450",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "c9f6495647df7c46f3ca993ecb843555b2964a63c2e13e83c4294fb1bf22451a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 13,
+   "phenotype_score": 0.06000000000000005,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-451",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "3e81faa25f98e45a4ea526e5239e0071bb7a72796746fc3bbd427d99617a25ff"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 13,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-452",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "7fcf789f1821f676043c06ea71a4af88d0d50d061bfa0354dd7f93935ebeef7a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 45,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-453",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "ad11a429470b09f7127ff0f72c730f090177c163a2736031ae9c2b0175956ce9"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 45,
+   "phenotype_score": 0.22999999999999998,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-454",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "46770b30503ec5a7ed16e81ba45279fd0b59a15a698933c8b7f5736ae5c7493e"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 38,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-455",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "60273a41369e0b97e5a6dc35924c74ca3e038e803b7915ff0bc79d03984d10af"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 38,
+   "phenotype_score": 0.12,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-456",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "e1ebc524db5d1d664b38245f5758e12b7b5fa31998bb870433227aae2e10af0d"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 26,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-457",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "44fe87b76ace2142205d59e1387867866655eab8342a35545004b621ae8c51b2"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 19,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-458",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "8d2fda219d605709ef4c56a895b5205222ffbb4b15f3a14bb1044b3ae56d48f8"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 48,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-459",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "447f5e763d6aa194fc67ba4905203e89d5a88cbd76a545b5c0f4f6b55bd233fb"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 72,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-460",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "ca0a7d3ca19d8ec4b9cd371232bf46c358a74beeca06d302f5009c260ad71046"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 24,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-461",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "b344bc30d208c601580c1bd7eab4b1487ff2c0737dce047fd019d56923c367e2"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 46,
+   "phenotype_score": 0.5,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-476",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "064a1334696469a2f6f26f617ce01e69c4c8e9703ce719a4a62e7c615f157bcd"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 120,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-477",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "21b9cef6ba3bfb1c1e6ef41aa0c32bd16a9cd73ef6a786c1ad2efb09fc706dce"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 72,
+   "phenotype_score": 0.09999999999999998,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-478",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "6605f863367a3a142d8e96573fcebdcef4d7c1b674a2a8dc8a684313b4450e90"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 48,
+   "phenotype_score": 0.09999999999999998,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-479",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "001b7f8969e9ec1bb80eb3c5f1daea6d2ade9c07fcbf1e758fb28cad4e781350"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 15,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-1062",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "15949a953cc285df4907d18216201779b305bf86f8d3b0da6efbbd80d0c10b83"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 8,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-1063",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "bed8b75b2601fdb8329524ac75dfb92229d8d9a52b1630c21f319d66da2da4e5"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 14,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-1064",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "c2c81c756d76931daecfe57a6adae47080f6204510509c78c747cd7abb739db3"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 20,
+   "phenotype_score": 0.9,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-1065",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "90ec30bed13aeb4c235c31837d682d788392491d1f9f4e34d1a032993d51b67c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 15,
+   "phenotype_score": 0.6,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-1066",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "0a628ca11430de28b913324e80faf44c66c772b75ad0b1016f1a47d274160b54"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 15,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-1067",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "7025fa07f47c5bdf032a7ab5aa4410d46ea169540ec107e71112a61b37bebda2"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 8,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-1068",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "79db9f68d9f91111d92fc53dafe07873dabfc993dde4fdb66299f0b9e8c80394"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 11,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-1069",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "3e21a58fad4153ba53441b03dd38cc233567dcc821aea852d19d16a05d560039"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 11,
+   "phenotype_score": 0.91,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-1070",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "8ecbe98b389660e07afba445946f593001a6abc6f653af0b7e465d1892a03768"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 8,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-1071",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "a2e8955345e5fccacf080eae91437b8a117a03e3404d4c015e6507beac338f48"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 11,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-294",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "10c07310f2046b04bdb6e24c241256501b7f4cb9c547a0c5142ff8c9e6c2868f"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Potassium",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 30,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-295",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "bd21837ffc922a360e4f4ee8b2f0e49b91f08bcd441ed3df296a2250a6a1a31d"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.53,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-296",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "ecfb0d4590cf81b84f6dd46fa8dc01b849a5fbdbd8cc3f706ebce91fbbc74bb9"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080; Potassium",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.06000000000000005,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-297",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "2ac97dbff29c4f62903bcbd1fa6018409ec2d4401598105f55396fe6ae0a97d3"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 120,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-391",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "42d587723c0bab69fa07291b8dbf46d87a8619c8ba7f57c52e132f33be404b5f"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 138,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-392",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "3147899a6c78cf532fb00ead562435213087a996d39ee8cd1ae682dfa902db58"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 175,
+   "phenotype_score": 0.78,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-393",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "456bfe20bef33f52f242fe3da290405af9b170f681931298b759fe6a0d6685b0"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 111,
+   "phenotype_score": 0.31999999999999995,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-394",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "874c0e5c0f86a7c8893bfdbc8a35e899eca8eb5f593c40383455d828412c2606"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 106,
+   "phenotype_score": 0.5800000000000001,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-395",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "f9355e984de95fbb4f2a20a0f4df882ac4a105a644a358ba33b7857382592e57"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 1,
+   "phenotype_score": 0.6699999999999999,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-396",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "01564483e05d5291a4b895ac226c3cfb5a0d31e5ae80978d4d1e25afb12c673f"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.25,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-397",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "86a87a195bf5b654a114f05afbfbc68e7d991db96b318a441d16d439abed7689"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.76,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-398",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "9434c9c0474b67829bed2ccf7867f468473e0331cfb1839eeed26fa82c579f00"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-399",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "f3903acc92724074ce67df4b706be877f4c4446bbe8ab1e35dda605a7c88f813"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-400",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "0646b76683f2b85a8465f99b4c75a3232a00c2f5be2999c17a1c9ed0fb9842cf"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.43000000000000005,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-401",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "5a0d1983320b6086fdaee04a455a1b7045fe89b900136109e5faba732ab72009"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 1,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-402",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "8519f0b8c4e1659101ee4af5a80861daec2a1453f35d6a73a71e3b5e03cb42d1"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 42,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-403",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "1f54f16db22ccf14c607e9cdf6ada5d59dc5b73f948cb1ce76dec792e5d55014"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 1,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-404",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "9cb49e1f185a7eed1d8c33d7bc7879fb47a517fe7a40fd0d48a1f8545b60c525"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 43,
+   "phenotype_score": 0.26,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-405",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "80d225b20fc8d8a69d050b5400659e815124e67a953aa81e06d42fa2f8f27d41"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 1,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-406",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "ed62bed3f2792e1099e4f5caf90e03ec6f6ca16de50796e821c3107f584e5844"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 34,
+   "phenotype_score": 0.12,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-407",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "15e3027697fdbb6f3650bf9c119f3119743e45d677f1574de856aac049849f5c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 16,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-408",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "8e2a9d27fc06ed3ab7a061d0379951ebe09ae63dc509cf0ec8e2d10598393ba1"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 4,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-409",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "12f723b92b6d01abb66efceda1765dc1f4f0151097c81a998214073b380c0c7c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 24,
+   "phenotype_score": 0.25,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-410",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "a9e51c6510efa8f2956a982900d687f21aaf4bef982f13b9c7b0a1c0fba77f5f"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Ivermectin",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 11,
+   "phenotype_score": 0.92,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-411",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "1007f3cf9d91f7bd5ba8f391141e91e216356d141a39991fadf67321f2f87891"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 13,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-412",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "f9b1c749a23fcdd20991e7511567429c0afd3aaf872733b9025148d0fb53927c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Chloride; Ivermectin",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 6,
+   "phenotype_score": 0.37,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-413",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "e08c7153df2f15844dc3ba67f170001b7fd02ed9b7864b3cd5988913193d2b8b"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Nicardipine",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 61,
+   "phenotype_score": 0.42000000000000004,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-414",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "c3f1cc4312430f3c7e9f7ae23ded27f0ee5b5a53380f068bdb3a5dd0b6f5a0db"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 30,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-279",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "78228e893e960738e0db4354b3c2c75c1286bcbd230f446261546985eec74b3c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Schmidtea mediterranea",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "none",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": 0.87,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-280",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "8b30d9595e13142b928607452f29dbaf053d12ff7197aec8380ee60c36ccdd40"
+   },
+   "rig_calibration_constants": null,
+   "species": "Schmidtea mediterranea",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Heptanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 423,
+   "phenotype_score": 0.43000000000000005,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-322",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "4757347259824c6733646224ec62c809c3810229ee81d85cda844ad9894a94d5"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 107,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-323",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "f0855258acc473ff73afc98ef7d4dfa65d8b94127aeff8920057f27878f91d6e"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Hexanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 1,
+   "phenotype_score": 0.19999999999999996,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-324",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "c8aa744712d7ebbdccd78ef3de199a2afacc91a5a315010d5e05fe2a1b185cc7"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Heptanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 54,
+   "phenotype_score": 0.17000000000000004,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-325",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "d40d547b16682bdd2f79f211a347d5abc9d7afcc397eb362bbfd38e7f697c23f"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Heptanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 71,
+   "phenotype_score": 0.52,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-326",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "14a88be60a06a62f15d24410d203bc6d2717121a7d6bd6e64a510ba72864f1f3"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Heptanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 111,
+   "phenotype_score": 0.6799999999999999,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-327",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "a3043f09c23bfe918ddc1b606671923707127f999137a1b912aa000c0af0f7a3"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Heptanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 86,
+   "phenotype_score": 0.18999999999999995,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-328",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "f0c075a9f73ff70804ed5622ddf85e3bef75c6fba9a732f483c9b3764194a4c2"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Heptanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 2.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 57,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "DB-329",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "96a2f5dc003da6e70c2690a6cc2fa6c92892f8ac9974cb9b3d026cdc10e7b11d"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C01-beane2011-claim",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "7129709069d00ca57b899a0fe774b795c2dffc7b85a6856d33abf5e4c591fe86"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C02-beane2013-claim",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "986107b781a768e7b576481fcac1e79dc278cbbf361fac6b971a4d65afe28cdf"
+   },
+   "rig_calibration_constants": null,
+   "species": "D. japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C03-durant2017-numbers",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "750eaa96202ec5493ac039511c0d9a26de8e2364f0481870413d9a4e7326c40f"
+   },
+   "rig_calibration_constants": null,
+   "species": "D. japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C04-durant2019-window",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "873a991ef2fb3fe526c5955308f3d4ba12aa48dc1315630ab52aaa2563470f00"
+   },
+   "rig_calibration_constants": null,
+   "species": "planaria",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C05-eb2015-numbers",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "07f49a9407ec72b9be17f6e67b75dea130fe5774abe5f3387e0699b832f6fca3"
+   },
+   "rig_calibration_constants": null,
+   "species": "Girardia dorotocephala",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C06-eb2019-numbers",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "63748829dc24ea3cdd09fe7082aee3e86256b944193d5614dd28f1b9dd53ab4a"
+   },
+   "rig_calibration_constants": null,
+   "species": "D. japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C07-oviedo2008-method",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "5aced65a8e9b7f7b52d5039cb489f0154a412a39ede01813110681a2504af963"
+   },
+   "rig_calibration_constants": null,
+   "species": "planaria",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C08-durant2016-review",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "db88c8eccd7816ec7fea2dd79c8f4dee988fee10ac76ea6ae1066b20bfb0a346"
+   },
+   "rig_calibration_constants": null,
+   "species": "planaria",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C09-pezzulo2021-claim",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "e3824eb24e0da78084c982c1e9c40281bcd8dca01446f97f642c7b21e1d73a1b"
+   },
+   "rig_calibration_constants": null,
+   "species": "planaria",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C10-marsh-beams-1952",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "b2f2c1b0a1f6289ad16d49c0b6fd9fa0476e2b339d181dc9acfcb705a6572c2a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia tigrina",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C11-chernet2013-xenopus",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "e04949dceb74bc4ed540abb13e53c91507cf28b3c2f735b611f613abb2761c31"
+   },
+   "rig_calibration_constants": null,
+   "species": "Xenopus laevis",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C12-chernet2014-xenopus",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "57e1bbef79c11581585c5be521ba2b97f2d5bae9c715849163e12d0d285ce613"
+   },
+   "rig_calibration_constants": null,
+   "species": "Xenopus laevis",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C13-betse-pietak-levin",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "2543b7334d103db7b90549ba19602e819c375a7b801b0a304b88c957bb0a86f8"
+   },
+   "rig_calibration_constants": null,
+   "species": "in-silico multicellular tissue (planaria-anchored platform)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "source_deposit": "results/exp139_levin_voltage.json",
+    "source_key": "C14-vmem-inference-layer",
+    "source_record": "research/levin_voltage_series.json#series",
+    "source_record_sha256": "43ca19c7d027913acabc4f709b8ef57852e6d24ff82db396e82b3f82d6e8c599"
+   },
+   "rig_calibration_constants": null,
+   "species": "S. mediterranea (atlas-grounded)",
+   "vehicle": null
+  }
+ ],
+ "required_fields": [
+  "species",
+  "blocker",
+  "vehicle",
+  "concentration_mM",
+  "concentration_frac_c_full",
+  "exposure_window_start_rel_amputation",
+  "exposure_window_end_rel_amputation",
+  "exposure_mode",
+  "amputation_plane",
+  "phenotype_score",
+  "n"
+ ],
+ "schema_version": "1.0"
+}
