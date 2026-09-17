@@ -366,9 +366,9 @@ def tail_decomposition(instances: list[dict]) -> dict:
 
 def evaluate_gates(instances: list[dict], all_errs: list[float],
                    rejections: list[dict], decode_fps: list[str],
-                   fp: str, tail: dict) -> dict:
+                   fp: str, tail: dict, seeds: tuple[int, ...] = SEEDS) -> dict:
     u1 = (len(rejections) == 0
-          and len(all_errs) == len(instances) * len(SEEDS))
+          and len(all_errs) == len(instances) * len(seeds))
     u2 = bool(np.median(all_errs) <= BAR) if all_errs else False
     coverage = all(r["violated_class_named"] for r in instances
                    if r["above_bar"])
@@ -478,7 +478,7 @@ def main() -> dict:
 
     tail = tail_decomposition(instances)
     gates = evaluate_gates(instances, all_errs, rejections, decode_fps,
-                           fp, tail)
+                           fp, tail, seeds)
     n_pass = sum(int(g["pass"]) for g in gates.values())
     if args.smoke:
         verdict = "smoke (instrument check; gates not evaluated)"
