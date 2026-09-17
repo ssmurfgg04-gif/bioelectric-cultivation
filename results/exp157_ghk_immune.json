@@ -1,0 +1,297 @@
+{
+ "exp": "exp157_ghk_immune",
+ "task": "THE GHK IMMUNE-WEIGHT RECALIBRATION \u2014 repair exp139's single LV-G2 FAIL (phagocyte/immune GHK arm -7.13 mV outside the BETSE band [-80,-10]) by a ONE-scheme conductance recalibration of the immune cell class, re-run all LV-G2 clauses for no regression, held-out the depolarization family, and deposit the corrected GHK table (registered from L116 exp139).",
+ "registered_from": "L116 exp139 REGISTERED-NEXT: the GHK immune-weight recalibration against an explicit tissue-vs-cell-scale band statement (T5's own repair clause)",
+ "the_one_weighting_scheme": {
+  "name": "rest-open-probability weighting of the gated cation (PNa) classes",
+  "rest_open": {
+   "p2x_purinergic": 0.1,
+   "trp_cation": 0.25,
+   "nav_channel": 0.05,
+   "fana_nav": 0.05,
+   "hvcn": 0.1
+  },
+  "untouched": "k_channel_leak, kv_channel, k_ca_channel, nak_atpase, nak_atpase_alpha, hk_atpase, cl_channel at 1.0",
+  "adoption": "corrected table adopts the scheme on the immune row ONLY; the other six rows stay bit-exact vs the exp139 deposit; the all-rows application is deposited as context",
+  "rationale": "the deposit's immune overshoot is a cation-leak overshoot: PNa/PK = 0.91 at 'rest' vs <= 0.28 for the six in-band types, because P2X/TRP/Nav were scored fully open at rest; unstimulated phagocytes are K+-dominant at rest (Kv1.3/KCa-class), their cation channels open only on activation (wound ATP / ligands / depolarization)"
+ },
+ "ion_condition_deposit": {
+  "scan": {
+   "n_entries_scanned": 119,
+   "patterns": [
+    "mM",
+    "mmol",
+    "[K",
+    "[Na",
+    "[Cl",
+    "extracellular",
+    "intracellular",
+    "ion condition",
+    "nernst",
+    "Nernst"
+   ],
+   "n_raw_pattern_hits": 3,
+   "raw_hits_with_context": {
+    "C05-eb2015-numbers": {
+     "patterns": [
+      "mM"
+     ],
+     "context": {
+      "mM": "d-type G. dorotocephala; control regeneration has 100% shape fidelity; DiBAC imaging (1.9 mM stock, 1:1000 = 0.19 uM, >30 min soak) shows partially-disrupted isopotential regions; "
+     }
+    },
+    "C06-eb2019-numbers": {
+     "patterns": [
+      "mM"
+     ],
+     "context": {
+      "mM": "OA full text mined this session)\", \"source\": \"Emmons-Bell 2019 iScience: D. japonica in 1 mM BaCl2 (universal K+ channel blocker): anterior tissue degenerates within 72 h; continue"
+     }
+    },
+    "C11-chernet2013-xenopus": {
+     "patterns": [
+      "mM"
+     ],
+     "context": {
+      "mM": "s the signature of induced tumor-like structures (Gli1/KrasG12D/Xrel3/p53); GlyRF99A + 70 mM Cl- forces hyperpolarization measured at -19.4 mV vs untreated siblings by electrophysi"
+     }
+    }
+   },
+   "raw_hit_classification": "all raw hits are drug-bath / dye-stock / external-protocol concentrations (C05: DiBAC dye stock 1.9 mM; C06: 1 mM BaCl2 bath, a FAM-C drug manipulation; C11: 70 mM external Cl- in the Xenopus hyperpolarization protocol) \u2014 NONE is a cell-class in/out Nernstian set, NONE concerns the immune arm",
+   "n_cell_class_nernstian_ion_sets": 0,
+   "nernstian_set_ids": [],
+   "verdict": "ABSENT for the immune arm \u2014 the standard phagocyte Nernstian assumptions (assumption block, deposited BEFORE computing) are the ion-condition deposit of record"
+  },
+  "assumptions": {
+   "E_K_mV": -84.85403727029015,
+   "E_Na_mV": 55.52108916285161,
+   "E_Cl_mV": -29.33294810743853,
+   "ion_trio_mM": {
+    "K": {
+     "in": 120.0,
+     "out": 5.0
+    },
+    "Na": {
+     "in": 15.0,
+     "out": 120.0
+    },
+    "Cl": {
+     "in": 30.0,
+     "out": 90.0
+    }
+   },
+   "RTF_mV": 26.7,
+   "phagocyte_rest_conductance": "unstimulated phagocyte rest conductance is K+-dominant; gated cation classes carry their stated rest-open fractions at rest and full weight only in the activated complement",
+   "literature_window_mV_context_not_gate": [
+    -60.0,
+    -30.0
+   ]
+  }
+ },
+ "band_scope_statement": "the BETSE band [-80,-10] mV is a RESTING tissue-scale band; the band gate applies to REST states only; the ACTIVATED immune state (wound-ATP transient, the deposit's own -7.13 mV) is NOT a rest state and is not required to sit inside the resting band \u2014 it is the state the depolarization family (FAM-D) rides",
+ "immune_arm": {
+  "before_mV_activated_deposit": -7.13365506318376,
+  "after_mV_rest_corrected": -41.087979028176036,
+  "activation_swing_mV": 33.95432396499228,
+  "after_in_band": true,
+  "literature_window_hit": true
+ },
+ "corrected_ghk_table": {
+  "rest_rows": {
+   "neoblast (stem)": {
+    "rest_Vm_mV": -52.9764534868952,
+    "PK": 1.6300000000000001,
+    "PNa": 0.1425,
+    "PCl": 0.11,
+    "in_band": true,
+    "delta_vs_deposit_mV": 0.0,
+    "changed": false,
+    "deposit_Vm_mV": -52.976
+   },
+   "phagocyte / immune": {
+    "rest_Vm_mV": -41.087979028176036,
+    "PK": 0.6599999999999999,
+    "PNa": 0.09899999999999999,
+    "PCl": 0.2,
+    "in_band": true,
+    "delta_vs_deposit_mV": -33.95432396499228,
+    "changed": true,
+    "deposit_Vm_mV": -7.134
+   },
+   "intestine (goblet)": {
+    "rest_Vm_mV": -39.76440932949681,
+    "PK": 1.33,
+    "PNa": 0.22999999999999998,
+    "PCl": 0.26,
+    "in_band": true,
+    "delta_vs_deposit_mV": 0.0,
+    "changed": false,
+    "deposit_Vm_mV": -39.764
+   },
+   "neuron (cholinergic)": {
+    "rest_Vm_mV": -39.36835591984302,
+    "PK": 1.6150000000000002,
+    "PNa": 0.3,
+    "PCl": 0.14,
+    "in_band": true,
+    "delta_vs_deposit_mV": 0.0,
+    "changed": false,
+    "deposit_Vm_mV": -39.368
+   },
+   "muscle (parenchymal)": {
+    "rest_Vm_mV": -31.91909320076235,
+    "PK": 2.025,
+    "PNa": 0.545,
+    "PCl": 0.16999999999999998,
+    "in_band": true,
+    "delta_vs_deposit_mV": 0.0,
+    "changed": false,
+    "deposit_Vm_mV": -31.919
+   },
+   "secretory / gland": {
+    "rest_Vm_mV": -31.776311432533976,
+    "PK": 1.37,
+    "PNa": 0.37,
+    "PCl": 0.16999999999999998,
+    "in_band": true,
+    "delta_vs_deposit_mV": 0.0,
+    "changed": false,
+    "deposit_Vm_mV": -31.776
+   },
+   "epidermis (early prog)": {
+    "rest_Vm_mV": -16.884938889037198,
+    "PK": 0.845,
+    "PNa": 0.475,
+    "PCl": 0.2,
+    "in_band": true,
+    "delta_vs_deposit_mV": 0.0,
+    "changed": false,
+    "deposit_Vm_mV": -16.885
+   }
+  },
+  "immune_activated_complement": {
+   "Vm_mV": -7.13365506318376,
+   "note": "rho = 1 (gates open) reproduces the exp139 deposit map bit-exactly \u2014 the activated state"
+  },
+  "global_rest_context_not_adopted": {
+   "map_mV": {
+    "neoblast (stem)": -68.49249089819267,
+    "muscle (parenchymal)": -64.34114446048095,
+    "neuron (cholinergic)": -63.972315277944794,
+    "intestine (goblet)": -59.48627295833868,
+    "secretory / gland": -59.02180479215171,
+    "epidermis (early prog)": -48.56645591084077,
+    "phagocyte / immune": -41.087979028176036
+   },
+   "all_in_band": true,
+   "note": "the ONE scheme applied to ALL rows; context only \u2014 the corrected table adopts the immune row only"
+  },
+  "family_anchors": {
+   "E_absolute_scale": "the corrected 7-type rest map IS the family's absolute-scale table (was: the deposit map with immune at -7.13)",
+   "A_intact_polarity": "calibration trio + swing + Chernet re-run here (R2 a/b/c) \u2014 tissue-scale rest states, unchanged",
+   "B_gj_blocked": "rate-arm family; its instrument (GJ-block abnormal rates) never reads the GHK layer \u2014 no-touch statement",
+   "C_hyperpolarization": "rate-arm family; its instrument (ion-arm rates) never reads the GHK layer \u2014 no-touch statement",
+   "D_depolarization": "held-out direction + EA re-run (R3) \u2014 the family rides the ACTIVATED complement, which is bit-exact the deposit map"
+  }
+ },
+ "lv_g2_rerun": {
+  "trio_mV": {
+   "head": -24.859522940576216,
+   "trunk": -50.25690149582484,
+   "wound": -38.02933652459853,
+   "settled_mean": -43.63232637821335
+  },
+  "sub_gates": {
+   "a_trio_in_band": true,
+   "b_head_trunk_vs_swing": true,
+   "c_wound_depol_vs_chernet": true,
+   "d_ghk_all_in_band_corrected": true
+  },
+  "continuity": {
+   "trio_deltas_vs_exp139_deposit": {
+    "head": 0.0,
+    "trunk": 0.0,
+    "wound": 0.0
+   },
+   "tolerance": 0.125,
+   "ok": true
+  },
+  "head_minus_trunk_mV": 25.397378555248626,
+  "wound_minus_intact_tail_mV": 12.227564971226315,
+  "exp139_deposit_verdict": "RECALIBRATION TARGET (calibration class, not falsification \u2014 the T5 md's own clause)",
+  "verdict_after": "PASS"
+ },
+ "d_family_heldout": {
+  "count": 5,
+  "entries": [
+   {
+    "id": "V6_stochastic_identical_perturbation",
+    "kind": "exp39 direction-match pair (published claim vs model quantity)",
+    "family_axis": "depolarization",
+    "direction_signature": "MATCH"
+   },
+   {
+    "id": "DB-411",
+    "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+    "family_axis": "depolarization",
+    "direction_signature": "ectopic-anterior; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) "
+   },
+   {
+    "id": "DB-413",
+    "kind": "recorded-outcome (PlanformDB 2.5.0; published experiment, no absolute mV recorded anywhere in DB)",
+    "family_axis": "depolarization",
+    "direction_signature": "ectopic-anterior; wt | SCH-28080 (H,K-ATPase block, hyperpolarization) -> anterior failure; ivermectin (depolarization) "
+   },
+   {
+    "id": "C04-durant2019-window",
+    "kind": "published timing claim (abstract; MED30799071)",
+    "family_axis": "depolarization",
+    "direction_signature": "early depolarization write-window; late = inert; washout-proof"
+   },
+   {
+    "id": "C09-pezzulo2021-claim",
+    "kind": "published direction claim (abstract)",
+    "family_axis": "depolarization",
+    "direction_signature": "identical perturbation -> split outcomes (bistability); memory stored >1 week"
+   }
+  ],
+  "direction_pre_registered": "Vm_act \u2212 Vm_rest > 0 on the scheme's adopted class \u2014 the depolarization channel must survive the recalibration",
+  "activation_swing_mV": 33.95432396499228,
+  "wnt_ea_rerun": 1.0,
+  "wnt_ea_deposited": 1.0,
+  "ea_bit_exact": true,
+  "direction_ok": true
+ },
+ "gates": {
+  "R1": {
+   "verdict": "PASS"
+  },
+  "R2": {
+   "verdict": "PASS"
+  },
+  "R3": {
+   "verdict": "PASS"
+  },
+  "R4": {
+   "verdict": "PASS"
+  }
+ },
+ "criteria": {
+  "R1_immune_arm_in_band": true,
+  "R2_no_regression_lvg2": true,
+  "R3_depol_family_heldout": true,
+  "R4_corrected_table_deposited": true
+ },
+ "honest_scope": [
+  "REST-RANK SHIFT (owned): under the corrected rest map the immune row leaves the most-depolarized rank; prediction V3 re-anchors to the ACTIVATED state, where its ground truth lives (injury ATP transient) \u2014 activated immune is the map's most depolarized state, swing +33.95 mV, the largest in the table",
+  "the global-rule rest map is context, not adopted (minimal intervention on the owned gap)",
+  "exp139's LV-G1/G3/G4 verdicts are not re-adjudicated; the D-arm EA re-run is the no-regression proxy on the one family R3 touches"
+ ],
+ "verdict": "PASS \u2014 LV-G2 recalibration closed (exp139's single LV-G2 FAIL repaired, no regression) [4/4]",
+ "sources": [
+  "cultivation/validation/vmem_inference.py (the C14 GHK layer, arithmetic verbatim)",
+  "results/exp139_levin_voltage.json (the deposit: GHK map, trio, D-arm EA; L116)",
+  "research/levin_voltage_series.json (119-entry record; ion-condition scan)",
+  "experiments/exp139_levin_voltage.py (frozen partition + exp39-verbatim instruments, re-used verbatim)"
+ ]
+}
