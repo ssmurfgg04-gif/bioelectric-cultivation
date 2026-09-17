@@ -1,0 +1,1633 @@
+{
+ "exp": "exp165_generator_cf1",
+ "claim": "adopting CF-1 (spec-adoption floor -35 -> -60 mV, exp156's one-constant repair) into the compiler's emitted-cell contract lifts the generator's C3 gate on the SAME delivered-10 inventions at the SAME emitted rungs and seeds, without regressing the previously-passing members, and the mechanism-derived R_W canon-clash rule is delivery-safe as the pre-emission structural filter",
+ "verdict": "THE GENERATOR'S STAGE-3 LEDGER ENTRY UPGRADES \u2014 C3 re-run at the repaired floor: 8/10 -> 10/10 (exp136 criterion; 3/3-grade 10/10) on the SAME inventions at the SAME emitted rungs and seeds; CF-1 (spec-floor -35 -> -60) is adopted into the compiler's emitted-cell contract and the R_W canon-clash rule is delivery-safe as the pre-emission structural gate (the audit_only_fallback class is exactly the R_W-positive set \u2014 zero false exclusions); no regression on the previously-passing 8",
+ "stage_order": [
+  "gates+constants declared (docstring + module constants, before any decode call)",
+  "f4_unrepaired_instrument",
+  "c1_c2_c4_unchanged_channels",
+  "f3_rw_pre_emission_filter",
+  "cf1_rebuild_24",
+  "c3_after_f1_f2"
+ ],
+ "pre_registered": {
+  "gates": {
+   "F1": "delivered-10 C3 count under CF-1 >= 9/10 (exp136 criterion), exact count deposited, deposited emitted rungs (all (1.0, 0.0)) and seeds (1,2,3) re-checked bit-exactly vs exp156's deposited cf1 rows (3 dp)",
+   "F2": "the 8 previously-passing members stay passing under CF-1: (a) pass status + per-seed pass pattern identical (3/3 -> 3/3); (b) CF-1 rows reproduce exp156's deposit bit-exactly (3 dp); (c) clash-free members (n_clash == 0) branch-identical \u2014 CF-1 errs == exp150 unrepaired errs bit-exactly",
+   "F3": "R_W as pre-emission filter: {R_W-positive} == {audit_only_fallback} == exp156 failing class on the 24-member stack (every excluded member R_W-positive, every delivered member R_W-negative; masses reproduce exp156's w3 deposit; 0 FP)",
+   "F4": "exp150's deposited decode errs reproduced bit-exactly under the UNREPAIRED floor (dissect replica, deposited rungs/seeds, 3 dp) + decode_cf(-35) == dissect identity anchor (float equality)"
+  },
+  "design": "(1) exp150 delivered-10 + exp153 expanded cohort decode rebuilt under CF-1 with exp156's dissect/decode_cf verbatim \u2014 no new knobs; (2) exp136's C1-C4 re-evaluated on the repaired stack (C1/C2/C4 from the deposited unchanged channels; C3 at the repaired floor); (3) gates F1-F4",
+  "pre_registration_order_evidence": {
+   "docstring_gates_byte": 359,
+   "constants_byte": 7493,
+   "first_decode_byte": 7927,
+   "order_held": true
+  }
+ },
+ "stack": {
+  "delivered10": "results/exp150_generator_complete.json (delivered, 10 rows)",
+  "expanded24": "results/exp153_decode_anatomy.json (expanded_cohort)",
+  "consistency": "exp153 cohort rows 1-10 == exp150 delivered rows (names/zones/emitted cell/errs) asserted bit-exact",
+  "emitted_rungs": "all 10 deposited (1.0, 0.0)",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "cf_floor": -60.0
+ },
+ "f4_instrument": {
+  "rows": [
+   {
+    "name": "d-01",
+    "deposited_errs": [
+     3.828,
+     3.861,
+     3.933
+    ],
+    "replica_errs": [
+     3.828,
+     3.861,
+     3.933
+    ],
+    "deposited_hold": [
+     3.926,
+     3.871,
+     4.026
+    ],
+    "replica_hold": [
+     3.926,
+     3.871,
+     4.026
+    ],
+    "bitexact": true,
+    "identity_cf35_eq_dissect": true
+   },
+   {
+    "name": "d-02",
+    "deposited_errs": [
+     2.748,
+     2.764,
+     2.868
+    ],
+    "replica_errs": [
+     2.748,
+     2.764,
+     2.868
+    ],
+    "deposited_hold": [
+     2.843,
+     2.873,
+     2.986
+    ],
+    "replica_hold": [
+     2.843,
+     2.873,
+     2.986
+    ],
+    "bitexact": true,
+    "identity_cf35_eq_dissect": true
+   },
+   {
+    "name": "d-03",
+    "deposited_errs": [
+     9.099,
+     9.119,
+     9.077
+    ],
+    "replica_errs": [
+     9.099,
+     9.119,
+     9.077
+    ],
+    "deposited_hold": [
+     8.927,
+     8.95,
+     8.909
+    ],
+    "replica_hold": [
+     8.927,
+     8.95,
+     8.909
+    ],
+    "bitexact": true,
+    "identity_cf35_eq_dissect": true
+   },
+   {
+    "name": "d-04",
+    "deposited_errs": [
+     3.774,
+     3.736,
+     3.799
+    ],
+    "replica_errs": [
+     3.774,
+     3.736,
+     3.799
+    ],
+    "deposited_hold": [
+     3.941,
+     3.861,
+     3.995
+    ],
+    "replica_hold": [
+     3.941,
+     3.861,
+     3.995
+    ],
+    "bitexact": true,
+    "identity_cf35_eq_dissect": true
+   },
+   {
+    "name": "d-05",
+    "deposited_errs": [
+     4.438,
+     4.516,
+     4.494
+    ],
+    "replica_errs": [
+     4.438,
+     4.516,
+     4.494
+    ],
+    "deposited_hold": [
+     4.433,
+     4.45,
+     4.496
+    ],
+    "replica_hold": [
+     4.433,
+     4.45,
+     4.496
+    ],
+    "bitexact": true,
+    "identity_cf35_eq_dissect": true
+   },
+   {
+    "name": "d-06",
+    "deposited_errs": [
+     1.467,
+     1.516,
+     1.526
+    ],
+    "replica_errs": [
+     1.467,
+     1.516,
+     1.526
+    ],
+    "deposited_hold": [
+     2.123,
+     2.069,
+     2.09
+    ],
+    "replica_hold": [
+     2.123,
+     2.069,
+     2.09
+    ],
+    "bitexact": true,
+    "identity_cf35_eq_dissect": true
+   },
+   {
+    "name": "d-07",
+    "deposited_errs": [
+     1.855,
+     1.724,
+     1.878
+    ],
+    "replica_errs": [
+     1.855,
+     1.724,
+     1.878
+    ],
+    "deposited_hold": [
+     2.457,
+     2.429,
+     2.489
+    ],
+    "replica_hold": [
+     2.457,
+     2.429,
+     2.489
+    ],
+    "bitexact": true,
+    "identity_cf35_eq_dissect": true
+   },
+   {
+    "name": "d-08",
+    "deposited_errs": [
+     9.576,
+     9.607,
+     9.57
+    ],
+    "replica_errs": [
+     9.576,
+     9.607,
+     9.57
+    ],
+    "deposited_hold": [
+     9.413,
+     9.442,
+     9.407
+    ],
+    "replica_hold": [
+     9.413,
+     9.442,
+     9.407
+    ],
+    "bitexact": true,
+    "identity_cf35_eq_dissect": true
+   },
+   {
+    "name": "d-09",
+    "deposited_errs": [
+     2.616,
+     2.562,
+     2.608
+    ],
+    "replica_errs": [
+     2.616,
+     2.562,
+     2.608
+    ],
+    "deposited_hold": [
+     2.948,
+     2.944,
+     2.964
+    ],
+    "replica_hold": [
+     2.948,
+     2.944,
+     2.964
+    ],
+    "bitexact": true,
+    "identity_cf35_eq_dissect": true
+   },
+   {
+    "name": "d-10",
+    "deposited_errs": [
+     2.506,
+     2.482,
+     2.54
+    ],
+    "replica_errs": [
+     2.506,
+     2.482,
+     2.54
+    ],
+    "deposited_hold": [
+     2.795,
+     2.734,
+     2.869
+    ],
+    "replica_hold": [
+     2.795,
+     2.734,
+     2.869
+    ],
+    "bitexact": true,
+    "identity_cf35_eq_dissect": true
+   }
+  ],
+  "pass": true
+ },
+ "c_gates": {
+  "C1_novelty_unchanged": {
+   "rows": [
+    {
+     "name": "d-01",
+     "nov_lib": 88.98,
+     "nov_splice": 61.499,
+     "lib_ok": true,
+     "splice_ok": true
+    },
+    {
+     "name": "d-02",
+     "nov_lib": 88.94,
+     "nov_splice": 47.159,
+     "lib_ok": true,
+     "splice_ok": true
+    },
+    {
+     "name": "d-03",
+     "nov_lib": 85.38,
+     "nov_splice": 60.031,
+     "lib_ok": true,
+     "splice_ok": true
+    },
+    {
+     "name": "d-04",
+     "nov_lib": 88.08,
+     "nov_splice": 39.119,
+     "lib_ok": true,
+     "splice_ok": true
+    },
+    {
+     "name": "d-05",
+     "nov_lib": 85.01,
+     "nov_splice": 65.369,
+     "lib_ok": true,
+     "splice_ok": true
+    },
+    {
+     "name": "d-06",
+     "nov_lib": 92.33,
+     "nov_splice": 49.873,
+     "lib_ok": true,
+     "splice_ok": true
+    },
+    {
+     "name": "d-07",
+     "nov_lib": 82.47,
+     "nov_splice": 53.166,
+     "lib_ok": true,
+     "splice_ok": true
+    },
+    {
+     "name": "d-08",
+     "nov_lib": 82.32,
+     "nov_splice": 57.575,
+     "lib_ok": true,
+     "splice_ok": true
+    },
+    {
+     "name": "d-09",
+     "nov_lib": 89.0,
+     "nov_splice": 54.288,
+     "lib_ok": true,
+     "splice_ok": true
+    },
+    {
+     "name": "d-10",
+     "nov_lib": 86.67,
+     "nov_splice": 64.62,
+     "lib_ok": true,
+     "splice_ok": true
+    }
+   ],
+   "pass": true,
+   "bars": [
+    82.288,
+    20.14
+   ]
+  },
+  "C2_audit_unchanged": {
+   "rows": [
+    {
+     "name": "d-01",
+     "emitted_quad": 0.788,
+     "audit_ok": true
+    },
+    {
+     "name": "d-02",
+     "emitted_quad": 0.79,
+     "audit_ok": true
+    },
+    {
+     "name": "d-03",
+     "emitted_quad": 0.957,
+     "audit_ok": true
+    },
+    {
+     "name": "d-04",
+     "emitted_quad": 0.971,
+     "audit_ok": true
+    },
+    {
+     "name": "d-05",
+     "emitted_quad": 0.978,
+     "audit_ok": true
+    },
+    {
+     "name": "d-06",
+     "emitted_quad": 1.042,
+     "audit_ok": true
+    },
+    {
+     "name": "d-07",
+     "emitted_quad": 1.048,
+     "audit_ok": true
+    },
+    {
+     "name": "d-08",
+     "emitted_quad": 0.994,
+     "audit_ok": true
+    },
+    {
+     "name": "d-09",
+     "emitted_quad": 1.1,
+     "audit_ok": true
+    },
+    {
+     "name": "d-10",
+     "emitted_quad": 1.098,
+     "audit_ok": true
+    }
+   ],
+   "pass": true,
+   "n_below_bar": 10
+  },
+  "C3_decode_repaired_floor": {
+   "before": "8/10",
+   "after": "10/10",
+   "after_grade_333": "10/10",
+   "criterion": "decode_err < 6.0 AND hold_err < 6.0 on >= 2/3 seeds at the deposited emitted rung under CF-1"
+  },
+  "C4_pool_diversity": {
+   "rows": [
+    {
+     "name": "d-01",
+     "min_pairwise_D": 56.35,
+     "pool_ok": true
+    },
+    {
+     "name": "d-02",
+     "min_pairwise_D": 58.9,
+     "pool_ok": true
+    },
+    {
+     "name": "d-03",
+     "min_pairwise_D": 35.54,
+     "pool_ok": true
+    },
+    {
+     "name": "d-04",
+     "min_pairwise_D": 60.2,
+     "pool_ok": true
+    },
+    {
+     "name": "d-05",
+     "min_pairwise_D": 37.38,
+     "pool_ok": true
+    },
+    {
+     "name": "d-06",
+     "min_pairwise_D": 43.96,
+     "pool_ok": true
+    },
+    {
+     "name": "d-07",
+     "min_pairwise_D": 42.18,
+     "pool_ok": true
+    },
+    {
+     "name": "d-08",
+     "min_pairwise_D": 35.54,
+     "pool_ok": true
+    },
+    {
+     "name": "d-09",
+     "min_pairwise_D": 37.38,
+     "pool_ok": true
+    },
+    {
+     "name": "d-10",
+     "min_pairwise_D": 56.35,
+     "pool_ok": true
+    }
+   ],
+   "pass": true,
+   "bar": 33.776
+  }
+ },
+ "cf1_rebuild_24": {
+  "rows": [
+   {
+    "name": "d-01",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 23,
+    "cf1_decode_errs": [
+     1.225,
+     1.241,
+     1.307
+    ],
+    "cf1_hold_errs": [
+     1.605,
+     1.573,
+     1.659
+    ],
+    "cf1_decode_err_mean": 1.258,
+    "cf1_hold_err_mean": 1.612,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-02",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 8,
+    "cf1_decode_errs": [
+     1.299,
+     1.304,
+     1.303
+    ],
+    "cf1_hold_errs": [
+     1.631,
+     1.634,
+     1.697
+    ],
+    "cf1_decode_err_mean": 1.302,
+    "cf1_hold_err_mean": 1.654,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-03",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 29,
+    "cf1_decode_errs": [
+     1.591,
+     1.644,
+     1.63
+    ],
+    "cf1_hold_errs": [
+     2.054,
+     2.074,
+     2.056
+    ],
+    "cf1_decode_err_mean": 1.622,
+    "cf1_hold_err_mean": 2.061,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": false
+   },
+   {
+    "name": "d-04",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 18,
+    "cf1_decode_errs": [
+     1.495,
+     1.561,
+     1.557
+    ],
+    "cf1_hold_errs": [
+     2.011,
+     1.992,
+     2.04
+    ],
+    "cf1_decode_err_mean": 1.538,
+    "cf1_hold_err_mean": 2.014,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-05",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 31,
+    "cf1_decode_errs": [
+     1.398,
+     1.399,
+     1.408
+    ],
+    "cf1_hold_errs": [
+     1.932,
+     1.891,
+     1.979
+    ],
+    "cf1_decode_err_mean": 1.402,
+    "cf1_hold_err_mean": 1.934,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-06",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 0,
+    "cf1_decode_errs": [
+     1.467,
+     1.516,
+     1.526
+    ],
+    "cf1_hold_errs": [
+     2.123,
+     2.069,
+     2.09
+    ],
+    "cf1_decode_err_mean": 1.503,
+    "cf1_hold_err_mean": 2.094,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-07",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 5,
+    "cf1_decode_errs": [
+     1.55,
+     1.496,
+     1.586
+    ],
+    "cf1_hold_errs": [
+     2.221,
+     2.222,
+     2.249
+    ],
+    "cf1_decode_err_mean": 1.544,
+    "cf1_hold_err_mean": 2.231,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-08",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 29,
+    "cf1_decode_errs": [
+     1.645,
+     1.698,
+     1.692
+    ],
+    "cf1_hold_errs": [
+     2.135,
+     2.158,
+     2.143
+    ],
+    "cf1_decode_err_mean": 1.678,
+    "cf1_hold_err_mean": 2.145,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": false
+   },
+   {
+    "name": "d-09",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 6,
+    "cf1_decode_errs": [
+     1.535,
+     1.503,
+     1.578
+    ],
+    "cf1_hold_errs": [
+     2.148,
+     2.122,
+     2.184
+    ],
+    "cf1_decode_err_mean": 1.539,
+    "cf1_hold_err_mean": 2.151,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-10",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 10,
+    "cf1_decode_errs": [
+     1.58,
+     1.551,
+     1.629
+    ],
+    "cf1_hold_errs": [
+     2.199,
+     2.188,
+     2.309
+    ],
+    "cf1_decode_err_mean": 1.587,
+    "cf1_hold_err_mean": 2.232,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-11",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 25,
+    "cf1_decode_errs": [
+     1.602,
+     1.581,
+     1.595
+    ],
+    "cf1_hold_errs": [
+     2.205,
+     2.212,
+     2.212
+    ],
+    "cf1_decode_err_mean": 1.593,
+    "cf1_hold_err_mean": 2.21,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-12",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 39,
+    "cf1_decode_errs": [
+     1.839,
+     1.877,
+     1.868
+    ],
+    "cf1_hold_errs": [
+     2.3,
+     2.33,
+     2.354
+    ],
+    "cf1_decode_err_mean": 1.861,
+    "cf1_hold_err_mean": 2.328,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": false
+   },
+   {
+    "name": "d-13",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 23,
+    "cf1_decode_errs": [
+     1.585,
+     1.595,
+     1.673
+    ],
+    "cf1_hold_errs": [
+     2.252,
+     2.223,
+     2.366
+    ],
+    "cf1_decode_err_mean": 1.617,
+    "cf1_hold_err_mean": 2.281,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-14",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 14,
+    "cf1_decode_errs": [
+     1.485,
+     1.506,
+     1.492
+    ],
+    "cf1_hold_errs": [
+     2.184,
+     2.194,
+     2.123
+    ],
+    "cf1_decode_err_mean": 1.494,
+    "cf1_hold_err_mean": 2.167,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-15",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 14,
+    "cf1_decode_errs": [
+     1.456,
+     1.525,
+     1.461
+    ],
+    "cf1_hold_errs": [
+     2.18,
+     2.181,
+     2.173
+    ],
+    "cf1_decode_err_mean": 1.481,
+    "cf1_hold_err_mean": 2.178,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-16",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 8,
+    "cf1_decode_errs": [
+     1.801,
+     1.786,
+     1.847
+    ],
+    "cf1_hold_errs": [
+     2.567,
+     2.525,
+     2.562
+    ],
+    "cf1_decode_err_mean": 1.811,
+    "cf1_hold_err_mean": 2.552,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-17",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 12,
+    "cf1_decode_errs": [
+     1.861,
+     1.87,
+     1.856
+    ],
+    "cf1_hold_errs": [
+     2.53,
+     2.524,
+     2.582
+    ],
+    "cf1_decode_err_mean": 1.862,
+    "cf1_hold_err_mean": 2.545,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-18",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 0,
+    "cf1_decode_errs": [
+     1.879,
+     1.906,
+     1.918
+    ],
+    "cf1_hold_errs": [
+     2.602,
+     2.639,
+     2.66
+    ],
+    "cf1_decode_err_mean": 1.901,
+    "cf1_hold_err_mean": 2.634,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-19",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 29,
+    "cf1_decode_errs": [
+     2.181,
+     2.208,
+     2.197
+    ],
+    "cf1_hold_errs": [
+     2.968,
+     3.036,
+     2.98
+    ],
+    "cf1_decode_err_mean": 2.195,
+    "cf1_hold_err_mean": 2.995,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": false
+   },
+   {
+    "name": "d-20",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 8,
+    "cf1_decode_errs": [
+     2.078,
+     2.095,
+     2.1
+    ],
+    "cf1_hold_errs": [
+     2.841,
+     2.865,
+     2.894
+    ],
+    "cf1_decode_err_mean": 2.091,
+    "cf1_hold_err_mean": 2.867,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-21",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 13,
+    "cf1_decode_errs": [
+     1.973,
+     1.987,
+     2.011
+    ],
+    "cf1_hold_errs": [
+     2.924,
+     2.917,
+     2.908
+    ],
+    "cf1_decode_err_mean": 1.99,
+    "cf1_hold_err_mean": 2.916,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-22",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 37,
+    "cf1_decode_errs": [
+     2.501,
+     2.535,
+     2.479
+    ],
+    "cf1_hold_errs": [
+     3.331,
+     3.377,
+     3.321
+    ],
+    "cf1_decode_err_mean": 2.505,
+    "cf1_hold_err_mean": 3.343,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": false
+   },
+   {
+    "name": "d-23",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 11,
+    "cf1_decode_errs": [
+     2.169,
+     2.193,
+     2.172
+    ],
+    "cf1_hold_errs": [
+     2.865,
+     2.844,
+     2.903
+    ],
+    "cf1_decode_err_mean": 2.178,
+    "cf1_hold_err_mean": 2.871,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": true
+   },
+   {
+    "name": "d-24",
+    "cell": [
+     1.0,
+     0.0
+    ],
+    "n_clash_cells": 45,
+    "cf1_decode_errs": [
+     2.462,
+     2.523,
+     2.508
+    ],
+    "cf1_hold_errs": [
+     3.338,
+     3.33,
+     3.367
+    ],
+    "cf1_decode_err_mean": 2.498,
+    "cf1_hold_err_mean": 3.345,
+    "c3_pass_exp136": true,
+    "c3_seed_grade": "3/3",
+    "stable_333": true,
+    "deposited_decode_pass": false
+   }
+  ],
+  "vs_exp156_deposit_bitexact": {
+   "d-01": true,
+   "d-02": true,
+   "d-03": true,
+   "d-04": true,
+   "d-05": true,
+   "d-06": true,
+   "d-07": true,
+   "d-08": true,
+   "d-09": true,
+   "d-10": true,
+   "d-11": true,
+   "d-12": true,
+   "d-13": true,
+   "d-14": true,
+   "d-15": true,
+   "d-16": true,
+   "d-17": true,
+   "d-18": true,
+   "d-19": true,
+   "d-20": true,
+   "d-21": true,
+   "d-22": true,
+   "d-23": true,
+   "d-24": true
+  }
+ },
+ "f1_c3_improves": {
+  "rows": [
+   {
+    "name": "d-01",
+    "was_pass": false,
+    "cf1_decode_errs": [
+     1.225,
+     1.241,
+     1.307
+    ],
+    "cf1_hold_errs": [
+     1.605,
+     1.573,
+     1.659
+    ],
+    "now_pass": true
+   },
+   {
+    "name": "d-02",
+    "was_pass": false,
+    "cf1_decode_errs": [
+     1.299,
+     1.304,
+     1.303
+    ],
+    "cf1_hold_errs": [
+     1.631,
+     1.634,
+     1.697
+    ],
+    "now_pass": true
+   },
+   {
+    "name": "d-04",
+    "was_pass": false,
+    "cf1_decode_errs": [
+     1.495,
+     1.561,
+     1.557
+    ],
+    "cf1_hold_errs": [
+     2.011,
+     1.992,
+     2.04
+    ],
+    "now_pass": true
+   },
+   {
+    "name": "d-05",
+    "was_pass": false,
+    "cf1_decode_errs": [
+     1.398,
+     1.399,
+     1.408
+    ],
+    "cf1_hold_errs": [
+     1.932,
+     1.891,
+     1.979
+    ],
+    "now_pass": true
+   },
+   {
+    "name": "d-06",
+    "was_pass": false,
+    "cf1_decode_errs": [
+     1.467,
+     1.516,
+     1.526
+    ],
+    "cf1_hold_errs": [
+     2.123,
+     2.069,
+     2.09
+    ],
+    "now_pass": true
+   },
+   {
+    "name": "d-07",
+    "was_pass": false,
+    "cf1_decode_errs": [
+     1.55,
+     1.496,
+     1.586
+    ],
+    "cf1_hold_errs": [
+     2.221,
+     2.222,
+     2.249
+    ],
+    "now_pass": true
+   },
+   {
+    "name": "d-09",
+    "was_pass": false,
+    "cf1_decode_errs": [
+     1.535,
+     1.503,
+     1.578
+    ],
+    "cf1_hold_errs": [
+     2.148,
+     2.122,
+     2.184
+    ],
+    "now_pass": true
+   },
+   {
+    "name": "d-10",
+    "was_pass": false,
+    "cf1_decode_errs": [
+     1.58,
+     1.551,
+     1.629
+    ],
+    "cf1_hold_errs": [
+     2.199,
+     2.188,
+     2.309
+    ],
+    "now_pass": true
+   }
+  ],
+  "pass": true,
+  "c3_after": 10
+ },
+ "f2_no_regression": {
+  "rows": [
+   {
+    "name": "d-01",
+    "previously_passing": true,
+    "n_clash_cells": 23,
+    "pass_pattern_before": [
+     true,
+     true,
+     true
+    ],
+    "pass_pattern_after": [
+     true,
+     true,
+     true
+    ],
+    "pattern_identical": true,
+    "cf1_vs_exp156_deposit_bitexact": true,
+    "cf1_vs_exp150_unrepaired_bitexact": false
+   },
+   {
+    "name": "d-02",
+    "previously_passing": true,
+    "n_clash_cells": 8,
+    "pass_pattern_before": [
+     true,
+     true,
+     true
+    ],
+    "pass_pattern_after": [
+     true,
+     true,
+     true
+    ],
+    "pattern_identical": true,
+    "cf1_vs_exp156_deposit_bitexact": true,
+    "cf1_vs_exp150_unrepaired_bitexact": false
+   },
+   {
+    "name": "d-03",
+    "previously_passing": false,
+    "n_clash_cells": 29,
+    "pass_pattern_before": [
+     false,
+     false,
+     false
+    ],
+    "pass_pattern_after": [
+     true,
+     true,
+     true
+    ],
+    "pattern_identical": false,
+    "cf1_vs_exp156_deposit_bitexact": true,
+    "cf1_vs_exp150_unrepaired_bitexact": false
+   },
+   {
+    "name": "d-04",
+    "previously_passing": true,
+    "n_clash_cells": 18,
+    "pass_pattern_before": [
+     true,
+     true,
+     true
+    ],
+    "pass_pattern_after": [
+     true,
+     true,
+     true
+    ],
+    "pattern_identical": true,
+    "cf1_vs_exp156_deposit_bitexact": true,
+    "cf1_vs_exp150_unrepaired_bitexact": false
+   },
+   {
+    "name": "d-05",
+    "previously_passing": true,
+    "n_clash_cells": 31,
+    "pass_pattern_before": [
+     true,
+     true,
+     true
+    ],
+    "pass_pattern_after": [
+     true,
+     true,
+     true
+    ],
+    "pattern_identical": true,
+    "cf1_vs_exp156_deposit_bitexact": true,
+    "cf1_vs_exp150_unrepaired_bitexact": false
+   },
+   {
+    "name": "d-06",
+    "previously_passing": true,
+    "n_clash_cells": 0,
+    "pass_pattern_before": [
+     true,
+     true,
+     true
+    ],
+    "pass_pattern_after": [
+     true,
+     true,
+     true
+    ],
+    "pattern_identical": true,
+    "cf1_vs_exp156_deposit_bitexact": true,
+    "cf1_vs_exp150_unrepaired_bitexact": true
+   },
+   {
+    "name": "d-07",
+    "previously_passing": true,
+    "n_clash_cells": 5,
+    "pass_pattern_before": [
+     true,
+     true,
+     true
+    ],
+    "pass_pattern_after": [
+     true,
+     true,
+     true
+    ],
+    "pattern_identical": true,
+    "cf1_vs_exp156_deposit_bitexact": true,
+    "cf1_vs_exp150_unrepaired_bitexact": false
+   },
+   {
+    "name": "d-08",
+    "previously_passing": false,
+    "n_clash_cells": 29,
+    "pass_pattern_before": [
+     false,
+     false,
+     false
+    ],
+    "pass_pattern_after": [
+     true,
+     true,
+     true
+    ],
+    "pattern_identical": false,
+    "cf1_vs_exp156_deposit_bitexact": true,
+    "cf1_vs_exp150_unrepaired_bitexact": false
+   },
+   {
+    "name": "d-09",
+    "previously_passing": true,
+    "n_clash_cells": 6,
+    "pass_pattern_before": [
+     true,
+     true,
+     true
+    ],
+    "pass_pattern_after": [
+     true,
+     true,
+     true
+    ],
+    "pattern_identical": true,
+    "cf1_vs_exp156_deposit_bitexact": true,
+    "cf1_vs_exp150_unrepaired_bitexact": false
+   },
+   {
+    "name": "d-10",
+    "previously_passing": true,
+    "n_clash_cells": 10,
+    "pass_pattern_before": [
+     true,
+     true,
+     true
+    ],
+    "pass_pattern_after": [
+     true,
+     true,
+     true
+    ],
+    "pattern_identical": true,
+    "cf1_vs_exp156_deposit_bitexact": true,
+    "cf1_vs_exp150_unrepaired_bitexact": false
+   }
+  ],
+  "pass": true,
+  "branch_identity_held": true
+ },
+ "f3_rw_pre_emission_filter": {
+  "rows": [
+   {
+    "name": "d-01",
+    "clash_mass_mV2": 13.824,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-02",
+    "clash_mass_mV2": 6.771,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-03",
+    "clash_mass_mV2": 88.785,
+    "r_w_positive": true,
+    "emission_mode_exp150": "audit_only_fallback",
+    "exp156_failing_class": true
+   },
+   {
+    "name": "d-04",
+    "clash_mass_mV2": 11.65,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-05",
+    "clash_mass_mV2": 22.206,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-06",
+    "clash_mass_mV2": 0.0,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-07",
+    "clash_mass_mV2": 0.613,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-08",
+    "clash_mass_mV2": 97.712,
+    "r_w_positive": true,
+    "emission_mode_exp150": "audit_only_fallback",
+    "exp156_failing_class": true
+   },
+   {
+    "name": "d-09",
+    "clash_mass_mV2": 4.541,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-10",
+    "clash_mass_mV2": 5.956,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-11",
+    "clash_mass_mV2": 8.962,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-12",
+    "clash_mass_mV2": 105.658,
+    "r_w_positive": true,
+    "emission_mode_exp150": "audit_only_fallback",
+    "exp156_failing_class": true
+   },
+   {
+    "name": "d-13",
+    "clash_mass_mV2": 9.854,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-14",
+    "clash_mass_mV2": 0.875,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-15",
+    "clash_mass_mV2": 4.082,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-16",
+    "clash_mass_mV2": 5.831,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-17",
+    "clash_mass_mV2": 23.546,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-18",
+    "clash_mass_mV2": 0.0,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-19",
+    "clash_mass_mV2": 65.296,
+    "r_w_positive": true,
+    "emission_mode_exp150": "audit_only_fallback",
+    "exp156_failing_class": true
+   },
+   {
+    "name": "d-20",
+    "clash_mass_mV2": 13.861,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-21",
+    "clash_mass_mV2": 0.879,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-22",
+    "clash_mass_mV2": 84.622,
+    "r_w_positive": true,
+    "emission_mode_exp150": "audit_only_fallback",
+    "exp156_failing_class": true
+   },
+   {
+    "name": "d-23",
+    "clash_mass_mV2": 8.359,
+    "r_w_positive": false,
+    "emission_mode_exp150": "repriced_full",
+    "exp156_failing_class": false
+   },
+   {
+    "name": "d-24",
+    "clash_mass_mV2": 97.755,
+    "r_w_positive": true,
+    "emission_mode_exp150": "audit_only_fallback",
+    "exp156_failing_class": true
+   }
+  ],
+  "pass": true,
+  "rw_positive": [
+   "d-03",
+   "d-08",
+   "d-12",
+   "d-19",
+   "d-22",
+   "d-24"
+  ],
+  "audit_only_fallback": [
+   "d-03",
+   "d-08",
+   "d-12",
+   "d-19",
+   "d-22",
+   "d-24"
+  ],
+  "exp156_failing_class": [
+   "d-03",
+   "d-08",
+   "d-12",
+   "d-19",
+   "d-22",
+   "d-24"
+  ],
+  "masses_match_exp156_w3": true
+ },
+ "stage3_ledger_upgrade": {
+  "upgrades": true,
+  "entry": "exp150 stage-3 (generator complete) upgraded",
+  "c3_before": "8/10",
+  "c3_after": "10/10",
+  "c3_after_grade_333": "10/10",
+  "emitted_cell_contract": "CF-1 adopted: the S-REL spec-adoption floor is -60.0 mV (below every written zone value; the canon-fallback branch is unreachable for zone writes); emitted = argmin rung_cost over rungs with quad < 6.0 AND decode 3/3 UNDER THE REPAIRED FLOOR",
+  "pre_emission_gate": "R_W canon-clash mass rule (clash_mass(f) > 36.0 mV^2) excludes before emission \u2014 the audit_only_fallback emission mode is RETIRED (its class == the R_W-positive set, 0 FP)",
+  "unchanged": "C1 novelty, C2 audit, C4 pool diversity, the ladder, the bars, the search \u2014 all untouched; same 10 inventions"
+ },
+ "gates": {
+  "F1_c3_improves": true,
+  "F2_no_regression": true,
+  "F3_rw_pre_emission_filter": true,
+  "F4_instrument_unrepaired": true
+ },
+ "gates_passed": "4/4",
+ "registered_next": [
+  "adopt the CF-1 floor into cultivation/bioelectric/collective.py's spec-reading regen walk (the ONE-CONSTANT production change) and re-run the generator end-to-end on a FRESH search (L132's never-tuned discipline) with R_W as the pre-emission filter",
+  "re-run exp153's expanded cohort generation under the repaired contract to confirm R_W's 0-FP on fresh deliveries",
+  "the head-clash reading stays testable wet (exp156's registered probe: deep (-50 mV) write in depolarized field vs trunk-like tissue)"
+ ],
+ "wall_s": 7.4
+}
