@@ -1,0 +1,1211 @@
+{
+ "phase_a_write_evidence": {
+  "k3": {
+   "byte_offset_order": {
+    "phase_a_write_byte": 6318,
+    "first_real_arm_decode_byte": 6509,
+    "order_held": true
+   },
+   "phase_a_record_bytes_on_disk": 17752,
+   "record_confirmed_on_disk_before_stratum_real_decode": true
+  },
+  "k4": {
+   "byte_offset_order": {
+    "phase_a_write_byte": 6395,
+    "first_real_arm_decode_byte": 6570,
+    "order_held": true
+   },
+   "phase_a_record_bytes_on_disk": 23409,
+   "record_confirmed_on_disk_before_stratum_real_decode": true
+  }
+ },
+ "strata": {
+  "k3": {
+   "stratum": "k3",
+   "n_pairs": 6,
+   "ladder_indices": [
+    0,
+    1,
+    2,
+    3,
+    12,
+    13
+   ],
+   "stat_m1_signed_mean": 0.14,
+   "median_m1": 0.13,
+   "stat_m2_signed_mean": 0.0,
+   "median_m2": 0.0,
+   "majority_sign": 1,
+   "n_majority_sign": 5,
+   "n_pos": 5,
+   "n_neg": 1,
+   "n_zero": 0,
+   "null_bar": 0.128333,
+   "m2_aug_bit_exact_identity": "6/6",
+   "pairs": [
+    {
+     "i": 0,
+     "seed_construct": 183001,
+     "slot": 0,
+     "n": 30,
+     "k_realized": 3,
+     "cancel_entries_S1": 10,
+     "density_d_k": 42.0,
+     "sw1_stats": {
+      "nnz_entries": 50,
+      "max": 3.0
+     },
+     "digest_A": "3a2e517957bc75837bf8c8ee2fd393730165a94a8d842df43ef23a4a5a017df3",
+     "null_err_seed1_frozen": {
+      "T1": 0.42,
+      "T2": 3.72
+     },
+     "err_m1_own_T1": 0.74,
+     "err_m2_own_T2": 3.72,
+     "dev1_signed": 0.32,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1
+    },
+    {
+     "i": 1,
+     "seed_construct": 183002,
+     "slot": 1,
+     "n": 30,
+     "k_realized": 3,
+     "cancel_entries_S1": 10,
+     "density_d_k": 46.0,
+     "sw1_stats": {
+      "nnz_entries": 50,
+      "max": 3.0
+     },
+     "digest_A": "384c7ae499ed0632f0cfb8c0eeb8018f602429a026af41872626a03a6c93beda",
+     "null_err_seed1_frozen": {
+      "T1": 0.57,
+      "T2": 3.81
+     },
+     "err_m1_own_T1": 0.58,
+     "err_m2_own_T2": 3.81,
+     "dev1_signed": 0.01,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1
+    },
+    {
+     "i": 2,
+     "seed_construct": 183003,
+     "slot": 2,
+     "n": 30,
+     "k_realized": 3,
+     "cancel_entries_S1": 10,
+     "density_d_k": 43.0,
+     "sw1_stats": {
+      "nnz_entries": 50,
+      "max": 3.0
+     },
+     "digest_A": "7f36de32e0dcff1d665c09b2fb43c9d93c79e4c7157deeaf87403eb4bd44a2c3",
+     "null_err_seed1_frozen": {
+      "T1": 0.27,
+      "T2": 3.71
+     },
+     "err_m1_own_T1": 0.52,
+     "err_m2_own_T2": 3.71,
+     "dev1_signed": 0.25,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1
+    },
+    {
+     "i": 3,
+     "seed_construct": 183004,
+     "slot": 3,
+     "n": 30,
+     "k_realized": 3,
+     "cancel_entries_S1": 10,
+     "density_d_k": 43.0,
+     "sw1_stats": {
+      "nnz_entries": 50,
+      "max": 3.0
+     },
+     "digest_A": "bf00b6c3f45be310386a9915b70192e92b969136197cba952def69b571b9e830",
+     "null_err_seed1_frozen": {
+      "T1": 0.5,
+      "T2": 3.73
+     },
+     "err_m1_own_T1": 0.51,
+     "err_m2_own_T2": 3.73,
+     "dev1_signed": 0.01,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1
+    },
+    {
+     "i": 12,
+     "seed_construct": 183013,
+     "slot": 0,
+     "n": 30,
+     "k_realized": 3,
+     "cancel_entries_S1": 10,
+     "density_d_k": 40.0,
+     "sw1_stats": {
+      "nnz_entries": 50,
+      "max": 3.0
+     },
+     "digest_A": "b8757ba830e1a66601832bd549833391764c269770f4bd56abd93adc55e78f02",
+     "null_err_seed1_frozen": {
+      "T1": 0.29,
+      "T2": 3.72
+     },
+     "err_m1_own_T1": 0.58,
+     "err_m2_own_T2": 3.72,
+     "dev1_signed": 0.29,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1
+    },
+    {
+     "i": 13,
+     "seed_construct": 183014,
+     "slot": 1,
+     "n": 30,
+     "k_realized": 3,
+     "cancel_entries_S1": 10,
+     "density_d_k": 44.0,
+     "sw1_stats": {
+      "nnz_entries": 50,
+      "max": 3.0
+     },
+     "digest_A": "ddab636b99869ea314ef7b5fcdf17456221642ab1a041b2a217832f53d0ee11b",
+     "null_err_seed1_frozen": {
+      "T1": 0.47,
+      "T2": 3.73
+     },
+     "err_m1_own_T1": 0.43,
+     "err_m2_own_T2": 3.73,
+     "dev1_signed": -0.04,
+     "dev2_signed": 0.0,
+     "sign_dev1": -1
+    }
+   ]
+  },
+  "k4": {
+   "stratum": "k4",
+   "n_pairs": 6,
+   "ladder_indices": [
+    4,
+    5,
+    6,
+    7,
+    16,
+    17
+   ],
+   "stat_m1_signed_mean": 0.008333,
+   "median_m1": 0.055,
+   "stat_m2_signed_mean": 0.0,
+   "median_m2": 0.0,
+   "majority_sign": 1,
+   "n_majority_sign": 4,
+   "n_pos": 4,
+   "n_neg": 2,
+   "n_zero": 0,
+   "null_bar": 0.106667,
+   "m2_aug_bit_exact_identity": "6/6",
+   "pairs": [
+    {
+     "i": 4,
+     "seed_construct": 183005,
+     "slot": 4,
+     "n": 32,
+     "k_realized": 4,
+     "cancel_entries_S1": 24,
+     "density_d_k": 70.0,
+     "sw1_stats": {
+      "nnz_entries": 72,
+      "max": 2.0
+     },
+     "digest_A": "07cf275df3003df8e621cb68bea1dfd2c896e3b86ab9ccf6e58faa20131f6ce0",
+     "null_err_seed1_frozen": {
+      "T1": 0.57,
+      "T2": 3.26
+     },
+     "err_m1_own_T1": 0.46,
+     "err_m2_own_T2": 3.26,
+     "dev1_signed": -0.11,
+     "dev2_signed": 0.0,
+     "sign_dev1": -1
+    },
+    {
+     "i": 5,
+     "seed_construct": 183006,
+     "slot": 5,
+     "n": 32,
+     "k_realized": 4,
+     "cancel_entries_S1": 24,
+     "density_d_k": 64.0,
+     "sw1_stats": {
+      "nnz_entries": 72,
+      "max": 1.6666666666666667
+     },
+     "digest_A": "b27fbac07862dca2459dda9ad011b916f1edbcef8ea776d0d82732cb924f54be",
+     "null_err_seed1_frozen": {
+      "T1": 0.58,
+      "T2": 3.18
+     },
+     "err_m1_own_T1": 0.49,
+     "err_m2_own_T2": 3.18,
+     "dev1_signed": -0.09,
+     "dev2_signed": 0.0,
+     "sign_dev1": -1
+    },
+    {
+     "i": 6,
+     "seed_construct": 183007,
+     "slot": 6,
+     "n": 32,
+     "k_realized": 4,
+     "cancel_entries_S1": 24,
+     "density_d_k": 72.0,
+     "sw1_stats": {
+      "nnz_entries": 72,
+      "max": 2.0
+     },
+     "digest_A": "b326f138744b7297d1f5e2f498763fdc2365946220f279505368936273a9b7c1",
+     "null_err_seed1_frozen": {
+      "T1": 0.46,
+      "T2": 3.25
+     },
+     "err_m1_own_T1": 0.5,
+     "err_m2_own_T2": 3.25,
+     "dev1_signed": 0.04,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1
+    },
+    {
+     "i": 7,
+     "seed_construct": 183008,
+     "slot": 7,
+     "n": 32,
+     "k_realized": 4,
+     "cancel_entries_S1": 24,
+     "density_d_k": 82.0,
+     "sw1_stats": {
+      "nnz_entries": 72,
+      "max": 2.0
+     },
+     "digest_A": "12d867c10484cdaff2f9eb6957a2d150bbffd14b07360c36b4f004e7ac083295",
+     "null_err_seed1_frozen": {
+      "T1": 0.48,
+      "T2": 3.25
+     },
+     "err_m1_own_T1": 0.55,
+     "err_m2_own_T2": 3.25,
+     "dev1_signed": 0.07,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1
+    },
+    {
+     "i": 16,
+     "seed_construct": 183017,
+     "slot": 4,
+     "n": 32,
+     "k_realized": 4,
+     "cancel_entries_S1": 24,
+     "density_d_k": 76.0,
+     "sw1_stats": {
+      "nnz_entries": 72,
+      "max": 2.0
+     },
+     "digest_A": "194162aa95f8e8a29ca4f317bc4f65abc784d3a644b2c79c2446a7d7cc97d3ec",
+     "null_err_seed1_frozen": {
+      "T1": 0.45,
+      "T2": 3.25
+     },
+     "err_m1_own_T1": 0.52,
+     "err_m2_own_T2": 3.25,
+     "dev1_signed": 0.07,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1
+    },
+    {
+     "i": 17,
+     "seed_construct": 183018,
+     "slot": 5,
+     "n": 32,
+     "k_realized": 4,
+     "cancel_entries_S1": 24,
+     "density_d_k": 72.0,
+     "sw1_stats": {
+      "nnz_entries": 72,
+      "max": 2.0
+     },
+     "digest_A": "dd5f00c882d1137c49b8dc5ca7befb6a1bd07a01048ec9cd1cb2aef5f1d6026c",
+     "null_err_seed1_frozen": {
+      "T1": 0.51,
+      "T2": 3.26
+     },
+     "err_m1_own_T1": 0.58,
+     "err_m2_own_T2": 3.26,
+     "dev1_signed": 0.07,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1
+    }
+   ]
+  }
+ },
+ "experiment": "exp183_the_k_controlled_cohort",
+ "task_id": "3-e",
+ "registered_next_of": "exp174 (ledger L153): all three minority-sign pairs across both cohorts are k = 4 gadgets -- the density hypothesis",
+ "smoke": false,
+ "runner": {
+  "job": "all",
+  "stratum_alias": null,
+  "out": "/home/z/my-project/bioelectric-cultivation/results/exp183_k_controlled_cohort.json"
+ },
+ "pre_registered": {
+  "source": "module docstring, committed at HEAD (c7c0dea, batch-3 pre-registrations) BEFORE any decode; the credited run used this file with only the body filled",
+  "stratification": "exp159's construction VERBATIM, seed ladder 183001..183036 (SEED_CONSTRUCT rebound per pair, the exp174 mechanism, restore asserted) -- 36 fresh pairs; each pair's REALIZED k recorded from the construction; the cohort THEN split into the k=3 stratum and the k=4 stratum, taking the FIRST 6 of each by ladder order",
+  "statistic": "exp173/exp174's, verbatim: dev_signed per pair, stat = mean over the stratum's pairs, V2 weighting via exp163's cancel_mass_matrix, STAR_OP readout, seed (1,); m2 side identical",
+  "null": "per stratum: the shared arm-1 null, bar = max |pooled null stat| over exp142's deposited seeds x own-targets, frozen on disk BEFORE the stratum's real-arm decode; byte-offset assertion per stratum",
+  "gates": "W1 strata integrity; W2 null discipline (both bars frozen before their real arms, byte order asserted, finite > 0); W3 the density clause -- branch (i) k=4 flips/weakens while k=3 holds (density CONFIRMED), branch (ii) both hold (density NOT the covariate), branch (iii) both flip (construction-generic); ALL THREE complete the gate, the branch taken is the finding; W4 |stat_m2| <= its bar in BOTH strata",
+  "seeds": {
+   "exec": 1,
+   "construct_ladder": "183001..183036 (per pair)",
+   "null_protocol": [
+    1,
+    2,
+    3
+   ]
+  },
+  "err_bar": 6.0
+ },
+ "construction": {
+  "seed_ladder_rebind": {
+   "mechanism": "exp174's rebinding mechanism, PER PAIR: save exp159.SEED_CONSTRUCT (assert == 159), rebind to the ladder seed, build via exp159's build_pair on the protocol's own slot (ladder index i -> slot i % 12: 3 independent passes of the 12-slot adversarial family in exp159's order), restore asserted per pair",
+   "ladder": "183001..183036 (module LADDER, 36 seeds)",
+   "rebinds": 36,
+   "restores_asserted": "36/36"
+  },
+  "F": 0.75,
+  "F_rule": "median |A_ij| over nonzero entries pooled across the 36 FRESH projections, computed before any decode (exp159/exp163/exp174's rule at this cohort's size); ONE constant shared by both strata",
+  "F_pool_nonzero_absA_count": 3264,
+  "pairs_constructed": 36,
+  "asserts_held_pairs": 36,
+  "realized_k_match_pairs": 36,
+  "construction_asserts_held": "36/36 (raise-on-failure at build: A1==A2, S1!=S2, S2==support(A), cancellation layout, connectivity)",
+  "realized_k": "recorded from the construction (member 1's hyperedge size) per pair",
+  "realized_k_matches_field": "36/36 (asserted vs GADGET_SIZE per pair)",
+  "realized_k_counts": {
+   "3": 12,
+   "4": 12,
+   "5": 12
+  },
+  "strata": {
+   "k3_ladder_indices": [
+    0,
+    1,
+    2,
+    3,
+    12,
+    13
+   ],
+   "k4_ladder_indices": [
+    4,
+    5,
+    6,
+    7,
+    16,
+    17
+   ],
+   "k5_unstratified_ladder_indices": [
+    8,
+    9,
+    10,
+    11,
+    20,
+    21,
+    22,
+    23,
+    32,
+    33,
+    34,
+    35
+   ],
+   "selection_rule": "first 6 of each realized-k class by ladder order (pre-registered; sizes deposited as-is if a stratum has fewer than 6 among the 36)"
+  },
+  "decode_scope": "24 of 36 stratified pairs decoded (6+6); the 12 realized-k=5 pairs are built and disclosed, not stratified (the pre-registered strata are k=3 and k=4)"
+ },
+ "cohort": [
+  {
+   "i": 0,
+   "seed_construct": 183001,
+   "slot": 0,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 42.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "3a2e517957bc75837bf8c8ee2fd393730165a94a8d842df43ef23a4a5a017df3"
+  },
+  {
+   "i": 1,
+   "seed_construct": 183002,
+   "slot": 1,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 46.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "384c7ae499ed0632f0cfb8c0eeb8018f602429a026af41872626a03a6c93beda"
+  },
+  {
+   "i": 2,
+   "seed_construct": 183003,
+   "slot": 2,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 43.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "7f36de32e0dcff1d665c09b2fb43c9d93c79e4c7157deeaf87403eb4bd44a2c3"
+  },
+  {
+   "i": 3,
+   "seed_construct": 183004,
+   "slot": 3,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 43.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "bf00b6c3f45be310386a9915b70192e92b969136197cba952def69b571b9e830"
+  },
+  {
+   "i": 4,
+   "seed_construct": 183005,
+   "slot": 4,
+   "n": 32,
+   "k_realized": 4,
+   "k_field": 4,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "density_d_k": 70.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "max": 2.0
+   },
+   "digest_A": "07cf275df3003df8e621cb68bea1dfd2c896e3b86ab9ccf6e58faa20131f6ce0"
+  },
+  {
+   "i": 5,
+   "seed_construct": 183006,
+   "slot": 5,
+   "n": 32,
+   "k_realized": 4,
+   "k_field": 4,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "density_d_k": 64.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "max": 1.6666666666666667
+   },
+   "digest_A": "b27fbac07862dca2459dda9ad011b916f1edbcef8ea776d0d82732cb924f54be"
+  },
+  {
+   "i": 6,
+   "seed_construct": 183007,
+   "slot": 6,
+   "n": 32,
+   "k_realized": 4,
+   "k_field": 4,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "density_d_k": 72.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "max": 2.0
+   },
+   "digest_A": "b326f138744b7297d1f5e2f498763fdc2365946220f279505368936273a9b7c1"
+  },
+  {
+   "i": 7,
+   "seed_construct": 183008,
+   "slot": 7,
+   "n": 32,
+   "k_realized": 4,
+   "k_field": 4,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "density_d_k": 82.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "max": 2.0
+   },
+   "digest_A": "12d867c10484cdaff2f9eb6957a2d150bbffd14b07360c36b4f004e7ac083295"
+  },
+  {
+   "i": 8,
+   "seed_construct": 183009,
+   "slot": 8,
+   "n": 30,
+   "k_realized": 5,
+   "k_field": 5,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "density_d_k": 87.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "max": 1.5
+   },
+   "digest_A": "6c7f7c0e8bd6221ae62309e25477f420df1b0e0a236be9749489d087e0e4839b"
+  },
+  {
+   "i": 9,
+   "seed_construct": 183010,
+   "slot": 9,
+   "n": 30,
+   "k_realized": 5,
+   "k_field": 5,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "density_d_k": 87.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "max": 1.5
+   },
+   "digest_A": "7234d34d27523640f318efa78ae2b64983a197641079a463a3657d7a08bd13a3"
+  },
+  {
+   "i": 10,
+   "seed_construct": 183011,
+   "slot": 10,
+   "n": 30,
+   "k_realized": 5,
+   "k_field": 5,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "density_d_k": 66.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "max": 1.25
+   },
+   "digest_A": "7feed65f9df494f32adc10582c85663c0ddab3082ea29ef4781081e42e8ea168"
+  },
+  {
+   "i": 11,
+   "seed_construct": 183012,
+   "slot": 11,
+   "n": 30,
+   "k_realized": 5,
+   "k_field": 5,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "density_d_k": 84.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "max": 1.5
+   },
+   "digest_A": "fb7ec34bdafc95c9cba068e2a1ee2d33a6e07b75a90961a6055e062b6d0d12b9"
+  },
+  {
+   "i": 12,
+   "seed_construct": 183013,
+   "slot": 0,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 40.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "b8757ba830e1a66601832bd549833391764c269770f4bd56abd93adc55e78f02"
+  },
+  {
+   "i": 13,
+   "seed_construct": 183014,
+   "slot": 1,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 44.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "ddab636b99869ea314ef7b5fcdf17456221642ab1a041b2a217832f53d0ee11b"
+  },
+  {
+   "i": 14,
+   "seed_construct": 183015,
+   "slot": 2,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 48.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "83e27505551bc0d8b953283dc06f9ad98ae27f8d7a70442c03c6d45ddc3c6118"
+  },
+  {
+   "i": 15,
+   "seed_construct": 183016,
+   "slot": 3,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 47.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "dcaf8894d484726d7ef92b05c7b7a277b213358ca95db497442f8211095dcf1d"
+  },
+  {
+   "i": 16,
+   "seed_construct": 183017,
+   "slot": 4,
+   "n": 32,
+   "k_realized": 4,
+   "k_field": 4,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "density_d_k": 76.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "max": 2.0
+   },
+   "digest_A": "194162aa95f8e8a29ca4f317bc4f65abc784d3a644b2c79c2446a7d7cc97d3ec"
+  },
+  {
+   "i": 17,
+   "seed_construct": 183018,
+   "slot": 5,
+   "n": 32,
+   "k_realized": 4,
+   "k_field": 4,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "density_d_k": 72.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "max": 2.0
+   },
+   "digest_A": "dd5f00c882d1137c49b8dc5ca7befb6a1bd07a01048ec9cd1cb2aef5f1d6026c"
+  },
+  {
+   "i": 18,
+   "seed_construct": 183019,
+   "slot": 6,
+   "n": 32,
+   "k_realized": 4,
+   "k_field": 4,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "density_d_k": 76.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "max": 2.0
+   },
+   "digest_A": "028867e5499c88acc4560fcd7a5928a55be8dbe7db9cb3e1ad0d059c40639837"
+  },
+  {
+   "i": 19,
+   "seed_construct": 183020,
+   "slot": 7,
+   "n": 32,
+   "k_realized": 4,
+   "k_field": 4,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "density_d_k": 88.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "max": 2.0
+   },
+   "digest_A": "5d97f79464a81120d4d6f1b329f3b98ce3b79a62aaacce74a70dfa0f7e6fc91b"
+  },
+  {
+   "i": 20,
+   "seed_construct": 183021,
+   "slot": 8,
+   "n": 30,
+   "k_realized": 5,
+   "k_field": 5,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "density_d_k": 81.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "max": 1.5
+   },
+   "digest_A": "02818c7da9c2cd6ff674f5966fd33d32c3a92c53752963bcb484e2080cf7a9d6"
+  },
+  {
+   "i": 21,
+   "seed_construct": 183022,
+   "slot": 9,
+   "n": 30,
+   "k_realized": 5,
+   "k_field": 5,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "density_d_k": 78.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "max": 1.5
+   },
+   "digest_A": "b72d11d1147bee3801658728c154817445a4f1cede79866143b3963841f08538"
+  },
+  {
+   "i": 22,
+   "seed_construct": 183023,
+   "slot": 10,
+   "n": 30,
+   "k_realized": 5,
+   "k_field": 5,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "density_d_k": 87.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "max": 1.5
+   },
+   "digest_A": "5f25b60ce4aaec4edc48fae79746b2e0b7c4bafdd90331f200926c20e57a1479"
+  },
+  {
+   "i": 23,
+   "seed_construct": 183024,
+   "slot": 11,
+   "n": 30,
+   "k_realized": 5,
+   "k_field": 5,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "density_d_k": 81.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "max": 1.5
+   },
+   "digest_A": "58d31bc14706d13101ccdaeb3cb366de4d84d1b9b0ecc060e14717f3eaf5da1d"
+  },
+  {
+   "i": 24,
+   "seed_construct": 183025,
+   "slot": 0,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 39.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "d27a2092395c0e473d2231035e173c58d5d6c1901851d4d094f72d821e7add0e"
+  },
+  {
+   "i": 25,
+   "seed_construct": 183026,
+   "slot": 1,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 43.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "204a5ab4501f089c986289fced16fa2b87c6bb7766712e3c9b6055f1ff055f29"
+  },
+  {
+   "i": 26,
+   "seed_construct": 183027,
+   "slot": 2,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 48.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "7ead7e864120c29ecad9ada03599876903b7adfb4ca1a52ac7975a9a6a9a4e48"
+  },
+  {
+   "i": 27,
+   "seed_construct": 183028,
+   "slot": 3,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 45.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "9f78f487d7c6bece1c632ef2af3058f322de4a05032885cebfe3482d87c19eb6"
+  },
+  {
+   "i": 28,
+   "seed_construct": 183029,
+   "slot": 4,
+   "n": 32,
+   "k_realized": 4,
+   "k_field": 4,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "density_d_k": 80.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "max": 2.0
+   },
+   "digest_A": "662b6e1e74f630e7bab7bc58063a5bf921c86a58ee4e661d0a670187b4e362da"
+  },
+  {
+   "i": 29,
+   "seed_construct": 183030,
+   "slot": 5,
+   "n": 32,
+   "k_realized": 4,
+   "k_field": 4,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "density_d_k": 86.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "max": 2.0
+   },
+   "digest_A": "50599f6e129c1b51aa7e174299c550ead654271e3e4ee28e52c807d02769727d"
+  },
+  {
+   "i": 30,
+   "seed_construct": 183031,
+   "slot": 6,
+   "n": 32,
+   "k_realized": 4,
+   "k_field": 4,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "density_d_k": 72.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "max": 2.0
+   },
+   "digest_A": "6679e5b700b952b57ea423a03156aa769d9ef760ed2fa20a8d2ecfef43fcbd07"
+  },
+  {
+   "i": 31,
+   "seed_construct": 183032,
+   "slot": 7,
+   "n": 32,
+   "k_realized": 4,
+   "k_field": 4,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "density_d_k": 62.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "max": 1.6666666666666667
+   },
+   "digest_A": "585a58a0ef30a6c89aa07b992271ed495bba2db3d89298eece14ff770bab0d86"
+  },
+  {
+   "i": 32,
+   "seed_construct": 183033,
+   "slot": 8,
+   "n": 30,
+   "k_realized": 5,
+   "k_field": 5,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "density_d_k": 90.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "max": 1.5
+   },
+   "digest_A": "93b6d4a6b551ac924913dd327b29c8775adf9c6608f58f030cd4a486ed02d327"
+  },
+  {
+   "i": 33,
+   "seed_construct": 183034,
+   "slot": 9,
+   "n": 30,
+   "k_realized": 5,
+   "k_field": 5,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "density_d_k": 90.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "max": 1.5
+   },
+   "digest_A": "586955793b67e66e17f36d6fbcdd9e9d7c88a2250e53bd4d310f907c6829163d"
+  },
+  {
+   "i": 34,
+   "seed_construct": 183035,
+   "slot": 10,
+   "n": 30,
+   "k_realized": 5,
+   "k_field": 5,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "density_d_k": 75.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "max": 1.25
+   },
+   "digest_A": "a7bc12bd2244353f9e002275e7af1556c4b24ca35ad34632e58bd56ba6eade49"
+  },
+  {
+   "i": 35,
+   "seed_construct": 183036,
+   "slot": 11,
+   "n": 30,
+   "k_realized": 5,
+   "k_field": 5,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "density_d_k": 81.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "max": 1.5
+   },
+   "digest_A": "6492151ecf12a4e8e79b9bea80417f53f4da4cc924c5baf717f3ed696395f1a9"
+  }
+ ],
+ "phase_a_k3": {
+  "phase": "A (stratum k=3 null deposit; frozen before the stratum's real-arm decode)",
+  "null_protocol": {
+   "augmentation": "exp163/exp173's null augmentation: the arm-1 null arm = the shared bit-identical plain projection A (no S term)",
+   "baseline": "the protocol's own seed-1 null decode per (pair, own-target) -- exp174's translation of exp173's two-phase discipline to a fresh construction (no prior deposit exists for the ladder cohort); seed 1 contributes exactly 0, the bar is carried by the other protocol seeds (pure null-arm seed noise)",
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "seed_source": "exp142's deposited SEEDS (1,2,3) -- the read core's own seed convention (asserted at runtime); seed 1 = the credited decode seed (exp159.SEED_EXEC)",
+   "pooled_null_stat": "mean over the stratum's pairs of [err(A, own_target, seed) - err(A, own_target, seed 1)], SIGNED",
+   "bar_rule": "null bar = max |pooled null stat| over the protocol's seeds x own-targets (T1/T2) -- one bar per stratum, frozen once, gating W3 and W4 for that stratum"
+  },
+  "pooled_null_stats": {
+   "T1@seed1": 0.0,
+   "T2@seed1": 0.0,
+   "T1@seed2": 0.025,
+   "T2@seed2": 0.003333,
+   "T1@seed3": 0.128333,
+   "T2@seed3": -0.018333
+  },
+  "null_err_seed1": {
+   "0": {
+    "T1": 0.42,
+    "T2": 3.72
+   },
+   "1": {
+    "T1": 0.57,
+    "T2": 3.81
+   },
+   "2": {
+    "T1": 0.27,
+    "T2": 3.71
+   },
+   "3": {
+    "T1": 0.5,
+    "T2": 3.73
+   },
+   "12": {
+    "T1": 0.29,
+    "T2": 3.72
+   },
+   "13": {
+    "T1": 0.47,
+    "T2": 3.73
+   }
+  },
+  "null_bar": 0.128333,
+  "null_bar_finite_positive": true,
+  "frozen_before_phase_b_decode": true,
+  "byte_offset_evidence": {
+   "phase_a_write_byte": 6318,
+   "first_real_arm_decode_byte": 6509,
+   "order_held": true
+  },
+  "pair_scope": "6 pairs (ladder indices [0, 1, 2, 3, 12, 13])",
+  "smoke": false
+ },
+ "phase_a_k4": {
+  "phase": "A (stratum k=4 null deposit; frozen before the stratum's real-arm decode)",
+  "null_protocol": {
+   "augmentation": "exp163/exp173's null augmentation: the arm-1 null arm = the shared bit-identical plain projection A (no S term)",
+   "baseline": "the protocol's own seed-1 null decode per (pair, own-target) -- exp174's translation of exp173's two-phase discipline to a fresh construction (no prior deposit exists for the ladder cohort); seed 1 contributes exactly 0, the bar is carried by the other protocol seeds (pure null-arm seed noise)",
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "seed_source": "exp142's deposited SEEDS (1,2,3) -- the read core's own seed convention (asserted at runtime); seed 1 = the credited decode seed (exp159.SEED_EXEC)",
+   "pooled_null_stat": "mean over the stratum's pairs of [err(A, own_target, seed) - err(A, own_target, seed 1)], SIGNED",
+   "bar_rule": "null bar = max |pooled null stat| over the protocol's seeds x own-targets (T1/T2) -- one bar per stratum, frozen once, gating W3 and W4 for that stratum"
+  },
+  "pooled_null_stats": {
+   "T1@seed1": 0.0,
+   "T2@seed1": 0.0,
+   "T1@seed2": 0.01,
+   "T2@seed2": -0.096667,
+   "T1@seed3": 0.106667,
+   "T2@seed3": 0.063333
+  },
+  "null_err_seed1": {
+   "4": {
+    "T1": 0.57,
+    "T2": 3.26
+   },
+   "5": {
+    "T1": 0.58,
+    "T2": 3.18
+   },
+   "6": {
+    "T1": 0.46,
+    "T2": 3.25
+   },
+   "7": {
+    "T1": 0.48,
+    "T2": 3.25
+   },
+   "16": {
+    "T1": 0.45,
+    "T2": 3.25
+   },
+   "17": {
+    "T1": 0.51,
+    "T2": 3.26
+   }
+  },
+  "null_bar": 0.106667,
+  "null_bar_finite_positive": true,
+  "frozen_before_phase_b_decode": true,
+  "byte_offset_evidence": {
+   "phase_a_write_byte": 6395,
+   "first_real_arm_decode_byte": 6570,
+   "order_held": true
+  },
+  "pair_scope": "6 pairs (ladder indices [4, 5, 6, 7, 16, 17])",
+  "smoke": false
+ },
+ "gates": {
+  "W1_strata_integrity": {
+   "pass": true,
+   "pairs_constructed": 36,
+   "construction_asserts_held": "36/36 (raise-on-failure at build: A1==A2, S1!=S2, S2==support(A), cancellation layout, connectivity)",
+   "realized_k_matches_field": "36/36 (asserted vs GADGET_SIZE per pair)",
+   "stratum_sizes": {
+    "k3": 6,
+    "k4": 6
+   },
+   "registered_sizes": [
+    6,
+    6
+   ],
+   "shortfall_disclosed": false
+  },
+  "W2_null_discipline": {
+   "pass": true,
+   "per_stratum": {
+    "k3": true,
+    "k4": true
+   },
+   "byte_offset_order_held": {
+    "k3": true,
+    "k4": true
+   },
+   "bars": {
+    "k3": 0.128333,
+    "k4": 0.106667
+   },
+   "bars_finite_positive": true,
+   "smoke": false
+  },
+  "W3_density_clause": {
+   "pass": true,
+   "reference_sign": 1,
+   "reference_sources": {
+    "exp173_deposited_majority_sign": 1,
+    "exp174_deposited_majority_sign": 1
+   },
+   "k3": {
+    "stat_m1_signed_mean": 0.14,
+    "null_bar": 0.128333,
+    "abs_stat_gt_bar": true,
+    "majority_sign": 1,
+    "n_majority_sign": 5,
+    "of": 6,
+    "outcome": "holds"
+   },
+   "k4": {
+    "stat_m1_signed_mean": 0.008333,
+    "null_bar": 0.106667,
+    "abs_stat_gt_bar": false,
+    "majority_sign": 1,
+    "n_majority_sign": 4,
+    "of": 6,
+    "outcome": "weakens"
+   },
+   "branch": "(i)",
+   "pattern": "k=4 stratum weakens while the k=3 stratum holds -- DENSITY EFFECT CONFIRMED"
+  },
+  "W4_attribution": {
+   "pass": true,
+   "stat_m2_signed_mean": {
+    "k3": 0.0,
+    "k4": 0.0
+   },
+   "null_bars": {
+    "k3": 0.128333,
+    "k4": 0.106667
+   },
+   "abs_stat_m2_le_bar_both_strata": true
+  }
+ },
+ "all_gates_pass": true,
+ "branch": {
+  "branch": "(i)",
+  "pattern": "k=4 stratum weakens while the k=3 stratum holds -- DENSITY EFFECT CONFIRMED",
+  "k3_outcome": "holds",
+  "k4_outcome": "weakens"
+ },
+ "verdict": "DENSITY EFFECT CONFIRMED (branch i) -- the k=4 stratum weakens while the k=3 stratum holds: |stat_k4| = 0.0083 vs its bar 0.1067 (majority sign 4/6) vs |stat_k3| = 0.1400 > bar 0.1283 (majority sign 5/6); the ensemble's sign structure is a DENSITY effect and the grouping read gains its first structural covariate (m2 side silent in both strata: |0.0000| vs bar 0.1283, |0.0000| vs bar 0.1067)",
+ "wall_seconds": 5.6
+}
