@@ -44,6 +44,7 @@ V_PHYS_MAX = 5.0
 # identity has no local pole and stays junction-carried (which is exactly
 # why recorded GJ-blockade phenotypes concentrate at posterior planes).
 NEURAL_SPEC_MIN = -60.0
+M33_LINE = -35.0
 # M35-A: the ARZ's multi-lineage convergence — K independent lineage
 # reads averaged into the blastema guess (the three planarian lineages:
 # epidermal, neural, muscle; K derived from the published lineage count,
@@ -581,7 +582,7 @@ class BioElectricCollective:
                     # junction network entirely.
                     if neural_w > 0.0 and spec is not None \
                             and 0 <= i < self.n \
-                            and float(spec[i]) >= NEURAL_SPEC_MIN:
+                            and float(spec[i]) >= M33_LINE:
                         nread = float(spec[i]) \
                             + self.rng.normal(0.0, eff_noise)
                         guess = (1.0 - neural_w) * guess + neural_w * nread
