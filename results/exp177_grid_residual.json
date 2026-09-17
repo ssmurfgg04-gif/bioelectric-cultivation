@@ -1,0 +1,1203 @@
+{
+ "sections": {
+  "replay": {
+   "instances": [
+    {
+     "cls": "flip_per",
+     "i": 0,
+     "n": 100,
+     "gen_seed": 148000,
+     "f_max": 1.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.6,
+      0.64,
+      0.71
+     ],
+     "scoped_median": 0.64
+    },
+    {
+     "cls": "flip_per",
+     "i": 1,
+     "n": 100,
+     "gen_seed": 148001,
+     "f_max": 1.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.71,
+      0.72,
+      0.67
+     ],
+     "scoped_median": 0.71
+    },
+    {
+     "cls": "flip_per",
+     "i": 2,
+     "n": 100,
+     "gen_seed": 148002,
+     "f_max": 1.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.76,
+      0.76,
+      0.65
+     ],
+     "scoped_median": 0.76
+    },
+    {
+     "cls": "flip_per",
+     "i": 3,
+     "n": 100,
+     "gen_seed": 148003,
+     "f_max": 1.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.65,
+      0.62,
+      0.67
+     ],
+     "scoped_median": 0.65
+    },
+    {
+     "cls": "flip_per",
+     "i": 4,
+     "n": 100,
+     "gen_seed": 148004,
+     "f_max": 1.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.69,
+      0.66,
+      0.62
+     ],
+     "scoped_median": 0.66
+    },
+    {
+     "cls": "flip_per",
+     "i": 5,
+     "n": 100,
+     "gen_seed": 148005,
+     "f_max": 1.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.6,
+      0.7,
+      0.6
+     ],
+     "scoped_median": 0.6
+    },
+    {
+     "cls": "flip_per",
+     "i": 6,
+     "n": 100,
+     "gen_seed": 148006,
+     "f_max": 1.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.64,
+      0.63,
+      0.64
+     ],
+     "scoped_median": 0.64
+    },
+    {
+     "cls": "flip_per",
+     "i": 7,
+     "n": 100,
+     "gen_seed": 148007,
+     "f_max": 1.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.63,
+      0.7,
+      0.74
+     ],
+     "scoped_median": 0.7
+    },
+    {
+     "cls": "flip_per",
+     "i": 8,
+     "n": 400,
+     "gen_seed": 148008,
+     "f_max": 1.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      1.71,
+      1.71,
+      1.71
+     ],
+     "scoped_median": 1.71
+    },
+    {
+     "cls": "flip_per",
+     "i": 9,
+     "n": 400,
+     "gen_seed": 148009,
+     "f_max": 1.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      1.7,
+      1.68,
+      1.74
+     ],
+     "scoped_median": 1.7
+    },
+    {
+     "cls": "flip_aper",
+     "i": 0,
+     "n": 100,
+     "gen_seed": 148000,
+     "f_max": 4.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.6,
+      0.64,
+      0.71
+     ],
+     "scoped_median": 0.64
+    },
+    {
+     "cls": "flip_aper",
+     "i": 1,
+     "n": 100,
+     "gen_seed": 148001,
+     "f_max": 4.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.71,
+      0.72,
+      0.67
+     ],
+     "scoped_median": 0.71
+    },
+    {
+     "cls": "flip_aper",
+     "i": 2,
+     "n": 100,
+     "gen_seed": 148002,
+     "f_max": 4.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.76,
+      0.76,
+      0.65
+     ],
+     "scoped_median": 0.76
+    },
+    {
+     "cls": "flip_aper",
+     "i": 3,
+     "n": 100,
+     "gen_seed": 148003,
+     "f_max": 4.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.65,
+      0.62,
+      0.67
+     ],
+     "scoped_median": 0.65
+    },
+    {
+     "cls": "flip_aper",
+     "i": 4,
+     "n": 100,
+     "gen_seed": 148004,
+     "f_max": 4.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.69,
+      0.66,
+      0.62
+     ],
+     "scoped_median": 0.66
+    },
+    {
+     "cls": "flip_aper",
+     "i": 5,
+     "n": 100,
+     "gen_seed": 148005,
+     "f_max": 4.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.6,
+      0.7,
+      0.6
+     ],
+     "scoped_median": 0.6
+    },
+    {
+     "cls": "flip_aper",
+     "i": 6,
+     "n": 100,
+     "gen_seed": 148006,
+     "f_max": 4.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.64,
+      0.63,
+      0.64
+     ],
+     "scoped_median": 0.64
+    },
+    {
+     "cls": "flip_aper",
+     "i": 7,
+     "n": 100,
+     "gen_seed": 148007,
+     "f_max": 4.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      0.63,
+      0.7,
+      0.74
+     ],
+     "scoped_median": 0.7
+    },
+    {
+     "cls": "flip_aper",
+     "i": 8,
+     "n": 400,
+     "gen_seed": 148008,
+     "f_max": 4.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      1.71,
+      1.71,
+      1.71
+     ],
+     "scoped_median": 1.71
+    },
+    {
+     "cls": "flip_aper",
+     "i": 9,
+     "n": 400,
+     "gen_seed": 148009,
+     "f_max": 4.0,
+     "identity_bit_exact": true,
+     "errs_ok": true,
+     "errs_scoped_replayed": [
+      1.7,
+      1.68,
+      1.74
+     ],
+     "scoped_median": 1.7
+    }
+   ],
+   "pooled_scoped_median_replayed": 0.6799999999999999,
+   "decodes_performed": 0,
+   "rejections": 0,
+   "runtime_s": 1.0
+  },
+  "census": {
+   "instances": [
+    {
+     "cls": "flip_per",
+     "i": 0,
+     "n": 100,
+     "gen_seed": 148000,
+     "f_max": 1.0,
+     "errs_scoped_replayed": [
+      0.6,
+      0.64,
+      0.71
+     ],
+     "scoped_median": 0.64,
+     "residual": 0.040000000000000036,
+     "features": {
+      "c1_class_per": 1.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 6.0,
+      "c5_support_size": 618.0,
+      "c5_support_density": 0.0618,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.002348888192922016
+     }
+    },
+    {
+     "cls": "flip_per",
+     "i": 1,
+     "n": 100,
+     "gen_seed": 148001,
+     "f_max": 1.0,
+     "errs_scoped_replayed": [
+      0.71,
+      0.72,
+      0.67
+     ],
+     "scoped_median": 0.71,
+     "residual": 0.10999999999999999,
+     "features": {
+      "c1_class_per": 1.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 6.0,
+      "c5_support_size": 610.0,
+      "c5_support_density": 0.061,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.0023796932839767293
+     }
+    },
+    {
+     "cls": "flip_per",
+     "i": 2,
+     "n": 100,
+     "gen_seed": 148002,
+     "f_max": 1.0,
+     "errs_scoped_replayed": [
+      0.76,
+      0.76,
+      0.65
+     ],
+     "scoped_median": 0.76,
+     "residual": 0.16000000000000003,
+     "features": {
+      "c1_class_per": 1.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 6.0,
+      "c5_support_size": 604.0,
+      "c5_support_density": 0.0604,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.002403332621234778
+     }
+    },
+    {
+     "cls": "flip_per",
+     "i": 3,
+     "n": 100,
+     "gen_seed": 148003,
+     "f_max": 1.0,
+     "errs_scoped_replayed": [
+      0.65,
+      0.62,
+      0.67
+     ],
+     "scoped_median": 0.65,
+     "residual": 0.050000000000000044,
+     "features": {
+      "c1_class_per": 1.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 6.0,
+      "c5_support_size": 594.0,
+      "c5_support_density": 0.0594,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.0024437927663734137
+     }
+    },
+    {
+     "cls": "flip_per",
+     "i": 4,
+     "n": 100,
+     "gen_seed": 148004,
+     "f_max": 1.0,
+     "errs_scoped_replayed": [
+      0.69,
+      0.66,
+      0.62
+     ],
+     "scoped_median": 0.66,
+     "residual": 0.06000000000000005,
+     "features": {
+      "c1_class_per": 1.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 6.0,
+      "c5_support_size": 588.0,
+      "c5_support_density": 0.0588,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.0024687294272547756
+     }
+    },
+    {
+     "cls": "flip_per",
+     "i": 5,
+     "n": 100,
+     "gen_seed": 148005,
+     "f_max": 1.0,
+     "errs_scoped_replayed": [
+      0.6,
+      0.7,
+      0.6
+     ],
+     "scoped_median": 0.6,
+     "residual": 0.0,
+     "features": {
+      "c1_class_per": 1.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 6.0,
+      "c5_support_size": 636.0,
+      "c5_support_density": 0.0636,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.0022824102251978082
+     }
+    },
+    {
+     "cls": "flip_per",
+     "i": 6,
+     "n": 100,
+     "gen_seed": 148006,
+     "f_max": 1.0,
+     "errs_scoped_replayed": [
+      0.64,
+      0.63,
+      0.64
+     ],
+     "scoped_median": 0.64,
+     "residual": 0.040000000000000036,
+     "features": {
+      "c1_class_per": 1.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 6.0,
+      "c5_support_size": 598.0,
+      "c5_support_density": 0.0598,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.002427446326464558
+     }
+    },
+    {
+     "cls": "flip_per",
+     "i": 7,
+     "n": 100,
+     "gen_seed": 148007,
+     "f_max": 1.0,
+     "errs_scoped_replayed": [
+      0.63,
+      0.7,
+      0.74
+     ],
+     "scoped_median": 0.7,
+     "residual": 0.09999999999999998,
+     "features": {
+      "c1_class_per": 1.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 6.0,
+      "c5_support_size": 554.0,
+      "c5_support_density": 0.0554,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.002620239897519503
+     }
+    },
+    {
+     "cls": "flip_per",
+     "i": 8,
+     "n": 400,
+     "gen_seed": 148008,
+     "f_max": 1.0,
+     "errs_scoped_replayed": [
+      1.71,
+      1.71,
+      1.71
+     ],
+     "scoped_median": 1.71,
+     "residual": 1.1099999999999999,
+     "features": {
+      "c1_class_per": 1.0,
+      "c2_n": 400.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 6.0,
+      "c5_support_size": 7270.0,
+      "c5_support_density": 0.0454375,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.00019967165106269373
+     }
+    },
+    {
+     "cls": "flip_per",
+     "i": 9,
+     "n": 400,
+     "gen_seed": 148009,
+     "f_max": 1.0,
+     "errs_scoped_replayed": [
+      1.7,
+      1.68,
+      1.74
+     ],
+     "scoped_median": 1.7,
+     "residual": 1.1,
+     "features": {
+      "c1_class_per": 1.0,
+      "c2_n": 400.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 6.0,
+      "c5_support_size": 7144.0,
+      "c5_support_density": 0.04465,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.00020319329552433106
+     }
+    },
+    {
+     "cls": "flip_aper",
+     "i": 0,
+     "n": 100,
+     "gen_seed": 148000,
+     "f_max": 4.0,
+     "errs_scoped_replayed": [
+      0.6,
+      0.64,
+      0.71
+     ],
+     "scoped_median": 0.64,
+     "residual": 0.040000000000000036,
+     "features": {
+      "c1_class_per": 0.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 24.0,
+      "c5_support_size": 618.0,
+      "c5_support_density": 0.0618,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.002382569781324348
+     }
+    },
+    {
+     "cls": "flip_aper",
+     "i": 1,
+     "n": 100,
+     "gen_seed": 148001,
+     "f_max": 4.0,
+     "errs_scoped_replayed": [
+      0.71,
+      0.72,
+      0.67
+     ],
+     "scoped_median": 0.71,
+     "residual": 0.10999999999999999,
+     "features": {
+      "c1_class_per": 0.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 23.0,
+      "c5_support_size": 610.0,
+      "c5_support_density": 0.061,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.002414271371827703
+     }
+    },
+    {
+     "cls": "flip_aper",
+     "i": 2,
+     "n": 100,
+     "gen_seed": 148002,
+     "f_max": 4.0,
+     "errs_scoped_replayed": [
+      0.76,
+      0.76,
+      0.65
+     ],
+     "scoped_median": 0.76,
+     "residual": 0.16000000000000003,
+     "features": {
+      "c1_class_per": 0.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 23.0,
+      "c5_support_size": 604.0,
+      "c5_support_density": 0.0604,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.002438606331106113
+     }
+    },
+    {
+     "cls": "flip_aper",
+     "i": 3,
+     "n": 100,
+     "gen_seed": 148003,
+     "f_max": 4.0,
+     "errs_scoped_replayed": [
+      0.65,
+      0.62,
+      0.67
+     ],
+     "scoped_median": 0.65,
+     "residual": 0.050000000000000044,
+     "features": {
+      "c1_class_per": 0.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 23.0,
+      "c5_support_size": 594.0,
+      "c5_support_density": 0.0594,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.0024828107302668446
+     }
+    },
+    {
+     "cls": "flip_aper",
+     "i": 4,
+     "n": 100,
+     "gen_seed": 148004,
+     "f_max": 4.0,
+     "errs_scoped_replayed": [
+      0.69,
+      0.66,
+      0.62
+     ],
+     "scoped_median": 0.66,
+     "residual": 0.06000000000000005,
+     "features": {
+      "c1_class_per": 0.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 24.0,
+      "c5_support_size": 588.0,
+      "c5_support_density": 0.0588,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.002507259242017625
+     }
+    },
+    {
+     "cls": "flip_aper",
+     "i": 5,
+     "n": 100,
+     "gen_seed": 148005,
+     "f_max": 4.0,
+     "errs_scoped_replayed": [
+      0.6,
+      0.7,
+      0.6
+     ],
+     "scoped_median": 0.6,
+     "residual": 0.0,
+     "features": {
+      "c1_class_per": 0.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 22.0,
+      "c5_support_size": 636.0,
+      "c5_support_density": 0.0636,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.002314199572050988
+     }
+    },
+    {
+     "cls": "flip_aper",
+     "i": 6,
+     "n": 100,
+     "gen_seed": 148006,
+     "f_max": 4.0,
+     "errs_scoped_replayed": [
+      0.64,
+      0.63,
+      0.64
+     ],
+     "scoped_median": 0.64,
+     "residual": 0.040000000000000036,
+     "features": {
+      "c1_class_per": 0.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 24.0,
+      "c5_support_size": 598.0,
+      "c5_support_density": 0.0598,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.00246468838595684
+     }
+    },
+    {
+     "cls": "flip_aper",
+     "i": 7,
+     "n": 100,
+     "gen_seed": 148007,
+     "f_max": 4.0,
+     "errs_scoped_replayed": [
+      0.63,
+      0.7,
+      0.74
+     ],
+     "scoped_median": 0.7,
+     "residual": 0.09999999999999998,
+     "features": {
+      "c1_class_per": 0.0,
+      "c2_n": 100.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 24.0,
+      "c5_support_size": 554.0,
+      "c5_support_density": 0.0554,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.0026593165333582214
+     }
+    },
+    {
+     "cls": "flip_aper",
+     "i": 8,
+     "n": 400,
+     "gen_seed": 148008,
+     "f_max": 4.0,
+     "errs_scoped_replayed": [
+      1.71,
+      1.71,
+      1.71
+     ],
+     "scoped_median": 1.71,
+     "residual": 1.1099999999999999,
+     "features": {
+      "c1_class_per": 0.0,
+      "c2_n": 400.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 24.0,
+      "c5_support_size": 7270.0,
+      "c5_support_density": 0.0454375,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.00019987878836794204
+     }
+    },
+    {
+     "cls": "flip_aper",
+     "i": 9,
+     "n": 400,
+     "gen_seed": 148009,
+     "f_max": 4.0,
+     "errs_scoped_replayed": [
+      1.7,
+      1.68,
+      1.74
+     ],
+     "scoped_median": 1.7,
+     "residual": 1.1,
+     "features": {
+      "c1_class_per": 0.0,
+      "c2_n": 400.0,
+      "c3_T": 32.0,
+      "c4_flip_mass": 24.0,
+      "c5_support_size": 7144.0,
+      "c5_support_density": 0.04465,
+      "c6_support_asymmetry": 0.0,
+      "c7_frame_diversity": 0.00020344200545376057
+     }
+    }
+   ],
+   "tables": {
+    "flip_per": [
+     {
+      "feature": "c1_class_per",
+      "family": "c1",
+      "dimension": "temporal",
+      "description": "schedule class one-hot (per=1, aper=0; with two classes the single indicator is the full one-hot rank space)",
+      "rho": null,
+      "p": null,
+      "constant": true,
+      "n": 10
+     },
+     {
+      "feature": "c2_n",
+      "family": "c2",
+      "dimension": "scale",
+      "description": "n (100 | 400)",
+      "rho": 0.6984302957695783,
+      "p": 0.024664781492646056,
+      "constant": false,
+      "n": 10
+     },
+     {
+      "feature": "c3_T",
+      "family": "c3",
+      "dimension": "temporal",
+      "description": "window length T (T_GRID)",
+      "rho": null,
+      "p": null,
+      "constant": true,
+      "n": 10
+     },
+     {
+      "feature": "c4_flip_mass",
+      "family": "c4",
+      "dimension": "temporal",
+      "description": "flip mass m_i: total presence transitions across the window (exp148's TC1 flip-clock matrix, undirected total)",
+      "rho": null,
+      "p": null,
+      "constant": true,
+      "n": 10
+     },
+     {
+      "feature": "c5_support_size",
+      "family": "c5",
+      "dimension": "density",
+      "description": "support size |sup_i| (directed nonzero entries)",
+      "rho": 0.29179466096643103,
+      "p": 0.4133266028608583,
+      "constant": false,
+      "n": 10
+     },
+     {
+      "feature": "c5_support_density",
+      "family": "c5",
+      "dimension": "density",
+      "description": "support density: edges / n^2",
+      "rho": -0.6808542089216724,
+      "p": 0.03021117068836832,
+      "constant": false,
+      "n": 10
+     },
+     {
+      "feature": "c6_support_asymmetry",
+      "family": "c6",
+      "dimension": "oriented",
+      "description": "||sup - sup^T||_0 / |sup|_0 (exp160's A-SYM footprint)",
+      "rho": null,
+      "p": null,
+      "constant": true,
+      "n": 10
+     },
+     {
+      "feature": "c7_frame_diversity",
+      "family": "c7",
+      "dimension": "temporal",
+      "description": "mean pairwise Jaccard distance between frame supports",
+      "rho": -0.29179466096643103,
+      "p": 0.4133266028608583,
+      "constant": false,
+      "n": 10
+     }
+    ],
+    "flip_aper": [
+     {
+      "feature": "c1_class_per",
+      "family": "c1",
+      "dimension": "temporal",
+      "description": "schedule class one-hot (per=1, aper=0; with two classes the single indicator is the full one-hot rank space)",
+      "rho": null,
+      "p": null,
+      "constant": true,
+      "n": 10
+     },
+     {
+      "feature": "c2_n",
+      "family": "c2",
+      "dimension": "scale",
+      "description": "n (100 | 400)",
+      "rho": 0.6984302957695783,
+      "p": 0.024664781492646056,
+      "constant": false,
+      "n": 10
+     },
+     {
+      "feature": "c3_T",
+      "family": "c3",
+      "dimension": "temporal",
+      "description": "window length T (T_GRID)",
+      "rho": null,
+      "p": null,
+      "constant": true,
+      "n": 10
+     },
+     {
+      "feature": "c4_flip_mass",
+      "family": "c4",
+      "dimension": "temporal",
+      "description": "flip mass m_i: total presence transitions across the window (exp148's TC1 flip-clock matrix, undirected total)",
+      "rho": 0.2504351613389047,
+      "p": 0.48525794173404,
+      "constant": false,
+      "n": 10
+     },
+     {
+      "feature": "c5_support_size",
+      "family": "c5",
+      "dimension": "density",
+      "description": "support size |sup_i| (directed nonzero entries)",
+      "rho": 0.29179466096643103,
+      "p": 0.4133266028608583,
+      "constant": false,
+      "n": 10
+     },
+     {
+      "feature": "c5_support_density",
+      "family": "c5",
+      "dimension": "density",
+      "description": "support density: edges / n^2",
+      "rho": -0.6808542089216724,
+      "p": 0.03021117068836832,
+      "constant": false,
+      "n": 10
+     },
+     {
+      "feature": "c6_support_asymmetry",
+      "family": "c6",
+      "dimension": "oriented",
+      "description": "||sup - sup^T||_0 / |sup|_0 (exp160's A-SYM footprint)",
+      "rho": null,
+      "p": null,
+      "constant": true,
+      "n": 10
+     },
+     {
+      "feature": "c7_frame_diversity",
+      "family": "c7",
+      "dimension": "temporal",
+      "description": "mean pairwise Jaccard distance between frame supports",
+      "rho": -0.29179466096643103,
+      "p": 0.4133266028608583,
+      "constant": false,
+      "n": 10
+     }
+    ],
+    "pooled": [
+     {
+      "feature": "c1_class_per",
+      "family": "c1",
+      "dimension": "temporal",
+      "description": "schedule class one-hot (per=1, aper=0; with two classes the single indicator is the full one-hot rank space)",
+      "rho": 0.0,
+      "p": 1.0,
+      "constant": false,
+      "n": 20
+     },
+     {
+      "feature": "c2_n",
+      "family": "c2",
+      "dimension": "scale",
+      "description": "n (100 | 400)",
+      "rho": 0.6984302957695783,
+      "p": 0.0006144595620927562,
+      "constant": false,
+      "n": 20
+     },
+     {
+      "feature": "c3_T",
+      "family": "c3",
+      "dimension": "temporal",
+      "description": "window length T (T_GRID)",
+      "rho": null,
+      "p": null,
+      "constant": true,
+      "n": 20
+     },
+     {
+      "feature": "c4_flip_mass",
+      "family": "c4",
+      "dimension": "temporal",
+      "description": "flip mass m_i: total presence transitions across the window (exp148's TC1 flip-clock matrix, undirected total)",
+      "rho": 0.059237453889704965,
+      "p": 0.804074510883893,
+      "constant": false,
+      "n": 20
+     },
+     {
+      "feature": "c5_support_size",
+      "family": "c5",
+      "dimension": "density",
+      "description": "support size |sup_i| (directed nonzero entries)",
+      "rho": 0.291794660966431,
+      "p": 0.21191917807357807,
+      "constant": false,
+      "n": 20
+     },
+     {
+      "feature": "c5_support_density",
+      "family": "c5",
+      "dimension": "density",
+      "description": "support density: edges / n^2",
+      "rho": -0.6808542089216723,
+      "p": 0.0009515292950736343,
+      "constant": false,
+      "n": 20
+     },
+     {
+      "feature": "c6_support_asymmetry",
+      "family": "c6",
+      "dimension": "oriented",
+      "description": "||sup - sup^T||_0 / |sup|_0 (exp160's A-SYM footprint)",
+      "rho": null,
+      "p": null,
+      "constant": true,
+      "n": 20
+     },
+     {
+      "feature": "c7_frame_diversity",
+      "family": "c7",
+      "dimension": "temporal",
+      "description": "mean pairwise Jaccard distance between frame supports",
+      "rho": -0.2982658171961444,
+      "p": 0.2014927139635197,
+      "constant": false,
+      "n": 20
+     }
+    ]
+   },
+   "dominant": {
+    "feature": "c2_n",
+    "family": "c2",
+    "dimension": "scale",
+    "description": "n (100 | 400)",
+    "rho": 0.6984302957695783,
+    "p": 0.0006144595620927562,
+    "constant": false,
+    "n": 20
+   },
+   "runner_up": {
+    "feature": "c5_support_density",
+    "family": "c5",
+    "dimension": "density",
+    "description": "support density: edges / n^2",
+    "rho": -0.6808542089216723,
+    "p": 0.0009515292950736343,
+    "constant": false,
+    "n": 20
+   },
+   "unattributed": false,
+   "paired_outcomes_bit_identical": true,
+   "spearman_impl": "scipy.stats.spearmanr",
+   "runtime_s": 2.0
+  },
+  "repair": {
+   "priced": false,
+   "gap_registered": true,
+   "dominant_feature": "c2_n",
+   "dimension": "scale",
+   "reason": "no rule in exp166's RULE_MAP maps the scale dimension (n): the mapped-rule clause prices only asymmetry->R_O and density->R_H; the gap is registered",
+   "runtime_s": 0.0
+  }
+ },
+ "gates": {
+  "R1_replay": {
+   "pass": true,
+   "identity_all_bit_exact": true,
+   "pooled_median_replayed": 0.6799999999999999,
+   "pooled_median_deposited": 0.6799999999999999,
+   "pooled_median_bit_exact": true,
+   "n_instances": 20,
+   "n_errs": 60,
+   "decodes_performed": 0,
+   "zero_rejections": true,
+   "rejections": 0
+  },
+  "R2_census_complete": {
+   "pass": true,
+   "features_finite_all_instances": true,
+   "n_instances": 20,
+   "n_feature_columns": 8,
+   "n_feature_families": 7,
+   "tables_deposited": [
+    "flip_per",
+    "flip_aper",
+    "pooled"
+   ],
+   "table_complete": true,
+   "spearman_impl": "scipy.stats.spearmanr",
+   "no_nan_deposited": true
+  },
+  "R3_verdict": {
+   "pass": true,
+   "branch": {
+    "named": true,
+    "unattributed": false,
+    "feature": "c2_n",
+    "family": "c2",
+    "dimension": "scale",
+    "rho": 0.6984302957695783,
+    "p": 0.0006144595620927562,
+    "abs_rho": 0.6984302957695783,
+    "threshold": 0.5,
+    "runner_up": {
+     "feature": "c5_support_density",
+     "rho": -0.6808542089216723
+    }
+   },
+   "clause": "a dominant channel is NAMED at |rho| >= 0.5, OR the residual is deposited UNATTRIBUTED; both branches complete the gate; the branch taken is the finding",
+   "paired_outcomes_bit_identical": true
+  },
+  "R4_hygiene": {
+   "pass": true,
+   "rejections": 0,
+   "decodes_performed": 0,
+   "zero_rejections": true,
+   "pin": {
+    "floor": -35.0,
+    "save_restore_asserted": true,
+    "modules": [
+     "cultivation.bioelectric.collective",
+     "experiments.exp142_sign_read",
+     "experiments.exp145_phase_read",
+     "experiments.exp148_temporal_read",
+     "experiments.exp94_multizone_scale"
+    ]
+   }
+  }
+ },
+ "exp": "exp177_grid_residual",
+ "claim": "exp169's registered next (L148 (ii)): the schedule grid classifies ALL-DIFFUSE at T=32, so the scoped read is exp167's adopted read everywhere on the grid and the pooled median stands at 0.68 mV - N3's 0.60 bar is never reached by R_T there. THIS EXPERIMENT decomposes the grid's residual r_i = scoped_err_i - 0.60 over the pre-registered seven-feature channel census (media alone, zero knobs): Spearman per class and pooled; the dominant channel named at |rho| >= 0.5 OR UNATTRIBUTED; the candidate repair priced only on a named dominant channel's top tercile (no adoption claim). The errs are exp169's deposited S4 records replayed bit-exactly (GATE-R1, zero new decodes).",
+ "pre_registration": {
+  "rho_bar": 0.5,
+  "n3_bar": 0.6,
+  "residual": "r_i = scoped_err_i - 0.60 (scoped_err_i = the instance's median decode err under the scoped read, exp169's deposited S4 records)",
+  "features": [
+   "c1_class_per",
+   "c2_n",
+   "c3_T",
+   "c4_flip_mass",
+   "c5_support_size",
+   "c5_support_density",
+   "c6_support_asymmetry",
+   "c7_frame_diversity"
+  ],
+  "repair_map": {
+   "density": "hyper",
+   "oriented": "oriented",
+   "temporal": null,
+   "scale": null
+  },
+  "gates": [
+   "R1_replay",
+   "R2_census_complete",
+   "R3_verdict",
+   "R4_hygiene"
+  ]
+ },
+ "config": {
+  "instances": 10,
+  "n_instances": 8,
+  "n_instances_400": 2,
+  "grid_classes": {
+   "flip_per": "per",
+   "flip_aper": "aper"
+  },
+  "grid_base_seed": 148000,
+  "t_grid": 32,
+  "replay_source": "results/exp169_rt_scoping.json",
+  "replay_seeds": [
+   1,
+   2,
+   3
+  ],
+  "repair_seeds": [
+   1,
+   2,
+   3
+  ],
+  "spearman_impl": "scipy.stats.spearmanr",
+  "pin_floor": -35.0
+ },
+ "verdict": {
+  "gates": "4/4",
+  "dominant_channel": "c2_n",
+  "unattributed": false,
+  "one_line": "the grid residual (r_i = scoped_err_i - 0.6): dominant channel c2_n (scale dimension, pooled rho=+0.6984 >= 0.5); the gap is registered (no candidate repair priced)."
+ },
+ "rejections": 0,
+ "runtime_s": 3.0
+}
