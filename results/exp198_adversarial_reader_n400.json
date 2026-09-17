@@ -1,0 +1,4809 @@
+{
+ "cells": {
+  "c3": {
+   "cell": 3,
+   "violation_class": "A-PAIR+A-STAT",
+   "n_instances": 25,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_build": 400,
+   "median_err": 0.62,
+   "median_of_instance_medians": 0.62,
+   "n_rejections": 0,
+   "rejection_records": [],
+   "verify_rate": 1.0,
+   "n_diffuse": 25,
+   "n_concentrated": 0,
+   "f_max_min": 6.0,
+   "f_max_max": 7.0,
+   "n_above_bar": 0,
+   "above_bar": [],
+   "cross_arm_audit": {
+    "n": 3,
+    "n_anomalies": 0,
+    "records": [
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     }
+    ]
+   },
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 169166,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.611,
+     "n_hyper": 11,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.51,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 1,
+     "gen_seed": 169167,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.613,
+     "n_hyper": 3,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.52,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 2,
+     "gen_seed": 169168,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.687,
+     "n_hyper": 16,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.58,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.58
+    },
+    {
+     "j": 3,
+     "gen_seed": 169169,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.886,
+     "n_hyper": 15,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.94,
+      0.98,
+      0.94
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.94
+    },
+    {
+     "j": 4,
+     "gen_seed": 169170,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.783,
+     "n_hyper": 11,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.65,
+      0.67,
+      0.66
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.66
+    },
+    {
+     "j": 5,
+     "gen_seed": 169171,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.612,
+     "n_hyper": 11,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.55,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 6,
+     "gen_seed": 169172,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.749,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.62,
+      0.64,
+      0.62
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.62
+    },
+    {
+     "j": 7,
+     "gen_seed": 169173,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.7,
+     "n_hyper": 8,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.56,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 8,
+     "gen_seed": 169174,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.877,
+     "n_hyper": 5,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.85,
+      0.88,
+      0.86
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.86
+    },
+    {
+     "j": 9,
+     "gen_seed": 169175,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.674,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.55,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.57
+    },
+    {
+     "j": 10,
+     "gen_seed": 169176,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.635,
+     "n_hyper": 1,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.59,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 11,
+     "gen_seed": 169177,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.714,
+     "n_hyper": 13,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.58,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.58
+    },
+    {
+     "j": 12,
+     "gen_seed": 169178,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.748,
+     "n_hyper": 12,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.64,
+      0.6,
+      0.61
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.61
+    },
+    {
+     "j": 13,
+     "gen_seed": 169179,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.835,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.8,
+      0.79,
+      0.79
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.79
+    },
+    {
+     "j": 14,
+     "gen_seed": 169180,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.661,
+     "n_hyper": 10,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.57,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 15,
+     "gen_seed": 169181,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.877,
+     "n_hyper": 13,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.89,
+      0.91,
+      0.89
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.89
+    },
+    {
+     "j": 16,
+     "gen_seed": 169182,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.904,
+     "n_hyper": 5,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      1.0,
+      1.01,
+      1.02
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.01
+    },
+    {
+     "j": 17,
+     "gen_seed": 169183,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.758,
+     "n_hyper": 14,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.65,
+      0.61,
+      0.62
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.62
+    },
+    {
+     "j": 18,
+     "gen_seed": 169184,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.915,
+     "n_hyper": 17,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      1.12,
+      1.08,
+      1.08
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.08
+    },
+    {
+     "j": 19,
+     "gen_seed": 169185,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.659,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.55,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 20,
+     "gen_seed": 169186,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.927,
+     "n_hyper": 19,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      1.23,
+      1.26,
+      1.25
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.25
+    },
+    {
+     "j": 21,
+     "gen_seed": 169187,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.89,
+     "n_hyper": 3,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.97,
+      0.98,
+      0.97
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.97
+    },
+    {
+     "j": 22,
+     "gen_seed": 169188,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.857,
+     "n_hyper": 15,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.83,
+      0.83,
+      0.83
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.83
+    },
+    {
+     "j": 23,
+     "gen_seed": 169189,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.922,
+     "n_hyper": 7,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      1.11,
+      1.12,
+      1.12
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.12
+    },
+    {
+     "j": 24,
+     "gen_seed": 169190,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.705,
+     "n_hyper": 11,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.58,
+      0.55,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    }
+   ],
+   "runtime_s": 87.8
+  },
+  "c5": {
+   "cell": 5,
+   "violation_class": "A-SYM+A-STAT",
+   "n_instances": 25,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_build": 400,
+   "median_err": 0.59,
+   "median_of_instance_medians": 0.58,
+   "n_rejections": 0,
+   "rejection_records": [],
+   "verify_rate": 1.0,
+   "n_diffuse": 25,
+   "n_concentrated": 0,
+   "f_max_min": 6.0,
+   "f_max_max": 7.0,
+   "n_above_bar": 0,
+   "above_bar": [],
+   "cross_arm_audit": {
+    "n": 3,
+    "n_anomalies": 0,
+    "records": [
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     }
+    ]
+   },
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 171166,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.647,
+     "n_hyper": 0,
+     "n_oneway": 1758,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.52,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 1,
+     "gen_seed": 171167,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.711,
+     "n_hyper": 0,
+     "n_oneway": 1686,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.59,
+      0.56,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 2,
+     "gen_seed": 171168,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.643,
+     "n_hyper": 0,
+     "n_oneway": 1774,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.5,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 3,
+     "gen_seed": 171169,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.844,
+     "n_hyper": 0,
+     "n_oneway": 1697,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.68,
+      0.66,
+      0.66
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.66
+    },
+    {
+     "j": 4,
+     "gen_seed": 171170,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.82,
+     "n_hyper": 0,
+     "n_oneway": 1707,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.64,
+      0.66,
+      0.63
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.64
+    },
+    {
+     "j": 5,
+     "gen_seed": 171171,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.909,
+     "n_hyper": 0,
+     "n_oneway": 1768,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.91,
+      0.88,
+      0.87
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.88
+    },
+    {
+     "j": 6,
+     "gen_seed": 171172,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.746,
+     "n_hyper": 0,
+     "n_oneway": 1811,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.6,
+      0.57,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.58
+    },
+    {
+     "j": 7,
+     "gen_seed": 171173,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.881,
+     "n_hyper": 0,
+     "n_oneway": 1752,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.76,
+      0.75,
+      0.76
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.76
+    },
+    {
+     "j": 8,
+     "gen_seed": 171174,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.732,
+     "n_hyper": 0,
+     "n_oneway": 1787,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.58,
+      0.59
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.58
+    },
+    {
+     "j": 9,
+     "gen_seed": 171175,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.886,
+     "n_hyper": 0,
+     "n_oneway": 1847,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.84,
+      0.83,
+      0.8
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.83
+    },
+    {
+     "j": 10,
+     "gen_seed": 171176,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.742,
+     "n_hyper": 0,
+     "n_oneway": 1800,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.6,
+      0.57,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.57
+    },
+    {
+     "j": 11,
+     "gen_seed": 171177,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.948,
+     "n_hyper": 0,
+     "n_oneway": 1844,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      1.02,
+      1.01,
+      1.03
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.02
+    },
+    {
+     "j": 12,
+     "gen_seed": 171178,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.695,
+     "n_hyper": 0,
+     "n_oneway": 1843,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.55,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 13,
+     "gen_seed": 171179,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.892,
+     "n_hyper": 0,
+     "n_oneway": 1844,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.84,
+      0.8,
+      0.83
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.83
+    },
+    {
+     "j": 14,
+     "gen_seed": 171180,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.692,
+     "n_hyper": 0,
+     "n_oneway": 1783,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.54,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 15,
+     "gen_seed": 171181,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.67,
+     "n_hyper": 0,
+     "n_oneway": 1792,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.56,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 16,
+     "gen_seed": 171182,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.667,
+     "n_hyper": 0,
+     "n_oneway": 1791,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.52,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 17,
+     "gen_seed": 171183,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.761,
+     "n_hyper": 0,
+     "n_oneway": 1797,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.59,
+      0.62,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.59
+    },
+    {
+     "j": 18,
+     "gen_seed": 171184,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.66,
+     "n_hyper": 0,
+     "n_oneway": 1840,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.52,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 19,
+     "gen_seed": 171185,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.649,
+     "n_hyper": 0,
+     "n_oneway": 1838,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.49,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 20,
+     "gen_seed": 171186,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.679,
+     "n_hyper": 0,
+     "n_oneway": 1726,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.58,
+      0.57
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.57
+    },
+    {
+     "j": 21,
+     "gen_seed": 171187,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.93,
+     "n_hyper": 0,
+     "n_oneway": 1705,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      1.0,
+      0.99,
+      0.96
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.99
+    },
+    {
+     "j": 22,
+     "gen_seed": 171188,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.903,
+     "n_hyper": 0,
+     "n_oneway": 1756,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.85,
+      0.83,
+      0.81
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.83
+    },
+    {
+     "j": 23,
+     "gen_seed": 171189,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.766,
+     "n_hyper": 0,
+     "n_oneway": 1791,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.61,
+      0.6,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.6
+    },
+    {
+     "j": 24,
+     "gen_seed": 171190,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.849,
+     "n_hyper": 0,
+     "n_oneway": 1777,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.67,
+      0.7,
+      0.65
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.67
+    }
+   ],
+   "runtime_s": 89.5
+  },
+  "c6": {
+   "cell": 6,
+   "violation_class": "A-SYM+A-PAIR",
+   "n_instances": 25,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_build": 400,
+   "median_err": 1.39,
+   "median_of_instance_medians": 1.4,
+   "n_rejections": 0,
+   "rejection_records": [],
+   "verify_rate": 1.0,
+   "n_diffuse": 25,
+   "n_concentrated": 0,
+   "f_max_min": 0.0,
+   "f_max_max": 0.0,
+   "n_above_bar": 25,
+   "above_bar": [
+    {
+     "j": 0,
+     "median_err": 1.42,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.42,
+      1.44,
+      1.42
+     ]
+    },
+    {
+     "j": 1,
+     "median_err": 1.36,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.33,
+      1.36,
+      1.38
+     ]
+    },
+    {
+     "j": 2,
+     "median_err": 1.36,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.34,
+      1.36,
+      1.37
+     ]
+    },
+    {
+     "j": 3,
+     "median_err": 1.4,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.4,
+      1.39,
+      1.41
+     ]
+    },
+    {
+     "j": 4,
+     "median_err": 1.37,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.37,
+      1.37,
+      1.36
+     ]
+    },
+    {
+     "j": 5,
+     "median_err": 1.37,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.38,
+      1.37,
+      1.36
+     ]
+    },
+    {
+     "j": 6,
+     "median_err": 1.4,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.39,
+      1.4,
+      1.41
+     ]
+    },
+    {
+     "j": 7,
+     "median_err": 1.45,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.44,
+      1.45,
+      1.45
+     ]
+    },
+    {
+     "j": 8,
+     "median_err": 1.38,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.37,
+      1.38,
+      1.38
+     ]
+    },
+    {
+     "j": 9,
+     "median_err": 1.38,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.38,
+      1.38,
+      1.37
+     ]
+    },
+    {
+     "j": 10,
+     "median_err": 1.41,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.42,
+      1.4,
+      1.41
+     ]
+    },
+    {
+     "j": 11,
+     "median_err": 1.35,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.33,
+      1.35,
+      1.37
+     ]
+    },
+    {
+     "j": 12,
+     "median_err": 1.41,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.41,
+      1.39,
+      1.44
+     ]
+    },
+    {
+     "j": 13,
+     "median_err": 1.38,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.39,
+      1.38,
+      1.38
+     ]
+    },
+    {
+     "j": 14,
+     "median_err": 1.44,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.45,
+      1.44,
+      1.43
+     ]
+    },
+    {
+     "j": 15,
+     "median_err": 1.37,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.38,
+      1.37,
+      1.36
+     ]
+    },
+    {
+     "j": 16,
+     "median_err": 1.38,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.39,
+      1.38,
+      1.36
+     ]
+    },
+    {
+     "j": 17,
+     "median_err": 1.42,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.42,
+      1.38,
+      1.42
+     ]
+    },
+    {
+     "j": 18,
+     "median_err": 1.34,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.34,
+      1.36,
+      1.34
+     ]
+    },
+    {
+     "j": 19,
+     "median_err": 1.43,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.43,
+      1.43,
+      1.4
+     ]
+    },
+    {
+     "j": 20,
+     "median_err": 1.38,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.38,
+      1.38,
+      1.36
+     ]
+    },
+    {
+     "j": 21,
+     "median_err": 1.45,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.45,
+      1.45,
+      1.43
+     ]
+    },
+    {
+     "j": 22,
+     "median_err": 1.41,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.41,
+      1.41,
+      1.45
+     ]
+    },
+    {
+     "j": 23,
+     "median_err": 1.41,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.41,
+      1.42,
+      1.41
+     ]
+    },
+    {
+     "j": 24,
+     "median_err": 1.44,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "errs": [
+      1.41,
+      1.44,
+      1.45
+     ]
+    }
+   ],
+   "cross_arm_audit": {
+    "n": 3,
+    "n_anomalies": 0,
+    "records": [
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 0.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 0.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 0.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     }
+    ]
+   },
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 172166,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 9,
+     "n_oneway": 1816,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.42,
+      1.44,
+      1.42
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.42
+    },
+    {
+     "j": 1,
+     "gen_seed": 172167,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 20,
+     "n_oneway": 1746,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.33,
+      1.36,
+      1.38
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.36
+    },
+    {
+     "j": 2,
+     "gen_seed": 172168,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 6,
+     "n_oneway": 1807,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.34,
+      1.36,
+      1.37
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.36
+    },
+    {
+     "j": 3,
+     "gen_seed": 172169,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 7,
+     "n_oneway": 1817,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.4,
+      1.39,
+      1.41
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.4
+    },
+    {
+     "j": 4,
+     "gen_seed": 172170,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 2,
+     "n_oneway": 1800,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.37,
+      1.37,
+      1.36
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.37
+    },
+    {
+     "j": 5,
+     "gen_seed": 172171,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 2,
+     "n_oneway": 1804,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.38,
+      1.37,
+      1.36
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.37
+    },
+    {
+     "j": 6,
+     "gen_seed": 172172,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 2,
+     "n_oneway": 1804,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.39,
+      1.4,
+      1.41
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.4
+    },
+    {
+     "j": 7,
+     "gen_seed": 172173,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 16,
+     "n_oneway": 1794,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.44,
+      1.45,
+      1.45
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.45
+    },
+    {
+     "j": 8,
+     "gen_seed": 172174,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 18,
+     "n_oneway": 1783,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.37,
+      1.38,
+      1.38
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.38
+    },
+    {
+     "j": 9,
+     "gen_seed": 172175,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 13,
+     "n_oneway": 1733,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.38,
+      1.38,
+      1.37
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.38
+    },
+    {
+     "j": 10,
+     "gen_seed": 172176,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 2,
+     "n_oneway": 1695,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.42,
+      1.4,
+      1.41
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.41
+    },
+    {
+     "j": 11,
+     "gen_seed": 172177,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 11,
+     "n_oneway": 1737,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.33,
+      1.35,
+      1.37
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.35
+    },
+    {
+     "j": 12,
+     "gen_seed": 172178,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 1,
+     "n_oneway": 1786,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.41,
+      1.39,
+      1.44
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.41
+    },
+    {
+     "j": 13,
+     "gen_seed": 172179,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 8,
+     "n_oneway": 1763,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.39,
+      1.38,
+      1.38
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.38
+    },
+    {
+     "j": 14,
+     "gen_seed": 172180,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 20,
+     "n_oneway": 1747,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.45,
+      1.44,
+      1.43
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.44
+    },
+    {
+     "j": 15,
+     "gen_seed": 172181,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 17,
+     "n_oneway": 1873,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.38,
+      1.37,
+      1.36
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.37
+    },
+    {
+     "j": 16,
+     "gen_seed": 172182,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 1,
+     "n_oneway": 1858,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.39,
+      1.38,
+      1.36
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.38
+    },
+    {
+     "j": 17,
+     "gen_seed": 172183,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 20,
+     "n_oneway": 1831,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.42,
+      1.38,
+      1.42
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.42
+    },
+    {
+     "j": 18,
+     "gen_seed": 172184,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 16,
+     "n_oneway": 1787,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.34,
+      1.36,
+      1.34
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.34
+    },
+    {
+     "j": 19,
+     "gen_seed": 172185,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 10,
+     "n_oneway": 1760,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.43,
+      1.43,
+      1.4
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.43
+    },
+    {
+     "j": 20,
+     "gen_seed": 172186,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 15,
+     "n_oneway": 1834,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.38,
+      1.38,
+      1.36
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.38
+    },
+    {
+     "j": 21,
+     "gen_seed": 172187,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 7,
+     "n_oneway": 1792,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.45,
+      1.45,
+      1.43
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.45
+    },
+    {
+     "j": 22,
+     "gen_seed": 172188,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 16,
+     "n_oneway": 1804,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.41,
+      1.41,
+      1.45
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.41
+    },
+    {
+     "j": 23,
+     "gen_seed": 172189,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 5,
+     "n_oneway": 1761,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.41,
+      1.42,
+      1.41
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.41
+    },
+    {
+     "j": 24,
+     "gen_seed": 172190,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 3,
+     "n_oneway": 1835,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      1.41,
+      1.44,
+      1.45
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 1.44
+    }
+   ],
+   "runtime_s": 94.4
+  },
+  "c7": {
+   "cell": 7,
+   "violation_class": "A-SYM+A-PAIR+A-STAT",
+   "n_instances": 25,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_build": 400,
+   "median_err": 0.58,
+   "median_of_instance_medians": 0.58,
+   "n_rejections": 0,
+   "rejection_records": [],
+   "verify_rate": 1.0,
+   "n_diffuse": 25,
+   "n_concentrated": 0,
+   "f_max_min": 6.0,
+   "f_max_max": 7.0,
+   "n_above_bar": 0,
+   "above_bar": [],
+   "cross_arm_audit": {
+    "n": 3,
+    "n_anomalies": 0,
+    "records": [
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     }
+    ]
+   },
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 173166,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.685,
+     "n_hyper": 20,
+     "n_oneway": 1820,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.52,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 1,
+     "gen_seed": 173167,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.644,
+     "n_hyper": 6,
+     "n_oneway": 1762,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.53,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 2,
+     "gen_seed": 173168,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.8,
+     "n_hyper": 16,
+     "n_oneway": 1760,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.63,
+      0.65,
+      0.59
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.63
+    },
+    {
+     "j": 3,
+     "gen_seed": 173169,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.895,
+     "n_hyper": 12,
+     "n_oneway": 1809,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.83,
+      0.81,
+      0.84
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.83
+    },
+    {
+     "j": 4,
+     "gen_seed": 173170,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.616,
+     "n_hyper": 10,
+     "n_oneway": 1791,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.53,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 5,
+     "gen_seed": 173171,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.892,
+     "n_hyper": 15,
+     "n_oneway": 1777,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.83,
+      0.82,
+      0.8
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.82
+    },
+    {
+     "j": 6,
+     "gen_seed": 173172,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.893,
+     "n_hyper": 11,
+     "n_oneway": 1772,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.82,
+      0.84,
+      0.83
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.83
+    },
+    {
+     "j": 7,
+     "gen_seed": 173173,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.833,
+     "n_hyper": 13,
+     "n_oneway": 1837,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.68,
+      0.66,
+      0.7
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.68
+    },
+    {
+     "j": 8,
+     "gen_seed": 173174,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.693,
+     "n_hyper": 14,
+     "n_oneway": 1822,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.55,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 9,
+     "gen_seed": 173175,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.642,
+     "n_hyper": 3,
+     "n_oneway": 1756,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.58,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 10,
+     "gen_seed": 173176,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.877,
+     "n_hyper": 17,
+     "n_oneway": 1834,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.87,
+      0.83,
+      0.83
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.83
+    },
+    {
+     "j": 11,
+     "gen_seed": 173177,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.655,
+     "n_hyper": 11,
+     "n_oneway": 1816,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.5,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 12,
+     "gen_seed": 173178,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.763,
+     "n_hyper": 9,
+     "n_oneway": 1824,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.58,
+      0.55,
+      0.62
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.58
+    },
+    {
+     "j": 13,
+     "gen_seed": 173179,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.604,
+     "n_hyper": 17,
+     "n_oneway": 1793,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.52,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 14,
+     "gen_seed": 173180,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.703,
+     "n_hyper": 9,
+     "n_oneway": 1806,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.57,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 15,
+     "gen_seed": 173181,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.784,
+     "n_hyper": 6,
+     "n_oneway": 1776,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.63,
+      0.59,
+      0.62
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.62
+    },
+    {
+     "j": 16,
+     "gen_seed": 173182,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.86,
+     "n_hyper": 19,
+     "n_oneway": 1773,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.72,
+      0.73,
+      0.73
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.73
+    },
+    {
+     "j": 17,
+     "gen_seed": 173183,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.878,
+     "n_hyper": 10,
+     "n_oneway": 1709,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.82,
+      0.79,
+      0.78
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.79
+    },
+    {
+     "j": 18,
+     "gen_seed": 173184,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.906,
+     "n_hyper": 6,
+     "n_oneway": 1843,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.86,
+      0.84,
+      0.87
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.86
+    },
+    {
+     "j": 19,
+     "gen_seed": 173185,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.689,
+     "n_hyper": 4,
+     "n_oneway": 1801,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.54,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 20,
+     "gen_seed": 173186,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.822,
+     "n_hyper": 7,
+     "n_oneway": 1777,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.66,
+      0.65,
+      0.66
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.66
+    },
+    {
+     "j": 21,
+     "gen_seed": 173187,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.729,
+     "n_hyper": 11,
+     "n_oneway": 1803,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.53,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 22,
+     "gen_seed": 173188,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.629,
+     "n_hyper": 13,
+     "n_oneway": 1803,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.53,
+      0.57
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 23,
+     "gen_seed": 173189,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.858,
+     "n_hyper": 14,
+     "n_oneway": 1790,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.71,
+      0.71,
+      0.71
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.71
+    },
+    {
+     "j": 24,
+     "gen_seed": 173190,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.654,
+     "n_hyper": 7,
+     "n_oneway": 1774,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.57,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    }
+   ],
+   "runtime_s": 71.4
+  }
+ },
+ "exp": "exp198_adversarial_reader_n400",
+ "claim": "the universal reader's last open class at the size law's scale: exp181's four-cell adversarial cohort REBUILT AT n=400 (exp166's CornerMedium with n passed as the constructor's first parameter \u2014 no subclass; 4 cells 3/5/6/7 x 25 instances, exp181's seed rule) through the production read \u2014 exp160's decode stack VERBATIM (fingerprint asserted) with the temporal dispatch being exp178's scoped arm under the -35.0 pin \u2014 zero rejections, the adversarial median at exp160's U2 bar, the n=400-vs-n=100 ratio priced against exp185's MONOTONE n-law (recorded, not gated), the tail characterized per cell, the scoped arm's discipline recorded",
+ "cohort": {
+  "generator": "exp166's CornerMedium VERBATIM at n = 400 \u2014 the constructor takes n as its FIRST PARAMETER (exp181's n=100 was a call-site value; exp166's module-level N was never hardcoded in the class), so n=400 is a call-site disclosure, NO subclass needed; asserted med.n == 400 at every build",
+  "seed_base": 166166,
+  "seed_rule": "EXP166_SEED_BASE + 1000*c + j, j = 0..24",
+  "cells": [
+   3,
+   5,
+   6,
+   7
+  ],
+  "per_cell": 25,
+  "n": 400,
+  "n_media": 100,
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n_decodes": 300,
+  "cell_classes": {
+   "c3": "A-PAIR+A-STAT",
+   "c5": "A-SYM+A-STAT",
+   "c6": "A-SYM+A-PAIR",
+   "c7": "A-SYM+A-PAIR+A-STAT"
+  }
+ },
+ "read": {
+  "projection": "exp148 read_temporal VERBATIM (PN1/PN2 dominant-quadrature + TC1 flip-clock F + TC2 A_ext = A + F)",
+  "executor": "exp142 execute_signed VERBATIM (R1 structure on |A|, R2 signed dynamics, walk frontier on |A|>0)",
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "op_source": "exp99 battery-wide STAR point (exp142's STAR_OP)",
+  "spec": "MULTI (exp94 3-zone program)",
+  "frontier": "walk (inside exp142's executor)",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n": 100,
+  "window_h": 24.0,
+  "commit_noise": 0.6,
+  "steps_per_cell": 8,
+  "per_instance_tuning": "none",
+  "fingerprint": "8e11e88c1c2f1518",
+  "fingerprint_asserted": "8e11e88c1c2f1518",
+  "medium_n": 400,
+  "medium_n_note": "READ_CONFIG's 'n': 100 field is exp160's deposited fingerprint of record (asserted unchanged pre/post run); the decode stack is size-agnostic (exp185 ran it to n=500; exp190 re-decoded n=400/500 fresh) \u2014 exp198's cohort knob is the CornerMedium construction n=400",
+  "temporal_dispatch": "exp178's SCOPED arm \u2014 exp148 decode('scoped'): exp169's f_max_frames VERBATIM, R_T (exp167's read_adopted) iff f_max < 32.0 else the existing raw temporal path UNCHANGED",
+  "instrument_pin": {
+   "constant": "NEURAL_SPEC_MIN",
+   "pinned_to": -35.0,
+   "saved_values": {
+    "cultivation.bioelectric.collective": -60.0,
+    "experiments.exp142_sign_read": -60.0,
+    "experiments.exp145_phase_read": -60.0,
+    "experiments.exp148_temporal_read": -60.0,
+    "experiments.exp94_multizone_scale": -60.0
+   },
+   "modules": [
+    "cultivation.bioelectric.collective",
+    "experiments.exp142_sign_read",
+    "experiments.exp145_phase_read",
+    "experiments.exp148_temporal_read",
+    "experiments.exp94_multizone_scale"
+   ],
+   "note": "exp181's comparability pin \u2014 the floor is pinned to -35.0, save/restore asserted"
+  }
+ },
+ "scale_law": {
+  "exp181_n100_adversarial_median": 0.545,
+  "n400_adversarial_median": 0.705,
+  "observed_ratio": 1.293577981651376,
+  "exp185_monotone_law": {
+   "n100_median": 0.675,
+   "n400_median": 1.705,
+   "predicted_ratio": 2.5259259259259257,
+   "source": "results/exp185_n_scaling.json Y2 curve (grid media, MONOTONE branch)"
+  },
+  "role": "recorded, NOT gated (pre-registered)"
+ },
+ "pooled_median_err": 0.705,
+ "gates": {
+  "A1_zero_rejections_n400": {
+   "pass": true,
+   "decodes": 300,
+   "expected": 300,
+   "n_media": 100,
+   "medium_n": 400,
+   "n400_construction_asserted": true,
+   "rejections": 0,
+   "rejection_records": [],
+   "all_errs_finite": true,
+   "verify_recorded_per_decode": true,
+   "verify_rate": 1.0
+  },
+  "A2_adversarial_median_at_scale": {
+   "pass": true,
+   "pooled_median_err": 0.705,
+   "bar_mV": 1.3,
+   "anchor_mV": 0.65,
+   "bound_ratio": 2.0,
+   "per_cell_medians": {
+    "c3": 0.62,
+    "c5": 0.59,
+    "c6": 1.39,
+    "c7": 0.58
+   },
+   "p90_err": 1.41,
+   "max_err": 1.45,
+   "scale_law_pricing": {
+    "role": "RECORDED, NOT GATED \u2014 the size law's prediction priced, per the pre-registration",
+    "exp181_n100_adversarial_median": 0.545,
+    "exp181_source": "results/exp181_adversarial_reader.json (deposited pooled_median_err)",
+    "observed_ratio_n400_vs_n100": 1.293577981651376,
+    "exp185_law_n100_median_grid": 0.675,
+    "exp185_law_n400_median_grid": 1.705,
+    "exp185_law_branch": "MONOTONE (deposited Y2)",
+    "exp185_predicted_ratio": 2.5259259259259257,
+    "ratio_gap_observed_minus_predicted": -1.2323479442745497,
+    "note": "predicted ratio ~ the n-law's (exp185's MONOTONE curve, grid media); the adversarial ratio is deposited against it, no bar"
+   }
+  },
+  "A3_tail_characterization": {
+   "pass": true,
+   "bar_mV": 1.3,
+   "n_above": 25,
+   "n_instances": 100,
+   "tail_frac": 0.25,
+   "attribution_coverage": true,
+   "counts_consistent": true,
+   "tail_owner_cell": "c6",
+   "tail_owner_class": "A-SYM+A-PAIR",
+   "per_cell": {
+    "c3": {
+     "n_above": 0,
+     "class": "A-PAIR+A-STAT",
+     "above_bar": []
+    },
+    "c5": {
+     "n_above": 0,
+     "class": "A-SYM+A-STAT",
+     "above_bar": []
+    },
+    "c6": {
+     "n_above": 25,
+     "class": "A-SYM+A-PAIR",
+     "above_bar": [
+      {
+       "j": 0,
+       "median_err": 1.42,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.42,
+        1.44,
+        1.42
+       ]
+      },
+      {
+       "j": 1,
+       "median_err": 1.36,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.33,
+        1.36,
+        1.38
+       ]
+      },
+      {
+       "j": 2,
+       "median_err": 1.36,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.34,
+        1.36,
+        1.37
+       ]
+      },
+      {
+       "j": 3,
+       "median_err": 1.4,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.4,
+        1.39,
+        1.41
+       ]
+      },
+      {
+       "j": 4,
+       "median_err": 1.37,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.37,
+        1.37,
+        1.36
+       ]
+      },
+      {
+       "j": 5,
+       "median_err": 1.37,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.38,
+        1.37,
+        1.36
+       ]
+      },
+      {
+       "j": 6,
+       "median_err": 1.4,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.39,
+        1.4,
+        1.41
+       ]
+      },
+      {
+       "j": 7,
+       "median_err": 1.45,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.44,
+        1.45,
+        1.45
+       ]
+      },
+      {
+       "j": 8,
+       "median_err": 1.38,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.37,
+        1.38,
+        1.38
+       ]
+      },
+      {
+       "j": 9,
+       "median_err": 1.38,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.38,
+        1.38,
+        1.37
+       ]
+      },
+      {
+       "j": 10,
+       "median_err": 1.41,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.42,
+        1.4,
+        1.41
+       ]
+      },
+      {
+       "j": 11,
+       "median_err": 1.35,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.33,
+        1.35,
+        1.37
+       ]
+      },
+      {
+       "j": 12,
+       "median_err": 1.41,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.41,
+        1.39,
+        1.44
+       ]
+      },
+      {
+       "j": 13,
+       "median_err": 1.38,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.39,
+        1.38,
+        1.38
+       ]
+      },
+      {
+       "j": 14,
+       "median_err": 1.44,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.45,
+        1.44,
+        1.43
+       ]
+      },
+      {
+       "j": 15,
+       "median_err": 1.37,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.38,
+        1.37,
+        1.36
+       ]
+      },
+      {
+       "j": 16,
+       "median_err": 1.38,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.39,
+        1.38,
+        1.36
+       ]
+      },
+      {
+       "j": 17,
+       "median_err": 1.42,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.42,
+        1.38,
+        1.42
+       ]
+      },
+      {
+       "j": 18,
+       "median_err": 1.34,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.34,
+        1.36,
+        1.34
+       ]
+      },
+      {
+       "j": 19,
+       "median_err": 1.43,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.43,
+        1.43,
+        1.4
+       ]
+      },
+      {
+       "j": 20,
+       "median_err": 1.38,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.38,
+        1.38,
+        1.36
+       ]
+      },
+      {
+       "j": 21,
+       "median_err": 1.45,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.45,
+        1.45,
+        1.43
+       ]
+      },
+      {
+       "j": 22,
+       "median_err": 1.41,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.41,
+        1.41,
+        1.45
+       ]
+      },
+      {
+       "j": 23,
+       "median_err": 1.41,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.41,
+        1.42,
+        1.41
+       ]
+      },
+      {
+       "j": 24,
+       "median_err": 1.44,
+       "violated": [
+        "A-SYM",
+        "A-PAIR"
+       ],
+       "errs": [
+        1.41,
+        1.44,
+        1.45
+       ]
+      }
+     ]
+    },
+    "c7": {
+     "n_above": 0,
+     "class": "A-SYM+A-PAIR+A-STAT",
+     "above_bar": []
+    }
+   },
+   "note": "characterization gate: no bar on the tail SIZE \u2014 the deposit names which cell owns the tail"
+  },
+  "A4_scoped_discipline_hygiene": {
+   "pass": true,
+   "threshold": 32.0,
+   "classification_consistent": true,
+   "n_diffuse_decodes_R_T": 300,
+   "n_raw_path_decodes": 0,
+   "per_cell_class": {
+    "c3": {
+     "n_diffuse": 25,
+     "n_concentrated": 0,
+     "f_max_min": 6.0,
+     "f_max_max": 7.0
+    },
+    "c5": {
+     "n_diffuse": 25,
+     "n_concentrated": 0,
+     "f_max_min": 6.0,
+     "f_max_max": 7.0
+    },
+    "c6": {
+     "n_diffuse": 25,
+     "n_concentrated": 0,
+     "f_max_min": 0.0,
+     "f_max_max": 0.0
+    },
+    "c7": {
+     "n_diffuse": 25,
+     "n_concentrated": 0,
+     "f_max_min": 6.0,
+     "f_max_max": 7.0
+    }
+   },
+   "cross_arm_audits": {
+    "n": 12,
+    "n_anomalies": 0,
+    "records": [
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 0.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 0.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 0.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     }
+    ]
+   },
+   "pin_asserted": -35.0,
+   "fingerprint": "8e11e88c1c2f1518",
+   "post_run_fingerprint": "8e11e88c1c2f1518"
+  }
+ },
+ "cells_run": [
+  "c3",
+  "c5",
+  "c6",
+  "c7"
+ ],
+ "verdict": "4/4 gates - tail 25/100 above bar, owned by cell c6 (A-SYM+A-PAIR)",
+ "runtime_s": 343.1
+}
