@@ -1,0 +1,232 @@
+{
+ "exp": "exp158_octanol_plane",
+ "task": "THE OCTANOL-DH PLANE SERIES, RE-TESTED ON ITS DEPOSITED ARM \u2014 L116 exp139's registered repair of the DEGENERATE LV-G4 B leg: re-map the B family (GJ-blocked, 57 entries) onto the deposited posterior-depol arm (exp39-V3's channel) with the plane-resolved instrument that landed the C leg at rho 0.6489, now applied to the depol channel.",
+ "foundation": {
+  "ledger": "L116 (exp139)",
+  "owned_gap": "LV-G4's B leg DEGENERATE: the junction-cut arm (gap_scale 0.05, exp39-V4's mapping) carries no EA sign at any plane (0/0/0) while its tail abnormal rate is the graded 0.667; the octanol DH sign rides the DEPOLARIZATION channel (exp39-V3's deposited posterior-depol mapping) \u2014 a stack predictivity gap for the octanol family's headline readout, owned as a gap not a contradiction",
+  "registered_repair": "the octanol-DH plane series re-tested on its deposited arm (posterior-depol by plane vs eids 415-419)"
+ },
+ "partition_counts": {
+  "A": 30,
+  "B": 57,
+  "C": 21,
+  "D": 5,
+  "E": 6
+ },
+ "partition_counts_match_deposit": true,
+ "b_leg_before_after": {
+  "before": {
+   "arm": "junction-cut (gap_scale 0.05, exp39-V4 mapping)",
+   "ea_by_plane": {
+    "head": 0.0,
+    "trunk": 0.0,
+    "tail": 0.0
+   },
+   "rho_octanol_dh": null,
+   "verdict": "DEGENERATE (0/0/0)",
+   "source": "results/exp139_levin_voltage.json (L116)"
+  },
+  "after": {
+   "arm": "posterior-depol (exp39-V3 mapping) by plane",
+   "ea_by_plane": {
+    "head": 1.0,
+    "trunk": 1.0,
+    "tail": 1.0
+   },
+   "ea_flags": {
+    "head": [
+     true,
+     true,
+     true
+    ],
+    "trunk": [
+     true,
+     true,
+     true
+    ],
+    "tail": [
+     true,
+     true,
+     true
+    ]
+   },
+   "hl_per_seed": {
+    "head": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "trunk": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "tail": [
+     0.9763,
+     0.9309,
+     0.9316
+    ]
+   },
+   "sim_by_pub_order": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pub_octanol_dh": [
+    0.05,
+    0.28,
+    0.5,
+    1.0,
+    0.0
+   ],
+   "rho_octanol_dh": null,
+   "tail_plane_hl_matches_deposit_V3_hl": true,
+   "verdict": "FAIL-DEGENERATE"
+  }
+ },
+ "gates": {
+  "O1_repaired_b_leg": {
+   "verdict": "FAIL-DEGENERATE",
+   "rho": null,
+   "sim_by_pub_order": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pub_series": [
+    0.05,
+    0.28,
+    0.5,
+    1.0,
+    0.0
+   ],
+   "zones": {
+    "pass": 0.6,
+    "refute": -0.3
+   },
+   "degeneracy_clause": "rho None (zero-variance sim) -> FAIL-DEGENERATE"
+  },
+  "O2_mapping_declared_before_rho": {
+   "verdict": "PASS",
+   "mechanism": "docstring MAPPING DECLARATION + module constants (B_ARM/PUB_B_SERIES/B_TAXONOMY/O1 zones) frozen at import; asserted in main() before the first rho call (_RHO_CALLS at assert time = 0)",
+   "declared_mapping": {
+    "b_family": "GJ-blocked, 57 entries (exp139 frozen partition)",
+    "arm": "posterior-depol (exp39-V3 verbatim: corrupt_region(POST_Q, theta_value=WT_HEAD_V) pre-run) + exp131 plane geometry; readout EA = head_likeness(V, TAIL) >= 0.7",
+    "published_series": {
+     "head": 0.05,
+     "pre_pharyngeal": 0.28,
+     "pharyngeal": 0.5,
+     "post_pharyngeal": 1.0,
+     "tail": 0.0
+    },
+    "plane_taxonomy": {
+     "head": "head",
+     "pre_pharyngeal": "head",
+     "pharyngeal": "trunk",
+     "post_pharyngeal": "tail",
+     "tail": "tail"
+    },
+    "o1_zones": {
+     "pass": 0.6,
+     "refute": -0.3
+    },
+    "o4_zones": {
+     "pass": 0.4,
+     "refute": -0.6
+    }
+   }
+  },
+  "O3_c_leg_deposit_integrity": {
+   "verdict": "PASS",
+   "sim_c_recomputed": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.6666666666666666,
+    1.0,
+    1.0
+   ],
+   "sim_c_deposit": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.6666666666666666,
+    1.0,
+    1.0
+   ],
+   "sim_c_bit_exact": true,
+   "rho_c_recomputed": 0.6488856845230502,
+   "rho_c_deposit": 0.6488856845230502,
+   "rho_c_bit_exact": true
+  },
+  "O4_pooling_question": {
+   "pooled_companion": {
+    "e_stack_repaired": [
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "e_stack_note": "B's scalar = depol tail EA, structurally TIED to D's scalar (same deposited arm) \u2014 the mapping's own consequence, disclosed",
+    "e_meas": [
+     0.5055555555555556,
+     0.39094339622641516,
+     0.3170588235294118,
+     0.645
+    ],
+    "spearman": -0.2581988897471611,
+    "deposit_spearman_LV_G1": -0.10540925533894598
+   },
+   "plane_resolved_pool": {
+    "cells": "B: 5 octanol-DH planes via depol EA; C: 5 headless planes via ion abn (10 cells)",
+    "sim": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     0.3333333333333333,
+     0.3333333333333333,
+     0.6666666666666666,
+     1.0,
+     1.0
+    ],
+    "pub": [
+     0.05,
+     0.28,
+     0.5,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.67,
+     0.16,
+     0.4
+    ],
+    "spearman": 0.3715962000745202,
+    "zones": {
+     "pass": 0.4,
+     "refute": -0.6
+    },
+    "verdict": "PARTIAL"
+   },
+   "verdict": "PARTIAL",
+   "pooling_erases_structure": true
+  }
+ },
+ "criteria": {
+  "O1_repaired_b_leg_plane_rho": "FAIL-DEGENERATE",
+  "O2_mapping_declared_before_rho": "PASS",
+  "O3_c_leg_deposit_integrity": "PASS",
+  "O4_pooling_plane_resolved": "PARTIAL"
+ },
+ "verdict": "2/4 gates PASS (O1 FAIL-DEGENERATE, O2 PASS, O3 PASS, O4 PARTIAL)",
+ "notes": "THE REPAIR MOVED THE B LEG FROM A FLOOR DEGENERACY TO A CEILING DEGENERACY: the depol channel flips the EA read from 0/0/0 (junction-cut arm, L116) to 1/1/1 at every plane \u2014 the stack's DH prediction is a step function of the CHANNEL (off -> on) with ZERO plane resolution, while the record's octanol DH series is plane-GRADED (0.05 -> 1.00 -> 0.00, floor at the tail plane, which the deposited taxonomy cannot separate from post-pharyngeal \u2014 both fold to the stack tail plane). The record's post-pharyngeal 1.00 cell IS the one the stack's ceiling hits (and the head .05/pre-phar .28 cells are over-predicted). O4: plane-resolution moves the cross-family concordance from -0.258 (pooled companion; deposit LV-G1 -0.105) to +0.372 \u2014 pooling still erases structure (True) \u2014 but the repaired instrument does not reach LV-G1's 0.4 bar (PARTIAL, owned): the ceiling-tied B cells carry no within-family rank information to pool. Continuity: the tail-plane run IS the deposited exp39-V3 arm bit-exactly (hl per seed 0.9763/0.9309/0.9316 == the deposit's D-family hl_per_seed), and the C leg re-run reproduces the deposit bit-exactly (O3) \u2014 the repair breaks nothing it touched.",
+ "sources": {
+  "record": "research/levin_voltage_series.json (eids 415-419 octanol DH; eids 391-395 headless)",
+  "arms": "experiments/exp39_levin_voltage.py V3 verbatim (posterior-depol channel); experiments/exp139_levin_voltage.py (ion_arm, flags, taxonomy, partition \u2014 imported unchanged); experiments/exp131_ion_plane_ordering.py (plane geometry + O1's deposited zones)",
+  "deposit": "results/exp139_levin_voltage.json (L116)"
+ }
+}
