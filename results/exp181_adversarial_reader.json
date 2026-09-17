@@ -1,0 +1,7554 @@
+{
+ "cells": {
+  "c3": {
+   "cell": 3,
+   "violation_class": "A-PAIR+A-STAT",
+   "n_instances": 50,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "median_err": 0.54,
+   "median_of_instance_medians": 0.54,
+   "n_rejections": 0,
+   "rejection_records": [],
+   "verify_rate": 1.0,
+   "n_diffuse": 50,
+   "n_concentrated": 0,
+   "f_max_min": 4.0,
+   "f_max_max": 7.0,
+   "n_above_bar": 0,
+   "above_bar": [],
+   "cross_arm_audit": {
+    "n": 3,
+    "n_anomalies": 0,
+    "records": [
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     }
+    ]
+   },
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 169166,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.783,
+     "n_hyper": 18,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.61,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 1,
+     "gen_seed": 169167,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.666,
+     "n_hyper": 4,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.53,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 2,
+     "gen_seed": 169168,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.692,
+     "n_hyper": 17,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.53,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 3,
+     "gen_seed": 169169,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.844,
+     "n_hyper": 11,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.61,
+      0.59,
+      0.48
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.59
+    },
+    {
+     "j": 4,
+     "gen_seed": 169170,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.809,
+     "n_hyper": 18,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.51,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 5,
+     "gen_seed": 169171,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.794,
+     "n_hyper": 8,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.54,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 6,
+     "gen_seed": 169172,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.741,
+     "n_hyper": 5,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.52,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 7,
+     "gen_seed": 169173,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.681,
+     "n_hyper": 18,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.57,
+      0.46
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 8,
+     "gen_seed": 169174,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.827,
+     "n_hyper": 15,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.59,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 9,
+     "gen_seed": 169175,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.836,
+     "n_hyper": 3,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.51,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 10,
+     "gen_seed": 169176,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.828,
+     "n_hyper": 17,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.58,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 11,
+     "gen_seed": 169177,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.655,
+     "n_hyper": 4,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.59,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 12,
+     "gen_seed": 169178,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.851,
+     "n_hyper": 13,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.57,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 13,
+     "gen_seed": 169179,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.625,
+     "n_hyper": 10,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.57,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 14,
+     "gen_seed": 169180,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.917,
+     "n_hyper": 16,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.62,
+      0.6,
+      0.59
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.6
+    },
+    {
+     "j": 15,
+     "gen_seed": 169181,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.73,
+     "n_hyper": 7,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.53,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 16,
+     "gen_seed": 169182,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.927,
+     "n_hyper": 1,
+     "n_oneway": 0,
+     "f_max": 5.0,
+     "class": "diffuse",
+     "errs": [
+      0.65,
+      0.62,
+      0.61
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.62
+    },
+    {
+     "j": 17,
+     "gen_seed": 169183,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.831,
+     "n_hyper": 9,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.53,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 18,
+     "gen_seed": 169184,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.744,
+     "n_hyper": 13,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.48,
+      0.44,
+      0.6
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.48
+    },
+    {
+     "j": 19,
+     "gen_seed": 169185,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.808,
+     "n_hyper": 7,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.59,
+      0.53,
+      0.6
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.59
+    },
+    {
+     "j": 20,
+     "gen_seed": 169186,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.948,
+     "n_hyper": 11,
+     "n_oneway": 0,
+     "f_max": 4.0,
+     "class": "diffuse",
+     "errs": [
+      0.65,
+      0.68,
+      0.61
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.65
+    },
+    {
+     "j": 21,
+     "gen_seed": 169187,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.719,
+     "n_hyper": 17,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.5,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 22,
+     "gen_seed": 169188,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.797,
+     "n_hyper": 15,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.58,
+      0.53,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 23,
+     "gen_seed": 169189,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.899,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.61,
+      0.56,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.58
+    },
+    {
+     "j": 24,
+     "gen_seed": 169190,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.667,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.51,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 25,
+     "gen_seed": 169191,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.691,
+     "n_hyper": 7,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.55,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 26,
+     "gen_seed": 169192,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.846,
+     "n_hyper": 14,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.62,
+      0.59,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.59
+    },
+    {
+     "j": 27,
+     "gen_seed": 169193,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.805,
+     "n_hyper": 4,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.55,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 28,
+     "gen_seed": 169194,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.908,
+     "n_hyper": 11,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.59,
+      0.57
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.57
+    },
+    {
+     "j": 29,
+     "gen_seed": 169195,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.869,
+     "n_hyper": 6,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.59,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 30,
+     "gen_seed": 169196,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.648,
+     "n_hyper": 9,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.52,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 31,
+     "gen_seed": 169197,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.767,
+     "n_hyper": 1,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.59,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 32,
+     "gen_seed": 169198,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.634,
+     "n_hyper": 16,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.49,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.49
+    },
+    {
+     "j": 33,
+     "gen_seed": 169199,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.643,
+     "n_hyper": 12,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.51,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 34,
+     "gen_seed": 169200,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.8,
+     "n_hyper": 6,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.52,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 35,
+     "gen_seed": 169201,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.828,
+     "n_hyper": 14,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.54,
+      0.47
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 36,
+     "gen_seed": 169202,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.85,
+     "n_hyper": 4,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.53,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 37,
+     "gen_seed": 169203,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.76,
+     "n_hyper": 17,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.61,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 38,
+     "gen_seed": 169204,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.894,
+     "n_hyper": 7,
+     "n_oneway": 0,
+     "f_max": 5.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.58,
+      0.66
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.58
+    },
+    {
+     "j": 39,
+     "gen_seed": 169205,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.869,
+     "n_hyper": 4,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.57,
+      0.61
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.57
+    },
+    {
+     "j": 40,
+     "gen_seed": 169206,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.74,
+     "n_hyper": 10,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.49,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 41,
+     "gen_seed": 169207,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.826,
+     "n_hyper": 7,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.48,
+      0.56,
+      0.57
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 42,
+     "gen_seed": 169208,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.648,
+     "n_hyper": 17,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.58,
+      0.47
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 43,
+     "gen_seed": 169209,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.682,
+     "n_hyper": 14,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.59,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 44,
+     "gen_seed": 169210,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.693,
+     "n_hyper": 3,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.53,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 45,
+     "gen_seed": 169211,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.894,
+     "n_hyper": 17,
+     "n_oneway": 0,
+     "f_max": 5.0,
+     "class": "diffuse",
+     "errs": [
+      0.61,
+      0.59,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.59
+    },
+    {
+     "j": 46,
+     "gen_seed": 169212,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.737,
+     "n_hyper": 1,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.52,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 47,
+     "gen_seed": 169213,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.67,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.55,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 48,
+     "gen_seed": 169214,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.883,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.59,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.57
+    },
+    {
+     "j": 49,
+     "gen_seed": 169215,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.94,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "f_max": 4.0,
+     "class": "diffuse",
+     "errs": [
+      0.66,
+      0.64,
+      0.62
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.64
+    }
+   ],
+   "runtime_s": 13.7
+  },
+  "c5": {
+   "cell": 5,
+   "violation_class": "A-SYM+A-STAT",
+   "n_instances": 50,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "median_err": 0.52,
+   "median_of_instance_medians": 0.52,
+   "n_rejections": 0,
+   "rejection_records": [],
+   "verify_rate": 1.0,
+   "n_diffuse": 50,
+   "n_concentrated": 0,
+   "f_max_min": 4.0,
+   "f_max_max": 7.0,
+   "n_above_bar": 0,
+   "above_bar": [],
+   "cross_arm_audit": {
+    "n": 3,
+    "n_anomalies": 0,
+    "records": [
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     }
+    ]
+   },
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 171166,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.716,
+     "n_hyper": 0,
+     "n_oneway": 162,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.5,
+      0.48
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 1,
+     "gen_seed": 171167,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.671,
+     "n_hyper": 0,
+     "n_oneway": 127,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.53,
+      0.48
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 2,
+     "gen_seed": 171168,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.624,
+     "n_hyper": 0,
+     "n_oneway": 149,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.5,
+      0.47
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 3,
+     "gen_seed": 171169,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.838,
+     "n_hyper": 0,
+     "n_oneway": 148,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.45,
+      0.55,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 4,
+     "gen_seed": 171170,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.945,
+     "n_hyper": 0,
+     "n_oneway": 135,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.56,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 5,
+     "gen_seed": 171171,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.765,
+     "n_hyper": 0,
+     "n_oneway": 142,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.59,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 6,
+     "gen_seed": 171172,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.91,
+     "n_hyper": 0,
+     "n_oneway": 157,
+     "f_max": 4.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.56,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 7,
+     "gen_seed": 171173,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.616,
+     "n_hyper": 0,
+     "n_oneway": 134,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.46,
+      0.53,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.49
+    },
+    {
+     "j": 8,
+     "gen_seed": 171174,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.679,
+     "n_hyper": 0,
+     "n_oneway": 144,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.52,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 9,
+     "gen_seed": 171175,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.73,
+     "n_hyper": 0,
+     "n_oneway": 142,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.47,
+      0.55,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 10,
+     "gen_seed": 171176,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.783,
+     "n_hyper": 0,
+     "n_oneway": 158,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.52,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 11,
+     "gen_seed": 171177,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.871,
+     "n_hyper": 0,
+     "n_oneway": 146,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.51,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 12,
+     "gen_seed": 171178,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.615,
+     "n_hyper": 0,
+     "n_oneway": 166,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.57,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 13,
+     "gen_seed": 171179,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.824,
+     "n_hyper": 0,
+     "n_oneway": 155,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.6,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 14,
+     "gen_seed": 171180,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.755,
+     "n_hyper": 0,
+     "n_oneway": 141,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.46,
+      0.54,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 15,
+     "gen_seed": 171181,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.636,
+     "n_hyper": 0,
+     "n_oneway": 136,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.43,
+      0.47,
+      0.48
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.47
+    },
+    {
+     "j": 16,
+     "gen_seed": 171182,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.828,
+     "n_hyper": 0,
+     "n_oneway": 154,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.58,
+      0.51,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 17,
+     "gen_seed": 171183,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.696,
+     "n_hyper": 0,
+     "n_oneway": 147,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.48,
+      0.51,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 18,
+     "gen_seed": 171184,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.891,
+     "n_hyper": 0,
+     "n_oneway": 152,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.57,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 19,
+     "gen_seed": 171185,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.779,
+     "n_hyper": 0,
+     "n_oneway": 155,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.54,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 20,
+     "gen_seed": 171186,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.77,
+     "n_hyper": 0,
+     "n_oneway": 167,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.54,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 21,
+     "gen_seed": 171187,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.869,
+     "n_hyper": 0,
+     "n_oneway": 151,
+     "f_max": 5.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.52,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 22,
+     "gen_seed": 171188,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.88,
+     "n_hyper": 0,
+     "n_oneway": 137,
+     "f_max": 5.0,
+     "class": "diffuse",
+     "errs": [
+      0.49,
+      0.56,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 23,
+     "gen_seed": 171189,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.897,
+     "n_hyper": 0,
+     "n_oneway": 150,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.5,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 24,
+     "gen_seed": 171190,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.654,
+     "n_hyper": 0,
+     "n_oneway": 151,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.5,
+      0.48
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 25,
+     "gen_seed": 171191,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.686,
+     "n_hyper": 0,
+     "n_oneway": 134,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.46,
+      0.53,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.49
+    },
+    {
+     "j": 26,
+     "gen_seed": 171192,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.859,
+     "n_hyper": 0,
+     "n_oneway": 149,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.55,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 27,
+     "gen_seed": 171193,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.886,
+     "n_hyper": 0,
+     "n_oneway": 127,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.53,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 28,
+     "gen_seed": 171194,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.931,
+     "n_hyper": 0,
+     "n_oneway": 143,
+     "f_max": 4.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.54,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 29,
+     "gen_seed": 171195,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.812,
+     "n_hyper": 0,
+     "n_oneway": 174,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.57,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 30,
+     "gen_seed": 171196,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.816,
+     "n_hyper": 0,
+     "n_oneway": 160,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.49,
+      0.52,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 31,
+     "gen_seed": 171197,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.836,
+     "n_hyper": 0,
+     "n_oneway": 141,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.58,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 32,
+     "gen_seed": 171198,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.71,
+     "n_hyper": 0,
+     "n_oneway": 151,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.57,
+      0.48
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 33,
+     "gen_seed": 171199,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.932,
+     "n_hyper": 0,
+     "n_oneway": 151,
+     "f_max": 5.0,
+     "class": "diffuse",
+     "errs": [
+      0.58,
+      0.5,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 34,
+     "gen_seed": 171200,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.691,
+     "n_hyper": 0,
+     "n_oneway": 166,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.46,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.49
+    },
+    {
+     "j": 35,
+     "gen_seed": 171201,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.861,
+     "n_hyper": 0,
+     "n_oneway": 138,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.53,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 36,
+     "gen_seed": 171202,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.654,
+     "n_hyper": 0,
+     "n_oneway": 156,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.5,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 37,
+     "gen_seed": 171203,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.648,
+     "n_hyper": 0,
+     "n_oneway": 138,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.47,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 38,
+     "gen_seed": 171204,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.623,
+     "n_hyper": 0,
+     "n_oneway": 157,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.48,
+      0.46,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.48
+    },
+    {
+     "j": 39,
+     "gen_seed": 171205,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.812,
+     "n_hyper": 0,
+     "n_oneway": 146,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.48,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 40,
+     "gen_seed": 171206,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.754,
+     "n_hyper": 0,
+     "n_oneway": 146,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.47,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.49
+    },
+    {
+     "j": 41,
+     "gen_seed": 171207,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.806,
+     "n_hyper": 0,
+     "n_oneway": 145,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.54,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 42,
+     "gen_seed": 171208,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.767,
+     "n_hyper": 0,
+     "n_oneway": 156,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.51,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 43,
+     "gen_seed": 171209,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.838,
+     "n_hyper": 0,
+     "n_oneway": 136,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.52,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 44,
+     "gen_seed": 171210,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.65,
+     "n_hyper": 0,
+     "n_oneway": 125,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.56,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 45,
+     "gen_seed": 171211,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.926,
+     "n_hyper": 0,
+     "n_oneway": 136,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.56,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 46,
+     "gen_seed": 171212,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.652,
+     "n_hyper": 0,
+     "n_oneway": 138,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.58,
+      0.47
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 47,
+     "gen_seed": 171213,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.654,
+     "n_hyper": 0,
+     "n_oneway": 148,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.55,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 48,
+     "gen_seed": 171214,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.61,
+     "n_hyper": 0,
+     "n_oneway": 147,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.55,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 49,
+     "gen_seed": 171215,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.663,
+     "n_hyper": 0,
+     "n_oneway": 148,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.48,
+      0.53,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    }
+   ],
+   "runtime_s": 13.4
+  },
+  "c6": {
+   "cell": 6,
+   "violation_class": "A-SYM+A-PAIR",
+   "n_instances": 50,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "median_err": 0.64,
+   "median_of_instance_medians": 0.64,
+   "n_rejections": 0,
+   "rejection_records": [],
+   "verify_rate": 1.0,
+   "n_diffuse": 50,
+   "n_concentrated": 0,
+   "f_max_min": 0.0,
+   "f_max_max": 0.0,
+   "n_above_bar": 0,
+   "above_bar": [],
+   "cross_arm_audit": {
+    "n": 3,
+    "n_anomalies": 0,
+    "records": [
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 0.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 0.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 0.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     }
+    ]
+   },
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 172166,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 15,
+     "n_oneway": 135,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.62,
+      0.61
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.61
+    },
+    {
+     "j": 1,
+     "gen_seed": 172167,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 16,
+     "n_oneway": 138,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.69,
+      0.74,
+      0.65
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.69
+    },
+    {
+     "j": 2,
+     "gen_seed": 172168,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 20,
+     "n_oneway": 164,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.67,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.58
+    },
+    {
+     "j": 3,
+     "gen_seed": 172169,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 3,
+     "n_oneway": 147,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.62,
+      0.58,
+      0.68
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.62
+    },
+    {
+     "j": 4,
+     "gen_seed": 172170,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 5,
+     "n_oneway": 150,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.59,
+      0.7,
+      0.59
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.59
+    },
+    {
+     "j": 5,
+     "gen_seed": 172171,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 13,
+     "n_oneway": 147,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.63,
+      0.7,
+      0.61
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.63
+    },
+    {
+     "j": 6,
+     "gen_seed": 172172,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 18,
+     "n_oneway": 131,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.71,
+      0.65,
+      0.65
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.65
+    },
+    {
+     "j": 7,
+     "gen_seed": 172173,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 2,
+     "n_oneway": 139,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.69,
+      0.65,
+      0.65
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.65
+    },
+    {
+     "j": 8,
+     "gen_seed": 172174,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 12,
+     "n_oneway": 163,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.65,
+      0.72,
+      0.66
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.66
+    },
+    {
+     "j": 9,
+     "gen_seed": 172175,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 9,
+     "n_oneway": 144,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.61,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 10,
+     "gen_seed": 172176,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 17,
+     "n_oneway": 137,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.7,
+      0.65,
+      0.65
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.65
+    },
+    {
+     "j": 11,
+     "gen_seed": 172177,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 20,
+     "n_oneway": 166,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.68,
+      0.69,
+      0.71
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.69
+    },
+    {
+     "j": 12,
+     "gen_seed": 172178,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 13,
+     "n_oneway": 144,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.69,
+      0.65,
+      0.68
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.68
+    },
+    {
+     "j": 13,
+     "gen_seed": 172179,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 18,
+     "n_oneway": 137,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.69,
+      0.65,
+      0.6
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.65
+    },
+    {
+     "j": 14,
+     "gen_seed": 172180,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 9,
+     "n_oneway": 153,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.58,
+      0.67,
+      0.63
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.63
+    },
+    {
+     "j": 15,
+     "gen_seed": 172181,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 17,
+     "n_oneway": 164,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.75,
+      0.72,
+      0.66
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.72
+    },
+    {
+     "j": 16,
+     "gen_seed": 172182,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 1,
+     "n_oneway": 152,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.61,
+      0.64,
+      0.59
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.61
+    },
+    {
+     "j": 17,
+     "gen_seed": 172183,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 5,
+     "n_oneway": 153,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.69,
+      0.7,
+      0.66
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.69
+    },
+    {
+     "j": 18,
+     "gen_seed": 172184,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 18,
+     "n_oneway": 137,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.65,
+      0.67,
+      0.67
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.67
+    },
+    {
+     "j": 19,
+     "gen_seed": 172185,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 6,
+     "n_oneway": 156,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.64,
+      0.66,
+      0.61
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.64
+    },
+    {
+     "j": 20,
+     "gen_seed": 172186,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 18,
+     "n_oneway": 142,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.67,
+      0.61,
+      0.64
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.64
+    },
+    {
+     "j": 21,
+     "gen_seed": 172187,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 20,
+     "n_oneway": 142,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.69,
+      0.68,
+      0.67
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.68
+    },
+    {
+     "j": 22,
+     "gen_seed": 172188,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 12,
+     "n_oneway": 148,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.65,
+      0.72,
+      0.72
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.72
+    },
+    {
+     "j": 23,
+     "gen_seed": 172189,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 19,
+     "n_oneway": 148,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.69,
+      0.66,
+      0.66
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.66
+    },
+    {
+     "j": 24,
+     "gen_seed": 172190,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 17,
+     "n_oneway": 147,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.7,
+      0.66,
+      0.6
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.66
+    },
+    {
+     "j": 25,
+     "gen_seed": 172191,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 19,
+     "n_oneway": 143,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.66,
+      0.65,
+      0.69
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.66
+    },
+    {
+     "j": 26,
+     "gen_seed": 172192,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 13,
+     "n_oneway": 151,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.63,
+      0.62,
+      0.61
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.62
+    },
+    {
+     "j": 27,
+     "gen_seed": 172193,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 4,
+     "n_oneway": 159,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.58,
+      0.63,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.58
+    },
+    {
+     "j": 28,
+     "gen_seed": 172194,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 1,
+     "n_oneway": 153,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.67,
+      0.62,
+      0.64
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.64
+    },
+    {
+     "j": 29,
+     "gen_seed": 172195,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 19,
+     "n_oneway": 136,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.63,
+      0.68,
+      0.76
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.68
+    },
+    {
+     "j": 30,
+     "gen_seed": 172196,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 15,
+     "n_oneway": 169,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.61,
+      0.64,
+      0.63
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.63
+    },
+    {
+     "j": 31,
+     "gen_seed": 172197,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 4,
+     "n_oneway": 141,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.69,
+      0.58,
+      0.63
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.63
+    },
+    {
+     "j": 32,
+     "gen_seed": 172198,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 17,
+     "n_oneway": 147,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.58,
+      0.58,
+      0.6
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.58
+    },
+    {
+     "j": 33,
+     "gen_seed": 172199,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 16,
+     "n_oneway": 155,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.66,
+      0.66,
+      0.63
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.66
+    },
+    {
+     "j": 34,
+     "gen_seed": 172200,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 7,
+     "n_oneway": 144,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.62,
+      0.68,
+      0.65
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.65
+    },
+    {
+     "j": 35,
+     "gen_seed": 172201,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 5,
+     "n_oneway": 146,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.6,
+      0.59,
+      0.64
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.6
+    },
+    {
+     "j": 36,
+     "gen_seed": 172202,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 8,
+     "n_oneway": 170,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.61,
+      0.57,
+      0.62
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.61
+    },
+    {
+     "j": 37,
+     "gen_seed": 172203,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 15,
+     "n_oneway": 149,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.73,
+      0.66,
+      0.57
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.66
+    },
+    {
+     "j": 38,
+     "gen_seed": 172204,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 14,
+     "n_oneway": 149,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.6,
+      0.59
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.59
+    },
+    {
+     "j": 39,
+     "gen_seed": 172205,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 7,
+     "n_oneway": 156,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.59,
+      0.65,
+      0.66
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.65
+    },
+    {
+     "j": 40,
+     "gen_seed": 172206,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 13,
+     "n_oneway": 139,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.58,
+      0.64,
+      0.63
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.63
+    },
+    {
+     "j": 41,
+     "gen_seed": 172207,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 11,
+     "n_oneway": 153,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.67,
+      0.68,
+      0.65
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.67
+    },
+    {
+     "j": 42,
+     "gen_seed": 172208,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 9,
+     "n_oneway": 167,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.63,
+      0.62,
+      0.6
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.62
+    },
+    {
+     "j": 43,
+     "gen_seed": 172209,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 9,
+     "n_oneway": 136,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.63,
+      0.69,
+      0.62
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.63
+    },
+    {
+     "j": 44,
+     "gen_seed": 172210,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 12,
+     "n_oneway": 153,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.59,
+      0.62,
+      0.64
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.62
+    },
+    {
+     "j": 45,
+     "gen_seed": 172211,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 6,
+     "n_oneway": 143,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.62,
+      0.6,
+      0.6
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.6
+    },
+    {
+     "j": 46,
+     "gen_seed": 172212,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 9,
+     "n_oneway": 147,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.68,
+      0.72,
+      0.64
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.68
+    },
+    {
+     "j": 47,
+     "gen_seed": 172213,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 4,
+     "n_oneway": 131,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.6,
+      0.59
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.59
+    },
+    {
+     "j": 48,
+     "gen_seed": 172214,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 16,
+     "n_oneway": 141,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.65,
+      0.71,
+      0.65
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.65
+    },
+    {
+     "j": 49,
+     "gen_seed": 172215,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 19,
+     "n_oneway": 134,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      0.64,
+      0.63,
+      0.61
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.63
+    }
+   ],
+   "runtime_s": 13.9
+  },
+  "c7": {
+   "cell": 7,
+   "violation_class": "A-SYM+A-PAIR+A-STAT",
+   "n_instances": 50,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "median_err": 0.52,
+   "median_of_instance_medians": 0.52,
+   "n_rejections": 0,
+   "rejection_records": [],
+   "verify_rate": 1.0,
+   "n_diffuse": 50,
+   "n_concentrated": 0,
+   "f_max_min": 5.0,
+   "f_max_max": 7.0,
+   "n_above_bar": 0,
+   "above_bar": [],
+   "cross_arm_audit": {
+    "n": 3,
+    "n_anomalies": 0,
+    "records": [
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 5.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 5.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 5.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     }
+    ]
+   },
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 173166,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.931,
+     "n_hyper": 15,
+     "n_oneway": 132,
+     "f_max": 5.0,
+     "class": "diffuse",
+     "errs": [
+      0.59,
+      0.56,
+      0.63
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.59
+    },
+    {
+     "j": 1,
+     "gen_seed": 173167,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.852,
+     "n_hyper": 13,
+     "n_oneway": 148,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.6,
+      0.54,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 2,
+     "gen_seed": 173168,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.828,
+     "n_hyper": 5,
+     "n_oneway": 147,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.55,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.56
+    },
+    {
+     "j": 3,
+     "gen_seed": 173169,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.893,
+     "n_hyper": 7,
+     "n_oneway": 136,
+     "f_max": 5.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.59,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 4,
+     "gen_seed": 173170,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.825,
+     "n_hyper": 17,
+     "n_oneway": 161,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.48,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 5,
+     "gen_seed": 173171,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.756,
+     "n_hyper": 11,
+     "n_oneway": 138,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.62,
+      0.57
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.57
+    },
+    {
+     "j": 6,
+     "gen_seed": 173172,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.656,
+     "n_hyper": 5,
+     "n_oneway": 135,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.53,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 7,
+     "gen_seed": 173173,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.879,
+     "n_hyper": 11,
+     "n_oneway": 150,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.62,
+      0.6,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.6
+    },
+    {
+     "j": 8,
+     "gen_seed": 173174,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.893,
+     "n_hyper": 20,
+     "n_oneway": 138,
+     "f_max": 5.0,
+     "class": "diffuse",
+     "errs": [
+      0.47,
+      0.55,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 9,
+     "gen_seed": 173175,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.649,
+     "n_hyper": 4,
+     "n_oneway": 149,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.49,
+      0.55,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 10,
+     "gen_seed": 173176,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.876,
+     "n_hyper": 9,
+     "n_oneway": 149,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.48,
+      0.58,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 11,
+     "gen_seed": 173177,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.641,
+     "n_hyper": 18,
+     "n_oneway": 170,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.48,
+      0.53,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.49
+    },
+    {
+     "j": 12,
+     "gen_seed": 173178,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.691,
+     "n_hyper": 5,
+     "n_oneway": 144,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.49,
+      0.46,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.49
+    },
+    {
+     "j": 13,
+     "gen_seed": 173179,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.908,
+     "n_hyper": 12,
+     "n_oneway": 129,
+     "f_max": 5.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.56,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 14,
+     "gen_seed": 173180,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.697,
+     "n_hyper": 13,
+     "n_oneway": 156,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.49,
+      0.5,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 15,
+     "gen_seed": 173181,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.845,
+     "n_hyper": 13,
+     "n_oneway": 157,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.47,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 16,
+     "gen_seed": 173182,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.851,
+     "n_hyper": 18,
+     "n_oneway": 150,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.6,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 17,
+     "gen_seed": 173183,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.767,
+     "n_hyper": 4,
+     "n_oneway": 134,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.48,
+      0.52,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 18,
+     "gen_seed": 173184,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.819,
+     "n_hyper": 16,
+     "n_oneway": 128,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.59,
+      0.55,
+      0.61
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.59
+    },
+    {
+     "j": 19,
+     "gen_seed": 173185,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.729,
+     "n_hyper": 19,
+     "n_oneway": 161,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.51,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 20,
+     "gen_seed": 173186,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.742,
+     "n_hyper": 13,
+     "n_oneway": 157,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.45,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 21,
+     "gen_seed": 173187,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.911,
+     "n_hyper": 1,
+     "n_oneway": 138,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.56,
+      0.51,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 22,
+     "gen_seed": 173188,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.767,
+     "n_hyper": 4,
+     "n_oneway": 151,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.43,
+      0.54,
+      0.57
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 23,
+     "gen_seed": 173189,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.668,
+     "n_hyper": 1,
+     "n_oneway": 140,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.49,
+      0.53,
+      0.47
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.49
+    },
+    {
+     "j": 24,
+     "gen_seed": 173190,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.793,
+     "n_hyper": 11,
+     "n_oneway": 149,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.59,
+      0.48
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.57
+    },
+    {
+     "j": 25,
+     "gen_seed": 173191,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.902,
+     "n_hyper": 7,
+     "n_oneway": 134,
+     "f_max": 5.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.58,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 26,
+     "gen_seed": 173192,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.824,
+     "n_hyper": 9,
+     "n_oneway": 154,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.48,
+      0.51,
+      0.48
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.48
+    },
+    {
+     "j": 27,
+     "gen_seed": 173193,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.603,
+     "n_hyper": 10,
+     "n_oneway": 152,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.48,
+      0.55,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 28,
+     "gen_seed": 173194,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.663,
+     "n_hyper": 20,
+     "n_oneway": 139,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.48,
+      0.52,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 29,
+     "gen_seed": 173195,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.752,
+     "n_hyper": 1,
+     "n_oneway": 140,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.53,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 30,
+     "gen_seed": 173196,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.71,
+     "n_hyper": 15,
+     "n_oneway": 141,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.55,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 31,
+     "gen_seed": 173197,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.886,
+     "n_hyper": 17,
+     "n_oneway": 161,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.52,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 32,
+     "gen_seed": 173198,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.741,
+     "n_hyper": 4,
+     "n_oneway": 142,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.51,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 33,
+     "gen_seed": 173199,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.839,
+     "n_hyper": 19,
+     "n_oneway": 170,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.51,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 34,
+     "gen_seed": 173200,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.838,
+     "n_hyper": 6,
+     "n_oneway": 140,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.53,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 35,
+     "gen_seed": 173201,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.722,
+     "n_hyper": 1,
+     "n_oneway": 147,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.45,
+      0.54,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 36,
+     "gen_seed": 173202,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.634,
+     "n_hyper": 6,
+     "n_oneway": 131,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.48,
+      0.47
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.48
+    },
+    {
+     "j": 37,
+     "gen_seed": 173203,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.63,
+     "n_hyper": 20,
+     "n_oneway": 140,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.54,
+      0.6,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 38,
+     "gen_seed": 173204,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.705,
+     "n_hyper": 6,
+     "n_oneway": 150,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.43,
+      0.49,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.49
+    },
+    {
+     "j": 39,
+     "gen_seed": 173205,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.664,
+     "n_hyper": 13,
+     "n_oneway": 146,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.58,
+      0.47
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 40,
+     "gen_seed": 173206,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.788,
+     "n_hyper": 19,
+     "n_oneway": 150,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.54,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    },
+    {
+     "j": 41,
+     "gen_seed": 173207,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.798,
+     "n_hyper": 9,
+     "n_oneway": 137,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.5,
+      0.52,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.52
+    },
+    {
+     "j": 42,
+     "gen_seed": 173208,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.665,
+     "n_hyper": 17,
+     "n_oneway": 136,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.57,
+      0.47,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.49
+    },
+    {
+     "j": 43,
+     "gen_seed": 173209,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.843,
+     "n_hyper": 16,
+     "n_oneway": 134,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.55,
+      0.53,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.55
+    },
+    {
+     "j": 44,
+     "gen_seed": 173210,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.65,
+     "n_hyper": 17,
+     "n_oneway": 149,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.53,
+      0.52,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 45,
+     "gen_seed": 173211,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.85,
+     "n_hyper": 20,
+     "n_oneway": 143,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.45,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 46,
+     "gen_seed": 173212,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.695,
+     "n_hyper": 17,
+     "n_oneway": 136,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.47,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.51
+    },
+    {
+     "j": 47,
+     "gen_seed": 173213,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.829,
+     "n_hyper": 12,
+     "n_oneway": 141,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.52,
+      0.58,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.53
+    },
+    {
+     "j": 48,
+     "gen_seed": 173214,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.797,
+     "n_hyper": 11,
+     "n_oneway": 150,
+     "f_max": 7.0,
+     "class": "diffuse",
+     "errs": [
+      0.49,
+      0.56,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.5
+    },
+    {
+     "j": 49,
+     "gen_seed": 173215,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "p_keep": 0.812,
+     "n_hyper": 9,
+     "n_oneway": 141,
+     "f_max": 6.0,
+     "class": "diffuse",
+     "errs": [
+      0.51,
+      0.54,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "median_err": 0.54
+    }
+   ],
+   "runtime_s": 13.5
+  }
+ },
+ "exp": "exp181_adversarial_reader",
+ "claim": "the adversarial class at scale: 200 STRUCTURED adversarial media (exp166's CornerMedium at the four 2+-dimension cells 3/5/6/7, 50 instances each) through the production read \u2014 exp160's decode stack VERBATIM (fingerprint asserted) with the temporal dispatch being exp178's scoped arm \u2014 zero rejections, the adversarial median at exp160's U2 bar, the tail characterized per cell with violation classes, the scoped arm's discipline recorded",
+ "cohort": {
+  "generator": "exp166's CornerMedium VERBATIM at n = 100 (exp166's construction; its main batteries used the same cells at n = 100)",
+  "seed_base": 166166,
+  "seed_rule": "EXP166_SEED_BASE + 1000*c + j, j = 0..49",
+  "cells": [
+   3,
+   5,
+   6,
+   7
+  ],
+  "per_cell": 50,
+  "n_media": 200,
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n_decodes": 600,
+  "cell_classes": {
+   "c3": "A-PAIR+A-STAT",
+   "c5": "A-SYM+A-STAT",
+   "c6": "A-SYM+A-PAIR",
+   "c7": "A-SYM+A-PAIR+A-STAT"
+  }
+ },
+ "read": {
+  "projection": "exp148 read_temporal VERBATIM (PN1/PN2 dominant-quadrature + TC1 flip-clock F + TC2 A_ext = A + F)",
+  "executor": "exp142 execute_signed VERBATIM (R1 structure on |A|, R2 signed dynamics, walk frontier on |A|>0)",
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "op_source": "exp99 battery-wide STAR point (exp142's STAR_OP)",
+  "spec": "MULTI (exp94 3-zone program)",
+  "frontier": "walk (inside exp142's executor)",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n": 100,
+  "window_h": 24.0,
+  "commit_noise": 0.6,
+  "steps_per_cell": 8,
+  "per_instance_tuning": "none",
+  "fingerprint": "8e11e88c1c2f1518",
+  "fingerprint_asserted": "8e11e88c1c2f1518",
+  "temporal_dispatch": "exp178's SCOPED arm \u2014 exp148 decode('scoped'): exp169's f_max_frames VERBATIM, R_T (exp167's read_adopted) iff f_max < 32.0 else the existing raw temporal path UNCHANGED",
+  "instrument_pin": {
+   "constant": "NEURAL_SPEC_MIN",
+   "pinned_to": -35.0,
+   "saved_values": {
+    "cultivation.bioelectric.collective": -60.0,
+    "experiments.exp142_sign_read": -60.0,
+    "experiments.exp145_phase_read": -60.0,
+    "experiments.exp148_temporal_read": -60.0,
+    "experiments.exp94_multizone_scale": -60.0
+   },
+   "modules": [
+    "cultivation.bioelectric.collective",
+    "experiments.exp142_sign_read",
+    "experiments.exp145_phase_read",
+    "experiments.exp148_temporal_read",
+    "experiments.exp94_multizone_scale"
+   ],
+   "note": "the deposited random-media records (exp160's 200) ran pre-CF-1; the floor is pinned to -35.0 for comparability, save/restore asserted"
+  }
+ },
+ "pooled_median_err": 0.545,
+ "random_media_context": {
+  "exp160_pooled_median": 0.63,
+  "source": "results/exp160_any_medium.json (deposited)",
+  "role": "context, NOT a bar"
+ },
+ "gates": {
+  "U1_zero_rejections": {
+   "pass": true,
+   "decodes": 600,
+   "expected": 600,
+   "rejections": 0,
+   "rejection_records": [],
+   "all_errs_finite": true,
+   "verify_recorded_per_decode": true,
+   "verify_rate": 1.0
+  },
+  "U2_adversarial_median": {
+   "pass": true,
+   "pooled_median_err": 0.545,
+   "bar_mV": 1.3,
+   "anchor_mV": 0.65,
+   "bound_ratio": 2.0,
+   "per_cell_medians": {
+    "c3": 0.54,
+    "c5": 0.52,
+    "c6": 0.64,
+    "c7": 0.52
+   },
+   "p90_err": 0.65,
+   "max_err": 0.76,
+   "context_random_media_pooled_median": 0.63,
+   "context_role": "exp160's deposited random-media median \u2014 recorded as context, NOT a bar (adversarial media are allowed to be harder; the bar is the U2 ceiling)"
+  },
+  "U3_tail_characterization": {
+   "pass": true,
+   "bar_mV": 1.3,
+   "n_above": 0,
+   "n_instances": 200,
+   "tail_frac": 0.0,
+   "attribution_coverage": true,
+   "counts_consistent": true,
+   "tail_owner_cell": null,
+   "tail_owner_class": null,
+   "per_cell": {
+    "c3": {
+     "n_above": 0,
+     "class": "A-PAIR+A-STAT",
+     "above_bar": []
+    },
+    "c5": {
+     "n_above": 0,
+     "class": "A-SYM+A-STAT",
+     "above_bar": []
+    },
+    "c6": {
+     "n_above": 0,
+     "class": "A-SYM+A-PAIR",
+     "above_bar": []
+    },
+    "c7": {
+     "n_above": 0,
+     "class": "A-SYM+A-PAIR+A-STAT",
+     "above_bar": []
+    }
+   },
+   "note": "characterization gate: no bar on the tail SIZE \u2014 the deposit names which cell owns the tail"
+  },
+  "U4_scoped_discipline": {
+   "pass": true,
+   "threshold": 32.0,
+   "classification_consistent": true,
+   "n_diffuse_decodes_R_T": 600,
+   "n_raw_path_decodes": 0,
+   "per_cell_class": {
+    "c3": {
+     "n_diffuse": 50,
+     "n_concentrated": 0,
+     "f_max_min": 4.0,
+     "f_max_max": 7.0
+    },
+    "c5": {
+     "n_diffuse": 50,
+     "n_concentrated": 0,
+     "f_max_min": 4.0,
+     "f_max_max": 7.0
+    },
+    "c6": {
+     "n_diffuse": 50,
+     "n_concentrated": 0,
+     "f_max_min": 0.0,
+     "f_max_max": 0.0
+    },
+    "c7": {
+     "n_diffuse": 50,
+     "n_concentrated": 0,
+     "f_max_min": 5.0,
+     "f_max_max": 7.0
+    }
+   },
+   "cross_arm_audits": {
+    "n": 12,
+    "n_anomalies": 0,
+    "records": [
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 7.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 0.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 0.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 0.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 1,
+      "f_max": 5.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 2,
+      "f_max": 5.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     },
+     {
+      "j": 0,
+      "seed": 3,
+      "f_max": 5.0,
+      "class": "diffuse",
+      "expected_arm": "R_T/exp167",
+      "anomaly": false
+     }
+    ]
+   },
+   "fingerprint": "8e11e88c1c2f1518",
+   "post_run_fingerprint": "8e11e88c1c2f1518"
+  }
+ },
+ "cells_run": [
+  "c3",
+  "c5",
+  "c6",
+  "c7"
+ ],
+ "verdict": "4/4 gates - no above-bar tail",
+ "runtime_s": 54.5
+}
