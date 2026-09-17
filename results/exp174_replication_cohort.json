@@ -1,0 +1,639 @@
+{
+ "experiment": "exp174_the_replication_cohort",
+ "task_id": "2-a",
+ "registered_next_of": "exp173 (ledger L152): the signed-mean signature is a power claim \u2014 a power claim is only as good as its second cohort",
+ "smoke": false,
+ "pre_registered": {
+  "source": "module docstring, committed at HEAD (f75075f) BEFORE any decode; the credited run used this file unchanged",
+  "cohort": "exp159's construction VERBATIM with the ONE changed input disclosed: exp159.SEED_CONSTRUCT rebound 159 -> 174174 for the cohort build (save/rebind/restore asserted)",
+  "statistic": "stat = mean over pairs of dev_signed; dev1_signed = err(A + F*Sw1, T1) - err(A, T1) SIGNED; m2 side computed identically for attribution; V2 weighting via exp163's cancel_mass_matrix VERBATIM; STAR_OP, seed (1,)",
+  "gates": "F1 fresh construction integrity 12/12 + independence vs the original cohort; F2 phase-A null deposit precedes phase-B decode (byte-offset discipline) + bar finite > 0; F3 |stat_m1_fresh| > fresh null bar AND >= 9/12 majority sign; F4 |stat_m2_fresh| <= bar",
+  "seeds": {
+   "exec": 1,
+   "null_protocol": [
+    1,
+    2,
+    3
+   ]
+  },
+  "seed_construct": {
+   "original": 159,
+   "fresh": 174174
+  }
+ },
+ "construction": {
+  "seed_rebind": {
+   "mechanism": "exp159's OLD_FLOOR_PIN rebinding mechanism: save, rebind, build all 12 pairs via build_pair(p) p = 0..11, restore asserted",
+   "saved": 159,
+   "rebound_to": 174174,
+   "restored_to": 159,
+   "restore_asserted": true,
+   "original_cohort_projections_built_seed_159_for_F1_independence": 12
+  },
+  "F": 0.75,
+  "F_rule": "median |A_ij| over nonzero entries pooled across the 12 FRESH projections, computed before any decode (exp159/exp163's rule)",
+  "F_original_cohort_exp163_deposit": 0.75,
+  "pairs_constructed": 12,
+  "decode_scope": "all 12 (credited)"
+ },
+ "phase_a": {
+  "phase": "A (null deposit; frozen before any real-arm decode)",
+  "null_protocol": {
+   "augmentation": "exp163/exp173's null augmentation: the arm-1 null arm = the shared bit-identical plain projection A (no S term)",
+   "placeholder": "one placeholder member per pair, decoded on the null augmentation at each protocol seed, against each side's own target",
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "seed_source": "exp142's deposited SEEDS (1,2,3) \u2014 the read core's own seed convention (asserted at runtime); seed 1 = the credited decode seed (exp159.SEED_EXEC), the fresh cohort's baseline \u2014 no prior deposit exists for a fresh construction",
+   "pooled_null_stat": "mean over pairs of [err(A, own_target, seed) - err(A, own_target, seed 1)], SIGNED",
+   "bar_rule": "null bar = max |pooled null stat| over the protocol's seeds x own-targets (T1/T2) \u2014 one bar, frozen once, gating F3 and F4"
+  },
+  "F_frozen": 0.75,
+  "pooled_null_stats": {
+   "T1@seed1": 0.0,
+   "T2@seed1": 0.0,
+   "T1@seed2": 0.026667,
+   "T2@seed2": -0.060833,
+   "T1@seed3": 0.050833,
+   "T2@seed3": -0.098333
+  },
+  "null_err_seed1": {
+   "0": {
+    "T1": 0.43,
+    "T2": 3.73
+   },
+   "1": {
+    "T1": 0.55,
+    "T2": 3.81
+   },
+   "2": {
+    "T1": 0.6,
+    "T2": 3.82
+   },
+   "3": {
+    "T1": 0.28,
+    "T2": 3.72
+   },
+   "4": {
+    "T1": 0.49,
+    "T2": 3.43
+   },
+   "5": {
+    "T1": 0.48,
+    "T2": 3.25
+   },
+   "6": {
+    "T1": 0.46,
+    "T2": 3.23
+   },
+   "7": {
+    "T1": 0.5,
+    "T2": 3.17
+   },
+   "8": {
+    "T1": 0.51,
+    "T2": 3.71
+   },
+   "9": {
+    "T1": 0.48,
+    "T2": 3.84
+   },
+   "10": {
+    "T1": 0.6,
+    "T2": 3.72
+   },
+   "11": {
+    "T1": 0.46,
+    "T2": 3.84
+   }
+  },
+  "null_bar": 0.098333,
+  "null_bar_finite_positive": true,
+  "frozen_before_phase_b_decode": true,
+  "byte_offset_evidence": {
+   "phase_a_write_byte": 6743,
+   "first_phase_b_decode_byte": 6821,
+   "order_held": true
+  },
+  "pair_scope": "12 pairs",
+  "smoke": false
+ },
+ "phase_a_write_evidence": {
+  "byte_offset_order": {
+   "phase_a_write_byte": 6743,
+   "first_phase_b_decode_byte": 6821,
+   "order_held": true
+  },
+  "phase_a_record_bytes_on_disk": 2036,
+  "record_confirmed_on_disk_before_phase_b_decode": true
+ },
+ "pairs": [
+  {
+   "p": 0,
+   "n": 30,
+   "k": 3,
+   "cancel_entries_S1": 10,
+   "density_d_k": 40.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "min": 0.75,
+    "max": 3.0
+   },
+   "independent_of_original": true,
+   "null_err_seed1_frozen": {
+    "T1": 0.43,
+    "T2": 3.73
+   },
+   "err_m1_own_T1": 0.59,
+   "err_m2_own_T2": 3.73,
+   "dev1_signed": 0.16,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1
+  },
+  {
+   "p": 1,
+   "n": 30,
+   "k": 3,
+   "cancel_entries_S1": 10,
+   "density_d_k": 44.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "min": 0.75,
+    "max": 3.0
+   },
+   "independent_of_original": true,
+   "null_err_seed1_frozen": {
+    "T1": 0.55,
+    "T2": 3.81
+   },
+   "err_m1_own_T1": 0.75,
+   "err_m2_own_T2": 3.81,
+   "dev1_signed": 0.2,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1
+  },
+  {
+   "p": 2,
+   "n": 30,
+   "k": 3,
+   "cancel_entries_S1": 10,
+   "density_d_k": 46.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "min": 0.75,
+    "max": 3.0
+   },
+   "independent_of_original": true,
+   "null_err_seed1_frozen": {
+    "T1": 0.6,
+    "T2": 3.82
+   },
+   "err_m1_own_T1": 0.61,
+   "err_m2_own_T2": 3.82,
+   "dev1_signed": 0.01,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1
+  },
+  {
+   "p": 3,
+   "n": 30,
+   "k": 3,
+   "cancel_entries_S1": 10,
+   "density_d_k": 43.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "min": 0.75,
+    "max": 3.0
+   },
+   "independent_of_original": true,
+   "null_err_seed1_frozen": {
+    "T1": 0.28,
+    "T2": 3.72
+   },
+   "err_m1_own_T1": 0.58,
+   "err_m2_own_T2": 3.72,
+   "dev1_signed": 0.3,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1
+  },
+  {
+   "p": 4,
+   "n": 32,
+   "k": 4,
+   "cancel_entries_S1": 24,
+   "density_d_k": 70.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "min": 0.5,
+    "max": 2.0
+   },
+   "independent_of_original": true,
+   "null_err_seed1_frozen": {
+    "T1": 0.49,
+    "T2": 3.43
+   },
+   "err_m1_own_T1": 0.51,
+   "err_m2_own_T2": 3.43,
+   "dev1_signed": 0.02,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1
+  },
+  {
+   "p": 5,
+   "n": 32,
+   "k": 4,
+   "cancel_entries_S1": 24,
+   "density_d_k": 76.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "min": 0.5,
+    "max": 2.0
+   },
+   "independent_of_original": true,
+   "null_err_seed1_frozen": {
+    "T1": 0.48,
+    "T2": 3.25
+   },
+   "err_m1_own_T1": 0.46,
+   "err_m2_own_T2": 3.25,
+   "dev1_signed": -0.02,
+   "dev2_signed": 0.0,
+   "sign_dev1": -1
+  },
+  {
+   "p": 6,
+   "n": 32,
+   "k": 4,
+   "cancel_entries_S1": 24,
+   "density_d_k": 62.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "min": 0.5,
+    "max": 1.6666666666666667
+   },
+   "independent_of_original": true,
+   "null_err_seed1_frozen": {
+    "T1": 0.46,
+    "T2": 3.23
+   },
+   "err_m1_own_T1": 0.51,
+   "err_m2_own_T2": 3.23,
+   "dev1_signed": 0.05,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1
+  },
+  {
+   "p": 7,
+   "n": 32,
+   "k": 4,
+   "cancel_entries_S1": 24,
+   "density_d_k": 66.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "min": 0.5,
+    "max": 2.0
+   },
+   "independent_of_original": true,
+   "null_err_seed1_frozen": {
+    "T1": 0.5,
+    "T2": 3.17
+   },
+   "err_m1_own_T1": 0.58,
+   "err_m2_own_T2": 3.17,
+   "dev1_signed": 0.08,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1
+  },
+  {
+   "p": 8,
+   "n": 30,
+   "k": 5,
+   "cancel_entries_S1": 36,
+   "density_d_k": 84.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "min": 0.375,
+    "max": 1.5
+   },
+   "independent_of_original": true,
+   "null_err_seed1_frozen": {
+    "T1": 0.51,
+    "T2": 3.71
+   },
+   "err_m1_own_T1": 0.71,
+   "err_m2_own_T2": 3.71,
+   "dev1_signed": 0.2,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1
+  },
+  {
+   "p": 9,
+   "n": 30,
+   "k": 5,
+   "cancel_entries_S1": 36,
+   "density_d_k": 81.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "min": 0.375,
+    "max": 1.5
+   },
+   "independent_of_original": true,
+   "null_err_seed1_frozen": {
+    "T1": 0.48,
+    "T2": 3.84
+   },
+   "err_m1_own_T1": 0.6,
+   "err_m2_own_T2": 3.84,
+   "dev1_signed": 0.12,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1
+  },
+  {
+   "p": 10,
+   "n": 30,
+   "k": 5,
+   "cancel_entries_S1": 36,
+   "density_d_k": 90.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "min": 0.375,
+    "max": 1.5
+   },
+   "independent_of_original": true,
+   "null_err_seed1_frozen": {
+    "T1": 0.6,
+    "T2": 3.72
+   },
+   "err_m1_own_T1": 0.62,
+   "err_m2_own_T2": 3.72,
+   "dev1_signed": 0.02,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1
+  },
+  {
+   "p": 11,
+   "n": 30,
+   "k": 5,
+   "cancel_entries_S1": 36,
+   "density_d_k": 87.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "min": 0.375,
+    "max": 1.5
+   },
+   "independent_of_original": true,
+   "null_err_seed1_frozen": {
+    "T1": 0.46,
+    "T2": 3.84
+   },
+   "err_m1_own_T1": 0.61,
+   "err_m2_own_T2": 3.84,
+   "dev1_signed": 0.15,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1
+  }
+ ],
+ "statistic": {
+  "stat_m1_fresh_signed_mean": 0.1075,
+  "median_m1": 0.1,
+  "stat_m2_fresh_signed_mean": 0.0,
+  "median_m2": 0.0,
+  "majority_sign": 1,
+  "n_pairs_sharing_majority_sign": 11,
+  "n_pos": 11,
+  "n_neg": 1,
+  "n_zero": 0
+ },
+ "null_bar": 0.098333,
+ "minority_anatomy": {
+  "original_cohort": {
+   "dev_source": "exp173's deposited dev1_signed (the original cohort)",
+   "majority_sign": 1,
+   "n_pos": 10,
+   "n_neg": 2,
+   "minority_sign_pairs": {
+    "n_pairs": 2,
+    "pairs": [
+     4,
+     6
+    ],
+    "features": {
+     "k": {
+      "min": 4,
+      "median": 4.0,
+      "max": 4
+     },
+     "cancel_entries_S1": {
+      "min": 24,
+      "median": 24.0,
+      "max": 24
+     },
+     "density_d_k": {
+      "min": 68.0,
+      "median": 73.0,
+      "max": 78.0
+     },
+     "sw1_mass_max": {
+      "min": 2.0,
+      "median": 2.0,
+      "max": 2.0
+     },
+     "sw1_nnz_entries": {
+      "min": 72,
+      "median": 72.0,
+      "max": 72
+     }
+    }
+   },
+   "majority_sign_pairs": {
+    "n_pairs": 10,
+    "pairs": [
+     0,
+     1,
+     2,
+     3,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "features": {
+     "k": {
+      "min": 3,
+      "median": 4.0,
+      "max": 5
+     },
+     "cancel_entries_S1": {
+      "min": 10,
+      "median": 24.0,
+      "max": 36
+     },
+     "density_d_k": {
+      "min": 40.0,
+      "median": 67.5,
+      "max": 87.0
+     },
+     "sw1_mass_max": {
+      "min": 1.5,
+      "median": 1.8333333333333335,
+      "max": 3.0
+     },
+     "sw1_nnz_entries": {
+      "min": 50,
+      "median": 72.0,
+      "max": 84
+     }
+    }
+   },
+   "per_pair_signed_devs": {
+    "0": 0.23,
+    "1": 0.28,
+    "2": 0.18,
+    "3": 0.03,
+    "4": -0.04,
+    "5": 0.14,
+    "6": -0.02,
+    "7": 0.05,
+    "8": 0.09,
+    "9": 0.23,
+    "10": 0.21,
+    "11": 0.32
+   }
+  },
+  "fresh_cohort": {
+   "dev_source": "this run's dev1_signed (the fresh cohort)",
+   "majority_sign": 1,
+   "n_pos": 11,
+   "n_neg": 1,
+   "minority_sign_pairs": {
+    "n_pairs": 1,
+    "pairs": [
+     5
+    ],
+    "features": {
+     "k": {
+      "min": 4,
+      "median": 4.0,
+      "max": 4
+     },
+     "cancel_entries_S1": {
+      "min": 24,
+      "median": 24.0,
+      "max": 24
+     },
+     "density_d_k": {
+      "min": 76.0,
+      "median": 76.0,
+      "max": 76.0
+     },
+     "sw1_mass_max": {
+      "min": 2.0,
+      "median": 2.0,
+      "max": 2.0
+     },
+     "sw1_nnz_entries": {
+      "min": 72,
+      "median": 72.0,
+      "max": 72
+     }
+    }
+   },
+   "majority_sign_pairs": {
+    "n_pairs": 11,
+    "pairs": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "features": {
+     "k": {
+      "min": 3,
+      "median": 4.0,
+      "max": 5
+     },
+     "cancel_entries_S1": {
+      "min": 10,
+      "median": 24.0,
+      "max": 36
+     },
+     "density_d_k": {
+      "min": 40.0,
+      "median": 66.0,
+      "max": 90.0
+     },
+     "sw1_mass_max": {
+      "min": 1.5,
+      "median": 2.0,
+      "max": 3.0
+     },
+     "sw1_nnz_entries": {
+      "min": 50,
+      "median": 72.0,
+      "max": 84
+     }
+    }
+   },
+   "per_pair_signed_devs": {
+    "0": 0.16,
+    "1": 0.2,
+    "2": 0.01,
+    "3": 0.3,
+    "4": 0.02,
+    "5": -0.02,
+    "6": 0.05,
+    "7": 0.08,
+    "8": 0.2,
+    "9": 0.12,
+    "10": 0.02,
+    "11": 0.15
+   }
+  }
+ },
+ "gates": {
+  "F1_fresh_construction_integrity": {
+   "pass": true,
+   "construction_asserts_12_of_12": "12/12 (asserted at build: A1==A2, S1!=S2, S2==support(A), cancellation layout, connectivity)",
+   "independence_vs_original_cohort": "12/12",
+   "m2_aug_bit_exact_identity": "12/12"
+  },
+  "F2_null_deposit_first": {
+   "pass": true,
+   "byte_offset_order_held": true,
+   "phase_a_record_on_disk_before_phase_b_decode": true,
+   "phase_a_record_bytes_on_disk": 2036,
+   "null_bar": 0.098333,
+   "null_bar_finite_positive": true,
+   "smoke_scope": false
+  },
+  "F3_replication": {
+   "pass": true,
+   "stat_m1_fresh_signed_mean": 0.1075,
+   "abs_stat_m1_gt_bar": true,
+   "n_majority_sign": 11,
+   "required": 9,
+   "n_pos": 11,
+   "n_neg": 1,
+   "n_zero": 0
+  },
+  "F4_attribution_replicates": {
+   "pass": true,
+   "stat_m2_fresh_signed_mean": 0.0,
+   "abs_stat_m2_le_bar": true
+  }
+ },
+ "all_gates_pass": true,
+ "verdict": "REPLICATED \u2014 the signed-mean signature carries on independent draws: |stat_m1_fresh| = 0.1075 > fresh null bar 0.0983 with a 11/12 majority sign (need >= 9) and a silent clique side (|stat_m2_fresh| = 0.0000 <= bar); the ensemble claim survives its second cohort",
+ "wall_seconds": 5.4
+}
