@@ -1,0 +1,934 @@
+{
+ "experiment": "exp163_the_grouping_contrast",
+ "task_id": "E1",
+ "pre_registered": {
+  "experiment": "exp163_the_grouping_contrast",
+  "task_id": "E1",
+  "repair_of": "exp159 (ledger L142) registered repair",
+  "construction": "exp159 verbatim (imported build_pair/project/co_membership), 12 adversarial pairs, seed 159",
+  "labels": {
+   "member_1": "T1 (uniform -30, exp94 MULTI layout)",
+   "member_2": "T2 (middle -59, exp94 BELOW layout)"
+  },
+  "rule": "A_ext = A + F*S_variant, F recomputed pre-decode and asserted == exp159's deposited F",
+  "variant_V1_unweighted": "S_variant = S_m (co-membership)",
+  "variant_V2_weighting_pre_registered_once": "W(m)_ij = sum over member-m hyperedges e, |e| >= 3, {i,j} in e, of |w_e|/(|e|-1); S_w(m) = S_m * W(m) elementwise; member 2 (all-size-2) -> W == 0 -> augmentation vanishes bit-exactly",
+  "readout": "err level, two-sided, own deposited targets: C = |err(A+F*S_v(m1), T1) - err(A+F*S_v(m2), T2)|; attribution dev_v1 = |err_v1 - err(A,T1)|, dev_v2 = |err_v2 - err(A,T2)|",
+  "threshold_rule": "theta = 3 x max cross-member same-target err delta deposited by exp159",
+  "noise_floor_mV": 0.08999999999999997,
+  "theta_mV": 0.27,
+  "separation_rule": "C_v > theta AND dev_v1 > theta AND dev_v2 <= theta (crossed ON the sign-cancellation member, NOT on the clique/triad member)",
+  "gates": {
+   "G1": "V2 attributed separation >= 10/12; survival-by-class table deposited",
+   "G2": "n_sep_V2 - n_sep_V1 >= 2 OR monotone increasing d_k (pooled canceled-entry mass) vs median dev_V1 across k=3/4/5 (both orderings)",
+   "G3": "superset discipline both variants: S2 == support(A) bit-exact 12/12; S_w(m2) == 0 and A+F*S_w(m2) == A bit-exact 12/12; dedicated all-size-2 instance verdicts bit-identical across members, V2 devs exactly 0.0",
+   "G4": "arm-1 blindness 12/12 reproduced AND bit-identical to exp159's deposited arm-1 verdicts"
+  },
+  "seed_exec": 1,
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "err_bar": 6.0,
+  "threshold_deposited_before_decode": true
+ },
+ "F": 0.75,
+ "noise_floor_mV": 0.08999999999999997,
+ "theta_mV": 0.27,
+ "pairs": [
+  {
+   "p": 0,
+   "n": 30,
+   "k": 3,
+   "cancel_entries_S1": 10,
+   "density_d_k": 45.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "min": 0.75,
+    "max": 3.0
+   },
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.55
+     ],
+     "T2": [
+      false,
+      3.81
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.55
+     ],
+     "T2": [
+      false,
+      3.81
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm1_matches_deposit": true,
+   "null_err": {
+    "T1": 0.55,
+    "T2": 3.81
+   },
+   "v1_unweighted": {
+    "err_m1_own_T1": 7.07,
+    "err_m2_own_T2": 9.67,
+    "contrast_C": 2.6,
+    "dev1_signcancellation_side": 6.52,
+    "dev2_clique_side": 5.86,
+    "attributed_separation": false
+   },
+   "v2_weighted": {
+    "err_m1_own_T1": 0.78,
+    "err_m2_own_T2": 3.81,
+    "contrast_C": 3.03,
+    "dev1_signcancellation_side": 0.23,
+    "dev2_clique_side": 0.0,
+    "attributed_separation": false
+   }
+  },
+  {
+   "p": 1,
+   "n": 30,
+   "k": 3,
+   "cancel_entries_S1": 10,
+   "density_d_k": 42.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "min": 0.75,
+    "max": 3.0
+   },
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.43
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.43
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm1_matches_deposit": true,
+   "null_err": {
+    "T1": 0.43,
+    "T2": 3.72
+   },
+   "v1_unweighted": {
+    "err_m1_own_T1": 7.53,
+    "err_m2_own_T2": 10.02,
+    "contrast_C": 2.49,
+    "dev1_signcancellation_side": 7.1,
+    "dev2_clique_side": 6.3,
+    "attributed_separation": false
+   },
+   "v2_weighted": {
+    "err_m1_own_T1": 0.71,
+    "err_m2_own_T2": 3.72,
+    "contrast_C": 3.01,
+    "dev1_signcancellation_side": 0.28,
+    "dev2_clique_side": 0.0,
+    "attributed_separation": true
+   }
+  },
+  {
+   "p": 2,
+   "n": 30,
+   "k": 3,
+   "cancel_entries_S1": 10,
+   "density_d_k": 53.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "min": 0.75,
+    "max": 3.0
+   },
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.62
+     ],
+     "T2": [
+      false,
+      3.82
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.62
+     ],
+     "T2": [
+      false,
+      3.82
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm1_matches_deposit": true,
+   "null_err": {
+    "T1": 0.62,
+    "T2": 3.82
+   },
+   "v1_unweighted": {
+    "err_m1_own_T1": 0.47,
+    "err_m2_own_T2": 3.71,
+    "contrast_C": 3.24,
+    "dev1_signcancellation_side": 0.15,
+    "dev2_clique_side": 0.11,
+    "attributed_separation": false
+   },
+   "v2_weighted": {
+    "err_m1_own_T1": 0.8,
+    "err_m2_own_T2": 3.82,
+    "contrast_C": 3.02,
+    "dev1_signcancellation_side": 0.18,
+    "dev2_clique_side": 0.0,
+    "attributed_separation": false
+   }
+  },
+  {
+   "p": 3,
+   "n": 30,
+   "k": 3,
+   "cancel_entries_S1": 10,
+   "density_d_k": 40.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "min": 0.75,
+    "max": 3.0
+   },
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.43
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.43
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm1_matches_deposit": true,
+   "null_err": {
+    "T1": 0.43,
+    "T2": 3.72
+   },
+   "v1_unweighted": {
+    "err_m1_own_T1": 0.37,
+    "err_m2_own_T2": 3.58,
+    "contrast_C": 3.21,
+    "dev1_signcancellation_side": 0.06,
+    "dev2_clique_side": 0.14,
+    "attributed_separation": false
+   },
+   "v2_weighted": {
+    "err_m1_own_T1": 0.46,
+    "err_m2_own_T2": 3.72,
+    "contrast_C": 3.26,
+    "dev1_signcancellation_side": 0.03,
+    "dev2_clique_side": 0.0,
+    "attributed_separation": false
+   }
+  },
+  {
+   "p": 4,
+   "n": 32,
+   "k": 4,
+   "cancel_entries_S1": 24,
+   "density_d_k": 68.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "min": 0.5,
+    "max": 2.0
+   },
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.51
+     ],
+     "T2": [
+      false,
+      3.43
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.51
+     ],
+     "T2": [
+      false,
+      3.43
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm1_matches_deposit": true,
+   "null_err": {
+    "T1": 0.51,
+    "T2": 3.43
+   },
+   "v1_unweighted": {
+    "err_m1_own_T1": 0.53,
+    "err_m2_own_T2": 3.24,
+    "contrast_C": 2.71,
+    "dev1_signcancellation_side": 0.02,
+    "dev2_clique_side": 0.19,
+    "attributed_separation": false
+   },
+   "v2_weighted": {
+    "err_m1_own_T1": 0.47,
+    "err_m2_own_T2": 3.43,
+    "contrast_C": 2.96,
+    "dev1_signcancellation_side": 0.04,
+    "dev2_clique_side": 0.0,
+    "attributed_separation": false
+   }
+  },
+  {
+   "p": 5,
+   "n": 32,
+   "k": 4,
+   "cancel_entries_S1": 24,
+   "density_d_k": 60.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "min": 0.5,
+    "max": 1.6666666666666667
+   },
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.43
+     ],
+     "T2": [
+      false,
+      3.23
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.43
+     ],
+     "T2": [
+      false,
+      3.23
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm1_matches_deposit": true,
+   "null_err": {
+    "T1": 0.43,
+    "T2": 3.23
+   },
+   "v1_unweighted": {
+    "err_m1_own_T1": 0.61,
+    "err_m2_own_T2": 3.05,
+    "contrast_C": 2.44,
+    "dev1_signcancellation_side": 0.18,
+    "dev2_clique_side": 0.18,
+    "attributed_separation": false
+   },
+   "v2_weighted": {
+    "err_m1_own_T1": 0.57,
+    "err_m2_own_T2": 3.23,
+    "contrast_C": 2.66,
+    "dev1_signcancellation_side": 0.14,
+    "dev2_clique_side": 0.0,
+    "attributed_separation": false
+   }
+  },
+  {
+   "p": 6,
+   "n": 32,
+   "k": 4,
+   "cancel_entries_S1": 24,
+   "density_d_k": 78.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "min": 0.5,
+    "max": 2.0
+   },
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.5
+     ],
+     "T2": [
+      false,
+      3.25
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.5
+     ],
+     "T2": [
+      false,
+      3.25
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm1_matches_deposit": true,
+   "null_err": {
+    "T1": 0.5,
+    "T2": 3.25
+   },
+   "v1_unweighted": {
+    "err_m1_own_T1": 0.5,
+    "err_m2_own_T2": 3.24,
+    "contrast_C": 2.74,
+    "dev1_signcancellation_side": 0.0,
+    "dev2_clique_side": 0.01,
+    "attributed_separation": false
+   },
+   "v2_weighted": {
+    "err_m1_own_T1": 0.48,
+    "err_m2_own_T2": 3.25,
+    "contrast_C": 2.77,
+    "dev1_signcancellation_side": 0.02,
+    "dev2_clique_side": 0.0,
+    "attributed_separation": false
+   }
+  },
+  {
+   "p": 7,
+   "n": 32,
+   "k": 4,
+   "cancel_entries_S1": 24,
+   "density_d_k": 78.0,
+   "sw1_stats": {
+    "nnz_entries": 72,
+    "min": 0.5,
+    "max": 2.0
+   },
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.45
+     ],
+     "T2": [
+      false,
+      3.25
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.45
+     ],
+     "T2": [
+      false,
+      3.25
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm1_matches_deposit": true,
+   "null_err": {
+    "T1": 0.45,
+    "T2": 3.25
+   },
+   "v1_unweighted": {
+    "err_m1_own_T1": 0.5,
+    "err_m2_own_T2": 3.22,
+    "contrast_C": 2.72,
+    "dev1_signcancellation_side": 0.05,
+    "dev2_clique_side": 0.03,
+    "attributed_separation": false
+   },
+   "v2_weighted": {
+    "err_m1_own_T1": 0.5,
+    "err_m2_own_T2": 3.25,
+    "contrast_C": 2.75,
+    "dev1_signcancellation_side": 0.05,
+    "dev2_clique_side": 0.0,
+    "attributed_separation": false
+   }
+  },
+  {
+   "p": 8,
+   "n": 30,
+   "k": 5,
+   "cancel_entries_S1": 36,
+   "density_d_k": 87.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "min": 0.5,
+    "max": 1.5
+   },
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.55
+     ],
+     "T2": [
+      false,
+      3.71
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.55
+     ],
+     "T2": [
+      false,
+      3.71
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm1_matches_deposit": true,
+   "null_err": {
+    "T1": 0.55,
+    "T2": 3.71
+   },
+   "v1_unweighted": {
+    "err_m1_own_T1": 0.76,
+    "err_m2_own_T2": 3.83,
+    "contrast_C": 3.07,
+    "dev1_signcancellation_side": 0.21,
+    "dev2_clique_side": 0.12,
+    "attributed_separation": false
+   },
+   "v2_weighted": {
+    "err_m1_own_T1": 0.64,
+    "err_m2_own_T2": 3.71,
+    "contrast_C": 3.07,
+    "dev1_signcancellation_side": 0.09,
+    "dev2_clique_side": 0.0,
+    "attributed_separation": false
+   }
+  },
+  {
+   "p": 9,
+   "n": 30,
+   "k": 5,
+   "cancel_entries_S1": 36,
+   "density_d_k": 75.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "min": 0.375,
+    "max": 1.5
+   },
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.47
+     ],
+     "T2": [
+      false,
+      3.84
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.47
+     ],
+     "T2": [
+      false,
+      3.84
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm1_matches_deposit": true,
+   "null_err": {
+    "T1": 0.47,
+    "T2": 3.84
+   },
+   "v1_unweighted": {
+    "err_m1_own_T1": 0.7,
+    "err_m2_own_T2": 3.51,
+    "contrast_C": 2.81,
+    "dev1_signcancellation_side": 0.23,
+    "dev2_clique_side": 0.33,
+    "attributed_separation": false
+   },
+   "v2_weighted": {
+    "err_m1_own_T1": 0.7,
+    "err_m2_own_T2": 3.84,
+    "contrast_C": 3.14,
+    "dev1_signcancellation_side": 0.23,
+    "dev2_clique_side": 0.0,
+    "attributed_separation": false
+   }
+  },
+  {
+   "p": 10,
+   "n": 30,
+   "k": 5,
+   "cancel_entries_S1": 36,
+   "density_d_k": 87.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "min": 0.375,
+    "max": 1.5
+   },
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.58
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.58
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm1_matches_deposit": true,
+   "null_err": {
+    "T1": 0.58,
+    "T2": 3.72
+   },
+   "v1_unweighted": {
+    "err_m1_own_T1": 5.78,
+    "err_m2_own_T2": 8.1,
+    "contrast_C": 2.32,
+    "dev1_signcancellation_side": 5.2,
+    "dev2_clique_side": 4.38,
+    "attributed_separation": false
+   },
+   "v2_weighted": {
+    "err_m1_own_T1": 0.79,
+    "err_m2_own_T2": 3.72,
+    "contrast_C": 2.93,
+    "dev1_signcancellation_side": 0.21,
+    "dev2_clique_side": 0.0,
+    "attributed_separation": false
+   }
+  },
+  {
+   "p": 11,
+   "n": 30,
+   "k": 5,
+   "cancel_entries_S1": 36,
+   "density_d_k": 84.0,
+   "sw1_stats": {
+    "nnz_entries": 84,
+    "min": 0.375,
+    "max": 1.5
+   },
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.27
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.27
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm1_matches_deposit": true,
+   "null_err": {
+    "T1": 0.27,
+    "T2": 3.72
+   },
+   "v1_unweighted": {
+    "err_m1_own_T1": 0.53,
+    "err_m2_own_T2": 4.02,
+    "contrast_C": 3.49,
+    "dev1_signcancellation_side": 0.26,
+    "dev2_clique_side": 0.3,
+    "attributed_separation": false
+   },
+   "v2_weighted": {
+    "err_m1_own_T1": 0.59,
+    "err_m2_own_T2": 3.72,
+    "contrast_C": 3.13,
+    "dev1_signcancellation_side": 0.32,
+    "dev2_clique_side": 0.0,
+    "attributed_separation": true
+   }
+  }
+ ],
+ "separated_counts": {
+  "v1_unweighted": 0,
+  "v2_weighted": 2
+ },
+ "survival_by_class": {
+  "v1": {
+   "3": {
+    "n_pairs": 4,
+    "n_attributed_separated": 0,
+    "median_contrast_C": 2.9050000000000002,
+    "max_contrast_C": 3.24,
+    "median_dev1_signcancellation": 3.335,
+    "max_dev1_signcancellation": 7.1,
+    "median_dev2_clique": 3.0,
+    "max_dev2_clique": 6.3,
+    "n_dev1_above_theta": 2,
+    "n_dev2_at_or_below_theta": 2
+   },
+   "4": {
+    "n_pairs": 4,
+    "n_attributed_separated": 0,
+    "median_contrast_C": 2.715,
+    "max_contrast_C": 2.74,
+    "median_dev1_signcancellation": 0.035,
+    "max_dev1_signcancellation": 0.18,
+    "median_dev2_clique": 0.105,
+    "max_dev2_clique": 0.19,
+    "n_dev1_above_theta": 0,
+    "n_dev2_at_or_below_theta": 4
+   },
+   "5": {
+    "n_pairs": 4,
+    "n_attributed_separated": 0,
+    "median_contrast_C": 2.94,
+    "max_contrast_C": 3.49,
+    "median_dev1_signcancellation": 0.245,
+    "max_dev1_signcancellation": 5.2,
+    "median_dev2_clique": 0.315,
+    "max_dev2_clique": 4.38,
+    "n_dev1_above_theta": 1,
+    "n_dev2_at_or_below_theta": 1
+   }
+  },
+  "v2": {
+   "3": {
+    "n_pairs": 4,
+    "n_attributed_separated": 1,
+    "median_contrast_C": 3.025,
+    "max_contrast_C": 3.26,
+    "median_dev1_signcancellation": 0.20500000000000002,
+    "max_dev1_signcancellation": 0.28,
+    "median_dev2_clique": 0.0,
+    "max_dev2_clique": 0.0,
+    "n_dev1_above_theta": 1,
+    "n_dev2_at_or_below_theta": 4
+   },
+   "4": {
+    "n_pairs": 4,
+    "n_attributed_separated": 0,
+    "median_contrast_C": 2.76,
+    "max_contrast_C": 2.96,
+    "median_dev1_signcancellation": 0.045,
+    "max_dev1_signcancellation": 0.14,
+    "median_dev2_clique": 0.0,
+    "max_dev2_clique": 0.0,
+    "n_dev1_above_theta": 0,
+    "n_dev2_at_or_below_theta": 4
+   },
+   "5": {
+    "n_pairs": 4,
+    "n_attributed_separated": 1,
+    "median_contrast_C": 3.0999999999999996,
+    "max_contrast_C": 3.14,
+    "median_dev1_signcancellation": 0.22,
+    "max_dev1_signcancellation": 0.32,
+    "median_dev2_clique": 0.0,
+    "max_dev2_clique": 0.0,
+    "n_dev1_above_theta": 1,
+    "n_dev2_at_or_below_theta": 4
+   }
+  }
+ },
+ "density_relation": {
+  "3": {
+   "d_k_pooled_canceled_mass": 43.5,
+   "cancel_entries": 10,
+   "median_dev1_v2": 0.20500000000000002,
+   "n_separated_v2": 1
+  },
+  "4": {
+   "d_k_pooled_canceled_mass": 73.0,
+   "cancel_entries": 24,
+   "median_dev1_v2": 0.045,
+   "n_separated_v2": 0
+  },
+  "5": {
+   "d_k_pooled_canceled_mass": 85.5,
+   "cancel_entries": 36,
+   "median_dev1_v2": 0.22,
+   "n_separated_v2": 1
+  }
+ },
+ "dedicated_all_size2_instance": {
+  "instance": "pair 0 member-2 hyperedges as BOTH members (n=30)",
+  "unweighted_S_equals_support_A_bit_exact": true,
+  "weighted_S_w_zero_bit_exact": true,
+  "weighted_augmentation_equals_A_bit_exact": true,
+  "v1_verdicts_bit_identical_across_members": true,
+  "v2_verdicts_bit_identical_across_members": true,
+  "v2_verdicts_equal_arm1_bit_exact": true,
+  "v2_devs_exactly_zero": true,
+  "v1_dev_cross_member_identical": 6.5200000000000005,
+  "arm1_blindness_reproduced": true,
+  "attributed_separation": false,
+  "note": "V2 contrast on the dedicated instance equals the target baseline (dev 0.0 both sides): the weighting cannot separate where no cancellation exists -- strict superset."
+ },
+ "gates": {
+  "G1_weighted_err_contrast_separates_ge_10_of_12": {
+   "pass": false,
+   "score_v2": 2,
+   "survival_by_class": {
+    "3": {
+     "n_pairs": 4,
+     "n_attributed_separated": 1,
+     "median_contrast_C": 3.025,
+     "max_contrast_C": 3.26,
+     "median_dev1_signcancellation": 0.20500000000000002,
+     "max_dev1_signcancellation": 0.28,
+     "median_dev2_clique": 0.0,
+     "max_dev2_clique": 0.0,
+     "n_dev1_above_theta": 1,
+     "n_dev2_at_or_below_theta": 4
+    },
+    "4": {
+     "n_pairs": 4,
+     "n_attributed_separated": 0,
+     "median_contrast_C": 2.76,
+     "max_contrast_C": 2.96,
+     "median_dev1_signcancellation": 0.045,
+     "max_dev1_signcancellation": 0.14,
+     "median_dev2_clique": 0.0,
+     "max_dev2_clique": 0.0,
+     "n_dev1_above_theta": 0,
+     "n_dev2_at_or_below_theta": 4
+    },
+    "5": {
+     "n_pairs": 4,
+     "n_attributed_separated": 1,
+     "median_contrast_C": 3.0999999999999996,
+     "max_contrast_C": 3.14,
+     "median_dev1_signcancellation": 0.22,
+     "max_dev1_signcancellation": 0.32,
+     "median_dev2_clique": 0.0,
+     "max_dev2_clique": 0.0,
+     "n_dev1_above_theta": 1,
+     "n_dev2_at_or_below_theta": 4
+    }
+   }
+  },
+  "G2_weighted_improves_on_unweighted": {
+   "pass": true,
+   "score_v1": 0,
+   "score_v2": 2,
+   "delta_pairs": 2,
+   "density_relation": {
+    "3": {
+     "d_k_pooled_canceled_mass": 43.5,
+     "cancel_entries": 10,
+     "median_dev1_v2": 0.20500000000000002,
+     "n_separated_v2": 1
+    },
+    "4": {
+     "d_k_pooled_canceled_mass": 73.0,
+     "cancel_entries": 24,
+     "median_dev1_v2": 0.045,
+     "n_separated_v2": 0
+    },
+    "5": {
+     "d_k_pooled_canceled_mass": 85.5,
+     "cancel_entries": 36,
+     "median_dev1_v2": 0.22,
+     "n_separated_v2": 1
+    }
+   },
+   "d_k_order": [
+    43.5,
+    73.0,
+    85.5
+   ],
+   "median_dev1_v2_order": [
+    0.20500000000000002,
+    0.045,
+    0.22
+   ],
+   "monotone_density_contrast": false
+  },
+  "G3_superset_discipline_both_variants": {
+   "pass": true,
+   "dedicated_all_size2_instance": {
+    "instance": "pair 0 member-2 hyperedges as BOTH members (n=30)",
+    "unweighted_S_equals_support_A_bit_exact": true,
+    "weighted_S_w_zero_bit_exact": true,
+    "weighted_augmentation_equals_A_bit_exact": true,
+    "v1_verdicts_bit_identical_across_members": true,
+    "v2_verdicts_bit_identical_across_members": true,
+    "v2_verdicts_equal_arm1_bit_exact": true,
+    "v2_devs_exactly_zero": true,
+    "v1_dev_cross_member_identical": 6.5200000000000005,
+    "arm1_blindness_reproduced": true,
+    "attributed_separation": false,
+    "note": "V2 contrast on the dedicated instance equals the target baseline (dev 0.0 both sides): the weighting cannot separate where no cancellation exists -- strict superset."
+   }
+  },
+  "G4_arm1_blindness_reproduced": {
+   "pass": true,
+   "score": 12,
+   "bit_match_vs_exp159_deposit": 12
+  }
+ },
+ "all_gates_pass": false,
+ "verdict": "PARTIAL REPAIR (3/4) -- G1 FAIL: the attributed err-level contrast separates only 2/12 under the pre-registered threshold theta=0.27 mV (max signed-cancellation response 0.32 mV, median by class 0.205/0.045/0.22 -- the read's err stays near-blind to the reweighted augmentation on 10/12 pairs); G2 PASS via the >= 2 clause (V2 2 vs V1 0; monotone density clause FAILS -- no dose-response); G3/G4 PASS",
+ "wall_seconds": 8.3
+}
