@@ -1,0 +1,3848 @@
+{
+ "pass": "exp206_w5_dose_pass",
+ "protocol": "one search per record; query = the record's own title/authors/year/name fields (source, pmid_or_doi, species, region_or_tissue, manipulation, id) joined verbatim, zero knobs; num=8; extraction verbatim-only over the returned snippet text (regex; no inference; unit conversion only into the protocol's declared mM via stated-unit factor arithmetic; %-solution statements skipped — not convertible to mM without molar mass); every extract carries the source's url/host/name/rank as the endpoint returned them plus the verbatim quote",
+ "endpoint": "z-ai web_search (z-ai-web-dev-sdk functions.invoke; the backend fronted by the OpenAI-compatible proxy at http://localhost:8787/v1)",
+ "retrieved": "2026-09-17",
+ "records": [
+  {
+   "index": 0,
+   "id": "V1_head_depolarized_vs_trunk",
+   "query": "H,K-ATPase-mediated depolarization essential for anterior gene expression; depolarization drives head formation (Beane 2011, PMID 21276941) Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100) AP axis / wound face see published claim V1_head_depolarized_vs_trunk",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Bioelectric signaling regulates head and organ size during",
+     "date": "",
+     "snippet": "by WS Beane · 2013 · Cited by 197 — H , K - ATPase expression in the anterior blastema leads to strong membrane depolarization , which must be maintained at least through the end of 3 dpa"
+    },
+    {
+     "rank": 1,
+     "url": "https://europepmc.org",
+     "host_name": "europepmc.org",
+     "name": "A chemical genetics approach reveals H,K-ATPase",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 251 — H(+),K(+)-ATPase-mediated membrane depolarization is essential for anterior gene expression and brain induction. depolarization drives head formation, even at ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://www.semanticscholar.org",
+     "host_name": "www.semanticscholar.org",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase",
+     "date": "",
+     "snippet": "A Chemical Genetics Approach Reveals H,K- ATPase-Mediated Membrane Voltage is Required for Planarian Head Regeneration · Wendy S. Beane, J. Morokuma, +1 author. M ..."
+    },
+    {
+     "rank": 3,
+     "url": "https://chrisfieldsresearch.com",
+     "host_name": "chrisfieldsresearch.com",
+     "name": "The role of early bioelectric signals in the regeneration of",
+     "date": "",
+     "snippet": "by F Durant · Cited by 132 — Briefly manipulating the endogenous bioelectric state by depolarizing the injured tissue during the first 3 hours of regeneration alters gene expression by 6 ... 41 pages"
+    },
+    {
+     "rank": 4,
+     "url": "https://www.researchgate.net",
+     "host_name": "www.researchgate.net",
+     "name": "Bioelectric signaling regulates head and organ size during",
+     "date": "",
+     "snippet": "H , K - ATPase expression leads to membrane depolarization in intact worms and pharynx regenerates. H , K - ATPase is required for remodeling tissue identities during ..."
+    },
+    {
+     "rank": 5,
+     "url": "https://www.frontiersin.org",
+     "host_name": "www.frontiersin.org",
+     "name": "Na/K-ATPase Gene Expression in the Human Cochlea",
+     "date": "",
+     "snippet": "by W Liu · 2022 · Cited by 25 — The pervasive Na/ K - ATPase pump is highly expressed in the human cochlea and is involved in the generation of the endocochlear potential as well ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://www.sciencedaily.com",
+     "host_name": "www.sciencedaily.com",
+     "name": "Key gene in early brain regeneration in planarians",
+     "date": "May 22, 2014",
+     "snippet": "May 22, 2014 — The planarian Schmidtea mediterranea are flatworms with bilateral symmetry used as models in the research on cell regeneration and stem cells."
+    },
+    {
+     "rank": 7,
+     "url": "https://scholarlypublications.universiteitleiden.nl",
+     "host_name": "scholarlypublications.universiteitleiden.nl",
+     "name": "Graphene oxide disruption of homeostasis and",
+     "date": "",
+     "snippet": "by C Xie · 2023 · Cited by 4 — Here, we assessed the toxicity of graphene oxide (GO) using the freshwater planarian Dugesia japonica , an invertebrate model that has been ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 1,
+   "id": "V2_hyperpolarization_abnormal",
+   "query": "H,K-ATPase RNAi hyperpolarizes -> shrunken heads, disproportional anatomy (Beane 2013, PMID 23250205) Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100) AP axis / wound face see published claim V2_hyperpolarization_abnormal",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 7,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Dugesia japonica is the best suited of three planarian species",
+     "date": "",
+     "snippet": "by D Ireland · 2020 · Cited by 48 — Currently, three planarian species are commonly used in toxicology research: Dugesia japonica , Schmidtea mediterranea , and Girardia tigrina. However, only D."
+    },
+    {
+     "rank": 1,
+     "url": "https://scholarlypublications.universiteitleiden.nl",
+     "host_name": "scholarlypublications.universiteitleiden.nl",
+     "name": "Graphene oxide disruption of homeostasis and",
+     "date": "",
+     "snippet": "by C Xie · 2023 · Cited by 4 — Dugesia japonica , an invertebrate model that has been widely used for studying the effects of toxins on tissue regeneration and neuronal devel- ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://www.frontiersin.org",
+     "host_name": "www.frontiersin.org",
+     "name": "Planarian RNAi knockdown: feeding once might just be",
+     "date": "",
+     "snippet": "by G Reho · 2025 · Cited by 2 — RNA interference ( RNAi ) is a powerful tool to knock down the expression of genes of interests. In planarians, a popular animal model to study ..."
+    },
+    {
+     "rank": 3,
+     "url": "https://www.researchgate.net",
+     "host_name": "www.researchgate.net",
+     "name": "The gross body structure of the planarian Dugesia japonica",
+     "date": "",
+     "snippet": "Dugesia japonica and Schmidtea mediterranea are two well-studied species that possess the ability to regenerate any missing body part (6, 7) . ... Collagen ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://en.wikipedia.org",
+     "host_name": "en.wikipedia.org",
+     "name": "Dugesia japonica",
+     "date": "",
+     "snippet": "A study was published in 2017 in which a Dugesia Japonica trunk fragment had been sent into space, and grew with two heads , one on either end of the trunk."
+    },
+    {
+     "rank": 5,
+     "url": "http://www.scholarpedia.org",
+     "host_name": "www.scholarpedia.org",
+     "name": "Planaria nervous system",
+     "date": "Jun 6, 2008",
+     "snippet": "Jun 6, 2008 — Below are summarized the function and structure of the brain of a planarian, Dugesia japonica . Gross structure. The body size of planarians ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://www.diark.org",
+     "host_name": "www.diark.org",
+     "name": "species_list | Dugesia_japonica - diArk",
+     "date": "",
+     "snippet": "The species page of ' Dugesia japonica '. . Information about genome files, completeness, GC-content, size, N50-values, and sequencing methods are listed."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 2,
+   "id": "V3_posterior_depol_ectopic_head",
+   "query": "GJ/neural modulation induces ectopic ANTERIOR blastemas at posterior wounds (Oviedo 2010, PMID 20026026) Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100) AP axis / wound face see published claim V3_posterior_depol_ectopic_head",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Emerging patterns in planarian regeneration - PMC - NIH",
+     "date": "",
+     "snippet": "by DJ Forsthoefel · 2009 · Cited by 71 — Planarians maintain and regenerate anterior-posterior polarity. As the only mitotically active somatic cells, neoblasts proliferate at sites of injury to ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://chrisfieldsresearch.com",
+     "host_name": "chrisfieldsresearch.com",
+     "name": "The role of early bioelectric signals in the regeneration of",
+     "date": "",
+     "snippet": "by F Durant · Cited by 132 — Here, we show that bioelectric signaling at 3 hours is crucial for the formation of proper anterior/posterior polarity in planaria."
+    },
+    {
+     "rank": 2,
+     "url": "https://www.researchgate.net",
+     "host_name": "www.researchgate.net",
+     "name": "Regenerative capacity of freshwater planarians",
+     "date": "",
+     "snippet": "NR1I3 RNA interference (RNAi) during regeneration caused ectopic head formation in the posterior blastema , correlated with symmetric notum expression at wounds ."
+    },
+    {
+     "rank": 3,
+     "url": "https://dspace.mit.edu",
+     "host_name": "dspace.mit.edu",
+     "name": "Planarian regeneration involves distinct stem cell",
+     "date": "",
+     "snippet": "by D Wenemoser · 2010 · Cited by 446 — Various studies indicate that neoblasts proliferate following wounding and are the source of new cells for blastema formation. The pattern of mitosis in ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://www.frontiersin.org",
+     "host_name": "www.frontiersin.org",
+     "name": "Regeneration of Planarian Auricles and Reestablishment",
+     "date": "",
+     "snippet": "by EMP Almazan · 2021 · Cited by 20 — Abstract. Detection of chemical stimuli is crucial for living systems and also contributes to quality of life in humans."
+    },
+    {
+     "rank": 5,
+     "url": "https://www.sdbonline.org",
+     "host_name": "www.sdbonline.org",
+     "name": "FUNDAMENTALS OF PLANARIAN REGENERATION",
+     "date": "",
+     "snippet": "by PW Reddien · 2004 · Cited by 971 — Planarian regeneration involves the generation of new tissue at the wound site via cell proliferation ( blastema formation), and the remodeling ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://www.mdpi.com",
+     "host_name": "www.mdpi.com",
+     "name": "ADCY9 Regulates Neural Stem Cells Via Mitofusin-1 to",
+     "date": "",
+     "snippet": "by X Wang · 2026 — In this study, we utilized Dugesia japonica , a highly regenerative planarian species, as a model to systematically examine the spatiotemporal expression pattern ..."
+    },
+    {
+     "rank": 7,
+     "url": "https://europepmc.org",
+     "host_name": "europepmc.org",
+     "name": "Planarian regeneration involves distinct stem cell",
+     "date": "Jun 19, 2010",
+     "snippet": "Jun 19, 2010 — We demonstrate that the first mitotic peak is a body-wide response to any injury and that a second, local, neoblast response is induced only ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 3,
+   "id": "V4_junction_block_graded",
+   "query": "innexin smedinx-11 RNAi inhibits regeneration (mixed/graded outcomes); AP neoblast gradient (Oviedo 2007, PMID 17670787) Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100) AP axis / wound face see published claim V4_junction_block_graded",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "smedinx-11 is a planarian stem cell gap junction  - PubMed",
+     "date": "",
+     "snippet": "by NJ Oviedo · 2007 · Cited by 138 — smedinx-11 RNAi treatment inhibits regeneration and abrogates neoblast maintenance. Moreover, smedinx-11 expression is enriched in an irradiation-sensitive ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://www.frontiersin.org",
+     "host_name": "www.frontiersin.org",
+     "name": "Innexins: Expression, Regulation, and Functions",
+     "date": "",
+     "snippet": "by J Güiza · 2018 · Cited by 81 — Abstract. The innexin (Inx) proteins form gap junction channels and non-junctional channels (named hemichannels) in invertebrates."
+    },
+    {
+     "rank": 2,
+     "url": "https://drmichaellevin.org",
+     "host_name": "drmichaellevin.org",
+     "name": "Characterization of innexin gene expression and functional",
+     "date": "",
+     "snippet": "by T Nogi · 2005 · Cited by 202 — Innexin expression was detected throughout the animal, as well as specifically in regeneration blastemas, consistent with a role in long-range signaling. PCR- ... 22 pages"
+    },
+    {
+     "rank": 3,
+     "url": "https://www.biorxiv.org",
+     "host_name": "www.biorxiv.org",
+     "name": "Protocol combining RNA interference and regeneration",
+     "date": "",
+     "snippet": "by EW Deihl · 2025 — Here we show how to perturb gene function with RNA interference ( RNAi ) in S. polychroa embryos at developmental stages capable of wound healing ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://dspace.mit.edu",
+     "host_name": "dspace.mit.edu",
+     "name": "Neoblast Specialization in Regeneration of the Planarian",
+     "date": "",
+     "snippet": "by ML Scimone · 2014 · Cited by 304 — Planarians can regenerate any missing body part in a process requiring dividing cells called neoblasts . Irradiation eliminates neoblasts , ..."
+    },
+    {
+     "rank": 5,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "RNAi Screening to Assess Tissue Regeneration in Planarians",
+     "date": "",
+     "snippet": "by RH Roberts-Galbraith · 2022 · Cited by 4 — [DOI] [PMC free article] [ PubMed ]; Oviedo NJ, Levin M ( 2007 ) smedinx - 11 is a planarian stem cell gap junction gene required for regeneration and homeostasis."
+    },
+    {
+     "rank": 6,
+     "url": "https://elifesciences.org",
+     "host_name": "elifesciences.org",
+     "name": "Selective amputation of the pharynx identifies a FoxA-",
+     "date": "",
+     "snippet": "by CE Adler · 2014 · Cited by 182 — We found that knockdown of. 20 genes caused a wide range of regeneration phenotypes and that RNAi of the forkhead transcription factor FoxA, ..."
+    },
+    {
+     "rank": 7,
+     "url": "https://www.researchgate.net",
+     "host_name": "www.researchgate.net",
+     "name": "A simple \"soaking method\" for RNA interference in the",
+     "date": "",
+     "snippet": "Abstract. A simple method was developed for RNA interference ( RNAi ) in the planarian Dugesia japonica . The DjIFb ( Dugesia japonica intermediate filament b) ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 4,
+   "id": "V5_wound_depolarized",
+   "query": "wounds depolarize relative to intact tissue (wound-current literature; implied by Beane 2011 wound-polarity manipulations, PMID 21276941) Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100) AP axis / wound face see published claim V5_wound_depolarized",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://sites.google.com/view/seaytac/erc-project-depolarize",
+     "host_name": "sites.google.com",
+     "name": "Selim Erdem Aytaç - ERC Project - DEPOLARIZE",
+     "date": "",
+     "snippet": "DEPOLARIZE : Affective Polarization and Democratic Attitudes, funded by the European Research Council, addresses these puzzles around affective polarization with ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://arxiv.org",
+     "host_name": "arxiv.org",
+     "name": "Designing Recommender Systems to Depolarize",
+     "date": "",
+     "snippet": "by J Stray · 2021 · Cited by 87 — This paper examines algorithmic depolarization interventions with the goal of conflict transformation: not suppressing or eliminating conflict"
+    },
+    {
+     "rank": 2,
+     "url": "https://carnegieendowment.org",
+     "host_name": "carnegieendowment.org",
+     "name": "Reducing Pernicious Polarization: A Comparative",
+     "date": "May 5, 2022",
+     "snippet": "May 5, 2022 — Reducing Pernicious Polarization : A Comparative Historical Analysis of Depolarization . To better understand the various paths by which societies ..."
+    },
+    {
+     "rank": 3,
+     "url": "https://braverangels.org",
+     "host_name": "braverangels.org",
+     "name": "Lessons in Depolarization from Learning Vietnamese",
+     "date": "Jan 29, 2020",
+     "snippet": "Jan 29, 2020 — Lessons in Depolarization from Learning Vietnamese. If you stress a word just slightly differently, it can completely change meanings, and ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://www.reddit.com",
+     "host_name": "www.reddit.com",
+     "name": "ELI5: Repolarization and depolarization in neurons",
+     "date": "May 14, 2025",
+     "snippet": "May 14, 2025 — My AP Psychology exam is on Friday. I cannot wrap my head around how electricity works in neurons and such.\n\nI was a C student in chemistry two years ago :/"
+    },
+    {
+     "rank": 5,
+     "url": "https://quantumai.google",
+     "host_name": "quantumai.google",
+     "name": "cirq.depolarize",
+     "date": "Jul 13, 2026",
+     "snippet": "Jul 13, 2026 — Returns a DepolarizingChannel with given probability of error. This channel applies one of 4 n disjoint possibilities: nothing"
+    },
+    {
+     "rank": 6,
+     "url": "https://cvphysiology.com",
+     "host_name": "cvphysiology.com",
+     "name": "Ventricular Depolarization and the Mean Electrical Axis",
+     "date": "",
+     "snippet": "Finally, the last regions to depolarize results in vector 4 (Panel D), which produces a slight negative deflection (S wave) of the QRS. The above sequence of ..."
+    },
+    {
+     "rank": 7,
+     "url": "https://fordhaminstitute.org",
+     "host_name": "fordhaminstitute.org",
+     "name": "How can we depolarize “gifted education”?",
+     "date": "Oct 17, 2025",
+     "snippet": "Oct 17, 2025 — Take equity concerns seriously by embracing “universal screening” to identify kids with academic talent, such as through tests that everybody ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 5,
+   "id": "V6_stochastic_identical_perturbation",
+   "query": "stochastic regenerative phenotypes under identical bioelectric perturbation; bistable pattern memories (Pezzulo/Levin 2021, PMID 33550952) Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100) AP axis / wound face see published claim V6_stochastic_identical_perturbation",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Long-Term, Stochastic Editing of Regenerative Anatomy via",
+     "date": "",
+     "snippet": "by F Durant · 2017 · Cited by 181 — Abstract. We show that regenerating planarians' normal anterior-posterior pattern can be permanently rewritten by a brief perturbation of ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://rs.figshare.com",
+     "host_name": "rs.figshare.com",
+     "name": "Supplementary data from Bistability of somatic pattern",
+     "date": "Dec 29, 2020",
+     "snippet": "Dec 29, 2020 — We propose a new interpretation of recent stochastic regenerative phenotypes in planaria, by appealing to computational models of memory ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://as.tufts.edu",
+     "host_name": "as.tufts.edu",
+     "name": "Publications | Department of Biology",
+     "date": "",
+     "snippet": "Bistability of Somatic Pattern Memories : Stochastic Outcomes in Bioelectric Circuits Underlying Regeneration Pezzulo , G., Lapalme, J., Durant, F., and Levin , M."
+    },
+    {
+     "rank": 3,
+     "url": "https://www.chrisfieldsresearch.com",
+     "host_name": "www.chrisfieldsresearch.com",
+     "name": "Long-Term, Stochastic Editing of Regenerative Anatomy",
+     "date": "",
+     "snippet": "by F Durant · 2017 · Cited by 181 — We show that regenerating planarians' normal anterior-posterior pattern can be permanently rewritten by a brief perturbation of endogenous  ... 13 pages"
+    },
+    {
+     "rank": 4,
+     "url": "https://drmichaellevin.org",
+     "host_name": "drmichaellevin.org",
+     "name": "Bioelectricity",
+     "date": "",
+     "snippet": "Lifetime imaging reveals long-distance non-neural bioelectric patterns . Bistability of Somatic Pattern Memories : Stochastic Outcomes in Bioelectric Circuits"
+    },
+    {
+     "rank": 5,
+     "url": "https://www.singhlab.us",
+     "host_name": "www.singhlab.us",
+     "name": "PUBLICATIONS - www.singhlab.us",
+     "date": "",
+     "snippet": "Evoked mid-frontal activity predicts cognitive dysfunction in Parkinson's disease. Journal of Neurology, Neurosurgery & Psychiatry, 94(11):945-953."
+    },
+    {
+     "rank": 6,
+     "url": "https://sinapticatx.com",
+     "host_name": "sinapticatx.com",
+     "name": "PUBLICATIONS",
+     "date": "",
+     "snippet": "“Transcranial magnetic stimulation of the precuneus enhances memory and neural activity in prodromal Alzheimer's disease” Giacomo Koch, Sonia Bonnì, Maria ..."
+    },
+    {
+     "rank": 7,
+     "url": "https://chrisfieldsresearch.com",
+     "host_name": "chrisfieldsresearch.com",
+     "name": "Long-Term, Stochastic Editing of Regenerative Anatomy",
+     "date": "",
+     "snippet": "Figure S1: DH phenotype can be reset with bioelectric manipulation. (A) Planaria that are DH after 8-OH treatment exhibit a permanent change in target ... Read more 14 pages"
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 6,
+   "id": "DB-415",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Head crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-415",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 7,
+   "id": "DB-416",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Pre-pharyngeal crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-416",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to  - PMC",
+     "date": "",
+     "snippet": "by JD Chan · 2011 · Cited by 20 — Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev Biol . 2010 ;339:188–199."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 8,
+   "id": "DB-417",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Pharyngeal crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-417",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to  - PMC",
+     "date": "",
+     "snippet": "by JD Chan · 2011 · Cited by 20 — The protocols described here detail assays for studying and manipulating regeneration of the planarian Dugesia japonica . They are simple and ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 9,
+   "id": "DB-418",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-418",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to  - PMC",
+     "date": "",
+     "snippet": "by JD Chan · 2011 · Cited by 20 — Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev Biol . 2010 ;339:188–199."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 10,
+   "id": "DB-419",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Tail crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-419",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3217636",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to Manipulate",
+     "date": "Aug 31, 2011",
+     "snippet": "Oviedo NJ, Nicolas. Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev Biol. 2010;339 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 11,
+   "id": "DB-420",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Head crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-420",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 12,
+   "id": "DB-421",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Head plus pre-pharyngeal crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-421",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 13,
+   "id": "DB-422",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Head plus pharyngeal crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-422",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to  - PMC",
+     "date": "",
+     "snippet": "by JD Chan · 2011 · Cited by 20 — Oviedo NJ , Nicolas CL, Adams DS, Levin M . Emerging Model ... doi : 10.1016 / j . ydbio . 2009.12.012 . [ DOI ] [PMC free article] [ PubMed ] ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 14,
+   "id": "DB-423",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Head plus post-pharyngeal crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-423",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 15,
+   "id": "DB-424",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Notch, double drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-424",
+   "retrieved": "2026-09-17",
+   "search_ok": false,
+   "search_error": "Function invoke failed with status 500: {\"result\":null,\"error\":\"Search failed: request failed with status 422: {\\\"code\\\":422,\\\"data\\\":null,\\\"message\\\":\\\"No search results available for query Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009",
+   "n_results": 0,
+   "sources_tried": [],
+   "extracts": []
+  },
+  {
+   "index": 16,
+   "id": "DB-425",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Notch, double, cut drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-425",
+   "retrieved": "2026-09-17",
+   "search_ok": false,
+   "search_error": "Function invoke failed with status 500: {\"result\":null,\"error\":\"Search failed: request failed with status 422: {\\\"code\\\":422,\\\"data\\\":null,\\\"message\\\":\\\"No search results available for query Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009",
+   "n_results": 0,
+   "sources_tried": [],
+   "extracts": []
+  },
+  {
+   "index": 17,
+   "id": "DB-426",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Notch, CNS left drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-426",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 18,
+   "id": "DB-427",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Notch, CNS left, cut drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-427",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 19,
+   "id": "DB-428",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Notch, CNS double drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-428",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2823934",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Long-range Neural and Gap Junction Protein-mediated Cues  - PMC",
+     "date": "",
+     "snippet": "Understanding the signals that precisely orchestrate this morphogenetic process is a key prerequisite for unlocking the full potential of regenerative medicine."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 20,
+   "id": "DB-429",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Notch, CNS double, cut drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-429",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Long-range neural and gap junction protein-mediated cues",
+     "date": "",
+     "snippet": "by NJ Oviedo · 2010 · Cited by 277 — Authors Néstor J Oviedo 1 , Junji Morokuma , Peter Walentek , Center for Regenerative and Developmental Biology and Department of Biology , ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 21,
+   "id": "DB-430",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Center remove drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-430",
+   "retrieved": "2026-09-17",
+   "search_ok": false,
+   "search_error": "Function invoke failed with status 500: {\"result\":null,\"error\":\"Search failed: request failed with status 429: {\\\"code\\\":429,\\\"data\\\":null,\\\"message\\\":\\\"Primary search failed: ReadTimeout(ReadTimeoutError(\\\\\\\"HTTPSConnectionPool(host='google.serper.dev.psmoe.com', port=443): Read timed out. (read ti",
+   "n_results": 0,
+   "sources_tried": [],
+   "extracts": []
+  },
+  {
+   "index": 22,
+   "id": "DB-431",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Center remove, cut drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-431",
+   "retrieved": "2026-09-17",
+   "search_ok": false,
+   "search_error": "Function invoke failed with status 500: {\"result\":null,\"error\":\"Search failed: request failed with status 429: {\\\"code\\\":429,\\\"data\\\":null,\\\"message\\\":\\\"Primary search failed: ReadTimeout(ReadTimeoutError(\\\\\\\"HTTPSConnectionPool(host='google.serper.dev.psmoe.com', port=443): Read timed out. (read ti",
+   "n_results": 0,
+   "sources_tried": [],
+   "extracts": []
+  },
+  {
+   "index": 23,
+   "id": "DB-432",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Zig zag side removals drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-432",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to  - PMC",
+     "date": "",
+     "snippet": "by JD Chan · 2011 · Cited by 20 — The protocols described here detail assays for studying and manipulating regeneration of the planarian Dugesia japonica . They are simple and ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 24,
+   "id": "DB-433",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Axis removal drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-433",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 25,
+   "id": "DB-434",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-434",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Kema I.P., Gu M.B., Ahn J.M., Hwang ... Morokuma J., Blackiston D., Levin M. KCNQ1 and KCNE1 K+ channel ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3217636",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to Manipulate",
+     "date": "Aug 31, 2011",
+     "snippet": "Abstract. Free-living planarian flatworms have a long history of experimental usage owing to their remarkable regenerative abilities1."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 26,
+   "id": "DB-435",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal crop drugs=[('Octanol', 0.13, 0.0)]; rnaic=[] DB-435",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to  - PMC",
+     "date": "",
+     "snippet": "by JD Chan · 2011 · Cited by 20 — Oviedo NJ , Nicolas CL, Adams DS, Levin M . Emerging Model ... doi : 10.1016 / j . ydbio . 2009.12.012 . [ DOI ] [PMC free article] [ PubMed ] ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 27,
+   "id": "DB-436",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal crop drugs=[('Octanol', 0.25, 0.0)]; rnaic=[] DB-436",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to  - PMC",
+     "date": "",
+     "snippet": "by JD Chan · 2011 · Cited by 20 — Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev Biol . 2010 ;339:188–199."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 28,
+   "id": "DB-437",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal crop drugs=[('Octanol', 0.5, 0.0)]; rnaic=[] DB-437",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3217636",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to Manipulate",
+     "date": "",
+     "snippet": "Aug 31, 2011 · The protocols described here detail assays for studying and manipulating regeneration of the planarian Dugesia japonica. They are simple and ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 29,
+   "id": "DB-438",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal crop drugs=[('Octanol', 1.0, 0.0)]; rnaic=[] DB-438",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Kema I.P., Gu M.B., Ahn J.M., Hwang ... Morokuma J., Blackiston D., Levin M. KCNQ1 and KCNE1 K+ channel ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3217636",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to Manipulate",
+     "date": "Aug 31, 2011",
+     "snippet": "Abstract. Free-living planarian flatworms have a long history of experimental usage owing to their remarkable regenerative abilities1."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 30,
+   "id": "DB-439",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal crop drugs=[('Octanol', 2.0, 0.0)]; rnaic=[] DB-439",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to  - PMC",
+     "date": "",
+     "snippet": "by JD Chan · 2011 · Cited by 20 — Oviedo NJ , Nicolas. Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev Biol . 2010 ;339 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 31,
+   "id": "DB-440",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal crop drugs=[('Octanol', 3.0, 0.0)]; rnaic=[] DB-440",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3217636",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to  - PMC",
+     "date": "",
+     "snippet": "by JD Chan · 2011 · Cited by 20 — Abstract. Free-living planarian flatworms have a long history of experimental usage owing to their remarkable regenerative abilities1."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J., Morokuma J., Walentek P., Kema I.P., Gu M.B., Ahn J.M., Hwang ... Morokuma J., Blackiston D., Levin M. KCNQ1 and KCNE1 K+ channel ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 32,
+   "id": "DB-441",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Head plus post-pharyngeal crop, VNC disruption drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-441",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 33,
+   "id": "DB-442",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Head plus post-pharyngeal crop, VNC disruption drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-442",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 34,
+   "id": "DB-443",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Head plus post-pharyngeal crop, VNC disruption drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-443",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Kema I.P. , Gu M.B., Ahn J.M., Hwang ... Morokuma J ., Blackiston D ., Levin M . KCNQ1 and KCNE1 K+ channel ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 35,
+   "id": "DB-444",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Head plus post-pharyngeal crop, VNC disruption drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-444",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 36,
+   "id": "DB-445",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Wild type drugs=[]; rnaic=['Dj-inx-5 + 13', 'Dj-inx-12'] DB-445",
+   "retrieved": "2026-09-17",
+   "search_ok": false,
+   "search_error": "Function invoke failed with status 500: {\"result\":null,\"error\":\"Search failed: request failed with status 422: {\\\"code\\\":422,\\\"data\\\":null,\\\"message\\\":\\\"No search results available for query Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009",
+   "n_results": 0,
+   "sources_tried": [],
+   "extracts": []
+  },
+  {
+   "index": 37,
+   "id": "DB-446",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Head crop drugs=[]; rnaic=['Dj-inx-5 + 13', 'Dj-inx-12'] DB-446",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Kema I.P. , Gu M.B., Ahn J.M., Hwang ... Morokuma J ., Blackiston D ., Levin M . KCNQ1 and KCNE1 K+ channel ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 38,
+   "id": "DB-447",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Pre-pharyngeal crop drugs=[]; rnaic=['Dj-inx-12', 'Dj-inx-5 + 13'] DB-447",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 39,
+   "id": "DB-448",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Pharyngeal crop drugs=[]; rnaic=['Dj-inx-5 + 13', 'Dj-inx-12'] DB-448",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 40,
+   "id": "DB-449",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal crop drugs=[]; rnaic=['Dj-inx-12', 'Dj-inx-5 + 13'] DB-449",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 41,
+   "id": "DB-450",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Tail crop drugs=[]; rnaic=['Dj-inx-12', 'Dj-inx-5 + 13'] DB-450",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3217636",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to  - PMC",
+     "date": "",
+     "snippet": "by JD Chan · 2011 · Cited by 20 — Oviedo NJ, Nicolas. Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev Biol. 2010;339 ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 42,
+   "id": "DB-451",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal, CNS notch left no drug/rnai recorded (control or mechanical manipulation) DB-451",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Kema I.P. , Gu M.B., Ahn J.M., Hwang ... Morokuma J ., Blackiston D ., Levin M . KCNQ1 and KCNE1 K+ channel ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 43,
+   "id": "DB-452",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal, CNS notch left drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-452",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://www.researchgate.net",
+     "host_name": "www.researchgate.net",
+     "name": "(PDF) Rapid Peripheral Disintegration of Planaria in the",
+     "date": "May 2, 2023",
+     "snippet": "May 2, 2023 — Oviedo NJ , Morokuma J , Walentek P , larity during planarian regeneration. A Molecular Analysis of Physiological Plasticity."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 44,
+   "id": "DB-453",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal, CNS notch left, notch right drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-453",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "THE HISTORY AND ENDURING CONTRIBUTIONS OF  - PMC",
+     "date": "",
+     "snippet": "by SA Elliott · 2012 · Cited by 261 — Oviedo NJ , Morokuma J , Walentek P , Kema IP , Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration.  ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 45,
+   "id": "DB-454",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal, CNS notch left, notch right no drug/rnai recorded (control or mechanical manipulation) DB-454",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2823934",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Long-range Neural and Gap Junction Protein-mediated Cues  - PMC",
+     "date": "",
+     "snippet": "Oviedo NJ, Levin M. Gap junctions provide new links in left-right patterning. Cell. 2007a;129:645–647. doi: 10.1016/j.cell.2007.05.005. [DOI] [PubMed] ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 46,
+   "id": "DB-455",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal, CNS double notch drugs=[('Octanol', 0.0, 0.0)]; rnaic=[] DB-455",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 47,
+   "id": "DB-456",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal, CNS double notch no drug/rnai recorded (control or mechanical manipulation) DB-456",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 48,
+   "id": "DB-457",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Quadruple heads & all heads amputated no drug/rnai recorded (control or mechanical manipulation) DB-457",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "THE HISTORY AND ENDURING CONTRIBUTIONS OF  - PMC",
+     "date": "",
+     "snippet": "by SA Elliott · 2012 · Cited by 261 — Oviedo NJ , Morokuma J , Walentek P , Kema IP , Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration.  ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 49,
+   "id": "DB-458",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Triple head & all heads amputated no drug/rnai recorded (control or mechanical manipulation) DB-458",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 50,
+   "id": "DB-459",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Double head, longitudinal cut no drug/rnai recorded (control or mechanical manipulation) DB-459",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 51,
+   "id": "DB-460",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Double head, both heads amputated no drug/rnai recorded (control or mechanical manipulation) DB-460",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "THE HISTORY AND ENDURING CONTRIBUTIONS OF  - PMC",
+     "date": "",
+     "snippet": "by SA Elliott · 2012 · Cited by 261 — Oviedo NJ , Morokuma J , Walentek P , Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Developmental ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 52,
+   "id": "DB-461",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Double head, one head amputated no drug/rnai recorded (control or mechanical manipulation) DB-461",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 53,
+   "id": "DB-476",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Double head, diagonal midline no drug/rnai recorded (control or mechanical manipulation) DB-476",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 54,
+   "id": "DB-477",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Double head, head crop no drug/rnai recorded (control or mechanical manipulation) DB-477",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 55,
+   "id": "DB-478",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Double head, midline no drug/rnai recorded (control or mechanical manipulation) DB-478",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 56,
+   "id": "DB-479",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Double head, pharyngeal crop no drug/rnai recorded (control or mechanical manipulation) DB-479",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 57,
+   "id": "DB-1062",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Head crop drugs=[]; rnaic=['Dj-bcatenin'] DB-1062",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 58,
+   "id": "DB-1063",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Head crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=['Dj-bcatenin'] DB-1063",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 59,
+   "id": "DB-1064",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Pre-pharyngeal crop drugs=[]; rnaic=['Dj-bcatenin'] DB-1064",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 60,
+   "id": "DB-1065",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Pharyngeal crop drugs=[]; rnaic=['Dj-bcatenin'] DB-1065",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev . Biol . 2010 ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 61,
+   "id": "DB-1066",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal crop drugs=[]; rnaic=['Dj-bcatenin'] DB-1066",
+   "retrieved": "2026-09-17",
+   "search_ok": false,
+   "search_error": "Function invoke failed with status 500: {\"result\":null,\"error\":\"Search failed: request failed with status 429: {\\\"code\\\":429,\\\"data\\\":null,\\\"message\\\":\\\"Primary search failed: ReadTimeout(ReadTimeoutError(\\\\\\\"HTTPSConnectionPool(host='google.serper.dev.psmoe.com', port=443): Read timed out. (read ti",
+   "n_results": 0,
+   "sources_tried": [],
+   "extracts": []
+  },
+  {
+   "index": 62,
+   "id": "DB-1067",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Tail crop drugs=[]; rnaic=['Dj-bcatenin'] DB-1067",
+   "retrieved": "2026-09-17",
+   "search_ok": false,
+   "search_error": "Function invoke failed with status 500: {\"result\":null,\"error\":\"Search failed: request failed with status 422: {\\\"code\\\":422,\\\"data\\\":null,\\\"message\\\":\\\"No search results available for query Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009",
+   "n_results": 0,
+   "sources_tried": [],
+   "extracts": []
+  },
+  {
+   "index": 63,
+   "id": "DB-1068",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Pre-pharyngeal crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=['Dj-bcatenin'] DB-1068",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Oviedo N.J. , Morokuma J ., Walentek P ., Kema I.P. , Gu M.B., Ahn J.M., Hwang ... Morokuma J ., Blackiston D ., Levin M . KCNQ1 and KCNE1 K+ channel ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 64,
+   "id": "DB-1069",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Pharyngeal crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=['Dj-bcatenin'] DB-1069",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 5,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://www.linkedin.com",
+     "host_name": "www.linkedin.com",
+     "name": "YD Bio Limited's Post",
+     "date": "Aug 29, 2025",
+     "snippet": "Aug 29, 2025 — At YD Bio , our mission is to stand beside friends, families, and loved ones who have faced cancer or other serious illnesses."
+    },
+    {
+     "rank": 1,
+     "url": "https://doi.org",
+     "host_name": "doi.org",
+     "name": "Corrigendum to: \"Wolffian duct differentiation by",
+     "date": "",
+     "snippet": "by MB Renfree · 2016 — Corrigendum to: \"Wolffian duct differentiation by physiological concentrations of androgen delivered systemically\" [ Dev . Biol . 334 (2009) 429–436, PMID :19664614]."
+    },
+    {
+     "rank": 2,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Functions and regulations of fibroblast growth factor",
+     "date": "",
+     "snippet": "by B Thisse · 2005 · Cited by 709 — Functions and regulations of fibroblast growth factor signaling during embryonic development. Dev Biol . 2005 Nov 15;287(2):390-402. doi : 10.1016 / j . ydbio ."
+    },
+    {
+     "rank": 3,
+     "url": "https://www.sciencedirect.com",
+     "host_name": "www.sciencedirect.com",
+     "name": "WNT4 deficiency impacts heart, diaphragm, and palate",
+     "date": "",
+     "snippet": "by A Hernández-García · 2025 · Cited by 2 — Original research article. WNT4 deficiency impacts heart, diaphragm, and palate development : Insights from human genetics, machine learning, and mouse models."
+    },
+    {
+     "rank": 4,
+     "url": "https://labs.icahn.mssm.edu",
+     "host_name": "labs.icahn.mssm.edu",
+     "name": "doi:10.1016/j.ydbio.2007.10.016 | Elsevier Enhanced Reader",
+     "date": "Sep 24, 2019",
+     "snippet": "Sep 24, 2019 — doi:10.1016/j.ydbio.2007.10.016 | Elsevier Enhanced Reader. Page 1 of 16 https://reader.elsevier.com/reader/sd/pii/S0012160607014601?to ... Read more 16 pages"
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 65,
+   "id": "DB-1070",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Post-pharyngeal crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=['Dj-bcatenin'] DB-1070",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3217636",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to Manipulate",
+     "date": "",
+     "snippet": "Aug 31, 2011 · The protocols described here detail assays for studying and manipulating regeneration of the planarian Dugesia japonica. They are simple and ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 66,
+   "id": "DB-1071",
+   "query": "Oviedo NJ, Morokuma J, Walentek P, Kremnizer IP, de Goeij D, Levin M (2010) Dev Biol doi:10.1016/j.ydbio.2009.12.012 (PMID 20026026) Dugesia japonica Tail crop drugs=[('Octanol', 0.0, 0.0)]; rnaic=['Dj-bcatenin'] DB-1071",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Oviedo N.J., Morokuma J., Walentek P., Long-range neural and gap junction protein-mediated cues control polarity during planarian regeneration. Dev. Biol. 2010 ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3217636",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to Manipulate",
+     "date": "",
+     "snippet": "Aug 31, 2011 · Oviedo NJ, Nicolas CL, Adams DS, Levin M. Emerging Model ... doi: 10.1016/j.ydbio.2009.12.012. [DOI] [PMC free article] [PubMed] ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 67,
+   "id": "DB-294",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Headless, small tail fragment removed no drug/rnai recorded (control or mechanical manipulation) DB-294",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3278711",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase-Mediated",
+     "date": "",
+     "snippet": "H+,K+-ATPase-independent manipulation of membrane potential with ivermectin confirms that depolarization drives head formation, even at posterior-facing wounds."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 68,
+   "id": "DB-295",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Pharynx fragment with slanted anterior drugs=[('Potassium', 0.0, 0.0)]; rnaic=[] DB-295",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "A chemical genetics approach reveals H,K-ATPase  - PubMed",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Authors Wendy S Beane 1 , Junji Morokuma , Dany S Adams , Michael Levin … inhibitor, SCH - 28080 , our data reveal that H(+),K(+)-ATPase-mediated membrane  ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 69,
+   "id": "DB-296",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Pharynx fragment with slanted anterior drugs=[('SCH-28080', 0.0, 0.0)]; rnaic=[] DB-296",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://europepmc.org/article/pmc/3278711",
+     "host_name": "europepmc.org",
+     "name": "A chemical genetics approach reveals H,K-ATPase-mediated",
+     "date": "",
+     "snippet": "H(+),K(+)-ATPase-independent manipulation of membrane potential with ivermectin confirms that depolarization drives head formation, even at posterior-facing ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3278711",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase-Mediated",
+     "date": "",
+     "snippet": "H+,K+-ATPase-independent manipulation of membrane potential with ivermectin confirms that depolarization drives head formation, even at posterior-facing wounds."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 70,
+   "id": "DB-297",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Pharynx fragment with slanted anterior drugs=[('SCH-28080', 0.0, 0.0), ('Potassium', 0.0, 0.0)]; rnaic=[] DB-297",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "A chemical genetics approach reveals H,K-ATPase  - PubMed",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Authors Wendy S Beane 1 , Junji Morokuma , Dany S Adams , Michael Levin … inhibitor, SCH - 28080 , our data reveal that H(+),K(+)-ATPase-mediated membrane  ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 71,
+   "id": "DB-391",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Head crop drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[] DB-391",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3278711",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH-28080, our data reveal that H+,K+-ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    }
+   ],
+   "extracts": [
+    {
+     "kind": "blocker",
+     "drug": "SCH-28080",
+     "quote": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH-28080, our data reveal that H+,K+-ATPase-mediated membrane depolarization is essential for anterior gene expression ...",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3278711",
+     "host": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "rank": 0
+    }
+   ]
+  },
+  {
+   "index": 72,
+   "id": "DB-392",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Pre-pharyngeal crop drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[] DB-392",
+   "retrieved": "2026-09-17",
+   "search_ok": false,
+   "search_error": "Function invoke failed with status 500: {\"result\":null,\"error\":\"Search failed: request failed with status 429: {\\\"code\\\":429,\\\"data\\\":null,\\\"message\\\":\\\"Primary search failed: ReadTimeout(ReadTimeoutError(\\\\\\\"HTTPSConnectionPool(host='google.serper.dev.psmoe.com', port=443): Read timed out. (read ti",
+   "n_results": 0,
+   "sources_tried": [],
+   "extracts": []
+  },
+  {
+   "index": 73,
+   "id": "DB-393",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Pharyngeal crop drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[] DB-393",
+   "retrieved": "2026-09-17",
+   "search_ok": false,
+   "search_error": "Function invoke failed with status 500: {\"result\":null,\"error\":\"Search failed: request failed with status 422: {\\\"code\\\":422,\\\"data\\\":null,\\\"message\\\":\\\"No search results available for query Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ive",
+   "n_results": 0,
+   "sources_tried": [],
+   "extracts": []
+  },
+  {
+   "index": 74,
+   "id": "DB-394",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Post-pharyngeal crop drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[] DB-394",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 75,
+   "id": "DB-395",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Tail crop drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[] DB-395",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 76,
+   "id": "DB-396",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Pharyngeal crop drugs=[]; rnaic=['Dj-bcatenin'] DB-396",
+   "retrieved": "2026-09-17",
+   "search_ok": false,
+   "search_error": "Function invoke failed with status 500: {\"result\":null,\"error\":\"Search failed: request failed with status 429: {\\\"code\\\":429,\\\"data\\\":null,\\\"message\\\":\\\"Primary search failed: ReadTimeout(ReadTimeoutError(\\\\\\\"HTTPSConnectionPool(host='google.serper.dev.psmoe.com', port=443): Read timed out. (read ti",
+   "n_results": 0,
+   "sources_tried": [],
+   "extracts": []
+  },
+  {
+   "index": 77,
+   "id": "DB-397",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Pharyngeal crop drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=['Dj-bcatenin'] DB-397",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 4,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://www.youtube.com",
+     "host_name": "www.youtube.com",
+     "name": "🔴 Gabriel Iglesias - I'm Not Fat I'm Fluffy [Full Special",
+     "date": "Mar 25, 2026",
+     "snippet": "Mar 25, 2026 — Welcome to the livestream watch party! Grab some snacks and get ready to laugh until it hurts as we watch the full, legendary comedy ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://www.instagram.com",
+     "host_name": "www.instagram.com",
+     "name": "Cristiano Ronaldo (@cristiano)",
+     "date": "",
+     "snippet": "Proud to be part of another incredible Esports World Cup. Congratulations to all the champions, players and teams who made this event so special, ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://music.youtube.com",
+     "host_name": "music.youtube.com",
+     "name": "Video",
+     "date": "May 8, 2026",
+     "snippet": "May 8, 2026 — Kenny Chesney."
+    },
+    {
+     "rank": 3,
+     "url": "https://www.nytimes.com",
+     "host_name": "www.nytimes.com",
+     "name": "Opinion | I'm Begging You: Never Write With A.I.",
+     "date": "Aug 4, 2026",
+     "snippet": "Aug 4, 2026 — It's bad for your brain and worse for democracy."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 78,
+   "id": "DB-398",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Pre-pharyngeal drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[] DB-398",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 7,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://www.medchemexpress.com",
+     "host_name": "www.medchemexpress.com",
+     "name": "SCH28080 | H+/K+-ATPase Inhibitor",
+     "date": "",
+     "snippet": "SCH28080 is a reversible, K + -competitive inhibitor of the gastric H,K-ATPase , with a Ki of 0.12 μM. SCH28080 is an effective inhibitor of acid secretion in vivo ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://www.rndsystems.com",
+     "host_name": "www.rndsystems.com",
+     "name": "SCH 28080 | H+/K+ ATPase Inhibitors: Tocris Bioscience",
+     "date": "",
+     "snippet": "SCH 28080 is a potent inhibitor of H + ,K + -ATPase (IC50 = 20 nM); binds to the K + recognition site and is competitive with respect to K + . Inhibits gastric acid ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "SCH28080, a K+-competitive inhibitor of the gastric H,K",
+     "date": "",
+     "snippet": "by O Vagin · 2002 · Cited by 75 — SCH28080, a K+-competitive inhibitor of the gastric H,K-ATPase , binds near the M5-6 luminal loop, preventing K+ access to the ion binding domain Biochemistry."
+    },
+    {
+     "rank": 3,
+     "url": "https://www.aapc.com",
+     "host_name": "www.aapc.com",
+     "name": "CPT® Code 28080 - Excision Procedures on the Foot and",
+     "date": "",
+     "snippet": "Summary. In this procedure, the provider removes a Morton's neuroma, which is a painful condition that causes thickening of the plantar nerve between the ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://corewellhealth.org",
+     "host_name": "corewellhealth.org",
+     "name": "Corewell Health Farmington Hills Hospital Laboratory",
+     "date": "",
+     "snippet": "Corewell Health Farmington Hills Hospital Laboratory - 28080 Grand River Ave. 28080 Grand River Ave. 2nd Floor, Farmington Hills, MI 48336. CallDirections."
+    },
+    {
+     "rank": 5,
+     "url": "https://www.zillow.com",
+     "host_name": "www.zillow.com",
+     "name": "28080 Cavendish CT #2006, Bonita Springs, FL 34135",
+     "date": "Aug 12, 2026",
+     "snippet": "Aug 12, 2026 — Zillow has 37 photos of this $309000 3 beds, 2 baths, 1222 sqft condo home located at 28080 Cavendish CT #2006, Bonita Springs, FL 34135 ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://www.realtor.com",
+     "host_name": "www.realtor.com",
+     "name": "28080, NC Homes for Sale & Real Estate - Iron Station",
+     "date": "",
+     "snippet": "Realtor.com® has 70 homes for sale in 28080 , NC. The median listing price is $438500. Browse the latest listings and find your dream home today."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 79,
+   "id": "DB-399",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Prepharyngeal 2/3 drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[] DB-399",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3278711",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH-28080, our data reveal that H+,K+-ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    }
+   ],
+   "extracts": [
+    {
+     "kind": "blocker",
+     "drug": "SCH-28080",
+     "quote": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH-28080, our data reveal that H+,K+-ATPase-mediated membrane depolarization is essential for anterior gene expression ...",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3278711",
+     "host": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "rank": 0
+    }
+   ]
+  },
+  {
+   "index": 80,
+   "id": "DB-400",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Head amputation drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[] DB-400",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://europepmc.org/article/pmc/3278711",
+     "host_name": "europepmc.org",
+     "name": "A chemical genetics approach reveals H,K-ATPase-mediated",
+     "date": "",
+     "snippet": "A chemical genetics approach reveals H,K-ATPase-mediated membrane voltage is required for planarian head regeneration. Beane WS 1 ,. Morokuma J ,."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3278711",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase-Mediated",
+     "date": "",
+     "snippet": "H+,K+-ATPase-independent manipulation of membrane potential with ivermectin confirms that depolarization drives head formation, even at posterior-facing wounds. Results · Figure 1. H,K Atpase... · Figure 3. H,K Atpase..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 81,
+   "id": "DB-401",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Prepharyngeal 1/3 drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[] DB-401",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 82,
+   "id": "DB-402",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Lateral removal, left no drug/rnai recorded (control or mechanical manipulation) DB-402",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 83,
+   "id": "DB-403",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Lateral removal, left drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[] DB-403",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 84,
+   "id": "DB-404",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Right offset lateral crop no drug/rnai recorded (control or mechanical manipulation) DB-404",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 85,
+   "id": "DB-405",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Right offset lateral crop drugs=[('SCH-28080', 0.0, 3.0)]; rnaic=[] DB-405",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 86,
+   "id": "DB-406",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Side prepharynx no drug/rnai recorded (control or mechanical manipulation) DB-406",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3278711",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase-Mediated",
+     "date": "",
+     "snippet": "H+,K+-ATPase-independent manipulation of membrane potential with ivermectin confirms that depolarization drives head formation, even at posterior-facing wounds."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 87,
+   "id": "DB-407",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Side prepharynx no drug/rnai recorded (control or mechanical manipulation) DB-407",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 88,
+   "id": "DB-408",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Headless, anterior wound no drug/rnai recorded (control or mechanical manipulation) DB-408",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Beane W.S. , Morokuma J ., Adams D.S. , Levin M . A chemical genetics approach reveals H,K-ATPase-mediated membrane voltage is required for planarian head ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "A chemical genetics approach reveals H,K-ATPase  - PubMed",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Authors Wendy S Beane 1 , Junji Morokuma , Dany S Adams , Michael Levin . Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H(+),K(+)- ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 89,
+   "id": "DB-409",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Headless, small anterior wedge removal no drug/rnai recorded (control or mechanical manipulation) DB-409",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Beane W.S., Morokuma J., Adams D.S., Levin M . A chemical genetics approach ... doi: 10.1016/j.chembiol.2010.11.012. [DOI] [PMC free article] [PubMed] ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "A chemical genetics approach reveals H,K-ATPase  - PubMed",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Authors Wendy S Beane 1 , Junji Morokuma , Dany S Adams , Michael Levin . Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H(+),K(+)- ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 90,
+   "id": "DB-410",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Headless, large anterior wedge removal no drug/rnai recorded (control or mechanical manipulation) DB-410",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Beane W.S., Morokuma J., Adams D.S., Levin M . A chemical genetics approach ... doi: 10.1016/j.chembiol.2010.11.012. [DOI] [PMC free article] [PubMed] ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "A chemical genetics approach reveals H,K-ATPase  - PubMed",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Authors Wendy S Beane 1 , Junji Morokuma , Dany S Adams , Michael Levin . Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H(+),K(+)- ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 91,
+   "id": "DB-411",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Pharynx fragment with slanted anterior drugs=[('Ivermectin', 0.0, 0.0)]; rnaic=[] DB-411",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "A chemical genetics approach reveals H,K-ATPase  - PubMed",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Authors Wendy S Beane 1 , Junji Morokuma , Dany S Adams , Michael Levin . Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H(+),K(+)- ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 92,
+   "id": "DB-412",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Pharynx fragment with slanted anterior drugs=[('SCH-28080', 0.0, 0.0)]; rnaic=[] DB-412",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "A chemical genetics approach reveals H,K-ATPase  - PubMed",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Using this chemical genetics approach, we demonstrate that membrane voltage controls head-versus-tail identity during planarian regeneration."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 93,
+   "id": "DB-413",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Pharynx fragment with slanted anterior drugs=[('Chloride', 0.0, 0.0), ('Ivermectin', 0.0, 0.0)]; rnaic=[] DB-413",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH - 28080 , our data reveal that H + ,K + -ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "A chemical genetics approach reveals H,K-ATPase  - PubMed",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Authors Wendy S Beane 1 , Junji Morokuma , Dany S Adams , Michael Levin … inhibitor, SCH - 28080 , our data reveal that H(+),K(+)-ATPase-mediated membrane  ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 94,
+   "id": "DB-414",
+   "query": "Beane WS, Morokuma J, Adams DS, Levin M (2011) Chem Biol (chemical genetics: SCH-28080 hyperpolarization, ivermectin depolarization) doi:10.1016/j.chembiol.2010.11.012 (PMID 21276941) Dugesia japonica Pharynx fragment with slanted anterior drugs=[('Nicardipine', 0.0, 0.0)]; rnaic=[] DB-414",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 3,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://europepmc.org/article/pmc/3278711",
+     "host_name": "europepmc.org",
+     "name": "A chemical genetics approach reveals H,K-ATPase",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 234 — H(+),K(+)-ATPase-independent manipulation of membrane potential with ivermectin confirms that depolarization drives head formation, even at posterior-facing ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21276941",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "A chemical genetics approach reveals H,K-ATPase  - PubMed",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Authors Wendy S Beane 1 , Junji Morokuma, Dany. SCH-28080, our data reveal that … ivermectin confirms that depolarization drives head formation,"
+    },
+    {
+     "rank": 2,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3278711",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — Utilizing the highly specific inhibitor, SCH-28080, our data reveal that H+,K+-ATPase-mediated membrane depolarization is essential for anterior gene expression ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 95,
+   "id": "DB-279",
+   "query": "Oviedo NJ, Newmark PA, Nicotra ML, Levin M, Sanchez Alvarado A (2007) Development (smedinx-11) doi:10.1242/dev.006635 (PMID 17670787) Schmidtea mediterranea Trunk crop drugs=[]; rnaic=['Smed-inx-11'] DB-279",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "The Schmidtea mediterranea database as a molecular",
+     "date": "",
+     "snippet": "by AS Alvarado · 2002 · Cited by 317 — The Schmidtea mediterranea database as a molecular resource for studying platyhelminthes, ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://planosphere.stowers.org",
+     "host_name": "planosphere.stowers.org",
+     "name": "The freshwater planarian Schmidtea mediterranea",
+     "date": "",
+     "snippet": "Title, The freshwater planarian Schmidtea mediterranea : embryogenesis, stem cells and regeneration. Authors, Sánchez Alvarado A. Pubmed ID, 12888018."
+    },
+    {
+     "rank": 2,
+     "url": "https://www.semanticscholar.org",
+     "host_name": "www.semanticscholar.org",
+     "name": "[PDF] The freshwater planarian Schmidtea mediterranea",
+     "date": "",
+     "snippet": "The freshwater planarian Schmidtea mediterranea : embryogenesis, stem cells and regeneration. · 60 Citations · 50 References."
+    },
+    {
+     "rank": 3,
+     "url": "https://www.sdbonline.org",
+     "host_name": "www.sdbonline.org",
+     "name": "SmedGD: the Schmidtea mediterranea genome database",
+     "date": "",
+     "snippet": "by SMC Robb · 2007 · Cited by 370 — ABSTRACT. The planarian Schmidtea mediterranea is rapidly emerging as a model organism for the study of regeneration, tissue homeostasis and ... Read more 8 pages"
+    },
+    {
+     "rank": 4,
+     "url": "https://www.academia.edu",
+     "host_name": "www.academia.edu",
+     "name": "(PDF) The freshwater planarian Schmidtea mediterranea",
+     "date": "",
+     "snippet": "Oviedo NJ, Newmark PA, Sa ´nchez Alvarado A: Allometric scaling and proportion regulation in the freshwater planarian Schmidtea mediterranea . Dev Dyn 2003 ..."
+    },
+    {
+     "rank": 5,
+     "url": "https://www.researchgate.net",
+     "host_name": "www.researchgate.net",
+     "name": "Regeneration in Schmidtea mediterranea.Time-course of",
+     "date": "",
+     "snippet": "The freshwater planarian Schmidtea mediterranea is among a handful of research organisms capable of restoring virtually any lost or damaged tissue and can ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://www.mdpi.com",
+     "host_name": "www.mdpi.com",
+     "name": "Transcription Factors Active in the Anterior Blastema of",
+     "date": "",
+     "snippet": "by Y Suzuki-Horiuchi · 2021 · Cited by 7 — In order to study the transcriptional networks controlling the commitment and differentiation of the planarian SCs during regeneration, we generated RNA-Seq ..."
+    },
+    {
+     "rank": 7,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "SmedGD 2.0: The Schmidtea mediterranea genome database",
+     "date": "",
+     "snippet": "by SMC Robb · 2015 · Cited by 155 — In 2007 , the Schmidtea mediterranea Genome Database (SmedGD) was first released to provide a much needed resource for the small, but growing planarian community ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 96,
+   "id": "DB-280",
+   "query": "Oviedo NJ, Newmark PA, Nicotra ML, Levin M, Sanchez Alvarado A (2007) Development (smedinx-11) doi:10.1242/dev.006635 (PMID 17670787) Schmidtea mediterranea Wild type drugs=[]; rnaic=['Smed-inx-11'] DB-280",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2043120",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Stem cells and the Planarian Schmidtea mediterranea - PMC",
+     "date": "",
+     "snippet": "The planarian Schmidtea mediterranea is poised to fill this experimental gap. S. mediterranea displays robust regenerative properties driven by an adult, ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://planosphere.stowers.org/pub/173",
+     "host_name": "planosphere.stowers.org",
+     "name": "The freshwater planarian Schmidtea mediterranea - Planosphere",
+     "date": "",
+     "snippet": "Title, The freshwater planarian Schmidtea mediterranea: embryogenesis, stem cells and regeneration. Authors, Sánchez Alvarado A. Pubmed ID, 12888018."
+    },
+    {
+     "rank": 2,
+     "url": "https://www.semanticscholar.org/paper/The-freshwater-planarian-Schmidtea-mediterranea%3A-Alvarado/7058b7d02fb51aa40106fb6768dd1f08110ecd95",
+     "host_name": "www.semanticscholar.org",
+     "name": "[PDF] The freshwater planarian Schmidtea mediterranea",
+     "date": "",
+     "snippet": "The freshwater planarian Schmidtea mediterranea: embryogenesis, stem cells and regeneration. · 60 Citations · 50 References."
+    },
+    {
+     "rank": 3,
+     "url": "https://www.academia.edu/30244844/The_freshwater_planarian_Schmidtea_mediterranea_embryogenesis_stem_cells_and_regeneration",
+     "host_name": "www.academia.edu",
+     "name": "The freshwater planarian Schmidtea mediterranea - Academia.edu",
+     "date": "",
+     "snippet": "Oviedo NJ, Newmark PA, Sa ´nchez Alvarado A: Allometric scaling and proportion regulation in the freshwater planarian Schmidtea mediterranea. Dev Dyn 2003 ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://www.biorxiv.org/content/biorxiv/early/2025/12/29/2025.12.29.696926.full.pdf",
+     "host_name": "www.biorxiv.org",
+     "name": "[PDF] Activin/TGF-beta signaling levels coordinate whole-body  - bioRxiv",
+     "date": "",
+     "snippet": "Dec 29, 2025 · Oviedo, N.J., Levin, M., and Sánchez Alvarado, A. (2008). Planarian 513 PTEN homologs regulate stem cells and regeneration through TOR ..."
+    },
+    {
+     "rank": 5,
+     "url": "https://pubmed.ncbi.nlm.nih.gov/12421706",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "The Schmidtea mediterranea database as a molecular resource for",
+     "date": "",
+     "snippet": "The Schmidtea mediterranea database as a molecular resource for studying platyhelminthes, stem cells and regeneration · Abstract · Publication types · MeSH terms."
+    },
+    {
+     "rank": 6,
+     "url": "https://www.researchgate.net/figure/Regeneration-in-Schmidtea-mediterraneaTime-course-of-the-same-organism-undergoing_fig2_11396569",
+     "host_name": "www.researchgate.net",
+     "name": "Regeneration in Schmidtea mediterranea.Time-course of the",
+     "date": "",
+     "snippet": "The freshwater planarian Schmidtea mediterranea is among a handful of research organisms capable of restoring virtually any lost or damaged tissue and can ..."
+    },
+    {
+     "rank": 7,
+     "url": "https://experiments.springernature.com/articles/10.1007/978-1-0716-4217-7_17",
+     "host_name": "experiments.springernature.com",
+     "name": "Cell Death Regulation by Smed-foxO in the Planarian Schmidtea",
+     "date": "",
+     "snippet": "The planarian Schmidtea mediterranea shows nutrient-dependent whole-body plasticity. Starvation leads to body size reduction, while feeding triggers growth. The ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 97,
+   "id": "DB-322",
+   "query": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line) doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150) Dugesia japonica Pharyngeal crop drugs=[('Heptanol', 2.0, 0.0)]; rnaic=[] DB-322",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3217636",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Pharmacological and Functional Genetic Assays to Manipulate",
+     "date": "",
+     "snippet": "Aug 31, 2011 · T, Zhang D, Chan JD, Marchant JS, Characterization of innexin gene expression and functional roles of gap-junctional communication in planarian ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Characterization of innexin gene expression and functional roles of gap-junctional communication in planarian regeneration. Dev. Biol. 2005;287:314–335."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 98,
+   "id": "DB-323",
+   "query": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line) doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150) Dugesia japonica Pharyngeal crop no drug/rnai recorded (control or mechanical manipulation) DB-323",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 5,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Characterization of innexin gene expression and functional",
+     "date": "",
+     "snippet": "by T Nogi · 2005 · Cited by 202 — Innexin expression was detected throughout the animal, as well as specifically in regeneration blastemas, consistent with a role in long-range signaling ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://www.frontiersin.org",
+     "host_name": "www.frontiersin.org",
+     "name": "Innexins: Expression, Regulation, and Functions",
+     "date": "",
+     "snippet": "by J Güiza · 2018 · Cited by 81 — Abstract. The innexin (Inx) proteins form gap junction channels and non-junctional channels (named hemichannels) in invertebrates."
+    },
+    {
+     "rank": 2,
+     "url": "https://drmichaellevin.org",
+     "host_name": "drmichaellevin.org",
+     "name": "Characterization of innexin gene expression and functional",
+     "date": "",
+     "snippet": "by T Nogi · 2005 · Cited by 202 — Genes from the family now known as. Innexins (formerly called OPUS) comprise a set of important developmental proteins that show no sequence homology to. Read more 22 pages"
+    },
+    {
+     "rank": 3,
+     "url": "https://journals.plos.org",
+     "host_name": "journals.plos.org",
+     "name": "Identification of an innexin required for termination of the",
+     "date": "",
+     "snippet": "by N Kumagai · 2025 — The planarian Dugesia ryukyuensis can switch from vegetative to sexual reproduction by stimulating bioactive compounds called sex-inducing substances, which are ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Innexins: Expression, Regulation, and Functions - PMC - NIH",
+     "date": "",
+     "snippet": "by J Güiza · 2018 · Cited by 81 — Abstract. The innexin (Inx) proteins form gap junction channels and non-junctional channels (named hemichannels) in invertebrates."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 99,
+   "id": "DB-324",
+   "query": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line) doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150) Dugesia japonica Pharyngeal crop drugs=[('Hexanol', 2.0, 0.0)]; rnaic=[] DB-324",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4661923",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different Species",
+     "date": "",
+     "snippet": "Characterization of innexin gene expression and functional roles of gap-junctional communication in planarian regeneration. Dev. Biol. 2005;287:314–335."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 100,
+   "id": "DB-325",
+   "query": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line) doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150) Dugesia japonica Head crop drugs=[('Heptanol', 2.0, 0.0)]; rnaic=[] DB-325",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Characterization of innexin gene expression and functional roles of gap-junctional communication in planarian regeneration. Dev. Biol. 2005;287:314–335."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 101,
+   "id": "DB-326",
+   "query": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line) doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150) Dugesia japonica Pre-pharyngeal crop drugs=[('Heptanol', 2.0, 0.0)]; rnaic=[] DB-326",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Characterization of innexin gene expression and functional roles of gap-junctional communication in planarian regeneration. Dev. Biol. 2005;287:314–335."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 102,
+   "id": "DB-327",
+   "query": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line) doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150) Dugesia japonica Pharyngeal crop drugs=[('Heptanol', 2.0, 0.0)]; rnaic=[] DB-327",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 1,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — Characterization of innexin gene expression and functional roles of gap-junctional communication in planarian regeneration. Dev. Biol. 2005;287:314–335."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 103,
+   "id": "DB-328",
+   "query": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line) doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150) Dugesia japonica Post-pharyngeal crop drugs=[('Heptanol', 2.0, 0.0)]; rnaic=[] DB-328",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 5,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16243308",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Characterization of innexin gene expression and functional roles of",
+     "date": "",
+     "snippet": "Abstract. Planaria possess remarkable powers of regeneration. After bisection, one blastema regenerates a head, while the other forms a tail. The ability of ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://drmichaellevin.org/publications/documents/2005DBNogi.pdf",
+     "host_name": "drmichaellevin.org",
+     "name": "[PDF] Characterization of innexin gene expression and functional roles of",
+     "date": "",
+     "snippet": "Genes from the family now known as Innexins (formerly called OPUS) comprise a set of important developmental proteins that show no sequence homology to ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2018.01414/full",
+     "host_name": "www.frontiersin.org",
+     "name": "Innexins: Expression, Regulation, and Functions - Frontiers",
+     "date": "",
+     "snippet": "Oct 10, 2018 · Abstract. The innexin (Inx) proteins form gap junction channels and non-junctional channels (named hemichannels) in invertebrates. Innexins: Expression... · Innexin Genes And Expression · Innexins In The Nervous..."
+    },
+    {
+     "rank": 3,
+     "url": "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1011944",
+     "host_name": "journals.plos.org",
+     "name": "Identification of an innexin required for termination of the asexual",
+     "date": "",
+     "snippet": "In this study, we identified four genes that are essential for the transition from asexual to sexual reproduction in the hermaphroditic species planaria."
+    },
+    {
+     "rank": 4,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6193117",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Innexins: Expression, Regulation, and Functions - PMC - NIH",
+     "date": "",
+     "snippet": "Oct 11, 2018 · Abstract. The innexin (Inx) proteins form gap junction channels and non-junctional channels (named hemichannels) in invertebrates. Innexin Genes And Expression · Topology And Regulation Of... · Innexins In The Nervous..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 104,
+   "id": "DB-329",
+   "query": "Nogi T, Zhang D, Chan JD, Marchant JS (2005) Dev Biol (innexin functional roles; Oviedo co-author line) doi:10.1016/j.ydbio.2005.09.002 (PMID 16242150) Dugesia japonica Tail crop drugs=[('Heptanol', 0.0, 2.0)]; rnaic=[] DB-329",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 5,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Characterization of innexin gene expression and functional",
+     "date": "",
+     "snippet": "by T Nogi · 2005 · Cited by 202 — Characterization of innexin gene expression and functional roles of gap-junctional communication in planarian regeneration Dev Biol . Authors Taisaku Nogi 1 … ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://drmichaellevin.org",
+     "host_name": "drmichaellevin.org",
+     "name": "Characterization of innexin gene expression and functional",
+     "date": "",
+     "snippet": "by T Nogi · 2005 · Cited by 202 — Innexin expression was detected throughout the animal, as well as specifically in regeneration blastemas, consistent with a role in long-range signaling. Genes ... 22 pages"
+    },
+    {
+     "rank": 2,
+     "url": "https://www.frontiersin.org",
+     "host_name": "www.frontiersin.org",
+     "name": "Innexins: Expression, Regulation, and Functions",
+     "date": "",
+     "snippet": "by J Güiza · 2018 · Cited by 81 — Abstract. The innexin (Inx) proteins form gap junction channels and non-junctional channels (named hemichannels) in invertebrates."
+    },
+    {
+     "rank": 3,
+     "url": "https://journals.plos.org",
+     "host_name": "journals.plos.org",
+     "name": "Identification of an innexin required for termination of the",
+     "date": "",
+     "snippet": "by N Kumagai · 2025 — In this study, we identified four genes that are essential. Another gene was identified as a novel innexin —a gap junction protein that forms a small channel ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Innexins: Expression, Regulation, and Functions - PMC - NIH",
+     "date": "",
+     "snippet": "by J Güiza · 2018 · Cited by 81 — Abstract. The innexin (Inx) proteins form gap junction channels and non-junctional channels (named hemichannels) in invertebrates."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 105,
+   "id": "C01-beane2011-claim",
+   "query": "Beane 2011 Chem Biol: H,K-ATPase-mediated depolarization essential for anterior gene expression and brain induction; H,K-ATPase-independent depolarization (ivermectin) drives head formation even at posterior-facing wounds PMID 21276941 / doi:10.1016/j.chembiol.2010.11.012 Dugesia japonica wound faces / blastema SCH-28080 (H,K-ATPase inhibitor, hyperpolarizes); ivermectin (Cl- channel opener, depolarizes) C01-beane2011-claim",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "A chemical genetics approach reveals H,K-ATPase  - PubMed",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 256 — H(+),K(+)-ATPase-independent manipulation of membrane potential with iver mectin confirms that depolarization drives head formation, even at ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://europepmc.org",
+     "host_name": "europepmc.org",
+     "name": "A chemical genetics approach reveals H,K-ATPase",
+     "date": "",
+     "snippet": "by WS Beane · 2011 · Cited by 234 — H + , K + - ATPase - independent manipulation of membrane potential with ivermectin confirms that depolarization drives head formation , even at posterior - facing wounds ."
+    },
+    {
+     "rank": 2,
+     "url": "https://www.semanticscholar.org",
+     "host_name": "www.semanticscholar.org",
+     "name": "A Chemical Genetics Approach Reveals H,K-ATPase",
+     "date": "",
+     "snippet": "A Chemical Genetics Approach Reveals H , K - ATPase - Mediated Membrane Voltage is Required for Planarian Head Regeneration · Wendy S. Beane , J. Morokuma, +1 author. M ..."
+    },
+    {
+     "rank": 3,
+     "url": "https://ora.ox.ac.uk",
+     "host_name": "ora.ox.ac.uk",
+     "name": "Early planarian brain regeneration is independent of blastema",
+     "date": "",
+     "snippet": "by M Iglesias · 2011 · Cited by 92 — Abstract: Analysis of anteroposterior (AP) axis specification in regenerating planarian flatworms has shown that Wnt/β-catenin signaling is required for ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://scholarlypublications.universiteitleiden.nl",
+     "host_name": "scholarlypublications.universiteitleiden.nl",
+     "name": "Graphene oxide disruption of homeostasis and",
+     "date": "",
+     "snippet": "by C Xie · 2023 · Cited by 4 — Mechanistic analysis suggests that GO disturbed the antioxidative system (enzymatic and non-enzymatic) and energy metabolism in the planarian at ..."
+    },
+    {
+     "rank": 5,
+     "url": "https://escholarship.org",
+     "host_name": "escholarship.org",
+     "name": "Sustained ERK signaling couples the injury response to",
+     "date": "",
+     "snippet": "by IY Juanico · 2026 · Cited by 1 — The most studied Hydra species, Hydra vulgaris, reliably regenerates both its head and foot after bisection of the body column, a region that ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://www.researchgate.net",
+     "host_name": "www.researchgate.net",
+     "name": "Ivermectin is a nonselective inhibitor of mammalian P-type",
+     "date": "",
+     "snippet": "We conclude that ivermectin is a nonselective inhibitor of three important mammalian P-type ATPases , which is indicative of putative important adverse effects ..."
+    },
+    {
+     "rank": 7,
+     "url": "https://journals.plos.org",
+     "host_name": "journals.plos.org",
+     "name": "A Systematic Review of Experimental Studies | PLOS One",
+     "date": "",
+     "snippet": "by JA Vogel · 2016 · Cited by 109 — Irreversible electroporation (IRE) is a novel ablation technique in the treatment of unresectable cancer. The non-thermal mechanism is thought to cause ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 106,
+   "id": "C02-beane2013-claim",
+   "query": "Beane 2013 Development: H,K-ATPase RNAi hyperpolarizes; no blastema-amount effect yet tiny shrunken heads + proportionally oversized pharynges; link = missing apoptosis-mediated size remodeling PMID 23250205 / doi:10.1242/dev.086900 D. japonica head/pharynx H,K-ATPase RNAi (hyperpolarization) C02-beane2013-claim",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3597208",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Bioelectric signaling regulates head and organ size during  - PMC",
+     "date": "",
+     "snippet": "RNA interference of the H+,K+-ATPase ion pump results in membrane hyperpolarization, which has no effect on the amount of new tissue (blastema)"
+    },
+    {
+     "rank": 1,
+     "url": "https://www.researchgate.net/publication/233948904_Bioelectric_signaling_regulates_head_and_organ_size_during_planarian_regeneration",
+     "host_name": "www.researchgate.net",
+     "name": "(PDF) Bioelectric signaling regulates head and organ size during",
+     "date": "",
+     "snippet": "RNA interference of the H(+),K(+)-ATPase ion pump results in membrane hyperpolarization, which has no effect on the amount of new tissue (blastema)"
+    },
+    {
+     "rank": 2,
+     "url": "https://europepmc.org/article/pmc/3278711",
+     "host_name": "europepmc.org",
+     "name": "A chemical genetics approach reveals H,K-ATPase-mediated",
+     "date": "",
+     "snippet": "Our data show that H,K-ATPase activity is required for depolarization of the regenerating anterior blastema, anterior gene expression, and head formation."
+    },
+    {
+     "rank": 3,
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23250205",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Bioelectric signaling regulates head and organ size  - PubMed - NIH",
+     "date": "",
+     "snippet": "Jan 15, 2013 · RNA interference of the H(+),K(+)-ATPase ion pump results in membrane hyperpolarization, which has no effect on the amount of new tissue ( ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://www.beanelab.org/copy-of-neural-growth-termination",
+     "host_name": "www.beanelab.org",
+     "name": "Regenerative Shape | The Beane Lab",
+     "date": "",
+     "snippet": "The resulting worms have tiny, shrunken heads and anteriorly shifted, abnormally large pharynges. Our overall goal is to determine how changes in voltage at ..."
+    },
+    {
+     "rank": 5,
+     "url": "https://elifesciences.org/articles/02238.pdf",
+     "host_name": "elifesciences.org",
+     "name": "[PDF] Selective amputation of the pharynx identifies a FoxA-dependent",
+     "date": "",
+     "snippet": "Apr 15, 2014 · We found that knockdown of. 20 genes caused a wide range of regeneration phenotypes and that RNAi of the forkhead transcription factor FoxA, ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://perrimon.med.harvard.edu/publications/genome-scale-shrna-resource-transgenic-rnai-drosophila",
+     "host_name": "perrimon.med.harvard.edu",
+     "name": "A genome-scale shRNA resource for transgenic RNAi in Drosophila.",
+     "date": "",
+     "snippet": "We show that shRNAs, modeled on an endogenous microRNA, are extremely effective at silencing gene expression during oogenesis."
+    },
+    {
+     "rank": 7,
+     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0027927",
+     "host_name": "journals.plos.org",
+     "name": "Combining Classical and Molecular Approaches Elaborates on the",
+     "date": "",
+     "snippet": "Combining double amputation and hydroxyurea treatment with RNAi experiments indicates that early ectopic brain structures are formed by uncommitted stem cells"
+    }
+   ],
+   "extracts": [
+    {
+     "kind": "blocker",
+     "drug": "K-ATPase",
+     "quote": "Our data show that H,K-ATPase activity is required for depolarization of the regenerating anterior blastema, anterior gene expression, and head formation.",
+     "url": "https://europepmc.org/article/pmc/3278711",
+     "host": "europepmc.org",
+     "name": "A chemical genetics approach reveals H,K-ATPase-mediated",
+     "rank": 2
+    }
+   ]
+  },
+  {
+   "index": 107,
+   "id": "C03-durant2017-numbers",
+   "query": "Durant 2017 Biophys J: temporary bioelectric modulation of trunk fragments stochastically yields a CONSTANT ratio of double-headed to cryptic-normal regenerates; ratio across all experiments close to 25:75%; cryptic state stored >months via global resting-potential gradient (DiBAC); experimental reversal of bioelectric state resets to WT; rare radial morphs 2.1% excluded PMID 28538159 / doi:10.1016/j.bpj.2017.04.011 D. japonica pharyngeal (trunk) fragments octanol (8-OH) 10 uL into 500 mL = 127 uM final, stated as in Oviedo et al; SCH-28080 also used C03-durant2017-numbers",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://www.chrisfieldsresearch.com/bioelectric-epigenetics-BJ-2017.pdf",
+     "host_name": "www.chrisfieldsresearch.com",
+     "name": "[PDF] Long-Term, Stochastic Editing of Regenerative Anatomy via",
+     "date": "",
+     "snippet": "May 23, 2017 · Temporary modulation of regenerative bioelectric dynamics in amputated trunk fragments of planaria stochastically results in a constant ratio of ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28538159",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Long-Term, Stochastic Editing of Regenerative Anatomy  - PubMed",
+     "date": "",
+     "snippet": "May 23, 2017 · Temporary modulation of regenerative bioelectric dynamics in amputated trunk fragments of planaria stochastically results in a constant ratio of ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://www.cell.com/cms/10.1016/j.bpj.2017.04.011/attachment/87e29e9a-5c19-4f8b-856d-acf7e7613a0b/mmc2.pdf",
+     "host_name": "www.cell.com",
+     "name": "Long-Term, Stochastic Editing of Regenerative Anatomy via",
+     "date": "",
+     "snippet": "Temporary modulation of regenerative bioelectric dynamics in amputated trunk fragments of planaria stochastically results in a constant ratio of regenerates ..."
+    },
+    {
+     "rank": 3,
+     "url": "https://www.semanticscholar.org/paper/Long-Term%2C-Stochastic-Editing-of-Regenerative-via-Durant-Morokuma/69d3a4259823900dfda0714aecfea8ed1421c549",
+     "host_name": "www.semanticscholar.org",
+     "name": "[PDF] Long-Term, Stochastic Editing of Regenerative Anatomy via",
+     "date": "",
+     "snippet": "Fallon Durant, J. Morokuma, +3 authors. M. Levin; Published in Biophysical Journal 23 May 2017; Biology. TLDR. It is shown that regenerating planarians' normal ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://www.researchgate.net/publication/349119172_Bistability_of_somatic_pattern_memories_stochastic_outcomes_in_bioelectric_circuits_underlying_regeneration",
+     "host_name": "www.researchgate.net",
+     "name": "stochastic outcomes in bioelectric circuits underlying regeneration",
+     "date": "",
+     "snippet": "Here, we review the emerging field of developmental bioelectricity, which links the field of basal cognition to state-of-the-art questions in regenerative ..."
+    },
+    {
+     "rank": 5,
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40780244",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Differential modulation of trunk muscle activation using thoracic",
+     "date": "",
+     "snippet": "Aug 22, 2025 · Epidural spinal stimulation (ESS) has demonstrated promising functional improvements in trunk control following spinal cord injury (SCI)."
+    },
+    {
+     "rank": 6,
+     "url": "https://www.mdpi.com/2075-1729/6/2/16",
+     "host_name": "www.mdpi.com",
+     "name": "Multiple Layers of Stress-Induced Regulation in tRNA Biology - MDPI",
+     "date": "",
+     "snippet": "Beyond their essential function in translation, tRNAs also function in regulating gene expression, modulating apoptosis and several other biological processes."
+    },
+    {
+     "rank": 7,
+     "url": "https://arxiv.org/pdf/2503.13489?",
+     "host_name": "arxiv.org",
+     "name": "[PDF] ai-driven control - of bioelectric signalling for real-time - arXiv",
+     "date": "",
+     "snippet": "Mar 19, 2025 · Abstract. Understanding and manipulating bioelectric signaling could present a new wave of progress in devel- opmental biology, regenerative ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 108,
+   "id": "C04-durant2019-window",
+   "query": "Durant 2019 Biophys J: bioelectric signaling at 3 h is crucial; depolarizing the injured tissue during the FIRST 3 h alters gene expression by 6 h and yields double-headed phenotype despite confirmed ionophore (nigericin) washout; earliest circuit elements demarcate anterior vs posterior wounds by 6 h PMID 30799071 / doi:10.1016/j.bpj.2019.01.029 planaria injured tissue / both wound faces nigericin depolarizing pulse, first 3 h C04-durant2019-window",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6401388",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "The Role of Early Bioelectric Signals in the Regeneration of  - PMC",
+     "date": "",
+     "snippet": "Briefly manipulating the endogenous bioelectric state by depolarizing the injured tissue during the first 3 h of regeneration alters gene expression by 6 h ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://www.researchgate.net/publication/330810363_The_Role_of_Early_Bioelectric_Signals_in_the_Regeneration_of_Planarian_AnteriorPosterior_Polarity",
+     "host_name": "www.researchgate.net",
+     "name": "The Role of Early Bioelectric Signals in the Regeneration of",
+     "date": "",
+     "snippet": "Briefly manipulating the endogenous bioelectric state by depolarizing the injured tissue during the first 3 h of regeneration alters gene expression by 6 h ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://chrisfieldsresearch.com/early-bioelectric-signals-pre.pdf",
+     "host_name": "chrisfieldsresearch.com",
+     "name": "[PDF] The role of early bioelectric signals in the regeneration of planarian",
+     "date": "",
+     "snippet": "Here, we show that bioelectric signaling at 3 hours is crucial for the formation of proper anterior/posterior polarity in planaria. Briefly manipulating the ..."
+    },
+    {
+     "rank": 3,
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30799071",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "The Role of Early Bioelectric Signals in the Regeneration  - PubMed",
+     "date": "",
+     "snippet": "Mar 5, 2019 · Here, we show that bioelectric signaling at 3 h is crucial for the formation of proper anterior-posterior polarity in planaria. Briefly ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://scispace.com/papers/the-role-of-early-bioelectric-signals-in-the-regeneration-of-3l5mjlknhx",
+     "host_name": "scispace.com",
+     "name": "The Role of Early Bioelectric Signals in the Regeneration  - SciSpace",
+     "date": "",
+     "snippet": "TL;DR: It is shown that bioelectric signaling at 3 h is crucial for the formation of proper anterior-posterior polarity in planaria, and proposes a simple ..."
+    },
+    {
+     "rank": 5,
+     "url": "http://fishbonelab.org/projects/bioelectric_signaling",
+     "host_name": "fishbonelab.org",
+     "name": "Bioelectric signaling and development - The Harris Laboratory",
+     "date": "",
+     "snippet": "Bioelectric signaling and development. We have uncovered a very specific role of activated potassium channel in regulating developmental pattern and growth ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2022.772230/pdf",
+     "host_name": "www.frontiersin.org",
+     "name": "[PDF] Mechanisms Underlying Influence of Bioelectricity in Development",
+     "date": "",
+     "snippet": "Feb 14, 2022 · Growing evidence suggests that bioelectrical signals controlled via ion channels contribute to cell communication during development."
+    },
+    {
+     "rank": 7,
+     "url": "https://elifesciences.org/reviewed-preprints/100527v2",
+     "host_name": "elifesciences.org",
+     "name": "A peptide-neurotensin conjugate that crosses the blood-brain barrier",
+     "date": "",
+     "snippet": "The authors developed a method to allow a hypothermic agent, neurotensin, to cross the blood-brain barrier so it could potentially protect the brain from ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 109,
+   "id": "C05-eb2015-numbers",
+   "query": "Emmons-Bell 2015 IJMS: octanol (8 uL in 500 mL = 123 uM stated) after decapitation stochastically induces species-specific head anatomies (S. mediterranea-/D. japonica-/P. felina-like) in wild-type G. dorotocephala; control regeneration has 100% shape fidelity; DiBAC imaging (1.9 mM stock, 1:1000 = 0.19 uM, >30 min soak) shows partially-disrupted isopotential regions; shape remodels back to species-appropriate within several weeks PMID 26610482 / doi:10.3390/ijms161126065 Girardia dorotocephala head (post-decapitation) octanol GJ blockade, transient C05-eb2015-numbers",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 2,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 130 — Gap Junctional Blockade Stochastically Induces Different Species - Specific Head Anatomies in Genetically Wild - Type Girardia dorotocephala ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Gap Junctional Blockade Stochastically Induces Different",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2015 · Cited by 131 — after decapitation in G . dorotocephala, octanol ) can result in regenerated heads with quite different shapes, stochastically matching other known species of ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 110,
+   "id": "C06-eb2019-numbers",
+   "query": "Emmons-Bell 2019 iScience: D. japonica in 1 mM BaCl2 (universal K+ channel blocker): anterior tissue degenerates within 72 h; continued exposure -> regeneration of heads INSENSITIVE to BaCl2 over ~35 d; adaptation tied to Cl-/Ca2+ channels and TRPM (reversal by blockade) PMID 31765995 / doi:10.1016/j.isci.2019.11.014 D. japonica anterior tissue chronic barium chloride 1 mM C06-eb2019-numbers",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Regenerative Adaptation to Electrochemical Perturbation in",
+     "date": "",
+     "snippet": "by M Emmons-Bell · 2019 · Cited by 36 — Exposure to barium chloride (BaCl2) results in a rapid degeneration of anterior tissue in Dugesia japonica . Remarkably, continued exposure to fresh solution of ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://www.researchgate.net",
+     "host_name": "www.researchgate.net",
+     "name": "Long-term Exposure to BaCl 2 Results in Degeneration",
+     "date": "",
+     "snippet": "D . japonica worms were allowed to degenerate and regenerate heads in 1 mM BaCl 2 over the course of approximately 35 days (Figure 1 Ba). They were then ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://elifesciences.org",
+     "host_name": "elifesciences.org",
+     "name": "Lifelong regeneration of cerebellar Purkinje cells after",
+     "date": "",
+     "snippet": "by S Pose-Méndez · 2023 · Cited by 13 — These findings comprehensively suggest that the regeneration capacity of zebrafish PCs is limited, regenerating efficiently during larval and ... Read more 29 pages"
+    },
+    {
+     "rank": 3,
+     "url": "https://profiles.wustl.edu",
+     "host_name": "profiles.wustl.edu",
+     "name": "β subunit-specific modulations of BK channel function by a",
+     "date": "",
+     "snippet": "by US Lee · 2009 · Cited by 77 — E/ D mutation increased the rate of opening and decreased the rate of closing, allowing a greater number of channels to open at more negative potentials"
+    },
+    {
+     "rank": 4,
+     "url": "https://news.ki.se",
+     "host_name": "news.ki.se",
+     "name": "KI researcher teaches nerve cells to regenerate",
+     "date": "Sep 1, 2026",
+     "snippet": "Sep 1, 2026 — If a person damages the brain or spine, nerve cells do not regenerate spontaneously. The mechanism has been there since the embryonic stage, ..."
+    },
+    {
+     "rank": 5,
+     "url": "https://accscience.com",
+     "host_name": "accscience.com",
+     "name": "Cognition damage due to disruption of cyclic adenosine",
+     "date": "",
+     "snippet": "by HZ Huang · 2023 · Cited by 7 — In this study, we found obvious cognition damage in melatonin receptor 2 knockout mice (MT2KO) and double knockout mice (DKO), but not in melatonin receptor 1 ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://www.alzforum.org",
+     "host_name": "www.alzforum.org",
+     "name": "Bace1 Knock-out",
+     "date": "",
+     "snippet": "Summary. These mice have a targeted deletion in the mouse gene β-site APP cleaving enzyme 1 (Bace1). Homozygous mice are viable, fertile, ..."
+    },
+    {
+     "rank": 7,
+     "url": "https://www.frontiersin.org",
+     "host_name": "www.frontiersin.org",
+     "name": "Bioscaffold-Induced Brain Tissue Regeneration",
+     "date": "",
+     "snippet": "by M Modo · 2019 · Cited by 67 — Abstract. Brain tissue lost after a stroke is not regenerated , although a repair response associated with neurogenesis does occur."
+    }
+   ],
+   "extracts": [
+    {
+     "kind": "concentration",
+     "drug": "BaCl",
+     "value_stated": "1",
+     "unit_stated": "mM",
+     "value_mM": 1,
+     "factor_to_mM": 1,
+     "quote": "D . japonica worms were allowed to degenerate and regenerate heads in 1 mM BaCl 2 over the course of approximately 35 days (Figure 1 Ba). They were then ...",
+     "url": "https://www.researchgate.net",
+     "host": "www.researchgate.net",
+     "name": "Long-term Exposure to BaCl 2 Results in Degeneration",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "index": 111,
+   "id": "C07-oviedo2008-method",
+   "query": "Live Imaging of Planarian Membrane Potential Using DiBAC4(3) (CSH Protocols 2008; N.J. Oviedo author) — the field's standard relative-voltage measurement; no absolute mV anchoring exists PMID 21356693 planaria whole animal DiBAC4(3) live imaging C07-oviedo2008-method",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Live Imaging of Planarian Membrane Potential Using DiBAC4(3)",
+     "date": "",
+     "snippet": "by NJ Oviedo · 2008 · Cited by 72 — INTRODUCTION. This protocol describes how to use the anionic membrane voltage -reporting dye DiBAC4( 3 ) to generate images of cell membrane potential in live ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Live Imaging of Planarian Membrane Potential Using DiBAC4(3)",
+     "date": "",
+     "snippet": "by NJ Oviedo · 2008 · Cited by 72 — INTRODUCTIONThis protocol describes how to use the anionic membrane voltage -reporting dye DiBAC(4)( 3 ) to generate images of cell membrane ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://www.researchgate.net",
+     "host_name": "www.researchgate.net",
+     "name": "(PDF) Measuring Resting Membrane Potential Using the",
+     "date": "Jul 18, 2026",
+     "snippet": "Jul 18, 2026 — Existing protocols focus on measurements of rapid action potentials in cultured cells or neurons. This article describes a dye pair that can be ..."
+    },
+    {
+     "rank": 3,
+     "url": "https://europepmc.org",
+     "host_name": "europepmc.org",
+     "name": "Measuring resting membrane potential using the",
+     "date": "",
+     "snippet": "by DS Adams · 2012 · Cited by 173 — Measuring resting membrane potential using the fluorescent voltage reporters DiBAC4 ( 3 ) and CC2-DMPE. Dany S Adams. Department of Biology and ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://experiments.springernature.com",
+     "host_name": "experiments.springernature.com",
+     "name": "Live Imaging of Planaria - Springer Nature Experiments",
+     "date": "",
+     "snippet": "In combination with cell -permeable fluorescent dyes, this immobilization method allows for the time-lapse imaging of planaria during regeneration and other ..."
+    },
+    {
+     "rank": 5,
+     "url": "https://www.semanticscholar.org",
+     "host_name": "www.semanticscholar.org",
+     "name": "Measuring Resting Membrane Potential Using the",
+     "date": "",
+     "snippet": "Measuring Resting Membrane Potential Using the Fluorescent Voltage Reporters DiBAC4 ( 3 ) and CC2-DMPE · D. Adams, M. Levin · Published in Cold Spring Harbor ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://elifesciences.org",
+     "host_name": "elifesciences.org",
+     "name": "Optical estimation of absolute membrane potential using",
+     "date": "",
+     "snippet": "by JR Lazzari-Dean · 2019 · Cited by 97 — Here, we develop fluorescence lifetime imaging of VoltageFluor dyes (VF-FLIM) as a quantitative, all-optical approach for recording absolute ..."
+    },
+    {
+     "rank": 7,
+     "url": "https://escholarship.org",
+     "host_name": "escholarship.org",
+     "name": "Direct Current Electric Stimulation Alters the Frequency",
+     "date": "",
+     "snippet": "by D Davidian · 2021 · Cited by 2 — Oviedo NJ, Nicolas CL, Adams DS, et al. Live imaging of planarian membrane potential using DiBAC4(3 ). CSH. Protoc 2008;2008:pdb prot5055. 44 ..."
+    }
+   ],
+   "extracts": [
+    {
+     "kind": "blocker",
+     "drug": "DiBAC4",
+     "quote": "by NJ Oviedo · 2008 · Cited by 72 — INTRODUCTION. This protocol describes how to use the anionic membrane voltage -reporting dye DiBAC4( 3 ) to generate images of cell membrane potential in live ...",
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host": "pmc.ncbi.nlm.nih.gov",
+     "name": "Live Imaging of Planarian Membrane Potential Using DiBAC4(3)",
+     "rank": 0
+    },
+    {
+     "kind": "blocker",
+     "drug": "DiBAC4",
+     "quote": "by DS Adams · 2012 · Cited by 173 — Measuring resting membrane potential using the fluorescent voltage reporters DiBAC4 ( 3 ) and CC2-DMPE. Dany S Adams. Department of Biology and ...",
+     "url": "https://europepmc.org",
+     "host": "europepmc.org",
+     "name": "Measuring resting membrane potential using the",
+     "rank": 3
+    },
+    {
+     "kind": "blocker",
+     "drug": "DiBAC4",
+     "quote": "Measuring Resting Membrane Potential Using the Fluorescent Voltage Reporters DiBAC4 ( 3 ) and CC2-DMPE · D. Adams, M. Levin · Published in Cold Spring Harbor ...",
+     "url": "https://www.semanticscholar.org",
+     "host": "www.semanticscholar.org",
+     "name": "Measuring Resting Membrane Potential Using the",
+     "rank": 5
+    },
+    {
+     "kind": "blocker",
+     "drug": "DiBAC4",
+     "quote": "by D Davidian · 2021 · Cited by 2 — Oviedo NJ, Nicolas CL, Adams DS, et al. Live imaging of planarian membrane potential using DiBAC4(3 ). CSH. Protoc 2008;2008:pdb prot5055. 44 ...",
+     "url": "https://escholarship.org",
+     "host": "escholarship.org",
+     "name": "Direct Current Electric Stimulation Alters the Frequency",
+     "rank": 7
+    }
+   ]
+  },
+  {
+   "index": 112,
+   "id": "C08-durant2016-review",
+   "query": "Durant 2016 Regeneration 3:101-113 'Physiological controls of large-scale patterning in planarian regeneration': overview of bioelectric signaling via ion channels and GJs in planaria PMID 27499881 / doi:10.1002/reg2.54 planaria AP axis n/a (review) C08-durant2016-review",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Physiological controls of large-scale patterning in planarian",
+     "date": "",
+     "snippet": "by F Durant · 2016 · Cited by 75 — Here, we overview the multi- scale problem of understanding pattern regulation in planaria , with specific focus on bioelectric signaling via ion ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://chrisfieldsresearch.com",
+     "host_name": "chrisfieldsresearch.com",
+     "name": "The role of early bioelectric signals in the regeneration of",
+     "date": "",
+     "snippet": "by F Durant · Cited by 132 — Durant, F., D. Lobo, J. Hammelman, and M. Levin. 2016. Physiological controls of large-scale patterning in planarian regeneration : a molecular and ... Read more 41 pages"
+    },
+    {
+     "rank": 2,
+     "url": "https://www.semanticscholar.org",
+     "host_name": "www.semanticscholar.org",
+     "name": "Figure 4 from Physiological controls of large‐scale",
+     "date": "",
+     "snippet": "This work overviews the multi‐ scale problem of understanding pattern regulation in planaria , with specific focus on bioelectric signaling via ion channels ..."
+    },
+    {
+     "rank": 3,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Physiological controls of large‐scale patterning in planarian",
+     "date": "",
+     "snippet": "by F Durant · 2016 · Cited by 75 — Here, we overview the multi‐ scale problem of understanding pattern regulation in planaria , with specific focus on bioelectric signaling via ion channels and gap ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://www.academia.edu",
+     "host_name": "www.academia.edu",
+     "name": "The Role of Early Bioelectric Signals in the Regeneration",
+     "date": "",
+     "snippet": "Bioelectric signaling at 3 h post-amputation is crucial for anterior-posterior polarity establishment in planaria . Manipulating the bioelectric state alters ..."
+    },
+    {
+     "rank": 5,
+     "url": "https://www.researchgate.net",
+     "host_name": "www.researchgate.net",
+     "name": "The Role of Early Bioelectric Signals in the Regeneration",
+     "date": "",
+     "snippet": "Here, we overview the multi- scale problem of understanding pattern regulation in planaria , with specific focus on bioelectric signaling via ion channels and ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://rsscience.com",
+     "host_name": "rsscience.com",
+     "name": "Planarian, the Master of Regeneration",
+     "date": "",
+     "snippet": "A fragment of planarian can regrow into a new animal in two weeks. Genes such as notum and wnt1, instruct the planarian where to grow a head and a tail."
+    },
+    {
+     "rank": 7,
+     "url": "https://escholarship.org",
+     "host_name": "escholarship.org",
+     "name": "Direct Current Electric Stimulation Alters the Frequency",
+     "date": "",
+     "snippet": "by D Davidian · 2021 · Cited by 2 — Durant F, Bischof J, Fields C, et al. The role of early bioelectric signals in the regeneration of planarian anteri- or/posterior polarity."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 113,
+   "id": "C09-pezzulo2021-claim",
+   "query": "Pezzulo, LaPalme, Durant, Levin 2021 Phil Trans R Soc B: stochastic regenerative phenotypes reinterpreted via bistable bioelectric memory circuits; bioelectric changes storable in tissue for over one week (long-term re-writable memory medium) PMID 33550952 / doi:10.1098/rstb.2019.0765 planaria somatic tissue bioelectric perturbation, identical protocol C09-pezzulo2021-claim",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Bistability of somatic pattern memories: stochastic outcomes in",
+     "date": "",
+     "snippet": "by G Pezzulo · 2021 · Cited by 60 — We propose a new interpretation of recent stochastic regenerative phenotypes in planaria, by appealing to computational models of memory representation and ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://rs.figshare.com",
+     "host_name": "rs.figshare.com",
+     "name": "Supplementary data from Bistability of somatic pattern",
+     "date": "Dec 29, 2020",
+     "snippet": "Dec 29, 2020 — We propose a new interpretation of recent stochastic regenerative phenotypes in planaria, by appealing to computational models of memory ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://as.tufts.edu",
+     "host_name": "as.tufts.edu",
+     "name": "Bioelectricity | Department of Biology",
+     "date": "",
+     "snippet": "Levin , M. ( 2021 ) Cell, 184(8): 1971-1989. Bistability of Somatic Pattern Memories : Stochastic Outcomes in Bioelectric Circuits Underlying Regeneration Pezzulo ..."
+    },
+    {
+     "rank": 3,
+     "url": "https://drmichaellevin.org",
+     "host_name": "drmichaellevin.org",
+     "name": "Peer-Reviewed Papers",
+     "date": "",
+     "snippet": "Pezzulo , G., Lapalme , J., Durant , F., and Levin , M. ( 2021 ), Bistability of Somatic Pattern Memories : Stochastic Outcomes in Bioelectric Circuits Underlying ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://www.chrisfieldsresearch.com",
+     "host_name": "www.chrisfieldsresearch.com",
+     "name": "Long-Term, Stochastic Editing of Regenerative Anatomy",
+     "date": "",
+     "snippet": "by F Durant · 2017 · Cited by 181 — ABSTRACT We show that regenerating planarians' normal anterior-posterior pattern can be permanently rewritten by a brief perturbation of ... Read more 13 pages"
+    },
+    {
+     "rank": 5,
+     "url": "https://sites.google.com/site/giovannipezzulo/home/publications",
+     "host_name": "sites.google.com",
+     "name": "Giovanni Pezzulo - Publications",
+     "date": "",
+     "snippet": "... Bistability of Somatic Pattern Memories : Stochastic Outcomes in Bioelectric Circuits Underlying Regeneration . Philosophical Transactions of the Royal Society ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://www.semanticscholar.org",
+     "host_name": "www.semanticscholar.org",
+     "name": "Long-Term, Stochastic Editing of Regenerative Anatomy",
+     "date": "",
+     "snippet": "Long - Term , Stochastic Editing of Regenerative Anatomy via Targeting Endogenous Bioelectric Gradients · 133 Citations · 119 References."
+    },
+    {
+     "rank": 7,
+     "url": "https://glab.caltech.edu",
+     "host_name": "glab.caltech.edu",
+     "name": "Publications",
+     "date": "",
+     "snippet": "CA-IV-directed small-molecule shuttle enables targeted brain delivery of biologics · ESCRT-0 regulates AMPA receptor currents and Ca 2+ -dependent signaling · AAV ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 114,
+   "id": "C10-marsh-beams-1952",
+   "query": "Marsh G & Beams HW 1952 J Cell Comp Physiol 'Electrical control of morphogenesis in regenerating Dugesia tigrina I. Relation of axial polarity to field strength' — the founding quantitative claim: externally applied field strength determines/regenerates axial polarity doi:10.1002/jcp.1030390203 (PMID 14946235) Dugesia tigrina whole fragment applied DC electric field, strength-varied C10-marsh-beams-1952",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Electrical control of morphogenesis in regenerating",
+     "date": "",
+     "snippet": "by G MARSH · 1952 · Cited by 133 — Electrical control of morphogenesis in regenerating Dugesia tigrina . I. Relation of axial polarity to field strength. J Cell Comp Physiol. 1952 Apr;39(2):191- ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://www.semanticscholar.org",
+     "host_name": "www.semanticscholar.org",
+     "name": "Electrical control of morphogenesis in regenerating",
+     "date": "",
+     "snippet": "; Electrical control of morphogenesis in regenerating Dugesia tigrina . I. Relation of axial polarity to field strength. Marsh and Harold W. Beams}, 1 April 1952 ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://www.scilit.com",
+     "host_name": "www.scilit.com",
+     "name": "Electrical control of morphogenesis in regenerating",
+     "date": "",
+     "snippet": "Electrical control of morphogenesis in regenerating dugesia tigrina . I. Relation of axial polarity to field strength. GMGordon Marsh. Gordon Marsh."
+    },
+    {
+     "rank": 3,
+     "url": "https://www.researchgate.net",
+     "host_name": "www.researchgate.net",
+     "name": "Volume Resistivity of Regenerating Dugesia",
+     "date": "Jul 14, 2026",
+     "snippet": "Jul 14, 2026 — Gordon Marsh · View · Electrical control of morphogenesis in regenerating dugesia tigrina . I. Relation of axial polarity to field strength."
+    },
+    {
+     "rank": 4,
+     "url": "https://doi.org",
+     "host_name": "doi.org",
+     "name": "The effect of sixty‐cycle AC current on the regeneration",
+     "date": "",
+     "snippet": "J . Cell . and Comp . Physiol ., 59: 273–280. ... Marsh , G ., and H. W. Beams 1952 Electrical control of morphogenesis in regenerating Dugesia tigrina . I. Relation of ..."
+    },
+    {
+     "rank": 5,
+     "url": "https://chrisfieldsresearch.com",
+     "host_name": "chrisfieldsresearch.com",
+     "name": "The role of early bioelectric signals in the regeneration of",
+     "date": "",
+     "snippet": "by F Durant · Cited by 132 — regenerating flatworms. Marsh, G., and H. W. Beams. 1952. Electrical control of morphogenesis in regenerating dugesia tigrina . I. Relation of axial polarity to ... 41 pages"
+    },
+    {
+     "rank": 6,
+     "url": "https://www.vliz.be",
+     "host_name": "www.vliz.be",
+     "name": "Modulation of regeneration of planarians Dugesia tigrina (",
+     "date": "",
+     "snippet": "by Z Rogdestvenskaya · 2001 · Cited by 9 — Dugesia tigrina … a quantitative parameter of growth during regeneration . regeneration could be either stimulated or inhibited by Ca2+-CMF or K+-CMF ..."
+    },
+    {
+     "rank": 7,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Physiological controls of large‐scale patterning in planarian",
+     "date": "",
+     "snippet": "by F Durant · 2016 · Cited by 75 — J. & Marsh, G. (1952). Electrical control of morphogenesis in regenerating Dugesia tigrina . Electrical control of growth polarity in regenerating Dugesia ..."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 115,
+   "id": "C11-chernet2013-xenopus",
+   "query": "Chernet & Levin 2013 DMM: depolarized Vmem is the signature of induced tumor-like structures (Gli1/KrasG12D/Xrel3/p53); GlyRF99A + 70 mM Cl- forces hyperpolarization measured at -19.4 mV vs untreated siblings by electrophysiological impalement (n=5, P<0.001); hyperpolarization suppresses ITLS incidence PMID 23471912 / doi:10.1242/dmm.010835 Xenopus laevis ITLS regions vs surrounding tissue GlyRF99A chloride-channel expression in 70 mM Cl- (hyperpolarizing); ivermectin (depolarizing, 4-fold ITLS increase) C11-chernet2013-xenopus",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://journals.biologists.com",
+     "host_name": "journals.biologists.com",
+     "name": "Transmembrane voltage potential is an essential cellular",
+     "date": "",
+     "snippet": "Tadpole cells expressing GlyRF99A in 70 mM Cl − were hyperpolarized by 19.4 mV compared with controls ( untreated siblings ) ( n = 5 , P<0.001) (supplementary ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Transmembrane voltage potential of somatic cells controls",
+     "date": "",
+     "snippet": "by BT Chernet · 2014 · Cited by 135 — Here, we use mRNA encoding human tumor inducers ( Gli1 , XRel3 , KRAS) in Xenopus laevis embryos to initiate growth of tumor like structures (ITLS) that highly ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://www.merckmillipore.com",
+     "host_name": "www.merckmillipore.com",
+     "name": "Transmembrane voltage potential is an essential cellular",
+     "date": "Mar 9, 2013",
+     "snippet": "Mar 9, 2013 — Depolarized membrane potential ( Vmem ) was a characteristic of induced tumor - like structures ... Gli1 , Kras(G12D ), Xrel3 or p53 (Trp248)."
+    },
+    {
+     "rank": 3,
+     "url": "https://www.researchgate.net",
+     "host_name": "www.researchgate.net",
+     "name": "(PDF) Membrane potential and cancer progression",
+     "date": "",
+     "snippet": "This review aims to provide a broad understanding of the Vm as a bioelectrical signal in cancer cells by examining several key types of ion channels that ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://www.oncotarget.com",
+     "host_name": "www.oncotarget.com",
+     "name": "Voltage-dependent K+ channels as oncotargets in",
+     "date": "Jun 1, 2012",
+     "snippet": "Jun 1, 2012 — The current standardized protocol to combat malignant gliomas includes maximal surgical resection followed by radiotherapy and temozolomide-."
+    },
+    {
+     "rank": 5,
+     "url": "https://www.frontiersin.org",
+     "host_name": "www.frontiersin.org",
+     "name": "Voltage-Gated Potassium Channels as Regulators of Cell",
+     "date": "",
+     "snippet": "by M Bachmann · 2020 · Cited by 102 — In this review we will focus our attention on the members of the classical voltage-gated Kv channel family, who were among the first channels to be linked to ..."
+    },
+    {
+     "rank": 6,
+     "url": "https://insight.jci.org",
+     "host_name": "insight.jci.org",
+     "name": "A hyperthermic seizure unleashes a surge of spreading",
+     "date": "",
+     "snippet": "by I Aiba · 2023 · Cited by 21 — Spreading depolarization (SD) is a massive wave of cellular depolarization that slowly migrates across the brain gray matter."
+    },
+    {
+     "rank": 7,
+     "url": "https://core.ac.uk",
+     "host_name": "core.ac.uk",
+     "name": "The voltage-dependent K+ channels Kv1.3 and",
+     "date": "",
+     "snippet": "by N Comes · Cited by 170 — Some Kv channels participate in the proliferation and migration of normal and tumor cells, contributing to metastasis. Altered expression of Kv1 ... Read more 13 pages"
+    }
+   ],
+   "extracts": [
+    {
+     "kind": "concentration",
+     "drug": "Cl",
+     "value_stated": "70",
+     "unit_stated": "mM",
+     "value_mM": 70,
+     "factor_to_mM": 1,
+     "quote": "Tadpole cells expressing GlyRF99A in 70 mM Cl − were hyperpolarized by 19.4 mV compared with controls ( untreated siblings ) ( n = 5 , P<0.001) (supplementary ...",
+     "url": "https://journals.biologists.com",
+     "host": "journals.biologists.com",
+     "name": "Transmembrane voltage potential is an essential cellular",
+     "rank": 0
+    },
+    {
+     "kind": "n",
+     "value": 5,
+     "quote": "Tadpole cells expressing GlyRF99A in 70 mM Cl − were hyperpolarized by 19.4 mV compared with controls ( untreated siblings ) ( n = 5 , P<0.001) (supplementary ...",
+     "url": "https://journals.biologists.com",
+     "host": "journals.biologists.com",
+     "name": "Transmembrane voltage potential is an essential cellular",
+     "rank": 0
+    }
+   ]
+  },
+  {
+   "index": 116,
+   "id": "C12-chernet2014-xenopus",
+   "query": "Chernet & Levin 2014 Oncotarget: resting potentials of DISTANT somatic cells control oncogene (KRAS) tumorigenesis at long range — hyperpolarizing remote cells normalizes incidence PMID 24830454 / doi:10.18632/oncotarget.1935 Xenopus laevis remote somatic cells -> ITLS long-range GJ-mediated bioelectric state change C12-chernet2014-xenopus",
+   "retrieved": "2026-09-17",
+   "search_ok": true,
+   "search_error": null,
+   "n_results": 8,
+   "sources_tried": [
+    {
+     "rank": 0,
+     "url": "https://pubmed.ncbi.nlm.nih.gov",
+     "host_name": "pubmed.ncbi.nlm.nih.gov",
+     "name": "Transmembrane voltage potential of somatic cells controls",
+     "date": "",
+     "snippet": "by BT Chernet · 2014 · Cited by 135 — Transmembrane voltage potential of somatic cells controls oncogene -mediated tumorigenesis at long - range . Oncotarget . 2014 May 30;5(10):3287-306. doi : ..."
+    },
+    {
+     "rank": 1,
+     "url": "https://www.oncotarget.com",
+     "host_name": "www.oncotarget.com",
+     "name": "Oncogenic KRAS sensitizes premalignant, but not",
+     "date": "",
+     "snippet": "by A Conti · 2015 · Cited by 19 — In our work, we show that G13D mutations of KRAS activate the MAPK pathway, and ERK2, but not ERK1, up-regulates Noxa basal levels. Accordingly, premalignant ..."
+    },
+    {
+     "rank": 2,
+     "url": "https://www.semanticscholar.org",
+     "host_name": "www.semanticscholar.org",
+     "name": "Transmembrane voltage potential of somatic cells controls",
+     "date": "",
+     "snippet": "This work presents a model linking resting potentials of host cells to the ability of oncogenes to initiate tumorigenesis , and implicates HDAC1 as the ..."
+    },
+    {
+     "rank": 3,
+     "url": "https://pmc.ncbi.nlm.nih.gov",
+     "host_name": "pmc.ncbi.nlm.nih.gov",
+     "name": "Transmembrane voltage potential of somatic cells controls",
+     "date": "",
+     "snippet": "by BT Chernet · 2014 · Cited by 135 — Chernet and Levin ・ the resting potentials of distant cells are critical for oncogene -dependent tumorigenesis . used human oncogenes such as mutant KRAS to ..."
+    },
+    {
+     "rank": 4,
+     "url": "https://europepmc.org",
+     "host_name": "europepmc.org",
+     "name": "Resting potential, oncogene-induced tumorigenesis, and",
+     "date": "",
+     "snippet": "by M Lobikin · 2012 · Cited by 189 — Transmembrane voltage potential of somatic cells controls oncogene -mediated tumorigenesis at long - range . Chernet BT, Levin M · Oncotarget , 5(10):3287-3306, 01 ..."
+    },
+    {
+     "rank": 5,
+     "url": "https://chrisfieldsresearch.com",
+     "host_name": "chrisfieldsresearch.com",
+     "name": "Long-range gap junctional signaling controls oncogene-",
+     "date": "Jan 19, 2015",
+     "snippet": "Jan 19, 2015 — Chernet , B. T., and Levin , M. ( 2014 ). Transmembrane voltage potential of somatic cells controls oncogene -mediated tumorigenesis at long - range . Read more 15 pages"
+    },
+    {
+     "rank": 6,
+     "url": "https://www.cancernetwork.com",
+     "host_name": "www.cancernetwork.com",
+     "name": "How Did KRAS Become an Actionable Target in Oncology?",
+     "date": "Jul 29, 2026",
+     "snippet": "Jul 29, 2026 — We started a parallel track and found compounds that bind to the forms of KRAS that cause pancreatic cancer, from our own internal work and ..."
+    },
+    {
+     "rank": 7,
+     "url": "https://research.amanote.com",
+     "host_name": "research.amanote.com",
+     "name": "(PDF) Transmembrane Voltage Potential of Somatic Cells",
+     "date": "",
+     "snippet": "Transmembrane Voltage Potential of Somatic Cells Controls Oncogene -Mediated Tumorigenesis at Long - Range by Brook T. Chernet , Michael Levin published."
+    }
+   ],
+   "extracts": []
+  },
+  {
+   "index": 117,
+   "id": "C13-betse-pietak-levin",
+   "query": "Pietak & Levin 'Exploring Instructive Physiological Signaling with the Bioelectric Tissue Simulation Engine' (BETSE): resting Vmem of the calibrated cell model -63.7 mV; simulated cell/env and Vmem range -10 to -80 mV; excitable panel: -70 mV resting fires AP-like signals, -18 mV self-excites (~100 ms period), -57 mV cell is BISTABLE — a single forced depolarization transitions it to a stable depolarized ~-14 mV state; GJ voltage-gating half-closed parameter 15 mV PMID 27458581 / doi:10.3389/fbioe.2016.00055 in-silico multicellular tissue (planaria-anchored platform) cell ensembles with GJ coupling channel expression panels (NaV/KV1/KV2), forced depolarization C13-betse-pietak-levin",
+   "retrieved": "2026-09-17",
+   "search_ok": false,
+   "search_error": "Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+   "n_results": 0,
+   "sources_tried": [],
+   "extracts": []
+  },
+  {
+   "index": 118,
+   "id": "C14-vmem-inference-layer",
+   "query": "cultivation/validation/vmem_inference.py: GHK inference from ion-transporter expression; E_K ~ -90 mV pull for K-leak/pumps; RT/F = 26.7 mV; H,K-ATPase strongest hyperpolarizing weight (Beane 2013 grounding); innexins = coupling not Vm-setting repo module (tests/test_vmem_inference.py) S. mediterranea (atlas-grounded) per cell type expression -> permeability -> GHK C14-vmem-inference-layer",
+   "retrieved": "2026-09-17",
+   "search_ok": false,
+   "search_error": "Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+   "n_results": 0,
+   "sources_tried": [],
+   "extracts": []
+  }
+ ]
+}
