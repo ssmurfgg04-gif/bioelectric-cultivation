@@ -1,0 +1,1682 @@
+{
+ "sections": {
+  "build": {
+   "library_members": 87,
+   "deep_members": 15,
+   "splice_family_size": 71079,
+   "splice_participation_per_member": 1634,
+   "harness_max_abs_diff": 1.4210854715202004e-14,
+   "canon_check": true,
+   "production_floor_asserted": true,
+   "instrument_pin_used": false,
+   "build_block_source": "exp184_deep_library.py's extended-library build block, copied verbatim (its deep_member construction + the 72 + 15 assembly)"
+  },
+  "bars_rederived": {
+   "n_star_lib": 81.523,
+   "n_star_splice": 18.666,
+   "n_star_lib_raw": 81.52274245788765,
+   "n_star_splice_raw": 18.66584223163447,
+   "machinery": "exp136's library_nn_stats + exp146's splice_family_bar on the extended structures (computed, not assumed)",
+   "exp184_deposit_reference": {
+    "n_star_lib": 81.523,
+    "n_star_splice": 18.666,
+    "n_star_pool": 32.664
+   }
+  },
+  "trace": {
+   "stages": [
+    "a_lib_novel",
+    "b_splice_family",
+    "c_splice_clear"
+   ],
+   "stage_criteria": {
+    "a_lib_novel": "nov_lib(f, extended record incl. self) > N*_lib",
+    "b_splice_family": "membership in the extended splice family (structural)",
+    "c_splice_clear": "nov_splice(f, extended family) > N*_splice"
+   },
+   "n_rows": 15,
+   "rows": [
+    {
+     "member": "deep_r-40_i0",
+     "rung": -40.0,
+     "instance": 0,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "deep_r-45_i0",
+      "dist_nearest_other_extended": 3.1622776601683795,
+      "margin_self_excluded": 78.36046479771926,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 6.324555320336759,
+       "nearest": "multi_exp94",
+       "dist_nearest": 6.324555320336759,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 6.324555320336759,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.1516668643425,
+     "J_rank_in_J_ordered_pool": 259
+    },
+    {
+     "member": "deep_r-40_i1",
+     "rung": -40.0,
+     "instance": 1,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "deep_r-45_i1",
+      "dist_nearest_other_extended": 3.1622776601683795,
+      "margin_self_excluded": 78.36046479771926,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 46.324555320336756,
+       "nearest": "exp87_05",
+       "dist_nearest": 46.324555320336756,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 39.990660124170624,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": true
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.1417199949584,
+     "J_rank_in_J_ordered_pool": 257
+    },
+    {
+     "member": "deep_r-40_i2",
+     "rung": -40.0,
+     "instance": 2,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "deep_r-45_i2",
+      "dist_nearest_other_extended": 3.1622776601683795,
+      "margin_self_excluded": 78.36046479771926,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 68.05393390966425,
+       "nearest": "exp81_gen021",
+       "dist_nearest": 68.05393390966425,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 54.503723222970564,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": true
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.1305469146572,
+     "J_rank_in_J_ordered_pool": 256
+    },
+    {
+     "member": "deep_r-45_i0",
+     "rung": -45.0,
+     "instance": 0,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "deep_r-40_i0",
+      "dist_nearest_other_extended": 3.1622776601683795,
+      "margin_self_excluded": 78.36046479771926,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 9.486832980505138,
+       "nearest": "multi_exp94",
+       "dist_nearest": 9.486832980505138,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 9.486832980505138,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.1664626046378,
+     "J_rank_in_J_ordered_pool": 261
+    },
+    {
+     "member": "deep_r-45_i1",
+     "rung": -45.0,
+     "instance": 1,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "deep_r-40_i1",
+      "dist_nearest_other_extended": 3.1622776601683795,
+      "margin_self_excluded": 78.36046479771926,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 45.20576603392815,
+       "nearest": "exp87_08",
+       "dist_nearest": 45.20576603392815,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 38.93868791622994,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": true
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.158523712153,
+     "J_rank_in_J_ordered_pool": 260
+    },
+    {
+     "member": "deep_r-45_i2",
+     "rung": -45.0,
+     "instance": 2,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "deep_r-40_i2",
+      "dist_nearest_other_extended": 3.1622776601683795,
+      "margin_self_excluded": 78.36046479771926,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 66.13526434848505,
+       "nearest": "exp81_gen021",
+       "dist_nearest": 66.13526434848505,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 54.53681490025996,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": true
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.1492994000092,
+     "J_rank_in_J_ordered_pool": 258
+    },
+    {
+     "member": "deep_r-50_i0",
+     "rung": -50.0,
+     "instance": 0,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "exp87_06",
+      "dist_nearest_other_extended": 2.8460498941515415,
+      "margin_self_excluded": 78.6766925637361,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 2.8460498941515415,
+       "nearest": "exp87_06",
+       "dist_nearest": 2.8460498941515415,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 2.8460498941515415,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.2117015129092,
+     "J_rank_in_J_ordered_pool": 264
+    },
+    {
+     "member": "deep_r-50_i1",
+     "rung": -50.0,
+     "instance": 1,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "exp87_08",
+      "dist_nearest_other_extended": 2.8460498941515415,
+      "margin_self_excluded": 78.6766925637361,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 2.8460498941515415,
+       "nearest": "exp87_08",
+       "dist_nearest": 2.8460498941515415,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 2.8460498941515415,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.2059648694879,
+     "J_rank_in_J_ordered_pool": 263
+    },
+    {
+     "member": "deep_r-50_i2",
+     "rung": -50.0,
+     "instance": 2,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "exp81_gen021",
+      "dist_nearest_other_extended": 38.84850203703984,
+      "margin_self_excluded": 42.6742404208478,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 38.84850203703984,
+       "nearest": "exp81_gen021",
+       "dist_nearest": 38.84850203703984,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 29.93818988974146,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": true
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.1989518405332,
+     "J_rank_in_J_ordered_pool": 262
+    },
+    {
+     "member": "deep_r-55_i0",
+     "rung": -55.0,
+     "instance": 0,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "deep_r-60_i0",
+      "dist_nearest_other_extended": 3.1622776601683795,
+      "margin_self_excluded": 78.36046479771926,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 15.811388300841896,
+       "nearest": "multi_exp94",
+       "dist_nearest": 15.811388300841896,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 15.811388300841896,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.28122238371634,
+     "J_rank_in_J_ordered_pool": 267
+    },
+    {
+     "member": "deep_r-55_i1",
+     "rung": -55.0,
+     "instance": 1,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "deep_r-60_i1",
+      "dist_nearest_other_extended": 3.1622776601683795,
+      "margin_self_excluded": 78.36046479771926,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 43.016620625799675,
+       "nearest": "exp87_08",
+       "dist_nearest": 43.016620625799675,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 36.99666515013617,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": true
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.27750671081697,
+     "J_rank_in_J_ordered_pool": 266
+    },
+    {
+     "member": "deep_r-55_i2",
+     "rung": -55.0,
+     "instance": 2,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "deep_r-60_i2",
+      "dist_nearest_other_extended": 3.1622776601683795,
+      "margin_self_excluded": 78.36046479771926,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 66.5721155676765,
+       "nearest": "exp81_gen021",
+       "dist_nearest": 66.5721155676765,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 55.769693463524234,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": true
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.27255473440766,
+     "J_rank_in_J_ordered_pool": 265
+    },
+    {
+     "member": "deep_r-60_i0",
+     "rung": -60.0,
+     "instance": 0,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "deep_r-55_i0",
+      "dist_nearest_other_extended": 3.1622776601683795,
+      "margin_self_excluded": 78.36046479771926,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 18.973665961010276,
+       "nearest": "multi_exp94",
+       "dist_nearest": 18.973665961010276,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 18.973665961010276,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.3683438251431,
+     "J_rank_in_J_ordered_pool": 270
+    },
+    {
+     "member": "deep_r-60_i1",
+     "rung": -60.0,
+     "instance": 1,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "deep_r-55_i1",
+      "dist_nearest_other_extended": 3.1622776601683795,
+      "margin_self_excluded": 78.36046479771926,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 45.486346689738085,
+       "nearest": "exp87_08",
+       "dist_nearest": 45.486346689738085,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 0.0,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 18.66584223163447,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 39.20018939088238,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": true
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.36630728819574,
+     "J_rank_in_J_ordered_pool": 269
+    },
+    {
+     "member": "deep_r-60_i2",
+     "rung": -60.0,
+     "instance": 2,
+     "stage_a_lib_novel": {
+      "criterion": "nov_lib(f, extended record incl. self) > N*_lib",
+      "value": 0.0,
+      "bar": 81.52274245788765,
+      "bar_rounded": 81.523,
+      "margin_bar_minus_value": 81.52274245788765,
+      "pass": false,
+      "nearest_other_extended": "deep_r-55_i2",
+      "dist_nearest_other_extended": 3.1622776601683795,
+      "margin_self_excluded": 78.36046479771926,
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_lib vs the frozen 72 (exp150's deposited machinery)",
+       "value": 68.71598073881809,
+       "nearest": "exp81_gen021",
+       "dist_nearest": 68.71598073881809,
+       "bar_extended": 81.52274245788765,
+       "pass_at_extended_bar": false,
+       "bar_frozen_deposit": 82.288,
+       "pass_at_frozen_bar": false
+      },
+      "exp184_deposit_agrees": true
+     },
+     "stage_b_splice_family": {
+      "criterion": "membership in the extended splice family (structural)",
+      "in_family": true,
+      "partners": 86,
+      "crosses_per_pair": 19,
+      "n_splices_participating": 1634,
+      "pass": true,
+      "note": "every library member participates in partners x crosses family rows; membership is structural and excludes no one"
+     },
+     "stage_c_splice_clear": {
+      "criterion": "nov_splice(f, extended family) > N*_splice",
+      "value": 1.5811388300841898,
+      "bar": 18.66584223163447,
+      "bar_rounded": 18.666,
+      "margin_bar_minus_value": 17.084703401550282,
+      "pass": false,
+      "note": "the extended family contains splices identical or near-identical to each deep member's own profile (same-rung adjacent-instance pairs at late crosses), so the splice-clear price is 0.0 for 14/15 and max 1.581 across the cohort \u2014 all far below N*_splice; reached only if (a) passed",
+      "counterfactual_had_they_been_invented": {
+       "reference": "nov_splice vs the frozen-72 family at exp150's deposited bar",
+       "value": 58.16486251369772,
+       "bar_frozen_deposit": 20.14,
+       "pass_at_frozen_bar": true
+      },
+      "exp184_deposit_agrees": true
+     },
+     "excluding_stage": "a_lib_novel",
+     "in_eligible_final": false,
+     "in_splice_clear_final": false,
+     "J": 409.36308379836566,
+     "J_rank_in_J_ordered_pool": 268
+    }
+   ],
+   "matrix_view": {
+    "members": [
+     "deep_r-40_i0",
+     "deep_r-40_i1",
+     "deep_r-40_i2",
+     "deep_r-45_i0",
+     "deep_r-45_i1",
+     "deep_r-45_i2",
+     "deep_r-50_i0",
+     "deep_r-50_i1",
+     "deep_r-50_i2",
+     "deep_r-55_i0",
+     "deep_r-55_i1",
+     "deep_r-55_i2",
+     "deep_r-60_i0",
+     "deep_r-60_i1",
+     "deep_r-60_i2"
+    ],
+    "values_a_lib_novel": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "values_c_splice_clear": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.5811388300841898
+    ],
+    "bars": [
+     81.52274245788765,
+     18.66584223163447
+    ],
+    "pass_a": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "pass_b": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "pass_c": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "excluding_stage": [
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel",
+     "a_lib_novel"
+    ]
+   }
+  },
+  "exclusion": {
+   "stage_labels": {
+    "a_lib_novel": "the LIB-NOVELTY stage (nov_lib vs N*_lib)",
+    "b_splice_family": "the SPLICE-FAMILY membership stage (structural)",
+    "c_splice_clear": "the SPLICE-CLEAR stage (nov_splice vs N*_splice)"
+   },
+   "excluding_stage_counts": {
+    "a_lib_novel": 15,
+    "b_splice_family": 0,
+    "c_splice_clear": 0
+   },
+   "majority_required": 8,
+   "carrier_stages": [
+    "a_lib_novel"
+   ],
+   "named_stage": "a_lib_novel",
+   "named_stage_label": "the LIB-NOVELTY stage (nov_lib vs N*_lib)",
+   "margin_distribution": {
+    "criterion": "N*_lib - nov_lib \u2014 the excluding stage's criterion, per member",
+    "as_run_values": [
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523
+    ],
+    "as_run": {
+     "min": 81.52274245788765,
+     "median": 81.52274245788765,
+     "max": 81.52274245788765
+    },
+    "self_excluded_values": [
+     78.36,
+     78.36,
+     78.36,
+     78.36,
+     78.36,
+     78.36,
+     78.677,
+     78.677,
+     42.674,
+     78.36,
+     78.36,
+     78.36,
+     78.36,
+     78.36,
+     78.36
+    ],
+    "self_excluded": {
+     "min": 42.6742404208478,
+     "median": 78.36046479771926,
+     "max": 78.6766925637361
+    },
+    "counterfactual_frozen72_bar_values": [
+     75.963,
+     35.963,
+     14.234,
+     72.801,
+     37.082,
+     16.153,
+     79.442,
+     79.442,
+     43.439,
+     66.477,
+     39.271,
+     15.716,
+     63.314,
+     36.802,
+     13.572
+    ],
+    "counterfactual_frozen72_bar": {
+     "min": 13.572019261181907,
+     "median": 39.27137937420032,
+     "max": 79.44195010584845
+    },
+    "note": "all margins positive \u2014 the novelty bar excludes every deep member with room; the closest approach under ANY reading is the counterfactual max nov_lib_vs_frozen72 68.716, still below the frozen bar 82.288"
+   }
+  },
+  "branches": {
+   "branches": [
+    {
+     "branch": "DISTANCE",
+     "clause": "(i) DISTANCE failure \u2014 deep programs too similar to each other (the 15 members' pairwise distances concentrated below the novelty bar)",
+     "n_pairs": 105,
+     "n_pairs_below_bar": 61,
+     "concentration_below_bar": 0.580952380952381,
+     "pairwise_min": 3.1622776601683795,
+     "pairwise_median": 77.42857142857143,
+     "pairwise_max": 99.27894568053624,
+     "n_star_lib": 81.52274245788765,
+     "nearest_other_all_below_bar": true,
+     "counterfactual_max_nov_lib_vs_frozen72": 68.71598073881809,
+     "counterfactual_frozen_bar": 82.288,
+     "counterfactual_n_novel_at_frozen_bar": 0,
+     "carried": true
+    },
+    {
+     "branch": "OUT-COMPETED",
+     "clause": "(ii) OUT-COMPETED \u2014 the 72 outrank them at a rank-cut",
+     "rank_cut_in_funnel": false,
+     "note": "the funnel is a two-threshold filter (lib-novelty, splice-clear); there is NO rank-cut stage at which the frozen 72 could outrank the deep members \u2014 every novel member is admitted regardless of J-rank (the J-ordered list only sets traversal order); the deep members' J-ranks are recorded as diagnostic",
+     "deep_J_ranks_in_J_ordered_pool": [
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270
+     ],
+     "pool_size": 270,
+     "carried": false
+    },
+    {
+     "branch": "SPLICE-PRICED",
+     "clause": "(iii) SPLICE-PRICED \u2014 their splices price above N*_splice",
+     "n_above_extended_bar": 0,
+     "max_nov_splice_extended": 1.5811388300841898,
+     "n_star_splice": 18.66584223163447,
+     "counterfactual_n_above_frozen_bar": 9,
+     "counterfactual_frozen_bar": 20.14,
+     "carried": false
+    }
+   ],
+   "carried_branches": [
+    "DISTANCE"
+   ],
+   "branch_named": "DISTANCE",
+   "consistency_with_exclusion_stage": {
+    "stage_to_branch": {
+     "a_lib_novel": "DISTANCE",
+     "c_splice_clear": "SPLICE-PRICED"
+    },
+    "note": "the lib-novelty stage's criterion IS a distance criterion \u2014 branch (i) is its mechanism; a splice-clear carrier would map to branch (iii); branch (ii) has no stage to carry (no rank-cut exists)"
+   }
+  },
+  "funnel_census": {
+   "this_run": {
+    "pool": 270,
+    "pool_search_only": 255,
+    "lib_novel": 88,
+    "splice_clear": 88
+   },
+   "exp184_deposit": {
+    "pool": 270,
+    "pool_search_only": 255,
+    "lib_novel": 88,
+    "splice_clear": 88
+   },
+   "match": true,
+   "n_deep_in_eligible": 0,
+   "n_deep_in_splice_clear": 0
+  },
+  "hygiene": {
+   "rejections_total": 0,
+   "rejections_note": "no price_rung/emit instrument is part of this anatomy's registered instruments \u2014 the three stages compute criterion values (nov_lib, membership, nov_splice) only, which cannot reject; rejections structurally zero, disclosed (the exp187 C4 disclosure pattern)",
+   "bars": {
+    "n_star_lib": 81.523,
+    "n_star_splice": 18.666,
+    "n_star_pool": 32.664
+   },
+   "bars_bit_match_exp184": true,
+   "funnel_census_match": true,
+   "deep_fate_criterion_bitmatch": true,
+   "deep_fate_checks": [
+    {
+     "member": "deep_r-40_i0",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-40_i1",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-40_i2",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-45_i0",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-45_i1",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-45_i2",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-50_i0",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-50_i1",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-50_i2",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-55_i0",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-55_i1",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-55_i2",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-60_i0",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-60_i1",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    },
+    {
+     "member": "deep_r-60_i2",
+     "checks": {
+      "nov_lib_extended": true,
+      "nov_lib_vs_frozen72": true,
+      "nearest_frozen72": true,
+      "dist_nearest_frozen72": true,
+      "nov_splice_extended": true,
+      "nov_splice_vs_frozen72": true,
+      "J": true,
+      "novel": true,
+      "in_eligible": true,
+      "in_splice_clear": true
+     },
+     "all": true
+    }
+   ],
+   "nn_matrix_harness": "anatomy Dm matrix == library_nn_stats's NN column (array_equal)",
+   "fast_evaluator_harness_max_abs_diff": 1.4210854715202004e-14
+  }
+ },
+ "gates": {
+  "P1": {
+   "gate": "P1",
+   "clause": "per-member trace: each of the 15 deep members traced through (a) lib-novel distance vs N*_lib (the member's nearest-library distance, the criterion value, PASS/FAIL); (b) splice-family membership (in/out, the splice count); (c) splice-clear price vs N*_splice. The full trace table deposited (15 rows x 3 stages)",
+   "n_rows": 15,
+   "n_stages_per_row": 3,
+   "complete": true,
+   "pass": true
+  },
+  "P2": {
+   "gate": "P2",
+   "clause": "the excluding stage NAMED: exactly one stage carries the exclusion for the majority (>= 8/15): the deposit names it and the criterion's per-member margin distribution",
+   "excluding_stage_counts": {
+    "a_lib_novel": 15,
+    "b_splice_family": 0,
+    "c_splice_clear": 0
+   },
+   "majority_required": 8,
+   "carrier_stages": [
+    "a_lib_novel"
+   ],
+   "named_stage": "a_lib_novel",
+   "named_stage_label": "the LIB-NOVELTY stage (nov_lib vs N*_lib)",
+   "margin_distribution": {
+    "criterion": "N*_lib - nov_lib \u2014 the excluding stage's criterion, per member",
+    "as_run_values": [
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523,
+     81.523
+    ],
+    "as_run": {
+     "min": 81.52274245788765,
+     "median": 81.52274245788765,
+     "max": 81.52274245788765
+    },
+    "self_excluded_values": [
+     78.36,
+     78.36,
+     78.36,
+     78.36,
+     78.36,
+     78.36,
+     78.677,
+     78.677,
+     42.674,
+     78.36,
+     78.36,
+     78.36,
+     78.36,
+     78.36,
+     78.36
+    ],
+    "self_excluded": {
+     "min": 42.6742404208478,
+     "median": 78.36046479771926,
+     "max": 78.6766925637361
+    },
+    "counterfactual_frozen72_bar_values": [
+     75.963,
+     35.963,
+     14.234,
+     72.801,
+     37.082,
+     16.153,
+     79.442,
+     79.442,
+     43.439,
+     66.477,
+     39.271,
+     15.716,
+     63.314,
+     36.802,
+     13.572
+    ],
+    "counterfactual_frozen72_bar": {
+     "min": 13.572019261181907,
+     "median": 39.27137937420032,
+     "max": 79.44195010584845
+    },
+    "note": "all margins positive \u2014 the novelty bar excludes every deep member with room; the closest approach under ANY reading is the counterfactual max nov_lib_vs_frozen72 68.716, still below the frozen bar 82.288"
+   },
+   "pass": true
+  },
+  "P3": {
+   "gate": "P3",
+   "clause": "the mechanism clause: the pre-named branches (i) DISTANCE failure \u2014 deep programs too similar to each other (the 15 members' pairwise distances concentrated below the novelty bar); (ii) OUT-COMPETED \u2014 the 72 outrank them at a rank-cut; (iii) SPLICE-PRICED \u2014 their splices price above N*_splice. All branches complete the gate",
+   "branches": [
+    {
+     "branch": "DISTANCE",
+     "clause": "(i) DISTANCE failure \u2014 deep programs too similar to each other (the 15 members' pairwise distances concentrated below the novelty bar)",
+     "n_pairs": 105,
+     "n_pairs_below_bar": 61,
+     "concentration_below_bar": 0.580952380952381,
+     "pairwise_min": 3.1622776601683795,
+     "pairwise_median": 77.42857142857143,
+     "pairwise_max": 99.27894568053624,
+     "n_star_lib": 81.52274245788765,
+     "nearest_other_all_below_bar": true,
+     "counterfactual_max_nov_lib_vs_frozen72": 68.71598073881809,
+     "counterfactual_frozen_bar": 82.288,
+     "counterfactual_n_novel_at_frozen_bar": 0,
+     "carried": true
+    },
+    {
+     "branch": "OUT-COMPETED",
+     "clause": "(ii) OUT-COMPETED \u2014 the 72 outrank them at a rank-cut",
+     "rank_cut_in_funnel": false,
+     "note": "the funnel is a two-threshold filter (lib-novelty, splice-clear); there is NO rank-cut stage at which the frozen 72 could outrank the deep members \u2014 every novel member is admitted regardless of J-rank (the J-ordered list only sets traversal order); the deep members' J-ranks are recorded as diagnostic",
+     "deep_J_ranks_in_J_ordered_pool": [
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270
+     ],
+     "pool_size": 270,
+     "carried": false
+    },
+    {
+     "branch": "SPLICE-PRICED",
+     "clause": "(iii) SPLICE-PRICED \u2014 their splices price above N*_splice",
+     "n_above_extended_bar": 0,
+     "max_nov_splice_extended": 1.5811388300841898,
+     "n_star_splice": 18.66584223163447,
+     "counterfactual_n_above_frozen_bar": 9,
+     "counterfactual_frozen_bar": 20.14,
+     "carried": false
+    }
+   ],
+   "carried_branches": [
+    "DISTANCE"
+   ],
+   "branch_named": "DISTANCE",
+   "consistent_with_exclusion_stage": true,
+   "pass": true
+  },
+  "P4": {
+   "gate": "P4",
+   "clause": "hygiene: zero rejections in any price computed; the bars re-derive bit-identically to exp184's deposit",
+   "rejections_total": 0,
+   "rejections_note": "no price_rung/emit instrument is part of this anatomy's registered instruments \u2014 the three stages compute criterion values (nov_lib, membership, nov_splice) only, which cannot reject; rejections structurally zero, disclosed (the exp187 C4 disclosure pattern)",
+   "bars_this_run": {
+    "n_star_lib": 81.523,
+    "n_star_splice": 18.666,
+    "n_star_pool": 32.664
+   },
+   "bars_exp184_deposit": {
+    "n_star_lib": 81.523,
+    "n_star_splice": 18.666,
+    "n_star_pool": 32.664
+   },
+   "bars_bit_identical": true,
+   "funnel_census": {
+    "this_run": {
+     "pool": 270,
+     "pool_search_only": 255,
+     "lib_novel": 88,
+     "splice_clear": 88
+    },
+    "exp184_deposit": {
+     "pool": 270,
+     "pool_search_only": 255,
+     "lib_novel": 88,
+     "splice_clear": 88
+    },
+    "match": true,
+    "n_deep_in_eligible": 0,
+    "n_deep_in_splice_clear": 0
+   },
+   "funnel_census_match": true,
+   "deep_fate_criterion_bitmatch": true,
+   "pass": true
+  }
+ },
+ "exp": "exp189_funnel_exclusion_anatomy",
+ "claim": "THE FUNNEL EXCLUSION ANATOMY (exp184's registered next, L160): exp184's funnel excludes ALL 15 all-deep members (0/15 eligible) even when the library contains them. THIS RUN traces each deep member through every stage with exp184's extended-library machinery verbatim (its build block copied; exp141/exp146/exp150's funnel functions): (a) lib-novel distance vs N*_lib, (b) splice-family membership, (c) splice-clear price vs N*_splice; names the excluding stage and the mechanism branch from the pre-named set {DISTANCE, OUT-COMPETED, SPLICE-PRICED}; bars RE-DERIVED bit-exactly against exp184's deposit",
+ "result_line": {
+  "excluding_stage": "a_lib_novel",
+  "excluding_stage_label": "the LIB-NOVELTY stage (nov_lib vs N*_lib)",
+  "branch": "DISTANCE",
+  "n_excluded_at_named_stage": 15
+ },
+ "pre_registered": {
+  "gates_source": "module docstring, committed before any run (pre-registration; gates P1-P4 fixed there, each evaluated exactly once)",
+  "gates": [
+   "P1 per-member trace: (a) lib-novel distance vs N*_lib; (b) splice-family membership (in/out, the splice count); (c) splice-clear price vs N*_splice; the full trace table deposited (15 rows x 3 stages)",
+   "P2 the excluding stage NAMED: exactly one stage carries the exclusion for the majority (>= 8/15), with the criterion's per-member margin distribution",
+   "P3 the mechanism clause: pre-named branches (i) DISTANCE failure, (ii) OUT-COMPETED at a rank-cut, (iii) SPLICE-PRICED; all branches complete the gate",
+   "P4 hygiene: zero rejections in any price computed; the bars re-derive bit-identically to exp184's deposit"
+  ],
+  "instruments": "exp184's extended-library build block (copied verbatim) + exp141/exp146/exp150's funnel functions via exp136/exp146 imports; search seed 141 for N*_pool's corpus re-derivation",
+  "cohort": "15 all-deep members = exp172's uniform-rung construction (rungs {-40,-45,-50,-55,-60} x 3 MULTI-zone layout shifts +i cells, i = 0..2) inside exp184's 87-member extended library",
+  "bars": "RE-DERIVED on the extended structures (computed, not assumed); bit-exact vs exp184's deposit required by P4",
+  "tie_break": "member index ascending (J-ordered funnel index)"
+ },
+ "stage_order": [
+  "extended_library_build (exp184's block verbatim: 72 frozen + 15 all-deep exp172 constructions)",
+  "n_star_lib_rederived (exp136's library_nn_stats on the extended library) + anatomy distance matrix (harness: array_equal to the machinery's NN column)",
+  "splice_family_rederived (71079) + harness (400 pairs, max|fast-verbatim| < 1e-9) + n_star_splice_rederived (exp146's splice_family_bar)",
+  "deep_members_criterion_records (exp184's 2b formulas verbatim: nov_lib, quad_err/J, class_tags, both splice readings, nearest-other identities)",
+  "trace_table_built (15 rows x 3 stages, margins, counterfactuals)",
+  "search_rerun_seed141 (exp141's loop VERBATIM via exp184's section 2; needed only for N*_pool's corpus)",
+  "deep_members_appended_to_pool (exp184's 2b verbatim)",
+  "funnel_rederived (lib-novelty -> splice-clear, exp184's section 3 verbatim)",
+  "n_star_pool_rederived_BEFORE_selection (exp184's section 4 verbatim)",
+  "hygiene (bars bit-exact vs exp184, funnel census, deep-fate criterion bit-match, zero rejections)",
+  "gates_evaluated"
+ ],
+ "smoke_disclosure": "a --smoke check (extended-library build + re-derived N*_lib/N*_splice + the 15-row trace table) ran before the credited run and was discarded (no file)",
+ "verdict": "4/4 gates (P1 P2 P3 P4)",
+ "wall_s": 274.0
+}
