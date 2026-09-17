@@ -277,7 +277,7 @@ class RandomMedium:
                 if self.hyperedges:
                     Badd = np.zeros((n, n), complex)
                     for k, (members, w_e) in enumerate(self.hyperedges):
-                        if self.hyper_on[k, t]:
+                        if self.hyper_on[t, k]:
                             c = w_e / (len(members) - 1)
                             for a in range(len(members)):
                                 for b in range(a + 1, len(members)):
