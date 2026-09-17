@@ -457,11 +457,41 @@ def read_temporal(medium, seed: int, return_state: bool = False) -> dict:
     return out
 
 
+# ------------------- the SCOPED arm (exp178's wiring, ADDITIVE) --------
+def read_scoped(medium, seed: int, return_state: bool = False,
+                f_max: float | None = None) -> dict:
+    """THE SCOPED READ (exp178's production wiring — ONE arm, ONE
+    function, zero knobs): exp169's f_max diagnostic VERBATIM (one
+    source of truth for the flip clock's concentration) with the
+    pre-registered threshold; the rule selects R_T (exp167's adopted
+    path) iff f_max < 32.0, else the existing temporal path above
+    UNCHANGED. f_max is computed from the medium's frames via exp169's
+    f_max_frames; for PAIRED constructions (FlipPairMedium) the unit of
+    scoping is the PAIR — pass the PAIR-JOINT max (max over the two
+    schedule members, exp169's _pair_fmax semantics) via f_max.
+    Lazy imports: exp167/exp169 both import this module, so a
+    top-level import would be circular; the scoped arm is their only
+    consumer. The existing arms are untouched (this arm must be
+    requested)."""
+    from experiments.exp167_rt_adopted import read_adopted
+    from experiments.exp169_rt_scoping import THRESHOLD, f_max_frames
+    if f_max is None:
+        f_max = f_max_frames(list(medium.snapshots()))
+    if f_max < THRESHOLD:
+        return read_adopted(medium, seed, return_state)   # R_T (exp167)
+    return read_temporal(medium, seed, return_state)      # raw (unchanged)
+
+
 # ------------------------------------------------------------ helpers
 def decode(arm: str, medium, seed: int,
-           return_state: bool = False) -> dict:
+           return_state: bool = False,
+           f_max: float | None = None) -> dict:
     """Dispatch one decode; a rejection is RECORDED, never raised
-    (exp142's zero-rejection hygiene; the caller counts)."""
+    (exp142's zero-rejection hygiene; the caller counts). The additive
+    "scoped" arm (exp178's wiring) takes the PAIR-JOINT f_max for
+    paired constructions via the optional f_max argument (None =>
+    compute from the medium's own frames); every pre-existing arm and
+    caller is unchanged."""
     if arm == "mag":
         fn = lambda med, s, st: read_mag(project_magnitude(med), s, st)
     elif arm == "sign":
@@ -470,6 +500,8 @@ def decode(arm: str, medium, seed: int,
         fn = read_phase
     elif arm == "temporal":
         fn = read_temporal
+    elif arm == "scoped":
+        fn = lambda med, s, st: read_scoped(med, s, st, f_max=f_max)
     else:
         raise ValueError(arm)
     try:
