@@ -1,0 +1,2089 @@
+{
+ "exp": "exp170_rt_x_rh_corner011",
+ "claim": "exp145's registered follow-up via L145/L147: the R_T x R_H CROSS-CHECK on the 011 h+t corner cell (c=3, exp166's above-bar tail 9/50, cell median 1.075 vs clean 0.670) \u2014 the COMPOSED zero-knob rule (R_T mask-then-R_H augment, F' from the masked frames) vs both single rules and the reversed order on exp166's spot protocol verbatim (10 instances x seeds 1,2,3 = 30 decodes per arm, exp148's read_temporal via exp166's dispatch, NEURAL_SPEC_MIN pinned to the deposited -35.0 floor)",
+ "pre_registration": {
+  "registered_next_source": "L147 (exp167): R_T x R_H cross-check on the 011 corner cell \u2014 L145's registered follow-up",
+  "pre_reg_commit": "319c352",
+  "docstring": "unchanged (gates C1-C4 + arms + composition order fixed before any decode)",
+  "arms": {
+   "A0": "raw \u2014 exp160's stack verbatim, no rule (decoded on the medium)",
+   "A1": "R_T alone \u2014 rule_temporal_core on the frames",
+   "A2": "R_H alone \u2014 rule_hyper_S on the frames (F from raw pooled |W|)",
+   "A3": "COMPOSED PRIMARY \u2014 mask-then-augment (R_T first, R_H's F' from the masked frames)",
+   "A4": "reversed \u2014 augment-then-mask (R_H with F from raw frames, then R_T masks)"
+  },
+  "composition": {
+   "primary": "mask-then-augment: frames' = R_T(frames); R_H's F' = pooled median nonzero |W| of the MASKED frames (the augmentation reads the window it will decode); on the flip-quiet window the flip clock is 0, so A_ext = A_masked + F'*S with S the medium's co-hyperedge adjacency",
+   "reversed": "augment-then-mask: frames'' = R_H(frames) with F from the RAW frames; then R_T masks the augmented frames"
+  },
+  "seed_rule": "166166 + 1000*3 + j, j = 0..9 (cell c=3); seeds (1,2,3); 30 decodes per arm"
+ },
+ "config": {
+  "read_stack": "exp148's read_temporal VERBATIM via exp166's dispatch (exp145 PN1/PN2 + TC1 flip-clock + TC2 A_ext=A+F + exp142's execute_signed, spec exp94 MULTI, STAR_OP); the rule lives entirely in the frames a wrapper yields",
+  "fingerprint": "8e11e88c1c2f1518",
+  "fingerprint_asserted_eq_exp166": true,
+  "n": 100,
+  "cell": 3,
+  "cell_dims": {
+   "oriented": false,
+   "signed": false,
+   "complex": false,
+   "hyper": true,
+   "temporal": true
+  },
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "spot_j": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "spot_protocol": "exp166's P4 verbatim (rules applied to frames, wrapped, read verbatim)"
+ },
+ "instrument_pin": {
+  "constant": "NEURAL_SPEC_MIN",
+  "pinned_to": -35.0,
+  "working_tree_values_seen": {
+   "cultivation.bioelectric.collective": -60.0,
+   "experiments.exp142_sign_read": -60.0,
+   "experiments.exp145_phase_read": -60.0,
+   "experiments.exp148_temporal_read": -60.0,
+   "experiments.exp94_multizone_scale": -60.0
+  },
+  "modules": [
+   "cultivation.bioelectric.collective",
+   "experiments.exp142_sign_read",
+   "experiments.exp145_phase_read",
+   "experiments.exp148_temporal_read",
+   "experiments.exp94_multizone_scale"
+  ],
+  "save_restore_ok": true,
+  "reason": "exp166's deposit predates CF-1 (exp168's -60.0 core patch); the pin restores the deposited -35.0 floor world for this run only (exp167's mechanism, disclosed pre-run)"
+ },
+ "deposits_read": {
+  "exp166_leading_edge": {
+   "cell_011_main_battery": {
+    "median_err": 1.0750000000000002,
+    "n_above_bar": 9,
+    "n": 50
+   },
+   "config_fingerprint": "8e11e88c1c2f1518"
+  },
+  "exp160_pooled_median_mV": 0.63
+ },
+ "spot_set": {
+  "instances": [
+   {
+    "j": 0,
+    "gen_seed": 169166,
+    "n_hyper": 18,
+    "p_keep": 0.783,
+    "T": 8,
+    "violated": [
+     "A-PAIR",
+     "A-STAT"
+    ]
+   },
+   {
+    "j": 1,
+    "gen_seed": 169167,
+    "n_hyper": 4,
+    "p_keep": 0.666,
+    "T": 8,
+    "violated": [
+     "A-PAIR",
+     "A-STAT"
+    ]
+   },
+   {
+    "j": 2,
+    "gen_seed": 169168,
+    "n_hyper": 17,
+    "p_keep": 0.692,
+    "T": 8,
+    "violated": [
+     "A-PAIR",
+     "A-STAT"
+    ]
+   },
+   {
+    "j": 3,
+    "gen_seed": 169169,
+    "n_hyper": 11,
+    "p_keep": 0.844,
+    "T": 8,
+    "violated": [
+     "A-PAIR",
+     "A-STAT"
+    ]
+   },
+   {
+    "j": 4,
+    "gen_seed": 169170,
+    "n_hyper": 18,
+    "p_keep": 0.809,
+    "T": 8,
+    "violated": [
+     "A-PAIR",
+     "A-STAT"
+    ]
+   },
+   {
+    "j": 5,
+    "gen_seed": 169171,
+    "n_hyper": 8,
+    "p_keep": 0.794,
+    "T": 8,
+    "violated": [
+     "A-PAIR",
+     "A-STAT"
+    ]
+   },
+   {
+    "j": 6,
+    "gen_seed": 169172,
+    "n_hyper": 5,
+    "p_keep": 0.741,
+    "T": 8,
+    "violated": [
+     "A-PAIR",
+     "A-STAT"
+    ]
+   },
+   {
+    "j": 7,
+    "gen_seed": 169173,
+    "n_hyper": 18,
+    "p_keep": 0.681,
+    "T": 8,
+    "violated": [
+     "A-PAIR",
+     "A-STAT"
+    ]
+   },
+   {
+    "j": 8,
+    "gen_seed": 169174,
+    "n_hyper": 15,
+    "p_keep": 0.827,
+    "T": 8,
+    "violated": [
+     "A-PAIR",
+     "A-STAT"
+    ]
+   },
+   {
+    "j": 9,
+    "gen_seed": 169175,
+    "n_hyper": 3,
+    "p_keep": 0.836,
+    "T": 8,
+    "violated": [
+     "A-PAIR",
+     "A-STAT"
+    ]
+   }
+  ],
+  "cell": 3,
+  "n_instances": 10
+ },
+ "F_statistics": {
+  "F_raw_pooled_median_nonzero_absW": 0.858491610432361,
+  "F_masked_pooled_median_nonzero_absW": 0.9423109809831146,
+  "F_raw_used_by": [
+   "A2",
+   "A4"
+  ],
+  "F_masked_used_by": [
+   "A3"
+  ],
+  "pooled_over": "all frames of the spot instances (cell c=3, j = 0..9)",
+  "computed_before_any_decode": true
+ },
+ "arms": {
+  "A0": {
+   "arm": "A0",
+   "definition": "raw \u2014 exp160's stack verbatim, no rule (decoded on the medium)",
+   "instances": [
+    {
+     "arm": "A0",
+     "j": 0,
+     "gen_seed": 169166,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.783,
+     "T": 8,
+     "errs": [
+      1.27,
+      1.18,
+      1.28
+     ],
+     "median_err": 1.27,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A0",
+     "j": 1,
+     "gen_seed": 169167,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 4,
+     "p_keep": 0.666,
+     "T": 8,
+     "errs": [
+      0.97,
+      1.04,
+      1.02
+     ],
+     "median_err": 1.02,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A0",
+     "j": 2,
+     "gen_seed": 169168,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 17,
+     "p_keep": 0.692,
+     "T": 8,
+     "errs": [
+      1.11,
+      1.15,
+      1.18
+     ],
+     "median_err": 1.15,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A0",
+     "j": 3,
+     "gen_seed": 169169,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 11,
+     "p_keep": 0.844,
+     "T": 8,
+     "errs": [
+      0.84,
+      0.82,
+      0.82
+     ],
+     "median_err": 0.82,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A0",
+     "j": 4,
+     "gen_seed": 169170,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.809,
+     "T": 8,
+     "errs": [
+      1.11,
+      1.1,
+      1.1
+     ],
+     "median_err": 1.1,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A0",
+     "j": 5,
+     "gen_seed": 169171,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 8,
+     "p_keep": 0.794,
+     "T": 8,
+     "errs": [
+      0.88,
+      0.89,
+      0.91
+     ],
+     "median_err": 0.89,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A0",
+     "j": 6,
+     "gen_seed": 169172,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 5,
+     "p_keep": 0.741,
+     "T": 8,
+     "errs": [
+      0.98,
+      1.08,
+      1.08
+     ],
+     "median_err": 1.08,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A0",
+     "j": 7,
+     "gen_seed": 169173,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.681,
+     "T": 8,
+     "errs": [
+      1.51,
+      1.58,
+      1.53
+     ],
+     "median_err": 1.53,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A0",
+     "j": 8,
+     "gen_seed": 169174,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 15,
+     "p_keep": 0.827,
+     "T": 8,
+     "errs": [
+      0.93,
+      0.98,
+      1.02
+     ],
+     "median_err": 0.98,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A0",
+     "j": 9,
+     "gen_seed": 169175,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 3,
+     "p_keep": 0.836,
+     "T": 8,
+     "errs": [
+      0.84,
+      0.77,
+      0.78
+     ],
+     "median_err": 0.78,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    }
+   ],
+   "median_of_instance_medians": 1.05,
+   "pooled_median_all_decodes": 1.03,
+   "n_decodes": 30,
+   "n_rejections": 0
+  },
+  "A1": {
+   "arm": "A1",
+   "definition": "R_T alone \u2014 rule_temporal_core on the frames",
+   "instances": [
+    {
+     "arm": "A1",
+     "j": 0,
+     "gen_seed": 169166,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.783,
+     "T": 8,
+     "errs": [
+      0.53,
+      0.61,
+      0.56
+     ],
+     "median_err": 0.56,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A1",
+     "j": 1,
+     "gen_seed": 169167,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 4,
+     "p_keep": 0.666,
+     "T": 8,
+     "errs": [
+      0.5,
+      0.53,
+      0.52
+     ],
+     "median_err": 0.52,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A1",
+     "j": 2,
+     "gen_seed": 169168,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 17,
+     "p_keep": 0.692,
+     "T": 8,
+     "errs": [
+      0.5,
+      0.53,
+      0.53
+     ],
+     "median_err": 0.53,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A1",
+     "j": 3,
+     "gen_seed": 169169,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 11,
+     "p_keep": 0.844,
+     "T": 8,
+     "errs": [
+      0.61,
+      0.59,
+      0.48
+     ],
+     "median_err": 0.59,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A1",
+     "j": 4,
+     "gen_seed": 169170,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.809,
+     "T": 8,
+     "errs": [
+      0.5,
+      0.51,
+      0.52
+     ],
+     "median_err": 0.51,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A1",
+     "j": 5,
+     "gen_seed": 169171,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 8,
+     "p_keep": 0.794,
+     "T": 8,
+     "errs": [
+      0.56,
+      0.54,
+      0.58
+     ],
+     "median_err": 0.56,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A1",
+     "j": 6,
+     "gen_seed": 169172,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 5,
+     "p_keep": 0.741,
+     "T": 8,
+     "errs": [
+      0.52,
+      0.52,
+      0.54
+     ],
+     "median_err": 0.52,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A1",
+     "j": 7,
+     "gen_seed": 169173,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.681,
+     "T": 8,
+     "errs": [
+      0.51,
+      0.57,
+      0.46
+     ],
+     "median_err": 0.51,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A1",
+     "j": 8,
+     "gen_seed": 169174,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 15,
+     "p_keep": 0.827,
+     "T": 8,
+     "errs": [
+      0.51,
+      0.59,
+      0.51
+     ],
+     "median_err": 0.51,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A1",
+     "j": 9,
+     "gen_seed": 169175,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 3,
+     "p_keep": 0.836,
+     "T": 8,
+     "errs": [
+      0.56,
+      0.51,
+      0.53
+     ],
+     "median_err": 0.53,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    }
+   ],
+   "median_of_instance_medians": 0.525,
+   "pooled_median_all_decodes": 0.53,
+   "n_decodes": 30,
+   "n_rejections": 0
+  },
+  "A2": {
+   "arm": "A2",
+   "definition": "R_H alone \u2014 rule_hyper_S on the frames (F from raw pooled |W|)",
+   "instances": [
+    {
+     "arm": "A2",
+     "j": 0,
+     "gen_seed": 169166,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.783,
+     "T": 8,
+     "errs": [
+      0.87,
+      0.87,
+      0.81
+     ],
+     "median_err": 0.87,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A2",
+     "j": 1,
+     "gen_seed": 169167,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 4,
+     "p_keep": 0.666,
+     "T": 8,
+     "errs": [
+      0.9,
+      1.02,
+      0.92
+     ],
+     "median_err": 0.92,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A2",
+     "j": 2,
+     "gen_seed": 169168,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 17,
+     "p_keep": 0.692,
+     "T": 8,
+     "errs": [
+      0.98,
+      1.03,
+      1.02
+     ],
+     "median_err": 1.02,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A2",
+     "j": 3,
+     "gen_seed": 169169,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 11,
+     "p_keep": 0.844,
+     "T": 8,
+     "errs": [
+      0.79,
+      0.73,
+      0.76
+     ],
+     "median_err": 0.76,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A2",
+     "j": 4,
+     "gen_seed": 169170,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.809,
+     "T": 8,
+     "errs": [
+      0.94,
+      0.95,
+      0.95
+     ],
+     "median_err": 0.95,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A2",
+     "j": 5,
+     "gen_seed": 169171,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 8,
+     "p_keep": 0.794,
+     "T": 8,
+     "errs": [
+      0.78,
+      0.79,
+      0.84
+     ],
+     "median_err": 0.79,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A2",
+     "j": 6,
+     "gen_seed": 169172,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 5,
+     "p_keep": 0.741,
+     "T": 8,
+     "errs": [
+      0.89,
+      1.01,
+      0.87
+     ],
+     "median_err": 0.89,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A2",
+     "j": 7,
+     "gen_seed": 169173,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.681,
+     "T": 8,
+     "errs": [
+      1.13,
+      1.12,
+      1.2
+     ],
+     "median_err": 1.13,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A2",
+     "j": 8,
+     "gen_seed": 169174,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 15,
+     "p_keep": 0.827,
+     "T": 8,
+     "errs": [
+      0.86,
+      0.92,
+      0.95
+     ],
+     "median_err": 0.92,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A2",
+     "j": 9,
+     "gen_seed": 169175,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 3,
+     "p_keep": 0.836,
+     "T": 8,
+     "errs": [
+      0.76,
+      0.65,
+      0.77
+     ],
+     "median_err": 0.76,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    }
+   ],
+   "median_of_instance_medians": 0.905,
+   "pooled_median_all_decodes": 0.895,
+   "n_decodes": 30,
+   "n_rejections": 0
+  },
+  "A3": {
+   "arm": "A3",
+   "definition": "COMPOSED PRIMARY \u2014 mask-then-augment (R_T first, R_H's F' from the masked frames)",
+   "instances": [
+    {
+     "arm": "A3",
+     "j": 0,
+     "gen_seed": 169166,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.783,
+     "T": 8,
+     "errs": [
+      0.72,
+      0.63,
+      0.7
+     ],
+     "median_err": 0.7,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A3",
+     "j": 1,
+     "gen_seed": 169167,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 4,
+     "p_keep": 0.666,
+     "T": 8,
+     "errs": [
+      0.56,
+      0.5,
+      0.51
+     ],
+     "median_err": 0.51,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A3",
+     "j": 2,
+     "gen_seed": 169168,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 17,
+     "p_keep": 0.692,
+     "T": 8,
+     "errs": [
+      0.56,
+      0.57,
+      0.64
+     ],
+     "median_err": 0.57,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A3",
+     "j": 3,
+     "gen_seed": 169169,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 11,
+     "p_keep": 0.844,
+     "T": 8,
+     "errs": [
+      0.6,
+      0.66,
+      0.62
+     ],
+     "median_err": 0.62,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A3",
+     "j": 4,
+     "gen_seed": 169170,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.809,
+     "T": 8,
+     "errs": [
+      0.64,
+      0.6,
+      0.64
+     ],
+     "median_err": 0.64,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A3",
+     "j": 5,
+     "gen_seed": 169171,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 8,
+     "p_keep": 0.794,
+     "T": 8,
+     "errs": [
+      0.69,
+      0.57,
+      0.65
+     ],
+     "median_err": 0.65,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A3",
+     "j": 6,
+     "gen_seed": 169172,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 5,
+     "p_keep": 0.741,
+     "T": 8,
+     "errs": [
+      0.53,
+      0.57,
+      0.58
+     ],
+     "median_err": 0.57,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A3",
+     "j": 7,
+     "gen_seed": 169173,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.681,
+     "T": 8,
+     "errs": [
+      0.65,
+      0.66,
+      0.7
+     ],
+     "median_err": 0.66,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A3",
+     "j": 8,
+     "gen_seed": 169174,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 15,
+     "p_keep": 0.827,
+     "T": 8,
+     "errs": [
+      0.58,
+      0.6,
+      0.57
+     ],
+     "median_err": 0.58,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A3",
+     "j": 9,
+     "gen_seed": 169175,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 3,
+     "p_keep": 0.836,
+     "T": 8,
+     "errs": [
+      0.61,
+      0.58,
+      0.6
+     ],
+     "median_err": 0.6,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    }
+   ],
+   "median_of_instance_medians": 0.61,
+   "pooled_median_all_decodes": 0.6,
+   "n_decodes": 30,
+   "n_rejections": 0
+  },
+  "A4": {
+   "arm": "A4",
+   "definition": "reversed \u2014 augment-then-mask (R_H with F from raw frames, then R_T masks)",
+   "instances": [
+    {
+     "arm": "A4",
+     "j": 0,
+     "gen_seed": 169166,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.783,
+     "T": 8,
+     "errs": [
+      0.72,
+      0.64,
+      0.7
+     ],
+     "median_err": 0.7,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A4",
+     "j": 1,
+     "gen_seed": 169167,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 4,
+     "p_keep": 0.666,
+     "T": 8,
+     "errs": [
+      0.52,
+      0.49,
+      0.58
+     ],
+     "median_err": 0.52,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A4",
+     "j": 2,
+     "gen_seed": 169168,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 17,
+     "p_keep": 0.692,
+     "T": 8,
+     "errs": [
+      0.61,
+      0.6,
+      0.61
+     ],
+     "median_err": 0.61,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A4",
+     "j": 3,
+     "gen_seed": 169169,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 11,
+     "p_keep": 0.844,
+     "T": 8,
+     "errs": [
+      0.59,
+      0.67,
+      0.59
+     ],
+     "median_err": 0.59,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A4",
+     "j": 4,
+     "gen_seed": 169170,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.809,
+     "T": 8,
+     "errs": [
+      0.73,
+      0.67,
+      0.73
+     ],
+     "median_err": 0.73,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A4",
+     "j": 5,
+     "gen_seed": 169171,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 8,
+     "p_keep": 0.794,
+     "T": 8,
+     "errs": [
+      0.64,
+      0.62,
+      0.65
+     ],
+     "median_err": 0.64,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A4",
+     "j": 6,
+     "gen_seed": 169172,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 5,
+     "p_keep": 0.741,
+     "T": 8,
+     "errs": [
+      0.57,
+      0.61,
+      0.48
+     ],
+     "median_err": 0.57,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A4",
+     "j": 7,
+     "gen_seed": 169173,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 18,
+     "p_keep": 0.681,
+     "T": 8,
+     "errs": [
+      0.67,
+      0.66,
+      0.68
+     ],
+     "median_err": 0.67,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A4",
+     "j": 8,
+     "gen_seed": 169174,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 15,
+     "p_keep": 0.827,
+     "T": 8,
+     "errs": [
+      0.68,
+      0.69,
+      0.64
+     ],
+     "median_err": 0.68,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    },
+    {
+     "arm": "A4",
+     "j": 9,
+     "gen_seed": 169175,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "n_hyper": 3,
+     "p_keep": 0.836,
+     "T": 8,
+     "errs": [
+      0.65,
+      0.57,
+      0.57
+     ],
+     "median_err": 0.57,
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "config_fp": "8e11e88c1c2f1518"
+    }
+   ],
+   "median_of_instance_medians": 0.625,
+   "pooled_median_all_decodes": 0.64,
+   "n_decodes": 30,
+   "n_rejections": 0
+  }
+ },
+ "gates": {
+  "C1_raw_replay_tail": {
+   "pass": true,
+   "zero_rejections_A0": true,
+   "all_errs_finite": true,
+   "raw_errs_flat_30": [
+    1.27,
+    1.18,
+    1.28,
+    0.97,
+    1.04,
+    1.02,
+    1.11,
+    1.15,
+    1.18,
+    0.84,
+    0.82,
+    0.82,
+    1.11,
+    1.1,
+    1.1,
+    0.88,
+    0.89,
+    0.91,
+    0.98,
+    1.08,
+    1.08,
+    1.51,
+    1.58,
+    1.53,
+    0.93,
+    0.98,
+    1.02,
+    0.84,
+    0.77,
+    0.78
+   ],
+   "per_instance_medians": {
+    "0": 1.27,
+    "1": 1.02,
+    "2": 1.15,
+    "3": 0.82,
+    "4": 1.1,
+    "5": 0.89,
+    "6": 1.08,
+    "7": 1.53,
+    "8": 0.98,
+    "9": 0.78
+   },
+   "n_above_exp160_pooled": 10,
+   "required": 5,
+   "TAIL_REF": 0.63,
+   "tail_clause_ok": true,
+   "construction_caveat": null
+  },
+  "C2_single_rule_prices": {
+   "pass": true,
+   "note": "no pass bar \u2014 this gate PRICES the two channels separately so the composition's effect is attributable (record = pass always, values are the deposit)",
+   "A1_median": 0.525,
+   "A1_pooled": 0.53,
+   "A2_median": 0.905,
+   "A2_pooled": 0.895,
+   "A0_median": 1.05,
+   "per_instance_delta_A1_minus_A0": {
+    "0": -0.71,
+    "1": -0.5,
+    "2": -0.6199999999999999,
+    "3": -0.22999999999999998,
+    "4": -0.5900000000000001,
+    "5": -0.32999999999999996,
+    "6": -0.56,
+    "7": -1.02,
+    "8": -0.47,
+    "9": -0.25
+   },
+   "per_instance_delta_A2_minus_A0": {
+    "0": -0.4,
+    "1": -0.09999999999999998,
+    "2": -0.1299999999999999,
+    "3": -0.05999999999999994,
+    "4": -0.15000000000000013,
+    "5": -0.09999999999999998,
+    "6": -0.19000000000000006,
+    "7": -0.40000000000000013,
+    "8": -0.05999999999999994,
+    "9": -0.020000000000000018
+   }
+  },
+  "C3_composed_rule": {
+   "pass": false,
+   "median_A0": 1.05,
+   "median_A3": 0.61,
+   "median_improved": true,
+   "n_instances_improved": 10,
+   "improved_instances": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "required": 8,
+   "parity_bar": 0.6,
+   "parity_ok": false,
+   "clauses": "median(A3) < median(A0) AND >= 8/10 spot instances improved AND median(A3) <= 0.60 mV"
+  },
+  "C4_order_sensitivity_hygiene": {
+   "pass": true,
+   "median_A4": 0.625,
+   "A4_definition": "reversed \u2014 augment-then-mask (R_H with F from raw frames, then R_T masks)",
+   "sign_median_A4_minus_A3": "+",
+   "median_A4_minus_A3": 0.015000000000000013,
+   "zero_rejections_all_arms": true,
+   "pin_save_restore_ok": true
+  }
+ },
+ "verdict": "3/4 gates",
+ "rejections": [],
+ "runtime_s": 17.4
+}
