@@ -1,0 +1,822 @@
+{
+ "experiment": "exp159_the_hyperedge_native_walk",
+ "task_id": "C1S",
+ "pre_registered": {
+  "gates": "H1 blindness 12/12; H2 separation >= 10/12 at the verdict level (own-label verified & err < 6.0 AND wrong-target verdict-false or err > 6.0); H3 median err on correct matches <= 0.60 mV; H4 superset reduction (S == support(A) for all-size-2 members bit-exact; dedicated all-size-2 instance reproduces arm-1 blindness verdicts bit-exactly across members)",
+  "labels": {
+   "member_1": "T1 (uniform -30, exp94 MULTI layout)",
+   "member_2": "T2 (middle -59, exp94 BELOW layout)"
+  },
+  "rule_arm2": "A_ext = A + F*S, S_ij = 1 iff i,j share a hyperedge; F = median |A_ij| over nonzero entries pooled across the 12 arm-1 projections, computed before any decode",
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "seed_construct": 159,
+  "seed_exec": 1,
+  "err_bar": 6.0,
+  "projection": "exp137 (L115): hyperedge e contributes w_e/(|e|-1) to each member pair"
+ },
+ "F": 0.75,
+ "F_pool_nonzero_absA_count": 1088,
+ "pairs": [
+  {
+   "p": 0,
+   "n": 30,
+   "k": 3,
+   "n_hyperedges_m1": 20,
+   "n_hyperedges_m2": 40,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.55
+     ],
+     "T2": [
+      false,
+      3.81
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.55
+     ],
+     "T2": [
+      false,
+      3.81
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm2": {
+    "m1": {
+     "own_target": "T1",
+     "own": [
+      false,
+      7.07
+     ],
+     "other_target": "T2",
+     "other": [
+      false,
+      9.67
+     ],
+     "correct_to_label": false
+    },
+    "m2": {
+     "own_target": "T2",
+     "own": [
+      false,
+      9.67
+     ],
+     "other_target": "T1",
+     "other": [
+      false,
+      7.07
+     ],
+     "correct_to_label": false
+    }
+   },
+   "pair_separated": false
+  },
+  {
+   "p": 1,
+   "n": 30,
+   "k": 3,
+   "n_hyperedges_m1": 20,
+   "n_hyperedges_m2": 40,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.43
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.43
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm2": {
+    "m1": {
+     "own_target": "T1",
+     "own": [
+      false,
+      7.53
+     ],
+     "other_target": "T2",
+     "other": [
+      false,
+      10.02
+     ],
+     "correct_to_label": false
+    },
+    "m2": {
+     "own_target": "T2",
+     "own": [
+      false,
+      10.02
+     ],
+     "other_target": "T1",
+     "other": [
+      false,
+      7.53
+     ],
+     "correct_to_label": false
+    }
+   },
+   "pair_separated": false
+  },
+  {
+   "p": 2,
+   "n": 30,
+   "k": 3,
+   "n_hyperedges_m1": 20,
+   "n_hyperedges_m2": 40,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.62
+     ],
+     "T2": [
+      false,
+      3.82
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.62
+     ],
+     "T2": [
+      false,
+      3.82
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm2": {
+    "m1": {
+     "own_target": "T1",
+     "own": [
+      true,
+      0.47
+     ],
+     "other_target": "T2",
+     "other": [
+      false,
+      3.71
+     ],
+     "correct_to_label": true
+    },
+    "m2": {
+     "own_target": "T2",
+     "own": [
+      false,
+      3.71
+     ],
+     "other_target": "T1",
+     "other": [
+      true,
+      0.45
+     ],
+     "correct_to_label": false
+    }
+   },
+   "pair_separated": false
+  },
+  {
+   "p": 3,
+   "n": 30,
+   "k": 3,
+   "n_hyperedges_m1": 20,
+   "n_hyperedges_m2": 40,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.43
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.43
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm2": {
+    "m1": {
+     "own_target": "T1",
+     "own": [
+      true,
+      0.37
+     ],
+     "other_target": "T2",
+     "other": [
+      false,
+      3.58
+     ],
+     "correct_to_label": true
+    },
+    "m2": {
+     "own_target": "T2",
+     "own": [
+      false,
+      3.58
+     ],
+     "other_target": "T1",
+     "other": [
+      true,
+      0.37
+     ],
+     "correct_to_label": false
+    }
+   },
+   "pair_separated": false
+  },
+  {
+   "p": 4,
+   "n": 32,
+   "k": 4,
+   "n_hyperedges_m1": 16,
+   "n_hyperedges_m2": 48,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.51
+     ],
+     "T2": [
+      false,
+      3.43
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.51
+     ],
+     "T2": [
+      false,
+      3.43
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm2": {
+    "m1": {
+     "own_target": "T1",
+     "own": [
+      true,
+      0.53
+     ],
+     "other_target": "T2",
+     "other": [
+      false,
+      3.24
+     ],
+     "correct_to_label": true
+    },
+    "m2": {
+     "own_target": "T2",
+     "own": [
+      false,
+      3.24
+     ],
+     "other_target": "T1",
+     "other": [
+      true,
+      0.52
+     ],
+     "correct_to_label": false
+    }
+   },
+   "pair_separated": false
+  },
+  {
+   "p": 5,
+   "n": 32,
+   "k": 4,
+   "n_hyperedges_m1": 16,
+   "n_hyperedges_m2": 48,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.43
+     ],
+     "T2": [
+      false,
+      3.23
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.43
+     ],
+     "T2": [
+      false,
+      3.23
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm2": {
+    "m1": {
+     "own_target": "T1",
+     "own": [
+      true,
+      0.61
+     ],
+     "other_target": "T2",
+     "other": [
+      false,
+      3.05
+     ],
+     "correct_to_label": true
+    },
+    "m2": {
+     "own_target": "T2",
+     "own": [
+      false,
+      3.05
+     ],
+     "other_target": "T1",
+     "other": [
+      true,
+      0.62
+     ],
+     "correct_to_label": false
+    }
+   },
+   "pair_separated": false
+  },
+  {
+   "p": 6,
+   "n": 32,
+   "k": 4,
+   "n_hyperedges_m1": 16,
+   "n_hyperedges_m2": 48,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.5
+     ],
+     "T2": [
+      false,
+      3.25
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.5
+     ],
+     "T2": [
+      false,
+      3.25
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm2": {
+    "m1": {
+     "own_target": "T1",
+     "own": [
+      true,
+      0.5
+     ],
+     "other_target": "T2",
+     "other": [
+      false,
+      3.23
+     ],
+     "correct_to_label": true
+    },
+    "m2": {
+     "own_target": "T2",
+     "own": [
+      false,
+      3.24
+     ],
+     "other_target": "T1",
+     "other": [
+      true,
+      0.5
+     ],
+     "correct_to_label": false
+    }
+   },
+   "pair_separated": false
+  },
+  {
+   "p": 7,
+   "n": 32,
+   "k": 4,
+   "n_hyperedges_m1": 16,
+   "n_hyperedges_m2": 48,
+   "cancel_entries_S1": 24,
+   "cancel_entries_S2": 0,
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.45
+     ],
+     "T2": [
+      false,
+      3.25
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.45
+     ],
+     "T2": [
+      false,
+      3.25
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm2": {
+    "m1": {
+     "own_target": "T1",
+     "own": [
+      true,
+      0.5
+     ],
+     "other_target": "T2",
+     "other": [
+      false,
+      3.22
+     ],
+     "correct_to_label": true
+    },
+    "m2": {
+     "own_target": "T2",
+     "own": [
+      false,
+      3.22
+     ],
+     "other_target": "T1",
+     "other": [
+      true,
+      0.49
+     ],
+     "correct_to_label": false
+    }
+   },
+   "pair_separated": false
+  },
+  {
+   "p": 8,
+   "n": 30,
+   "k": 5,
+   "n_hyperedges_m1": 12,
+   "n_hyperedges_m2": 48,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.55
+     ],
+     "T2": [
+      false,
+      3.71
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.55
+     ],
+     "T2": [
+      false,
+      3.71
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm2": {
+    "m1": {
+     "own_target": "T1",
+     "own": [
+      true,
+      0.76
+     ],
+     "other_target": "T2",
+     "other": [
+      false,
+      3.84
+     ],
+     "correct_to_label": true
+    },
+    "m2": {
+     "own_target": "T2",
+     "own": [
+      false,
+      3.83
+     ],
+     "other_target": "T1",
+     "other": [
+      true,
+      0.76
+     ],
+     "correct_to_label": false
+    }
+   },
+   "pair_separated": false
+  },
+  {
+   "p": 9,
+   "n": 30,
+   "k": 5,
+   "n_hyperedges_m1": 12,
+   "n_hyperedges_m2": 48,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.47
+     ],
+     "T2": [
+      false,
+      3.84
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.47
+     ],
+     "T2": [
+      false,
+      3.84
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm2": {
+    "m1": {
+     "own_target": "T1",
+     "own": [
+      true,
+      0.7
+     ],
+     "other_target": "T2",
+     "other": [
+      false,
+      3.52
+     ],
+     "correct_to_label": true
+    },
+    "m2": {
+     "own_target": "T2",
+     "own": [
+      false,
+      3.51
+     ],
+     "other_target": "T1",
+     "other": [
+      true,
+      0.61
+     ],
+     "correct_to_label": false
+    }
+   },
+   "pair_separated": false
+  },
+  {
+   "p": 10,
+   "n": 30,
+   "k": 5,
+   "n_hyperedges_m1": 12,
+   "n_hyperedges_m2": 48,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.58
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.58
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm2": {
+    "m1": {
+     "own_target": "T1",
+     "own": [
+      false,
+      5.78
+     ],
+     "other_target": "T2",
+     "other": [
+      false,
+      8.1
+     ],
+     "correct_to_label": false
+    },
+    "m2": {
+     "own_target": "T2",
+     "own": [
+      false,
+      8.1
+     ],
+     "other_target": "T1",
+     "other": [
+      false,
+      5.78
+     ],
+     "correct_to_label": false
+    }
+   },
+   "pair_separated": false
+  },
+  {
+   "p": 11,
+   "n": 30,
+   "k": 5,
+   "n_hyperedges_m1": 12,
+   "n_hyperedges_m2": 48,
+   "cancel_entries_S1": 36,
+   "cancel_entries_S2": 0,
+   "arm1": {
+    "m1": {
+     "T1": [
+      true,
+      0.27
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    },
+    "m2": {
+     "T1": [
+      true,
+      0.27
+     ],
+     "T2": [
+      false,
+      3.72
+     ]
+    }
+   },
+   "arm1_blind": true,
+   "arm2": {
+    "m1": {
+     "own_target": "T1",
+     "own": [
+      true,
+      0.53
+     ],
+     "other_target": "T2",
+     "other": [
+      false,
+      4.02
+     ],
+     "correct_to_label": true
+    },
+    "m2": {
+     "own_target": "T2",
+     "own": [
+      false,
+      4.02
+     ],
+     "other_target": "T1",
+     "other": [
+      true,
+      0.54
+     ],
+     "correct_to_label": false
+    }
+   },
+   "pair_separated": false
+  }
+ ],
+ "gates": {
+  "H1_blindness_12_of_12": {
+   "pass": true,
+   "score": 12
+  },
+  "H2_separation_ge_10_of_12": {
+   "pass": false,
+   "score": 0,
+   "repair": {
+    "triggered": true,
+    "surviving_gadget_sizes_verdict_level": {},
+    "by_size_class": {
+     "3": {
+      "n_pairs": 4,
+      "arm2_cross_member_verdicts_identical": 3,
+      "median_cross_member_err_delta_mV": 0.0,
+      "max_cross_member_err_delta_mV": 0.02
+     },
+     "4": {
+      "n_pairs": 4,
+      "arm2_cross_member_verdicts_identical": 0,
+      "median_cross_member_err_delta_mV": 0.01,
+      "max_cross_member_err_delta_mV": 0.01
+     },
+     "5": {
+      "n_pairs": 4,
+      "arm2_cross_member_verdicts_identical": 1,
+      "median_cross_member_err_delta_mV": 0.01,
+      "max_cross_member_err_delta_mV": 0.09
+     }
+    },
+    "observation": "zero pairs survive at the verdict level; the arm-2 verdict is TARGET-determined (T1 uniform -30 sustains, T2 middle -59 does not, on BOTH members' augmentations) so the 6.0 mV verdict bar swamps the grouping signal; the grouping survives only as a sub-verdict err perturbation (median cross-member err delta by class above, largest at k=5 / highest cancellation density)",
+    "repair_registered": "next experiment: decode at the err level with the grouping contrast as the readout (two-sided: same target, S_1 vs S_2 augmentations, |err_1 - err_2| threshold pre-registered) OR weight S by cancellation density (S_ij *= |{e: i,j in e, |e| >= 3}|); re-run arms only"
+   }
+  },
+  "H3_median_err_le_0.60": {
+   "pass": true,
+   "median_err_correct_matches": 0.53,
+   "n_correct_matches": 9
+  },
+  "H4_superset_reduction": {
+   "pass": true,
+   "S_equals_support_for_pairwise_member_12_of_12": true,
+   "dedicated_all_size2_instance_verdicts_bit_identical": true,
+   "dedicated_instance_arm1_vs_arm2": {
+    "arm1_T1": [
+     true,
+     0.55
+    ],
+    "arm2_T1": [
+     false,
+     7.07
+    ],
+    "arm1_T2": [
+     false,
+     3.81
+    ],
+    "arm2_T2": [
+     false,
+     9.67
+    ]
+   }
+  }
+ },
+ "all_gates_pass": false,
+ "wall_seconds": 5.8
+}
