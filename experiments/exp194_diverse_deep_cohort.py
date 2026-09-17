@@ -85,12 +85,19 @@ def main() -> dict:
         MULTI, labeling_bfs_n, spec_target_n)
 
     DEP184 = os.path.join(ROOT, "results", "exp184_deep_library.json")
+    DEP150 = os.path.join(ROOT, "results", "exp150_generator_complete.json")
+    DEP176 = os.path.join(ROOT, "results", "exp176_deep_band_search.json")
     DEP189 = os.path.join(ROOT, "results",
                           "exp189_funnel_exclusion_anatomy.json")
     DEP141 = os.path.join(ROOT, "results", "exp141_generator_wide.json")
     DEP146 = os.path.join(ROOT, "results", "exp146_splice_bar.json")
     PROD_FLOOR = -60.0                    # CF-1's production value
     SPLICE_EXPECTED = 117 * 116 // 2 * 19  # 128,886
+    DEEP_RUNGS = [-40.0, -45.0, -50.0, -55.0, -60.0]
+    ERR_BAR = 6.0
+    AUDIT_SEEDS = (1, 2, 3)
+    N_DELIVER = 10
+    SEARCH_SEED = 141
 
     dep184 = json.load(open(DEP184))
     dep189 = json.load(open(DEP189))
