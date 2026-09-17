@@ -1,0 +1,2797 @@
+{
+ "experiment": "exp192_corpus_decode_export",
+ "kind": "blocked_no_programs_in_decode_path",
+ "claim": "the mining pipeline's decode stage re-run live and its per-record outputs exported as zone/identity programs, then priced for writability at the locked substrate S* = (64.0, 0.0) \u2014 registered gates S1-S4",
+ "pre_registered": {
+  "s1_export": "planform_mining.py's decode path re-run (or its deposited intermediates re-read, disclosed) to produce results/corpus_decoded_programs.json: per record the decoder's own zone/identity program + provenance; the bank tracked and force-added; the decode MAE consistency spot-checked vs the deposited 0.290 machinery (>= 20 records re-scored within tolerance, recorded); BLOCKED is a completed S1 REFUTE \u2014 no improvised decoder",
+  "s2_battery": "100 programs sampled (seed 187187) from the export, built via exp94's spec_target_n (canon == wildtype asserted), writability at S* = (64.0, 0.0) via exp161's writable_3seed + _lock_substrate",
+  "s3_bar": ">= 90/100 writable at the 6.0 bar on 3/3 seeds; the miss list deposited; zero rejections",
+  "s4_hygiene": "manifest-first byte-offset assertion; all errs finite; no per-target tuning"
+ },
+ "bank": {
+  "path": "results/exp118_corpus_full.json",
+  "sha256": "fb9a809b42f248d090c4a816438e4e7ef2ef4483fb61c26df05c4560b9d1a88d",
+  "exp": "exp118_corpus_full_mine",
+  "mode": "full",
+  "n_records": 1716,
+  "aggregates": {
+   "mae_raw": 0.3705,
+   "mae_corrected_decoded": 0.29,
+   "decode_accuracy": 0.6928
+  }
+ },
+ "decode_path_rerun": {
+  "replayed_stage_chain": [
+   "planform_mining.load_widened (PlanformDB 2.5.0 -> per-exp class/plane/drugs)",
+   "exp118_corpus_full_mine.build_rows (the adopted L74 mapping: map_arm per record)",
+   "exp118_corpus_full_mine.run_arms (47 deduped arms x seeds (1,2,3) via exp88.run_arm_v5 / exp91.run_arm_dose)",
+   "exp118_corpus_full_mine.attach_sim (THE DECODE STAGE: dominant-class decode + the three-frame errors)"
+  ],
+  "n_rows": 1716,
+  "n_arms": 47,
+  "record_side_mismatches_vs_deposit": 0,
+  "arm_table_bitexact": "47/47",
+  "per_record_decode_fields_identical": "1716/1716",
+  "mae_rerun": {
+   "raw": 0.3705,
+   "decoded": 0.29
+  },
+  "mae_deposited": {
+   "raw": 0.3705,
+   "decoded": 0.29
+  },
+  "mae_within_tolerance_0.01": true
+ },
+ "stage_scan": {
+  "registered_rule": "a field/value qualifies ONLY on structure (zone triples (f0, f1, voltage), a zone-bearing spec dict, or a per-cell label vector of length 100) \u2014 exp187's scan rule verbatim, now applied to the LIVE decode-path re-run's stage outputs (not just the deposited bank); NO conversion attempted",
+  "stages": [
+   {
+    "stage": "planform_mining.load_widened",
+    "note": "the DB loader itself \u2014 NO decode stage here (plane parse + drug enrichment + outcome); per-exp fields only",
+    "n_records": 1462,
+    "n_fields": 14,
+    "fields": [
+     {
+      "name": "group",
+      "n_present": 1462,
+      "types": [
+       "str"
+      ],
+      "example": "morphogen",
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a categorical label"
+     },
+     {
+      "name": "abnormal",
+      "n_present": 1462,
+      "types": [
+       "float"
+      ],
+      "example": 0.4,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar OUTCOME (rate/error) \u2014 the decode stage's output is a number, not a program"
+     },
+     {
+      "name": "n_rs",
+      "n_present": 1462,
+      "types": [
+       "int"
+      ],
+      "example": 2,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar metadata/outcome value"
+     },
+     {
+      "name": "mixed_rs",
+      "n_present": 1462,
+      "types": [
+       "int"
+      ],
+      "example": 2,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar metadata/outcome value"
+     },
+     {
+      "name": "pub",
+      "n_present": 1462,
+      "types": [
+       "int"
+      ],
+      "example": 5,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar metadata/outcome value"
+     },
+     {
+      "name": "rnais",
+      "n_present": 1462,
+      "types": [
+       "list"
+      ],
+      "example": [
+       "Smed-bcatenin-1"
+      ],
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a list of labels/values, not zone triples (f0, f1, voltage) and not a per-cell label vector"
+     },
+     {
+      "name": "manipulation",
+      "n_present": 1462,
+      "types": [
+       "str"
+      ],
+      "example": "Trunk crop",
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a categorical label"
+     },
+     {
+      "name": "plane",
+      "n_present": 1462,
+      "types": [
+       "str"
+      ],
+      "example": "trunk",
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a categorical label"
+     },
+     {
+      "name": "cut_f",
+      "n_present": 1462,
+      "types": [
+       "NoneType",
+       "float"
+      ],
+      "example": null,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar metadata/outcome value"
+     },
+     {
+      "name": "exclude_head",
+      "n_present": 1462,
+      "types": [
+       "bool"
+      ],
+      "example": false,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a flag"
+     },
+     {
+      "name": "generic",
+      "n_present": 1462,
+      "types": [
+       "bool"
+      ],
+      "example": false,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a flag"
+     },
+     {
+      "name": "drugs",
+      "n_present": 1462,
+      "types": [
+       "list"
+      ],
+      "example": [],
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a list of labels/values, not zone triples (f0, f1, voltage) and not a per-cell label vector"
+     },
+     {
+      "name": "drug_classes",
+      "n_present": 1462,
+      "types": [
+       "list"
+      ],
+      "example": [],
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a list of labels/values, not zone triples (f0, f1, voltage) and not a per-cell label vector"
+     },
+     {
+      "name": "ap_morphogen",
+      "n_present": 1462,
+      "types": [
+       "bool"
+      ],
+      "example": true,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a flag"
+     }
+    ],
+    "fields_qualifying": []
+   },
+   {
+    "stage": "exp118_corpus_full_mine.build_rows (+map_arm)",
+    "note": "the corpus mapping: per-record fields BEFORE the decode stage; 'arm' is the sim-input knob tuple",
+    "n_records": 0,
+    "n_fields": 0,
+    "fields": [],
+    "fields_qualifying": []
+   },
+   {
+    "stage": "exp118_corpus_full_mine.attach_sim",
+    "note": "THE DECODE STAGE PROPER \u2014 the decoded-MAE 0.290 machinery: sim rate, the two error frames, the binary dominant labels, decode_match",
+    "n_records": 1716,
+    "n_fields": 23,
+    "fields": [
+     {
+      "name": "eid",
+      "n_present": 1716,
+      "types": [
+       "int"
+      ],
+      "example": 262,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar metadata/outcome value"
+     },
+     {
+      "name": "species",
+      "n_present": 1716,
+      "types": [
+       "str"
+      ],
+      "example": "Schmidtea mediterranea",
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a categorical label"
+     },
+     {
+      "name": "manipulation",
+      "n_present": 1716,
+      "types": [
+       "str"
+      ],
+      "example": "Head crop",
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a categorical label"
+     },
+     {
+      "name": "group",
+      "n_present": 1716,
+      "types": [
+       "NoneType",
+       "str"
+      ],
+      "example": "other_rnai",
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a categorical label"
+     },
+     {
+      "name": "plane",
+      "n_present": 1716,
+      "types": [
+       "NoneType",
+       "str"
+      ],
+      "example": "head",
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a categorical label"
+     },
+     {
+      "name": "cut_f",
+      "n_present": 1716,
+      "types": [
+       "NoneType",
+       "float"
+      ],
+      "example": null,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar metadata/outcome value"
+     },
+     {
+      "name": "rnais",
+      "n_present": 1716,
+      "types": [
+       "list"
+      ],
+      "example": [
+       "Smed-evi"
+      ],
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a list of labels/values, not zone triples (f0, f1, voltage) and not a per-cell label vector"
+     },
+     {
+      "name": "drugs",
+      "n_present": 1716,
+      "types": [
+       "list"
+      ],
+      "example": [],
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a list of labels/values, not zone triples (f0, f1, voltage) and not a per-cell label vector"
+     },
+     {
+      "name": "n_result_sets",
+      "n_present": 1716,
+      "types": [
+       "int"
+      ],
+      "example": 1,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar metadata/outcome value"
+     },
+     {
+      "name": "ap_morphogen",
+      "n_present": 1716,
+      "types": [
+       "bool"
+      ],
+      "example": false,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a flag"
+     },
+     {
+      "name": "recorded_raw",
+      "n_present": 1716,
+      "types": [
+       "NoneType",
+       "float"
+      ],
+      "example": 1.0,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar OUTCOME (rate/error) \u2014 the decode stage's output is a number, not a program"
+     },
+     {
+      "name": "arm",
+      "n_present": 1716,
+      "types": [
+       "NoneType",
+       "list"
+      ],
+      "example": [
+       "wnt",
+       "head",
+       0.5,
+       1.0
+      ],
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "the mapped manipulation arm (protocol, plane, cut_f, dose): a SIMULATION-KNOB tuple \u2014 labels/scalars that select and parameterize an arm run; no spatial extents, no voltages; NOT loadable as a target program without an improvised conversion (excluded by the pre-registration)"
+     },
+     {
+      "name": "sim",
+      "n_present": 1716,
+      "types": [
+       "NoneType",
+       "float"
+      ],
+      "example": 1.0,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar OUTCOME (rate/error) \u2014 the decode stage's output is a number, not a program"
+     },
+     {
+      "name": "excluded_C4",
+      "n_present": 1716,
+      "types": [
+       "bool"
+      ],
+      "example": false,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a flag"
+     },
+     {
+      "name": "pilot_member",
+      "n_present": 1716,
+      "types": [
+       "bool"
+      ],
+      "example": false,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a flag"
+     },
+     {
+      "name": "slices",
+      "n_present": 1716,
+      "types": [
+       "NoneType",
+       "dict"
+      ],
+      "example": {
+       "exp27": false,
+       "exp60_gene": true,
+       "exp70_onset": false,
+       "exp88_mapped": true,
+       "exp92_dose_class": false
+      },
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a mapping (flags/parameters); no zone structure"
+     },
+     {
+      "name": "status",
+      "n_present": 1716,
+      "types": [
+       "str"
+      ],
+      "example": "scored",
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a categorical label"
+     },
+     {
+      "name": "recorded_corrected",
+      "n_present": 1716,
+      "types": [
+       "NoneType",
+       "float"
+      ],
+      "example": 1.0,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar OUTCOME (rate/error) \u2014 the decode stage's output is a number, not a program"
+     },
+     {
+      "name": "abs_err_raw",
+      "n_present": 905,
+      "types": [
+       "float"
+      ],
+      "example": 0.0,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar OUTCOME (rate/error) \u2014 the decode stage's output is a number, not a program"
+     },
+     {
+      "name": "abs_err_corrected",
+      "n_present": 905,
+      "types": [
+       "float"
+      ],
+      "example": 0.0,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a scalar OUTCOME (rate/error) \u2014 the decode stage's output is a number, not a program"
+     },
+     {
+      "name": "pred_dominant",
+      "n_present": 905,
+      "types": [
+       "str"
+      ],
+      "example": "abnormal",
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a binary dominant-class LABEL ('abnormal'/'wt') \u2014 the decode stage's class verdict, no zone structure"
+     },
+     {
+      "name": "recorded_dominant",
+      "n_present": 905,
+      "types": [
+       "str"
+      ],
+      "example": "abnormal",
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a binary dominant-class LABEL ('abnormal'/'wt') \u2014 the decode stage's class verdict, no zone structure"
+     },
+     {
+      "name": "decode_match",
+      "n_present": 905,
+      "types": [
+       "bool"
+      ],
+      "example": true,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a flag"
+     }
+    ],
+    "fields_qualifying": []
+   },
+   {
+    "stage": "exp118_corpus_full_mine.map_arm (arm-tuple slots)",
+    "note": "the arm tuple examined SLOT BY SLOT (exp187 examined it whole and rejected it; here each position is tested against the registered rule)",
+    "n_records": 905,
+    "slots": [
+     {
+      "slot": 0,
+      "name": "protocol",
+      "types": [
+       "str"
+      ],
+      "example": "wnt",
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a protocol label selecting the arm engine \u2014 a SIM-INPUT scalar/label, not a zone/identity program"
+     },
+     {
+      "slot": 1,
+      "name": "plane",
+      "types": [
+       "str"
+      ],
+      "example": "head",
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a plane label selecting the amputation slice \u2014 a SIM-INPUT scalar/label, not a zone/identity program"
+     },
+     {
+      "slot": 2,
+      "name": "cut_f",
+      "types": [
+       "float"
+      ],
+      "example": 0.5,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a cut-position scalar (fraction of the sheet) \u2014 a SIM-INPUT scalar/label, not a zone/identity program"
+     },
+     {
+      "slot": 3,
+      "name": "dose",
+      "types": [
+       "NoneType",
+       "float"
+      ],
+      "example": 1.0,
+      "n_program_values": 0,
+      "program_candidate": false,
+      "reason": "a dose scalar (or None) \u2014 corruption amplitude \u2014 a SIM-INPUT scalar/label, not a zone/identity program"
+     }
+    ],
+    "fields_qualifying": []
+   },
+   {
+    "stage": "exp88_corpus_rewire.run_arm_v5 / exp91_dose_axis_wiring.run_arm_dose (return boundary)",
+    "note": "the arm engines return a BOOL (an outcome verdict: pattern_error >= 6.0 mV OR head_likeness >= 0.7); the sheet's final V exists only as a LOCAL inside the engine, consumed by the outcome predicate and discarded \u2014 no stage returns a program, and per-record decoding consumes the arm's scalar rate, not any vector",
+    "return_types": [
+     "bool"
+    ],
+    "fields_qualifying": []
+   }
+  ],
+  "fields_qualifying": [],
+  "deposited_intermediates_reread": [
+   {
+    "file": "results/exp21_planform_benchmark.json",
+    "exists": true,
+    "sha256": "9204a97e8a17",
+    "n_values_scanned": 100,
+    "n_program_shaped": 0
+   },
+   {
+    "file": "results/exp27_stage2_pilot.json",
+    "exists": true,
+    "sha256": "2e3e3a2d14ea",
+    "n_values_scanned": 2325,
+    "n_program_shaped": 0
+   },
+   {
+    "file": "results/exp60_gene_layer.json",
+    "exists": true,
+    "sha256": "ea1a37d29196",
+    "n_values_scanned": 250,
+    "n_program_shaped": 0
+   },
+   {
+    "file": "results/exp70_onset_corpus.json",
+    "exists": true,
+    "sha256": "268756eed62a",
+    "n_values_scanned": 11,
+    "n_program_shaped": 0
+   },
+   {
+    "file": "results/exp88_corpus_rewire.json",
+    "exists": true,
+    "sha256": "8301d73a7973",
+    "n_values_scanned": 73,
+    "n_program_shaped": 0
+   },
+   {
+    "file": "results/exp118_corpus_full_pilot.json",
+    "exists": true,
+    "sha256": "efa41dc16595",
+    "n_values_scanned": 42382,
+    "n_program_shaped": 0
+   },
+   {
+    "file": "results/exp118_corpus_full.json",
+    "exists": true,
+    "sha256": "fb9a809b42f2",
+    "n_values_scanned": 46496,
+    "n_program_shaped": 0
+   }
+  ],
+  "intermediates_absent_2a_rollback": []
+ },
+ "mae_spot_check": {
+  "n_re_scored": 100,
+  "n_bitexact_vs_deposit": 100,
+  "tolerance": "bit-exact (float equality on the error frames + decode_match)",
+  "passes_ge20": true
+ },
+ "manifest_first": {
+  "protocol": "the phase-1 manifest deposit occupied bytes [0, L) of the deposit; re-read + re-hashed BEFORE the final write; length + sha256 recorded here",
+  "byte_offset": 0,
+  "manifest_byte_length": 44828,
+  "manifest_sha256": "d70555beea23ba6f4227a21dc96a6cbeeafe6b5f9b13b01ee6bed615bea2a8a1",
+  "asserted_before_final_write": true
+ },
+ "sample": {
+  "rng": "np.random.default_rng(187187), choice(..., 100, replace=False); indices sorted ascending after the draw",
+  "basis": "the SCORED records of the LIVE decode-path re-run (n=905) \u2014 the would-be export's records; run as a DIAGNOSTIC would-be sample, disclosed as such: the decode stage emits NO programs, so no sampled record yields a target",
+  "n_pool": 905,
+  "n_sampled": 100,
+  "n_unique_eids": 100,
+  "records": [
+   {
+    "row_index": 2,
+    "eid": 264,
+    "group": "morphogen",
+    "plane": "head",
+    "manipulation": "Head crop",
+    "arm": [
+     "wnt",
+     "head",
+     0.5,
+     0.25
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 15,
+    "eid": 242,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "wnt",
+     "trunk",
+     0.5,
+     0.25
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 18,
+    "eid": 244,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "wnt",
+     "trunk",
+     0.5,
+     1.0
+    ],
+    "sim": 1.0,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 41,
+    "eid": 1553,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 50,
+    "eid": 396,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Pharyngeal crop",
+    "arm": [
+     "wnt",
+     "trunk",
+     0.5,
+     1.0
+    ],
+    "sim": 1.0,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 60,
+    "eid": 406,
+    "group": "cutting",
+    "plane": "trunk",
+    "manipulation": "Side prepharynx",
+    "arm": [
+     "cutting",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 65,
+    "eid": 412,
+    "group": "ion_channel",
+    "plane": "head",
+    "manipulation": "Pharynx fragment with slanted anterior",
+    "arm": [
+     "ion_channel",
+     "head",
+     0.5,
+     null
+    ],
+    "sim": 0.333,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 87,
+    "eid": 1316,
+    "group": "other_rnai",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "arm": [
+     "generic",
+     "tail",
+     0.5,
+     null
+    ],
+    "sim": 1.0,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 91,
+    "eid": 1320,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 95,
+    "eid": 1325,
+    "group": "morphogen",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "arm": [
+     "wnt",
+     "tail",
+     0.5,
+     1.0
+    ],
+    "sim": 1.0,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 102,
+    "eid": 1340,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "wnt",
+     "trunk",
+     0.5,
+     1.0
+    ],
+    "sim": 1.0,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 108,
+    "eid": 1346,
+    "group": "morphogen",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "arm": [
+     "wnt",
+     "tail",
+     0.5,
+     1.0
+    ],
+    "sim": 1.0,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 129,
+    "eid": 893,
+    "group": "cutting",
+    "plane": "head",
+    "manipulation": "Head, lateral third",
+    "arm": [
+     "cutting",
+     "head",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 156,
+    "eid": 914,
+    "group": "cutting",
+    "plane": "head",
+    "manipulation": "Pre-pharyngeal crop",
+    "arm": [
+     "cutting",
+     "head",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 160,
+    "eid": 920,
+    "group": "cutting",
+    "plane": "head",
+    "manipulation": "Pre-pharyngeal crop",
+    "arm": [
+     "cutting",
+     "head",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 198,
+    "eid": 876,
+    "group": "cutting",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "cutting",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 215,
+    "eid": 1576,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 5/12 crosspiece",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.42,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 216,
+    "eid": 1577,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 6/12 crosspiece",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 236,
+    "eid": 1588,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 5/12 crosspiece",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.42,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 240,
+    "eid": 1584,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 6/12 crosspiece",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 362,
+    "eid": 1044,
+    "group": "other_rnai",
+    "plane": "head",
+    "manipulation": "Head amputation",
+    "arm": [
+     "neoblast",
+     "head",
+     0.5,
+     null
+    ],
+    "sim": 1.0,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 483,
+    "eid": 1817,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 484,
+    "eid": 1818,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 501,
+    "eid": 848,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "neoblast",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 506,
+    "eid": 854,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "neoblast",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 509,
+    "eid": 858,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "neoblast",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 512,
+    "eid": 856,
+    "group": "cutting",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "cutting",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 553,
+    "eid": 1274,
+    "group": "other_rnai",
+    "plane": "head",
+    "manipulation": "Head crop",
+    "arm": [
+     "generic",
+     "head",
+     0.5,
+     null
+    ],
+    "sim": 0.333,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 572,
+    "eid": 121,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "wnt",
+     "trunk",
+     0.5,
+     1.0
+    ],
+    "sim": 1.0,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 577,
+    "eid": 208,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "apc",
+     "trunk",
+     0.5,
+     1.0
+    ],
+    "sim": 1.0,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 579,
+    "eid": 1799,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 584,
+    "eid": 214,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "apc",
+     "trunk",
+     0.5,
+     1.0
+    ],
+    "sim": 1.0,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 611,
+    "eid": 1755,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 4/8 crosspiece, exclude head",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 614,
+    "eid": 1614,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 3/8 crosspiece, exclude head",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.38,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 621,
+    "eid": 1631,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 6/6 crosspiece, exclude head",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.95,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 625,
+    "eid": 1727,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 4/8 crosspiece, exclude head",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 626,
+    "eid": 1728,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 1/8 crosspiece, exclude head",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.12,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 635,
+    "eid": 1737,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 2/8 crosspiece, exclude head",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.25,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 639,
+    "eid": 1741,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 2/8 crosspiece, exclude head",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.25,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 655,
+    "eid": 1745,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 2/8 crosspiece, exclude head",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.25,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 658,
+    "eid": 1612,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 1/8 crosspiece, exclude head",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.12,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 673,
+    "eid": 1750,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 3/8 crosspiece, exclude head",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.38,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 775,
+    "eid": 1134,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 785,
+    "eid": 1139,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 789,
+    "eid": 1147,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 847,
+    "eid": 1419,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Pre-existing and Ectopic Pharynx Amputation",
+    "arm": [
+     "wnt",
+     "trunk",
+     0.5,
+     0.25
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 855,
+    "eid": 1428,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "wnt",
+     "trunk",
+     0.5,
+     0.25
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 864,
+    "eid": 1413,
+    "group": "morphogen",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "arm": [
+     "wnt",
+     "tail",
+     0.5,
+     0.25
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 881,
+    "eid": 1774,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 930,
+    "eid": 225,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 936,
+    "eid": 1125,
+    "group": "cutting",
+    "plane": "trunk",
+    "manipulation": "Fragment .17-.5 mm3",
+    "arm": [
+     "cutting",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 938,
+    "eid": 1123,
+    "group": "cutting",
+    "plane": "trunk",
+    "manipulation": "Fragment .08-.16 mm3",
+    "arm": [
+     "cutting",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 949,
+    "eid": 149,
+    "group": "cutting",
+    "plane": "trunk",
+    "manipulation": "Small side fragment",
+    "arm": [
+     "cutting",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 966,
+    "eid": 137,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 7/12 crosspiece",
+    "arm": [
+     "cutting",
+     "crosspiece",
+     0.58,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 1012,
+    "eid": 329,
+    "group": "gj_block",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "arm": [
+     "gjblock_washout",
+     "tail",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 1023,
+    "eid": 520,
+    "group": "ion_channel",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "ion_channel",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1030,
+    "eid": 528,
+    "group": "ion_channel",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "ion_channel",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1032,
+    "eid": 530,
+    "group": "ion_channel",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "ion_channel",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 1045,
+    "eid": 544,
+    "group": "ion_channel",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "ion_channel",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 1047,
+    "eid": 546,
+    "group": "ion_channel",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "ion_channel",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 1063,
+    "eid": 561,
+    "group": "ion_channel",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "ion_channel",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 1076,
+    "eid": 571,
+    "group": "ion_channel",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "ion_channel",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 1096,
+    "eid": 1079,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1105,
+    "eid": 304,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "cutting",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 1115,
+    "eid": 640,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 1116,
+    "eid": 641,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1125,
+    "eid": 416,
+    "group": "gj_block",
+    "plane": "head",
+    "manipulation": "Pre-pharyngeal crop",
+    "arm": [
+     "gjblock",
+     "head",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 1132,
+    "eid": 423,
+    "group": "gj_block",
+    "plane": "head_tail",
+    "manipulation": "Head plus post-pharyngeal crop",
+    "arm": [
+     "gjblock",
+     "head_tail",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 1196,
+    "eid": 272,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "neoblast",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1242,
+    "eid": 193,
+    "group": "morphogen",
+    "plane": "head_tail",
+    "manipulation": "Head plus pre-pharyngeal crop",
+    "arm": [
+     "wnt",
+     "head_tail",
+     0.5,
+     1.0
+    ],
+    "sim": 1.0,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1246,
+    "eid": 197,
+    "group": "morphogen",
+    "plane": "tail",
+    "manipulation": "Zig zag side removals plus tail crop",
+    "arm": [
+     "wnt",
+     "tail",
+     0.5,
+     1.0
+    ],
+    "sim": 1.0,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1275,
+    "eid": 670,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 1280,
+    "eid": 675,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1304,
+    "eid": 701,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1312,
+    "eid": 710,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1319,
+    "eid": 717,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1323,
+    "eid": 721,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1346,
+    "eid": 744,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1350,
+    "eid": 748,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1352,
+    "eid": 750,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1374,
+    "eid": 772,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1388,
+    "eid": 786,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1396,
+    "eid": 794,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1397,
+    "eid": 795,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1400,
+    "eid": 798,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1404,
+    "eid": 802,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1411,
+    "eid": 809,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1412,
+    "eid": 810,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1415,
+    "eid": 814,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1416,
+    "eid": 813,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1428,
+    "eid": 826,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1479,
+    "eid": 831,
+    "group": "cutting",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "arm": [
+     "cutting",
+     "tail",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 1480,
+    "eid": 832,
+    "group": "cutting",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "cutting",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": false
+   },
+   {
+    "row_index": 1481,
+    "eid": 833,
+    "group": "cutting",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "arm": [
+     "cutting",
+     "tail",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 1485,
+    "eid": 837,
+    "group": "cutting",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "arm": [
+     "cutting",
+     "tail",
+     0.5,
+     null
+    ],
+    "sim": 0.0,
+    "pred_dominant": "wt",
+    "decode_match": true
+   },
+   {
+    "row_index": 1532,
+    "eid": 1265,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1545,
+    "eid": 1698,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": false
+   },
+   {
+    "row_index": 1584,
+    "eid": 1060,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1693,
+    "eid": 1471,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   },
+   {
+    "row_index": 1711,
+    "eid": 1464,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "arm": [
+     "generic",
+     "trunk",
+     0.5,
+     null
+    ],
+    "sim": 0.667,
+    "pred_dominant": "abnormal",
+    "decode_match": true
+   }
+  ],
+  "never_used_as_targets": true
+ },
+ "export": {
+  "path": "results/corpus_decoded_programs.json",
+  "produced": false,
+  "reason": "the decode path re-runs but emits no per-record zone/identity program at any stage (fields_qualifying = []); an export would require an improvised decoder, excluded by the pre-registration"
+ },
+ "battery": {
+  "S_star": [
+   64.0,
+   0.0
+  ],
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n_targets_built": 0,
+  "n_instrument_calls": 0,
+  "n_writable": 0,
+  "n_rejected_seeds": 0,
+  "miss_list": [
+   {
+    "row_index": 2,
+    "eid": 264,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 15,
+    "eid": 242,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 18,
+    "eid": 244,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 41,
+    "eid": 1553,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 50,
+    "eid": 396,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 60,
+    "eid": 406,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 65,
+    "eid": 412,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 87,
+    "eid": 1316,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 91,
+    "eid": 1320,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 95,
+    "eid": 1325,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 102,
+    "eid": 1340,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 108,
+    "eid": 1346,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 129,
+    "eid": 893,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 156,
+    "eid": 914,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 160,
+    "eid": 920,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 198,
+    "eid": 876,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 215,
+    "eid": 1576,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 216,
+    "eid": 1577,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 236,
+    "eid": 1588,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 240,
+    "eid": 1584,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 362,
+    "eid": 1044,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 483,
+    "eid": 1817,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 484,
+    "eid": 1818,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 501,
+    "eid": 848,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 506,
+    "eid": 854,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 509,
+    "eid": 858,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 512,
+    "eid": 856,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 553,
+    "eid": 1274,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 572,
+    "eid": 121,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 577,
+    "eid": 208,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 579,
+    "eid": 1799,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 584,
+    "eid": 214,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 611,
+    "eid": 1755,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 614,
+    "eid": 1614,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 621,
+    "eid": 1631,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 625,
+    "eid": 1727,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 626,
+    "eid": 1728,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 635,
+    "eid": 1737,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 639,
+    "eid": 1741,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 655,
+    "eid": 1745,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 658,
+    "eid": 1612,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 673,
+    "eid": 1750,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 775,
+    "eid": 1134,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 785,
+    "eid": 1139,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 789,
+    "eid": 1147,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 847,
+    "eid": 1419,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 855,
+    "eid": 1428,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 864,
+    "eid": 1413,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 881,
+    "eid": 1774,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 930,
+    "eid": 225,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 936,
+    "eid": 1125,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 938,
+    "eid": 1123,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 949,
+    "eid": 149,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 966,
+    "eid": 137,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1012,
+    "eid": 329,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1023,
+    "eid": 520,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1030,
+    "eid": 528,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1032,
+    "eid": 530,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1045,
+    "eid": 544,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1047,
+    "eid": 546,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1063,
+    "eid": 561,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1076,
+    "eid": 571,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1096,
+    "eid": 1079,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1105,
+    "eid": 304,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1115,
+    "eid": 640,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1116,
+    "eid": 641,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1125,
+    "eid": 416,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1132,
+    "eid": 423,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1196,
+    "eid": 272,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1242,
+    "eid": 193,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1246,
+    "eid": 197,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1275,
+    "eid": 670,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1280,
+    "eid": 675,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1304,
+    "eid": 701,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1312,
+    "eid": 710,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1319,
+    "eid": 717,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1323,
+    "eid": 721,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1346,
+    "eid": 744,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1350,
+    "eid": 748,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1352,
+    "eid": 750,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1374,
+    "eid": 772,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1388,
+    "eid": 786,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1396,
+    "eid": 794,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1397,
+    "eid": 795,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1400,
+    "eid": 798,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1404,
+    "eid": 802,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1411,
+    "eid": 809,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1412,
+    "eid": 810,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1415,
+    "eid": 814,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1416,
+    "eid": 813,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1428,
+    "eid": 826,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1479,
+    "eid": 831,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1480,
+    "eid": 832,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1481,
+    "eid": 833,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1485,
+    "eid": 837,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1532,
+    "eid": 1265,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1545,
+    "eid": 1698,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1584,
+    "eid": 1060,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1693,
+    "eid": 1471,
+    "reason": "no_program_output_in_decode_path_blocked"
+   },
+   {
+    "row_index": 1711,
+    "eid": 1464,
+    "reason": "no_program_output_in_decode_path_blocked"
+   }
+  ],
+  "miss_list_note": "every sampled record misses for the SAME reason: the decode stage emits no program, so no target could be BUILT (writable_3seed never ran) \u2014 a structure refutation one stage UPSTREAM of exp187's: exp187 proved the BANK carries no programs; exp192 proves the PIPELINE cannot produce them either"
+ },
+ "margin_profile": {
+  "exists": false,
+  "reason": "no margins exist: zero targets constructible, zero instrument calls",
+  "exp182_reference_line": {
+   "source": "results/exp182_substrate_100.json",
+   "n_targets": 100,
+   "worst_case_margin3": 5.404,
+   "recorded": true
+  }
+ },
+ "gates": {
+  "S1": false,
+  "S2": false,
+  "S3": false,
+  "S4": true
+ },
+ "gate_detail": {
+  "S1": "REFUTE \u2014 BLOCKED: the decode path DOES re-run in this environment and reproduces the deposited 0.290-MAE machinery bit-exactly (47/47 arm rates, 1716/1716 per-record decode fields, MAE raw 0.3705/decoded 0.2900 within 0.01; the >=20-record re-score spot-check: 100/100 bit-exact) \u2014 yet NO stage of the pipeline emits a per-record zone/identity program (the live stage scan deposited; fields_qualifying = [] across the loader, the mapping, the decode stage, the arm-slot census and the engine return boundary). The decode stage (attach_sim) outputs the scalar sim rate + the binary dominant label; the arm tuple is a simulation-knob; the sheet's final V is a local inside run_arm_v5/run_arm_dose, consumed by the outcome predicate and discarded. results/corpus_decoded_programs.json was therefore NOT created \u2014 producing it would require the forbidden improvised decoder (converting arms/V-states into zone/voltage programs). The MAE-consistency clause of S1 was executed and holds; the EXPORT clause cannot",
+  "S2": "REFUTE \u2014 0/100 constructible: the registered basis (programs sampled FROM THE EXPORT) is empty because the export does not exist (S1); the registered sampler (default_rng(187187), 100 without replacement) ran over the decode stage's scored records as a DISCLOSED diagnostic would-be sample and yielded zero targets; spec_target_n never ran; writable_3seed/_lock_substrate never called (structurally zero instrument calls)",
+  "S3": "REFUTE \u2014 vacuous: no targets, no instrument calls, no writable counts and no margins exist; the 90/100 bar is unreadable over an empty battery; exp182's reference line (+5.404) is recorded",
+  "S4": "PASS \u2014 manifest-first byte-offset assertion held (bytes [0, 44828), sha256 d70555beea23..., re-read + re-hashed before the final write); all re-run errors finite (the 905 scored records' two error frames); no per-target tuning: structurally ZERO instrument calls, S* never adjusted, the re-run/scan is read-only over the pipeline; the errs clause over the empty battery is vacuous (all() over no errs) and disclosed as such"
+ },
+ "gates_passed": "1/4",
+ "verdict": "S1 REFUTE with the BLOCKED finding \u2014 the decode path re-runs bit-exactly (0.290-MAE machinery reproduced; spot-check 100/100) yet NO stage emits per-record zone/identity programs: the export is not producible without the forbidden improvised decoder; S2/S3 REFUTE vacuous (0/100 constructible, zero instrument calls); S4 PASS",
+ "run_timings": {
+  "decode_path_build_s": 0.96,
+  "decode_path_sim_s": 5.5
+ },
+ "smoke_disclosure": "a --smoke check (3 sampled records, scan verdicts only) ran before the credited run in a separate process and was discarded (no file)",
+ "wall_s": 9.3
+}
