@@ -1,0 +1,1690 @@
+{
+ "experiment": "exp187_corpus_at_sstar",
+ "kind": "incompatible_structure",
+ "claim": "the empirical target class: 100 sampled mined planform records priced for writability at the locked substrate S* = (64.0, 0.0) \u2014 registered sample/protocol/gates C1-C4",
+ "pre_registered": {
+  "sample": "rng = default_rng(187187), 100 records without replacement from the bank's decoded-pattern records (the record field carrying the decoded zone/identity program, read from the deposit at run time); each pattern built through exp94's spec_target_n on its own labeling (canon == wildtype asserted per target)",
+  "protocol": "exp161's writable_3seed + probe_margin at S* = (64.0, 0.0), seeds (1, 2, 3), the substrate lock asserted per write",
+  "manifest_first": true,
+  "gates": {
+   "C1": "the manifest precedes the battery in the deposit (byte-offset assertion); 100 unique records",
+   "C2": ">= 90/100 corpus targets writable at S* (decode < 6.0 AND hold < 6.0 on 3/3 seeds); the miss list deposited; zero rejections",
+   "C3": "worst-case margin deposited; the margin histogram + the depth profile deposited; exp182's +5.404 reference line recorded",
+   "C4": "all errs finite; no per-target tuning"
+  }
+ },
+ "bank": {
+  "path": "results/exp118_corpus_full.json",
+  "sha256": "fb9a809b42f248d090c4a816438e4e7ef2ef4483fb61c26df05c4560b9d1a88d",
+  "exp": "exp118_corpus_full_mine",
+  "mode": "full",
+  "n_db_total": 1716,
+  "n_records": 1716,
+  "accounting": {
+   "scored": 905,
+   "unmapped_plane": 404,
+   "unmapped_group": 153,
+   "no_outcome": 254
+  },
+  "top_level_sections": {
+   "exp": "str",
+   "mode": "str",
+   "pilot_rule": "NoneType",
+   "stack": "str",
+   "n_db_total": "int",
+   "accounting": "dict",
+   "coverage": "dict",
+   "sim_cost": "dict",
+   "aggregates": "dict",
+   "by_group": "dict",
+   "comparison": "dict",
+   "arm_table": "dict",
+   "criteria": "dict",
+   "gate_details": "dict",
+   "notes": "str"
+  }
+ },
+ "pattern_field_scan": {
+  "registered_rule": "the record field carrying the decoded zone/identity program; the exact field name read from the deposit at run time and recorded here; a field qualifies ONLY on structure (zone triples (f0, f1, voltage), a zone-bearing spec dict, or a per-cell label vector of length 100) \u2014 NO conversion attempted",
+  "n_fields": 23,
+  "fields": [
+   {
+    "name": "eid",
+    "n_present": 1716,
+    "types": [
+     "int"
+    ],
+    "example": 262,
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a scalar metadata/outcome value"
+   },
+   {
+    "name": "species",
+    "n_present": 1716,
+    "types": [
+     "str"
+    ],
+    "example": "Schmidtea mediterranea",
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a categorical label"
+   },
+   {
+    "name": "manipulation",
+    "n_present": 1716,
+    "types": [
+     "str"
+    ],
+    "example": "Head crop",
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a categorical label"
+   },
+   {
+    "name": "group",
+    "n_present": 1716,
+    "types": [
+     "NoneType",
+     "str"
+    ],
+    "example": "other_rnai",
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a categorical label"
+   },
+   {
+    "name": "plane",
+    "n_present": 1716,
+    "types": [
+     "NoneType",
+     "str"
+    ],
+    "example": "head",
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a categorical label"
+   },
+   {
+    "name": "cut_f",
+    "n_present": 1716,
+    "types": [
+     "NoneType",
+     "float"
+    ],
+    "example": null,
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a scalar metadata/outcome value"
+   },
+   {
+    "name": "rnais",
+    "n_present": 1716,
+    "types": [
+     "list"
+    ],
+    "example": [
+     "Smed-evi"
+    ],
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a list of labels/values, not zone triples (f0, f1, voltage) and not a per-cell label vector"
+   },
+   {
+    "name": "drugs",
+    "n_present": 1716,
+    "types": [
+     "list"
+    ],
+    "example": [],
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a list of labels/values, not zone triples (f0, f1, voltage) and not a per-cell label vector"
+   },
+   {
+    "name": "n_result_sets",
+    "n_present": 1716,
+    "types": [
+     "int"
+    ],
+    "example": 1,
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a scalar metadata/outcome value"
+   },
+   {
+    "name": "ap_morphogen",
+    "n_present": 1716,
+    "types": [
+     "bool"
+    ],
+    "example": false,
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a flag"
+   },
+   {
+    "name": "recorded_raw",
+    "n_present": 1716,
+    "types": [
+     "NoneType",
+     "float"
+    ],
+    "example": 1.0,
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a scalar metadata/outcome value"
+   },
+   {
+    "name": "arm",
+    "n_present": 1716,
+    "types": [
+     "NoneType",
+     "list"
+    ],
+    "example": [
+     "wnt",
+     "head",
+     0.5,
+     1.0
+    ],
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "the mapped manipulation arm (family, plane, dose, duration): a SIMULATION-KNOB tuple, no spatial extents/voltages; NOT loadable as a target program without an improvised conversion (excluded by the pre-registration)"
+   },
+   {
+    "name": "sim",
+    "n_present": 1716,
+    "types": [
+     "NoneType",
+     "float"
+    ],
+    "example": 1.0,
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a scalar metadata/outcome value"
+   },
+   {
+    "name": "excluded_C4",
+    "n_present": 1716,
+    "types": [
+     "bool"
+    ],
+    "example": false,
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a flag"
+   },
+   {
+    "name": "pilot_member",
+    "n_present": 1716,
+    "types": [
+     "bool"
+    ],
+    "example": true,
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a flag"
+   },
+   {
+    "name": "slices",
+    "n_present": 1716,
+    "types": [
+     "NoneType",
+     "dict"
+    ],
+    "example": {
+     "exp27": false,
+     "exp60_gene": true,
+     "exp70_onset": false,
+     "exp88_mapped": true,
+     "exp92_dose_class": false
+    },
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a mapping (flags/parameters); no zone structure"
+   },
+   {
+    "name": "status",
+    "n_present": 1716,
+    "types": [
+     "str"
+    ],
+    "example": "scored",
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a categorical label"
+   },
+   {
+    "name": "recorded_corrected",
+    "n_present": 1716,
+    "types": [
+     "NoneType",
+     "float"
+    ],
+    "example": 1.0,
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a scalar metadata/outcome value"
+   },
+   {
+    "name": "abs_err_raw",
+    "n_present": 905,
+    "types": [
+     "float"
+    ],
+    "example": 0.0,
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a scalar metadata/outcome value"
+   },
+   {
+    "name": "abs_err_corrected",
+    "n_present": 905,
+    "types": [
+     "float"
+    ],
+    "example": 0.0,
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a scalar metadata/outcome value"
+   },
+   {
+    "name": "pred_dominant",
+    "n_present": 905,
+    "types": [
+     "str"
+    ],
+    "example": "abnormal",
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a categorical label"
+   },
+   {
+    "name": "recorded_dominant",
+    "n_present": 905,
+    "types": [
+     "str"
+    ],
+    "example": "abnormal",
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a categorical label"
+   },
+   {
+    "name": "decode_match",
+    "n_present": 905,
+    "types": [
+     "bool"
+    ],
+    "example": true,
+    "n_program_values": 0,
+    "program_candidate": false,
+    "reason": "a flag"
+   }
+  ],
+  "fields_qualifying": [],
+  "pattern_field": null
+ },
+ "manifest_first": {
+  "protocol": "the phase-1 manifest deposit occupied bytes [0, L) of the deposit; re-read + re-hashed BEFORE the final write; length + sha256 recorded here",
+  "byte_offset": 0,
+  "manifest_byte_length": 23959,
+  "manifest_sha256": "a2aae6869dbe3f5f68494ea305a527591f4b0420649255ff01c8d6edffd79862",
+  "asserted_before_final_write": true
+ },
+ "sample": {
+  "rng": "np.random.default_rng(187187), choice(..., 100, replace=False); indices sorted ascending after the draw",
+  "basis": "the FULL bank \u2014 the decoded-pattern subset is EMPTY (0/1716 records carry a program field); the registered sampler was run on the full bank as a DIAGNOSTIC would-be sample, disclosed as such",
+  "n_pool": 1716,
+  "n_sampled": 100,
+  "n_unique_eids": 100,
+  "records": [
+   {
+    "bank_index": 4,
+    "eid": 266,
+    "group": "morphogen",
+    "plane": "head",
+    "manipulation": "Head crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 22,
+    "eid": 1349,
+    "group": "other_rnai",
+    "plane": "none",
+    "manipulation": "Degrowth",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 24,
+    "eid": 1351,
+    "group": null,
+    "plane": null,
+    "manipulation": "Amputation",
+    "status": "no_outcome"
+   },
+   {
+    "bank_index": 49,
+    "eid": 395,
+    "group": "ion_channel",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 66,
+    "eid": 411,
+    "group": "cutting",
+    "plane": "head",
+    "manipulation": "Pharynx fragment with slanted anterior",
+    "status": "scored"
+   },
+   {
+    "bank_index": 78,
+    "eid": 1098,
+    "group": "cutting",
+    "plane": "none",
+    "manipulation": "Wild type",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 84,
+    "eid": 1314,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "unmapped_group"
+   },
+   {
+    "bank_index": 102,
+    "eid": 1340,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 103,
+    "eid": 1341,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 113,
+    "eid": 1334,
+    "group": "morphogen",
+    "plane": "head",
+    "manipulation": "Head crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 121,
+    "eid": 923,
+    "group": "cutting",
+    "plane": "graft",
+    "manipulation": "Graft - anterior pharynx, remove both",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 136,
+    "eid": 888,
+    "group": "cutting",
+    "plane": "trunk",
+    "manipulation": "Remove center slight, amputation",
+    "status": "scored"
+   },
+   {
+    "bank_index": 161,
+    "eid": 918,
+    "group": "cutting",
+    "plane": "head",
+    "manipulation": "Head amputation",
+    "status": "scored"
+   },
+   {
+    "bank_index": 193,
+    "eid": 936,
+    "group": "cutting",
+    "plane": "head",
+    "manipulation": "Irradiation - anterior diagonal, head amputation",
+    "status": "scored"
+   },
+   {
+    "bank_index": 230,
+    "eid": 1567,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 5/12 crosspiece",
+    "status": "scored"
+   },
+   {
+    "bank_index": 241,
+    "eid": 1593,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 4-5/12 crosspiece",
+    "status": "scored"
+   },
+   {
+    "bank_index": 245,
+    "eid": 1591,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 5/12 crosspiece",
+    "status": "scored"
+   },
+   {
+    "bank_index": 282,
+    "eid": 660,
+    "group": "other_rnai",
+    "plane": "head",
+    "manipulation": "Head amputation",
+    "status": "scored"
+   },
+   {
+    "bank_index": 297,
+    "eid": 1285,
+    "group": "cutting",
+    "plane": "irr",
+    "manipulation": "Irradiation - trunk fragment",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 374,
+    "eid": 1358,
+    "group": null,
+    "plane": null,
+    "manipulation": "Trunk crop",
+    "status": "no_outcome"
+   },
+   {
+    "bank_index": 422,
+    "eid": 484,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 5/6 crosspiece",
+    "status": "scored"
+   },
+   {
+    "bank_index": 430,
+    "eid": 492,
+    "group": "cutting",
+    "plane": "trunk",
+    "manipulation": "Pharyngeal crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 433,
+    "eid": 495,
+    "group": "other_rnai",
+    "plane": "head",
+    "manipulation": "Pre-pharyngeal crop",
+    "status": "unmapped_group"
+   },
+   {
+    "bank_index": 446,
+    "eid": 508,
+    "group": null,
+    "plane": null,
+    "manipulation": "Trunk crop",
+    "status": "no_outcome"
+   },
+   {
+    "bank_index": 450,
+    "eid": 512,
+    "group": null,
+    "plane": null,
+    "manipulation": "Tail crop",
+    "status": "no_outcome"
+   },
+   {
+    "bank_index": 453,
+    "eid": 515,
+    "group": null,
+    "plane": null,
+    "manipulation": "Tail crop",
+    "status": "no_outcome"
+   },
+   {
+    "bank_index": 487,
+    "eid": 1822,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "unmapped_group"
+   },
+   {
+    "bank_index": 513,
+    "eid": 857,
+    "group": "cutting",
+    "plane": "none",
+    "manipulation": "Wild type",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 514,
+    "eid": 849,
+    "group": "other_rnai",
+    "plane": "none",
+    "manipulation": "Wild type",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 517,
+    "eid": 1110,
+    "group": "cutting",
+    "plane": "head",
+    "manipulation": "Head crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 525,
+    "eid": 1789,
+    "group": "cutting",
+    "plane": "graft",
+    "manipulation": "Graft- wild type pre-pharyngeal to lethally irradiated worm ",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 570,
+    "eid": 1459,
+    "group": "ion_channel",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 578,
+    "eid": 1798,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 585,
+    "eid": 215,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 588,
+    "eid": 217,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 614,
+    "eid": 1614,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 3/8 crosspiece, exclude head",
+    "status": "scored"
+   },
+   {
+    "bank_index": 625,
+    "eid": 1727,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 4/8 crosspiece, exclude head",
+    "status": "scored"
+   },
+   {
+    "bank_index": 637,
+    "eid": 1739,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 4/8 crosspiece, exclude head",
+    "status": "scored"
+   },
+   {
+    "bank_index": 664,
+    "eid": 1622,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 3/6 crosspiece, exclude head",
+    "status": "scored"
+   },
+   {
+    "bank_index": 665,
+    "eid": 1623,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 4/6 crosspiece, exclude head",
+    "status": "scored"
+   },
+   {
+    "bank_index": 705,
+    "eid": 1648,
+    "group": "cutting",
+    "plane": "graft",
+    "manipulation": "Graft - Head to posterior trunk crop remove nerve cords 1mm",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 721,
+    "eid": 1657,
+    "group": "cutting",
+    "plane": "graft",
+    "manipulation": "Graft - Irradiated head to posterior trunk crop 1mm",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 743,
+    "eid": 1543,
+    "group": "cutting",
+    "plane": "graft",
+    "manipulation": "Graft - Head remove join tail then remove graft to regenerat",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 748,
+    "eid": 1667,
+    "group": "cutting",
+    "plane": "graft",
+    "manipulation": "Graft - tail to posterior head crop",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 793,
+    "eid": 1149,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 813,
+    "eid": 1168,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 841,
+    "eid": 1409,
+    "group": "morphogen",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 856,
+    "eid": 1429,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 863,
+    "eid": 1434,
+    "group": "morphogen",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 867,
+    "eid": 1416,
+    "group": "other_rnai",
+    "plane": "head",
+    "manipulation": "Head crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 921,
+    "eid": 319,
+    "group": "other_rnai",
+    "plane": "none",
+    "manipulation": "Wild type",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 953,
+    "eid": 167,
+    "group": null,
+    "plane": null,
+    "manipulation": "Side right extended",
+    "status": "no_outcome"
+   },
+   {
+    "bank_index": 964,
+    "eid": 135,
+    "group": "cutting",
+    "plane": "crosspiece",
+    "manipulation": "Anterior 5/12 crosspiece",
+    "status": "scored"
+   },
+   {
+    "bank_index": 969,
+    "eid": 153,
+    "group": null,
+    "plane": null,
+    "manipulation": "Side right with pharynx",
+    "status": "no_outcome"
+   },
+   {
+    "bank_index": 970,
+    "eid": 152,
+    "group": null,
+    "plane": null,
+    "manipulation": "Side left with pharynx",
+    "status": "no_outcome"
+   },
+   {
+    "bank_index": 1002,
+    "eid": 142,
+    "group": "cutting",
+    "plane": "head",
+    "manipulation": "Head right side amputated",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1021,
+    "eid": 518,
+    "group": "ion_channel",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1045,
+    "eid": 544,
+    "group": "ion_channel",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1069,
+    "eid": 575,
+    "group": "cutting",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1077,
+    "eid": 572,
+    "group": "cutting",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1093,
+    "eid": 1840,
+    "group": "morphogen",
+    "plane": "none",
+    "manipulation": "Wild type",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1127,
+    "eid": 418,
+    "group": "gj_block",
+    "plane": "tail",
+    "manipulation": "Post-pharyngeal crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1142,
+    "eid": 432,
+    "group": "gj_block",
+    "plane": "lateral",
+    "manipulation": "Zig zag side removals",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1148,
+    "eid": 439,
+    "group": null,
+    "plane": null,
+    "manipulation": "Post-pharyngeal crop",
+    "status": "no_outcome"
+   },
+   {
+    "bank_index": 1149,
+    "eid": 440,
+    "group": null,
+    "plane": null,
+    "manipulation": "Post-pharyngeal crop",
+    "status": "no_outcome"
+   },
+   {
+    "bank_index": 1168,
+    "eid": 459,
+    "group": "cutting",
+    "plane": "head",
+    "manipulation": "Double head, longitudinal cut",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1186,
+    "eid": 1843,
+    "group": "other_rnai",
+    "plane": "none",
+    "manipulation": "Wild type",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1213,
+    "eid": 1024,
+    "group": "other_rnai",
+    "plane": "irr",
+    "manipulation": "Irradiation - wild type",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1219,
+    "eid": 1030,
+    "group": "other_rnai",
+    "plane": "irr",
+    "manipulation": "Irradiation - wild type",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1251,
+    "eid": 202,
+    "group": "morphogen",
+    "plane": "lateral",
+    "manipulation": "Lateral removal, left",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1288,
+    "eid": 683,
+    "group": "other_rnai",
+    "plane": "none",
+    "manipulation": "Wild type",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1305,
+    "eid": 699,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1311,
+    "eid": 709,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1330,
+    "eid": 728,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1370,
+    "eid": 768,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1371,
+    "eid": 769,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1374,
+    "eid": 772,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1418,
+    "eid": 815,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1427,
+    "eid": 825,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1472,
+    "eid": 1004,
+    "group": "other_rnai",
+    "plane": "none",
+    "manipulation": "Wild type",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1478,
+    "eid": 830,
+    "group": "cutting",
+    "plane": "head",
+    "manipulation": "Head crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1484,
+    "eid": 836,
+    "group": "cutting",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1488,
+    "eid": 840,
+    "group": "cutting",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1490,
+    "eid": 655,
+    "group": "other_rnai",
+    "plane": "head",
+    "manipulation": "Head crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1498,
+    "eid": 1106,
+    "group": "cutting",
+    "plane": "graft",
+    "manipulation": "Graft - irradiated eye triangle to postpharyngeal, anterior ",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1502,
+    "eid": 356,
+    "group": "cutting",
+    "plane": "head",
+    "manipulation": "Pre-eye trapeziod",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1520,
+    "eid": 388,
+    "group": "cutting",
+    "plane": "graft",
+    "manipulation": "Graft - eye triangle to postpharyngeal",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1524,
+    "eid": 385,
+    "group": "cutting",
+    "plane": "graft",
+    "manipulation": "Graft - pre-eye trapeziod to postpharyngeal",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1530,
+    "eid": 370,
+    "group": "cutting",
+    "plane": "graft",
+    "manipulation": "Graft - eye triangle to head, semi-decapitated",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1547,
+    "eid": 1700,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1559,
+    "eid": 1712,
+    "group": "morphogen",
+    "plane": "none",
+    "manipulation": "Wild type",
+    "status": "unmapped_plane"
+   },
+   {
+    "bank_index": 1562,
+    "eid": 1496,
+    "group": "cutting",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1577,
+    "eid": 995,
+    "group": null,
+    "plane": null,
+    "manipulation": "Trunk crop",
+    "status": "no_outcome"
+   },
+   {
+    "bank_index": 1587,
+    "eid": 1052,
+    "group": "other_rnai",
+    "plane": "tail",
+    "manipulation": "Tail crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1605,
+    "eid": 1519,
+    "group": "other_rnai",
+    "plane": "head",
+    "manipulation": "Head crop",
+    "status": "unmapped_group"
+   },
+   {
+    "bank_index": 1678,
+    "eid": 621,
+    "group": "morphogen",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1706,
+    "eid": 1479,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1708,
+    "eid": 1463,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1713,
+    "eid": 1466,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   },
+   {
+    "bank_index": 1714,
+    "eid": 1467,
+    "group": "other_rnai",
+    "plane": "trunk",
+    "manipulation": "Trunk crop",
+    "status": "scored"
+   }
+  ],
+  "never_used_as_targets": true
+ },
+ "battery": {
+  "S_star": [
+   64.0,
+   0.0
+  ],
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n_targets_built": 0,
+  "n_instrument_calls": 0,
+  "n_writable": 0,
+  "n_rejected_seeds": 0,
+  "miss_list": [
+   {
+    "bank_index": 4,
+    "eid": 266,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 22,
+    "eid": 1349,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 24,
+    "eid": 1351,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 49,
+    "eid": 395,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 66,
+    "eid": 411,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 78,
+    "eid": 1098,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 84,
+    "eid": 1314,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 102,
+    "eid": 1340,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 103,
+    "eid": 1341,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 113,
+    "eid": 1334,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 121,
+    "eid": 923,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 136,
+    "eid": 888,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 161,
+    "eid": 918,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 193,
+    "eid": 936,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 230,
+    "eid": 1567,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 241,
+    "eid": 1593,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 245,
+    "eid": 1591,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 282,
+    "eid": 660,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 297,
+    "eid": 1285,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 374,
+    "eid": 1358,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 422,
+    "eid": 484,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 430,
+    "eid": 492,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 433,
+    "eid": 495,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 446,
+    "eid": 508,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 450,
+    "eid": 512,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 453,
+    "eid": 515,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 487,
+    "eid": 1822,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 513,
+    "eid": 857,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 514,
+    "eid": 849,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 517,
+    "eid": 1110,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 525,
+    "eid": 1789,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 570,
+    "eid": 1459,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 578,
+    "eid": 1798,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 585,
+    "eid": 215,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 588,
+    "eid": 217,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 614,
+    "eid": 1614,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 625,
+    "eid": 1727,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 637,
+    "eid": 1739,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 664,
+    "eid": 1622,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 665,
+    "eid": 1623,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 705,
+    "eid": 1648,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 721,
+    "eid": 1657,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 743,
+    "eid": 1543,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 748,
+    "eid": 1667,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 793,
+    "eid": 1149,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 813,
+    "eid": 1168,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 841,
+    "eid": 1409,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 856,
+    "eid": 1429,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 863,
+    "eid": 1434,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 867,
+    "eid": 1416,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 921,
+    "eid": 319,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 953,
+    "eid": 167,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 964,
+    "eid": 135,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 969,
+    "eid": 153,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 970,
+    "eid": 152,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1002,
+    "eid": 142,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1021,
+    "eid": 518,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1045,
+    "eid": 544,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1069,
+    "eid": 575,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1077,
+    "eid": 572,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1093,
+    "eid": 1840,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1127,
+    "eid": 418,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1142,
+    "eid": 432,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1148,
+    "eid": 439,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1149,
+    "eid": 440,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1168,
+    "eid": 459,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1186,
+    "eid": 1843,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1213,
+    "eid": 1024,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1219,
+    "eid": 1030,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1251,
+    "eid": 202,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1288,
+    "eid": 683,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1305,
+    "eid": 699,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1311,
+    "eid": 709,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1330,
+    "eid": 728,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1370,
+    "eid": 768,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1371,
+    "eid": 769,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1374,
+    "eid": 772,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1418,
+    "eid": 815,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1427,
+    "eid": 825,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1472,
+    "eid": 1004,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1478,
+    "eid": 830,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1484,
+    "eid": 836,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1488,
+    "eid": 840,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1490,
+    "eid": 655,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1498,
+    "eid": 1106,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1502,
+    "eid": 356,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1520,
+    "eid": 388,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1524,
+    "eid": 385,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1530,
+    "eid": 370,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1547,
+    "eid": 1700,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1559,
+    "eid": 1712,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1562,
+    "eid": 1496,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1577,
+    "eid": 995,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1587,
+    "eid": 1052,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1605,
+    "eid": 1519,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1678,
+    "eid": 621,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1706,
+    "eid": 1479,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1708,
+    "eid": 1463,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1713,
+    "eid": 1466,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   },
+   {
+    "bank_index": 1714,
+    "eid": 1467,
+    "reason": "no_pattern_field_in_bank_incompatible_structure"
+   }
+  ],
+  "miss_list_note": "every sampled record misses for the SAME reason: the bank carries no decoded zone/identity program, so no target could be BUILT (writable_3seed never ran) \u2014 this is a structure refutation, not a substrate failure"
+ },
+ "margin_profile": {
+  "exists": false,
+  "reason": "no margins exist: zero targets constructible, zero instrument calls",
+  "exp182_reference_line": {
+   "source": "results/exp182_substrate_100.json",
+   "n_targets": 100,
+   "worst_case_margin3": 5.404,
+   "recorded": true
+  }
+ },
+ "gates": {
+  "C1": true,
+  "C2": false,
+  "C3": false,
+  "C4": true
+ },
+ "gate_detail": {
+  "C1": "PASS \u2014 the manifest-first protocol was executed: the phase-1 manifest (bank identity + the FULL 23-field scan + the 100 sampled records) was deposited FIRST at bytes [0, 23959) (sha256 a2aae6869dbe...), re-read and re-hashed BEFORE the final write; the sample carries 100 unique records. DISCLOSURE: the manifest is a DIAGNOSIS manifest \u2014 the bank has no target programs, so it carries no target f_sha256 fields; the sampled eids are the registered sampler's output over the full bank (the decoded-pattern subset is empty), labeled never_used_as_targets",
+  "C2": "REFUTE \u2014 0/100 (bar >= 90): ZERO corpus targets could be built because NO record field carries a decoded zone/identity program (the 23-field structural scan deposited; fields_qualifying = []); writable_3seed never ran; the miss list is the 100 sampled records, all with the same reason; zero rejections trivially (zero writes). INCOMPATIBLE-STRUCTURE \u2014 the empirical target class is not loadable as target programs; no conversion improvised per pre-registration",
+  "C3": "REFUTE \u2014 the margin deliverable does not exist: no targets constructible, zero instrument calls, no margins, so no histogram/depth profile of corpus margins can be formed; exp182's reference line (+5.404) is recorded",
+  "C4": "PASS \u2014 no per-target tuning: structurally ZERO instrument calls, S* never adjusted, the scan is read-only over the deposit, no knobs touched; the errs clause is vacuous over the empty battery (all() over no errs) and is disclosed as such"
+ },
+ "gates_passed": "2/4",
+ "verdict": "C2 REFUTE with diagnosis \u2014 INCOMPATIBLE-STRUCTURE: exp118's corpus is an outcome-comparison bank (recorded vs simulated scalar outcomes over 1,716 PlanformDB experiments), not a pattern-program bank; no record field carries a decoded zone/identity program (23-field scan deposited); no conversion improvised per pre-registration",
+ "smoke_disclosure": "a --smoke check (3 sampled records, scan verdicts only) ran before the credited run in a separate process and was discarded (no file)",
+ "wall_s": 0.0
+}
