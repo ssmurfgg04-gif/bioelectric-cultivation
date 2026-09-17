@@ -1,0 +1,1374 @@
+{
+ "experiment": "exp193_the_conditioned_ensemble_to_production",
+ "task_id": "5-e",
+ "registered_next_of": "exp188 (ledger L164): the k=3-conditioned statistic as the production grouping read -- the exp178-pattern additive arm, bit-exact at every old operating point, all deposited verdicts replay",
+ "smoke": false,
+ "runner": {
+  "job": "all",
+  "out": "/home/z/my-project/bioelectric-cultivation/results/exp193_conditioned_ensemble_production.json"
+ },
+ "replays": {
+  "exp163_original_cohort_unconditioned": {
+   "cohort": "exp163's original 12 (seed 159) -- cohort 1, replayed through the UNCHANGED unconditioned path",
+   "unconditioned_path": "dev_signed per pair vs the shared arm-1 seed-1 null, stat = signed mean over the 12 pairs, V2 weighting via exp163's cancel_mass_matrix, STAR_OP, seed 1 (exp173/exp174's statistic, verbatim)",
+   "construction": {
+    "rebind": "none (built at the deposited SEED_CONSTRUCT 159; save/restore asserted)",
+    "F": 0.75,
+    "F_bit_exact_vs_exp163_deposit": true,
+    "features_matched": "12/12",
+    "construction_asserts": "12/12 (A1==A2, S1!=S2, S2==support(A), cancellation layout, connectivity; realized k asserted vs GADGET_SIZE)"
+   },
+   "null_replay": {
+    "pooled_null_stats_bit_exact": true,
+    "null_bar_replayed": 0.071667,
+    "null_bar_bit_exact": true,
+    "null_err_seed1_bit_exact_pairs": "12/12 (vs exp163's null_err AND exp173's null_err_deposited)"
+   },
+   "real_arm_replay": {
+    "m2_aug_bit_exact_identity": "12/12",
+    "errs_bit_exact_pairs": "12/12 (vs exp163's v2_weighted errs AND exp173's errs)",
+    "devs_signed_bit_exact_vs_exp173": "12/12",
+    "devs_unsigned_bit_exact_vs_exp163": "12/12",
+    "n_decodes": 96,
+    "n_rejections": 0
+   },
+   "stat_replay": {
+    "statistic_bit_exact_vs_exp173": {
+     "stat_m1_signed_mean": true,
+     "median_m1": true,
+     "stat_m2_signed_mean": true,
+     "median_m2": true,
+     "majority_sign": true,
+     "n_pairs_sharing_majority_sign": true,
+     "n_pos": true,
+     "n_neg": true,
+     "n_zero": true
+    },
+    "pooled_null_bar": 0.071667,
+    "abs_stat_gt_bar": true,
+    "majority_ge_9": true,
+    "deposited_E3_pass": true,
+    "replayed_rule_verdict_agrees": true
+   },
+   "pin": {
+    "floor": -35.0,
+    "modules": 5,
+    "save_restore_asserted": true
+   },
+   "per_pair": [
+    {
+     "p": 0,
+     "n": 30,
+     "k": 3,
+     "null_err_seed1_replayed": {
+      "T1": 0.55,
+      "T2": 3.81
+     },
+     "err_m1_own_T1": 0.78,
+     "err_m2_own_T2": 3.81,
+     "dev1_signed": 0.23,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp163_deposit": true,
+     "bit_exact_vs_exp173_deposit": true
+    },
+    {
+     "p": 1,
+     "n": 30,
+     "k": 3,
+     "null_err_seed1_replayed": {
+      "T1": 0.43,
+      "T2": 3.72
+     },
+     "err_m1_own_T1": 0.71,
+     "err_m2_own_T2": 3.72,
+     "dev1_signed": 0.28,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp163_deposit": true,
+     "bit_exact_vs_exp173_deposit": true
+    },
+    {
+     "p": 2,
+     "n": 30,
+     "k": 3,
+     "null_err_seed1_replayed": {
+      "T1": 0.62,
+      "T2": 3.82
+     },
+     "err_m1_own_T1": 0.8,
+     "err_m2_own_T2": 3.82,
+     "dev1_signed": 0.18,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp163_deposit": true,
+     "bit_exact_vs_exp173_deposit": true
+    },
+    {
+     "p": 3,
+     "n": 30,
+     "k": 3,
+     "null_err_seed1_replayed": {
+      "T1": 0.43,
+      "T2": 3.72
+     },
+     "err_m1_own_T1": 0.46,
+     "err_m2_own_T2": 3.72,
+     "dev1_signed": 0.03,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp163_deposit": true,
+     "bit_exact_vs_exp173_deposit": true
+    },
+    {
+     "p": 4,
+     "n": 32,
+     "k": 4,
+     "null_err_seed1_replayed": {
+      "T1": 0.51,
+      "T2": 3.43
+     },
+     "err_m1_own_T1": 0.47,
+     "err_m2_own_T2": 3.43,
+     "dev1_signed": -0.04,
+     "dev2_signed": 0.0,
+     "sign_dev1": -1,
+     "bit_exact_vs_exp163_deposit": true,
+     "bit_exact_vs_exp173_deposit": true
+    },
+    {
+     "p": 5,
+     "n": 32,
+     "k": 4,
+     "null_err_seed1_replayed": {
+      "T1": 0.43,
+      "T2": 3.23
+     },
+     "err_m1_own_T1": 0.57,
+     "err_m2_own_T2": 3.23,
+     "dev1_signed": 0.14,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp163_deposit": true,
+     "bit_exact_vs_exp173_deposit": true
+    },
+    {
+     "p": 6,
+     "n": 32,
+     "k": 4,
+     "null_err_seed1_replayed": {
+      "T1": 0.5,
+      "T2": 3.25
+     },
+     "err_m1_own_T1": 0.48,
+     "err_m2_own_T2": 3.25,
+     "dev1_signed": -0.02,
+     "dev2_signed": 0.0,
+     "sign_dev1": -1,
+     "bit_exact_vs_exp163_deposit": true,
+     "bit_exact_vs_exp173_deposit": true
+    },
+    {
+     "p": 7,
+     "n": 32,
+     "k": 4,
+     "null_err_seed1_replayed": {
+      "T1": 0.45,
+      "T2": 3.25
+     },
+     "err_m1_own_T1": 0.5,
+     "err_m2_own_T2": 3.25,
+     "dev1_signed": 0.05,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp163_deposit": true,
+     "bit_exact_vs_exp173_deposit": true
+    },
+    {
+     "p": 8,
+     "n": 30,
+     "k": 5,
+     "null_err_seed1_replayed": {
+      "T1": 0.55,
+      "T2": 3.71
+     },
+     "err_m1_own_T1": 0.64,
+     "err_m2_own_T2": 3.71,
+     "dev1_signed": 0.09,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp163_deposit": true,
+     "bit_exact_vs_exp173_deposit": true
+    },
+    {
+     "p": 9,
+     "n": 30,
+     "k": 5,
+     "null_err_seed1_replayed": {
+      "T1": 0.47,
+      "T2": 3.84
+     },
+     "err_m1_own_T1": 0.7,
+     "err_m2_own_T2": 3.84,
+     "dev1_signed": 0.23,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp163_deposit": true,
+     "bit_exact_vs_exp173_deposit": true
+    },
+    {
+     "p": 10,
+     "n": 30,
+     "k": 5,
+     "null_err_seed1_replayed": {
+      "T1": 0.58,
+      "T2": 3.72
+     },
+     "err_m1_own_T1": 0.79,
+     "err_m2_own_T2": 3.72,
+     "dev1_signed": 0.21,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp163_deposit": true,
+     "bit_exact_vs_exp173_deposit": true
+    },
+    {
+     "p": 11,
+     "n": 30,
+     "k": 5,
+     "null_err_seed1_replayed": {
+      "T1": 0.27,
+      "T2": 3.72
+     },
+     "err_m1_own_T1": 0.59,
+     "err_m2_own_T2": 3.72,
+     "dev1_signed": 0.32,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp163_deposit": true,
+     "bit_exact_vs_exp173_deposit": true
+    }
+   ],
+   "all_bit_exact": true
+  },
+  "exp174_fresh_cohort_unconditioned": {
+   "cohort": "exp174's fresh 12 (ONE rebind of SEED_CONSTRUCT to 174174) -- cohort 2, replayed through the UNCHANGED unconditioned path",
+   "unconditioned_path": "exp173/exp174's statistic, verbatim (see replay 1)",
+   "construction": {
+    "rebind": "exp174's rebinding mechanism: save (assert == 159), rebind to 174174, build pairs 0..11 in order, restore asserted",
+    "F": 0.75,
+    "F_bit_exact_vs_exp174_deposit": true,
+    "features_matched": "12/12",
+    "independence_vs_original_cohort": "12/12 (rebuilt original projections, no digest collision; deposit's F1: 12/12"
+   },
+   "null_replay": {
+    "pooled_null_stats_bit_exact": true,
+    "null_bar_replayed": 0.098333,
+    "null_bar_bit_exact": true,
+    "null_err_seed1_bit_exact_pairs": "12/12"
+   },
+   "real_arm_replay": {
+    "m2_aug_bit_exact_identity": "12/12",
+    "errs_bit_exact_pairs": "12/12",
+    "devs_bit_exact_pairs": "12/12",
+    "n_decodes": 96,
+    "n_rejections": 0
+   },
+   "stat_replay": {
+    "statistic_bit_exact_vs_exp174": {
+     "stat_m1_fresh_signed_mean": true,
+     "median_m1": true,
+     "stat_m2_fresh_signed_mean": true,
+     "median_m2": true,
+     "majority_sign": true,
+     "n_pairs_sharing_majority_sign": true,
+     "n_pos": true,
+     "n_neg": true,
+     "n_zero": true
+    },
+    "pooled_null_bar": 0.098333,
+    "abs_stat_gt_bar": true,
+    "majority_ge_9": true,
+    "deposited_F3_pass": true,
+    "replayed_rule_verdict_agrees": true
+   },
+   "pin": {
+    "floor": -35.0,
+    "modules": 5,
+    "save_restore_asserted": true
+   },
+   "per_pair": [
+    {
+     "p": 0,
+     "n": 30,
+     "k": 3,
+     "independent_of_original": true,
+     "null_err_seed1_replayed": {
+      "T1": 0.43,
+      "T2": 3.73
+     },
+     "err_m1_own_T1": 0.59,
+     "err_m2_own_T2": 3.73,
+     "dev1_signed": 0.16,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp174_deposit": true
+    },
+    {
+     "p": 1,
+     "n": 30,
+     "k": 3,
+     "independent_of_original": true,
+     "null_err_seed1_replayed": {
+      "T1": 0.55,
+      "T2": 3.81
+     },
+     "err_m1_own_T1": 0.75,
+     "err_m2_own_T2": 3.81,
+     "dev1_signed": 0.2,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp174_deposit": true
+    },
+    {
+     "p": 2,
+     "n": 30,
+     "k": 3,
+     "independent_of_original": true,
+     "null_err_seed1_replayed": {
+      "T1": 0.6,
+      "T2": 3.82
+     },
+     "err_m1_own_T1": 0.61,
+     "err_m2_own_T2": 3.82,
+     "dev1_signed": 0.01,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp174_deposit": true
+    },
+    {
+     "p": 3,
+     "n": 30,
+     "k": 3,
+     "independent_of_original": true,
+     "null_err_seed1_replayed": {
+      "T1": 0.28,
+      "T2": 3.72
+     },
+     "err_m1_own_T1": 0.58,
+     "err_m2_own_T2": 3.72,
+     "dev1_signed": 0.3,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp174_deposit": true
+    },
+    {
+     "p": 4,
+     "n": 32,
+     "k": 4,
+     "independent_of_original": true,
+     "null_err_seed1_replayed": {
+      "T1": 0.49,
+      "T2": 3.43
+     },
+     "err_m1_own_T1": 0.51,
+     "err_m2_own_T2": 3.43,
+     "dev1_signed": 0.02,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp174_deposit": true
+    },
+    {
+     "p": 5,
+     "n": 32,
+     "k": 4,
+     "independent_of_original": true,
+     "null_err_seed1_replayed": {
+      "T1": 0.48,
+      "T2": 3.25
+     },
+     "err_m1_own_T1": 0.46,
+     "err_m2_own_T2": 3.25,
+     "dev1_signed": -0.02,
+     "dev2_signed": 0.0,
+     "sign_dev1": -1,
+     "bit_exact_vs_exp174_deposit": true
+    },
+    {
+     "p": 6,
+     "n": 32,
+     "k": 4,
+     "independent_of_original": true,
+     "null_err_seed1_replayed": {
+      "T1": 0.46,
+      "T2": 3.23
+     },
+     "err_m1_own_T1": 0.51,
+     "err_m2_own_T2": 3.23,
+     "dev1_signed": 0.05,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp174_deposit": true
+    },
+    {
+     "p": 7,
+     "n": 32,
+     "k": 4,
+     "independent_of_original": true,
+     "null_err_seed1_replayed": {
+      "T1": 0.5,
+      "T2": 3.17
+     },
+     "err_m1_own_T1": 0.58,
+     "err_m2_own_T2": 3.17,
+     "dev1_signed": 0.08,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp174_deposit": true
+    },
+    {
+     "p": 8,
+     "n": 30,
+     "k": 5,
+     "independent_of_original": true,
+     "null_err_seed1_replayed": {
+      "T1": 0.51,
+      "T2": 3.71
+     },
+     "err_m1_own_T1": 0.71,
+     "err_m2_own_T2": 3.71,
+     "dev1_signed": 0.2,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp174_deposit": true
+    },
+    {
+     "p": 9,
+     "n": 30,
+     "k": 5,
+     "independent_of_original": true,
+     "null_err_seed1_replayed": {
+      "T1": 0.48,
+      "T2": 3.84
+     },
+     "err_m1_own_T1": 0.6,
+     "err_m2_own_T2": 3.84,
+     "dev1_signed": 0.12,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp174_deposit": true
+    },
+    {
+     "p": 10,
+     "n": 30,
+     "k": 5,
+     "independent_of_original": true,
+     "null_err_seed1_replayed": {
+      "T1": 0.6,
+      "T2": 3.72
+     },
+     "err_m1_own_T1": 0.62,
+     "err_m2_own_T2": 3.72,
+     "dev1_signed": 0.02,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp174_deposit": true
+    },
+    {
+     "p": 11,
+     "n": 30,
+     "k": 5,
+     "independent_of_original": true,
+     "null_err_seed1_replayed": {
+      "T1": 0.46,
+      "T2": 3.84
+     },
+     "err_m1_own_T1": 0.61,
+     "err_m2_own_T2": 3.84,
+     "dev1_signed": 0.15,
+     "dev2_signed": 0.0,
+     "sign_dev1": 1,
+     "bit_exact_vs_exp174_deposit": true
+    }
+   ],
+   "all_bit_exact": true
+  },
+  "exp183_k_controlled_conditioned": {
+   "cohort": "exp183's k-controlled 36 (ladder 183001..183036) -- the stratified cohort, stratum stats replayed through the CONDITIONED arm",
+   "conditioned_arm": "exp163's wired conditioned_stat (the F1 additive function): the k=3 stratum's signed mean, realized-k from the construction",
+   "construction": {
+    "F": 0.75,
+    "F_bit_exact_vs_deposit": true,
+    "cohort_table_bit_exact": "36/36 (incl. digest_A per pair)",
+    "rebind_mechanism": "exp174's rebinding mechanism PER PAIR: save (assert == 159), rebind to the ladder seed, build_pair on slot i % 12, restore asserted (36/36)",
+    "strata_selection_bit_exact": true
+   },
+   "null_replay": {
+    "k3": {
+     "pooled_null_stats_bit_exact": true,
+     "null_bar_replayed": 0.128333,
+     "null_bar_bit_exact": true,
+     "null_err_seed1_bit_exact_pairs": "6/6"
+    },
+    "k4": {
+     "pooled_null_stats_bit_exact": true,
+     "null_bar_replayed": 0.106667,
+     "null_bar_bit_exact": true,
+     "null_err_seed1_bit_exact_pairs": "6/6"
+    }
+   },
+   "real_arm_replay": {
+    "m2_aug_bit_exact_identity": "12/12",
+    "errs_bit_exact_pairs": "12/12 per stratum",
+    "devs_bit_exact_pairs": "12/12 per stratum",
+    "n_decodes": 96,
+    "n_rejections": 0
+   },
+   "conditioned_arm_replay": {
+    "conditioned_stat_output_k3": {
+     "stat_m1_signed_mean": 0.14,
+     "median_m1": 0.13,
+     "majority_sign": 1,
+     "n_majority_sign": 5,
+     "n_pos": 5,
+     "n_neg": 1,
+     "n_zero": 0,
+     "n_stratum": 6,
+     "stratum_ids": [
+      0,
+      1,
+      2,
+      3,
+      12,
+      13
+     ]
+    },
+    "k3_stat_block_bit_exact": {
+     "stat_m1_signed_mean": true,
+     "median_m1": true,
+     "majority_sign": true,
+     "n_majority_sign": true,
+     "n_pos": true,
+     "n_neg": true,
+     "n_zero": true,
+     "n_stratum": true,
+     "stratum_ids": true
+    },
+    "k3_stat_block_bit_exact_vs_deposit": {
+     "stat_m1_signed_mean": true,
+     "median_m1": true,
+     "stat_m2_signed_mean": true,
+     "median_m2": true,
+     "majority_sign": true,
+     "n_majority_sign": true,
+     "n_pos": true,
+     "n_neg": true,
+     "n_zero": true,
+     "null_bar": true
+    },
+    "stat_m2_k3": {
+     "stat_m2_signed_mean": 0.0,
+     "bit_exact": true
+    },
+    "k4_stat_block_bit_exact_vs_deposit": {
+     "stat_m1_signed_mean": true,
+     "median_m1": true,
+     "stat_m2_signed_mean": true,
+     "median_m2": true,
+     "majority_sign": true,
+     "n_majority_sign": true,
+     "n_pos": true,
+     "n_neg": true,
+     "n_zero": true,
+     "null_bar": true
+    },
+    "stat_m2_k4": {
+     "stat_m2_signed_mean": 0.0,
+     "bit_exact": true
+    },
+    "unconditioned_mean_replayed": 0.074167,
+    "power_replay": {
+     "abs_conditioned": 0.14,
+     "abs_unconditioned": 0.074167,
+     "conditioning_buys_power_abs": true
+    }
+   },
+   "strata_tables": {
+    "k3": [
+     {
+      "i": 0,
+      "seed_construct": 183001,
+      "slot": 0,
+      "n": 30,
+      "k_realized": 3,
+      "density_d_k": 42.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.42,
+       "T2": 3.72
+      },
+      "err_m1_own_T1": 0.74,
+      "err_m2_own_T2": 3.72,
+      "dev1_signed": 0.32,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "3a2e517957bc75837bf8c8ee2fd393730165a94a8d842df43ef23a4a5a017df3",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 1,
+      "seed_construct": 183002,
+      "slot": 1,
+      "n": 30,
+      "k_realized": 3,
+      "density_d_k": 46.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.57,
+       "T2": 3.81
+      },
+      "err_m1_own_T1": 0.58,
+      "err_m2_own_T2": 3.81,
+      "dev1_signed": 0.01,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "384c7ae499ed0632f0cfb8c0eeb8018f602429a026af41872626a03a6c93beda",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 2,
+      "seed_construct": 183003,
+      "slot": 2,
+      "n": 30,
+      "k_realized": 3,
+      "density_d_k": 43.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.27,
+       "T2": 3.71
+      },
+      "err_m1_own_T1": 0.52,
+      "err_m2_own_T2": 3.71,
+      "dev1_signed": 0.25,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "7f36de32e0dcff1d665c09b2fb43c9d93c79e4c7157deeaf87403eb4bd44a2c3",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 3,
+      "seed_construct": 183004,
+      "slot": 3,
+      "n": 30,
+      "k_realized": 3,
+      "density_d_k": 43.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.5,
+       "T2": 3.73
+      },
+      "err_m1_own_T1": 0.51,
+      "err_m2_own_T2": 3.73,
+      "dev1_signed": 0.01,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "bf00b6c3f45be310386a9915b70192e92b969136197cba952def69b571b9e830",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 12,
+      "seed_construct": 183013,
+      "slot": 0,
+      "n": 30,
+      "k_realized": 3,
+      "density_d_k": 40.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.29,
+       "T2": 3.72
+      },
+      "err_m1_own_T1": 0.58,
+      "err_m2_own_T2": 3.72,
+      "dev1_signed": 0.29,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "b8757ba830e1a66601832bd549833391764c269770f4bd56abd93adc55e78f02",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 13,
+      "seed_construct": 183014,
+      "slot": 1,
+      "n": 30,
+      "k_realized": 3,
+      "density_d_k": 44.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.47,
+       "T2": 3.73
+      },
+      "err_m1_own_T1": 0.43,
+      "err_m2_own_T2": 3.73,
+      "dev1_signed": -0.04,
+      "dev2_signed": 0.0,
+      "sign_dev1": -1,
+      "digest_A": "ddab636b99869ea314ef7b5fcdf17456221642ab1a041b2a217832f53d0ee11b",
+      "bit_exact_vs_deposit": true
+     }
+    ],
+    "k4": [
+     {
+      "i": 4,
+      "seed_construct": 183005,
+      "slot": 4,
+      "n": 32,
+      "k_realized": 4,
+      "density_d_k": 70.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.57,
+       "T2": 3.26
+      },
+      "err_m1_own_T1": 0.46,
+      "err_m2_own_T2": 3.26,
+      "dev1_signed": -0.11,
+      "dev2_signed": 0.0,
+      "sign_dev1": -1,
+      "digest_A": "07cf275df3003df8e621cb68bea1dfd2c896e3b86ab9ccf6e58faa20131f6ce0",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 5,
+      "seed_construct": 183006,
+      "slot": 5,
+      "n": 32,
+      "k_realized": 4,
+      "density_d_k": 64.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.58,
+       "T2": 3.18
+      },
+      "err_m1_own_T1": 0.49,
+      "err_m2_own_T2": 3.18,
+      "dev1_signed": -0.09,
+      "dev2_signed": 0.0,
+      "sign_dev1": -1,
+      "digest_A": "b27fbac07862dca2459dda9ad011b916f1edbcef8ea776d0d82732cb924f54be",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 6,
+      "seed_construct": 183007,
+      "slot": 6,
+      "n": 32,
+      "k_realized": 4,
+      "density_d_k": 72.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.46,
+       "T2": 3.25
+      },
+      "err_m1_own_T1": 0.5,
+      "err_m2_own_T2": 3.25,
+      "dev1_signed": 0.04,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "b326f138744b7297d1f5e2f498763fdc2365946220f279505368936273a9b7c1",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 7,
+      "seed_construct": 183008,
+      "slot": 7,
+      "n": 32,
+      "k_realized": 4,
+      "density_d_k": 82.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.48,
+       "T2": 3.25
+      },
+      "err_m1_own_T1": 0.55,
+      "err_m2_own_T2": 3.25,
+      "dev1_signed": 0.07,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "12d867c10484cdaff2f9eb6957a2d150bbffd14b07360c36b4f004e7ac083295",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 16,
+      "seed_construct": 183017,
+      "slot": 4,
+      "n": 32,
+      "k_realized": 4,
+      "density_d_k": 76.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.45,
+       "T2": 3.25
+      },
+      "err_m1_own_T1": 0.52,
+      "err_m2_own_T2": 3.25,
+      "dev1_signed": 0.07,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "194162aa95f8e8a29ca4f317bc4f65abc784d3a644b2c79c2446a7d7cc97d3ec",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 17,
+      "seed_construct": 183018,
+      "slot": 5,
+      "n": 32,
+      "k_realized": 4,
+      "density_d_k": 72.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.51,
+       "T2": 3.26
+      },
+      "err_m1_own_T1": 0.58,
+      "err_m2_own_T2": 3.26,
+      "dev1_signed": 0.07,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "dd5f00c882d1137c49b8dc5ca7befb6a1bd07a01048ec9cd1cb2aef5f1d6026c",
+      "bit_exact_vs_deposit": true
+     }
+    ]
+   },
+   "_k3_values": {
+    "stat_m1": 0.14,
+    "stat_m2": 0.0,
+    "majority_sign": 1,
+    "n_majority_sign": 5,
+    "n_pairs": 6,
+    "null_bar": 0.128333
+   },
+   "_k4_values": {
+    "stat_m1": 0.00833333333333335,
+    "stat_m2": 0.0,
+    "majority_sign": 1,
+    "n_majority_sign": 4,
+    "n_pairs": 6,
+    "null_bar": 0.106667
+   },
+   "pin": {
+    "floor": -35.0,
+    "modules": 5,
+    "save_restore_asserted": true
+   },
+   "all_bit_exact": true
+  },
+  "exp188_density_conditioned_conditioned": {
+   "cohort": "exp188's density-conditioned 36 (ladder 188001..188036) -- the third cohort, stratum stats replayed through the CONDITIONED arm",
+   "conditioned_arm": "exp163's wired conditioned_stat (the F1 additive function): the k=3 stratum's signed mean, realized-k from the construction",
+   "construction": {
+    "F": 0.75,
+    "F_bit_exact_vs_deposit": true,
+    "cohort_table_bit_exact": "36/36 (incl. digest_A per pair)",
+    "rebind_mechanism": "exp174's rebinding mechanism PER PAIR: save (assert == 159), rebind to the ladder seed, build_pair on slot i % 12, restore asserted (36/36)",
+    "strata_selection_bit_exact": true
+   },
+   "null_replay": {
+    "k3": {
+     "pooled_null_stats_bit_exact": true,
+     "null_bar_replayed": 0.066667,
+     "null_bar_bit_exact": true,
+     "null_err_seed1_bit_exact_pairs": "6/6"
+    },
+    "k4": {
+     "pooled_null_stats_bit_exact": true,
+     "null_bar_replayed": 0.103333,
+     "null_bar_bit_exact": true,
+     "null_err_seed1_bit_exact_pairs": "6/6"
+    }
+   },
+   "real_arm_replay": {
+    "m2_aug_bit_exact_identity": "12/12",
+    "errs_bit_exact_pairs": "12/12 per stratum",
+    "devs_bit_exact_pairs": "12/12 per stratum",
+    "n_decodes": 96,
+    "n_rejections": 0
+   },
+   "conditioned_arm_replay": {
+    "conditioned_stat_output_k3": {
+     "stat_m1_signed_mean": 0.11833333333333335,
+     "median_m1": 0.13499999999999998,
+     "majority_sign": 1,
+     "n_majority_sign": 5,
+     "n_pos": 5,
+     "n_neg": 0,
+     "n_zero": 1,
+     "n_stratum": 6,
+     "stratum_ids": [
+      0,
+      1,
+      2,
+      3,
+      12,
+      13
+     ]
+    },
+    "k3_stat_block_bit_exact": {
+     "stat_m1_signed_mean": true,
+     "median_m1": true,
+     "majority_sign": true,
+     "n_majority_sign": true,
+     "n_pos": true,
+     "n_neg": true,
+     "n_zero": true,
+     "n_stratum": true,
+     "stratum_ids": true
+    },
+    "k3_stat_block_bit_exact_vs_deposit": {
+     "stat_m1_signed_mean": true,
+     "median_m1": true,
+     "stat_m2_signed_mean": true,
+     "median_m2": true,
+     "majority_sign": true,
+     "n_majority_sign": true,
+     "n_pos": true,
+     "n_neg": true,
+     "n_zero": true,
+     "null_bar": true
+    },
+    "stat_m2_k3": {
+     "stat_m2_signed_mean": 0.0,
+     "bit_exact": true
+    },
+    "k4_stat_block_bit_exact_vs_deposit": {
+     "stat_m1_signed_mean": true,
+     "median_m1": true,
+     "stat_m2_signed_mean": true,
+     "median_m2": true,
+     "majority_sign": true,
+     "n_majority_sign": true,
+     "n_pos": true,
+     "n_neg": true,
+     "n_zero": true,
+     "null_bar": true
+    },
+    "stat_m2_k4": {
+     "stat_m2_signed_mean": 0.0,
+     "bit_exact": true
+    },
+    "unconditioned_mean_replayed": 0.083333,
+    "power_replay": {
+     "abs_conditioned": 0.118333,
+     "abs_unconditioned": 0.083333,
+     "conditioning_buys_power_abs": true
+    },
+    "conditioned_statistic_block_bit_exact": true
+   },
+   "strata_tables": {
+    "k3": [
+     {
+      "i": 0,
+      "seed_construct": 188001,
+      "slot": 0,
+      "n": 30,
+      "k_realized": 3,
+      "density_d_k": 48.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.58,
+       "T2": 3.81
+      },
+      "err_m1_own_T1": 0.78,
+      "err_m2_own_T2": 3.81,
+      "dev1_signed": 0.2,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "b8e0064ae0220574d204420a3d41418710ee136d6720e462f3512472e22cf442",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 1,
+      "seed_construct": 188002,
+      "slot": 1,
+      "n": 30,
+      "k_realized": 3,
+      "density_d_k": 44.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.44,
+       "T2": 3.73
+      },
+      "err_m1_own_T1": 0.47,
+      "err_m2_own_T2": 3.73,
+      "dev1_signed": 0.03,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "a33851fb534b0632b9fd0e9f4f90a8b231c789ed84122a9228b04f4157182920",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 2,
+      "seed_construct": 188003,
+      "slot": 2,
+      "n": 30,
+      "k_realized": 3,
+      "density_d_k": 44.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.58,
+       "T2": 3.81
+      },
+      "err_m1_own_T1": 0.79,
+      "err_m2_own_T2": 3.81,
+      "dev1_signed": 0.21,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "a4c409cf3af531cf01eab6bd0ba0a1dadb80eb10b7e3a5934788fd91a54c88ca",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 3,
+      "seed_construct": 188004,
+      "slot": 3,
+      "n": 30,
+      "k_realized": 3,
+      "density_d_k": 47.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.44,
+       "T2": 3.72
+      },
+      "err_m1_own_T1": 0.44,
+      "err_m2_own_T2": 3.72,
+      "dev1_signed": 0.0,
+      "dev2_signed": 0.0,
+      "sign_dev1": 0,
+      "digest_A": "74044ef2e632447a48ee116c91ec8e09381dbe9504b77c145aa40eb650de5d41",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 12,
+      "seed_construct": 188013,
+      "slot": 0,
+      "n": 30,
+      "k_realized": 3,
+      "density_d_k": 38.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.31,
+       "T2": 3.72
+      },
+      "err_m1_own_T1": 0.48,
+      "err_m2_own_T2": 3.72,
+      "dev1_signed": 0.17,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "52f80fb8aa2b612553db0f1accb9f34bcb4018709bdf4131c902578ff117382f",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 13,
+      "seed_construct": 188014,
+      "slot": 1,
+      "n": 30,
+      "k_realized": 3,
+      "density_d_k": 43.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.53,
+       "T2": 3.74
+      },
+      "err_m1_own_T1": 0.63,
+      "err_m2_own_T2": 3.74,
+      "dev1_signed": 0.1,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "3fc6d590cbbc8d70aa8ed613932adf115564d30b0684cb18084da6c24a5d21b5",
+      "bit_exact_vs_deposit": true
+     }
+    ],
+    "k4": [
+     {
+      "i": 4,
+      "seed_construct": 188005,
+      "slot": 4,
+      "n": 32,
+      "k_realized": 4,
+      "density_d_k": 70.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.54,
+       "T2": 3.43
+      },
+      "err_m1_own_T1": 0.48,
+      "err_m2_own_T2": 3.43,
+      "dev1_signed": -0.06,
+      "dev2_signed": 0.0,
+      "sign_dev1": -1,
+      "digest_A": "c35c168d51629fddc078c288f1a4e40ed961acff96298d9de800360ffb7d3a52",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 5,
+      "seed_construct": 188006,
+      "slot": 5,
+      "n": 32,
+      "k_realized": 4,
+      "density_d_k": 76.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.57,
+       "T2": 3.27
+      },
+      "err_m1_own_T1": 0.71,
+      "err_m2_own_T2": 3.27,
+      "dev1_signed": 0.14,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "eed77087780feec4c0c09f3c3fffa3e62899650beaa3b12db47c533a6474c31e",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 6,
+      "seed_construct": 188007,
+      "slot": 6,
+      "n": 32,
+      "k_realized": 4,
+      "density_d_k": 78.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.47,
+       "T2": 3.25
+      },
+      "err_m1_own_T1": 0.5,
+      "err_m2_own_T2": 3.25,
+      "dev1_signed": 0.03,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "42380402bae74898df8f891e26334f43bfdfb7d550712c647701b7e0a283f51b",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 7,
+      "seed_construct": 188008,
+      "slot": 7,
+      "n": 32,
+      "k_realized": 4,
+      "density_d_k": 72.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.52,
+       "T2": 3.43
+      },
+      "err_m1_own_T1": 0.5,
+      "err_m2_own_T2": 3.43,
+      "dev1_signed": -0.02,
+      "dev2_signed": 0.0,
+      "sign_dev1": -1,
+      "digest_A": "bb98b001a295d8f2b393e09c645c63f710b2e20c2470358237557feef2559aac",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 16,
+      "seed_construct": 188017,
+      "slot": 4,
+      "n": 32,
+      "k_realized": 4,
+      "density_d_k": 82.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.49,
+       "T2": 3.25
+      },
+      "err_m1_own_T1": 0.52,
+      "err_m2_own_T2": 3.25,
+      "dev1_signed": 0.03,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "21c37b0349a7a0da929da787aa7423d51516b13bd07052f33707d6c70b3cec10",
+      "bit_exact_vs_deposit": true
+     },
+     {
+      "i": 17,
+      "seed_construct": 188018,
+      "slot": 5,
+      "n": 32,
+      "k_realized": 4,
+      "density_d_k": 70.0,
+      "null_err_seed1_replayed": {
+       "T1": 0.57,
+       "T2": 3.26
+      },
+      "err_m1_own_T1": 0.74,
+      "err_m2_own_T2": 3.26,
+      "dev1_signed": 0.17,
+      "dev2_signed": 0.0,
+      "sign_dev1": 1,
+      "digest_A": "819bd08ace74c5065e197310cda8d1c9c24166d7b82849225d70e97b3fdc48b6",
+      "bit_exact_vs_deposit": true
+     }
+    ]
+   },
+   "_k3_values": {
+    "stat_m1": 0.11833333333333335,
+    "stat_m2": 0.0,
+    "majority_sign": 1,
+    "n_majority_sign": 5,
+    "n_pairs": 6,
+    "null_bar": 0.066667
+   },
+   "_k4_values": {
+    "stat_m1": 0.04833333333333334,
+    "stat_m2": 0.0,
+    "majority_sign": 1,
+    "n_majority_sign": 4,
+    "n_pairs": 6,
+    "null_bar": 0.103333
+   },
+   "pin": {
+    "floor": -35.0,
+    "modules": 5,
+    "save_restore_asserted": true
+   },
+   "all_bit_exact": true
+  }
+ },
+ "wiring": {
+  "function": "experiments.exp163_grouping_contrast.conditioned_stat",
+  "semantics": "the k=3-stratum signed mean, realized-k from the construction (rows' k_realized), majority-sign machinery verbatim; the unconditioned path untouched",
+  "live_on_deposits": {
+   "exp183": {
+    "all_fields_bit_exact": true,
+    "fields": {
+     "stat_m1_signed_mean": true,
+     "median_m1": true,
+     "majority_sign": true,
+     "n_majority_sign": true,
+     "n_pos": true,
+     "n_neg": true,
+     "n_zero": true,
+     "n_stratum": true,
+     "stratum_ids": true
+    }
+   },
+   "exp188": {
+    "all_fields_bit_exact": true,
+    "fields": {
+     "stat_m1_signed_mean": true,
+     "median_m1": true,
+     "majority_sign": true,
+     "n_majority_sign": true,
+     "n_pos": true,
+     "n_neg": true,
+     "n_zero": true,
+     "n_stratum": true,
+     "stratum_ids": true
+    }
+   }
+  },
+  "live": true,
+  "additive_insertion_only": {
+   "insertions": 47,
+   "deletions": 0,
+   "note": "git diff --numstat vs HEAD at run time: the wiring is a pure insertion between verdict() and main(); no existing line touched; the unconditioned path further proven intact by F2's bit-exact replays through it",
+   "deletions_zero": true
+  },
+  "tests_green_post_wiring": {
+   "command": "python3 -m tests.run_tests",
+   "run": "before the credited run, from the repo root, after the wiring; exit code 0, all suites green"
+  }
+ },
+ "wall_seconds": 21.5,
+ "production_rule": {
+  "rule": "stat > bar AND majority sign (the conditioned arm's classification rule over exp163's wired conditioned_stat output)",
+  "reference_sign": 1,
+  "third_cohort_exp188": {
+   "conditioned_stat": 0.118333,
+   "null_bar_k3": 0.066667,
+   "majority_sign": 1,
+   "n_majority_sign": 5,
+   "of": 6,
+   "required_majority": 5,
+   "rule_adopts": true,
+   "deposited_D3_pass": true,
+   "agrees": true,
+   "power_replay": {
+    "abs_conditioned": 0.118333,
+    "abs_unconditioned": 0.083333,
+    "conditioning_buys_power_abs": true
+   }
+  },
+  "second_cohort_exp183": {
+   "k3": {
+    "stat_m1": 0.14,
+    "null_bar": 0.128333,
+    "majority": "5/6",
+    "rule_adopts": true
+   },
+   "k4": {
+    "stat_m1": 0.008333,
+    "null_bar": 0.106667,
+    "majority": "4/6",
+    "rule_adopts": false
+   },
+   "rule_branch": "(i)",
+   "deposited_branch": "(i)",
+   "deposited_W3_pass": true,
+   "agrees": true
+  },
+  "unconditioned_verdicts_agree_too": {
+   "exp173_E3": {
+    "rule_pass": true,
+    "deposited_pass": true,
+    "agrees": true
+   },
+   "exp174_F3": {
+    "rule_pass": true,
+    "deposited_pass": true,
+    "agrees": true
+   }
+  }
+ },
+ "hygiene": {
+  "zero_rejections": true,
+  "n_rejections_total": 0,
+  "pin": {
+   "floor": -35.0,
+   "pattern": "exp188's module pattern verbatim: NEURAL_SPEC_MIN pinned to -35.0 across collective/exp142/exp145/exp148/exp94 for every decode; save/restore asserted in finally per replay section",
+   "per_section": {
+    "exp163_original_cohort_unconditioned": {
+     "floor": -35.0,
+     "modules": 5,
+     "save_restore_asserted": true
+    },
+    "exp174_fresh_cohort_unconditioned": {
+     "floor": -35.0,
+     "modules": 5,
+     "save_restore_asserted": true
+    },
+    "exp183_k_controlled_conditioned": {
+     "floor": -35.0,
+     "modules": 5,
+     "save_restore_asserted": true
+    },
+    "exp188_density_conditioned_conditioned": {
+     "floor": -35.0,
+     "modules": 5,
+     "save_restore_asserted": true
+    }
+   }
+  },
+  "smoke_discipline": "--smoke ran first in a separate process (construction features + the F1 wiring check only; no decode, no pin, no gates); output discarded, not part of this deposit",
+  "no_post_hoc_tuning": "gates fixed in the committed docstring; every replay value compared bit-exact against the deposits as-is"
+ },
+ "gates": {
+  "F1_wiring": {
+   "pass": true,
+   "function_wired": true,
+   "wiring_live_on_deposits": true,
+   "additive_insertion_only": true,
+   "tests_green_post_wiring": true
+  },
+  "F2_old_operating_points_bit_exact": {
+   "pass": true,
+   "unconditioned_cohorts": {
+    "exp163_original_12": true,
+    "exp174_fresh_12": true
+   },
+   "conditioned_arm_cohorts": {
+    "exp183_strata": true,
+    "exp188_strata": true
+   }
+  },
+  "F3_production_property": {
+   "pass": true,
+   "exp188_D3_reproduced": true,
+   "exp183_W3_branch_i_reproduced": true,
+   "unconditioned_verdicts_agree": true
+  },
+  "F4_hygiene": {
+   "pass": true,
+   "zero_rejections": true,
+   "pin_save_restore_asserted": true,
+   "smoke_discarded": true
+  }
+ },
+ "all_gates_pass": true,
+ "verdict": "PRODUCTION ADOPTION CONFIRMED (4/4) -- the k=3-conditioned statistic is wired additively into exp163's module (conditioned_stat, the unconditioned path untouched) and replays EVERY deposited operating point bit-exactly: exp163's and exp174's per-pair devs + stats through the unconditioned path, exp183's and exp188's stratum stats through the conditioned arm. The production rule (stat > bar AND majority sign) reproduces exp188's D3 PASS (conditioned |0.1183| > bar 0.0667, majority 5/6) and exp183's W3 branch (i) (k=3 holds, k=4 weakens) -- the conditioned ensemble is the production grouping read"
+}

@@ -142,6 +142,53 @@ def verdict(run):
     return (bool(run["program_verified"]), float(run["err_vs_target"]))
 
 
+def conditioned_stat(pairs):
+    """exp188's k=3-conditioned statistic (the production grouping read;
+    the exp178-pattern additive arm, wired here ADDITIVELY by exp193 --
+    everything above and main() below is the unconditioned path,
+    untouched): the signed mean of dev1 over the k = 3 stratum ONLY,
+    realized-k taken from the construction.
+
+    `pairs` -- per-pair rows each carrying `k_realized` (the k its own
+    construction realized and asserted) and `dev1_signed` (the pair's
+    signed dev vs its frozen seed-1 null, exp173/exp174/exp183's
+    statistic), e.g. the strata tables of exp183's/exp188's deposits
+    read verbatim, or freshly decoded rows of the same shape. Zero new
+    knobs: the stratum predicate is fixed (k_realized == 3), the
+    statistic is the signed mean over the stratum's pairs, and the
+    majority-sign machinery is exp183/exp188's stratum_stats verbatim.
+
+    Returns the conditioned-stat dict: the stratum's signed mean,
+    median, majority sign and counts, and the stratum's pair ids -- the
+    production form of the grouping read."""
+    stratum = [r for r in pairs if int(r["k_realized"]) == 3]
+    devs = [float(r["dev1_signed"]) for r in stratum]
+    stat = float(np.mean(devs)) if devs else float("nan")
+    med = float(np.median(devs)) if devs else float("nan")
+    npos = sum(1 for d in devs if d > 0)
+    nneg = sum(1 for d in devs if d < 0)
+    nzero = sum(1 for d in devs if d == 0)
+    if npos > nneg:
+        maj_sign, n_maj = 1, npos
+    elif nneg > npos:
+        maj_sign, n_maj = -1, nneg
+    else:
+        maj_sign, n_maj = 0, 0
+    ids = [int(r["i"]) if "i" in r else int(r["p"]) for r in stratum]
+    return {
+        "conditioned_scope": "the k=3 stratum ONLY (realized-k from the "
+                             "construction)",
+        "n_pairs_in": len(pairs),
+        "n_stratum": len(stratum),
+        "stratum_ids": ids,
+        "stat_m1_signed_mean": stat,
+        "median_m1": med,
+        "majority_sign": maj_sign,
+        "n_majority_sign": n_maj,
+        "n_pos": npos, "n_neg": nneg, "n_zero": nzero,
+    }
+
+
 def main() -> None:
     t0 = time.time()
 
