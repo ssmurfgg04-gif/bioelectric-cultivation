@@ -1,0 +1,8916 @@
+{
+ "cells": {
+  "c3": {
+   "cell": 3,
+   "violation_class": "A-PAIR+A-STAT",
+   "n_instances": 25,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_build": 400,
+   "hyper_active": true,
+   "rh_armed": true,
+   "rt_comp_armed": false,
+   "n_base_decodes": 75,
+   "n_rh_decodes": 75,
+   "n_rt_decodes": 0,
+   "n_comp_decodes": 0,
+   "n_rejections_base": 0,
+   "n_rejections_rh": 0,
+   "n_rejections_rt": 0,
+   "n_rejections_comp": 0,
+   "rejection_records": [],
+   "median_err_base": 0.62,
+   "median_err_rh": 0.67,
+   "n_replay_exact": 25,
+   "n_tail": 0,
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 169166,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 11,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.54,
+      0.51,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.54,
+     "rh": {
+      "errs": [
+       0.54,
+       0.52,
+       0.58
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.54,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 1,
+     "gen_seed": 169167,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 3,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.56,
+      0.52,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.54,
+     "rh": {
+      "errs": [
+       0.5,
+       0.51,
+       0.52
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.51,
+      "f_max_rh": 7.0,
+      "delta_mV": -0.03,
+      "drop_pct": 5.5556,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 2,
+     "gen_seed": 169168,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 16,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.58,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.57,
+      0.58,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.58,
+     "rh": {
+      "errs": [
+       0.62,
+       0.65,
+       0.62
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.62,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.04,
+      "drop_pct": -6.8966,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 3,
+     "gen_seed": 169169,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 15,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.94,
+     "f_max": 6.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.94,
+      0.98,
+      0.94
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.94,
+     "rh": {
+      "errs": [
+       1.02,
+       1.03,
+       1.0
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.02,
+      "f_max_rh": 6.0,
+      "delta_mV": 0.08,
+      "drop_pct": -8.5106,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 4,
+     "gen_seed": 169170,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 11,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.66,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.65,
+      0.67,
+      0.66
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.66,
+     "rh": {
+      "errs": [
+       0.69,
+       0.67,
+       0.69
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.69,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.03,
+      "drop_pct": -4.5455,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 5,
+     "gen_seed": 169171,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 11,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.54,
+      0.55,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.54,
+     "rh": {
+      "errs": [
+       0.6,
+       0.62,
+       0.58
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.6,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.06,
+      "drop_pct": -11.1111,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 6,
+     "gen_seed": 169172,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.62,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.62,
+      0.64,
+      0.62
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.62,
+     "rh": {
+      "errs": [
+       0.64,
+       0.64,
+       0.63
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.64,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.02,
+      "drop_pct": -3.2258,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 7,
+     "gen_seed": 169173,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 8,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.56,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.55,
+      0.56,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.56,
+     "rh": {
+      "errs": [
+       0.62,
+       0.65,
+       0.63
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.63,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.07,
+      "drop_pct": -12.5,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 8,
+     "gen_seed": 169174,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 5,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.86,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.85,
+      0.88,
+      0.86
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.86,
+     "rh": {
+      "errs": [
+       0.88,
+       0.89,
+       0.92
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.89,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.03,
+      "drop_pct": -3.4884,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 9,
+     "gen_seed": 169175,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.57,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.57,
+      0.55,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.57,
+     "rh": {
+      "errs": [
+       0.65,
+       0.66,
+       0.67
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.66,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.09,
+      "drop_pct": -15.7895,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 10,
+     "gen_seed": 169176,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 1,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.55,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.54,
+      0.59,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.55,
+     "rh": {
+      "errs": [
+       0.52,
+       0.58,
+       0.57
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.57,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.02,
+      "drop_pct": -3.6364,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 11,
+     "gen_seed": 169177,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 13,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.58,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.56,
+      0.58,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.58,
+     "rh": {
+      "errs": [
+       0.62,
+       0.6,
+       0.62
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.62,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.04,
+      "drop_pct": -6.8966,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 12,
+     "gen_seed": 169178,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 12,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.61,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.64,
+      0.6,
+      0.61
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.61,
+     "rh": {
+      "errs": [
+       0.64,
+       0.69,
+       0.66
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.66,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.05,
+      "drop_pct": -8.1967,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 13,
+     "gen_seed": 169179,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.79,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.8,
+      0.79,
+      0.79
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.79,
+     "rh": {
+      "errs": [
+       0.9,
+       0.85,
+       0.83
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.85,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.06,
+      "drop_pct": -7.5949,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 14,
+     "gen_seed": 169180,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 10,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.56,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.55,
+      0.57,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.56,
+     "rh": {
+      "errs": [
+       0.62,
+       0.63,
+       0.6
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.62,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.06,
+      "drop_pct": -10.7143,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 15,
+     "gen_seed": 169181,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 13,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.89,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.89,
+      0.91,
+      0.89
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.89,
+     "rh": {
+      "errs": [
+       0.96,
+       0.92,
+       0.94
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.94,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.05,
+      "drop_pct": -5.618,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 16,
+     "gen_seed": 169182,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 5,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 1.01,
+     "f_max": 6.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.0,
+      1.01,
+      1.02
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.01,
+     "rh": {
+      "errs": [
+       1.01,
+       1.04,
+       1.04
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.04,
+      "f_max_rh": 6.0,
+      "delta_mV": 0.03,
+      "drop_pct": -2.9703,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 17,
+     "gen_seed": 169183,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 14,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.62,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.65,
+      0.61,
+      0.62
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.62,
+     "rh": {
+      "errs": [
+       0.67,
+       0.7,
+       0.69
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.69,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.07,
+      "drop_pct": -11.2903,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 18,
+     "gen_seed": 169184,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 17,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 1.08,
+     "f_max": 6.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.12,
+      1.08,
+      1.08
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.08,
+     "rh": {
+      "errs": [
+       1.17,
+       1.19,
+       1.15
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.17,
+      "f_max_rh": 6.0,
+      "delta_mV": 0.09,
+      "drop_pct": -8.3333,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 19,
+     "gen_seed": 169185,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 20,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.54,
+      0.55,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.54,
+     "rh": {
+      "errs": [
+       0.61,
+       0.6,
+       0.59
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.6,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.06,
+      "drop_pct": -11.1111,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 20,
+     "gen_seed": 169186,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 19,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 1.25,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.23,
+      1.26,
+      1.25
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.25,
+     "rh": {
+      "errs": [
+       1.23,
+       1.25,
+       1.27
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.25,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 21,
+     "gen_seed": 169187,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 3,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.97,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.97,
+      0.98,
+      0.97
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.97,
+     "rh": {
+      "errs": [
+       1.01,
+       1.01,
+       1.01
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.01,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.04,
+      "drop_pct": -4.1237,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 22,
+     "gen_seed": 169188,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 15,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.83,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.83,
+      0.83,
+      0.83
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.83,
+     "rh": {
+      "errs": [
+       0.89,
+       0.9,
+       0.89
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.89,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.06,
+      "drop_pct": -7.2289,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 23,
+     "gen_seed": 169189,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 7,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 1.12,
+     "f_max": 6.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.11,
+      1.12,
+      1.12
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.12,
+     "rh": {
+      "errs": [
+       1.14,
+       1.14,
+       1.16
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.14,
+      "f_max_rh": 6.0,
+      "delta_mV": 0.02,
+      "drop_pct": -1.7857,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 24,
+     "gen_seed": 169190,
+     "n": 400,
+     "violated": [
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 11,
+     "n_oneway": 0,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.56,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.58,
+      0.55,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.56,
+     "rh": {
+      "errs": [
+       0.64,
+       0.64,
+       0.6
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.64,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.08,
+      "drop_pct": -14.2857,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    }
+   ],
+   "runtime_s": 144.6
+  },
+  "c6": {
+   "cell": 6,
+   "violation_class": "A-SYM+A-PAIR",
+   "n_instances": 25,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_build": 400,
+   "hyper_active": true,
+   "rh_armed": true,
+   "rt_comp_armed": true,
+   "n_base_decodes": 75,
+   "n_rh_decodes": 75,
+   "n_rt_decodes": 75,
+   "n_comp_decodes": 75,
+   "n_rejections_base": 0,
+   "n_rejections_rh": 0,
+   "n_rejections_rt": 0,
+   "n_rejections_comp": 0,
+   "rejection_records": [],
+   "median_err_base": 1.39,
+   "median_err_rh": 1.42,
+   "n_replay_exact": 25,
+   "n_tail": 25,
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 172166,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 9,
+     "n_oneway": 1816,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.42,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.42,
+      1.44,
+      1.42
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.42,
+     "rh": {
+      "errs": [
+       1.45,
+       1.48,
+       1.46
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.46,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.04,
+      "drop_pct": -2.8169,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.42,
+       1.44,
+       1.42
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.42,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.45,
+       1.48,
+       1.46
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.46,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 1,
+     "gen_seed": 172167,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 20,
+     "n_oneway": 1746,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.36,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.33,
+      1.36,
+      1.38
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.36,
+     "rh": {
+      "errs": [
+       1.4,
+       1.4,
+       1.42
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.4,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.04,
+      "drop_pct": -2.9412,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.33,
+       1.36,
+       1.38
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.36,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.4,
+       1.4,
+       1.42
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.4,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 2,
+     "gen_seed": 172168,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 6,
+     "n_oneway": 1807,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.36,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.34,
+      1.36,
+      1.37
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.36,
+     "rh": {
+      "errs": [
+       1.38,
+       1.41,
+       1.35
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.38,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.02,
+      "drop_pct": -1.4706,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.34,
+       1.36,
+       1.37
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.36,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.38,
+       1.41,
+       1.35
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.38,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 3,
+     "gen_seed": 172169,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 7,
+     "n_oneway": 1817,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.4,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.4,
+      1.39,
+      1.41
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.4,
+     "rh": {
+      "errs": [
+       1.41,
+       1.41,
+       1.43
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.41,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.01,
+      "drop_pct": -0.7143,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.4,
+       1.39,
+       1.41
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.4,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.41,
+       1.41,
+       1.43
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.41,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 4,
+     "gen_seed": 172170,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 2,
+     "n_oneway": 1800,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.37,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.37,
+      1.37,
+      1.36
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.37,
+     "rh": {
+      "errs": [
+       1.38,
+       1.39,
+       1.37
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.38,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.01,
+      "drop_pct": -0.7299,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.37,
+       1.37,
+       1.36
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.37,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.38,
+       1.39,
+       1.37
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.38,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 5,
+     "gen_seed": 172171,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 2,
+     "n_oneway": 1804,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.37,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.38,
+      1.37,
+      1.36
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.37,
+     "rh": {
+      "errs": [
+       1.33,
+       1.34,
+       1.34
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.34,
+      "f_max_rh": 0.0,
+      "delta_mV": -0.03,
+      "drop_pct": 2.1898,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.38,
+       1.37,
+       1.36
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.37,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.33,
+       1.34,
+       1.34
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.34,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 6,
+     "gen_seed": 172172,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 2,
+     "n_oneway": 1804,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.4,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.39,
+      1.4,
+      1.41
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.4,
+     "rh": {
+      "errs": [
+       1.36,
+       1.38,
+       1.37
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.37,
+      "f_max_rh": 0.0,
+      "delta_mV": -0.03,
+      "drop_pct": 2.1429,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.39,
+       1.4,
+       1.41
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.4,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.36,
+       1.38,
+       1.37
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.37,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 7,
+     "gen_seed": 172173,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 16,
+     "n_oneway": 1794,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.45,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.44,
+      1.45,
+      1.45
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.45,
+     "rh": {
+      "errs": [
+       1.52,
+       1.49,
+       1.5
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.5,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.05,
+      "drop_pct": -3.4483,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.44,
+       1.45,
+       1.45
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.45,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.52,
+       1.49,
+       1.5
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.5,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 8,
+     "gen_seed": 172174,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 18,
+     "n_oneway": 1783,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.37,
+      1.38,
+      1.38
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.38,
+     "rh": {
+      "errs": [
+       1.44,
+       1.43,
+       1.44
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.44,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.06,
+      "drop_pct": -4.3478,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.37,
+       1.38,
+       1.38
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.38,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.44,
+       1.43,
+       1.44
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.44,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 9,
+     "gen_seed": 172175,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 13,
+     "n_oneway": 1733,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.38,
+      1.38,
+      1.37
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.38,
+     "rh": {
+      "errs": [
+       1.39,
+       1.41,
+       1.39
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.39,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.01,
+      "drop_pct": -0.7246,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.38,
+       1.38,
+       1.37
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.38,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.39,
+       1.41,
+       1.39
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.39,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 10,
+     "gen_seed": 172176,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 2,
+     "n_oneway": 1695,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.41,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.42,
+      1.4,
+      1.41
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.41,
+     "rh": {
+      "errs": [
+       1.43,
+       1.41,
+       1.42
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.42,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.01,
+      "drop_pct": -0.7092,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.42,
+       1.4,
+       1.41
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.41,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.43,
+       1.41,
+       1.42
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.42,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 11,
+     "gen_seed": 172177,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 11,
+     "n_oneway": 1737,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.35,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.33,
+      1.35,
+      1.37
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.35,
+     "rh": {
+      "errs": [
+       1.37,
+       1.38,
+       1.36
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.37,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.02,
+      "drop_pct": -1.4815,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.33,
+       1.35,
+       1.37
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.35,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.37,
+       1.38,
+       1.36
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.37,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 12,
+     "gen_seed": 172178,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 1,
+     "n_oneway": 1786,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.41,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.41,
+      1.39,
+      1.44
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.41,
+     "rh": {
+      "errs": [
+       1.41,
+       1.4,
+       1.44
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.41,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.41,
+       1.39,
+       1.44
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.41,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.41,
+       1.4,
+       1.44
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.41,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 13,
+     "gen_seed": 172179,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 8,
+     "n_oneway": 1763,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.39,
+      1.38,
+      1.38
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.38,
+     "rh": {
+      "errs": [
+       1.42,
+       1.4,
+       1.41
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.41,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.03,
+      "drop_pct": -2.1739,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.39,
+       1.38,
+       1.38
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.38,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.42,
+       1.4,
+       1.41
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.41,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 14,
+     "gen_seed": 172180,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 20,
+     "n_oneway": 1747,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.44,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.45,
+      1.44,
+      1.43
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.44,
+     "rh": {
+      "errs": [
+       1.53,
+       1.48,
+       1.49
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.49,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.05,
+      "drop_pct": -3.4722,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.45,
+       1.44,
+       1.43
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.44,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.53,
+       1.48,
+       1.49
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.49,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 15,
+     "gen_seed": 172181,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 17,
+     "n_oneway": 1873,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.37,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.38,
+      1.37,
+      1.36
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.37,
+     "rh": {
+      "errs": [
+       1.41,
+       1.44,
+       1.42
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.42,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.05,
+      "drop_pct": -3.6496,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.38,
+       1.37,
+       1.36
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.37,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.41,
+       1.44,
+       1.42
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.42,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 16,
+     "gen_seed": 172182,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 1,
+     "n_oneway": 1858,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.39,
+      1.38,
+      1.36
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.38,
+     "rh": {
+      "errs": [
+       1.4,
+       1.39,
+       1.37
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.39,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.01,
+      "drop_pct": -0.7246,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.39,
+       1.38,
+       1.36
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.38,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.4,
+       1.39,
+       1.37
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.39,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 17,
+     "gen_seed": 172183,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 20,
+     "n_oneway": 1831,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.42,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.42,
+      1.38,
+      1.42
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.42,
+     "rh": {
+      "errs": [
+       1.47,
+       1.48,
+       1.48
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.48,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.06,
+      "drop_pct": -4.2254,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.42,
+       1.38,
+       1.42
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.42,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.47,
+       1.48,
+       1.48
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.48,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 18,
+     "gen_seed": 172184,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 16,
+     "n_oneway": 1787,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.34,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.34,
+      1.36,
+      1.34
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.34,
+     "rh": {
+      "errs": [
+       1.35,
+       1.4,
+       1.39
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.39,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.05,
+      "drop_pct": -3.7313,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.34,
+       1.36,
+       1.34
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.34,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.35,
+       1.4,
+       1.39
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.39,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 19,
+     "gen_seed": 172185,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 10,
+     "n_oneway": 1760,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.43,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.43,
+      1.43,
+      1.4
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.43,
+     "rh": {
+      "errs": [
+       1.47,
+       1.47,
+       1.44
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.47,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.04,
+      "drop_pct": -2.7972,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.43,
+       1.43,
+       1.4
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.43,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.47,
+       1.47,
+       1.44
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.47,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 20,
+     "gen_seed": 172186,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 15,
+     "n_oneway": 1834,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.38,
+      1.38,
+      1.36
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.38,
+     "rh": {
+      "errs": [
+       1.46,
+       1.42,
+       1.45
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.45,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.07,
+      "drop_pct": -5.0725,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.38,
+       1.38,
+       1.36
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.38,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.46,
+       1.42,
+       1.45
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.45,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 21,
+     "gen_seed": 172187,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 7,
+     "n_oneway": 1792,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.45,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.45,
+      1.45,
+      1.43
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.45,
+     "rh": {
+      "errs": [
+       1.48,
+       1.43,
+       1.45
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.45,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.45,
+       1.45,
+       1.43
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.45,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.48,
+       1.43,
+       1.45
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.45,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 22,
+     "gen_seed": 172188,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 16,
+     "n_oneway": 1804,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.41,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.41,
+      1.41,
+      1.45
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.41,
+     "rh": {
+      "errs": [
+       1.48,
+       1.45,
+       1.45
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.45,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.04,
+      "drop_pct": -2.8369,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.41,
+       1.41,
+       1.45
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.41,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.48,
+       1.45,
+       1.45
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.45,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 23,
+     "gen_seed": 172189,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 5,
+     "n_oneway": 1761,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.41,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.41,
+      1.42,
+      1.41
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.41,
+     "rh": {
+      "errs": [
+       1.41,
+       1.43,
+       1.44
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.43,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.02,
+      "drop_pct": -1.4184,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.41,
+       1.42,
+       1.41
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.41,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.41,
+       1.43,
+       1.44
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.43,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    },
+    {
+     "j": 24,
+     "gen_seed": 172190,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 3,
+     "n_oneway": 1835,
+     "hyper_active": true,
+     "t1": true,
+     "tail": true,
+     "dep199_median_err": 1.44,
+     "f_max": 0.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.41,
+      1.44,
+      1.45
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.44,
+     "rh": {
+      "errs": [
+       1.44,
+       1.46,
+       1.45
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.45,
+      "f_max_rh": 0.0,
+      "delta_mV": 0.01,
+      "drop_pct": -0.6944,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": {
+      "errs": [
+       1.41,
+       1.44,
+       1.45
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.44,
+      "f_max_rt": 0.0,
+      "t1": true,
+      "frames_identity_bit_exact": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "comp": {
+      "errs": [
+       1.44,
+       1.46,
+       1.45
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.45,
+      "f_max_comp": 0.0,
+      "frames_bit_exact_vs_rh": true,
+      "errs_bit_exact_vs_rh": true
+     }
+    }
+   ],
+   "runtime_s": 302.0
+  },
+  "c7": {
+   "cell": 7,
+   "violation_class": "A-SYM+A-PAIR+A-STAT",
+   "n_instances": 25,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_build": 400,
+   "hyper_active": true,
+   "rh_armed": true,
+   "rt_comp_armed": false,
+   "n_base_decodes": 75,
+   "n_rh_decodes": 75,
+   "n_rt_decodes": 0,
+   "n_comp_decodes": 0,
+   "n_rejections_base": 0,
+   "n_rejections_rh": 0,
+   "n_rejections_rt": 0,
+   "n_rejections_comp": 0,
+   "rejection_records": [],
+   "median_err_base": 0.58,
+   "median_err_rh": 0.63,
+   "n_replay_exact": 25,
+   "n_tail": 0,
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 173166,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 20,
+     "n_oneway": 1820,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.54,
+      0.52,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.54,
+     "rh": {
+      "errs": [
+       0.64,
+       0.63,
+       0.61
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.63,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.09,
+      "drop_pct": -16.6667,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 1,
+     "gen_seed": 173167,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 6,
+     "n_oneway": 1762,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.52,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.52,
+      0.53,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.52,
+     "rh": {
+      "errs": [
+       0.52,
+       0.54,
+       0.53
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.53,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.01,
+      "drop_pct": -1.9231,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 2,
+     "gen_seed": 173168,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 16,
+     "n_oneway": 1760,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.63,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.63,
+      0.65,
+      0.59
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.63,
+     "rh": {
+      "errs": [
+       0.7,
+       0.64,
+       0.64
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.64,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.01,
+      "drop_pct": -1.5873,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 3,
+     "gen_seed": 173169,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 12,
+     "n_oneway": 1809,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.83,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.83,
+      0.81,
+      0.84
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.83,
+     "rh": {
+      "errs": [
+       0.88,
+       0.9,
+       0.89
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.89,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.06,
+      "drop_pct": -7.2289,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 4,
+     "gen_seed": 173170,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 10,
+     "n_oneway": 1791,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.52,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.52,
+      0.53,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.52,
+     "rh": {
+      "errs": [
+       0.58,
+       0.56,
+       0.53
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.56,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.04,
+      "drop_pct": -7.6923,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 5,
+     "gen_seed": 173171,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 15,
+     "n_oneway": 1777,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.82,
+     "f_max": 6.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.83,
+      0.82,
+      0.8
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.82,
+     "rh": {
+      "errs": [
+       0.87,
+       0.87,
+       0.87
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.87,
+      "f_max_rh": 6.0,
+      "delta_mV": 0.05,
+      "drop_pct": -6.0976,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 6,
+     "gen_seed": 173172,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 11,
+     "n_oneway": 1772,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.83,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.82,
+      0.84,
+      0.83
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.83,
+     "rh": {
+      "errs": [
+       0.86,
+       0.83,
+       0.88
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.86,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.03,
+      "drop_pct": -3.6145,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 7,
+     "gen_seed": 173173,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 13,
+     "n_oneway": 1837,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.68,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.68,
+      0.66,
+      0.7
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.68,
+     "rh": {
+      "errs": [
+       0.74,
+       0.71,
+       0.73
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.73,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.05,
+      "drop_pct": -7.3529,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 8,
+     "gen_seed": 173174,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 14,
+     "n_oneway": 1822,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.52,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.52,
+      0.55,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.52,
+     "rh": {
+      "errs": [
+       0.58,
+       0.61,
+       0.57
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.58,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.06,
+      "drop_pct": -11.5385,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 9,
+     "gen_seed": 173175,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 3,
+     "n_oneway": 1756,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.54,
+      0.58,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.54,
+     "rh": {
+      "errs": [
+       0.58,
+       0.56,
+       0.58
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.58,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.04,
+      "drop_pct": -7.4074,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 10,
+     "gen_seed": 173176,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 17,
+     "n_oneway": 1834,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.83,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.87,
+      0.83,
+      0.83
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.83,
+     "rh": {
+      "errs": [
+       0.87,
+       0.84,
+       0.85
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.85,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.02,
+      "drop_pct": -2.4096,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 11,
+     "gen_seed": 173177,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 11,
+     "n_oneway": 1816,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.5,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.5,
+      0.5,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.5,
+     "rh": {
+      "errs": [
+       0.62,
+       0.61,
+       0.6
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.61,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.11,
+      "drop_pct": -22.0,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 12,
+     "gen_seed": 173178,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 9,
+     "n_oneway": 1824,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.58,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.58,
+      0.55,
+      0.62
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.58,
+     "rh": {
+      "errs": [
+       0.57,
+       0.59,
+       0.56
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.57,
+      "f_max_rh": 7.0,
+      "delta_mV": -0.01,
+      "drop_pct": 1.7241,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 13,
+     "gen_seed": 173179,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 17,
+     "n_oneway": 1793,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.52,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.52,
+      0.52,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.52,
+     "rh": {
+      "errs": [
+       0.52,
+       0.53,
+       0.54
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.53,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.01,
+      "drop_pct": -1.9231,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 14,
+     "gen_seed": 173180,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 9,
+     "n_oneway": 1806,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.56,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.56,
+      0.57,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.56,
+     "rh": {
+      "errs": [
+       0.59,
+       0.58,
+       0.6
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.59,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.03,
+      "drop_pct": -5.3571,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 15,
+     "gen_seed": 173181,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 6,
+     "n_oneway": 1776,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.62,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.63,
+      0.59,
+      0.62
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.62,
+     "rh": {
+      "errs": [
+       0.62,
+       0.62,
+       0.65
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.62,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 16,
+     "gen_seed": 173182,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 19,
+     "n_oneway": 1773,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.73,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.72,
+      0.73,
+      0.73
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.73,
+     "rh": {
+      "errs": [
+       0.81,
+       0.81,
+       0.8
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.81,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.08,
+      "drop_pct": -10.9589,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 17,
+     "gen_seed": 173183,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 10,
+     "n_oneway": 1709,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.79,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.82,
+      0.79,
+      0.78
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.79,
+     "rh": {
+      "errs": [
+       0.83,
+       0.8,
+       0.81
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.81,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.02,
+      "drop_pct": -2.5316,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 18,
+     "gen_seed": 173184,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 6,
+     "n_oneway": 1843,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.86,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.86,
+      0.84,
+      0.87
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.86,
+     "rh": {
+      "errs": [
+       0.85,
+       0.85,
+       0.89
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.85,
+      "f_max_rh": 7.0,
+      "delta_mV": -0.01,
+      "drop_pct": 1.1628,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 19,
+     "gen_seed": 173185,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 4,
+     "n_oneway": 1801,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.56,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.56,
+      0.54,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.56,
+     "rh": {
+      "errs": [
+       0.59,
+       0.58,
+       0.53
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.58,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.02,
+      "drop_pct": -3.5714,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 20,
+     "gen_seed": 173186,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 7,
+     "n_oneway": 1777,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.66,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.66,
+      0.65,
+      0.66
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.66,
+     "rh": {
+      "errs": [
+       0.66,
+       0.65,
+       0.69
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.66,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 21,
+     "gen_seed": 173187,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 11,
+     "n_oneway": 1803,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.53,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.53,
+      0.53,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.53,
+     "rh": {
+      "errs": [
+       0.68,
+       0.66,
+       0.62
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.66,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.13,
+      "drop_pct": -24.5283,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 22,
+     "gen_seed": 173188,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 13,
+     "n_oneway": 1803,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.54,
+      0.53,
+      0.57
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.54,
+     "rh": {
+      "errs": [
+       0.57,
+       0.55,
+       0.56
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.56,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.02,
+      "drop_pct": -3.7037,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 23,
+     "gen_seed": 173189,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 14,
+     "n_oneway": 1790,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.71,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.71,
+      0.71,
+      0.71
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.71,
+     "rh": {
+      "errs": [
+       0.77,
+       0.78,
+       0.78
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.78,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.07,
+      "drop_pct": -9.8592,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 24,
+     "gen_seed": 173190,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 7,
+     "n_oneway": 1774,
+     "hyper_active": true,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.56,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.55,
+      0.57,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.56,
+     "rh": {
+      "errs": [
+       0.6,
+       0.56,
+       0.54
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.56,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": false,
+      "errs_bit_exact_vs_base": false
+     },
+     "rt": null,
+     "comp": null
+    }
+   ],
+   "runtime_s": 138.6
+  },
+  "c5": {
+   "cell": 5,
+   "violation_class": "A-SYM+A-STAT",
+   "n_instances": 25,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_build": 400,
+   "hyper_active": false,
+   "rh_armed": true,
+   "rt_comp_armed": false,
+   "n_base_decodes": 75,
+   "n_rh_decodes": 75,
+   "n_rt_decodes": 0,
+   "n_comp_decodes": 0,
+   "n_rejections_base": 0,
+   "n_rejections_rh": 0,
+   "n_rejections_rt": 0,
+   "n_rejections_comp": 0,
+   "rejection_records": [],
+   "median_err_base": 0.59,
+   "median_err_rh": 0.59,
+   "n_replay_exact": 25,
+   "n_tail": 0,
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 171166,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1758,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.52,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.52,
+      0.52,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.52,
+     "rh": {
+      "errs": [
+       0.52,
+       0.52,
+       0.52
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.52,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 1,
+     "gen_seed": 171167,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1686,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.56,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.59,
+      0.56,
+      0.54
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.56,
+     "rh": {
+      "errs": [
+       0.59,
+       0.56,
+       0.54
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.56,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 2,
+     "gen_seed": 171168,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1774,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.52,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.57,
+      0.5,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.52,
+     "rh": {
+      "errs": [
+       0.57,
+       0.5,
+       0.52
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.52,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 3,
+     "gen_seed": 171169,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1697,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.66,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.68,
+      0.66,
+      0.66
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.66,
+     "rh": {
+      "errs": [
+       0.68,
+       0.66,
+       0.66
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.66,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 4,
+     "gen_seed": 171170,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1707,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.64,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.64,
+      0.66,
+      0.63
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.64,
+     "rh": {
+      "errs": [
+       0.64,
+       0.66,
+       0.63
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.64,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 5,
+     "gen_seed": 171171,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1768,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.88,
+     "f_max": 6.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.91,
+      0.88,
+      0.87
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.88,
+     "rh": {
+      "errs": [
+       0.91,
+       0.88,
+       0.87
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.88,
+      "f_max_rh": 6.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 6,
+     "gen_seed": 171172,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1811,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.58,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.6,
+      0.57,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.58,
+     "rh": {
+      "errs": [
+       0.6,
+       0.57,
+       0.58
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.58,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 7,
+     "gen_seed": 171173,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1752,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.76,
+     "f_max": 6.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.76,
+      0.75,
+      0.76
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.76,
+     "rh": {
+      "errs": [
+       0.76,
+       0.75,
+       0.76
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.76,
+      "f_max_rh": 6.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 8,
+     "gen_seed": 171174,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1787,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.58,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.55,
+      0.58,
+      0.59
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.58,
+     "rh": {
+      "errs": [
+       0.55,
+       0.58,
+       0.59
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.58,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 9,
+     "gen_seed": 171175,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1847,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.83,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.84,
+      0.83,
+      0.8
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.83,
+     "rh": {
+      "errs": [
+       0.84,
+       0.83,
+       0.8
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.83,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 10,
+     "gen_seed": 171176,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1800,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.57,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.6,
+      0.57,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.57,
+     "rh": {
+      "errs": [
+       0.6,
+       0.57,
+       0.56
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.57,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 11,
+     "gen_seed": 171177,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1844,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 1.02,
+     "f_max": 6.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.02,
+      1.01,
+      1.03
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 1.02,
+     "rh": {
+      "errs": [
+       1.02,
+       1.01,
+       1.03
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 1.02,
+      "f_max_rh": 6.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 12,
+     "gen_seed": 171178,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1843,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.54,
+      0.55,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.54,
+     "rh": {
+      "errs": [
+       0.54,
+       0.55,
+       0.53
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.54,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 13,
+     "gen_seed": 171179,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1844,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.83,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.84,
+      0.8,
+      0.83
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.83,
+     "rh": {
+      "errs": [
+       0.84,
+       0.8,
+       0.83
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.83,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 14,
+     "gen_seed": 171180,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1783,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.52,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.52,
+      0.54,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.52,
+     "rh": {
+      "errs": [
+       0.52,
+       0.54,
+       0.51
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.52,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 15,
+     "gen_seed": 171181,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1792,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.55,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.53,
+      0.56,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.55,
+     "rh": {
+      "errs": [
+       0.53,
+       0.56,
+       0.55
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.55,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 16,
+     "gen_seed": 171182,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1791,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.54,
+      0.52,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.54,
+     "rh": {
+      "errs": [
+       0.54,
+       0.52,
+       0.56
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.54,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 17,
+     "gen_seed": 171183,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1797,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.59,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.59,
+      0.62,
+      0.56
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.59,
+     "rh": {
+      "errs": [
+       0.59,
+       0.62,
+       0.56
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.59,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 18,
+     "gen_seed": 171184,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1840,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.53,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.54,
+      0.52,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.53,
+     "rh": {
+      "errs": [
+       0.54,
+       0.52,
+       0.53
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.53,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 19,
+     "gen_seed": 171185,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1838,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.52,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.55,
+      0.49,
+      0.52
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.52,
+     "rh": {
+      "errs": [
+       0.55,
+       0.49,
+       0.52
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.52,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 20,
+     "gen_seed": 171186,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1726,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.57,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.57,
+      0.58,
+      0.57
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.57,
+     "rh": {
+      "errs": [
+       0.57,
+       0.58,
+       0.57
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.57,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 21,
+     "gen_seed": 171187,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1705,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.99,
+     "f_max": 6.0,
+     "replay_bit_exact": true,
+     "errs": [
+      1.0,
+      0.99,
+      0.96
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.99,
+     "rh": {
+      "errs": [
+       1.0,
+       0.99,
+       0.96
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.99,
+      "f_max_rh": 6.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 22,
+     "gen_seed": 171188,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1756,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.83,
+     "f_max": 6.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.85,
+      0.83,
+      0.81
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.83,
+     "rh": {
+      "errs": [
+       0.85,
+       0.83,
+       0.81
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.83,
+      "f_max_rh": 6.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 23,
+     "gen_seed": 171189,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1791,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.6,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.61,
+      0.6,
+      0.58
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.6,
+     "rh": {
+      "errs": [
+       0.61,
+       0.6,
+       0.58
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.6,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    },
+    {
+     "j": 24,
+     "gen_seed": 171190,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-STAT"
+     ],
+     "T": 8,
+     "n_hyper": 0,
+     "n_oneway": 1777,
+     "hyper_active": false,
+     "t1": false,
+     "tail": false,
+     "dep199_median_err": 0.67,
+     "f_max": 7.0,
+     "replay_bit_exact": true,
+     "errs": [
+      0.67,
+      0.7,
+      0.65
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "median_err": 0.67,
+     "rh": {
+      "errs": [
+       0.67,
+       0.7,
+       0.65
+      ],
+      "verified": [
+       true,
+       true,
+       true
+      ],
+      "rho": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "branch": [
+       "real",
+       "real",
+       "real"
+      ],
+      "median_err": 0.67,
+      "f_max_rh": 7.0,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0,
+      "noop_identity_frames": true,
+      "errs_bit_exact_vs_base": true
+     },
+     "rt": null,
+     "comp": null
+    }
+   ],
+   "runtime_s": 141.6
+  }
+ },
+ "verdict": "3/4 gates - c6 tail branch NEUTRAL-HARM (median drop -1.4815%, 25/25 tail instances)",
+ "cells_run": [
+  "c3",
+  "c5",
+  "c6",
+  "c7"
+ ],
+ "exp": "exp204_rh_rt_n400_tail",
+ "claim": "R_H (exp166's rule_hyper_S VERBATIM, L142's cancellation-density weighting) and R_T (exp166's rule_temporal_core VERBATIM) priced at n=400 on the c6 tail \u2014 L174's registered next after exp199 falsified R_O (NEUTRAL-HARM): exp199's n=400 battery rebuilt VERBATIM (its seed rule and exp181's cell definitions, CornerMedium(400, ...) at cells 3/5/6/7 x 25 instances x seeds (1,2,3)), the base arm = exp199's deposit replayed bit-exactly at the deposit's rounding (spot-assert on the c6 tail + c5, all seeds); R_H armed at the frames level on the hyper-active instances (the A-PAIR cells 3/6/7) with F = exp166's pooled_F over the registered cohort's hyper-active media computed BEFORE any R_H decode, the temporal dispatch = exp178's scoped arm under the -35.0 pin; the c6 tail's median delta names the branch (REPAIR / PARTIAL / NEUTRAL-HARM); R_T is the control \u2014 on the c6 tail's T=1 media exp166's rule_temporal_core is the frames identity, and the R_H x R_T composition (exp170's primary mask-then-augment order, same F) equals R_H alone bit-exactly; no-regression held on the hyper-inactive (identity by construction) and hyper-active non-tail instances",
+ "cohort": {
+  "generator": "exp199's battery VERBATIM \u2014 exp166's CornerMedium with n=400 as the constructor's FIRST PARAMETER, asserted med.n == 400 at every build",
+  "seed_base": 166166,
+  "seed_rule": "EXP166_SEED_BASE + 1000*c + j, j = 0..24",
+  "cells": [
+   3,
+   5,
+   6,
+   7
+  ],
+  "hyper_active_cells": [
+   3,
+   6,
+   7
+  ],
+  "hyper_inactive_cells": [
+   5
+  ],
+  "tail_owner_cell": 6,
+  "per_cell": 25,
+  "n": 400,
+  "n_media": 100,
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "cell_classes": {
+   "c3": "A-PAIR+A-STAT",
+   "c5": "A-SYM+A-STAT",
+   "c6": "A-SYM+A-PAIR",
+   "c7": "A-SYM+A-PAIR+A-STAT"
+  }
+ },
+ "repair_rule": {
+  "rule": "R_H",
+  "source": "exp166's rule_hyper_S VERBATIM (L142's deposit at the medium level), applied at the frames level (RepairedMedium wrapper, rule='hyper')",
+  "description": "cancellation-density weighting: A += F*S with S_ij = 1 iff i,j share a hyperedge and F the pre-decode pooled median nonzero |W|; identity (bit-exact) when the medium has no hyperedges",
+  "f_rh": 0.9857037719884054,
+  "f_recipe": "exp166's pooled_F VERBATIM over the registered cohort's hyper-active media (c3/c6/c7 x 25 instances, ALL frames), computed BEFORE any R_H decode \u2014 run-scope-independent",
+  "armed_on": "every hyper-active instance (A-PAIR cells 3/6/7); also run on the hyper-inactive control (c5) where it is the identity by construction \u2014 B4's bit-exact no-op demonstration",
+  "not_armed_on": null
+ },
+ "control_rule": {
+  "rule": "R_T",
+  "source": "exp166's rule_temporal_core VERBATIM, applied at the frames level (RepairedMedium wrapper, rule='temporal')",
+  "description": "flip-quiet windowing: every frame masked to the across-frame CORE support; on T=1 media core = the frame's own support \u2014 the frames identity",
+  "armed_on": "the c6 tail cell only (the battery's non-temporal cell, T=1) \u2014 where the pre-registered identity holds"
+ },
+ "composition": {
+  "order": "exp170's primary mask-then-augment: rule_temporal_core THEN rule_hyper_S, same zero-knob F",
+  "f": 0.9857037719884054,
+  "scope": "c6 (T=1)",
+  "expectation": "equals R_H alone bit-exactly (the exp170 dominated-composition lesson: deposited, pre-named, not an adoption candidate unless R_H itself repairs)"
+ },
+ "read": {
+  "projection": "exp148 read_temporal VERBATIM (PN1/PN2 dominant-quadrature + TC1 flip-clock F + TC2 A_ext = A + F)",
+  "executor": "exp142 execute_signed VERBATIM (R1 structure on |A|, R2 signed dynamics, walk frontier on |A|>0)",
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "op_source": "exp99 battery-wide STAR point (exp142's STAR_OP)",
+  "spec": "MULTI (exp94 3-zone program)",
+  "frontier": "walk (inside exp142's executor)",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n": 100,
+  "window_h": 24.0,
+  "commit_noise": 0.6,
+  "steps_per_cell": 8,
+  "per_instance_tuning": "none",
+  "fingerprint": "8e11e88c1c2f1518",
+  "fingerprint_asserted": "8e11e88c1c2f1518",
+  "medium_n": 400,
+  "medium_n_note": "READ_CONFIG's 'n': 100 field is exp160's deposited fingerprint of record (asserted unchanged pre/post run); the decode stack is size-agnostic \u2014 exp204's cohort knob is the CornerMedium construction n=400, as in exp198/exp199",
+  "temporal_dispatch": "exp178's SCOPED arm \u2014 exp148 decode('scoped'): exp169's f_max_frames VERBATIM, R_T (exp167's read_adopted) iff f_max < 32.0 else the existing raw temporal path UNCHANGED",
+  "instrument_pin": {
+   "constant": "NEURAL_SPEC_MIN",
+   "pinned_to": -35.0,
+   "saved_values": {
+    "cultivation.bioelectric.collective": -60.0,
+    "experiments.exp136_generator_v6": -60.0,
+    "experiments.exp142_sign_read": -60.0,
+    "experiments.exp145_phase_read": -60.0,
+    "experiments.exp148_temporal_read": -60.0,
+    "experiments.exp156_write_path": -60.0,
+    "experiments.exp94_multizone_scale": -60.0
+   },
+   "modules": [
+    "cultivation.bioelectric.collective",
+    "experiments.exp136_generator_v6",
+    "experiments.exp142_sign_read",
+    "experiments.exp145_phase_read",
+    "experiments.exp148_temporal_read",
+    "experiments.exp156_write_path",
+    "experiments.exp94_multizone_scale"
+   ],
+   "note": "the -35.0 comparability pin on every module that captured it at import along the read chain (exp199's pattern, save/restore asserted)"
+  }
+ },
+ "replay_target": {
+  "deposit": "results/exp199_ro_n400_tail.json",
+  "exp199_verdict": "3/4 gates - c6 tail branch NEUTRAL-HARM (median drop -21.9858%, 25/25 tail instances)",
+  "exp199_branch": "NEUTRAL-HARM",
+  "exp199_c6_tail": {
+   "n_tail": 25,
+   "tail_def": "exp198 median_err > BAR (1.3 mV)",
+   "median_delta_mV": 0.31,
+   "median_drop_pct": -21.9858,
+   "tail_median_base": 1.4,
+   "tail_median_ro": 1.7,
+   "aggregate_drop_pct": -21.4286,
+   "per_instance": [
+    {
+     "j": 0,
+     "base": 1.42,
+     "ro": 1.7,
+     "delta_mV": 0.28,
+     "drop_pct": -19.7183
+    },
+    {
+     "j": 1,
+     "base": 1.36,
+     "ro": 1.65,
+     "delta_mV": 0.29,
+     "drop_pct": -21.3235
+    },
+    {
+     "j": 2,
+     "base": 1.36,
+     "ro": 1.66,
+     "delta_mV": 0.3,
+     "drop_pct": -22.0588
+    },
+    {
+     "j": 3,
+     "base": 1.4,
+     "ro": 1.71,
+     "delta_mV": 0.31,
+     "drop_pct": -22.1429
+    },
+    {
+     "j": 4,
+     "base": 1.37,
+     "ro": 1.65,
+     "delta_mV": 0.28,
+     "drop_pct": -20.438
+    },
+    {
+     "j": 5,
+     "base": 1.37,
+     "ro": 1.67,
+     "delta_mV": 0.3,
+     "drop_pct": -21.8978
+    },
+    {
+     "j": 6,
+     "base": 1.4,
+     "ro": 1.68,
+     "delta_mV": 0.28,
+     "drop_pct": -20.0
+    },
+    {
+     "j": 7,
+     "base": 1.45,
+     "ro": 1.79,
+     "delta_mV": 0.34,
+     "drop_pct": -23.4483
+    },
+    {
+     "j": 8,
+     "base": 1.38,
+     "ro": 1.69,
+     "delta_mV": 0.31,
+     "drop_pct": -22.4638
+    },
+    {
+     "j": 9,
+     "base": 1.38,
+     "ro": 1.68,
+     "delta_mV": 0.3,
+     "drop_pct": -21.7391
+    },
+    {
+     "j": 10,
+     "base": 1.41,
+     "ro": 1.69,
+     "delta_mV": 0.28,
+     "drop_pct": -19.8582
+    },
+    {
+     "j": 11,
+     "base": 1.35,
+     "ro": 1.63,
+     "delta_mV": 0.28,
+     "drop_pct": -20.7407
+    },
+    {
+     "j": 12,
+     "base": 1.41,
+     "ro": 1.74,
+     "delta_mV": 0.33,
+     "drop_pct": -23.4043
+    },
+    {
+     "j": 13,
+     "base": 1.38,
+     "ro": 1.71,
+     "delta_mV": 0.33,
+     "drop_pct": -23.913
+    },
+    {
+     "j": 14,
+     "base": 1.44,
+     "ro": 1.77,
+     "delta_mV": 0.33,
+     "drop_pct": -22.9167
+    },
+    {
+     "j": 15,
+     "base": 1.37,
+     "ro": 1.72,
+     "delta_mV": 0.35,
+     "drop_pct": -25.5474
+    },
+    {
+     "j": 16,
+     "base": 1.38,
+     "ro": 1.7,
+     "delta_mV": 0.32,
+     "drop_pct": -23.1884
+    },
+    {
+     "j": 17,
+     "base": 1.42,
+     "ro": 1.67,
+     "delta_mV": 0.25,
+     "drop_pct": -17.6056
+    },
+    {
+     "j": 18,
+     "base": 1.34,
+     "ro": 1.64,
+     "delta_mV": 0.3,
+     "drop_pct": -22.3881
+    },
+    {
+     "j": 19,
+     "base": 1.43,
+     "ro": 1.7,
+     "delta_mV": 0.27,
+     "drop_pct": -18.8811
+    },
+    {
+     "j": 20,
+     "base": 1.38,
+     "ro": 1.72,
+     "delta_mV": 0.34,
+     "drop_pct": -24.6377
+    },
+    {
+     "j": 21,
+     "base": 1.45,
+     "ro": 1.76,
+     "delta_mV": 0.31,
+     "drop_pct": -21.3793
+    },
+    {
+     "j": 22,
+     "base": 1.41,
+     "ro": 1.72,
+     "delta_mV": 0.31,
+     "drop_pct": -21.9858
+    },
+    {
+     "j": 23,
+     "base": 1.41,
+     "ro": 1.77,
+     "delta_mV": 0.36,
+     "drop_pct": -25.5319
+    },
+    {
+     "j": 24,
+     "base": 1.44,
+     "ro": 1.75,
+     "delta_mV": 0.31,
+     "drop_pct": -21.5278
+    }
+   ]
+  }
+ },
+ "gates": {
+  "B1_replay_exp199_deposit": {
+   "pass": true,
+   "n_media": 100,
+   "medium_n": 400,
+   "baseline_decodes": 300,
+   "expected": 300,
+   "spot_cells": [
+    6,
+    5
+   ],
+   "spot_def": "the c6 tail cell + c5 (the hyper-inactive clean cell), all instances, all seeds",
+   "spot_replay_bit_exact": true,
+   "n_replay_exact_instances_all": 100,
+   "n400_construction_asserted": true,
+   "rejections": 0,
+   "comparison": "round(err, 2) == exp199's deposited errs and verified flags equal, per (cell, j, seed); exp142 rounds err_vs_target to 2 dp \u2014 the deposit's rounding"
+  },
+  "B2_rh_on_c6_tail": {
+   "pass": true,
+   "rh_armed_cells": [
+    3,
+    6,
+    7
+   ],
+   "n_rh_armed_instances": 75,
+   "n_rh_decodes": 300,
+   "rh_rejections": 0,
+   "per_instance_deltas_deposited": true,
+   "f_rh": 0.9857037719884054,
+   "f_rh_source": "exp166's pooled_F VERBATIM \u2014 median nonzero |W| pooled over ALL frames of the registered cohort's hyper-active media (c3/c6/c7 x 25), computed BEFORE any R_H decode (L142's zero-knob recipe; run-scope-independent \u2014 every --job split shares this ONE F)",
+   "c6_tail": {
+    "n_tail": 25,
+    "tail_def": "exp199 median_err > BAR (1.3 mV)",
+    "median_delta_mV": 0.02,
+    "median_drop_pct": -1.4815,
+    "tail_median_base": 1.4,
+    "tail_median_rh": 1.42,
+    "aggregate_drop_pct": -1.4286,
+    "per_instance": [
+     {
+      "j": 0,
+      "base": 1.42,
+      "rh": 1.46,
+      "delta_mV": 0.04,
+      "drop_pct": -2.8169
+     },
+     {
+      "j": 1,
+      "base": 1.36,
+      "rh": 1.4,
+      "delta_mV": 0.04,
+      "drop_pct": -2.9412
+     },
+     {
+      "j": 2,
+      "base": 1.36,
+      "rh": 1.38,
+      "delta_mV": 0.02,
+      "drop_pct": -1.4706
+     },
+     {
+      "j": 3,
+      "base": 1.4,
+      "rh": 1.41,
+      "delta_mV": 0.01,
+      "drop_pct": -0.7143
+     },
+     {
+      "j": 4,
+      "base": 1.37,
+      "rh": 1.38,
+      "delta_mV": 0.01,
+      "drop_pct": -0.7299
+     },
+     {
+      "j": 5,
+      "base": 1.37,
+      "rh": 1.34,
+      "delta_mV": -0.03,
+      "drop_pct": 2.1898
+     },
+     {
+      "j": 6,
+      "base": 1.4,
+      "rh": 1.37,
+      "delta_mV": -0.03,
+      "drop_pct": 2.1429
+     },
+     {
+      "j": 7,
+      "base": 1.45,
+      "rh": 1.5,
+      "delta_mV": 0.05,
+      "drop_pct": -3.4483
+     },
+     {
+      "j": 8,
+      "base": 1.38,
+      "rh": 1.44,
+      "delta_mV": 0.06,
+      "drop_pct": -4.3478
+     },
+     {
+      "j": 9,
+      "base": 1.38,
+      "rh": 1.39,
+      "delta_mV": 0.01,
+      "drop_pct": -0.7246
+     },
+     {
+      "j": 10,
+      "base": 1.41,
+      "rh": 1.42,
+      "delta_mV": 0.01,
+      "drop_pct": -0.7092
+     },
+     {
+      "j": 11,
+      "base": 1.35,
+      "rh": 1.37,
+      "delta_mV": 0.02,
+      "drop_pct": -1.4815
+     },
+     {
+      "j": 12,
+      "base": 1.41,
+      "rh": 1.41,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0
+     },
+     {
+      "j": 13,
+      "base": 1.38,
+      "rh": 1.41,
+      "delta_mV": 0.03,
+      "drop_pct": -2.1739
+     },
+     {
+      "j": 14,
+      "base": 1.44,
+      "rh": 1.49,
+      "delta_mV": 0.05,
+      "drop_pct": -3.4722
+     },
+     {
+      "j": 15,
+      "base": 1.37,
+      "rh": 1.42,
+      "delta_mV": 0.05,
+      "drop_pct": -3.6496
+     },
+     {
+      "j": 16,
+      "base": 1.38,
+      "rh": 1.39,
+      "delta_mV": 0.01,
+      "drop_pct": -0.7246
+     },
+     {
+      "j": 17,
+      "base": 1.42,
+      "rh": 1.48,
+      "delta_mV": 0.06,
+      "drop_pct": -4.2254
+     },
+     {
+      "j": 18,
+      "base": 1.34,
+      "rh": 1.39,
+      "delta_mV": 0.05,
+      "drop_pct": -3.7313
+     },
+     {
+      "j": 19,
+      "base": 1.43,
+      "rh": 1.47,
+      "delta_mV": 0.04,
+      "drop_pct": -2.7972
+     },
+     {
+      "j": 20,
+      "base": 1.38,
+      "rh": 1.45,
+      "delta_mV": 0.07,
+      "drop_pct": -5.0725
+     },
+     {
+      "j": 21,
+      "base": 1.45,
+      "rh": 1.45,
+      "delta_mV": 0.0,
+      "drop_pct": 0.0
+     },
+     {
+      "j": 22,
+      "base": 1.41,
+      "rh": 1.45,
+      "delta_mV": 0.04,
+      "drop_pct": -2.8369
+     },
+     {
+      "j": 23,
+      "base": 1.41,
+      "rh": 1.43,
+      "delta_mV": 0.02,
+      "drop_pct": -1.4184
+     },
+     {
+      "j": 24,
+      "base": 1.44,
+      "rh": 1.45,
+      "delta_mV": 0.01,
+      "drop_pct": -0.6944
+     }
+    ]
+   },
+   "branch": "NEUTRAL-HARM",
+   "branch_rule": "REPAIR (median drop >= 20.0%), PARTIAL (0 < drop < 20.0%), NEUTRAL-HARM (median <= 0)"
+  },
+  "B3_rt_control_and_composition": {
+   "pass": true,
+   "rt_noop": {
+    "rule": "exp166's rule_temporal_core VERBATIM",
+    "armed_on": "c6 (the battery's non-temporal cell, T=1)",
+    "identity": "T=1 -> core = the frame's own support",
+    "n_instances": 25,
+    "frames_identity_bit_exact": true,
+    "errs_bit_exact_vs_base": true
+   },
+   "composition": {
+    "order": "exp170's primary mask-then-augment: rule_temporal_core THEN rule_hyper_S, same zero-knob F",
+    "scope": "c6 (T=1 \u2014 R_T is the identity there)",
+    "n_instances": 25,
+    "frames_bit_exact_vs_rh": true,
+    "errs_bit_exact_vs_rh": true,
+    "lesson": "exp170's dominated-composition lesson: deposited, pre-named, not an adoption candidate unless R_H itself repairs"
+   }
+  },
+  "B4_hygiene_no_regression": {
+   "pass": false,
+   "n_decodes_total": 750,
+   "expected_total": 750,
+   "rejections": 0,
+   "rejection_records": [],
+   "all_errs_finite": true,
+   "hyper_inactive_noop": {
+    "cells": [
+     5
+    ],
+    "mechanism": "exp166's rule_hyper_S returns the frames identity when the medium has no hyperedges \u2014 bit-exact by construction",
+    "n_instances": 25,
+    "identity_frames_and_bit_exact_errs": true
+   },
+   "hyper_active_non_tail": {
+    "n_instances": 50,
+    "no_regression_bar_mV": 0.05,
+    "worst_regression_mV": 0.13,
+    "held": false
+   },
+   "instrument_pin": {
+    "constant": "NEURAL_SPEC_MIN",
+    "pinned_to": -35.0,
+    "asserted": true,
+    "saved_values": {
+     "cultivation.bioelectric.collective": -60.0,
+     "experiments.exp136_generator_v6": -60.0,
+     "experiments.exp142_sign_read": -60.0,
+     "experiments.exp145_phase_read": -60.0,
+     "experiments.exp148_temporal_read": -60.0,
+     "experiments.exp156_write_path": -60.0,
+     "experiments.exp94_multizone_scale": -60.0
+    },
+    "modules": [
+     "cultivation.bioelectric.collective",
+     "experiments.exp136_generator_v6",
+     "experiments.exp142_sign_read",
+     "experiments.exp145_phase_read",
+     "experiments.exp148_temporal_read",
+     "experiments.exp156_write_path",
+     "experiments.exp94_multizone_scale"
+    ]
+   },
+   "fingerprint": "8e11e88c1c2f1518",
+   "post_run_fingerprint": "8e11e88c1c2f1518"
+  }
+ },
+ "runtime_s": 145.5
+}
