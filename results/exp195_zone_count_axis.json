@@ -1,0 +1,60 @@
+{
+ "sections": {},
+ "gates": {
+  "V1_ladder_integrity": {
+   "pass": true,
+   "rejections": 0
+  },
+  "V2_dose_response": {
+   "pass": true,
+   "branch": "SIZE-DRIVEN",
+   "curve": {
+    "n100": {
+     "k1": 0.67,
+     "k2": 0.66,
+     "k3": 0.67,
+     "k4": 0.675
+    },
+    "n400": {
+     "k1": 1.69,
+     "k2": 1.68,
+     "k3": 1.73,
+     "k4": 1.7
+    }
+   },
+   "rising_n100": false,
+   "rising_n400": false
+  },
+  "V3_coverage_link": {
+   "pass": true,
+   "spearman": {
+    "n100": 0.6,
+    "n400": 0.6
+   },
+   "coverage": {
+    "n100": {
+     "k1": 0.057,
+     "k2": 0.058300000000000005,
+     "k3": 0.0594,
+     "k4": 0.0592
+    },
+    "n400": {
+     "k1": 0.0446,
+     "k2": 0.04466875,
+     "k3": 0.044781249999999995,
+     "k4": 0.04508125
+    }
+   }
+  },
+  "V4_hygiene": {
+   "pass": false,
+   "pin_restored": true,
+   "k1_n100": 0.67,
+   "exp185_n100_band": null,
+   "in_band": false
+  }
+ },
+ "exp": "exp195",
+ "verdict": "PASS/PASS/PASS/REFUTE gates",
+ "runtime_s": 158.9
+}
