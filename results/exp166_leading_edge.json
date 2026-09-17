@@ -1,0 +1,964 @@
+{
+ "exp": "exp166_leading_edge",
+ "claim": "exp160's registered follow-up: the universality boundary's tail (5/200 above the 1.30 mV bar, all verifying) lives in the oriented+hyper+temporal corner; a crossed 2^3 factorial x 50 random instances (400 media, exp160's generator verbatim with the dimension coins dictated by the cell) prices the corner, names the dominant main effect + interactions, tests the pre-registered monotone-degradation ordering along the active-count axis, and hands back ONE zero-knob repair candidate chosen by a mapping fixed before the run",
+ "pre_registration": {
+  "seed_base": 166166,
+  "seed_rule": "SEED_BASE + 1000*c + j, c = 4o+2h+t, j = 0..49",
+  "pinned_off": [
+   "signed",
+   "complex"
+  ],
+  "pinned_rationale": "exp160 U3: signed/complex neutral-to-protective (lift 0.74/0.67)",
+  "bar_mV": 1.3,
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "exp160_fp_asserted": "8e11e88c1c2f1518",
+  "rule_map": {
+   "hyper": "R_H cancellation-density-weighted S (L142): A += F*S, S = co-hyperedge, F = median nonzero |W| pooled pre-decode",
+   "temporal": "R_T flip-quiet windowing (L140): every frame masked to the across-frame core support (membership frozen)",
+   "oriented": "R_O one-way support restore (symmetrize); NOTE the stack already symmetrizes per frame (PN2 S=(R+R.T)/2)"
+  }
+ },
+ "generator": {
+  "kind": "exp160 RandomMedium verbatim, corner-pinned",
+  "n": 100,
+  "n_instances": 400,
+  "magnitudes": "U(0.5, 1.5) = exp137's _wU operating range",
+  "support": "exp137's _base_connected (ring + chords p=0.04)",
+  "temporal_frames": 8,
+  "hyper_factorization": "w_e/(|e|-1) (exp137's clause)",
+  "note": "signed/complex pinned inactive -> all frames real nonneg; hyperedge weights real positive"
+ },
+ "config": {
+  "projection": "exp148 read_temporal VERBATIM (PN1/PN2 dominant-quadrature + TC1 flip-clock F + TC2 A_ext = A + F)",
+  "executor": "exp142 execute_signed VERBATIM (R1 structure on |A|, R2 signed dynamics, walk frontier on |A|>0)",
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "op_source": "exp99 battery-wide STAR point (exp142's STAR_OP)",
+  "spec": "MULTI (exp94 3-zone program)",
+  "frontier": "walk (inside exp142's executor)",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n": 100,
+  "window_h": 24.0,
+  "commit_noise": 0.6,
+  "steps_per_cell": 8,
+  "per_instance_tuning": "none",
+  "fingerprint": "8e11e88c1c2f1518"
+ },
+ "cells": [
+  {
+   "cell": 0,
+   "dims": {
+    "oriented": false,
+    "hyper": false,
+    "temporal": false
+   },
+   "k_active": 0,
+   "n": 50,
+   "n_finite": 50,
+   "median_err": 0.67,
+   "mean_err": 0.6706,
+   "p90_err": 0.711,
+   "max_err": 0.79,
+   "verify_rate": 1.0,
+   "n_above_bar": 0
+  },
+  {
+   "cell": 1,
+   "dims": {
+    "oriented": false,
+    "hyper": false,
+    "temporal": true
+   },
+   "k_active": 1,
+   "n": 50,
+   "n_finite": 50,
+   "median_err": 0.82,
+   "mean_err": 0.8126000000000002,
+   "p90_err": 1.0210000000000001,
+   "max_err": 1.06,
+   "verify_rate": 1.0,
+   "n_above_bar": 0
+  },
+  {
+   "cell": 2,
+   "dims": {
+    "oriented": false,
+    "hyper": true,
+    "temporal": false
+   },
+   "k_active": 1,
+   "n": 50,
+   "n_finite": 50,
+   "median_err": 0.69,
+   "mean_err": 0.6931999999999999,
+   "p90_err": 0.75,
+   "max_err": 0.79,
+   "verify_rate": 1.0,
+   "n_above_bar": 0
+  },
+  {
+   "cell": 3,
+   "dims": {
+    "oriented": false,
+    "hyper": true,
+    "temporal": true
+   },
+   "k_active": 2,
+   "n": 50,
+   "n_finite": 50,
+   "median_err": 1.0750000000000002,
+   "mean_err": 1.0876000000000001,
+   "p90_err": 1.484,
+   "max_err": 1.73,
+   "verify_rate": 1.0,
+   "n_above_bar": 9
+  },
+  {
+   "cell": 4,
+   "dims": {
+    "oriented": true,
+    "hyper": false,
+    "temporal": false
+   },
+   "k_active": 1,
+   "n": 50,
+   "n_finite": 50,
+   "median_err": 0.61,
+   "mean_err": 0.6136,
+   "p90_err": 0.651,
+   "max_err": 0.67,
+   "verify_rate": 1.0,
+   "n_above_bar": 0
+  },
+  {
+   "cell": 5,
+   "dims": {
+    "oriented": true,
+    "hyper": false,
+    "temporal": true
+   },
+   "k_active": 2,
+   "n": 50,
+   "n_finite": 50,
+   "median_err": 0.935,
+   "mean_err": 0.9289999999999999,
+   "p90_err": 1.145,
+   "max_err": 1.28,
+   "verify_rate": 1.0,
+   "n_above_bar": 0
+  },
+  {
+   "cell": 6,
+   "dims": {
+    "oriented": true,
+    "hyper": true,
+    "temporal": false
+   },
+   "k_active": 2,
+   "n": 50,
+   "n_finite": 50,
+   "median_err": 0.64,
+   "mean_err": 0.6397999999999999,
+   "p90_err": 0.681,
+   "max_err": 0.72,
+   "verify_rate": 1.0,
+   "n_above_bar": 0
+  },
+  {
+   "cell": 7,
+   "dims": {
+    "oriented": true,
+    "hyper": true,
+    "temporal": true
+   },
+   "k_active": 3,
+   "n": 50,
+   "n_finite": 50,
+   "median_err": 1.11,
+   "mean_err": 1.178,
+   "p90_err": 1.5410000000000001,
+   "max_err": 1.72,
+   "verify_rate": 1.0,
+   "n_above_bar": 14
+  }
+ ],
+ "cell_medians_mV": {
+  "0": 0.67,
+  "1": 0.82,
+  "2": 0.69,
+  "3": 1.0750000000000002,
+  "4": 0.61,
+  "5": 0.935,
+  "6": 0.64,
+  "7": 1.11
+ },
+ "effect_table": {
+  "scale": "2^3 Yates contrasts on the 8 cell medians, (1/4)-scale, positive = active side degrades (mV)",
+  "main_oriented": 0.010000000000000064,
+  "main_hyper": 0.12000000000000002,
+  "main_temporal": 0.3325000000000001,
+  "int_oriented_x_hyper": 0.017500000000000016,
+  "int_oriented_x_temporal": -0.06500000000000003,
+  "int_hyper_x_temporal": -0.09500000000000008,
+  "int_oriented_x_hyper_x_temporal": -0.022500000000000075,
+  "dominant_main_effect": "temporal"
+ },
+ "ordering_by_k": {
+  "0": {
+   "cells": [
+    0
+   ],
+   "mean_of_cell_medians": 0.67,
+   "pooled_instance_median": 0.67
+  },
+  "1": {
+   "cells": [
+    1,
+    2,
+    4
+   ],
+   "mean_of_cell_medians": 0.7066666666666666,
+   "pooled_instance_median": 0.68
+  },
+  "2": {
+   "cells": [
+    3,
+    5,
+    6
+   ],
+   "mean_of_cell_medians": 0.8833333333333334,
+   "pooled_instance_median": 0.845
+  },
+  "3": {
+   "cells": [
+    7
+   ],
+   "mean_of_cell_medians": 1.11,
+   "pooled_instance_median": 1.11
+  }
+ },
+ "ordering": {
+  "registered_expectation": "mean-of-cell-medians strictly increasing k=0..3 AND corner cell is the max cell median",
+  "grouped_medians_k0_to_k3": [
+   0.67,
+   0.7066666666666666,
+   0.8833333333333334,
+   1.11
+  ],
+  "ordering_held": true,
+  "corner_is_worst": true,
+  "actual_order_cells_worst_first": [
+   4,
+   6,
+   0,
+   2,
+   1,
+   5,
+   3,
+   7
+  ]
+ },
+ "spot_battery": {
+  "instances": [
+   {
+    "tag": "corner",
+    "cell": 7,
+    "j": 0,
+    "gen_seed": 173166,
+    "errs_armA": [
+     0.89,
+     0.87,
+     0.93
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.89,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.59,
+     0.56,
+     0.63
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.59,
+    "armB_bit_identical_to_armA": false
+   },
+   {
+    "tag": "corner",
+    "cell": 7,
+    "j": 1,
+    "gen_seed": 173167,
+    "errs_armA": [
+     1.01,
+     0.98,
+     1.08
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 1.01,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.6,
+     0.54,
+     0.53
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.54,
+    "armB_bit_identical_to_armA": false
+   },
+   {
+    "tag": "corner",
+    "cell": 7,
+    "j": 2,
+    "gen_seed": 173168,
+    "errs_armA": [
+     0.92,
+     1.02,
+     1.02
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 1.02,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.56,
+     0.55,
+     0.56
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.56,
+    "armB_bit_identical_to_armA": false
+   },
+   {
+    "tag": "corner",
+    "cell": 7,
+    "j": 3,
+    "gen_seed": 173169,
+    "errs_armA": [
+     0.91,
+     0.94,
+     0.9
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.91,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.52,
+     0.59,
+     0.52
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.52,
+    "armB_bit_identical_to_armA": false
+   },
+   {
+    "tag": "corner",
+    "cell": 7,
+    "j": 4,
+    "gen_seed": 173170,
+    "errs_armA": [
+     1.28,
+     1.29,
+     1.31
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 1.29,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.56,
+     0.48,
+     0.5
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.5,
+    "armB_bit_identical_to_armA": false
+   },
+   {
+    "tag": "corner",
+    "cell": 7,
+    "j": 5,
+    "gen_seed": 173171,
+    "errs_armA": [
+     1.24,
+     1.15,
+     1.18
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 1.18,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.54,
+     0.62,
+     0.57
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.57,
+    "armB_bit_identical_to_armA": false
+   },
+   {
+    "tag": "corner",
+    "cell": 7,
+    "j": 6,
+    "gen_seed": 173172,
+    "errs_armA": [
+     0.99,
+     0.95,
+     1.03
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.99,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.51,
+     0.53,
+     0.53
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.53,
+    "armB_bit_identical_to_armA": false
+   },
+   {
+    "tag": "corner",
+    "cell": 7,
+    "j": 7,
+    "gen_seed": 173173,
+    "errs_armA": [
+     1.0,
+     1.0,
+     1.06
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 1.0,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.62,
+     0.6,
+     0.5
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.6,
+    "armB_bit_identical_to_armA": false
+   },
+   {
+    "tag": "corner",
+    "cell": 7,
+    "j": 8,
+    "gen_seed": 173174,
+    "errs_armA": [
+     1.04,
+     1.06,
+     1.01
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 1.04,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.47,
+     0.55,
+     0.52
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.52,
+    "armB_bit_identical_to_armA": false
+   },
+   {
+    "tag": "corner",
+    "cell": 7,
+    "j": 9,
+    "gen_seed": 173175,
+    "errs_armA": [
+     1.22,
+     1.22,
+     1.2
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 1.22,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.49,
+     0.55,
+     0.53
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.53,
+    "armB_bit_identical_to_armA": false
+   },
+   {
+    "tag": "clean",
+    "cell": 0,
+    "j": 0,
+    "gen_seed": 166166,
+    "errs_armA": [
+     0.7,
+     0.67,
+     0.66
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.67,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.7,
+     0.67,
+     0.66
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.67,
+    "armB_bit_identical_to_armA": true
+   },
+   {
+    "tag": "clean",
+    "cell": 0,
+    "j": 1,
+    "gen_seed": 166167,
+    "errs_armA": [
+     0.68,
+     0.77,
+     0.61
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.68,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.68,
+     0.77,
+     0.61
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.68,
+    "armB_bit_identical_to_armA": true
+   },
+   {
+    "tag": "clean",
+    "cell": 0,
+    "j": 2,
+    "gen_seed": 166168,
+    "errs_armA": [
+     0.68,
+     0.68,
+     0.75
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.68,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.68,
+     0.68,
+     0.75
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.68,
+    "armB_bit_identical_to_armA": true
+   },
+   {
+    "tag": "clean",
+    "cell": 0,
+    "j": 3,
+    "gen_seed": 166169,
+    "errs_armA": [
+     0.6,
+     0.64,
+     0.68
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.64,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.6,
+     0.64,
+     0.68
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.64,
+    "armB_bit_identical_to_armA": true
+   },
+   {
+    "tag": "clean",
+    "cell": 0,
+    "j": 4,
+    "gen_seed": 166170,
+    "errs_armA": [
+     0.65,
+     0.65,
+     0.64
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.65,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.65,
+     0.65,
+     0.64
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.65,
+    "armB_bit_identical_to_armA": true
+   },
+   {
+    "tag": "clean",
+    "cell": 0,
+    "j": 5,
+    "gen_seed": 166171,
+    "errs_armA": [
+     0.68,
+     0.76,
+     0.65
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.68,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.68,
+     0.76,
+     0.65
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.68,
+    "armB_bit_identical_to_armA": true
+   },
+   {
+    "tag": "clean",
+    "cell": 0,
+    "j": 6,
+    "gen_seed": 166172,
+    "errs_armA": [
+     0.62,
+     0.7,
+     0.61
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.62,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.62,
+     0.7,
+     0.61
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.62,
+    "armB_bit_identical_to_armA": true
+   },
+   {
+    "tag": "clean",
+    "cell": 0,
+    "j": 7,
+    "gen_seed": 166173,
+    "errs_armA": [
+     0.65,
+     0.75,
+     0.67
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.67,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.65,
+     0.75,
+     0.67
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.67,
+    "armB_bit_identical_to_armA": true
+   },
+   {
+    "tag": "clean",
+    "cell": 0,
+    "j": 8,
+    "gen_seed": 166174,
+    "errs_armA": [
+     0.7,
+     0.59,
+     0.66
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.66,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.7,
+     0.59,
+     0.66
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.66,
+    "armB_bit_identical_to_armA": true
+   },
+   {
+    "tag": "clean",
+    "cell": 0,
+    "j": 9,
+    "gen_seed": 166175,
+    "errs_armA": [
+     0.71,
+     0.65,
+     0.69
+    ],
+    "verified_armA": [
+     true,
+     true,
+     true
+    ],
+    "median_armA": 0.69,
+    "replay_bit_exact_vs_main_battery": true,
+    "errs_armB": [
+     0.71,
+     0.65,
+     0.69
+    ],
+    "verified_armB": [
+     true,
+     true,
+     true
+    ],
+    "median_armB": 0.69,
+    "armB_bit_identical_to_armA": true
+   }
+  ],
+  "rule": {
+   "rule": "temporal",
+   "description": "R_T flip-quiet windowing (L140): every frame masked to the across-frame core support (membership frozen)"
+  },
+  "corner_median_armA": 1.0150000000000001,
+  "corner_median_armB": 0.535,
+  "clean_median_armA": 0.67,
+  "clean_median_armB": 0.67,
+  "n_corner_improved": 10,
+  "n_corner": 10,
+  "replay_bit_exact_all": true,
+  "clean_noop_bit_exact_all": true,
+  "corner_improved": true
+ },
+ "pooled_median_err": 0.72,
+ "gates": {
+  "P1_factorial_decomposition": {
+   "pass": true,
+   "cells_populated_finite": true,
+   "dominant_main_effect": "temporal",
+   "effect_rows": 7
+  },
+  "P2_monotone_active_count": {
+   "pass": true,
+   "ordering_held": true,
+   "corner_is_worst": true,
+   "actual_order_cells_worst_first": [
+    4,
+    6,
+    0,
+    2,
+    1,
+    5,
+    3,
+    7
+   ]
+  },
+  "P3_zero_rejections": {
+   "pass": true,
+   "rejections": 0,
+   "rejection_records": [],
+   "decodes": 1200,
+   "instances": 400,
+   "verify_rate": 1.0,
+   "above_bar_tail": [
+    {
+     "cell": 3,
+     "dims": {
+      "oriented": false,
+      "hyper": true,
+      "temporal": true
+     },
+     "n_above_bar": 9,
+     "median_err": 1.0750000000000002,
+     "max_err": 1.73
+    },
+    {
+     "cell": 7,
+     "dims": {
+      "oriented": true,
+      "hyper": true,
+      "temporal": true
+     },
+     "n_above_bar": 14,
+     "median_err": 1.11,
+     "max_err": 1.72
+    }
+   ]
+  },
+  "P4_repair_candidate": {
+   "pass": true,
+   "rule": {
+    "rule": "temporal",
+    "description": "R_T flip-quiet windowing (L140): every frame masked to the across-frame core support (membership frozen)"
+   },
+   "replay_bit_exact_all": true,
+   "clean_noop_bit_exact_all": true,
+   "corner_improved": true,
+   "corner_median_mV": [
+    1.0150000000000001,
+    0.535
+   ],
+   "clean_median_mV": [
+    0.67,
+    0.67
+   ]
+  }
+ },
+ "verdict": "4/4 gates",
+ "runtime_s": 137.6
+}
