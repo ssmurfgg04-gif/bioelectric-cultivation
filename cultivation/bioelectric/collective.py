@@ -43,7 +43,7 @@ V_PHYS_MAX = 5.0
 # vector transport, Egal-1/microtubule muscle substrate), while posterior
 # identity has no local pole and stays junction-carried (which is exactly
 # why recorded GJ-blockade phenotypes concentrate at posterior planes).
-NEURAL_SPEC_MIN = -35.0
+NEURAL_SPEC_MIN = -60.0
 # M35-A: the ARZ's multi-lineage convergence — K independent lineage
 # reads averaged into the blastema guess (the three planarian lineages:
 # epidermal, neural, muscle; K derived from the published lineage count,
