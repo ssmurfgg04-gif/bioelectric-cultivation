@@ -1,0 +1,677 @@
+{
+ "exp": "exp162_zero_substrate (the zero-substrate probe)",
+ "pre_registration": "see the module docstring (deposited before running; zero new knobs \u2014 every constant inherited from exp43/exp68/exp124/exp149)",
+ "medium": {
+  "adjacency": "exp68 torus(10,10) verbatim",
+  "ground_mV": -50.0,
+  "memoryless_protocol": "bit-exact reset (V and theta) to ground before every round incl. round 0; R=3 rounds; round-independence asserted",
+  "noise_std": 0.0,
+  "determinism_note": "exp149's stream-preserving delta; bit-exact gates are exact"
+ },
+ "target": {
+  "labeling": "exp43 fixed-index (first 25 = -20.0, rest -50.0)",
+  "static_formalization_values": {
+   "b2v": 0.11,
+   "label_energy": 19800.0,
+   "mean_force": 198.0,
+   "lambda2": 0.382,
+   "conductance": 0.22,
+   "crossing": 22
+  },
+  "exp68_deposit": {
+   "torus|fixed_err": 8.47,
+   "b2v": 0.11,
+   "verdict": "refused (5/5 formalizations)"
+  }
+ },
+ "schedule_rule": {
+  "window_clamp": "head zone clamped at -20.0 for [0, 24.0)",
+  "tail": "clamp released for [24.0, 48.0)",
+  "mu_latch": "mu=0.015 until t_s (exp124 maybe() semantics), then 0.0",
+  "THE_schedule_onset": 24.0,
+  "battery_onsets": [
+   0.0,
+   6.0,
+   12.0,
+   18.0,
+   24.0,
+   36.0,
+   48.0
+  ],
+  "rounds": 3,
+  "read_window": 24.0,
+  "seeds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "anchor": {
+  "mean_err": 8.4707,
+  "deposit": 8.47,
+  "delta": 0.0007,
+  "tol": 1.0,
+  "ok": true
+ },
+ "schedule_battery": {
+  "onset_0": {
+   "per_seed_err_read_end": [
+    9.4492,
+    9.4492,
+    9.4492
+   ],
+   "mean_err_read_end": 9.4492,
+   "mean_traj": [
+    8.8018,
+    8.8426,
+    9.0047,
+    9.2257,
+    9.4492
+   ],
+   "dissection": {
+    "theta_rmse_from_ground": 14.8707,
+    "theta_max_dev": 26.8394,
+    "v_theta_gap_max": 4.3759,
+    "zoneA_theta_mean": -24.4303,
+    "mu_at_read": 0.0
+   },
+   "writes": false,
+   "cells": [
+    {
+     "traj": [
+      8.8018,
+      8.8426,
+      9.0047,
+      9.2257,
+      9.4492
+     ],
+     "err_read_end": 9.4492,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 14.8707,
+     "theta_max_dev": 26.8394,
+     "v_theta_gap_max": 4.3759,
+     "zoneA_theta_mean": -24.4303
+    },
+    {
+     "traj": [
+      8.8018,
+      8.8426,
+      9.0047,
+      9.2257,
+      9.4492
+     ],
+     "err_read_end": 9.4492,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 14.8707,
+     "theta_max_dev": 26.8394,
+     "v_theta_gap_max": 4.3759,
+     "zoneA_theta_mean": -24.4303
+    },
+    {
+     "traj": [
+      8.8018,
+      8.8426,
+      9.0047,
+      9.2257,
+      9.4492
+     ],
+     "err_read_end": 9.4492,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 14.8707,
+     "theta_max_dev": 26.8394,
+     "v_theta_gap_max": 4.3759,
+     "zoneA_theta_mean": -24.4303
+    }
+   ]
+  },
+  "onset_6": {
+   "per_seed_err_read_end": [
+    9.4846,
+    9.4846,
+    9.4846
+   ],
+   "mean_err_read_end": 9.4846,
+   "mean_traj": [
+    8.8517,
+    8.8867,
+    9.0452,
+    9.2635,
+    9.4846
+   ],
+   "dissection": {
+    "theta_rmse_from_ground": 14.9083,
+    "theta_max_dev": 26.8511,
+    "v_theta_gap_max": 4.3466,
+    "zoneA_theta_mean": -24.4155,
+    "mu_at_read": 0.0
+   },
+   "writes": false,
+   "cells": [
+    {
+     "traj": [
+      8.8517,
+      8.8867,
+      9.0452,
+      9.2635,
+      9.4846
+     ],
+     "err_read_end": 9.4846,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 14.9083,
+     "theta_max_dev": 26.8511,
+     "v_theta_gap_max": 4.3466,
+     "zoneA_theta_mean": -24.4155
+    },
+    {
+     "traj": [
+      8.8517,
+      8.8867,
+      9.0452,
+      9.2635,
+      9.4846
+     ],
+     "err_read_end": 9.4846,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 14.9083,
+     "theta_max_dev": 26.8511,
+     "v_theta_gap_max": 4.3466,
+     "zoneA_theta_mean": -24.4155
+    },
+    {
+     "traj": [
+      8.8517,
+      8.8867,
+      9.0452,
+      9.2635,
+      9.4846
+     ],
+     "err_read_end": 9.4846,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 14.9083,
+     "theta_max_dev": 26.8511,
+     "v_theta_gap_max": 4.3466,
+     "zoneA_theta_mean": -24.4155
+    }
+   ]
+  },
+  "onset_12": {
+   "per_seed_err_read_end": [
+    9.5692,
+    9.5692,
+    9.5692
+   ],
+   "mean_err_read_end": 9.5692,
+   "mean_traj": [
+    8.9679,
+    8.9905,
+    9.1411,
+    9.3532,
+    9.5692
+   ],
+   "dissection": {
+    "theta_rmse_from_ground": 14.9914,
+    "theta_max_dev": 26.8732,
+    "v_theta_gap_max": 4.2754,
+    "zoneA_theta_mean": -24.3907,
+    "mu_at_read": 0.0
+   },
+   "writes": false,
+   "cells": [
+    {
+     "traj": [
+      8.9679,
+      8.9905,
+      9.1411,
+      9.3532,
+      9.5692
+     ],
+     "err_read_end": 9.5692,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 14.9914,
+     "theta_max_dev": 26.8732,
+     "v_theta_gap_max": 4.2754,
+     "zoneA_theta_mean": -24.3907
+    },
+    {
+     "traj": [
+      8.9679,
+      8.9905,
+      9.1411,
+      9.3532,
+      9.5692
+     ],
+     "err_read_end": 9.5692,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 14.9914,
+     "theta_max_dev": 26.8732,
+     "v_theta_gap_max": 4.2754,
+     "zoneA_theta_mean": -24.3907
+    },
+    {
+     "traj": [
+      8.9679,
+      8.9905,
+      9.1411,
+      9.3532,
+      9.5692
+     ],
+     "err_read_end": 9.5692,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 14.9914,
+     "theta_max_dev": 26.8732,
+     "v_theta_gap_max": 4.2754,
+     "zoneA_theta_mean": -24.3907
+    }
+   ]
+  },
+  "onset_18": {
+   "per_seed_err_read_end": [
+    9.6812,
+    9.6812,
+    9.6812
+   ],
+   "mean_err_read_end": 9.6812,
+   "mean_traj": [
+    9.1186,
+    9.1265,
+    9.2672,
+    9.4718,
+    9.6812
+   ],
+   "dissection": {
+    "theta_rmse_from_ground": 15.0908,
+    "theta_max_dev": 26.8914,
+    "v_theta_gap_max": 4.1746,
+    "zoneA_theta_mean": -24.3772,
+    "mu_at_read": 0.0
+   },
+   "writes": false,
+   "cells": [
+    {
+     "traj": [
+      9.1186,
+      9.1265,
+      9.2672,
+      9.4718,
+      9.6812
+     ],
+     "err_read_end": 9.6812,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 15.0908,
+     "theta_max_dev": 26.8914,
+     "v_theta_gap_max": 4.1746,
+     "zoneA_theta_mean": -24.3772
+    },
+    {
+     "traj": [
+      9.1186,
+      9.1265,
+      9.2672,
+      9.4718,
+      9.6812
+     ],
+     "err_read_end": 9.6812,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 15.0908,
+     "theta_max_dev": 26.8914,
+     "v_theta_gap_max": 4.1746,
+     "zoneA_theta_mean": -24.3772
+    },
+    {
+     "traj": [
+      9.1186,
+      9.1265,
+      9.2672,
+      9.4718,
+      9.6812
+     ],
+     "err_read_end": 9.6812,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 15.0908,
+     "theta_max_dev": 26.8914,
+     "v_theta_gap_max": 4.1746,
+     "zoneA_theta_mean": -24.3772
+    }
+   ]
+  },
+  "onset_24": {
+   "per_seed_err_read_end": [
+    9.8062,
+    9.8062,
+    9.8062
+   ],
+   "mean_err_read_end": 9.8062,
+   "mean_traj": [
+    9.2835,
+    9.2769,
+    9.4073,
+    9.6038,
+    9.8062
+   ],
+   "dissection": {
+    "theta_rmse_from_ground": 15.1863,
+    "theta_max_dev": 26.8942,
+    "v_theta_gap_max": 4.0489,
+    "zoneA_theta_mean": -24.393,
+    "mu_at_read": 0.0
+   },
+   "writes": false,
+   "cells": [
+    {
+     "traj": [
+      9.2835,
+      9.2769,
+      9.4073,
+      9.6038,
+      9.8062
+     ],
+     "err_read_end": 9.8062,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 15.1863,
+     "theta_max_dev": 26.8942,
+     "v_theta_gap_max": 4.0489,
+     "zoneA_theta_mean": -24.393
+    },
+    {
+     "traj": [
+      9.2835,
+      9.2769,
+      9.4073,
+      9.6038,
+      9.8062
+     ],
+     "err_read_end": 9.8062,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 15.1863,
+     "theta_max_dev": 26.8942,
+     "v_theta_gap_max": 4.0489,
+     "zoneA_theta_mean": -24.393
+    },
+    {
+     "traj": [
+      9.2835,
+      9.2769,
+      9.4073,
+      9.6038,
+      9.8062
+     ],
+     "err_read_end": 9.8062,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 15.1863,
+     "theta_max_dev": 26.8942,
+     "v_theta_gap_max": 4.0489,
+     "zoneA_theta_mean": -24.393
+    }
+   ]
+  },
+  "onset_36": {
+   "per_seed_err_read_end": [
+    10.0785,
+    10.0785,
+    10.0785
+   ],
+   "mean_err_read_end": 10.0785,
+   "mean_traj": [
+    9.6335,
+    9.6019,
+    9.7112,
+    9.8909,
+    10.0785
+   ],
+   "dissection": {
+    "theta_rmse_from_ground": 15.312,
+    "theta_max_dev": 26.8003,
+    "v_theta_gap_max": 3.7046,
+    "zoneA_theta_mean": -24.6021,
+    "mu_at_read": 0.0
+   },
+   "writes": false,
+   "cells": [
+    {
+     "traj": [
+      9.6335,
+      9.6019,
+      9.7112,
+      9.8909,
+      10.0785
+     ],
+     "err_read_end": 10.0785,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 15.312,
+     "theta_max_dev": 26.8003,
+     "v_theta_gap_max": 3.7046,
+     "zoneA_theta_mean": -24.6021
+    },
+    {
+     "traj": [
+      9.6335,
+      9.6019,
+      9.7112,
+      9.8909,
+      10.0785
+     ],
+     "err_read_end": 10.0785,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 15.312,
+     "theta_max_dev": 26.8003,
+     "v_theta_gap_max": 3.7046,
+     "zoneA_theta_mean": -24.6021
+    },
+    {
+     "traj": [
+      9.6335,
+      9.6019,
+      9.7112,
+      9.8909,
+      10.0785
+     ],
+     "err_read_end": 10.0785,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 15.312,
+     "theta_max_dev": 26.8003,
+     "v_theta_gap_max": 3.7046,
+     "zoneA_theta_mean": -24.6021
+    }
+   ]
+  },
+  "onset_48": {
+   "per_seed_err_read_end": [
+    10.3506,
+    10.3506,
+    10.3506
+   ],
+   "mean_err_read_end": 10.3506,
+   "mean_traj": [
+    9.9036,
+    9.9209,
+    10.0159,
+    10.1786,
+    10.3506
+   ],
+   "dissection": {
+    "theta_rmse_from_ground": 15.217,
+    "theta_max_dev": 26.4263,
+    "v_theta_gap_max": 3.2761,
+    "zoneA_theta_mean": -25.3008,
+    "mu_at_read": 0.0
+   },
+   "writes": false,
+   "cells": [
+    {
+     "traj": [
+      9.9036,
+      9.9209,
+      10.0159,
+      10.1786,
+      10.3506
+     ],
+     "err_read_end": 10.3506,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 15.217,
+     "theta_max_dev": 26.4263,
+     "v_theta_gap_max": 3.2761,
+     "zoneA_theta_mean": -25.3008
+    },
+    {
+     "traj": [
+      9.9036,
+      9.9209,
+      10.0159,
+      10.1786,
+      10.3506
+     ],
+     "err_read_end": 10.3506,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 15.217,
+     "theta_max_dev": 26.4263,
+     "v_theta_gap_max": 3.2761,
+     "zoneA_theta_mean": -25.3008
+    },
+    {
+     "traj": [
+      9.9036,
+      9.9209,
+      10.0159,
+      10.1786,
+      10.3506
+     ],
+     "err_read_end": 10.3506,
+     "mu_at_read": 0.0,
+     "theta_rmse_from_ground": 15.217,
+     "theta_max_dev": 26.4263,
+     "v_theta_gap_max": 3.2761,
+     "zoneA_theta_mean": -25.3008
+    }
+   ]
+  }
+ },
+ "shuffle_pool": {
+  "drawn_onsets": {
+   "1": 24.6,
+   "2": 12.6,
+   "3": 4.1,
+   "4": 45.3,
+   "5": 38.6
+  },
+  "cells": {
+   "shuffle_seed_1": {
+    "onset": 24.6,
+    "per_seed_err_read_end": [
+     9.8194,
+     9.8194,
+     9.8194
+    ],
+    "mean_err_read_end": 9.8194,
+    "mean_traj": [
+     9.3007,
+     9.2928,
+     9.4221,
+     9.6177,
+     9.8194
+    ],
+    "writes": false
+   },
+   "shuffle_seed_2": {
+    "onset": 12.6,
+    "per_seed_err_read_end": [
+     9.5794,
+     9.5794,
+     9.5794
+    ],
+    "mean_err_read_end": 9.5794,
+    "mean_traj": [
+     8.9818,
+     9.003,
+     9.1526,
+     9.3641,
+     9.5794
+    ],
+    "writes": false
+   },
+   "shuffle_seed_3": {
+    "onset": 4.1,
+    "per_seed_err_read_end": [
+     9.4658,
+     9.4658,
+     9.4658
+    ],
+    "mean_err_read_end": 9.4658,
+    "mean_traj": [
+     8.8254,
+     8.8634,
+     9.0238,
+     9.2435,
+     9.4658
+    ],
+    "writes": false
+   },
+   "shuffle_seed_4": {
+    "onset": 45.3,
+    "per_seed_err_read_end": [
+     10.2902,
+     10.2902,
+     10.2902
+    ],
+    "mean_err_read_end": 10.2902,
+    "mean_traj": [
+     9.8743,
+     9.8527,
+     9.9481,
+     10.1145,
+     10.2902
+    ],
+    "writes": false
+   },
+   "shuffle_seed_5": {
+    "onset": 38.6,
+    "per_seed_err_read_end": [
+     10.1382,
+     10.1382,
+     10.1382
+    ],
+    "mean_err_read_end": 10.1382,
+    "mean_traj": [
+     9.7078,
+     9.673,
+     9.7778,
+     9.9537,
+     10.1382
+    ],
+    "writes": false
+   }
+  }
+ },
+ "reset_asserts": {
+  "violations": 0,
+  "scope": "every reset in every run"
+ },
+ "round_independence": {
+  "max_abs_dV": 0.0,
+  "max_abs_dtheta": 0.0,
+  "max_abs_dtraj": 0.0,
+  "bit_exact": true
+ },
+ "gates": {
+  "Z1_persistence_THE_schedule": false,
+  "Z1_variant_battery_rescue": false,
+  "battery_writers": [],
+  "Z2_timing_load_bearing": true,
+  "shuffle_writers": [],
+  "Z3_reset_honesty": true
+ },
+ "writer_census": {
+  "writers": [],
+  "n_cells": 12
+ },
+ "carrier_dissection": {
+  "theta_rmse_from_ground_at_best_cell": 14.8707,
+  "theta_max_dev_at_best_cell": 26.8394,
+  "v_theta_gap_max_at_best_cell": 4.3759,
+  "zoneA_theta_mean_at_best_cell": -24.4303,
+  "reading": "theta-carried if theta deviates from ground in the target's direction at read-end (the schedule installed a theta memory \u2014 support CREATED by the schedule, not pre-existing); V-carried impossible-looking after 24 t.u. of gamma relaxation \u2014 would be flagged for immediate re-examination"
+ },
+ "verdict": "FAILURE \u2014 the coherence constraint's 6th formalization CONFIRMED at the temporal level",
+ "mechanism": null,
+ "formalization_class": "TEMPORAL-SCHEDULE class (6th): the deadline law's mu-latch family transplanted to the write/persist question, swept over its entire deposited onset space {0,6,12,18,24,36,48} + 5 shuffled timings at fixed minimal clamp content on a bit-exact-reset memoryless torus \u2014 the class AGREES with the five static formalizations (b2v, label energy, mean force, lambda2, conductance): the refused labeling is unwritable-persistently at every deposited timing; the temporal-coherence escape route is CLOSED at this probe's scope",
+ "wall_seconds": 2.7
+}
