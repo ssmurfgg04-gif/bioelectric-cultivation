@@ -1,0 +1,5860 @@
+{
+ "exp": "exp172_deep_band_sweep",
+ "claim": "the widened repertoire's own frontier: deep-band invention sweep pricing the newly readable [-60, -35) band at decode (exp168's registered next, L146)",
+ "pre_registered": {
+  "deep_rungs": [
+   -40.0,
+   -45.0,
+   -50.0,
+   -55.0,
+   -60.0
+  ],
+  "shallow_rungs": [
+   -20.0,
+   -25.0,
+   -30.0
+  ],
+  "n_instances": 10,
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "err_bar": 6.0,
+  "old_floor": -35.0,
+  "new_floor": -60.0,
+  "instance_mechanism": "the MULTI 3-zone program translated +i cells on the n=100 lattice (i = 0..9; instance 0 = MULTI verbatim); zero new RNG",
+  "instances": {
+   "0": [
+    [
+     0.02,
+     0.12,
+     "z0"
+    ],
+    [
+     0.3,
+     0.45,
+     "z1"
+    ],
+    [
+     0.6,
+     0.75,
+     "z2"
+    ]
+   ],
+   "1": [
+    [
+     0.03,
+     0.13,
+     "z0"
+    ],
+    [
+     0.31,
+     0.46,
+     "z1"
+    ],
+    [
+     0.61,
+     0.76,
+     "z2"
+    ]
+   ],
+   "2": [
+    [
+     0.04,
+     0.13999999999999999,
+     "z0"
+    ],
+    [
+     0.32,
+     0.47000000000000003,
+     "z1"
+    ],
+    [
+     0.62,
+     0.77,
+     "z2"
+    ]
+   ],
+   "3": [
+    [
+     0.05,
+     0.15,
+     "z0"
+    ],
+    [
+     0.32999999999999996,
+     0.48,
+     "z1"
+    ],
+    [
+     0.63,
+     0.78,
+     "z2"
+    ]
+   ],
+   "4": [
+    [
+     0.06,
+     0.16,
+     "z0"
+    ],
+    [
+     0.33999999999999997,
+     0.49,
+     "z1"
+    ],
+    [
+     0.64,
+     0.79,
+     "z2"
+    ]
+   ],
+   "5": [
+    [
+     0.07,
+     0.16999999999999998,
+     "z0"
+    ],
+    [
+     0.35,
+     0.5,
+     "z1"
+    ],
+    [
+     0.65,
+     0.8,
+     "z2"
+    ]
+   ],
+   "6": [
+    [
+     0.08,
+     0.18,
+     "z0"
+    ],
+    [
+     0.36,
+     0.51,
+     "z1"
+    ],
+    [
+     0.6599999999999999,
+     0.81,
+     "z2"
+    ]
+   ],
+   "7": [
+    [
+     0.09000000000000001,
+     0.19,
+     "z0"
+    ],
+    [
+     0.37,
+     0.52,
+     "z1"
+    ],
+    [
+     0.6699999999999999,
+     0.8200000000000001,
+     "z2"
+    ]
+   ],
+   "8": [
+    [
+     0.1,
+     0.2,
+     "z0"
+    ],
+    [
+     0.38,
+     0.53,
+     "z1"
+    ],
+    [
+     0.6799999999999999,
+     0.83,
+     "z2"
+    ]
+   ],
+   "9": [
+    [
+     0.11,
+     0.21,
+     "z0"
+    ],
+    [
+     0.39,
+     0.54,
+     "z1"
+    ],
+    [
+     0.69,
+     0.84,
+     "z2"
+    ]
+   ]
+  },
+  "canon": "labeling_bfs_n(exp136.A_CHAIN), asserted == wildtype_target(100) (the engine's own canon)",
+  "operating_cell": [
+   1.0,
+   0.0
+  ],
+  "decode": "exp136_generator_v6.decode VERBATIM",
+  "pin_disclosure": "OldFloorPin (verbatim class) pins core.NEURAL_SPEC_MIN; g6.NEURAL_SPEC_MIN (exp136's import-time capture, line 149) saved/rebound/restored with asserts",
+  "execution_order": "shallow rungs first (gate D4)"
+ },
+ "scope": "full",
+ "n_records": 240,
+ "records": [
+  {
+   "rung": -20.0,
+   "instance": 0,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.33,
+    "hold_err": 3.69,
+    "decode_err_exact": 2.331633384601444,
+    "hold_err_exact": 3.690263588362258
+   },
+   "pinned": {
+    "decode_err": 2.33,
+    "hold_err": 3.69,
+    "decode_err_exact": 2.331633384601444,
+    "hold_err_exact": 3.690263588362258
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 0,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.36,
+    "hold_err": 3.67,
+    "decode_err_exact": 2.360947810391841,
+    "hold_err_exact": 3.6729054484567634
+   },
+   "pinned": {
+    "decode_err": 2.36,
+    "hold_err": 3.67,
+    "decode_err_exact": 2.360947810391841,
+    "hold_err_exact": 3.6729054484567634
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 0,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.43,
+    "hold_err": 3.69,
+    "decode_err_exact": 2.434623940125433,
+    "hold_err_exact": 3.6854799641417184
+   },
+   "pinned": {
+    "decode_err": 2.43,
+    "hold_err": 3.69,
+    "decode_err_exact": 2.434623940125433,
+    "hold_err_exact": 3.6854799641417184
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 1,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.4,
+    "hold_err": 3.67,
+    "decode_err_exact": 2.3984828413829167,
+    "hold_err_exact": 3.6667356982467894
+   },
+   "pinned": {
+    "decode_err": 2.4,
+    "hold_err": 3.67,
+    "decode_err_exact": 2.3984828413829167,
+    "hold_err_exact": 3.6667356982467894
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 1,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.43,
+    "hold_err": 3.69,
+    "decode_err_exact": 2.4261428277102124,
+    "hold_err_exact": 3.690919068452361
+   },
+   "pinned": {
+    "decode_err": 2.43,
+    "hold_err": 3.69,
+    "decode_err_exact": 2.4261428277102124,
+    "hold_err_exact": 3.690919068452361
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 1,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.45,
+    "hold_err": 3.71,
+    "decode_err_exact": 2.450239560642248,
+    "hold_err_exact": 3.7143892220614956
+   },
+   "pinned": {
+    "decode_err": 2.45,
+    "hold_err": 3.71,
+    "decode_err_exact": 2.450239560642248,
+    "hold_err_exact": 3.7143892220614956
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 2,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.38,
+    "hold_err": 3.66,
+    "decode_err_exact": 2.3774051738611424,
+    "hold_err_exact": 3.661211759514465
+   },
+   "pinned": {
+    "decode_err": 2.38,
+    "hold_err": 3.66,
+    "decode_err_exact": 2.3774051738611424,
+    "hold_err_exact": 3.661211759514465
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 2,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.39,
+    "hold_err": 3.7,
+    "decode_err_exact": 2.390646500606002,
+    "hold_err_exact": 3.701381367138071
+   },
+   "pinned": {
+    "decode_err": 2.39,
+    "hold_err": 3.7,
+    "decode_err_exact": 2.390646500606002,
+    "hold_err_exact": 3.701381367138071
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 2,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.37,
+    "hold_err": 3.7,
+    "decode_err_exact": 2.3734885301147792,
+    "hold_err_exact": 3.6990134866832785
+   },
+   "pinned": {
+    "decode_err": 2.37,
+    "hold_err": 3.7,
+    "decode_err_exact": 2.3734885301147792,
+    "hold_err_exact": 3.6990134866832785
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 3,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.37,
+    "hold_err": 3.67,
+    "decode_err_exact": 2.3727252891348796,
+    "hold_err_exact": 3.674522909209612
+   },
+   "pinned": {
+    "decode_err": 2.37,
+    "hold_err": 3.67,
+    "decode_err_exact": 2.3727252891348796,
+    "hold_err_exact": 3.674522909209612
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 3,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.43,
+    "hold_err": 3.67,
+    "decode_err_exact": 2.426357131276552,
+    "hold_err_exact": 3.665583469817525
+   },
+   "pinned": {
+    "decode_err": 2.43,
+    "hold_err": 3.67,
+    "decode_err_exact": 2.426357131276552,
+    "hold_err_exact": 3.665583469817525
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 3,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.42,
+    "hold_err": 3.7,
+    "decode_err_exact": 2.4187327538906582,
+    "hold_err_exact": 3.6990290796930436
+   },
+   "pinned": {
+    "decode_err": 2.42,
+    "hold_err": 3.7,
+    "decode_err_exact": 2.4187327538906582,
+    "hold_err_exact": 3.6990290796930436
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 4,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.38,
+    "hold_err": 3.64,
+    "decode_err_exact": 2.3754594049793276,
+    "hold_err_exact": 3.6407010380982334
+   },
+   "pinned": {
+    "decode_err": 2.38,
+    "hold_err": 3.64,
+    "decode_err_exact": 2.3754594049793276,
+    "hold_err_exact": 3.6407010380982334
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 4,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.41,
+    "hold_err": 3.65,
+    "decode_err_exact": 2.413882498580273,
+    "hold_err_exact": 3.6482644217602536
+   },
+   "pinned": {
+    "decode_err": 2.41,
+    "hold_err": 3.65,
+    "decode_err_exact": 2.413882498580273,
+    "hold_err_exact": 3.6482644217602536
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 4,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.43,
+    "hold_err": 3.71,
+    "decode_err_exact": 2.431301944430437,
+    "hold_err_exact": 3.7054844439587624
+   },
+   "pinned": {
+    "decode_err": 2.43,
+    "hold_err": 3.71,
+    "decode_err_exact": 2.431301944430437,
+    "hold_err_exact": 3.7054844439587624
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 5,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.41,
+    "hold_err": 3.66,
+    "decode_err_exact": 2.4120747104296196,
+    "hold_err_exact": 3.6601925825156196
+   },
+   "pinned": {
+    "decode_err": 2.41,
+    "hold_err": 3.66,
+    "decode_err_exact": 2.4120747104296196,
+    "hold_err_exact": 3.6601925825156196
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 5,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.43,
+    "hold_err": 3.69,
+    "decode_err_exact": 2.4281768050205392,
+    "hold_err_exact": 3.693729246841012
+   },
+   "pinned": {
+    "decode_err": 2.43,
+    "hold_err": 3.69,
+    "decode_err_exact": 2.4281768050205392,
+    "hold_err_exact": 3.693729246841012
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 5,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.4,
+    "hold_err": 3.68,
+    "decode_err_exact": 2.395389958908904,
+    "hold_err_exact": 3.680283475736142
+   },
+   "pinned": {
+    "decode_err": 2.4,
+    "hold_err": 3.68,
+    "decode_err_exact": 2.395389958908904,
+    "hold_err_exact": 3.680283475736142
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 6,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.38,
+    "hold_err": 3.65,
+    "decode_err_exact": 2.378577805983831,
+    "hold_err_exact": 3.6484109497038286
+   },
+   "pinned": {
+    "decode_err": 2.38,
+    "hold_err": 3.65,
+    "decode_err_exact": 2.378577805983831,
+    "hold_err_exact": 3.6484109497038286
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 6,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.41,
+    "hold_err": 3.69,
+    "decode_err_exact": 2.4062828221577615,
+    "hold_err_exact": 3.6898942024171193
+   },
+   "pinned": {
+    "decode_err": 2.41,
+    "hold_err": 3.69,
+    "decode_err_exact": 2.4062828221577615,
+    "hold_err_exact": 3.6898942024171193
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 6,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.43,
+    "hold_err": 3.72,
+    "decode_err_exact": 2.426949645599507,
+    "hold_err_exact": 3.715006419698851
+   },
+   "pinned": {
+    "decode_err": 2.43,
+    "hold_err": 3.72,
+    "decode_err_exact": 2.426949645599507,
+    "hold_err_exact": 3.715006419698851
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 7,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.4,
+    "hold_err": 3.68,
+    "decode_err_exact": 2.399998978138289,
+    "hold_err_exact": 3.6812674419704376
+   },
+   "pinned": {
+    "decode_err": 2.4,
+    "hold_err": 3.68,
+    "decode_err_exact": 2.399998978138289,
+    "hold_err_exact": 3.6812674419704376
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 7,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.44,
+    "hold_err": 3.7,
+    "decode_err_exact": 2.4430868402390753,
+    "hold_err_exact": 3.702373453895524
+   },
+   "pinned": {
+    "decode_err": 2.44,
+    "hold_err": 3.7,
+    "decode_err_exact": 2.4430868402390753,
+    "hold_err_exact": 3.702373453895524
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 7,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.44,
+    "hold_err": 3.72,
+    "decode_err_exact": 2.4438032043338973,
+    "hold_err_exact": 3.7244371444095967
+   },
+   "pinned": {
+    "decode_err": 2.44,
+    "hold_err": 3.72,
+    "decode_err_exact": 2.4438032043338973,
+    "hold_err_exact": 3.7244371444095967
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 8,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.45,
+    "hold_err": 3.7,
+    "decode_err_exact": 2.4469362394583265,
+    "hold_err_exact": 3.703681234888603
+   },
+   "pinned": {
+    "decode_err": 2.45,
+    "hold_err": 3.7,
+    "decode_err_exact": 2.4469362394583265,
+    "hold_err_exact": 3.703681234888603
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 8,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.49,
+    "hold_err": 3.73,
+    "decode_err_exact": 2.492020743889807,
+    "hold_err_exact": 3.7314102902340127
+   },
+   "pinned": {
+    "decode_err": 2.49,
+    "hold_err": 3.73,
+    "decode_err_exact": 2.492020743889807,
+    "hold_err_exact": 3.7314102902340127
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 8,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.45,
+    "hold_err": 3.73,
+    "decode_err_exact": 2.4532636113934876,
+    "hold_err_exact": 3.7288422817926152
+   },
+   "pinned": {
+    "decode_err": 2.45,
+    "hold_err": 3.73,
+    "decode_err_exact": 2.4532636113934876,
+    "hold_err_exact": 3.7288422817926152
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 9,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.46,
+    "hold_err": 3.69,
+    "decode_err_exact": 2.457190402506525,
+    "hold_err_exact": 3.688405639509276
+   },
+   "pinned": {
+    "decode_err": 2.46,
+    "hold_err": 3.69,
+    "decode_err_exact": 2.457190402506525,
+    "hold_err_exact": 3.688405639509276
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 9,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.46,
+    "hold_err": 3.72,
+    "decode_err_exact": 2.464608680840354,
+    "hold_err_exact": 3.7173179729721344
+   },
+   "pinned": {
+    "decode_err": 2.46,
+    "hold_err": 3.72,
+    "decode_err_exact": 2.464608680840354,
+    "hold_err_exact": 3.7173179729721344
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -20.0,
+   "instance": 9,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.51,
+    "hold_err": 3.71,
+    "decode_err_exact": 2.5078643982351485,
+    "hold_err_exact": 3.71189499844346
+   },
+   "pinned": {
+    "decode_err": 2.51,
+    "hold_err": 3.71,
+    "decode_err_exact": 2.5078643982351485,
+    "hold_err_exact": 3.71189499844346
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 0,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.05,
+    "hold_err": 3.24,
+    "decode_err_exact": 2.0477776255209674,
+    "hold_err_exact": 3.240804779852611
+   },
+   "pinned": {
+    "decode_err": 2.05,
+    "hold_err": 3.24,
+    "decode_err_exact": 2.0477776255209674,
+    "hold_err_exact": 3.240804779852611
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 0,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.08,
+    "hold_err": 3.23,
+    "decode_err_exact": 2.081705754198011,
+    "hold_err_exact": 3.230711517602745
+   },
+   "pinned": {
+    "decode_err": 2.08,
+    "hold_err": 3.23,
+    "decode_err_exact": 2.081705754198011,
+    "hold_err_exact": 3.230711517602745
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 0,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.16,
+    "hold_err": 3.25,
+    "decode_err_exact": 2.159586843210668,
+    "hold_err_exact": 3.245505331917246
+   },
+   "pinned": {
+    "decode_err": 2.16,
+    "hold_err": 3.25,
+    "decode_err_exact": 2.159586843210668,
+    "hold_err_exact": 3.245505331917246
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 1,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.12,
+    "hold_err": 3.22,
+    "decode_err_exact": 2.1159056905015086,
+    "hold_err_exact": 3.216877692151545
+   },
+   "pinned": {
+    "decode_err": 2.12,
+    "hold_err": 3.22,
+    "decode_err_exact": 2.1159056905015086,
+    "hold_err_exact": 3.216877692151545
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 1,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.15,
+    "hold_err": 3.25,
+    "decode_err_exact": 2.1487610451677615,
+    "hold_err_exact": 3.2531452875544593
+   },
+   "pinned": {
+    "decode_err": 2.15,
+    "hold_err": 3.25,
+    "decode_err_exact": 2.1487610451677615,
+    "hold_err_exact": 3.2531452875544593
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 1,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.17,
+    "hold_err": 3.27,
+    "decode_err_exact": 2.1712586736254824,
+    "hold_err_exact": 3.268903427589504
+   },
+   "pinned": {
+    "decode_err": 2.17,
+    "hold_err": 3.27,
+    "decode_err_exact": 2.1712586736254824,
+    "hold_err_exact": 3.268903427589504
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 2,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.1,
+    "hold_err": 3.22,
+    "decode_err_exact": 2.0956285400345234,
+    "hold_err_exact": 3.217489587756637
+   },
+   "pinned": {
+    "decode_err": 2.1,
+    "hold_err": 3.22,
+    "decode_err_exact": 2.0956285400345234,
+    "hold_err_exact": 3.217489587756637
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 2,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.12,
+    "hold_err": 3.26,
+    "decode_err_exact": 2.121931823634309,
+    "hold_err_exact": 3.260378832625483
+   },
+   "pinned": {
+    "decode_err": 2.12,
+    "hold_err": 3.26,
+    "decode_err_exact": 2.121931823634309,
+    "hold_err_exact": 3.260378832625483
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 2,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.09,
+    "hold_err": 3.25,
+    "decode_err_exact": 2.09204707367502,
+    "hold_err_exact": 3.2505542510752323
+   },
+   "pinned": {
+    "decode_err": 2.09,
+    "hold_err": 3.25,
+    "decode_err_exact": 2.09204707367502,
+    "hold_err_exact": 3.2505542510752323
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 3,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.09,
+    "hold_err": 3.23,
+    "decode_err_exact": 2.093709592100436,
+    "hold_err_exact": 3.226722893275251
+   },
+   "pinned": {
+    "decode_err": 2.09,
+    "hold_err": 3.23,
+    "decode_err_exact": 2.093709592100436,
+    "hold_err_exact": 3.226722893275251
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 3,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.16,
+    "hold_err": 3.22,
+    "decode_err_exact": 2.156099171186063,
+    "hold_err_exact": 3.224364944735667
+   },
+   "pinned": {
+    "decode_err": 2.16,
+    "hold_err": 3.22,
+    "decode_err_exact": 2.156099171186063,
+    "hold_err_exact": 3.224364944735667
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 3,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.14,
+    "hold_err": 3.25,
+    "decode_err_exact": 2.1397696193708113,
+    "hold_err_exact": 3.251182805127757
+   },
+   "pinned": {
+    "decode_err": 2.14,
+    "hold_err": 3.25,
+    "decode_err_exact": 2.1397696193708113,
+    "hold_err_exact": 3.251182805127757
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 4,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.09,
+    "hold_err": 3.19,
+    "decode_err_exact": 2.090917444962729,
+    "hold_err_exact": 3.19490319182468
+   },
+   "pinned": {
+    "decode_err": 2.09,
+    "hold_err": 3.19,
+    "decode_err_exact": 2.090917444962729,
+    "hold_err_exact": 3.19490319182468
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 4,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.14,
+    "hold_err": 3.2,
+    "decode_err_exact": 2.138182177977565,
+    "hold_err_exact": 3.2019751973364197
+   },
+   "pinned": {
+    "decode_err": 2.14,
+    "hold_err": 3.2,
+    "decode_err_exact": 2.138182177977565,
+    "hold_err_exact": 3.2019751973364197
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 4,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.16,
+    "hold_err": 3.26,
+    "decode_err_exact": 2.158632331912294,
+    "hold_err_exact": 3.2622946470689103
+   },
+   "pinned": {
+    "decode_err": 2.16,
+    "hold_err": 3.26,
+    "decode_err_exact": 2.158632331912294,
+    "hold_err_exact": 3.2622946470689103
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 5,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.13,
+    "hold_err": 3.21,
+    "decode_err_exact": 2.1262162574133296,
+    "hold_err_exact": 3.214330599528324
+   },
+   "pinned": {
+    "decode_err": 2.13,
+    "hold_err": 3.21,
+    "decode_err_exact": 2.1262162574133296,
+    "hold_err_exact": 3.214330599528324
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 5,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.15,
+    "hold_err": 3.25,
+    "decode_err_exact": 2.1518229259591872,
+    "hold_err_exact": 3.246153496944365
+   },
+   "pinned": {
+    "decode_err": 2.15,
+    "hold_err": 3.25,
+    "decode_err_exact": 2.1518229259591872,
+    "hold_err_exact": 3.246153496944365
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 5,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.12,
+    "hold_err": 3.23,
+    "decode_err_exact": 2.1226740618238846,
+    "hold_err_exact": 3.234867397956014
+   },
+   "pinned": {
+    "decode_err": 2.12,
+    "hold_err": 3.23,
+    "decode_err_exact": 2.1226740618238846,
+    "hold_err_exact": 3.234867397956014
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 6,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.1,
+    "hold_err": 3.2,
+    "decode_err_exact": 2.1035382704710734,
+    "hold_err_exact": 3.2035429861113838
+   },
+   "pinned": {
+    "decode_err": 2.1,
+    "hold_err": 3.2,
+    "decode_err_exact": 2.1035382704710734,
+    "hold_err_exact": 3.2035429861113838
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 6,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.14,
+    "hold_err": 3.25,
+    "decode_err_exact": 2.1367087019313264,
+    "hold_err_exact": 3.247989904621193
+   },
+   "pinned": {
+    "decode_err": 2.14,
+    "hold_err": 3.25,
+    "decode_err_exact": 2.1367087019313264,
+    "hold_err_exact": 3.247989904621193
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 6,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.15,
+    "hold_err": 3.27,
+    "decode_err_exact": 2.152727869353314,
+    "hold_err_exact": 3.2697028643608537
+   },
+   "pinned": {
+    "decode_err": 2.15,
+    "hold_err": 3.27,
+    "decode_err_exact": 2.152727869353314,
+    "hold_err_exact": 3.2697028643608537
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 7,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.12,
+    "hold_err": 3.24,
+    "decode_err_exact": 2.12245995608667,
+    "hold_err_exact": 3.237093691347555
+   },
+   "pinned": {
+    "decode_err": 2.12,
+    "hold_err": 3.24,
+    "decode_err_exact": 2.12245995608667,
+    "hold_err_exact": 3.237093691347555
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 7,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.17,
+    "hold_err": 3.26,
+    "decode_err_exact": 2.1723398946465524,
+    "hold_err_exact": 3.2623292724257835
+   },
+   "pinned": {
+    "decode_err": 2.17,
+    "hold_err": 3.26,
+    "decode_err_exact": 2.1723398946465524,
+    "hold_err_exact": 3.2623292724257835
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 7,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.18,
+    "hold_err": 3.28,
+    "decode_err_exact": 2.1755375162864494,
+    "hold_err_exact": 3.283893916833611
+   },
+   "pinned": {
+    "decode_err": 2.18,
+    "hold_err": 3.28,
+    "decode_err_exact": 2.1755375162864494,
+    "hold_err_exact": 3.283893916833611
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 8,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.18,
+    "hold_err": 3.26,
+    "decode_err_exact": 2.176066476457934,
+    "hold_err_exact": 3.263689962554833
+   },
+   "pinned": {
+    "decode_err": 2.18,
+    "hold_err": 3.26,
+    "decode_err_exact": 2.176066476457934,
+    "hold_err_exact": 3.263689962554833
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 8,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.22,
+    "hold_err": 3.3,
+    "decode_err_exact": 2.2224474615358907,
+    "hold_err_exact": 3.2969760394098344
+   },
+   "pinned": {
+    "decode_err": 2.22,
+    "hold_err": 3.3,
+    "decode_err_exact": 2.2224474615358907,
+    "hold_err_exact": 3.2969760394098344
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 8,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.19,
+    "hold_err": 3.29,
+    "decode_err_exact": 2.188471545161832,
+    "hold_err_exact": 3.293613992354153
+   },
+   "pinned": {
+    "decode_err": 2.19,
+    "hold_err": 3.29,
+    "decode_err_exact": 2.188471545161832,
+    "hold_err_exact": 3.293613992354153
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 9,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.18,
+    "hold_err": 3.26,
+    "decode_err_exact": 2.184947534737584,
+    "hold_err_exact": 3.2577518498508256
+   },
+   "pinned": {
+    "decode_err": 2.18,
+    "hold_err": 3.26,
+    "decode_err_exact": 2.184947534737584,
+    "hold_err_exact": 3.2577518498508256
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 9,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.2,
+    "hold_err": 3.3,
+    "decode_err_exact": 2.2007480162246917,
+    "hold_err_exact": 3.297500334585198
+   },
+   "pinned": {
+    "decode_err": 2.2,
+    "hold_err": 3.3,
+    "decode_err_exact": 2.2007480162246917,
+    "hold_err_exact": 3.297500334585198
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -25.0,
+   "instance": 9,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.25,
+    "hold_err": 3.29,
+    "decode_err_exact": 2.2457966879264992,
+    "hold_err_exact": 3.2883002884175
+   },
+   "pinned": {
+    "decode_err": 2.25,
+    "hold_err": 3.29,
+    "decode_err_exact": 2.2457966879264992,
+    "hold_err_exact": 3.2883002884175
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 0,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.84,
+    "hold_err": 2.89,
+    "decode_err_exact": 1.840322722017766,
+    "hold_err_exact": 2.889391042697247
+   },
+   "pinned": {
+    "decode_err": 1.84,
+    "hold_err": 2.89,
+    "decode_err_exact": 1.840322722017766,
+    "hold_err_exact": 2.889391042697247
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 0,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.88,
+    "hold_err": 2.89,
+    "decode_err_exact": 1.8786800379315434,
+    "hold_err_exact": 2.888901883695437
+   },
+   "pinned": {
+    "decode_err": 1.88,
+    "hold_err": 2.89,
+    "decode_err_exact": 1.8786800379315434,
+    "hold_err_exact": 2.888901883695437
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 0,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.96,
+    "hold_err": 2.91,
+    "decode_err_exact": 1.9587630002375493,
+    "hold_err_exact": 2.906001008240852
+   },
+   "pinned": {
+    "decode_err": 1.96,
+    "hold_err": 2.91,
+    "decode_err_exact": 1.9587630002375493,
+    "hold_err_exact": 2.906001008240852
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 1,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.91,
+    "hold_err": 2.86,
+    "decode_err_exact": 1.905572620161139,
+    "hold_err_exact": 2.8624598206954546
+   },
+   "pinned": {
+    "decode_err": 1.91,
+    "hold_err": 2.86,
+    "decode_err_exact": 1.905572620161139,
+    "hold_err_exact": 2.8624598206954546
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 1,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.94,
+    "hold_err": 2.91,
+    "decode_err_exact": 1.9437057922777117,
+    "hold_err_exact": 2.9129105182581645
+   },
+   "pinned": {
+    "decode_err": 1.94,
+    "hold_err": 2.91,
+    "decode_err_exact": 1.9437057922777117,
+    "hold_err_exact": 2.9129105182581645
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 1,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.96,
+    "hold_err": 2.92,
+    "decode_err_exact": 1.9633817051134468,
+    "hold_err_exact": 2.9183547896400284
+   },
+   "pinned": {
+    "decode_err": 1.96,
+    "hold_err": 2.92,
+    "decode_err_exact": 1.9633817051134468,
+    "hold_err_exact": 2.9183547896400284
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 2,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.89,
+    "hold_err": 2.87,
+    "decode_err_exact": 1.8868298283831082,
+    "hold_err_exact": 2.8699801393162625
+   },
+   "pinned": {
+    "decode_err": 1.89,
+    "hold_err": 2.87,
+    "decode_err_exact": 1.8868298283831082,
+    "hold_err_exact": 2.8699801393162625
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 2,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.93,
+    "hold_err": 2.91,
+    "decode_err_exact": 1.928435335656295,
+    "hold_err_exact": 2.9149091397331546
+   },
+   "pinned": {
+    "decode_err": 1.93,
+    "hold_err": 2.91,
+    "decode_err_exact": 1.928435335656295,
+    "hold_err_exact": 2.9149091397331546
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 2,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.88,
+    "hold_err": 2.9,
+    "decode_err_exact": 1.8838095234713954,
+    "hold_err_exact": 2.8959081748449695
+   },
+   "pinned": {
+    "decode_err": 1.88,
+    "hold_err": 2.9,
+    "decode_err_exact": 1.8838095234713954,
+    "hold_err_exact": 2.8959081748449695
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 3,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.89,
+    "hold_err": 2.87,
+    "decode_err_exact": 1.8884334442171367,
+    "hold_err_exact": 2.8735301736144256
+   },
+   "pinned": {
+    "decode_err": 1.89,
+    "hold_err": 2.87,
+    "decode_err_exact": 1.8884334442171367,
+    "hold_err_exact": 2.8735301736144256
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 3,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.96,
+    "hold_err": 2.88,
+    "decode_err_exact": 1.9593582628792356,
+    "hold_err_exact": 2.8796474486448376
+   },
+   "pinned": {
+    "decode_err": 1.96,
+    "hold_err": 2.88,
+    "decode_err_exact": 1.9593582628792356,
+    "hold_err_exact": 2.8796474486448376
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 3,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.93,
+    "hold_err": 2.9,
+    "decode_err_exact": 1.9328027245563355,
+    "hold_err_exact": 2.8971323996855314
+   },
+   "pinned": {
+    "decode_err": 1.93,
+    "hold_err": 2.9,
+    "decode_err_exact": 1.9328027245563355,
+    "hold_err_exact": 2.8971323996855314
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 4,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.88,
+    "hold_err": 2.85,
+    "decode_err_exact": 1.878782135075937,
+    "hold_err_exact": 2.845308651791982
+   },
+   "pinned": {
+    "decode_err": 1.88,
+    "hold_err": 2.85,
+    "decode_err_exact": 1.878782135075937,
+    "hold_err_exact": 2.845308651791982
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 4,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.94,
+    "hold_err": 2.85,
+    "decode_err_exact": 1.9353489370074533,
+    "hold_err_exact": 2.851513563029703
+   },
+   "pinned": {
+    "decode_err": 1.94,
+    "hold_err": 2.85,
+    "decode_err_exact": 1.9353489370074533,
+    "hold_err_exact": 2.851513563029703
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 4,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.96,
+    "hold_err": 2.91,
+    "decode_err_exact": 1.9588047672622384,
+    "hold_err_exact": 2.913793116656951
+   },
+   "pinned": {
+    "decode_err": 1.96,
+    "hold_err": 2.91,
+    "decode_err_exact": 1.9588047672622384,
+    "hold_err_exact": 2.913793116656951
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 5,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.91,
+    "hold_err": 2.86,
+    "decode_err_exact": 1.911084586990999,
+    "hold_err_exact": 2.863998592891337
+   },
+   "pinned": {
+    "decode_err": 1.91,
+    "hold_err": 2.86,
+    "decode_err_exact": 1.911084586990999,
+    "hold_err_exact": 2.863998592891337
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 5,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.95,
+    "hold_err": 2.89,
+    "decode_err_exact": 1.9476649541639564,
+    "hold_err_exact": 2.8925844114800126
+   },
+   "pinned": {
+    "decode_err": 1.95,
+    "hold_err": 2.89,
+    "decode_err_exact": 1.9476649541639564,
+    "hold_err_exact": 2.8925844114800126
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 5,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.92,
+    "hold_err": 2.88,
+    "decode_err_exact": 1.9241504231710629,
+    "hold_err_exact": 2.884424202158644
+   },
+   "pinned": {
+    "decode_err": 1.92,
+    "hold_err": 2.88,
+    "decode_err_exact": 1.9241504231710629,
+    "hold_err_exact": 2.884424202158644
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 6,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.9,
+    "hold_err": 2.85,
+    "decode_err_exact": 1.9028588102365798,
+    "hold_err_exact": 2.854842600312451
+   },
+   "pinned": {
+    "decode_err": 1.9,
+    "hold_err": 2.85,
+    "decode_err_exact": 1.9028588102365798,
+    "hold_err_exact": 2.854842600312451
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 6,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.94,
+    "hold_err": 2.9,
+    "decode_err_exact": 1.9415480044921751,
+    "hold_err_exact": 2.901587672079104
+   },
+   "pinned": {
+    "decode_err": 1.94,
+    "hold_err": 2.9,
+    "decode_err_exact": 1.9415480044921751,
+    "hold_err_exact": 2.901587672079104
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 6,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.95,
+    "hold_err": 2.92,
+    "decode_err_exact": 1.9511913019605045,
+    "hold_err_exact": 2.918269066889831
+   },
+   "pinned": {
+    "decode_err": 1.95,
+    "hold_err": 2.92,
+    "decode_err_exact": 1.9511913019605045,
+    "hold_err_exact": 2.918269066889831
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 7,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.92,
+    "hold_err": 2.89,
+    "decode_err_exact": 1.9179246473687424,
+    "hold_err_exact": 2.8881610712974366
+   },
+   "pinned": {
+    "decode_err": 1.92,
+    "hold_err": 2.89,
+    "decode_err_exact": 1.9179246473687424,
+    "hold_err_exact": 2.8881610712974366
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 7,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.97,
+    "hold_err": 2.92,
+    "decode_err_exact": 1.9743873592745598,
+    "hold_err_exact": 2.9178191498595902
+   },
+   "pinned": {
+    "decode_err": 1.97,
+    "hold_err": 2.92,
+    "decode_err_exact": 1.9743873592745598,
+    "hold_err_exact": 2.9178191498595902
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 7,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.98,
+    "hold_err": 2.94,
+    "decode_err_exact": 1.9805328539798372,
+    "hold_err_exact": 2.9380503214412306
+   },
+   "pinned": {
+    "decode_err": 1.98,
+    "hold_err": 2.94,
+    "decode_err_exact": 1.9805328539798372,
+    "hold_err_exact": 2.9380503214412306
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 8,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.98,
+    "hold_err": 2.92,
+    "decode_err_exact": 1.9778248601632453,
+    "hold_err_exact": 2.919202435131884
+   },
+   "pinned": {
+    "decode_err": 1.98,
+    "hold_err": 2.92,
+    "decode_err_exact": 1.9778248601632453,
+    "hold_err_exact": 2.919202435131884
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 8,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.02,
+    "hold_err": 2.96,
+    "decode_err_exact": 2.0241382285119887,
+    "hold_err_exact": 2.9584341227082445
+   },
+   "pinned": {
+    "decode_err": 2.02,
+    "hold_err": 2.96,
+    "decode_err_exact": 2.0241382285119887,
+    "hold_err_exact": 2.9584341227082445
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 8,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.0,
+    "hold_err": 2.95,
+    "decode_err_exact": 1.9972657756304653,
+    "hold_err_exact": 2.954179192662731
+   },
+   "pinned": {
+    "decode_err": 2.0,
+    "hold_err": 2.95,
+    "decode_err_exact": 1.9972657756304653,
+    "hold_err_exact": 2.954179192662731
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 9,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.98,
+    "hold_err": 2.93,
+    "decode_err_exact": 1.9846824185395897,
+    "hold_err_exact": 2.9252711448810675
+   },
+   "pinned": {
+    "decode_err": 1.98,
+    "hold_err": 2.93,
+    "decode_err_exact": 1.9846824185395897,
+    "hold_err_exact": 2.9252711448810675
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 9,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.01,
+    "hold_err": 2.98,
+    "decode_err_exact": 2.010235118009536,
+    "hold_err_exact": 2.977283527516639
+   },
+   "pinned": {
+    "decode_err": 2.01,
+    "hold_err": 2.98,
+    "decode_err_exact": 2.010235118009536,
+    "hold_err_exact": 2.977283527516639
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -30.0,
+   "instance": 9,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.06,
+    "hold_err": 2.96,
+    "decode_err_exact": 2.0558645880958686,
+    "hold_err_exact": 2.9636677101807902
+   },
+   "pinned": {
+    "decode_err": 2.06,
+    "hold_err": 2.96,
+    "decode_err_exact": 2.0558645880958686,
+    "hold_err_exact": 2.9636677101807902
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": true,
+   "pin_wins": false,
+   "canon_ref_err": 0.0,
+   "canon_ref_err_exact": 0.0
+  },
+  {
+   "rung": -40.0,
+   "instance": 0,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.76,
+    "hold_err": 2.63,
+    "decode_err_exact": 1.7558825185469698,
+    "hold_err_exact": 2.631177430650991
+   },
+   "pinned": {
+    "decode_err": 8.32,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.319389135463938,
+    "hold_err_exact": 8.426647436784135
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 0,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.8,
+    "hold_err": 2.65,
+    "decode_err_exact": 1.797460715350402,
+    "hold_err_exact": 2.6542894683617217
+   },
+   "pinned": {
+    "decode_err": 8.29,
+    "hold_err": 8.4,
+    "decode_err_exact": 8.286951837830236,
+    "hold_err_exact": 8.402367684856133
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 0,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.87,
+    "hold_err": 2.67,
+    "decode_err_exact": 1.8687357943659062,
+    "hold_err_exact": 2.6741166731511368
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.42,
+    "decode_err_exact": 8.344082998802623,
+    "hold_err_exact": 8.424645602353712
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 1,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.8,
+    "hold_err": 2.59,
+    "decode_err_exact": 1.7969270315452923,
+    "hold_err_exact": 2.5904618705684612
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.34000408326257,
+    "hold_err_exact": 8.427857845836659
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 1,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.84,
+    "hold_err": 2.67,
+    "decode_err_exact": 1.8409421688659966,
+    "hold_err_exact": 2.6674524809952445
+   },
+   "pinned": {
+    "decode_err": 8.3,
+    "hold_err": 8.42,
+    "decode_err_exact": 8.302659511250708,
+    "hold_err_exact": 8.416905082138028
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 1,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.85,
+    "hold_err": 2.65,
+    "decode_err_exact": 1.8507604413059278,
+    "hold_err_exact": 2.6466947305909474
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.343972987446426,
+    "hold_err_exact": 8.427053402690316
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 2,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.78,
+    "hold_err": 2.61,
+    "decode_err_exact": 1.7842799856818312,
+    "hold_err_exact": 2.6107885141966465
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.33581798637112,
+    "hold_err_exact": 8.43598468949701
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 2,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.85,
+    "hold_err": 2.65,
+    "decode_err_exact": 1.8541822516165738,
+    "hold_err_exact": 2.6533531190799646
+   },
+   "pinned": {
+    "decode_err": 8.3,
+    "hold_err": 8.41,
+    "decode_err_exact": 8.304480679688186,
+    "hold_err_exact": 8.41146226540752
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 2,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.78,
+    "hold_err": 2.61,
+    "decode_err_exact": 1.7831112316147657,
+    "hold_err_exact": 2.614762657170193
+   },
+   "pinned": {
+    "decode_err": 8.33,
+    "hold_err": 8.42,
+    "decode_err_exact": 8.327451800766376,
+    "hold_err_exact": 8.420918583595881
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 3,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.79,
+    "hold_err": 2.6,
+    "decode_err_exact": 1.7937676226592003,
+    "hold_err_exact": 2.5991315363138985
+   },
+   "pinned": {
+    "decode_err": 8.33,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.333628029051898,
+    "hold_err_exact": 8.43246711951154
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 3,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.87,
+    "hold_err": 2.63,
+    "decode_err_exact": 1.8724386535891477,
+    "hold_err_exact": 2.62516451271089
+   },
+   "pinned": {
+    "decode_err": 8.31,
+    "hold_err": 8.4,
+    "decode_err_exact": 8.311678169072904,
+    "hold_err_exact": 8.400581790300226
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 3,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.83,
+    "hold_err": 2.62,
+    "decode_err_exact": 1.8265405674899036,
+    "hold_err_exact": 2.616713241114338
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.42,
+    "decode_err_exact": 8.336515133288177,
+    "hold_err_exact": 8.423199705689093
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 4,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.77,
+    "hold_err": 2.58,
+    "decode_err_exact": 1.7697089951179121,
+    "hold_err_exact": 2.584482317438128
+   },
+   "pinned": {
+    "decode_err": 8.32,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.324812332219908,
+    "hold_err_exact": 8.425481314458342
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 4,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.84,
+    "hold_err": 2.59,
+    "decode_err_exact": 1.838302202834088,
+    "hold_err_exact": 2.5874922529813276
+   },
+   "pinned": {
+    "decode_err": 8.31,
+    "hold_err": 8.39,
+    "decode_err_exact": 8.306929720490894,
+    "hold_err_exact": 8.389195397137113
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 4,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.86,
+    "hold_err": 2.64,
+    "decode_err_exact": 1.8648420247979098,
+    "hold_err_exact": 2.64432523320597
+   },
+   "pinned": {
+    "decode_err": 8.35,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.3483891152177,
+    "hold_err_exact": 8.432941954800643
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 5,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.79,
+    "hold_err": 2.6,
+    "decode_err_exact": 1.7892496839679968,
+    "hold_err_exact": 2.598189223150463
+   },
+   "pinned": {
+    "decode_err": 8.33,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.328233413715214,
+    "hold_err_exact": 8.426567561605973
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 5,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.85,
+    "hold_err": 2.61,
+    "decode_err_exact": 1.8454769556734878,
+    "hold_err_exact": 2.6140150164710407
+   },
+   "pinned": {
+    "decode_err": 8.31,
+    "hold_err": 8.4,
+    "decode_err_exact": 8.314607252088372,
+    "hold_err_exact": 8.40331932242753
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 5,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.84,
+    "hold_err": 2.61,
+    "decode_err_exact": 1.838979850281626,
+    "hold_err_exact": 2.6149456197884824
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.42,
+    "decode_err_exact": 8.344404567908686,
+    "hold_err_exact": 8.424147235328968
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 6,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.82,
+    "hold_err": 2.59,
+    "decode_err_exact": 1.81635376643288,
+    "hold_err_exact": 2.594602801625171
+   },
+   "pinned": {
+    "decode_err": 8.33,
+    "hold_err": 8.42,
+    "decode_err_exact": 8.332942309120732,
+    "hold_err_exact": 8.421460675592575
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 6,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.86,
+    "hold_err": 2.64,
+    "decode_err_exact": 1.8611959509539582,
+    "hold_err_exact": 2.6392643716562074
+   },
+   "pinned": {
+    "decode_err": 8.32,
+    "hold_err": 8.42,
+    "decode_err_exact": 8.316950636224428,
+    "hold_err_exact": 8.415892600455113
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 6,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.85,
+    "hold_err": 2.64,
+    "decode_err_exact": 1.854518938156455,
+    "hold_err_exact": 2.6408198738518394
+   },
+   "pinned": {
+    "decode_err": 8.36,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.357334430253307,
+    "hold_err_exact": 8.434787313515576
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 7,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.82,
+    "hold_err": 2.62,
+    "decode_err_exact": 1.8198639733700266,
+    "hold_err_exact": 2.6217993149715504
+   },
+   "pinned": {
+    "decode_err": 8.33,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.333745945730776,
+    "hold_err_exact": 8.425684789679448
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 7,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.88,
+    "hold_err": 2.66,
+    "decode_err_exact": 1.8822241233824721,
+    "hold_err_exact": 2.6575140395199135
+   },
+   "pinned": {
+    "decode_err": 8.32,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.322811094177544,
+    "hold_err_exact": 8.425898428838668
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 7,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.89,
+    "hold_err": 2.67,
+    "decode_err_exact": 1.894169142537266,
+    "hold_err_exact": 2.6712282230773408
+   },
+   "pinned": {
+    "decode_err": 8.38,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.375665444916695,
+    "hold_err_exact": 8.443766557463654
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 8,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.88,
+    "hold_err": 2.66,
+    "decode_err_exact": 1.8844403585917988,
+    "hold_err_exact": 2.658729741667711
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.34377225866339,
+    "hold_err_exact": 8.426567792830058
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 8,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.92,
+    "hold_err": 2.71,
+    "decode_err_exact": 1.9233132397960278,
+    "hold_err_exact": 2.7062621781858542
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.338704247063385,
+    "hold_err_exact": 8.440937129589692
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 8,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.92,
+    "hold_err": 2.7,
+    "decode_err_exact": 1.9169425865493768,
+    "hold_err_exact": 2.7004994827944357
+   },
+   "pinned": {
+    "decode_err": 8.39,
+    "hold_err": 8.45,
+    "decode_err_exact": 8.390986608624132,
+    "hold_err_exact": 8.451607246457732
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 9,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.89,
+    "hold_err": 2.69,
+    "decode_err_exact": 1.8855169054730634,
+    "hold_err_exact": 2.6930835838277516
+   },
+   "pinned": {
+    "decode_err": 8.33,
+    "hold_err": 8.42,
+    "decode_err_exact": 8.332669311053044,
+    "hold_err_exact": 8.416228557284528
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 9,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.93,
+    "hold_err": 2.77,
+    "decode_err_exact": 1.929462251446896,
+    "hold_err_exact": 2.7663322835770994
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.45,
+    "decode_err_exact": 8.338622482026297,
+    "hold_err_exact": 8.447898075538445
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -40.0,
+   "instance": 9,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.97,
+    "hold_err": 2.74,
+    "decode_err_exact": 1.969468110763,
+    "hold_err_exact": 2.7442851386409597
+   },
+   "pinned": {
+    "decode_err": 8.41,
+    "hold_err": 8.45,
+    "decode_err_exact": 8.40839959789098,
+    "hold_err_exact": 8.452028197903209
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 0,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.89,
+    "hold_err": 2.77,
+    "decode_err_exact": 1.8936907348118461,
+    "hold_err_exact": 2.7661966251536803
+   },
+   "pinned": {
+    "decode_err": 8.35,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.34562252260999,
+    "hold_err_exact": 8.439836998290135
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 0,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.93,
+    "hold_err": 2.8,
+    "decode_err_exact": 1.9329644393190908,
+    "hold_err_exact": 2.7993738382797075
+   },
+   "pinned": {
+    "decode_err": 8.31,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.314527621236243,
+    "hold_err_exact": 8.434533100160362
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 0,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.99,
+    "hold_err": 2.82,
+    "decode_err_exact": 1.993654255245421,
+    "hold_err_exact": 2.8187623353094913
+   },
+   "pinned": {
+    "decode_err": 8.32,
+    "hold_err": 8.41,
+    "decode_err_exact": 8.322409664484704,
+    "hold_err_exact": 8.414743075374256
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 1,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.92,
+    "hold_err": 2.72,
+    "decode_err_exact": 1.916386282323441,
+    "hold_err_exact": 2.71697166746521
+   },
+   "pinned": {
+    "decode_err": 8.36,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.36248475727323,
+    "hold_err_exact": 8.443044835993895
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 1,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.96,
+    "hold_err": 2.8,
+    "decode_err_exact": 1.9594197492065577,
+    "hold_err_exact": 2.8006185680872426
+   },
+   "pinned": {
+    "decode_err": 8.33,
+    "hold_err": 8.45,
+    "decode_err_exact": 8.329541448720734,
+    "hold_err_exact": 8.450146244865904
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 1,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.96,
+    "hold_err": 2.77,
+    "decode_err_exact": 1.9634808911856914,
+    "hold_err_exact": 2.768054597791104
+   },
+   "pinned": {
+    "decode_err": 8.32,
+    "hold_err": 8.41,
+    "decode_err_exact": 8.321665532237077,
+    "hold_err_exact": 8.411828496535385
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 2,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.91,
+    "hold_err": 2.74,
+    "decode_err_exact": 1.907541745248129,
+    "hold_err_exact": 2.7406387173257727
+   },
+   "pinned": {
+    "decode_err": 8.36,
+    "hold_err": 8.45,
+    "decode_err_exact": 8.358827241087967,
+    "hold_err_exact": 8.45453603212612
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 2,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.99,
+    "hold_err": 2.78,
+    "decode_err_exact": 1.9851580846260648,
+    "hold_err_exact": 2.777992997740534
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.337201269353733,
+    "hold_err_exact": 8.441710842436436
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 2,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.91,
+    "hold_err": 2.73,
+    "decode_err_exact": 1.9073949894163367,
+    "hold_err_exact": 2.7326730744051377
+   },
+   "pinned": {
+    "decode_err": 8.31,
+    "hold_err": 8.4,
+    "decode_err_exact": 8.309778467543728,
+    "hold_err_exact": 8.403074826707297
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 3,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.92,
+    "hold_err": 2.72,
+    "decode_err_exact": 1.9200163222688107,
+    "hold_err_exact": 2.721830045900068
+   },
+   "pinned": {
+    "decode_err": 8.36,
+    "hold_err": 8.45,
+    "decode_err_exact": 8.358179898907528,
+    "hold_err_exact": 8.448994938585656
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 3,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.0,
+    "hold_err": 2.76,
+    "decode_err_exact": 1.9956570482606495,
+    "hold_err_exact": 2.755860641879415
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.343475310774783,
+    "hold_err_exact": 8.432169048788758
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 3,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.94,
+    "hold_err": 2.73,
+    "decode_err_exact": 1.9441353268870445,
+    "hold_err_exact": 2.7345591458568554
+   },
+   "pinned": {
+    "decode_err": 8.32,
+    "hold_err": 8.4,
+    "decode_err_exact": 8.320206235305301,
+    "hold_err_exact": 8.403947860190307
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 4,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.89,
+    "hold_err": 2.72,
+    "decode_err_exact": 1.8910396596293404,
+    "hold_err_exact": 2.715684343863938
+   },
+   "pinned": {
+    "decode_err": 8.35,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.345829786435202,
+    "hold_err_exact": 8.444452844329644
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 4,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.96,
+    "hold_err": 2.72,
+    "decode_err_exact": 1.9594340989577748,
+    "hold_err_exact": 2.7167293355337554
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.42,
+    "decode_err_exact": 8.337130106947958,
+    "hold_err_exact": 8.419209972390647
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 4,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.99,
+    "hold_err": 2.77,
+    "decode_err_exact": 1.9852286686382856,
+    "hold_err_exact": 2.7653386029344147
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.41,
+    "decode_err_exact": 8.336314029605926,
+    "hold_err_exact": 8.414218037373258
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 5,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.9,
+    "hold_err": 2.73,
+    "decode_err_exact": 1.902402649067457,
+    "hold_err_exact": 2.725457723298501
+   },
+   "pinned": {
+    "decode_err": 8.35,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.346328894186499,
+    "hold_err_exact": 8.443990906240096
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 5,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.96,
+    "hold_err": 2.73,
+    "decode_err_exact": 1.963444612198252,
+    "hold_err_exact": 2.7330518442433496
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.342866644281395,
+    "hold_err_exact": 8.428907069067957
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 5,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.97,
+    "hold_err": 2.74,
+    "decode_err_exact": 1.9658914645129304,
+    "hold_err_exact": 2.7386935416843596
+   },
+   "pinned": {
+    "decode_err": 8.34,
+    "hold_err": 8.41,
+    "decode_err_exact": 8.336619855273616,
+    "hold_err_exact": 8.40572219802773
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 6,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.94,
+    "hold_err": 2.73,
+    "decode_err_exact": 1.944585292965137,
+    "hold_err_exact": 2.7251353205204913
+   },
+   "pinned": {
+    "decode_err": 8.36,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.356717557723737,
+    "hold_err_exact": 8.438415305510473
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 6,
+   "seed": 2,
+   "patched": {
+    "decode_err": 1.99,
+    "hold_err": 2.76,
+    "decode_err_exact": 1.988569210540277,
+    "hold_err_exact": 2.764498006869595
+   },
+   "pinned": {
+    "decode_err": 8.35,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.347681022325338,
+    "hold_err_exact": 8.442772130467585
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 6,
+   "seed": 3,
+   "patched": {
+    "decode_err": 1.97,
+    "hold_err": 2.76,
+    "decode_err_exact": 1.974442521260037,
+    "hold_err_exact": 2.757938965956132
+   },
+   "pinned": {
+    "decode_err": 8.35,
+    "hold_err": 8.41,
+    "decode_err_exact": 8.348304331956179,
+    "hold_err_exact": 8.413758271315004
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 7,
+   "seed": 1,
+   "patched": {
+    "decode_err": 1.94,
+    "hold_err": 2.75,
+    "decode_err_exact": 1.9421061048157715,
+    "hold_err_exact": 2.746541482486084
+   },
+   "pinned": {
+    "decode_err": 8.36,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.35662952130681,
+    "hold_err_exact": 8.439229849428646
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 7,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.0,
+    "hold_err": 2.78,
+    "decode_err_exact": 2.002045211835269,
+    "hold_err_exact": 2.7821245190757296
+   },
+   "pinned": {
+    "decode_err": 8.35,
+    "hold_err": 8.45,
+    "decode_err_exact": 8.350790557627402,
+    "hold_err_exact": 8.45190335628965
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 7,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.02,
+    "hold_err": 2.79,
+    "decode_err_exact": 2.015861154559891,
+    "hold_err_exact": 2.791164687707415
+   },
+   "pinned": {
+    "decode_err": 8.37,
+    "hold_err": 8.42,
+    "decode_err_exact": 8.368369504932593,
+    "hold_err_exact": 8.423486819474878
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 8,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.0,
+    "hold_err": 2.78,
+    "decode_err_exact": 2.0034754516049587,
+    "hold_err_exact": 2.78314105563807
+   },
+   "pinned": {
+    "decode_err": 8.37,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.366393896976696,
+    "hold_err_exact": 8.437736175959893
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 8,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.04,
+    "hold_err": 2.83,
+    "decode_err_exact": 2.035502203336905,
+    "hold_err_exact": 2.830741253062894
+   },
+   "pinned": {
+    "decode_err": 8.36,
+    "hold_err": 8.47,
+    "decode_err_exact": 8.364211176673077,
+    "hold_err_exact": 8.46745902824838
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 8,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.04,
+    "hold_err": 2.82,
+    "decode_err_exact": 2.039755943054642,
+    "hold_err_exact": 2.824701513267241
+   },
+   "pinned": {
+    "decode_err": 8.38,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.384607009233578,
+    "hold_err_exact": 8.432680572481836
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 9,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.0,
+    "hold_err": 2.83,
+    "decode_err_exact": 2.0016031390575257,
+    "hold_err_exact": 2.8291205262455494
+   },
+   "pinned": {
+    "decode_err": 8.35,
+    "hold_err": 8.43,
+    "decode_err_exact": 8.354167711262244,
+    "hold_err_exact": 8.427866495169123
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 9,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.05,
+    "hold_err": 2.91,
+    "decode_err_exact": 2.051060830662112,
+    "hold_err_exact": 2.9069335486844974
+   },
+   "pinned": {
+    "decode_err": 8.37,
+    "hold_err": 8.48,
+    "decode_err_exact": 8.36729964555654,
+    "hold_err_exact": 8.47949078435215
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -45.0,
+   "instance": 9,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.09,
+    "hold_err": 2.88,
+    "decode_err_exact": 2.0851987034700676,
+    "hold_err_exact": 2.882441333037217
+   },
+   "pinned": {
+    "decode_err": 8.4,
+    "hold_err": 8.44,
+    "decode_err_exact": 8.399137956271819,
+    "hold_err_exact": 8.43615412525655
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 8.37,
+   "canon_ref_err_exact": 8.366600265340756
+  },
+  {
+   "rung": -50.0,
+   "instance": 0,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.13,
+    "hold_err": 3.06,
+    "decode_err_exact": 2.127327274652372,
+    "hold_err_exact": 3.0564010818994922
+   },
+   "pinned": {
+    "decode_err": 9.49,
+    "hold_err": 9.56,
+    "decode_err_exact": 9.487857386765246,
+    "hold_err_exact": 9.558083368409386
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 0,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.16,
+    "hold_err": 3.1,
+    "decode_err_exact": 2.1629502024574183,
+    "hold_err_exact": 3.096567437989054
+   },
+   "pinned": {
+    "decode_err": 9.46,
+    "hold_err": 9.57,
+    "decode_err_exact": 9.46160721892237,
+    "hold_err_exact": 9.570086839198364
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 0,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.21,
+    "hold_err": 3.11,
+    "decode_err_exact": 2.21216108454295,
+    "hold_err_exact": 3.1146327120985196
+   },
+   "pinned": {
+    "decode_err": 9.43,
+    "hold_err": 9.52,
+    "decode_err_exact": 9.42518577828527,
+    "hold_err_exact": 9.515502935198489
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 1,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.13,
+    "hold_err": 3.0,
+    "decode_err_exact": 2.1321208170222095,
+    "hold_err_exact": 2.9992332543696896
+   },
+   "pinned": {
+    "decode_err": 9.5,
+    "hold_err": 9.56,
+    "decode_err_exact": 9.499508929373318,
+    "hold_err_exact": 9.562904310053408
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 1,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.17,
+    "hold_err": 3.08,
+    "decode_err_exact": 2.1724172267258086,
+    "hold_err_exact": 3.0844203220104522
+   },
+   "pinned": {
+    "decode_err": 9.47,
+    "hold_err": 9.59,
+    "decode_err_exact": 9.474302185859234,
+    "hold_err_exact": 9.585069977062446
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 1,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.17,
+    "hold_err": 3.04,
+    "decode_err_exact": 2.171408155534684,
+    "hold_err_exact": 3.0432354902530454
+   },
+   "pinned": {
+    "decode_err": 9.42,
+    "hold_err": 9.51,
+    "decode_err_exact": 9.424032291033123,
+    "hold_err_exact": 9.508438503041267
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 2,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.13,
+    "hold_err": 3.02,
+    "decode_err_exact": 2.126649985020411,
+    "hold_err_exact": 3.023700306806394
+   },
+   "pinned": {
+    "decode_err": 9.5,
+    "hold_err": 9.58,
+    "decode_err_exact": 9.496745343614334,
+    "hold_err_exact": 9.576055015393818
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 2,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.21,
+    "hold_err": 3.05,
+    "decode_err_exact": 2.207391588745877,
+    "hold_err_exact": 3.0546663434639747
+   },
+   "pinned": {
+    "decode_err": 9.49,
+    "hold_err": 9.57,
+    "decode_err_exact": 9.486174075082799,
+    "hold_err_exact": 9.574997376212833
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 2,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.13,
+    "hold_err": 3.01,
+    "decode_err_exact": 2.1273668779394654,
+    "hold_err_exact": 3.0057943314967677
+   },
+   "pinned": {
+    "decode_err": 9.42,
+    "hold_err": 9.5,
+    "decode_err_exact": 9.417665888949344,
+    "hold_err_exact": 9.49840889818778
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 3,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.14,
+    "hold_err": 3.0,
+    "decode_err_exact": 2.141048698719415,
+    "hold_err_exact": 2.999507603503102
+   },
+   "pinned": {
+    "decode_err": 9.5,
+    "hold_err": 9.57,
+    "decode_err_exact": 9.497527336881813,
+    "hold_err_exact": 9.56936983315221
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 3,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.21,
+    "hold_err": 3.04,
+    "decode_err_exact": 2.2108898787414413,
+    "hold_err_exact": 3.038726714452797
+   },
+   "pinned": {
+    "decode_err": 9.49,
+    "hold_err": 9.57,
+    "decode_err_exact": 9.490901207640233,
+    "hold_err_exact": 9.567731450034186
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 3,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.16,
+    "hold_err": 3.01,
+    "decode_err_exact": 2.1568125446235067,
+    "hold_err_exact": 3.00736633404732
+   },
+   "pinned": {
+    "decode_err": 9.43,
+    "hold_err": 9.5,
+    "decode_err_exact": 9.428054848424292,
+    "hold_err_exact": 9.497931131171047
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 4,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.11,
+    "hold_err": 3.0,
+    "decode_err_exact": 2.10925347781321,
+    "hold_err_exact": 3.00100093708313
+   },
+   "pinned": {
+    "decode_err": 9.48,
+    "hold_err": 9.57,
+    "decode_err_exact": 9.483527144740913,
+    "hold_err_exact": 9.567504137638192
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 4,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.17,
+    "hold_err": 3.0,
+    "decode_err_exact": 2.174434905868305,
+    "hold_err_exact": 3.0002988131800734
+   },
+   "pinned": {
+    "decode_err": 9.48,
+    "hold_err": 9.55,
+    "decode_err_exact": 9.483903905175413,
+    "hold_err_exact": 9.554888635188497
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 4,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.2,
+    "hold_err": 3.04,
+    "decode_err_exact": 2.198496788398963,
+    "hold_err_exact": 3.039311073466739
+   },
+   "pinned": {
+    "decode_err": 9.45,
+    "hold_err": 9.51,
+    "decode_err_exact": 9.445988577419735,
+    "hold_err_exact": 9.507466722091367
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 5,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.11,
+    "hold_err": 3.01,
+    "decode_err_exact": 2.1132001342819677,
+    "hold_err_exact": 3.006876724898665
+   },
+   "pinned": {
+    "decode_err": 9.48,
+    "hold_err": 9.57,
+    "decode_err_exact": 9.481401684906652,
+    "hold_err_exact": 9.565731839567578
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 5,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.18,
+    "hold_err": 3.01,
+    "decode_err_exact": 2.1755923003104165,
+    "hold_err_exact": 3.0069462142455263
+   },
+   "pinned": {
+    "decode_err": 9.49,
+    "hold_err": 9.56,
+    "decode_err_exact": 9.487264706755788,
+    "hold_err_exact": 9.559575030867208
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 5,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.19,
+    "hold_err": 3.02,
+    "decode_err_exact": 2.185490602015697,
+    "hold_err_exact": 3.0163884549463904
+   },
+   "pinned": {
+    "decode_err": 9.45,
+    "hold_err": 9.5,
+    "decode_err_exact": 9.450048217536107,
+    "hold_err_exact": 9.500230331198688
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 6,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.17,
+    "hold_err": 3.01,
+    "decode_err_exact": 2.1662041543997392,
+    "hold_err_exact": 3.0093877674447405
+   },
+   "pinned": {
+    "decode_err": 9.5,
+    "hold_err": 9.56,
+    "decode_err_exact": 9.495555108817372,
+    "hold_err_exact": 9.560387400783119
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 6,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.21,
+    "hold_err": 3.04,
+    "decode_err_exact": 2.2076055269252985,
+    "hold_err_exact": 3.0421761025997
+   },
+   "pinned": {
+    "decode_err": 9.49,
+    "hold_err": 9.57,
+    "decode_err_exact": 9.493678248612229,
+    "hold_err_exact": 9.57297527724078
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 6,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.19,
+    "hold_err": 3.03,
+    "decode_err_exact": 2.1877759409225153,
+    "hold_err_exact": 3.028890634621539
+   },
+   "pinned": {
+    "decode_err": 9.46,
+    "hold_err": 9.51,
+    "decode_err_exact": 9.459247820593612,
+    "hold_err_exact": 9.505015565429536
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 7,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.16,
+    "hold_err": 3.02,
+    "decode_err_exact": 2.158797091164829,
+    "hold_err_exact": 3.024698629945419
+   },
+   "pinned": {
+    "decode_err": 9.49,
+    "hold_err": 9.56,
+    "decode_err_exact": 9.494694839569188,
+    "hold_err_exact": 9.558103270427669
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 7,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.21,
+    "hold_err": 3.06,
+    "decode_err_exact": 2.2141273512353865,
+    "hold_err_exact": 3.0583829107854528
+   },
+   "pinned": {
+    "decode_err": 9.49,
+    "hold_err": 9.58,
+    "decode_err_exact": 9.494011746207516,
+    "hold_err_exact": 9.580285891101347
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 7,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.23,
+    "hold_err": 3.06,
+    "decode_err_exact": 2.2289623518698503,
+    "hold_err_exact": 3.062906075606948
+   },
+   "pinned": {
+    "decode_err": 9.48,
+    "hold_err": 9.51,
+    "decode_err_exact": 9.478474685769493,
+    "hold_err_exact": 9.514271812336101
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 8,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.21,
+    "hold_err": 3.06,
+    "decode_err_exact": 2.2148295245467344,
+    "hold_err_exact": 3.0591759732829242
+   },
+   "pinned": {
+    "decode_err": 9.5,
+    "hold_err": 9.55,
+    "decode_err_exact": 9.503083491478865,
+    "hold_err_exact": 9.554686817495451
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 8,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.24,
+    "hold_err": 3.1,
+    "decode_err_exact": 2.2396790258271873,
+    "hold_err_exact": 3.1045112836142974
+   },
+   "pinned": {
+    "decode_err": 9.5,
+    "hold_err": 9.59,
+    "decode_err_exact": 9.503689092541574,
+    "hold_err_exact": 9.594509188167043
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 8,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.25,
+    "hold_err": 3.1,
+    "decode_err_exact": 2.252842038815185,
+    "hold_err_exact": 3.0985211029004063
+   },
+   "pinned": {
+    "decode_err": 9.49,
+    "hold_err": 9.52,
+    "decode_err_exact": 9.493611051870037,
+    "hold_err_exact": 9.523593839723818
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 9,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.21,
+    "hold_err": 3.11,
+    "decode_err_exact": 2.2105234152263145,
+    "hold_err_exact": 3.1130049657509407
+   },
+   "pinned": {
+    "decode_err": 9.49,
+    "hold_err": 9.55,
+    "decode_err_exact": 9.491306344236593,
+    "hold_err_exact": 9.546374473560295
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 9,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.26,
+    "hold_err": 3.19,
+    "decode_err_exact": 2.262660822994199,
+    "hold_err_exact": 3.191172858370191
+   },
+   "pinned": {
+    "decode_err": 9.51,
+    "hold_err": 9.61,
+    "decode_err_exact": 9.509196574423344,
+    "hold_err_exact": 9.609622647442839
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -50.0,
+   "instance": 9,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.29,
+    "hold_err": 3.17,
+    "decode_err_exact": 2.2904279390787954,
+    "hold_err_exact": 3.165673444444601
+   },
+   "pinned": {
+    "decode_err": 9.5,
+    "hold_err": 9.53,
+    "decode_err_exact": 9.5038881880458,
+    "hold_err_exact": 9.529371101448502
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 9.49,
+   "canon_ref_err_exact": 9.486832980505138
+  },
+  {
+   "rung": -55.0,
+   "instance": 0,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.43,
+    "hold_err": 3.46,
+    "decode_err_exact": 2.4292989980736857,
+    "hold_err_exact": 3.462993803754415
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.46,
+    "decode_err_exact": 11.415879427025212,
+    "hold_err_exact": 11.462404389268942
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 0,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.46,
+    "hold_err": 3.51,
+    "decode_err_exact": 2.461071146298558,
+    "hold_err_exact": 3.507415090428227
+   },
+   "pinned": {
+    "decode_err": 11.39,
+    "hold_err": 11.49,
+    "decode_err_exact": 11.394976768958696,
+    "hold_err_exact": 11.48631460424995
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 0,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.5,
+    "hold_err": 3.52,
+    "decode_err_exact": 2.499834313043275,
+    "hold_err_exact": 3.5238398752737443
+   },
+   "pinned": {
+    "decode_err": 11.33,
+    "hold_err": 11.41,
+    "decode_err_exact": 11.328662502076508,
+    "hold_err_exact": 11.409878999397584
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 1,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.42,
+    "hold_err": 3.4,
+    "decode_err_exact": 2.4185026654118382,
+    "hold_err_exact": 3.39865972403741
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.47,
+    "decode_err_exact": 11.422969135022864,
+    "hold_err_exact": 11.4682686614648
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 1,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.46,
+    "hold_err": 3.48,
+    "decode_err_exact": 2.455459351993463,
+    "hold_err_exact": 3.4822199550166024
+   },
+   "pinned": {
+    "decode_err": 11.41,
+    "hold_err": 11.5,
+    "decode_err_exact": 11.405155783627983,
+    "hold_err_exact": 11.500003299060786
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 1,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.45,
+    "hold_err": 3.44,
+    "decode_err_exact": 2.4504250069562263,
+    "hold_err_exact": 3.4354709975908144
+   },
+   "pinned": {
+    "decode_err": 11.33,
+    "hold_err": 11.4,
+    "decode_err_exact": 11.327342468172892,
+    "hold_err_exact": 11.400432508671472
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 2,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.42,
+    "hold_err": 3.42,
+    "decode_err_exact": 2.4156632658700343,
+    "hold_err_exact": 3.4221638717760516
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.48,
+    "decode_err_exact": 11.42105071029925,
+    "hold_err_exact": 11.481758928814807
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 2,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.5,
+    "hold_err": 3.45,
+    "decode_err_exact": 2.4966310976072124,
+    "hold_err_exact": 3.4469561786770484
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.49,
+    "decode_err_exact": 11.419287197128051,
+    "hold_err_exact": 11.48942887457403
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 2,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.42,
+    "hold_err": 3.4,
+    "decode_err_exact": 2.417041213430327,
+    "hold_err_exact": 3.3968921160922165
+   },
+   "pinned": {
+    "decode_err": 11.33,
+    "hold_err": 11.39,
+    "decode_err_exact": 11.325479740071357,
+    "hold_err_exact": 11.390179320508633
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 3,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.43,
+    "hold_err": 3.39,
+    "decode_err_exact": 2.431148461453726,
+    "hold_err_exact": 3.3943402801114675
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.47,
+    "decode_err_exact": 11.422824475739187,
+    "hold_err_exact": 11.474688331969464
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 3,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.49,
+    "hold_err": 3.44,
+    "decode_err_exact": 2.4944313011990444,
+    "hold_err_exact": 3.436388397984699
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.48,
+    "decode_err_exact": 11.422559713185072,
+    "hold_err_exact": 11.484328674911309
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 3,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.44,
+    "hold_err": 3.4,
+    "decode_err_exact": 2.4398329850364107,
+    "hold_err_exact": 3.3980146881876157
+   },
+   "pinned": {
+    "decode_err": 11.34,
+    "hold_err": 11.39,
+    "decode_err_exact": 11.335106697697801,
+    "hold_err_exact": 11.388738371256672
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 4,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.4,
+    "hold_err": 3.4,
+    "decode_err_exact": 2.39804663122497,
+    "hold_err_exact": 3.4018736537015593
+   },
+   "pinned": {
+    "decode_err": 11.41,
+    "hold_err": 11.47,
+    "decode_err_exact": 11.408581735226626,
+    "hold_err_exact": 11.474920049008501
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 4,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.46,
+    "hold_err": 3.4,
+    "decode_err_exact": 2.4588026565881296,
+    "hold_err_exact": 3.399800025986632
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.47,
+    "decode_err_exact": 11.415566826419312,
+    "hold_err_exact": 11.472445259241946
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 4,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.48,
+    "hold_err": 3.43,
+    "decode_err_exact": 2.4808066355328924,
+    "hold_err_exact": 3.4297811265771267
+   },
+   "pinned": {
+    "decode_err": 11.35,
+    "hold_err": 11.4,
+    "decode_err_exact": 11.353118806420724,
+    "hold_err_exact": 11.397064748727574
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 5,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.4,
+    "hold_err": 3.4,
+    "decode_err_exact": 2.3960073740769134,
+    "hold_err_exact": 3.404431046598653
+   },
+   "pinned": {
+    "decode_err": 11.4,
+    "hold_err": 11.47,
+    "decode_err_exact": 11.404682700328712,
+    "hold_err_exact": 11.472304497173377
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 5,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.46,
+    "hold_err": 3.4,
+    "decode_err_exact": 2.457650611848795,
+    "hold_err_exact": 3.3984605283078726
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.47,
+    "decode_err_exact": 11.416960938527069,
+    "hold_err_exact": 11.473132824563297
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 5,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.47,
+    "hold_err": 3.41,
+    "decode_err_exact": 2.473209787604816,
+    "hold_err_exact": 3.4106321381910636
+   },
+   "pinned": {
+    "decode_err": 11.36,
+    "hold_err": 11.39,
+    "decode_err_exact": 11.359649189133465,
+    "hold_err_exact": 11.3912636993766
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 6,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.46,
+    "hold_err": 3.41,
+    "decode_err_exact": 2.4560591270574195,
+    "hold_err_exact": 3.409123106796589
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.47,
+    "decode_err_exact": 11.42061482505181,
+    "hold_err_exact": 11.467495936990339
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 6,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.49,
+    "hold_err": 3.44,
+    "decode_err_exact": 2.4942723067168138,
+    "hold_err_exact": 3.4355312618606817
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.49,
+    "decode_err_exact": 11.4241022666309,
+    "hold_err_exact": 11.485278033090193
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 6,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.47,
+    "hold_err": 3.42,
+    "decode_err_exact": 2.470437488733547,
+    "hold_err_exact": 3.417277134767928
+   },
+   "pinned": {
+    "decode_err": 11.37,
+    "hold_err": 11.39,
+    "decode_err_exact": 11.366379859763512,
+    "hold_err_exact": 11.393314486006789
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 7,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.44,
+    "hold_err": 3.42,
+    "decode_err_exact": 2.4449521788671515,
+    "hold_err_exact": 3.419030083066801
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.46,
+    "decode_err_exact": 11.419248701577532,
+    "hold_err_exact": 11.46308759475621
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 7,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.5,
+    "hold_err": 3.45,
+    "decode_err_exact": 2.495053575058307,
+    "hold_err_exact": 3.4500504979307176
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.49,
+    "decode_err_exact": 11.42238384964655,
+    "hold_err_exact": 11.490752219355862
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 7,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.51,
+    "hold_err": 3.45,
+    "decode_err_exact": 2.510300311777319,
+    "hold_err_exact": 3.4507738497357816
+   },
+   "pinned": {
+    "decode_err": 11.38,
+    "hold_err": 11.4,
+    "decode_err_exact": 11.383645911492206,
+    "hold_err_exact": 11.401574778967168
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 8,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.5,
+    "hold_err": 3.45,
+    "decode_err_exact": 2.4951519548817633,
+    "hold_err_exact": 3.4506368019582334
+   },
+   "pinned": {
+    "decode_err": 11.43,
+    "hold_err": 11.46,
+    "decode_err_exact": 11.426052797199398,
+    "hold_err_exact": 11.45848986486079
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 8,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.51,
+    "hold_err": 3.49,
+    "decode_err_exact": 2.513525924910503,
+    "hold_err_exact": 3.492640517140092
+   },
+   "pinned": {
+    "decode_err": 11.43,
+    "hold_err": 11.5,
+    "decode_err_exact": 11.42865791767018,
+    "hold_err_exact": 11.503027954671571
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 8,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.53,
+    "hold_err": 3.49,
+    "decode_err_exact": 2.533524760882618,
+    "hold_err_exact": 3.486886951819292
+   },
+   "pinned": {
+    "decode_err": 11.4,
+    "hold_err": 11.41,
+    "decode_err_exact": 11.396916450549687,
+    "hold_err_exact": 11.410340880443313
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 9,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.49,
+    "hold_err": 3.51,
+    "decode_err_exact": 2.489009829181335,
+    "hold_err_exact": 3.509035491952274
+   },
+   "pinned": {
+    "decode_err": 11.42,
+    "hold_err": 11.45,
+    "decode_err_exact": 11.4154155318198,
+    "hold_err_exact": 11.451894992340767
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 9,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.54,
+    "hold_err": 3.59,
+    "decode_err_exact": 2.5418841410001183,
+    "hold_err_exact": 3.58504657846373
+   },
+   "pinned": {
+    "decode_err": 11.44,
+    "hold_err": 11.52,
+    "decode_err_exact": 11.435557410779607,
+    "hold_err_exact": 11.519385065518303
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -55.0,
+   "instance": 9,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.56,
+    "hold_err": 3.56,
+    "decode_err_exact": 2.5637519717770743,
+    "hold_err_exact": 3.559517084879186
+   },
+   "pinned": {
+    "decode_err": 11.4,
+    "hold_err": 11.42,
+    "decode_err_exact": 11.403346028468347,
+    "hold_err_exact": 11.417417928335066
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 11.4,
+   "canon_ref_err_exact": 11.40175425099138
+  },
+  {
+   "rung": -60.0,
+   "instance": 0,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.78,
+    "hold_err": 3.95,
+    "decode_err_exact": 2.7774055276098935,
+    "hold_err_exact": 3.950197375224037
+   },
+   "pinned": {
+    "decode_err": 13.8,
+    "hold_err": 13.83,
+    "decode_err_exact": 13.80427510564173,
+    "hold_err_exact": 13.831851599648926
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 0,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.81,
+    "hold_err": 4.0,
+    "decode_err_exact": 2.805691421052977,
+    "hold_err_exact": 3.997022146810482
+   },
+   "pinned": {
+    "decode_err": 13.79,
+    "hold_err": 13.86,
+    "decode_err_exact": 13.787741757232537,
+    "hold_err_exact": 13.863186208506482
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 0,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.84,
+    "hold_err": 4.01,
+    "decode_err_exact": 2.835701337511612,
+    "hold_err_exact": 4.011851531256453
+   },
+   "pinned": {
+    "decode_err": 13.7,
+    "hold_err": 13.77,
+    "decode_err_exact": 13.70313482440419,
+    "hold_err_exact": 13.774234245065234
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 1,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.75,
+    "hold_err": 3.88,
+    "decode_err_exact": 2.753576633353721,
+    "hold_err_exact": 3.8792265284254506
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.84,
+    "decode_err_exact": 13.80803437122577,
+    "hold_err_exact": 13.83839397645173
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 1,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.79,
+    "hold_err": 3.96,
+    "decode_err_exact": 2.7872886145019025,
+    "hold_err_exact": 3.9598087884100215
+   },
+   "pinned": {
+    "decode_err": 13.8,
+    "hold_err": 13.88,
+    "decode_err_exact": 13.795897591874695,
+    "hold_err_exact": 13.875680156276903
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 1,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.78,
+    "hold_err": 3.91,
+    "decode_err_exact": 2.779202263318203,
+    "hold_err_exact": 3.9096882784703317
+   },
+   "pinned": {
+    "decode_err": 13.7,
+    "hold_err": 13.76,
+    "decode_err_exact": 13.701789136347722,
+    "hold_err_exact": 13.763619963915424
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 2,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.75,
+    "hold_err": 3.9,
+    "decode_err_exact": 2.7526500096677586,
+    "hold_err_exact": 3.9008238410148235
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.85,
+    "decode_err_exact": 13.80676191087736,
+    "hold_err_exact": 13.851680578299057
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 2,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.83,
+    "hold_err": 3.92,
+    "decode_err_exact": 2.832423036090518,
+    "hold_err_exact": 3.920306924078815
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.87,
+    "decode_err_exact": 13.811111089585536,
+    "hold_err_exact": 13.865124783987614
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 2,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.75,
+    "hold_err": 3.87,
+    "decode_err_exact": 2.7545146265451415,
+    "hold_err_exact": 3.8703658208124225
+   },
+   "pinned": {
+    "decode_err": 13.7,
+    "hold_err": 13.75,
+    "decode_err_exact": 13.703087236835133,
+    "hold_err_exact": 13.753577956726462
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 3,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.77,
+    "hold_err": 3.87,
+    "decode_err_exact": 2.7686896922191884,
+    "hold_err_exact": 3.870640647219407
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.84,
+    "decode_err_exact": 13.809158254169162,
+    "hold_err_exact": 13.844580723475275
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 3,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.83,
+    "hold_err": 3.91,
+    "decode_err_exact": 2.8257932400855137,
+    "hold_err_exact": 3.9140111659886982
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.86,
+    "decode_err_exact": 13.813275291030138,
+    "hold_err_exact": 13.861689468012258
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 3,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.77,
+    "hold_err": 3.87,
+    "decode_err_exact": 2.771731606041487,
+    "hold_err_exact": 3.8709906205158973
+   },
+   "pinned": {
+    "decode_err": 13.71,
+    "hold_err": 13.75,
+    "decode_err_exact": 13.71186014616192,
+    "hold_err_exact": 13.751521275342393
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 4,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.74,
+    "hold_err": 3.88,
+    "decode_err_exact": 2.73515323700118,
+    "hold_err_exact": 3.882673647067527
+   },
+   "pinned": {
+    "decode_err": 13.8,
+    "hold_err": 13.85,
+    "decode_err_exact": 13.795224722239062,
+    "hold_err_exact": 13.846253932466622
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 4,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.79,
+    "hold_err": 3.88,
+    "decode_err_exact": 2.791417564736133,
+    "hold_err_exact": 3.8795824553083644
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.85,
+    "decode_err_exact": 13.80651789835906,
+    "hold_err_exact": 13.850863032517083
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 4,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.81,
+    "hold_err": 3.9,
+    "decode_err_exact": 2.811436140070372,
+    "hold_err_exact": 3.901930024188111
+   },
+   "pinned": {
+    "decode_err": 13.73,
+    "hold_err": 13.76,
+    "decode_err_exact": 13.729309920170198,
+    "hold_err_exact": 13.758726300988004
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 5,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.73,
+    "hold_err": 3.88,
+    "decode_err_exact": 2.728524404597424,
+    "hold_err_exact": 3.8826085481812256
+   },
+   "pinned": {
+    "decode_err": 13.79,
+    "hold_err": 13.84,
+    "decode_err_exact": 13.790236936463833,
+    "hold_err_exact": 13.843143319806677
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 5,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.79,
+    "hold_err": 3.87,
+    "decode_err_exact": 2.788485030159331,
+    "hold_err_exact": 3.87207924307152
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.85,
+    "decode_err_exact": 13.806514412104884,
+    "hold_err_exact": 13.848768194206281
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 5,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.81,
+    "hold_err": 3.89,
+    "decode_err_exact": 2.8081883299132064,
+    "hold_err_exact": 3.886113627783837
+   },
+   "pinned": {
+    "decode_err": 13.74,
+    "hold_err": 13.75,
+    "decode_err_exact": 13.737317269780597,
+    "hold_err_exact": 13.754115843598903
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 6,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.79,
+    "hold_err": 3.89,
+    "decode_err_exact": 2.7929858490164885,
+    "hold_err_exact": 3.888891793621086
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.84,
+    "decode_err_exact": 13.806859049486393,
+    "hold_err_exact": 13.838866294020795
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 6,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.83,
+    "hold_err": 3.91,
+    "decode_err_exact": 2.828077799095831,
+    "hold_err_exact": 3.909804095599422
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.86,
+    "decode_err_exact": 13.813918205248479,
+    "hold_err_exact": 13.859641725642216
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 6,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.8,
+    "hold_err": 3.89,
+    "decode_err_exact": 2.8015204307557227,
+    "hold_err_exact": 3.888063908665575
+   },
+   "pinned": {
+    "decode_err": 13.74,
+    "hold_err": 13.75,
+    "decode_err_exact": 13.742119580838176,
+    "hold_err_exact": 13.754207010297034
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 7,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.78,
+    "hold_err": 3.89,
+    "decode_err_exact": 2.779196817560654,
+    "hold_err_exact": 3.8944042979360893
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.83,
+    "decode_err_exact": 13.805190668447555,
+    "hold_err_exact": 13.83313838874491
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 7,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.82,
+    "hold_err": 3.92,
+    "decode_err_exact": 2.824355196323639,
+    "hold_err_exact": 3.922708766592883
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.86,
+    "decode_err_exact": 13.810846616047092,
+    "hold_err_exact": 13.863664622972111
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 7,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.84,
+    "hold_err": 3.92,
+    "decode_err_exact": 2.8396654137824,
+    "hold_err_exact": 3.920451493896583
+   },
+   "pinned": {
+    "decode_err": 13.76,
+    "hold_err": 13.76,
+    "decode_err_exact": 13.757446848142514,
+    "hold_err_exact": 13.761495128145352
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 8,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.82,
+    "hold_err": 3.92,
+    "decode_err_exact": 2.8239784437248763,
+    "hold_err_exact": 3.9231217475537394
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.83,
+    "decode_err_exact": 13.810677277906361,
+    "hold_err_exact": 13.827879128166806
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 8,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.84,
+    "hold_err": 3.96,
+    "decode_err_exact": 2.8369385839651637,
+    "hold_err_exact": 3.9616585488192033
+   },
+   "pinned": {
+    "decode_err": 13.81,
+    "hold_err": 13.87,
+    "decode_err_exact": 13.814571108155253,
+    "hold_err_exact": 13.874184627842707
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 8,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.86,
+    "hold_err": 3.96,
+    "decode_err_exact": 2.8619845725796345,
+    "hold_err_exact": 3.9562079581336236
+   },
+   "pinned": {
+    "decode_err": 13.77,
+    "hold_err": 13.77,
+    "decode_err_exact": 13.768979483939683,
+    "hold_err_exact": 13.769575875428542
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 9,
+   "seed": 1,
+   "patched": {
+    "decode_err": 2.82,
+    "hold_err": 3.98,
+    "decode_err_exact": 2.8165020162920977,
+    "hold_err_exact": 3.9839068077700004
+   },
+   "pinned": {
+    "decode_err": 13.8,
+    "hold_err": 13.82,
+    "decode_err_exact": 13.801179843759646,
+    "hold_err_exact": 13.82269270579585
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 9,
+   "seed": 2,
+   "patched": {
+    "decode_err": 2.87,
+    "hold_err": 4.06,
+    "decode_err_exact": 2.8690544592498792,
+    "hold_err_exact": 4.056745854713478
+   },
+   "pinned": {
+    "decode_err": 13.82,
+    "hold_err": 13.89,
+    "decode_err_exact": 13.822198261172717,
+    "hold_err_exact": 13.890857372611395
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  },
+  {
+   "rung": -60.0,
+   "instance": 9,
+   "seed": 3,
+   "patched": {
+    "decode_err": 2.89,
+    "hold_err": 4.03,
+    "decode_err_exact": 2.8858873365028685,
+    "hold_err_exact": 4.03168557807483
+   },
+   "pinned": {
+    "decode_err": 13.77,
+    "hold_err": 13.78,
+    "decode_err_exact": 13.772536014504045,
+    "hold_err_exact": 13.777309320346939
+   },
+   "rejected": [],
+   "finite": true,
+   "bit_exact": false,
+   "pin_wins": true,
+   "canon_ref_err": 13.78,
+   "canon_ref_err_exact": 13.784048752090222
+  }
+ ],
+ "gates": {
+  "records_by_rung": {
+   "-20.0": {
+    "n_records": 30,
+    "patched_median_decode_3seed": 2.416307626235466,
+    "patched_median_hold_3seed": 3.6904066354347402,
+    "patched_median_decode_pooled": 2.4224377908004353,
+    "patched_median_hold_pooled": 3.6905913284073097,
+    "pinned_median_decode_pooled": 2.4224377908004353,
+    "canon_ref_median": 0.0,
+    "pin_wins_frac": 0.0,
+    "at_bar_strict": true
+   },
+   "-25.0": {
+    "n_records": 30,
+    "patched_median_decode_3seed": 2.1389758986741882,
+    "patched_median_hold_3seed": 3.2492720778482127,
+    "patched_median_decode_pooled": 2.1442653322692866,
+    "patched_median_hold_pooled": 3.2492720778482127,
+    "pinned_median_decode_pooled": 2.1442653322692866,
+    "canon_ref_median": 0.0,
+    "pin_wins_frac": 0.0,
+    "at_bar_strict": true
+   },
+   "-30.0": {
+    "n_records": 30,
+    "patched_median_decode_3seed": 1.9384484707498142,
+    "patched_median_hold_3seed": 2.898747923462037,
+    "patched_median_decode_pooled": 1.9426268983849435,
+    "patched_median_hold_pooled": 2.8993600358823177,
+    "pinned_median_decode_pooled": 1.9426268983849435,
+    "canon_ref_median": 0.0,
+    "pin_wins_frac": 0.0,
+    "at_bar_strict": true
+   },
+   "-40.0": {
+    "n_records": 30,
+    "patched_median_decode_3seed": 1.8399610095738113,
+    "patched_median_hold_3seed": 2.6429795511235774,
+    "patched_median_decode_pooled": 1.8481186984897078,
+    "patched_median_hold_pooled": 2.640042122754023,
+    "pinned_median_decode_pooled": 8.333686987391337,
+    "canon_ref_median": 8.366600265340756,
+    "pin_wins_frac": 1.0,
+    "at_bar_strict": true
+   },
+   "-45.0": {
+    "n_records": 30,
+    "patched_median_decode_3seed": 1.9614393555780134,
+    "patched_median_hold_3seed": 2.762996781873618,
+    "patched_median_decode_pooled": 1.9646861778493108,
+    "patched_median_hold_pooled": 2.7649183049020047,
+    "pinned_median_decode_pooled": 8.34700495825592,
+    "canon_ref_median": 8.366600265340756,
+    "pin_wins_frac": 1.0,
+    "at_bar_strict": true
+   },
+   "-50.0": {
+    "n_records": 30,
+    "patched_median_decode_3seed": 2.1750136030893605,
+    "patched_median_hold_3seed": 3.036063062437292,
+    "patched_median_decode_pooled": 2.180541451163057,
+    "patched_median_hold_pooled": 3.0407435880332194,
+    "pinned_median_decode_pooled": 9.487561046760517,
+    "canon_ref_median": 9.486832980505138,
+    "pin_wins_frac": 1.0,
+    "at_bar_strict": true
+   },
+   "-55.0": {
+    "n_records": 30,
+    "patched_median_decode_3seed": 2.459936901443344,
+    "patched_median_hold_3seed": 3.428817434683433,
+    "patched_median_decode_pooled": 2.4657543175160526,
+    "patched_median_hold_pooled": 3.435501129725748,
+    "pinned_median_decode_pooled": 11.415491179119556,
+    "canon_ref_median": 11.40175425099138,
+    "pin_wins_frac": 1.0,
+    "at_bar_strict": true
+   },
+   "-60.0": {
+    "n_records": 30,
+    "patched_median_decode_3seed": 2.7964689977459276,
+    "patched_median_hold_3seed": 3.9052560597425776,
+    "patched_median_decode_pooled": 2.8036059259043498,
+    "patched_median_hold_pooled": 3.9097461870348766,
+    "pinned_median_decode_pooled": 13.802727474700689,
+    "canon_ref_median": 13.784048752090222,
+    "pin_wins_frac": 1.0,
+    "at_bar_strict": true
+   }
+  },
+  "D1": {
+   "gate": "D1",
+   "clause": "shallow patched == pinned bit-exactly per (rung, instance, seed)",
+   "bit_exact": 90,
+   "n_records": 90,
+   "pass": true
+  },
+  "D2": {
+   "gate": "D2",
+   "clause": "pinned err > patched err on >= 80% of deep records",
+   "pin_wins": 150,
+   "n_records": 150,
+   "frac": 1.0,
+   "pass": true
+  },
+  "D3": {
+   "gate": "D3",
+   "clause": "deepest deep rung with median decode err <= 6.0 AND median hold err <= 6.0 on the 3-seed medians; PASS iff at least one deep rung reaches the bar",
+   "frontier_rung": -60.0,
+   "pass": true
+  },
+  "D4": {
+   "gate": "D4",
+   "clause": "zero rejections; all errs finite; pin save/restore asserted between arms; shallow arm run FIRST",
+   "rejections": 0,
+   "all_finite": true,
+   "pin_save_restore_asserted": true,
+   "shallow_arm_first": true,
+   "canon_match_asserted": true,
+   "pass": true
+  },
+  "n_pass": 4,
+  "verdict": "4/4",
+  "frontier_rung": -60.0
+ },
+ "smoke_disclosure": "a --smoke instrument check (rungs -40 and -20, instance 0, seed 1) ran before the credited run and was discarded (no file)",
+ "wall_s": 27.1
+}
