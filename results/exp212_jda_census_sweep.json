@@ -1,0 +1,469 @@
+{
+ "exp": "exp212_jda_census_sweep",
+ "claim": "THE JD-A CENSUS SWEEP (L183's registered next): exp210's membership census disclosed the composition structurally vacuous at F3 ring-1 (the fence excludes NOBODY there); the same census, zero knobs, across EVERY deposited family x ring names the fence's exclusions project-wide \u2014 only sites with nonempty excl are candidates for the boundary-aware composition's second chance",
+ "pre_registered": {
+  "gates_source": "module docstring, committed before any run (pre-registration 08b1cfc, batch 10; gates C1-C4 fixed there, each evaluated exactly once)",
+  "gates": [
+   "GATE-C1 every family x ring census deposited; complete, not sampled",
+   "GATE-C2 FENCE-BITES (>= 1 nonempty excl site, named) / FENCE-VACUOUS-PROJECT-WIDE (the membership face closes project-wide)",
+   "GATE-C3 (if FENCE-BITES) the canon-boundary classification of the excluded cells at each named site",
+   "GATE-C4 hygiene: zero rejections; all finite; the floor pin save/restore asserted"
+  ]
+ },
+ "sections": {
+  "census": [
+   {
+    "family": "F1_zone_tail",
+    "ring": 1,
+    "n_raw": 2,
+    "n_quiet": 2,
+    "excl": [],
+    "n_excl": 0
+   },
+   {
+    "family": "F1_zone_tail",
+    "ring": 2,
+    "n_raw": 3,
+    "n_quiet": 2,
+    "excl": [
+     74
+    ],
+    "n_excl": 1
+   },
+   {
+    "family": "F1_zone_tail",
+    "ring": 3,
+    "n_raw": 3,
+    "n_quiet": 2,
+    "excl": [
+     74
+    ],
+    "n_excl": 1
+   },
+   {
+    "family": "F1_zone_tail",
+    "ring": 4,
+    "n_raw": 4,
+    "n_quiet": 2,
+    "excl": [
+     66,
+     74
+    ],
+    "n_excl": 2
+   },
+   {
+    "family": "F1_zone_tail",
+    "ring": 5,
+    "n_raw": 5,
+    "n_quiet": 2,
+    "excl": [
+     63,
+     66,
+     74
+    ],
+    "n_excl": 3
+   },
+   {
+    "family": "F1_zone_tail",
+    "ring": 6,
+    "n_raw": 6,
+    "n_quiet": 2,
+    "excl": [
+     61,
+     63,
+     66,
+     74
+    ],
+    "n_excl": 4
+   },
+   {
+    "family": "F2_zone_head",
+    "ring": 1,
+    "n_raw": 2,
+    "n_quiet": 2,
+    "excl": [],
+    "n_excl": 0
+   },
+   {
+    "family": "F2_zone_head",
+    "ring": 2,
+    "n_raw": 2,
+    "n_quiet": 2,
+    "excl": [],
+    "n_excl": 0
+   },
+   {
+    "family": "F2_zone_head",
+    "ring": 3,
+    "n_raw": 2,
+    "n_quiet": 2,
+    "excl": [],
+    "n_excl": 0
+   },
+   {
+    "family": "F2_zone_head",
+    "ring": 4,
+    "n_raw": 2,
+    "n_quiet": 2,
+    "excl": [],
+    "n_excl": 0
+   },
+   {
+    "family": "F2_zone_head",
+    "ring": 5,
+    "n_raw": 2,
+    "n_quiet": 2,
+    "excl": [],
+    "n_excl": 0
+   },
+   {
+    "family": "F2_zone_head",
+    "ring": 6,
+    "n_raw": 2,
+    "n_quiet": 2,
+    "excl": [],
+    "n_excl": 0
+   },
+   {
+    "family": "F3_canon_boundary",
+    "ring": 1,
+    "n_raw": 5,
+    "n_quiet": 5,
+    "excl": [],
+    "n_excl": 0
+   },
+   {
+    "family": "F3_canon_boundary",
+    "ring": 2,
+    "n_raw": 2,
+    "n_quiet": 2,
+    "excl": [],
+    "n_excl": 0
+   },
+   {
+    "family": "F3_canon_boundary",
+    "ring": 3,
+    "n_raw": 2,
+    "n_quiet": 2,
+    "excl": [],
+    "n_excl": 0
+   },
+   {
+    "family": "F3_canon_boundary",
+    "ring": 4,
+    "n_raw": 2,
+    "n_quiet": 2,
+    "excl": [],
+    "n_excl": 0
+   },
+   {
+    "family": "F3_canon_boundary",
+    "ring": 5,
+    "n_raw": 2,
+    "n_quiet": 2,
+    "excl": [],
+    "n_excl": 0
+   },
+   {
+    "family": "F3_canon_boundary",
+    "ring": 6,
+    "n_raw": 2,
+    "n_quiet": 2,
+    "excl": [],
+    "n_excl": 0
+   }
+  ],
+  "sites": [
+   {
+    "family": "F1_zone_tail",
+    "ring": 2,
+    "excl": [
+     74
+    ]
+   },
+   {
+    "family": "F1_zone_tail",
+    "ring": 3,
+    "excl": [
+     74
+    ]
+   },
+   {
+    "family": "F1_zone_tail",
+    "ring": 4,
+    "excl": [
+     66,
+     74
+    ]
+   },
+   {
+    "family": "F1_zone_tail",
+    "ring": 5,
+    "excl": [
+     63,
+     66,
+     74
+    ]
+   },
+   {
+    "family": "F1_zone_tail",
+    "ring": 6,
+    "excl": [
+     61,
+     63,
+     66,
+     74
+    ]
+   }
+  ],
+  "c3": {
+   "evaluated": true,
+   "classified_sites": [
+    {
+     "family": "F1_zone_tail",
+     "ring": 2,
+     "n_excl": 1,
+     "n_canon_boundary": 1,
+     "cells": [
+      {
+       "cell": 74,
+       "canon_boundary": true
+      }
+     ]
+    },
+    {
+     "family": "F1_zone_tail",
+     "ring": 3,
+     "n_excl": 1,
+     "n_canon_boundary": 1,
+     "cells": [
+      {
+       "cell": 74,
+       "canon_boundary": true
+      }
+     ]
+    },
+    {
+     "family": "F1_zone_tail",
+     "ring": 4,
+     "n_excl": 2,
+     "n_canon_boundary": 1,
+     "cells": [
+      {
+       "cell": 66,
+       "canon_boundary": false
+      },
+      {
+       "cell": 74,
+       "canon_boundary": true
+      }
+     ]
+    },
+    {
+     "family": "F1_zone_tail",
+     "ring": 5,
+     "n_excl": 3,
+     "n_canon_boundary": 1,
+     "cells": [
+      {
+       "cell": 63,
+       "canon_boundary": false
+      },
+      {
+       "cell": 66,
+       "canon_boundary": false
+      },
+      {
+       "cell": 74,
+       "canon_boundary": true
+      }
+     ]
+    },
+    {
+     "family": "F1_zone_tail",
+     "ring": 6,
+     "n_excl": 4,
+     "n_canon_boundary": 1,
+     "cells": [
+      {
+       "cell": 61,
+       "canon_boundary": false
+      },
+      {
+       "cell": 63,
+       "canon_boundary": false
+      },
+      {
+       "cell": 66,
+       "canon_boundary": false
+      },
+      {
+       "cell": 74,
+       "canon_boundary": true
+      }
+     ]
+    }
+   ],
+   "n_admission_would_fire": 5
+  }
+ },
+ "gates": {
+  "C1": {
+   "pass": true,
+   "n_rows": 18,
+   "families": [
+    "F1_zone_tail",
+    "F2_zone_head",
+    "F3_canon_boundary"
+   ],
+   "n_rings": 6,
+   "family_set_disclosure": "the deposited machinery carries THREE families (F1_zone_tail, F2_zone_head, F3_canon_boundary); the pre-registration's '4' counted the exp200/exp205 ledger set \u2014 the census covers EVERY deposited family, complete, not sampled"
+  },
+  "C2": {
+   "pass": true,
+   "branch": "FENCE-BITES",
+   "n_nonempty_excl": 5,
+   "sites": [
+    {
+     "family": "F1_zone_tail",
+     "ring": 2,
+     "excl": [
+      74
+     ]
+    },
+    {
+     "family": "F1_zone_tail",
+     "ring": 3,
+     "excl": [
+      74
+     ]
+    },
+    {
+     "family": "F1_zone_tail",
+     "ring": 4,
+     "excl": [
+      66,
+      74
+     ]
+    },
+    {
+     "family": "F1_zone_tail",
+     "ring": 5,
+     "excl": [
+      63,
+      66,
+      74
+     ]
+    },
+    {
+     "family": "F1_zone_tail",
+     "ring": 6,
+     "excl": [
+      61,
+      63,
+      66,
+      74
+     ]
+    }
+   ]
+  },
+  "C3": {
+   "pass": true,
+   "evaluated": true,
+   "classified_sites": [
+    {
+     "family": "F1_zone_tail",
+     "ring": 2,
+     "n_excl": 1,
+     "n_canon_boundary": 1,
+     "cells": [
+      {
+       "cell": 74,
+       "canon_boundary": true
+      }
+     ]
+    },
+    {
+     "family": "F1_zone_tail",
+     "ring": 3,
+     "n_excl": 1,
+     "n_canon_boundary": 1,
+     "cells": [
+      {
+       "cell": 74,
+       "canon_boundary": true
+      }
+     ]
+    },
+    {
+     "family": "F1_zone_tail",
+     "ring": 4,
+     "n_excl": 2,
+     "n_canon_boundary": 1,
+     "cells": [
+      {
+       "cell": 66,
+       "canon_boundary": false
+      },
+      {
+       "cell": 74,
+       "canon_boundary": true
+      }
+     ]
+    },
+    {
+     "family": "F1_zone_tail",
+     "ring": 5,
+     "n_excl": 3,
+     "n_canon_boundary": 1,
+     "cells": [
+      {
+       "cell": 63,
+       "canon_boundary": false
+      },
+      {
+       "cell": 66,
+       "canon_boundary": false
+      },
+      {
+       "cell": 74,
+       "canon_boundary": true
+      }
+     ]
+    },
+    {
+     "family": "F1_zone_tail",
+     "ring": 6,
+     "n_excl": 4,
+     "n_canon_boundary": 1,
+     "cells": [
+      {
+       "cell": 61,
+       "canon_boundary": false
+      },
+      {
+       "cell": 63,
+       "canon_boundary": false
+      },
+      {
+       "cell": 66,
+       "canon_boundary": false
+      },
+      {
+       "cell": 74,
+       "canon_boundary": true
+      }
+     ]
+    }
+   ],
+   "n_admission_would_fire": 5
+  },
+  "C4": {
+   "pass": true,
+   "all_finite": true,
+   "pin": -35.0
+  }
+ },
+ "verdict": "4/4 gates (C1 C2 C3 C4) | FENCE-BITES",
+ "wall_s": 0.1
+}
