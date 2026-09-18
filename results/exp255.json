@@ -1,0 +1,138 @@
+{
+ "exp": "exp255_pair_count_regression",
+ "rows": [
+  {
+   "host": "H0",
+   "n_boundary_cells": 4,
+   "worst_p3": 0.56
+  },
+  {
+   "host": "H0",
+   "n_boundary_cells": 4,
+   "worst_p3": 0.56
+  },
+  {
+   "host": "H1",
+   "n_boundary_cells": 4,
+   "worst_p3": 0.56
+  },
+  {
+   "host": "H1",
+   "n_boundary_cells": 4,
+   "worst_p3": 0.56
+  },
+  {
+   "host": "H10",
+   "n_boundary_cells": 32,
+   "worst_p3": 0.52
+  },
+  {
+   "host": "H10",
+   "n_boundary_cells": 32,
+   "worst_p3": 0.53
+  },
+  {
+   "host": "H11",
+   "n_boundary_cells": 37,
+   "worst_p3": 0.52
+  },
+  {
+   "host": "H11",
+   "n_boundary_cells": 37,
+   "worst_p3": 0.52
+  },
+  {
+   "host": "H2",
+   "n_boundary_cells": 42,
+   "worst_p3": 0.52
+  },
+  {
+   "host": "H2",
+   "n_boundary_cells": 42,
+   "worst_p3": 0.53
+  },
+  {
+   "host": "H3",
+   "n_boundary_cells": 47,
+   "worst_p3": 3.68
+  },
+  {
+   "host": "H3",
+   "n_boundary_cells": 47,
+   "worst_p3": 3.24
+  },
+  {
+   "host": "H4",
+   "n_boundary_cells": 41,
+   "worst_p3": 0.53
+  },
+  {
+   "host": "H4",
+   "n_boundary_cells": 41,
+   "worst_p3": 0.52
+  },
+  {
+   "host": "H5",
+   "n_boundary_cells": 48,
+   "worst_p3": 3.36
+  },
+  {
+   "host": "H5",
+   "n_boundary_cells": 48,
+   "worst_p3": 2.88
+  },
+  {
+   "host": "H6",
+   "n_boundary_cells": 31,
+   "worst_p3": 0.53
+  },
+  {
+   "host": "H6",
+   "n_boundary_cells": 31,
+   "worst_p3": 0.52
+  },
+  {
+   "host": "H7",
+   "n_boundary_cells": 36,
+   "worst_p3": 0.53
+  },
+  {
+   "host": "H7",
+   "n_boundary_cells": 36,
+   "worst_p3": 0.52
+  },
+  {
+   "host": "H8",
+   "n_boundary_cells": 39,
+   "worst_p3": 0.53
+  },
+  {
+   "host": "H8",
+   "n_boundary_cells": 39,
+   "worst_p3": 0.53
+  },
+  {
+   "host": "H9",
+   "n_boundary_cells": 43,
+   "worst_p3": 0.52
+  },
+  {
+   "host": "H9",
+   "n_boundary_cells": 43,
+   "worst_p3": 0.52
+  }
+ ],
+ "spearman_p3": 0.13739130434782607,
+ "spearman_canon": 0.8573913043478261,
+ "criteria": {
+  "G1_regression": false,
+  "G2_specificity": false,
+  "G3_discipline": true
+ },
+ "branch": "NOT-PAIR-COUNT-DETERMINED",
+ "consumed_deposits": {
+  "exp243": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a"
+ },
+ "notes": "the host-level pair-structure proxy is the base boundary-cell count (the classes records' own field \u2014 the pair cells are the boundary-coupled cells per exp208's classification); the per-host pair shares beyond the argmax are not in the deposits \u2014 disclosed; the boundary-geometry proxy is the zero-knob regressor the deposits carry",
+ "read_only_verified": true
+}
