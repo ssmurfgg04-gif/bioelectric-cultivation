@@ -1,0 +1,1500 @@
+{
+ "exp": "exp235_vmem_transcription",
+ "claim": "THE VMEM->TRANSCRIPTION GROUNDING (Cervera, Levin & Mafe 2026): is the M37 gene layer's response the voltage-gated threshold law \u2014 a_i,g = sigmoid((|V|-gate_g)/w_g) on the window-averaged |V|, gates derived zero-knob from the layer's own recorded activation ranges \u2014 and does the threshold restore the robustness the linear read lacks?",
+ "instrument": {
+  "genes": [
+   "neoblast",
+   "wnt_pos",
+   "wnt_ant",
+   "neural",
+   "generic",
+   "control"
+  ],
+  "gene_layer_source": "exp60's FAMILY_PRIORITY vocabulary + exp60's frozen plane_table; exp64's REC (the adopted M37-A record) deposited as the recorded-response anchor",
+  "exp64_weight_table_anchor": {
+   "trunk": 0.812,
+   "head": 0.75,
+   "tail": 0.74,
+   "none": 0.846
+  },
+  "recorded_gate_table": {
+   "neoblast": {
+    "planes": [
+     "head",
+     "irr",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "wnt_pos": {
+    "planes": [
+     "head",
+     "lateral",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "wnt_ant": {
+    "planes": [
+     "head"
+    ],
+    "range_mV": [
+     20.0,
+     20.0
+    ],
+    "gate": 20.0,
+    "w": 0.0
+   },
+   "neural": {
+    "planes": [
+     "head",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "generic": {
+    "planes": [
+     "crosspiece",
+     "head",
+     "irr",
+     "lateral",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "control": {
+    "planes": [
+     "head",
+     "lateral",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   }
+  },
+  "gate_derivation": "gate_g = the |theta| midpoint of the gene's recorded activation range; w_g = the range's quarter-width; ranges from exp60's frozen plane_table mapped by the layer's own identity constants (head -> |WT_HEAD_V|=20, tail/trunk -> |WT_TAIL_V|=50; none/graft/irr/lateral/crosspiece -> the intact axis [20,50]) \u2014 no new fitting",
+  "battery": "exp73's make_battery, exp79's plateau trio (scale_free, random3, torus) x exp225's 5 target classes (canon + manifest 0/49/99 + the deep -60.0 rung both instances = 6 rows) x exp142's SEEDS (1,2,3)",
+  "write": "exp142's execute_signed semantics (R1 structure on |A|, R2 signed dynamics, exp97 walk, window 24 h, commit noise 0.6, op STAR_OP=(64,0)) with the write window recorded (record_every=10, exp73's frozen stride); the recorded twin asserted bit-identical to execute_signed per instance (final V + err)",
+  "gated_read": "a_i,g = sigmoid((|V_i|-gate_g)/w_g) on the time-averaged |V| over the write window; zero-width ranges take the step limit",
+  "linear_comparator": "the same recorded-range linear ramp \u2014 the M37 layer's existing linear response; same layer, same genes, the only difference the gate",
+  "measured_response": "the layer's committed identity |theta_final| scored linearly on the gene's recorded range (the frozen production read)",
+  "zone_assignment": "the threshold sign read (exp142's sign semantics: the bit is the sign of (field - the field's OWN 2-cluster midline); exp234's landed closure mirrored verbatim, disclosed); the zone ground truth = the sign read of the target's |identity| field",
+  "noise_protocol": "G2's V-noise is read-time Gaussian on the window-averaged |V| (sustained-noise convention, exp233's disclosure precedent), sigma in the pre-named {2,5,10}, deterministic per instance (default_rng([gi, ri, seed]))",
+  "floor": "production NEURAL_SPEC_MIN=-60.0 asserted at import on collective and exp142's captured value (exp218's discipline; no reader-line module imported, no restore needed)",
+  "instances": 54,
+  "rejections": 0,
+  "guard_bit_exact": 54
+ },
+ "gates": {
+  "G1_threshold_law": {
+   "pass": false,
+   "bar": 0.85,
+   "pooled_spearman": 0.847104,
+   "n_triples": 32400,
+   "per_gene_spearman": {
+    "neoblast": 0.88381,
+    "wnt_pos": 0.88381,
+    "wnt_ant": 0.008812,
+    "neural": 0.88381,
+    "generic": 0.88381,
+    "control": 0.88381
+   },
+   "per_class_mean_instance_spearman": {
+    "canon": 0.83771,
+    "manifest": 0.884375,
+    "deep": 0.690223
+   }
+  },
+  "G2_threshold_restores_robustness": {
+   "pass": false,
+   "sigmas": [
+    2.0,
+    5.0,
+    10.0
+   ],
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "drop_gated": {
+    "2.0": 0.0,
+    "5.0": 0.003333,
+    "10.0": 0.058889
+   },
+   "drop_linear": {
+    "2.0": 0.0,
+    "5.0": 0.003333,
+    "10.0": 0.057963
+   },
+   "rule": "the gated read's zone-assignment accuracy drop strictly less than the linear read's at every sigma (pooled over the battery)"
+  },
+  "G3_nernst_alternation": {
+   "pass": true,
+   "bar": 0.8,
+   "within_gene_monotone": {
+    "neoblast": true,
+    "wnt_pos": true,
+    "wnt_ant": true,
+    "neural": true,
+    "generic": true,
+    "control": true
+   },
+   "spearman_gate_vs_range": 1.0,
+   "gate_order": {
+    "neoblast": 35.0,
+    "wnt_pos": 35.0,
+    "wnt_ant": 20.0,
+    "neural": 35.0,
+    "generic": 35.0,
+    "control": 35.0
+   },
+   "range_width": {
+    "neoblast": 30.0,
+    "wnt_pos": 30.0,
+    "wnt_ant": 0.0,
+    "neural": 30.0,
+    "generic": 30.0,
+    "control": 30.0
+   }
+  }
+ },
+ "instances": [
+  {
+   "arm": "scale_free",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 1,
+   "dt": 0.01263157894736842,
+   "err": 0.732,
+   "guard_bit_exact": true,
+   "vbar_mean": 42.5127,
+   "theta_abs_mean": 42.5048,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.95
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.95
+   },
+   "rho_instance": 0.991894
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 2,
+   "dt": 0.01263157894736842,
+   "err": 0.728,
+   "guard_bit_exact": true,
+   "vbar_mean": 42.5124,
+   "theta_abs_mean": 42.5047,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "rho_instance": 0.993686
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 3,
+   "dt": 0.01263157894736842,
+   "err": 0.73,
+   "guard_bit_exact": true,
+   "vbar_mean": 42.5124,
+   "theta_abs_mean": 42.5046,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.97
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.97
+   },
+   "rho_instance": 0.994804
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 1,
+   "dt": 0.01263157894736842,
+   "err": 0.779,
+   "guard_bit_exact": true,
+   "vbar_mean": 42.8882,
+   "theta_abs_mean": 42.8616,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.92
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.91
+   },
+   "rho_instance": 0.997039
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 2,
+   "dt": 0.01263157894736842,
+   "err": 0.809,
+   "guard_bit_exact": true,
+   "vbar_mean": 42.888,
+   "theta_abs_mean": 42.8684,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.88
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.88
+   },
+   "rho_instance": 0.994558
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 3,
+   "dt": 0.01263157894736842,
+   "err": 0.801,
+   "guard_bit_exact": true,
+   "vbar_mean": 42.8881,
+   "theta_abs_mean": 42.8586,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "rho_instance": 0.997169
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 1,
+   "dt": 0.01263157894736842,
+   "err": 0.864,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.3118,
+   "theta_abs_mean": 45.2734,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.98,
+    "10.0": 0.92
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.98,
+    "10.0": 0.92
+   },
+   "rho_instance": 0.972917
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 2,
+   "dt": 0.01263157894736842,
+   "err": 0.886,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.3115,
+   "theta_abs_mean": 45.272,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.94
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.94
+   },
+   "rho_instance": 0.972975
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 3,
+   "dt": 0.01263157894736842,
+   "err": 0.871,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.311,
+   "theta_abs_mean": 45.2781,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.91
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.91
+   },
+   "rho_instance": 0.973515
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 1,
+   "dt": 0.01263157894736842,
+   "err": 0.556,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.574,
+   "theta_abs_mean": 45.4822,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.87
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.87
+   },
+   "rho_instance": 0.764996
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 2,
+   "dt": 0.01263157894736842,
+   "err": 0.585,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.5737,
+   "theta_abs_mean": 45.4921,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.9
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.9
+   },
+   "rho_instance": 0.774173
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 3,
+   "dt": 0.01263157894736842,
+   "err": 0.544,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.5739,
+   "theta_abs_mean": 45.5148,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.83
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.82
+   },
+   "rho_instance": 0.782407
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 1,
+   "dt": 0.01263157894736842,
+   "err": 1.05,
+   "guard_bit_exact": true,
+   "vbar_mean": 51.1013,
+   "theta_abs_mean": 51.0024,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.86
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "rho_instance": 0.621538
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 2,
+   "dt": 0.01263157894736842,
+   "err": 1.058,
+   "guard_bit_exact": true,
+   "vbar_mean": 51.1014,
+   "theta_abs_mean": 50.9927,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.95
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.94
+   },
+   "rho_instance": 0.656451
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 3,
+   "dt": 0.01263157894736842,
+   "err": 1.037,
+   "guard_bit_exact": true,
+   "vbar_mean": 51.1009,
+   "theta_abs_mean": 51.0473,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.96
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.96
+   },
+   "rho_instance": 0.647854
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 1,
+   "dt": 0.01263157894736842,
+   "err": 1.005,
+   "guard_bit_exact": true,
+   "vbar_mean": 50.4971,
+   "theta_abs_mean": 50.3993,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.95
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.95
+   },
+   "rho_instance": 0.687034
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 2,
+   "dt": 0.01263157894736842,
+   "err": 1.016,
+   "guard_bit_exact": true,
+   "vbar_mean": 50.4971,
+   "theta_abs_mean": 50.3896,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.98
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.98
+   },
+   "rho_instance": 0.644276
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 3,
+   "dt": 0.01263157894736842,
+   "err": 0.979,
+   "guard_bit_exact": true,
+   "vbar_mean": 50.4967,
+   "theta_abs_mean": 50.4442,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "rho_instance": 0.636316
+  },
+  {
+   "arm": "random3",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 1,
+   "dt": 0.01791044776119403,
+   "err": 0.218,
+   "guard_bit_exact": true,
+   "vbar_mean": 42.4971,
+   "theta_abs_mean": 42.5049,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "rho_instance": 0.779151
+  },
+  {
+   "arm": "random3",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 2,
+   "dt": 0.01791044776119403,
+   "err": 0.226,
+   "guard_bit_exact": true,
+   "vbar_mean": 42.4968,
+   "theta_abs_mean": 42.5047,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.91
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.91
+   },
+   "rho_instance": 0.757936
+  },
+  {
+   "arm": "random3",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 3,
+   "dt": 0.01791044776119403,
+   "err": 0.222,
+   "guard_bit_exact": true,
+   "vbar_mean": 42.4964,
+   "theta_abs_mean": 42.5046,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.98
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.98
+   },
+   "rho_instance": 0.772908
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 1,
+   "dt": 0.01791044776119403,
+   "err": 0.371,
+   "guard_bit_exact": true,
+   "vbar_mean": 41.9695,
+   "theta_abs_mean": 41.9434,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.94
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.94
+   },
+   "rho_instance": 0.943648
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 2,
+   "dt": 0.01791044776119403,
+   "err": 0.318,
+   "guard_bit_exact": true,
+   "vbar_mean": 41.9693,
+   "theta_abs_mean": 41.9712,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.95
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "rho_instance": 0.935851
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 3,
+   "dt": 0.01791044776119403,
+   "err": 0.346,
+   "guard_bit_exact": true,
+   "vbar_mean": 41.969,
+   "theta_abs_mean": 41.9577,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.92
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.92
+   },
+   "rho_instance": 0.938293
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 1,
+   "dt": 0.01791044776119403,
+   "err": 0.473,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.2709,
+   "theta_abs_mean": 45.2365,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "rho_instance": 0.900939
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 2,
+   "dt": 0.01791044776119403,
+   "err": 0.434,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.2703,
+   "theta_abs_mean": 45.2494,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.94
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.94
+   },
+   "rho_instance": 0.900864
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 3,
+   "dt": 0.01791044776119403,
+   "err": 0.453,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.2699,
+   "theta_abs_mean": 45.2511,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.92
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.92
+   },
+   "rho_instance": 0.883903
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 1,
+   "dt": 0.01791044776119403,
+   "err": 0.601,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.2539,
+   "theta_abs_mean": 45.2379,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.92
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.92
+   },
+   "rho_instance": 0.769499
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 2,
+   "dt": 0.01791044776119403,
+   "err": 0.513,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.2537,
+   "theta_abs_mean": 45.2222,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "rho_instance": 0.790211
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 3,
+   "dt": 0.01791044776119403,
+   "err": 0.571,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.2535,
+   "theta_abs_mean": 45.2213,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.91
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.9
+   },
+   "rho_instance": 0.816192
+  },
+  {
+   "arm": "random3",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 1,
+   "dt": 0.01791044776119403,
+   "err": 0.626,
+   "guard_bit_exact": true,
+   "vbar_mean": 48.97,
+   "theta_abs_mean": 48.913,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.98
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.98
+   },
+   "rho_instance": 0.686097
+  },
+  {
+   "arm": "random3",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 2,
+   "dt": 0.01791044776119403,
+   "err": 0.546,
+   "guard_bit_exact": true,
+   "vbar_mean": 48.9701,
+   "theta_abs_mean": 48.88,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "rho_instance": 0.721011
+  },
+  {
+   "arm": "random3",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 3,
+   "dt": 0.01791044776119403,
+   "err": 0.595,
+   "guard_bit_exact": true,
+   "vbar_mean": 48.9696,
+   "theta_abs_mean": 48.8783,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.92
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.92
+   },
+   "rho_instance": 0.674367
+  },
+  {
+   "arm": "random3",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 1,
+   "dt": 0.01791044776119403,
+   "err": 0.607,
+   "guard_bit_exact": true,
+   "vbar_mean": 48.6672,
+   "theta_abs_mean": 48.6132,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.99
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.99
+   },
+   "rho_instance": 0.722308
+  },
+  {
+   "arm": "random3",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 2,
+   "dt": 0.01791044776119403,
+   "err": 0.537,
+   "guard_bit_exact": true,
+   "vbar_mean": 48.6672,
+   "theta_abs_mean": 48.5803,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.94
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.94
+   },
+   "rho_instance": 0.718077
+  },
+  {
+   "arm": "random3",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 3,
+   "dt": 0.01791044776119403,
+   "err": 0.596,
+   "guard_bit_exact": true,
+   "vbar_mean": 48.6669,
+   "theta_abs_mean": 48.5786,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "rho_instance": 0.767579
+  },
+  {
+   "arm": "torus",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 1,
+   "dt": 0.01764705882352941,
+   "err": 0.265,
+   "guard_bit_exact": true,
+   "vbar_mean": 42.4982,
+   "theta_abs_mean": 42.5049,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.98
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.98
+   },
+   "rho_instance": 0.748535
+  },
+  {
+   "arm": "torus",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 2,
+   "dt": 0.01764705882352941,
+   "err": 0.265,
+   "guard_bit_exact": true,
+   "vbar_mean": 42.4979,
+   "theta_abs_mean": 42.5047,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "rho_instance": 0.742194
+  },
+  {
+   "arm": "torus",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 3,
+   "dt": 0.01764705882352941,
+   "err": 0.257,
+   "guard_bit_exact": true,
+   "vbar_mean": 42.4974,
+   "theta_abs_mean": 42.5046,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "rho_instance": 0.758282
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 1,
+   "dt": 0.01764705882352941,
+   "err": 0.342,
+   "guard_bit_exact": true,
+   "vbar_mean": 41.0734,
+   "theta_abs_mean": 41.0463,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.95
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.95
+   },
+   "rho_instance": 0.895173
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 2,
+   "dt": 0.01764705882352941,
+   "err": 0.325,
+   "guard_bit_exact": true,
+   "vbar_mean": 41.0733,
+   "theta_abs_mean": 41.0392,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.93
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.92
+   },
+   "rho_instance": 0.89068
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 3,
+   "dt": 0.01764705882352941,
+   "err": 0.347,
+   "guard_bit_exact": true,
+   "vbar_mean": 41.0729,
+   "theta_abs_mean": 41.1023,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.94
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.94
+   },
+   "rho_instance": 0.88789
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 1,
+   "dt": 0.01764705882352941,
+   "err": 0.434,
+   "guard_bit_exact": true,
+   "vbar_mean": 44.0437,
+   "theta_abs_mean": 44.0028,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.93
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.94
+   },
+   "rho_instance": 0.87671
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 2,
+   "dt": 0.01764705882352941,
+   "err": 0.389,
+   "guard_bit_exact": true,
+   "vbar_mean": 44.0431,
+   "theta_abs_mean": 43.9919,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.96
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.96
+   },
+   "rho_instance": 0.87753
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 3,
+   "dt": 0.01764705882352941,
+   "err": 0.396,
+   "guard_bit_exact": true,
+   "vbar_mean": 44.0427,
+   "theta_abs_mean": 44.0661,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.85
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.85
+   },
+   "rho_instance": 0.876604
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 1,
+   "dt": 0.01764705882352941,
+   "err": 0.575,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.2597,
+   "theta_abs_mean": 45.1517,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.95
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.95
+   },
+   "rho_instance": 0.808687
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 2,
+   "dt": 0.01764705882352941,
+   "err": 0.566,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.2596,
+   "theta_abs_mean": 45.1833,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.92
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.9
+   },
+   "rho_instance": 0.820902
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 3,
+   "dt": 0.01764705882352941,
+   "err": 0.569,
+   "guard_bit_exact": true,
+   "vbar_mean": 45.2593,
+   "theta_abs_mean": 45.191,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.94
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.94
+   },
+   "rho_instance": 0.834796
+  },
+  {
+   "arm": "torus",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 1,
+   "dt": 0.01764705882352941,
+   "err": 0.605,
+   "guard_bit_exact": true,
+   "vbar_mean": 49.2555,
+   "theta_abs_mean": 49.1434,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.95
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 0.99,
+    "10.0": 0.95
+   },
+   "rho_instance": 0.741861
+  },
+  {
+   "arm": "torus",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 2,
+   "dt": 0.01764705882352941,
+   "err": 0.578,
+   "guard_bit_exact": true,
+   "vbar_mean": 49.2557,
+   "theta_abs_mean": 49.152,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "rho_instance": 0.676718
+  },
+  {
+   "arm": "torus",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 3,
+   "dt": 0.01764705882352941,
+   "err": 0.549,
+   "guard_bit_exact": true,
+   "vbar_mean": 49.2551,
+   "theta_abs_mean": 49.1749,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.99
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.99
+   },
+   "rho_instance": 0.70861
+  },
+  {
+   "arm": "torus",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 1,
+   "dt": 0.01764705882352941,
+   "err": 0.591,
+   "guard_bit_exact": true,
+   "vbar_mean": 48.9573,
+   "theta_abs_mean": 48.8437,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "rho_instance": 0.693078
+  },
+  {
+   "arm": "torus",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 2,
+   "dt": 0.01764705882352941,
+   "err": 0.58,
+   "guard_bit_exact": true,
+   "vbar_mean": 48.9573,
+   "theta_abs_mean": 48.8523,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.97
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.98
+   },
+   "rho_instance": 0.702217
+  },
+  {
+   "arm": "torus",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 3,
+   "dt": 0.01764705882352941,
+   "err": 0.546,
+   "guard_bit_exact": true,
+   "vbar_mean": 48.957,
+   "theta_abs_mean": 48.8752,
+   "acc_gated_0": 1.0,
+   "acc_lin_0": 1.0,
+   "acc_gated_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.96
+   },
+   "acc_lin_sigma": {
+    "2.0": 1.0,
+    "5.0": 1.0,
+    "10.0": 0.95
+   },
+   "rho_instance": 0.718624
+  }
+ ],
+ "criteria": {
+  "G1_threshold_law": false,
+  "G2_threshold_restores_robustness": false,
+  "G3_nernst_alternation": true
+ },
+ "branch": "NOT-GROUNDED",
+ "verdict": "1/3 gates PASS (G1 REFUTE, G2 REFUTE, G3 PASS) -> NOT-GROUNDED (the pre-named branches: all three PASS -> GROUNDED; otherwise NOT-GROUNDED)",
+ "runtime_s": 10.6,
+ "notes": "Operationalization disclosures (docstring byte-unchanged, verified against pre-registration 2132308): (1) the layer's genes = exp60's functional families (the GL-G1 vocabulary \u2014 the layer's recorded unit of response); (2) the recorded activation ranges are derived zero-knob from exp60's frozen plane_table and the layer's own identity constants (WT_HEAD_V/WT_TAIL_V via exp32; the trunk canon = WT_TAIL_V = the stack's TRUNK_V) \u2014 planes without a single canon identity record the intact axis [20,50], so 5/6 genes share the full-axis range and wnt_ant (recorded on the head plane alone) carries the degenerate [20,20] range -> the step-limit gate; the G3(b) Spearman is therefore tie-structured and weak-powered at 6 genes, recorded honestly; (3) the write is exp142's execute_signed mirrored call-for-call with the window recorded \u2014 recording consumes no rng, and the twin is asserted bit-identical (final V + err) against execute_signed itself on every instance; (4) the zone assignment is the threshold sign read of exp142's sign semantics \u2014 exp234's landed _sign_read is a main()-closure and exp142 exposes no field-level read, so the landed form is mirrored verbatim (no frozen file touched); (5) the measured response (G1) is the layer's committed identity |theta_final| scored linearly on the gene's recorded range, while the linear comparator (G2's matched read) is the same ramp applied to the same window-averaged |V| the gated read consumes \u2014 same layer, same genes, the only difference the gate; (6) G2's drops are strict-less as pre-named ('degrades LESS'): a tie (both reads degrade equally, incl. zero) is a REFUTE; (7) the 3 arms are exp79's plateau trio drawn from exp73's make_battery (the stack's landed 3-arm convention, exp233/234/236)."
+}
