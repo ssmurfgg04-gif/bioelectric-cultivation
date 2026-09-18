@@ -1,0 +1,203 @@
+{
+ "exp": "exp262_variance_components",
+ "claim": "THE RESIDUAL VARIANCE COMPONENTS (L239's registered next (a), batch 24 item 1, pre-registration commit 437ee24): the exp229/exp245 boundary residual's unexplained ~68.6% located at the DESIGN level \u2014 exp256's 72 deposited worst errs decomposed into host/arm/seed shares of rank variance by exp229's OLS-on-tied-average-ranks method; the SEED share is the pre-named discriminant",
+ "method": {
+  "response": "the row's worst err (exp256's deposit field worst_err) ranked over the 72 rows \u2014 the tied average ranks (scipy.stats.rankdata, exp229's K3 convention)",
+  "model": "OLS with intercept on the tied average ranks; host (12 levels) / arm (2) / seed (3) entered as reference-coded dummies (first level in the deposit's own order dropped; R^2 invariant to the choice \u2014 asserted)",
+  "attribution": "exp229's exact convention generalized to three factors: the two order-of-entry decompositions (the pre-named order host->arm->seed and its reverse seed->arm->host), each factor's share the symmetric average of its two sequential R^2 increments; unexplained = 1 - R^2_full; sums to 1 exactly, no clamping",
+  "pre_named_entry_order": [
+   "host",
+   "arm",
+   "seed"
+  ],
+  "discriminant": "the SEED share ONLY: <= 0.10 DETERMINISTIC-PER-INSTANCE / >= 0.30 NOISE-LIKE / else MIXED",
+  "method_source": "experiments/exp229_curvature_test.py (the K3 _r2 block, verbatim arithmetic)"
+ },
+ "inputs": {
+  "exp256_deposit": {
+   "path": "results/exp256_row_pair_regression.json",
+   "sha256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+   "rows": 72
+  },
+  "exp229_deposit": {
+   "path": "results/exp229_curvature_test.json",
+   "sha256": "1db200fcd8bac40d1f314bddc855adef073e7d5a61ec0215a023580bf71b5024"
+  },
+  "exp243_deposit_anchor": {
+   "path": "results/exp243_structured_adversarial.json",
+   "sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "matches_exp256_provenance": true
+  }
+ },
+ "data_audit": {
+  "hosts": [
+   "H0",
+   "H1",
+   "H10",
+   "H11",
+   "H2",
+   "H3",
+   "H4",
+   "H5",
+   "H6",
+   "H7",
+   "H8",
+   "H9"
+  ],
+  "arms": [
+   "canonical",
+   "substituted"
+  ],
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n_rows_expected": 72,
+  "n_rows": 72,
+  "n_unique_combos": 72,
+  "complete": true,
+  "all_finite": true,
+  "audits_only_never_gated": {
+   "worst_err_equals_instance_max": "72/72",
+   "ties_census": {
+    "n_distinct_worst_errs": 17,
+    "n_tied_values": 15,
+    "max_multiplicity": 10
+   }
+  }
+ },
+ "attribution": {
+  "r2": {
+   "full": 0.8856196425191314,
+   "host": 0.12132175982261162,
+   "arm": 0.7569724993915794,
+   "seed": 0.00732538330494048,
+   "host_arm": 0.8782942592141911,
+   "arm_seed": 0.7642978826965199
+  },
+  "order_decompositions": {
+   "order_host_arm_seed": {
+    "host": 0.12132175982261162,
+    "arm": 0.7569724993915795,
+    "seed": 0.007325383304940258
+   },
+   "order_seed_arm_host": {
+    "seed": 0.00732538330494048,
+    "arm": 0.7569724993915794,
+    "host": 0.12132175982261151
+   }
+  },
+  "shares_of_rank_variance": {
+   "host": 0.12132175982261156,
+   "arm": 0.7569724993915794,
+   "seed": 0.007325383304940369,
+   "unexplained": 0.11438035748086861
+  },
+  "shares_sum": 0.9999999999999999,
+  "ties_census": {
+   "n_distinct_worst_errs": 17,
+   "n_tied_values": 15,
+   "max_multiplicity": 10
+  }
+ },
+ "gates": {
+  "V1_reproduction": {
+   "pass": true,
+   "bar": "the 72 deposited worsts re-read from exp256's deposit are complete (12 x 2 x 3, no gaps), finite, and the battery's own anchors hold (the deposit's exp243 reproduction records byte-unchanged, sha-verified)",
+   "n_rows": 72,
+   "n_unique_combos": 72,
+   "complete": true,
+   "all_finite": true,
+   "min_worst_err": 0.05,
+   "max_worst_err": 3.68,
+   "exp243_reproduction_record_sha256": "bd412d7285e7944bf126dffdddbbd9ab3d84fe3eefa7ae8d07d7f40e96fcdacb",
+   "exp256_provenance_exp243_sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "exp243_deposit_file_sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "exp243_anchor_match": true
+  },
+  "V2_attribution": {
+   "pass": true,
+   "bar": "the three shares computed as pre-named (the symmetric average of the two order-of-entry decompositions, exp229's exact convention); the split sums to 1 exactly, no clamping; the deposit reports all three plus the residual",
+   "r2_full": 0.8856196425191314,
+   "r2_host_alone": 0.12132175982261162,
+   "r2_arm_alone": 0.7569724993915794,
+   "r2_seed_alone": 0.00732538330494048,
+   "r2_host_arm": 0.8782942592141911,
+   "r2_arm_seed": 0.7642978826965199,
+   "order_decompositions": {
+    "order_host_arm_seed": {
+     "host": 0.12132175982261162,
+     "arm": 0.7569724993915795,
+     "seed": 0.007325383304940258
+    },
+    "order_seed_arm_host": {
+     "seed": 0.00732538330494048,
+     "arm": 0.7569724993915794,
+     "host": 0.12132175982261151
+    }
+   },
+   "shares_of_rank_variance": {
+    "host": 0.12132175982261156,
+    "arm": 0.7569724993915794,
+    "seed": 0.007325383304940369,
+    "unexplained": 0.11438035748086861
+   },
+   "shares_sum": 0.9999999999999999,
+   "reference_coding_invariance_ok": true,
+   "ties_census": {
+    "n_distinct_worst_errs": 17,
+    "n_tied_values": 15,
+    "max_multiplicity": 10
+   }
+  },
+  "V3_discriminant": {
+   "pass": true,
+   "bar": "seed-share <= 0.10 -> DETERMINISTIC-PER-INSTANCE; seed-share >= 0.30 -> NOISE-LIKE; between -> MIXED (the gate reads the SEED share ONLY)",
+   "seed_share": 0.007325383304940369,
+   "branch": "DETERMINISTIC-PER-INSTANCE"
+  },
+  "V4_discipline": {
+   "pass": true,
+   "bar": "exp256's/exp229's deposits READ-ONLY sha-recorded byte-unchanged; deterministic; no wall-clock fields; the -60.0 floor asserted (no exp169 import needed \u2014 the battery is a pure re-read)",
+   "read_only_shas_before": {
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp229_deposit": "1db200fcd8bac40d1f314bddc855adef073e7d5a61ec0215a023580bf71b5024",
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a"
+   },
+   "read_only_shas_after": {
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp229_deposit": "1db200fcd8bac40d1f314bddc855adef073e7d5a61ec0215a023580bf71b5024",
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a"
+   },
+   "read_only_byte_unchanged": true,
+   "deterministic_two_pass_bit_identical": true,
+   "docstring_sha256": "f29596c5c928535225c5eee1ea1c4e2d934afb42c6c6a0a95d31f9339cbe6cae",
+   "docstring_byte_unchanged_vs_437ee24": true,
+   "header_sha256": "68ecfc1c68344d58674aac831f655d02a03377eab9aa4630340c9a276d27b7c1",
+   "header_byte_unchanged_vs_437ee24": true,
+   "floor_at_entry": -60.0,
+   "floor_at_exit": -60.0
+  }
+ },
+ "branch": "DETERMINISTIC-PER-INSTANCE",
+ "verdict": "4/4 gates V1-V4 | DETERMINISTIC-PER-INSTANCE | seed share 0.0073 (<= 0.10 bar) | shares host 0.1213 / arm 0.7570 / seed 0.0073 / unexplained 0.1144 of the 72 worsts' rank variance (R2_full 0.8856) | 12 hosts x 2 arms x 3 seeds, a pure re-read of exp256's deposit",
+ "determinism": {
+  "passes": 2,
+  "bit_identical": true,
+  "result_sha256_pass_a": "2c1409bb571d120a816928879a6678304853716c66c3f7eeb6e199c7360fc003",
+  "result_sha256_pass_b": "2c1409bb571d120a816928879a6678304853716c66c3f7eeb6e199c7360fc003"
+ },
+ "discipline": {
+  "collective_py_untouched": true,
+  "no_exp169_import": true,
+  "no_wall_clock_fields": true,
+  "floor_at_entry": -60.0,
+  "floor_at_exit": -60.0,
+  "docstring_sha256": "f29596c5c928535225c5eee1ea1c4e2d934afb42c6c6a0a95d31f9339cbe6cae",
+  "docstring_byte_unchanged_vs_437ee24": true,
+  "header_sha256": "68ecfc1c68344d58674aac831f655d02a03377eab9aa4630340c9a276d27b7c1",
+  "header_byte_unchanged_vs_437ee24": true,
+  "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically (verified by the run agent across processes)"
+ }
+}
