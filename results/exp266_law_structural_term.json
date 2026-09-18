@@ -1,0 +1,827 @@
+{
+ "exp": "exp266_law_structural_term",
+ "claim": "THE LAW'S STRUCTURAL TERM (L242's registered next (b); batch 25 item 2; zero new simulation \u2014 the exp251/exp253 aggregation line's honest close): the two-channel law's response-domain form needed a STRUCTURAL term (three aggregation forms, one monotone rank ordering 0.936 -> 0.955 -> 0.960, the boundary short of its 24-agreement bar). The batteries since named the structural candidates: the arm indicator (the substitution, exp262's 0.757 share) and the host boundary count (exp255's rho_canon 0.857). On exp256's 72 deposited rows the OLS rank regression (tied average ranks, the exp229 convention) runs the pre-named ladder: M0 the law's pred alone (the battery's own op-level star-point prediction from exp232's deposit), M1 = M0 + the arm indicator, M2 = M1 + the host boundary count (exp243's classes records), M3 = M2 + the arm x boundary interaction; the gates read M3's rank vs the 0.90 bar and M3's boundary agreement vs the exp251 pin form's 21/27",
+ "read": {
+  "mode": "pure deposit re-read + arithmetic; no decode runs; no wall-clock fields; deterministic",
+  "response": "exp256's 72 deposited worst errs",
+  "rank_convention": "tied average ranks (the exp229 convention; exp256's zero-scipy rankdata form verbatim; asserted equal to scipy.stats.rankdata on the 72 errs)",
+  "ladder": {
+   "M0": "the two-channel law's pred alone \u2014 the battery's own op-level prediction: gamma=64, mu=0 -> the pre-named star-point prediction recorded in exp232's deposit (the structure-unchanged v_offset/v_gain families' per-arm preds, mag-invariant); exp256's 12 hosts carry no mapping onto exp232's three arms, so the law term is their pooled mean \u2014 a CONSTANT, disclosed and asserted immaterial (absorbed into the intercept; every gate invariant to its value)",
+   "M1": "M0 + the arm indicator (0/1; the deposit's own arms order: canonical = reference)",
+   "M2": "M1 + the host boundary count (exp243's classes records n_boundary_cells_base, cross-checked against exp256's copied battery classes)",
+   "M3": "M2 + the interaction (arm indicator x host boundary count)"
+  }
+ },
+ "provenance": {
+  "pre_registration": "commit c21b8e6 (batch 25)",
+  "docstring_sha256": "d04302a817aed5b0edc46d80398e7dde5370d437e9a61a8238951627a26ab9dd",
+  "docstring_sha256_at_exit": "d04302a817aed5b0edc46d80398e7dde5370d437e9a61a8238951627a26ab9dd",
+  "consumed_deposits_sha256": {
+   "exp256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+   "exp229": "1db200fcd8bac40d1f314bddc855adef073e7d5a61ec0215a023580bf71b5024",
+   "exp232": "7b6be3f42c80b64e661c26d2cc6d730670a524f6750ba9cf45b363a3dfb7cbe7",
+   "exp243": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "exp251": "fb607d83f2c70130cae5f308b23e8d5e2e46e679ee2ca9cf8fd6e84d7a25d0b6",
+   "exp255": "05cce27989654f1c39c6071645dea62aeb1b0f6ba035dd112f1b18fc4d0ab038",
+   "exp262": "b4fbe19241ea2777bb536df0f0242be05ef7ff15ee21e97cfbd6bfdc2c70716a"
+  },
+  "consumed_deposits_read_only": true,
+  "chain": "exp256's recorded exp243 sha == the live exp243 deposit sha; exp255's recorded exp243 sha == the live sha (both asserted in W1)"
+ },
+ "w1_reproduction": {
+  "complete": true,
+  "all_finite": true,
+  "exp243_anchor": true,
+  "exp256_determinism_self_record": true,
+  "classes_records_match": true,
+  "pass": true,
+  "bar": "exp256's 72 rows complete, finite, sha-verified; exp243's classes records byte-unchanged"
+ },
+ "law_term": {
+  "star_point_preds_per_arm": {
+   "scale_free": 1.5531,
+   "random3": 0.2761,
+   "torus": 0.184
+  },
+  "pooled_constant_used": 0.6710666666666666,
+  "immateriality_audits": {
+   "reference_coding_invariance": true,
+   "m0_constant_value_invariance": true,
+   "scipy_rankdata_crosscheck": true
+  }
+ },
+ "ladder": {
+  "per_model": {
+   "M0": {
+    "r2": 0.0,
+    "spearman": null,
+    "fitted_min": 36.49999999999999,
+    "fitted_max": 36.49999999999999,
+    "fitted_sha256": "4081fd8b5f5280b82946373146d30e5a5384b749f0e6456b23efb378db306c6e"
+   },
+   "M1": {
+    "r2": 0.7569724993915794,
+    "spearman": 0.8700416653192994,
+    "fitted_min": 18.499999999999993,
+    "fitted_max": 54.500000000000014,
+    "fitted_sha256": "dfe3030f6ce8a408407bc3b404f319124aff872937ce23e675f1bd11f9ff08d2"
+   },
+   "M2": {
+    "r2": 0.7887578978195228,
+    "spearman": 0.8840857022082825,
+    "fitted_min": 10.776443860134673,
+    "fitted_max": 58.23160577544061,
+    "fitted_sha256": "5ecec49292d1d95a4102938987e2999e0ade4c2e9d36ea048b1aaa8bf70319ef"
+   },
+   "M3": {
+    "r2": 0.8372756099131045,
+    "spearman": 0.830819344601572,
+    "fitted_min": 1.234131377433465,
+    "fitted_max": 56.31875634283627,
+    "fitted_sha256": "ea458354fc9aa22015e12279f2e6c571dbcc051ec1712d5459887a896bfb12b6"
+   }
+  },
+  "gate_reading": "Spearman between the fitted values and the observed worst errs (tied average ranks both sides) \u2014 the fitted values are rank-scale by construction",
+  "cross_reference": "M1's R^2 on the tied ranks IS exp262's arm share 0.7570 \u2014 the two instruments agree on the same 72 rows"
+ },
+ "boundary": {
+  "pin_form": "read from results/exp251.json: a row agrees iff (predicted err < BAR) == (observed err < BAR); the deposit's 27 rows reconstruct BAR = 6.0 exactly (asserted) \u2014 exp243's A1 adversarial-structured hold bar",
+  "bar": "M3's boundary agreement >= the exp251/exp253 form's 21/27 (the docstring's pre-named bar; exp251's pop-RMS form recorded 18/27, exp253's deg-weighted form 21/27)",
+  "bar_rate": 0.7777777777777778,
+  "exp251_agreement": 18,
+  "exp253_agreement": 21,
+  "agreement_per_model": {
+   "M0": 72,
+   "M1": 72,
+   "M2": 72,
+   "M3": 72
+  },
+  "m3_agreement": 72,
+  "m3_agreement_rate": 1.0,
+  "vacuity_disclosure": "the battery never crosses the pin: max worst err 3.68 << BAR 6.0, so every row sits on the pass side and the agreement is structurally 72/72 for ANY model \u2014 the exp251/exp253 boundary disagreements lived on the exp233 27-point response grid, which crosses 6.0; the non-vacuous boundary-face read on THIS battery is W2's rank face (disclosed, the gate evaluated exactly as pre-registered)",
+  "predicted_err_transform": "the fitted ranks mapped monotonically onto the battery's own observed err pool (zero-knob rank->err back-transform, np.interp, endpoint-clamped; the map is bounded by the observed pool)"
+ },
+ "gates": {
+  "W1_reproduction": {
+   "pass": true,
+   "clauses": {
+    "complete": true,
+    "all_finite": true,
+    "exp243_anchor": true,
+    "exp256_determinism_self_record": true,
+    "classes_records_match": true
+   }
+  },
+  "W2_rank_ladder": {
+   "pass": false,
+   "bar": "M3's rank >= 0.90 (Spearman between the full-model fitted ranks and the observed worst-err ranks, tied average ranks, the exp229 convention)",
+   "bar_value": 0.9,
+   "ranks_reported": {
+    "M0": null,
+    "M1": 0.8700416653192994,
+    "M2": 0.8840857022082825,
+    "M3": 0.830819344601572
+   },
+   "r2_reported": {
+    "M0": 0.0,
+    "M1": 0.7569724993915794,
+    "M2": 0.7887578978195228,
+    "M3": 0.8372756099131045
+   },
+   "rank_M3": 0.830819344601572
+  },
+  "W3_boundary": {
+   "pass": true,
+   "bar": "M3's boundary agreement >= 21/27 (the exp251/exp253 pin form at BAR=6.0)",
+   "agreement_M3": 72,
+   "rate_M3": 1.0,
+   "bar_rate": 0.7777777777777778,
+   "per_model_agreement": {
+    "M0": 72,
+    "M1": 72,
+    "M2": 72,
+    "M3": 72
+   }
+  },
+  "W4_discipline": {
+   "pass": true,
+   "clauses": {
+    "all_deposits_read_only_byte_unchanged": true,
+    "deterministic_recompute_bit_identical": true,
+    "floor_prod_-60.0_exit_pending_assert": true,
+    "no_wall_clock_fields": true
+   },
+   "named_clauses": "all deposits READ-ONLY sha-recorded; deterministic; no wall-clock fields; the -60.0 floor asserted at exit",
+   "consumed_deposits_sha256": {
+    "exp256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp229": "1db200fcd8bac40d1f314bddc855adef073e7d5a61ec0215a023580bf71b5024",
+    "exp232": "7b6be3f42c80b64e661c26d2cc6d730670a524f6750ba9cf45b363a3dfb7cbe7",
+    "exp243": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp251": "fb607d83f2c70130cae5f308b23e8d5e2e46e679ee2ca9cf8fd6e84d7a25d0b6",
+    "exp255": "05cce27989654f1c39c6071645dea62aeb1b0f6ba035dd112f1b18fc4d0ab038",
+    "exp262": "b4fbe19241ea2777bb536df0f0242be05ef7ff15ee21e97cfbd6bfdc2c70716a"
+   },
+   "determinism": {
+    "passes": 2,
+    "method": "the full core (reproduction + ladder + boundary) recomputed in a second pass; canonical-JSON shas compared",
+    "core_sha256_pass_a": "d0d9caded1bb705959cd926809e549e6bd79699b8d8b80e91a4d0e5016b4b9ec",
+    "core_sha256_pass_b": "d0d9caded1bb705959cd926809e549e6bd79699b8d8b80e91a4d0e5016b4b9ec",
+    "bit_identical": true
+   }
+  }
+ },
+ "rows": [
+  {
+   "host": "H0",
+   "arm": "canonical",
+   "seed": 1,
+   "worst_err": 0.06,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 4.0,
+   "fitted_rank_M3": 1.234131377433465
+  },
+  {
+   "host": "H0",
+   "arm": "substituted",
+   "seed": 1,
+   "worst_err": 0.53,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 4.0,
+   "fitted_rank_M3": 56.31875634283627
+  },
+  {
+   "host": "H0",
+   "arm": "canonical",
+   "seed": 2,
+   "worst_err": 0.05,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 4.0,
+   "fitted_rank_M3": 1.234131377433465
+  },
+  {
+   "host": "H0",
+   "arm": "substituted",
+   "seed": 2,
+   "worst_err": 0.56,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 4.0,
+   "fitted_rank_M3": 56.31875634283627
+  },
+  {
+   "host": "H0",
+   "arm": "canonical",
+   "seed": 3,
+   "worst_err": 0.05,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 4.0,
+   "fitted_rank_M3": 1.234131377433465
+  },
+  {
+   "host": "H0",
+   "arm": "substituted",
+   "seed": 3,
+   "worst_err": 0.53,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 4.0,
+   "fitted_rank_M3": 56.31875634283627
+  },
+  {
+   "host": "H1",
+   "arm": "canonical",
+   "seed": 1,
+   "worst_err": 0.06,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 4.0,
+   "fitted_rank_M3": 1.234131377433465
+  },
+  {
+   "host": "H1",
+   "arm": "substituted",
+   "seed": 1,
+   "worst_err": 0.53,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 4.0,
+   "fitted_rank_M3": 56.31875634283627
+  },
+  {
+   "host": "H1",
+   "arm": "canonical",
+   "seed": 2,
+   "worst_err": 0.05,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 4.0,
+   "fitted_rank_M3": 1.234131377433465
+  },
+  {
+   "host": "H1",
+   "arm": "substituted",
+   "seed": 2,
+   "worst_err": 0.56,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 4.0,
+   "fitted_rank_M3": 56.31875634283627
+  },
+  {
+   "host": "H1",
+   "arm": "canonical",
+   "seed": 3,
+   "worst_err": 0.05,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 4.0,
+   "fitted_rank_M3": 1.234131377433465
+  },
+  {
+   "host": "H1",
+   "arm": "substituted",
+   "seed": 3,
+   "worst_err": 0.53,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 4.0,
+   "fitted_rank_M3": 56.31875634283627
+  },
+  {
+   "host": "H10",
+   "arm": "canonical",
+   "seed": 1,
+   "worst_err": 0.14,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 32.0,
+   "fitted_rank_M3": 17.53000738075476
+  },
+  {
+   "host": "H10",
+   "arm": "substituted",
+   "seed": 1,
+   "worst_err": 0.49,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 32.0,
+   "fitted_rank_M3": 54.602177322631135
+  },
+  {
+   "host": "H10",
+   "arm": "canonical",
+   "seed": 2,
+   "worst_err": 0.13,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 32.0,
+   "fitted_rank_M3": 17.53000738075476
+  },
+  {
+   "host": "H10",
+   "arm": "substituted",
+   "seed": 2,
+   "worst_err": 0.49,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 32.0,
+   "fitted_rank_M3": 54.602177322631135
+  },
+  {
+   "host": "H10",
+   "arm": "canonical",
+   "seed": 3,
+   "worst_err": 0.14,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 32.0,
+   "fitted_rank_M3": 17.53000738075476
+  },
+  {
+   "host": "H10",
+   "arm": "substituted",
+   "seed": 3,
+   "worst_err": 0.53,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 32.0,
+   "fitted_rank_M3": 54.602177322631135
+  },
+  {
+   "host": "H11",
+   "arm": "canonical",
+   "seed": 1,
+   "worst_err": 0.16,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 37.0,
+   "fitted_rank_M3": 20.439985238490706
+  },
+  {
+   "host": "H11",
+   "arm": "substituted",
+   "seed": 1,
+   "worst_err": 0.5,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 37.0,
+   "fitted_rank_M3": 54.29564535473736
+  },
+  {
+   "host": "H11",
+   "arm": "canonical",
+   "seed": 2,
+   "worst_err": 0.16,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 37.0,
+   "fitted_rank_M3": 20.439985238490706
+  },
+  {
+   "host": "H11",
+   "arm": "substituted",
+   "seed": 2,
+   "worst_err": 0.5,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 37.0,
+   "fitted_rank_M3": 54.29564535473736
+  },
+  {
+   "host": "H11",
+   "arm": "canonical",
+   "seed": 3,
+   "worst_err": 0.16,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 37.0,
+   "fitted_rank_M3": 20.439985238490706
+  },
+  {
+   "host": "H11",
+   "arm": "substituted",
+   "seed": 3,
+   "worst_err": 0.52,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 37.0,
+   "fitted_rank_M3": 54.29564535473736
+  },
+  {
+   "host": "H2",
+   "arm": "canonical",
+   "seed": 1,
+   "worst_err": 0.16,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 42.0,
+   "fitted_rank_M3": 23.349963096226652
+  },
+  {
+   "host": "H2",
+   "arm": "substituted",
+   "seed": 1,
+   "worst_err": 0.5,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 42.0,
+   "fitted_rank_M3": 53.98911338684358
+  },
+  {
+   "host": "H2",
+   "arm": "canonical",
+   "seed": 2,
+   "worst_err": 0.17,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 42.0,
+   "fitted_rank_M3": 23.349963096226652
+  },
+  {
+   "host": "H2",
+   "arm": "substituted",
+   "seed": 2,
+   "worst_err": 0.49,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 42.0,
+   "fitted_rank_M3": 53.98911338684358
+  },
+  {
+   "host": "H2",
+   "arm": "canonical",
+   "seed": 3,
+   "worst_err": 0.17,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 42.0,
+   "fitted_rank_M3": 23.349963096226652
+  },
+  {
+   "host": "H2",
+   "arm": "substituted",
+   "seed": 3,
+   "worst_err": 0.53,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 42.0,
+   "fitted_rank_M3": 53.98911338684358
+  },
+  {
+   "host": "H3",
+   "arm": "canonical",
+   "seed": 1,
+   "worst_err": 0.17,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 47.0,
+   "fitted_rank_M3": 26.259940953962598
+  },
+  {
+   "host": "H3",
+   "arm": "substituted",
+   "seed": 1,
+   "worst_err": 3.68,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 47.0,
+   "fitted_rank_M3": 53.68258141894981
+  },
+  {
+   "host": "H3",
+   "arm": "canonical",
+   "seed": 2,
+   "worst_err": 0.17,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 47.0,
+   "fitted_rank_M3": 26.259940953962598
+  },
+  {
+   "host": "H3",
+   "arm": "substituted",
+   "seed": 2,
+   "worst_err": 3.68,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 47.0,
+   "fitted_rank_M3": 53.68258141894981
+  },
+  {
+   "host": "H3",
+   "arm": "canonical",
+   "seed": 3,
+   "worst_err": 0.18,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 47.0,
+   "fitted_rank_M3": 26.259940953962598
+  },
+  {
+   "host": "H3",
+   "arm": "substituted",
+   "seed": 3,
+   "worst_err": 3.68,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 47.0,
+   "fitted_rank_M3": 53.68258141894981
+  },
+  {
+   "host": "H4",
+   "arm": "canonical",
+   "seed": 1,
+   "worst_err": 0.13,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 41.0,
+   "fitted_rank_M3": 22.767967524679463
+  },
+  {
+   "host": "H4",
+   "arm": "substituted",
+   "seed": 1,
+   "worst_err": 0.49,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 41.0,
+   "fitted_rank_M3": 54.05041978042234
+  },
+  {
+   "host": "H4",
+   "arm": "canonical",
+   "seed": 2,
+   "worst_err": 0.14,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 41.0,
+   "fitted_rank_M3": 22.767967524679463
+  },
+  {
+   "host": "H4",
+   "arm": "substituted",
+   "seed": 2,
+   "worst_err": 0.5,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 41.0,
+   "fitted_rank_M3": 54.05041978042234
+  },
+  {
+   "host": "H4",
+   "arm": "canonical",
+   "seed": 3,
+   "worst_err": 0.14,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 41.0,
+   "fitted_rank_M3": 22.767967524679463
+  },
+  {
+   "host": "H4",
+   "arm": "substituted",
+   "seed": 3,
+   "worst_err": 0.53,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 41.0,
+   "fitted_rank_M3": 54.05041978042234
+  },
+  {
+   "host": "H5",
+   "arm": "canonical",
+   "seed": 1,
+   "worst_err": 0.19,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 48.0,
+   "fitted_rank_M3": 26.841936525509787
+  },
+  {
+   "host": "H5",
+   "arm": "substituted",
+   "seed": 1,
+   "worst_err": 3.35,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 48.0,
+   "fitted_rank_M3": 53.62127502537106
+  },
+  {
+   "host": "H5",
+   "arm": "canonical",
+   "seed": 2,
+   "worst_err": 0.19,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 48.0,
+   "fitted_rank_M3": 26.841936525509787
+  },
+  {
+   "host": "H5",
+   "arm": "substituted",
+   "seed": 2,
+   "worst_err": 3.36,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 48.0,
+   "fitted_rank_M3": 53.62127502537106
+  },
+  {
+   "host": "H5",
+   "arm": "canonical",
+   "seed": 3,
+   "worst_err": 0.19,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 48.0,
+   "fitted_rank_M3": 26.841936525509787
+  },
+  {
+   "host": "H5",
+   "arm": "substituted",
+   "seed": 3,
+   "worst_err": 3.36,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 48.0,
+   "fitted_rank_M3": 53.62127502537106
+  },
+  {
+   "host": "H6",
+   "arm": "canonical",
+   "seed": 1,
+   "worst_err": 0.14,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 31.0,
+   "fitted_rank_M3": 16.94801180920757
+  },
+  {
+   "host": "H6",
+   "arm": "substituted",
+   "seed": 1,
+   "worst_err": 0.49,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 31.0,
+   "fitted_rank_M3": 54.66348371620989
+  },
+  {
+   "host": "H6",
+   "arm": "canonical",
+   "seed": 2,
+   "worst_err": 0.14,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 31.0,
+   "fitted_rank_M3": 16.94801180920757
+  },
+  {
+   "host": "H6",
+   "arm": "substituted",
+   "seed": 2,
+   "worst_err": 0.49,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 31.0,
+   "fitted_rank_M3": 54.66348371620989
+  },
+  {
+   "host": "H6",
+   "arm": "canonical",
+   "seed": 3,
+   "worst_err": 0.14,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 31.0,
+   "fitted_rank_M3": 16.94801180920757
+  },
+  {
+   "host": "H6",
+   "arm": "substituted",
+   "seed": 3,
+   "worst_err": 0.53,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 31.0,
+   "fitted_rank_M3": 54.66348371620989
+  },
+  {
+   "host": "H7",
+   "arm": "canonical",
+   "seed": 1,
+   "worst_err": 0.15,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 36.0,
+   "fitted_rank_M3": 19.857989666943517
+  },
+  {
+   "host": "H7",
+   "arm": "substituted",
+   "seed": 1,
+   "worst_err": 0.49,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 36.0,
+   "fitted_rank_M3": 54.35695174831612
+  },
+  {
+   "host": "H7",
+   "arm": "canonical",
+   "seed": 2,
+   "worst_err": 0.15,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 36.0,
+   "fitted_rank_M3": 19.857989666943517
+  },
+  {
+   "host": "H7",
+   "arm": "substituted",
+   "seed": 2,
+   "worst_err": 0.49,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 36.0,
+   "fitted_rank_M3": 54.35695174831612
+  },
+  {
+   "host": "H7",
+   "arm": "canonical",
+   "seed": 3,
+   "worst_err": 0.15,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 36.0,
+   "fitted_rank_M3": 19.857989666943517
+  },
+  {
+   "host": "H7",
+   "arm": "substituted",
+   "seed": 3,
+   "worst_err": 0.53,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 36.0,
+   "fitted_rank_M3": 54.35695174831612
+  },
+  {
+   "host": "H8",
+   "arm": "canonical",
+   "seed": 1,
+   "worst_err": 0.14,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 39.0,
+   "fitted_rank_M3": 21.603976381585085
+  },
+  {
+   "host": "H8",
+   "arm": "substituted",
+   "seed": 1,
+   "worst_err": 0.52,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 39.0,
+   "fitted_rank_M3": 54.173032567579845
+  },
+  {
+   "host": "H8",
+   "arm": "canonical",
+   "seed": 2,
+   "worst_err": 0.14,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 39.0,
+   "fitted_rank_M3": 21.603976381585085
+  },
+  {
+   "host": "H8",
+   "arm": "substituted",
+   "seed": 2,
+   "worst_err": 0.53,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 39.0,
+   "fitted_rank_M3": 54.173032567579845
+  },
+  {
+   "host": "H8",
+   "arm": "canonical",
+   "seed": 3,
+   "worst_err": 0.14,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 39.0,
+   "fitted_rank_M3": 21.603976381585085
+  },
+  {
+   "host": "H8",
+   "arm": "substituted",
+   "seed": 3,
+   "worst_err": 0.5,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 39.0,
+   "fitted_rank_M3": 54.173032567579845
+  },
+  {
+   "host": "H9",
+   "arm": "canonical",
+   "seed": 1,
+   "worst_err": 0.16,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 43.0,
+   "fitted_rank_M3": 23.93195866777384
+  },
+  {
+   "host": "H9",
+   "arm": "substituted",
+   "seed": 1,
+   "worst_err": 0.5,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 43.0,
+   "fitted_rank_M3": 53.92780699326483
+  },
+  {
+   "host": "H9",
+   "arm": "canonical",
+   "seed": 2,
+   "worst_err": 0.15,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 43.0,
+   "fitted_rank_M3": 23.93195866777384
+  },
+  {
+   "host": "H9",
+   "arm": "substituted",
+   "seed": 2,
+   "worst_err": 0.49,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 43.0,
+   "fitted_rank_M3": 53.92780699326483
+  },
+  {
+   "host": "H9",
+   "arm": "canonical",
+   "seed": 3,
+   "worst_err": 0.15,
+   "arm_indicator": 0.0,
+   "host_boundary_count": 43.0,
+   "fitted_rank_M3": 23.93195866777384
+  },
+  {
+   "host": "H9",
+   "arm": "substituted",
+   "seed": 3,
+   "worst_err": 0.52,
+   "arm_indicator": 1.0,
+   "host_boundary_count": 43.0,
+   "fitted_rank_M3": 53.92780699326483
+  }
+ ],
+ "branch": "LAW-OPEN",
+ "verdict": "3/4 gates W1-W4 | LAW-OPEN | rank ladder M0 rank degenerate(const pred) (R2 0.0000) | M1 rank 0.8700 (R2 0.7570) | M2 rank 0.8841 (R2 0.7888) | M3 rank 0.8308 (R2 0.8373) (W2 bar 0.90) | boundary agreement M3 72/72 at the exp251 pin (bar 21/27) [the battery never crosses the 6.0 pin \u2014 the face is trivially held]",
+ "notes": "The honest close: the structural terms do NOT close the law's rank gap on the deposited battery. The arm indicator alone reaches rho 0.8700 (R^2 0.7570 = exp262's arm share exactly), the host boundary count lifts it to 0.8841, and the pre-named interaction REGRESSES it to 0.8308 \u2014 the boundary count helps only WITHIN the substituted arm (the interaction's own face) while the additive main effect spreads the canonical rows' near-tied fitted ranks. M3 falls short of the 0.90 bar -> LAW-OPEN per the pre-named REFUTE branch: the form needs the read's own response surface, not more deposit-level structure. The boundary face is trivially held on this battery (no row crosses the 6.0 pin) \u2014 recorded, not re-litigated.",
+ "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically (two in-run core passes sha-compared)"
+}
