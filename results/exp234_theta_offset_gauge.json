@@ -1,0 +1,1729 @@
+{
+ "exp": "exp234_theta_offset_gauge (exp232's registered next (b); ledger L210)",
+ "branch": "GAUGE-MODE",
+ "machinery": {
+  "battery": "exp73_active_renormalization.make_battery (exp79's make_battery pattern)",
+  "labeling": "exp43_substrate_independence.labeling",
+  "star_protocol": "exp79_two_channel_law RUN_T/DT at (gamma=64, mu=0); exp232's run_instance th_offset intervention verbatim",
+  "read": "exp178's production scoped read = exp148_temporal_read.decode('scoped') with exp169's f_max_frames; medium presentation via exp142's _StaticMedium",
+  "mi": "cultivation.information.mutual_info.estimate_mi_joint (exp5's machinery, bins=4)"
+ },
+ "zero_mode": {
+  "operator": "the (V,theta) block operator of the stack's linearized update (collective.py step drift), built from the live collective's matrices; the uniform vector is the gauge direction",
+  "operating_points": [
+   {
+    "op": "star",
+    "gamma": 64.0,
+    "mu": 0.0,
+    "kappa": 1.0,
+    "max_abs_M1_over_arms": 2.2648549702353193e-14,
+    "pass": true
+   },
+   {
+    "op": "plateau",
+    "gamma": 0.25,
+    "mu": 0.015,
+    "kappa": 1.0,
+    "max_abs_M1_over_arms": 1.3322676295501878e-15,
+    "pass": true
+   },
+   {
+    "op": "kappa-half",
+    "gamma": 64.0,
+    "mu": 0.015,
+    "kappa": 0.5,
+    "max_abs_M1_over_arms": 4.551914400963142e-14,
+    "pass": true
+   }
+  ],
+  "bar": 1e-09,
+  "named_breakers": {
+   "wound_constants": {
+    "wound_voltage": -30.0,
+    "blastema_theta": -40.0
+   },
+   "physiological_clips": [
+    -85.0,
+    5.0
+   ],
+   "inactive_at": "every interior operating point tested"
+  }
+ },
+ "T1": {
+  "rows": [
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 0.0,
+    "err0": 0.5683,
+    "err_T": {
+     "1.0": 0.5856,
+     "6.0": 0.6414,
+     "24.0": 0.8373,
+     "96.0": 1.5057
+    },
+    "max_dev_from_T1": 0.9201,
+    "pass": false,
+    "gated": false
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 0.0,
+    "err0": 0.5741,
+    "err_T": {
+     "1.0": 0.5862,
+     "6.0": 0.6361,
+     "24.0": 0.8332,
+     "96.0": 1.5078
+    },
+    "max_dev_from_T1": 0.9216,
+    "pass": false,
+    "gated": false
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 0.0,
+    "err0": 0.5761,
+    "err_T": {
+     "1.0": 0.587,
+     "6.0": 0.6453,
+     "24.0": 0.8287,
+     "96.0": 1.5045
+    },
+    "max_dev_from_T1": 0.9175,
+    "pass": false,
+    "gated": false
+   },
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 5.0,
+    "err0": 0.5683,
+    "err_T": {
+     "1.0": 5.0288,
+     "6.0": 5.0347,
+     "24.0": 5.0638,
+     "96.0": 5.2166
+    },
+    "max_dev_from_T1": 0.1879,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 5.0,
+    "err0": 0.5741,
+    "err_T": {
+     "1.0": 5.0359,
+     "6.0": 5.0433,
+     "24.0": 5.067,
+     "96.0": 5.2142
+    },
+    "max_dev_from_T1": 0.1783,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 5.0,
+    "err0": 0.5761,
+    "err_T": {
+     "1.0": 5.0351,
+     "6.0": 5.0401,
+     "24.0": 5.068,
+     "96.0": 5.2208
+    },
+    "max_dev_from_T1": 0.1858,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 10.0,
+    "err0": 0.5683,
+    "err_T": {
+     "1.0": 10.0086,
+     "6.0": 10.0111,
+     "24.0": 10.026,
+     "96.0": 10.1043
+    },
+    "max_dev_from_T1": 0.0957,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 10.0,
+    "err0": 0.5741,
+    "err_T": {
+     "1.0": 10.0157,
+     "6.0": 10.0201,
+     "24.0": 10.0296,
+     "96.0": 10.1015
+    },
+    "max_dev_from_T1": 0.0858,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 10.0,
+    "err0": 0.5761,
+    "err_T": {
+     "1.0": 10.0148,
+     "6.0": 10.0163,
+     "24.0": 10.031,
+     "96.0": 10.1088
+    },
+    "max_dev_from_T1": 0.094,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 20.0,
+    "err0": 0.5683,
+    "err_T": {
+     "1.0": 19.9937,
+     "6.0": 19.9946,
+     "24.0": 20.0023,
+     "96.0": 20.0418
+    },
+    "max_dev_from_T1": 0.0481,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 20.0,
+    "err0": 0.5741,
+    "err_T": {
+     "1.0": 20.0009,
+     "6.0": 20.0038,
+     "24.0": 20.006,
+     "96.0": 20.0389
+    },
+    "max_dev_from_T1": 0.038,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 20.0,
+    "err0": 0.5761,
+    "err_T": {
+     "1.0": 20.0,
+     "6.0": 19.9997,
+     "24.0": 20.0076,
+     "96.0": 20.0465
+    },
+    "max_dev_from_T1": 0.0465,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 0.0,
+    "err0": 0.2604,
+    "err_T": {
+     "1.0": 0.2606,
+     "6.0": 0.2814,
+     "24.0": 0.3778,
+     "96.0": 0.7444
+    },
+    "max_dev_from_T1": 0.4838,
+    "pass": true,
+    "gated": false
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 0.0,
+    "err0": 0.2685,
+    "err_T": {
+     "1.0": 0.2708,
+     "6.0": 0.2921,
+     "24.0": 0.3835,
+     "96.0": 0.7371
+    },
+    "max_dev_from_T1": 0.4663,
+    "pass": true,
+    "gated": false
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 0.0,
+    "err0": 0.2696,
+    "err_T": {
+     "1.0": 0.2631,
+     "6.0": 0.2848,
+     "24.0": 0.3957,
+     "96.0": 0.7442
+    },
+    "max_dev_from_T1": 0.4811,
+    "pass": true,
+    "gated": false
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 5.0,
+    "err0": 0.2604,
+    "err_T": {
+     "1.0": 5.0041,
+     "6.0": 5.0056,
+     "24.0": 5.007,
+     "96.0": 5.0542
+    },
+    "max_dev_from_T1": 0.0501,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 5.0,
+    "err0": 0.2685,
+    "err_T": {
+     "1.0": 5.0064,
+     "6.0": 5.0016,
+     "24.0": 5.0113,
+     "96.0": 5.0506
+    },
+    "max_dev_from_T1": 0.0442,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 5.0,
+    "err0": 0.2696,
+    "err_T": {
+     "1.0": 5.0072,
+     "6.0": 5.0049,
+     "24.0": 5.0171,
+     "96.0": 5.0513
+    },
+    "max_dev_from_T1": 0.0441,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 10.0,
+    "err0": 0.2604,
+    "err_T": {
+     "1.0": 9.9976,
+     "6.0": 9.9985,
+     "24.0": 9.9968,
+     "96.0": 10.0236
+    },
+    "max_dev_from_T1": 0.026,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 10.0,
+    "err0": 0.2685,
+    "err_T": {
+     "1.0": 9.9996,
+     "6.0": 9.9942,
+     "24.0": 10.0008,
+     "96.0": 10.0205
+    },
+    "max_dev_from_T1": 0.0209,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 10.0,
+    "err0": 0.2696,
+    "err_T": {
+     "1.0": 10.0007,
+     "6.0": 9.9977,
+     "24.0": 10.0062,
+     "96.0": 10.0208
+    },
+    "max_dev_from_T1": 0.0201,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 20.0,
+    "err0": 0.2604,
+    "err_T": {
+     "1.0": 19.9896,
+     "6.0": 19.9903,
+     "24.0": 19.987,
+     "96.0": 20.0035
+    },
+    "max_dev_from_T1": 0.0139,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 20.0,
+    "err0": 0.2685,
+    "err_T": {
+     "1.0": 19.9915,
+     "6.0": 19.9859,
+     "24.0": 19.9909,
+     "96.0": 20.0007
+    },
+    "max_dev_from_T1": 0.0092,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 20.0,
+    "err0": 0.2696,
+    "err_T": {
+     "1.0": 19.9927,
+     "6.0": 19.9895,
+     "24.0": 19.996,
+     "96.0": 20.0007
+    },
+    "max_dev_from_T1": 0.008,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 0.0,
+    "err0": 0.1439,
+    "err_T": {
+     "1.0": 0.1409,
+     "6.0": 0.1497,
+     "24.0": 0.1977,
+     "96.0": 0.3854
+    },
+    "max_dev_from_T1": 0.2445,
+    "pass": true,
+    "gated": false
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 0.0,
+    "err0": 0.1377,
+    "err_T": {
+     "1.0": 0.1414,
+     "6.0": 0.1563,
+     "24.0": 0.1989,
+     "96.0": 0.3779
+    },
+    "max_dev_from_T1": 0.2364,
+    "pass": true,
+    "gated": false
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 0.0,
+    "err0": 0.1326,
+    "err_T": {
+     "1.0": 0.1416,
+     "6.0": 0.1538,
+     "24.0": 0.1994,
+     "96.0": 0.3733
+    },
+    "max_dev_from_T1": 0.2317,
+    "pass": true,
+    "gated": false
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 5.0,
+    "err0": 0.1439,
+    "err_T": {
+     "1.0": 4.9947,
+     "6.0": 4.9937,
+     "24.0": 4.9917,
+     "96.0": 5.0134
+    },
+    "max_dev_from_T1": 0.0187,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 5.0,
+    "err0": 0.1377,
+    "err_T": {
+     "1.0": 5.0062,
+     "6.0": 4.9959,
+     "24.0": 4.9925,
+     "96.0": 5.0092
+    },
+    "max_dev_from_T1": 0.0137,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 5.0,
+    "err0": 0.1326,
+    "err_T": {
+     "1.0": 4.9982,
+     "6.0": 5.001,
+     "24.0": 5.0001,
+     "96.0": 5.0141
+    },
+    "max_dev_from_T1": 0.0159,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 10.0,
+    "err0": 0.1439,
+    "err_T": {
+     "1.0": 9.9906,
+     "6.0": 9.9894,
+     "24.0": 9.9866,
+     "96.0": 10.0029
+    },
+    "max_dev_from_T1": 0.0122,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 10.0,
+    "err0": 0.1377,
+    "err_T": {
+     "1.0": 10.0021,
+     "6.0": 9.9916,
+     "24.0": 9.9874,
+     "96.0": 9.999
+    },
+    "max_dev_from_T1": 0.0147,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 10.0,
+    "err0": 0.1326,
+    "err_T": {
+     "1.0": 9.9941,
+     "6.0": 9.9967,
+     "24.0": 9.995,
+     "96.0": 10.004
+    },
+    "max_dev_from_T1": 0.0099,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 20.0,
+    "err0": 0.1439,
+    "err_T": {
+     "1.0": 19.9839,
+     "6.0": 19.9826,
+     "24.0": 19.9794,
+     "96.0": 19.9929
+    },
+    "max_dev_from_T1": 0.009,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 20.0,
+    "err0": 0.1377,
+    "err_T": {
+     "1.0": 19.9954,
+     "6.0": 19.9847,
+     "24.0": 19.9802,
+     "96.0": 19.9891
+    },
+    "max_dev_from_T1": 0.0152,
+    "pass": true,
+    "gated": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 20.0,
+    "err0": 0.1326,
+    "err_T": {
+     "1.0": 19.9873,
+     "6.0": 19.9899,
+     "24.0": 19.9878,
+     "96.0": 19.9943
+    },
+    "max_dev_from_T1": 0.007,
+    "pass": true,
+    "gated": true
+   }
+  ],
+  "pass": true,
+  "conservation_pass": true,
+  "zero_mode_pass": true,
+  "exp232_cross_check_err24_torus_delta20": 19.982
+ },
+ "T2": {
+  "rows": [
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 5.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 10.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 20.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 5.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 10.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 20.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 5.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 10.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 20.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 5.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 10.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 20.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 5.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 10.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 20.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 5.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 10.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 20.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 5.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 10.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 20.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 5.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 10.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 20.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 5.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 10.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 20.0,
+    "agreement_joint": 1.0,
+    "agreement_V": 1.0,
+    "agreement_theta": 1.0,
+    "mi_bits": 0.811278,
+    "mi0_bits": 0.811278,
+    "mi_drop_bits": 0.0,
+    "pass": true
+   }
+  ],
+  "pass": true,
+  "worst_agreement": 1.0,
+  "worst_mi_drop_bits": 0.0,
+  "read": "threshold sign read off (V,theta) at the substrate's own 2-cluster midline (relative, gauge-covariant); per-layer reads disclosed"
+ },
+ "T3": {
+  "production_medium_rows": [
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 0.0,
+    "err_read": 0.71,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": null
+   },
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 5.0,
+    "err_read": 0.71,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 10.0,
+    "err_read": 0.71,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 20.0,
+    "err_read": 0.71,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 0.0,
+    "err_read": 0.69,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": null
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 5.0,
+    "err_read": 0.69,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 10.0,
+    "err_read": 0.69,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 20.0,
+    "err_read": 0.69,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 0.0,
+    "err_read": 0.65,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": null
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 5.0,
+    "err_read": 0.65,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 10.0,
+    "err_read": 0.65,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 20.0,
+    "err_read": 0.65,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 0.0,
+    "err_read": 0.6,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": null
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 5.0,
+    "err_read": 0.6,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 10.0,
+    "err_read": 0.6,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 20.0,
+    "err_read": 0.6,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 0.0,
+    "err_read": 0.51,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": null
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 5.0,
+    "err_read": 0.51,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 10.0,
+    "err_read": 0.51,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 20.0,
+    "err_read": 0.51,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 0.0,
+    "err_read": 0.55,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": null
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 5.0,
+    "err_read": 0.55,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 10.0,
+    "err_read": 0.55,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 20.0,
+    "err_read": 0.55,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 0.0,
+    "err_read": 0.55,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": null
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 5.0,
+    "err_read": 0.55,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 10.0,
+    "err_read": 0.55,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 20.0,
+    "err_read": 0.55,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 0.0,
+    "err_read": 0.51,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": null
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 5.0,
+    "err_read": 0.51,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 10.0,
+    "err_read": 0.51,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 20.0,
+    "err_read": 0.51,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 0.0,
+    "err_read": 0.55,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": null
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 5.0,
+    "err_read": 0.55,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 10.0,
+    "err_read": 0.55,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 20.0,
+    "err_read": 0.55,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true,
+    "pass": true
+   }
+  ],
+  "state_carrying_medium_rows": [
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 0.0,
+    "err_read": 3.01,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 5.0,
+    "err_read": 3.01,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 10.0,
+    "err_read": 3.01,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "delta": 20.0,
+    "err_read": 3.01,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 0.0,
+    "err_read": 2.99,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 5.0,
+    "err_read": 2.99,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 10.0,
+    "err_read": 2.99,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "delta": 20.0,
+    "err_read": 2.99,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 0.0,
+    "err_read": 3.0,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 5.0,
+    "err_read": 3.0,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 10.0,
+    "err_read": 3.0,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "delta": 20.0,
+    "err_read": 3.0,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 0.0,
+    "err_read": 2.3,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 5.0,
+    "err_read": 2.3,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 10.0,
+    "err_read": 2.3,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "delta": 20.0,
+    "err_read": 2.3,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 0.0,
+    "err_read": 2.32,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 5.0,
+    "err_read": 2.32,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 10.0,
+    "err_read": 2.32,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "delta": 20.0,
+    "err_read": 2.32,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 0.0,
+    "err_read": 2.34,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 5.0,
+    "err_read": 2.34,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 10.0,
+    "err_read": 2.34,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "delta": 20.0,
+    "err_read": 2.34,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 0.0,
+    "err_read": 1.39,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 5.0,
+    "err_read": 1.39,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 10.0,
+    "err_read": 1.39,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "delta": 20.0,
+    "err_read": 1.39,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 0.0,
+    "err_read": 1.4,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 5.0,
+    "err_read": 1.4,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 10.0,
+    "err_read": 1.4,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "delta": 20.0,
+    "err_read": 1.4,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 0.0,
+    "err_read": 1.46,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 5.0,
+    "err_read": 1.46,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 10.0,
+    "err_read": 1.46,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "delta": 20.0,
+    "err_read": 1.46,
+    "dev_from_delta0": 0.0,
+    "target_invariant": true,
+    "verified": true
+   }
+  ],
+  "pass": true,
+  "targets_bit_invariant": true,
+  "rejections": 0,
+  "disclosure": "the production read's interface is the weight matrix, so the substrate presentation is state-blind by interface; the disclosed state-carrying medium W = A*|V_i - V_j| carries the offset substrate's transjunctional field (the uniform offset cancels in differences to float level), making the blindness test falsifiable"
+ },
+ "T4": {
+  "rows": [
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "err_regen_free": 7.3776,
+    "err_regen_offset": 23.02,
+    "diff": 15.6424,
+    "theta_region_free": 16.3555,
+    "theta_region_offset": 32.5672,
+    "pass": false
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "err_regen_free": 7.3686,
+    "err_regen_offset": 22.996,
+    "diff": 15.6274,
+    "theta_region_free": 16.3295,
+    "theta_region_offset": 32.4732,
+    "pass": false
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "err_regen_free": 7.3572,
+    "err_regen_offset": 22.9765,
+    "diff": 15.6193,
+    "theta_region_free": 16.3045,
+    "theta_region_offset": 32.4006,
+    "pass": false
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "err_regen_free": 4.2036,
+    "err_regen_offset": 21.0114,
+    "diff": 16.8078,
+    "theta_region_free": 9.3858,
+    "theta_region_offset": 24.7807,
+    "pass": false
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "err_regen_free": 4.186,
+    "err_regen_offset": 20.9791,
+    "diff": 16.7931,
+    "theta_region_free": 9.3421,
+    "theta_region_offset": 24.6657,
+    "pass": false
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "err_regen_free": 4.2042,
+    "err_regen_offset": 21.0025,
+    "diff": 16.7983,
+    "theta_region_free": 9.3746,
+    "theta_region_offset": 24.7645,
+    "pass": false
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "err_regen_free": 0.4073,
+    "err_regen_offset": 20.0428,
+    "diff": 19.6355,
+    "theta_region_free": 0.6985,
+    "theta_region_offset": 20.2378,
+    "pass": false
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "err_regen_free": 0.3779,
+    "err_regen_offset": 19.9869,
+    "diff": 19.6091,
+    "theta_region_free": 0.5648,
+    "theta_region_offset": 19.9774,
+    "pass": false
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "err_regen_free": 0.3805,
+    "err_regen_offset": 19.994,
+    "diff": 19.6136,
+    "theta_region_free": 0.578,
+    "theta_region_offset": 20.0307,
+    "pass": false
+   }
+  ],
+  "pass": false,
+  "protocol": "exp43's regen protocol at the star: amputate defaults (-30/-40), regrow_graph walk, run(15); errs = pattern_error vs the absolute labeling; delta-20 vs offset-free, paired by (arm, seed) with aligned RNG streams"
+ },
+ "criteria": {
+  "T1_conservation_and_zero_mode": true,
+  "T2_zone_invariant_mi": true,
+  "T3_read_blind": true,
+  "T4_wound_edge": false
+ },
+ "notes": "Body-landing disclosures: (a) T1's conservation evaluated at EVERY pre-named delta {5,10,20} plus the delta-0 reference (a superset of the registered single-delta reading, exp232's disclosed precedent \u2014 can only add refutations, never hide one); (b) the zero-mode operator checked at 3 operating points spanning (gamma, mu, kappa): the star (64, 0, 1), the plateau (0.25, 0.015, 1) and a kappa-varied point (64, 0.015, 0.5), each over all 3 arms (max reported); (c) T2's MI uses quantile discretization, which is shift-invariant \u2014 the delta-invariance is the gauge's own claim made measurable; (d) T4's measured differences are the offset size MINUS the offset-free regen's own error floor (the walk's chained inheritance noise and, on random3/scale_free, wound components the mu=0 walk cannot reach \u2014 the region's mean theta sits at the ABSOLUTE blastema constant there): the pre-registered inequality is evaluated exactly as written; (e) the wound constants and the physiological clips are the named symmetry breakers and enter T4 only through amputate's absolute defaults."
+}
