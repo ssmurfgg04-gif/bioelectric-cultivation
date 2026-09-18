@@ -197,12 +197,12 @@ def main() -> dict:
                       (-40.0, -60.0, -20.0))
     DEEP_RUNGS = (-40.0, -45.0, -50.0, -55.0, -60.0)
 
-    def multi_triples(voltages, i: int) -> list:
+    def multi_triples(voltages, i: int) -> tuple:
         d = W_DELTAS[i]
         zs = [(round(z.f0 + i / 100.0 + d, 3),
                round(z.f1 + i / 100.0 - d, 3), v)
               for z, v in zip(MULTI.zones, voltages)]
-        return sorted(zs, key=lambda x: x[0])
+        return tuple(sorted(zs, key=lambda x: x[0]))
 
     multi_family: set = set()
     for rung in DEEP_RUNGS:
