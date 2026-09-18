@@ -1,0 +1,409 @@
+{
+ "exp": "exp238_ingressing_minds (the Section 6 item; Ingressing Minds, MDPI 2409-9287/11/5/161, ledger L214)",
+ "claim": "a single body hosts MULTIPLE, simultaneously retrievable morphological memories; which memory surfaces is decided by the READ, not by competitive storage",
+ "star_point": {
+  "gamma": 64.0,
+  "mu": 0.0
+ },
+ "arms": [
+  "scale_free",
+  "random3",
+  "torus"
+ ],
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "patterns": {
+  "A": {
+   "source": "exp43_substrate_independence.labeling (imported verbatim)",
+   "head_cells": [
+    0,
+    24
+   ],
+   "head_v": -20.0,
+   "trunk_v": -50.0
+  },
+  "B": {
+   "source": "the docstring's zero-knob mirror labeling: the head zone relocated to the posterior third (cells [N - N//3, N)); the vacated anterior head zone reverts to trunk; built on exp43's imported identity constants",
+   "head_cells": [
+    67,
+    99
+   ],
+   "head_v": -20.0,
+   "trunk_v": -50.0
+  },
+  "disagreement": {
+   "cells": 58,
+   "frac": 0.58,
+   "pre_named_bar": 0.6,
+   "clause_ge_60pct": false
+  }
+ },
+ "write_sequence": {
+  "A_into_theta": "exp79's run_gm star write protocol verbatim (gamma=64, mu=0); the carrier runs run_gm's protocol inline (run_gm returns only the error, not the collective) and asserts bit-exact post-window pattern error against the imported run_gm on every instance (9/9)",
+  "B_into_phi_spec": "exp87's write_spec_layer (the R1 memory write; preserves the set_target-captured phi_spec (= A) as phi_spec_canon)"
+ },
+ "instances": [
+  {
+   "arm": "scale_free",
+   "seed": 1,
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.5683,
+   "phi_spec_canon_preserved": true,
+   "M1": {
+    "theta_err_vs_A": 0.285,
+    "v_err_vs_A": 0.568,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_pre": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_post": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 1.048,
+    "err_B_free_control": 1.048,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3": {
+    "theta_err_vs_A": 1.048,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 1.275,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 1.491,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "scale_free",
+   "seed": 2,
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.5741,
+   "phi_spec_canon_preserved": true,
+   "M1": {
+    "theta_err_vs_A": 0.285,
+    "v_err_vs_A": 0.574,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_pre": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_post": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 1.048,
+    "err_B_free_control": 1.048,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3": {
+    "theta_err_vs_A": 1.048,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 1.276,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 1.491,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "scale_free",
+   "seed": 3,
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.5761,
+   "phi_spec_canon_preserved": true,
+   "M1": {
+    "theta_err_vs_A": 0.285,
+    "v_err_vs_A": 0.576,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_pre": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_post": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 1.048,
+    "err_B_free_control": 1.048,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3": {
+    "theta_err_vs_A": 1.048,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 1.275,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 1.491,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "random3",
+   "seed": 1,
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.2604,
+   "phi_spec_canon_preserved": true,
+   "M1": {
+    "theta_err_vs_A": 0.126,
+    "v_err_vs_A": 0.26,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_pre": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_post": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 0.496,
+    "err_B_free_control": 0.496,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3": {
+    "theta_err_vs_A": 0.496,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 0.616,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 0.735,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "random3",
+   "seed": 2,
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.2685,
+   "phi_spec_canon_preserved": true,
+   "M1": {
+    "theta_err_vs_A": 0.126,
+    "v_err_vs_A": 0.269,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_pre": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_post": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 0.496,
+    "err_B_free_control": 0.496,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3": {
+    "theta_err_vs_A": 0.496,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 0.617,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 0.735,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "random3",
+   "seed": 3,
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.2696,
+   "phi_spec_canon_preserved": true,
+   "M1": {
+    "theta_err_vs_A": 0.126,
+    "v_err_vs_A": 0.27,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_pre": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_post": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 0.496,
+    "err_B_free_control": 0.496,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3": {
+    "theta_err_vs_A": 0.496,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 0.616,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 0.735,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "torus",
+   "seed": 1,
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.1439,
+   "phi_spec_canon_preserved": true,
+   "M1": {
+    "theta_err_vs_A": 0.064,
+    "v_err_vs_A": 0.144,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_pre": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_post": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 0.251,
+    "err_B_free_control": 0.251,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3": {
+    "theta_err_vs_A": 0.251,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 0.312,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 0.373,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "torus",
+   "seed": 2,
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.1377,
+   "phi_spec_canon_preserved": true,
+   "M1": {
+    "theta_err_vs_A": 0.064,
+    "v_err_vs_A": 0.138,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_pre": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_post": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 0.251,
+    "err_B_free_control": 0.251,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3": {
+    "theta_err_vs_A": 0.251,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 0.313,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 0.373,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "torus",
+   "seed": 3,
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.1326,
+   "phi_spec_canon_preserved": true,
+   "M1": {
+    "theta_err_vs_A": 0.064,
+    "v_err_vs_A": 0.133,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_pre": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_sha_post": "bcc435aae116b714795985c4ba79c52a43755dab084f527c006293dc8a609d58",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 0.251,
+    "err_B_free_control": 0.251,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3": {
+    "theta_err_vs_A": 0.251,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 0.312,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 0.373,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  }
+ ],
+ "criteria": {
+  "M1_coexistence": true,
+  "M2_non_interference": true,
+  "M3_conflict": false,
+  "M4_addressing": true
+ },
+ "branch": "SINGLE-MEMORY",
+ "notes": "THE MIRROR ARITHMETIC (the honest deposit): the docstring's zero-knob mirror (the head zone relocated to the posterior third: cells [67,100) at HEAD_V, the vacated anterior head reverting to trunk) disagrees with exp43's labeling on 58/100 cells = 58% \u2014 the pre-named '>= 60%' figure over-rounds the design (25 old-head + 33 posterior-third cells); M3's conflict clause REFUTES on the pre-named bar while both memories remain retrievable on every instance. The imported alternative, morpho_engineering.target_mirror (the head zone relocated to the posterior END at its original 25-cell size), disagrees at 50% \u2014 further from the bar; the docstring's own definition is the faithful execution. SUBSTRATE RESULT: M1 co-existence (theta reports A err<6 AND phi_spec == B bit-exact in ONE state), M2 non-interference (phi_spec sha-constant through T=24 x 3 under A's expression; A's maintenance delta vs the seed-matched B-free control exactly 0.0 mV \u2014 the spec layer is dynamics-inert: phi_spec enters no step() term, so the 0.5 mV tolerance is not binding), and M4 addressing (the window read surfaces A, the spec read surfaces B, ZERO re-writes between retrievals, theta bit-exact across B rounds) all PASS on 9/9 instances \u2014 the two-layer substrate DOES host two independent, addressable, non-interfering memories at S*; the pre-named branch lands SINGLE-MEMORY because MULTI-MEMORY-CONFIRMED requires M1-M4 all PASS and M3's pre-named conflict bar is unmet by the zero-knob design's 58% disagreement (an arithmetic refute, not erasure). MACHINERY DISCLOSURES: run_gm returns the error, not the collective, so the carrier replicates run_gm's protocol inline and is bit-exact-asserted against the imported run_gm per instance; write_spec_layer preserved the set_target-captured phi_spec (= A) as phi_spec_canon (exp90's two-source behavior) on every instance (reported, not gated); the zero-re-writes discipline is structural (after the write sequence the battery performs only c.run steps and pure reads) and is witnessed by the phi_spec sha remaining constant from the write through the battery end on every instance."
+}
