@@ -1,0 +1,6108 @@
+{
+ "exp": "exp217_not_in_literature_census",
+ "claim": "THE NOT-IN-LITERATURE CENSUS (L191's registered next): the corpus leg's missing W5 fields are METHOD-SECTION-DEPTH facts (73/119 records carry zero verbatim extracts across all three passes); this run IMPLEMENTS exp215's deposited specification and re-imports the 119 records under the extended census \u2014 a record whose missing FILL_FIELDS have ZERO extracts across all three passes is admitted to census_state='NOT-IN-LITERATURE' with the missing field list; every other acceptance rule unchanged",
+ "pre_registered": {
+  "gates_source": "module docstring, committed before any run (pre-registration d52addd, batch 11; gates N1-N4 fixed there, each evaluated exactly once)",
+  "gates": [
+   "GATE-N1 (the evidence check) 119/119 records carry a verdict; the three sources files complete (119 records each); each file's sha256 in the deposit",
+   "GATE-N2 (the zero-extract assertion) every record admitted to NOT-IN-LITERATURE has zero extracts in ALL THREE passes for EVERY missing field; any record with an extract for a missing field is NOT admissible (the discipline holds)",
+   "GATE-N3 (the split) n_normal_accepted + n_not_in_literature + n_rejected = 119; ALL of exp215's 73 zero-extract records land NOT-IN-LITERATURE or better; the realized counts deposited; the branch named: CLOSED-NIL (>= 73 land in the state and zero integrity violations) / PARTIAL",
+   "GATE-N4 (hygiene) the w5b and w5c banks byte-unchanged; the new bank deterministic (merge re-run bit-identical); zero fields without provenance"
+  ]
+ },
+ "instruments": {
+  "spec_deposit": "results/exp215_w5_figure_pass.json",
+  "spec_deposit_sha256": "60d20db5331a0717ab96cc07c70267649abb7b5fbc251b5477d883c26d851910",
+  "machinery": "experiments/exp206_w5_dose_pass.py VERBATIM (read_sources, w5_fills, validate_row, ser, sha256 helpers)",
+  "machinery_sha256": "84e786e9d11bab704e6160e558b90b347a3bdaa60a7b997cd359f11d2c23ec8c",
+  "exp203_file_sha256": "0d4b5f890f49e8746cf4b17ce77db55754c37461c31f94f1c9c6cc379bd932d8",
+  "census_extension": "census_missing is extended IN THIS MODULE (exp203's file untouched) by the not_in_literature clause \u2014 a record whose missing FILL_FIELDS have ZERO extracts across all three passes is admissible to the state census_state='NOT-IN-LITERATURE' with the missing field list; every other acceptance rule unchanged"
+ },
+ "sections": {
+  "verdicts": [
+   {
+    "index": 0,
+    "id": "V1_head_depolarized_vs_trunk",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 1,
+    "id": "V2_hyperpolarization_abnormal",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 7,
+     "2": 7,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 2,
+    "id": "V3_posterior_depol_ectopic_head",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 3,
+    "id": "V4_junction_block_graded",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 4,
+    "id": "V5_wound_depolarized",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 5,
+    "id": "V6_stochastic_identical_perturbation",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 6,
+    "id": "DB-415",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 7,
+    "id": "DB-416",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 8,
+    "id": "DB-417",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 9,
+    "id": "DB-418",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 10,
+    "id": "DB-419",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 11,
+    "id": "DB-420",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 12,
+    "id": "DB-421",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 13,
+    "id": "DB-422",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 14,
+    "id": "DB-423",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 15,
+    "id": "DB-424",
+    "state": "rejected",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 1,
+      "blocker": 1,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 2,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": false,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 0,
+     "2": 8,
+     "3": 8
+    },
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "not_in_literature clause: extract(s) present for missing field(s) ['concentration_mM'] across the three passes \u2014 the NIL discipline excludes admission (GATE-N2)"
+    ]
+   },
+   {
+    "index": 16,
+    "id": "DB-425",
+    "state": "rejected",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 1,
+      "blocker": 1,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 2,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": false,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 0,
+     "2": 8,
+     "3": 8
+    },
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "not_in_literature clause: extract(s) present for missing field(s) ['concentration_mM'] across the three passes \u2014 the NIL discipline excludes admission (GATE-N2)"
+    ]
+   },
+   {
+    "index": 17,
+    "id": "DB-426",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 18,
+    "id": "DB-427",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 19,
+    "id": "DB-428",
+    "state": "rejected",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 1,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": false,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (1 raw candidate statements rejected by the verbatim rules)",
+     "not_in_literature clause: extract(s) present for missing field(s) ['concentration_mM'] across the three passes \u2014 the NIL discipline excludes admission (GATE-N2)"
+    ]
+   },
+   {
+    "index": 20,
+    "id": "DB-429",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 21,
+    "id": "DB-430",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 1,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 1,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 0,
+     "2": 8,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 22,
+    "id": "DB-431",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 0,
+     "2": 8,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 23,
+    "id": "DB-432",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 24,
+    "id": "DB-433",
+    "state": "rejected",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 1,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": false,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (1 raw candidate statements rejected by the verbatim rules)",
+     "not_in_literature clause: extract(s) present for missing field(s) ['concentration_mM'] across the three passes \u2014 the NIL discipline excludes admission (GATE-N2)"
+    ]
+   },
+   {
+    "index": 25,
+    "id": "DB-434",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 26,
+    "id": "DB-435",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 27,
+    "id": "DB-436",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 28,
+    "id": "DB-437",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 29,
+    "id": "DB-438",
+    "state": "rejected",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 1,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": false,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (1 raw candidate statements rejected by the verbatim rules)",
+     "not_in_literature clause: extract(s) present for missing field(s) ['concentration_mM'] across the three passes \u2014 the NIL discipline excludes admission (GATE-N2)"
+    ]
+   },
+   {
+    "index": 30,
+    "id": "DB-439",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 31,
+    "id": "DB-440",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 32,
+    "id": "DB-441",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 33,
+    "id": "DB-442",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 7
+    },
+    "reasons": []
+   },
+   {
+    "index": 34,
+    "id": "DB-443",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 35,
+    "id": "DB-444",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 36,
+    "id": "DB-445",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 2,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 2,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 0,
+     "2": 7,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 37,
+    "id": "DB-446",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 38,
+    "id": "DB-447",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 39,
+    "id": "DB-448",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 40,
+    "id": "DB-449",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 41,
+    "id": "DB-450",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 42,
+    "id": "DB-451",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 1,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 43,
+    "id": "DB-452",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 7
+    },
+    "reasons": []
+   },
+   {
+    "index": 44,
+    "id": "DB-453",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 45,
+    "id": "DB-454",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 46,
+    "id": "DB-455",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 47,
+    "id": "DB-456",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 1,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 48,
+    "id": "DB-457",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 49,
+    "id": "DB-458",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 50,
+    "id": "DB-459",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 1,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 51,
+    "id": "DB-460",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 52,
+    "id": "DB-461",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 1,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 53,
+    "id": "DB-476",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 54,
+    "id": "DB-477",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 55,
+    "id": "DB-478",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 56,
+    "id": "DB-479",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 57,
+    "id": "DB-1062",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 58,
+    "id": "DB-1063",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 59,
+    "id": "DB-1064",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 60,
+    "id": "DB-1065",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 1,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 61,
+    "id": "DB-1066",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 0,
+     "2": 4,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 62,
+    "id": "DB-1067",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 2,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 1,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 3,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 0,
+     "2": 8,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 63,
+    "id": "DB-1068",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 64,
+    "id": "DB-1069",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 5,
+     "2": 5,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 65,
+    "id": "DB-1070",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 66,
+    "id": "DB-1071",
+    "state": "rejected",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 1,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": false,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (1 raw candidate statements rejected by the verbatim rules)",
+     "not_in_literature clause: extract(s) present for missing field(s) ['concentration_mM'] across the three passes \u2014 the NIL discipline excludes admission (GATE-N2)"
+    ]
+   },
+   {
+    "index": 67,
+    "id": "DB-294",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 4,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 4,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 68,
+    "id": "DB-295",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 5,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 5,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 69,
+    "id": "DB-296",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 7,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 7,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 70,
+    "id": "DB-297",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 3,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 3,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 71,
+    "id": "DB-391",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 1,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 1,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 4,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 6,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 72,
+    "id": "DB-392",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 5,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 5,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 0,
+     "2": 8,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 73,
+    "id": "DB-393",
+    "state": "rejected",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 2,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 3,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 6,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": false,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 0,
+     "2": 8,
+     "3": 8
+    },
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "not_in_literature clause: extract(s) present for missing field(s) ['concentration_mM'] across the three passes \u2014 the NIL discipline excludes admission (GATE-N2)"
+    ]
+   },
+   {
+    "index": 74,
+    "id": "DB-394",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 4,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 4,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 75,
+    "id": "DB-395",
+    "state": "rejected",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 1,
+      "blocker": 2,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 3,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": false,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (1 raw candidate statements rejected by the verbatim rules)",
+     "not_in_literature clause: extract(s) present for missing field(s) ['concentration_mM'] across the three passes \u2014 the NIL discipline excludes admission (GATE-N2)"
+    ]
+   },
+   {
+    "index": 76,
+    "id": "DB-396",
+    "state": "not_in_literature",
+    "census_missing": [
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 3,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 6,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 9,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 0,
+     "2": 8,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 77,
+    "id": "DB-397",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 3,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 3,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 4,
+     "2": 4,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 78,
+    "id": "DB-398",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 6,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 6,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 7,
+     "2": 7,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 79,
+    "id": "DB-399",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 1,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 1,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 2,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 4,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 80,
+    "id": "DB-400",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 5,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 5,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 81,
+    "id": "DB-401",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 3,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 3,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 82,
+    "id": "DB-402",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 3,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 3,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 83,
+    "id": "DB-403",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 6,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 6,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 84,
+    "id": "DB-404",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 4,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 4,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 85,
+    "id": "DB-405",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 3,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 3,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 86,
+    "id": "DB-406",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 4,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 4,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 87,
+    "id": "DB-407",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 4,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 4,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 88,
+    "id": "DB-408",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 4,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 4,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 89,
+    "id": "DB-409",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 4,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 4,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 90,
+    "id": "DB-410",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 3,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 3,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": false,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 91,
+    "id": "DB-411",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 4,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 4,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 92,
+    "id": "DB-412",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 5,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 5,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 93,
+    "id": "DB-413",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 3,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 3,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 94,
+    "id": "DB-414",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 5,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 5,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 3,
+     "2": 3,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 95,
+    "id": "DB-279",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 96,
+    "id": "DB-280",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 97,
+    "id": "DB-322",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 98,
+    "id": "DB-323",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 5,
+     "2": 5,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 99,
+    "id": "DB-324",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 100,
+    "id": "DB-325",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 101,
+    "id": "DB-326",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 8
+    },
+    "reasons": []
+   },
+   {
+    "index": 102,
+    "id": "DB-327",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 1,
+     "2": 1,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 103,
+    "id": "DB-328",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 5,
+     "2": 5,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 104,
+    "id": "DB-329",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 5,
+     "2": 5,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 105,
+    "id": "C01-beane2011-claim",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 106,
+    "id": "C02-beane2013-claim",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 1,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 1,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 2,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 107,
+    "id": "C03-durant2017-numbers",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 108,
+    "id": "C04-durant2019-window",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 109,
+    "id": "C05-eb2015-numbers",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 2,
+     "2": 2,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 110,
+    "id": "C06-eb2019-numbers",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "blocker",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 2,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 111,
+    "id": "C07-oviedo2008-method",
+    "state": "not_in_literature",
+    "census_missing": [
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 4,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 4,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 8,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 112,
+    "id": "C08-durant2016-review",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 113,
+    "id": "C09-pezzulo2021-claim",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 114,
+    "id": "C10-marsh-beams-1952",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 115,
+    "id": "C11-chernet2013-xenopus",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "missing_fill_fields": [
+     "blocker",
+     "phenotype_score",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 1,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 1,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 1,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 4,
+    "zero_extract_all_passes": false,
+    "in_exp215_zero_extract_set": false,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 116,
+    "id": "C12-chernet2014-xenopus",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 8,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 117,
+    "id": "C13-betse-pietak-levin",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 0,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   },
+   {
+    "index": 118,
+    "id": "C14-vmem-inference-layer",
+    "state": "not_in_literature",
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "missing_fill_fields": [
+     "concentration_mM",
+     "blocker",
+     "phenotype_score",
+     "n",
+     "exposure_mode"
+    ],
+    "extract_counts_by_pass": {
+     "1": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "2": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     },
+     "3": {
+      "concentration": 0,
+      "blocker": 0,
+      "phenotype": 0,
+      "n": 0,
+      "exposure_mode": 0
+     }
+    },
+    "total_extracts_all_passes": 0,
+    "zero_extract_all_passes": true,
+    "in_exp215_zero_extract_set": true,
+    "nil_admissible": true,
+    "census_missing_matches_baseline": true,
+    "refill_added": {},
+    "sources_tried_by_pass": {
+     "1": 0,
+     "2": 8,
+     "3": 0
+    },
+    "reasons": []
+   }
+  ],
+  "sources": [
+   {
+    "file": "results/w5_pass_sources.json",
+    "sha256": "142d78a6e6ce638ce714a27ff90a9d7cf01b3b16a1a2dcea38a80d97d5010998",
+    "n_records": 119,
+    "mode": "full"
+   },
+   {
+    "file": "results/w5_pass_sources2.json",
+    "sha256": "8e7e6e1a5726aa1e98d8456fac80f95615327f6249a88746b3c9f5768322e318",
+    "n_records": 119,
+    "mode": "full"
+   },
+   {
+    "file": "results/w5_pass_sources3.json",
+    "sha256": "f6175a681b1b79f81022ff298f3472669c2519e34a6f28ca323afb4ba741ea4b",
+    "n_records": 119,
+    "mode": "full"
+   }
+  ],
+  "not_in_literature_spec": {
+   "state": "NOT-IN-LITERATURE",
+   "registered_repair": "the exp203 census extended with an explicit absent-from-literature verdict: a record whose W5 fields are stated nowhere in the surfaced literature is DEPOSITED as NOT-IN-LITERATURE rather than rejected \u2014 the absence is the finding, carried with its own provenance discipline",
+   "provenance_discipline": "a NOT-IN-LITERATURE verdict requires: the three passes' complete sweep evidence (119 records x the protocol, widened, and figure queries at the deposited sources files), zero verbatim extracts for the missing fields across all three passes, and the per-field absence asserted against the pass-1/2/3 sources records by sha256; the verdict's provenance names ALL THREE sources files",
+   "census_extension": "census_missing(row) gains the not_in_literature clause: a row admitted to the new state carries 'census_state': 'NOT-IN-LITERATURE' with the field list that is absent-from-literature; every other acceptance rule unchanged; the extension is implemented by the REGISTERED NEXT, not here",
+   "zero_extract_records_all_3_passes": [
+    "C01-beane2011-claim",
+    "C03-durant2017-numbers",
+    "C04-durant2019-window",
+    "C05-eb2015-numbers",
+    "C08-durant2016-review",
+    "C09-pezzulo2021-claim",
+    "C10-marsh-beams-1952",
+    "C12-chernet2014-xenopus",
+    "C13-betse-pietak-levin",
+    "C14-vmem-inference-layer",
+    "DB-1062",
+    "DB-1063",
+    "DB-1064",
+    "DB-1066",
+    "DB-1068",
+    "DB-1069",
+    "DB-1070",
+    "DB-279",
+    "DB-280",
+    "DB-322",
+    "DB-323",
+    "DB-324",
+    "DB-325",
+    "DB-326",
+    "DB-327",
+    "DB-328",
+    "DB-329",
+    "DB-415",
+    "DB-416",
+    "DB-417",
+    "DB-418",
+    "DB-419",
+    "DB-420",
+    "DB-421",
+    "DB-422",
+    "DB-423",
+    "DB-426",
+    "DB-427",
+    "DB-429",
+    "DB-431",
+    "DB-432",
+    "DB-434",
+    "DB-435",
+    "DB-436",
+    "DB-437",
+    "DB-439",
+    "DB-440",
+    "DB-441",
+    "DB-442",
+    "DB-443",
+    "DB-444",
+    "DB-446",
+    "DB-447",
+    "DB-448",
+    "DB-449",
+    "DB-450",
+    "DB-452",
+    "DB-453",
+    "DB-454",
+    "DB-455",
+    "DB-457",
+    "DB-458",
+    "DB-460",
+    "DB-476",
+    "DB-477",
+    "DB-478",
+    "DB-479",
+    "V1_head_depolarized_vs_trunk",
+    "V2_hyperpolarization_abnormal",
+    "V3_posterior_depol_ectopic_head",
+    "V4_junction_block_graded",
+    "V5_wound_depolarized",
+    "V6_stochastic_identical_perturbation"
+   ],
+   "n_zero_extract_records": 73
+  },
+  "zero_extract_recomputed": [
+   "C01-beane2011-claim",
+   "C03-durant2017-numbers",
+   "C04-durant2019-window",
+   "C05-eb2015-numbers",
+   "C08-durant2016-review",
+   "C09-pezzulo2021-claim",
+   "C10-marsh-beams-1952",
+   "C12-chernet2014-xenopus",
+   "C13-betse-pietak-levin",
+   "C14-vmem-inference-layer",
+   "DB-1062",
+   "DB-1063",
+   "DB-1064",
+   "DB-1066",
+   "DB-1068",
+   "DB-1069",
+   "DB-1070",
+   "DB-279",
+   "DB-280",
+   "DB-322",
+   "DB-323",
+   "DB-324",
+   "DB-325",
+   "DB-326",
+   "DB-327",
+   "DB-328",
+   "DB-329",
+   "DB-415",
+   "DB-416",
+   "DB-417",
+   "DB-418",
+   "DB-419",
+   "DB-420",
+   "DB-421",
+   "DB-422",
+   "DB-423",
+   "DB-426",
+   "DB-427",
+   "DB-429",
+   "DB-431",
+   "DB-432",
+   "DB-434",
+   "DB-435",
+   "DB-436",
+   "DB-437",
+   "DB-439",
+   "DB-440",
+   "DB-441",
+   "DB-442",
+   "DB-443",
+   "DB-444",
+   "DB-446",
+   "DB-447",
+   "DB-448",
+   "DB-449",
+   "DB-450",
+   "DB-452",
+   "DB-453",
+   "DB-454",
+   "DB-455",
+   "DB-457",
+   "DB-458",
+   "DB-460",
+   "DB-476",
+   "DB-477",
+   "DB-478",
+   "DB-479",
+   "V1_head_depolarized_vs_trunk",
+   "V2_hyperpolarization_abnormal",
+   "V3_posterior_depol_ectopic_head",
+   "V4_junction_block_graded",
+   "V5_wound_depolarized",
+   "V6_stochastic_identical_perturbation"
+  ],
+  "counts_split": {
+   "n_normal_accepted": 0,
+   "n_not_in_literature": 111,
+   "n_rejected": 8,
+   "imported": 119
+  },
+  "refill_added_nothing": true,
+  "exp203_file": "experiments/exp203_wetlab_scaffold.py",
+  "exp203_file_sha256": "0d4b5f890f49e8746cf4b17ce77db55754c37461c31f94f1c9c6cc379bd932d8",
+  "exp203_file_untouched_git": true
+ },
+ "gates": {
+  "GATE-N1": {
+   "verdict": "PASS",
+   "n_verdicts": 119,
+   "n_series": 119,
+   "verdict_ids_complete": true,
+   "sources_files": [
+    {
+     "file": "results/w5_pass_sources.json",
+     "n_records": 119,
+     "sha256_is_64hex_in_deposit": true,
+     "sha256_matches_file": true,
+     "complete_119": true
+    },
+    {
+     "file": "results/w5_pass_sources2.json",
+     "n_records": 119,
+     "sha256_is_64hex_in_deposit": true,
+     "sha256_matches_file": true,
+     "complete_119": true
+    },
+    {
+     "file": "results/w5_pass_sources3.json",
+     "n_records": 119,
+     "sha256_is_64hex_in_deposit": true,
+     "sha256_matches_file": true,
+     "complete_119": true
+    }
+   ],
+   "ids_match_series_by_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "GATE-N2": {
+   "verdict": "PASS",
+   "nil_zero_extract_violations": [],
+   "clause_misses": [],
+   "uncovered_census_records": [],
+   "refill_added_nothing": true,
+   "refill_drift": {},
+   "bank_validator_errors": [],
+   "exp203_file_untouched_git": true,
+   "exp203_file_sha256": "0d4b5f890f49e8746cf4b17ce77db55754c37461c31f94f1c9c6cc379bd932d8",
+   "n_not_in_literature": 111
+  },
+  "GATE-N3": {
+   "verdict": "PASS",
+   "n_normal_accepted": 0,
+   "n_not_in_literature": 111,
+   "n_rejected": 8,
+   "split_sum": 119,
+   "split_ok": true,
+   "exp215_zero_extract_landing": {
+    "all_73_not_in_literature_or_better": true,
+    "n_landed_in_state": 73,
+    "n_landed_accepted": 0
+   },
+   "zero_extract_set_matches_exp215": true,
+   "branch": "CLOSED-NIL",
+   "realized_counts_deposited": {
+    "n_normal_accepted": 0,
+    "n_not_in_literature": 111,
+    "n_rejected": 8,
+    "imported": 119
+   }
+  },
+  "GATE-N4": {
+   "verdict": "PASS",
+   "w5b_bank_byte_unchanged": true,
+   "w5c_bank_byte_unchanged": true,
+   "w5c_sha256": "136909baaf5a738b7ac6bb3c5cefe5f1ddc5aa53bf676e34d56b097a91d5cd81",
+   "sources_files_byte_unchanged": true,
+   "new_bank_deterministic": true,
+   "zero_fields_without_provenance": true,
+   "provenance_gaps": [],
+   "field_provenance_rows": 48
+  }
+ },
+ "bank": "results/wetlab_companion_bank_w5d.json",
+ "sources": [
+  "results/w5_pass_sources.json",
+  "results/w5_pass_sources2.json",
+  "results/w5_pass_sources3.json"
+ ],
+ "verdict": "4/4 gates PASS | branch CLOSED-NIL | split 0 accepted / 111 NOT-IN-LITERATURE / 8 rejected of 119",
+ "wall_s": 0.1
+}
