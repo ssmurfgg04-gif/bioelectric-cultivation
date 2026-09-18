@@ -1,0 +1,297 @@
+{
+ "exp": "exp237_nca_clone_bound (the Hansali 2025 parallel; ledger L213)",
+ "branch": "REDUCIBLE",
+ "machinery": {
+  "battery": "exp73_active_renormalization.make_battery (the torus arm, exp68's battery verbatim)",
+  "labeling": "exp43_substrate_independence.labeling",
+  "region_err": "exp43_substrate_independence.region_err",
+  "protocol": "exp73's settle (theta=labels, V=theta+N(0,2), RUN_T=24, DT=0.1) -> amputate defaults (-30/-40) -> regrow_graph walk (cell_period=0.8, noise=0.6) -> run(15) \u2014 exp43's SI-G2 protocol at exp73/exp79's constants",
+  "physiology": "cultivation.bioelectric.collective V_PHYS_MIN/MAX clips (the stack's own bounds)"
+ },
+ "instrument": {
+  "arm": "torus (10x10, N=100, degree-4 canonical neighborhood)",
+  "wound": "slice(40, 60) \u2014 exp79's TC-G6 mid wound, the batch-15 torus precedent (exp234 T4's exact region)",
+  "clones": {
+   "with_memory": "phi = [1, V_self, V_nbm, V_nbs, V_grad, th_self, th_nbm, th_nbs, th_grad] (9)",
+   "without": "phi = [1, V_self, V_nbm, V_nbs, V_grad] (5) \u2014 the pure-NCA perception",
+   "gradient_channel": "V_grad = V_nbm - V_self: the NCA's directed Sobel pair collapsed on an undirected regular graph",
+   "rule": "x'_t+1 = W @ phi(x_t), W fitted by ridge least squares (lambda=1e-06, numerical conditioning only) on D; step() replaced, regen machinery verbatim"
+  },
+  "dataset": {
+   "fit_transitions": 62000,
+   "heldout_transitions": 31000,
+   "fit_seeds": [
+    1,
+    2
+   ],
+   "heldout_seed": 3,
+   "window_steps_per_seed": 310,
+   "pairing": "clean one-step (pre, post) dynamics transitions; commitment writes land between steps and never appear as transitions"
+  },
+  "checkpoints": {
+   "stride_steps": 10,
+   "count_per_seed": 31
+  },
+  "bars": {
+   "H1_R2": 0.95,
+   "H2_regen_err": 6.0,
+   "H2_fail_mult": 2.0,
+   "H3_tube_mult": 2.0
+  }
+ },
+ "W_matrices": {
+  "W_with_rows_V_theta_9feat": [
+   [
+    0.000384,
+    0.61828,
+    0.356034,
+    0.00065,
+    -0.276611,
+    0.003647,
+    0.022017,
+    -0.000868,
+    -0.021573
+   ],
+   [
+    0.0,
+    -0.009477,
+    0.013477,
+    -0.0,
+    -0.013477,
+    0.660947,
+    0.335053,
+    0.0,
+    -0.329053
+   ]
+  ],
+  "W_without_rows_V_theta_5feat": [
+   [
+    0.357713,
+    0.740485,
+    0.267612,
+    -0.017251,
+    -0.186099
+   ],
+   [
+    14.039489,
+    0.938394,
+    0.38034,
+    -0.661113,
+    -0.304959
+   ]
+  ]
+ },
+ "H1": {
+  "r2_with": {
+   "pooled": 0.999807,
+   "V": 0.999476,
+   "theta": 1.0
+  },
+  "r2_without": {
+   "pooled": 0.969817,
+   "V": 0.99942,
+   "theta": 0.952523
+  },
+  "bar": 0.95,
+  "pass": true,
+  "expectation_strictly_lower_held": true
+ },
+ "H2": {
+  "rows": [
+   {
+    "clone": "with_memory",
+    "seed": 1,
+    "region_err": 6.4266,
+    "pattern_err": 10.6052,
+    "theta_region_err": 6.0237
+   },
+   {
+    "clone": "with_memory",
+    "seed": 2,
+    "region_err": 6.5152,
+    "pattern_err": 10.6179,
+    "theta_region_err": 6.1167
+   },
+   {
+    "clone": "with_memory",
+    "seed": 3,
+    "region_err": 6.5323,
+    "pattern_err": 10.6291,
+    "theta_region_err": 6.1294
+   },
+   {
+    "clone": "without",
+    "seed": 1,
+    "region_err": 14.7367,
+    "pattern_err": 13.8192,
+    "theta_region_err": 16.1035
+   },
+   {
+    "clone": "without",
+    "seed": 2,
+    "region_err": 15.0471,
+    "pattern_err": 14.0092,
+    "theta_region_err": 16.5019
+   },
+   {
+    "clone": "without",
+    "seed": 3,
+    "region_err": 16.1462,
+    "pattern_err": 14.6727,
+    "theta_region_err": 17.9553
+   }
+  ],
+  "mean_region_err_with": 6.4914,
+  "mean_region_err_without": 15.31,
+  "leg1_with_completes": false,
+  "leg2_without_fails_at_2x": true,
+  "pass": false
+ },
+ "H3": {
+  "rows": [
+   {
+    "seed": 1,
+    "pass": true,
+    "worst_checkpoint_step": 99,
+    "worst_ratio": 0.3911,
+    "checkpoint_ratios": [
+     0.101,
+     0.131,
+     0.1704,
+     0.298,
+     0.1584,
+     0.1304,
+     0.2849,
+     0.2558,
+     0.2368,
+     0.3911,
+     0.2144,
+     0.2222,
+     0.1647,
+     0.1631,
+     0.3208,
+     0.2771,
+     0.1845,
+     0.2319,
+     0.2663,
+     0.1416,
+     0.157,
+     0.1433,
+     0.1663,
+     0.167,
+     0.1439,
+     0.2689,
+     0.2352,
+     0.2235,
+     0.2141,
+     0.2265,
+     0.189
+    ],
+    "per_cell_worst_ratio": 15.1487,
+    "per_cell_worst_at": {
+     "step": 111,
+     "cell": 27
+    },
+    "theta_tube_worst_ratio_disclosure": 129.6666
+   },
+   {
+    "seed": 2,
+    "pass": true,
+    "worst_checkpoint_step": 119,
+    "worst_ratio": 0.3712,
+    "checkpoint_ratios": [
+     0.1372,
+     0.1454,
+     0.1642,
+     0.3243,
+     0.3131,
+     0.2177,
+     0.2509,
+     0.3071,
+     0.1605,
+     0.2316,
+     0.242,
+     0.3712,
+     0.1924,
+     0.1689,
+     0.1381,
+     0.1785,
+     0.1734,
+     0.2026,
+     0.221,
+     0.2227,
+     0.2392,
+     0.1692,
+     0.1771,
+     0.1807,
+     0.1901,
+     0.322,
+     0.1659,
+     0.2013,
+     0.217,
+     0.2069,
+     0.1827
+    ],
+    "per_cell_worst_ratio": 42.2952,
+    "per_cell_worst_at": {
+     "step": 206,
+     "cell": 46
+    },
+    "theta_tube_worst_ratio_disclosure": 132.8658
+   },
+   {
+    "seed": 3,
+    "pass": true,
+    "worst_checkpoint_step": 99,
+    "worst_ratio": 0.7812,
+    "checkpoint_ratios": [
+     0.1215,
+     0.1432,
+     0.1967,
+     0.3109,
+     0.1328,
+     0.1197,
+     0.209,
+     0.1919,
+     0.5127,
+     0.7812,
+     0.4451,
+     0.3999,
+     0.3048,
+     0.3821,
+     0.2477,
+     0.304,
+     0.2651,
+     0.2502,
+     0.325,
+     0.2328,
+     0.2673,
+     0.2135,
+     0.2394,
+     0.2021,
+     0.1682,
+     0.2727,
+     0.1835,
+     0.2848,
+     0.2192,
+     0.2219,
+     0.1776
+    ],
+    "per_cell_worst_ratio": 33.3025,
+    "per_cell_worst_at": {
+     "step": 249,
+     "cell": 50
+    },
+    "theta_tube_worst_ratio_disclosure": 110.5242
+   }
+  ],
+  "pass": true,
+  "tube": "deviation from the stack's 3-seed mean vs 2x the per-checkpoint maximal per-cell seed diameter (V layer gated; theta-layer worst ratio deposited per seed as disclosure)"
+ },
+ "criteria": {
+  "H1_one_step_fidelity": true,
+  "H2_closed_loop_regen_bound": false,
+  "H3_hansali_parallel_tube": true
+ },
+ "notes": "Body-landing disclosures: (a) the closed loop grants BOTH clones the frozen regen machinery verbatim (amputate defaults -> regrow_graph walk -> run(15)) on the clone's own state; the clone substitutes the fitted linear rule for the LOCAL UPDATE only (step()), so the walk's inheritance reads \u2014 which read theta, the memory layer \u2014 are protocol, not rule; H2 prices the RULE's memory-needs given the protocol, and the without clone's commitments inherit theta[src] maintained by its own fitted theta-map (a function of V-features alone). (b) The wound is exp79's TC-G6 mid wound slice(40,60) \u2014 the batch-15 torus precedent (exp234 T4's exact region); exp43's tail slice(85,100) on the torus wraps against the head block and the stack's own walk commits wrapped cells to head identity (the reference would fail its own bar structurally). (c) The perception's 4th per-layer channel is the graph-Sobel gradient (neighbor-mean - self); on the regular torus it is exactly collinear with (self, neighbor-mean) \u2014 the ridge minimum-norm solution absorbs it and the pre-named 9/5 counts hold. (d) The fit/held-out split is by whole trajectory (fit seeds 1,2; held-out seed 3). (e) The clone is a deterministic mean-flow rule; its commitment-noise draws ride its own seed-s rng stream (the stack's dynamics-noise draws shift the streams; the tube is the pre-named absorber). (f) H2 gates the MEAN region error over the 3 seeds (exp73's verdict convention), per-seed errs deposited; the whole-tissue pattern error on the torus carries the plateau write-fail floor (~8.4 mV, exp73 SR-G1) \u2014 the regen bar applies to the REGENERATED REGION (exp43 SI-G2 semantics); whole-tissue errs deposited as disclosure. (g) H3's per-cell worst ratio (the strict per-cell tube reading) deposited beside the gated scalar reading."
+}
