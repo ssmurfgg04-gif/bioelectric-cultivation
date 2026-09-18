@@ -1,0 +1,4756 @@
+{
+ "exp": "exp208_c6_tail_ablation",
+ "claim": "THE C6 TAIL ABLATION (L177's registered next): the c6 tail at n=400 refused all three named rules \u2014 the RULE_MAP's first n=400-only entry fires; the pre-registered ablation asks WHERE the excess lives (boundary cells, pair-junction cells, or the interior) and the rule is NAMED FROM the ablation's answer",
+ "pre_registered": {
+  "gates_source": "module docstring, committed before any run (pre-registration de1155d, batch 9; gates A1-A4 fixed there, each evaluated exactly once)",
+  "gates": [
+   "GATE-A1 (replay) the c6 battery replays bit-exactly vs exp199's deposit (25 instances x 3 seeds)",
+   "GATE-A2 (the decomposition) every decoded cell classified into exactly one of the three pre-named classes; per-class err shares deposited; the shares sum to the instance err (the accounting identity asserted)",
+   "GATE-A3 (the naming) the class carrying the LARGEST mean excess names the new rule class's target (BOUNDARY-NAMED / JUNCTION-NAMED / INTERIOR-NAMED); the clean-battery baseline (exp198's c3 at n=400) replayed bit-exactly as the reference line",
+   "GATE-A4 (hygiene) zero rejections; all finite; the pin asserted"
+  ],
+  "conventions": "CANON-BOUNDARY: a lattice neighbor's target value differs (the n-cell ring backbone); PAIR-JUNCTION: endpoint of >= 2 chords in the medium's chord set (the pair support of |Wbase| > 0 \u2014 hyperedge cliques are group couplings, not pairs); precedence = the registered listing order; the accounting identity holds on the mean-squared (mV^2) scale the RMS actually decomposes, disclosed in the deposit"
+ },
+ "sections": {
+  "c6_tail": {
+   "cell": 6,
+   "n_instances": 25,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_build": 400,
+   "n_replay_exact": 25,
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 172166,
+     "tail": true,
+     "dep199_median_err": 1.42,
+     "errs": [
+      1.42,
+      1.44,
+      1.42
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.42,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 127,
+         "sum_sq": 447.78134212378615,
+         "frac_of_sq": 0.5581676704115911,
+         "rms_contrib_mV": 1.0580422275644132
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 273,
+         "sum_sq": 354.4531222865112,
+         "frac_of_sq": 0.44183232958840896,
+         "rms_contrib_mV": 0.9413462730134315
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 127,
+         "sum_sq": 453.1815947664167,
+         "frac_of_sq": 0.5427047579042191,
+         "rms_contrib_mV": 1.0644031129774292
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 273,
+         "sum_sq": 381.8610101970686,
+         "frac_of_sq": 0.457295242095781,
+         "rms_contrib_mV": 0.9770632146860669
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 127,
+         "sum_sq": 447.45278034780455,
+         "frac_of_sq": 0.5530825050976905,
+         "rms_contrib_mV": 1.0576539844720065
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 273,
+         "sum_sq": 361.563553063015,
+         "frac_of_sq": 0.44691749490230936,
+         "rms_contrib_mV": 0.9507412280202944
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 1,
+     "gen_seed": 172167,
+     "tail": true,
+     "dep199_median_err": 1.36,
+     "errs": [
+      1.33,
+      1.36,
+      1.38
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.36,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 128,
+         "sum_sq": 392.6007469499632,
+         "frac_of_sq": 0.5548444951282937,
+         "rms_contrib_mV": 0.9907077608330864
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 272,
+         "sum_sq": 314.9862443550225,
+         "frac_of_sq": 0.4451555048717062,
+         "rms_contrib_mV": 0.887392591183607
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 128,
+         "sum_sq": 395.4211964994818,
+         "frac_of_sq": 0.5379115124161742,
+         "rms_contrib_mV": 0.994260021950347
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 272,
+         "sum_sq": 339.68334648258076,
+         "frac_of_sq": 0.46208848758382576,
+         "rms_contrib_mV": 0.9215250220186384
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 128,
+         "sum_sq": 409.8983228545096,
+         "frac_of_sq": 0.5378908619549196,
+         "rms_contrib_mV": 1.0122972918744149
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 272,
+         "sum_sq": 352.14905858783027,
+         "frac_of_sq": 0.46210913804508036,
+         "rms_contrib_mV": 0.9382817521776579
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 2,
+     "gen_seed": 172168,
+     "tail": true,
+     "dep199_median_err": 1.36,
+     "errs": [
+      1.34,
+      1.36,
+      1.37
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.36,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 123,
+         "sum_sq": 412.2275349238283,
+         "frac_of_sq": 0.5709071209360457,
+         "rms_contrib_mV": 1.0151693638549042
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 277,
+         "sum_sq": 309.8295559878245,
+         "frac_of_sq": 0.4290928790639544,
+         "rms_contrib_mV": 0.8800987955732932
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 123,
+         "sum_sq": 428.98819934398284,
+         "frac_of_sq": 0.5756104124165042,
+         "rms_contrib_mV": 1.0356015152364142
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 277,
+         "sum_sq": 316.28705991170364,
+         "frac_of_sq": 0.4243895875834957,
+         "rms_contrib_mV": 0.889223059630855
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 123,
+         "sum_sq": 434.9857169544304,
+         "frac_of_sq": 0.5787879072647392,
+         "rms_contrib_mV": 1.042815560099712
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 277,
+         "sum_sq": 316.56024918384753,
+         "frac_of_sq": 0.4212120927352608,
+         "rms_contrib_mV": 0.8896070047833587
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      }
+     ]
+    },
+    {
+     "j": 3,
+     "gen_seed": 172169,
+     "tail": true,
+     "dep199_median_err": 1.4,
+     "errs": [
+      1.4,
+      1.39,
+      1.41
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.4,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 150,
+         "sum_sq": 504.6180453346974,
+         "frac_of_sq": 0.6427359871032692,
+         "rms_contrib_mV": 1.1231852533472577
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 250,
+         "sum_sq": 280.4913237687006,
+         "frac_of_sq": 0.3572640128967309,
+         "rms_contrib_mV": 0.8373937600804962
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 150,
+         "sum_sq": 481.85276642405665,
+         "frac_of_sq": 0.6244368160147741,
+         "rms_contrib_mV": 1.0975572495592845
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 250,
+         "sum_sq": 289.80699812873695,
+         "frac_of_sq": 0.3755631839852259,
+         "rms_contrib_mV": 0.8511859346358129
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 150,
+         "sum_sq": 501.73143993103383,
+         "frac_of_sq": 0.6313263095861535,
+         "rms_contrib_mV": 1.1199681244694353
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 250,
+         "sum_sq": 292.994571503415,
+         "frac_of_sq": 0.3686736904138465,
+         "rms_contrib_mV": 0.8558542099905435
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 4,
+     "gen_seed": 172170,
+     "tail": true,
+     "dep199_median_err": 1.37,
+     "errs": [
+      1.37,
+      1.37,
+      1.36
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.37,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 133,
+         "sum_sq": 416.48068593816845,
+         "frac_of_sq": 0.5579588854159573,
+         "rms_contrib_mV": 1.0203929217930812
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 267,
+         "sum_sq": 329.9554706035145,
+         "frac_of_sq": 0.4420411145840427,
+         "rms_contrib_mV": 0.9082338225967949
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 133,
+         "sum_sq": 419.5654948446704,
+         "frac_of_sq": 0.5571416455927403,
+         "rms_contrib_mV": 1.0241648974221271
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 267,
+         "sum_sq": 333.5024155577135,
+         "frac_of_sq": 0.44285835440725985,
+         "rms_contrib_mV": 0.9131024251935178
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 133,
+         "sum_sq": 422.52338520964287,
+         "frac_of_sq": 0.5708273328809461,
+         "rms_contrib_mV": 1.027768681671176
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 267,
+         "sum_sq": 317.6713477180566,
+         "frac_of_sq": 0.429172667119054,
+         "rms_contrib_mV": 0.8911668582791561
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 6.661338147750939e-16
+      }
+     ]
+    },
+    {
+     "j": 5,
+     "gen_seed": 172171,
+     "tail": true,
+     "dep199_median_err": 1.37,
+     "errs": [
+      1.38,
+      1.37,
+      1.36
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.37,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 127,
+         "sum_sq": 419.6166243224503,
+         "frac_of_sq": 0.5534249898380257,
+         "rms_contrib_mV": 1.0242272993853103
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 273,
+         "sum_sq": 338.60107821617567,
+         "frac_of_sq": 0.44657501016197415,
+         "rms_contrib_mV": 0.9200558111008479
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 127,
+         "sum_sq": 392.1237658152192,
+         "frac_of_sq": 0.5205962348897876,
+         "rms_contrib_mV": 0.9901057592692045
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 273,
+         "sum_sq": 361.0967523820234,
+         "frac_of_sq": 0.4794037651102125,
+         "rms_contrib_mV": 0.9501272972370904
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 127,
+         "sum_sq": 396.89215259584677,
+         "frac_of_sq": 0.5368266603126792,
+         "rms_contrib_mV": 0.9961076154159333
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 273,
+         "sum_sq": 342.43802963592543,
+         "frac_of_sq": 0.4631733396873209,
+         "rms_contrib_mV": 0.925254059212827
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 6,
+     "gen_seed": 172172,
+     "tail": true,
+     "dep199_median_err": 1.4,
+     "errs": [
+      1.39,
+      1.4,
+      1.41
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.4,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 124,
+         "sum_sq": 435.5548918757353,
+         "frac_of_sq": 0.5618289859286895,
+         "rms_contrib_mV": 1.0434975944818168
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 276,
+         "sum_sq": 339.6897159754843,
+         "frac_of_sq": 0.4381710140713104,
+         "rms_contrib_mV": 0.9215336618587032
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 124,
+         "sum_sq": 445.49284927493085,
+         "frac_of_sq": 0.5723015672446292,
+         "rms_contrib_mV": 1.0553350762612448
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 276,
+         "sum_sq": 332.9304065266837,
+         "frac_of_sq": 0.42769843275537095,
+         "rms_contrib_mV": 0.9123190320916852
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 124,
+         "sum_sq": 436.77856590301985,
+         "frac_of_sq": 0.5530151761331052,
+         "rms_contrib_mV": 1.0449623987290402
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 276,
+         "sum_sq": 353.0344170916666,
+         "frac_of_sq": 0.44698482386689464,
+         "rms_contrib_mV": 0.9394605062104349
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 7,
+     "gen_seed": 172173,
+     "tail": true,
+     "dep199_median_err": 1.45,
+     "errs": [
+      1.44,
+      1.45,
+      1.45
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.45,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 136,
+         "sum_sq": 487.9235676633374,
+         "frac_of_sq": 0.5874948168966331,
+         "rms_contrib_mV": 1.1044496000987747
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 264,
+         "sum_sq": 342.5919596748131,
+         "frac_of_sq": 0.4125051831033669,
+         "rms_contrib_mV": 0.9254619922973784
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 136,
+         "sum_sq": 508.8869868141775,
+         "frac_of_sq": 0.601652560807968,
+         "rms_contrib_mV": 1.1279261797810367
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 264,
+         "sum_sq": 336.9283889747757,
+         "frac_of_sq": 0.39834743919203197,
+         "rms_contrib_mV": 0.9177804598251911
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 136,
+         "sum_sq": 505.0132590954073,
+         "frac_of_sq": 0.6004250262318744,
+         "rms_contrib_mV": 1.1236250031654325
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 264,
+         "sum_sq": 336.07969511529757,
+         "frac_of_sq": 0.39957497376812545,
+         "rms_contrib_mV": 0.916623825671275
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 8,
+     "gen_seed": 172174,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "errs": [
+      1.37,
+      1.38,
+      1.38
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.38,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 133,
+         "sum_sq": 442.8754585152034,
+         "frac_of_sq": 0.5926648061953284,
+         "rms_contrib_mV": 1.0522303199813283
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 267,
+         "sum_sq": 304.3858161305566,
+         "frac_of_sq": 0.4073351938046716,
+         "rms_contrib_mV": 0.8723328151149603
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 133,
+         "sum_sq": 441.3215170130436,
+         "frac_of_sq": 0.5820073499369981,
+         "rms_contrib_mV": 1.0503826886104934
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 267,
+         "sum_sq": 316.9533004111973,
+         "frac_of_sq": 0.4179926500630017,
+         "rms_contrib_mV": 0.8901591155675446
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 133,
+         "sum_sq": 455.2776856351178,
+         "frac_of_sq": 0.5968665629835529,
+         "rms_contrib_mV": 1.0668618533286278
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 267,
+         "sum_sq": 307.5019938954698,
+         "frac_of_sq": 0.40313343701644705,
+         "rms_contrib_mV": 0.8767867384596294
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 9,
+     "gen_seed": 172175,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "errs": [
+      1.38,
+      1.38,
+      1.37
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.38,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 125,
+         "sum_sq": 422.1359285336202,
+         "frac_of_sq": 0.5512736621877341,
+         "rms_contrib_mV": 1.0272973383271518
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 275,
+         "sum_sq": 343.61066428993365,
+         "frac_of_sq": 0.4487263378122659,
+         "rms_contrib_mV": 0.9268369116111174
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 125,
+         "sum_sq": 430.35023460749073,
+         "frac_of_sq": 0.5669753497599107,
+         "rms_contrib_mV": 1.0372442270356228
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 275,
+         "sum_sq": 328.6778867909533,
+         "frac_of_sq": 0.4330246502400894,
+         "rms_contrib_mV": 0.906473781737444
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 125,
+         "sum_sq": 397.762546687547,
+         "frac_of_sq": 0.5261849781800052,
+         "rms_contrib_mV": 0.9971992612907751
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 275,
+         "sum_sq": 358.17417363340905,
+         "frac_of_sq": 0.4738150218199947,
+         "rms_contrib_mV": 0.946274502501004
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 10,
+     "gen_seed": 172176,
+     "tail": true,
+     "dep199_median_err": 1.41,
+     "errs": [
+      1.42,
+      1.4,
+      1.41
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.41,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 128,
+         "sum_sq": 436.2322879970886,
+         "frac_of_sq": 0.5442006089283343,
+         "rms_contrib_mV": 1.0443087282948091
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 272,
+         "sum_sq": 365.36969634493175,
+         "frac_of_sq": 0.4557993910716657,
+         "rms_contrib_mV": 0.9557323060681424
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 128,
+         "sum_sq": 424.7275765499674,
+         "frac_of_sq": 0.5404411429070153,
+         "rms_contrib_mV": 1.0304459914885975
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 272,
+         "sum_sq": 361.16295403653004,
+         "frac_of_sq": 0.45955885709298455,
+         "rms_contrib_mV": 0.9502143890150923
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 6.661338147750939e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 128,
+         "sum_sq": 436.4461774738518,
+         "frac_of_sq": 0.5466179196520304,
+         "rms_contrib_mV": 1.0445647149337516
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 272,
+         "sum_sq": 362.002175173803,
+         "frac_of_sq": 0.4533820803479696,
+         "rms_contrib_mV": 0.9513177376326521
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 11,
+     "gen_seed": 172177,
+     "tail": true,
+     "dep199_median_err": 1.35,
+     "errs": [
+      1.33,
+      1.35,
+      1.37
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.35,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 131,
+         "sum_sq": 442.73296276162887,
+         "frac_of_sq": 0.6254508331316772,
+         "rms_contrib_mV": 1.0520610281272054
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 269,
+         "sum_sq": 265.12917333120055,
+         "frac_of_sq": 0.37454916686832274,
+         "rms_contrib_mV": 0.8141393820028615
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 131,
+         "sum_sq": 454.58761903153066,
+         "frac_of_sq": 0.6218715934797846,
+         "rms_contrib_mV": 1.0660530228740157
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 269,
+         "sum_sq": 276.41155153326565,
+         "frac_of_sq": 0.3781284065202155,
+         "rms_contrib_mV": 0.8312814678754508
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 131,
+         "sum_sq": 473.0199752552602,
+         "frac_of_sq": 0.6298588729583703,
+         "rms_contrib_mV": 1.0874511198845447
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 269,
+         "sum_sq": 277.97361325059524,
+         "frac_of_sq": 0.3701411270416297,
+         "rms_contrib_mV": 0.8336270347862335
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 12,
+     "gen_seed": 172178,
+     "tail": true,
+     "dep199_median_err": 1.41,
+     "errs": [
+      1.41,
+      1.39,
+      1.44
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.41,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 135,
+         "sum_sq": 485.92985170505835,
+         "frac_of_sq": 0.6129791882026727,
+         "rms_contrib_mV": 1.1021908315997941
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 265,
+         "sum_sq": 306.8048137733276,
+         "frac_of_sq": 0.3870208117973273,
+         "rms_contrib_mV": 0.875792232457744
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 135,
+         "sum_sq": 479.97290710496736,
+         "frac_of_sq": 0.6173337817052215,
+         "rms_contrib_mV": 1.0954141991787483
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 265,
+         "sum_sq": 297.5204381954778,
+         "frac_of_sq": 0.3826662182947786,
+         "rms_contrib_mV": 0.8624390387086467
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 135,
+         "sum_sq": 488.3213452254331,
+         "frac_of_sq": 0.5880504706681359,
+         "rms_contrib_mV": 1.1048997072420568
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 265,
+         "sum_sq": 342.0858554874721,
+         "frac_of_sq": 0.4119495293318641,
+         "rms_contrib_mV": 0.9247781564887225
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 13,
+     "gen_seed": 172179,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "errs": [
+      1.39,
+      1.38,
+      1.38
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.38,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 136,
+         "sum_sq": 473.73629607367957,
+         "frac_of_sq": 0.609859599727697,
+         "rms_contrib_mV": 1.0882742026641075
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 264,
+         "sum_sq": 303.0593734299298,
+         "frac_of_sq": 0.39014040027230307,
+         "rms_contrib_mV": 0.8704300279602172
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 136,
+         "sum_sq": 454.50060649124475,
+         "frac_of_sq": 0.5969385740225672,
+         "rms_contrib_mV": 1.0659509914757395
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 264,
+         "sum_sq": 306.88528189006524,
+         "frac_of_sq": 0.4030614259774327,
+         "rms_contrib_mV": 0.8759070753939387
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 136,
+         "sum_sq": 464.7809568640318,
+         "frac_of_sq": 0.6075482650193677,
+         "rms_contrib_mV": 1.0779389556742438
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 264,
+         "sum_sq": 300.2297980415318,
+         "frac_of_sq": 0.3924517349806325,
+         "rms_contrib_mV": 0.8663570251944804
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 6.661338147750939e-16
+      }
+     ]
+    },
+    {
+     "j": 14,
+     "gen_seed": 172180,
+     "tail": true,
+     "dep199_median_err": 1.44,
+     "errs": [
+      1.45,
+      1.44,
+      1.43
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.44,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 148,
+         "sum_sq": 552.6773418738319,
+         "frac_of_sq": 0.6549806754338972,
+         "rms_contrib_mV": 1.1754545311004505
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 252,
+         "sum_sq": 291.1297544312712,
+         "frac_of_sq": 0.34501932456610285,
+         "rms_contrib_mV": 0.8531262427555361
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 148,
+         "sum_sq": 566.5751622719924,
+         "frac_of_sq": 0.6872132335378295,
+         "rms_contrib_mV": 1.1901419687079273
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 252,
+         "sum_sq": 257.8780563530587,
+         "frac_of_sq": 0.3127867664621705,
+         "rms_contrib_mV": 0.8029291007820347
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 148,
+         "sum_sq": 541.426577124377,
+         "frac_of_sq": 0.6658677922051293,
+         "rms_contrib_mV": 1.1634287441914706
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 252,
+         "sum_sq": 271.68765285114864,
+         "frac_of_sq": 0.33413220779487074,
+         "rms_contrib_mV": 0.8241475184260835
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 15,
+     "gen_seed": 172181,
+     "tail": true,
+     "dep199_median_err": 1.37,
+     "errs": [
+      1.38,
+      1.37,
+      1.36
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.37,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 128,
+         "sum_sq": 389.82393051206105,
+         "frac_of_sq": 0.5090555158231437,
+         "rms_contrib_mV": 0.9871979671171089
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 272,
+         "sum_sq": 375.95488612980387,
+         "frac_of_sq": 0.49094448417685643,
+         "rms_contrib_mV": 0.969477805483194
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 128,
+         "sum_sq": 389.2155990557942,
+         "frac_of_sq": 0.518078895168631,
+         "rms_contrib_mV": 0.9864273909616893
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 272,
+         "sum_sq": 362.0514428666668,
+         "frac_of_sq": 0.48192110483136896,
+         "rms_contrib_mV": 0.9513824715468889
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 128,
+         "sum_sq": 382.00317246442154,
+         "frac_of_sq": 0.5164923928208226,
+         "rms_contrib_mV": 0.97724507221119
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 272,
+         "sum_sq": 357.6072802241682,
+         "frac_of_sq": 0.4835076071791774,
+         "rms_contrib_mV": 0.9455253569103372
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 16,
+     "gen_seed": 172182,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "errs": [
+      1.39,
+      1.38,
+      1.36
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.38,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 134,
+         "sum_sq": 449.84651381764394,
+         "frac_of_sq": 0.5789960172015507,
+         "rms_contrib_mV": 1.0604792711524869
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 266,
+         "sum_sq": 327.09581471835816,
+         "frac_of_sq": 0.42100398279844925,
+         "rms_contrib_mV": 0.904289520450113
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 134,
+         "sum_sq": 452.9599041971185,
+         "frac_of_sq": 0.5957451895557258,
+         "rms_contrib_mV": 1.064142735018567
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 266,
+         "sum_sq": 307.36500003737694,
+         "frac_of_sq": 0.4042548104442743,
+         "rms_contrib_mV": 0.8765914100043659
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 134,
+         "sum_sq": 453.81434278932284,
+         "frac_of_sq": 0.6092451715063456,
+         "rms_contrib_mV": 1.065145932242764
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 266,
+         "sum_sq": 291.06532801262483,
+         "frac_of_sq": 0.39075482849365445,
+         "rms_contrib_mV": 0.8530318399869738
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 17,
+     "gen_seed": 172183,
+     "tail": true,
+     "dep199_median_err": 1.42,
+     "errs": [
+      1.42,
+      1.38,
+      1.42
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.42,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 142,
+         "sum_sq": 503.4686900507713,
+         "frac_of_sq": 0.6215291939105975,
+         "rms_contrib_mV": 1.1219053993661534
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 258,
+         "sum_sq": 306.5796471528255,
+         "frac_of_sq": 0.37847080608940264,
+         "rms_contrib_mV": 0.8754707978465437
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 142,
+         "sum_sq": 487.24397587247915,
+         "frac_of_sq": 0.6403268818805045,
+         "rms_contrib_mV": 1.1036801799802323
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 258,
+         "sum_sq": 273.6860891617215,
+         "frac_of_sq": 0.3596731181194956,
+         "rms_contrib_mV": 0.8271730308129635
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 142,
+         "sum_sq": 491.21893004229844,
+         "frac_of_sq": 0.6073244014398118,
+         "rms_contrib_mV": 1.1081729671426506
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 258,
+         "sum_sq": 317.60569297258974,
+         "frac_of_sq": 0.39267559856018813,
+         "rms_contrib_mV": 0.8910747625376191
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 18,
+     "gen_seed": 172184,
+     "tail": true,
+     "dep199_median_err": 1.34,
+     "errs": [
+      1.34,
+      1.36,
+      1.34
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.34,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 134,
+         "sum_sq": 378.50517150407626,
+         "frac_of_sq": 0.5295660014387414,
+         "rms_contrib_mV": 0.9727604683374992
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 266,
+         "sum_sq": 336.24081006524943,
+         "frac_of_sq": 0.47043399856125845,
+         "rms_contrib_mV": 0.9168435118181966
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 134,
+         "sum_sq": 380.19445257234725,
+         "frac_of_sq": 0.5160633156507897,
+         "rms_contrib_mV": 0.9749287827481904
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 266,
+         "sum_sq": 356.52610291394444,
+         "frac_of_sq": 0.48393668434921033,
+         "rms_contrib_mV": 0.944094940821558
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 134,
+         "sum_sq": 367.15180834471613,
+         "frac_of_sq": 0.511816009127771,
+         "rms_contrib_mV": 0.9580602908281871
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 266,
+         "sum_sq": 350.1993526133215,
+         "frac_of_sq": 0.488183990872229,
+         "rms_contrib_mV": 0.9356807049059545
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 19,
+     "gen_seed": 172185,
+     "tail": true,
+     "dep199_median_err": 1.43,
+     "errs": [
+      1.43,
+      1.43,
+      1.4
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.43,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 140,
+         "sum_sq": 484.8933487012032,
+         "frac_of_sq": 0.5917753028242577,
+         "rms_contrib_mV": 1.1010147009704312
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 260,
+         "sum_sq": 334.4942573496769,
+         "frac_of_sq": 0.4082246971757422,
+         "rms_contrib_mV": 0.9144592081521145
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 140,
+         "sum_sq": 501.5966478007041,
+         "frac_of_sq": 0.6103811095588032,
+         "rms_contrib_mV": 1.1198176724367945
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 260,
+         "sum_sq": 320.1795178530284,
+         "frac_of_sq": 0.3896188904411968,
+         "rms_contrib_mV": 0.8946780396503375
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 140,
+         "sum_sq": 468.10693709700666,
+         "frac_of_sq": 0.5948621532200309,
+         "rms_contrib_mV": 1.081788954807044
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 260,
+         "sum_sq": 318.8097200866967,
+         "frac_of_sq": 0.4051378467799691,
+         "rms_contrib_mV": 0.8927621744993129
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 20,
+     "gen_seed": 172186,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "errs": [
+      1.38,
+      1.38,
+      1.36
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.38,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 145,
+         "sum_sq": 466.1914085236383,
+         "frac_of_sq": 0.6080939210833706,
+         "rms_contrib_mV": 1.079573305204003
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 255,
+         "sum_sq": 300.45234889639806,
+         "frac_of_sq": 0.3919060789166294,
+         "rms_contrib_mV": 0.8666780672435384
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 145,
+         "sum_sq": 455.05612773695367,
+         "frac_of_sq": 0.6004587833656037,
+         "rms_contrib_mV": 1.0666022310788517
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 255,
+         "sum_sq": 302.79127219004835,
+         "frac_of_sq": 0.3995412166343964,
+         "rms_contrib_mV": 0.870044930147358
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 145,
+         "sum_sq": 431.58121391087997,
+         "frac_of_sq": 0.584444365185022,
+         "rms_contrib_mV": 1.0387266410260207
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 255,
+         "sum_sq": 306.86583018757926,
+         "frac_of_sq": 0.4155556348149779,
+         "rms_contrib_mV": 0.8758793155846004
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 21,
+     "gen_seed": 172187,
+     "tail": true,
+     "dep199_median_err": 1.45,
+     "errs": [
+      1.45,
+      1.45,
+      1.43
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.45,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 142,
+         "sum_sq": 539.6670369200149,
+         "frac_of_sq": 0.6449309046135635,
+         "rms_contrib_mV": 1.1615367373871726
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 258,
+         "sum_sq": 297.1156836155723,
+         "frac_of_sq": 0.3550690953864366,
+         "rms_contrib_mV": 0.8618521967477548
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 142,
+         "sum_sq": 542.0994611940906,
+         "frac_of_sq": 0.6451113770525082,
+         "rms_contrib_mV": 1.1641514733853264
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 258,
+         "sum_sq": 298.219715427665,
+         "frac_of_sq": 0.35488862294749185,
+         "rms_contrib_mV": 0.86345196077672
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 142,
+         "sum_sq": 531.6243142484839,
+         "frac_of_sq": 0.647417728409937,
+         "rms_contrib_mV": 1.152848986477071
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 258,
+         "sum_sq": 289.52143280134953,
+         "frac_of_sq": 0.35258227159006306,
+         "rms_contrib_mV": 0.8507664673712604
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      }
+     ]
+    },
+    {
+     "j": 22,
+     "gen_seed": 172188,
+     "tail": true,
+     "dep199_median_err": 1.41,
+     "errs": [
+      1.41,
+      1.41,
+      1.45
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.41,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 126,
+         "sum_sq": 456.9031870518325,
+         "frac_of_sq": 0.5744405100530485,
+         "rms_contrib_mV": 1.068764692357294
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 274,
+         "sum_sq": 338.48498466613773,
+         "frac_of_sq": 0.4255594899469516,
+         "rms_contrib_mV": 0.9198980713455944
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 126,
+         "sum_sq": 455.3162123555765,
+         "frac_of_sq": 0.5717671149333077,
+         "rms_contrib_mV": 1.0669069926141366
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 274,
+         "sum_sq": 341.0153717172251,
+         "frac_of_sq": 0.4282328850666924,
+         "rms_contrib_mV": 0.9233300760253956
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 126,
+         "sum_sq": 470.06364322196447,
+         "frac_of_sq": 0.561538201191422,
+         "rms_contrib_mV": 1.0840475580226687
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 274,
+         "sum_sq": 367.03638349861336,
+         "frac_of_sq": 0.43846179880857816,
+         "rms_contrib_mV": 0.9579096819358981
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 23,
+     "gen_seed": 172189,
+     "tail": true,
+     "dep199_median_err": 1.41,
+     "errs": [
+      1.41,
+      1.42,
+      1.41
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.41,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 135,
+         "sum_sq": 512.7010099514675,
+         "frac_of_sq": 0.6408076219904956,
+         "rms_contrib_mV": 1.1321450988626276
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 265,
+         "sum_sq": 287.38468247350795,
+         "frac_of_sq": 0.35919237800950454,
+         "rms_contrib_mV": 0.8476212044208014
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 135,
+         "sum_sq": 523.3285032308838,
+         "frac_of_sq": 0.6506283818831006,
+         "rms_contrib_mV": 1.1438187173137226
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 265,
+         "sum_sq": 281.0146791495478,
+         "frac_of_sq": 0.34937161811689954,
+         "rms_contrib_mV": 0.8381746225422657
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 135,
+         "sum_sq": 502.31167337274667,
+         "frac_of_sq": 0.6278364452519292,
+         "rms_contrib_mV": 1.120615537743372
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 265,
+         "sum_sq": 297.7560467660329,
+         "frac_of_sq": 0.37216355474807084,
+         "rms_contrib_mV": 0.8627804569617246
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      }
+     ]
+    },
+    {
+     "j": 24,
+     "gen_seed": 172190,
+     "tail": true,
+     "dep199_median_err": 1.44,
+     "errs": [
+      1.41,
+      1.44,
+      1.45
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.44,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 139,
+         "sum_sq": 487.388887338848,
+         "frac_of_sq": 0.6128819717592651,
+         "rms_contrib_mV": 1.1038442908069597
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 261,
+         "sum_sq": 307.8521375191816,
+         "frac_of_sq": 0.38711802824073477,
+         "rms_contrib_mV": 0.8772857822841734
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 139,
+         "sum_sq": 485.91311823971927,
+         "frac_of_sq": 0.5828900410401644,
+         "rms_contrib_mV": 1.1021718539317262
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 261,
+         "sum_sq": 347.7142969286883,
+         "frac_of_sq": 0.41710995895983555,
+         "rms_contrib_mV": 0.9323549443863752
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 139,
+         "sum_sq": 513.4603399832895,
+         "frac_of_sq": 0.6074874687976023,
+         "rms_contrib_mV": 1.1329831640224066
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 261,
+         "sum_sq": 331.759300513295,
+         "frac_of_sq": 0.3925125312023977,
+         "rms_contrib_mV": 0.9107130455216053
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    }
+   ]
+  },
+  "c3_clean_baseline": {
+   "cell": 3,
+   "n_instances": 25,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_build": 400,
+   "n_replay_exact": 25,
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 169166,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "errs": [
+      0.54,
+      0.51,
+      0.56
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.54,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 65,
+         "sum_sq": 24.77938453234363,
+         "frac_of_sq": 0.21476325766805557,
+         "rms_contrib_mV": 0.2488944783052832
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 335,
+         "sum_sq": 90.60061482789786,
+         "frac_of_sq": 0.7852367423319443,
+         "rms_contrib_mV": 0.4759217762088058
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 65,
+         "sum_sq": 20.52650363292688,
+         "frac_of_sq": 0.19967908983723684,
+         "rms_contrib_mV": 0.22653092301563862
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 335,
+         "sum_sq": 82.27095828288273,
+         "frac_of_sq": 0.8003209101627632,
+         "rms_contrib_mV": 0.4535166983774763
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 65,
+         "sum_sq": 27.73659090789689,
+         "frac_of_sq": 0.2206374340574893,
+         "rms_contrib_mV": 0.2633276993970483
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 335,
+         "sum_sq": 97.97458329235167,
+         "frac_of_sq": 0.7793625659425107,
+         "rms_contrib_mV": 0.4949105557884972
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 1,
+     "gen_seed": 169167,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "errs": [
+      0.56,
+      0.52,
+      0.54
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.54,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 71,
+         "sum_sq": 31.477421829265694,
+         "frac_of_sq": 0.2538141669860129,
+         "rms_contrib_mV": 0.28052371481421
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 329,
+         "sum_sq": 92.5401702659791,
+         "frac_of_sq": 0.7461858330139872,
+         "rms_contrib_mV": 0.48098900784212084
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 71,
+         "sum_sq": 24.366909633465692,
+         "frac_of_sq": 0.22356377040188494,
+         "rms_contrib_mV": 0.24681425016328418
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 329,
+         "sum_sq": 84.62619595633092,
+         "frac_of_sq": 0.776436229598115,
+         "rms_contrib_mV": 0.4599624874822156
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 71,
+         "sum_sq": 33.714130194204124,
+         "frac_of_sq": 0.29010223441574795,
+         "rms_contrib_mV": 0.29031935086299415
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 329,
+         "sum_sq": 82.50052172704966,
+         "frac_of_sq": 0.7098977655842519,
+         "rms_contrib_mV": 0.45414898911879586
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 2,
+     "gen_seed": 169168,
+     "tail": false,
+     "dep199_median_err": 0.58,
+     "errs": [
+      0.57,
+      0.58,
+      0.58
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.58,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 96,
+         "sum_sq": 41.89662235643342,
+         "frac_of_sq": 0.3204445556839842,
+         "rms_contrib_mV": 0.32363800130868986
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 304,
+         "sum_sq": 88.84868635073339,
+         "frac_of_sq": 0.6795554443160158,
+         "rms_contrib_mV": 0.47129790565716867
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 96,
+         "sum_sq": 49.47308087398261,
+         "frac_of_sq": 0.363393733738987,
+         "rms_contrib_mV": 0.35168551602952963
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 304,
+         "sum_sq": 86.66872973169333,
+         "frac_of_sq": 0.6366062662610128,
+         "rms_contrib_mV": 0.46548020831097997
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 96,
+         "sum_sq": 45.254646542417866,
+         "frac_of_sq": 0.3413057582497937,
+         "rms_contrib_mV": 0.33635786947244845
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 304,
+         "sum_sq": 87.33803743245093,
+         "frac_of_sq": 0.6586942417502063,
+         "rms_contrib_mV": 0.46727410968416316
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      }
+     ]
+    },
+    {
+     "j": 3,
+     "gen_seed": 169169,
+     "tail": false,
+     "dep199_median_err": 0.94,
+     "errs": [
+      0.94,
+      0.98,
+      0.94
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.94,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 124,
+         "sum_sq": 204.9921384077703,
+         "frac_of_sq": 0.5855723359365009,
+         "rms_contrib_mV": 0.7158773260967453
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 276,
+         "sum_sq": 145.07928031785656,
+         "frac_of_sq": 0.41442766406349885,
+         "rms_contrib_mV": 0.6022443032479771
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 3.3306690738754696e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 124,
+         "sum_sq": 205.0331608813844,
+         "frac_of_sq": 0.5376049875885625,
+         "rms_contrib_mV": 0.7159489522329514
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 276,
+         "sum_sq": 176.34938878777808,
+         "frac_of_sq": 0.46239501241143754,
+         "rms_contrib_mV": 0.663983035904868
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 124,
+         "sum_sq": 199.61682681162145,
+         "frac_of_sq": 0.5595576467427232,
+         "rms_contrib_mV": 0.7064290955425417
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 276,
+         "sum_sq": 157.12358764544786,
+         "frac_of_sq": 0.4404423532572768,
+         "rms_contrib_mV": 0.6267447399967706
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.1102230246251565e-16
+      }
+     ]
+    },
+    {
+     "j": 4,
+     "gen_seed": 169170,
+     "tail": false,
+     "dep199_median_err": 0.66,
+     "errs": [
+      0.65,
+      0.67,
+      0.66
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.66,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 114,
+         "sum_sq": 74.56446509263306,
+         "frac_of_sq": 0.4473806059873582,
+         "rms_contrib_mV": 0.4317535902937955
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 286,
+         "sum_sq": 92.10450556618905,
+         "frac_of_sq": 0.5526193940126418,
+         "rms_contrib_mV": 0.4798554614834269
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 114,
+         "sum_sq": 75.50583922834826,
+         "frac_of_sq": 0.42499594832614407,
+         "rms_contrib_mV": 0.4344704800914219
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 286,
+         "sum_sq": 102.15665267476207,
+         "frac_of_sq": 0.575004051673856,
+         "rms_contrib_mV": 0.5053628712983426
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 114,
+         "sum_sq": 82.09936749405342,
+         "frac_of_sq": 0.4702258810580175,
+         "rms_contrib_mV": 0.45304350644847957
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 286,
+         "sum_sq": 92.49622751940743,
+         "frac_of_sq": 0.5297741189419826,
+         "rms_contrib_mV": 0.48087479534543975
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 5,
+     "gen_seed": 169171,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "errs": [
+      0.54,
+      0.55,
+      0.53
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.54,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 70,
+         "sum_sq": 22.81126844504328,
+         "frac_of_sq": 0.19770813926396297,
+         "rms_contrib_mV": 0.2388057183415175
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 330,
+         "sum_sq": 92.56723104398193,
+         "frac_of_sq": 0.802291860736037,
+         "rms_contrib_mV": 0.48105932857596145
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 70,
+         "sum_sq": 28.470990839593057,
+         "frac_of_sq": 0.23351408202414053,
+         "rms_contrib_mV": 0.2667910738742634
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 330,
+         "sum_sq": 93.45309439244767,
+         "frac_of_sq": 0.7664859179758595,
+         "rms_contrib_mV": 0.48335570337083966
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.1102230246251565e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 70,
+         "sum_sq": 29.13545026291013,
+         "frac_of_sq": 0.2566091941515492,
+         "rms_contrib_mV": 0.26988631987797257
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 330,
+         "sum_sq": 84.40471480889633,
+         "frac_of_sq": 0.7433908058484509,
+         "rms_contrib_mV": 0.4593601931189084
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      }
+     ]
+    },
+    {
+     "j": 6,
+     "gen_seed": 169172,
+     "tail": false,
+     "dep199_median_err": 0.62,
+     "errs": [
+      0.62,
+      0.64,
+      0.62
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.62,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 98,
+         "sum_sq": 61.405545234972585,
+         "frac_of_sq": 0.3980951951995138,
+         "rms_contrib_mV": 0.39180845203674647
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 302,
+         "sum_sq": 92.84285056442386,
+         "frac_of_sq": 0.6019048048004862,
+         "rms_contrib_mV": 0.48177497487007315
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 98,
+         "sum_sq": 60.756978747049466,
+         "frac_of_sq": 0.3728329909179147,
+         "rms_contrib_mV": 0.3897338154017735
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 302,
+         "sum_sq": 102.20332848720523,
+         "frac_of_sq": 0.6271670090820853,
+         "rms_contrib_mV": 0.5054783093447365
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 98,
+         "sum_sq": 58.04132842425724,
+         "frac_of_sq": 0.37636292270315624,
+         "rms_contrib_mV": 0.38092429833320307
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 302,
+         "sum_sq": 96.17505401688831,
+         "frac_of_sq": 0.6236370772968439,
+         "rms_contrib_mV": 0.4903444045181109
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.1102230246251565e-16
+      }
+     ]
+    },
+    {
+     "j": 7,
+     "gen_seed": 169173,
+     "tail": false,
+     "dep199_median_err": 0.56,
+     "errs": [
+      0.55,
+      0.56,
+      0.58
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.56,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 91,
+         "sum_sq": 39.91457927340571,
+         "frac_of_sq": 0.33311400320748896,
+         "rms_contrib_mV": 0.3158899304876847
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 309,
+         "sum_sq": 79.90800065141312,
+         "frac_of_sq": 0.6668859967925109,
+         "rms_contrib_mV": 0.44695637553181045
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 91,
+         "sum_sq": 43.2281785593891,
+         "frac_of_sq": 0.3409524763403166,
+         "rms_contrib_mV": 0.32874069781283966
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 309,
+         "sum_sq": 83.55834319692025,
+         "frac_of_sq": 0.6590475236596833,
+         "rms_contrib_mV": 0.4570512640747213
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 91,
+         "sum_sq": 50.14626390654405,
+         "frac_of_sq": 0.37713684381392737,
+         "rms_contrib_mV": 0.3540701339655184
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 309,
+         "sum_sq": 82.81943469617673,
+         "frac_of_sq": 0.6228631561860726,
+         "rms_contrib_mV": 0.45502591875676907
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 8,
+     "gen_seed": 169174,
+     "tail": false,
+     "dep199_median_err": 0.86,
+     "errs": [
+      0.85,
+      0.88,
+      0.86
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.86,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 118,
+         "sum_sq": 153.6737553992062,
+         "frac_of_sq": 0.5360637357539001,
+         "rms_contrib_mV": 0.619826095367092
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 282,
+         "sum_sq": 132.996924129386,
+         "frac_of_sq": 0.4639362642461001,
+         "rms_contrib_mV": 0.5766214618998021
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.1102230246251565e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 118,
+         "sum_sq": 159.76389069665814,
+         "frac_of_sq": 0.5177347277643588,
+         "rms_contrib_mV": 0.6319887077643439
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 282,
+         "sum_sq": 148.81863647229957,
+         "frac_of_sq": 0.4822652722356414,
+         "rms_contrib_mV": 0.6099562207082971
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 118,
+         "sum_sq": 153.06372908749228,
+         "frac_of_sq": 0.5155305777421864,
+         "rms_contrib_mV": 0.6185946352165776
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 282,
+         "sum_sq": 143.84150931339747,
+         "frac_of_sq": 0.4844694222578136,
+         "rms_contrib_mV": 0.5996697201656039
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 9,
+     "gen_seed": 169175,
+     "tail": false,
+     "dep199_median_err": 0.57,
+     "errs": [
+      0.57,
+      0.55,
+      0.58
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.57,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 94,
+         "sum_sq": 36.439106445454314,
+         "frac_of_sq": 0.28133290912781117,
+         "rms_contrib_mV": 0.30182406483518803
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 306,
+         "sum_sq": 93.0839790635354,
+         "frac_of_sq": 0.7186670908721888,
+         "rms_contrib_mV": 0.4824001945053904
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 94,
+         "sum_sq": 40.16654376507057,
+         "frac_of_sq": 0.3309192562069502,
+         "rms_contrib_mV": 0.316885404227895
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 306,
+         "sum_sq": 81.2121400427742,
+         "frac_of_sq": 0.6690807437930499,
+         "rms_contrib_mV": 0.4505888925694191
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 94,
+         "sum_sq": 52.86694123734545,
+         "frac_of_sq": 0.38881630021588104,
+         "rms_contrib_mV": 0.3635482816537078
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 306,
+         "sum_sq": 83.10200144327864,
+         "frac_of_sq": 0.611183699784119,
+         "rms_contrib_mV": 0.45580149583804197
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 10,
+     "gen_seed": 169176,
+     "tail": false,
+     "dep199_median_err": 0.55,
+     "errs": [
+      0.54,
+      0.59,
+      0.55
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.55,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 77,
+         "sum_sq": 22.47473627861066,
+         "frac_of_sq": 0.19523531785715523,
+         "rms_contrib_mV": 0.23703763561199864
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 323,
+         "sum_sq": 92.6414042091181,
+         "frac_of_sq": 0.8047646821428447,
+         "rms_contrib_mV": 0.48125202391553146
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 77,
+         "sum_sq": 38.86345025174382,
+         "frac_of_sq": 0.28277800247304896,
+         "rms_contrib_mV": 0.31170278412192526
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 323,
+         "sum_sq": 98.57103868254953,
+         "frac_of_sq": 0.7172219975269511,
+         "rms_contrib_mV": 0.49641474263600777
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 77,
+         "sum_sq": 28.771163019715974,
+         "frac_of_sq": 0.23839769540658423,
+         "rms_contrib_mV": 0.26819378730554133
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 323,
+         "sum_sq": 91.91441227767572,
+         "frac_of_sq": 0.7616023045934157,
+         "rms_contrib_mV": 0.47936002200245
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      }
+     ]
+    },
+    {
+     "j": 11,
+     "gen_seed": 169177,
+     "tail": false,
+     "dep199_median_err": 0.58,
+     "errs": [
+      0.56,
+      0.58,
+      0.58
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.58,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 83,
+         "sum_sq": 39.316492716561186,
+         "frac_of_sq": 0.31176958972303087,
+         "rms_contrib_mV": 0.31351432469889307
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 317,
+         "sum_sq": 86.79103673006983,
+         "frac_of_sq": 0.6882304102769692,
+         "rms_contrib_mV": 0.4658085355864302
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 83,
+         "sum_sq": 45.68527860832354,
+         "frac_of_sq": 0.3411007326528819,
+         "rms_contrib_mV": 0.33795442965111266
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 317,
+         "sum_sq": 88.24958061349687,
+         "frac_of_sq": 0.658899267347118,
+         "rms_contrib_mV": 0.4697062396155092
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 83,
+         "sum_sq": 39.76124431784,
+         "frac_of_sq": 0.2945659469330563,
+         "rms_contrib_mV": 0.31528258879075455
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 317,
+         "sum_sq": 95.22124341308643,
+         "frac_of_sq": 0.7054340530669436,
+         "rms_contrib_mV": 0.4879068646091343
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      }
+     ]
+    },
+    {
+     "j": 12,
+     "gen_seed": 169178,
+     "tail": false,
+     "dep199_median_err": 0.61,
+     "errs": [
+      0.64,
+      0.6,
+      0.61
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.61,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 120,
+         "sum_sq": 74.01059272919612,
+         "frac_of_sq": 0.45539656657602046,
+         "rms_contrib_mV": 0.43014704674447124
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 280,
+         "sum_sq": 88.50840315533115,
+         "frac_of_sq": 0.5446034334239795,
+         "rms_contrib_mV": 0.47039452365894724
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 120,
+         "sum_sq": 76.56259781180687,
+         "frac_of_sq": 0.5287015716962408,
+         "rms_contrib_mV": 0.4375002794622161
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 280,
+         "sum_sq": 68.24990495070622,
+         "frac_of_sq": 0.47129842830375934,
+         "rms_contrib_mV": 0.41306750341410975
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 120,
+         "sum_sq": 64.69157964596079,
+         "frac_of_sq": 0.4282136573343919,
+         "rms_contrib_mV": 0.40215537931861856
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 280,
+         "sum_sq": 86.38155531349514,
+         "frac_of_sq": 0.5717863426656083,
+         "rms_contrib_mV": 0.4647083905889131
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.6653345369377348e-16
+      }
+     ]
+    },
+    {
+     "j": 13,
+     "gen_seed": 169179,
+     "tail": false,
+     "dep199_median_err": 0.79,
+     "errs": [
+      0.8,
+      0.79,
+      0.79
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.79,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 126,
+         "sum_sq": 122.21570527586628,
+         "frac_of_sq": 0.4751461253417129,
+         "rms_contrib_mV": 0.5527560611966781
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 274,
+         "sum_sq": 135.0013880719367,
+         "frac_of_sq": 0.5248538746582869,
+         "rms_contrib_mV": 0.5809504885787099
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.1102230246251565e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 126,
+         "sum_sq": 129.8007703833064,
+         "frac_of_sq": 0.5228606266250752,
+         "rms_contrib_mV": 0.5696507052205465
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 274,
+         "sum_sq": 118.45041506382793,
+         "frac_of_sq": 0.47713937337492485,
+         "rms_contrib_mV": 0.5441746389345702
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.1102230246251565e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 126,
+         "sum_sq": 143.3163214868397,
+         "frac_of_sq": 0.5731837495579388,
+         "rms_contrib_mV": 0.598573975141836
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 274,
+         "sum_sq": 106.71924144977658,
+         "frac_of_sq": 0.4268162504420613,
+         "rms_contrib_mV": 0.5165250271036645
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 14,
+     "gen_seed": 169180,
+     "tail": false,
+     "dep199_median_err": 0.56,
+     "errs": [
+      0.55,
+      0.57,
+      0.56
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.56,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 87,
+         "sum_sq": 36.88760529149276,
+         "frac_of_sq": 0.30998086934587327,
+         "rms_contrib_mV": 0.303675835766911
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 313,
+         "sum_sq": 82.11201352154427,
+         "frac_of_sq": 0.6900191306541266,
+         "rms_contrib_mV": 0.45307839697326185
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 87,
+         "sum_sq": 40.48734909369915,
+         "frac_of_sq": 0.30794937232183295,
+         "rms_contrib_mV": 0.3181483501988465
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 313,
+         "sum_sq": 90.98669415061204,
+         "frac_of_sq": 0.692050627678167,
+         "rms_contrib_mV": 0.4769347286333111
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 87,
+         "sum_sq": 40.771608651563355,
+         "frac_of_sq": 0.3254152622475375,
+         "rms_contrib_mV": 0.3192632481650658
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 313,
+         "sum_sq": 84.51940680348045,
+         "frac_of_sq": 0.6745847377524624,
+         "rms_contrib_mV": 0.45967218428865275
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 15,
+     "gen_seed": 169181,
+     "tail": false,
+     "dep199_median_err": 0.89,
+     "errs": [
+      0.89,
+      0.91,
+      0.89
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.89,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 122,
+         "sum_sq": 163.3937725407208,
+         "frac_of_sq": 0.5142289217755591,
+         "rms_contrib_mV": 0.6391278677634092
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 278,
+         "sum_sq": 154.35142929768494,
+         "frac_of_sq": 0.4857710782244408,
+         "rms_contrib_mV": 0.6211912533545626
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.1102230246251565e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 122,
+         "sum_sq": 176.7533633306939,
+         "frac_of_sq": 0.5294704747690413,
+         "rms_contrib_mV": 0.6647431145387929
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 278,
+         "sum_sq": 157.0770800151696,
+         "frac_of_sq": 0.47052952523095865,
+         "rms_contrib_mV": 0.6266519768084388
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 122,
+         "sum_sq": 160.0338823942592,
+         "frac_of_sq": 0.5070110944540556,
+         "rms_contrib_mV": 0.6325224944503144
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 278,
+         "sum_sq": 155.60789378143187,
+         "frac_of_sq": 0.49298890554594427,
+         "rms_contrib_mV": 0.6237144654836696
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.1102230246251565e-16
+      }
+     ]
+    },
+    {
+     "j": 16,
+     "gen_seed": 169182,
+     "tail": false,
+     "dep199_median_err": 1.01,
+     "errs": [
+      1.0,
+      1.01,
+      1.02
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.01,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 134,
+         "sum_sq": 246.08736974750235,
+         "frac_of_sq": 0.6203380749900466,
+         "rms_contrib_mV": 0.784358606996032
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 266,
+         "sum_sq": 150.61142993757397,
+         "frac_of_sq": 0.3796619250099534,
+         "rms_contrib_mV": 0.6136192425632812
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 134,
+         "sum_sq": 249.1404000366574,
+         "frac_of_sq": 0.6085039101214681,
+         "rms_contrib_mV": 0.7892090978261994
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 266,
+         "sum_sq": 160.29065848673753,
+         "frac_of_sq": 0.39149608987853207,
+         "rms_contrib_mV": 0.6330297356497907
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 134,
+         "sum_sq": 254.374163805769,
+         "frac_of_sq": 0.6148496417652719,
+         "rms_contrib_mV": 0.797455584665643
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 266,
+         "sum_sq": 159.34351044617466,
+         "frac_of_sq": 0.38515035823472815,
+         "rms_contrib_mV": 0.6311566969583993
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 17,
+     "gen_seed": 169183,
+     "tail": false,
+     "dep199_median_err": 0.62,
+     "errs": [
+      0.65,
+      0.61,
+      0.62
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.62,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 118,
+         "sum_sq": 80.41025951880664,
+         "frac_of_sq": 0.4756757786392351,
+         "rms_contrib_mV": 0.44835883932071263
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 282,
+         "sum_sq": 88.63399946960799,
+         "frac_of_sq": 0.524324221360765,
+         "rms_contrib_mV": 0.47072815793621264
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 118,
+         "sum_sq": 65.14156864465785,
+         "frac_of_sq": 0.4330452841554005,
+         "rms_contrib_mV": 0.40355163438108466
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 282,
+         "sum_sq": 85.28512119150594,
+         "frac_of_sq": 0.5669547158445994,
+         "rms_contrib_mV": 0.4617497189807102
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 118,
+         "sum_sq": 70.87850598951431,
+         "frac_of_sq": 0.46674734018697817,
+         "rms_contrib_mV": 0.4209468671623365
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 282,
+         "sum_sq": 80.97775517551021,
+         "frac_of_sq": 0.5332526598130217,
+         "rms_contrib_mV": 0.44993820457789035
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      }
+     ]
+    },
+    {
+     "j": 18,
+     "gen_seed": 169184,
+     "tail": false,
+     "dep199_median_err": 1.08,
+     "errs": [
+      1.12,
+      1.08,
+      1.08
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.08,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 133,
+         "sum_sq": 300.01478303253,
+         "frac_of_sq": 0.6030998400840601,
+         "rms_contrib_mV": 0.8660467409911112
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 267,
+         "sum_sq": 197.43980589708056,
+         "frac_of_sq": 0.3969001599159399,
+         "rms_contrib_mV": 0.7025663774638674
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 133,
+         "sum_sq": 287.63110063127084,
+         "frac_of_sq": 0.6122066898994044,
+         "rms_contrib_mV": 0.8479845231949561
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 267,
+         "sum_sq": 182.19568397726286,
+         "frac_of_sq": 0.38779331010059565,
+         "rms_contrib_mV": 0.6748994072772306
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 133,
+         "sum_sq": 261.57209765518365,
+         "frac_of_sq": 0.5641780225784414,
+         "rms_contrib_mV": 0.8086595353657552
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 267,
+         "sum_sq": 202.06187457884735,
+         "frac_of_sq": 0.4358219774215585,
+         "rms_contrib_mV": 0.7107423488488064
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 19,
+     "gen_seed": 169185,
+     "tail": false,
+     "dep199_median_err": 0.54,
+     "errs": [
+      0.54,
+      0.55,
+      0.53
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.54,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 77,
+         "sum_sq": 34.73896972223791,
+         "frac_of_sq": 0.3007181937717074,
+         "rms_contrib_mV": 0.2946988705536463
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 323,
+         "sum_sq": 80.78104350519679,
+         "frac_of_sq": 0.6992818062282926,
+         "rms_contrib_mV": 0.44939137593304124
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 77,
+         "sum_sq": 26.895632737112933,
+         "frac_of_sq": 0.22618453494812946,
+         "rms_contrib_mV": 0.259304997720411
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 323,
+         "sum_sq": 92.0144985116078,
+         "frac_of_sq": 0.7738154650518706,
+         "rms_contrib_mV": 0.4796209402007167
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 77,
+         "sum_sq": 30.818134953996157,
+         "frac_of_sq": 0.27536112748482605,
+         "rms_contrib_mV": 0.27757041878591887
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 323,
+         "sum_sq": 81.10083935981439,
+         "frac_of_sq": 0.724638872515174,
+         "rms_contrib_mV": 0.4502800222078879
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      }
+     ]
+    },
+    {
+     "j": 20,
+     "gen_seed": 169186,
+     "tail": false,
+     "dep199_median_err": 1.25,
+     "errs": [
+      1.23,
+      1.26,
+      1.25
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.25,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 147,
+         "sum_sq": 404.9718161551368,
+         "frac_of_sq": 0.6642431473172101,
+         "rms_contrib_mV": 1.0061955776030036
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 253,
+         "sum_sq": 204.70224339785102,
+         "frac_of_sq": 0.33575685268278993,
+         "rms_contrib_mV": 0.7153709586603495
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 147,
+         "sum_sq": 409.25999881053247,
+         "frac_of_sq": 0.6447801386026549,
+         "rms_contrib_mV": 1.0115087725899026
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 253,
+         "sum_sq": 225.46798722431421,
+         "frac_of_sq": 0.35521986139734507,
+         "rms_contrib_mV": 0.7507795735505765
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 147,
+         "sum_sq": 413.946339848269,
+         "frac_of_sq": 0.6630225456833522,
+         "rms_contrib_mV": 1.0172835640177584
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 253,
+         "sum_sq": 210.38588315574702,
+         "frac_of_sq": 0.3369774543166479,
+         "rms_contrib_mV": 0.7252342434616332
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 21,
+     "gen_seed": 169187,
+     "tail": false,
+     "dep199_median_err": 0.97,
+     "errs": [
+      0.97,
+      0.98,
+      0.97
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.97,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 133,
+         "sum_sq": 233.0875603099039,
+         "frac_of_sq": 0.6145036457455776,
+         "rms_contrib_mV": 0.7633602693189893
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 267,
+         "sum_sq": 146.22273658361354,
+         "frac_of_sq": 0.3854963542544224,
+         "rms_contrib_mV": 0.6046129683186044
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 133,
+         "sum_sq": 223.00418778649095,
+         "frac_of_sq": 0.5797691366392891,
+         "rms_contrib_mV": 0.7466662369936299
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 267,
+         "sum_sq": 161.63889459482579,
+         "frac_of_sq": 0.4202308633607109,
+         "rms_contrib_mV": 0.6356864293714822
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 133,
+         "sum_sq": 227.00726105870692,
+         "frac_of_sq": 0.6053454253772573,
+         "rms_contrib_mV": 0.7533380069044487
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 267,
+         "sum_sq": 147.99724305104786,
+         "frac_of_sq": 0.3946545746227428,
+         "rms_contrib_mV": 0.6082705875082401
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ]
+    },
+    {
+     "j": 22,
+     "gen_seed": 169188,
+     "tail": false,
+     "dep199_median_err": 0.83,
+     "errs": [
+      0.83,
+      0.83,
+      0.83
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.83,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 118,
+         "sum_sq": 150.43580958707474,
+         "frac_of_sq": 0.5470875788038135,
+         "rms_contrib_mV": 0.6132613830722483
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 282,
+         "sum_sq": 124.53992631977403,
+         "frac_of_sq": 0.4529124211961865,
+         "rms_contrib_mV": 0.5579872899981101
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 118,
+         "sum_sq": 146.65336409232748,
+         "frac_of_sq": 0.5317716841021796,
+         "rms_contrib_mV": 0.605502609598686
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 282,
+         "sum_sq": 129.12921041599878,
+         "frac_of_sq": 0.46822831589782044,
+         "rms_contrib_mV": 0.5681751719672349
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.1102230246251565e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 118,
+         "sum_sq": 138.51625125855566,
+         "frac_of_sq": 0.4977127326557779,
+         "rms_contrib_mV": 0.5884646362751028
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 282,
+         "sum_sq": 139.78936997688623,
+         "frac_of_sq": 0.5022872673442222,
+         "rms_contrib_mV": 0.5911627736437872
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.1102230246251565e-16
+      }
+     ]
+    },
+    {
+     "j": 23,
+     "gen_seed": 169189,
+     "tail": false,
+     "dep199_median_err": 1.12,
+     "errs": [
+      1.11,
+      1.12,
+      1.12
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.12,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 129,
+         "sum_sq": 277.8038216295565,
+         "frac_of_sq": 0.5588897693795202,
+         "rms_contrib_mV": 0.8333723981953634
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 271,
+         "sum_sq": 219.2598872624036,
+         "frac_of_sq": 0.4411102306204799,
+         "rms_contrib_mV": 0.7403713380162747
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 129,
+         "sum_sq": 274.992428731768,
+         "frac_of_sq": 0.5501828413029003,
+         "rms_contrib_mV": 0.8291447833939619
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 271,
+         "sum_sq": 224.82764577392243,
+         "frac_of_sq": 0.4498171586971,
+         "rms_contrib_mV": 0.7497126879243848
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 4.440892098500626e-16
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 129,
+         "sum_sq": 263.49384387627725,
+         "frac_of_sq": 0.528581250019359,
+         "rms_contrib_mV": 0.8116246729188887
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 271,
+         "sum_sq": 234.99876036692467,
+         "frac_of_sq": 0.4714187499806411,
+         "rms_contrib_mV": 0.7664834642164903
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 2.220446049250313e-16
+      }
+     ]
+    },
+    {
+     "j": 24,
+     "gen_seed": 169190,
+     "tail": false,
+     "dep199_median_err": 0.56,
+     "errs": [
+      0.58,
+      0.55,
+      0.56
+     ],
+     "replay_bit_exact": true,
+     "median_err": 0.56,
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 84,
+         "sum_sq": 48.8012482348945,
+         "frac_of_sq": 0.3662737634681663,
+         "rms_contrib_mV": 0.34928945101052833
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 316,
+         "sum_sq": 84.43583588711886,
+         "frac_of_sq": 0.6337262365318337,
+         "rms_contrib_mV": 0.45944487124985645
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 84,
+         "sum_sq": 45.97809757862798,
+         "frac_of_sq": 0.3756219217918034,
+         "rms_contrib_mV": 0.33903575614759274
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 316,
+         "sum_sq": 76.42715864098193,
+         "frac_of_sq": 0.6243780782081965,
+         "rms_contrib_mV": 0.4371131393614871
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 84,
+         "sum_sq": 42.68025419970584,
+         "frac_of_sq": 0.3369028350128259,
+         "rms_contrib_mV": 0.3266506321733736
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 316,
+         "sum_sq": 84.00391038466461,
+         "frac_of_sq": 0.6630971649871741,
+         "rms_contrib_mV": 0.45826823582009424
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 5.551115123125783e-17
+      }
+     ]
+    }
+   ]
+  },
+  "class_means": {
+   "c6_tail": {
+    "CANON-BOUNDARY": 1.0682069864703825,
+    "PAIR-JUNCTION": 0.8963092212884004,
+    "INTERIOR": 0.0
+   },
+   "c3_clean": {
+    "CANON-BOUNDARY": 0.4941296901146214,
+    "PAIR-JUNCTION": 0.5366122582859713,
+    "INTERIOR": 0.0
+   },
+   "excess_mV": {
+    "CANON-BOUNDARY": 0.5740772963557611,
+    "PAIR-JUNCTION": 0.35969696300242915,
+    "INTERIOR": 0.0
+   },
+   "branch": "BOUNDARY-NAMED"
+  }
+ },
+ "gates": {
+  "A1": {
+   "pass": true,
+   "n_replay_exact": 50,
+   "n_instances": 50,
+   "disclosure": "bit-exact vs exp199's deposit at the deposit's 2-dp err rounding, the exp142 convention"
+  },
+  "A2": {
+   "pass": true,
+   "n_decompositions": 150,
+   "accounting_identity": "shares are mean-squared contributions (mV^2), summing to err^2 \u2014 the RMS scale; fracs sum to 1.0",
+   "all_finite": true
+  },
+  "A3": {
+   "pass": true,
+   "branch": "BOUNDARY-NAMED",
+   "mean_rms_contrib_c6_tail_mV": {
+    "CANON-BOUNDARY": 1.0682069864703825,
+    "PAIR-JUNCTION": 0.8963092212884004,
+    "INTERIOR": 0.0
+   },
+   "mean_rms_contrib_c3_clean_mV": {
+    "CANON-BOUNDARY": 0.4941296901146214,
+    "PAIR-JUNCTION": 0.5366122582859713,
+    "INTERIOR": 0.0
+   },
+   "excess_mV": {
+    "CANON-BOUNDARY": 0.5740772963557611,
+    "PAIR-JUNCTION": 0.35969696300242915,
+    "INTERIOR": 0.0
+   },
+   "ranking": [
+    "CANON-BOUNDARY",
+    "PAIR-JUNCTION",
+    "INTERIOR"
+   ],
+   "baseline_disclosure": "c3 = exp198's clean cell (h+t), its 25 instances, the same decomposition"
+  },
+  "A4": {
+   "pass": true,
+   "rejections": 0,
+   "all_finite": true
+  }
+ },
+ "verdict": "4/4 gates (A1 A2 A3 A4) | BOUNDARY-NAMED",
+ "wall_s": 121.5
+}
