@@ -1,0 +1,274 @@
+{
+ "exp": "exp242_reader_n5000",
+ "shard": 9,
+ "row_index": 9,
+ "redundancy_rerun": false,
+ "re_run_of_row": null,
+ "pre_registered": {
+  "gates_source": "module docstring, committed before any run (pre-registration 30c5d50, batch 16; gates N1-N3 fixed there; evaluated per row on what ran, the union closed by the main agent's salvage merge)",
+  "protocol": "per row one (class, seed) decode at n=5000 on the path constructor (exp198's scale constructor, the A_CHAIN family) \u2014 exp230's machinery verbatim: the production scoped read, the deep band's -60.0 rung carrying both pre-named instances, the 6.0 bar unchanged, the floors discipline (-35.0 pins disclosed, -60.0 restored and asserted at exit)"
+ },
+ "protocol_block": {
+  "read": {
+   "wiring": "exp178's production scoped arm: exp169's f_max diagnostic + the pre-registered THRESHOLD (32.0); R_T (exp167's adopted read) iff f_max < 32.0, else exp148's raw temporal \u2014 one arm, one function, zero knobs",
+   "projection": "exp145/exp148 TC1-TC3: PN1/PN2 dominant-quadrature projection + TC1 flip-clock F + TC2 A_ext = A + F",
+   "executor": "exp142 execute_signed VERBATIM (R1 structure on |A|, R2 signed dynamics, walk frontier on |A|>0)",
+   "op": {
+    "gamma": 64.0,
+    "mu": 0.0
+   },
+   "op_source": "exp99's battery-wide STAR point (exp142's STAR_OP); STAR_OP IS S* = (64.0, 0.0), asserted",
+   "spec_input": "per-row target spec \u2014 the read stack's target parameter (exp148's MULTI default asserted bit-identical per rung by the MULTI-identity audit)",
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n": 5000,
+   "window_h": 24.0,
+   "commit_noise": 0.6,
+   "steps_per_cell": 8,
+   "floor": "production -60.0 restored post-import (exp218's disclosed exp169-import discipline; the -35.0 reader-line pin disclosed)",
+   "per_media_tuning": "none",
+   "medium": "the host's own W as a static single-frame decode medium (exp230's HostWMedium; the n=5000 adjacency carried as a BAND \u2014 exp242's N3 discipline)",
+   "fingerprint": "729bdc2178a1d5da",
+   "wiring_id": "exp148.decode('scoped') wiring | exp169 f_max/THRESHOLD | exp167 R_T | exp145/148 PN+TC | exp142 execute_signed@STAR_OP==S*"
+  },
+  "constructor": {
+   "machinery": "cultivation.substrate.graph.path's construction rule (exp198's scale constructor; line_adjacency(n, k=1, ring=False)) carried as a BANDED adjacency (the two off-diagonals)",
+   "anchor": "BandedPath(100).to_dense() == graph_path(100) == exp136's A_CHAIN, bit-exact (asserted in-run); BandedPath(5000) bit-asserted as the rule itself (ones on both off-diagonals); canon == wildtype_target(5000), asserted",
+   "n": 5000,
+   "edges": 4999
+  },
+  "target_list": "the host's own canon (wildtype) + manifest indices 0, 49, 99 + the deep band's -60.0 rung both instances (pre-named; exp230's 5 target classes)",
+  "row_mapping": "row r -> class CLASSES[r // 3], seed SEEDS[r % 3] (exp230's machinery's own nesting: decode rows outer, seeds inner); CLASSES = (canon, m0, m49, m99, deep); shards 15..19 re-run rows 0..4",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "grid": {
+   "n5000": {
+    "n": 5000,
+    "classes": [
+     "canon",
+     "m0",
+     "m49",
+     "m99",
+     "deep"
+    ],
+    "seeds": 3,
+    "rows": 15,
+    "decode_records": 18
+   }
+  }
+ },
+ "anchors": {
+  "floors": {
+   "pre_restore_pins": {
+    "cultivation.bioelectric.collective": -35.0,
+    "experiments.exp142_sign_read": -35.0,
+    "experiments.exp145_phase_read": -35.0,
+    "experiments.exp148_temporal_read": -35.0,
+    "experiments.exp94_multizone_scale": -35.0
+   },
+   "pin_value": -35.0,
+   "post_restore": -60.0,
+   "discipline": "exp230's disclosed exp218 exp169-import restore, VERBATIM: the reader-line pin is attribute-only; the production floor restored before any decode and asserted at exit"
+  },
+  "constants": {
+   "bar": 6.0,
+   "threshold": 32.0,
+   "S_star": [
+    64.0,
+    0.0
+   ],
+   "seeds": [
+    1,
+    2,
+    3
+   ]
+  },
+  "s_star_identity": "STAR_OP == S* == (64.0, 0.0), asserted",
+  "n100_checksum_audit": "build_rows(labeling_bfs_n(A_CHAIN), 100) reproduced dep182's manifest f_sha256 checksums exactly (exp230's instrument-identity audit, VERBATIM)",
+  "provenance": {
+   "exp182_sha256": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+   "exp230_sha256": "f3c7783359fdafbc5a34e760102ba4e1c3ad175f0604921ab3482fbffbc1c682"
+  }
+ },
+ "row": {
+  "host": "path5000",
+  "n": 5000,
+  "kind": "exp198's scale constructor at the extreme-n rung \u2014 path(5000) as a BANDED adjacency (N3: no dense n x n constructed)",
+  "edges": 4999,
+  "f_max": 0.0,
+  "dispatch_class": "diffuse",
+  "tclass": "m99",
+  "seeds": [
+   1
+  ],
+  "n_decode_rows": 1,
+  "n_decodes": 1,
+  "n_rejections": 0,
+  "decodes": [
+   {
+    "tclass": "manifest",
+    "key": "m99",
+    "seed": 1,
+    "f_sha256": "f2abbdbae8bc0cdad3343864881cbaa9c38def953e849650a7bbc38a14fc8072",
+    "index": 99,
+    "err": 0.5,
+    "verified": true,
+    "rho": 0.0,
+    "branch": "real"
+   }
+  ],
+  "multi_identity_audit": {
+   "spec": "MULTI (exp148's default target)",
+   "seed": 1,
+   "prod_err": 0.48,
+   "replica_err": 0.48,
+   "bit_identical": true
+  },
+  "memory": {
+   "band_bytes": 79984,
+   "dense_equivalent_bytes": 200000000,
+   "dense_equivalent_MB": 200.0,
+   "band_share_of_dense": 0.0004,
+   "traced_peak_MB": 2.86,
+   "traced_peak_precision": "the exact byte count goes to stdout only \u2014 allocator/interpreter jitter (~tens of bytes) is not instrument; the deposit records the peak quantized to 0.01 MB so the redundancy re-runs stay byte-comparable at the merge",
+   "traced_window": "from the n=5000 band construction through the last decode (numpy-level; the imports and the n=100 anchor are outside)",
+   "ru_maxrss": "printed to stdout only \u2014 the OS peak RSS is process-environment dependent; the deposit carries the deterministic traced peak so the redundancy re-runs stay byte-comparable at the merge",
+   "numpy_dispatch_touches": [
+    "ufunc absolute __call__",
+    "array_function zeros_like",
+    "array_function imag",
+    "array_function sum",
+    "array_function real",
+    "array_function fill_diagonal",
+    "array_function iscomplexobj"
+   ],
+   "no_dense_nxn_built": true,
+   "disclosure": "the n=5000 substrate is the two off-diagonal bands (79984 bytes = 0.04% of the 5000x5000 dense footprint (200000000 bytes) \u2014 the dense view is never built at this rung (to_dense is the n=100 anchor only); the frozen read machinery consumes the band through numpy dispatch protocols (the enumerated touches); the traced peak allocation is recorded and is orders of magnitude under the dense footprint"
+  }
+ },
+ "measurements": {
+  "n_decode_rows_this_shard": 1,
+  "n_decodes": 1,
+  "n_rejections": 0,
+  "all_finite": true,
+  "worst_err": 0.5,
+  "errs": [
+   0.5
+  ],
+  "lock_log": {
+   "entries": [
+    [
+     "path5000",
+     "m99",
+     1
+    ]
+   ],
+   "n_locked": 1,
+   "all_at_S_star": true,
+   "disclosure": "every decode locked at S* (the (host, row-key, seed) log; the lock raises on any drift)"
+  }
+ },
+ "n2_reference": {
+  "exp230_n1000_worst": 0.54,
+  "source": "results/exp230_reader_size_cost_curve.json:sections.n1000 (re-read at run time)",
+  "union_bar_1p5x": 0.81,
+  "row_worst_err": 0.5,
+  "row_within_band": true
+ },
+ "gates": {
+  "N1_completeness": {
+   "pass": true,
+   "shard_form": "this shard's (class, seed) row measured, zero rejections, all finite \u2014 evaluated on what ran",
+   "union_form": "15/15 (class, seed) rows measured across shards 0..14, zero rejections, all finite \u2014 closed by the main agent's salvage merge",
+   "rows_this_shard": 1,
+   "class": "m99",
+   "seed": 1,
+   "n_decode_records": 1,
+   "n_rejections": 0,
+   "all_finite": true,
+   "grid": {
+    "n5000": {
+     "n": 5000,
+     "classes": [
+      "canon",
+      "m0",
+      "m49",
+      "m99",
+      "deep"
+     ],
+     "seeds": 3,
+     "rows": 15,
+     "decode_records": 18
+    }
+   },
+   "expected_rows_union": 15,
+   "expected_decode_records_union": 18
+  },
+  "N2_flat_profile": {
+   "pass": true,
+   "shard_form": "every decode record's err < 6.0",
+   "union_form": "the union's worst err <= 1.5x exp230's n=1000 worst (0.54) \u2014 the sub-linear band; closed by the merge",
+   "bar_mV": 6.0,
+   "n_finite": 1,
+   "row_worst_err": 0.5,
+   "row_errs": [
+    0.5
+   ],
+   "exp230_n1000_worst": 0.54,
+   "exp230_source": "results/exp230_reader_size_cost_curve.json:sections.n1000 (re-read at run time)",
+   "union_bar_1p5x": 0.81,
+   "row_under_union_bar": true
+  },
+  "N3_memory_discipline": {
+   "pass": true,
+   "definition": "the n=5000 substrate constructed without densification (the path's banded adjacency handled as a band \u2014 no 5000x5000 dense array where a band suffices; the peak allocation recorded in the deposit)",
+   "constructor": "exp198's scale constructor, the A_CHAIN family: the construction rule bit-anchored at n=100 (BandedPath(100).to_dense() == graph_path(100) == exp136's A_CHAIN) and bit-asserted at n=5000 as the rule itself (ones on both off-diagonals) \u2014 the dense view never built at the extreme-n rung",
+   "canon_identity": "labeling_bfs_n(path(5000)) == wildtype_target(5000), asserted",
+   "peak_allocation": {
+    "band_bytes": 79984,
+    "dense_equivalent_bytes": 200000000,
+    "dense_equivalent_MB": 200.0,
+    "band_share_of_dense": 0.0004,
+    "traced_peak_MB": 2.86,
+    "traced_peak_precision": "the exact byte count goes to stdout only \u2014 allocator/interpreter jitter (~tens of bytes) is not instrument; the deposit records the peak quantized to 0.01 MB so the redundancy re-runs stay byte-comparable at the merge",
+    "traced_window": "from the n=5000 band construction through the last decode (numpy-level; the imports and the n=100 anchor are outside)",
+    "ru_maxrss": "printed to stdout only \u2014 the OS peak RSS is process-environment dependent; the deposit carries the deterministic traced peak so the redundancy re-runs stay byte-comparable at the merge",
+    "numpy_dispatch_touches": [
+     "ufunc absolute __call__",
+     "array_function zeros_like",
+     "array_function imag",
+     "array_function sum",
+     "array_function real",
+     "array_function fill_diagonal",
+     "array_function iscomplexobj"
+    ],
+    "no_dense_nxn_built": true,
+    "disclosure": "the n=5000 substrate is the two off-diagonal bands (79984 bytes = 0.04% of the 5000x5000 dense footprint (200000000 bytes) \u2014 the dense view is never built at this rung (to_dense is the n=100 anchor only); the frozen read machinery consumes the band through numpy dispatch protocols (the enumerated touches); the traced peak allocation is recorded and is orders of magnitude under the dense footprint"
+   },
+   "multi_identity_audit": {
+    "spec": "MULTI (exp148's default target)",
+    "seed": 1,
+    "prod_err": 0.48,
+    "replica_err": 0.48,
+    "bit_identical": true
+   }
+  }
+ },
+ "verdict": "shard 9 (row 9: m99, seed 1): 3/3 gates (N1 N2 N3) | 1 decode(s), 0 rejection(s), worst err 0.5 mV (bar 6.0; union bar 0.81) | peak alloc 2.86 MB traced (band 79984 B vs dense-equivalent 200000000 B)",
+ "deposit_notes": [
+  "ROW-MAPPING DISCLOSURE: the docstring pre-names '0..14 measured rows: 5 target classes x 3 seeds' without fixing the enumeration order; the body uses exp230's machinery's own nesting (decode rows outer, seeds inner): row r -> class CLASSES[r // 3], seed SEEDS[r % 3]. Rows 0-2 canon @ seeds 1/2/3, rows 3-5 m0, rows 6-8 m49, rows 9-11 m99, rows 12-14 deep. Shards 15..19 re-run rows i-15 (rows 0..4 = canon x3 + m0 x2) \u2014 the redundancy slots' coverage is the pre-named rows 0..4 under this mapping, disclosed.",
+  "DEEP-ROW DISCLOSURE: the docstring's N1 counts 15/15 (class, seed) ROWS and its per-row protocol carries 'the deep band's -60.0 rung carrying both pre-named instances'. exp230's own '5 target classes' definition (deposited in its N1 note) is canon + manifest(0/49/99) + the deep rung with BOTH instances as 2 decode rows. exp242's row unit is therefore the (class, seed) cell: 15 cells x 3 seeds-side seeds = 15 rows; the deep cell carries both instances (2 decode records per deep row), so the grid's decode-record count is 12 + 3x2 = 18. The RUN line's 'per row one decode' is honored per decode record for 12/15 rows and per (class, seed) protocol cell for the 3 deep rows; disclosed rather than silently dropping a pre-named instance or a pre-named manifest target.",
+  "BAND DISCLOSURE (N3): path(5000) is built as its two off-diagonal bands (BandedPath) \u2014 the substrate is never densified at this rung. The frozen machinery (exp94's labeling, exp169's f_max, exp145/148's projection + flip clock, exp142's executor on GraphCollective) consumes the band through numpy dispatch protocols; every numpy touch is enumerated in row.memory.numpy_dispatch_touches and served band-native (an unhandled touch raises \u2014 fail loud, never densify). Bit-identity of the band pipeline against the dense constructor: anchored bit-exact at n=100 in-run (to_dense() == graph_path(100) == A_CHAIN; canon == wildtype_target) and validated PRE-RUN against exp230's deposited dense-grid errs at n=1000 \u2014 6/6 rows, 18/18 decodes bit-identical (the throwaway probe's instrument-identity validation, disclosed; the probe is untracked scratch and is not part of the deposit).",
+  "MULTI-IDENTITY AUDIT DISCLOSURE: exp230's per-rung audit carried per shard at the ROW'S seed (exp230 used seeds[0]; with one seed per shard the row's seed IS seeds[0] of the shard's run) \u2014 the parameterized scoped wiring IS exp148.decode('scoped', ...) bit-exact on err/verified/rho/branch.",
+  "MANIFEST CHECKSUM DISCLOSURE: dep182's manifest checksums live at n=100 \u2014 the assert fires on the n=100 rebuild only; at n=5000 the same construction is re-run parameterized (exp227's discipline; no deposited larger-n checksum exists).",
+  "FLOOR DISCLOSURE: the reader-line import (exp167) pins NEURAL_SPEC_MIN = -35.0 on (collective, exp142, exp145, exp148, exp94) at import time (attribute-only); the production -60.0 is restored before any decode and asserted at exit (the deep band's -60.0 rung is decodable ONLY at the production floor).",
+  "CLOCK-FREE DEPOSIT: wall time goes to stdout only \u2014 the deposit is clock-free so the redundancy re-run of a row (shards 15..19) is byte-comparable to the measured run at the union merge.",
+  "REJECTIONS DEFINITION: a rejection is a decode that raised or returned a non-finite err (recorded, never hidden); zero occurred on this shard."
+ ]
+}

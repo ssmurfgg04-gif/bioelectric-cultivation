@@ -1,0 +1,935 @@
+{
+ "exp": "exp241_cross_organism_scale UNION (the b16-hosts fleet merge)",
+ "shards_landed": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19
+ ],
+ "n_hosts": 100,
+ "carried_hosts": 100,
+ "worst_err": 0.16748873011028537,
+ "worst_margin": 5.832511269889714,
+ "exp209_anchor_margin": 5.298,
+ "host_stats": [
+  {
+   "shard": 0,
+   "host": "H0",
+   "grid_index": 0,
+   "worst_err": 0.10164718919780118,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 2
+  },
+  {
+   "shard": 0,
+   "host": "H1",
+   "grid_index": 1,
+   "worst_err": 0.10164718919780118,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 2
+  },
+  {
+   "shard": 0,
+   "host": "H2",
+   "grid_index": 2,
+   "worst_err": 0.10164718919780118,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 2
+  },
+  {
+   "shard": 0,
+   "host": "H3",
+   "grid_index": 3,
+   "worst_err": 0.09530568917778369,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 4
+  },
+  {
+   "shard": 0,
+   "host": "H4",
+   "grid_index": 4,
+   "worst_err": 0.09530568917778369,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 4
+  },
+  {
+   "shard": 1,
+   "host": "H5",
+   "grid_index": 5,
+   "worst_err": 0.09655820642085293,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 8
+  },
+  {
+   "shard": 1,
+   "host": "H6",
+   "grid_index": 6,
+   "worst_err": 0.09655820642085293,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 8
+  },
+  {
+   "shard": 1,
+   "host": "H7",
+   "grid_index": 7,
+   "worst_err": 0.09655820642085293,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 8
+  },
+  {
+   "shard": 1,
+   "host": "H8",
+   "grid_index": 8,
+   "worst_err": 0.09655820642085293,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 8
+  },
+  {
+   "shard": 1,
+   "host": "H9",
+   "grid_index": 9,
+   "worst_err": 0.10904760856997274,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 11
+  },
+  {
+   "shard": 2,
+   "host": "H10",
+   "grid_index": 10,
+   "worst_err": 0.10904760856997274,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 11
+  },
+  {
+   "shard": 2,
+   "host": "H11",
+   "grid_index": 11,
+   "worst_err": 0.10904760856997274,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 11
+  },
+  {
+   "shard": 2,
+   "host": "H12",
+   "grid_index": 12,
+   "worst_err": 0.09294244172865927,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 13
+  },
+  {
+   "shard": 2,
+   "host": "H13",
+   "grid_index": 13,
+   "worst_err": 0.09294244172865927,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 13
+  },
+  {
+   "shard": 2,
+   "host": "H14",
+   "grid_index": 14,
+   "worst_err": 0.08271799113048812,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 17
+  },
+  {
+   "shard": 3,
+   "host": "H15",
+   "grid_index": 15,
+   "worst_err": 0.08271799113048812,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 17
+  },
+  {
+   "shard": 3,
+   "host": "H16",
+   "grid_index": 16,
+   "worst_err": 0.08271799113048812,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 17
+  },
+  {
+   "shard": 3,
+   "host": "H17",
+   "grid_index": 17,
+   "worst_err": 0.08271799113048812,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 17
+  },
+  {
+   "shard": 3,
+   "host": "H18",
+   "grid_index": 18,
+   "worst_err": 0.11064263101294733,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 18
+  },
+  {
+   "shard": 3,
+   "host": "H19",
+   "grid_index": 19,
+   "worst_err": 0.11672227646488831,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 19
+  },
+  {
+   "shard": 4,
+   "host": "H20",
+   "grid_index": 20,
+   "worst_err": 0.10392920633820565,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 21
+  },
+  {
+   "shard": 4,
+   "host": "H21",
+   "grid_index": 21,
+   "worst_err": 0.10392920633820565,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 21
+  },
+  {
+   "shard": 4,
+   "host": "H22",
+   "grid_index": 22,
+   "worst_err": 0.10152706986699474,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 22
+  },
+  {
+   "shard": 4,
+   "host": "H23",
+   "grid_index": 23,
+   "worst_err": 0.08687172172669018,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 30
+  },
+  {
+   "shard": 4,
+   "host": "H24",
+   "grid_index": 24,
+   "worst_err": 0.08687172172669018,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 30
+  },
+  {
+   "shard": 5,
+   "host": "H25",
+   "grid_index": 25,
+   "worst_err": 0.08687172172669018,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 30
+  },
+  {
+   "shard": 5,
+   "host": "H26",
+   "grid_index": 26,
+   "worst_err": 0.08687172172669018,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 30
+  },
+  {
+   "shard": 5,
+   "host": "H27",
+   "grid_index": 27,
+   "worst_err": 0.08687172172669018,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 30
+  },
+  {
+   "shard": 5,
+   "host": "H28",
+   "grid_index": 28,
+   "worst_err": 0.08687172172669018,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 30
+  },
+  {
+   "shard": 5,
+   "host": "H29",
+   "grid_index": 29,
+   "worst_err": 0.08687172172669018,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 30
+  },
+  {
+   "shard": 6,
+   "host": "H30",
+   "grid_index": 30,
+   "worst_err": 0.08687172172669018,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 30
+  },
+  {
+   "shard": 6,
+   "host": "H31",
+   "grid_index": 31,
+   "worst_err": 0.09505981182076421,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 31
+  },
+  {
+   "shard": 6,
+   "host": "H32",
+   "grid_index": 32,
+   "worst_err": 0.09302375740698766,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 32
+  },
+  {
+   "shard": 6,
+   "host": "H33",
+   "grid_index": 33,
+   "worst_err": 0.1118131862793097,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 35
+  },
+  {
+   "shard": 6,
+   "host": "H34",
+   "grid_index": 34,
+   "worst_err": 0.1118131862793097,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 35
+  },
+  {
+   "shard": 7,
+   "host": "H35",
+   "grid_index": 35,
+   "worst_err": 0.1118131862793097,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 35
+  },
+  {
+   "shard": 7,
+   "host": "H36",
+   "grid_index": 36,
+   "worst_err": 0.0918721851754659,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 36
+  },
+  {
+   "shard": 7,
+   "host": "H37",
+   "grid_index": 37,
+   "worst_err": 0.16748873011028537,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 37
+  },
+  {
+   "shard": 7,
+   "host": "H38",
+   "grid_index": 38,
+   "worst_err": 0.07578882465090887,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 39
+  },
+  {
+   "shard": 7,
+   "host": "H39",
+   "grid_index": 39,
+   "worst_err": 0.07578882465090887,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 39
+  },
+  {
+   "shard": 8,
+   "host": "H40",
+   "grid_index": 40,
+   "worst_err": 0.12196641925801319,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 40
+  },
+  {
+   "shard": 8,
+   "host": "H41",
+   "grid_index": 41,
+   "worst_err": 0.118180830106731,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 41
+  },
+  {
+   "shard": 8,
+   "host": "H42",
+   "grid_index": 42,
+   "worst_err": 0.08863805453659641,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 42
+  },
+  {
+   "shard": 8,
+   "host": "H43",
+   "grid_index": 43,
+   "worst_err": 0.09195538517632917,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 44
+  },
+  {
+   "shard": 8,
+   "host": "H44",
+   "grid_index": 44,
+   "worst_err": 0.09195538517632917,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 44
+  },
+  {
+   "shard": 9,
+   "host": "H45",
+   "grid_index": 45,
+   "worst_err": 0.09245301534493815,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 45
+  },
+  {
+   "shard": 9,
+   "host": "H46",
+   "grid_index": 46,
+   "worst_err": 0.10136796429823546,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 47
+  },
+  {
+   "shard": 9,
+   "host": "H47",
+   "grid_index": 47,
+   "worst_err": 0.10136796429823546,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 47
+  },
+  {
+   "shard": 9,
+   "host": "H48",
+   "grid_index": 48,
+   "worst_err": 0.10178109211454849,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 48
+  },
+  {
+   "shard": 9,
+   "host": "H49",
+   "grid_index": 49,
+   "worst_err": 0.08504766933128523,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 49
+  },
+  {
+   "shard": 10,
+   "host": "H50",
+   "grid_index": 50,
+   "worst_err": 0.080830097329264,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 51
+  },
+  {
+   "shard": 10,
+   "host": "H51",
+   "grid_index": 51,
+   "worst_err": 0.080830097329264,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 51
+  },
+  {
+   "shard": 10,
+   "host": "H52",
+   "grid_index": 52,
+   "worst_err": 0.09711808032374909,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 52
+  },
+  {
+   "shard": 10,
+   "host": "H53",
+   "grid_index": 53,
+   "worst_err": 0.10204893731055216,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 53
+  },
+  {
+   "shard": 10,
+   "host": "H54",
+   "grid_index": 54,
+   "worst_err": 0.0936233747915426,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 56
+  },
+  {
+   "shard": 11,
+   "host": "H55",
+   "grid_index": 55,
+   "worst_err": 0.0936233747915426,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 56
+  },
+  {
+   "shard": 11,
+   "host": "H56",
+   "grid_index": 56,
+   "worst_err": 0.0936233747915426,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 56
+  },
+  {
+   "shard": 11,
+   "host": "H57",
+   "grid_index": 57,
+   "worst_err": 0.06747120312768227,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 58
+  },
+  {
+   "shard": 11,
+   "host": "H58",
+   "grid_index": 58,
+   "worst_err": 0.06747120312768227,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 58
+  },
+  {
+   "shard": 11,
+   "host": "H59",
+   "grid_index": 59,
+   "worst_err": 0.0986425658599045,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 62
+  },
+  {
+   "shard": 12,
+   "host": "H60",
+   "grid_index": 60,
+   "worst_err": 0.0986425658599045,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 62
+  },
+  {
+   "shard": 12,
+   "host": "H61",
+   "grid_index": 61,
+   "worst_err": 0.0986425658599045,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 62
+  },
+  {
+   "shard": 12,
+   "host": "H62",
+   "grid_index": 62,
+   "worst_err": 0.0986425658599045,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 62
+  },
+  {
+   "shard": 12,
+   "host": "H63",
+   "grid_index": 63,
+   "worst_err": 0.10361145679713342,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 65
+  },
+  {
+   "shard": 12,
+   "host": "H64",
+   "grid_index": 64,
+   "worst_err": 0.10361145679713342,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 65
+  },
+  {
+   "shard": 13,
+   "host": "H65",
+   "grid_index": 65,
+   "worst_err": 0.10361145679713342,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 65
+  },
+  {
+   "shard": 13,
+   "host": "H66",
+   "grid_index": 66,
+   "worst_err": 0.08252439035329254,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 66
+  },
+  {
+   "shard": 13,
+   "host": "H67",
+   "grid_index": 67,
+   "worst_err": 0.07691255641258626,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 69
+  },
+  {
+   "shard": 13,
+   "host": "H68",
+   "grid_index": 68,
+   "worst_err": 0.07691255641258626,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 69
+  },
+  {
+   "shard": 13,
+   "host": "H69",
+   "grid_index": 69,
+   "worst_err": 0.07691255641258626,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 69
+  },
+  {
+   "shard": 14,
+   "host": "H70",
+   "grid_index": 70,
+   "worst_err": 0.11841887528835535,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 71
+  },
+  {
+   "shard": 14,
+   "host": "H71",
+   "grid_index": 71,
+   "worst_err": 0.11841887528835535,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 71
+  },
+  {
+   "shard": 14,
+   "host": "H72",
+   "grid_index": 72,
+   "worst_err": 0.09470892272894481,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 72
+  },
+  {
+   "shard": 14,
+   "host": "H73",
+   "grid_index": 73,
+   "worst_err": 0.0942636129783579,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 73
+  },
+  {
+   "shard": 14,
+   "host": "H74",
+   "grid_index": 74,
+   "worst_err": 0.08567078493577282,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 74
+  },
+  {
+   "shard": 15,
+   "host": "H75",
+   "grid_index": 75,
+   "worst_err": 0.08309530946619127,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 78
+  },
+  {
+   "shard": 15,
+   "host": "H76",
+   "grid_index": 76,
+   "worst_err": 0.08309530946619127,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 78
+  },
+  {
+   "shard": 15,
+   "host": "H77",
+   "grid_index": 77,
+   "worst_err": 0.08309530946619127,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 78
+  },
+  {
+   "shard": 15,
+   "host": "H78",
+   "grid_index": 78,
+   "worst_err": 0.08309530946619127,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 78
+  },
+  {
+   "shard": 15,
+   "host": "H79",
+   "grid_index": 79,
+   "worst_err": 0.11195969192563927,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 83
+  },
+  {
+   "shard": 16,
+   "host": "H80",
+   "grid_index": 80,
+   "worst_err": 0.11195969192563927,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 83
+  },
+  {
+   "shard": 16,
+   "host": "H81",
+   "grid_index": 81,
+   "worst_err": 0.11195969192563927,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 83
+  },
+  {
+   "shard": 16,
+   "host": "H82",
+   "grid_index": 82,
+   "worst_err": 0.11195969192563927,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 83
+  },
+  {
+   "shard": 16,
+   "host": "H83",
+   "grid_index": 83,
+   "worst_err": 0.11195969192563927,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 83
+  },
+  {
+   "shard": 16,
+   "host": "H84",
+   "grid_index": 84,
+   "worst_err": 0.07782170035814032,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 84
+  },
+  {
+   "shard": 17,
+   "host": "H85",
+   "grid_index": 85,
+   "worst_err": 0.09047860775126229,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 88
+  },
+  {
+   "shard": 17,
+   "host": "H86",
+   "grid_index": 86,
+   "worst_err": 0.09047860775126229,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 88
+  },
+  {
+   "shard": 17,
+   "host": "H87",
+   "grid_index": 87,
+   "worst_err": 0.09047860775126229,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 88
+  },
+  {
+   "shard": 17,
+   "host": "H88",
+   "grid_index": 88,
+   "worst_err": 0.09047860775126229,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 88
+  },
+  {
+   "shard": 17,
+   "host": "H89",
+   "grid_index": 89,
+   "worst_err": 0.07588357864000822,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 89
+  },
+  {
+   "shard": 18,
+   "host": "H90",
+   "grid_index": 90,
+   "worst_err": 0.08265011766764412,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 91
+  },
+  {
+   "shard": 18,
+   "host": "H91",
+   "grid_index": 91,
+   "worst_err": 0.08265011766764412,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 91
+  },
+  {
+   "shard": 18,
+   "host": "H92",
+   "grid_index": 92,
+   "worst_err": 0.09420523485239667,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 92
+  },
+  {
+   "shard": 18,
+   "host": "H93",
+   "grid_index": 93,
+   "worst_err": 0.10480132000344766,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 93
+  },
+  {
+   "shard": 18,
+   "host": "H94",
+   "grid_index": 94,
+   "worst_err": 0.08563494655958077,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 94
+  },
+  {
+   "shard": 19,
+   "host": "H95",
+   "grid_index": 95,
+   "worst_err": 0.0887235979685761,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 95
+  },
+  {
+   "shard": 19,
+   "host": "H96",
+   "grid_index": 96,
+   "worst_err": 0.110980732419998,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 96
+  },
+  {
+   "shard": 19,
+   "host": "H97",
+   "grid_index": 97,
+   "worst_err": 0.12190953305817073,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 98
+  },
+  {
+   "shard": 19,
+   "host": "H98",
+   "grid_index": 98,
+   "worst_err": 0.12190953305817073,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 98
+  },
+  {
+   "shard": 19,
+   "host": "H99",
+   "grid_index": 99,
+   "worst_err": 0.13338443370806455,
+   "carried": true,
+   "connected": true,
+   "rewire_seed": 100
+  }
+ ],
+ "X1": true,
+ "X2": true,
+ "note": "the 100 pre-named host draws with exp202's disclosed connectivity-redraw multiplicity carried verbatim (rewire_seed recorded per host; ~51 distinct organisms across 100 draws, not deduplicated)"
+}
