@@ -1,0 +1,781 @@
+{
+ "exp": "exp248_conflict_grid (the conflict-grid pass; exp238's registered next; the M3 conflict bar's honest re-derivation; ledger L226)",
+ "claim": "the maximal zero-knob conflict derived over the pre-named candidate grid; the M3 bar re-derived from the maximal candidate; the multiple-memories claim re-evaluated at the honest bar",
+ "star_point": {
+  "gamma": 64.0,
+  "mu": 0.0
+ },
+ "arms": [
+  "scale_free",
+  "random3",
+  "torus"
+ ],
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "pattern_A": {
+  "source": "exp43_substrate_independence.labeling (imported verbatim)",
+  "head_cells": [
+   0,
+   24
+  ],
+  "head_v": -20.0,
+  "trunk_v": -50.0
+ },
+ "candidate_grid": {
+  "definition": "the mirror relocations: a single head block of `size` cells anchored at one end of the body axis (the polarity \u2014 which end hosts the head identity), trunk elsewhere; built on exp43's imported identity constants only (zero-knob: no new constants; the sizes are the docstring's pre-named list)",
+  "sizes": [
+   10,
+   20,
+   25,
+   33,
+   50
+  ],
+  "polarities": [
+   "anterior",
+   "posterior"
+  ],
+  "candidates": [
+   {
+    "size": 10,
+    "polarity": "anterior",
+    "head_cells": [
+     0,
+     9
+    ],
+    "head_v": -20.0,
+    "trunk_v": -50.0,
+    "disagree_cells": 15,
+    "disagree_frac": 0.15,
+    "is_exp238_pattern_B": false,
+    "is_target_mirror": false
+   },
+   {
+    "size": 10,
+    "polarity": "posterior",
+    "head_cells": [
+     90,
+     99
+    ],
+    "head_v": -20.0,
+    "trunk_v": -50.0,
+    "disagree_cells": 35,
+    "disagree_frac": 0.35,
+    "is_exp238_pattern_B": false,
+    "is_target_mirror": false
+   },
+   {
+    "size": 20,
+    "polarity": "anterior",
+    "head_cells": [
+     0,
+     19
+    ],
+    "head_v": -20.0,
+    "trunk_v": -50.0,
+    "disagree_cells": 5,
+    "disagree_frac": 0.05,
+    "is_exp238_pattern_B": false,
+    "is_target_mirror": false
+   },
+   {
+    "size": 20,
+    "polarity": "posterior",
+    "head_cells": [
+     80,
+     99
+    ],
+    "head_v": -20.0,
+    "trunk_v": -50.0,
+    "disagree_cells": 45,
+    "disagree_frac": 0.45,
+    "is_exp238_pattern_B": false,
+    "is_target_mirror": false
+   },
+   {
+    "size": 25,
+    "polarity": "anterior",
+    "head_cells": [
+     0,
+     24
+    ],
+    "head_v": -20.0,
+    "trunk_v": -50.0,
+    "disagree_cells": 0,
+    "disagree_frac": 0.0,
+    "is_exp238_pattern_B": false,
+    "is_target_mirror": false
+   },
+   {
+    "size": 25,
+    "polarity": "posterior",
+    "head_cells": [
+     75,
+     99
+    ],
+    "head_v": -20.0,
+    "trunk_v": -50.0,
+    "disagree_cells": 50,
+    "disagree_frac": 0.5,
+    "is_exp238_pattern_B": false,
+    "is_target_mirror": true
+   },
+   {
+    "size": 33,
+    "polarity": "anterior",
+    "head_cells": [
+     0,
+     32
+    ],
+    "head_v": -20.0,
+    "trunk_v": -50.0,
+    "disagree_cells": 8,
+    "disagree_frac": 0.08,
+    "is_exp238_pattern_B": false,
+    "is_target_mirror": false
+   },
+   {
+    "size": 33,
+    "polarity": "posterior",
+    "head_cells": [
+     67,
+     99
+    ],
+    "head_v": -20.0,
+    "trunk_v": -50.0,
+    "disagree_cells": 58,
+    "disagree_frac": 0.58,
+    "is_exp238_pattern_B": true,
+    "is_target_mirror": false
+   },
+   {
+    "size": 50,
+    "polarity": "anterior",
+    "head_cells": [
+     0,
+     49
+    ],
+    "head_v": -20.0,
+    "trunk_v": -50.0,
+    "disagree_cells": 25,
+    "disagree_frac": 0.25,
+    "is_exp238_pattern_B": false,
+    "is_target_mirror": false
+   },
+   {
+    "size": 50,
+    "polarity": "posterior",
+    "head_cells": [
+     50,
+     99
+    ],
+    "head_v": -20.0,
+    "trunk_v": -50.0,
+    "disagree_cells": 75,
+    "disagree_frac": 0.75,
+    "is_exp238_pattern_B": false,
+    "is_target_mirror": false
+   }
+  ],
+  "n_candidates": 10,
+  "list_complete": true,
+  "maximal": {
+   "size": 50,
+   "polarity": "posterior",
+   "head_cells": [
+    50,
+    99
+   ],
+   "disagree_cells": 75,
+   "disagree_frac": 0.75
+  },
+  "pre_named_expectation": {
+   "maximal_ge": 0.66,
+   "argmax_hint": "the head-to-posterior relocation at the 25-cell block",
+   "level_met": true,
+   "argmax_matches_hint": false,
+   "note": "the >= 66% LEVEL is met (75% >= 66%) but the hint's LOCATION is refuted: the 25-cell posterior relocation disagrees on exactly 50/100 cells (= the imported morpho_engineering.target_mirror, the figure exp238's deposit already recorded) \u2014 no relocation of a 25-cell block can exceed 50 differing cells (2 x 25, the disjoint old and new blocks), so the pre-named figure was arithmetically unreachable at that block; the honest maximal lives at the 50-cell block"
+  }
+ },
+ "bar": {
+  "exp238_pre_named": 0.6,
+  "exp238_refuted_on": "the mirror's 58% < 60% (the L214 arithmetic refute; both memories retrievable on every instance)",
+  "re_derived": 0.75,
+  "re_derived_source": "the maximal candidate's disagreement fraction (by construction the bar is exactly attained by the maximal candidate)"
+ },
+ "write_sequence": {
+  "A_into_theta": "exp79's run_gm star write protocol verbatim (gamma=64, mu=0); the carrier runs run_gm's protocol inline (run_gm returns only the error, not the collective) and asserts bit-exact post-window pattern error against the imported run_gm on every instance (18/18 over both battery runs)",
+  "B_into_phi_spec": "exp87's write_spec_layer (the R1 memory write) with B* = the maximal-conflict candidate; preserves the set_target-captured phi_spec (= A) as phi_spec_canon"
+ },
+ "instances": [
+  {
+   "arm": "scale_free",
+   "seed": 1,
+   "conflict": {
+    "size": 50,
+    "polarity": "posterior",
+    "disagree_cells": 75,
+    "disagree_frac": 0.75
+   },
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.5683,
+   "phi_spec_canon_preserved": true,
+   "all_finite": true,
+   "M1": {
+    "theta_err_vs_A": 0.285,
+    "v_err_vs_A": 0.568,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_pre": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_post": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 1.048,
+    "err_B_free_control": 1.048,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3_checkpoint": {
+    "theta_err_vs_A": 1.048,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 1.275,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 1.491,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "scale_free",
+   "seed": 2,
+   "conflict": {
+    "size": 50,
+    "polarity": "posterior",
+    "disagree_cells": 75,
+    "disagree_frac": 0.75
+   },
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.5741,
+   "phi_spec_canon_preserved": true,
+   "all_finite": true,
+   "M1": {
+    "theta_err_vs_A": 0.285,
+    "v_err_vs_A": 0.574,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_pre": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_post": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 1.048,
+    "err_B_free_control": 1.048,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3_checkpoint": {
+    "theta_err_vs_A": 1.048,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 1.276,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 1.491,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "scale_free",
+   "seed": 3,
+   "conflict": {
+    "size": 50,
+    "polarity": "posterior",
+    "disagree_cells": 75,
+    "disagree_frac": 0.75
+   },
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.5761,
+   "phi_spec_canon_preserved": true,
+   "all_finite": true,
+   "M1": {
+    "theta_err_vs_A": 0.285,
+    "v_err_vs_A": 0.576,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_pre": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_post": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 1.048,
+    "err_B_free_control": 1.048,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3_checkpoint": {
+    "theta_err_vs_A": 1.048,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 1.275,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 1.491,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "random3",
+   "seed": 1,
+   "conflict": {
+    "size": 50,
+    "polarity": "posterior",
+    "disagree_cells": 75,
+    "disagree_frac": 0.75
+   },
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.2604,
+   "phi_spec_canon_preserved": true,
+   "all_finite": true,
+   "M1": {
+    "theta_err_vs_A": 0.126,
+    "v_err_vs_A": 0.26,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_pre": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_post": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 0.496,
+    "err_B_free_control": 0.496,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3_checkpoint": {
+    "theta_err_vs_A": 0.496,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 0.616,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 0.735,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "random3",
+   "seed": 2,
+   "conflict": {
+    "size": 50,
+    "polarity": "posterior",
+    "disagree_cells": 75,
+    "disagree_frac": 0.75
+   },
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.2685,
+   "phi_spec_canon_preserved": true,
+   "all_finite": true,
+   "M1": {
+    "theta_err_vs_A": 0.126,
+    "v_err_vs_A": 0.269,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_pre": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_post": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 0.496,
+    "err_B_free_control": 0.496,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3_checkpoint": {
+    "theta_err_vs_A": 0.496,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 0.617,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 0.735,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "random3",
+   "seed": 3,
+   "conflict": {
+    "size": 50,
+    "polarity": "posterior",
+    "disagree_cells": 75,
+    "disagree_frac": 0.75
+   },
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.2696,
+   "phi_spec_canon_preserved": true,
+   "all_finite": true,
+   "M1": {
+    "theta_err_vs_A": 0.126,
+    "v_err_vs_A": 0.27,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_pre": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_post": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 0.496,
+    "err_B_free_control": 0.496,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3_checkpoint": {
+    "theta_err_vs_A": 0.496,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 0.616,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 0.735,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "torus",
+   "seed": 1,
+   "conflict": {
+    "size": 50,
+    "polarity": "posterior",
+    "disagree_cells": 75,
+    "disagree_frac": 0.75
+   },
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.1439,
+   "phi_spec_canon_preserved": true,
+   "all_finite": true,
+   "M1": {
+    "theta_err_vs_A": 0.064,
+    "v_err_vs_A": 0.144,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_pre": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_post": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 0.251,
+    "err_B_free_control": 0.251,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3_checkpoint": {
+    "theta_err_vs_A": 0.251,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 0.312,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 0.373,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "torus",
+   "seed": 2,
+   "conflict": {
+    "size": 50,
+    "polarity": "posterior",
+    "disagree_cells": 75,
+    "disagree_frac": 0.75
+   },
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.1377,
+   "phi_spec_canon_preserved": true,
+   "all_finite": true,
+   "M1": {
+    "theta_err_vs_A": 0.064,
+    "v_err_vs_A": 0.138,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_pre": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_post": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 0.251,
+    "err_B_free_control": 0.251,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3_checkpoint": {
+    "theta_err_vs_A": 0.251,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 0.313,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 0.373,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  },
+  {
+   "arm": "torus",
+   "seed": 3,
+   "conflict": {
+    "size": 50,
+    "polarity": "posterior",
+    "disagree_cells": 75,
+    "disagree_frac": 0.75
+   },
+   "run_gm_verbatim_bit_exact": true,
+   "run_gm_err": 0.1326,
+   "phi_spec_canon_preserved": true,
+   "all_finite": true,
+   "M1": {
+    "theta_err_vs_A": 0.064,
+    "v_err_vs_A": 0.133,
+    "spec_bit_exact": true,
+    "pass": true
+   },
+   "M2": {
+    "phi_sha_write": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_pre": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_sha_post": "61fd1bac32836eb75d2e9bc2c5fdcd0a78b1d998893783a62fc52e89ced98180",
+    "phi_bit_exact": true,
+    "err_A_after_maintenance": 0.251,
+    "err_B_free_control": 0.251,
+    "delta_mV": 0.0,
+    "pass": true
+   },
+   "M3_checkpoint": {
+    "theta_err_vs_A": 0.251,
+    "spec_bit_exact": true,
+    "both_retrievable": true
+   },
+   "M4": {
+    "window_read1_err": 0.312,
+    "surfaces_A_1": true,
+    "spec_read_B_1": true,
+    "lossless_switch_theta_bit_exact": true,
+    "window_read2_err": 0.373,
+    "surfaces_A_2": true,
+    "spec_read_B_2": true,
+    "zero_re_writes_phi_sha_constant": true,
+    "pass": true
+   }
+  }
+ ],
+ "m3_reevaluated": {
+  "bar_old": 0.6,
+  "bar_new": 0.75,
+  "clause": "disagree >= the re-derived bar AND both remain retrievable",
+  "bar_clause_satisfied_by_construction": true,
+  "both_retrievable_at_maximal_conflict": true,
+  "pass": true
+ },
+ "exp238_replica_witness": {
+  "rationale": "phi_spec enters no step() term (exp238's dynamics-inert finding), so the theta/V trajectory is independent of the spec layer's CONTENT: the re-run battery's theta errors must equal exp238's deposited values per (arm, seed) \u2014 the re-run IS exp238's battery dynamics; the new content is the spec layer at the 75% conflict",
+  "instances_matched": 9,
+  "instances_total": 9,
+  "per_instance": [
+   {
+    "arm": "scale_free",
+    "seed": 1,
+    "theta_trajectory_matches_exp238_deposit": true,
+    "m1_theta_err": true,
+    "m2_err_A_after": true,
+    "m2_err_control": true,
+    "m2_delta": true,
+    "m4_window1": true,
+    "m4_window2": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 2,
+    "theta_trajectory_matches_exp238_deposit": true,
+    "m1_theta_err": true,
+    "m2_err_A_after": true,
+    "m2_err_control": true,
+    "m2_delta": true,
+    "m4_window1": true,
+    "m4_window2": true
+   },
+   {
+    "arm": "scale_free",
+    "seed": 3,
+    "theta_trajectory_matches_exp238_deposit": true,
+    "m1_theta_err": true,
+    "m2_err_A_after": true,
+    "m2_err_control": true,
+    "m2_delta": true,
+    "m4_window1": true,
+    "m4_window2": true
+   },
+   {
+    "arm": "random3",
+    "seed": 1,
+    "theta_trajectory_matches_exp238_deposit": true,
+    "m1_theta_err": true,
+    "m2_err_A_after": true,
+    "m2_err_control": true,
+    "m2_delta": true,
+    "m4_window1": true,
+    "m4_window2": true
+   },
+   {
+    "arm": "random3",
+    "seed": 2,
+    "theta_trajectory_matches_exp238_deposit": true,
+    "m1_theta_err": true,
+    "m2_err_A_after": true,
+    "m2_err_control": true,
+    "m2_delta": true,
+    "m4_window1": true,
+    "m4_window2": true
+   },
+   {
+    "arm": "random3",
+    "seed": 3,
+    "theta_trajectory_matches_exp238_deposit": true,
+    "m1_theta_err": true,
+    "m2_err_A_after": true,
+    "m2_err_control": true,
+    "m2_delta": true,
+    "m4_window1": true,
+    "m4_window2": true
+   },
+   {
+    "arm": "torus",
+    "seed": 1,
+    "theta_trajectory_matches_exp238_deposit": true,
+    "m1_theta_err": true,
+    "m2_err_A_after": true,
+    "m2_err_control": true,
+    "m2_delta": true,
+    "m4_window1": true,
+    "m4_window2": true
+   },
+   {
+    "arm": "torus",
+    "seed": 2,
+    "theta_trajectory_matches_exp238_deposit": true,
+    "m1_theta_err": true,
+    "m2_err_A_after": true,
+    "m2_err_control": true,
+    "m2_delta": true,
+    "m4_window1": true,
+    "m4_window2": true
+   },
+   {
+    "arm": "torus",
+    "seed": 3,
+    "theta_trajectory_matches_exp238_deposit": true,
+    "m1_theta_err": true,
+    "m2_err_A_after": true,
+    "m2_err_control": true,
+    "m2_delta": true,
+    "m4_window1": true,
+    "m4_window2": true
+   }
+  ]
+ },
+ "determinism": {
+  "protocol": "the full battery run twice in-process (fresh collectives, identical seeds); instance records compared bit-wise; the grid arithmetic re-derived",
+  "battery_runs": 2,
+  "bit_identical": true
+ },
+ "discipline": {
+  "zero_rejections": true,
+  "n_rejections": 0,
+  "all_finite": true,
+  "exp238_deposit": {
+   "path": "results/exp238_ingressing_minds.json",
+   "sha256_before": "c60e1bf98972295b150ea1bac7ffc7f391576a069ce375fcefc76fafd875f3b8",
+   "sha256_after": "c60e1bf98972295b150ea1bac7ffc7f391576a069ce375fcefc76fafd875f3b8",
+   "byte_unchanged": true,
+   "read_only": true
+  }
+ },
+ "criteria": {
+  "D1_maximal_conflict_recorded": true,
+  "D1_candidate_list_complete": true,
+  "D2_M1_coexistence_at_maximal_conflict": true,
+  "D2_M2_non_interference_at_maximal_conflict": true,
+  "D2_M4_addressing_at_maximal_conflict": true,
+  "D3_zero_rejections": true,
+  "D3_exp238_deposit_byte_unchanged": true,
+  "D3_deterministic": true
+ },
+ "gates": {
+  "D1": true,
+  "D2": true,
+  "D3": true
+ },
+ "branch": "MULTI-MEMORY-CONFIRMED",
+ "deposit_paths": {
+  "module_frozen_out": "results/exp248.json",
+  "batch_named_mirror": "results/exp248_conflict_grid.json",
+  "note": "the deposit is written to the module's frozen OUT and mirrored byte-identically at the batch instruction's named path"
+ },
+ "notes": "THE GRID (the honest deposit): the pre-named candidate grid \u2014 the mirror relocations at block sizes {10, 20, 25, 33, 50} x the two polarities (which end of the body axis hosts the head identity; cf. morpho_engineering.target_mirror's 'reversed polarity: head identity at the posterior end') \u2014 is evaluated COMPLETE (10/10 candidates). The posterior polarity disagrees on 25 + size cells (the vacated anterior head reverting to trunk): 35/45/50/58/75 across the five sizes; the anterior polarity on |25 - size| (the head block nested in, or extending, the canonical head): 15/5/0/8/25. The MAXIMAL zero-knob conflict is 75/100 = 75% at the head-to-posterior relocation of the 50-cell block (head on [50,100)). The grid reproduces the repo's recorded anchors exactly (asserted at run time): posterior/33 IS exp238's pattern B (58/100); posterior/25 IS the imported morpho_engineering.target_mirror (50/100). THE PRE-NAMED EXPECTATION (D1's parenthetical): the >= 66% LEVEL is met (75% >= 66%) but the hint's LOCATION is refuted \u2014 the head-to-posterior relocation at the 25-cell block disagrees on exactly 50/100 (no relocation of a 25-cell block can exceed 50 differing cells: 2 x 25, the disjoint old and new blocks), so the pre-named figure was arithmetically unreachable at that block; recorded, not hidden. THE M3 RE-EVALUATION: exp238's bar (>= 60%) was refuted on its own arithmetic (the mirror's 58%, L214); the bar is RE-DERIVED from the maximal candidate: 60% -> 75%. At that bar the exp238 M1/M2/M4 battery re-runs (the frozen machinery imported verbatim \u2014 run_gm, write_spec_layer, exp43's labeling, exp73's battery; the panel structure transcribed from exp238's body unchanged with pat_B := B*) on 3 arms x 3 seeds: M1 co-existence (theta reports A err < 6.0 AND phi_spec == B* bit-exact in ONE state), M2 non-interference (phi_spec sha-constant through T=24 x 3 under A's expression; delta vs the seed-matched B-free control exactly 0.0 mV on every instance \u2014 the spec layer is dynamics-inert), and M4 addressing (the window read surfaces A, the spec read surfaces B*, ZERO re-writes, theta bit-exact across B* rounds) hold on 9/9 instances at the 75% conflict. THE WITNESS: because phi_spec enters no step() term, the theta/V trajectory is independent of the spec layer's content \u2014 every theta-error field of the re-run matches exp238's deposit per (arm, seed) exactly (9/9 witnesses): the re-run IS exp238's battery dynamics; the new content is the spec layer at 75% conflict, still bit-exact, sha-constant, losslessly addressable. THE BRANCH: D2 PASS -> MULTI-MEMORY-CONFIRMED \u2014 exp238's branch is UPDATED by this deposit (SINGLE-MEMORY -> MULTI-MEMORY-CONFIRMED; exp238's own deposit stays byte-unchanged per D3): the 'multiple memories in the same body' claim lands at the honest bar (75% conflict, both memories retrievable, non-interfering, read-addressed). THE DISCIPLINE: zero rejections (all finite at every checkpoint on 2 x 9 instances; run_gm verbatim asserted on every instance of both runs), exp238's deposit byte-unchanged (sha256 before == after; read-only), deterministic (the full battery run twice in-process, instance records bit-identical; the grid arithmetic re-derived). DEPOSIT: written to the module's frozen OUT (results/exp248.json) and mirrored byte-identically at the batch's named path (results/exp248_conflict_grid.json)."
+}
