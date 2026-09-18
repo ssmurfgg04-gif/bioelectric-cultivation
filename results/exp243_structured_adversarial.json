@@ -1,0 +1,5377 @@
+{
+ "exp": "exp243_structured_adversarial",
+ "claim": "STRUCTURED ADVERSARIAL MEDIA (the Section 6 item; the Stage 5 extension): the conjunction cell \u2014 media BOTH structured AND adversarial. The honest zero-knob adversary designs the medium INSIDE exp225's structured family to maximize the reader's own decode error: the argmax over the PRE-NAMED candidate list (exp225's structured classes x the pre-named perturbation set {the canon/zone relabelings, the boundary-double-frequency rewiring, the deep-band substitution}), no continuous optimization, no fitting, read under exp178's production scoped arm at n=400 x 3 seeds",
+ "read": {
+  "wiring": "exp178's production scoped arm: exp169's f_max diagnostic + the pre-registered THRESHOLD (32.0); R_T (exp167's adopted read) iff f_max < 32.0, else exp148's raw temporal \u2014 one arm, one function, zero knobs",
+  "projection": "exp145/exp148 TC1-TC3: PN1/PN2 dominant-quadrature projection + TC1 flip-clock F + TC2 A_ext = A + F",
+  "executor": "exp142 execute_signed VERBATIM (R1 structure on |A|, R2 signed dynamics, walk frontier on |A|>0)",
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "op_source": "exp99's battery-wide STAR point (exp142's STAR_OP); STAR_OP IS S* = (64.0, 0.0), asserted",
+  "spec_input": "per-row target spec \u2014 the read stack's target parameter (exp148's MULTI default asserted bit-identical per class by the MULTI-identity audit)",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n": 400,
+  "window_h": 24.0,
+  "commit_noise": 0.6,
+  "steps_per_cell": 8,
+  "floor": "production -60.0 restored post-import (exp218's disclosed exp169-import discipline; the -35.0 reader-line pin disclosed)",
+  "per_media_tuning": "none",
+  "adversary": "the honest zero-knob adversary: the argmax over the PRE-NAMED candidate list (exp225's structured classes x the pre-named perturbation set), no continuous optimization, no fitting",
+  "fingerprint": "d12c0eeb4d14d6b7",
+  "wiring_id": "exp148.decode('scoped') wiring | exp169 f_max/THRESHOLD | exp167 R_T | exp145/148 PN+TC | exp142 execute_signed@STAR_OP==S*"
+ },
+ "adversary": {
+  "definition": "the WORST member of exp225's structured family by the reader's own error, found by the docstring's bounded pre-named grid: exp225's structured classes x the pre-named perturbation set \u2014 argmax over the candidate list, zero knobs",
+  "structured_family": "exp225's structured constructors at exp198's n=400 call site (n is the constructor's FIRST PARAMETER \u2014 exp198's disclosed call-site discipline, NO subclass): H0/H1 the chain/path constructor -> path(400) (the chain class's n=400 call site IS exp225's H1 construction \u2014 the H0 slot echoes H1 bit-exactly, asserted), H2-H11 the small-world corpus rewires at their own deposited redraw seeds re-drawn at n=400 (exp225's build_hosts redraw rule VERBATIM)",
+  "perturbation_set": {
+   "P1_canon_zone_relabelings": "the zero-knob node-label mirror pi(i)=n-1-i, A'=pi A pi^T \u2014 the path class's own nontrivial automorphism, applied uniformly; the read re-derives the target from the medium's own canon, so the mirrored canon/zone layout must decode",
+   "P2_boundary_double_frequency_rewiring": "each exp208 CANON-BOUNDARY cell (the base medium's own canon, the ring-backbone i+/-1 rule, exp208's classify VERBATIM) chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent) \u2014 every boundary cell's chord frequency at least doubles",
+   "P3_deep_band_substitution": "the read program substituted from the canon row to the deep band's -60.0 rung rows, BOTH pre-named instances (exp225's deep construction VERBATIM); decodable ONLY at the production floor"
+  },
+  "candidate_reads_per_class": "P1 the canon row; P2 the canon row; P3 the two deep rows \u2014 exp225's build_rows machinery VERBATIM",
+  "n_candidates": 48,
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n": 400
+ },
+ "provenance": {
+  "exp202": "b6d5cb7af2f75450fa731850101c18bb9e783bdeea45437a235aab8f962387fb",
+  "exp182": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+  "exp198": "2addf20f5fb7593a949515678de5e1b972c05b3535ec8d63e9af72b2f29825c3",
+  "exp225": "1985a227a67a80c87f2ff4d5cdd5147724537b6263b46e298985523a32afbba3",
+  "pre_registration": "commit 1b98432 (batch 17)"
+ },
+ "classes": {
+  "H0": {
+   "n": 400,
+   "base": "the chain/path constructor at the n=400 call site",
+   "base_sha256": "aa5748f002e8f40d6eb8298b398a85906bcd9f427456a38c5338979c4520847c",
+   "rewire_seed": null,
+   "edges_base": 399,
+   "n_boundary_cells_base": 4,
+   "f_max_base": 0.0,
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.52,
+    "f_max": 0.0
+   },
+   "n_candidate_reads": 4,
+   "n_rejections": 0,
+   "runtime_s": 8.3
+  },
+  "H1": {
+   "n": 400,
+   "base": "the chain/path constructor at the n=400 call site",
+   "base_sha256": "aa5748f002e8f40d6eb8298b398a85906bcd9f427456a38c5338979c4520847c",
+   "rewire_seed": null,
+   "edges_base": 399,
+   "n_boundary_cells_base": 4,
+   "f_max_base": 0.0,
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.52,
+    "f_max": 0.0
+   },
+   "n_candidate_reads": 4,
+   "n_rejections": 0,
+   "runtime_s": 8.4
+  },
+  "H10": {
+   "n": 400,
+   "base": "the small-world corpus rewire at its deposited redraw seed, re-drawn at the n=400 call site",
+   "base_sha256": "a8a70e58c462acd15c48175da98acdb915fa03641193391e21873c8234b416ce",
+   "rewire_seed": 202215,
+   "edges_base": 400,
+   "n_boundary_cells_base": 32,
+   "f_max_base": 0.0,
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.49,
+    "f_max": 0.0
+   },
+   "n_candidate_reads": 4,
+   "n_rejections": 0,
+   "runtime_s": 8.8
+  },
+  "H11": {
+   "n": 400,
+   "base": "the small-world corpus rewire at its deposited redraw seed, re-drawn at the n=400 call site",
+   "base_sha256": "ed0108dc55cb3002a7a7a37aab7b5ade3c9e2d3cc3f847cc41dcf3cefe05d9cc",
+   "rewire_seed": 202216,
+   "edges_base": 400,
+   "n_boundary_cells_base": 37,
+   "f_max_base": 0.0,
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.49,
+    "f_max": 0.0
+   },
+   "n_candidate_reads": 4,
+   "n_rejections": 0,
+   "runtime_s": 8.4
+  },
+  "H2": {
+   "n": 400,
+   "base": "the small-world corpus rewire at its deposited redraw seed, re-drawn at the n=400 call site",
+   "base_sha256": "dd4352bc1618cea68b1b5bff680f47caebb47135084a07d28db0c7e3572f31d4",
+   "rewire_seed": 202201,
+   "edges_base": 400,
+   "n_boundary_cells_base": 42,
+   "f_max_base": 0.0,
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.49,
+    "f_max": 0.0
+   },
+   "n_candidate_reads": 4,
+   "n_rejections": 0,
+   "runtime_s": 8.2
+  },
+  "H3": {
+   "n": 400,
+   "base": "the small-world corpus rewire at its deposited redraw seed, re-drawn at the n=400 call site",
+   "base_sha256": "ad51f01fc45bada09c648d2c0a6f30918510ebc17822be7629929916c69744a9",
+   "rewire_seed": 202202,
+   "edges_base": 400,
+   "n_boundary_cells_base": 47,
+   "f_max_base": 0.0,
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 2.12,
+    "f_max": 0.0
+   },
+   "n_candidate_reads": 4,
+   "n_rejections": 0,
+   "runtime_s": 8.1
+  },
+  "H4": {
+   "n": 400,
+   "base": "the small-world corpus rewire at its deposited redraw seed, re-drawn at the n=400 call site",
+   "base_sha256": "c32ebd561aae8bd0c378363f0baf7fcc7ae7418ae428c60c42190d0db0c12a42",
+   "rewire_seed": 202203,
+   "edges_base": 400,
+   "n_boundary_cells_base": 41,
+   "f_max_base": 0.0,
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.49,
+    "f_max": 0.0
+   },
+   "n_candidate_reads": 4,
+   "n_rejections": 0,
+   "runtime_s": 8.5
+  },
+  "H5": {
+   "n": 400,
+   "base": "the small-world corpus rewire at its deposited redraw seed, re-drawn at the n=400 call site",
+   "base_sha256": "e3ec54cb29bf3f93d35302349a1a0443855bb5f708248b606736d06ffeb7d392",
+   "rewire_seed": 202206,
+   "edges_base": 400,
+   "n_boundary_cells_base": 48,
+   "f_max_base": 0.0,
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 2.28,
+    "f_max": 0.0
+   },
+   "n_candidate_reads": 4,
+   "n_rejections": 0,
+   "runtime_s": 8.0
+  },
+  "H6": {
+   "n": 400,
+   "base": "the small-world corpus rewire at its deposited redraw seed, re-drawn at the n=400 call site",
+   "base_sha256": "bd1785773f16b7048df88d08c3a9f833b313bee466d1b6a7d24cd1e00536d25f",
+   "rewire_seed": 202207,
+   "edges_base": 400,
+   "n_boundary_cells_base": 31,
+   "f_max_base": 0.0,
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.49,
+    "f_max": 0.0
+   },
+   "n_candidate_reads": 4,
+   "n_rejections": 0,
+   "runtime_s": 8.3
+  },
+  "H7": {
+   "n": 400,
+   "base": "the small-world corpus rewire at its deposited redraw seed, re-drawn at the n=400 call site",
+   "base_sha256": "98e0dc2d00550be5626a30fbdf71c15d193813db60bf1a3a2ad763443a307d07",
+   "rewire_seed": 202208,
+   "edges_base": 400,
+   "n_boundary_cells_base": 36,
+   "f_max_base": 0.0,
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.49,
+    "f_max": 0.0
+   },
+   "n_candidate_reads": 4,
+   "n_rejections": 0,
+   "runtime_s": 8.2
+  },
+  "H8": {
+   "n": 400,
+   "base": "the small-world corpus rewire at its deposited redraw seed, re-drawn at the n=400 call site",
+   "base_sha256": "e6bc38951af0d7a62c680f20b2c2f79eda980aa3797961edf1e1aec5cf9e18c9",
+   "rewire_seed": 202209,
+   "edges_base": 400,
+   "n_boundary_cells_base": 39,
+   "f_max_base": 0.0,
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.52,
+    "f_max": 0.0
+   },
+   "n_candidate_reads": 4,
+   "n_rejections": 0,
+   "runtime_s": 8.5
+  },
+  "H9": {
+   "n": 400,
+   "base": "the small-world corpus rewire at its deposited redraw seed, re-drawn at the n=400 call site",
+   "base_sha256": "87a1d56241d3192699aa6b8b42f70a71f4cf2ce640cf2bc9fabcf14cdd773989",
+   "rewire_seed": 202213,
+   "edges_base": 400,
+   "n_boundary_cells_base": 43,
+   "f_max_base": 0.0,
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.49,
+    "f_max": 0.0
+   },
+   "n_candidate_reads": 4,
+   "n_rejections": 0,
+   "runtime_s": 8.3
+  }
+ },
+ "candidates": [
+  {
+   "cls": "H0",
+   "pert": "P1_canon_zone_relabelings",
+   "pert_class": "the canon/zone relabelings",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "mirror",
+   "medium_sha256": "aa5748f002e8f40d6eb8298b398a85906bcd9f427456a38c5338979c4520847c",
+   "f_max": 0.0,
+   "errs": [
+    0.04,
+    0.05,
+    0.04
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the zero-knob node-label mirror pi(i) = n-1-i, A' = pi A pi^T",
+   "worst_err": 0.05,
+   "median_err": 0.04
+  },
+  {
+   "cls": "H0",
+   "pert": "P2_boundary_double_frequency_rewiring",
+   "pert_class": "the boundary-double-frequency rewiring",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "boundary_double",
+   "medium_sha256": "d060ab7c9b510ba7dc662815e432defd6371b03ac54c5333a79def816a1cbfc3",
+   "f_max": 0.0,
+   "errs": [
+    0.06,
+    0.05,
+    0.05
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "each exp208 CANON-BOUNDARY cell chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent)",
+   "n_boundary_cells": 4,
+   "boundary_cells": [
+    0,
+    99,
+    100,
+    399
+   ],
+   "n_chords_added": 5,
+   "chords_added": [
+    [
+     0,
+     99
+    ],
+    [
+     0,
+     100
+    ],
+    [
+     99,
+     399
+    ],
+    [
+     100,
+     399
+    ],
+    [
+     399,
+     0
+    ]
+   ],
+   "worst_err": 0.06,
+   "median_err": 0.05
+  },
+  {
+   "cls": "H0",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i0",
+   "row_tclass": "deep",
+   "read_row": "deep i0",
+   "medium": "base",
+   "medium_sha256": "aa5748f002e8f40d6eb8298b398a85906bcd9f427456a38c5338979c4520847c",
+   "f_max": 0.0,
+   "errs": [
+    0.53,
+    0.56,
+    0.53
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.56,
+   "median_err": 0.53
+  },
+  {
+   "cls": "H0",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i1",
+   "row_tclass": "deep",
+   "read_row": "deep i1",
+   "medium": "base",
+   "medium_sha256": "aa5748f002e8f40d6eb8298b398a85906bcd9f427456a38c5338979c4520847c",
+   "f_max": 0.0,
+   "errs": [
+    0.52,
+    0.56,
+    0.53
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.56,
+   "median_err": 0.53
+  },
+  {
+   "cls": "H1",
+   "pert": "P1_canon_zone_relabelings",
+   "pert_class": "the canon/zone relabelings",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "mirror",
+   "medium_sha256": "aa5748f002e8f40d6eb8298b398a85906bcd9f427456a38c5338979c4520847c",
+   "f_max": 0.0,
+   "errs": [
+    0.04,
+    0.05,
+    0.04
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the zero-knob node-label mirror pi(i) = n-1-i, A' = pi A pi^T",
+   "worst_err": 0.05,
+   "median_err": 0.04
+  },
+  {
+   "cls": "H1",
+   "pert": "P2_boundary_double_frequency_rewiring",
+   "pert_class": "the boundary-double-frequency rewiring",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "boundary_double",
+   "medium_sha256": "d060ab7c9b510ba7dc662815e432defd6371b03ac54c5333a79def816a1cbfc3",
+   "f_max": 0.0,
+   "errs": [
+    0.06,
+    0.05,
+    0.05
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "each exp208 CANON-BOUNDARY cell chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent)",
+   "n_boundary_cells": 4,
+   "boundary_cells": [
+    0,
+    99,
+    100,
+    399
+   ],
+   "n_chords_added": 5,
+   "chords_added": [
+    [
+     0,
+     99
+    ],
+    [
+     0,
+     100
+    ],
+    [
+     99,
+     399
+    ],
+    [
+     100,
+     399
+    ],
+    [
+     399,
+     0
+    ]
+   ],
+   "worst_err": 0.06,
+   "median_err": 0.05
+  },
+  {
+   "cls": "H1",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i0",
+   "row_tclass": "deep",
+   "read_row": "deep i0",
+   "medium": "base",
+   "medium_sha256": "aa5748f002e8f40d6eb8298b398a85906bcd9f427456a38c5338979c4520847c",
+   "f_max": 0.0,
+   "errs": [
+    0.53,
+    0.56,
+    0.53
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.56,
+   "median_err": 0.53
+  },
+  {
+   "cls": "H1",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i1",
+   "row_tclass": "deep",
+   "read_row": "deep i1",
+   "medium": "base",
+   "medium_sha256": "aa5748f002e8f40d6eb8298b398a85906bcd9f427456a38c5338979c4520847c",
+   "f_max": 0.0,
+   "errs": [
+    0.52,
+    0.56,
+    0.53
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.56,
+   "median_err": 0.53
+  },
+  {
+   "cls": "H10",
+   "pert": "P1_canon_zone_relabelings",
+   "pert_class": "the canon/zone relabelings",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "mirror",
+   "medium_sha256": "c7dcec6ce88037a3963507cbdb9f97f7c0913cad529dd73cb5881a5a496ea4ba",
+   "f_max": 0.0,
+   "errs": [
+    0.06,
+    0.05,
+    0.05
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the zero-knob node-label mirror pi(i) = n-1-i, A' = pi A pi^T",
+   "worst_err": 0.06,
+   "median_err": 0.05
+  },
+  {
+   "cls": "H10",
+   "pert": "P2_boundary_double_frequency_rewiring",
+   "pert_class": "the boundary-double-frequency rewiring",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "boundary_double",
+   "medium_sha256": "59386bee94df252762fc804f7518f6f73adf2b9d608542552cae7b99a50a7ea0",
+   "f_max": 0.0,
+   "errs": [
+    0.14,
+    0.13,
+    0.14
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "each exp208 CANON-BOUNDARY cell chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent)",
+   "n_boundary_cells": 32,
+   "boundary_cells": [
+    2,
+    3,
+    5,
+    6,
+    14,
+    15,
+    84,
+    85,
+    99,
+    100,
+    153,
+    154,
+    167,
+    168,
+    259,
+    260,
+    274,
+    275,
+    277,
+    278,
+    286,
+    287,
+    333,
+    334,
+    336,
+    337,
+    352,
+    353,
+    358,
+    359,
+    373,
+    374
+   ],
+   "n_chords_added": 60,
+   "chords_added": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     14
+    ],
+    [
+     6,
+     14
+    ],
+    [
+     6,
+     15
+    ],
+    [
+     14,
+     15
+    ],
+    [
+     14,
+     84
+    ],
+    [
+     15,
+     84
+    ],
+    [
+     15,
+     85
+    ],
+    [
+     84,
+     99
+    ],
+    [
+     85,
+     99
+    ],
+    [
+     85,
+     100
+    ],
+    [
+     99,
+     100
+    ],
+    [
+     99,
+     153
+    ],
+    [
+     100,
+     153
+    ],
+    [
+     100,
+     154
+    ],
+    [
+     153,
+     154
+    ],
+    [
+     153,
+     167
+    ],
+    [
+     154,
+     167
+    ],
+    [
+     154,
+     168
+    ],
+    [
+     167,
+     168
+    ],
+    [
+     167,
+     259
+    ],
+    [
+     168,
+     259
+    ],
+    [
+     168,
+     260
+    ],
+    [
+     259,
+     260
+    ],
+    [
+     259,
+     274
+    ],
+    [
+     260,
+     274
+    ],
+    [
+     260,
+     275
+    ],
+    [
+     274,
+     275
+    ],
+    [
+     274,
+     277
+    ],
+    [
+     275,
+     277
+    ],
+    [
+     275,
+     278
+    ],
+    [
+     277,
+     286
+    ],
+    [
+     278,
+     286
+    ],
+    [
+     278,
+     287
+    ],
+    [
+     286,
+     287
+    ],
+    [
+     286,
+     333
+    ],
+    [
+     287,
+     333
+    ],
+    [
+     287,
+     334
+    ],
+    [
+     333,
+     334
+    ],
+    [
+     333,
+     336
+    ],
+    [
+     334,
+     336
+    ],
+    [
+     334,
+     337
+    ],
+    [
+     336,
+     337
+    ],
+    [
+     336,
+     352
+    ],
+    [
+     337,
+     352
+    ],
+    [
+     337,
+     353
+    ],
+    [
+     352,
+     358
+    ],
+    [
+     353,
+     358
+    ],
+    [
+     353,
+     359
+    ],
+    [
+     358,
+     359
+    ],
+    [
+     358,
+     373
+    ],
+    [
+     359,
+     373
+    ],
+    [
+     359,
+     374
+    ],
+    [
+     373,
+     2
+    ],
+    [
+     374,
+     2
+    ],
+    [
+     374,
+     3
+    ]
+   ],
+   "worst_err": 0.14,
+   "median_err": 0.14
+  },
+  {
+   "cls": "H10",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i0",
+   "row_tclass": "deep",
+   "read_row": "deep i0",
+   "medium": "base",
+   "medium_sha256": "a8a70e58c462acd15c48175da98acdb915fa03641193391e21873c8234b416ce",
+   "f_max": 0.0,
+   "errs": [
+    0.49,
+    0.49,
+    0.52
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.52,
+   "median_err": 0.49
+  },
+  {
+   "cls": "H10",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i1",
+   "row_tclass": "deep",
+   "read_row": "deep i1",
+   "medium": "base",
+   "medium_sha256": "a8a70e58c462acd15c48175da98acdb915fa03641193391e21873c8234b416ce",
+   "f_max": 0.0,
+   "errs": [
+    0.49,
+    0.49,
+    0.53
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.53,
+   "median_err": 0.49
+  },
+  {
+   "cls": "H11",
+   "pert": "P1_canon_zone_relabelings",
+   "pert_class": "the canon/zone relabelings",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "mirror",
+   "medium_sha256": "0e0e3f79ba9d7cedbc40762bb836128f58dfa2850e5ce53ff3f28c398d5e7049",
+   "f_max": 0.0,
+   "errs": [
+    0.06,
+    0.05,
+    0.05
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the zero-knob node-label mirror pi(i) = n-1-i, A' = pi A pi^T",
+   "worst_err": 0.06,
+   "median_err": 0.05
+  },
+  {
+   "cls": "H11",
+   "pert": "P2_boundary_double_frequency_rewiring",
+   "pert_class": "the boundary-double-frequency rewiring",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "boundary_double",
+   "medium_sha256": "1218a0ce6275528cb72bf59916576ee3033b3d623a83c6e5157b1fdcbd62960d",
+   "f_max": 0.0,
+   "errs": [
+    0.16,
+    0.16,
+    0.16
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "each exp208 CANON-BOUNDARY cell chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent)",
+   "n_boundary_cells": 37,
+   "boundary_cells": [
+    12,
+    13,
+    33,
+    34,
+    37,
+    38,
+    57,
+    58,
+    59,
+    107,
+    108,
+    142,
+    143,
+    144,
+    146,
+    147,
+    191,
+    192,
+    196,
+    197,
+    260,
+    261,
+    275,
+    276,
+    303,
+    304,
+    311,
+    312,
+    364,
+    365,
+    370,
+    371,
+    385,
+    386,
+    387,
+    390,
+    391
+   ],
+   "n_chords_added": 71,
+   "chords_added": [
+    [
+     12,
+     13
+    ],
+    [
+     12,
+     33
+    ],
+    [
+     13,
+     33
+    ],
+    [
+     13,
+     34
+    ],
+    [
+     33,
+     34
+    ],
+    [
+     33,
+     37
+    ],
+    [
+     34,
+     37
+    ],
+    [
+     34,
+     38
+    ],
+    [
+     37,
+     38
+    ],
+    [
+     37,
+     57
+    ],
+    [
+     38,
+     57
+    ],
+    [
+     38,
+     58
+    ],
+    [
+     57,
+     59
+    ],
+    [
+     58,
+     107
+    ],
+    [
+     59,
+     107
+    ],
+    [
+     59,
+     108
+    ],
+    [
+     107,
+     142
+    ],
+    [
+     108,
+     142
+    ],
+    [
+     108,
+     143
+    ],
+    [
+     142,
+     143
+    ],
+    [
+     142,
+     144
+    ],
+    [
+     143,
+     144
+    ],
+    [
+     143,
+     146
+    ],
+    [
+     144,
+     146
+    ],
+    [
+     144,
+     147
+    ],
+    [
+     146,
+     147
+    ],
+    [
+     146,
+     191
+    ],
+    [
+     147,
+     191
+    ],
+    [
+     147,
+     192
+    ],
+    [
+     191,
+     192
+    ],
+    [
+     191,
+     196
+    ],
+    [
+     192,
+     196
+    ],
+    [
+     192,
+     197
+    ],
+    [
+     196,
+     197
+    ],
+    [
+     196,
+     260
+    ],
+    [
+     197,
+     260
+    ],
+    [
+     197,
+     261
+    ],
+    [
+     260,
+     261
+    ],
+    [
+     260,
+     275
+    ],
+    [
+     261,
+     275
+    ],
+    [
+     261,
+     276
+    ],
+    [
+     275,
+     276
+    ],
+    [
+     275,
+     303
+    ],
+    [
+     276,
+     303
+    ],
+    [
+     276,
+     304
+    ],
+    [
+     303,
+     304
+    ],
+    [
+     303,
+     311
+    ],
+    [
+     304,
+     311
+    ],
+    [
+     304,
+     312
+    ],
+    [
+     311,
+     312
+    ],
+    [
+     311,
+     364
+    ],
+    [
+     312,
+     364
+    ],
+    [
+     312,
+     365
+    ],
+    [
+     364,
+     365
+    ],
+    [
+     364,
+     370
+    ],
+    [
+     365,
+     370
+    ],
+    [
+     365,
+     371
+    ],
+    [
+     370,
+     371
+    ],
+    [
+     370,
+     385
+    ],
+    [
+     371,
+     385
+    ],
+    [
+     371,
+     386
+    ],
+    [
+     385,
+     386
+    ],
+    [
+     385,
+     387
+    ],
+    [
+     386,
+     387
+    ],
+    [
+     386,
+     390
+    ],
+    [
+     387,
+     390
+    ],
+    [
+     387,
+     391
+    ],
+    [
+     390,
+     391
+    ],
+    [
+     390,
+     12
+    ],
+    [
+     391,
+     12
+    ],
+    [
+     391,
+     13
+    ]
+   ],
+   "worst_err": 0.16,
+   "median_err": 0.16
+  },
+  {
+   "cls": "H11",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i0",
+   "row_tclass": "deep",
+   "read_row": "deep i0",
+   "medium": "base",
+   "medium_sha256": "ed0108dc55cb3002a7a7a37aab7b5ade3c9e2d3cc3f847cc41dcf3cefe05d9cc",
+   "f_max": 0.0,
+   "errs": [
+    0.5,
+    0.5,
+    0.52
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.52,
+   "median_err": 0.5
+  },
+  {
+   "cls": "H11",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i1",
+   "row_tclass": "deep",
+   "read_row": "deep i1",
+   "medium": "base",
+   "medium_sha256": "ed0108dc55cb3002a7a7a37aab7b5ade3c9e2d3cc3f847cc41dcf3cefe05d9cc",
+   "f_max": 0.0,
+   "errs": [
+    0.49,
+    0.5,
+    0.52
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.52,
+   "median_err": 0.5
+  },
+  {
+   "cls": "H2",
+   "pert": "P1_canon_zone_relabelings",
+   "pert_class": "the canon/zone relabelings",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "mirror",
+   "medium_sha256": "e19968aa8a20acfd76245999c3f09243b887c2d2cd64a85c4586c126f29d1d85",
+   "f_max": 0.0,
+   "errs": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the zero-knob node-label mirror pi(i) = n-1-i, A' = pi A pi^T",
+   "worst_err": 0.06,
+   "median_err": 0.06
+  },
+  {
+   "cls": "H2",
+   "pert": "P2_boundary_double_frequency_rewiring",
+   "pert_class": "the boundary-double-frequency rewiring",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "boundary_double",
+   "medium_sha256": "04667b6a3441de1cd67bbc71692ca34099a306ff1d1efc791d97d870daaaaac2",
+   "f_max": 0.0,
+   "errs": [
+    0.16,
+    0.17,
+    0.17
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "each exp208 CANON-BOUNDARY cell chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent)",
+   "n_boundary_cells": 42,
+   "boundary_cells": [
+    0,
+    18,
+    19,
+    21,
+    22,
+    23,
+    39,
+    40,
+    58,
+    59,
+    60,
+    65,
+    66,
+    99,
+    100,
+    102,
+    103,
+    130,
+    131,
+    142,
+    143,
+    221,
+    222,
+    226,
+    227,
+    232,
+    233,
+    236,
+    237,
+    286,
+    287,
+    299,
+    300,
+    364,
+    365,
+    376,
+    377,
+    387,
+    388,
+    393,
+    394,
+    399
+   ],
+   "n_chords_added": 79,
+   "chords_added": [
+    [
+     0,
+     18
+    ],
+    [
+     0,
+     19
+    ],
+    [
+     18,
+     19
+    ],
+    [
+     18,
+     21
+    ],
+    [
+     19,
+     21
+    ],
+    [
+     19,
+     22
+    ],
+    [
+     21,
+     22
+    ],
+    [
+     21,
+     23
+    ],
+    [
+     22,
+     23
+    ],
+    [
+     22,
+     39
+    ],
+    [
+     23,
+     39
+    ],
+    [
+     23,
+     40
+    ],
+    [
+     39,
+     40
+    ],
+    [
+     39,
+     58
+    ],
+    [
+     40,
+     58
+    ],
+    [
+     40,
+     59
+    ],
+    [
+     58,
+     59
+    ],
+    [
+     58,
+     60
+    ],
+    [
+     59,
+     65
+    ],
+    [
+     60,
+     65
+    ],
+    [
+     60,
+     66
+    ],
+    [
+     65,
+     66
+    ],
+    [
+     65,
+     99
+    ],
+    [
+     66,
+     99
+    ],
+    [
+     66,
+     100
+    ],
+    [
+     99,
+     100
+    ],
+    [
+     99,
+     102
+    ],
+    [
+     100,
+     102
+    ],
+    [
+     100,
+     103
+    ],
+    [
+     102,
+     103
+    ],
+    [
+     102,
+     130
+    ],
+    [
+     103,
+     130
+    ],
+    [
+     103,
+     131
+    ],
+    [
+     130,
+     142
+    ],
+    [
+     131,
+     142
+    ],
+    [
+     131,
+     143
+    ],
+    [
+     142,
+     143
+    ],
+    [
+     142,
+     221
+    ],
+    [
+     143,
+     221
+    ],
+    [
+     143,
+     222
+    ],
+    [
+     221,
+     226
+    ],
+    [
+     222,
+     226
+    ],
+    [
+     222,
+     227
+    ],
+    [
+     226,
+     227
+    ],
+    [
+     226,
+     232
+    ],
+    [
+     227,
+     232
+    ],
+    [
+     227,
+     233
+    ],
+    [
+     232,
+     236
+    ],
+    [
+     233,
+     236
+    ],
+    [
+     233,
+     237
+    ],
+    [
+     236,
+     237
+    ],
+    [
+     236,
+     286
+    ],
+    [
+     237,
+     286
+    ],
+    [
+     237,
+     287
+    ],
+    [
+     286,
+     287
+    ],
+    [
+     286,
+     299
+    ],
+    [
+     287,
+     299
+    ],
+    [
+     287,
+     300
+    ],
+    [
+     299,
+     300
+    ],
+    [
+     299,
+     364
+    ],
+    [
+     300,
+     364
+    ],
+    [
+     300,
+     365
+    ],
+    [
+     364,
+     376
+    ],
+    [
+     365,
+     376
+    ],
+    [
+     365,
+     377
+    ],
+    [
+     376,
+     377
+    ],
+    [
+     376,
+     387
+    ],
+    [
+     377,
+     387
+    ],
+    [
+     377,
+     388
+    ],
+    [
+     387,
+     388
+    ],
+    [
+     387,
+     393
+    ],
+    [
+     388,
+     393
+    ],
+    [
+     388,
+     394
+    ],
+    [
+     393,
+     394
+    ],
+    [
+     393,
+     399
+    ],
+    [
+     394,
+     399
+    ],
+    [
+     394,
+     0
+    ],
+    [
+     399,
+     0
+    ],
+    [
+     399,
+     18
+    ]
+   ],
+   "worst_err": 0.17,
+   "median_err": 0.17
+  },
+  {
+   "cls": "H2",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i0",
+   "row_tclass": "deep",
+   "read_row": "deep i0",
+   "medium": "base",
+   "medium_sha256": "dd4352bc1618cea68b1b5bff680f47caebb47135084a07d28db0c7e3572f31d4",
+   "f_max": 0.0,
+   "errs": [
+    0.49,
+    0.49,
+    0.52
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.52,
+   "median_err": 0.49
+  },
+  {
+   "cls": "H2",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i1",
+   "row_tclass": "deep",
+   "read_row": "deep i1",
+   "medium": "base",
+   "medium_sha256": "dd4352bc1618cea68b1b5bff680f47caebb47135084a07d28db0c7e3572f31d4",
+   "f_max": 0.0,
+   "errs": [
+    0.5,
+    0.49,
+    0.53
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.53,
+   "median_err": 0.5
+  },
+  {
+   "cls": "H3",
+   "pert": "P1_canon_zone_relabelings",
+   "pert_class": "the canon/zone relabelings",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "mirror",
+   "medium_sha256": "90f82fd822820bed6b7c07ca85357f2bb73a5859f3bcdd69ae0b03b5433fe5cc",
+   "f_max": 0.0,
+   "errs": [
+    0.05,
+    0.05,
+    0.06
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the zero-knob node-label mirror pi(i) = n-1-i, A' = pi A pi^T",
+   "worst_err": 0.06,
+   "median_err": 0.05
+  },
+  {
+   "cls": "H3",
+   "pert": "P2_boundary_double_frequency_rewiring",
+   "pert_class": "the boundary-double-frequency rewiring",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "boundary_double",
+   "medium_sha256": "3e47c0b656ca3b139a0df9dac1b4e49bfcb173606f8e087aea9c6371a2d6aad2",
+   "f_max": 0.0,
+   "errs": [
+    0.17,
+    0.17,
+    0.18
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "each exp208 CANON-BOUNDARY cell chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent)",
+   "n_boundary_cells": 47,
+   "boundary_cells": [
+    5,
+    6,
+    26,
+    27,
+    30,
+    31,
+    88,
+    89,
+    92,
+    93,
+    94,
+    95,
+    99,
+    100,
+    108,
+    109,
+    113,
+    114,
+    131,
+    132,
+    155,
+    156,
+    167,
+    168,
+    169,
+    229,
+    230,
+    244,
+    245,
+    252,
+    253,
+    261,
+    262,
+    263,
+    264,
+    283,
+    284,
+    302,
+    303,
+    304,
+    305,
+    362,
+    363,
+    366,
+    367,
+    398,
+    399
+   ],
+   "n_chords_added": 87,
+   "chords_added": [
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     26
+    ],
+    [
+     6,
+     26
+    ],
+    [
+     6,
+     27
+    ],
+    [
+     26,
+     30
+    ],
+    [
+     27,
+     30
+    ],
+    [
+     27,
+     31
+    ],
+    [
+     30,
+     88
+    ],
+    [
+     31,
+     88
+    ],
+    [
+     31,
+     89
+    ],
+    [
+     88,
+     89
+    ],
+    [
+     88,
+     92
+    ],
+    [
+     89,
+     92
+    ],
+    [
+     89,
+     93
+    ],
+    [
+     92,
+     93
+    ],
+    [
+     92,
+     94
+    ],
+    [
+     93,
+     95
+    ],
+    [
+     94,
+     95
+    ],
+    [
+     94,
+     99
+    ],
+    [
+     95,
+     99
+    ],
+    [
+     95,
+     100
+    ],
+    [
+     99,
+     100
+    ],
+    [
+     99,
+     108
+    ],
+    [
+     100,
+     108
+    ],
+    [
+     100,
+     109
+    ],
+    [
+     108,
+     109
+    ],
+    [
+     108,
+     113
+    ],
+    [
+     109,
+     113
+    ],
+    [
+     109,
+     114
+    ],
+    [
+     113,
+     114
+    ],
+    [
+     113,
+     131
+    ],
+    [
+     114,
+     131
+    ],
+    [
+     114,
+     132
+    ],
+    [
+     131,
+     132
+    ],
+    [
+     131,
+     155
+    ],
+    [
+     132,
+     155
+    ],
+    [
+     132,
+     156
+    ],
+    [
+     155,
+     156
+    ],
+    [
+     155,
+     167
+    ],
+    [
+     156,
+     167
+    ],
+    [
+     156,
+     168
+    ],
+    [
+     167,
+     168
+    ],
+    [
+     167,
+     169
+    ],
+    [
+     168,
+     169
+    ],
+    [
+     168,
+     229
+    ],
+    [
+     169,
+     229
+    ],
+    [
+     169,
+     230
+    ],
+    [
+     229,
+     244
+    ],
+    [
+     230,
+     244
+    ],
+    [
+     230,
+     245
+    ],
+    [
+     244,
+     245
+    ],
+    [
+     244,
+     252
+    ],
+    [
+     245,
+     252
+    ],
+    [
+     245,
+     253
+    ],
+    [
+     252,
+     253
+    ],
+    [
+     252,
+     261
+    ],
+    [
+     253,
+     261
+    ],
+    [
+     253,
+     262
+    ],
+    [
+     261,
+     262
+    ],
+    [
+     261,
+     263
+    ],
+    [
+     262,
+     264
+    ],
+    [
+     263,
+     283
+    ],
+    [
+     264,
+     283
+    ],
+    [
+     264,
+     284
+    ],
+    [
+     283,
+     284
+    ],
+    [
+     283,
+     302
+    ],
+    [
+     284,
+     302
+    ],
+    [
+     284,
+     303
+    ],
+    [
+     302,
+     303
+    ],
+    [
+     302,
+     304
+    ],
+    [
+     303,
+     305
+    ],
+    [
+     304,
+     305
+    ],
+    [
+     304,
+     362
+    ],
+    [
+     305,
+     362
+    ],
+    [
+     305,
+     363
+    ],
+    [
+     362,
+     363
+    ],
+    [
+     362,
+     366
+    ],
+    [
+     363,
+     366
+    ],
+    [
+     363,
+     367
+    ],
+    [
+     366,
+     367
+    ],
+    [
+     366,
+     398
+    ],
+    [
+     367,
+     398
+    ],
+    [
+     367,
+     399
+    ],
+    [
+     398,
+     399
+    ],
+    [
+     398,
+     5
+    ],
+    [
+     399,
+     5
+    ],
+    [
+     399,
+     6
+    ]
+   ],
+   "worst_err": 0.18,
+   "median_err": 0.17
+  },
+  {
+   "cls": "H3",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i0",
+   "row_tclass": "deep",
+   "read_row": "deep i0",
+   "medium": "base",
+   "medium_sha256": "ad51f01fc45bada09c648d2c0a6f30918510ebc17822be7629929916c69744a9",
+   "f_max": 0.0,
+   "errs": [
+    3.68,
+    3.68,
+    3.68
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 3.68,
+   "median_err": 3.68
+  },
+  {
+   "cls": "H3",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i1",
+   "row_tclass": "deep",
+   "read_row": "deep i1",
+   "medium": "base",
+   "medium_sha256": "ad51f01fc45bada09c648d2c0a6f30918510ebc17822be7629929916c69744a9",
+   "f_max": 0.0,
+   "errs": [
+    3.24,
+    3.24,
+    3.24
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 3.24,
+   "median_err": 3.24
+  },
+  {
+   "cls": "H4",
+   "pert": "P1_canon_zone_relabelings",
+   "pert_class": "the canon/zone relabelings",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "mirror",
+   "medium_sha256": "5bc32f984ab87f9860ed0405db3b4d196380603d0e4172dd10af5c06bebfb3f7",
+   "f_max": 0.0,
+   "errs": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the zero-knob node-label mirror pi(i) = n-1-i, A' = pi A pi^T",
+   "worst_err": 0.06,
+   "median_err": 0.06
+  },
+  {
+   "cls": "H4",
+   "pert": "P2_boundary_double_frequency_rewiring",
+   "pert_class": "the boundary-double-frequency rewiring",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "boundary_double",
+   "medium_sha256": "86161a5b680d47bb08a7a324f6315937d9c920c2a80cec3f52c13b46859e4346",
+   "f_max": 0.0,
+   "errs": [
+    0.13,
+    0.14,
+    0.14
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "each exp208 CANON-BOUNDARY cell chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent)",
+   "n_boundary_cells": 41,
+   "boundary_cells": [
+    5,
+    6,
+    17,
+    18,
+    45,
+    46,
+    66,
+    67,
+    70,
+    71,
+    139,
+    140,
+    141,
+    142,
+    217,
+    218,
+    223,
+    224,
+    257,
+    258,
+    276,
+    277,
+    286,
+    287,
+    288,
+    289,
+    290,
+    308,
+    309,
+    316,
+    317,
+    326,
+    327,
+    338,
+    339,
+    350,
+    351,
+    360,
+    361,
+    396,
+    397
+   ],
+   "n_chords_added": 75,
+   "chords_added": [
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     17
+    ],
+    [
+     6,
+     17
+    ],
+    [
+     6,
+     18
+    ],
+    [
+     17,
+     45
+    ],
+    [
+     18,
+     45
+    ],
+    [
+     18,
+     46
+    ],
+    [
+     45,
+     46
+    ],
+    [
+     45,
+     66
+    ],
+    [
+     46,
+     66
+    ],
+    [
+     46,
+     67
+    ],
+    [
+     66,
+     70
+    ],
+    [
+     67,
+     70
+    ],
+    [
+     67,
+     71
+    ],
+    [
+     70,
+     71
+    ],
+    [
+     70,
+     139
+    ],
+    [
+     71,
+     139
+    ],
+    [
+     71,
+     140
+    ],
+    [
+     139,
+     140
+    ],
+    [
+     139,
+     141
+    ],
+    [
+     140,
+     142
+    ],
+    [
+     141,
+     142
+    ],
+    [
+     141,
+     217
+    ],
+    [
+     142,
+     217
+    ],
+    [
+     142,
+     218
+    ],
+    [
+     217,
+     218
+    ],
+    [
+     217,
+     223
+    ],
+    [
+     218,
+     223
+    ],
+    [
+     218,
+     224
+    ],
+    [
+     223,
+     224
+    ],
+    [
+     223,
+     257
+    ],
+    [
+     224,
+     257
+    ],
+    [
+     224,
+     258
+    ],
+    [
+     257,
+     276
+    ],
+    [
+     258,
+     276
+    ],
+    [
+     258,
+     277
+    ],
+    [
+     276,
+     277
+    ],
+    [
+     276,
+     286
+    ],
+    [
+     277,
+     286
+    ],
+    [
+     277,
+     287
+    ],
+    [
+     286,
+     288
+    ],
+    [
+     287,
+     288
+    ],
+    [
+     287,
+     289
+    ],
+    [
+     288,
+     290
+    ],
+    [
+     289,
+     290
+    ],
+    [
+     289,
+     308
+    ],
+    [
+     290,
+     308
+    ],
+    [
+     290,
+     309
+    ],
+    [
+     308,
+     309
+    ],
+    [
+     308,
+     316
+    ],
+    [
+     309,
+     316
+    ],
+    [
+     309,
+     317
+    ],
+    [
+     316,
+     317
+    ],
+    [
+     316,
+     326
+    ],
+    [
+     317,
+     326
+    ],
+    [
+     317,
+     327
+    ],
+    [
+     326,
+     327
+    ],
+    [
+     326,
+     338
+    ],
+    [
+     327,
+     338
+    ],
+    [
+     327,
+     339
+    ],
+    [
+     338,
+     339
+    ],
+    [
+     338,
+     350
+    ],
+    [
+     339,
+     350
+    ],
+    [
+     339,
+     351
+    ],
+    [
+     350,
+     360
+    ],
+    [
+     351,
+     360
+    ],
+    [
+     351,
+     361
+    ],
+    [
+     360,
+     361
+    ],
+    [
+     360,
+     396
+    ],
+    [
+     361,
+     396
+    ],
+    [
+     361,
+     397
+    ],
+    [
+     396,
+     397
+    ],
+    [
+     396,
+     5
+    ],
+    [
+     397,
+     5
+    ],
+    [
+     397,
+     6
+    ]
+   ],
+   "worst_err": 0.14,
+   "median_err": 0.14
+  },
+  {
+   "cls": "H4",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i0",
+   "row_tclass": "deep",
+   "read_row": "deep i0",
+   "medium": "base",
+   "medium_sha256": "c32ebd561aae8bd0c378363f0baf7fcc7ae7418ae428c60c42190d0db0c12a42",
+   "f_max": 0.0,
+   "errs": [
+    0.49,
+    0.5,
+    0.53
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.53,
+   "median_err": 0.5
+  },
+  {
+   "cls": "H4",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i1",
+   "row_tclass": "deep",
+   "read_row": "deep i1",
+   "medium": "base",
+   "medium_sha256": "c32ebd561aae8bd0c378363f0baf7fcc7ae7418ae428c60c42190d0db0c12a42",
+   "f_max": 0.0,
+   "errs": [
+    0.49,
+    0.49,
+    0.52
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.52,
+   "median_err": 0.49
+  },
+  {
+   "cls": "H5",
+   "pert": "P1_canon_zone_relabelings",
+   "pert_class": "the canon/zone relabelings",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "mirror",
+   "medium_sha256": "6d2e567e8f2dc4a0e41c1e7d85605425b5d6518b0881c503d0116b786e3432cc",
+   "f_max": 0.0,
+   "errs": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the zero-knob node-label mirror pi(i) = n-1-i, A' = pi A pi^T",
+   "worst_err": 0.06,
+   "median_err": 0.06
+  },
+  {
+   "cls": "H5",
+   "pert": "P2_boundary_double_frequency_rewiring",
+   "pert_class": "the boundary-double-frequency rewiring",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "boundary_double",
+   "medium_sha256": "522a94717666deea76d3e71225c11825a6fc7bbe43204f428033d5711180c6c2",
+   "f_max": 0.0,
+   "errs": [
+    0.19,
+    0.19,
+    0.19
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "each exp208 CANON-BOUNDARY cell chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent)",
+   "n_boundary_cells": 48,
+   "boundary_cells": [
+    5,
+    6,
+    7,
+    8,
+    12,
+    13,
+    38,
+    39,
+    40,
+    92,
+    93,
+    107,
+    108,
+    126,
+    127,
+    135,
+    136,
+    143,
+    144,
+    145,
+    215,
+    216,
+    220,
+    221,
+    254,
+    255,
+    262,
+    263,
+    269,
+    270,
+    284,
+    285,
+    287,
+    288,
+    291,
+    292,
+    293,
+    299,
+    300,
+    314,
+    315,
+    316,
+    337,
+    338,
+    357,
+    358,
+    396,
+    397
+   ],
+   "n_chords_added": 92,
+   "chords_added": [
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     7,
+     12
+    ],
+    [
+     8,
+     12
+    ],
+    [
+     8,
+     13
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     12,
+     38
+    ],
+    [
+     13,
+     38
+    ],
+    [
+     13,
+     39
+    ],
+    [
+     38,
+     39
+    ],
+    [
+     38,
+     40
+    ],
+    [
+     39,
+     40
+    ],
+    [
+     39,
+     92
+    ],
+    [
+     40,
+     92
+    ],
+    [
+     40,
+     93
+    ],
+    [
+     92,
+     93
+    ],
+    [
+     92,
+     107
+    ],
+    [
+     93,
+     107
+    ],
+    [
+     93,
+     108
+    ],
+    [
+     107,
+     108
+    ],
+    [
+     107,
+     126
+    ],
+    [
+     108,
+     126
+    ],
+    [
+     108,
+     127
+    ],
+    [
+     126,
+     127
+    ],
+    [
+     126,
+     135
+    ],
+    [
+     127,
+     135
+    ],
+    [
+     127,
+     136
+    ],
+    [
+     135,
+     136
+    ],
+    [
+     135,
+     143
+    ],
+    [
+     136,
+     143
+    ],
+    [
+     136,
+     144
+    ],
+    [
+     143,
+     144
+    ],
+    [
+     143,
+     145
+    ],
+    [
+     144,
+     145
+    ],
+    [
+     144,
+     215
+    ],
+    [
+     145,
+     215
+    ],
+    [
+     145,
+     216
+    ],
+    [
+     215,
+     216
+    ],
+    [
+     215,
+     220
+    ],
+    [
+     216,
+     220
+    ],
+    [
+     216,
+     221
+    ],
+    [
+     220,
+     221
+    ],
+    [
+     220,
+     254
+    ],
+    [
+     221,
+     254
+    ],
+    [
+     221,
+     255
+    ],
+    [
+     254,
+     255
+    ],
+    [
+     254,
+     262
+    ],
+    [
+     255,
+     262
+    ],
+    [
+     255,
+     263
+    ],
+    [
+     262,
+     263
+    ],
+    [
+     262,
+     269
+    ],
+    [
+     263,
+     269
+    ],
+    [
+     263,
+     270
+    ],
+    [
+     269,
+     270
+    ],
+    [
+     269,
+     284
+    ],
+    [
+     270,
+     284
+    ],
+    [
+     270,
+     285
+    ],
+    [
+     284,
+     285
+    ],
+    [
+     284,
+     287
+    ],
+    [
+     285,
+     287
+    ],
+    [
+     285,
+     288
+    ],
+    [
+     287,
+     291
+    ],
+    [
+     288,
+     291
+    ],
+    [
+     288,
+     292
+    ],
+    [
+     291,
+     292
+    ],
+    [
+     291,
+     293
+    ],
+    [
+     292,
+     299
+    ],
+    [
+     293,
+     299
+    ],
+    [
+     293,
+     300
+    ],
+    [
+     299,
+     300
+    ],
+    [
+     299,
+     314
+    ],
+    [
+     300,
+     314
+    ],
+    [
+     300,
+     315
+    ],
+    [
+     314,
+     316
+    ],
+    [
+     315,
+     337
+    ],
+    [
+     316,
+     337
+    ],
+    [
+     316,
+     338
+    ],
+    [
+     337,
+     338
+    ],
+    [
+     337,
+     357
+    ],
+    [
+     338,
+     357
+    ],
+    [
+     338,
+     358
+    ],
+    [
+     357,
+     358
+    ],
+    [
+     357,
+     396
+    ],
+    [
+     358,
+     396
+    ],
+    [
+     358,
+     397
+    ],
+    [
+     396,
+     397
+    ],
+    [
+     396,
+     5
+    ],
+    [
+     397,
+     5
+    ],
+    [
+     397,
+     6
+    ]
+   ],
+   "worst_err": 0.19,
+   "median_err": 0.19
+  },
+  {
+   "cls": "H5",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i0",
+   "row_tclass": "deep",
+   "read_row": "deep i0",
+   "medium": "base",
+   "medium_sha256": "e3ec54cb29bf3f93d35302349a1a0443855bb5f708248b606736d06ffeb7d392",
+   "f_max": 0.0,
+   "errs": [
+    3.35,
+    3.36,
+    3.36
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 3.36,
+   "median_err": 3.36
+  },
+  {
+   "cls": "H5",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i1",
+   "row_tclass": "deep",
+   "read_row": "deep i1",
+   "medium": "base",
+   "medium_sha256": "e3ec54cb29bf3f93d35302349a1a0443855bb5f708248b606736d06ffeb7d392",
+   "f_max": 0.0,
+   "errs": [
+    2.87,
+    2.87,
+    2.88
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 2.88,
+   "median_err": 2.87
+  },
+  {
+   "cls": "H6",
+   "pert": "P1_canon_zone_relabelings",
+   "pert_class": "the canon/zone relabelings",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "mirror",
+   "medium_sha256": "f6a6b746375c2a11a778829bbf943ee8d729199a57493efbca60d02cca464215",
+   "f_max": 0.0,
+   "errs": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the zero-knob node-label mirror pi(i) = n-1-i, A' = pi A pi^T",
+   "worst_err": 0.06,
+   "median_err": 0.06
+  },
+  {
+   "cls": "H6",
+   "pert": "P2_boundary_double_frequency_rewiring",
+   "pert_class": "the boundary-double-frequency rewiring",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "boundary_double",
+   "medium_sha256": "0f242e9e42c5f14f527b68688e37bb1ddf1f40deb738a0d726d1bfa98866e076",
+   "f_max": 0.0,
+   "errs": [
+    0.14,
+    0.14,
+    0.14
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "each exp208 CANON-BOUNDARY cell chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent)",
+   "n_boundary_cells": 31,
+   "boundary_cells": [
+    15,
+    16,
+    26,
+    27,
+    31,
+    32,
+    42,
+    43,
+    58,
+    59,
+    65,
+    66,
+    71,
+    72,
+    258,
+    259,
+    269,
+    270,
+    272,
+    273,
+    274,
+    321,
+    322,
+    337,
+    338,
+    347,
+    348,
+    358,
+    359,
+    381,
+    382
+   ],
+   "n_chords_added": 56,
+   "chords_added": [
+    [
+     15,
+     16
+    ],
+    [
+     15,
+     26
+    ],
+    [
+     16,
+     26
+    ],
+    [
+     16,
+     27
+    ],
+    [
+     26,
+     27
+    ],
+    [
+     26,
+     31
+    ],
+    [
+     27,
+     31
+    ],
+    [
+     27,
+     32
+    ],
+    [
+     31,
+     42
+    ],
+    [
+     32,
+     42
+    ],
+    [
+     32,
+     43
+    ],
+    [
+     42,
+     43
+    ],
+    [
+     42,
+     58
+    ],
+    [
+     43,
+     58
+    ],
+    [
+     43,
+     59
+    ],
+    [
+     58,
+     59
+    ],
+    [
+     58,
+     65
+    ],
+    [
+     59,
+     65
+    ],
+    [
+     59,
+     66
+    ],
+    [
+     65,
+     66
+    ],
+    [
+     65,
+     71
+    ],
+    [
+     66,
+     71
+    ],
+    [
+     66,
+     72
+    ],
+    [
+     71,
+     72
+    ],
+    [
+     71,
+     258
+    ],
+    [
+     72,
+     258
+    ],
+    [
+     72,
+     259
+    ],
+    [
+     258,
+     269
+    ],
+    [
+     259,
+     269
+    ],
+    [
+     259,
+     270
+    ],
+    [
+     269,
+     270
+    ],
+    [
+     269,
+     272
+    ],
+    [
+     270,
+     272
+    ],
+    [
+     270,
+     273
+    ],
+    [
+     272,
+     274
+    ],
+    [
+     273,
+     274
+    ],
+    [
+     273,
+     321
+    ],
+    [
+     274,
+     321
+    ],
+    [
+     274,
+     322
+    ],
+    [
+     321,
+     337
+    ],
+    [
+     322,
+     337
+    ],
+    [
+     322,
+     338
+    ],
+    [
+     337,
+     338
+    ],
+    [
+     337,
+     347
+    ],
+    [
+     338,
+     347
+    ],
+    [
+     338,
+     348
+    ],
+    [
+     347,
+     358
+    ],
+    [
+     348,
+     358
+    ],
+    [
+     348,
+     359
+    ],
+    [
+     358,
+     359
+    ],
+    [
+     358,
+     381
+    ],
+    [
+     359,
+     381
+    ],
+    [
+     359,
+     382
+    ],
+    [
+     381,
+     15
+    ],
+    [
+     382,
+     15
+    ],
+    [
+     382,
+     16
+    ]
+   ],
+   "worst_err": 0.14,
+   "median_err": 0.14
+  },
+  {
+   "cls": "H6",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i0",
+   "row_tclass": "deep",
+   "read_row": "deep i0",
+   "medium": "base",
+   "medium_sha256": "bd1785773f16b7048df88d08c3a9f833b313bee466d1b6a7d24cd1e00536d25f",
+   "f_max": 0.0,
+   "errs": [
+    0.49,
+    0.49,
+    0.53
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.53,
+   "median_err": 0.49
+  },
+  {
+   "cls": "H6",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i1",
+   "row_tclass": "deep",
+   "read_row": "deep i1",
+   "medium": "base",
+   "medium_sha256": "bd1785773f16b7048df88d08c3a9f833b313bee466d1b6a7d24cd1e00536d25f",
+   "f_max": 0.0,
+   "errs": [
+    0.49,
+    0.49,
+    0.52
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.52,
+   "median_err": 0.49
+  },
+  {
+   "cls": "H7",
+   "pert": "P1_canon_zone_relabelings",
+   "pert_class": "the canon/zone relabelings",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "mirror",
+   "medium_sha256": "d760a72555224be619d50170cf954e5fff87474fff90f39ac303dc52b4165847",
+   "f_max": 0.0,
+   "errs": [
+    0.06,
+    0.05,
+    0.05
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the zero-knob node-label mirror pi(i) = n-1-i, A' = pi A pi^T",
+   "worst_err": 0.06,
+   "median_err": 0.05
+  },
+  {
+   "cls": "H7",
+   "pert": "P2_boundary_double_frequency_rewiring",
+   "pert_class": "the boundary-double-frequency rewiring",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "boundary_double",
+   "medium_sha256": "d05224cf11c9e963cd0f11ea52241d9133287ebe0e74bcdd25676101c476e574",
+   "f_max": 0.0,
+   "errs": [
+    0.15,
+    0.15,
+    0.15
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "each exp208 CANON-BOUNDARY cell chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent)",
+   "n_boundary_cells": 36,
+   "boundary_cells": [
+    4,
+    5,
+    42,
+    43,
+    51,
+    52,
+    75,
+    76,
+    83,
+    84,
+    129,
+    130,
+    144,
+    145,
+    168,
+    169,
+    174,
+    175,
+    178,
+    179,
+    207,
+    208,
+    228,
+    229,
+    236,
+    237,
+    289,
+    290,
+    292,
+    293,
+    339,
+    340,
+    352,
+    353,
+    395,
+    396
+   ],
+   "n_chords_added": 68,
+   "chords_added": [
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     42
+    ],
+    [
+     5,
+     42
+    ],
+    [
+     5,
+     43
+    ],
+    [
+     42,
+     51
+    ],
+    [
+     43,
+     51
+    ],
+    [
+     43,
+     52
+    ],
+    [
+     51,
+     75
+    ],
+    [
+     52,
+     75
+    ],
+    [
+     52,
+     76
+    ],
+    [
+     75,
+     83
+    ],
+    [
+     76,
+     83
+    ],
+    [
+     76,
+     84
+    ],
+    [
+     83,
+     84
+    ],
+    [
+     83,
+     129
+    ],
+    [
+     84,
+     129
+    ],
+    [
+     84,
+     130
+    ],
+    [
+     129,
+     144
+    ],
+    [
+     130,
+     144
+    ],
+    [
+     130,
+     145
+    ],
+    [
+     144,
+     145
+    ],
+    [
+     144,
+     168
+    ],
+    [
+     145,
+     168
+    ],
+    [
+     145,
+     169
+    ],
+    [
+     168,
+     169
+    ],
+    [
+     168,
+     174
+    ],
+    [
+     169,
+     174
+    ],
+    [
+     169,
+     175
+    ],
+    [
+     174,
+     175
+    ],
+    [
+     174,
+     178
+    ],
+    [
+     175,
+     178
+    ],
+    [
+     175,
+     179
+    ],
+    [
+     178,
+     179
+    ],
+    [
+     178,
+     207
+    ],
+    [
+     179,
+     207
+    ],
+    [
+     179,
+     208
+    ],
+    [
+     207,
+     208
+    ],
+    [
+     207,
+     228
+    ],
+    [
+     208,
+     228
+    ],
+    [
+     208,
+     229
+    ],
+    [
+     228,
+     229
+    ],
+    [
+     228,
+     236
+    ],
+    [
+     229,
+     236
+    ],
+    [
+     229,
+     237
+    ],
+    [
+     236,
+     237
+    ],
+    [
+     236,
+     289
+    ],
+    [
+     237,
+     289
+    ],
+    [
+     237,
+     290
+    ],
+    [
+     289,
+     290
+    ],
+    [
+     289,
+     292
+    ],
+    [
+     290,
+     292
+    ],
+    [
+     290,
+     293
+    ],
+    [
+     292,
+     293
+    ],
+    [
+     292,
+     339
+    ],
+    [
+     293,
+     339
+    ],
+    [
+     293,
+     340
+    ],
+    [
+     339,
+     340
+    ],
+    [
+     339,
+     352
+    ],
+    [
+     340,
+     352
+    ],
+    [
+     340,
+     353
+    ],
+    [
+     352,
+     353
+    ],
+    [
+     352,
+     395
+    ],
+    [
+     353,
+     395
+    ],
+    [
+     353,
+     396
+    ],
+    [
+     395,
+     396
+    ],
+    [
+     395,
+     4
+    ],
+    [
+     396,
+     4
+    ],
+    [
+     396,
+     5
+    ]
+   ],
+   "worst_err": 0.15,
+   "median_err": 0.15
+  },
+  {
+   "cls": "H7",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i0",
+   "row_tclass": "deep",
+   "read_row": "deep i0",
+   "medium": "base",
+   "medium_sha256": "98e0dc2d00550be5626a30fbdf71c15d193813db60bf1a3a2ad763443a307d07",
+   "f_max": 0.0,
+   "errs": [
+    0.49,
+    0.49,
+    0.53
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.53,
+   "median_err": 0.49
+  },
+  {
+   "cls": "H7",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i1",
+   "row_tclass": "deep",
+   "read_row": "deep i1",
+   "medium": "base",
+   "medium_sha256": "98e0dc2d00550be5626a30fbdf71c15d193813db60bf1a3a2ad763443a307d07",
+   "f_max": 0.0,
+   "errs": [
+    0.49,
+    0.49,
+    0.52
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.52,
+   "median_err": 0.49
+  },
+  {
+   "cls": "H8",
+   "pert": "P1_canon_zone_relabelings",
+   "pert_class": "the canon/zone relabelings",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "mirror",
+   "medium_sha256": "88aca0c0fb970757aab971280d2bdb941a88af875d25efea9b76d7b8b59a59cc",
+   "f_max": 0.0,
+   "errs": [
+    0.07,
+    0.07,
+    0.07
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the zero-knob node-label mirror pi(i) = n-1-i, A' = pi A pi^T",
+   "worst_err": 0.07,
+   "median_err": 0.07
+  },
+  {
+   "cls": "H8",
+   "pert": "P2_boundary_double_frequency_rewiring",
+   "pert_class": "the boundary-double-frequency rewiring",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "boundary_double",
+   "medium_sha256": "52bbed89a62d390622901435ed8df9201eaf47cf9a74213c7e2d595e969b89cf",
+   "f_max": 0.0,
+   "errs": [
+    0.14,
+    0.14,
+    0.14
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "each exp208 CANON-BOUNDARY cell chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent)",
+   "n_boundary_cells": 39,
+   "boundary_cells": [
+    10,
+    11,
+    61,
+    62,
+    72,
+    73,
+    120,
+    121,
+    131,
+    132,
+    144,
+    145,
+    152,
+    153,
+    164,
+    165,
+    166,
+    167,
+    173,
+    174,
+    175,
+    299,
+    300,
+    305,
+    306,
+    312,
+    313,
+    315,
+    316,
+    328,
+    329,
+    352,
+    353,
+    364,
+    365,
+    370,
+    371,
+    382,
+    383
+   ],
+   "n_chords_added": 68,
+   "chords_added": [
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     61
+    ],
+    [
+     11,
+     61
+    ],
+    [
+     11,
+     62
+    ],
+    [
+     61,
+     72
+    ],
+    [
+     62,
+     72
+    ],
+    [
+     62,
+     73
+    ],
+    [
+     72,
+     73
+    ],
+    [
+     72,
+     120
+    ],
+    [
+     73,
+     120
+    ],
+    [
+     73,
+     121
+    ],
+    [
+     120,
+     131
+    ],
+    [
+     121,
+     131
+    ],
+    [
+     121,
+     132
+    ],
+    [
+     131,
+     132
+    ],
+    [
+     131,
+     144
+    ],
+    [
+     132,
+     144
+    ],
+    [
+     132,
+     145
+    ],
+    [
+     144,
+     152
+    ],
+    [
+     145,
+     152
+    ],
+    [
+     145,
+     153
+    ],
+    [
+     152,
+     153
+    ],
+    [
+     152,
+     164
+    ],
+    [
+     153,
+     164
+    ],
+    [
+     153,
+     165
+    ],
+    [
+     164,
+     166
+    ],
+    [
+     165,
+     167
+    ],
+    [
+     166,
+     167
+    ],
+    [
+     166,
+     173
+    ],
+    [
+     167,
+     173
+    ],
+    [
+     167,
+     174
+    ],
+    [
+     173,
+     174
+    ],
+    [
+     173,
+     175
+    ],
+    [
+     174,
+     175
+    ],
+    [
+     174,
+     299
+    ],
+    [
+     175,
+     299
+    ],
+    [
+     175,
+     300
+    ],
+    [
+     299,
+     305
+    ],
+    [
+     300,
+     305
+    ],
+    [
+     300,
+     306
+    ],
+    [
+     305,
+     306
+    ],
+    [
+     305,
+     312
+    ],
+    [
+     306,
+     312
+    ],
+    [
+     306,
+     313
+    ],
+    [
+     312,
+     315
+    ],
+    [
+     313,
+     315
+    ],
+    [
+     313,
+     316
+    ],
+    [
+     315,
+     316
+    ],
+    [
+     315,
+     328
+    ],
+    [
+     316,
+     328
+    ],
+    [
+     316,
+     329
+    ],
+    [
+     328,
+     352
+    ],
+    [
+     329,
+     352
+    ],
+    [
+     329,
+     353
+    ],
+    [
+     352,
+     364
+    ],
+    [
+     353,
+     364
+    ],
+    [
+     353,
+     365
+    ],
+    [
+     364,
+     365
+    ],
+    [
+     364,
+     370
+    ],
+    [
+     365,
+     370
+    ],
+    [
+     365,
+     371
+    ],
+    [
+     370,
+     371
+    ],
+    [
+     370,
+     382
+    ],
+    [
+     371,
+     382
+    ],
+    [
+     371,
+     383
+    ],
+    [
+     382,
+     10
+    ],
+    [
+     383,
+     10
+    ],
+    [
+     383,
+     11
+    ]
+   ],
+   "worst_err": 0.14,
+   "median_err": 0.14
+  },
+  {
+   "cls": "H8",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i0",
+   "row_tclass": "deep",
+   "read_row": "deep i0",
+   "medium": "base",
+   "medium_sha256": "e6bc38951af0d7a62c680f20b2c2f79eda980aa3797961edf1e1aec5cf9e18c9",
+   "f_max": 0.0,
+   "errs": [
+    0.52,
+    0.53,
+    0.5
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.53,
+   "median_err": 0.52
+  },
+  {
+   "cls": "H8",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i1",
+   "row_tclass": "deep",
+   "read_row": "deep i1",
+   "medium": "base",
+   "medium_sha256": "e6bc38951af0d7a62c680f20b2c2f79eda980aa3797961edf1e1aec5cf9e18c9",
+   "f_max": 0.0,
+   "errs": [
+    0.52,
+    0.53,
+    0.5
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.53,
+   "median_err": 0.52
+  },
+  {
+   "cls": "H9",
+   "pert": "P1_canon_zone_relabelings",
+   "pert_class": "the canon/zone relabelings",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "mirror",
+   "medium_sha256": "e43b3d15a1ca7b86a41c5605f015c730d541280558cd4c4b575131e8c5cac3c4",
+   "f_max": 0.0,
+   "errs": [
+    0.07,
+    0.06,
+    0.07
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the zero-knob node-label mirror pi(i) = n-1-i, A' = pi A pi^T",
+   "worst_err": 0.07,
+   "median_err": 0.07
+  },
+  {
+   "cls": "H9",
+   "pert": "P2_boundary_double_frequency_rewiring",
+   "pert_class": "the boundary-double-frequency rewiring",
+   "row_key": "canon",
+   "row_tclass": "canon",
+   "read_row": "canon",
+   "medium": "boundary_double",
+   "medium_sha256": "6b60bbbc615e73cdfd4eef05a32ac2ffa801b6e8dd18c8b45385ce82efc55877",
+   "f_max": 0.0,
+   "errs": [
+    0.16,
+    0.15,
+    0.15
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "each exp208 CANON-BOUNDARY cell chorded to its next two boundary peers in cyclic index order (symmetric, added iff absent)",
+   "n_boundary_cells": 43,
+   "boundary_cells": [
+    13,
+    14,
+    16,
+    17,
+    22,
+    23,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    96,
+    97,
+    107,
+    108,
+    146,
+    147,
+    151,
+    152,
+    165,
+    166,
+    177,
+    178,
+    206,
+    207,
+    228,
+    229,
+    233,
+    234,
+    237,
+    238,
+    247,
+    248,
+    264,
+    265,
+    362,
+    363,
+    365,
+    366,
+    396,
+    397
+   ],
+   "n_chords_added": 78,
+   "chords_added": [
+    [
+     13,
+     14
+    ],
+    [
+     13,
+     16
+    ],
+    [
+     14,
+     16
+    ],
+    [
+     14,
+     17
+    ],
+    [
+     16,
+     17
+    ],
+    [
+     16,
+     22
+    ],
+    [
+     17,
+     22
+    ],
+    [
+     17,
+     23
+    ],
+    [
+     22,
+     23
+    ],
+    [
+     22,
+     34
+    ],
+    [
+     23,
+     34
+    ],
+    [
+     23,
+     35
+    ],
+    [
+     34,
+     36
+    ],
+    [
+     35,
+     37
+    ],
+    [
+     36,
+     37
+    ],
+    [
+     36,
+     38
+    ],
+    [
+     37,
+     39
+    ],
+    [
+     38,
+     39
+    ],
+    [
+     38,
+     40
+    ],
+    [
+     39,
+     40
+    ],
+    [
+     39,
+     96
+    ],
+    [
+     40,
+     96
+    ],
+    [
+     40,
+     97
+    ],
+    [
+     96,
+     107
+    ],
+    [
+     97,
+     107
+    ],
+    [
+     97,
+     108
+    ],
+    [
+     107,
+     108
+    ],
+    [
+     107,
+     146
+    ],
+    [
+     108,
+     146
+    ],
+    [
+     108,
+     147
+    ],
+    [
+     146,
+     147
+    ],
+    [
+     146,
+     151
+    ],
+    [
+     147,
+     151
+    ],
+    [
+     147,
+     152
+    ],
+    [
+     151,
+     152
+    ],
+    [
+     151,
+     165
+    ],
+    [
+     152,
+     165
+    ],
+    [
+     152,
+     166
+    ],
+    [
+     165,
+     166
+    ],
+    [
+     165,
+     177
+    ],
+    [
+     166,
+     177
+    ],
+    [
+     166,
+     178
+    ],
+    [
+     177,
+     206
+    ],
+    [
+     178,
+     206
+    ],
+    [
+     178,
+     207
+    ],
+    [
+     206,
+     207
+    ],
+    [
+     206,
+     228
+    ],
+    [
+     207,
+     228
+    ],
+    [
+     207,
+     229
+    ],
+    [
+     228,
+     229
+    ],
+    [
+     228,
+     233
+    ],
+    [
+     229,
+     233
+    ],
+    [
+     229,
+     234
+    ],
+    [
+     233,
+     234
+    ],
+    [
+     233,
+     237
+    ],
+    [
+     234,
+     237
+    ],
+    [
+     234,
+     238
+    ],
+    [
+     237,
+     238
+    ],
+    [
+     237,
+     247
+    ],
+    [
+     238,
+     247
+    ],
+    [
+     238,
+     248
+    ],
+    [
+     247,
+     264
+    ],
+    [
+     248,
+     264
+    ],
+    [
+     248,
+     265
+    ],
+    [
+     264,
+     265
+    ],
+    [
+     264,
+     362
+    ],
+    [
+     265,
+     362
+    ],
+    [
+     265,
+     363
+    ],
+    [
+     362,
+     365
+    ],
+    [
+     363,
+     365
+    ],
+    [
+     363,
+     366
+    ],
+    [
+     365,
+     366
+    ],
+    [
+     365,
+     396
+    ],
+    [
+     366,
+     396
+    ],
+    [
+     366,
+     397
+    ],
+    [
+     396,
+     13
+    ],
+    [
+     397,
+     13
+    ],
+    [
+     397,
+     14
+    ]
+   ],
+   "worst_err": 0.16,
+   "median_err": 0.15
+  },
+  {
+   "cls": "H9",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i0",
+   "row_tclass": "deep",
+   "read_row": "deep i0",
+   "medium": "base",
+   "medium_sha256": "87a1d56241d3192699aa6b8b42f70a71f4cf2ce640cf2bc9fabcf14cdd773989",
+   "f_max": 0.0,
+   "errs": [
+    0.5,
+    0.49,
+    0.52
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.52,
+   "median_err": 0.5
+  },
+  {
+   "cls": "H9",
+   "pert": "P3_deep_band_substitution",
+   "pert_class": "the deep-band substitution",
+   "row_key": "r-60i1",
+   "row_tclass": "deep",
+   "read_row": "deep i1",
+   "medium": "base",
+   "medium_sha256": "87a1d56241d3192699aa6b8b42f70a71f4cf2ce640cf2bc9fabcf14cdd773989",
+   "f_max": 0.0,
+   "errs": [
+    0.49,
+    0.49,
+    0.52
+   ],
+   "verified": [
+    true,
+    true,
+    true
+   ],
+   "rejections": [],
+   "definition": "the read program substituted to the deep band's -60.0 rung (exp225's deep construction VERBATIM)",
+   "worst_err": 0.52,
+   "median_err": 0.49
+  }
+ ],
+ "argmax": {
+  "cls": "H3",
+  "pert": "P3_deep_band_substitution",
+  "pert_class": "the deep-band substitution",
+  "row_key": "r-60i0",
+  "worst_err": 3.68,
+  "errs": [
+   3.68,
+   3.68,
+   3.68
+  ]
+ },
+ "argmax_decomposition": {
+  "canon_boundary_share_frac_of_sq": 0.15126338261383745,
+  "canon_boundary_rms_contrib_mV": 1.4296478831192199,
+  "records": [
+   {
+    "seed": 1,
+    "err": 3.68,
+    "decomposition": {
+     "per_class": [
+      {
+       "class": "CANON-BOUNDARY",
+       "n_cells": 66,
+       "sum_sq": 818.3550050960466,
+       "frac_of_sq": 0.15141299172382322,
+       "rms_contrib_mV": 1.4303452424992074
+      },
+      {
+       "class": "PAIR-JUNCTION",
+       "n_cells": 334,
+       "sum_sq": 4586.432231317084,
+       "frac_of_sq": 0.848587008276177,
+       "rms_contrib_mV": 3.386160152487285
+      },
+      {
+       "class": "INTERIOR",
+       "n_cells": 0,
+       "sum_sq": 0.0,
+       "frac_of_sq": 0.0,
+       "rms_contrib_mV": 0.0
+      }
+     ],
+     "identity_residual": 1.7763568394002505e-15
+    },
+    "class_counts": {
+     "CANON-BOUNDARY": 38,
+     "PAIR-JUNCTION": 334,
+     "INTERIOR": 28
+    }
+   },
+   {
+    "seed": 2,
+    "err": 3.68,
+    "decomposition": {
+     "per_class": [
+      {
+       "class": "CANON-BOUNDARY",
+       "n_cells": 66,
+       "sum_sq": 816.4243769241037,
+       "frac_of_sq": 0.1510947817447164,
+       "rms_contrib_mV": 1.4286570415289526
+      },
+      {
+       "class": "PAIR-JUNCTION",
+       "n_cells": 334,
+       "sum_sq": 4586.967901066681,
+       "frac_of_sq": 0.8489052182552835,
+       "rms_contrib_mV": 3.386357889040481
+      },
+      {
+       "class": "INTERIOR",
+       "n_cells": 0,
+       "sum_sq": 0.0,
+       "frac_of_sq": 0.0,
+       "rms_contrib_mV": 0.0
+      }
+     ],
+     "identity_residual": 0.0
+    },
+    "class_counts": {
+     "CANON-BOUNDARY": 38,
+     "PAIR-JUNCTION": 334,
+     "INTERIOR": 28
+    }
+   },
+   {
+    "seed": 3,
+    "err": 3.68,
+    "decomposition": {
+     "per_class": [
+      {
+       "class": "CANON-BOUNDARY",
+       "n_cells": 66,
+       "sum_sq": 817.8929233121578,
+       "frac_of_sq": 0.15128237437297276,
+       "rms_contrib_mV": 1.4299413653295
+      },
+      {
+       "class": "PAIR-JUNCTION",
+       "n_cells": 334,
+       "sum_sq": 4588.506379330449,
+       "frac_of_sq": 0.8487176256270272,
+       "rms_contrib_mV": 3.386925737055084
+      },
+      {
+       "class": "INTERIOR",
+       "n_cells": 0,
+       "sum_sq": 0.0,
+       "frac_of_sq": 0.0,
+       "rms_contrib_mV": 0.0
+      }
+     ],
+     "identity_residual": 0.0
+    },
+    "class_counts": {
+     "CANON-BOUNDARY": 38,
+     "PAIR-JUNCTION": 334,
+     "INTERIOR": 28
+    }
+   }
+  ]
+ },
+ "exp225_replay_anchor": {
+  "cls": "H1",
+  "rows": [
+   {
+    "key": "canon",
+    "errs": [
+     0.04,
+     0.05,
+     0.04
+    ],
+    "verified": [
+     true,
+     true,
+     true
+    ],
+    "dep225_errs": [
+     0.04,
+     0.05,
+     0.04
+    ],
+    "bit_exact": true
+   },
+   {
+    "key": "m0",
+    "errs": [
+     0.26,
+     0.33,
+     0.28
+    ],
+    "verified": [
+     true,
+     true,
+     true
+    ],
+    "dep225_errs": [
+     0.26,
+     0.33,
+     0.28
+    ],
+    "bit_exact": true
+   },
+   {
+    "key": "m49",
+    "errs": [
+     0.33,
+     0.38,
+     0.35
+    ],
+    "verified": [
+     true,
+     true,
+     true
+    ],
+    "dep225_errs": [
+     0.33,
+     0.38,
+     0.35
+    ],
+    "bit_exact": true
+   },
+   {
+    "key": "m99",
+    "errs": [
+     0.54,
+     0.58,
+     0.55
+    ],
+    "verified": [
+     true,
+     true,
+     true
+    ],
+    "dep225_errs": [
+     0.54,
+     0.58,
+     0.55
+    ],
+    "bit_exact": true
+   },
+   {
+    "key": "r-60i0",
+    "errs": [
+     0.53,
+     0.56,
+     0.53
+    ],
+    "verified": [
+     true,
+     true,
+     true
+    ],
+    "dep225_errs": [
+     0.53,
+     0.56,
+     0.53
+    ],
+    "bit_exact": true
+   },
+   {
+    "key": "r-60i1",
+    "errs": [
+     0.52,
+     0.56,
+     0.53
+    ],
+    "verified": [
+     true,
+     true,
+     true
+    ],
+    "dep225_errs": [
+     0.52,
+     0.56,
+     0.53
+    ],
+    "bit_exact": true
+   }
+  ],
+  "bit_exact": true
+ },
+ "adversarial_structured_worst": 3.68,
+ "references": {
+  "structured_only_worst_exp225": 0.62,
+  "random_worst_exp198": 1.45,
+  "two_x_random_bar": 2.9
+ },
+ "gates": {
+  "A1_adversarial_structured_hold": {
+   "pass": true,
+   "bar_mV": 6.0,
+   "worst_err": 3.68,
+   "n_candidates": 48,
+   "expected_candidates": 48,
+   "decodes": 144,
+   "expected_decodes": 144,
+   "rejections": 0,
+   "complete_not_sampled": true,
+   "all_finite": true,
+   "n": 400,
+   "seeds": [
+    1,
+    2,
+    3
+   ]
+  },
+  "A2_conjunction_cost": {
+   "pass": false,
+   "bar": "the adversarial-structured worst < 2x the random worst (exp198's n=400 line)",
+   "adversarial_structured_worst": 3.68,
+   "structured_only_worst_exp225": 0.62,
+   "random_worst_exp198": 1.45,
+   "two_x_random_bar": 2.9,
+   "price_vs_structured_only_mV": 3.06,
+   "price_vs_random_mV": 2.2300000000000004,
+   "ratio_vs_random": 2.537931034482759
+  },
+  "A3_adversary_anatomy": {
+   "pass": true,
+   "argmax": {
+    "cls": "H3",
+    "pert": "P3_deep_band_substitution",
+    "pert_class": "the deep-band substitution",
+    "row_key": "r-60i0",
+    "worst_err": 3.68,
+    "errs": [
+     3.68,
+     3.68,
+     3.68
+    ]
+   },
+   "perturbation_class_worst": {
+    "P1_canon_zone_relabelings": 0.07,
+    "P2_boundary_double_frequency_rewiring": 0.19,
+    "P3_deep_band_substitution": 3.68
+   },
+   "canon_boundary_share_frac_of_sq": 0.15126338261383745,
+   "canon_boundary_rms_contrib_mV": 1.4296478831192199,
+   "decompositions": [
+    {
+     "seed": 1,
+     "err": 3.68,
+     "decomposition": {
+      "per_class": [
+       {
+        "class": "CANON-BOUNDARY",
+        "n_cells": 66,
+        "sum_sq": 818.3550050960466,
+        "frac_of_sq": 0.15141299172382322,
+        "rms_contrib_mV": 1.4303452424992074
+       },
+       {
+        "class": "PAIR-JUNCTION",
+        "n_cells": 334,
+        "sum_sq": 4586.432231317084,
+        "frac_of_sq": 0.848587008276177,
+        "rms_contrib_mV": 3.386160152487285
+       },
+       {
+        "class": "INTERIOR",
+        "n_cells": 0,
+        "sum_sq": 0.0,
+        "frac_of_sq": 0.0,
+        "rms_contrib_mV": 0.0
+       }
+      ],
+      "identity_residual": 1.7763568394002505e-15
+     },
+     "class_counts": {
+      "CANON-BOUNDARY": 38,
+      "PAIR-JUNCTION": 334,
+      "INTERIOR": 28
+     }
+    },
+    {
+     "seed": 2,
+     "err": 3.68,
+     "decomposition": {
+      "per_class": [
+       {
+        "class": "CANON-BOUNDARY",
+        "n_cells": 66,
+        "sum_sq": 816.4243769241037,
+        "frac_of_sq": 0.1510947817447164,
+        "rms_contrib_mV": 1.4286570415289526
+       },
+       {
+        "class": "PAIR-JUNCTION",
+        "n_cells": 334,
+        "sum_sq": 4586.967901066681,
+        "frac_of_sq": 0.8489052182552835,
+        "rms_contrib_mV": 3.386357889040481
+       },
+       {
+        "class": "INTERIOR",
+        "n_cells": 0,
+        "sum_sq": 0.0,
+        "frac_of_sq": 0.0,
+        "rms_contrib_mV": 0.0
+       }
+      ],
+      "identity_residual": 0.0
+     },
+     "class_counts": {
+      "CANON-BOUNDARY": 38,
+      "PAIR-JUNCTION": 334,
+      "INTERIOR": 28
+     }
+    },
+    {
+     "seed": 3,
+     "err": 3.68,
+     "decomposition": {
+      "per_class": [
+       {
+        "class": "CANON-BOUNDARY",
+        "n_cells": 66,
+        "sum_sq": 817.8929233121578,
+        "frac_of_sq": 0.15128237437297276,
+        "rms_contrib_mV": 1.4299413653295
+       },
+       {
+        "class": "PAIR-JUNCTION",
+        "n_cells": 334,
+        "sum_sq": 4588.506379330449,
+        "frac_of_sq": 0.8487176256270272,
+        "rms_contrib_mV": 3.386925737055084
+       },
+       {
+        "class": "INTERIOR",
+        "n_cells": 0,
+        "sum_sq": 0.0,
+        "frac_of_sq": 0.0,
+        "rms_contrib_mV": 0.0
+       }
+      ],
+      "identity_residual": 0.0
+     },
+     "class_counts": {
+      "CANON-BOUNDARY": 38,
+      "PAIR-JUNCTION": 334,
+      "INTERIOR": 28
+     }
+    }
+   ],
+   "machinery": "exp208's classify + decompose VERBATIM on the state-carrying re-read of the argmax candidate; W = the candidate medium's own pair support (the chord set the read traversed)"
+  },
+  "A4_discipline": {
+   "pass": true,
+   "clauses": {
+    "floors_ok": true,
+    "audits_ok": true,
+    "zero_rejections": true,
+    "all_finite": true,
+    "lock_ok": true,
+    "fingerprint_stable": true,
+    "anchor_bit_exact": true
+   },
+   "floor_discipline": "production -60.0 restored post-import on all pinned modules (save disclosed: {'cultivation.bioelectric.collective': -35.0, 'experiments.exp142_sign_read': -35.0, 'experiments.exp145_phase_read': -35.0, 'experiments.exp148_temporal_read': -35.0, 'experiments.exp94_multizone_scale': -35.0}); the -35.0 reader-line pin disclosed (exp218's discipline)",
+   "floors_pre_restore": {
+    "cultivation.bioelectric.collective": -35.0,
+    "experiments.exp142_sign_read": -35.0,
+    "experiments.exp145_phase_read": -35.0,
+    "experiments.exp148_temporal_read": -35.0,
+    "experiments.exp94_multizone_scale": -35.0
+   },
+   "floors_midrun_live": {
+    "cultivation.bioelectric.collective": -60.0,
+    "experiments.exp142_sign_read": -60.0,
+    "experiments.exp145_phase_read": -60.0,
+    "experiments.exp148_temporal_read": -60.0,
+    "experiments.exp94_multizone_scale": -60.0
+   },
+   "floor_post_restore": -60.0,
+   "multi_identity_audits": "12/12 bit-identical",
+   "n_audits": 12,
+   "rejections": 0,
+   "all_finite": true,
+   "lock_log_entries": 177,
+   "decode_locks_expected": 144,
+   "lock_composition": "144 decodes + 18 anchor-replay locks + 12 audit locks + 3 decomposition locks = 177 \u2014 all legitimate lockers, no duplicates, full decode coverage",
+   "fingerprint_pre": "d12c0eeb4d14d6b7",
+   "fingerprint_post": "d12c0eeb4d14d6b7",
+   "exp225_replay_anchor_bit_exact": true,
+   "per_media_tuning": "none"
+  }
+ },
+ "branch": "ADVERSARIAL-HOLD",
+ "verdict": "3/4 gates A1-A4 | ADVERSARIAL-HOLD | adversarial-structured worst 3.68 mV vs structured-only 0.62 / random 1.45 (2x bar 2.9); argmax the deep-band substitution (H3 r-60i0)",
+ "runtime_s": 138.5
+}
