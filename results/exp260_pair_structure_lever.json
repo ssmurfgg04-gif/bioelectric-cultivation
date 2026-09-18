@@ -1,0 +1,5784 @@
+{
+ "exp": "exp260",
+ "read_config": {
+  "wiring": "exp178's production scoped arm: exp169's f_max diagnostic + THRESHOLD 32.0; R_T iff f_max < 32.0, else exp148's raw temporal",
+  "executor": "exp142 execute_signed VERBATIM, state-carrying (exp243's A3 return_state path)",
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n": 400,
+  "steps_per_cell": 8,
+  "floor": "production -60.0 restored post-import",
+  "per_media_tuning": "none",
+  "de_pairing_rule": "on each row's medium, for every PAIR-JUNCTION cell under the row's own target (exp208's classify, boundary precedence) that is NOT a pair cell of the canonical reference (the medium's canon-row classification \u2014 for the substituted rows the medium IS the host base medium, so the reference is the base medium's canon-row classification, exp259's reference): remove chords lowest-index-first (chord key (min(u,v), max(u,v)) ascending), minimal count, until the cell's chord degree < 2 under the row's own target; a chord is removable only if BOTH endpoints stay non-boundary under the row's own target (the row's target boundary is the operative face; the CANON-BOUNDARY class wins precedence in that the canon-value boundary set is preserved as a set \u2014 no cell's canon class is altered, and every touched cell's canon-boundary status is recorded); deterministic given the classification, zero knobs",
+  "pooled_form": "Q2's pooled worst-err = the MEAN over the 36 rows (12 hosts x 3 seeds) of the arm's worst err (the max over the arm's two instances); the form fixed here, zero selection; all rows deposited"
+ },
+ "fingerprint": "d9742b87ffd56510",
+ "q1": {
+  "canonical_noop_instances": "24/24",
+  "canonical_rows": [
+   {
+    "host": "H0",
+    "medium": "p1_mirror",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H0",
+    "medium": "p2_boundary_double",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H1",
+    "medium": "p1_mirror",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H1",
+    "medium": "p2_boundary_double",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H10",
+    "medium": "p1_mirror",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H10",
+    "medium": "p2_boundary_double",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H11",
+    "medium": "p1_mirror",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H11",
+    "medium": "p2_boundary_double",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H2",
+    "medium": "p1_mirror",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H2",
+    "medium": "p2_boundary_double",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H3",
+    "medium": "p1_mirror",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H3",
+    "medium": "p2_boundary_double",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H4",
+    "medium": "p1_mirror",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H4",
+    "medium": "p2_boundary_double",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H5",
+    "medium": "p1_mirror",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H5",
+    "medium": "p2_boundary_double",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H6",
+    "medium": "p1_mirror",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H6",
+    "medium": "p2_boundary_double",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H7",
+    "medium": "p1_mirror",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H7",
+    "medium": "p2_boundary_double",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H8",
+    "medium": "p1_mirror",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H8",
+    "medium": "p2_boundary_double",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H9",
+    "medium": "p1_mirror",
+    "noop": true,
+    "n_removed": 0
+   },
+   {
+    "host": "H9",
+    "medium": "p2_boundary_double",
+    "noop": true,
+    "n_removed": 0
+   }
+  ],
+  "subst_unoperated_reproduction": "72/72",
+  "subst_unoperated_rows": [
+   {
+    "host": "H0",
+    "row_key": "r-60i0",
+    "seed": 1,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H0",
+    "row_key": "r-60i1",
+    "seed": 1,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H0",
+    "row_key": "r-60i0",
+    "seed": 2,
+    "err": 0.56,
+    "deposited_err": 0.56,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H0",
+    "row_key": "r-60i1",
+    "seed": 2,
+    "err": 0.56,
+    "deposited_err": 0.56,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H0",
+    "row_key": "r-60i0",
+    "seed": 3,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H0",
+    "row_key": "r-60i1",
+    "seed": 3,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H1",
+    "row_key": "r-60i0",
+    "seed": 1,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H1",
+    "row_key": "r-60i1",
+    "seed": 1,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H1",
+    "row_key": "r-60i0",
+    "seed": 2,
+    "err": 0.56,
+    "deposited_err": 0.56,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H1",
+    "row_key": "r-60i1",
+    "seed": 2,
+    "err": 0.56,
+    "deposited_err": 0.56,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H1",
+    "row_key": "r-60i0",
+    "seed": 3,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H1",
+    "row_key": "r-60i1",
+    "seed": 3,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H10",
+    "row_key": "r-60i0",
+    "seed": 1,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H10",
+    "row_key": "r-60i1",
+    "seed": 1,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H10",
+    "row_key": "r-60i0",
+    "seed": 2,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H10",
+    "row_key": "r-60i1",
+    "seed": 2,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H10",
+    "row_key": "r-60i0",
+    "seed": 3,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H10",
+    "row_key": "r-60i1",
+    "seed": 3,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H11",
+    "row_key": "r-60i0",
+    "seed": 1,
+    "err": 0.5,
+    "deposited_err": 0.5,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H11",
+    "row_key": "r-60i1",
+    "seed": 1,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H11",
+    "row_key": "r-60i0",
+    "seed": 2,
+    "err": 0.5,
+    "deposited_err": 0.5,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H11",
+    "row_key": "r-60i1",
+    "seed": 2,
+    "err": 0.5,
+    "deposited_err": 0.5,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H11",
+    "row_key": "r-60i0",
+    "seed": 3,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H11",
+    "row_key": "r-60i1",
+    "seed": 3,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H2",
+    "row_key": "r-60i0",
+    "seed": 1,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H2",
+    "row_key": "r-60i1",
+    "seed": 1,
+    "err": 0.5,
+    "deposited_err": 0.5,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H2",
+    "row_key": "r-60i0",
+    "seed": 2,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H2",
+    "row_key": "r-60i1",
+    "seed": 2,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H2",
+    "row_key": "r-60i0",
+    "seed": 3,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H2",
+    "row_key": "r-60i1",
+    "seed": 3,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H3",
+    "row_key": "r-60i0",
+    "seed": 1,
+    "err": 3.68,
+    "deposited_err": 3.68,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H3",
+    "row_key": "r-60i1",
+    "seed": 1,
+    "err": 3.24,
+    "deposited_err": 3.24,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H3",
+    "row_key": "r-60i0",
+    "seed": 2,
+    "err": 3.68,
+    "deposited_err": 3.68,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H3",
+    "row_key": "r-60i1",
+    "seed": 2,
+    "err": 3.24,
+    "deposited_err": 3.24,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H3",
+    "row_key": "r-60i0",
+    "seed": 3,
+    "err": 3.68,
+    "deposited_err": 3.68,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H3",
+    "row_key": "r-60i1",
+    "seed": 3,
+    "err": 3.24,
+    "deposited_err": 3.24,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H4",
+    "row_key": "r-60i0",
+    "seed": 1,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H4",
+    "row_key": "r-60i1",
+    "seed": 1,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H4",
+    "row_key": "r-60i0",
+    "seed": 2,
+    "err": 0.5,
+    "deposited_err": 0.5,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H4",
+    "row_key": "r-60i1",
+    "seed": 2,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H4",
+    "row_key": "r-60i0",
+    "seed": 3,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H4",
+    "row_key": "r-60i1",
+    "seed": 3,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H5",
+    "row_key": "r-60i0",
+    "seed": 1,
+    "err": 3.35,
+    "deposited_err": 3.35,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H5",
+    "row_key": "r-60i1",
+    "seed": 1,
+    "err": 2.87,
+    "deposited_err": 2.87,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H5",
+    "row_key": "r-60i0",
+    "seed": 2,
+    "err": 3.36,
+    "deposited_err": 3.36,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H5",
+    "row_key": "r-60i1",
+    "seed": 2,
+    "err": 2.87,
+    "deposited_err": 2.87,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H5",
+    "row_key": "r-60i0",
+    "seed": 3,
+    "err": 3.36,
+    "deposited_err": 3.36,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H5",
+    "row_key": "r-60i1",
+    "seed": 3,
+    "err": 2.88,
+    "deposited_err": 2.88,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H6",
+    "row_key": "r-60i0",
+    "seed": 1,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H6",
+    "row_key": "r-60i1",
+    "seed": 1,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H6",
+    "row_key": "r-60i0",
+    "seed": 2,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H6",
+    "row_key": "r-60i1",
+    "seed": 2,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H6",
+    "row_key": "r-60i0",
+    "seed": 3,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H6",
+    "row_key": "r-60i1",
+    "seed": 3,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H7",
+    "row_key": "r-60i0",
+    "seed": 1,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H7",
+    "row_key": "r-60i1",
+    "seed": 1,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H7",
+    "row_key": "r-60i0",
+    "seed": 2,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H7",
+    "row_key": "r-60i1",
+    "seed": 2,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H7",
+    "row_key": "r-60i0",
+    "seed": 3,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H7",
+    "row_key": "r-60i1",
+    "seed": 3,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H8",
+    "row_key": "r-60i0",
+    "seed": 1,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H8",
+    "row_key": "r-60i1",
+    "seed": 1,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H8",
+    "row_key": "r-60i0",
+    "seed": 2,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H8",
+    "row_key": "r-60i1",
+    "seed": 2,
+    "err": 0.53,
+    "deposited_err": 0.53,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H8",
+    "row_key": "r-60i0",
+    "seed": 3,
+    "err": 0.5,
+    "deposited_err": 0.5,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H8",
+    "row_key": "r-60i1",
+    "seed": 3,
+    "err": 0.5,
+    "deposited_err": 0.5,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H9",
+    "row_key": "r-60i0",
+    "seed": 1,
+    "err": 0.5,
+    "deposited_err": 0.5,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H9",
+    "row_key": "r-60i1",
+    "seed": 1,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H9",
+    "row_key": "r-60i0",
+    "seed": 2,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H9",
+    "row_key": "r-60i1",
+    "seed": 2,
+    "err": 0.49,
+    "deposited_err": 0.49,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H9",
+    "row_key": "r-60i0",
+    "seed": 3,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   },
+   {
+    "host": "H9",
+    "row_key": "r-60i1",
+    "seed": 3,
+    "err": 0.52,
+    "deposited_err": 0.52,
+    "bit_exact": true,
+    "verified": true
+   }
+  ],
+  "pass": true
+ },
+ "q2": {
+  "off_worst_mean": 1.0138888888888888,
+  "on_worst_mean": 6.179444444444446,
+  "reduction_frac": -5.094794520547946,
+  "rows": [
+   {
+    "host": "H0",
+    "arm": "substituted",
+    "seed": 1,
+    "worst": 0.53,
+    "errs": [
+     0.53,
+     0.52
+    ]
+   },
+   {
+    "host": "H0",
+    "arm": "substituted",
+    "seed": 2,
+    "worst": 0.56,
+    "errs": [
+     0.56,
+     0.56
+    ]
+   },
+   {
+    "host": "H0",
+    "arm": "substituted",
+    "seed": 3,
+    "worst": 0.53,
+    "errs": [
+     0.53,
+     0.53
+    ]
+   },
+   {
+    "host": "H1",
+    "arm": "substituted",
+    "seed": 1,
+    "worst": 0.53,
+    "errs": [
+     0.53,
+     0.52
+    ]
+   },
+   {
+    "host": "H1",
+    "arm": "substituted",
+    "seed": 2,
+    "worst": 0.56,
+    "errs": [
+     0.56,
+     0.56
+    ]
+   },
+   {
+    "host": "H1",
+    "arm": "substituted",
+    "seed": 3,
+    "worst": 0.53,
+    "errs": [
+     0.53,
+     0.53
+    ]
+   },
+   {
+    "host": "H10",
+    "arm": "substituted",
+    "seed": 1,
+    "worst": 4.72,
+    "errs": [
+     4.72,
+     4.71
+    ]
+   },
+   {
+    "host": "H10",
+    "arm": "substituted",
+    "seed": 2,
+    "worst": 4.71,
+    "errs": [
+     4.71,
+     4.71
+    ]
+   },
+   {
+    "host": "H10",
+    "arm": "substituted",
+    "seed": 3,
+    "worst": 4.72,
+    "errs": [
+     4.72,
+     4.72
+    ]
+   },
+   {
+    "host": "H11",
+    "arm": "substituted",
+    "seed": 1,
+    "worst": 5.94,
+    "errs": [
+     5.94,
+     5.68
+    ]
+   },
+   {
+    "host": "H11",
+    "arm": "substituted",
+    "seed": 2,
+    "worst": 5.94,
+    "errs": [
+     5.94,
+     5.67
+    ]
+   },
+   {
+    "host": "H11",
+    "arm": "substituted",
+    "seed": 3,
+    "worst": 5.94,
+    "errs": [
+     5.94,
+     5.68
+    ]
+   },
+   {
+    "host": "H2",
+    "arm": "substituted",
+    "seed": 1,
+    "worst": 8.91,
+    "errs": [
+     7.92,
+     8.91
+    ]
+   },
+   {
+    "host": "H2",
+    "arm": "substituted",
+    "seed": 2,
+    "worst": 8.91,
+    "errs": [
+     7.92,
+     8.91
+    ]
+   },
+   {
+    "host": "H2",
+    "arm": "substituted",
+    "seed": 3,
+    "worst": 8.92,
+    "errs": [
+     7.92,
+     8.92
+    ]
+   },
+   {
+    "host": "H3",
+    "arm": "substituted",
+    "seed": 1,
+    "worst": 7.84,
+    "errs": [
+     6.74,
+     7.84
+    ]
+   },
+   {
+    "host": "H3",
+    "arm": "substituted",
+    "seed": 2,
+    "worst": 7.84,
+    "errs": [
+     6.75,
+     7.84
+    ]
+   },
+   {
+    "host": "H3",
+    "arm": "substituted",
+    "seed": 3,
+    "worst": 7.85,
+    "errs": [
+     6.75,
+     7.85
+    ]
+   },
+   {
+    "host": "H4",
+    "arm": "substituted",
+    "seed": 1,
+    "worst": 6.44,
+    "errs": [
+     6.44,
+     6.2
+    ]
+   },
+   {
+    "host": "H4",
+    "arm": "substituted",
+    "seed": 2,
+    "worst": 6.44,
+    "errs": [
+     6.44,
+     6.2
+    ]
+   },
+   {
+    "host": "H4",
+    "arm": "substituted",
+    "seed": 3,
+    "worst": 6.44,
+    "errs": [
+     6.44,
+     6.2
+    ]
+   },
+   {
+    "host": "H5",
+    "arm": "substituted",
+    "seed": 1,
+    "worst": 6.83,
+    "errs": [
+     6.83,
+     6.69
+    ]
+   },
+   {
+    "host": "H5",
+    "arm": "substituted",
+    "seed": 2,
+    "worst": 6.83,
+    "errs": [
+     6.83,
+     6.69
+    ]
+   },
+   {
+    "host": "H5",
+    "arm": "substituted",
+    "seed": 3,
+    "worst": 6.83,
+    "errs": [
+     6.83,
+     6.69
+    ]
+   },
+   {
+    "host": "H6",
+    "arm": "substituted",
+    "seed": 1,
+    "worst": 7.9,
+    "errs": [
+     7.9,
+     7.71
+    ]
+   },
+   {
+    "host": "H6",
+    "arm": "substituted",
+    "seed": 2,
+    "worst": 7.9,
+    "errs": [
+     7.9,
+     7.71
+    ]
+   },
+   {
+    "host": "H6",
+    "arm": "substituted",
+    "seed": 3,
+    "worst": 7.9,
+    "errs": [
+     7.9,
+     7.71
+    ]
+   },
+   {
+    "host": "H7",
+    "arm": "substituted",
+    "seed": 1,
+    "worst": 6.59,
+    "errs": [
+     6.48,
+     6.59
+    ]
+   },
+   {
+    "host": "H7",
+    "arm": "substituted",
+    "seed": 2,
+    "worst": 6.59,
+    "errs": [
+     6.48,
+     6.59
+    ]
+   },
+   {
+    "host": "H7",
+    "arm": "substituted",
+    "seed": 3,
+    "worst": 6.59,
+    "errs": [
+     6.48,
+     6.59
+    ]
+   },
+   {
+    "host": "H8",
+    "arm": "substituted",
+    "seed": 1,
+    "worst": 9.82,
+    "errs": [
+     9.56,
+     9.82
+    ]
+   },
+   {
+    "host": "H8",
+    "arm": "substituted",
+    "seed": 2,
+    "worst": 9.82,
+    "errs": [
+     9.56,
+     9.82
+    ]
+   },
+   {
+    "host": "H8",
+    "arm": "substituted",
+    "seed": 3,
+    "worst": 9.82,
+    "errs": [
+     9.57,
+     9.82
+    ]
+   },
+   {
+    "host": "H9",
+    "arm": "substituted",
+    "seed": 1,
+    "worst": 8.08,
+    "errs": [
+     8.08,
+     8.02
+    ]
+   },
+   {
+    "host": "H9",
+    "arm": "substituted",
+    "seed": 2,
+    "worst": 8.08,
+    "errs": [
+     8.08,
+     8.02
+    ]
+   },
+   {
+    "host": "H9",
+    "arm": "substituted",
+    "seed": 3,
+    "worst": 8.08,
+    "errs": [
+     8.08,
+     8.02
+    ]
+   }
+  ],
+  "pass": false
+ },
+ "q3": {
+  "off_worst_mean": 0.1377777777777778,
+  "on_worst_mean": 0.1377777777777778,
+  "bit_exact_instances": "72/72",
+  "rows": [
+   {
+    "host": "H0",
+    "medium": "p1_mirror",
+    "seed": 1,
+    "err": 0.04,
+    "deposited_err": 0.04,
+    "bit_exact": true
+   },
+   {
+    "host": "H0",
+    "medium": "p2_boundary_double",
+    "seed": 1,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H0",
+    "medium": "p1_mirror",
+    "seed": 2,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H0",
+    "medium": "p2_boundary_double",
+    "seed": 2,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H0",
+    "medium": "p1_mirror",
+    "seed": 3,
+    "err": 0.04,
+    "deposited_err": 0.04,
+    "bit_exact": true
+   },
+   {
+    "host": "H0",
+    "medium": "p2_boundary_double",
+    "seed": 3,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H1",
+    "medium": "p1_mirror",
+    "seed": 1,
+    "err": 0.04,
+    "deposited_err": 0.04,
+    "bit_exact": true
+   },
+   {
+    "host": "H1",
+    "medium": "p2_boundary_double",
+    "seed": 1,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H1",
+    "medium": "p1_mirror",
+    "seed": 2,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H1",
+    "medium": "p2_boundary_double",
+    "seed": 2,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H1",
+    "medium": "p1_mirror",
+    "seed": 3,
+    "err": 0.04,
+    "deposited_err": 0.04,
+    "bit_exact": true
+   },
+   {
+    "host": "H1",
+    "medium": "p2_boundary_double",
+    "seed": 3,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H10",
+    "medium": "p1_mirror",
+    "seed": 1,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H10",
+    "medium": "p2_boundary_double",
+    "seed": 1,
+    "err": 0.14,
+    "deposited_err": 0.14,
+    "bit_exact": true
+   },
+   {
+    "host": "H10",
+    "medium": "p1_mirror",
+    "seed": 2,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H10",
+    "medium": "p2_boundary_double",
+    "seed": 2,
+    "err": 0.13,
+    "deposited_err": 0.13,
+    "bit_exact": true
+   },
+   {
+    "host": "H10",
+    "medium": "p1_mirror",
+    "seed": 3,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H10",
+    "medium": "p2_boundary_double",
+    "seed": 3,
+    "err": 0.14,
+    "deposited_err": 0.14,
+    "bit_exact": true
+   },
+   {
+    "host": "H11",
+    "medium": "p1_mirror",
+    "seed": 1,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H11",
+    "medium": "p2_boundary_double",
+    "seed": 1,
+    "err": 0.16,
+    "deposited_err": 0.16,
+    "bit_exact": true
+   },
+   {
+    "host": "H11",
+    "medium": "p1_mirror",
+    "seed": 2,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H11",
+    "medium": "p2_boundary_double",
+    "seed": 2,
+    "err": 0.16,
+    "deposited_err": 0.16,
+    "bit_exact": true
+   },
+   {
+    "host": "H11",
+    "medium": "p1_mirror",
+    "seed": 3,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H11",
+    "medium": "p2_boundary_double",
+    "seed": 3,
+    "err": 0.16,
+    "deposited_err": 0.16,
+    "bit_exact": true
+   },
+   {
+    "host": "H2",
+    "medium": "p1_mirror",
+    "seed": 1,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H2",
+    "medium": "p2_boundary_double",
+    "seed": 1,
+    "err": 0.16,
+    "deposited_err": 0.16,
+    "bit_exact": true
+   },
+   {
+    "host": "H2",
+    "medium": "p1_mirror",
+    "seed": 2,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H2",
+    "medium": "p2_boundary_double",
+    "seed": 2,
+    "err": 0.17,
+    "deposited_err": 0.17,
+    "bit_exact": true
+   },
+   {
+    "host": "H2",
+    "medium": "p1_mirror",
+    "seed": 3,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H2",
+    "medium": "p2_boundary_double",
+    "seed": 3,
+    "err": 0.17,
+    "deposited_err": 0.17,
+    "bit_exact": true
+   },
+   {
+    "host": "H3",
+    "medium": "p1_mirror",
+    "seed": 1,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H3",
+    "medium": "p2_boundary_double",
+    "seed": 1,
+    "err": 0.17,
+    "deposited_err": 0.17,
+    "bit_exact": true
+   },
+   {
+    "host": "H3",
+    "medium": "p1_mirror",
+    "seed": 2,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H3",
+    "medium": "p2_boundary_double",
+    "seed": 2,
+    "err": 0.17,
+    "deposited_err": 0.17,
+    "bit_exact": true
+   },
+   {
+    "host": "H3",
+    "medium": "p1_mirror",
+    "seed": 3,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H3",
+    "medium": "p2_boundary_double",
+    "seed": 3,
+    "err": 0.18,
+    "deposited_err": 0.18,
+    "bit_exact": true
+   },
+   {
+    "host": "H4",
+    "medium": "p1_mirror",
+    "seed": 1,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H4",
+    "medium": "p2_boundary_double",
+    "seed": 1,
+    "err": 0.13,
+    "deposited_err": 0.13,
+    "bit_exact": true
+   },
+   {
+    "host": "H4",
+    "medium": "p1_mirror",
+    "seed": 2,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H4",
+    "medium": "p2_boundary_double",
+    "seed": 2,
+    "err": 0.14,
+    "deposited_err": 0.14,
+    "bit_exact": true
+   },
+   {
+    "host": "H4",
+    "medium": "p1_mirror",
+    "seed": 3,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H4",
+    "medium": "p2_boundary_double",
+    "seed": 3,
+    "err": 0.14,
+    "deposited_err": 0.14,
+    "bit_exact": true
+   },
+   {
+    "host": "H5",
+    "medium": "p1_mirror",
+    "seed": 1,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H5",
+    "medium": "p2_boundary_double",
+    "seed": 1,
+    "err": 0.19,
+    "deposited_err": 0.19,
+    "bit_exact": true
+   },
+   {
+    "host": "H5",
+    "medium": "p1_mirror",
+    "seed": 2,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H5",
+    "medium": "p2_boundary_double",
+    "seed": 2,
+    "err": 0.19,
+    "deposited_err": 0.19,
+    "bit_exact": true
+   },
+   {
+    "host": "H5",
+    "medium": "p1_mirror",
+    "seed": 3,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H5",
+    "medium": "p2_boundary_double",
+    "seed": 3,
+    "err": 0.19,
+    "deposited_err": 0.19,
+    "bit_exact": true
+   },
+   {
+    "host": "H6",
+    "medium": "p1_mirror",
+    "seed": 1,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H6",
+    "medium": "p2_boundary_double",
+    "seed": 1,
+    "err": 0.14,
+    "deposited_err": 0.14,
+    "bit_exact": true
+   },
+   {
+    "host": "H6",
+    "medium": "p1_mirror",
+    "seed": 2,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H6",
+    "medium": "p2_boundary_double",
+    "seed": 2,
+    "err": 0.14,
+    "deposited_err": 0.14,
+    "bit_exact": true
+   },
+   {
+    "host": "H6",
+    "medium": "p1_mirror",
+    "seed": 3,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H6",
+    "medium": "p2_boundary_double",
+    "seed": 3,
+    "err": 0.14,
+    "deposited_err": 0.14,
+    "bit_exact": true
+   },
+   {
+    "host": "H7",
+    "medium": "p1_mirror",
+    "seed": 1,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H7",
+    "medium": "p2_boundary_double",
+    "seed": 1,
+    "err": 0.15,
+    "deposited_err": 0.15,
+    "bit_exact": true
+   },
+   {
+    "host": "H7",
+    "medium": "p1_mirror",
+    "seed": 2,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H7",
+    "medium": "p2_boundary_double",
+    "seed": 2,
+    "err": 0.15,
+    "deposited_err": 0.15,
+    "bit_exact": true
+   },
+   {
+    "host": "H7",
+    "medium": "p1_mirror",
+    "seed": 3,
+    "err": 0.05,
+    "deposited_err": 0.05,
+    "bit_exact": true
+   },
+   {
+    "host": "H7",
+    "medium": "p2_boundary_double",
+    "seed": 3,
+    "err": 0.15,
+    "deposited_err": 0.15,
+    "bit_exact": true
+   },
+   {
+    "host": "H8",
+    "medium": "p1_mirror",
+    "seed": 1,
+    "err": 0.07,
+    "deposited_err": 0.07,
+    "bit_exact": true
+   },
+   {
+    "host": "H8",
+    "medium": "p2_boundary_double",
+    "seed": 1,
+    "err": 0.14,
+    "deposited_err": 0.14,
+    "bit_exact": true
+   },
+   {
+    "host": "H8",
+    "medium": "p1_mirror",
+    "seed": 2,
+    "err": 0.07,
+    "deposited_err": 0.07,
+    "bit_exact": true
+   },
+   {
+    "host": "H8",
+    "medium": "p2_boundary_double",
+    "seed": 2,
+    "err": 0.14,
+    "deposited_err": 0.14,
+    "bit_exact": true
+   },
+   {
+    "host": "H8",
+    "medium": "p1_mirror",
+    "seed": 3,
+    "err": 0.07,
+    "deposited_err": 0.07,
+    "bit_exact": true
+   },
+   {
+    "host": "H8",
+    "medium": "p2_boundary_double",
+    "seed": 3,
+    "err": 0.14,
+    "deposited_err": 0.14,
+    "bit_exact": true
+   },
+   {
+    "host": "H9",
+    "medium": "p1_mirror",
+    "seed": 1,
+    "err": 0.07,
+    "deposited_err": 0.07,
+    "bit_exact": true
+   },
+   {
+    "host": "H9",
+    "medium": "p2_boundary_double",
+    "seed": 1,
+    "err": 0.16,
+    "deposited_err": 0.16,
+    "bit_exact": true
+   },
+   {
+    "host": "H9",
+    "medium": "p1_mirror",
+    "seed": 2,
+    "err": 0.06,
+    "deposited_err": 0.06,
+    "bit_exact": true
+   },
+   {
+    "host": "H9",
+    "medium": "p2_boundary_double",
+    "seed": 2,
+    "err": 0.15,
+    "deposited_err": 0.15,
+    "bit_exact": true
+   },
+   {
+    "host": "H9",
+    "medium": "p1_mirror",
+    "seed": 3,
+    "err": 0.07,
+    "deposited_err": 0.07,
+    "bit_exact": true
+   },
+   {
+    "host": "H9",
+    "medium": "p2_boundary_double",
+    "seed": 3,
+    "err": 0.15,
+    "deposited_err": 0.15,
+    "bit_exact": true
+   }
+  ],
+  "pass": true
+ },
+ "q4": {
+  "exp243_sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+  "exp254_sha256": "09ac269ee2db7f498491b06ad26093af4a0526a2cb51c2b5bea442fc7b1e0eda",
+  "read_only": true,
+  "floor_ok": true,
+  "deterministic_6host_rerun": true,
+  "n_removal_records": 24,
+  "n_removed_chords": 225,
+  "removals_recorded": true,
+  "pass": true
+ },
+ "operation": {
+  "rule": "on each row's medium, for every PAIR-JUNCTION cell under the row's own target (exp208's classify, boundary precedence) that is NOT a pair cell of the canonical reference (the medium's canon-row classification \u2014 for the substituted rows the medium IS the host base medium, so the reference is the base medium's canon-row classification, exp259's reference): remove chords lowest-index-first (chord key (min(u,v), max(u,v)) ascending), minimal count, until the cell's chord degree < 2 under the row's own target; a chord is removable only if BOTH endpoints stay non-boundary under the row's own target (the row's target boundary is the operative face; the CANON-BOUNDARY class wins precedence in that the canon-value boundary set is preserved as a set \u2014 no cell's canon class is altered, and every touched cell's canon-boundary status is recorded); deterministic given the classification, zero knobs",
+  "per_row": [
+   {
+    "host": "H0",
+    "row_key": "r-60i0",
+    "n_target_cells": 0,
+    "n_removed": 0,
+    "n_left_pair": 0,
+    "removed": [],
+    "cells": []
+   },
+   {
+    "host": "H0",
+    "row_key": "r-60i1",
+    "n_target_cells": 0,
+    "n_removed": 0,
+    "n_left_pair": 0,
+    "removed": [],
+    "cells": []
+   },
+   {
+    "host": "H1",
+    "row_key": "r-60i0",
+    "n_target_cells": 0,
+    "n_removed": 0,
+    "n_left_pair": 0,
+    "removed": [],
+    "cells": []
+   },
+   {
+    "host": "H1",
+    "row_key": "r-60i1",
+    "n_target_cells": 0,
+    "n_removed": 0,
+    "n_left_pair": 0,
+    "removed": [],
+    "cells": []
+   },
+   {
+    "host": "H10",
+    "row_key": "r-60i0",
+    "n_target_cells": 8,
+    "n_removed": 8,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      14,
+      13
+     ],
+     [
+      153,
+      152
+     ],
+     [
+      167,
+      166
+     ],
+     [
+      259,
+      33
+     ],
+     [
+      274,
+      271
+     ],
+     [
+      277,
+      276
+     ],
+     [
+      278,
+      277
+     ],
+     [
+      286,
+      285
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 14,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        14,
+        13
+       ]
+      ]
+     },
+     {
+      "cell": 153,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        153,
+        152
+       ]
+      ]
+     },
+     {
+      "cell": 167,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        167,
+        166
+       ]
+      ]
+     },
+     {
+      "cell": 259,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        259,
+        33
+       ]
+      ]
+     },
+     {
+      "cell": 274,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        274,
+        271
+       ]
+      ]
+     },
+     {
+      "cell": 277,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        277,
+        276
+       ]
+      ]
+     },
+     {
+      "cell": 278,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        278,
+        277
+       ]
+      ]
+     },
+     {
+      "cell": 286,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        286,
+        285
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H10",
+    "row_key": "r-60i1",
+    "n_target_cells": 8,
+    "n_removed": 8,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      14,
+      13
+     ],
+     [
+      153,
+      152
+     ],
+     [
+      167,
+      166
+     ],
+     [
+      259,
+      33
+     ],
+     [
+      274,
+      271
+     ],
+     [
+      277,
+      276
+     ],
+     [
+      278,
+      277
+     ],
+     [
+      286,
+      285
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 14,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        14,
+        13
+       ]
+      ]
+     },
+     {
+      "cell": 153,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        153,
+        152
+       ]
+      ]
+     },
+     {
+      "cell": 167,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        167,
+        166
+       ]
+      ]
+     },
+     {
+      "cell": 259,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        259,
+        33
+       ]
+      ]
+     },
+     {
+      "cell": 274,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        274,
+        271
+       ]
+      ]
+     },
+     {
+      "cell": 277,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        277,
+        276
+       ]
+      ]
+     },
+     {
+      "cell": 278,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        278,
+        277
+       ]
+      ]
+     },
+     {
+      "cell": 286,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        286,
+        285
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H11",
+    "row_key": "r-60i0",
+    "n_target_cells": 7,
+    "n_removed": 7,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      12,
+      11
+     ],
+     [
+      33,
+      32
+     ],
+     [
+      37,
+      36
+     ],
+     [
+      142,
+      141
+     ],
+     [
+      146,
+      136
+     ],
+     [
+      260,
+      166
+     ],
+     [
+      275,
+      122
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 12,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        12,
+        11
+       ]
+      ]
+     },
+     {
+      "cell": 33,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        33,
+        32
+       ]
+      ]
+     },
+     {
+      "cell": 37,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        37,
+        36
+       ]
+      ]
+     },
+     {
+      "cell": 142,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        142,
+        141
+       ]
+      ]
+     },
+     {
+      "cell": 146,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        146,
+        136
+       ]
+      ]
+     },
+     {
+      "cell": 260,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        260,
+        166
+       ]
+      ]
+     },
+     {
+      "cell": 275,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        275,
+        122
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H11",
+    "row_key": "r-60i1",
+    "n_target_cells": 6,
+    "n_removed": 6,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      33,
+      32
+     ],
+     [
+      37,
+      36
+     ],
+     [
+      142,
+      141
+     ],
+     [
+      146,
+      136
+     ],
+     [
+      260,
+      166
+     ],
+     [
+      275,
+      122
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 33,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        33,
+        32
+       ]
+      ]
+     },
+     {
+      "cell": 37,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        37,
+        36
+       ]
+      ]
+     },
+     {
+      "cell": 142,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        142,
+        141
+       ]
+      ]
+     },
+     {
+      "cell": 146,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        146,
+        136
+       ]
+      ]
+     },
+     {
+      "cell": 260,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        260,
+        166
+       ]
+      ]
+     },
+     {
+      "cell": 275,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        275,
+        122
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H2",
+    "row_key": "r-60i0",
+    "n_target_cells": 7,
+    "n_removed": 8,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      18,
+      17
+     ],
+     [
+      21,
+      20
+     ],
+     [
+      130,
+      129
+     ],
+     [
+      131,
+      130
+     ],
+     [
+      142,
+      141
+     ],
+     [
+      286,
+      185
+     ],
+     [
+      286,
+      251
+     ],
+     [
+      287,
+      18
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 18,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        18,
+        17
+       ]
+      ]
+     },
+     {
+      "cell": 21,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        21,
+        20
+       ]
+      ]
+     },
+     {
+      "cell": 130,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        130,
+        129
+       ]
+      ]
+     },
+     {
+      "cell": 131,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        131,
+        130
+       ]
+      ]
+     },
+     {
+      "cell": 142,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        142,
+        141
+       ]
+      ]
+     },
+     {
+      "cell": 286,
+      "deg_before": 3,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        286,
+        185
+       ],
+       [
+        286,
+        251
+       ]
+      ]
+     },
+     {
+      "cell": 287,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        287,
+        18
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H2",
+    "row_key": "r-60i1",
+    "n_target_cells": 8,
+    "n_removed": 10,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      18,
+      17
+     ],
+     [
+      21,
+      20
+     ],
+     [
+      130,
+      129
+     ],
+     [
+      131,
+      130
+     ],
+     [
+      142,
+      141
+     ],
+     [
+      286,
+      185
+     ],
+     [
+      286,
+      251
+     ],
+     [
+      287,
+      18
+     ],
+     [
+      299,
+      10
+     ],
+     [
+      299,
+      142
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 18,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        18,
+        17
+       ]
+      ]
+     },
+     {
+      "cell": 21,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        21,
+        20
+       ]
+      ]
+     },
+     {
+      "cell": 130,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        130,
+        129
+       ]
+      ]
+     },
+     {
+      "cell": 131,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        131,
+        130
+       ]
+      ]
+     },
+     {
+      "cell": 142,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        142,
+        141
+       ]
+      ]
+     },
+     {
+      "cell": 286,
+      "deg_before": 3,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        286,
+        185
+       ],
+       [
+        286,
+        251
+       ]
+      ]
+     },
+     {
+      "cell": 287,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        287,
+        18
+       ]
+      ]
+     },
+     {
+      "cell": 299,
+      "deg_before": 3,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        299,
+        10
+       ],
+       [
+        299,
+        142
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H3",
+    "row_key": "r-60i0",
+    "n_target_cells": 13,
+    "n_removed": 14,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      26,
+      25
+     ],
+     [
+      27,
+      26
+     ],
+     [
+      30,
+      29
+     ],
+     [
+      31,
+      30
+     ],
+     [
+      131,
+      123
+     ],
+     [
+      131,
+      130
+     ],
+     [
+      155,
+      147
+     ],
+     [
+      167,
+      166
+     ],
+     [
+      244,
+      134
+     ],
+     [
+      252,
+      251
+     ],
+     [
+      261,
+      29
+     ],
+     [
+      263,
+      262
+     ],
+     [
+      264,
+      263
+     ],
+     [
+      283,
+      134
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 26,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        26,
+        25
+       ]
+      ]
+     },
+     {
+      "cell": 27,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        27,
+        26
+       ]
+      ]
+     },
+     {
+      "cell": 30,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        30,
+        29
+       ]
+      ]
+     },
+     {
+      "cell": 31,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        31,
+        30
+       ]
+      ]
+     },
+     {
+      "cell": 131,
+      "deg_before": 3,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        131,
+        123
+       ],
+       [
+        131,
+        130
+       ]
+      ]
+     },
+     {
+      "cell": 155,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        155,
+        147
+       ]
+      ]
+     },
+     {
+      "cell": 167,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        167,
+        166
+       ]
+      ]
+     },
+     {
+      "cell": 244,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        244,
+        134
+       ]
+      ]
+     },
+     {
+      "cell": 252,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        252,
+        251
+       ]
+      ]
+     },
+     {
+      "cell": 261,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        261,
+        29
+       ]
+      ]
+     },
+     {
+      "cell": 263,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        263,
+        262
+       ]
+      ]
+     },
+     {
+      "cell": 264,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        264,
+        263
+       ]
+      ]
+     },
+     {
+      "cell": 283,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        283,
+        134
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H3",
+    "row_key": "r-60i1",
+    "n_target_cells": 13,
+    "n_removed": 13,
+    "n_left_pair": 1,
+    "removed": [
+     [
+      26,
+      25
+     ],
+     [
+      27,
+      26
+     ],
+     [
+      30,
+      29
+     ],
+     [
+      31,
+      30
+     ],
+     [
+      131,
+      130
+     ],
+     [
+      155,
+      147
+     ],
+     [
+      167,
+      166
+     ],
+     [
+      252,
+      251
+     ],
+     [
+      261,
+      29
+     ],
+     [
+      263,
+      262
+     ],
+     [
+      264,
+      263
+     ],
+     [
+      283,
+      134
+     ],
+     [
+      302,
+      301
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 26,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        26,
+        25
+       ]
+      ]
+     },
+     {
+      "cell": 27,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        27,
+        26
+       ]
+      ]
+     },
+     {
+      "cell": 30,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        30,
+        29
+       ]
+      ]
+     },
+     {
+      "cell": 31,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        31,
+        30
+       ]
+      ]
+     },
+     {
+      "cell": 131,
+      "deg_before": 3,
+      "deg_after": 2,
+      "left_pair": false,
+      "canon_boundary": true,
+      "removed": [
+       [
+        131,
+        130
+       ]
+      ]
+     },
+     {
+      "cell": 155,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        155,
+        147
+       ]
+      ]
+     },
+     {
+      "cell": 167,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        167,
+        166
+       ]
+      ]
+     },
+     {
+      "cell": 252,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        252,
+        251
+       ]
+      ]
+     },
+     {
+      "cell": 261,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        261,
+        29
+       ]
+      ]
+     },
+     {
+      "cell": 263,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        263,
+        262
+       ]
+      ]
+     },
+     {
+      "cell": 264,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        264,
+        263
+       ]
+      ]
+     },
+     {
+      "cell": 283,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        283,
+        134
+       ]
+      ]
+     },
+     {
+      "cell": 302,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        302,
+        301
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H4",
+    "row_key": "r-60i0",
+    "n_target_cells": 11,
+    "n_removed": 11,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      17,
+      16
+     ],
+     [
+      18,
+      17
+     ],
+     [
+      45,
+      44
+     ],
+     [
+      139,
+      138
+     ],
+     [
+      141,
+      27
+     ],
+     [
+      257,
+      256
+     ],
+     [
+      258,
+      257
+     ],
+     [
+      276,
+      4
+     ],
+     [
+      286,
+      285
+     ],
+     [
+      287,
+      20
+     ],
+     [
+      289,
+      68
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 17,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        17,
+        16
+       ]
+      ]
+     },
+     {
+      "cell": 18,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        18,
+        17
+       ]
+      ]
+     },
+     {
+      "cell": 45,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        45,
+        44
+       ]
+      ]
+     },
+     {
+      "cell": 139,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        139,
+        138
+       ]
+      ]
+     },
+     {
+      "cell": 141,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        141,
+        27
+       ]
+      ]
+     },
+     {
+      "cell": 257,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        257,
+        256
+       ]
+      ]
+     },
+     {
+      "cell": 258,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        258,
+        257
+       ]
+      ]
+     },
+     {
+      "cell": 276,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        276,
+        4
+       ]
+      ]
+     },
+     {
+      "cell": 286,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        286,
+        285
+       ]
+      ]
+     },
+     {
+      "cell": 287,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        287,
+        20
+       ]
+      ]
+     },
+     {
+      "cell": 289,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        289,
+        68
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H4",
+    "row_key": "r-60i1",
+    "n_target_cells": 11,
+    "n_removed": 11,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      17,
+      16
+     ],
+     [
+      18,
+      17
+     ],
+     [
+      45,
+      44
+     ],
+     [
+      139,
+      138
+     ],
+     [
+      141,
+      27
+     ],
+     [
+      257,
+      256
+     ],
+     [
+      258,
+      257
+     ],
+     [
+      276,
+      4
+     ],
+     [
+      286,
+      285
+     ],
+     [
+      287,
+      20
+     ],
+     [
+      289,
+      68
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 17,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        17,
+        16
+       ]
+      ]
+     },
+     {
+      "cell": 18,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        18,
+        17
+       ]
+      ]
+     },
+     {
+      "cell": 45,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        45,
+        44
+       ]
+      ]
+     },
+     {
+      "cell": 139,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        139,
+        138
+       ]
+      ]
+     },
+     {
+      "cell": 141,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        141,
+        27
+       ]
+      ]
+     },
+     {
+      "cell": 257,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        257,
+        256
+       ]
+      ]
+     },
+     {
+      "cell": 258,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        258,
+        257
+       ]
+      ]
+     },
+     {
+      "cell": 276,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        276,
+        4
+       ]
+      ]
+     },
+     {
+      "cell": 286,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        286,
+        285
+       ]
+      ]
+     },
+     {
+      "cell": 287,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        287,
+        20
+       ]
+      ]
+     },
+     {
+      "cell": 289,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        289,
+        68
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H5",
+    "row_key": "r-60i0",
+    "n_target_cells": 13,
+    "n_removed": 13,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      12,
+      11
+     ],
+     [
+      38,
+      37
+     ],
+     [
+      126,
+      111
+     ],
+     [
+      127,
+      128
+     ],
+     [
+      135,
+      134
+     ],
+     [
+      143,
+      142
+     ],
+     [
+      254,
+      49
+     ],
+     [
+      262,
+      10
+     ],
+     [
+      284,
+      283
+     ],
+     [
+      287,
+      286
+     ],
+     [
+      288,
+      287
+     ],
+     [
+      291,
+      131
+     ],
+     [
+      293,
+      292
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 12,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        12,
+        11
+       ]
+      ]
+     },
+     {
+      "cell": 38,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        38,
+        37
+       ]
+      ]
+     },
+     {
+      "cell": 126,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        126,
+        111
+       ]
+      ]
+     },
+     {
+      "cell": 127,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        127,
+        128
+       ]
+      ]
+     },
+     {
+      "cell": 135,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        135,
+        134
+       ]
+      ]
+     },
+     {
+      "cell": 143,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        143,
+        142
+       ]
+      ]
+     },
+     {
+      "cell": 254,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        254,
+        49
+       ]
+      ]
+     },
+     {
+      "cell": 262,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        262,
+        10
+       ]
+      ]
+     },
+     {
+      "cell": 284,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        284,
+        283
+       ]
+      ]
+     },
+     {
+      "cell": 287,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        287,
+        286
+       ]
+      ]
+     },
+     {
+      "cell": 288,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        288,
+        287
+       ]
+      ]
+     },
+     {
+      "cell": 291,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        291,
+        131
+       ]
+      ]
+     },
+     {
+      "cell": 293,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        293,
+        292
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H5",
+    "row_key": "r-60i1",
+    "n_target_cells": 13,
+    "n_removed": 13,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      38,
+      37
+     ],
+     [
+      126,
+      111
+     ],
+     [
+      127,
+      128
+     ],
+     [
+      135,
+      134
+     ],
+     [
+      143,
+      142
+     ],
+     [
+      254,
+      49
+     ],
+     [
+      262,
+      10
+     ],
+     [
+      284,
+      283
+     ],
+     [
+      287,
+      286
+     ],
+     [
+      288,
+      287
+     ],
+     [
+      291,
+      131
+     ],
+     [
+      293,
+      292
+     ],
+     [
+      299,
+      259
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 38,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        38,
+        37
+       ]
+      ]
+     },
+     {
+      "cell": 126,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        126,
+        111
+       ]
+      ]
+     },
+     {
+      "cell": 127,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        127,
+        128
+       ]
+      ]
+     },
+     {
+      "cell": 135,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        135,
+        134
+       ]
+      ]
+     },
+     {
+      "cell": 143,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        143,
+        142
+       ]
+      ]
+     },
+     {
+      "cell": 254,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        254,
+        49
+       ]
+      ]
+     },
+     {
+      "cell": 262,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        262,
+        10
+       ]
+      ]
+     },
+     {
+      "cell": 284,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        284,
+        283
+       ]
+      ]
+     },
+     {
+      "cell": 287,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        287,
+        286
+       ]
+      ]
+     },
+     {
+      "cell": 288,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        288,
+        287
+       ]
+      ]
+     },
+     {
+      "cell": 291,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        291,
+        131
+       ]
+      ]
+     },
+     {
+      "cell": 293,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        293,
+        292
+       ]
+      ]
+     },
+     {
+      "cell": 299,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        299,
+        259
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H6",
+    "row_key": "r-60i0",
+    "n_target_cells": 10,
+    "n_removed": 11,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      15,
+      14
+     ],
+     [
+      26,
+      25
+     ],
+     [
+      27,
+      28
+     ],
+     [
+      31,
+      30
+     ],
+     [
+      32,
+      31
+     ],
+     [
+      42,
+      41
+     ],
+     [
+      42,
+      98
+     ],
+     [
+      258,
+      257
+     ],
+     [
+      259,
+      258
+     ],
+     [
+      272,
+      271
+     ],
+     [
+      273,
+      27
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 15,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        15,
+        14
+       ]
+      ]
+     },
+     {
+      "cell": 26,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        26,
+        25
+       ]
+      ]
+     },
+     {
+      "cell": 27,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        27,
+        28
+       ]
+      ]
+     },
+     {
+      "cell": 31,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        31,
+        30
+       ]
+      ]
+     },
+     {
+      "cell": 32,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        32,
+        31
+       ]
+      ]
+     },
+     {
+      "cell": 42,
+      "deg_before": 3,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        42,
+        41
+       ],
+       [
+        42,
+        98
+       ]
+      ]
+     },
+     {
+      "cell": 258,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        258,
+        257
+       ]
+      ]
+     },
+     {
+      "cell": 259,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        259,
+        258
+       ]
+      ]
+     },
+     {
+      "cell": 272,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        272,
+        271
+       ]
+      ]
+     },
+     {
+      "cell": 273,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        273,
+        27
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H6",
+    "row_key": "r-60i1",
+    "n_target_cells": 10,
+    "n_removed": 11,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      15,
+      14
+     ],
+     [
+      26,
+      25
+     ],
+     [
+      27,
+      28
+     ],
+     [
+      31,
+      30
+     ],
+     [
+      32,
+      31
+     ],
+     [
+      42,
+      41
+     ],
+     [
+      42,
+      98
+     ],
+     [
+      258,
+      257
+     ],
+     [
+      259,
+      258
+     ],
+     [
+      272,
+      271
+     ],
+     [
+      273,
+      27
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 15,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        15,
+        14
+       ]
+      ]
+     },
+     {
+      "cell": 26,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        26,
+        25
+       ]
+      ]
+     },
+     {
+      "cell": 27,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        27,
+        28
+       ]
+      ]
+     },
+     {
+      "cell": 31,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        31,
+        30
+       ]
+      ]
+     },
+     {
+      "cell": 32,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        32,
+        31
+       ]
+      ]
+     },
+     {
+      "cell": 42,
+      "deg_before": 3,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        42,
+        41
+       ],
+       [
+        42,
+        98
+       ]
+      ]
+     },
+     {
+      "cell": 258,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        258,
+        257
+       ]
+      ]
+     },
+     {
+      "cell": 259,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        259,
+        258
+       ]
+      ]
+     },
+     {
+      "cell": 272,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        272,
+        271
+       ]
+      ]
+     },
+     {
+      "cell": 273,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        273,
+        27
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H7",
+    "row_key": "r-60i0",
+    "n_target_cells": 11,
+    "n_removed": 11,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      42,
+      41
+     ],
+     [
+      43,
+      42
+     ],
+     [
+      129,
+      128
+     ],
+     [
+      130,
+      77
+     ],
+     [
+      144,
+      143
+     ],
+     [
+      168,
+      167
+     ],
+     [
+      174,
+      138
+     ],
+     [
+      178,
+      177
+     ],
+     [
+      289,
+      31
+     ],
+     [
+      290,
+      291
+     ],
+     [
+      292,
+      185
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 42,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        42,
+        41
+       ]
+      ]
+     },
+     {
+      "cell": 43,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        43,
+        42
+       ]
+      ]
+     },
+     {
+      "cell": 129,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        129,
+        128
+       ]
+      ]
+     },
+     {
+      "cell": 130,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        130,
+        77
+       ]
+      ]
+     },
+     {
+      "cell": 144,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        144,
+        143
+       ]
+      ]
+     },
+     {
+      "cell": 168,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        168,
+        167
+       ]
+      ]
+     },
+     {
+      "cell": 174,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        174,
+        138
+       ]
+      ]
+     },
+     {
+      "cell": 178,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        178,
+        177
+       ]
+      ]
+     },
+     {
+      "cell": 289,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        289,
+        31
+       ]
+      ]
+     },
+     {
+      "cell": 290,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        290,
+        291
+       ]
+      ]
+     },
+     {
+      "cell": 292,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        292,
+        185
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H7",
+    "row_key": "r-60i1",
+    "n_target_cells": 12,
+    "n_removed": 12,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      42,
+      41
+     ],
+     [
+      43,
+      42
+     ],
+     [
+      129,
+      128
+     ],
+     [
+      130,
+      77
+     ],
+     [
+      144,
+      47
+     ],
+     [
+      168,
+      167
+     ],
+     [
+      174,
+      138
+     ],
+     [
+      178,
+      177
+     ],
+     [
+      179,
+      180
+     ],
+     [
+      289,
+      31
+     ],
+     [
+      290,
+      291
+     ],
+     [
+      292,
+      185
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 42,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        42,
+        41
+       ]
+      ]
+     },
+     {
+      "cell": 43,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        43,
+        42
+       ]
+      ]
+     },
+     {
+      "cell": 129,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        129,
+        128
+       ]
+      ]
+     },
+     {
+      "cell": 130,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        130,
+        77
+       ]
+      ]
+     },
+     {
+      "cell": 144,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        144,
+        47
+       ]
+      ]
+     },
+     {
+      "cell": 168,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        168,
+        167
+       ]
+      ]
+     },
+     {
+      "cell": 174,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        174,
+        138
+       ]
+      ]
+     },
+     {
+      "cell": 178,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        178,
+        177
+       ]
+      ]
+     },
+     {
+      "cell": 179,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        179,
+        180
+       ]
+      ]
+     },
+     {
+      "cell": 289,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        289,
+        31
+       ]
+      ]
+     },
+     {
+      "cell": 290,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        290,
+        291
+       ]
+      ]
+     },
+     {
+      "cell": 292,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        292,
+        185
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H8",
+    "row_key": "r-60i0",
+    "n_target_cells": 11,
+    "n_removed": 12,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      10,
+      9
+     ],
+     [
+      121,
+      122
+     ],
+     [
+      131,
+      130
+     ],
+     [
+      132,
+      133
+     ],
+     [
+      144,
+      143
+     ],
+     [
+      145,
+      144
+     ],
+     [
+      152,
+      151
+     ],
+     [
+      164,
+      163
+     ],
+     [
+      165,
+      164
+     ],
+     [
+      166,
+      165
+     ],
+     [
+      173,
+      172
+     ],
+     [
+      173,
+      252
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 10,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        10,
+        9
+       ]
+      ]
+     },
+     {
+      "cell": 121,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        121,
+        122
+       ]
+      ]
+     },
+     {
+      "cell": 131,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        131,
+        130
+       ]
+      ]
+     },
+     {
+      "cell": 132,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        132,
+        133
+       ]
+      ]
+     },
+     {
+      "cell": 144,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        144,
+        143
+       ]
+      ]
+     },
+     {
+      "cell": 145,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        145,
+        144
+       ]
+      ]
+     },
+     {
+      "cell": 152,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        152,
+        151
+       ]
+      ]
+     },
+     {
+      "cell": 164,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        164,
+        163
+       ]
+      ]
+     },
+     {
+      "cell": 165,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        165,
+        164
+       ]
+      ]
+     },
+     {
+      "cell": 166,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        166,
+        165
+       ]
+      ]
+     },
+     {
+      "cell": 173,
+      "deg_before": 3,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        173,
+        172
+       ],
+       [
+        173,
+        252
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H8",
+    "row_key": "r-60i1",
+    "n_target_cells": 11,
+    "n_removed": 12,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      131,
+      130
+     ],
+     [
+      132,
+      133
+     ],
+     [
+      144,
+      143
+     ],
+     [
+      145,
+      144
+     ],
+     [
+      152,
+      151
+     ],
+     [
+      164,
+      163
+     ],
+     [
+      165,
+      164
+     ],
+     [
+      166,
+      165
+     ],
+     [
+      173,
+      172
+     ],
+     [
+      173,
+      252
+     ],
+     [
+      299,
+      298
+     ],
+     [
+      300,
+      299
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 131,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        131,
+        130
+       ]
+      ]
+     },
+     {
+      "cell": 132,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        132,
+        133
+       ]
+      ]
+     },
+     {
+      "cell": 144,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        144,
+        143
+       ]
+      ]
+     },
+     {
+      "cell": 145,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        145,
+        144
+       ]
+      ]
+     },
+     {
+      "cell": 152,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        152,
+        151
+       ]
+      ]
+     },
+     {
+      "cell": 164,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        164,
+        163
+       ]
+      ]
+     },
+     {
+      "cell": 165,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        165,
+        164
+       ]
+      ]
+     },
+     {
+      "cell": 166,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        166,
+        165
+       ]
+      ]
+     },
+     {
+      "cell": 173,
+      "deg_before": 3,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        173,
+        172
+       ],
+       [
+        173,
+        252
+       ]
+      ]
+     },
+     {
+      "cell": 299,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        299,
+        298
+       ]
+      ]
+     },
+     {
+      "cell": 300,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        300,
+        299
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H9",
+    "row_key": "r-60i0",
+    "n_target_cells": 15,
+    "n_removed": 17,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      13,
+      12
+     ],
+     [
+      16,
+      15
+     ],
+     [
+      16,
+      124
+     ],
+     [
+      22,
+      1
+     ],
+     [
+      34,
+      33
+     ],
+     [
+      35,
+      34
+     ],
+     [
+      36,
+      35
+     ],
+     [
+      38,
+      37
+     ],
+     [
+      146,
+      145
+     ],
+     [
+      151,
+      150
+     ],
+     [
+      165,
+      164
+     ],
+     [
+      177,
+      176
+     ],
+     [
+      178,
+      177
+     ],
+     [
+      247,
+      246
+     ],
+     [
+      248,
+      247
+     ],
+     [
+      248,
+      249
+     ],
+     [
+      264,
+      3
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 13,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        13,
+        12
+       ]
+      ]
+     },
+     {
+      "cell": 16,
+      "deg_before": 3,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        16,
+        15
+       ],
+       [
+        16,
+        124
+       ]
+      ]
+     },
+     {
+      "cell": 22,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        22,
+        1
+       ]
+      ]
+     },
+     {
+      "cell": 34,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        34,
+        33
+       ]
+      ]
+     },
+     {
+      "cell": 35,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        35,
+        34
+       ]
+      ]
+     },
+     {
+      "cell": 36,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        36,
+        35
+       ]
+      ]
+     },
+     {
+      "cell": 38,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        38,
+        37
+       ]
+      ]
+     },
+     {
+      "cell": 146,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        146,
+        145
+       ]
+      ]
+     },
+     {
+      "cell": 151,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        151,
+        150
+       ]
+      ]
+     },
+     {
+      "cell": 165,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        165,
+        164
+       ]
+      ]
+     },
+     {
+      "cell": 177,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        177,
+        176
+       ]
+      ]
+     },
+     {
+      "cell": 178,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        178,
+        177
+       ]
+      ]
+     },
+     {
+      "cell": 247,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        247,
+        246
+       ]
+      ]
+     },
+     {
+      "cell": 248,
+      "deg_before": 3,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        248,
+        247
+       ],
+       [
+        248,
+        249
+       ]
+      ]
+     },
+     {
+      "cell": 264,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        264,
+        3
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "host": "H9",
+    "row_key": "r-60i1",
+    "n_target_cells": 15,
+    "n_removed": 17,
+    "n_left_pair": 0,
+    "removed": [
+     [
+      13,
+      170
+     ],
+     [
+      16,
+      15
+     ],
+     [
+      16,
+      307
+     ],
+     [
+      22,
+      1
+     ],
+     [
+      34,
+      33
+     ],
+     [
+      35,
+      34
+     ],
+     [
+      36,
+      35
+     ],
+     [
+      38,
+      37
+     ],
+     [
+      146,
+      145
+     ],
+     [
+      151,
+      150
+     ],
+     [
+      165,
+      164
+     ],
+     [
+      177,
+      176
+     ],
+     [
+      178,
+      177
+     ],
+     [
+      247,
+      246
+     ],
+     [
+      248,
+      247
+     ],
+     [
+      248,
+      249
+     ],
+     [
+      264,
+      3
+     ]
+    ],
+    "cells": [
+     {
+      "cell": 13,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        13,
+        170
+       ]
+      ]
+     },
+     {
+      "cell": 16,
+      "deg_before": 3,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        16,
+        15
+       ],
+       [
+        16,
+        307
+       ]
+      ]
+     },
+     {
+      "cell": 22,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        22,
+        1
+       ]
+      ]
+     },
+     {
+      "cell": 34,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        34,
+        33
+       ]
+      ]
+     },
+     {
+      "cell": 35,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        35,
+        34
+       ]
+      ]
+     },
+     {
+      "cell": 36,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        36,
+        35
+       ]
+      ]
+     },
+     {
+      "cell": 38,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        38,
+        37
+       ]
+      ]
+     },
+     {
+      "cell": 146,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        146,
+        145
+       ]
+      ]
+     },
+     {
+      "cell": 151,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        151,
+        150
+       ]
+      ]
+     },
+     {
+      "cell": 165,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        165,
+        164
+       ]
+      ]
+     },
+     {
+      "cell": 177,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        177,
+        176
+       ]
+      ]
+     },
+     {
+      "cell": 178,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        178,
+        177
+       ]
+      ]
+     },
+     {
+      "cell": 247,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        247,
+        246
+       ]
+      ]
+     },
+     {
+      "cell": 248,
+      "deg_before": 3,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        248,
+        247
+       ],
+       [
+        248,
+        249
+       ]
+      ]
+     },
+     {
+      "cell": 264,
+      "deg_before": 2,
+      "deg_after": 1,
+      "left_pair": true,
+      "canon_boundary": true,
+      "removed": [
+       [
+        264,
+        3
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "criteria": {
+  "Q1_identity": true,
+  "Q2_structure_lever": false,
+  "Q3_specificity": true,
+  "Q4_discipline": true
+ },
+ "branch": "STRUCTURE-INERT",
+ "notes": [
+  "pre-registration 54fc177; docstring byte-unchanged (sha-verified before and after the body write); body written by the run agent",
+  "the OFF baseline is exp243's deposited errs (the deposit IS the zero-drift baseline after exp256's bit-exact verification); Q1 re-verified it live on the un-operated substituted rows (all 12 hosts) before any operated run",
+  "the canonical reference, resolved outcome-blind BEFORE any operated run: the canon-row classification ON THE MEDIUM BEING OPERATED \u2014 for the substituted rows the medium IS the host base medium, so the reference is exactly exp259's base-medium canon-row classification; on the canonical rows the reference IS the row's own canonical classification, which is why the no-op holds by construction (Q1 asserts it live)",
+  "the removable-chord rule's operative face, disclosed: a chord is removable only if BOTH endpoints stay non-boundary under the row's own target \u2014 the row's target boundary is the freeze; the CANON-BOUNDARY class wins precedence in that the canon-value boundary set is preserved as a set (no cell's canon class is altered) and every touched cell's canon-boundary status is recorded in operation.per_row",
+  "READING DISCLOSURE (body-only; docstring/imports/constants byte-unchanged): this body's first deterministic run implemented the precedence clause as a hard freeze on every canon-boundary endpoint \u2014 STRUCTURALLY VACUOUS, as the run itself proved (0 chords removed on all 24 substituted rows, deterministic): the substituted medium IS the reference medium, so the >= 2-chord degree criterion is identical in both classifications and every de-pair target is a canon-boundary cell (targets = pj & ~bnd_row & bnd_canon); under that reading the pre-registered mechanism's stated goal \u2014 'until it leaves the PAIR-JUNCTION class under the row's own target' \u2014 is unreachable and Q2's pre-named PASS branch could never fire; the reading was resolved to the colon-rule (the row's own target boundary is the operative removable face) \u2014 the only reading under which the operation is live \u2014 and the battery re-run end-to-end; the vacuous first run's deposit was replaced by this deposit (its Q1/Q3/Q4 machinery outcomes carried over identically: 24/24 no-op, 72/72 anchor)",
+  "cells the precedence freezes stay pair cells (recorded: n_left_pair per row); every removal is recorded (the per-row removed-chord lists and per-cell records in operation.per_row)",
+  "the pooled form (mean over the 36 rows of the arm's worst err) is fixed in the body's READ_CONFIG, zero selection; all rows deposited",
+  "determinism: the substituted operated battery re-run on hosts H0-H5 bit-identical in-process (de_pair recomputed from scratch: media array-equal, removal records identical, errs bit-identical)",
+  "no wall-clock fields; the -60.0 production floor restored post-import and asserted at exit"
+ ],
+ "deposit_fingerprint": "9669017854fef85d798d0c074a2b5231d02db1ff1d41f6f77d938bfac5de3ccd"
+}
