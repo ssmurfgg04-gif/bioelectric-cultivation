@@ -1,0 +1,359 @@
+{
+ "exp": "exp224_series_final_form",
+ "claim": "THE SERIES FINAL-FORM DEPOSIT (L193's registered next): the corpus leg's acceptance question is CLOSED (exp217: 111 NOT-IN-LITERATURE + 8 extract-carrying rejects); the Stage 2 deposit leg completes \u2014 the 119-entry series (research/levin_voltage_series.json) re-exported AS the wetlab companion's final form: 111 NOT-IN-LITERATURE rows carrying their absence with the three-pass provenance inline, the 8 partial rows with their per-field extracts verbatim, census states + provenance inline, the whole artifact self-contained for wetlab use; the export is a projection, zero re-derivation (the structurally-blocked corpus leg converts to a deposit, the Section 5 registered item)",
+ "pre_registered": {
+  "gates_source": "module docstring, committed before any run (pre-registration 94e15cb, batch 12; gates Z1-Z4 fixed there, each evaluated exactly once)",
+  "gates": [
+   "GATE-Z1 (the projection) 119/119 entries exported; per-entry census_state == exp217's deposited verdict for that id; zero fields without provenance (the NIL rows carry the three-file provenance inline).",
+   "GATE-Z2 (the split integrity) the exported counts == exp217's deposited split exactly (0 accepted / 111 NOT-IN-LITERATURE / 8 rejected); any drift raises.",
+   "GATE-Z3 (the wetlab self-containment) the artifact parses standalone; every entry carries its series identity (id, source, pmid_or_doi, species, region_or_tissue); the sha256 of the artifact + of exp217's deposit recorded in the export's meta.",
+   "GATE-Z4 (hygiene) exp217's deposit byte-unchanged during the export; the export deterministic (re-run bit-identical)."
+  ]
+ },
+ "instruments": {
+  "census_deposit": "results/exp217_not_in_literature_census.json",
+  "census_deposit_sha256": "830bd5b53d99888cf93cae61baff594b1547504a730dc751cdae62a1bda66c76",
+  "census_scope": "exp217's deposited census VERBATIM (sections.verdicts, sections.counts_split, sections.not_in_literature_spec) + the w5d bank's rows (census states, census_missing lists, the NIL provenance naming sources 1/2/3)",
+  "row_base": "research/levin_voltage_series.json#series",
+  "row_base_sha256": "25608eb168c1b9154fb5f3ca485897122a0b33d9102c05b67d01f7dfce9f8f6f",
+  "machinery": "experiments/exp206_w5_dose_pass.py VERBATIM (read_sources, ser, sha256 helpers)",
+  "machinery_sha256": "84e786e9d11bab704e6160e558b90b347a3bdaa60a7b997cd359f11d2c23ec8c",
+  "sources_files": [
+   "results/w5_pass_sources.json",
+   "results/w5_pass_sources2.json",
+   "results/w5_pass_sources3.json"
+  ],
+  "sources_files_sha256": [
+   "142d78a6e6ce638ce714a27ff90a9d7cf01b3b16a1a2dcea38a80d97d5010998",
+   "8e7e6e1a5726aa1e98d8456fac80f95615327f6249a88746b3c9f5768322e318",
+   "f6175a681b1b79f81022ff298f3472669c2519e34a6f28ca323afb4ba741ea4b"
+  ],
+  "state_display": {
+   "accepted": "accepted",
+   "not_in_literature": "NOT-IN-LITERATURE",
+   "rejected": "rejected-extract-carrying"
+  }
+ },
+ "sections": {
+  "exp217_split_deposited": {
+   "n_normal_accepted": 0,
+   "n_not_in_literature": 111,
+   "n_rejected": 8,
+   "imported": 119
+  },
+  "export_split_realized": {
+   "accepted": 0,
+   "not_in_literature": 111,
+   "rejected": 8,
+   "imported": 119
+  },
+  "id_partition": {
+   "accepted": [],
+   "not_in_literature": [
+    "V1_head_depolarized_vs_trunk",
+    "V2_hyperpolarization_abnormal",
+    "V3_posterior_depol_ectopic_head",
+    "V4_junction_block_graded",
+    "V5_wound_depolarized",
+    "V6_stochastic_identical_perturbation",
+    "DB-415",
+    "DB-416",
+    "DB-417",
+    "DB-418",
+    "DB-419",
+    "DB-420",
+    "DB-421",
+    "DB-422",
+    "DB-423",
+    "DB-426",
+    "DB-427",
+    "DB-429",
+    "DB-430",
+    "DB-431",
+    "DB-432",
+    "DB-434",
+    "DB-435",
+    "DB-436",
+    "DB-437",
+    "DB-439",
+    "DB-440",
+    "DB-441",
+    "DB-442",
+    "DB-443",
+    "DB-444",
+    "DB-445",
+    "DB-446",
+    "DB-447",
+    "DB-448",
+    "DB-449",
+    "DB-450",
+    "DB-451",
+    "DB-452",
+    "DB-453",
+    "DB-454",
+    "DB-455",
+    "DB-456",
+    "DB-457",
+    "DB-458",
+    "DB-459",
+    "DB-460",
+    "DB-461",
+    "DB-476",
+    "DB-477",
+    "DB-478",
+    "DB-479",
+    "DB-1062",
+    "DB-1063",
+    "DB-1064",
+    "DB-1065",
+    "DB-1066",
+    "DB-1067",
+    "DB-1068",
+    "DB-1069",
+    "DB-1070",
+    "DB-294",
+    "DB-295",
+    "DB-296",
+    "DB-297",
+    "DB-391",
+    "DB-392",
+    "DB-394",
+    "DB-396",
+    "DB-397",
+    "DB-398",
+    "DB-399",
+    "DB-400",
+    "DB-401",
+    "DB-402",
+    "DB-403",
+    "DB-404",
+    "DB-405",
+    "DB-406",
+    "DB-407",
+    "DB-408",
+    "DB-409",
+    "DB-410",
+    "DB-411",
+    "DB-412",
+    "DB-413",
+    "DB-414",
+    "DB-279",
+    "DB-280",
+    "DB-322",
+    "DB-323",
+    "DB-324",
+    "DB-325",
+    "DB-326",
+    "DB-327",
+    "DB-328",
+    "DB-329",
+    "C01-beane2011-claim",
+    "C02-beane2013-claim",
+    "C03-durant2017-numbers",
+    "C04-durant2019-window",
+    "C05-eb2015-numbers",
+    "C06-eb2019-numbers",
+    "C07-oviedo2008-method",
+    "C08-durant2016-review",
+    "C09-pezzulo2021-claim",
+    "C10-marsh-beams-1952",
+    "C11-chernet2013-xenopus",
+    "C12-chernet2014-xenopus",
+    "C13-betse-pietak-levin",
+    "C14-vmem-inference-layer"
+   ],
+   "rejected": [
+    "DB-424",
+    "DB-425",
+    "DB-428",
+    "DB-433",
+    "DB-438",
+    "DB-1071",
+    "DB-393",
+    "DB-395"
+   ]
+  },
+  "sources_files": [
+   {
+    "pass": 1,
+    "file": "results/w5_pass_sources.json",
+    "sha256": "142d78a6e6ce638ce714a27ff90a9d7cf01b3b16a1a2dcea38a80d97d5010998",
+    "n_records": 119,
+    "mode": "full"
+   },
+   {
+    "pass": 2,
+    "file": "results/w5_pass_sources2.json",
+    "sha256": "8e7e6e1a5726aa1e98d8456fac80f95615327f6249a88746b3c9f5768322e318",
+    "n_records": 119,
+    "mode": "full"
+   },
+   {
+    "pass": 3,
+    "file": "results/w5_pass_sources3.json",
+    "sha256": "f6175a681b1b79f81022ff298f3472669c2519e34a6f28ca323afb4ba741ea4b",
+    "n_records": 119,
+    "mode": "full"
+   }
+  ],
+  "extracts_carried": {
+   "DB-424": {
+    "pass1": 0,
+    "pass2": 2,
+    "pass3": 0,
+    "total": 2
+   },
+   "DB-425": {
+    "pass1": 0,
+    "pass2": 2,
+    "pass3": 0,
+    "total": 2
+   },
+   "DB-428": {
+    "pass1": 0,
+    "pass2": 0,
+    "pass3": 1,
+    "total": 1
+   },
+   "DB-433": {
+    "pass1": 0,
+    "pass2": 0,
+    "pass3": 1,
+    "total": 1
+   },
+   "DB-438": {
+    "pass1": 0,
+    "pass2": 0,
+    "pass3": 1,
+    "total": 1
+   },
+   "DB-1071": {
+    "pass1": 0,
+    "pass2": 0,
+    "pass3": 1,
+    "total": 1
+   },
+   "DB-393": {
+    "pass1": 0,
+    "pass2": 3,
+    "pass3": 3,
+    "total": 6
+   },
+   "DB-395": {
+    "pass1": 0,
+    "pass2": 0,
+    "pass3": 3,
+    "total": 3
+   }
+  },
+  "field_provenance_rows": 75,
+  "new_field_provenance_fields": [
+   "species",
+   "db_experiment_id",
+   "db_figure_panel",
+   "direction_signature",
+   "drug_start_end",
+   "extracts_by_pass",
+   "id",
+   "kind",
+   "manipulation",
+   "model_quantity",
+   "n_if_stated",
+   "outcome_frequencies",
+   "pmid_or_doi",
+   "region_or_tissue",
+   "source",
+   "timepoint",
+   "vmem_mv",
+   "vmem_mv_note",
+   "extracts_by_pass.drug",
+   "extracts_by_pass.host",
+   "extracts_by_pass.kind",
+   "extracts_by_pass.name",
+   "extracts_by_pass.quote",
+   "extracts_by_pass.rank",
+   "extracts_by_pass.url",
+   "extracts_by_pass.value",
+   "extracts_by_pass.value_mM"
+  ],
+  "artifact": {
+   "file": "results/levin_voltage_series_wetlab_final.json",
+   "sha256": "ae2aca14f51384578acc1c192dbd1da37b3fa8643c2d1ff0752439083ec84c2b",
+   "sha256_canonical_payload": "1fd9170369ba580ad8eb90294aba393cbf56891e7ccd75782812a5a5ba1dae26",
+   "bytes": 351571,
+   "entries": 119,
+   "parses_standalone": true
+  }
+ },
+ "gates": {
+  "GATE-Z1": {
+   "verdict": "PASS",
+   "n_exported": 119,
+   "ids_match_series_order": true,
+   "census_state_matches_verdict_per_entry": true,
+   "census_missing_matches_deposit_and_bank": true,
+   "every_non_accepted_row_carries_provenance": true,
+   "nil_provenance_inline_live": true,
+   "sources_files_hash_live_vs_deposit": true,
+   "zero_fields_without_provenance": true,
+   "provenance_gaps": [],
+   "field_provenance_rows": 75
+  },
+  "GATE-Z2": {
+   "verdict": "PASS",
+   "exported_split": {
+    "accepted": 0,
+    "not_in_literature": 111,
+    "rejected": 8,
+    "imported": 119
+   },
+   "exp217_deposited_split": {
+    "n_normal_accepted": 0,
+    "n_not_in_literature": 111,
+    "n_rejected": 8,
+    "imported": 119
+   },
+   "bank_counts": {
+    "imported": 119,
+    "normal_accepted": 0,
+    "not_in_literature": 111,
+    "rejected": 8
+   },
+   "id_partition_matches_deposit": true,
+   "n_accepted": 0,
+   "n_not_in_literature": 111,
+   "n_rejected": 8
+  },
+  "GATE-Z3": {
+   "verdict": "PASS",
+   "parses_standalone": true,
+   "identity_fields": [
+    "id",
+    "source",
+    "pmid_or_doi",
+    "species",
+    "region_or_tissue"
+   ],
+   "identity_violations": [],
+   "artifact_sha256_canonical_payload": "1fd9170369ba580ad8eb90294aba393cbf56891e7ccd75782812a5a5ba1dae26",
+   "artifact_payload_sha_ok": true,
+   "census_deposit_sha256": "830bd5b53d99888cf93cae61baff594b1547504a730dc751cdae62a1bda66c76",
+   "census_deposit_sha_ok": true,
+   "n_entries_meta": 119
+  },
+  "GATE-Z4": {
+   "verdict": "PASS",
+   "exp217_deposit_byte_unchanged": true,
+   "exp217_deposit_sha256": "830bd5b53d99888cf93cae61baff594b1547504a730dc751cdae62a1bda66c76",
+   "export_deterministic": true,
+   "artifact_file": "results/levin_voltage_series_wetlab_final.json",
+   "artifact_sha256_file": "ae2aca14f51384578acc1c192dbd1da37b3fa8643c2d1ff0752439083ec84c2b",
+   "artifact_bytes": 351571,
+   "evidence_bank_series_byte_unchanged": true
+  }
+ },
+ "artifact": "results/levin_voltage_series_wetlab_final.json",
+ "census": "results/exp217_not_in_literature_census.json",
+ "verdict": "4/4 gates PASS | split 0 accepted / 111 NOT-IN-LITERATURE / 8 rejected of 119 | artifact results/levin_voltage_series_wetlab_final.json deposited",
+ "wall_s": 0.1
+}
