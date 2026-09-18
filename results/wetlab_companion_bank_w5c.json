@@ -1,0 +1,3639 @@
+{
+ "bank": "wetlab_companion",
+ "bank_file": "results/wetlab_companion_bank_w5c.json",
+ "baseline": {
+  "bank": "results/wetlab_companion_bank_w5b.json",
+  "disclosure": "the w5b bank is the frozen baseline for THIS pass; its rows are the merge's base",
+  "sha256": "382f048321f1f48e4c19dd701f1b9d86ff0972f45894b7249ac4b1eb528e1980"
+ },
+ "census_rule": [
+  {
+   "fields": [
+    "species"
+   ],
+   "item": "species",
+   "rule": "non-null"
+  },
+  {
+   "fields": [
+    "blocker",
+    "vehicle"
+   ],
+   "item": "blocker_or_vehicle",
+   "rule": "at least one non-null (L339 'blocker (and vehicle)')"
+  },
+  {
+   "fields": [
+    "concentration_mM",
+    "concentration_frac_c_full"
+   ],
+   "item": "concentration",
+   "rule": "at least one non-null (L340 'mM, and fraction of C_full')"
+  },
+  {
+   "fields": [
+    "exposure_window_start_rel_amputation",
+    "exposure_window_end_rel_amputation",
+    "exposure_mode"
+   ],
+   "item": "exposure_window",
+   "rule": "(start AND end non-null) OR mode non-null (L341 offers start/end or the sustained-or-pulse mode encoding)"
+  },
+  {
+   "fields": [
+    "amputation_plane"
+   ],
+   "item": "amputation_plane",
+   "rule": "non-null"
+  },
+  {
+   "fields": [
+    "phenotype_score"
+   ],
+   "item": "phenotype_score",
+   "rule": "non-null (a Durant-rubric penetrance; structure layer constrains it to [0,1])"
+  },
+  {
+   "fields": [
+    "n"
+   ],
+   "item": "n",
+   "rule": "non-null"
+  }
+ ],
+ "counts": {
+  "accepted": 0,
+  "imported": 119,
+  "rejected": 119
+ },
+ "entries": [],
+ "extended_fields": [
+  "dye_coupling_fraction",
+  "rig_calibration_constants",
+  "blocker_batch",
+  "blind_scoring_rubric_version"
+ ],
+ "field_provenance": [
+  {
+   "field": "bank",
+   "protocol_line": "L334",
+   "quote": "**The deposit schema.** Machine-readable (CSV + JSON), keyed to PlanformDB's"
+  },
+  {
+   "field": "protocol",
+   "protocol_line": "L313",
+   "quote": "## 5. W5 — THE RECORD PROPERTY (what the dosing table adds back)"
+  },
+  {
+   "field": "protocol_sha256",
+   "protocol_line": "L334-L336",
+   "quote": "**The deposit schema.** Machine-readable (CSV + JSON), keyed to PlanformDB's experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "schema_version",
+   "protocol_line": "L334-L336",
+   "quote": "**The deposit schema.** Machine-readable (CSV + JSON), keyed to PlanformDB's experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "field_provenance",
+   "protocol_line": "L335",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the"
+  },
+  {
+   "field": "required_fields",
+   "protocol_line": "L338-L344",
+   "quote": "- species - blocker (and vehicle) - concentration (mM, and fraction of C_full) - exposure window (start / end relative to amputation; sustained or pulse) - amputation plane (pre-pharyngeal / trunk / post-pharyngeal) - phenotype score (Durant-database rubric, plane-resolved penetrance) - n"
+  },
+  {
+   "field": "extended_fields",
+   "protocol_line": "L346-L348",
+   "quote": "Extended columns per row: measured dye-coupling fraction (the functional dial), the rig's intensity->mV calibration constants, blocker batch, and the blind-scoring rubric version. Deposited with the publication (supplementary"
+  },
+  {
+   "field": "census_rule",
+   "protocol_line": "L338-L344",
+   "quote": "- species - blocker (and vehicle) - concentration (mM, and fraction of C_full) - exposure window (start / end relative to amputation; sustained or pulse) - amputation plane (pre-pharyngeal / trunk / post-pharyngeal) - phenotype score (Durant-database rubric, plane-resolved penetrance) - n"
+  },
+  {
+   "field": "import_source",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "import_rules",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "entries",
+   "protocol_line": "L329",
+   "quote": "Every W1/W2/W3 animal contributes one row with the measured dose identity"
+  },
+  {
+   "field": "rejects",
+   "protocol_line": "L11-L13",
+   "quote": "**Ledger discipline:** every section is a pre-registered prediction with an explicit pass/fail gate, registered before the first animal is dosed. A failed gate is REPORTED, not iterated past — the FALSIFICATION.md discipline applies"
+  },
+  {
+   "field": "counts",
+   "protocol_line": "L338-L344",
+   "quote": "- species - blocker (and vehicle) - concentration (mM, and fraction of C_full) - exposure window (start / end relative to amputation; sustained or pulse) - amputation plane (pre-pharyngeal / trunk / post-pharyngeal) - phenotype score (Durant-database rubric, plane-resolved penetrance) - n"
+  },
+  {
+   "field": "species",
+   "protocol_line": "L338",
+   "quote": "- species"
+  },
+  {
+   "field": "blocker",
+   "protocol_line": "L339",
+   "quote": "- blocker (and vehicle)"
+  },
+  {
+   "field": "vehicle",
+   "protocol_line": "L339",
+   "quote": "- blocker (and vehicle)"
+  },
+  {
+   "field": "concentration_mM",
+   "protocol_line": "L340",
+   "quote": "- concentration (mM, and fraction of C_full)"
+  },
+  {
+   "field": "concentration_frac_c_full",
+   "protocol_line": "L340",
+   "quote": "- concentration (mM, and fraction of C_full)"
+  },
+  {
+   "field": "exposure_window_start_rel_amputation",
+   "protocol_line": "L341",
+   "quote": "- exposure window (start / end relative to amputation; sustained or pulse)"
+  },
+  {
+   "field": "exposure_window_end_rel_amputation",
+   "protocol_line": "L341",
+   "quote": "- exposure window (start / end relative to amputation; sustained or pulse)"
+  },
+  {
+   "field": "exposure_mode",
+   "protocol_line": "L341",
+   "quote": "- exposure window (start / end relative to amputation; sustained or pulse)"
+  },
+  {
+   "field": "amputation_plane",
+   "protocol_line": "L342",
+   "quote": "- amputation plane (pre-pharyngeal / trunk / post-pharyngeal)"
+  },
+  {
+   "field": "phenotype_score",
+   "protocol_line": "L343",
+   "quote": "- phenotype score (Durant-database rubric, plane-resolved penetrance)"
+  },
+  {
+   "field": "n",
+   "protocol_line": "L344",
+   "quote": "- n"
+  },
+  {
+   "field": "dye_coupling_fraction",
+   "protocol_line": "L346",
+   "quote": "Extended columns per row: measured dye-coupling fraction (the functional"
+  },
+  {
+   "field": "rig_calibration_constants",
+   "protocol_line": "L346-L347",
+   "quote": "Extended columns per row: measured dye-coupling fraction (the functional dial), the rig's intensity->mV calibration constants, blocker batch, and the"
+  },
+  {
+   "field": "blocker_batch",
+   "protocol_line": "L347",
+   "quote": "dial), the rig's intensity->mV calibration constants, blocker batch, and the"
+  },
+  {
+   "field": "blind_scoring_rubric_version",
+   "protocol_line": "L347-L348",
+   "quote": "dial), the rig's intensity->mV calibration constants, blocker batch, and the blind-scoring rubric version. Deposited with the publication (supplementary"
+  },
+  {
+   "field": "provenance",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "provenance.source_deposit",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "provenance.source_record",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "provenance.source_key",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "provenance.source_record_sha256",
+   "protocol_line": "L335-L336",
+   "quote": "experiment schema (the `planform_mining.py` plane / drug taxonomy) so the exp92 row-level mapping can be re-run with measured doses:"
+  },
+  {
+   "field": "census_missing",
+   "protocol_line": "L338-L344",
+   "quote": "- species - blocker (and vehicle) - concentration (mM, and fraction of C_full) - exposure window (start / end relative to amputation; sustained or pulse) - amputation plane (pre-pharyngeal / trunk / post-pharyngeal) - phenotype score (Durant-database rubric, plane-resolved penetrance) - n"
+  }
+ ],
+ "import_rules": {
+  "blocker": "first extract of kind 'blocker' — the extractor emits a record candidate drug token (the record's own drug_start_end names plus capitalized tokens of its own manipulation string, minus a fixed stopword lexicon) only when that token is stated verbatim in a returned snippet; the value copied is the record's token itself",
+  "concentration_mM": "first extract of kind 'concentration' whose value_mM is a number > 0; the extractor (scripts/exp206_w5_sources_sweep.mjs, deposited alongside) only emits a statement whose stated unit is the protocol's declared mM or convertible to it by factor arithmetic (uM/µM/μM -> 1e-3, nM -> 1e-6, M -> 1e3), only when the statement is not a range endpoint, and — when the record carries keyed drugs (drug_start_end) — only when one of the record's own drug tokens is stated in the same snippet (L335's keyed drug taxonomy); %-of-solution statements are NOT emitted (mM conversion would need molar mass: inference)",
+  "exposure_mode": "first extract of kind 'exposure_mode' — the protocol's own encoding tokens ('sustained'/'pulse') stated verbatim; numeric literature exposure windows are NOT mapped (the schema carries no unit, and a unit conversion would be inference)",
+  "n": "first extract of kind 'n' with an integer >= 1 — verbatim 'n = k' or 'k <count-noun>' statements only",
+  "phenotype_score": "first extract of kind 'phenotype' — a verbatim stated penetrance ('X% of animals/worms/planarians/...') mapped to the schema's [0,1] score by X/100; no other phenotype reading is taken",
+  "provenance": "rows whose record has a sources-file entry carry provenance.source_deposit = results/w5_pass_sources.json, source_record = the per-record locator in it, source_key = the series record id, source_record_sha256 = sha256 of the canonical JSON of that exact sources-file record (the keyed, re-runnable chain of L335-336); records with no sources-file entry keep the scaffold import's original provenance; every literature-filled field's own provenance (url + host + retrieved date + verbatim quote) is deposited per record in the pass deposit's verdicts (the row schema of the protocol has no per-field slot)"
+ },
+ "import_source": {
+  "figure_pass_disclosure": "STRUCTURE-DRIVEN, not query-driven: the figure queries pre-named per record ({source} {db_figure_panel} {species} + {db_experiment_id} {db_figure_panel}); 20 records without db identity fields carry figure_identity_absent verdicts",
+  "pass_rules": {
+   "base_rows": "the W5B BANK's rows (pass-2's product), not the scaffold rows — the w5b bank is the frozen baseline for this pass; the acceptance predicate is UNCHANGED (the exp203 scaffold's required-field census)",
+   "fill_never_overwrite": "a field is filled ONLY when the baseline row's value is null (the exp203 import's own reading is never overwritten)",
+   "ordering": "extracts are tried in the deterministic order (source rank as returned, then statement order in the sources file); the first admissible extract wins; ties impossible"
+  },
+  "sources_file": "results/w5_pass_sources3.json",
+  "sources_mode": "full",
+  "sources_records": 119
+ },
+ "pass": 3,
+ "protocol": "docs/STAGE5_WETLAB_COMPANION_PROTOCOL.md",
+ "protocol_sha256": "89041a79f8a55818ab6a412933b46b2c25084c842434cee7709d7bc6d1dd462f",
+ "rejects": [
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 3,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "d3455c980e3fe87956b508bd10336555c670ffa99ff6be09a119b5ea053bc643",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "V1_head_depolarized_vs_trunk",
+    "source_record": "results/w5_pass_sources3.json#records.V1_head_depolarized_vs_trunk",
+    "source_record_sha256": "32df29615f78a39ab066789cd30cea5a80c041b6317d713dcf7b0d496d75f368"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 3,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "cf24e28dc5d980892734174be2bdcfd157e5e2f27548c3374fa5ea5832d7ffda",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "V2_hyperpolarization_abnormal",
+    "source_record": "results/w5_pass_sources3.json#records.V2_hyperpolarization_abnormal",
+    "source_record_sha256": "53bdc2c3be86b8056405f67c28bda7ea95fdace35080d6bbdda82e78e10bfd33"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 3,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "2200efb32458406eb114639ce3aad1fce021a3d41e8d15b457793425310cc7fb",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "V3_posterior_depol_ectopic_head",
+    "source_record": "results/w5_pass_sources3.json#records.V3_posterior_depol_ectopic_head",
+    "source_record_sha256": "bea43a8879ab6dcff5ea197d655d8ac31626c3eb40ee217b4b5d739bc0517733"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 3,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "2ff6cfeb9021459b5b6630e3768324c92b4e7036b29dc2307599382625625fa1",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "V4_junction_block_graded",
+    "source_record": "results/w5_pass_sources3.json#records.V4_junction_block_graded",
+    "source_record_sha256": "af394297817411f918d29a11efc99c619eab3691d6bba875c9d4b5c74d1b5cfb"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 3,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "06c60e17cc76ac55df197c8d6fcb96354c75e8755828236b8d39ea0aff4e77e0",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "V5_wound_depolarized",
+    "source_record": "results/w5_pass_sources3.json#records.V5_wound_depolarized",
+    "source_record_sha256": "457e2a3befe99b8349c5343a2e0b3600672652c9e8352878216fe7ecc64c0a27"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 3,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "0c74d9b3c7cfd1f0e89f16740c3b4ebc47f9b4820abbe4e175f01fb585bcf73b",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "V6_stochastic_identical_perturbation",
+    "source_record": "results/w5_pass_sources3.json#records.V6_stochastic_identical_perturbation",
+    "source_record_sha256": "75e172b9396ef8fa92d5818d4c39291d599f58b55d283ba46cc78828057ae2a1"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica / Schmidtea mediterranea (sim: 1D sheet N=100)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 132,
+   "phenotype_score": 0.050000000000000044,
+   "provenance": {
+    "pass2_source_record_sha256": "8b0bcb63b7886742a170c9bfed805feaaaf9051c8eeddce7b73785dc45669823",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-415",
+    "source_record": "results/w5_pass_sources3.json#records.DB-415",
+    "source_record_sha256": "7459ebfeb45a7e4e5acf2f1ba74b8d728aae42a0c3692f6cadcd995b92dfdca3"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 118,
+   "phenotype_score": 0.28,
+   "provenance": {
+    "pass2_source_record_sha256": "3454ed71bfb1035c40e6c75e393fc4aa060ac245302d63c051738c949e2f363e",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-416",
+    "source_record": "results/w5_pass_sources3.json#records.DB-416",
+    "source_record_sha256": "8fc84f024f179e18b15b035015ea172a468426a32bceb9b167ad2f735c5848fd"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 115,
+   "phenotype_score": 0.5,
+   "provenance": {
+    "pass2_source_record_sha256": "ab83605e4749ea96dcedf252e4710c2b8de6f8a57934ceaff98f8e764b56830a",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-417",
+    "source_record": "results/w5_pass_sources3.json#records.DB-417",
+    "source_record_sha256": "8dcd6c97cfcf2fa643f3a73af65c76cc978b79a182b46fc0c8f6e0319a680b05"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 145,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "6cfea90df066d3296c4dfc1325a85c85322c6275e43694b6b35bc2e375f92544",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-418",
+    "source_record": "results/w5_pass_sources3.json#records.DB-418",
+    "source_record_sha256": "29badc0238635752c0c76e5f3dcd8978549d66d159f6eace54d9f02a7448c49a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 178,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "b5bf8e29ad4b4589afabc353761a13572c32e92497bd97fbb92cc62dd90c9427",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-419",
+    "source_record": "results/w5_pass_sources3.json#records.DB-419",
+    "source_record_sha256": "01ac25082608c63951c7c4a386820a27170771662eed74ff05be0d2e36a71016"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 119,
+   "phenotype_score": 0.040000000000000036,
+   "provenance": {
+    "pass2_source_record_sha256": "52ecc3348dd41660e4f204424cd6514ba11b40d7668624ee523f83c0038e9674",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-420",
+    "source_record": "results/w5_pass_sources3.json#records.DB-420",
+    "source_record_sha256": "f946b824fdd0578ae5e4a17e04cf56e301df140e0b3c6a26210795fc2a9aef5a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 168,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "caaa0ef5438f2eb4c41a1e9cebd08fc8ed27e217ca5af09ea649d8ae10658a6a",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-421",
+    "source_record": "results/w5_pass_sources3.json#records.DB-421",
+    "source_record_sha256": "b2513e0bf42cc432bbcbabc5ab9483ab0ea021efdcac56f0c11f4583736d80c3"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 107,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "803ece04505a1848dd8eb13f3757cdd00a61578d6bd548b8182456318dbe419c",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-422",
+    "source_record": "results/w5_pass_sources3.json#records.DB-422",
+    "source_record_sha256": "ff2b960fa2fde3a21cae0b3d1e3b3bf8bbd49d9ad5e20ff973b485afc8a0cdb9"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 109,
+   "phenotype_score": 0.050000000000000044,
+   "provenance": {
+    "pass2_source_record_sha256": "83a6115954105def52f088a3c67d1cebbc6045fbb395fed3d137c279074cdd99",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-423",
+    "source_record": "results/w5_pass_sources3.json#records.DB-423",
+    "source_record_sha256": "085034bab1ddcf7f066014f7a1bf6df09a3600e12c5a4aff192219e8db3f8d5b"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 13,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "d7487065fe582025e97d88b9c91d7fd13d92f9ece8c12b0ae00ed9250e5aaea0",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-424",
+    "source_record": "results/w5_pass_sources3.json#records.DB-424",
+    "source_record_sha256": "5fa06321ad766b62709780116a076993b8b0698572c30a1f6072a93d2b6077e5"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 13,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "0c8fd0ee1bc509ec6fb4ea9366dc85c5273569b05451a2e3ca0ec16faa9cc4a3",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-425",
+    "source_record": "results/w5_pass_sources3.json#records.DB-425",
+    "source_record_sha256": "50708affdb7a017446fce378870cf9a61bc047df052c2af144d6710da4122f92"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 23,
+   "phenotype_score": 0.35,
+   "provenance": {
+    "pass2_source_record_sha256": "1693f576b83fe32b8371f1276e9ac3c3246df4a91074ec5f742f808d7cdd2526",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-426",
+    "source_record": "results/w5_pass_sources3.json#records.DB-426",
+    "source_record_sha256": "29dfec83669130a80db6e769b626573c2b52b0698dcb378f134998d2a51e6e1e"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 23,
+   "phenotype_score": 0.33999999999999997,
+   "provenance": {
+    "pass2_source_record_sha256": "1a5dc3fcc7ac73e413efc8744bf7946d2c9e039c3bd7ff2c22cb893f23464da8",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-427",
+    "source_record": "results/w5_pass_sources3.json#records.DB-427",
+    "source_record_sha256": "220cbeac3172a564212ab5f14fc44c5894f2039ba02f4533ef921df59edf8183"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 8,
+   "phenotype_score": 0.25,
+   "provenance": {
+    "pass2_source_record_sha256": "10804b800b547550857b34f98e887d3faf2f61fa6f39cab44a12cba1efdc2ece",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-428",
+    "source_record": "results/w5_pass_sources3.json#records.DB-428",
+    "source_record_sha256": "f95d96dae273d0025667a1313d57a9aec11f70d087f51b244f7fb58aef7b9582"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 9,
+   "phenotype_score": 0.55,
+   "provenance": {
+    "pass2_source_record_sha256": "49b35a40970e642b1421f27f6774aaf1c3dc123a2ddd2e6d10cdfca61e1b07dc",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-429",
+    "source_record": "results/w5_pass_sources3.json#records.DB-429",
+    "source_record_sha256": "103266a979a292322798aab7aa200ef6bfe1463b06ff0c6a5646d6ecc6d2c480"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 14,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "fb2e5f233e9540752597b8bc9017c64496c374a4162bb97443a70f583628374e",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-430",
+    "source_record": "results/w5_pass_sources3.json#records.DB-430",
+    "source_record_sha256": "16550f70e440469396d14ce8f125d3b20cf7a67b337fce00790f289fa7ded957"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 24,
+   "phenotype_score": 0.5800000000000001,
+   "provenance": {
+    "pass2_source_record_sha256": "f40fe2210c3ec2c261ab6763a15e7420e6aa097ba611f08bc5a8f63b243d530d",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-431",
+    "source_record": "results/w5_pass_sources3.json#records.DB-431",
+    "source_record_sha256": "696b8167a0bb7b2ff6d391977271e2fe92d5522719d34856f8647e67f7de571b"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 13,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "57cc2864f34a8961be5ceb14a3806ce9b04c8995428282882dc91a3cb42860be",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-432",
+    "source_record": "results/w5_pass_sources3.json#records.DB-432",
+    "source_record_sha256": "a0ac7bb6d58dc3d6cef6fbb910218308dd1efc6953aea6a942686f70cd13d5c0"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 20,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "4b9ac9358047600d9db490cd7177ea9a45dd4cb3f714c843237900299bf7931c",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-433",
+    "source_record": "results/w5_pass_sources3.json#records.DB-433",
+    "source_record_sha256": "5156cb90e1347d83c6a0db7785a1005d6a65fcc432786e3b1ede4b5819d36307"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 10,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "3afae0b3b0216c5e1c858b0ab555d2ff3fe7b8bd1380ee6716443f6477357067",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-434",
+    "source_record": "results/w5_pass_sources3.json#records.DB-434",
+    "source_record_sha256": "44037da55a020552795b4ff3680059deb92bfd37e6df69ed2ed1cd06c040934e"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.13,
+   "n": 10,
+   "phenotype_score": 0.85,
+   "provenance": {
+    "pass2_source_record_sha256": "40c8a95a47c1be0339f978945c93b00d8ad9b45dbe7580945fa900c41dc2ad0f",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-435",
+    "source_record": "results/w5_pass_sources3.json#records.DB-435",
+    "source_record_sha256": "b2c5160bc5223be5519179d42a469ed587eb1d95f19eed9cf9f2a8d16d18921c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.25,
+   "n": 10,
+   "phenotype_score": 0.9,
+   "provenance": {
+    "pass2_source_record_sha256": "2e86d725a27248b1d9c5020c6e6ff4ad0248d5591f056b8b649ac27cf13f7358",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-436",
+    "source_record": "results/w5_pass_sources3.json#records.DB-436",
+    "source_record_sha256": "5b401f42ff51f4ab078c4e33ef447c6f2c802bdced2a143685dc52d866877ac2"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.5,
+   "n": 10,
+   "phenotype_score": 0.5800000000000001,
+   "provenance": {
+    "pass2_source_record_sha256": "b45eb477258a24e37957d77d317d2c5328370e982210c3de84d31abf9a242f65",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-437",
+    "source_record": "results/w5_pass_sources3.json#records.DB-437",
+    "source_record_sha256": "d06a08c5dd4cd9e195fe1df6b7550ea0c76fd68731296261e8ab0bc9f7b328c8"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 1.0,
+   "n": 10,
+   "phenotype_score": 0.09999999999999998,
+   "provenance": {
+    "pass2_source_record_sha256": "b09c92eee034440d8e9668e9d4bbe8cc1728659773177676c708e86ca0396b17",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-438",
+    "source_record": "results/w5_pass_sources3.json#records.DB-438",
+    "source_record_sha256": "b437e3e580ced709aa96ba60379af80f0a19f5cb45983bcd420e907969908e99"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 10,
+   "phenotype_score": 0.09999999999999998,
+   "provenance": {
+    "pass2_source_record_sha256": "0a0463febec5d24ffba5e797c97938a04ea82971e1a6791855bd5eda4db9d96a",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-439",
+    "source_record": "results/w5_pass_sources3.json#records.DB-439",
+    "source_record_sha256": "8ae5d72bbe9d108425afc1b1fc9ed8deeb3500bcbbb0da328b866e626cfaa40d"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 3.0,
+   "n": 10,
+   "phenotype_score": 0.09999999999999998,
+   "provenance": {
+    "pass2_source_record_sha256": "6ee730132b1db8ad34d7a17d783a2a390bfe919b216ee74425b0a37d660792fe",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-440",
+    "source_record": "results/w5_pass_sources3.json#records.DB-440",
+    "source_record_sha256": "0b9389c7244d35543e237203c34429061fdc6c437dff07d889b3b0fc02431a25"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 10,
+   "phenotype_score": 0.18000000000000005,
+   "provenance": {
+    "pass2_source_record_sha256": "69233d47724bb584b9456eb9723daf3d3c43e216b5ad42bdafd8514576611dab",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-441",
+    "source_record": "results/w5_pass_sources3.json#records.DB-441",
+    "source_record_sha256": "e14669e675b0c620c8f67dfc71b136b1b674bf3774680e15cd1f9b2afca542e7"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 10,
+   "phenotype_score": 0.75,
+   "provenance": {
+    "pass2_source_record_sha256": "d2f078296cab133d81606fc24b1514c76accd428c01849c3ddf0cf5c5c6e6306",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-442",
+    "source_record": "results/w5_pass_sources3.json#records.DB-442",
+    "source_record_sha256": "8224c702a8412f6727e18b8b0001cf5244e54e2e8846e0878b1f5e63d7119bbc"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 10,
+   "phenotype_score": 0.19999999999999996,
+   "provenance": {
+    "pass2_source_record_sha256": "7234588e789d6d173cca1017360f40a246337f959a58a6d5d0a58171b5c70e3e",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-443",
+    "source_record": "results/w5_pass_sources3.json#records.DB-443",
+    "source_record_sha256": "7ff5eeee29738e68c2e9a7aa737ff5d6c2a0d1b9a5d5c7b946a90ae15bc2c567"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 10,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "665e2f9970c2f748e43959c8cd6ed7701cdd731d12a64c6265b9d7ce2ff98c98",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-444",
+    "source_record": "results/w5_pass_sources3.json#records.DB-444",
+    "source_record_sha256": "bd4c7785b06385b84bc933c8f18b62d6101223cf1e640f5d69d1dd61e06664ec"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "none",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": 0.0025,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 14,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "bb94f1967f0224a9f730d8aa4ac0320c167a432fc1894ab1f3b3ebff9bc34104",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-445",
+    "source_record": "results/w5_pass_sources3.json#records.DB-445",
+    "source_record_sha256": "1f6e9f9931ab23d1da1b9f5e93a4137a22b94b4df9d593fbd6de0106e90e01ee"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 20,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "10f5e3bfa6d577efcadb8361a8db4b2ff767b1e978c02e89b35644d744991024",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-446",
+    "source_record": "results/w5_pass_sources3.json#records.DB-446",
+    "source_record_sha256": "c646db51ea47bda92e18a1df08d3a2478463266fe4adb04e0862901569e2c30c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 20,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "142c7b5ae4fffd59ac8c67215b92447d85eb8a3a890ab27d800106d293992b3d",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-447",
+    "source_record": "results/w5_pass_sources3.json#records.DB-447",
+    "source_record_sha256": "4b3ce553980114bab2dcb82aaff4816a318546cd9f1d5b30a8557b7ba5ed408d"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 21,
+   "phenotype_score": 0.19999999999999996,
+   "provenance": {
+    "pass2_source_record_sha256": "1ac47913e7e2c3352d7b959df079b22a8c2271a3a3b3ca40a63ac150c82312c2",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-448",
+    "source_record": "results/w5_pass_sources3.json#records.DB-448",
+    "source_record_sha256": "4fe194a05ab04bdd1c46a9fb3c4fff12d45dd374eca44001b0167a80dde087bc"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 18,
+   "phenotype_score": 0.8,
+   "provenance": {
+    "pass2_source_record_sha256": "6281c43fd5597e9ac74b7e4c9402dd3281e6ad8f153882d6e669d4ecb0edacfc",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-449",
+    "source_record": "results/w5_pass_sources3.json#records.DB-449",
+    "source_record_sha256": "3e57de0f45e32658c55071859a53420c0e4d3ba90a043b0bb24f8d5e0698a088"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 20,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "af1a80e50a98705b4b81845476f0f0d12fa290f400a17883552a1aeae8e7349d",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-450",
+    "source_record": "results/w5_pass_sources3.json#records.DB-450",
+    "source_record_sha256": "76038406f132be959ff2eed5152c90fd6eda2eef7a9efb3209240eab0f763491"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": 0.01,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 13,
+   "phenotype_score": 0.06000000000000005,
+   "provenance": {
+    "pass2_source_record_sha256": "4d272997766cde81843da8a7cffc0fce17095fbe9e206fb8398a89ed36557646",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-451",
+    "source_record": "results/w5_pass_sources3.json#records.DB-451",
+    "source_record_sha256": "6de2a69826a08a0737a0c285585b19a70b4a9a157286d773884101f08c310b8a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 13,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "ac7d10b66c5dd0b8c0a18183924cdc0de619014bf7226a3d54cf0f1dec5890da",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-452",
+    "source_record": "results/w5_pass_sources3.json#records.DB-452",
+    "source_record_sha256": "919f9b235332d3c35a745398a0f179ec634ad71e6ff64243c2db9fca38d9139f"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 45,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "33bb50de548c6bb59389f4b6b6cb642d4c7ef2bf5298cf13d798123a83790146",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-453",
+    "source_record": "results/w5_pass_sources3.json#records.DB-453",
+    "source_record_sha256": "384022486ec1021d43a4b3799fd65d5939a75eab65bb85b764f3060da23e4ffd"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 45,
+   "phenotype_score": 0.22999999999999998,
+   "provenance": {
+    "pass2_source_record_sha256": "69b1a5f1ad9d9a6001035ebca05469a486280eff71fcc2081bd1195befbd2b78",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-454",
+    "source_record": "results/w5_pass_sources3.json#records.DB-454",
+    "source_record_sha256": "fadbf2f24a17a0c1cfda46384c19edf4796a62beebce30c417ec54d1f0bd1181"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 38,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "55244b185d9a73a400703331df0933727fccefd7e5f5ad451c150d39b11a25f8",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-455",
+    "source_record": "results/w5_pass_sources3.json#records.DB-455",
+    "source_record_sha256": "f58d74cd73c1ec77d66387d3870b88d66b1fa7ffb1a8be19f7fa4dc4588db895"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": 0.01,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 38,
+   "phenotype_score": 0.12,
+   "provenance": {
+    "pass2_source_record_sha256": "3a1cf17062b22fe626864701266d82892b8bf347c4554594fa07e04ad689038b",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-456",
+    "source_record": "results/w5_pass_sources3.json#records.DB-456",
+    "source_record_sha256": "86f8f0ffc4775d119f6bd094ac4253dbc84e9eb97d12dad03d40408f99636c3f"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 26,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "2d75a97f870ab6b9108049d28c27dfb2cf80e4cc4c7b68cc1e798f4d20b924ef",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-457",
+    "source_record": "results/w5_pass_sources3.json#records.DB-457",
+    "source_record_sha256": "7dcd53bcc13753a43c8a4553307d353fcfa8ce0dd21e80bec20894988229c61a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 19,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "4569a2351c4981d1a82e1d131b6f56ac0a074f07be665e416acadf3c6dee7815",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-458",
+    "source_record": "results/w5_pass_sources3.json#records.DB-458",
+    "source_record_sha256": "2e38412921793cc0b7cb370117582fc3f35b83faed8aae10fa8a1e5e1f415200"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": 0.01,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 48,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "342411a0fdae59d23f6671d82d9b1eaedc015a331bfee0d2a466263d92521201",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-459",
+    "source_record": "results/w5_pass_sources3.json#records.DB-459",
+    "source_record_sha256": "795601e2f3742881d5799db7aafe34ea2735b0bc72742fa786bca2b9a367b2d1"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 72,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "b684553b5fede7d86842c34cb4e00a59c8224ae37b9ec86dc15d4da22a72ddf6",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-460",
+    "source_record": "results/w5_pass_sources3.json#records.DB-460",
+    "source_record_sha256": "25b7fad8390025f3eb3180a6ec0cd410bea6d866ffff655a49e5532483dc4288"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": 0.01,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 24,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "b9514a43e264e330f404a23c293e882db3bdd03a6d74ed5189ea31ddbe5af2f2",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-461",
+    "source_record": "results/w5_pass_sources3.json#records.DB-461",
+    "source_record_sha256": "d620a1fc05c8a72beb9a6e16014f8d618e39e9794e0e1a4c6b2d24400b7cadce"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 46,
+   "phenotype_score": 0.5,
+   "provenance": {
+    "pass2_source_record_sha256": "b09df270e5364861a810c93a211d37bd22a5cd8315e8ac9392c817d6800059d4",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-476",
+    "source_record": "results/w5_pass_sources3.json#records.DB-476",
+    "source_record_sha256": "d2263d88e4d87bded4e2a2e8cba0228d95548d262c35b54334c4fafca453a9fa"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 120,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "747c527ce57344f390f427bb59a8a04dd6f18d56c728270723e491c8268f113f",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-477",
+    "source_record": "results/w5_pass_sources3.json#records.DB-477",
+    "source_record_sha256": "131e0bce2da8f721ca66fc58ebbb2a9d6f6993a9dfd5ca853f70154a85194022"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 72,
+   "phenotype_score": 0.09999999999999998,
+   "provenance": {
+    "pass2_source_record_sha256": "a2dfd5f7104e4e6a7e0ba2ac77026245f508707ebd2b06beef50866be13b435f",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-478",
+    "source_record": "results/w5_pass_sources3.json#records.DB-478",
+    "source_record_sha256": "900b638d4e7201ac777dec6a5817e4d097f483e14e3b2ddd37003d99f815101d"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 48,
+   "phenotype_score": 0.09999999999999998,
+   "provenance": {
+    "pass2_source_record_sha256": "7b9f59a74e30028defd91d95b6166b0ee4c80d0bd03928c961917da77ade6c4e",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-479",
+    "source_record": "results/w5_pass_sources3.json#records.DB-479",
+    "source_record_sha256": "b882ed6983a586cd6b2fb0a2e6f88f907c12b7b05601b46a647278f8464d1538"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 15,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "449ad7e9fd9cb37d02f0126a108aff20003ccadfa8891b0f7b2719a15c02085f",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-1062",
+    "source_record": "results/w5_pass_sources3.json#records.DB-1062",
+    "source_record_sha256": "2955fdb850e1efe7a3360f44e72c3d47ef0587c699076e144fe54f75be8a6a20"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 8,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "67e0ebfa6eeb788a64ed4166c9ee02f47deec354790ee9b5d686a240f4eaa2d7",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-1063",
+    "source_record": "results/w5_pass_sources3.json#records.DB-1063",
+    "source_record_sha256": "0f1de07ed41d679f2568d847a4cc32bbfc362f18403647082cb37e3da36b2cb8"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 14,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "5dcf1b0fbe924dd95f12c20dac42e824c1e1d29aa02a150ad93e3802cac9f3c1",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-1064",
+    "source_record": "results/w5_pass_sources3.json#records.DB-1064",
+    "source_record_sha256": "a916e0ed13fdd59917f81cd5b93964fb99bf43b9f944f03e5bdb5b554a16ad53"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": 0.01,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 20,
+   "phenotype_score": 0.9,
+   "provenance": {
+    "pass2_source_record_sha256": "70e856fbb7215766075c71d5b4505c6f17324a05cc64ab49b84fe229b3ab3cdd",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-1065",
+    "source_record": "results/w5_pass_sources3.json#records.DB-1065",
+    "source_record_sha256": "6db09ebc3d66e3f22b89ec468144c2688c768ceb5080d0b789c088afc946e271"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 15,
+   "phenotype_score": 0.6,
+   "provenance": {
+    "pass2_source_record_sha256": "bfbfc73e6828dbe725ae2416f8b4f2279fbccee0b0edfd3a33a4cbe9b45f755f",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-1066",
+    "source_record": "results/w5_pass_sources3.json#records.DB-1066",
+    "source_record_sha256": "502212b8e544cc9943bde00f017c5af2768dbc61af038d0fb374d37f26857855"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": 0.0025,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 15,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "85ed724af020047a663c198cd1b2d1cdb97e0d4442e3a4905ce361c1a7dc82e3",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-1067",
+    "source_record": "results/w5_pass_sources3.json#records.DB-1067",
+    "source_record_sha256": "7b96b5fcdbaf8c6084a51ef09430db87a8bff21d6a7b47e9985e6d178fe4ce01"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 8,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "7ec3cbc6e6037786abd2c8f749f7644ac4e8d888c63ef3060f48262724af8325",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-1068",
+    "source_record": "results/w5_pass_sources3.json#records.DB-1068",
+    "source_record_sha256": "207e25fabf2acd786fb0b3ca988e6df084ebf1b50549c17f94879a78781bc1a1"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 11,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "0722e27d2a7aee7d39cf9e037e01aaa23420febbeb9a9cd684c7ad1df26cfecf",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-1069",
+    "source_record": "results/w5_pass_sources3.json#records.DB-1069",
+    "source_record_sha256": "b65535a8734971c9ec77e4522791e55cc7978924e50d6a433abbb7f2839aa816"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 11,
+   "phenotype_score": 0.91,
+   "provenance": {
+    "pass2_source_record_sha256": "7f31cff9ff34fa0053845cfc5994f4d93a11738bce306670b0e956c803df9072",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-1070",
+    "source_record": "results/w5_pass_sources3.json#records.DB-1070",
+    "source_record_sha256": "57d9fff838beb4814d37460163bf3b0fa37b6940d99c09f7ae11cc399dec093a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Octanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 8,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "0315f9f501f2bbad245ef53efaeb731656ede114d04e6bdc37db153911091730",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-1071",
+    "source_record": "results/w5_pass_sources3.json#records.DB-1071",
+    "source_record_sha256": "ea1c2edc291f4ac98ececde24460ca162ebd592d50cb7144ba0347b72a2c24db"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head_tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "K-ATPase",
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 11,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "4273f6eed288dfa374e49184872fafe09bb87a49e80765393f3f22a9d5881ce6",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-294",
+    "source_record": "results/w5_pass_sources3.json#records.DB-294",
+    "source_record_sha256": "35d676da5207382195e46191dce7c59d4a8b1029e41c81aa87c7c7b060c7d709"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Potassium",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 30,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "7a80d31f805a962d28aa330f9e08cd2b93f26acd3044bb43cca4f85ea4aa4c08",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-295",
+    "source_record": "results/w5_pass_sources3.json#records.DB-295",
+    "source_record_sha256": "91a3e36001b33a99827816ee8a833a3d58651ec887e3e2459db2f295c07656f1"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.53,
+   "provenance": {
+    "pass2_source_record_sha256": "83bc17cd8d2786c3adbe70d064b7bd8ec8f5660af4116a25e91be9f0695a9eeb",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-296",
+    "source_record": "results/w5_pass_sources3.json#records.DB-296",
+    "source_record_sha256": "2a7c2032328b97525b34e7e152ce5df19c32e305d6c652a9304f92381dd94871"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080; Potassium",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.06000000000000005,
+   "provenance": {
+    "pass2_source_record_sha256": "1a1de45ba96b3520a38a4342e4f5bfe06e554d1773588a1563ef062bbaa0796d",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-297",
+    "source_record": "results/w5_pass_sources3.json#records.DB-297",
+    "source_record_sha256": "d06c7accb57470aae67f9e53f682005a2862cedc04620f2e39b1a5fa5d9bbfcd"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 120,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "cdfc2441cc4e7fa8b33e9bf1ed6a75bcef8c39ccb04b39eac4a926cdb2f01f48",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-391",
+    "source_record": "results/w5_pass_sources3.json#records.DB-391",
+    "source_record_sha256": "9694c4a3bd119248d8e6c63a8277e15b755f7034385e9fa8bf9604c97461dff5"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 138,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "84aa83994a2e1c3d0934b93726c695dc8650d5bbd40cb981c1f490c60c9f0bde",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-392",
+    "source_record": "results/w5_pass_sources3.json#records.DB-392",
+    "source_record_sha256": "f85694af8dcca8eb0def42c3738512a3f0a3d4a282b44b3e6e78df4d92f3a18c"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 175,
+   "phenotype_score": 0.78,
+   "provenance": {
+    "pass2_source_record_sha256": "b3e690351063fc843f26c49726da74d110ae843118a20e7cbc42d358d6b6a4cd",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-393",
+    "source_record": "results/w5_pass_sources3.json#records.DB-393",
+    "source_record_sha256": "73d86fcb594aeac17a8487fa56880bb074d4dda532715cbb25a23cd4eb78264b"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 111,
+   "phenotype_score": 0.31999999999999995,
+   "provenance": {
+    "pass2_source_record_sha256": "112f0966efe144056168bd05421fdd4eff81c2cdaee7dc133a85ac684c4ca4fe",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-394",
+    "source_record": "results/w5_pass_sources3.json#records.DB-394",
+    "source_record_sha256": "7cafb255d309ccd50eb2fd537eb3a4f0665ae51cd2dd16cce94363f5b5eac233"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 106,
+   "phenotype_score": 0.5800000000000001,
+   "provenance": {
+    "pass2_source_record_sha256": "9a58421bc161bdb3d33739c4205a081ff7527df89e113bc0f5832d0aba48c6f0",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-395",
+    "source_record": "results/w5_pass_sources3.json#records.DB-395",
+    "source_record_sha256": "c7c58b54bb11ed1ba1e9f71892e06cc49fead73e437b2433e9faaeef1b803611"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": 0.01,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 1,
+   "phenotype_score": 0.6699999999999999,
+   "provenance": {
+    "pass2_source_record_sha256": "9b9270c1710ed3f9d6e4fc11b9f14dc3bcbac73d4ff13129a1ab49d877a1b5f1",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-396",
+    "source_record": "results/w5_pass_sources3.json#records.DB-396",
+    "source_record_sha256": "bf29adbba246473e5da0d97215b3768c4ec6df7a859590e9a8b1bca48a663bb1"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.25,
+   "provenance": {
+    "pass2_source_record_sha256": "c37e0598f70fc9d7cc1fb98f8ce9867ebf30aed61f9fdc6787fc64d330caf263",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-397",
+    "source_record": "results/w5_pass_sources3.json#records.DB-397",
+    "source_record_sha256": "45f59031a4168fd0681efee91c103bd4ea6f17c43698399b07531a5630ea5b2b"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.76,
+   "provenance": {
+    "pass2_source_record_sha256": "9be27e03e17e06a79390729d1509661a5466c41dce449e4444baccf84d2423bf",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-398",
+    "source_record": "results/w5_pass_sources3.json#records.DB-398",
+    "source_record_sha256": "b9809ad4f2f19bb700c1a45142e5c4a826c4e39ffcd9f2777144ecd01e371125"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "ebd55669caa2c0a600ab32de632ded60d746c58997a60be68e59ae3929c98701",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-399",
+    "source_record": "results/w5_pass_sources3.json#records.DB-399",
+    "source_record_sha256": "c241ccc75d092d32a7b6a4c930e21f75f06ac431b79e094a40c29ed484eb4bd8"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "e76e280b0641f8b1ce9065f550200652ff1b082d2ce4c1ca4f75e7e5e70321bc",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-400",
+    "source_record": "results/w5_pass_sources3.json#records.DB-400",
+    "source_record_sha256": "8a3b784b1f600af01b83de20b3c488dc6d5cb88b3d43e12eebbe11706ea87963"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 1,
+   "phenotype_score": 0.43000000000000005,
+   "provenance": {
+    "pass2_source_record_sha256": "dd90558026ad9cf6632f7f1a2bc0dedcf403e1b8379f6ce23cac31fdaeb24db3",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-401",
+    "source_record": "results/w5_pass_sources3.json#records.DB-401",
+    "source_record_sha256": "217f8bdf78516875484ab07113c4afe3b941db59dcff5e25a701cb936e6b1b19"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "K-ATPase",
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 1,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "bad576a3bea1dda681808c5768759f855e7f89f7ba283bae8c028def6dfcfacf",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-402",
+    "source_record": "results/w5_pass_sources3.json#records.DB-402",
+    "source_record_sha256": "1d80a035c9773636052240d6193fca39c68aec1143358baa2c08767b2b007781"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 42,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "7ed8819f47c00090bb59f3e5564a1a88d3137edc900a67825bde06926b01d25a",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-403",
+    "source_record": "results/w5_pass_sources3.json#records.DB-403",
+    "source_record_sha256": "4dbdec86b14f76d58b72bf23ad824cffa41788ab707fc9e9111821b5cc0f763b"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "K-ATPase",
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 1,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "19c293e7d6599bf54c5ce41c7155b59721659a07e04473b2c97a05fb478aeccf",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-404",
+    "source_record": "results/w5_pass_sources3.json#records.DB-404",
+    "source_record_sha256": "3e45a8441d1a684e2cf22c922e98e5204daec24e581d39a710e92faded0479bd"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 3.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 43,
+   "phenotype_score": 0.26,
+   "provenance": {
+    "pass2_source_record_sha256": "3eb69f29fa9becfe0a4b2d2c75d925a9c222b3ca0728992e90342635657b0c55",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-405",
+    "source_record": "results/w5_pass_sources3.json#records.DB-405",
+    "source_record_sha256": "a5f118327245a66ef180fee4a9cb42dcc1d6aacd49814c975b4ca162c60bb6f1"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "ivermectin",
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 1,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "b236a438cf097da78855827fe45400a1e542a645393527f1eb1731e58f11e1af",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-406",
+    "source_record": "results/w5_pass_sources3.json#records.DB-406",
+    "source_record_sha256": "b2da67d51b177a004ca626d0d8d310257782a172cd7693da9411dba7fa64e695"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "K-ATPase",
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 34,
+   "phenotype_score": 0.12,
+   "provenance": {
+    "pass2_source_record_sha256": "1b6ee231ab7abb4d0c9d864b501a7e378f86f19d0e9c518977806e1c9b8ec765",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-407",
+    "source_record": "results/w5_pass_sources3.json#records.DB-407",
+    "source_record_sha256": "058ea87ef625f1835cb5003ed62a461bffee20a39ef5c726ab94e0b39b7acac4"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "K-ATPase",
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 16,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "2d3a9cd93a5a9ab722ccd5daa27a493c19c318cacdbeee69a89205888da743b8",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-408",
+    "source_record": "results/w5_pass_sources3.json#records.DB-408",
+    "source_record_sha256": "07d6a3bdb7d4fa0a2844aa3e00505c742f29dd57c24cba50278c7a0a2b163f0d"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "K-ATPase",
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 4,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "eff0c3e97f87b52c61c00520328fd6514032e4d9779e01dc03a3930d413ea8a4",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-409",
+    "source_record": "results/w5_pass_sources3.json#records.DB-409",
+    "source_record_sha256": "29006c5ebf69d20c9e89225197dcb76d004b00c20fa69528082190215dc93476"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "K-ATPase",
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 24,
+   "phenotype_score": 0.25,
+   "provenance": {
+    "pass2_source_record_sha256": "ea5f5135bc1619aa9417c555c3aa0035aa200cbdcd6c7be0e67b67bafce87aba",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-410",
+    "source_record": "results/w5_pass_sources3.json#records.DB-410",
+    "source_record_sha256": "d87b0c2e353709f741faffe185caa9558341cb1c55a7afdb0ea39682f8170089"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Ivermectin",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 11,
+   "phenotype_score": 0.92,
+   "provenance": {
+    "pass2_source_record_sha256": "911c53409a0080b646db032abd936a6eb8e3bc682a389d1e6a738400d46df85e",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-411",
+    "source_record": "results/w5_pass_sources3.json#records.DB-411",
+    "source_record_sha256": "7da7149c44e210a5af323aab2ee55b1c334c84861d56711640ba3aa7e982040d"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "SCH-28080",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 13,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "75d0e9b2196c16dd757af78990f56dd255af70b2019a0c0226d1db621d9e7672",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-412",
+    "source_record": "results/w5_pass_sources3.json#records.DB-412",
+    "source_record_sha256": "0fdb63a9bcaf36ff3921f33f06a262a362453ad48da97ffff88897da297761c3"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Chloride; Ivermectin",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 6,
+   "phenotype_score": 0.37,
+   "provenance": {
+    "pass2_source_record_sha256": "a5e610391b92b45037366a4a9d9eb539bc790d78481a6efcfa68d4a6f7f47e30",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-413",
+    "source_record": "results/w5_pass_sources3.json#records.DB-413",
+    "source_record_sha256": "939a92ebb3ed1d1a656cf052b73372b77db660718e80c6b7c46f4a2256b9dca9"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Nicardipine",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 61,
+   "phenotype_score": 0.42000000000000004,
+   "provenance": {
+    "pass2_source_record_sha256": "1f42c6056e11f34b970e4eec09fc0b09cd532710b25879930e7d44165f836638",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-414",
+    "source_record": "results/w5_pass_sources3.json#records.DB-414",
+    "source_record_sha256": "864fae7d816a052636c50884c5f375bf7fce5f6e6c50ebe3d2cb76b229c12e0d"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 30,
+   "phenotype_score": 1.0,
+   "provenance": {
+    "pass2_source_record_sha256": "3c89b72d11c68161363137be1e886905da0c998bd8fdb425a0d1669b24517365",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-279",
+    "source_record": "results/w5_pass_sources3.json#records.DB-279",
+    "source_record_sha256": "853af075502f7d7bf0f3370dff3b67a2de0d7d086cc6effa534aa63085ae015a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Schmidtea mediterranea",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "none",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": 0.87,
+   "provenance": {
+    "pass2_source_record_sha256": "252dfb0c4860e00c16dda739ee016e6137cf14548ef90a6205954241c32344fc",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-280",
+    "source_record": "results/w5_pass_sources3.json#records.DB-280",
+    "source_record_sha256": "c39671fd6742c46021a0758d5632d604ee53bee8b5a73d5522259ef2d0190c20"
+   },
+   "rig_calibration_constants": null,
+   "species": "Schmidtea mediterranea",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Heptanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 423,
+   "phenotype_score": 0.43000000000000005,
+   "provenance": {
+    "pass2_source_record_sha256": "91216a63355dfee0d4c7500bd08695c5bc0522c9722716eb6ab11156a3273628",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-322",
+    "source_record": "results/w5_pass_sources3.json#records.DB-322",
+    "source_record_sha256": "d5a83be3a2c2ee82940ccc7c0ceb9765674041708a20bad8227ec8f94e84e145"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 107,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "4717d0381c48e080ed4a3bce7180f0da602c8fb6a5fab32aca8f17f0f642cb60",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-323",
+    "source_record": "results/w5_pass_sources3.json#records.DB-323",
+    "source_record_sha256": "ee6278550f7aa285f22ccc145f0382d7a04c35ad4eb4696fca6a189bc214aa4a"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Hexanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 1,
+   "phenotype_score": 0.19999999999999996,
+   "provenance": {
+    "pass2_source_record_sha256": "846ad4d7b4f96a574e5cc4bc9ccc817e5f3f70c4d198f800f79984baafcb3101",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-324",
+    "source_record": "results/w5_pass_sources3.json#records.DB-324",
+    "source_record_sha256": "8627b03dbdbb2df51eb68d4ff1c299cdeb310729c1a054070d87987d5cb09b58"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Heptanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 54,
+   "phenotype_score": 0.17000000000000004,
+   "provenance": {
+    "pass2_source_record_sha256": "500f44689286cf03e095711ae440d564c9b6116cf0b159f51f5fe2be5d32088c",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-325",
+    "source_record": "results/w5_pass_sources3.json#records.DB-325",
+    "source_record_sha256": "32eb45739fd2b42fd1ca3898170a348ead31dae05523345e7d619940e516e6d8"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Heptanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 71,
+   "phenotype_score": 0.52,
+   "provenance": {
+    "pass2_source_record_sha256": "f535923ef6be9b5135c22227bd53377a3e30062e6eed0282347b718a3d973728",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-326",
+    "source_record": "results/w5_pass_sources3.json#records.DB-326",
+    "source_record_sha256": "3085e544725f71509514dd91a1229c6e8df813dabae7673a7a27587085dd079d"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Heptanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 111,
+   "phenotype_score": 0.6799999999999999,
+   "provenance": {
+    "pass2_source_record_sha256": "075929671918f46e80e8e329519e797438e56a32ad89f639b83e64333b2dc95e",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-327",
+    "source_record": "results/w5_pass_sources3.json#records.DB-327",
+    "source_record_sha256": "336b7b19a66d6c2cda627191e6f465f8e7fcc7c36610fb5fdd244c5bebd4e9dd"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Heptanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 0.0,
+   "exposure_window_start_rel_amputation": 2.0,
+   "n": 86,
+   "phenotype_score": 0.18999999999999995,
+   "provenance": {
+    "pass2_source_record_sha256": "9fd01a3774546ca673c615254e0b989b498c5ccc63b1f890e6a9af35baac5fe4",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-328",
+    "source_record": "results/w5_pass_sources3.json#records.DB-328",
+    "source_record_sha256": "3067a9485de9a621de56a34a6d1610d3898435340f3bb0e3f4a07fe65165dc96"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "tail",
+   "blind_scoring_rubric_version": null,
+   "blocker": "Heptanol",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": 2.0,
+   "exposure_window_start_rel_amputation": 0.0,
+   "n": 57,
+   "phenotype_score": 0.0,
+   "provenance": {
+    "pass2_source_record_sha256": "109bf704fd37a012483fab9a5299bfa9cfc2f85d8d8c3fb6bf1ad48f9efac10e",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "DB-329",
+    "source_record": "results/w5_pass_sources3.json#records.DB-329",
+    "source_record_sha256": "64e357b528fd19ac016cc40489dd437695f77d5c271649b5a2eef0439b0e0ea7"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "208f898b1db48dea6d4af0f02c44976a3d233ee5d5300a0494e085b428f44a18",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C01-beane2011-claim",
+    "source_record": "results/w5_pass_sources3.json#records.C01-beane2011-claim",
+    "source_record_sha256": "8ffc8d7142c7e29181e41e3051ccc1def1761ab226fb1b11566aae2ac0351260"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": "K-ATPase",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "0ca229a6ac05edc908f73c9ba487edbbd596225cf87bfaace386ac012e51104a",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C02-beane2013-claim",
+    "source_record": "results/w5_pass_sources3.json#records.C02-beane2013-claim",
+    "source_record_sha256": "2bdc2517823b72f5f969859673e6553634627c0e0ec91e3a4a717a6643ee52fc"
+   },
+   "rig_calibration_constants": null,
+   "species": "D. japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "bec633335baff852fd3a2ca1b5735b6c9cd97fdde2739be087930b93ead283d6",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C03-durant2017-numbers",
+    "source_record": "results/w5_pass_sources3.json#records.C03-durant2017-numbers",
+    "source_record_sha256": "d38bc841e25810f7c2e87051446414dd4a82f85bba4946b4390155ec7701cbf2"
+   },
+   "rig_calibration_constants": null,
+   "species": "D. japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "98a04f43ad90c52ff92f4c500cb0605ba2350002cba07555a5c2a3e463348110",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C04-durant2019-window",
+    "source_record": "results/w5_pass_sources3.json#records.C04-durant2019-window",
+    "source_record_sha256": "c2c0ec0ae772af886e4b5c709b9d0a2d61aac3c04442a55627e8b3deba2eae76"
+   },
+   "rig_calibration_constants": null,
+   "species": "planaria",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "0bd80e3cac77d1ef766b6b0b5c8c57f0fc560b52a939200463c9082f57c39773",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C05-eb2015-numbers",
+    "source_record": "results/w5_pass_sources3.json#records.C05-eb2015-numbers",
+    "source_record_sha256": "a24a26f64b083d7439a4cc704a3eba704eac9e2d67c784ca55b9e45164c28139"
+   },
+   "rig_calibration_constants": null,
+   "species": "Girardia dorotocephala",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "head",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": 1.0,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "9aeb90ee38e06dadf11e8287ead0dccc65b2cfc1516caf3d04eda7a9a7cd2b66",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C06-eb2019-numbers",
+    "source_record": "results/w5_pass_sources3.json#records.C06-eb2019-numbers",
+    "source_record_sha256": "9a42c89e09ebd42dbcb44ee3fe9d857d9d95454636aeae93c13499fb640ecf98"
+   },
+   "rig_calibration_constants": null,
+   "species": "D. japonica",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": "DiBAC4",
+   "blocker_batch": null,
+   "census_missing": [
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "52633c949d003ad8afcd48816d2f2ba1c9743b097b5f994b3c17b8997c65c481",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C07-oviedo2008-method",
+    "source_record": "results/w5_pass_sources3.json#records.C07-oviedo2008-method",
+    "source_record_sha256": "3d338ff2a1d7d3a3673842b925c819d730cee77ed961c9e1ea381552ff8f968d"
+   },
+   "rig_calibration_constants": null,
+   "species": "planaria",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "5e42eae5e9836d4caf5f30a94a23638855f04ebdf83f03880ed24f167b81e0f5",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C08-durant2016-review",
+    "source_record": "results/w5_pass_sources3.json#records.C08-durant2016-review",
+    "source_record_sha256": "3e8609c245b5ed5dd174aee87cd5538be9ff84bf91d712143284b10cfbc9bb91"
+   },
+   "rig_calibration_constants": null,
+   "species": "planaria",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "531a7767eac403a2c7fbb4d89dd6b6399deb999f12ff40a61770e4b5f1ac4270",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C09-pezzulo2021-claim",
+    "source_record": "results/w5_pass_sources3.json#records.C09-pezzulo2021-claim",
+    "source_record_sha256": "f7049a1c8e45a7c74db7656860dacdddec9d0d864520e76eded84524e0b782fe"
+   },
+   "rig_calibration_constants": null,
+   "species": "planaria",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "trunk",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "a08dd16f51eddb2c765c8f38a9695c8deadc81a878a27665581b3dfcbd784fd3",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C10-marsh-beams-1952",
+    "source_record": "results/w5_pass_sources3.json#records.C10-marsh-beams-1952",
+    "source_record_sha256": "5824f5b4a9ef144059638f12275d2afecd29f7fd5039f73531fe1343371a4641"
+   },
+   "rig_calibration_constants": null,
+   "species": "Dugesia tigrina",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "exposure_window",
+    "phenotype_score"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": 70.0,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": 5,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "72167c7527a5e154672a21157aec049c85815258867749d675ca63ac11ab5dba",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C11-chernet2013-xenopus",
+    "source_record": "results/w5_pass_sources3.json#records.C11-chernet2013-xenopus",
+    "source_record_sha256": "41ff2c6c15d707093dfeeb13248775f1b723bf8c1c65c88076c456cd032d6598"
+   },
+   "rig_calibration_constants": null,
+   "species": "Xenopus laevis",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "58390aa2d6aba6ddc060c2ec5c7644f35947d1dcd8e8ebb5899acb2acf2503b1",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C12-chernet2014-xenopus",
+    "source_record": "results/w5_pass_sources3.json#records.C12-chernet2014-xenopus",
+    "source_record_sha256": "cfb06d5e429d7d4785e81c9b137e747aa8cddc85a7d2fff192fa8b5b0420b176"
+   },
+   "rig_calibration_constants": null,
+   "species": "Xenopus laevis",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "ba11d42e5e406468bec674195336f83d0b155853d8c821bc2c962f498973f9b3",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C13-betse-pietak-levin",
+    "source_record": "results/w5_pass_sources3.json#records.C13-betse-pietak-levin",
+    "source_record_sha256": "642cec3f71770e36b8d0160516731c13a494838adab96626d16bd262a0ac63c6"
+   },
+   "rig_calibration_constants": null,
+   "species": "in-silico multicellular tissue (planaria-anchored platform)",
+   "vehicle": null
+  },
+  {
+   "amputation_plane": "lateral",
+   "blind_scoring_rubric_version": null,
+   "blocker": null,
+   "blocker_batch": null,
+   "census_missing": [
+    "blocker_or_vehicle",
+    "concentration",
+    "exposure_window",
+    "phenotype_score",
+    "n"
+   ],
+   "concentration_frac_c_full": null,
+   "concentration_mM": null,
+   "dye_coupling_fraction": null,
+   "exposure_mode": null,
+   "exposure_window_end_rel_amputation": null,
+   "exposure_window_start_rel_amputation": null,
+   "n": null,
+   "phenotype_score": null,
+   "provenance": {
+    "pass2_source_record_sha256": "5ea126b49c1b600cbd3ca8b059c74cf3cee817f162ae4947ba59723e3b7975fb",
+    "source_deposit": "results/w5_pass_sources3.json",
+    "source_key": "C14-vmem-inference-layer",
+    "source_record": "results/w5_pass_sources3.json#records.C14-vmem-inference-layer",
+    "source_record_sha256": "a8bf614949ce4bbc16aa5ac47309a34a1ff22dbe46c5cee9b568039e223df273"
+   },
+   "rig_calibration_constants": null,
+   "species": "S. mediterranea (atlas-grounded)",
+   "vehicle": null
+  }
+ ],
+ "required_fields": [
+  "species",
+  "blocker",
+  "vehicle",
+  "concentration_mM",
+  "concentration_frac_c_full",
+  "exposure_window_start_rel_amputation",
+  "exposure_window_end_rel_amputation",
+  "exposure_mode",
+  "amputation_plane",
+  "phenotype_score",
+  "n"
+ ],
+ "schema_version": "1.0"
+}

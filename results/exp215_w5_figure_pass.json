@@ -1,0 +1,2982 @@
+{
+ "exp": "exp215_w5_figure_pass",
+ "claim": "THE W5 FIGURE-PASS (L184's registered next): STRUCTURE-DRIVEN, not query-driven \u2014 the figure queries pre-named per record ({source} {db_figure_panel} {species} + {db_experiment_id} {db_figure_panel}); if the figure-pass also yields zero full censuses, the honest alternative registers: a record whose W5 fields are stated NOWHERE becomes an explicit NOT-IN-LITERATURE deposit (the registered validator extension)",
+ "pre_registered": {
+  "gates_source": "module docstring, committed before any run (pre-registration 08b1cfc, batch 10; gates F1-F4 fixed there, each evaluated exactly once)",
+  "gates": [
+   "GATE-F1 (the sweep) 119/119 covered by the figure-pass; per-record verdicts deposited; complete, not sampled",
+   "GATE-F2 (acceptance integrity) every accepted entry validates; the L182/L184 import rules verbatim; zero fields without provenance",
+   "GATE-F3 (the yield) the accepted count vs exp211's 0/119; the per-field fill-rate deltas vs the w5b bank; the branch: ACCEPTED (>= 1) / the validator extension REGISTERED",
+   "GATE-F4 (hygiene) the w5b bank byte-unchanged; the new bank deterministic; the sources file deposited"
+  ]
+ },
+ "sections": {
+  "verdicts": [
+   {
+    "index": 0,
+    "id": "V1_head_depolarized_vs_trunk",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 1,
+    "id": "V2_hyperpolarization_abnormal",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 2,
+    "id": "V3_posterior_depol_ectopic_head",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 3,
+    "id": "V4_junction_block_graded",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 4,
+    "id": "V5_wound_depolarized",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 5,
+    "id": "V6_stochastic_identical_perturbation",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 6,
+    "id": "DB-415",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 7,
+    "id": "DB-416",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 8,
+    "id": "DB-417",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 9,
+    "id": "DB-418",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 10,
+    "id": "DB-419",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 11,
+    "id": "DB-420",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 12,
+    "id": "DB-421",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 13,
+    "id": "DB-422",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 14,
+    "id": "DB-423",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 15,
+    "id": "DB-424",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 16,
+    "id": "DB-425",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 17,
+    "id": "DB-426",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 18,
+    "id": "DB-427",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 19,
+    "id": "DB-428",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (1 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 20,
+    "id": "DB-429",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 21,
+    "id": "DB-430",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 22,
+    "id": "DB-431",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 23,
+    "id": "DB-432",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 24,
+    "id": "DB-433",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (1 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 25,
+    "id": "DB-434",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 26,
+    "id": "DB-435",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 27,
+    "id": "DB-436",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 28,
+    "id": "DB-437",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 29,
+    "id": "DB-438",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (1 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 30,
+    "id": "DB-439",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 31,
+    "id": "DB-440",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 32,
+    "id": "DB-441",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 33,
+    "id": "DB-442",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 7 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 34,
+    "id": "DB-443",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 35,
+    "id": "DB-444",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 36,
+    "id": "DB-445",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "concentration_mM",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 37,
+    "id": "DB-446",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 38,
+    "id": "DB-447",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 39,
+    "id": "DB-448",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 40,
+    "id": "DB-449",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 41,
+    "id": "DB-450",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 42,
+    "id": "DB-451",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "concentration_mM": {
+      "url": "https://www.frontiersin.org",
+      "host_name": "www.frontiersin.org",
+      "source_name": "Rapid behavioral screening in the planarian Dugesia",
+      "rank": 6,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": "oral screening on adult and regenerating planarians using at least 5 concentrations up to 10 \u00b5M for all 21 mixtures and measured AChE ... Read more",
+      "stated": {
+       "drug": null
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 43,
+    "id": "DB-452",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 7 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 44,
+    "id": "DB-453",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 45,
+    "id": "DB-454",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 46,
+    "id": "DB-455",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 47,
+    "id": "DB-456",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "concentration_mM": {
+      "url": "https://www.frontiersin.org",
+      "host_name": "www.frontiersin.org",
+      "source_name": "Rapid behavioral screening in the planarian Dugesia",
+      "rank": 6,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": "oral screening on adult and regenerating planarians using at least 5 concentrations up to 10 \u00b5M for all 21 mixtures and measured AChE ... Read more",
+      "stated": {
+       "drug": null
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 48,
+    "id": "DB-457",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 49,
+    "id": "DB-458",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 50,
+    "id": "DB-459",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "concentration_mM": {
+      "url": "https://www.frontiersin.org",
+      "host_name": "www.frontiersin.org",
+      "source_name": "Rapid behavioral screening in the planarian Dugesia",
+      "rank": 7,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": "oral screening on adult and regenerating planarians using at least 5 concentrations up to 10 \u00b5M for all 21 mixtures and measured AChE ... Read more",
+      "stated": {
+       "drug": null
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 51,
+    "id": "DB-460",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 52,
+    "id": "DB-461",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "concentration_mM": {
+      "url": "https://www.frontiersin.org",
+      "host_name": "www.frontiersin.org",
+      "source_name": "Rapid behavioral screening in the planarian Dugesia",
+      "rank": 7,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": "oral screening on adult and regenerating planarians using at least 5 concentrations up to 10 \u00b5M for all 21 mixtures and measured AChE ... Read more",
+      "stated": {
+       "drug": null
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 53,
+    "id": "DB-476",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 54,
+    "id": "DB-477",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 55,
+    "id": "DB-478",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 56,
+    "id": "DB-479",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 57,
+    "id": "DB-1062",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 58,
+    "id": "DB-1063",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 59,
+    "id": "DB-1064",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 60,
+    "id": "DB-1065",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "concentration_mM": {
+      "url": "https://www.frontiersin.org",
+      "host_name": "www.frontiersin.org",
+      "source_name": "Rapid behavioral screening in the planarian Dugesia",
+      "rank": 6,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": "oral screening on adult and regenerating planarians using at least 5 concentrations up to 10 \u00b5M for all 21 mixtures and measured AChE ... Read more",
+      "stated": {
+       "drug": null
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 61,
+    "id": "DB-1066",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 62,
+    "id": "DB-1067",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "concentration_mM",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 63,
+    "id": "DB-1068",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 64,
+    "id": "DB-1069",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 65,
+    "id": "DB-1070",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 66,
+    "id": "DB-1071",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (1 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 67,
+    "id": "DB-294",
+    "accepted": false,
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "blocker": {
+      "url": "https://www.biorxiv.org",
+      "host_name": "www.biorxiv.org",
+      "source_name": "Effects of Ivermectin exposure on regeneration of D.",
+      "rank": 3,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": "Oct 17, 2017 \u2014 Beane , W.S. , et al., A chemical genetics approach reveals H,K-ATPase-mediated membrane voltage is required for planarian headregeneration. Chem ... Read more",
+      "stated": {
+       "drug": "K-ATPase"
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 68,
+    "id": "DB-295",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 69,
+    "id": "DB-296",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 70,
+    "id": "DB-297",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 71,
+    "id": "DB-391",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 72,
+    "id": "DB-392",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 73,
+    "id": "DB-393",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 74,
+    "id": "DB-394",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 75,
+    "id": "DB-395",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (1 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 76,
+    "id": "DB-396",
+    "accepted": false,
+    "census_missing": [
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "blocker": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3278711",
+      "host_name": "pmc.ncbi.nlm.nih.gov",
+      "source_name": "A Chemical Genetics Approach Reveals H,K-ATPase  - PMC",
+      "rank": 0,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": "by WS Beane \u00b7 2011 \u00b7 Cited by 256 \u2014 Utilizing the highly specific inhibitor, SCH-28080, our data reveal that H+,K+-ATPase-mediated membrane depolarization is essential for ante",
+      "stated": {
+       "drug": "SCH-28080"
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "concentration_mM",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 77,
+    "id": "DB-397",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 78,
+    "id": "DB-398",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 79,
+    "id": "DB-399",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 80,
+    "id": "DB-400",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 81,
+    "id": "DB-401",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 82,
+    "id": "DB-402",
+    "accepted": false,
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "blocker": {
+      "url": "https://chrisfieldsresearch.com",
+      "host_name": "chrisfieldsresearch.com",
+      "source_name": "The role of early bioelectric signals in the regeneration of",
+      "rank": 3,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": ". Morokuma , D. S. Adams , and M . Levin . 2011 . A Chemical genetics approach reveals H,K-ATPase-mediated membrane voltage is required for planarian ... 41 pages",
+      "stated": {
+       "drug": "K-ATPase"
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 83,
+    "id": "DB-403",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 84,
+    "id": "DB-404",
+    "accepted": false,
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "blocker": {
+      "url": "https://chrisfieldsresearch.com",
+      "host_name": "chrisfieldsresearch.com",
+      "source_name": "The role of early bioelectric signals in the regeneration of",
+      "rank": 3,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": "S ., J. Morokuma, D. S. Adams, and M. Levin. 2011. A Chemical genetics approach reveals H,K-ATPase-mediated membrane voltage is required for planarian ... 41 pages",
+      "stated": {
+       "drug": "K-ATPase"
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 85,
+    "id": "DB-405",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 86,
+    "id": "DB-406",
+    "accepted": false,
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "blocker": {
+      "url": "https://www.biorxiv.org",
+      "host_name": "www.biorxiv.org",
+      "source_name": "Effects of Ivermectin exposure on regeneration of D.",
+      "rank": 3,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": "Oct 17, 2017 \u2014 ivermectin (IVM), a chloride channel opener drug commonly used to combat heart worms, Exposure of iv",
+      "stated": {
+       "drug": "ivermectin"
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 87,
+    "id": "DB-407",
+    "accepted": false,
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "blocker": {
+      "url": "https://chrisfieldsresearch.com",
+      "host_name": "chrisfieldsresearch.com",
+      "source_name": "The role of early bioelectric signals in the regeneration of",
+      "rank": 3,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": ". Morokuma , D. S. Adams , and M . Levin . 2011 . A Chemical genetics approach reveals H,K-ATPase-mediated membrane voltage is required for planarian ... 41 pages",
+      "stated": {
+       "drug": "K-ATPase"
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 88,
+    "id": "DB-408",
+    "accepted": false,
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "blocker": {
+      "url": "https://chrisfieldsresearch.com",
+      "host_name": "chrisfieldsresearch.com",
+      "source_name": "The role of early bioelectric signals in the regeneration of",
+      "rank": 3,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": ". Morokuma , D. S. Adams , and M . Levin . 2011 . A Chemical genetics approach reveals H,K-ATPase-mediated membrane voltage is required for planarian ... 41 pages",
+      "stated": {
+       "drug": "K-ATPase"
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 89,
+    "id": "DB-409",
+    "accepted": false,
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "blocker": {
+      "url": "https://chrisfieldsresearch.com",
+      "host_name": "chrisfieldsresearch.com",
+      "source_name": "The role of early bioelectric signals in the regeneration of",
+      "rank": 3,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": ". Morokuma , D. S. Adams , and M . Levin . 2011 . A Chemical genetics approach reveals H,K-ATPase-mediated membrane voltage is required for planarian ... 41 pages",
+      "stated": {
+       "drug": "K-ATPase"
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 90,
+    "id": "DB-410",
+    "accepted": false,
+    "census_missing": [
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {
+     "blocker": {
+      "url": "https://www.semanticscholar.org",
+      "host_name": "www.semanticscholar.org",
+      "source_name": "A Chemical Genetics Approach Reveals H,K-ATPase",
+      "rank": 3,
+      "retrieved": "2026-09-18",
+      "verbatim_quote": "A Chemical Genetics Approach Reveals H,K-ATPase-Mediated Membrane Voltage is Required for Planarian Head Regeneration \u00b7 Wendy S. Beane ,",
+      "stated": {
+       "drug": "K-ATPase"
+      }
+     }
+    },
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 91,
+    "id": "DB-411",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 92,
+    "id": "DB-412",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 93,
+    "id": "DB-413",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 94,
+    "id": "DB-414",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 95,
+    "id": "DB-279",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 96,
+    "id": "DB-280",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 97,
+    "id": "DB-322",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 98,
+    "id": "DB-323",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 8 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 8 tried sources"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 99,
+    "id": "DB-324",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 100,
+    "id": "DB-325",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 101,
+    "id": "DB-326",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 8 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_a"
+   },
+   {
+    "index": 102,
+    "id": "DB-327",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_b"
+   },
+   {
+    "index": 103,
+    "id": "DB-328",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_b"
+   },
+   {
+    "index": 104,
+    "id": "DB-329",
+    "accepted": false,
+    "census_missing": [
+     "concentration"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker",
+     "n",
+     "phenotype_score"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)"
+    ],
+    "figure_swept": true,
+    "figure_identity_absent": false,
+    "figure_query_pass": "figure_b"
+   },
+   {
+    "index": 105,
+    "id": "C01-beane2011-claim",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 106,
+    "id": "C02-beane2013-claim",
+    "accepted": false,
+    "census_missing": [
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 107,
+    "id": "C03-durant2017-numbers",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 108,
+    "id": "C04-durant2019-window",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 109,
+    "id": "C05-eb2015-numbers",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 110,
+    "id": "C06-eb2019-numbers",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "concentration_mM"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 111,
+    "id": "C07-oviedo2008-method",
+    "accepted": false,
+    "census_missing": [
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "blocker"
+    ],
+    "reasons": [
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 112,
+    "id": "C08-durant2016-review",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 113,
+    "id": "C09-pezzulo2021-claim",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 114,
+    "id": "C10-marsh-beams-1952",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 115,
+    "id": "C11-chernet2013-xenopus",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "exposure_window",
+     "phenotype_score"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [
+     "concentration_mM",
+     "n"
+    ],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 116,
+    "id": "C12-chernet2014-xenopus",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 117,
+    "id": "C13-betse-pietak-levin",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   },
+   {
+    "index": 118,
+    "id": "C14-vmem-inference-layer",
+    "accepted": false,
+    "census_missing": [
+     "blocker_or_vehicle",
+     "concentration",
+     "exposure_window",
+     "phenotype_score",
+     "n"
+    ],
+    "literature_filled": {},
+    "prior_filled_fields": [],
+    "reasons": [
+     "blocker_or_vehicle: the record states no drug_start_end and no candidate blocker token of the record was stated verbatim in 0 tried sources",
+     "concentration: no admissible verbatim-stated concentration (mM/uM/nM/M tied to the record's keyed drug, non-range) in 0 tried sources (0 raw candidate statements rejected by the verbatim rules)",
+     "exposure_window: the record states no drug_start_end window and no verbatim 'sustained'/'pulse' token was stated in 0 tried sources",
+     "phenotype_score: no verbatim stated penetrance ('X% of animals/...') in 0 tried sources",
+     "n: no verbatim 'n = k' / 'k <count-noun>' statement in 0 tried sources"
+    ],
+    "figure_swept": false,
+    "figure_identity_absent": true,
+    "figure_query_pass": "figure_identity_absent"
+   }
+  ],
+  "fill_rate_deltas": {
+   "concentration_mM": {
+    "w5b": 5,
+    "w5c": 10,
+    "delta": 5
+   },
+   "blocker": {
+    "w5b": 66,
+    "w5c": 75,
+    "delta": 9
+   },
+   "phenotype_score": {
+    "w5b": 99,
+    "w5c": 99,
+    "delta": 0
+   },
+   "n": {
+    "w5b": 105,
+    "w5c": 105,
+    "delta": 0
+   },
+   "exposure_mode": {
+    "w5b": 0,
+    "w5c": 0,
+    "delta": 0
+   }
+  },
+  "not_in_literature_spec": {
+   "state": "NOT-IN-LITERATURE",
+   "registered_repair": "the exp203 census extended with an explicit absent-from-literature verdict: a record whose W5 fields are stated nowhere in the surfaced literature is DEPOSITED as NOT-IN-LITERATURE rather than rejected \u2014 the absence is the finding, carried with its own provenance discipline",
+   "provenance_discipline": "a NOT-IN-LITERATURE verdict requires: the three passes' complete sweep evidence (119 records x the protocol, widened, and figure queries at the deposited sources files), zero verbatim extracts for the missing fields across all three passes, and the per-field absence asserted against the pass-1/2/3 sources records by sha256; the verdict's provenance names ALL THREE sources files",
+   "census_extension": "census_missing(row) gains the not_in_literature clause: a row admitted to the new state carries 'census_state': 'NOT-IN-LITERATURE' with the field list that is absent-from-literature; every other acceptance rule unchanged; the extension is implemented by the REGISTERED NEXT, not here",
+   "zero_extract_records_all_3_passes": [
+    "C01-beane2011-claim",
+    "C03-durant2017-numbers",
+    "C04-durant2019-window",
+    "C05-eb2015-numbers",
+    "C08-durant2016-review",
+    "C09-pezzulo2021-claim",
+    "C10-marsh-beams-1952",
+    "C12-chernet2014-xenopus",
+    "C13-betse-pietak-levin",
+    "C14-vmem-inference-layer",
+    "DB-1062",
+    "DB-1063",
+    "DB-1064",
+    "DB-1066",
+    "DB-1068",
+    "DB-1069",
+    "DB-1070",
+    "DB-279",
+    "DB-280",
+    "DB-322",
+    "DB-323",
+    "DB-324",
+    "DB-325",
+    "DB-326",
+    "DB-327",
+    "DB-328",
+    "DB-329",
+    "DB-415",
+    "DB-416",
+    "DB-417",
+    "DB-418",
+    "DB-419",
+    "DB-420",
+    "DB-421",
+    "DB-422",
+    "DB-423",
+    "DB-426",
+    "DB-427",
+    "DB-429",
+    "DB-431",
+    "DB-432",
+    "DB-434",
+    "DB-435",
+    "DB-436",
+    "DB-437",
+    "DB-439",
+    "DB-440",
+    "DB-441",
+    "DB-442",
+    "DB-443",
+    "DB-444",
+    "DB-446",
+    "DB-447",
+    "DB-448",
+    "DB-449",
+    "DB-450",
+    "DB-452",
+    "DB-453",
+    "DB-454",
+    "DB-455",
+    "DB-457",
+    "DB-458",
+    "DB-460",
+    "DB-476",
+    "DB-477",
+    "DB-478",
+    "DB-479",
+    "V1_head_depolarized_vs_trunk",
+    "V2_hyperpolarization_abnormal",
+    "V3_posterior_depol_ectopic_head",
+    "V4_junction_block_graded",
+    "V5_wound_depolarized",
+    "V6_stochastic_identical_perturbation"
+   ],
+   "n_zero_extract_records": 73
+  },
+  "sources3_mode": "full"
+ },
+ "gates": {
+  "GATE-F1": {
+   "verdict": "PASS",
+   "n_records_sources3": 119,
+   "n_series": 119,
+   "complete_not_sampled": true,
+   "n_figure_swept": 99,
+   "n_figure_identity_absent": 20,
+   "absent_disclosure": "the 20 model-quantity records carry no db identity fields \u2014 the figure pass is vacuous for them, disclosed per record"
+  },
+  "GATE-F2": {
+   "verdict": "PASS",
+   "n_accepted": 0,
+   "integrity_violations": [],
+   "bank_validator_errors": [],
+   "import_rules": {
+    "concentration_mM": "first extract of kind 'concentration' whose value_mM is a number > 0; the extractor (scripts/exp206_w5_sources_sweep.mjs, deposited alongside) only emits a statement whose stated unit is the protocol's declared mM or convertible to it by factor arithmetic (uM/\u00b5M/\u03bcM -> 1e-3, nM -> 1e-6, M -> 1e3), only when the statement is not a range endpoint, and \u2014 when the record carries keyed drugs (drug_start_end) \u2014 only when one of the record's own drug tokens is stated in the same snippet (L335's keyed drug taxonomy); %-of-solution statements are NOT emitted (mM conversion would need molar mass: inference)",
+    "blocker": "first extract of kind 'blocker' \u2014 the extractor emits a record candidate drug token (the record's own drug_start_end names plus capitalized tokens of its own manipulation string, minus a fixed stopword lexicon) only when that token is stated verbatim in a returned snippet; the value copied is the record's token itself",
+    "phenotype_score": "first extract of kind 'phenotype' \u2014 a verbatim stated penetrance ('X% of animals/worms/planarians/...') mapped to the schema's [0,1] score by X/100; no other phenotype reading is taken",
+    "n": "first extract of kind 'n' with an integer >= 1 \u2014 verbatim 'n = k' or 'k <count-noun>' statements only",
+    "exposure_mode": "first extract of kind 'exposure_mode' \u2014 the protocol's own encoding tokens ('sustained'/'pulse') stated verbatim; numeric literature exposure windows are NOT mapped (the schema carries no unit, and a unit conversion would be inference)",
+    "provenance": "rows whose record has a sources-file entry carry provenance.source_deposit = results/w5_pass_sources.json, source_record = the per-record locator in it, source_key = the series record id, source_record_sha256 = sha256 of the canonical JSON of that exact sources-file record (the keyed, re-runnable chain of L335-336); records with no sources-file entry keep the scaffold import's original provenance; every literature-filled field's own provenance (url + host + retrieved date + verbatim quote) is deposited per record in the pass deposit's verdicts (the row schema of the protocol has no per-field slot)"
+   }
+  },
+  "GATE-F3": {
+   "verdict": "PASS",
+   "branch": "REGISTERED",
+   "accepted": 0,
+   "baseline_accepted_exp211": 0,
+   "fill_rate_deltas_vs_w5b": {
+    "concentration_mM": {
+     "w5b": 5,
+     "w5c": 10,
+     "delta": 5
+    },
+    "blocker": {
+     "w5b": 66,
+     "w5c": 75,
+     "delta": 9
+    },
+    "phenotype_score": {
+     "w5b": 99,
+     "w5c": 99,
+     "delta": 0
+    },
+    "n": {
+     "w5b": 105,
+     "w5c": 105,
+     "delta": 0
+    },
+    "exposure_mode": {
+     "w5b": 0,
+     "w5c": 0,
+     "delta": 0
+    }
+   },
+   "not_in_literature_spec": {
+    "state": "NOT-IN-LITERATURE",
+    "registered_repair": "the exp203 census extended with an explicit absent-from-literature verdict: a record whose W5 fields are stated nowhere in the surfaced literature is DEPOSITED as NOT-IN-LITERATURE rather than rejected \u2014 the absence is the finding, carried with its own provenance discipline",
+    "provenance_discipline": "a NOT-IN-LITERATURE verdict requires: the three passes' complete sweep evidence (119 records x the protocol, widened, and figure queries at the deposited sources files), zero verbatim extracts for the missing fields across all three passes, and the per-field absence asserted against the pass-1/2/3 sources records by sha256; the verdict's provenance names ALL THREE sources files",
+    "census_extension": "census_missing(row) gains the not_in_literature clause: a row admitted to the new state carries 'census_state': 'NOT-IN-LITERATURE' with the field list that is absent-from-literature; every other acceptance rule unchanged; the extension is implemented by the REGISTERED NEXT, not here",
+    "zero_extract_records_all_3_passes": [
+     "C01-beane2011-claim",
+     "C03-durant2017-numbers",
+     "C04-durant2019-window",
+     "C05-eb2015-numbers",
+     "C08-durant2016-review",
+     "C09-pezzulo2021-claim",
+     "C10-marsh-beams-1952",
+     "C12-chernet2014-xenopus",
+     "C13-betse-pietak-levin",
+     "C14-vmem-inference-layer",
+     "DB-1062",
+     "DB-1063",
+     "DB-1064",
+     "DB-1066",
+     "DB-1068",
+     "DB-1069",
+     "DB-1070",
+     "DB-279",
+     "DB-280",
+     "DB-322",
+     "DB-323",
+     "DB-324",
+     "DB-325",
+     "DB-326",
+     "DB-327",
+     "DB-328",
+     "DB-329",
+     "DB-415",
+     "DB-416",
+     "DB-417",
+     "DB-418",
+     "DB-419",
+     "DB-420",
+     "DB-421",
+     "DB-422",
+     "DB-423",
+     "DB-426",
+     "DB-427",
+     "DB-429",
+     "DB-431",
+     "DB-432",
+     "DB-434",
+     "DB-435",
+     "DB-436",
+     "DB-437",
+     "DB-439",
+     "DB-440",
+     "DB-441",
+     "DB-442",
+     "DB-443",
+     "DB-444",
+     "DB-446",
+     "DB-447",
+     "DB-448",
+     "DB-449",
+     "DB-450",
+     "DB-452",
+     "DB-453",
+     "DB-454",
+     "DB-455",
+     "DB-457",
+     "DB-458",
+     "DB-460",
+     "DB-476",
+     "DB-477",
+     "DB-478",
+     "DB-479",
+     "V1_head_depolarized_vs_trunk",
+     "V2_hyperpolarization_abnormal",
+     "V3_posterior_depol_ectopic_head",
+     "V4_junction_block_graded",
+     "V5_wound_depolarized",
+     "V6_stochastic_identical_perturbation"
+    ],
+    "n_zero_extract_records": 73
+   },
+   "branch_disclosure": "the pre-registered branch: ACCEPTED (>= 1) / the validator extension REGISTERED (0 full censuses across three passes -> the NOT-IN-LITERATURE state's specification deposited as the registered repair); the branch NAMED is the gate, the specification is the deposit \u2014 the census itself is extended by the REGISTERED NEXT"
+  },
+  "GATE-F4": {
+   "verdict": "PASS",
+   "w5b_bank_byte_unchanged": true,
+   "w5b_sha256": "382f048321f1f48e4c19dd701f1b9d86ff0972f45894b7249ac4b1eb528e1980",
+   "new_bank_deterministic": true,
+   "sources_file": "results/w5_pass_sources3.json",
+   "sources_file_sha256": "f6175a681b1b79f81022ff298f3472669c2519e34a6f28ca323afb4ba741ea4b"
+  }
+ },
+ "bank": "results/wetlab_companion_bank_w5c.json",
+ "sources": "results/w5_pass_sources3.json",
+ "verdict": "4/4 gates PASS | branch REGISTERED | accepted 0/119 vs exp211's 0/119",
+ "wall_s": 0.0
+}
