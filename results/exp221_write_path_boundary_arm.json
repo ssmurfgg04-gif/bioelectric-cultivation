@@ -1,0 +1,1696 @@
+{
+ "exp": "exp221_write_path_boundary_arm",
+ "claim": "THE WRITE-PATH BOUNDARY ARM AT n=400 (L194's registered next): three pre-registered read arms (exp213 boundary-only, exp216 context-shell, exp219 F1-composition) refuted the read-face repair line \u2014 the boundary excess is a WRITE-side phenomenon; the write-side dual: the writer's canon-fallback identity overwrite (the ~9 mV floor exp156 measured at the write path, CF-1's removal patch exp165/168) re-examined AT the boundary cells of the n=400 corner battery \u2014 the write pass re-runs with the canon-fallback identity map DISABLED exactly at the CANON-BOUNDARY cells (exp208's classification verbatim), applied everywhere else, every interior cell's write path bit-unchanged, at the CF-1 production floor -60.0 (the write side) with the decode/replay chain identical to exp213's (the -35.0 pin on the READ modules only)",
+ "pre_registered": {
+  "gates_source": "module docstring, committed before any run (pre-registration 94e15cb, batch-12; gates W1-W4 fixed there, each evaluated exactly once)",
+  "gates": [
+   "GATE-W1 (the replay) the unmodified battery replays bit-exactly vs exp199's deposit (25 x 3) \u2014 the write arm's baseline",
+   "GATE-W2 (the write arm) the boundary-write-armed errs for all 25 instances x 3 seeds; the branch named: REPAIR (median <= 1.30 \u2014 the tail's bar crossed), IMPROVED (median improved >= 20% vs 1.40, bar not crossed \u2014 the nesting disclosed), NONE",
+   "GATE-W3 (the identity clause) the interior cells' written values bit-unchanged by the arm (the arm touches exactly the boundary class's write path); the canon-fallback's skip asserted per boundary cell",
+   "GATE-W4 (hygiene) zero rejections; all finite; both floors asserted (-60.0 write side, -35.0 read-side pin save/restore)"
+  ],
+  "conventions": "the write pass = exp142's execute_signed (the decode's S-WRITE/S-REL chain) replicated VERBATIM with two disclosed deltas: the spec-adoption floor read from the core at call time (the production -60.0 on credited passes) and the arm (the fallback's identity overwrite skipped for the boundary class -> the pre-D3 source-parent read, exp156's chain one class further); the commit log records (i, branch, theta_new) with zero rng consumption; the boundary class = exp208's CANON-BOUNDARY mask on the decode's own target (precedence as registered); armed errs = the unrounded RMS from the final state (exp213's convention)"
+ },
+ "floor_semantics": {
+  "write_side": -60.0,
+  "write_side_note": "CF-1's production floor (exp168's one-constant patch); the core attribute restored post-import because the exp169->exp167 import chain flips it to the read world's -35.0 (exp218's two-death fix, disclosed); the core's attribute is inert for the dynamics (the M33 channel short-circuits at the default neural_w = 0) \u2014 the flip's only live consumer is the write replica's floor read",
+  "read_side": -35.0,
+  "read_side_note": "exp199's restored-world pin on the READ modules (exp142/145/148/94) \u2014 save/restore asserted; the decode/replay chain is exp213's verbatim"
+ },
+ "sections": {
+  "c6_tail": {
+   "cell": 6,
+   "n_instances": 25,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_build": 400,
+   "n_replay_exact": 25,
+   "n_replica_identity": 25,
+   "n_identity_written": 25,
+   "n_skip_asserted": 25,
+   "n_finalV_identity": 25,
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 172166,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 9,
+     "n_oneway": 1816,
+     "tail": true,
+     "dep199_median_err": 1.42,
+     "f_max": 0.0,
+     "errs": [
+      1.42,
+      1.44,
+      1.42
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.42,
+     "armed_errs": [
+      1.4161871913789303,
+      1.4448551873487923,
+      1.4221606215639107
+     ],
+     "armed_median_err": 1.4221606215639107,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 127,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 99,
+       "n_fallback_at_boundary": 42,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 99,
+       "n_fallback_at_boundary": 42,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 99,
+       "n_fallback_at_boundary": 42,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 1,
+     "gen_seed": 172167,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 20,
+     "n_oneway": 1746,
+     "tail": true,
+     "dep199_median_err": 1.36,
+     "f_max": 0.0,
+     "errs": [
+      1.33,
+      1.36,
+      1.38
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.36,
+     "armed_errs": [
+      1.3300253675259222,
+      1.3556405708944965,
+      1.3802602847310537
+     ],
+     "armed_median_err": 1.3556405708944965,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 128,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 94,
+       "n_fallback_at_boundary": 38,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 94,
+       "n_fallback_at_boundary": 38,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 94,
+       "n_fallback_at_boundary": 38,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 2,
+     "gen_seed": 172168,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 6,
+     "n_oneway": 1807,
+     "tail": true,
+     "dep199_median_err": 1.36,
+     "f_max": 0.0,
+     "errs": [
+      1.34,
+      1.36,
+      1.37
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.36,
+     "armed_errs": [
+      1.3435560007975595,
+      1.3649865010831486,
+      1.3707169347993389
+     ],
+     "armed_median_err": 1.3649865010831486,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 123,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 34,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 34,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 34,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 3,
+     "gen_seed": 172169,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 7,
+     "n_oneway": 1817,
+     "tail": true,
+     "dep199_median_err": 1.4,
+     "f_max": 0.0,
+     "errs": [
+      1.4,
+      1.39,
+      1.41
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.4,
+     "armed_errs": [
+      1.400990157980596,
+      1.3889382316654633,
+      1.4095442627268298
+     ],
+     "armed_median_err": 1.400990157980596,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 150,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 99,
+       "n_fallback_at_boundary": 45,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 99,
+       "n_fallback_at_boundary": 45,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 99,
+       "n_fallback_at_boundary": 45,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 4,
+     "gen_seed": 172170,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 2,
+     "n_oneway": 1800,
+     "tail": true,
+     "dep199_median_err": 1.37,
+     "f_max": 0.0,
+     "errs": [
+      1.37,
+      1.37,
+      1.36
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.37,
+     "armed_errs": [
+      1.366049190678801,
+      1.3721041418223179,
+      1.36032600222125
+     ],
+     "armed_median_err": 1.366049190678801,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 133,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 88,
+       "n_fallback_at_boundary": 45,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 88,
+       "n_fallback_at_boundary": 45,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 88,
+       "n_fallback_at_boundary": 45,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 5,
+     "gen_seed": 172171,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 2,
+     "n_oneway": 1804,
+     "tail": true,
+     "dep199_median_err": 1.37,
+     "f_max": 0.0,
+     "errs": [
+      1.38,
+      1.37,
+      1.36
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.37,
+     "armed_errs": [
+      1.3767876584087195,
+      1.3722431619407351,
+      1.3595313367405073
+     ],
+     "armed_median_err": 1.3722431619407351,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 127,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 97,
+       "n_fallback_at_boundary": 37,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 97,
+       "n_fallback_at_boundary": 37,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 97,
+       "n_fallback_at_boundary": 37,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 6,
+     "gen_seed": 172172,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 2,
+     "n_oneway": 1804,
+     "tail": true,
+     "dep199_median_err": 1.4,
+     "f_max": 0.0,
+     "errs": [
+      1.39,
+      1.4,
+      1.41
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.4,
+     "armed_errs": [
+      1.3921607377124414,
+      1.395011877907868,
+      1.405180578248474
+     ],
+     "armed_median_err": 1.395011877907868,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 124,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 103,
+       "n_fallback_at_boundary": 35,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 103,
+       "n_fallback_at_boundary": 35,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 103,
+       "n_fallback_at_boundary": 35,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 7,
+     "gen_seed": 172173,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 16,
+     "n_oneway": 1794,
+     "tail": true,
+     "dep199_median_err": 1.45,
+     "f_max": 0.0,
+     "errs": [
+      1.44,
+      1.45,
+      1.45
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.45,
+     "armed_errs": [
+      1.4409333150237649,
+      1.4541452607880627,
+      1.450080130726148
+     ],
+     "armed_median_err": 1.450080130726148,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 136,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 41,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 41,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 41,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 8,
+     "gen_seed": 172174,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 18,
+     "n_oneway": 1783,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "f_max": 0.0,
+     "errs": [
+      1.37,
+      1.38,
+      1.38
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.38,
+     "armed_errs": [
+      1.3668040044623808,
+      1.3768395126377666,
+      1.3809233138833124
+     ],
+     "armed_median_err": 1.3768395126377666,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 133,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 102,
+       "n_fallback_at_boundary": 44,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 102,
+       "n_fallback_at_boundary": 44,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 102,
+       "n_fallback_at_boundary": 44,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 9,
+     "gen_seed": 172175,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 13,
+     "n_oneway": 1733,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "f_max": 0.0,
+     "errs": [
+      1.38,
+      1.38,
+      1.37
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.38,
+     "armed_errs": [
+      1.3836063320391696,
+      1.3775232497116374,
+      1.3747151707908043
+     ],
+     "armed_median_err": 1.3775232497116374,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 125,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 98,
+       "n_fallback_at_boundary": 40,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 98,
+       "n_fallback_at_boundary": 40,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 98,
+       "n_fallback_at_boundary": 40,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 10,
+     "gen_seed": 172176,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 2,
+     "n_oneway": 1695,
+     "tail": true,
+     "dep199_median_err": 1.41,
+     "f_max": 0.0,
+     "errs": [
+      1.42,
+      1.4,
+      1.41
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.41,
+     "armed_errs": [
+      1.4156288217096495,
+      1.4016869573718107,
+      1.4128414212568716
+     ],
+     "armed_median_err": 1.4128414212568716,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 128,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 95,
+       "n_fallback_at_boundary": 44,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 95,
+       "n_fallback_at_boundary": 44,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 95,
+       "n_fallback_at_boundary": 44,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 11,
+     "gen_seed": 172177,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 11,
+     "n_oneway": 1737,
+     "tail": true,
+     "dep199_median_err": 1.35,
+     "f_max": 0.0,
+     "errs": [
+      1.33,
+      1.35,
+      1.37
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.35,
+     "armed_errs": [
+      1.3302839321859352,
+      1.35184981651513,
+      1.3702131116233849
+     ],
+     "armed_median_err": 1.35184981651513,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 131,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 107,
+       "n_fallback_at_boundary": 39,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 107,
+       "n_fallback_at_boundary": 39,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 107,
+       "n_fallback_at_boundary": 39,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 12,
+     "gen_seed": 172178,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 1,
+     "n_oneway": 1786,
+     "tail": true,
+     "dep199_median_err": 1.41,
+     "f_max": 0.0,
+     "errs": [
+      1.41,
+      1.39,
+      1.44
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.41,
+     "armed_errs": [
+      1.4077772066971268,
+      1.3941783828660925,
+      1.4408393393374097
+     ],
+     "armed_median_err": 1.4077772066971268,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 135,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 105,
+       "n_fallback_at_boundary": 39,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 105,
+       "n_fallback_at_boundary": 39,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 105,
+       "n_fallback_at_boundary": 39,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 13,
+     "gen_seed": 172179,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 8,
+     "n_oneway": 1763,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "f_max": 0.0,
+     "errs": [
+      1.39,
+      1.38,
+      1.38
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.38,
+     "armed_errs": [
+      1.393552716533904,
+      1.379661089164029,
+      1.3829413896705487
+     ],
+     "armed_median_err": 1.3829413896705487,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 136,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 100,
+       "n_fallback_at_boundary": 40,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 100,
+       "n_fallback_at_boundary": 40,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 100,
+       "n_fallback_at_boundary": 40,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 14,
+     "gen_seed": 172180,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 20,
+     "n_oneway": 1747,
+     "tail": true,
+     "dep199_median_err": 1.44,
+     "f_max": 0.0,
+     "errs": [
+      1.45,
+      1.44,
+      1.43
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.44,
+     "armed_errs": [
+      1.4524178946717634,
+      1.435664670653502,
+      1.4257578949242449
+     ],
+     "armed_median_err": 1.435664670653502,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 148,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 45,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 45,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 45,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 15,
+     "gen_seed": 172181,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 17,
+     "n_oneway": 1873,
+     "tail": true,
+     "dep199_median_err": 1.37,
+     "f_max": 0.0,
+     "errs": [
+      1.38,
+      1.37,
+      1.36
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.37,
+     "armed_errs": [
+      1.3836354438957763,
+      1.370462551405967,
+      1.359789002647644
+     ],
+     "armed_median_err": 1.370462551405967,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 128,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 95,
+       "n_fallback_at_boundary": 46,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 95,
+       "n_fallback_at_boundary": 46,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 95,
+       "n_fallback_at_boundary": 46,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 16,
+     "gen_seed": 172182,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 1,
+     "n_oneway": 1858,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "f_max": 0.0,
+     "errs": [
+      1.39,
+      1.38,
+      1.36
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.38,
+     "armed_errs": [
+      1.3936842617106664,
+      1.3786994816080256,
+      1.364624188927072
+     ],
+     "armed_median_err": 1.3786994816080256,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 134,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 103,
+       "n_fallback_at_boundary": 38,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 103,
+       "n_fallback_at_boundary": 38,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 103,
+       "n_fallback_at_boundary": 38,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 17,
+     "gen_seed": 172183,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 20,
+     "n_oneway": 1831,
+     "tail": true,
+     "dep199_median_err": 1.42,
+     "f_max": 0.0,
+     "errs": [
+      1.42,
+      1.38,
+      1.42
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.42,
+     "armed_errs": [
+      1.4230674063476374,
+      1.3792480424439622,
+      1.4219921088167895
+     ],
+     "armed_median_err": 1.4219921088167895,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 142,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 97,
+       "n_fallback_at_boundary": 43,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 97,
+       "n_fallback_at_boundary": 43,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 97,
+       "n_fallback_at_boundary": 43,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 18,
+     "gen_seed": 172184,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 16,
+     "n_oneway": 1787,
+     "tail": true,
+     "dep199_median_err": 1.34,
+     "f_max": 0.0,
+     "errs": [
+      1.34,
+      1.36,
+      1.34
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.34,
+     "armed_errs": [
+      1.336736680847546,
+      1.3571298348779048,
+      1.3391706024234156
+     ],
+     "armed_median_err": 1.3391706024234156,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 134,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 89,
+       "n_fallback_at_boundary": 41,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 89,
+       "n_fallback_at_boundary": 41,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 89,
+       "n_fallback_at_boundary": 41,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 19,
+     "gen_seed": 172185,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 10,
+     "n_oneway": 1760,
+     "tail": true,
+     "dep199_median_err": 1.43,
+     "f_max": 0.0,
+     "errs": [
+      1.43,
+      1.43,
+      1.4
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.43,
+     "armed_errs": [
+      1.4312473633607854,
+      1.4333319274105114,
+      1.402601740680247
+     ],
+     "armed_median_err": 1.4312473633607854,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 140,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 40,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 40,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 40,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 20,
+     "gen_seed": 172186,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 15,
+     "n_oneway": 1834,
+     "tail": true,
+     "dep199_median_err": 1.38,
+     "f_max": 0.0,
+     "errs": [
+      1.38,
+      1.38,
+      1.36
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.38,
+     "armed_errs": [
+      1.3844166257128274,
+      1.3764514157127032,
+      1.358719106455101
+     ],
+     "armed_median_err": 1.3764514157127032,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 145,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 91,
+       "n_fallback_at_boundary": 49,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 91,
+       "n_fallback_at_boundary": 49,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 91,
+       "n_fallback_at_boundary": 49,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 21,
+     "gen_seed": 172187,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 7,
+     "n_oneway": 1792,
+     "tail": true,
+     "dep199_median_err": 1.45,
+     "f_max": 0.0,
+     "errs": [
+      1.45,
+      1.45,
+      1.43
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.45,
+     "armed_errs": [
+      1.4463598450382145,
+      1.4494129644633336,
+      1.432782037724016
+     ],
+     "armed_median_err": 1.4463598450382145,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 142,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 104,
+       "n_fallback_at_boundary": 39,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 104,
+       "n_fallback_at_boundary": 39,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 104,
+       "n_fallback_at_boundary": 39,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 22,
+     "gen_seed": 172188,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 16,
+     "n_oneway": 1804,
+     "tail": true,
+     "dep199_median_err": 1.41,
+     "f_max": 0.0,
+     "errs": [
+      1.41,
+      1.41,
+      1.45
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.41,
+     "armed_errs": [
+      1.4101313517878131,
+      1.4109673845209902,
+      1.4466340472978798
+     ],
+     "armed_median_err": 1.4109673845209902,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 126,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 40,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 40,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 101,
+       "n_fallback_at_boundary": 40,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 23,
+     "gen_seed": 172189,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 5,
+     "n_oneway": 1761,
+     "tail": true,
+     "dep199_median_err": 1.41,
+     "f_max": 0.0,
+     "errs": [
+      1.41,
+      1.42,
+      1.41
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.41,
+     "armed_errs": [
+      1.4142893024634098,
+      1.4180472333286642,
+      1.4142734178181207
+     ],
+     "armed_median_err": 1.4142893024634098,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 135,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 106,
+       "n_fallback_at_boundary": 37,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 106,
+       "n_fallback_at_boundary": 37,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 106,
+       "n_fallback_at_boundary": 37,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    },
+    {
+     "j": 24,
+     "gen_seed": 172190,
+     "n": 400,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "n_hyper": 3,
+     "n_oneway": 1835,
+     "tail": true,
+     "dep199_median_err": 1.44,
+     "f_max": 0.0,
+     "errs": [
+      1.41,
+      1.44,
+      1.45
+     ],
+     "replay_bit_exact": true,
+     "median_err": 1.44,
+     "armed_errs": [
+      1.4100009085617904,
+      1.4436303328487592,
+      1.4536330696711124
+     ],
+     "armed_median_err": 1.4436303328487592,
+     "replica_bit_identity": true,
+     "n_boundary_cells": 139,
+     "identity_written_bit_exact": true,
+     "skip_asserted_per_boundary_cell": true,
+     "finalV_identity_outside_boundary": true,
+     "fallback_diagnostics": [
+      {
+       "seed": 1,
+       "n_fallback": 94,
+       "n_fallback_at_boundary": 42,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 2,
+       "n_fallback": 94,
+       "n_fallback_at_boundary": 42,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      },
+      {
+       "seed": 3,
+       "n_fallback": 94,
+       "n_fallback_at_boundary": 42,
+       "n_clash_value_changing": 0,
+       "diag_V_bit_equal_production_pass": true
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "mechanism": {
+  "question": "where does the write path's boundary signature live \u2014 is the c6 tail's excess carried by the canon-fallback's identity overwrite?",
+  "answer": "NO \u2014 the canon-fallback cannot carry it under either floor: at the production floor -60.0 the fallback NEVER fires (every spec value the walked span carries \u2014 MULTI's zone writes at -30.0 and the canon labeling's values \u2014 is >= -60.0, so adoption wins at all walked cells); at the pre-CF-1 floor -35.0 (the labeled diagnostic) the fallback fires but its overwrite value EQUALS the write's own spec value at every fired cell (phi_spec == phi_spec_canon at every below-floor cell: the write plants the canon identity at every non-zone cell, so the unreadable-clash class \u2014 phi < floor AND phi != canon, the class the ~9 mV floor lived in on the GENERATOR's decode \u2014 is structurally EMPTY on the corner battery's MULTI write); the branch flips are value-inert and the diagnostic V is bit-equal to the production pass",
+  "fallback_firings_production_floor": 0,
+  "n_credited_write_passes": 150,
+  "diagnostic_old_floor": {
+   "floor": -35.0,
+   "n_fallback_total": 7413,
+   "n_fallback_at_boundary": 3069,
+   "n_clash_value_changing": 0,
+   "n_diag_V_bit_equal_production": 75,
+   "n_diagnostic_passes": 75,
+   "label": "LABELED COUNTERFACTUAL (exp156's decode_cf convention) \u2014 ungated, the mechanism datum only"
+  },
+  "per_instance": [
+   {
+    "j": 0,
+    "n_boundary_cells": 127,
+    "n_fallback_old_floor": 297,
+    "n_fallback_at_boundary_old_floor": 126,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 1,
+    "n_boundary_cells": 128,
+    "n_fallback_old_floor": 282,
+    "n_fallback_at_boundary_old_floor": 114,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 2,
+    "n_boundary_cells": 123,
+    "n_fallback_old_floor": 303,
+    "n_fallback_at_boundary_old_floor": 102,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 3,
+    "n_boundary_cells": 150,
+    "n_fallback_old_floor": 297,
+    "n_fallback_at_boundary_old_floor": 135,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 4,
+    "n_boundary_cells": 133,
+    "n_fallback_old_floor": 264,
+    "n_fallback_at_boundary_old_floor": 135,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 5,
+    "n_boundary_cells": 127,
+    "n_fallback_old_floor": 291,
+    "n_fallback_at_boundary_old_floor": 111,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 6,
+    "n_boundary_cells": 124,
+    "n_fallback_old_floor": 309,
+    "n_fallback_at_boundary_old_floor": 105,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 7,
+    "n_boundary_cells": 136,
+    "n_fallback_old_floor": 303,
+    "n_fallback_at_boundary_old_floor": 123,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 8,
+    "n_boundary_cells": 133,
+    "n_fallback_old_floor": 306,
+    "n_fallback_at_boundary_old_floor": 132,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 9,
+    "n_boundary_cells": 125,
+    "n_fallback_old_floor": 294,
+    "n_fallback_at_boundary_old_floor": 120,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 10,
+    "n_boundary_cells": 128,
+    "n_fallback_old_floor": 285,
+    "n_fallback_at_boundary_old_floor": 132,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 11,
+    "n_boundary_cells": 131,
+    "n_fallback_old_floor": 321,
+    "n_fallback_at_boundary_old_floor": 117,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 12,
+    "n_boundary_cells": 135,
+    "n_fallback_old_floor": 315,
+    "n_fallback_at_boundary_old_floor": 117,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 13,
+    "n_boundary_cells": 136,
+    "n_fallback_old_floor": 300,
+    "n_fallback_at_boundary_old_floor": 120,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 14,
+    "n_boundary_cells": 148,
+    "n_fallback_old_floor": 303,
+    "n_fallback_at_boundary_old_floor": 135,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 15,
+    "n_boundary_cells": 128,
+    "n_fallback_old_floor": 285,
+    "n_fallback_at_boundary_old_floor": 138,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 16,
+    "n_boundary_cells": 134,
+    "n_fallback_old_floor": 309,
+    "n_fallback_at_boundary_old_floor": 114,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 17,
+    "n_boundary_cells": 142,
+    "n_fallback_old_floor": 291,
+    "n_fallback_at_boundary_old_floor": 129,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 18,
+    "n_boundary_cells": 134,
+    "n_fallback_old_floor": 267,
+    "n_fallback_at_boundary_old_floor": 123,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 19,
+    "n_boundary_cells": 140,
+    "n_fallback_old_floor": 303,
+    "n_fallback_at_boundary_old_floor": 120,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 20,
+    "n_boundary_cells": 145,
+    "n_fallback_old_floor": 273,
+    "n_fallback_at_boundary_old_floor": 147,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 21,
+    "n_boundary_cells": 142,
+    "n_fallback_old_floor": 312,
+    "n_fallback_at_boundary_old_floor": 117,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 22,
+    "n_boundary_cells": 126,
+    "n_fallback_old_floor": 303,
+    "n_fallback_at_boundary_old_floor": 120,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 23,
+    "n_boundary_cells": 135,
+    "n_fallback_old_floor": 318,
+    "n_fallback_at_boundary_old_floor": 111,
+    "n_clash_old_floor": 0
+   },
+   {
+    "j": 24,
+    "n_boundary_cells": 139,
+    "n_fallback_old_floor": 282,
+    "n_fallback_at_boundary_old_floor": 126,
+    "n_clash_old_floor": 0
+   }
+  ]
+ },
+ "gates": {
+  "W1": {
+   "pass": true,
+   "n_replay_exact": 25,
+   "n_replica_bit_identity": 25,
+   "n_instances": 25,
+   "n_decodes": 75,
+   "disclosure": "errs bit-exact vs exp199's deposit at the deposit's 2-dp rounding (exp142's convention, exp213's B1a discipline); PLUS the write replica's own bit-identity: the baseline write pass (skip = empty) at the PRODUCTION floor reproduces the deposit decode's final V and target bit-exactly (np.array_equal) per (j, seed) \u2014 the floor flip -35 -> -60 is value-inert on this battery, asserted not assumed",
+   "rejections": 0
+  },
+  "W2": {
+   "pass": true,
+   "branch": "NONE",
+   "baseline_median_dep199_c6": 1.4,
+   "bar": 1.3,
+   "armed_median_instance": 1.395011877907868,
+   "armed_median_flat75": 1.393552716533904,
+   "armed_median_deposit_convention": 1.4,
+   "delta_mV": -0.004988,
+   "improvement_pct": 0.3563,
+   "improved_bar_disclosed": 1.1199999999999999,
+   "nesting_disclosure": "IMPROVED's pre-registered clause (median <= (1-0.20)*1.40 = 1.12) is nested under REPAIR's 1.30 bar as written; implemented verbatim, no post-hoc reinterpretation",
+   "convention_note": "armed errs are the unrounded RMS from the final state (exp213's convention); at the deposit's 2-dp rounding the armed errs equal the deposit's errs bit-exactly \u2014 the armed_median_deposit_convention field is the same median on the deposit's convention"
+  },
+  "W3": {
+   "pass": true,
+   "n_identity_written": 25,
+   "n_skip_asserted": 25,
+   "clause": "every interior (non-boundary) walked cell's WRITTEN value (the S-REL commit theta_new) bit-unchanged by the arm, per commit log comparison; the armed pass's branch at every walked boundary cell asserted != canon-fallback (the skip held per boundary cell); the arm's code path touches exactly the boundary class's commit branch",
+   "supplementary_finalV_identity_outside_boundary": {
+    "n_exact": 25,
+    "n_instances": 25,
+    "disclosure": "exp213's B3 convention (final decoded V bit-unchanged outside the site) deposited as the read-arm-comparable datum, NOT gated: the write arm's commit-site delta would propagate through the settle dynamics \u2014 the registered clause binds to the WRITTEN values, the commit-level"
+   }
+  },
+  "W4": {
+   "pass": true,
+   "n_decodes_total": 75,
+   "rejections": 0,
+   "all_finite": true,
+   "floors": {
+    "write_side": {
+     "value": -60.0,
+     "source": "CF-1's production patch (exp168, collective.py:46); core attribute restored post-import (exp218's two-death-fix mechanism), asserted top-level and per credited pass",
+     "asserted": true
+    },
+    "read_side": {
+     "value": -35.0,
+     "modules": [
+      "exp142",
+      "exp145",
+      "exp148",
+      "exp94"
+     ],
+     "note": "the restored-world pin (exp199's semantics, save/restore asserted) \u2014 the READ modules only",
+     "asserted": true
+    }
+   },
+   "n400_construction_asserted": true,
+   "fingerprint": "8e11e88c1c2f1518",
+   "post_run_fingerprint": "8e11e88c1c2f1518"
+  }
+ },
+ "verdict": "4/4 gates (W1 W2 W3 W4) | NONE | write arm delta -0.0050 mV (armed 1.3950 vs baseline 1.4, bar 1.3)",
+ "wall_s": 264.8
+}
