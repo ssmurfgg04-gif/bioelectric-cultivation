@@ -1,0 +1,4111 @@
+{
+ "exp": "exp214_union_carriage",
+ "sections": {
+  "H1": {
+   "carriage": {
+    "host": "H1",
+    "n": 400,
+    "kind": "size-law organism (exp198's scale)",
+    "seeds": [
+     1,
+     2,
+     3
+    ],
+    "S_star": [
+     64.0,
+     0.0
+    ],
+    "n_writable": 110,
+    "n_targets": 110,
+    "n_writable_manifest": 100,
+    "n_writable_deep": 10,
+    "miss_list": [],
+    "worst_case_margin3": 5.377,
+    "per_target": [
+     {
+      "tclass": "manifest",
+      "index": 0,
+      "f_sha256": "78fd5ee40abdbdd0fc236e7f94ef434e76bda72ddc1151f003705a467a341804",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.261,
+        0.333,
+        0.282
+       ],
+       "hold_errs": [
+        0.26,
+        0.334,
+        0.279
+       ],
+       "decode_err_mean": 0.292,
+       "hold_err_mean": 0.291,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.666
+     },
+     {
+      "tclass": "manifest",
+      "index": 1,
+      "f_sha256": "fc170994c26ce9f08e4b85e35188aa725ceb1e1ed54cab59659e0c2e0f2efdaf",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.262,
+        0.331,
+        0.281
+       ],
+       "hold_errs": [
+        0.259,
+        0.328,
+        0.276
+       ],
+       "decode_err_mean": 0.292,
+       "hold_err_mean": 0.288,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.669
+     },
+     {
+      "tclass": "manifest",
+      "index": 2,
+      "f_sha256": "069853838f468512a983f499e8142684ac80688e24b74f10c8cb3943212dac3f",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.213,
+        0.217,
+        0.196
+       ],
+       "hold_errs": [
+        0.219,
+        0.213,
+        0.197
+       ],
+       "decode_err_mean": 0.209,
+       "hold_err_mean": 0.21,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.781
+     },
+     {
+      "tclass": "manifest",
+      "index": 3,
+      "f_sha256": "136f3d4d5ead0b8e29c72c9d851f511ac20c492f3191cbc56b62be7e5b8cba58",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.33,
+        0.384,
+        0.351
+       ],
+       "hold_errs": [
+        0.323,
+        0.377,
+        0.342
+       ],
+       "decode_err_mean": 0.355,
+       "hold_err_mean": 0.347,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.616
+     },
+     {
+      "tclass": "manifest",
+      "index": 4,
+      "f_sha256": "b500fa5dd55192a71f631afa07215bc0f9096f7c9e3ec35677d0058a1a9a3f3c",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.217,
+        0.216,
+        0.196
+       ],
+       "hold_errs": [
+        0.214,
+        0.212,
+        0.201
+       ],
+       "decode_err_mean": 0.21,
+       "hold_err_mean": 0.209,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.783
+     },
+     {
+      "tclass": "manifest",
+      "index": 5,
+      "f_sha256": "4cbc94ced4f60efb0e76c1479d94a8c1432ff9363fb0dec9a71c720cfb916f85",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.481,
+        0.502,
+        0.474
+       ],
+       "hold_errs": [
+        0.473,
+        0.495,
+        0.467
+       ],
+       "decode_err_mean": 0.486,
+       "hold_err_mean": 0.479,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.498
+     },
+     {
+      "tclass": "manifest",
+      "index": 6,
+      "f_sha256": "4fc19764617b7b9b31db3c6f1da59294410c2e00695d8e29f68b3e4790b1fd20",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.511,
+        0.546,
+        0.509
+       ],
+       "hold_errs": [
+        0.497,
+        0.534,
+        0.499
+       ],
+       "decode_err_mean": 0.522,
+       "hold_err_mean": 0.51,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.454
+     },
+     {
+      "tclass": "manifest",
+      "index": 7,
+      "f_sha256": "f034e5d6825063985395caea13b716753898fad0534e56a64c73e0ec98405d21",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.049,
+       "eT": 0.042,
+       "quad": 0.064,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.382,
+        0.438,
+        0.379
+       ],
+       "hold_errs": [
+        0.376,
+        0.441,
+        0.375
+       ],
+       "decode_err_mean": 0.4,
+       "hold_err_mean": 0.397,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.559
+     },
+     {
+      "tclass": "manifest",
+      "index": 8,
+      "f_sha256": "cbebb7fe66802964117838475e5433ab6602647ff71674781f33c47bf130c18c",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.218,
+        0.215,
+        0.195
+       ],
+       "hold_errs": [
+        0.21,
+        0.213,
+        0.197
+       ],
+       "decode_err_mean": 0.209,
+       "hold_err_mean": 0.207,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.782
+     },
+     {
+      "tclass": "manifest",
+      "index": 9,
+      "f_sha256": "5b4513cd2969baca4c072f219db8937b9c9d077f0fba6df11e61fb44885214b6",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.217,
+        0.216,
+        0.195
+       ],
+       "hold_errs": [
+        0.208,
+        0.217,
+        0.198
+       ],
+       "decode_err_mean": 0.209,
+       "hold_err_mean": 0.208,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.783
+     },
+     {
+      "tclass": "manifest",
+      "index": 10,
+      "f_sha256": "9f80ee16ebecb061c8471d8d1aeef56d0bfca33205f63e44d77f7236c7b3653b",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.508,
+        0.551,
+        0.51
+       ],
+       "hold_errs": [
+        0.501,
+        0.54,
+        0.495
+       ],
+       "decode_err_mean": 0.523,
+       "hold_err_mean": 0.512,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.449
+     },
+     {
+      "tclass": "manifest",
+      "index": 11,
+      "f_sha256": "c717c63ea5298a0d20c5e5f71e8112423f80f42b21fcaf06f0bb8404c7377f7c",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.441,
+        0.469,
+        0.427
+       ],
+       "hold_errs": [
+        0.437,
+        0.453,
+        0.426
+       ],
+       "decode_err_mean": 0.445,
+       "hold_err_mean": 0.439,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.531
+     },
+     {
+      "tclass": "manifest",
+      "index": 12,
+      "f_sha256": "6fb4d800ae51af9bc2d01b301d8f91a322f95144400348cfbde161241fa989aa",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.055,
+       "eT": 0.042,
+       "quad": 0.069,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.442,
+        0.471,
+        0.431
+       ],
+       "hold_errs": [
+        0.441,
+        0.479,
+        0.428
+       ],
+       "decode_err_mean": 0.448,
+       "hold_err_mean": 0.449,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.521
+     },
+     {
+      "tclass": "manifest",
+      "index": 13,
+      "f_sha256": "cf4fe4dc48efb8c49fdff63804fe64e0525d6d5326cce1f0f423300d4852263a",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.212,
+        0.214,
+        0.198
+       ],
+       "hold_errs": [
+        0.214,
+        0.215,
+        0.197
+       ],
+       "decode_err_mean": 0.208,
+       "hold_err_mean": 0.209,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.785
+     },
+     {
+      "tclass": "manifest",
+      "index": 14,
+      "f_sha256": "634f6c0f33ebbb1ac7bf601c5cba8d5362ec5aeabc911e288b733b80e1886ed9",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.047,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.386,
+        0.442,
+        0.386
+       ],
+       "hold_errs": [
+        0.377,
+        0.441,
+        0.383
+       ],
+       "decode_err_mean": 0.405,
+       "hold_err_mean": 0.4,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.558
+     },
+     {
+      "tclass": "manifest",
+      "index": 15,
+      "f_sha256": "591898788864a3be6a9bb8f0d2a586138c50a207d63f3df5e83799ec9bdf590d",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.217,
+        0.216,
+        0.195
+       ],
+       "hold_errs": [
+        0.209,
+        0.216,
+        0.197
+       ],
+       "decode_err_mean": 0.209,
+       "hold_err_mean": 0.207,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.783
+     },
+     {
+      "tclass": "manifest",
+      "index": 16,
+      "f_sha256": "c08e6329adf0085028b74c588f458fcd92b87b7f9702ab118d9138946f4343ae",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.213,
+        0.215,
+        0.197
+       ],
+       "hold_errs": [
+        0.209,
+        0.22,
+        0.201
+       ],
+       "decode_err_mean": 0.208,
+       "hold_err_mean": 0.21,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.78
+     },
+     {
+      "tclass": "manifest",
+      "index": 17,
+      "f_sha256": "dead144286ef2a6bd20b6ee110072b25d84a7492c47a41885ee1aba2572a9397",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.216,
+        0.215,
+        0.199
+       ],
+       "hold_errs": [
+        0.215,
+        0.218,
+        0.202
+       ],
+       "decode_err_mean": 0.21,
+       "hold_err_mean": 0.212,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.782
+     },
+     {
+      "tclass": "manifest",
+      "index": 18,
+      "f_sha256": "6e5b122c06409445f8e865070974413f42d596133e5306a4793a7ac2325a4ecb",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.385,
+        0.438,
+        0.384
+       ],
+       "hold_errs": [
+        0.372,
+        0.429,
+        0.375
+       ],
+       "decode_err_mean": 0.402,
+       "hold_err_mean": 0.392,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.562
+     },
+     {
+      "tclass": "manifest",
+      "index": 19,
+      "f_sha256": "d77bb3d79ec367c7300ac13e1740f5c2bc9540f6c47b85cbcd4d9cc0d5d47875",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.382,
+        0.433,
+        0.379
+       ],
+       "hold_errs": [
+        0.374,
+        0.428,
+        0.373
+       ],
+       "decode_err_mean": 0.398,
+       "hold_err_mean": 0.392,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.567
+     },
+     {
+      "tclass": "manifest",
+      "index": 20,
+      "f_sha256": "e1f6bf3e8a12ed2b18edcfed133441653c234be1540d876aedabaa260db68da8",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.259,
+        0.331,
+        0.283
+       ],
+       "hold_errs": [
+        0.258,
+        0.328,
+        0.278
+       ],
+       "decode_err_mean": 0.291,
+       "hold_err_mean": 0.288,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.669
+     },
+     {
+      "tclass": "manifest",
+      "index": 21,
+      "f_sha256": "e1d04c7fdd7f5c61de1c0204eb92271160d91f8de8635f1aa25580b58dc62c09",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.543,
+        0.58,
+        0.55
+       ],
+       "hold_errs": [
+        0.53,
+        0.571,
+        0.534
+       ],
+       "decode_err_mean": 0.558,
+       "hold_err_mean": 0.545,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.42
+     },
+     {
+      "tclass": "manifest",
+      "index": 22,
+      "f_sha256": "e3fe508cc25ed2620bb4a9f5599754b57cf131971e961ef0c05b3dfbf6a06975",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.261,
+        0.336,
+        0.276
+       ],
+       "hold_errs": [
+        0.257,
+        0.33,
+        0.278
+       ],
+       "decode_err_mean": 0.291,
+       "hold_err_mean": 0.288,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.664
+     },
+     {
+      "tclass": "manifest",
+      "index": 23,
+      "f_sha256": "8710309c08e87e406ebc710980c33367b471c16ff3b9ab1f556627866370fcb6",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.216,
+        0.216,
+        0.198
+       ],
+       "hold_errs": [
+        0.216,
+        0.211,
+        0.196
+       ],
+       "decode_err_mean": 0.21,
+       "hold_err_mean": 0.208,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.784
+     },
+     {
+      "tclass": "manifest",
+      "index": 24,
+      "f_sha256": "fd3918906a4688044377ed1bef698e714584b04f4190608699d91eb5e792e7c8",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.261,
+        0.334,
+        0.279
+       ],
+       "hold_errs": [
+        0.26,
+        0.327,
+        0.275
+       ],
+       "decode_err_mean": 0.291,
+       "hold_err_mean": 0.287,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.666
+     },
+     {
+      "tclass": "manifest",
+      "index": 25,
+      "f_sha256": "2bc0eb95ff95bd745216e752efc41e9b7fdda26a9518625dd7548bebb3fe842d",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.259,
+        0.333,
+        0.279
+       ],
+       "hold_errs": [
+        0.258,
+        0.326,
+        0.277
+       ],
+       "decode_err_mean": 0.29,
+       "hold_err_mean": 0.287,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.667
+     },
+     {
+      "tclass": "manifest",
+      "index": 26,
+      "f_sha256": "4c3d89272b60472043ededa750577ac7dd60118c8b17d9601a8627b0c123f775",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.213,
+        0.217,
+        0.195
+       ],
+       "hold_errs": [
+        0.215,
+        0.224,
+        0.203
+       ],
+       "decode_err_mean": 0.208,
+       "hold_err_mean": 0.214,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.776
+     },
+     {
+      "tclass": "manifest",
+      "index": 27,
+      "f_sha256": "7489b4777471142d3c571dda86b00ec827d9e30fc72ec6301daccaed05952fc7",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.328,
+        0.38,
+        0.347
+       ],
+       "hold_errs": [
+        0.323,
+        0.375,
+        0.345
+       ],
+       "decode_err_mean": 0.352,
+       "hold_err_mean": 0.348,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.62
+     },
+     {
+      "tclass": "manifest",
+      "index": 28,
+      "f_sha256": "1925499f9fda378c8c7607469c4530623da15fe6d952541fd3ca6a22fb49edc7",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.259,
+        0.328,
+        0.284
+       ],
+       "hold_errs": [
+        0.26,
+        0.319,
+        0.281
+       ],
+       "decode_err_mean": 0.29,
+       "hold_err_mean": 0.287,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.672
+     },
+     {
+      "tclass": "manifest",
+      "index": 29,
+      "f_sha256": "ccca6b449ee18192580843b3640b1badd8eb82d4480001a5e21a7ccf9c422d0d",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.476,
+        0.499,
+        0.476
+       ],
+       "hold_errs": [
+        0.473,
+        0.487,
+        0.466
+       ],
+       "decode_err_mean": 0.483,
+       "hold_err_mean": 0.475,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.501
+     },
+     {
+      "tclass": "manifest",
+      "index": 30,
+      "f_sha256": "64532b30bdd7095140318508b60fc2bf87e2a7bdcff3d5142b7b479ba9cbf9ba",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.214,
+        0.214,
+        0.194
+       ],
+       "hold_errs": [
+        0.218,
+        0.212,
+        0.199
+       ],
+       "decode_err_mean": 0.207,
+       "hold_err_mean": 0.209,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.782
+     },
+     {
+      "tclass": "manifest",
+      "index": 31,
+      "f_sha256": "31005b1ede9f4d2c7b1e6d45cc782c9c7ec8803d3c23816f7089d9ba4f76da37",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.385,
+        0.44,
+        0.385
+       ],
+       "hold_errs": [
+        0.372,
+        0.433,
+        0.377
+       ],
+       "decode_err_mean": 0.403,
+       "hold_err_mean": 0.394,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.56
+     },
+     {
+      "tclass": "manifest",
+      "index": 32,
+      "f_sha256": "a8673deba91484a6bf30bd6797ddaea79f6d19f0bbc17c952ffb0604512838a3",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.542,
+        0.586,
+        0.546
+       ],
+       "hold_errs": [
+        0.532,
+        0.572,
+        0.535
+       ],
+       "decode_err_mean": 0.558,
+       "hold_err_mean": 0.546,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.414
+     },
+     {
+      "tclass": "manifest",
+      "index": 33,
+      "f_sha256": "4340f881fe4e76aafb0adc6345a34a15ecb703ff2b92970053161c5c41434f8b",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.214,
+        0.213,
+        0.197
+       ],
+       "hold_errs": [
+        0.212,
+        0.212,
+        0.199
+       ],
+       "decode_err_mean": 0.208,
+       "hold_err_mean": 0.208,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.786
+     },
+     {
+      "tclass": "manifest",
+      "index": 34,
+      "f_sha256": "794f814cb8816dc1c7e230a2e68fe75a9ab4bd6163a8531f0edb0972968d0d3f",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.047,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.442,
+        0.469,
+        0.429
+       ],
+       "hold_errs": [
+        0.437,
+        0.47,
+        0.418
+       ],
+       "decode_err_mean": 0.447,
+       "hold_err_mean": 0.441,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.53
+     },
+     {
+      "tclass": "manifest",
+      "index": 35,
+      "f_sha256": "922454ea39cd486c3de06f89533670a7dab88ada81c323d4d0d1670f1c408f5a",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.219,
+        0.215,
+        0.197
+       ],
+       "hold_errs": [
+        0.221,
+        0.211,
+        0.204
+       ],
+       "decode_err_mean": 0.21,
+       "hold_err_mean": 0.212,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.779
+     },
+     {
+      "tclass": "manifest",
+      "index": 36,
+      "f_sha256": "a8528e706304e4f6502fb842cd4f4e9fcb2c80f2a971a3b48a77500813c9bcfc",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.442,
+        0.466,
+        0.429
+       ],
+       "hold_errs": [
+        0.435,
+        0.459,
+        0.417
+       ],
+       "decode_err_mean": 0.446,
+       "hold_err_mean": 0.437,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.534
+     },
+     {
+      "tclass": "manifest",
+      "index": 37,
+      "f_sha256": "84ff6dc28de16be0fb829776effd50ea519bc67847b1d4ca8672435f8658b4d1",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.047,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.507,
+        0.553,
+        0.511
+       ],
+       "hold_errs": [
+        0.501,
+        0.546,
+        0.498
+       ],
+       "decode_err_mean": 0.524,
+       "hold_err_mean": 0.515,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.447
+     },
+     {
+      "tclass": "manifest",
+      "index": 38,
+      "f_sha256": "1b71c1eb379d8d56d1d7c7c3275f86b90368d90a580aa28732115434e6a94e36",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.047,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.213,
+        0.217,
+        0.198
+       ],
+       "hold_errs": [
+        0.213,
+        0.229,
+        0.208
+       ],
+       "decode_err_mean": 0.209,
+       "hold_err_mean": 0.217,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.771
+     },
+     {
+      "tclass": "manifest",
+      "index": 39,
+      "f_sha256": "6d74be86b58a396e45a9d3237742da1cd79710bf122d040e1313c5b2939d55a7",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.441,
+        0.466,
+        0.429
+       ],
+       "hold_errs": [
+        0.431,
+        0.459,
+        0.415
+       ],
+       "decode_err_mean": 0.445,
+       "hold_err_mean": 0.435,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.534
+     },
+     {
+      "tclass": "manifest",
+      "index": 40,
+      "f_sha256": "3a7fa971a950edd7926fd60d9aa885374b378b68893bfeae519643fbeb39cd0d",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.216,
+        0.214,
+        0.198
+       ],
+       "hold_errs": [
+        0.214,
+        0.217,
+        0.2
+       ],
+       "decode_err_mean": 0.209,
+       "hold_err_mean": 0.21,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.783
+     },
+     {
+      "tclass": "manifest",
+      "index": 41,
+      "f_sha256": "c5d701d9e096568d6c69bf17a548ed969af4677934912e6c3c6faae1259933eb",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.047,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.326,
+        0.385,
+        0.346
+       ],
+       "hold_errs": [
+        0.318,
+        0.381,
+        0.348
+       ],
+       "decode_err_mean": 0.352,
+       "hold_err_mean": 0.349,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.615
+     },
+     {
+      "tclass": "manifest",
+      "index": 42,
+      "f_sha256": "3a0ae687aa7784522030755dbf30eec16eb19583a89b238b48cc3ff288585e72",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.216,
+        0.216,
+        0.198
+       ],
+       "hold_errs": [
+        0.216,
+        0.211,
+        0.196
+       ],
+       "decode_err_mean": 0.21,
+       "hold_err_mean": 0.208,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.784
+     },
+     {
+      "tclass": "manifest",
+      "index": 43,
+      "f_sha256": "f7b83da74bf82a031e1641491a5bec9de56997b21e8ac23da7dba7fbcf689021",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.213,
+        0.215,
+        0.194
+       ],
+       "hold_errs": [
+        0.215,
+        0.214,
+        0.198
+       ],
+       "decode_err_mean": 0.207,
+       "hold_err_mean": 0.209,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.785
+     },
+     {
+      "tclass": "manifest",
+      "index": 44,
+      "f_sha256": "91610c9bff0b6e9610d682598ddf1d731f649474ecf044fbf0018928ba0f14dc",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.263,
+        0.331,
+        0.282
+       ],
+       "hold_errs": [
+        0.265,
+        0.329,
+        0.279
+       ],
+       "decode_err_mean": 0.292,
+       "hold_err_mean": 0.291,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.669
+     },
+     {
+      "tclass": "manifest",
+      "index": 45,
+      "f_sha256": "660984d3a592f6a9c3484fa0b812aa8d177828fcd357901766ed9e8c418dcdba",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.21,
+        0.216,
+        0.198
+       ],
+       "hold_errs": [
+        0.211,
+        0.22,
+        0.197
+       ],
+       "decode_err_mean": 0.208,
+       "hold_err_mean": 0.209,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.78
+     },
+     {
+      "tclass": "manifest",
+      "index": 46,
+      "f_sha256": "7fa43977c5a9db0c3301c73eb756ab49de7d136ac7bf98b7b4c312c601b590d7",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.047,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.512,
+        0.547,
+        0.508
+       ],
+       "hold_errs": [
+        0.501,
+        0.538,
+        0.499
+       ],
+       "decode_err_mean": 0.522,
+       "hold_err_mean": 0.513,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.453
+     },
+     {
+      "tclass": "manifest",
+      "index": 47,
+      "f_sha256": "439ca775618c45d53207dd8d3dfd21527f869187a67533c3d32049aff9797979",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.326,
+        0.385,
+        0.347
+       ],
+       "hold_errs": [
+        0.322,
+        0.375,
+        0.341
+       ],
+       "decode_err_mean": 0.352,
+       "hold_err_mean": 0.346,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.615
+     },
+     {
+      "tclass": "manifest",
+      "index": 48,
+      "f_sha256": "d3ca47c6eb01f86c9cce1f842517913f10d59f452e3403ce6aaedc88610834ac",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.214,
+        0.213,
+        0.197
+       ],
+       "hold_errs": [
+        0.211,
+        0.213,
+        0.199
+       ],
+       "decode_err_mean": 0.208,
+       "hold_err_mean": 0.208,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.786
+     },
+     {
+      "tclass": "manifest",
+      "index": 49,
+      "f_sha256": "b1cc0e2e050a16b26041848d08616b27168d92c23732141d94a41bf8c453eb7f",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.327,
+        0.381,
+        0.347
+       ],
+       "hold_errs": [
+        0.321,
+        0.378,
+        0.345
+       ],
+       "decode_err_mean": 0.352,
+       "hold_err_mean": 0.348,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.619
+     },
+     {
+      "tclass": "manifest",
+      "index": 50,
+      "f_sha256": "8c3c688af4fe2a499ced72d32d204198eaf8406bc9eb8ba6af07e20d61586111",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.437,
+        0.471,
+        0.425
+       ],
+       "hold_errs": [
+        0.426,
+        0.458,
+        0.42
+       ],
+       "decode_err_mean": 0.444,
+       "hold_err_mean": 0.434,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.529
+     },
+     {
+      "tclass": "manifest",
+      "index": 51,
+      "f_sha256": "e1e0fcdec6a5c90b018ed2bd7dfc3f3b55d1731d5c7c27147375af984f5494ff",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.048,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.481,
+        0.502,
+        0.475
+       ],
+       "hold_errs": [
+        0.473,
+        0.497,
+        0.47
+       ],
+       "decode_err_mean": 0.486,
+       "hold_err_mean": 0.48,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.498
+     },
+     {
+      "tclass": "manifest",
+      "index": 52,
+      "f_sha256": "e69c8c0c59cacd4f021c8a18882e6f479394ab5fb321f051152294581b26a419",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.215,
+        0.216,
+        0.198
+       ],
+       "hold_errs": [
+        0.215,
+        0.214,
+        0.196
+       ],
+       "decode_err_mean": 0.21,
+       "hold_err_mean": 0.208,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.784
+     },
+     {
+      "tclass": "manifest",
+      "index": 53,
+      "f_sha256": "862d6db8242fcb004e544ef945608865173bcc5e645c8349f9acb62d1a3e537f",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.257,
+        0.33,
+        0.276
+       ],
+       "hold_errs": [
+        0.258,
+        0.331,
+        0.277
+       ],
+       "decode_err_mean": 0.288,
+       "hold_err_mean": 0.289,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.669
+     },
+     {
+      "tclass": "manifest",
+      "index": 54,
+      "f_sha256": "57589684e5fcad55fcea844f040bf70001520545ae503fff4cbe4d07ccab5759",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.049,
+       "eT": 0.042,
+       "quad": 0.064,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.51,
+        0.553,
+        0.506
+       ],
+       "hold_errs": [
+        0.508,
+        0.541,
+        0.496
+       ],
+       "decode_err_mean": 0.523,
+       "hold_err_mean": 0.515,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.447
+     },
+     {
+      "tclass": "manifest",
+      "index": 55,
+      "f_sha256": "8f2e52ffcc34348f3489119e77af575422c80b21eefc6c230e763fb008dcdda5",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.259,
+        0.33,
+        0.275
+       ],
+       "hold_errs": [
+        0.261,
+        0.326,
+        0.28
+       ],
+       "decode_err_mean": 0.288,
+       "hold_err_mean": 0.289,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.67
+     },
+     {
+      "tclass": "manifest",
+      "index": 56,
+      "f_sha256": "2b4655d54c226c05c1a9fd0709f13d4adaefdf4a2f9dfa0d0175a1e847413ef9",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.544,
+        0.585,
+        0.55
+       ],
+       "hold_errs": [
+        0.539,
+        0.57,
+        0.545
+       ],
+       "decode_err_mean": 0.56,
+       "hold_err_mean": 0.551,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.415
+     },
+     {
+      "tclass": "manifest",
+      "index": 57,
+      "f_sha256": "394229c5dc34fd834bac93d48bb717a55375ea982db41c8b6085b7342193d794",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.387,
+        0.436,
+        0.387
+       ],
+       "hold_errs": [
+        0.384,
+        0.434,
+        0.384
+       ],
+       "decode_err_mean": 0.403,
+       "hold_err_mean": 0.401,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.564
+     },
+     {
+      "tclass": "manifest",
+      "index": 58,
+      "f_sha256": "f98bfc1f72bd748d27cf65f6f3e339e654bec2905f83d1edaa0404ec2d5cf334",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.38,
+        0.437,
+        0.383
+       ],
+       "hold_errs": [
+        0.375,
+        0.435,
+        0.379
+       ],
+       "decode_err_mean": 0.4,
+       "hold_err_mean": 0.396,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.563
+     },
+     {
+      "tclass": "manifest",
+      "index": 59,
+      "f_sha256": "cfa6924f0625a4aefc6a638bb655bb0cbdd770cd7211f98543514973aae2bc6d",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.049,
+       "eT": 0.042,
+       "quad": 0.065,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.259,
+        0.33,
+        0.277
+       ],
+       "hold_errs": [
+        0.267,
+        0.334,
+        0.285
+       ],
+       "decode_err_mean": 0.289,
+       "hold_err_mean": 0.296,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.666
+     },
+     {
+      "tclass": "manifest",
+      "index": 60,
+      "f_sha256": "3a9239e03cf818ab0b43aefb5b9fae319d63cb65cff7584c23db806e2646db5b",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.047,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.508,
+        0.555,
+        0.506
+       ],
+       "hold_errs": [
+        0.502,
+        0.545,
+        0.495
+       ],
+       "decode_err_mean": 0.523,
+       "hold_err_mean": 0.514,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.445
+     },
+     {
+      "tclass": "manifest",
+      "index": 61,
+      "f_sha256": "172f71ed05956b58491b677182bf6140e8d2678a09d7bb3aad232071e3cce1e6",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.542,
+        0.588,
+        0.549
+       ],
+       "hold_errs": [
+        0.534,
+        0.576,
+        0.544
+       ],
+       "decode_err_mean": 0.56,
+       "hold_err_mean": 0.551,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.412
+     },
+     {
+      "tclass": "manifest",
+      "index": 62,
+      "f_sha256": "00a06600c54cd19e42e72aa2a75f16e7c51af5527275ed4270cd0b25294d429b",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.211,
+        0.215,
+        0.198
+       ],
+       "hold_errs": [
+        0.212,
+        0.216,
+        0.196
+       ],
+       "decode_err_mean": 0.208,
+       "hold_err_mean": 0.208,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.784
+     },
+     {
+      "tclass": "manifest",
+      "index": 63,
+      "f_sha256": "c5961df53af49a2f0b65b6e57b5a887d34ce48909dd7a9486b737f78018ec99a",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.441,
+        0.469,
+        0.427
+       ],
+       "hold_errs": [
+        0.438,
+        0.456,
+        0.425
+       ],
+       "decode_err_mean": 0.446,
+       "hold_err_mean": 0.44,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.531
+     },
+     {
+      "tclass": "manifest",
+      "index": 64,
+      "f_sha256": "19955d278b12cb8ef7a6e1d35a217297a955e8aaae4084f30a625a24d2959120",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.048,
+       "eT": 0.042,
+       "quad": 0.064,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.382,
+        0.437,
+        0.384
+       ],
+       "hold_errs": [
+        0.381,
+        0.438,
+        0.383
+       ],
+       "decode_err_mean": 0.401,
+       "hold_err_mean": 0.401,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.562
+     },
+     {
+      "tclass": "manifest",
+      "index": 65,
+      "f_sha256": "e85212cbc742d7e7b97135ad1d5e41db4e93840fb085b1e0bf9a8d67898010f0",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.323,
+        0.377,
+        0.347
+       ],
+       "hold_errs": [
+        0.318,
+        0.366,
+        0.338
+       ],
+       "decode_err_mean": 0.349,
+       "hold_err_mean": 0.34,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.623
+     },
+     {
+      "tclass": "manifest",
+      "index": 66,
+      "f_sha256": "9aea10ef06868ed3f9ea0ee927b6b178fc5e0d71c80a62903f393a0cca7a595b",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.213,
+        0.214,
+        0.198
+       ],
+       "hold_errs": [
+        0.221,
+        0.216,
+        0.201
+       ],
+       "decode_err_mean": 0.209,
+       "hold_err_mean": 0.213,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.779
+     },
+     {
+      "tclass": "manifest",
+      "index": 67,
+      "f_sha256": "9df96944b5986ef772a4af39c639a867982de5b567f7618865bea185add44462",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.217,
+        0.218,
+        0.196
+       ],
+       "hold_errs": [
+        0.209,
+        0.224,
+        0.202
+       ],
+       "decode_err_mean": 0.21,
+       "hold_err_mean": 0.212,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.776
+     },
+     {
+      "tclass": "manifest",
+      "index": 68,
+      "f_sha256": "533843286ce2b1d536a7a9db19dff7bc230c58422d35f7d348c453fc4dcb9307",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.384,
+        0.44,
+        0.384
+       ],
+       "hold_errs": [
+        0.37,
+        0.433,
+        0.376
+       ],
+       "decode_err_mean": 0.403,
+       "hold_err_mean": 0.393,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.56
+     },
+     {
+      "tclass": "manifest",
+      "index": 69,
+      "f_sha256": "7e4b8381ce7beed61fcfbacab7345f3111a0d6d18e4aed1a9f9a7d64c2e0038c",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.258,
+        0.331,
+        0.275
+       ],
+       "hold_errs": [
+        0.26,
+        0.328,
+        0.281
+       ],
+       "decode_err_mean": 0.288,
+       "hold_err_mean": 0.29,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.669
+     },
+     {
+      "tclass": "manifest",
+      "index": 70,
+      "f_sha256": "9045c7a84ca8f1e9d99781534701c1b6e47869c664c6f7f8d7f0be81455d49df",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.05,
+       "eT": 0.042,
+       "quad": 0.065,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.38,
+        0.439,
+        0.384
+       ],
+       "hold_errs": [
+        0.371,
+        0.439,
+        0.38
+       ],
+       "decode_err_mean": 0.401,
+       "hold_err_mean": 0.397,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.561
+     },
+     {
+      "tclass": "manifest",
+      "index": 71,
+      "f_sha256": "b419869269fddb6b9d9474c1cd56bd5a3b1442eba62410a302c05b150743b95f",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.326,
+        0.381,
+        0.346
+       ],
+       "hold_errs": [
+        0.319,
+        0.38,
+        0.346
+       ],
+       "decode_err_mean": 0.351,
+       "hold_err_mean": 0.348,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.619
+     },
+     {
+      "tclass": "manifest",
+      "index": 72,
+      "f_sha256": "1f988b11561950528500e16d2855fa19e0166a92f70376687209694d5560e8a6",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.049,
+       "eT": 0.042,
+       "quad": 0.064,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.221,
+        0.215,
+        0.198
+       ],
+       "hold_errs": [
+        0.233,
+        0.215,
+        0.213
+       ],
+       "decode_err_mean": 0.211,
+       "hold_err_mean": 0.22,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.767
+     },
+     {
+      "tclass": "manifest",
+      "index": 73,
+      "f_sha256": "9aeb29c072ee02cfb3bb1f02ff1b0d6df0462198e187c49c7f863de51b87970e",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.437,
+        0.471,
+        0.425
+       ],
+       "hold_errs": [
+        0.427,
+        0.459,
+        0.421
+       ],
+       "decode_err_mean": 0.444,
+       "hold_err_mean": 0.436,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.529
+     },
+     {
+      "tclass": "manifest",
+      "index": 74,
+      "f_sha256": "6978b4c31ed1a0b10e8a6c161174c903eee38c86ff7020dd88ea7459b785e67f",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.216,
+        0.216,
+        0.198
+       ],
+       "hold_errs": [
+        0.215,
+        0.212,
+        0.195
+       ],
+       "decode_err_mean": 0.21,
+       "hold_err_mean": 0.208,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.784
+     },
+     {
+      "tclass": "manifest",
+      "index": 75,
+      "f_sha256": "428dbc2ab631e3de0e4ddf652563a7ff81b41c82b93082a4956d10414c22db9c",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.215,
+        0.218,
+        0.198
+       ],
+       "hold_errs": [
+        0.215,
+        0.219,
+        0.198
+       ],
+       "decode_err_mean": 0.21,
+       "hold_err_mean": 0.211,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.781
+     },
+     {
+      "tclass": "manifest",
+      "index": 76,
+      "f_sha256": "07f8039d2c825825ba9eeb50d8b09a7c21570380fbd9871163db092ec9be607a",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.048,
+       "eT": 0.042,
+       "quad": 0.064,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.386,
+        0.441,
+        0.387
+       ],
+       "hold_errs": [
+        0.379,
+        0.441,
+        0.384
+       ],
+       "decode_err_mean": 0.405,
+       "hold_err_mean": 0.401,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.559
+     },
+     {
+      "tclass": "manifest",
+      "index": 77,
+      "f_sha256": "99aa7d1eede4bf6dfa1a800c4bfa15725e2165b693db8b1514a0def1797a11c3",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.048,
+       "eT": 0.042,
+       "quad": 0.064,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.214,
+        0.22,
+        0.199
+       ],
+       "hold_errs": [
+        0.218,
+        0.229,
+        0.205
+       ],
+       "decode_err_mean": 0.211,
+       "hold_err_mean": 0.217,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.771
+     },
+     {
+      "tclass": "manifest",
+      "index": 78,
+      "f_sha256": "cb350bac3e0e7cea6e8120a0d2c833c42ae5a64f4929dd6765b5490d1a99c719",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.216,
+        0.216,
+        0.196
+       ],
+       "hold_errs": [
+        0.212,
+        0.214,
+        0.2
+       ],
+       "decode_err_mean": 0.21,
+       "hold_err_mean": 0.209,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.784
+     },
+     {
+      "tclass": "manifest",
+      "index": 79,
+      "f_sha256": "723f94ec2d628866d1753702df630882e3f19fd73aa94faf37510507ae831dcb",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.217,
+        0.216,
+        0.195
+       ],
+       "hold_errs": [
+        0.208,
+        0.217,
+        0.198
+       ],
+       "decode_err_mean": 0.209,
+       "hold_err_mean": 0.208,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.783
+     },
+     {
+      "tclass": "manifest",
+      "index": 80,
+      "f_sha256": "3be5a5cd98a3067af4e8d5d083a952f94fd4c94b9137dedc7c07b4723d447d6f",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.473,
+        0.506,
+        0.47
+       ],
+       "hold_errs": [
+        0.471,
+        0.501,
+        0.461
+       ],
+       "decode_err_mean": 0.483,
+       "hold_err_mean": 0.478,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.494
+     },
+     {
+      "tclass": "manifest",
+      "index": 81,
+      "f_sha256": "9b13f307275846956a0efbbe689814372e4b121e466fce0120f6e4e7683adf0f",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.443,
+        0.469,
+        0.428
+       ],
+       "hold_errs": [
+        0.434,
+        0.461,
+        0.419
+       ],
+       "decode_err_mean": 0.446,
+       "hold_err_mean": 0.438,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.531
+     },
+     {
+      "tclass": "manifest",
+      "index": 82,
+      "f_sha256": "d01fdb024e0aad7bef6d958084fe2cd7badb6df732090a871a8a72499d99eba9",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.215,
+        0.214,
+        0.198
+       ],
+       "hold_errs": [
+        0.211,
+        0.215,
+        0.197
+       ],
+       "decode_err_mean": 0.209,
+       "hold_err_mean": 0.207,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.785
+     },
+     {
+      "tclass": "manifest",
+      "index": 83,
+      "f_sha256": "13cc01fb754ccc1f0b73b863ab360b47d2b36054ef934dcde0d907f904e2f45c",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.213,
+        0.217,
+        0.195
+       ],
+       "hold_errs": [
+        0.215,
+        0.222,
+        0.202
+       ],
+       "decode_err_mean": 0.208,
+       "hold_err_mean": 0.213,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.778
+     },
+     {
+      "tclass": "manifest",
+      "index": 84,
+      "f_sha256": "5a9d37c92f6773fca15e4f2d152a9cb2a78165a4115cfccab2624a77c76dadde",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.384,
+        0.436,
+        0.385
+       ],
+       "hold_errs": [
+        0.375,
+        0.434,
+        0.38
+       ],
+       "decode_err_mean": 0.402,
+       "hold_err_mean": 0.396,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.564
+     },
+     {
+      "tclass": "manifest",
+      "index": 85,
+      "f_sha256": "16ee5166f7a357a8756a40dcc154f567abadd6fdefba88c43c0a2702c517e68a",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.326,
+        0.383,
+        0.35
+       ],
+       "hold_errs": [
+        0.327,
+        0.375,
+        0.344
+       ],
+       "decode_err_mean": 0.353,
+       "hold_err_mean": 0.349,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.617
+     },
+     {
+      "tclass": "manifest",
+      "index": 86,
+      "f_sha256": "fb2ad2acbe025ae96f1ca2a937448f8a2c7c6577ce2189df34a60edf4eef3701",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.212,
+        0.22,
+        0.197
+       ],
+       "hold_errs": [
+        0.216,
+        0.221,
+        0.2
+       ],
+       "decode_err_mean": 0.209,
+       "hold_err_mean": 0.212,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.779
+     },
+     {
+      "tclass": "manifest",
+      "index": 87,
+      "f_sha256": "e888e5c23ad7ecbd26bca20d610d5bdf56fd5b52efeaaae5c98cc8127e0a8a56",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.212,
+        0.22,
+        0.197
+       ],
+       "hold_errs": [
+        0.217,
+        0.223,
+        0.202
+       ],
+       "decode_err_mean": 0.21,
+       "hold_err_mean": 0.214,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.777
+     },
+     {
+      "tclass": "manifest",
+      "index": 88,
+      "f_sha256": "043c65ae65df525a620e09637ac6ccf5d5354441b0dfad018d25449cda2e7b39",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.326,
+        0.385,
+        0.347
+       ],
+       "hold_errs": [
+        0.324,
+        0.376,
+        0.343
+       ],
+       "decode_err_mean": 0.353,
+       "hold_err_mean": 0.348,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.615
+     },
+     {
+      "tclass": "manifest",
+      "index": 89,
+      "f_sha256": "4b9ca9f5b484a374a6014d3e324d3625a37915573d7d2be6fba71183eab60281",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.047,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.261,
+        0.336,
+        0.28
+       ],
+       "hold_errs": [
+        0.261,
+        0.334,
+        0.281
+       ],
+       "decode_err_mean": 0.292,
+       "hold_err_mean": 0.292,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.664
+     },
+     {
+      "tclass": "manifest",
+      "index": 90,
+      "f_sha256": "6130659476604cf82cb9342ad47a9bbb90a4a05bb9b02b7ab8f37d67026bb71a",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.212,
+        0.214,
+        0.198
+       ],
+       "hold_errs": [
+        0.214,
+        0.215,
+        0.197
+       ],
+       "decode_err_mean": 0.208,
+       "hold_err_mean": 0.209,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.785
+     },
+     {
+      "tclass": "manifest",
+      "index": 91,
+      "f_sha256": "62e98f4315197d1724de6264dfd424469fd9ef851063170349e358e845999cc9",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.043,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.218,
+        0.215,
+        0.195
+       ],
+       "hold_errs": [
+        0.21,
+        0.213,
+        0.197
+       ],
+       "decode_err_mean": 0.209,
+       "hold_err_mean": 0.207,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.782
+     },
+     {
+      "tclass": "manifest",
+      "index": 92,
+      "f_sha256": "2e710c4b7202b0d08ce1f076d0b209601a4a73fe7207358d5364ce191e68c23c",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.213,
+        0.216,
+        0.198
+       ],
+       "hold_errs": [
+        0.211,
+        0.223,
+        0.203
+       ],
+       "decode_err_mean": 0.209,
+       "hold_err_mean": 0.212,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.777
+     },
+     {
+      "tclass": "manifest",
+      "index": 93,
+      "f_sha256": "f2d1eb85d6b3c3aef11cc5e6146e2ee72fbdef7aec2116e8677f8f938eb07998",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.047,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.217,
+        0.218,
+        0.196
+       ],
+       "hold_errs": [
+        0.21,
+        0.226,
+        0.203
+       ],
+       "decode_err_mean": 0.21,
+       "hold_err_mean": 0.213,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.774
+     },
+     {
+      "tclass": "manifest",
+      "index": 94,
+      "f_sha256": "765deac6f369bb7692efc88a437b08069701b0e2ed34915c9e9a87846bc9b659",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.213,
+        0.213,
+        0.197
+       ],
+       "hold_errs": [
+        0.21,
+        0.213,
+        0.198
+       ],
+       "decode_err_mean": 0.208,
+       "hold_err_mean": 0.207,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.787
+     },
+     {
+      "tclass": "manifest",
+      "index": 95,
+      "f_sha256": "fb18891b3191904f60342eb7fd7c9b5e5ca675fa705449d271f19083c20ad4d9",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.049,
+       "eT": 0.042,
+       "quad": 0.065,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.565,
+        0.623,
+        0.59
+       ],
+       "hold_errs": [
+        0.557,
+        0.619,
+        0.579
+       ],
+       "decode_err_mean": 0.593,
+       "hold_err_mean": 0.585,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.377
+     },
+     {
+      "tclass": "manifest",
+      "index": 96,
+      "f_sha256": "e255950406d37a96d3ede12f8793c59b8eb0ddf55b24644d0a9f9a6c47680caa",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.045,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.508,
+        0.551,
+        0.505
+       ],
+       "hold_errs": [
+        0.501,
+        0.534,
+        0.493
+       ],
+       "decode_err_mean": 0.522,
+       "hold_err_mean": 0.509,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.449
+     },
+     {
+      "tclass": "manifest",
+      "index": 97,
+      "f_sha256": "f207df78f515504c77cf153b6adf01f3a2036c8272aec3381890f349d8a62c16",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.06,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.213,
+        0.214,
+        0.197
+       ],
+       "hold_errs": [
+        0.21,
+        0.214,
+        0.198
+       ],
+       "decode_err_mean": 0.208,
+       "hold_err_mean": 0.207,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.786
+     },
+     {
+      "tclass": "manifest",
+      "index": 98,
+      "f_sha256": "dc5f69e868e8a90f821c0fd415a9bf6106821f2a3a4da95344d40de4835f48e8",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.044,
+       "eT": 0.042,
+       "quad": 0.061,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.259,
+        0.331,
+        0.283
+       ],
+       "hold_errs": [
+        0.258,
+        0.327,
+        0.278
+       ],
+       "decode_err_mean": 0.291,
+       "hold_err_mean": 0.288,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.669
+     },
+     {
+      "tclass": "manifest",
+      "index": 99,
+      "f_sha256": "e49605d6c5cc1e328458a12ea1821382d86f70ea16fef25d073f562d2704dde7",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.544,
+        0.581,
+        0.551
+       ],
+       "hold_errs": [
+        0.532,
+        0.571,
+        0.537
+       ],
+       "decode_err_mean": 0.558,
+       "hold_err_mean": 0.547,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.4190000000000005
+     },
+     {
+      "tclass": "deep",
+      "rung": -40.0,
+      "instance": 0,
+      "f_sha256": "7fb57feed4309e22b013f99a7041fb0e2d8c71aa43bf32ad4e1b9862324ea257",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.526,
+        0.557,
+        0.526
+       ],
+       "hold_errs": [
+        0.521,
+        0.549,
+        0.519
+       ],
+       "decode_err_mean": 0.536,
+       "hold_err_mean": 0.529,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.443
+     },
+     {
+      "tclass": "deep",
+      "rung": -40.0,
+      "instance": 1,
+      "f_sha256": "5d9f7283d80aeab3f305035e4127104a59472d70b4aa7a27246ffd6bff7ea149",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.52,
+        0.558,
+        0.526
+       ],
+       "hold_errs": [
+        0.513,
+        0.551,
+        0.516
+       ],
+       "decode_err_mean": 0.535,
+       "hold_err_mean": 0.527,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.442
+     },
+     {
+      "tclass": "deep",
+      "rung": -45.0,
+      "instance": 0,
+      "f_sha256": "5f59f2e08cc607a2d6accb23eef3b7914c62f52183866e4873bd1cb1a2642d58",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.046,
+       "eT": 0.042,
+       "quad": 0.062,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.526,
+        0.556,
+        0.527
+       ],
+       "hold_errs": [
+        0.522,
+        0.548,
+        0.521
+       ],
+       "decode_err_mean": 0.537,
+       "hold_err_mean": 0.53,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.444
+     },
+     {
+      "tclass": "deep",
+      "rung": -45.0,
+      "instance": 1,
+      "f_sha256": "424fda1f90314d39f53d444f386f9e31ee65f1b56a1255bde20029b5ba9102ce",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.047,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.521,
+        0.557,
+        0.526
+       ],
+       "hold_errs": [
+        0.515,
+        0.55,
+        0.518
+       ],
+       "decode_err_mean": 0.535,
+       "hold_err_mean": 0.527,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.443
+     },
+     {
+      "tclass": "deep",
+      "rung": -50.0,
+      "instance": 0,
+      "f_sha256": "65f856c98fb5122d0751c13b4d1471a3f6d3afda394f9e50db25525afb99815e",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.047,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.527,
+        0.556,
+        0.528
+       ],
+       "hold_errs": [
+        0.525,
+        0.547,
+        0.523
+       ],
+       "decode_err_mean": 0.537,
+       "hold_err_mean": 0.532,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.444
+     },
+     {
+      "tclass": "deep",
+      "rung": -50.0,
+      "instance": 1,
+      "f_sha256": "2cf858dbea74906d925b39c7198c0b78cdfc830227d0c0d3a240625b50fc31c8",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.047,
+       "eT": 0.042,
+       "quad": 0.063,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.521,
+        0.557,
+        0.527
+       ],
+       "hold_errs": [
+        0.517,
+        0.549,
+        0.52
+       ],
+       "decode_err_mean": 0.535,
+       "hold_err_mean": 0.529,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.443
+     },
+     {
+      "tclass": "deep",
+      "rung": -55.0,
+      "instance": 0,
+      "f_sha256": "da2c9d2232c165db98e6bf714a9a53c517ec90929d31bf55d3b7ebd3ddb75d18",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.048,
+       "eT": 0.042,
+       "quad": 0.064,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.528,
+        0.556,
+        0.528
+       ],
+       "hold_errs": [
+        0.528,
+        0.548,
+        0.526
+       ],
+       "decode_err_mean": 0.537,
+       "hold_err_mean": 0.534,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.444
+     },
+     {
+      "tclass": "deep",
+      "rung": -55.0,
+      "instance": 1,
+      "f_sha256": "cc720e11448a97739f7cc650d8125100b3194d9960ef1b2a1e4727113a1d8e8d",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.049,
+       "eT": 0.042,
+       "quad": 0.064,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.522,
+        0.557,
+        0.528
+       ],
+       "hold_errs": [
+        0.52,
+        0.55,
+        0.523
+       ],
+       "decode_err_mean": 0.536,
+       "hold_err_mean": 0.531,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.443
+     },
+     {
+      "tclass": "deep",
+      "rung": -60.0,
+      "instance": 0,
+      "f_sha256": "d940e88b6b268c6f547d78cd0c93a9237f86e337661dc89afae5a79b8ec6c431",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.05,
+       "eT": 0.042,
+       "quad": 0.065,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.529,
+        0.556,
+        0.529
+       ],
+       "hold_errs": [
+        0.532,
+        0.548,
+        0.529
+       ],
+       "decode_err_mean": 0.538,
+       "hold_err_mean": 0.536,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.444
+     },
+     {
+      "tclass": "deep",
+      "rung": -60.0,
+      "instance": 1,
+      "f_sha256": "dd447e125f0e742299cfa974c442bc46a8396cf0fd8620437111833ecfc975be",
+      "row": {
+       "cell": [
+        64.0,
+        0.0
+       ],
+       "host": "H1",
+       "eV": 0.05,
+       "eT": 0.042,
+       "quad": 0.065,
+       "pass": true,
+       "silent": true,
+       "decode_errs": [
+        0.523,
+        0.557,
+        0.529
+       ],
+       "hold_errs": [
+        0.524,
+        0.551,
+        0.527
+       ],
+       "decode_err_mean": 0.536,
+       "hold_err_mean": 0.534,
+       "decode_stable_seeds": "3/3",
+       "n_ok": 3,
+       "dec333": true,
+       "full_valid": true,
+       "n_rejected": 0
+      },
+      "writable": true,
+      "rejected": false,
+      "margin3": 5.443
+     }
+    ],
+    "rewire_seed": null,
+    "record": null
+   }
+  }
+ }
+}
