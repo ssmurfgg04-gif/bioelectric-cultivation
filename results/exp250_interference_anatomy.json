@@ -1,0 +1,721 @@
+{
+ "exp": "exp250_interference_anatomy (the M33/miRNA interference anatomy \u2014 exp236's registered next, ledger L212/L228)",
+ "criteria": {
+  "I1_overlap_map_deposited": true,
+  "I2_gate_hierarchy": false,
+  "I3_discipline": true
+ },
+ "branch": "INTERFERENCE-STRUCTURAL",
+ "I1_overlap_map": {
+  "scale_free": {
+   "overlap_count": 0,
+   "overlap_idx": [],
+   "overlap_in_amputation_region": {
+    "head": [],
+    "mid": [],
+    "trunk": []
+   },
+   "overlap_spatial_windows": {
+    "head": 0,
+    "mid": 0,
+    "trunk": 0,
+    "other": 0
+   },
+   "repressed_count": 10,
+   "repressed_idx": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54
+   ],
+   "repressed_spatial_windows": {
+    "head": 0,
+    "mid": 10,
+    "trunk": 0,
+    "other": 0
+   },
+   "m33_specified_count": 25,
+   "m33_specified_idx": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "m_line": 7.942,
+   "m_max": 15.885
+  },
+  "random3": {
+   "overlap_count": 0,
+   "overlap_idx": [],
+   "overlap_in_amputation_region": {
+    "head": [],
+    "mid": [],
+    "trunk": []
+   },
+   "overlap_spatial_windows": {
+    "head": 0,
+    "mid": 0,
+    "trunk": 0,
+    "other": 0
+   },
+   "repressed_count": 10,
+   "repressed_idx": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54
+   ],
+   "repressed_spatial_windows": {
+    "head": 0,
+    "mid": 10,
+    "trunk": 0,
+    "other": 0
+   },
+   "m33_specified_count": 25,
+   "m33_specified_idx": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "m_line": 9.325,
+   "m_max": 18.65
+  },
+  "torus": {
+   "overlap_count": 0,
+   "overlap_idx": [],
+   "overlap_in_amputation_region": {
+    "head": [],
+    "mid": [],
+    "trunk": []
+   },
+   "overlap_spatial_windows": {
+    "head": 0,
+    "mid": 0,
+    "trunk": 0,
+    "other": 0
+   },
+   "repressed_count": 10,
+   "repressed_idx": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54
+   ],
+   "repressed_spatial_windows": {
+    "head": 0,
+    "mid": 10,
+    "trunk": 0,
+    "other": 0
+   },
+   "m33_specified_count": 25,
+   "m33_specified_idx": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "m_line": 7.873,
+   "m_max": 15.746
+  }
+ },
+ "I1_finding": {
+  "overlap_counts": {
+   "scale_free": 0,
+   "random3": 0,
+   "torus": 0
+  },
+  "empty_on_every_arm": true,
+  "reading": "the cells where the miRNA represses (m >= m_line) but M33 would specify (phi_spec >= M33_LINE), per graph-arm over the whole organism; the spatial distribution deposited against the amputation cohort's region windows"
+ },
+ "I2_gate_hierarchy": {
+  "i2a_trunk_and_vs_or": [
+   {
+    "graph": "scale_free",
+    "pair": "M33+M35",
+    "and_cov": 0.0,
+    "or_cov": 0.0,
+    "ok": true
+   },
+   {
+    "graph": "scale_free",
+    "pair": "M33+miRNA",
+    "and_cov": 0.0,
+    "or_cov": 1.0,
+    "ok": false
+   },
+   {
+    "graph": "scale_free",
+    "pair": "M35+miRNA",
+    "and_cov": 1.0,
+    "or_cov": 1.0,
+    "ok": true
+   },
+   {
+    "graph": "random3",
+    "pair": "M33+M35",
+    "and_cov": 0.0,
+    "or_cov": 0.0,
+    "ok": true
+   },
+   {
+    "graph": "random3",
+    "pair": "M33+miRNA",
+    "and_cov": 0.0,
+    "or_cov": 1.0,
+    "ok": false
+   },
+   {
+    "graph": "random3",
+    "pair": "M35+miRNA",
+    "and_cov": 1.0,
+    "or_cov": 1.0,
+    "ok": true
+   },
+   {
+    "graph": "torus",
+    "pair": "M33+M35",
+    "and_cov": 0.0,
+    "or_cov": 0.0,
+    "ok": true
+   },
+   {
+    "graph": "torus",
+    "pair": "M33+miRNA",
+    "and_cov": 0.0,
+    "or_cov": 1.0,
+    "ok": false
+   },
+   {
+    "graph": "torus",
+    "pair": "M35+miRNA",
+    "and_cov": 1.0,
+    "or_cov": 1.0,
+    "ok": true
+   }
+  ],
+  "i2a": false,
+  "i2b_compositions_under_and": [
+   {
+    "plane": "head",
+    "graph": "scale_free",
+    "pair": "M33+M35",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "head",
+    "graph": "scale_free",
+    "pair": "M33+miRNA",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "head",
+    "graph": "scale_free",
+    "pair": "M35+miRNA",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "head",
+    "graph": "random3",
+    "pair": "M33+M35",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "head",
+    "graph": "random3",
+    "pair": "M33+miRNA",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "head",
+    "graph": "random3",
+    "pair": "M35+miRNA",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "head",
+    "graph": "torus",
+    "pair": "M33+M35",
+    "and_cov": 0.6666666666666666,
+    "max_single": 0.6666666666666666,
+    "ok": true
+   },
+   {
+    "plane": "head",
+    "graph": "torus",
+    "pair": "M33+miRNA",
+    "and_cov": 0.6666666666666666,
+    "max_single": 0.6666666666666666,
+    "ok": true
+   },
+   {
+    "plane": "head",
+    "graph": "torus",
+    "pair": "M35+miRNA",
+    "and_cov": 0.6666666666666666,
+    "max_single": 0.6666666666666666,
+    "ok": true
+   },
+   {
+    "plane": "mid",
+    "graph": "scale_free",
+    "pair": "M33+M35",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "mid",
+    "graph": "scale_free",
+    "pair": "M33+miRNA",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "mid",
+    "graph": "scale_free",
+    "pair": "M35+miRNA",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "mid",
+    "graph": "random3",
+    "pair": "M33+M35",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "mid",
+    "graph": "random3",
+    "pair": "M33+miRNA",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "mid",
+    "graph": "random3",
+    "pair": "M35+miRNA",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "mid",
+    "graph": "torus",
+    "pair": "M33+M35",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "mid",
+    "graph": "torus",
+    "pair": "M33+miRNA",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "mid",
+    "graph": "torus",
+    "pair": "M35+miRNA",
+    "and_cov": 0.0,
+    "max_single": 0.0,
+    "ok": true
+   },
+   {
+    "plane": "trunk",
+    "graph": "scale_free",
+    "pair": "M33+M35",
+    "and_cov": 0.0,
+    "max_single": 1.0,
+    "ok": false
+   },
+   {
+    "plane": "trunk",
+    "graph": "scale_free",
+    "pair": "M33+miRNA",
+    "and_cov": 0.0,
+    "max_single": 1.0,
+    "ok": false
+   },
+   {
+    "plane": "trunk",
+    "graph": "scale_free",
+    "pair": "M35+miRNA",
+    "and_cov": 1.0,
+    "max_single": 1.0,
+    "ok": true
+   },
+   {
+    "plane": "trunk",
+    "graph": "random3",
+    "pair": "M33+M35",
+    "and_cov": 0.0,
+    "max_single": 1.0,
+    "ok": false
+   },
+   {
+    "plane": "trunk",
+    "graph": "random3",
+    "pair": "M33+miRNA",
+    "and_cov": 0.0,
+    "max_single": 1.0,
+    "ok": false
+   },
+   {
+    "plane": "trunk",
+    "graph": "random3",
+    "pair": "M35+miRNA",
+    "and_cov": 1.0,
+    "max_single": 1.0,
+    "ok": true
+   },
+   {
+    "plane": "trunk",
+    "graph": "torus",
+    "pair": "M33+M35",
+    "and_cov": 0.0,
+    "max_single": 1.0,
+    "ok": false
+   },
+   {
+    "plane": "trunk",
+    "graph": "torus",
+    "pair": "M33+miRNA",
+    "and_cov": 0.0,
+    "max_single": 1.0,
+    "ok": false
+   },
+   {
+    "plane": "trunk",
+    "graph": "torus",
+    "pair": "M35+miRNA",
+    "and_cov": 1.0,
+    "max_single": 1.0,
+    "ok": true
+   }
+  ],
+  "i2b": false,
+  "coverage_table": {
+   "head|scale_free": {
+    "single:M33": 0.0,
+    "single:M35": 0.0,
+    "single:miRNA": 0.0,
+    "pair:M33+M35|OR": 0.0,
+    "pair:M33+miRNA|OR": 0.0,
+    "pair:M35+miRNA|OR": 0.0,
+    "pair:M33+M35|AND": 0.0,
+    "pair:M33+miRNA|AND": 0.0,
+    "pair:M35+miRNA|AND": 0.0
+   },
+   "head|random3": {
+    "single:M33": 0.0,
+    "single:M35": 0.0,
+    "single:miRNA": 0.0,
+    "pair:M33+M35|OR": 0.0,
+    "pair:M33+miRNA|OR": 0.0,
+    "pair:M35+miRNA|OR": 0.0,
+    "pair:M33+M35|AND": 0.0,
+    "pair:M33+miRNA|AND": 0.0,
+    "pair:M35+miRNA|AND": 0.0
+   },
+   "head|torus": {
+    "single:M33": 0.666667,
+    "single:M35": 0.0,
+    "single:miRNA": 0.666667,
+    "pair:M33+M35|OR": 0.666667,
+    "pair:M33+miRNA|OR": 0.666667,
+    "pair:M35+miRNA|OR": 0.666667,
+    "pair:M33+M35|AND": 0.666667,
+    "pair:M33+miRNA|AND": 0.666667,
+    "pair:M35+miRNA|AND": 0.666667
+   },
+   "mid|scale_free": {
+    "single:M33": 0.0,
+    "single:M35": 0.0,
+    "single:miRNA": 0.0,
+    "pair:M33+M35|OR": 0.0,
+    "pair:M33+miRNA|OR": 0.0,
+    "pair:M35+miRNA|OR": 0.0,
+    "pair:M33+M35|AND": 0.0,
+    "pair:M33+miRNA|AND": 0.0,
+    "pair:M35+miRNA|AND": 0.0
+   },
+   "mid|random3": {
+    "single:M33": 0.0,
+    "single:M35": 0.0,
+    "single:miRNA": 0.0,
+    "pair:M33+M35|OR": 0.0,
+    "pair:M33+miRNA|OR": 0.0,
+    "pair:M35+miRNA|OR": 0.0,
+    "pair:M33+M35|AND": 0.0,
+    "pair:M33+miRNA|AND": 0.0,
+    "pair:M35+miRNA|AND": 0.0
+   },
+   "mid|torus": {
+    "single:M33": 0.0,
+    "single:M35": 0.0,
+    "single:miRNA": 0.0,
+    "pair:M33+M35|OR": 0.0,
+    "pair:M33+miRNA|OR": 0.0,
+    "pair:M35+miRNA|OR": 0.0,
+    "pair:M33+M35|AND": 0.0,
+    "pair:M33+miRNA|AND": 0.0,
+    "pair:M35+miRNA|AND": 0.0
+   },
+   "trunk|scale_free": {
+    "single:M33": 0.0,
+    "single:M35": 0.0,
+    "single:miRNA": 1.0,
+    "pair:M33+M35|OR": 0.0,
+    "pair:M33+miRNA|OR": 1.0,
+    "pair:M35+miRNA|OR": 1.0,
+    "pair:M33+M35|AND": 0.0,
+    "pair:M33+miRNA|AND": 0.0,
+    "pair:M35+miRNA|AND": 1.0
+   },
+   "trunk|random3": {
+    "single:M33": 0.0,
+    "single:M35": 0.0,
+    "single:miRNA": 1.0,
+    "pair:M33+M35|OR": 0.0,
+    "pair:M33+miRNA|OR": 1.0,
+    "pair:M35+miRNA|OR": 1.0,
+    "pair:M33+M35|AND": 0.0,
+    "pair:M33+miRNA|AND": 0.0,
+    "pair:M35+miRNA|AND": 1.0
+   },
+   "trunk|torus": {
+    "single:M33": 0.0,
+    "single:M35": 0.0,
+    "single:miRNA": 1.0,
+    "pair:M33+M35|OR": 0.0,
+    "pair:M33+miRNA|OR": 1.0,
+    "pair:M35+miRNA|OR": 1.0,
+    "pair:M33+M35|AND": 0.0,
+    "pair:M33+miRNA|AND": 0.0,
+    "pair:M35+miRNA|AND": 1.0
+   }
+  }
+ },
+ "I3_discipline": {
+  "exp236_deposit_byte_unchanged": true,
+  "exp236_sha256_before": "c3caeed1c9fc318a249518473075012e34670c94682cb30d2be1edb633225b11",
+  "exp236_sha256_after": "c3caeed1c9fc318a249518473075012e34670c94682cb30d2be1edb633225b11",
+  "rejections": [],
+  "rejection_count": 0,
+  "deterministic": true,
+  "determinism_diffs": [],
+  "panel_rows_per_pass": 189,
+  "exp236_anchor_exact": true,
+  "exp236_anchor_cells": 54,
+  "exp236_anchor_max_abs_diff": 0.0,
+  "overlap_map_stable": true
+ },
+ "constants": {
+  "m33_line": -35.0,
+  "neural_spec_min": -60.0,
+  "err_bar": 6.0,
+  "n": 100,
+  "delta_m": 0.04,
+  "sigma_m": 0.015,
+  "source_s": 1.0,
+  "ring": [
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54
+  ],
+  "arz_k": 3,
+  "guess_sd": 18.0,
+  "noise_std": 0.6,
+  "steps_per_cell": 8,
+  "dt_walk": 0.1,
+  "graph_arms": [
+   "scale_free",
+   "random3",
+   "torus"
+  ],
+  "planes": [
+   "head",
+   "mid",
+   "trunk"
+  ],
+  "regions": {
+   "head": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "mid": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+   ],
+   "trunk": [
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ]
+  },
+  "regen_seeds": [
+   11,
+   12,
+   13
+  ]
+ },
+ "notes": "OPERATIONALIZATION DISCLOSURES (the docstring byte-unchanged): (1) THE M33 PREDICATE: 'above the M33 gate' = the production M33 gate phi_spec >= M33_LINE = -35.0 \u2014 exp236's frozen machinery (its regen_panel gate) and its disclosure (1); NEURAL_SPEC_MIN = -60.0 is the post-exp168 S-REL adoption floor, not the M33 gate under the current core, and is deposited only for the record. (2) THE AND-READ'S REALIZATION: the conjoined competence array (phi_spec >= M33_LINE) AND (m < m_line) is fed through exp236's frozen competence-gate arm (its 'miRNA' arm reader consumes a pre-computed competence array and no rng stream) with exp236's M33+miRNA pair fallback (the single guess); the frozen regen_panel walk is reused verbatim, so the AND rows sit on the identical shared pools, commitment order and step dynamics as the OR rows. (3) M35 IS GATE-LESS: the ARZ multi-lineage convergence is the fallback amender, not a spec gate (exp236's machinery) \u2014 the conjunction over an M35-bearing pair's predicates reduces to the surviving gate, so the AND and OR reads COINCIDE for M33+M35 and M35+miRNA; those rows are the same runs recorded under both reads (disclosed, not duplicated). (4) THE LAYER IS WOUND-INDEPENDENT: the settled field (exp236's mirna_layer(A) on the intact graph) predates the cut, so the overlap map is a per-graph-arm object over the whole organism; overlap_in_amputation_region localizes it against the amputation cohort's regions. (5) THE FINDING (I1): the repressed set is exactly the source ring 45-54 on every arm and M33's spec set is the head 0-24 (lbl -20 >= -35 > lbl mid/trunk -50) \u2014 DISJOINT: the wrongly-de-competenced set is EMPTY; there is NO cell-level miRNA->M33 veto. exp236's R2 interference is STRUCTURAL: the trunk plane's competence is carried by the miRNA gate ALONE (M33's predicate is false on the entire trunk region, the TC-G5 dead zone), so any pair lacking the miRNA gate (M33+M35) \u2014 and any hierarchy that intersects the M33 predicate into the pair gate (the AND-read on M33+miRNA) \u2014 loses the trunk (0.0 < the miRNA single's 1.0). (6) I2(a)'s QUANTIFICATION: the gate hierarchy is evaluated per pair x graph-arm on the trunk plane (exp236's R2 table convention \u2014 every cell of the plane's table must hold); the full per-pair AND/OR table is deposited so any weaker reading is computable from the deposit. (7) THE ANCHOR: the re-run singles + OR pairs reproduce exp236's deposited R2 coverages EXACTLY (54/54 cells, its unrounded R2_rows verdicts) \u2014 the shared-pool protocol is deterministic and the frozen machinery intact. (8) THE DEPOSIT PATH: results/exp250_interference_anatomy.json (the repo's results/expNNN_<name>.json convention and the batch's registered artifact name; the module's stub OUT constant results/exp250.json is unused \u2014 the docstring names no deposit path). (9) COVERAGE: the plane verdict (region RMS < ERR_BAR, exp73's convention) mean over exp236's three regen seeds; the AND/OR tolerances follow exp236's 1e-12 composition convention."
+}
