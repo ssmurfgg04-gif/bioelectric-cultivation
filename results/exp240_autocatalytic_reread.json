@@ -1,0 +1,4302 @@
+{
+ "exp": "exp240_autocatalytic_reread",
+ "sections": {
+  "H0": {
+   "walk": {
+    "host": "H0",
+    "n": 100,
+    "kind": "reference (exp182's own host)",
+    "seeds": [
+     1,
+     2,
+     3
+    ],
+    "S_star": [
+     64.0,
+     0.0
+    ],
+    "rings_registered": 6,
+    "seed_cells": 25,
+    "cones": [
+     {
+      "seed": 1,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       31,
+       100
+      ],
+      "ring_errs_mV": [
+       0.015,
+       0.846,
+       0.449,
+       0.708,
+       0.011,
+       1.485
+      ],
+      "rings_passed": 6,
+      "support_sizes": [
+       26,
+       27,
+       28,
+       29,
+       30,
+       31
+      ],
+      "support_strictly_growing": true,
+      "n_absorption_events": 5,
+      "absorption_hold_all": true,
+      "worst_new_cell_value_drift_mV": 0.1664,
+      "n_redecode_events": 5,
+      "n_redecode_hold": 2,
+      "redecode_worst_abs_drift": 0.1664,
+      "p6_frozen": {
+       "n_prefix_bitexact": 140,
+       "n_close_bitexact": 31,
+       "n_p6_provenance_bitexact": 6,
+       "n_p3_seed_cells": 25
+      },
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         25
+        ],
+        "window": {
+         "n_nodes": 26,
+         "n_edges": 25,
+         "cf_edges_scaled": 0,
+         "sha256_16": "36517c374a827b85"
+        },
+        "emitted": [
+         -49.985
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.015,
+        "support": {
+         "size": 26,
+         "sha256_16": "a6e3249a788fb104"
+        },
+        "absorption": null,
+        "redecode": null,
+        "pass": true
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         26
+        ],
+        "window": {
+         "n_nodes": 27,
+         "n_edges": 26,
+         "cf_edges_scaled": 0,
+         "sha256_16": "61aaff128674e559"
+        },
+        "emitted": [
+         -50.846
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.846,
+        "support": {
+         "size": 27,
+         "sha256_16": "911cd62d71673b34"
+        },
+        "absorption": {
+         "after_round": 1,
+         "support_size_prev": 26,
+         "support_size_now": 27,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0033,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 1,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 0.0033,
+         "hold": true
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         27
+        ],
+        "window": {
+         "n_nodes": 28,
+         "n_edges": 27,
+         "cf_edges_scaled": 0,
+         "sha256_16": "a16dd6b79f87260f"
+        },
+        "emitted": [
+         -50.449
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.449,
+        "support": {
+         "size": 28,
+         "sha256_16": "d7881bbb934c5f61"
+        },
+        "absorption": {
+         "after_round": 2,
+         "support_size_prev": 27,
+         "support_size_now": 28,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0113,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 2,
+         "n_bit_exact": 0,
+         "n_within_bar": 2,
+         "max_abs_drift": 0.0113,
+         "hold": true
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         28
+        ],
+        "window": {
+         "n_nodes": 29,
+         "n_edges": 28,
+         "cf_edges_scaled": 0,
+         "sha256_16": "feed94c445ee0f05"
+        },
+        "emitted": [
+         -50.708
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.708,
+        "support": {
+         "size": 29,
+         "sha256_16": "e42d489f38967946"
+        },
+        "absorption": {
+         "after_round": 3,
+         "support_size_prev": 28,
+         "support_size_now": 29,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0797,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 3,
+         "n_bit_exact": 0,
+         "n_within_bar": 2,
+         "max_abs_drift": 0.0797,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         29
+        ],
+        "window": {
+         "n_nodes": 30,
+         "n_edges": 29,
+         "cf_edges_scaled": 0,
+         "sha256_16": "f8a15252151da092"
+        },
+        "emitted": [
+         -50.011
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.011,
+        "support": {
+         "size": 30,
+         "sha256_16": "394a42f05d4ef71e"
+        },
+        "absorption": {
+         "after_round": 4,
+         "support_size_prev": 29,
+         "support_size_now": 30,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0137,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 4,
+         "n_bit_exact": 0,
+         "n_within_bar": 3,
+         "max_abs_drift": 0.0817,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         30
+        ],
+        "window": {
+         "n_nodes": 31,
+         "n_edges": 30,
+         "cf_edges_scaled": 0,
+         "sha256_16": "670aa15faa4d4c4f"
+        },
+        "emitted": [
+         -31.485
+        ],
+        "plan": [
+         -30.0
+        ],
+        "ring_err_mV": 1.485,
+        "support": {
+         "size": 31,
+         "sha256_16": "3a769b546b52d0c3"
+        },
+        "absorption": {
+         "after_round": 5,
+         "support_size_prev": 30,
+         "support_size_now": 31,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.1664,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 5,
+         "n_bit_exact": 0,
+         "n_within_bar": 2,
+         "max_abs_drift": 0.1664,
+         "hold": false
+        },
+        "pass": true
+       }
+      ]
+     },
+     {
+      "seed": 2,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       31,
+       100
+      ],
+      "ring_errs_mV": [
+       0.566,
+       0.229,
+       0.287,
+       0.99,
+       0.457,
+       0.936
+      ],
+      "rings_passed": 6,
+      "support_sizes": [
+       26,
+       27,
+       28,
+       29,
+       30,
+       31
+      ],
+      "support_strictly_growing": true,
+      "n_absorption_events": 5,
+      "absorption_hold_all": true,
+      "worst_new_cell_value_drift_mV": 0.0919,
+      "n_redecode_events": 5,
+      "n_redecode_hold": 0,
+      "redecode_worst_abs_drift": 0.1756,
+      "p6_frozen": {
+       "n_prefix_bitexact": 140,
+       "n_close_bitexact": 31,
+       "n_p6_provenance_bitexact": 6,
+       "n_p3_seed_cells": 25
+      },
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         25
+        ],
+        "window": {
+         "n_nodes": 26,
+         "n_edges": 25,
+         "cf_edges_scaled": 0,
+         "sha256_16": "36517c374a827b85"
+        },
+        "emitted": [
+         -49.434
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.566,
+        "support": {
+         "size": 26,
+         "sha256_16": "a6e3249a788fb104"
+        },
+        "absorption": null,
+        "redecode": null,
+        "pass": true
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         26
+        ],
+        "window": {
+         "n_nodes": 27,
+         "n_edges": 26,
+         "cf_edges_scaled": 0,
+         "sha256_16": "61aaff128674e559"
+        },
+        "emitted": [
+         -49.771
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.229,
+        "support": {
+         "size": 27,
+         "sha256_16": "911cd62d71673b34"
+        },
+        "absorption": {
+         "after_round": 1,
+         "support_size_prev": 26,
+         "support_size_now": 27,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0705,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 1,
+         "n_bit_exact": 0,
+         "n_within_bar": 0,
+         "max_abs_drift": 0.0705,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         27
+        ],
+        "window": {
+         "n_nodes": 28,
+         "n_edges": 27,
+         "cf_edges_scaled": 0,
+         "sha256_16": "a16dd6b79f87260f"
+        },
+        "emitted": [
+         -50.287
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.287,
+        "support": {
+         "size": 28,
+         "sha256_16": "d7881bbb934c5f61"
+        },
+        "absorption": {
+         "after_round": 2,
+         "support_size_prev": 27,
+         "support_size_now": 28,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0919,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 2,
+         "n_bit_exact": 0,
+         "n_within_bar": 0,
+         "max_abs_drift": 0.0919,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         28
+        ],
+        "window": {
+         "n_nodes": 29,
+         "n_edges": 28,
+         "cf_edges_scaled": 0,
+         "sha256_16": "feed94c445ee0f05"
+        },
+        "emitted": [
+         -50.99
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.99,
+        "support": {
+         "size": 29,
+         "sha256_16": "e42d489f38967946"
+        },
+        "absorption": {
+         "after_round": 3,
+         "support_size_prev": 28,
+         "support_size_now": 29,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0059,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 3,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 0.1347,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         29
+        ],
+        "window": {
+         "n_nodes": 30,
+         "n_edges": 29,
+         "cf_edges_scaled": 0,
+         "sha256_16": "f8a15252151da092"
+        },
+        "emitted": [
+         -49.543
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.457,
+        "support": {
+         "size": 30,
+         "sha256_16": "394a42f05d4ef71e"
+        },
+        "absorption": {
+         "after_round": 4,
+         "support_size_prev": 29,
+         "support_size_now": 30,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0631,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 4,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 0.1756,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         30
+        ],
+        "window": {
+         "n_nodes": 31,
+         "n_edges": 30,
+         "cf_edges_scaled": 0,
+         "sha256_16": "670aa15faa4d4c4f"
+        },
+        "emitted": [
+         -29.064
+        ],
+        "plan": [
+         -30.0
+        ],
+        "ring_err_mV": 0.936,
+        "support": {
+         "size": 31,
+         "sha256_16": "3a769b546b52d0c3"
+        },
+        "absorption": {
+         "after_round": 5,
+         "support_size_prev": 30,
+         "support_size_now": 31,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0426,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 5,
+         "n_bit_exact": 0,
+         "n_within_bar": 3,
+         "max_abs_drift": 0.0735,
+         "hold": false
+        },
+        "pass": true
+       }
+      ]
+     },
+     {
+      "seed": 3,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       31,
+       100
+      ],
+      "ring_errs_mV": [
+       0.162,
+       0.72,
+       0.325,
+       0.502,
+       0.743,
+       1.212
+      ],
+      "rings_passed": 6,
+      "support_sizes": [
+       26,
+       27,
+       28,
+       29,
+       30,
+       31
+      ],
+      "support_strictly_growing": true,
+      "n_absorption_events": 5,
+      "absorption_hold_all": true,
+      "worst_new_cell_value_drift_mV": 0.1515,
+      "n_redecode_events": 5,
+      "n_redecode_hold": 1,
+      "redecode_worst_abs_drift": 0.1515,
+      "p6_frozen": {
+       "n_prefix_bitexact": 140,
+       "n_close_bitexact": 31,
+       "n_p6_provenance_bitexact": 6,
+       "n_p3_seed_cells": 25
+      },
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         25
+        ],
+        "window": {
+         "n_nodes": 26,
+         "n_edges": 25,
+         "cf_edges_scaled": 0,
+         "sha256_16": "36517c374a827b85"
+        },
+        "emitted": [
+         -49.838
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.162,
+        "support": {
+         "size": 26,
+         "sha256_16": "a6e3249a788fb104"
+        },
+        "absorption": null,
+        "redecode": null,
+        "pass": true
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         26
+        ],
+        "window": {
+         "n_nodes": 27,
+         "n_edges": 26,
+         "cf_edges_scaled": 0,
+         "sha256_16": "61aaff128674e559"
+        },
+        "emitted": [
+         -49.28
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.72,
+        "support": {
+         "size": 27,
+         "sha256_16": "911cd62d71673b34"
+        },
+        "absorption": {
+         "after_round": 1,
+         "support_size_prev": 26,
+         "support_size_now": 27,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0279,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 1,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 0.0279,
+         "hold": true
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         27
+        ],
+        "window": {
+         "n_nodes": 28,
+         "n_edges": 27,
+         "cf_edges_scaled": 0,
+         "sha256_16": "a16dd6b79f87260f"
+        },
+        "emitted": [
+         -50.325
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.325,
+        "support": {
+         "size": 28,
+         "sha256_16": "d7881bbb934c5f61"
+        },
+        "absorption": {
+         "after_round": 2,
+         "support_size_prev": 27,
+         "support_size_now": 28,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.1188,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 2,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 0.1188,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         28
+        ],
+        "window": {
+         "n_nodes": 29,
+         "n_edges": 28,
+         "cf_edges_scaled": 0,
+         "sha256_16": "feed94c445ee0f05"
+        },
+        "emitted": [
+         -49.498
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.502,
+        "support": {
+         "size": 29,
+         "sha256_16": "e42d489f38967946"
+        },
+        "absorption": {
+         "after_round": 3,
+         "support_size_prev": 28,
+         "support_size_now": 29,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.022,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 3,
+         "n_bit_exact": 0,
+         "n_within_bar": 2,
+         "max_abs_drift": 0.1136,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         29
+        ],
+        "window": {
+         "n_nodes": 30,
+         "n_edges": 29,
+         "cf_edges_scaled": 0,
+         "sha256_16": "f8a15252151da092"
+        },
+        "emitted": [
+         -49.257
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.743,
+        "support": {
+         "size": 30,
+         "sha256_16": "394a42f05d4ef71e"
+        },
+        "absorption": {
+         "after_round": 4,
+         "support_size_prev": 29,
+         "support_size_now": 30,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0607,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 4,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 0.1462,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         30
+        ],
+        "window": {
+         "n_nodes": 31,
+         "n_edges": 30,
+         "cf_edges_scaled": 0,
+         "sha256_16": "670aa15faa4d4c4f"
+        },
+        "emitted": [
+         -31.212
+        ],
+        "plan": [
+         -30.0
+        ],
+        "ring_err_mV": 1.212,
+        "support": {
+         "size": 31,
+         "sha256_16": "3a769b546b52d0c3"
+        },
+        "absorption": {
+         "after_round": 5,
+         "support_size_prev": 30,
+         "support_size_now": 31,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.1515,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 5,
+         "n_bit_exact": 0,
+         "n_within_bar": 3,
+         "max_abs_drift": 0.1515,
+         "hold": false
+        },
+        "pass": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "H1": {
+   "walk": {
+    "host": "H1",
+    "n": 400,
+    "kind": "size-law organism (exp198's scale)",
+    "seeds": [
+     1,
+     2,
+     3
+    ],
+    "S_star": [
+     64.0,
+     0.0
+    ],
+    "rings_registered": 6,
+    "seed_cells": 100,
+    "cones": [
+     {
+      "seed": 1,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       106,
+       400
+      ],
+      "ring_errs_mV": [
+       0.152,
+       0.686,
+       0.055,
+       0.153,
+       0.502,
+       0.595
+      ],
+      "rings_passed": 6,
+      "support_sizes": [
+       101,
+       102,
+       103,
+       104,
+       105,
+       106
+      ],
+      "support_strictly_growing": true,
+      "n_absorption_events": 5,
+      "absorption_hold_all": true,
+      "worst_new_cell_value_drift_mV": 0.1235,
+      "n_redecode_events": 5,
+      "n_redecode_hold": 0,
+      "redecode_worst_abs_drift": 0.1655,
+      "p6_frozen": {
+       "n_prefix_bitexact": 515,
+       "n_close_bitexact": 106,
+       "n_p6_provenance_bitexact": 6,
+       "n_p3_seed_cells": 100
+      },
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         100
+        ],
+        "window": {
+         "n_nodes": 101,
+         "n_edges": 100,
+         "cf_edges_scaled": 0,
+         "sha256_16": "fd3ab3c27c0b89bb"
+        },
+        "emitted": [
+         -49.848
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.152,
+        "support": {
+         "size": 101,
+         "sha256_16": "861bc235cf300c3c"
+        },
+        "absorption": null,
+        "redecode": null,
+        "pass": true
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         101
+        ],
+        "window": {
+         "n_nodes": 102,
+         "n_edges": 101,
+         "cf_edges_scaled": 0,
+         "sha256_16": "129a54854b447418"
+        },
+        "emitted": [
+         -49.314
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.686,
+        "support": {
+         "size": 102,
+         "sha256_16": "0429fffe8c5630dd"
+        },
+        "absorption": {
+         "after_round": 1,
+         "support_size_prev": 101,
+         "support_size_now": 102,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.1235,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 1,
+         "n_bit_exact": 0,
+         "n_within_bar": 0,
+         "max_abs_drift": 0.1235,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         102
+        ],
+        "window": {
+         "n_nodes": 103,
+         "n_edges": 102,
+         "cf_edges_scaled": 0,
+         "sha256_16": "dbd4b7aa207aff71"
+        },
+        "emitted": [
+         -49.945
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.055,
+        "support": {
+         "size": 103,
+         "sha256_16": "6ab6c03348fcb829"
+        },
+        "absorption": {
+         "after_round": 2,
+         "support_size_prev": 102,
+         "support_size_now": 103,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0475,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 2,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 0.1044,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         103
+        ],
+        "window": {
+         "n_nodes": 104,
+         "n_edges": 103,
+         "cf_edges_scaled": 0,
+         "sha256_16": "1be25ad2ac357464"
+        },
+        "emitted": [
+         -49.847
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.153,
+        "support": {
+         "size": 104,
+         "sha256_16": "8a8afac68b2481df"
+        },
+        "absorption": {
+         "after_round": 3,
+         "support_size_prev": 103,
+         "support_size_now": 104,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.1044,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 3,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 0.1655,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         104
+        ],
+        "window": {
+         "n_nodes": 105,
+         "n_edges": 104,
+         "cf_edges_scaled": 0,
+         "sha256_16": "d865ac0adb3d86b2"
+        },
+        "emitted": [
+         -49.498
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.502,
+        "support": {
+         "size": 105,
+         "sha256_16": "dd158dcb7b7b83b1"
+        },
+        "absorption": {
+         "after_round": 4,
+         "support_size_prev": 104,
+         "support_size_now": 105,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0776,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 4,
+         "n_bit_exact": 0,
+         "n_within_bar": 2,
+         "max_abs_drift": 0.0776,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         105
+        ],
+        "window": {
+         "n_nodes": 106,
+         "n_edges": 105,
+         "cf_edges_scaled": 0,
+         "sha256_16": "b9cda54921c273b0"
+        },
+        "emitted": [
+         -50.595
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.595,
+        "support": {
+         "size": 106,
+         "sha256_16": "5e8ecb03daec6f35"
+        },
+        "absorption": {
+         "after_round": 5,
+         "support_size_prev": 105,
+         "support_size_now": 106,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0042,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 5,
+         "n_bit_exact": 0,
+         "n_within_bar": 2,
+         "max_abs_drift": 0.0987,
+         "hold": false
+        },
+        "pass": true
+       }
+      ]
+     },
+     {
+      "seed": 2,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       106,
+       400
+      ],
+      "ring_errs_mV": [
+       0.481,
+       0.414,
+       0.501,
+       1.262,
+       1.345,
+       1.144
+      ],
+      "rings_passed": 6,
+      "support_sizes": [
+       101,
+       102,
+       103,
+       104,
+       105,
+       106
+      ],
+      "support_strictly_growing": true,
+      "n_absorption_events": 5,
+      "absorption_hold_all": true,
+      "worst_new_cell_value_drift_mV": 0.1037,
+      "n_redecode_events": 5,
+      "n_redecode_hold": 3,
+      "redecode_worst_abs_drift": 0.1037,
+      "p6_frozen": {
+       "n_prefix_bitexact": 515,
+       "n_close_bitexact": 106,
+       "n_p6_provenance_bitexact": 6,
+       "n_p3_seed_cells": 100
+      },
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         100
+        ],
+        "window": {
+         "n_nodes": 101,
+         "n_edges": 100,
+         "cf_edges_scaled": 0,
+         "sha256_16": "fd3ab3c27c0b89bb"
+        },
+        "emitted": [
+         -49.519
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.481,
+        "support": {
+         "size": 101,
+         "sha256_16": "861bc235cf300c3c"
+        },
+        "absorption": null,
+        "redecode": null,
+        "pass": true
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         101
+        ],
+        "window": {
+         "n_nodes": 102,
+         "n_edges": 101,
+         "cf_edges_scaled": 0,
+         "sha256_16": "129a54854b447418"
+        },
+        "emitted": [
+         -50.414
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.414,
+        "support": {
+         "size": 102,
+         "sha256_16": "0429fffe8c5630dd"
+        },
+        "absorption": {
+         "after_round": 1,
+         "support_size_prev": 101,
+         "support_size_now": 102,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0031,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 1,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 0.0031,
+         "hold": true
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         102
+        ],
+        "window": {
+         "n_nodes": 103,
+         "n_edges": 102,
+         "cf_edges_scaled": 0,
+         "sha256_16": "dbd4b7aa207aff71"
+        },
+        "emitted": [
+         -50.501
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.501,
+        "support": {
+         "size": 103,
+         "sha256_16": "6ab6c03348fcb829"
+        },
+        "absorption": {
+         "after_round": 2,
+         "support_size_prev": 102,
+         "support_size_now": 103,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0009,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 2,
+         "n_bit_exact": 0,
+         "n_within_bar": 2,
+         "max_abs_drift": 0.0382,
+         "hold": true
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         103
+        ],
+        "window": {
+         "n_nodes": 104,
+         "n_edges": 103,
+         "cf_edges_scaled": 0,
+         "sha256_16": "1be25ad2ac357464"
+        },
+        "emitted": [
+         -48.738
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 1.262,
+        "support": {
+         "size": 104,
+         "sha256_16": "8a8afac68b2481df"
+        },
+        "absorption": {
+         "after_round": 3,
+         "support_size_prev": 103,
+         "support_size_now": 104,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.014,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 3,
+         "n_bit_exact": 0,
+         "n_within_bar": 3,
+         "max_abs_drift": 0.028,
+         "hold": true
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         104
+        ],
+        "window": {
+         "n_nodes": 105,
+         "n_edges": 104,
+         "cf_edges_scaled": 0,
+         "sha256_16": "d865ac0adb3d86b2"
+        },
+        "emitted": [
+         -48.655
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 1.345,
+        "support": {
+         "size": 105,
+         "sha256_16": "dd158dcb7b7b83b1"
+        },
+        "absorption": {
+         "after_round": 4,
+         "support_size_prev": 104,
+         "support_size_now": 105,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0644,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 4,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 0.0914,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         105
+        ],
+        "window": {
+         "n_nodes": 106,
+         "n_edges": 105,
+         "cf_edges_scaled": 0,
+         "sha256_16": "b9cda54921c273b0"
+        },
+        "emitted": [
+         -51.144
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 1.144,
+        "support": {
+         "size": 106,
+         "sha256_16": "5e8ecb03daec6f35"
+        },
+        "absorption": {
+         "after_round": 5,
+         "support_size_prev": 105,
+         "support_size_now": 106,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.1037,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 5,
+         "n_bit_exact": 0,
+         "n_within_bar": 3,
+         "max_abs_drift": 0.1037,
+         "hold": false
+        },
+        "pass": true
+       }
+      ]
+     },
+     {
+      "seed": 3,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       106,
+       400
+      ],
+      "ring_errs_mV": [
+       1.031,
+       0.57,
+       1.407,
+       0.098,
+       0.428,
+       0.442
+      ],
+      "rings_passed": 6,
+      "support_sizes": [
+       101,
+       102,
+       103,
+       104,
+       105,
+       106
+      ],
+      "support_strictly_growing": true,
+      "n_absorption_events": 5,
+      "absorption_hold_all": true,
+      "worst_new_cell_value_drift_mV": 0.0955,
+      "n_redecode_events": 5,
+      "n_redecode_hold": 2,
+      "redecode_worst_abs_drift": 0.0955,
+      "p6_frozen": {
+       "n_prefix_bitexact": 515,
+       "n_close_bitexact": 106,
+       "n_p6_provenance_bitexact": 6,
+       "n_p3_seed_cells": 100
+      },
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         100
+        ],
+        "window": {
+         "n_nodes": 101,
+         "n_edges": 100,
+         "cf_edges_scaled": 0,
+         "sha256_16": "fd3ab3c27c0b89bb"
+        },
+        "emitted": [
+         -51.031
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 1.031,
+        "support": {
+         "size": 101,
+         "sha256_16": "861bc235cf300c3c"
+        },
+        "absorption": null,
+        "redecode": null,
+        "pass": true
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         101
+        ],
+        "window": {
+         "n_nodes": 102,
+         "n_edges": 101,
+         "cf_edges_scaled": 0,
+         "sha256_16": "129a54854b447418"
+        },
+        "emitted": [
+         -49.43
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.57,
+        "support": {
+         "size": 102,
+         "sha256_16": "0429fffe8c5630dd"
+        },
+        "absorption": {
+         "after_round": 1,
+         "support_size_prev": 101,
+         "support_size_now": 102,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0152,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 1,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 0.0152,
+         "hold": true
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         102
+        ],
+        "window": {
+         "n_nodes": 103,
+         "n_edges": 102,
+         "cf_edges_scaled": 0,
+         "sha256_16": "dbd4b7aa207aff71"
+        },
+        "emitted": [
+         -48.593
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 1.407,
+        "support": {
+         "size": 103,
+         "sha256_16": "6ab6c03348fcb829"
+        },
+        "absorption": {
+         "after_round": 2,
+         "support_size_prev": 102,
+         "support_size_now": 103,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0311,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 2,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 0.0632,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         103
+        ],
+        "window": {
+         "n_nodes": 104,
+         "n_edges": 103,
+         "cf_edges_scaled": 0,
+         "sha256_16": "1be25ad2ac357464"
+        },
+        "emitted": [
+         -49.902
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.098,
+        "support": {
+         "size": 104,
+         "sha256_16": "8a8afac68b2481df"
+        },
+        "absorption": {
+         "after_round": 3,
+         "support_size_prev": 103,
+         "support_size_now": 104,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0955,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 3,
+         "n_bit_exact": 0,
+         "n_within_bar": 2,
+         "max_abs_drift": 0.0955,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         104
+        ],
+        "window": {
+         "n_nodes": 105,
+         "n_edges": 104,
+         "cf_edges_scaled": 0,
+         "sha256_16": "d865ac0adb3d86b2"
+        },
+        "emitted": [
+         -49.572
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.428,
+        "support": {
+         "size": 105,
+         "sha256_16": "dd158dcb7b7b83b1"
+        },
+        "absorption": {
+         "after_round": 4,
+         "support_size_prev": 104,
+         "support_size_now": 105,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.054,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 4,
+         "n_bit_exact": 0,
+         "n_within_bar": 2,
+         "max_abs_drift": 0.0555,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         105
+        ],
+        "window": {
+         "n_nodes": 106,
+         "n_edges": 105,
+         "cf_edges_scaled": 0,
+         "sha256_16": "b9cda54921c273b0"
+        },
+        "emitted": [
+         -49.558
+        ],
+        "plan": [
+         -50.0
+        ],
+        "ring_err_mV": 0.442,
+        "support": {
+         "size": 106,
+         "sha256_16": "5e8ecb03daec6f35"
+        },
+        "absorption": {
+         "after_round": 5,
+         "support_size_prev": 105,
+         "support_size_now": 106,
+         "support_strict_growth": true,
+         "n_new_cells": 1,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.0417,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 5,
+         "n_bit_exact": 0,
+         "n_within_bar": 5,
+         "max_abs_drift": 0.0417,
+         "hold": true
+        },
+        "pass": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "H4": {
+   "walk": {
+    "host": "H4",
+    "n": 100,
+    "kind": "corpus-rewired organism (the pre-named worst-margin host \u2014 exp218's X3 disclosure)",
+    "seeds": [
+     1,
+     2,
+     3
+    ],
+    "S_star": [
+     64.0,
+     0.0
+    ],
+    "rings_registered": 6,
+    "seed_cells": 25,
+    "cones": [
+     {
+      "seed": 1,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       54,
+       100
+      ],
+      "ring_errs_mV": [
+       0.399,
+       0.505,
+       0.354,
+       0.483,
+       0.543,
+       0.525
+      ],
+      "rings_passed": 6,
+      "support_sizes": [
+       30,
+       37,
+       42,
+       47,
+       51,
+       54
+      ],
+      "support_strictly_growing": true,
+      "n_absorption_events": 5,
+      "absorption_hold_all": true,
+      "worst_new_cell_value_drift_mV": 1.3268,
+      "n_redecode_events": 5,
+      "n_redecode_hold": 0,
+      "redecode_worst_abs_drift": 2.5016,
+      "p6_frozen": {
+       "n_prefix_bitexact": 207,
+       "n_close_bitexact": 54,
+       "n_p6_provenance_bitexact": 29,
+       "n_p3_seed_cells": 25
+      },
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         58,
+         67,
+         72,
+         76,
+         91
+        ],
+        "window": {
+         "n_nodes": 30,
+         "n_edges": 29,
+         "cf_edges_scaled": 0,
+         "sha256_16": "94d555a07c7a4c40"
+        },
+        "emitted": [
+         -50.686,
+         -30.343,
+         -30.082,
+         -49.702,
+         -49.666
+        ],
+        "plan": [
+         -50.0,
+         -30.0,
+         -30.0,
+         -50.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.399,
+        "support": {
+         "size": 30,
+         "sha256_16": "79348afe903bd0df"
+        },
+        "absorption": null,
+        "redecode": null,
+        "pass": true
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         45,
+         57,
+         65,
+         66,
+         71,
+         77,
+         90
+        ],
+        "window": {
+         "n_nodes": 37,
+         "n_edges": 36,
+         "cf_edges_scaled": 0,
+         "sha256_16": "c97a2e0a906cc113"
+        },
+        "emitted": [
+         -50.261,
+         -50.963,
+         -29.911,
+         -29.125,
+         -29.887,
+         -49.98,
+         -49.995
+        ],
+        "plan": [
+         -50.0,
+         -50.0,
+         -30.0,
+         -30.0,
+         -30.0,
+         -50.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.505,
+        "support": {
+         "size": 37,
+         "sha256_16": "eabd8b9e0e2d587e"
+        },
+        "absorption": {
+         "after_round": 1,
+         "support_size_prev": 30,
+         "support_size_now": 37,
+         "support_strict_growth": true,
+         "n_new_cells": 5,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.7922,
+          "n_within_bar": 2
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 5,
+         "n_bit_exact": 0,
+         "n_within_bar": 2,
+         "max_abs_drift": 0.7922,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         44,
+         56,
+         62,
+         64,
+         89
+        ],
+        "window": {
+         "n_nodes": 42,
+         "n_edges": 42,
+         "cf_edges_scaled": 0,
+         "sha256_16": "1c704527eee9e8cd"
+        },
+        "emitted": [
+         -30.473,
+         -50.345,
+         -30.018,
+         -30.533,
+         -50.019
+        ],
+        "plan": [
+         -30.0,
+         -50.0,
+         -30.0,
+         -30.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.354,
+        "support": {
+         "size": 42,
+         "sha256_16": "69208cb39ec36422"
+        },
+        "absorption": {
+         "after_round": 2,
+         "support_size_prev": 37,
+         "support_size_now": 42,
+         "support_strict_growth": true,
+         "n_new_cells": 7,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 1.0441,
+          "n_within_bar": 2
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 12,
+         "n_bit_exact": 0,
+         "n_within_bar": 3,
+         "max_abs_drift": 1.0441,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         43,
+         55,
+         61,
+         63,
+         88
+        ],
+        "window": {
+         "n_nodes": 47,
+         "n_edges": 47,
+         "cf_edges_scaled": 0,
+         "sha256_16": "582d745ea877d399"
+        },
+        "emitted": [
+         -30.079,
+         -49.944,
+         -30.505,
+         -30.947,
+         -50.052
+        ],
+        "plan": [
+         -30.0,
+         -50.0,
+         -30.0,
+         -30.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.483,
+        "support": {
+         "size": 47,
+         "sha256_16": "7addd0ca2cbd219b"
+        },
+        "absorption": {
+         "after_round": 3,
+         "support_size_prev": 42,
+         "support_size_now": 47,
+         "support_strict_growth": true,
+         "n_new_cells": 5,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 1.227,
+          "n_within_bar": 2
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 17,
+         "n_bit_exact": 0,
+         "n_within_bar": 5,
+         "max_abs_drift": 1.5755,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         42,
+         54,
+         60,
+         87
+        ],
+        "window": {
+         "n_nodes": 51,
+         "n_edges": 51,
+         "cf_edges_scaled": 0,
+         "sha256_16": "940a531f4428ebf5"
+        },
+        "emitted": [
+         -30.449,
+         -50.051,
+         -30.988,
+         -50.003
+        ],
+        "plan": [
+         -30.0,
+         -50.0,
+         -30.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.543,
+        "support": {
+         "size": 51,
+         "sha256_16": "8ee73e1dd88ffa0f"
+        },
+        "absorption": {
+         "after_round": 4,
+         "support_size_prev": 47,
+         "support_size_now": 51,
+         "support_strict_growth": true,
+         "n_new_cells": 5,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 1.3268,
+          "n_within_bar": 2
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 22,
+         "n_bit_exact": 0,
+         "n_within_bar": 5,
+         "max_abs_drift": 2.4701,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         41,
+         53,
+         86
+        ],
+        "window": {
+         "n_nodes": 54,
+         "n_edges": 54,
+         "cf_edges_scaled": 0,
+         "sha256_16": "00aff8e6c687b3aa"
+        },
+        "emitted": [
+         -30.315,
+         -49.147,
+         -50.002
+        ],
+        "plan": [
+         -30.0,
+         -50.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.525,
+        "support": {
+         "size": 54,
+         "sha256_16": "94950e45404c17ae"
+        },
+        "absorption": {
+         "after_round": 5,
+         "support_size_prev": 51,
+         "support_size_now": 54,
+         "support_strict_growth": true,
+         "n_new_cells": 4,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 1.221,
+          "n_within_bar": 2
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 26,
+         "n_bit_exact": 0,
+         "n_within_bar": 3,
+         "max_abs_drift": 2.5016,
+         "hold": false
+        },
+        "pass": true
+       }
+      ]
+     },
+     {
+      "seed": 2,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       54,
+       100
+      ],
+      "ring_errs_mV": [
+       0.297,
+       0.761,
+       1.086,
+       1.026,
+       0.799,
+       0.439
+      ],
+      "rings_passed": 6,
+      "support_sizes": [
+       30,
+       37,
+       42,
+       47,
+       51,
+       54
+      ],
+      "support_strictly_growing": true,
+      "n_absorption_events": 5,
+      "absorption_hold_all": true,
+      "worst_new_cell_value_drift_mV": 2.247,
+      "n_redecode_events": 5,
+      "n_redecode_hold": 0,
+      "redecode_worst_abs_drift": 2.247,
+      "p6_frozen": {
+       "n_prefix_bitexact": 207,
+       "n_close_bitexact": 54,
+       "n_p6_provenance_bitexact": 29,
+       "n_p3_seed_cells": 25
+      },
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         58,
+         67,
+         72,
+         76,
+         91
+        ],
+        "window": {
+         "n_nodes": 30,
+         "n_edges": 29,
+         "cf_edges_scaled": 0,
+         "sha256_16": "94d555a07c7a4c40"
+        },
+        "emitted": [
+         -49.97,
+         -29.755,
+         -30.521,
+         -49.807,
+         -49.732
+        ],
+        "plan": [
+         -50.0,
+         -30.0,
+         -30.0,
+         -50.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.297,
+        "support": {
+         "size": 30,
+         "sha256_16": "79348afe903bd0df"
+        },
+        "absorption": null,
+        "redecode": null,
+        "pass": true
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         45,
+         57,
+         65,
+         66,
+         71,
+         77,
+         90
+        ],
+        "window": {
+         "n_nodes": 37,
+         "n_edges": 36,
+         "cf_edges_scaled": 0,
+         "sha256_16": "c97a2e0a906cc113"
+        },
+        "emitted": [
+         -48.45,
+         -50.604,
+         -30.718,
+         -29.731,
+         -30.839,
+         -50.027,
+         -49.985
+        ],
+        "plan": [
+         -50.0,
+         -50.0,
+         -30.0,
+         -30.0,
+         -30.0,
+         -50.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.761,
+        "support": {
+         "size": 37,
+         "sha256_16": "eabd8b9e0e2d587e"
+        },
+        "absorption": {
+         "after_round": 1,
+         "support_size_prev": 30,
+         "support_size_now": 37,
+         "support_strict_growth": true,
+         "n_new_cells": 5,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.9582,
+          "n_within_bar": 0
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 5,
+         "n_bit_exact": 0,
+         "n_within_bar": 0,
+         "max_abs_drift": 0.9582,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         44,
+         56,
+         62,
+         64,
+         89
+        ],
+        "window": {
+         "n_nodes": 42,
+         "n_edges": 42,
+         "cf_edges_scaled": 0,
+         "sha256_16": "1c704527eee9e8cd"
+        },
+        "emitted": [
+         -29.371,
+         -50.398,
+         -30.71,
+         -32.2,
+         -49.958
+        ],
+        "plan": [
+         -30.0,
+         -50.0,
+         -30.0,
+         -30.0,
+         -50.0
+        ],
+        "ring_err_mV": 1.086,
+        "support": {
+         "size": 42,
+         "sha256_16": "69208cb39ec36422"
+        },
+        "absorption": {
+         "after_round": 2,
+         "support_size_prev": 37,
+         "support_size_now": 42,
+         "support_strict_growth": true,
+         "n_new_cells": 7,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 2.247,
+          "n_within_bar": 2
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 12,
+         "n_bit_exact": 0,
+         "n_within_bar": 2,
+         "max_abs_drift": 2.247,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         43,
+         55,
+         61,
+         63,
+         88
+        ],
+        "window": {
+         "n_nodes": 47,
+         "n_edges": 47,
+         "cf_edges_scaled": 0,
+         "sha256_16": "582d745ea877d399"
+        },
+        "emitted": [
+         -29.982,
+         -50.08,
+         -32.21,
+         -30.604,
+         -49.937
+        ],
+        "plan": [
+         -30.0,
+         -50.0,
+         -30.0,
+         -30.0,
+         -50.0
+        ],
+        "ring_err_mV": 1.026,
+        "support": {
+         "size": 47,
+         "sha256_16": "7addd0ca2cbd219b"
+        },
+        "absorption": {
+         "after_round": 3,
+         "support_size_prev": 42,
+         "support_size_now": 47,
+         "support_strict_growth": true,
+         "n_new_cells": 5,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 2.0588,
+          "n_within_bar": 2
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 17,
+         "n_bit_exact": 0,
+         "n_within_bar": 4,
+         "max_abs_drift": 2.0588,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         42,
+         54,
+         60,
+         87
+        ],
+        "window": {
+         "n_nodes": 51,
+         "n_edges": 51,
+         "cf_edges_scaled": 0,
+         "sha256_16": "940a531f4428ebf5"
+        },
+        "emitted": [
+         -28.5,
+         -49.865,
+         -30.531,
+         -50.054
+        ],
+        "plan": [
+         -30.0,
+         -50.0,
+         -30.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.799,
+        "support": {
+         "size": 51,
+         "sha256_16": "8ee73e1dd88ffa0f"
+        },
+        "absorption": {
+         "after_round": 4,
+         "support_size_prev": 47,
+         "support_size_now": 51,
+         "support_strict_growth": true,
+         "n_new_cells": 5,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.7711,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 22,
+         "n_bit_exact": 0,
+         "n_within_bar": 4,
+         "max_abs_drift": 2.0183,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         41,
+         53,
+         86
+        ],
+        "window": {
+         "n_nodes": 54,
+         "n_edges": 54,
+         "cf_edges_scaled": 0,
+         "sha256_16": "00aff8e6c687b3aa"
+        },
+        "emitted": [
+         -29.487,
+         -49.438,
+         -50.005
+        ],
+        "plan": [
+         -30.0,
+         -50.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.439,
+        "support": {
+         "size": 54,
+         "sha256_16": "94950e45404c17ae"
+        },
+        "absorption": {
+         "after_round": 5,
+         "support_size_prev": 51,
+         "support_size_now": 54,
+         "support_strict_growth": true,
+         "n_new_cells": 4,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.5852,
+          "n_within_bar": 2
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 26,
+         "n_bit_exact": 0,
+         "n_within_bar": 8,
+         "max_abs_drift": 2.0635,
+         "hold": false
+        },
+        "pass": true
+       }
+      ]
+     },
+     {
+      "seed": 3,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       54,
+       100
+      ],
+      "ring_errs_mV": [
+       0.728,
+       0.549,
+       0.325,
+       0.927,
+       0.604,
+       0.708
+      ],
+      "rings_passed": 6,
+      "support_sizes": [
+       30,
+       37,
+       42,
+       47,
+       51,
+       54
+      ],
+      "support_strictly_growing": true,
+      "n_absorption_events": 5,
+      "absorption_hold_all": true,
+      "worst_new_cell_value_drift_mV": 1.9332,
+      "n_redecode_events": 5,
+      "n_redecode_hold": 0,
+      "redecode_worst_abs_drift": 2.477,
+      "p6_frozen": {
+       "n_prefix_bitexact": 207,
+       "n_close_bitexact": 54,
+       "n_p6_provenance_bitexact": 29,
+       "n_p3_seed_cells": 25
+      },
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         58,
+         67,
+         72,
+         76,
+         91
+        ],
+        "window": {
+         "n_nodes": 30,
+         "n_edges": 29,
+         "cf_edges_scaled": 0,
+         "sha256_16": "94d555a07c7a4c40"
+        },
+        "emitted": [
+         -49.862,
+         -30.193,
+         -31.573,
+         -49.769,
+         -49.748
+        ],
+        "plan": [
+         -50.0,
+         -30.0,
+         -30.0,
+         -50.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.728,
+        "support": {
+         "size": 30,
+         "sha256_16": "79348afe903bd0df"
+        },
+        "absorption": null,
+        "redecode": null,
+        "pass": true
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         45,
+         57,
+         65,
+         66,
+         71,
+         77,
+         90
+        ],
+        "window": {
+         "n_nodes": 37,
+         "n_edges": 36,
+         "cf_edges_scaled": 0,
+         "sha256_16": "c97a2e0a906cc113"
+        },
+        "emitted": [
+         -49.28,
+         -50.862,
+         -29.5,
+         -30.389,
+         -30.67,
+         -49.993,
+         -49.957
+        ],
+        "plan": [
+         -50.0,
+         -50.0,
+         -30.0,
+         -30.0,
+         -30.0,
+         -50.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.549,
+        "support": {
+         "size": 37,
+         "sha256_16": "eabd8b9e0e2d587e"
+        },
+        "absorption": {
+         "after_round": 1,
+         "support_size_prev": 30,
+         "support_size_now": 37,
+         "support_strict_growth": true,
+         "n_new_cells": 5,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 1.5216,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 5,
+         "n_bit_exact": 0,
+         "n_within_bar": 1,
+         "max_abs_drift": 1.5216,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         44,
+         56,
+         62,
+         64,
+         89
+        ],
+        "window": {
+         "n_nodes": 42,
+         "n_edges": 42,
+         "cf_edges_scaled": 0,
+         "sha256_16": "1c704527eee9e8cd"
+        },
+        "emitted": [
+         -29.625,
+         -49.92,
+         -29.501,
+         -29.645,
+         -50.085
+        ],
+        "plan": [
+         -30.0,
+         -50.0,
+         -30.0,
+         -30.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.325,
+        "support": {
+         "size": 42,
+         "sha256_16": "69208cb39ec36422"
+        },
+        "absorption": {
+         "after_round": 2,
+         "support_size_prev": 37,
+         "support_size_now": 42,
+         "support_strict_growth": true,
+         "n_new_cells": 7,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 1.3015,
+          "n_within_bar": 2
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 12,
+         "n_bit_exact": 0,
+         "n_within_bar": 3,
+         "max_abs_drift": 1.3015,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         43,
+         55,
+         61,
+         63,
+         88
+        ],
+        "window": {
+         "n_nodes": 47,
+         "n_edges": 47,
+         "cf_edges_scaled": 0,
+         "sha256_16": "582d745ea877d399"
+        },
+        "emitted": [
+         -30.235,
+         -51.882,
+         -29.697,
+         -30.777,
+         -49.996
+        ],
+        "plan": [
+         -30.0,
+         -50.0,
+         -30.0,
+         -30.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.927,
+        "support": {
+         "size": 47,
+         "sha256_16": "7addd0ca2cbd219b"
+        },
+        "absorption": {
+         "after_round": 3,
+         "support_size_prev": 42,
+         "support_size_now": 47,
+         "support_strict_growth": true,
+         "n_new_cells": 5,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.6684,
+          "n_within_bar": 3
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 17,
+         "n_bit_exact": 0,
+         "n_within_bar": 4,
+         "max_abs_drift": 1.9839,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         42,
+         54,
+         60,
+         87
+        ],
+        "window": {
+         "n_nodes": 51,
+         "n_edges": 51,
+         "cf_edges_scaled": 0,
+         "sha256_16": "940a531f4428ebf5"
+        },
+        "emitted": [
+         -29.307,
+         -50.545,
+         -30.826,
+         -49.998
+        ],
+        "plan": [
+         -30.0,
+         -50.0,
+         -30.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.604,
+        "support": {
+         "size": 51,
+         "sha256_16": "8ee73e1dd88ffa0f"
+        },
+        "absorption": {
+         "after_round": 4,
+         "support_size_prev": 47,
+         "support_size_now": 51,
+         "support_strict_growth": true,
+         "n_new_cells": 5,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 1.9332,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 22,
+         "n_bit_exact": 0,
+         "n_within_bar": 4,
+         "max_abs_drift": 1.9332,
+         "hold": false
+        },
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         41,
+         53,
+         86
+        ],
+        "window": {
+         "n_nodes": 54,
+         "n_edges": 54,
+         "cf_edges_scaled": 0,
+         "sha256_16": "00aff8e6c687b3aa"
+        },
+        "emitted": [
+         -29.534,
+         -51.135,
+         -50.011
+        ],
+        "plan": [
+         -30.0,
+         -50.0,
+         -50.0
+        ],
+        "ring_err_mV": 0.708,
+        "support": {
+         "size": 54,
+         "sha256_16": "94950e45404c17ae"
+        },
+        "absorption": {
+         "after_round": 5,
+         "support_size_prev": 51,
+         "support_size_now": 54,
+         "support_strict_growth": true,
+         "n_new_cells": 4,
+         "new_cells_readback_bitexact": true,
+         "new_cells_finite": true,
+         "value_channel_datum_not_gated": {
+          "max_abs_drift_mV": 0.3186,
+          "n_within_bar": 1
+         },
+         "hold": true
+        },
+        "redecode": {
+         "n_checked": 26,
+         "n_bit_exact": 0,
+         "n_within_bar": 7,
+         "max_abs_drift": 2.477,
+         "hold": false
+        },
+        "pass": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "instrument_consistency_vs_exp218": {
+  "clause": "the walk machinery is exp218's verbatim on the same hosts/seeds/ops \u2014 the ring errs must be bit-identical to exp218's deposited H0/H1/H4 rows (a datum, not a gate)",
+  "per_arm": {
+   "H0": true,
+   "H1": true,
+   "H4": true
+  }
+ },
+ "gates": {
+  "A1": {
+   "pass": true,
+   "clause": "after every ADD-CAPACITY round the read's support strictly grows and the new cells read back their written values (support monotone across all rounds x 3 arms x 3 seeds)",
+   "n_events": 45,
+   "n_hold": 9,
+   "per_cone": [
+    {
+     "arm": "H0",
+     "seed": 1,
+     "support_sizes": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+     ],
+     "support_strictly_growing": true,
+     "n_absorption_events": 5,
+     "absorption_hold_all": true,
+     "hold": true,
+     "worst_new_cell_value_drift_mV": 0.1664
+    },
+    {
+     "arm": "H0",
+     "seed": 2,
+     "support_sizes": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+     ],
+     "support_strictly_growing": true,
+     "n_absorption_events": 5,
+     "absorption_hold_all": true,
+     "hold": true,
+     "worst_new_cell_value_drift_mV": 0.0919
+    },
+    {
+     "arm": "H0",
+     "seed": 3,
+     "support_sizes": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+     ],
+     "support_strictly_growing": true,
+     "n_absorption_events": 5,
+     "absorption_hold_all": true,
+     "hold": true,
+     "worst_new_cell_value_drift_mV": 0.1515
+    },
+    {
+     "arm": "H1",
+     "seed": 1,
+     "support_sizes": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106
+     ],
+     "support_strictly_growing": true,
+     "n_absorption_events": 5,
+     "absorption_hold_all": true,
+     "hold": true,
+     "worst_new_cell_value_drift_mV": 0.1235
+    },
+    {
+     "arm": "H1",
+     "seed": 2,
+     "support_sizes": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106
+     ],
+     "support_strictly_growing": true,
+     "n_absorption_events": 5,
+     "absorption_hold_all": true,
+     "hold": true,
+     "worst_new_cell_value_drift_mV": 0.1037
+    },
+    {
+     "arm": "H1",
+     "seed": 3,
+     "support_sizes": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106
+     ],
+     "support_strictly_growing": true,
+     "n_absorption_events": 5,
+     "absorption_hold_all": true,
+     "hold": true,
+     "worst_new_cell_value_drift_mV": 0.0955
+    },
+    {
+     "arm": "H4",
+     "seed": 1,
+     "support_sizes": [
+      30,
+      37,
+      42,
+      47,
+      51,
+      54
+     ],
+     "support_strictly_growing": true,
+     "n_absorption_events": 5,
+     "absorption_hold_all": true,
+     "hold": true,
+     "worst_new_cell_value_drift_mV": 1.3268
+    },
+    {
+     "arm": "H4",
+     "seed": 2,
+     "support_sizes": [
+      30,
+      37,
+      42,
+      47,
+      51,
+      54
+     ],
+     "support_strictly_growing": true,
+     "n_absorption_events": 5,
+     "absorption_hold_all": true,
+     "hold": true,
+     "worst_new_cell_value_drift_mV": 2.247
+    },
+    {
+     "arm": "H4",
+     "seed": 3,
+     "support_sizes": [
+      30,
+      37,
+      42,
+      47,
+      51,
+      54
+     ],
+     "support_strictly_growing": true,
+     "n_absorption_events": 5,
+     "absorption_hold_all": true,
+     "hold": true,
+     "worst_new_cell_value_drift_mV": 1.9332
+    }
+   ],
+   "worst_new_cell_value_drift_mV": 2.247,
+   "value_channel_status": "ungated datum (the retired channel; exp228's structural finding)"
+  },
+  "A2": {
+   "pass": true,
+   "clause": "the expansion continues for the pre-named 6 rounds WITHOUT external writes (each round's read inputs = the cone's own carried state, exp218's protocol) with the interior errs sub-mV (the 6.0 bar only at the boundary per exp223/exp228's structural finding)",
+   "n_cones_complete": 9,
+   "per_cone": [
+    {
+     "arm": "H0",
+     "seed": 1,
+     "complete": true,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 1.485,
+     "worst_interior_round_err_mV": 0.846
+    },
+    {
+     "arm": "H0",
+     "seed": 2,
+     "complete": true,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 0.99,
+     "worst_interior_round_err_mV": 0.99
+    },
+    {
+     "arm": "H0",
+     "seed": 3,
+     "complete": true,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 1.212,
+     "worst_interior_round_err_mV": 0.743
+    },
+    {
+     "arm": "H1",
+     "seed": 1,
+     "complete": true,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 0.686,
+     "worst_interior_round_err_mV": 0.686
+    },
+    {
+     "arm": "H1",
+     "seed": 2,
+     "complete": true,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 1.345,
+     "worst_interior_round_err_mV": 1.345
+    },
+    {
+     "arm": "H1",
+     "seed": 3,
+     "complete": true,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 1.407,
+     "worst_interior_round_err_mV": 1.407
+    },
+    {
+     "arm": "H4",
+     "seed": 1,
+     "complete": true,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 0.543,
+     "worst_interior_round_err_mV": 0.543
+    },
+    {
+     "arm": "H4",
+     "seed": 2,
+     "complete": true,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 1.086,
+     "worst_interior_round_err_mV": 1.086
+    },
+    {
+     "arm": "H4",
+     "seed": 3,
+     "complete": true,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 0.927,
+     "worst_interior_round_err_mV": 0.927
+    }
+   ],
+   "worst_ring_err_mV": 1.485,
+   "worst_interior_round_err_mV": 1.407,
+   "interior_profile_note": "every ring err is a frontier/boundary err priced at the pre-named 6.0 bar; the interior-round profile (rounds 2..5) is deposited per cone and the retired interior value-channel drift is deposited under A1/A3 \u2014 zero silence",
+   "ring_writes_logged_at_S_star": 54
+  },
+  "A3": {
+   "pass": true,
+   "clause": "exp218's re-decode criterion and this support criterion are compared on the SAME battery \u2014 the cases where they disagree are counted and deposited (the repair's bite made explicit; the gate records the disagreement rate, zero-tolerance on silence)",
+   "n_compared": 45,
+   "n_redecode_hold": 8,
+   "n_support_hold": 45,
+   "n_disagree": 37,
+   "disagreement_rate": 0.8222222222222222,
+   "per_event": [
+    {
+     "arm": "H0",
+     "seed": 1,
+     "ring_index": 2,
+     "n_prefix": 1,
+     "redecode_max_abs_drift": 0.0033,
+     "redecode_hold": true,
+     "support_hold": true,
+     "disagree": false
+    },
+    {
+     "arm": "H0",
+     "seed": 1,
+     "ring_index": 3,
+     "n_prefix": 2,
+     "redecode_max_abs_drift": 0.0113,
+     "redecode_hold": true,
+     "support_hold": true,
+     "disagree": false
+    },
+    {
+     "arm": "H0",
+     "seed": 1,
+     "ring_index": 4,
+     "n_prefix": 3,
+     "redecode_max_abs_drift": 0.0797,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H0",
+     "seed": 1,
+     "ring_index": 5,
+     "n_prefix": 4,
+     "redecode_max_abs_drift": 0.0817,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H0",
+     "seed": 1,
+     "ring_index": 6,
+     "n_prefix": 5,
+     "redecode_max_abs_drift": 0.1664,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H0",
+     "seed": 2,
+     "ring_index": 2,
+     "n_prefix": 1,
+     "redecode_max_abs_drift": 0.0705,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H0",
+     "seed": 2,
+     "ring_index": 3,
+     "n_prefix": 2,
+     "redecode_max_abs_drift": 0.0919,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H0",
+     "seed": 2,
+     "ring_index": 4,
+     "n_prefix": 3,
+     "redecode_max_abs_drift": 0.1347,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H0",
+     "seed": 2,
+     "ring_index": 5,
+     "n_prefix": 4,
+     "redecode_max_abs_drift": 0.1756,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H0",
+     "seed": 2,
+     "ring_index": 6,
+     "n_prefix": 5,
+     "redecode_max_abs_drift": 0.0735,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H0",
+     "seed": 3,
+     "ring_index": 2,
+     "n_prefix": 1,
+     "redecode_max_abs_drift": 0.0279,
+     "redecode_hold": true,
+     "support_hold": true,
+     "disagree": false
+    },
+    {
+     "arm": "H0",
+     "seed": 3,
+     "ring_index": 3,
+     "n_prefix": 2,
+     "redecode_max_abs_drift": 0.1188,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H0",
+     "seed": 3,
+     "ring_index": 4,
+     "n_prefix": 3,
+     "redecode_max_abs_drift": 0.1136,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H0",
+     "seed": 3,
+     "ring_index": 5,
+     "n_prefix": 4,
+     "redecode_max_abs_drift": 0.1462,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H0",
+     "seed": 3,
+     "ring_index": 6,
+     "n_prefix": 5,
+     "redecode_max_abs_drift": 0.1515,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H1",
+     "seed": 1,
+     "ring_index": 2,
+     "n_prefix": 1,
+     "redecode_max_abs_drift": 0.1235,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H1",
+     "seed": 1,
+     "ring_index": 3,
+     "n_prefix": 2,
+     "redecode_max_abs_drift": 0.1044,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H1",
+     "seed": 1,
+     "ring_index": 4,
+     "n_prefix": 3,
+     "redecode_max_abs_drift": 0.1655,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H1",
+     "seed": 1,
+     "ring_index": 5,
+     "n_prefix": 4,
+     "redecode_max_abs_drift": 0.0776,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H1",
+     "seed": 1,
+     "ring_index": 6,
+     "n_prefix": 5,
+     "redecode_max_abs_drift": 0.0987,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H1",
+     "seed": 2,
+     "ring_index": 2,
+     "n_prefix": 1,
+     "redecode_max_abs_drift": 0.0031,
+     "redecode_hold": true,
+     "support_hold": true,
+     "disagree": false
+    },
+    {
+     "arm": "H1",
+     "seed": 2,
+     "ring_index": 3,
+     "n_prefix": 2,
+     "redecode_max_abs_drift": 0.0382,
+     "redecode_hold": true,
+     "support_hold": true,
+     "disagree": false
+    },
+    {
+     "arm": "H1",
+     "seed": 2,
+     "ring_index": 4,
+     "n_prefix": 3,
+     "redecode_max_abs_drift": 0.028,
+     "redecode_hold": true,
+     "support_hold": true,
+     "disagree": false
+    },
+    {
+     "arm": "H1",
+     "seed": 2,
+     "ring_index": 5,
+     "n_prefix": 4,
+     "redecode_max_abs_drift": 0.0914,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H1",
+     "seed": 2,
+     "ring_index": 6,
+     "n_prefix": 5,
+     "redecode_max_abs_drift": 0.1037,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H1",
+     "seed": 3,
+     "ring_index": 2,
+     "n_prefix": 1,
+     "redecode_max_abs_drift": 0.0152,
+     "redecode_hold": true,
+     "support_hold": true,
+     "disagree": false
+    },
+    {
+     "arm": "H1",
+     "seed": 3,
+     "ring_index": 3,
+     "n_prefix": 2,
+     "redecode_max_abs_drift": 0.0632,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H1",
+     "seed": 3,
+     "ring_index": 4,
+     "n_prefix": 3,
+     "redecode_max_abs_drift": 0.0955,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H1",
+     "seed": 3,
+     "ring_index": 5,
+     "n_prefix": 4,
+     "redecode_max_abs_drift": 0.0555,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H1",
+     "seed": 3,
+     "ring_index": 6,
+     "n_prefix": 5,
+     "redecode_max_abs_drift": 0.0417,
+     "redecode_hold": true,
+     "support_hold": true,
+     "disagree": false
+    },
+    {
+     "arm": "H4",
+     "seed": 1,
+     "ring_index": 2,
+     "n_prefix": 5,
+     "redecode_max_abs_drift": 0.7922,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 1,
+     "ring_index": 3,
+     "n_prefix": 12,
+     "redecode_max_abs_drift": 1.0441,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 1,
+     "ring_index": 4,
+     "n_prefix": 17,
+     "redecode_max_abs_drift": 1.5755,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 1,
+     "ring_index": 5,
+     "n_prefix": 22,
+     "redecode_max_abs_drift": 2.4701,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 1,
+     "ring_index": 6,
+     "n_prefix": 26,
+     "redecode_max_abs_drift": 2.5016,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 2,
+     "ring_index": 2,
+     "n_prefix": 5,
+     "redecode_max_abs_drift": 0.9582,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 2,
+     "ring_index": 3,
+     "n_prefix": 12,
+     "redecode_max_abs_drift": 2.247,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 2,
+     "ring_index": 4,
+     "n_prefix": 17,
+     "redecode_max_abs_drift": 2.0588,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 2,
+     "ring_index": 5,
+     "n_prefix": 22,
+     "redecode_max_abs_drift": 2.0183,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 2,
+     "ring_index": 6,
+     "n_prefix": 26,
+     "redecode_max_abs_drift": 2.0635,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 3,
+     "ring_index": 2,
+     "n_prefix": 5,
+     "redecode_max_abs_drift": 1.5216,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 3,
+     "ring_index": 3,
+     "n_prefix": 12,
+     "redecode_max_abs_drift": 1.3015,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 3,
+     "ring_index": 4,
+     "n_prefix": 17,
+     "redecode_max_abs_drift": 1.9839,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 3,
+     "ring_index": 5,
+     "n_prefix": 22,
+     "redecode_max_abs_drift": 1.9332,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    },
+    {
+     "arm": "H4",
+     "seed": 3,
+     "ring_index": 6,
+     "n_prefix": 26,
+     "redecode_max_abs_drift": 2.477,
+     "redecode_hold": false,
+     "support_hold": true,
+     "disagree": true
+    }
+   ],
+   "reading": "the retired re-decode criterion (exp218's 0.05 mV value check on the emission-committed prefix of rounds 1..k-1, the seed patch excluded per exp151's P3 \u2014 exp218's own pre-registered scope) vs the repaired support criterion on identical events; a disagreement is an event where the mis-operationalized instrument and the repaired instrument split"
+  },
+  "A4": {
+   "pass": true,
+   "clause": "the P6 provenance locks (exp223's Y2 class) hold through the repaired instrument (zero drift), the floor save/restore asserted",
+   "n_p6_provenance_bitexact": 123,
+   "n_committed_nonseed_cells": 123,
+   "n_prefix_bitexact_checks": 2586,
+   "n_close_bitexact_checks": 573,
+   "n_p3_seed_cells": 450,
+   "floor_save_restore": {
+    "save_pre_import": -60.0,
+    "observed_post_import": -35.0,
+    "restored": -60.0,
+    "production": -60.0,
+    "asserted": true
+   },
+   "ring_writes_logged_at_S_star": 54,
+   "n_wiring_ids_verified": 54,
+   "lock_log_mode": "in-process",
+   "no_per_target_tuning": true
+  }
+ },
+ "verdict": "4/4 gates (A1 A2 A3 A4) | A1 absorption holds 45/45 events | A2 6 self-fueled rounds 9/9 cones | A3 recorded 37/45 disagreements (rate 0.822) | A4 P6 locks + floor asserted | branch AUTOCATALYTIC-CLOSED",
+ "branch": "AUTOCATALYTIC-CLOSED",
+ "wall_s": 30.5,
+ "gate_close_s": 0.0,
+ "pre_registered": {
+  "gates_source": "module docstring, committed before any run (pre-registration 30c5d50, batch 16; gates A1-A4 fixed there, each evaluated exactly once)",
+  "arms_operationalization": "the docstring's '3 arms' = exp218's battery's three host classes, embodied by exp218's own distinguished hosts H0/H1/H4 (build_hosts verbatim, checksummed from exp202's deposit); the plateau arms cannot carry the pre-named 6 expanding rounds (scale_free exhausts at ring 3, random3 at ring 6 \u2014 measured pre-run on exp73's battery), so the host-class reading is the only one under which '6 rounds x 3 arms' is executable",
+  "support_discipline": "the read's support = the set of cells whose values the read consumes = the window's own node support (exp178's discipline \u2014 the read's core is the frame's own support); asserted per round equal to C u F and hashed into the deposit (size + sha256_16 per round)",
+  "absorption_check_reading": "(i) support(new) strictly contains support(old) \u2014 the added capacity enters the read's inputs; (ii) the new cells' read-back matches their written values \u2014 the next round's window entries at the new cells are bit-exact the written values (the values-as-written are what the read consumes); the value-channel re-emission drift at the new cells is deposited as an UNGATED datum \u2014 the retired channel exp228 found structure-driven",
+  "interior_errs_reading": "'the 6.0 bar only at the boundary' = the pre-named 6.0 bar prices the frontier ring errs (the cone's boundary); the interior-round profile (rounds 2..5) is deposited per cone (worst_interior_round_err_mV) and the retired interior value-channel drift under A1/A3 \u2014 the structural expectation reported, nothing tuned",
+  "a3_comparison_reading": "both criteria evaluated per event (arm, seed, round k>=2) on the identical reads: exp218's re-decode criterion = every previously committed cell within exp218's own 0.05 mV drift bar in the round-k read (the emission-committed prefix of rounds 1..k-1, the seed patch excluded per exp151's P3 \u2014 exp218's own pre-registered scope); the support criterion = strict support growth + new-cell read-back integrity; the disagreement count and rate deposited per event",
+  "body_landing_disclosures": "exp218's build_hosts/walk machinery re-nested verbatim in this body (it lives inside exp218's main() and is not importable) with every shared primitive imported from its own module (exp151's protocol functions, exp148's read_scoped, exp142's execute_signed/SEEDS/STAR_OP, exp169's f_max_frames, exp94's spec_target_n/labeling via plan_of, exp178's wiring); exp223's P6 provenance locks reused verbatim (frozen prefix + close-out + commit-round provenance, bit-exact); the floor save/restore is exp218/exp223's disclosed discipline"
+ },
+ "protocol_constants": {
+  "rounds": 6,
+  "walk_seeds": [
+   1,
+   2,
+   3
+  ],
+  "walk_err_bar_mV": 6.0,
+  "arms": [
+   "H0",
+   "H1",
+   "H4"
+  ],
+  "redecode_drift_bar_mV": 0.05,
+  "S_star": [
+   64.0,
+   0.0
+  ],
+  "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+  "support_definition": "the window's node support = C u F (the cells whose values the read consumes)"
+ }
+}
