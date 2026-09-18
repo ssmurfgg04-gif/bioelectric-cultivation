@@ -1,0 +1,3352 @@
+{
+ "exp": "exp223_self_fed_walk",
+ "sections": {
+  "H0": {
+   "walk": {
+    "host": "H0",
+    "n": 100,
+    "kind": "reference (exp182's own host)",
+    "seeds": [
+     1,
+     2,
+     3
+    ],
+    "S_star": [
+     64.0,
+     0.0
+    ],
+    "rings_registered": 6,
+    "seed_cells": 25,
+    "propagation_rule": "ring k's frontier plan = the committed pattern's own values propagated by exp94's spec_target_n on the canon labeling (the plan vector built by the spec_target_n instrument call: the committed cells enter as width-one zones carrying their own frozen values over the canon base); the frontier cells' target = the canon value of their nearest committed ring neighbor = the neighbor's frozen committed value of record (P6's verbatim emission, guarded by GATE-Y2; NOT a re-read); nearest committed ring = the highest ring index among the cell's committed neighbors; same-ring ties resolved on the canon labeling (canon match, else lowest index); T_plan consumed solely by the P3 seed initialization",
+    "cones": [
+     {
+      "seed": 1,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       31,
+       100
+      ],
+      "ring_errs_mV": [
+       29.985,
+       0.861,
+       0.397,
+       0.259,
+       0.697,
+       18.526
+      ],
+      "rings_passed": 4,
+      "profile_monotone_nondecreasing": false,
+      "profile_monotone_nonincreasing": false,
+      "rings_over_bar": [
+       {
+        "ring": 1,
+        "ring_err_mV": 29.985,
+        "frontier": [
+         25
+        ],
+        "emitted": [
+         -49.985
+        ],
+        "plan": [
+         -20.0
+        ]
+       },
+       {
+        "ring": 6,
+        "ring_err_mV": 18.526,
+        "frontier": [
+         30
+        ],
+        "emitted": [
+         -31.485
+        ],
+        "plan": [
+         -50.011
+        ]
+       }
+      ],
+      "branch": "DEGRADES",
+      "y2_frozen": {
+       "n_prefix_bitexact": 140,
+       "n_close_bitexact": 31,
+       "n_p6_provenance_bitexact": 6,
+       "n_p3_seed_cells": 25
+      },
+      "frozen_sha256_16": "f05d931cb52037ea",
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         25
+        ],
+        "window": {
+         "n_nodes": 26,
+         "n_edges": 25,
+         "cf_edges_scaled": 0,
+         "sha256_16": "36517c374a827b85"
+        },
+        "propagation": [
+         {
+          "cell": 25,
+          "neighbor": 24,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -20.0
+         }
+        ],
+        "emitted": [
+         -49.985
+        ],
+        "plan": [
+         -20.0
+        ],
+        "ring_err_mV": 29.985,
+        "pass": false
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         26
+        ],
+        "window": {
+         "n_nodes": 27,
+         "n_edges": 26,
+         "cf_edges_scaled": 0,
+         "sha256_16": "61aaff128674e559"
+        },
+        "propagation": [
+         {
+          "cell": 26,
+          "neighbor": 25,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.9852
+         }
+        ],
+        "emitted": [
+         -50.846
+        ],
+        "plan": [
+         -49.985
+        ],
+        "ring_err_mV": 0.861,
+        "pass": true
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         27
+        ],
+        "window": {
+         "n_nodes": 28,
+         "n_edges": 27,
+         "cf_edges_scaled": 0,
+         "sha256_16": "a16dd6b79f87260f"
+        },
+        "propagation": [
+         {
+          "cell": 27,
+          "neighbor": 26,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.846
+         }
+        ],
+        "emitted": [
+         -50.449
+        ],
+        "plan": [
+         -50.846
+        ],
+        "ring_err_mV": 0.397,
+        "pass": true
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         28
+        ],
+        "window": {
+         "n_nodes": 29,
+         "n_edges": 28,
+         "cf_edges_scaled": 0,
+         "sha256_16": "feed94c445ee0f05"
+        },
+        "propagation": [
+         {
+          "cell": 28,
+          "neighbor": 27,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.4486
+         }
+        ],
+        "emitted": [
+         -50.708
+        ],
+        "plan": [
+         -50.449
+        ],
+        "ring_err_mV": 0.259,
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         29
+        ],
+        "window": {
+         "n_nodes": 30,
+         "n_edges": 29,
+         "cf_edges_scaled": 0,
+         "sha256_16": "f8a15252151da092"
+        },
+        "propagation": [
+         {
+          "cell": 29,
+          "neighbor": 28,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.7076
+         }
+        ],
+        "emitted": [
+         -50.011
+        ],
+        "plan": [
+         -50.708
+        ],
+        "ring_err_mV": 0.697,
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         30
+        ],
+        "window": {
+         "n_nodes": 31,
+         "n_edges": 30,
+         "cf_edges_scaled": 0,
+         "sha256_16": "670aa15faa4d4c4f"
+        },
+        "propagation": [
+         {
+          "cell": 30,
+          "neighbor": 29,
+          "neighbor_ring": 5,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.0107
+         }
+        ],
+        "emitted": [
+         -31.485
+        ],
+        "plan": [
+         -50.011
+        ],
+        "ring_err_mV": 18.526,
+        "pass": false
+       }
+      ]
+     },
+     {
+      "seed": 2,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       31,
+       100
+      ],
+      "ring_errs_mV": [
+       29.434,
+       0.338,
+       0.516,
+       0.703,
+       1.447,
+       20.479
+      ],
+      "rings_passed": 4,
+      "profile_monotone_nondecreasing": false,
+      "profile_monotone_nonincreasing": false,
+      "rings_over_bar": [
+       {
+        "ring": 1,
+        "ring_err_mV": 29.434,
+        "frontier": [
+         25
+        ],
+        "emitted": [
+         -49.434
+        ],
+        "plan": [
+         -20.0
+        ]
+       },
+       {
+        "ring": 6,
+        "ring_err_mV": 20.479,
+        "frontier": [
+         30
+        ],
+        "emitted": [
+         -29.064
+        ],
+        "plan": [
+         -49.543
+        ]
+       }
+      ],
+      "branch": "DEGRADES",
+      "y2_frozen": {
+       "n_prefix_bitexact": 140,
+       "n_close_bitexact": 31,
+       "n_p6_provenance_bitexact": 6,
+       "n_p3_seed_cells": 25
+      },
+      "frozen_sha256_16": "00d6f05fbb34dd87",
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         25
+        ],
+        "window": {
+         "n_nodes": 26,
+         "n_edges": 25,
+         "cf_edges_scaled": 0,
+         "sha256_16": "36517c374a827b85"
+        },
+        "propagation": [
+         {
+          "cell": 25,
+          "neighbor": 24,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -20.0
+         }
+        ],
+        "emitted": [
+         -49.434
+        ],
+        "plan": [
+         -20.0
+        ],
+        "ring_err_mV": 29.434,
+        "pass": false
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         26
+        ],
+        "window": {
+         "n_nodes": 27,
+         "n_edges": 26,
+         "cf_edges_scaled": 0,
+         "sha256_16": "61aaff128674e559"
+        },
+        "propagation": [
+         {
+          "cell": 26,
+          "neighbor": 25,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.4336
+         }
+        ],
+        "emitted": [
+         -49.771
+        ],
+        "plan": [
+         -49.434
+        ],
+        "ring_err_mV": 0.338,
+        "pass": true
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         27
+        ],
+        "window": {
+         "n_nodes": 28,
+         "n_edges": 27,
+         "cf_edges_scaled": 0,
+         "sha256_16": "a16dd6b79f87260f"
+        },
+        "propagation": [
+         {
+          "cell": 27,
+          "neighbor": 26,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.7712
+         }
+        ],
+        "emitted": [
+         -50.287
+        ],
+        "plan": [
+         -49.771
+        ],
+        "ring_err_mV": 0.516,
+        "pass": true
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         28
+        ],
+        "window": {
+         "n_nodes": 29,
+         "n_edges": 28,
+         "cf_edges_scaled": 0,
+         "sha256_16": "feed94c445ee0f05"
+        },
+        "propagation": [
+         {
+          "cell": 28,
+          "neighbor": 27,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.2873
+         }
+        ],
+        "emitted": [
+         -50.99
+        ],
+        "plan": [
+         -50.287
+        ],
+        "ring_err_mV": 0.703,
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         29
+        ],
+        "window": {
+         "n_nodes": 30,
+         "n_edges": 29,
+         "cf_edges_scaled": 0,
+         "sha256_16": "f8a15252151da092"
+        },
+        "propagation": [
+         {
+          "cell": 29,
+          "neighbor": 28,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.9904
+         }
+        ],
+        "emitted": [
+         -49.543
+        ],
+        "plan": [
+         -50.99
+        ],
+        "ring_err_mV": 1.447,
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         30
+        ],
+        "window": {
+         "n_nodes": 31,
+         "n_edges": 30,
+         "cf_edges_scaled": 0,
+         "sha256_16": "670aa15faa4d4c4f"
+        },
+        "propagation": [
+         {
+          "cell": 30,
+          "neighbor": 29,
+          "neighbor_ring": 5,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.5431
+         }
+        ],
+        "emitted": [
+         -29.064
+        ],
+        "plan": [
+         -49.543
+        ],
+        "ring_err_mV": 20.479,
+        "pass": false
+       }
+      ]
+     },
+     {
+      "seed": 3,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       31,
+       100
+      ],
+      "ring_errs_mV": [
+       29.838,
+       0.558,
+       1.045,
+       0.827,
+       0.241,
+       18.045
+      ],
+      "rings_passed": 4,
+      "profile_monotone_nondecreasing": false,
+      "profile_monotone_nonincreasing": false,
+      "rings_over_bar": [
+       {
+        "ring": 1,
+        "ring_err_mV": 29.838,
+        "frontier": [
+         25
+        ],
+        "emitted": [
+         -49.838
+        ],
+        "plan": [
+         -20.0
+        ]
+       },
+       {
+        "ring": 6,
+        "ring_err_mV": 18.045,
+        "frontier": [
+         30
+        ],
+        "emitted": [
+         -31.212
+        ],
+        "plan": [
+         -49.257
+        ]
+       }
+      ],
+      "branch": "DEGRADES",
+      "y2_frozen": {
+       "n_prefix_bitexact": 140,
+       "n_close_bitexact": 31,
+       "n_p6_provenance_bitexact": 6,
+       "n_p3_seed_cells": 25
+      },
+      "frozen_sha256_16": "af022cc40ef4b38d",
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         25
+        ],
+        "window": {
+         "n_nodes": 26,
+         "n_edges": 25,
+         "cf_edges_scaled": 0,
+         "sha256_16": "36517c374a827b85"
+        },
+        "propagation": [
+         {
+          "cell": 25,
+          "neighbor": 24,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -20.0
+         }
+        ],
+        "emitted": [
+         -49.838
+        ],
+        "plan": [
+         -20.0
+        ],
+        "ring_err_mV": 29.838,
+        "pass": false
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         26
+        ],
+        "window": {
+         "n_nodes": 27,
+         "n_edges": 26,
+         "cf_edges_scaled": 0,
+         "sha256_16": "61aaff128674e559"
+        },
+        "propagation": [
+         {
+          "cell": 26,
+          "neighbor": 25,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.8377
+         }
+        ],
+        "emitted": [
+         -49.28
+        ],
+        "plan": [
+         -49.838
+        ],
+        "ring_err_mV": 0.558,
+        "pass": true
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         27
+        ],
+        "window": {
+         "n_nodes": 28,
+         "n_edges": 27,
+         "cf_edges_scaled": 0,
+         "sha256_16": "a16dd6b79f87260f"
+        },
+        "propagation": [
+         {
+          "cell": 27,
+          "neighbor": 26,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.2801
+         }
+        ],
+        "emitted": [
+         -50.325
+        ],
+        "plan": [
+         -49.28
+        ],
+        "ring_err_mV": 1.045,
+        "pass": true
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         28
+        ],
+        "window": {
+         "n_nodes": 29,
+         "n_edges": 28,
+         "cf_edges_scaled": 0,
+         "sha256_16": "feed94c445ee0f05"
+        },
+        "propagation": [
+         {
+          "cell": 28,
+          "neighbor": 27,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.3251
+         }
+        ],
+        "emitted": [
+         -49.498
+        ],
+        "plan": [
+         -50.325
+        ],
+        "ring_err_mV": 0.827,
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         29
+        ],
+        "window": {
+         "n_nodes": 30,
+         "n_edges": 29,
+         "cf_edges_scaled": 0,
+         "sha256_16": "f8a15252151da092"
+        },
+        "propagation": [
+         {
+          "cell": 29,
+          "neighbor": 28,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.4979
+         }
+        ],
+        "emitted": [
+         -49.257
+        ],
+        "plan": [
+         -49.498
+        ],
+        "ring_err_mV": 0.241,
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         30
+        ],
+        "window": {
+         "n_nodes": 31,
+         "n_edges": 30,
+         "cf_edges_scaled": 0,
+         "sha256_16": "670aa15faa4d4c4f"
+        },
+        "propagation": [
+         {
+          "cell": 30,
+          "neighbor": 29,
+          "neighbor_ring": 5,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.2572
+         }
+        ],
+        "emitted": [
+         -31.212
+        ],
+        "plan": [
+         -49.257
+        ],
+        "ring_err_mV": 18.045,
+        "pass": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "H4": {
+   "walk": {
+    "host": "H4",
+    "n": 100,
+    "kind": "corpus-rewired organism (the pre-named worst-margin host \u2014 exp218's X3 disclosure reused)",
+    "seeds": [
+     1,
+     2,
+     3
+    ],
+    "S_star": [
+     64.0,
+     0.0
+    ],
+    "rings_registered": 6,
+    "seed_cells": 25,
+    "propagation_rule": "ring k's frontier plan = the committed pattern's own values propagated by exp94's spec_target_n on the canon labeling (the plan vector built by the spec_target_n instrument call: the committed cells enter as width-one zones carrying their own frozen values over the canon base); the frontier cells' target = the canon value of their nearest committed ring neighbor = the neighbor's frozen committed value of record (P6's verbatim emission, guarded by GATE-Y2; NOT a re-read); nearest committed ring = the highest ring index among the cell's committed neighbors; same-ring ties resolved on the canon labeling (canon match, else lowest index); T_plan consumed solely by the P3 seed initialization",
+    "cones": [
+     {
+      "seed": 1,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       54,
+       100
+      ],
+      "ring_errs_mV": [
+       23.255,
+       10.615,
+       12.576,
+       0.381,
+       0.31,
+       0.527
+      ],
+      "rings_passed": 3,
+      "profile_monotone_nondecreasing": false,
+      "profile_monotone_nonincreasing": false,
+      "rings_over_bar": [
+       {
+        "ring": 1,
+        "ring_err_mV": 23.255,
+        "frontier": [
+         58,
+         67,
+         72,
+         76,
+         91
+        ],
+        "emitted": [
+         -50.686,
+         -30.343,
+         -30.082,
+         -49.702,
+         -49.666
+        ],
+        "plan": [
+         -20.0,
+         -30.0,
+         -30.0,
+         -20.0,
+         -20.0
+        ]
+       },
+       {
+        "ring": 2,
+        "ring_err_mV": 10.615,
+        "frontier": [
+         45,
+         57,
+         65,
+         66,
+         71,
+         77,
+         90
+        ],
+        "emitted": [
+         -50.261,
+         -50.963,
+         -29.911,
+         -29.125,
+         -29.887,
+         -49.98,
+         -49.995
+        ],
+        "plan": [
+         -30.343,
+         -50.686,
+         -49.666,
+         -30.343,
+         -30.082,
+         -49.702,
+         -49.666
+        ]
+       },
+       {
+        "ring": 3,
+        "ring_err_mV": 12.576,
+        "frontier": [
+         44,
+         56,
+         62,
+         64,
+         89
+        ],
+        "emitted": [
+         -30.473,
+         -50.345,
+         -30.018,
+         -30.533,
+         -50.019
+        ],
+        "plan": [
+         -50.261,
+         -50.963,
+         -49.98,
+         -29.911,
+         -49.995
+        ]
+       }
+      ],
+      "branch": "DEGRADES",
+      "y2_frozen": {
+       "n_prefix_bitexact": 207,
+       "n_close_bitexact": 54,
+       "n_p6_provenance_bitexact": 29,
+       "n_p3_seed_cells": 25
+      },
+      "frozen_sha256_16": "2db7f1b45cac9ec9",
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         58,
+         67,
+         72,
+         76,
+         91
+        ],
+        "window": {
+         "n_nodes": 30,
+         "n_edges": 29,
+         "cf_edges_scaled": 0,
+         "sha256_16": "94d555a07c7a4c40"
+        },
+        "propagation": [
+         {
+          "cell": 58,
+          "neighbor": 59,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -20.0
+         },
+         {
+          "cell": 67,
+          "neighbor": 68,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -30.0
+         },
+         {
+          "cell": 72,
+          "neighbor": 73,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -30.0
+         },
+         {
+          "cell": 76,
+          "neighbor": 75,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -20.0
+         },
+         {
+          "cell": 91,
+          "neighbor": 92,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -20.0
+         }
+        ],
+        "emitted": [
+         -50.686,
+         -30.343,
+         -30.082,
+         -49.702,
+         -49.666
+        ],
+        "plan": [
+         -20.0,
+         -30.0,
+         -30.0,
+         -20.0,
+         -20.0
+        ],
+        "ring_err_mV": 23.255,
+        "pass": false
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         45,
+         57,
+         65,
+         66,
+         71,
+         77,
+         90
+        ],
+        "window": {
+         "n_nodes": 37,
+         "n_edges": 36,
+         "cf_edges_scaled": 0,
+         "sha256_16": "c97a2e0a906cc113"
+        },
+        "propagation": [
+         {
+          "cell": 45,
+          "neighbor": 67,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.3428
+         },
+         {
+          "cell": 57,
+          "neighbor": 58,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.6861
+         },
+         {
+          "cell": 65,
+          "neighbor": 91,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.6657
+         },
+         {
+          "cell": 66,
+          "neighbor": 67,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.3428
+         },
+         {
+          "cell": 71,
+          "neighbor": 72,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.0824
+         },
+         {
+          "cell": 77,
+          "neighbor": 76,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.7023
+         },
+         {
+          "cell": 90,
+          "neighbor": 91,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.6657
+         }
+        ],
+        "emitted": [
+         -50.261,
+         -50.963,
+         -29.911,
+         -29.125,
+         -29.887,
+         -49.98,
+         -49.995
+        ],
+        "plan": [
+         -30.343,
+         -50.686,
+         -49.666,
+         -30.343,
+         -30.082,
+         -49.702,
+         -49.666
+        ],
+        "ring_err_mV": 10.615,
+        "pass": false
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         44,
+         56,
+         62,
+         64,
+         89
+        ],
+        "window": {
+         "n_nodes": 42,
+         "n_edges": 42,
+         "cf_edges_scaled": 0,
+         "sha256_16": "1c704527eee9e8cd"
+        },
+        "propagation": [
+         {
+          "cell": 44,
+          "neighbor": 45,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.261
+         },
+         {
+          "cell": 56,
+          "neighbor": 57,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.9627
+         },
+         {
+          "cell": 62,
+          "neighbor": 77,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.9796
+         },
+         {
+          "cell": 64,
+          "neighbor": 65,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -29.9108
+         },
+         {
+          "cell": 89,
+          "neighbor": 90,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.9946
+         }
+        ],
+        "emitted": [
+         -30.473,
+         -50.345,
+         -30.018,
+         -30.533,
+         -50.019
+        ],
+        "plan": [
+         -50.261,
+         -50.963,
+         -49.98,
+         -29.911,
+         -49.995
+        ],
+        "ring_err_mV": 12.576,
+        "pass": false
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         43,
+         55,
+         61,
+         63,
+         88
+        ],
+        "window": {
+         "n_nodes": 47,
+         "n_edges": 47,
+         "cf_edges_scaled": 0,
+         "sha256_16": "582d745ea877d399"
+        },
+        "propagation": [
+         {
+          "cell": 43,
+          "neighbor": 44,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.4727
+         },
+         {
+          "cell": 55,
+          "neighbor": 56,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.345
+         },
+         {
+          "cell": 61,
+          "neighbor": 62,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.0184
+         },
+         {
+          "cell": 63,
+          "neighbor": 64,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.5329
+         },
+         {
+          "cell": 88,
+          "neighbor": 89,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.019
+         }
+        ],
+        "emitted": [
+         -30.079,
+         -49.944,
+         -30.505,
+         -30.947,
+         -50.052
+        ],
+        "plan": [
+         -30.473,
+         -50.345,
+         -30.018,
+         -30.533,
+         -50.019
+        ],
+        "ring_err_mV": 0.381,
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         42,
+         54,
+         60,
+         87
+        ],
+        "window": {
+         "n_nodes": 51,
+         "n_edges": 51,
+         "cf_edges_scaled": 0,
+         "sha256_16": "940a531f4428ebf5"
+        },
+        "propagation": [
+         {
+          "cell": 42,
+          "neighbor": 43,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.0788
+         },
+         {
+          "cell": 54,
+          "neighbor": 55,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.9436
+         },
+         {
+          "cell": 60,
+          "neighbor": 61,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.505
+         },
+         {
+          "cell": 87,
+          "neighbor": 88,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.0523
+         }
+        ],
+        "emitted": [
+         -30.449,
+         -50.051,
+         -30.988,
+         -50.003
+        ],
+        "plan": [
+         -30.079,
+         -49.944,
+         -30.505,
+         -50.052
+        ],
+        "ring_err_mV": 0.31,
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         41,
+         53,
+         86
+        ],
+        "window": {
+         "n_nodes": 54,
+         "n_edges": 54,
+         "cf_edges_scaled": 0,
+         "sha256_16": "00aff8e6c687b3aa"
+        },
+        "propagation": [
+         {
+          "cell": 41,
+          "neighbor": 42,
+          "neighbor_ring": 5,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.4486
+         },
+         {
+          "cell": 53,
+          "neighbor": 54,
+          "neighbor_ring": 5,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.0506
+         },
+         {
+          "cell": 86,
+          "neighbor": 87,
+          "neighbor_ring": 5,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.0034
+         }
+        ],
+        "emitted": [
+         -30.315,
+         -49.147,
+         -50.002
+        ],
+        "plan": [
+         -30.449,
+         -50.051,
+         -50.003
+        ],
+        "ring_err_mV": 0.527,
+        "pass": true
+       }
+      ]
+     },
+     {
+      "seed": 2,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       54,
+       100
+      ],
+      "ring_errs_mV": [
+       23.113,
+       10.083,
+       12.161,
+       1.027,
+       1.126,
+       0.621
+      ],
+      "rings_passed": 3,
+      "profile_monotone_nondecreasing": false,
+      "profile_monotone_nonincreasing": false,
+      "rings_over_bar": [
+       {
+        "ring": 1,
+        "ring_err_mV": 23.113,
+        "frontier": [
+         58,
+         67,
+         72,
+         76,
+         91
+        ],
+        "emitted": [
+         -49.97,
+         -29.755,
+         -30.521,
+         -49.807,
+         -49.732
+        ],
+        "plan": [
+         -20.0,
+         -30.0,
+         -30.0,
+         -20.0,
+         -20.0
+        ]
+       },
+       {
+        "ring": 2,
+        "ring_err_mV": 10.083,
+        "frontier": [
+         45,
+         57,
+         65,
+         66,
+         71,
+         77,
+         90
+        ],
+        "emitted": [
+         -48.45,
+         -50.604,
+         -30.718,
+         -29.731,
+         -30.839,
+         -50.027,
+         -49.985
+        ],
+        "plan": [
+         -29.755,
+         -49.97,
+         -49.732,
+         -29.755,
+         -30.521,
+         -49.807,
+         -49.732
+        ]
+       },
+       {
+        "ring": 3,
+        "ring_err_mV": 12.161,
+        "frontier": [
+         44,
+         56,
+         62,
+         64,
+         89
+        ],
+        "emitted": [
+         -29.371,
+         -50.398,
+         -30.71,
+         -32.2,
+         -49.958
+        ],
+        "plan": [
+         -48.45,
+         -50.604,
+         -50.027,
+         -30.718,
+         -49.985
+        ]
+       }
+      ],
+      "branch": "DEGRADES",
+      "y2_frozen": {
+       "n_prefix_bitexact": 207,
+       "n_close_bitexact": 54,
+       "n_p6_provenance_bitexact": 29,
+       "n_p3_seed_cells": 25
+      },
+      "frozen_sha256_16": "14a537411a58d6f6",
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         58,
+         67,
+         72,
+         76,
+         91
+        ],
+        "window": {
+         "n_nodes": 30,
+         "n_edges": 29,
+         "cf_edges_scaled": 0,
+         "sha256_16": "94d555a07c7a4c40"
+        },
+        "propagation": [
+         {
+          "cell": 58,
+          "neighbor": 59,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -20.0
+         },
+         {
+          "cell": 67,
+          "neighbor": 68,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -30.0
+         },
+         {
+          "cell": 72,
+          "neighbor": 73,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -30.0
+         },
+         {
+          "cell": 76,
+          "neighbor": 75,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -20.0
+         },
+         {
+          "cell": 91,
+          "neighbor": 92,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -20.0
+         }
+        ],
+        "emitted": [
+         -49.97,
+         -29.755,
+         -30.521,
+         -49.807,
+         -49.732
+        ],
+        "plan": [
+         -20.0,
+         -30.0,
+         -30.0,
+         -20.0,
+         -20.0
+        ],
+        "ring_err_mV": 23.113,
+        "pass": false
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         45,
+         57,
+         65,
+         66,
+         71,
+         77,
+         90
+        ],
+        "window": {
+         "n_nodes": 37,
+         "n_edges": 36,
+         "cf_edges_scaled": 0,
+         "sha256_16": "c97a2e0a906cc113"
+        },
+        "propagation": [
+         {
+          "cell": 45,
+          "neighbor": 67,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -29.7549
+         },
+         {
+          "cell": 57,
+          "neighbor": 58,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.9701
+         },
+         {
+          "cell": 65,
+          "neighbor": 91,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.7322
+         },
+         {
+          "cell": 66,
+          "neighbor": 67,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -29.7549
+         },
+         {
+          "cell": 71,
+          "neighbor": 72,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.5211
+         },
+         {
+          "cell": 77,
+          "neighbor": 76,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.8071
+         },
+         {
+          "cell": 90,
+          "neighbor": 91,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.7322
+         }
+        ],
+        "emitted": [
+         -48.45,
+         -50.604,
+         -30.718,
+         -29.731,
+         -30.839,
+         -50.027,
+         -49.985
+        ],
+        "plan": [
+         -29.755,
+         -49.97,
+         -49.732,
+         -29.755,
+         -30.521,
+         -49.807,
+         -49.732
+        ],
+        "ring_err_mV": 10.083,
+        "pass": false
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         44,
+         56,
+         62,
+         64,
+         89
+        ],
+        "window": {
+         "n_nodes": 42,
+         "n_edges": 42,
+         "cf_edges_scaled": 0,
+         "sha256_16": "1c704527eee9e8cd"
+        },
+        "propagation": [
+         {
+          "cell": 44,
+          "neighbor": 45,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -48.4504
+         },
+         {
+          "cell": 56,
+          "neighbor": 57,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.6035
+         },
+         {
+          "cell": 62,
+          "neighbor": 77,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.0268
+         },
+         {
+          "cell": 64,
+          "neighbor": 65,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.7182
+         },
+         {
+          "cell": 89,
+          "neighbor": 90,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.9847
+         }
+        ],
+        "emitted": [
+         -29.371,
+         -50.398,
+         -30.71,
+         -32.2,
+         -49.958
+        ],
+        "plan": [
+         -48.45,
+         -50.604,
+         -50.027,
+         -30.718,
+         -49.985
+        ],
+        "ring_err_mV": 12.161,
+        "pass": false
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         43,
+         55,
+         61,
+         63,
+         88
+        ],
+        "window": {
+         "n_nodes": 47,
+         "n_edges": 47,
+         "cf_edges_scaled": 0,
+         "sha256_16": "582d745ea877d399"
+        },
+        "propagation": [
+         {
+          "cell": 43,
+          "neighbor": 44,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -29.3707
+         },
+         {
+          "cell": 55,
+          "neighbor": 56,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.3975
+         },
+         {
+          "cell": 61,
+          "neighbor": 62,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.7099
+         },
+         {
+          "cell": 63,
+          "neighbor": 64,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -32.2
+         },
+         {
+          "cell": 88,
+          "neighbor": 89,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.9584
+         }
+        ],
+        "emitted": [
+         -29.982,
+         -50.08,
+         -32.21,
+         -30.604,
+         -49.937
+        ],
+        "plan": [
+         -29.371,
+         -50.398,
+         -30.71,
+         -32.2,
+         -49.958
+        ],
+        "ring_err_mV": 1.027,
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         42,
+         54,
+         60,
+         87
+        ],
+        "window": {
+         "n_nodes": 51,
+         "n_edges": 51,
+         "cf_edges_scaled": 0,
+         "sha256_16": "940a531f4428ebf5"
+        },
+        "propagation": [
+         {
+          "cell": 42,
+          "neighbor": 43,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -29.9819
+         },
+         {
+          "cell": 54,
+          "neighbor": 55,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.0795
+         },
+         {
+          "cell": 60,
+          "neighbor": 61,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -32.21
+         },
+         {
+          "cell": 87,
+          "neighbor": 88,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.9373
+         }
+        ],
+        "emitted": [
+         -28.5,
+         -49.865,
+         -30.531,
+         -50.054
+        ],
+        "plan": [
+         -29.982,
+         -50.08,
+         -32.21,
+         -49.937
+        ],
+        "ring_err_mV": 1.126,
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         41,
+         53,
+         86
+        ],
+        "window": {
+         "n_nodes": 54,
+         "n_edges": 54,
+         "cf_edges_scaled": 0,
+         "sha256_16": "00aff8e6c687b3aa"
+        },
+        "propagation": [
+         {
+          "cell": 41,
+          "neighbor": 42,
+          "neighbor_ring": 5,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -28.5002
+         },
+         {
+          "cell": 53,
+          "neighbor": 54,
+          "neighbor_ring": 5,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.8645
+         },
+         {
+          "cell": 86,
+          "neighbor": 87,
+          "neighbor_ring": 5,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.0538
+         }
+        ],
+        "emitted": [
+         -29.487,
+         -49.438,
+         -50.005
+        ],
+        "plan": [
+         -28.5,
+         -49.865,
+         -50.054
+        ],
+        "ring_err_mV": 0.621,
+        "pass": true
+       }
+      ]
+     },
+     {
+      "seed": 3,
+      "rings_expanded": 6,
+      "exhausted": false,
+      "n_rejections": 0,
+      "broken": null,
+      "final_coverage": [
+       54,
+       100
+      ],
+      "ring_errs_mV": [
+       23.088,
+       10.53,
+       12.706,
+       1.054,
+       0.99,
+       0.365
+      ],
+      "rings_passed": 3,
+      "profile_monotone_nondecreasing": false,
+      "profile_monotone_nonincreasing": false,
+      "rings_over_bar": [
+       {
+        "ring": 1,
+        "ring_err_mV": 23.088,
+        "frontier": [
+         58,
+         67,
+         72,
+         76,
+         91
+        ],
+        "emitted": [
+         -49.862,
+         -30.193,
+         -31.573,
+         -49.769,
+         -49.748
+        ],
+        "plan": [
+         -20.0,
+         -30.0,
+         -30.0,
+         -20.0,
+         -20.0
+        ]
+       },
+       {
+        "ring": 2,
+        "ring_err_mV": 10.53,
+        "frontier": [
+         45,
+         57,
+         65,
+         66,
+         71,
+         77,
+         90
+        ],
+        "emitted": [
+         -49.28,
+         -50.862,
+         -29.5,
+         -30.389,
+         -30.67,
+         -49.993,
+         -49.957
+        ],
+        "plan": [
+         -30.193,
+         -49.862,
+         -49.748,
+         -30.193,
+         -31.573,
+         -49.769,
+         -49.748
+        ]
+       },
+       {
+        "ring": 3,
+        "ring_err_mV": 12.706,
+        "frontier": [
+         44,
+         56,
+         62,
+         64,
+         89
+        ],
+        "emitted": [
+         -29.625,
+         -49.92,
+         -29.501,
+         -29.645,
+         -50.085
+        ],
+        "plan": [
+         -49.28,
+         -50.862,
+         -49.993,
+         -29.5,
+         -49.957
+        ]
+       }
+      ],
+      "branch": "DEGRADES",
+      "y2_frozen": {
+       "n_prefix_bitexact": 207,
+       "n_close_bitexact": 54,
+       "n_p6_provenance_bitexact": 29,
+       "n_p3_seed_cells": 25
+      },
+      "frozen_sha256_16": "1707e6e203893017",
+      "rings": [
+       {
+        "ring_index": 1,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         58,
+         67,
+         72,
+         76,
+         91
+        ],
+        "window": {
+         "n_nodes": 30,
+         "n_edges": 29,
+         "cf_edges_scaled": 0,
+         "sha256_16": "94d555a07c7a4c40"
+        },
+        "propagation": [
+         {
+          "cell": 58,
+          "neighbor": 59,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -20.0
+         },
+         {
+          "cell": 67,
+          "neighbor": 68,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -30.0
+         },
+         {
+          "cell": 72,
+          "neighbor": 73,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -30.0
+         },
+         {
+          "cell": 76,
+          "neighbor": 75,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -20.0
+         },
+         {
+          "cell": 91,
+          "neighbor": 92,
+          "neighbor_ring": 0,
+          "n_same_ring_candidates": 1,
+          "canon_matched": false,
+          "plan_value": -20.0
+         }
+        ],
+        "emitted": [
+         -49.862,
+         -30.193,
+         -31.573,
+         -49.769,
+         -49.748
+        ],
+        "plan": [
+         -20.0,
+         -30.0,
+         -30.0,
+         -20.0,
+         -20.0
+        ],
+        "ring_err_mV": 23.088,
+        "pass": false
+       },
+       {
+        "ring_index": 2,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         45,
+         57,
+         65,
+         66,
+         71,
+         77,
+         90
+        ],
+        "window": {
+         "n_nodes": 37,
+         "n_edges": 36,
+         "cf_edges_scaled": 0,
+         "sha256_16": "c97a2e0a906cc113"
+        },
+        "propagation": [
+         {
+          "cell": 45,
+          "neighbor": 67,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.1934
+         },
+         {
+          "cell": 57,
+          "neighbor": 58,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.8616
+         },
+         {
+          "cell": 65,
+          "neighbor": 91,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.7481
+         },
+         {
+          "cell": 66,
+          "neighbor": 67,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.1934
+         },
+         {
+          "cell": 71,
+          "neighbor": 72,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -31.5733
+         },
+         {
+          "cell": 77,
+          "neighbor": 76,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.7692
+         },
+         {
+          "cell": 90,
+          "neighbor": 91,
+          "neighbor_ring": 1,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.7481
+         }
+        ],
+        "emitted": [
+         -49.28,
+         -50.862,
+         -29.5,
+         -30.389,
+         -30.67,
+         -49.993,
+         -49.957
+        ],
+        "plan": [
+         -30.193,
+         -49.862,
+         -49.748,
+         -30.193,
+         -31.573,
+         -49.769,
+         -49.748
+        ],
+        "ring_err_mV": 10.53,
+        "pass": false
+       },
+       {
+        "ring_index": 3,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         44,
+         56,
+         62,
+         64,
+         89
+        ],
+        "window": {
+         "n_nodes": 42,
+         "n_edges": 42,
+         "cf_edges_scaled": 0,
+         "sha256_16": "1c704527eee9e8cd"
+        },
+        "propagation": [
+         {
+          "cell": 44,
+          "neighbor": 45,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.2802
+         },
+         {
+          "cell": 56,
+          "neighbor": 57,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.862
+         },
+         {
+          "cell": 62,
+          "neighbor": 77,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.993
+         },
+         {
+          "cell": 64,
+          "neighbor": 65,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -29.5002
+         },
+         {
+          "cell": 89,
+          "neighbor": 90,
+          "neighbor_ring": 2,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.9567
+         }
+        ],
+        "emitted": [
+         -29.625,
+         -49.92,
+         -29.501,
+         -29.645,
+         -50.085
+        ],
+        "plan": [
+         -49.28,
+         -50.862,
+         -49.993,
+         -29.5,
+         -49.957
+        ],
+        "ring_err_mV": 12.706,
+        "pass": false
+       },
+       {
+        "ring_index": 4,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         43,
+         55,
+         61,
+         63,
+         88
+        ],
+        "window": {
+         "n_nodes": 47,
+         "n_edges": 47,
+         "cf_edges_scaled": 0,
+         "sha256_16": "582d745ea877d399"
+        },
+        "propagation": [
+         {
+          "cell": 43,
+          "neighbor": 44,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -29.6247
+         },
+         {
+          "cell": 55,
+          "neighbor": 56,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.9198
+         },
+         {
+          "cell": 61,
+          "neighbor": 62,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -29.5011
+         },
+         {
+          "cell": 63,
+          "neighbor": 64,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -29.6449
+         },
+         {
+          "cell": 88,
+          "neighbor": 89,
+          "neighbor_ring": 3,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.0847
+         }
+        ],
+        "emitted": [
+         -30.235,
+         -51.882,
+         -29.697,
+         -30.777,
+         -49.996
+        ],
+        "plan": [
+         -29.625,
+         -49.92,
+         -29.501,
+         -29.645,
+         -50.085
+        ],
+        "ring_err_mV": 1.054,
+        "pass": true
+       },
+       {
+        "ring_index": 5,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         42,
+         54,
+         60,
+         87
+        ],
+        "window": {
+         "n_nodes": 51,
+         "n_edges": 51,
+         "cf_edges_scaled": 0,
+         "sha256_16": "940a531f4428ebf5"
+        },
+        "propagation": [
+         {
+          "cell": 42,
+          "neighbor": 43,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -30.235
+         },
+         {
+          "cell": 54,
+          "neighbor": 55,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -51.8817
+         },
+         {
+          "cell": 60,
+          "neighbor": 61,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -29.6968
+         },
+         {
+          "cell": 87,
+          "neighbor": 88,
+          "neighbor_ring": 4,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.996
+         }
+        ],
+        "emitted": [
+         -29.307,
+         -50.545,
+         -30.826,
+         -49.998
+        ],
+        "plan": [
+         -30.235,
+         -51.882,
+         -29.697,
+         -49.996
+        ],
+        "ring_err_mV": 0.99,
+        "pass": true
+       },
+       {
+        "ring_index": 6,
+        "ring_expanded": true,
+        "exhausted": false,
+        "read_ok": true,
+        "rejection": null,
+        "scoped_wiring": {
+         "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+         "f_max": 0.0,
+         "threshold": 32.0,
+         "branch": "R_T (static window)"
+        },
+        "reduction_bitexact_vs_exp151_raw": true,
+        "frontier": [
+         41,
+         53,
+         86
+        ],
+        "window": {
+         "n_nodes": 54,
+         "n_edges": 54,
+         "cf_edges_scaled": 0,
+         "sha256_16": "00aff8e6c687b3aa"
+        },
+        "propagation": [
+         {
+          "cell": 41,
+          "neighbor": 42,
+          "neighbor_ring": 5,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -29.3074
+         },
+         {
+          "cell": 53,
+          "neighbor": 54,
+          "neighbor_ring": 5,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -50.5447
+         },
+         {
+          "cell": 86,
+          "neighbor": 87,
+          "neighbor_ring": 5,
+          "n_same_ring_candidates": 1,
+          "canon_matched": true,
+          "plan_value": -49.9975
+         }
+        ],
+        "emitted": [
+         -29.534,
+         -51.135,
+         -50.011
+        ],
+        "plan": [
+         -29.307,
+         -50.545,
+         -49.998
+        ],
+        "ring_err_mV": 0.365,
+        "pass": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "gates": {
+  "Y1": {
+   "pass": false,
+   "clause": "6 self-fed rings complete with zero rejections on H0 and H4 (3 seeds each); ring errs under the 6.0 bar throughout",
+   "n_cones": 6,
+   "n_complete": 0,
+   "per_cone": [
+    {
+     "host": "H0",
+     "seed": 1,
+     "complete": false,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 29.985
+    },
+    {
+     "host": "H0",
+     "seed": 2,
+     "complete": false,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 29.434
+    },
+    {
+     "host": "H0",
+     "seed": 3,
+     "complete": false,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 29.838
+    },
+    {
+     "host": "H4",
+     "seed": 1,
+     "complete": false,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 23.255
+    },
+    {
+     "host": "H4",
+     "seed": 2,
+     "complete": false,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 23.113
+    },
+    {
+     "host": "H4",
+     "seed": 3,
+     "complete": false,
+     "rings_expanded": 6,
+     "n_rejections": 0,
+     "exhausted": false,
+     "worst_ring_err_mV": 23.088
+    }
+   ],
+   "worst_ring_err_mV": 29.985
+  },
+  "Y2": {
+   "pass": true,
+   "clause": "the committed values frozen (P6 verbatim): after each round the committed prefix equals the frozen values bit-exactly (the walk's own discipline, asserted \u2014 NOT the re-read clause exp218 refuted)",
+   "n_prefix_bitexact_checks": 1041,
+   "n_close_bitexact_checks": 255,
+   "n_p6_provenance_bitexact_checks": 105
+  },
+  "Y3": {
+   "pass": false,
+   "clause": "per-round the frontier's emitted-vs-propagated-plan err deposited; the profile shape (monotonicity) deposited; the branch: SELF-CARRYING (all 6 rings under the bar) / DEGRADES (any ring over)",
+   "branches": {
+    "H0": "DEGRADES",
+    "H4": "DEGRADES"
+   },
+   "per_host": {
+    "H0": {
+     "per_cone": [
+      {
+       "seed": 1,
+       "branch": "DEGRADES",
+       "profile_monotone_nondecreasing": false,
+       "profile_monotone_nonincreasing": false,
+       "ring_errs_mV": [
+        29.985,
+        0.861,
+        0.397,
+        0.259,
+        0.697,
+        18.526
+       ],
+       "rings_over_bar": [
+        {
+         "ring": 1,
+         "ring_err_mV": 29.985,
+         "frontier": [
+          25
+         ],
+         "emitted": [
+          -49.985
+         ],
+         "plan": [
+          -20.0
+         ]
+        },
+        {
+         "ring": 6,
+         "ring_err_mV": 18.526,
+         "frontier": [
+          30
+         ],
+         "emitted": [
+          -31.485
+         ],
+         "plan": [
+          -50.011
+         ]
+        }
+       ]
+      },
+      {
+       "seed": 2,
+       "branch": "DEGRADES",
+       "profile_monotone_nondecreasing": false,
+       "profile_monotone_nonincreasing": false,
+       "ring_errs_mV": [
+        29.434,
+        0.338,
+        0.516,
+        0.703,
+        1.447,
+        20.479
+       ],
+       "rings_over_bar": [
+        {
+         "ring": 1,
+         "ring_err_mV": 29.434,
+         "frontier": [
+          25
+         ],
+         "emitted": [
+          -49.434
+         ],
+         "plan": [
+          -20.0
+         ]
+        },
+        {
+         "ring": 6,
+         "ring_err_mV": 20.479,
+         "frontier": [
+          30
+         ],
+         "emitted": [
+          -29.064
+         ],
+         "plan": [
+          -49.543
+         ]
+        }
+       ]
+      },
+      {
+       "seed": 3,
+       "branch": "DEGRADES",
+       "profile_monotone_nondecreasing": false,
+       "profile_monotone_nonincreasing": false,
+       "ring_errs_mV": [
+        29.838,
+        0.558,
+        1.045,
+        0.827,
+        0.241,
+        18.045
+       ],
+       "rings_over_bar": [
+        {
+         "ring": 1,
+         "ring_err_mV": 29.838,
+         "frontier": [
+          25
+         ],
+         "emitted": [
+          -49.838
+         ],
+         "plan": [
+          -20.0
+         ]
+        },
+        {
+         "ring": 6,
+         "ring_err_mV": 18.045,
+         "frontier": [
+          30
+         ],
+         "emitted": [
+          -31.212
+         ],
+         "plan": [
+          -49.257
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "H4": {
+     "per_cone": [
+      {
+       "seed": 1,
+       "branch": "DEGRADES",
+       "profile_monotone_nondecreasing": false,
+       "profile_monotone_nonincreasing": false,
+       "ring_errs_mV": [
+        23.255,
+        10.615,
+        12.576,
+        0.381,
+        0.31,
+        0.527
+       ],
+       "rings_over_bar": [
+        {
+         "ring": 1,
+         "ring_err_mV": 23.255,
+         "frontier": [
+          58,
+          67,
+          72,
+          76,
+          91
+         ],
+         "emitted": [
+          -50.686,
+          -30.343,
+          -30.082,
+          -49.702,
+          -49.666
+         ],
+         "plan": [
+          -20.0,
+          -30.0,
+          -30.0,
+          -20.0,
+          -20.0
+         ]
+        },
+        {
+         "ring": 2,
+         "ring_err_mV": 10.615,
+         "frontier": [
+          45,
+          57,
+          65,
+          66,
+          71,
+          77,
+          90
+         ],
+         "emitted": [
+          -50.261,
+          -50.963,
+          -29.911,
+          -29.125,
+          -29.887,
+          -49.98,
+          -49.995
+         ],
+         "plan": [
+          -30.343,
+          -50.686,
+          -49.666,
+          -30.343,
+          -30.082,
+          -49.702,
+          -49.666
+         ]
+        },
+        {
+         "ring": 3,
+         "ring_err_mV": 12.576,
+         "frontier": [
+          44,
+          56,
+          62,
+          64,
+          89
+         ],
+         "emitted": [
+          -30.473,
+          -50.345,
+          -30.018,
+          -30.533,
+          -50.019
+         ],
+         "plan": [
+          -50.261,
+          -50.963,
+          -49.98,
+          -29.911,
+          -49.995
+         ]
+        }
+       ]
+      },
+      {
+       "seed": 2,
+       "branch": "DEGRADES",
+       "profile_monotone_nondecreasing": false,
+       "profile_monotone_nonincreasing": false,
+       "ring_errs_mV": [
+        23.113,
+        10.083,
+        12.161,
+        1.027,
+        1.126,
+        0.621
+       ],
+       "rings_over_bar": [
+        {
+         "ring": 1,
+         "ring_err_mV": 23.113,
+         "frontier": [
+          58,
+          67,
+          72,
+          76,
+          91
+         ],
+         "emitted": [
+          -49.97,
+          -29.755,
+          -30.521,
+          -49.807,
+          -49.732
+         ],
+         "plan": [
+          -20.0,
+          -30.0,
+          -30.0,
+          -20.0,
+          -20.0
+         ]
+        },
+        {
+         "ring": 2,
+         "ring_err_mV": 10.083,
+         "frontier": [
+          45,
+          57,
+          65,
+          66,
+          71,
+          77,
+          90
+         ],
+         "emitted": [
+          -48.45,
+          -50.604,
+          -30.718,
+          -29.731,
+          -30.839,
+          -50.027,
+          -49.985
+         ],
+         "plan": [
+          -29.755,
+          -49.97,
+          -49.732,
+          -29.755,
+          -30.521,
+          -49.807,
+          -49.732
+         ]
+        },
+        {
+         "ring": 3,
+         "ring_err_mV": 12.161,
+         "frontier": [
+          44,
+          56,
+          62,
+          64,
+          89
+         ],
+         "emitted": [
+          -29.371,
+          -50.398,
+          -30.71,
+          -32.2,
+          -49.958
+         ],
+         "plan": [
+          -48.45,
+          -50.604,
+          -50.027,
+          -30.718,
+          -49.985
+         ]
+        }
+       ]
+      },
+      {
+       "seed": 3,
+       "branch": "DEGRADES",
+       "profile_monotone_nondecreasing": false,
+       "profile_monotone_nonincreasing": false,
+       "ring_errs_mV": [
+        23.088,
+        10.53,
+        12.706,
+        1.054,
+        0.99,
+        0.365
+       ],
+       "rings_over_bar": [
+        {
+         "ring": 1,
+         "ring_err_mV": 23.088,
+         "frontier": [
+          58,
+          67,
+          72,
+          76,
+          91
+         ],
+         "emitted": [
+          -49.862,
+          -30.193,
+          -31.573,
+          -49.769,
+          -49.748
+         ],
+         "plan": [
+          -20.0,
+          -30.0,
+          -30.0,
+          -20.0,
+          -20.0
+         ]
+        },
+        {
+         "ring": 2,
+         "ring_err_mV": 10.53,
+         "frontier": [
+          45,
+          57,
+          65,
+          66,
+          71,
+          77,
+          90
+         ],
+         "emitted": [
+          -49.28,
+          -50.862,
+          -29.5,
+          -30.389,
+          -30.67,
+          -49.993,
+          -49.957
+         ],
+         "plan": [
+          -30.193,
+          -49.862,
+          -49.748,
+          -30.193,
+          -31.573,
+          -49.769,
+          -49.748
+         ]
+        },
+        {
+         "ring": 3,
+         "ring_err_mV": 12.706,
+         "frontier": [
+          44,
+          56,
+          62,
+          64,
+          89
+         ],
+         "emitted": [
+          -29.625,
+          -49.92,
+          -29.501,
+          -29.645,
+          -50.085
+         ],
+         "plan": [
+          -49.28,
+          -50.862,
+          -49.993,
+          -29.5,
+          -49.957
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "Y4": {
+   "pass": true,
+   "clause": "all finite; the S* lock per write; the -60.0 floor post-restore asserted; no per-target tuning",
+   "all_errs_finite": true,
+   "walk_rejections": 0,
+   "ring_writes_logged": 36,
+   "scoped_reduction_bitexact_all_cones": true,
+   "floor_asserted": true,
+   "no_per_target_tuning": true
+  }
+ },
+ "verdict": "2/4 gates (Y1 Y2 Y3 Y4) | Y1 INCOMPLETE/OVER-BAR | Y2 frozen prefix bit-exact | Y3 DEGRADES (15 ring(s) over the 6.0 bar)",
+ "wall_s": 0.0,
+ "pre_registered": [
+  {
+   "gates_source": "module docstring, committed before any run (pre-registration 94e15cb, batch 12; gates Y1-Y4 fixed there, each evaluated exactly once)",
+   "propagation_rule_operationalization": "the canon value of the nearest committed ring neighbor = the neighbor's frozen committed value of record (the walk's own canon \u2014 P6's verbatim emission, guarded by GATE-Y2's frozen discipline; NOT a re-read \u2014 the clause exp218 refuted); the plan vector is built by exp94's spec_target_n instrument call (the committed cells as width-one zones carrying their own frozen values over the canon base) and the frontier cells overridden by the neighbor rule; T_plan is consumed solely by the P3 seed initialization (the parent's committed values \u2014 the pre-named sole external injection); same-ring ties resolved on the canon labeling (canon match, else lowest cell index) \u2014 deterministic, zero knobs",
+   "monotone_clause_reading": "the pre-registered 'the profile monotone within the 6.0 bar' is deposited as the per-cone profile shape (profile_monotone_nondecreasing / profile_monotone_nonincreasing \u2014 the pre-named expectation, reported whatever it shows); the gate's operative branches are the parentheticals' own definitions: SELF-CARRYING (all 6 rings under the bar) / DEGRADES (any ring over)"
+  }
+ ],
+ "protocol_constants": {
+  "rings": 6,
+  "walk_seeds": [
+   1,
+   2,
+   3
+  ],
+  "walk_err_bar_mV": 6.0,
+  "y_hosts": [
+   "H0",
+   "H4"
+  ],
+  "S_star": [
+   64.0,
+   0.0
+  ],
+  "wiring_id": "exp148.read_scoped | exp178 production wiring | T=1 static window -> R_T -> execute_signed@STAR_OP",
+  "propagation_rule": "ring k's frontier plan = the committed pattern's own values propagated by exp94's spec_target_n on the canon labeling (the plan vector built by the spec_target_n instrument call: the committed cells enter as width-one zones carrying their own frozen values over the canon base); the frontier cells' target = the canon value of their nearest committed ring neighbor = the neighbor's frozen committed value of record (P6's verbatim emission, guarded by GATE-Y2; NOT a re-read); nearest committed ring = the highest ring index among the cell's committed neighbors; same-ring ties resolved on the canon labeling (canon match, else lowest index); T_plan consumed solely by the P3 seed initialization"
+ }
+}
