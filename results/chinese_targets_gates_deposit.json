@@ -1,0 +1,714 @@
+{
+ "artifact": "chinese_targets_gates_deposit",
+ "artifact_file": "results/chinese_targets_gates_deposit.json",
+ "counts": {
+  "anchor_gates": 1,
+  "coarsening_bands": 5,
+  "dose_grid_coarse": 5,
+  "fine_doses": 6,
+  "fine_seeds": 7,
+  "gates": 7,
+  "mapping_seeds": 3,
+  "onsets": 8,
+  "target_gates": 6,
+  "targets": 3,
+  "timing_seeds": 8,
+  "to_pin_constants": 3
+ },
+ "exp": "exp231_chinese_targets_deposit",
+ "finalized_run": {
+  "deposit": "results/exp129_chinese_targets.json",
+  "deposit_sha256": "ec5c2c06160a8062b48c0c0b8bf64bcf2424d7840aa33ef0e9cdf030fcffedac",
+  "gate_outcomes": {
+   "A_G1_anchor": "CONFIRM",
+   "T1_G1_dose_axis": "REFUTE",
+   "T1_G2_biphasic": "REFUTE",
+   "T2_G1_penetrance": "UNPINNED — gate not readable (the registered decision constant does not exist as a number in PMC11783867's machine-readable record; never invent a number)",
+   "T2_G2_timing_anchor": "CONFIRM",
+   "T3_G1_impairment": "UNPINNED — gate not readable (the registered decision constants do not exist as numbers in PMC11645412's machine-readable record; never invent a number)",
+   "T3_G2_rescue": "CONFIRM"
+  },
+  "note": "the scaffold's gates were assigned exp number 129 and finalized+run by Task 5-f (experiments/exp129_chinese_targets.py); this block is the deposited run of the drafted gates, carried VERBATIM so the wetlab side sees both the drafted state (the scaffold stubs) and the stack-side outcome of the same gates",
+  "notes": "The registered single-frame T1 transform (Genes frame, t_control 76.57 / t_max 81.65) collapses every non-40 mM recorded point to f = 0.0 — including both sourcings of the 10 mM band — so the coarse recorded vector is [0,0,0,0,1]; this IS the registered transform's coarsening behavior (gates §1b/§4 risk 4), deposited rather than repaired. exp118's own main() was never called; its results file is untouched. No core edits; no existing experiment file modified.",
+  "pin_provenance": {
+   "t1_ijms_10mM": "PMC12345652 (IJMS 26(15):7092, PMID 40806224) section 2.1 TEXT (Europe PMC full-text XML)",
+   "t1_metformin": "PMC12026922 (Genes 16(4):365, PMID 40282325) Results section 3.1 TEXT (Europe PMC full-text XML; the values are in the text, not only Fig. 2)",
+   "t2_usp7": "UNPINNED — no numeric penetrance in the machine-readable record (main text, figure captions, and the supplementary bundle all searched); the finalization protocol's web-search allowance was not needed — 0 of 4 queries spent",
+   "t3_opa1": "UNPINNED — no numeric regeneration percentages in the machine-readable record (main text, figure captions, and the supplementary bundle incl. Supplementary Data 1 all searched); the finalization protocol's web-search allowance was not needed — 0 of 4 queries spent",
+   "web_search_budget": "0 of 4 searches used — the verification channel was Europe PMC full-text XML + supplementary-file pulls for all four PMCIDs (main text, figure captions, supplementary data tables); no numeric T2/T3 record exists to retrieve"
+  },
+  "pins_detail": {
+   "t1_metformin": "PINNED (PMC12026922 text + PMC12345652 for the 10 mM band)",
+   "t2_usp7": "UNPINNED — no numeric penetrance in the machine-readable record (main text, figure captions, and the supplementary bundle all searched); the finalization protocol's web-search allowance was not needed — 0 of 4 queries spent",
+   "t3_opa1": "UNPINNED — no numeric regeneration percentages in the machine-readable record (main text, figure captions, and the supplementary bundle incl. Supplementary Data 1 all searched); the finalization protocol's web-search allowance was not needed — 0 of 4 queries spent"
+  },
+  "provenance_corrections": {
+   "impact": "no gate arithmetic changes — the gates bind rows to arms by pathway/family, never by species; the gates doc's 'all three targets are DJ rows' circularity note (§4 risk 6) is factually wrong for T2/T3; the DJ baseline remains the only deposited reference bar but is cross-species for T2/T3 — weaker than registered, owned",
+   "t2_species": "Dugesia constrictiva (NOT D. japonica as the 2-b deposit / gates doc recorded)",
+   "t3_species": "Schmidtea mediterranea, asexual CIW4 (NOT D. japonica as the 2-b deposit / gates doc recorded)"
+  }
+ },
+ "gates": [
+  {
+   "def_line": 215,
+   "docstring_verbatim": "A-G1 — the L74/exp118 reference reproduces bit-exactly (decoded\n    0.290 n=884, raw 0.3705 n=905; the DB pins; the six arm anchors;\n    one determinism re-run). REFUTE = harness/extraction drift: NO target\n    gate may be read after a refuted anchor. Gates §ANCHOR.",
+   "finalized_run_outcome": "CONFIRM",
+   "gate_id": "A_G1_anchor",
+   "gates_doc_section": "§ANCHOR",
+   "gates_doc_sections_all": [
+    "§ANCHOR"
+   ],
+   "kind": "anchor",
+   "order": 0,
+   "scaffold_stub": true,
+   "target_id": null
+  },
+  {
+   "def_line": 223,
+   "docstring_verbatim": "T1-G1 — the recorded dose DIRECTION transfers at the coarse grain:\n    Spearman(sim rate, t1-transform vector) >= 0.6 over DOSE_GRID_COARSE on\n    ('wnt','trunk',0.5) x SEEDS; inhibit end lands high (rate at d=1.0\n    >= 0.5). Two-sided; third outcome = degenerate (saturated-flat)\n    ladder -> span-recalibration lesson, not mapping failure. Gates §1d.",
+   "finalized_run_outcome": "REFUTE",
+   "gate_id": "T1_G1_dose_axis",
+   "gates_doc_section": "§1d",
+   "gates_doc_sections_all": [
+    "§1d"
+   ],
+   "kind": "target",
+   "order": 1,
+   "scaffold_stub": true,
+   "target_id": "T1"
+  },
+  {
+   "def_line": 232,
+   "docstring_verbatim": "T1-G2 — the biphasic stress-test of exp29-S2R3's monotonicity:\n    the 7-seed FINE_DOSES ladder on ('wnt','trunk',0.5); the recorded dip\n    judged in the paper's own units (hours, n=30, the paper's own stats —\n    NOT the transform). Two-sided + power third outcome. Gates §1d.",
+   "finalized_run_outcome": "REFUTE",
+   "gate_id": "T1_G2_biphasic",
+   "gates_doc_section": "§1d",
+   "gates_doc_sections_all": [
+    "§1d"
+   ],
+   "kind": "target",
+   "order": 2,
+   "scaffold_stub": true,
+   "target_id": "T1"
+  },
+  {
+   "def_line": 240,
+   "docstring_verbatim": "T2-G1 — the class rule transfers to the Chinese Usp7 row: the row\n    enters as modulator -> d=D_PAR on ('wnt','tail',0.5) (deposited rate\n    0.0; re-verify bit-exact + the d=1.0 arm at 1.0); compare the pinned\n    penetrance at the dominant-class grain. The expected branch per the\n    deposit (~1.0) is the REFUTE branch = a dose-CLASS assignment failure\n    (a Chinese counterexample to L74's 'record property' closure). Gates §2d.",
+   "finalized_run_outcome": "UNPINNED — gate not readable (the registered decision constant does not exist as a number in PMC11783867's machine-readable record; never invent a number)",
+   "gate_id": "T2_G1_penetrance",
+   "gates_doc_section": "§2d",
+   "gates_doc_sections_all": [
+    "§2d"
+   ],
+   "kind": "target",
+   "order": 3,
+   "scaffold_stub": true,
+   "target_id": "T2"
+  },
+  {
+   "def_line": 250,
+   "docstring_verbatim": "T2-G2 — the timing instrument's anchor + the R-axis deferral:\n    run_deadline on grid2d (build_battery), gamma=TIMING_GAMMA, ONSETS x\n    TIMING_SEEDS; the edge must land in the deposited 36 h cell within one\n    onset step (exp123's anchor, DC-G3). The R1d/R3d/R7d axis is an\n    EXPRESSION time-course, not a timed-disruption ladder — registered as\n    an honest DEFERRAL regardless of this gate. CROSS-SUBSTRATE instrument\n    (compiler, not the 1D sheet). Gates §2d.",
+   "finalized_run_outcome": "CONFIRM",
+   "gate_id": "T2_G2_timing_anchor",
+   "gates_doc_section": "§2d",
+   "gates_doc_sections_all": [
+    "§2d"
+   ],
+   "kind": "target",
+   "order": 4,
+   "scaffold_stub": true,
+   "target_id": "T2"
+  },
+  {
+   "def_line": 261,
+   "docstring_verbatim": "T3-G1 — the impaired arm lands: pinned decoded impairment\n    (raw - GEN_BIAS, clamped) within +/-0.25 of the deposited\n    ('generic','trunk') rate 0.667 (re-verify bit-exact) and the raw\n    impairment separates from the cutting control by >= 0.25. Two-sided +\n    the readout-mismatch third outcome. GEN_BIAS is a PlanformDB decode\n    constant (gates §4 risk 3). Gates §3d.",
+   "finalized_run_outcome": "UNPINNED — gate not readable (the registered decision constants do not exist as numbers in PMC11645412's machine-readable record; never invent a number)",
+   "gate_id": "T3_G1_impairment",
+   "gates_doc_section": "§3d",
+   "gates_doc_sections_all": [
+    "§3d"
+   ],
+   "kind": "target",
+   "order": 5,
+   "scaffold_stub": true,
+   "target_id": "T3"
+  },
+  {
+   "def_line": 271,
+   "docstring_verbatim": "T3-G2 — the kwargs channel as the drp1 rescue: the exp40 grid\n    (CNS_GRID x DIFF_GRID = 30 cells) x SEEDS on ('generic','trunk').\n    Confirm = some cell drops the rate >= 0.3 below 0.667 toward the 0.0\n    control; Refute = the grid minimum stays >= 0.367 (L70's repair is\n    slice-specific); Third outcome = every cell moves UP (channel polarity\n    inverted on this arm class). Gates §3d.",
+   "finalized_run_outcome": "CONFIRM",
+   "gate_id": "T3_G2_rescue",
+   "gates_doc_section": "§3d",
+   "gates_doc_sections_all": [
+    "§3d"
+   ],
+   "kind": "target",
+   "order": 6,
+   "scaffold_stub": true,
+   "target_id": "T3"
+  }
+ ],
+ "meta": {
+  "anchor_reference": "results/exp118_corpus_full.json",
+  "anchor_reference_sha256": "fb9a809b42f248d090c4a816438e4e7ef2ef4483fb61c26df05c4560b9d1a88d",
+  "artifact_sha256_canonical_payload": "eac0591d616c3e7e8d8765150e49c866c1c845d8e082def263ed1ee38354e2d6",
+  "export_clause": "the export is a projection, zero re-derivation: every gate definition, target field, pre-registered grid, coarsening map and TO-PIN constant is copied from experiments/scaffold_chinese_targets.py VERBATIM (imported live); the finalized-run block from results/exp129_chinese_targets.json VERBATIM; nothing is re-adjudicated, re-pinned or re-derived here",
+  "field_provenance": [
+   {
+    "field": "artifact",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "the drafted gates exported as a self-contained, provenance-carrying deposit the wetlab side can execute without the stack"
+   },
+   {
+    "field": "artifact_file",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "the drafted gates exported as a self-contained, provenance-carrying deposit the wetlab side can execute without the stack"
+   },
+   {
+    "field": "counts",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "GATE-C2 (the split integrity) the exported counts == the scaffold's deposited counts exactly; any drift raises."
+   },
+   {
+    "field": "exp",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "the drafted gates exported as a self-contained, provenance-carrying deposit the wetlab side can execute without the stack"
+   },
+   {
+    "field": "finalized_run",
+    "protocol_line": "results/exp129_chinese_targets.json (copied verbatim; sha256 in meta.finalized_run_deposit_sha256)",
+    "quote": "the finalized-run block is copied VERBATIM from exp129's deposit (the scaffold's gates' deposited run): the pinned-record state, the pin provenance, the provenance corrections and the gate outcomes"
+   },
+   {
+    "field": "gates",
+    "protocol_line": "experiments/scaffold_chinese_targets.py GATES dict + gate docstrings, verbatim",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "gates[].def_line",
+    "protocol_line": "computed at export (source line index into the scaffold)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "gates[].docstring_verbatim",
+    "protocol_line": "experiments/scaffold_chinese_targets.py gate docstrings (verbatim)",
+    "quote": "def anchor_gate() -> dict:"
+   },
+   {
+    "field": "gates[].finalized_run_outcome",
+    "protocol_line": "results/exp129_chinese_targets.json (copied verbatim; sha256 in meta.finalized_run_deposit_sha256)",
+    "quote": "the finalized-run block is copied VERBATIM from exp129's deposit (the scaffold's gates' deposited run): the pinned-record state, the pin provenance, the provenance corrections and the gate outcomes"
+   },
+   {
+    "field": "gates[].gate_id",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:281 (verbatim order)",
+    "quote": "GATES = {"
+   },
+   {
+    "field": "gates[].gates_doc_section",
+    "protocol_line": "parsed from each gate docstring's own 'Gates §...' reference (the scaffold's inline source reference)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "gates[].gates_doc_sections_all",
+    "protocol_line": "parsed from each gate docstring's own 'Gates §...' reference (the scaffold's inline source reference)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "gates[].kind",
+    "protocol_line": "derived at export from the scaffold's gate-id prefixes (A_/T#_)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "gates[].order",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:281 (verbatim order)",
+    "quote": "GATES = {"
+   },
+   {
+    "field": "gates[].scaffold_stub",
+    "protocol_line": "computed at export (the scaffold's gate bodies raise NotImplementedError)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "gates[].target_id",
+    "protocol_line": "derived at export from the scaffold's gate-id prefixes (A_/T#_)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "meta",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "the drafted gates exported as a self-contained, provenance-carrying deposit the wetlab side can execute without the stack"
+   },
+   {
+    "field": "meta.anchor_reference",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:99 (the scaffold's own reference path)",
+    "quote": "EXP118_FULL = os.path.join(ROOT, \"results\", \"exp118_corpus_full.json\")"
+   },
+   {
+    "field": "meta.anchor_reference_sha256",
+    "protocol_line": "computed at export (E206.sha256_file, exp224's discipline verbatim)",
+    "quote": "GATE-C4 (hygiene) the scaffold's files byte-unchanged during the export; the export deterministic (re-run bit-identical)."
+   },
+   {
+    "field": "meta.artifact_sha256_canonical_payload",
+    "protocol_line": "computed at export (the canonical self-hash)",
+    "quote": "exp224's hash discipline, verbatim"
+   },
+   {
+    "field": "meta.export_clause",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "the drafted gates exported as a self-contained, provenance-carrying deposit the wetlab side can execute without the stack"
+   },
+   {
+    "field": "meta.field_provenance",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "meta.finalized_run_deposit",
+    "protocol_line": "results/exp129_chinese_targets.json (copied verbatim; sha256 in meta.finalized_run_deposit_sha256)",
+    "quote": "the finalized-run block is copied VERBATIM from exp129's deposit (the scaffold's gates' deposited run): the pinned-record state, the pin provenance, the provenance corrections and the gate outcomes"
+   },
+   {
+    "field": "meta.finalized_run_deposit_sha256",
+    "protocol_line": "computed at export (E206.sha256_file, exp224's discipline verbatim)",
+    "quote": "GATE-C3 (the self-containment) the artifact parses standalone; every entry carries its identity fields; the sha256 of the artifact + of the scaffold's own deposit (if any) recorded in the export's meta."
+   },
+   {
+    "field": "meta.hash_discipline",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "exp224's hash discipline, verbatim"
+   },
+   {
+    "field": "meta.n_gates",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "meta.n_targets",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "meta.registration",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "the drafted gates exported as a self-contained, provenance-carrying deposit the wetlab side can execute without the stack"
+   },
+   {
+    "field": "meta.registration_sha256",
+    "protocol_line": "computed at export (E206.sha256_file, exp224's discipline verbatim)",
+    "quote": "GATE-C4 (hygiene) the scaffold's files byte-unchanged during the export; the export deterministic (re-run bit-identical)."
+   },
+   {
+    "field": "meta.row_base",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "the drafted gates exported as a self-contained, provenance-carrying deposit the wetlab side can execute without the stack"
+   },
+   {
+    "field": "meta.row_base_sha256",
+    "protocol_line": "computed at export (E206.sha256_file, exp224's discipline verbatim)",
+    "quote": "GATE-C4 (hygiene) the scaffold's files byte-unchanged during the export; the export deterministic (re-run bit-identical)."
+   },
+   {
+    "field": "meta.scaffold_own_deposit",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "GATE-C3 (the self-containment) the artifact parses standalone; every entry carries its identity fields; the sha256 of the artifact + of the scaffold's own deposit (if any) recorded in the export's meta."
+   },
+   {
+    "field": "registration",
+    "protocol_line": "research/chinese_targets_gates.md (the registration; the scaffold is its carriage)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "registration.file",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "the drafted gates exported as a self-contained, provenance-carrying deposit the wetlab side can execute without the stack"
+   },
+   {
+    "field": "registration.note",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:2 (verbatim)",
+    "quote": "\"\"\"SCAFFOLD — gates per research/chinese_targets_gates.md; assign exp"
+   },
+   {
+    "field": "registration.sections_live",
+    "protocol_line": "computed at export (the scaffold's own 'Gates §...' references vs the registration's headings)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "registration.sha256",
+    "protocol_line": "computed at export (E206.sha256_file, exp224's discipline verbatim)",
+    "quote": "GATE-C4 (hygiene) the scaffold's files byte-unchanged during the export; the export deterministic (re-run bit-identical)."
+   },
+   {
+    "field": "scaffold",
+    "protocol_line": "experiments/scaffold_chinese_targets.py (the deposited machinery, verbatim)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "scaffold.constants",
+    "protocol_line": "experiments/scaffold_chinese_targets.py pre-registered grids/constants block (verbatim)",
+    "quote": "# ---- pre-registered grids (research/chinese_targets_gates.md §1c/§2c/§3c)"
+   },
+   {
+    "field": "scaffold.constants.DOSE_GRID_COARSE",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:106 (verbatim)",
+    "quote": "DOSE_GRID_COARSE = (0.0, 0.25, 0.5, 0.75, 1.0)   # T1-G1 (control->0, 40mM->1.0)"
+   },
+   {
+    "field": "scaffold.constants.D_PAR",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:81 (imported into the scaffold verbatim from exp118_corpus_full_mine)",
+    "quote": "    D_PAR,"
+   },
+   {
+    "field": "scaffold.constants.FINE_DOSES",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:107 (verbatim)",
+    "quote": "FINE_DOSES = (0.25, 0.30, 0.35, 0.40, 0.45, 0.50)  # T1-G2, exp92's instrument"
+   },
+   {
+    "field": "scaffold.constants.FINE_SEEDS",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:108 (verbatim)",
+    "quote": "FINE_SEEDS = (1, 2, 3, 4, 5, 6, 7)"
+   },
+   {
+    "field": "scaffold.constants.GEN_BIAS",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:82 (imported into the scaffold verbatim from exp118_corpus_full_mine)",
+    "quote": "    GEN_BIAS,"
+   },
+   {
+    "field": "scaffold.constants.ONSETS",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:109 (verbatim)",
+    "quote": "ONSETS = (0.0, 6.0, 12.0, 18.0, 24.0, 36.0, 48.0, 72.0)  # exp124's grid"
+   },
+   {
+    "field": "scaffold.constants.SEEDS",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:88 (imported into the scaffold verbatim from exp118_corpus_full_mine)",
+    "quote": "    SEEDS,"
+   },
+   {
+    "field": "scaffold.constants.T1_COARSENING",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:126 (verbatim)",
+    "quote": "T1_COARSENING = {"
+   },
+   {
+    "field": "scaffold.constants.TIMING_GAMMA",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:110 (verbatim)",
+    "quote": "TIMING_GAMMA = 1.0                                # T2-G2, the exp123 anchor"
+   },
+   {
+    "field": "scaffold.constants.TIMING_SEEDS",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:111 (verbatim)",
+    "quote": "TIMING_SEEDS = tuple(range(1, 9))"
+   },
+   {
+    "field": "scaffold.exp_num",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:102 (verbatim)",
+    "quote": "EXP_NUM = None            # e.g. 125, assigned in the ledger before any run"
+   },
+   {
+    "field": "scaffold.file",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "the drafted gates exported as a self-contained, provenance-carrying deposit the wetlab side can execute without the stack"
+   },
+   {
+    "field": "scaffold.machinery_imports",
+    "protocol_line": "experiments/scaffold_chinese_targets.py import block (verbatim)",
+    "quote": "from experiments.exp60_gene_layer import experiment_family  # noqa: E402,F401"
+   },
+   {
+    "field": "scaffold.module_docstring_verbatim",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:2 (verbatim)",
+    "quote": "\"\"\"SCAFFOLD — gates per research/chinese_targets_gates.md; assign exp"
+   },
+   {
+    "field": "scaffold.own_deposit",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "GATE-C3 (the self-containment) the artifact parses standalone; every entry carries its identity fields; the sha256 of the artifact + of the scaffold's own deposit (if any) recorded in the export's meta."
+   },
+   {
+    "field": "scaffold.pin_def_line",
+    "protocol_line": "computed at export (source line index into the scaffold)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "scaffold.pin_def_line.PIN_T1_METFORMIN",
+    "protocol_line": "computed at export (source line index into the scaffold)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "scaffold.pin_def_line.PIN_T2_USP7",
+    "protocol_line": "computed at export (source line index into the scaffold)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "scaffold.pin_def_line.PIN_T3_OPA1",
+    "protocol_line": "computed at export (source line index into the scaffold)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "scaffold.pin_todo_verbatim",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:115 (verbatim)",
+    "quote": "PIN_T1_METFORMIN = None   # TODO: the 10-point per-dose mean/SD table (hours)"
+   },
+   {
+    "field": "scaffold.pin_todo_verbatim.PIN_T1_METFORMIN",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:115 (verbatim)",
+    "quote": "                          # from PMC12026922 Fig. 2 (+ the paper's own stats);"
+   },
+   {
+    "field": "scaffold.pin_todo_verbatim.PIN_T2_USP7",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:118 (verbatim)",
+    "quote": "                          # from PMC11783867 (the deposit says near-complete)."
+   },
+   {
+    "field": "scaffold.pin_todo_verbatim.PIN_T3_OPA1",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:120 (verbatim)",
+    "quote": "                          # percentages from PMC11645412."
+   },
+   {
+    "field": "scaffold.pins",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:115 (verbatim)",
+    "quote": "PIN_T1_METFORMIN = None   # TODO: the 10-point per-dose mean/SD table (hours)"
+   },
+   {
+    "field": "scaffold.pins.PIN_T1_METFORMIN",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:115 (verbatim)",
+    "quote": "PIN_T1_METFORMIN = None   # TODO: the 10-point per-dose mean/SD table (hours)"
+   },
+   {
+    "field": "scaffold.pins.PIN_T2_USP7",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:118 (verbatim)",
+    "quote": "PIN_T2_USP7 = None        # TODO: the exact tail-failure penetrance (fraction)"
+   },
+   {
+    "field": "scaffold.pins.PIN_T3_OPA1",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:120 (verbatim)",
+    "quote": "PIN_T3_OPA1 = None        # TODO: the exact impaired-arm and rescued-arm"
+   },
+   {
+    "field": "scaffold.sha256",
+    "protocol_line": "computed at export (E206.sha256_file, exp224's discipline verbatim)",
+    "quote": "GATE-C4 (hygiene) the scaffold's files byte-unchanged during the export; the export deterministic (re-run bit-identical)."
+   },
+   {
+    "field": "scaffold.status_line",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:5 (verbatim)",
+    "quote": "STATUS: SCAFFOLD. The data-loading and the ADOPTED exp92-mapping import"
+   },
+   {
+    "field": "targets",
+    "protocol_line": "experiments/scaffold_chinese_targets.py module docstring, THE THREE TARGETS block",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "targets[].docstring_verbatim",
+    "protocol_line": "experiments/scaffold_chinese_targets.py module docstring (verbatim)",
+    "quote": "  T1  metformin 10-point dose ladder, D. japonica, eyespot regeneration"
+   },
+   {
+    "field": "targets[].gates",
+    "protocol_line": "derived at export from the scaffold's gate-id prefixes (T#_*)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "targets[].para_def_line",
+    "protocol_line": "computed at export (source line index into the scaffold)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "targets[].pin_constant",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:115 (verbatim)",
+    "quote": "PIN_T1_METFORMIN = None   # TODO: the 10-point per-dose mean/SD table (hours)"
+   },
+   {
+    "field": "targets[].pin_def_line",
+    "protocol_line": "computed at export (source line index into the scaffold)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "targets[].pin_todo_verbatim",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:115 (verbatim)",
+    "quote": "                          # from PMC12026922 Fig. 2 (+ the paper's own stats);"
+   },
+   {
+    "field": "targets[].pin_value_scaffold",
+    "protocol_line": "experiments/scaffold_chinese_targets.py:115 (verbatim)",
+    "quote": "PIN_T1_METFORMIN = None   # TODO: the 10-point per-dose mean/SD table (hours)"
+   },
+   {
+    "field": "targets[].target_id",
+    "protocol_line": "experiments/scaffold_chinese_targets.py (the T1/T2/T3 paragraph labels)",
+    "quote": "GATE-C1 (the projection) every drafted target exported with its gate fields verbatim from the scaffold's definitions; zero fields without provenance (the scaffold's own source references inline)."
+   },
+   {
+    "field": "title",
+    "protocol_line": "exp231 docstring (pre-registered, batch 14)",
+    "quote": "the drafted gates exported as a self-contained, provenance-carrying deposit the wetlab side can execute without the stack"
+   }
+  ],
+  "finalized_run_deposit": "results/exp129_chinese_targets.json",
+  "finalized_run_deposit_sha256": "ec5c2c06160a8062b48c0c0b8bf64bcf2424d7840aa33ef0e9cdf030fcffedac",
+  "hash_discipline": "meta.artifact_sha256_canonical_payload = sha256 of this artifact serialized canonically (indent=1, sort_keys) WITHOUT the artifact_sha256_canonical_payload slot; the run deposit (results/exp231_chinese_targets_deposit.json) records the sha256 of the artifact file bytes",
+  "n_gates": 7,
+  "n_targets": 3,
+  "registration": "research/chinese_targets_gates.md",
+  "registration_sha256": "23e4fc5e8c804d65aa8c65ddaa90011018e29617210f371383ad0bc23705cba7",
+  "row_base": "experiments/scaffold_chinese_targets.py (the scaffold's machinery VERBATIM: gate definitions, target fields, pre-registered grids, pins)",
+  "row_base_sha256": "a13419727389be3796855b072d04e4b426496eb8eb25b59ade6b88fc8034f2ce",
+  "scaffold_own_deposit": {
+   "note": "the scaffold never ran (SCAFFOLD, EXP_NUM None): no deposit exists at its OUT path — the 'if any' clause of GATE-C3; the drafted gates' finalized+run deposit is carried in the finalized_run block",
+   "path": "results/expXXX_chinese_targets.json",
+   "present": false
+  }
+ },
+ "registration": {
+  "file": "research/chinese_targets_gates.md",
+  "note": "the gates document is the registration; the scaffold is its carriage — the scaffold's own docstring line below says exactly this",
+  "sections_live": {
+   "§1d": true,
+   "§2d": true,
+   "§3d": true,
+   "§ANCHOR": true
+  },
+  "sha256": "23e4fc5e8c804d65aa8c65ddaa90011018e29617210f371383ad0bc23705cba7"
+ },
+ "scaffold": {
+  "constants": {
+   "DOSE_GRID_COARSE": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+   ],
+   "D_PAR": 0.25,
+   "FINE_DOSES": [
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5
+   ],
+   "FINE_SEEDS": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "GEN_BIAS": 0.321,
+   "ONSETS": [
+    0.0,
+    6.0,
+    12.0,
+    18.0,
+    24.0,
+    36.0,
+    48.0,
+    72.0
+   ],
+   "SEEDS": [
+    1,
+    2,
+    3
+   ],
+   "T1_COARSENING": {
+    "control": 0.0,
+    "inhibit_10mM": 0.75,
+    "inhibit_40mM": 1.0,
+    "intermediate_band": 0.5,
+    "promote_band": 0.25
+   },
+   "TIMING_GAMMA": 1.0,
+   "TIMING_SEEDS": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  "exp_num": null,
+  "file": "experiments/scaffold_chinese_targets.py",
+  "machinery_imports": [
+   "from experiments.exp60_gene_layer import experiment_family  # noqa: E402,F401",
+   "from experiments.exp70_onset_corpus import classify_onset  # noqa: E402,F401",
+   "from experiments.exp88_corpus_rewire import run_arm_v5  # noqa: E402,F401",
+   "from experiments.exp91_dose_axis_wiring import (  # noqa: E402",
+   "from experiments.exp92_fine_ladder_rowmap import (  # noqa: E402,F401",
+   "from experiments.exp118_corpus_full_mine import (  # noqa: E402",
+   "from experiments.exp112_walk_speed_ladder import build_battery  # noqa: E402,F401",
+   "from experiments.exp124_deadline_curve import run_deadline  # noqa: E402,F401"
+  ],
+  "module_docstring_verbatim": "SCAFFOLD — gates per research/chinese_targets_gates.md; assign exp\nnumber and finalize before running.\n\nSTATUS: SCAFFOLD. The data-loading and the ADOPTED exp92-mapping import\npath are wired (and only those); every protocol body below is a\nNotImplementedError stub. This file has NOT been run and must not be run\nuntil (a) an exp number is assigned in the ledger, (b) the TO-PIN record\nconstants are transcribed from the PMCID full texts, and (c) the gate\nbodies are finalized exactly as pre-registered in\nresearch/chinese_targets_gates.md (the gates in that document are the\nregistration; this file is only their carriage).\n\nTHE THREE TARGETS (subagent 2-b's deposit,\n/home/z/my-project/research/papers/chinese_planaria_mining.md):\n  T1  metformin 10-point dose ladder, D. japonica, eyespot regeneration\n      time in hours, biphasic — Genes 2025, PMID 40282325 (companion\n      IJMS 2025, PMID 40806224).\n  T2  Usp7 RNAi -> Islet/Wnt1 axis -> complete tail-regeneration failure\n      (penetrance ~1.0) + R1d/R3d/R7d expression time-course — J Transl\n      Med 2025, PMID 39885534.\n  T3  opa1 RNAi impairment restored by drp1 co-RNAi (rescue epistasis) —\n      Nat Commun 2024, PMID 39672898.\n\nWHAT IS WIRED (imports only, no execution):\n  - the ADOPTED corpus mapping path, verbatim from exp118:\n      map_arm / build_rows / run_arms / attach_sim / mae and the pinned\n      constants D_PAR=0.25, GEN_BIAS=0.321, the ledger pins, seeds (1,2,3)\n  - the dose knob: exp91.run_arm_dose (the corruption-amplitude axis)\n  - the exp92 class machinery: row_class / EFFECTOR_RE\n  - the timing instrument: exp124.run_deadline (COMPILER SUBSTRATE —\n    grid2d/torus via exp112.build_battery; NOT the 1D corpus sheet;\n    scope-flagged in the gates document, T2-G2)\n  - the anchor-gate reference: results/exp118_corpus_full.json numbers\n    (decoded MAE 0.290 n=884 / raw 0.3705 n=905) — exp91/exp92's own\n    result JSONs are lost (2-a rollback); exp118's full run is the\n    deposited reference artifact.\n\nWHAT IS STUBBED (NotImplementedError):\n  anchor_gate()            A-G1  the L74/exp118 reference reproduces\n  target1_dose_axis()      T1-G1 the recorded dose direction transfers\n  target1_biphasic()       T1-G2 the biphasic stress-test (fine ladder)\n  target2_penetrance()     T2-G1 the class rule transfers to the Usp7 row\n  target2_timing_anchor()  T2-G2 the deadline instrument anchor + R-axis\n                           deferral\n  target3_impairment()     T3-G1 the impaired arm lands (family transfer)\n  target3_rescue()         T3-G2 the kwargs channel as the drp1 rescue\n\nmain() runs the PURE-DB preflight only (no sim), prints the coverage and\nthe DJ-slice baseline the gates are judged against, then raises\nNotImplementedError — the scaffold cannot silently half-run.\n",
+  "own_deposit": {
+   "note": "the scaffold never ran (SCAFFOLD, EXP_NUM None): no deposit exists at its OUT path — the 'if any' clause of GATE-C3; the drafted gates' finalized+run deposit is carried in the finalized_run block",
+   "path": "results/expXXX_chinese_targets.json",
+   "present": false
+  },
+  "pin_def_line": {
+   "PIN_T1_METFORMIN": 115,
+   "PIN_T2_USP7": 118,
+   "PIN_T3_OPA1": 120
+  },
+  "pin_todo_verbatim": {
+   "PIN_T1_METFORMIN": "PIN_T1_METFORMIN = None   # TODO: the 10-point per-dose mean/SD table (hours)\n                          # from PMC12026922 Fig. 2 (+ the paper's own stats);\n                          # 10 mM inhibit point from PMC12345652 (IJMS).",
+   "PIN_T2_USP7": "PIN_T2_USP7 = None        # TODO: the exact tail-failure penetrance (fraction)\n                          # from PMC11783867 (the deposit says near-complete).",
+   "PIN_T3_OPA1": "PIN_T3_OPA1 = None        # TODO: the exact impaired-arm and rescued-arm\n                          # percentages from PMC11645412."
+  },
+  "pins": {
+   "PIN_T1_METFORMIN": null,
+   "PIN_T2_USP7": null,
+   "PIN_T3_OPA1": null
+  },
+  "sha256": "a13419727389be3796855b072d04e4b426496eb8eb25b59ade6b88fc8034f2ce",
+  "status_line": "STATUS: SCAFFOLD. The data-loading and the ADOPTED exp92-mapping import"
+ },
+ "targets": [
+  {
+   "docstring_verbatim": "  T1  metformin 10-point dose ladder, D. japonica, eyespot regeneration\n      time in hours, biphasic — Genes 2025, PMID 40282325 (companion\n      IJMS 2025, PMID 40806224).",
+   "gates": [
+    "T1_G1_dose_axis",
+    "T1_G2_biphasic"
+   ],
+   "para_def_line": 16,
+   "pin_constant": "PIN_T1_METFORMIN",
+   "pin_def_line": 115,
+   "pin_todo_verbatim": "PIN_T1_METFORMIN = None   # TODO: the 10-point per-dose mean/SD table (hours)\n                          # from PMC12026922 Fig. 2 (+ the paper's own stats);\n                          # 10 mM inhibit point from PMC12345652 (IJMS).",
+   "pin_value_scaffold": null,
+   "target_id": "T1"
+  },
+  {
+   "docstring_verbatim": "  T2  Usp7 RNAi -> Islet/Wnt1 axis -> complete tail-regeneration failure\n      (penetrance ~1.0) + R1d/R3d/R7d expression time-course — J Transl\n      Med 2025, PMID 39885534.",
+   "gates": [
+    "T2_G1_penetrance",
+    "T2_G2_timing_anchor"
+   ],
+   "para_def_line": 19,
+   "pin_constant": "PIN_T2_USP7",
+   "pin_def_line": 118,
+   "pin_todo_verbatim": "PIN_T2_USP7 = None        # TODO: the exact tail-failure penetrance (fraction)\n                          # from PMC11783867 (the deposit says near-complete).",
+   "pin_value_scaffold": null,
+   "target_id": "T2"
+  },
+  {
+   "docstring_verbatim": "  T3  opa1 RNAi impairment restored by drp1 co-RNAi (rescue epistasis) —\n      Nat Commun 2024, PMID 39672898.",
+   "gates": [
+    "T3_G1_impairment",
+    "T3_G2_rescue"
+   ],
+   "para_def_line": 22,
+   "pin_constant": "PIN_T3_OPA1",
+   "pin_def_line": 120,
+   "pin_todo_verbatim": "PIN_T3_OPA1 = None        # TODO: the exact impaired-arm and rescued-arm\n                          # percentages from PMC11645412.",
+   "pin_value_scaffold": null,
+   "target_id": "T3"
+  }
+ ],
+ "title": "THE CHINESE-TARGETS GATES DEPOSIT — the wetlab companion's final form of the drafted gates"
+}

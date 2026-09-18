@@ -1,0 +1,221 @@
+{
+ "exp": "exp231_chinese_targets_deposit",
+ "claim": "THE CHINESE-TARGETS GATES DEPOSIT (L201's registered next; the Section 5 item; the last open deposit leg): the scaffold's drafted gates (experiments/scaffold_chinese_targets.py \u2014 3 targets x 7 gates: the anchor + the T1 metformin dose-axis/biphasic pair, the T2 Usp7 penetrance/timing pair, the T3 opa1 impairment/rescue pair) exported as the wetlab companion's final form \u2014 a self-contained, provenance-carrying artifact (results/chinese_targets_gates_deposit.json) the wetlab side can execute without the stack: every gate definition, target field, pre-registered grid, coarsening map and TO-PIN constant copied from the scaffold VERBATIM (imported live, zero re-derivation, every field provenance-tagged to its scaffold line), the scaffold's own \u00a7-references verified live against the registration (research/chinese_targets_gates.md), and the drafted gates' deposited run (exp129: pins detail, pin provenance, provenance corrections, gate outcomes) carried verbatim beside them; the scaffold's own OUT deposit does not exist (the scaffold never ran \u2014 the C3 'if any' clause, disclosed)",
+ "pre_registered": {
+  "gates_source": "module docstring, committed before any run (pre-registration 799a35c, batch 14; gates C1-C4 fixed there, each evaluated exactly once)",
+  "pre_registration_block_verbatim": "========================= PRE-REGISTRATION =========================\nCommitted BEFORE any run. Instruments: experiments/\nscaffold_chinese_targets.py's deposited machinery VERBATIM (its gate\ndefinitions, its target fields); exp224's final-form discipline\nVERBATIM (the projection gates: per-entry identity, split integrity,\nself-containment, determinism); the artifact written =\nresults/chinese_targets_gates_deposit.json.\n\nGATES (each evaluated exactly once):\n  GATE-C1 (the projection) every drafted target exported with its\n           gate fields verbatim from the scaffold's definitions;\n           zero fields without provenance (the scaffold's own\n           source references inline).\n  GATE-C2 (the split integrity) the exported counts == the\n           scaffold's deposited counts exactly; any drift raises.\n  GATE-C3 (the self-containment) the artifact parses standalone;\n           every entry carries its identity fields; the sha256 of\n           the artifact + of the scaffold's own deposit (if any)\n           recorded in the export's meta.\n  GATE-C4 (hygiene) the scaffold's files byte-unchanged during the\n           export; the export deterministic (re-run bit-identical).\nNO post-hoc tuning. --smoke permitted, discarded.\nDEPOSIT: results/exp231_chinese_targets_deposit.json\nARTIFACT: results/chinese_targets_gates_deposit.json\nRUN: python3 -m experiments.exp231_chinese_targets_deposit [--smoke] [--job ...] [--out ...]",
+  "gates_block_verbatim": "GATES (each evaluated exactly once):\n  GATE-C1 (the projection) every drafted target exported with its\n           gate fields verbatim from the scaffold's definitions;\n           zero fields without provenance (the scaffold's own\n           source references inline).\n  GATE-C2 (the split integrity) the exported counts == the\n           scaffold's deposited counts exactly; any drift raises.\n  GATE-C3 (the self-containment) the artifact parses standalone;\n           every entry carries its identity fields; the sha256 of\n           the artifact + of the scaffold's own deposit (if any)\n           recorded in the export's meta.\n  GATE-C4 (hygiene) the scaffold's files byte-unchanged during the\n           export; the export deterministic (re-run bit-identical).\nNO post-hoc tuning. --smoke permitted, discarded."
+ },
+ "instruments": {
+  "scaffold": {
+   "file": "experiments/scaffold_chinese_targets.py",
+   "sha256": "a13419727389be3796855b072d04e4b426496eb8eb25b59ade6b88fc8034f2ce"
+  },
+  "registration": {
+   "file": "research/chinese_targets_gates.md",
+   "sha256": "23e4fc5e8c804d65aa8c65ddaa90011018e29617210f371383ad0bc23705cba7"
+  },
+  "finalized_run_deposit": {
+   "file": "results/exp129_chinese_targets.json",
+   "sha256": "ec5c2c06160a8062b48c0c0b8bf64bcf2424d7840aa33ef0e9cdf030fcffedac"
+  },
+  "anchor_reference": {
+   "file": "results/exp118_corpus_full.json",
+   "sha256": "fb9a809b42f248d090c4a816438e4e7ef2ef4483fb61c26df05c4560b9d1a88d"
+  },
+  "machinery": "experiments/exp203_wetlab_scaffold.py's ser/sha256_file helpers via exp206's re-export (exp224's final-form discipline verbatim)",
+  "exp224_discipline": "per-entry identity, split integrity, self-containment, determinism"
+ },
+ "sections": {
+  "scaffold_counts_deposited": {
+   "targets": 3,
+   "gates": 7,
+   "anchor_gates": 1,
+   "target_gates": 6,
+   "dose_grid_coarse": 5,
+   "fine_doses": 6,
+   "fine_seeds": 7,
+   "onsets": 8,
+   "timing_seeds": 8,
+   "mapping_seeds": 3,
+   "coarsening_bands": 5,
+   "to_pin_constants": 3
+  },
+  "exported_target_ids": [
+   "T1",
+   "T2",
+   "T3"
+  ],
+  "exported_gate_ids": [
+   "A_G1_anchor",
+   "T1_G1_dose_axis",
+   "T1_G2_biphasic",
+   "T2_G1_penetrance",
+   "T2_G2_timing_anchor",
+   "T3_G1_impairment",
+   "T3_G2_rescue"
+  ],
+  "gates_doc_section_refs": {
+   "A_G1_anchor": [
+    "\u00a7ANCHOR"
+   ],
+   "T1_G1_dose_axis": [
+    "\u00a71d"
+   ],
+   "T1_G2_biphasic": [
+    "\u00a71d"
+   ],
+   "T2_G1_penetrance": [
+    "\u00a72d"
+   ],
+   "T2_G2_timing_anchor": [
+    "\u00a72d"
+   ],
+   "T3_G1_impairment": [
+    "\u00a73d"
+   ],
+   "T3_G2_rescue": [
+    "\u00a73d"
+   ]
+  },
+  "sections_live": {
+   "\u00a71d": true,
+   "\u00a72d": true,
+   "\u00a73d": true,
+   "\u00a7ANCHOR": true
+  },
+  "scaffold_stub_all": true,
+  "finalized_run_outcomes": {
+   "A_G1_anchor": "CONFIRM",
+   "T1_G1_dose_axis": "REFUTE",
+   "T1_G2_biphasic": "REFUTE",
+   "T2_G1_penetrance": "UNPINNED \u2014 gate not readable (the registered decision constant does not exist as a number in PMC11783867's machine-readable record; never invent a number)",
+   "T3_G1_impairment": "UNPINNED \u2014 gate not readable (the registered decision constants do not exist as numbers in PMC11645412's machine-readable record; never invent a number)",
+   "T3_G2_rescue": "CONFIRM",
+   "T2_G2_timing_anchor": "CONFIRM"
+  },
+  "own_deposit_present": false,
+  "field_provenance_rows": 78,
+  "artifact": {
+   "file": "results/chinese_targets_gates_deposit.json",
+   "sha256": "cdff8edf4a060f504f6f6725d2931b8253acfbd7d528cd68700517cf6262dbe9",
+   "sha256_canonical_payload": "eac0591d616c3e7e8d8765150e49c866c1c845d8e082def263ed1ee38354e2d6",
+   "bytes": 40266,
+   "n_targets": 3,
+   "n_gates": 7,
+   "parses_standalone": true
+  }
+ },
+ "gates": {
+  "GATE-C1": {
+   "verdict": "PASS",
+   "targets_exported": [
+    "T1",
+    "T2",
+    "T3"
+   ],
+   "gates_exported_in_scaffold_order": true,
+   "gate_docstrings_verbatim": true,
+   "kind_target_mapping": true,
+   "scaffold_section_refs_live_vs_registration": true,
+   "all_gates_scaffold_stubs": true,
+   "all_gates_named_in_scaffold_docstring": true,
+   "target_docstrings_verbatim": true,
+   "pin_fields_verbatim": true,
+   "target_gate_membership": true,
+   "zero_fields_without_provenance": true,
+   "provenance_gaps": [],
+   "field_provenance_rows": 78
+  },
+  "GATE-C2": {
+   "verdict": "PASS",
+   "scaffold_counts_deposited": {
+    "targets": 3,
+    "gates": 7,
+    "anchor_gates": 1,
+    "target_gates": 6,
+    "dose_grid_coarse": 5,
+    "fine_doses": 6,
+    "fine_seeds": 7,
+    "onsets": 8,
+    "timing_seeds": 8,
+    "mapping_seeds": 3,
+    "coarsening_bands": 5,
+    "to_pin_constants": 3
+   },
+   "exported_counts": {
+    "targets": 3,
+    "gates": 7,
+    "anchor_gates": 1,
+    "target_gates": 6,
+    "dose_grid_coarse": 5,
+    "fine_doses": 6,
+    "fine_seeds": 7,
+    "onsets": 8,
+    "timing_seeds": 8,
+    "mapping_seeds": 3,
+    "coarsening_bands": 5,
+    "to_pin_constants": 3
+   },
+   "split_matches_exactly": true,
+   "n_targets": 3,
+   "n_gates": 7,
+   "grid_lengths": {
+    "dose_grid_coarse": 5,
+    "fine_doses": 6,
+    "fine_seeds": 7,
+    "onsets": 8,
+    "timing_seeds": 8,
+    "mapping_seeds": 3,
+    "coarsening_bands": 5
+   }
+  },
+  "GATE-C3": {
+   "verdict": "PASS",
+   "parses_standalone": true,
+   "gate_identity_fields": [
+    "gate_id",
+    "order",
+    "kind",
+    "docstring_verbatim",
+    "gates_doc_section"
+   ],
+   "target_identity_fields": [
+    "target_id",
+    "pin_constant",
+    "docstring_verbatim"
+   ],
+   "identity_violations": [],
+   "artifact_sha256_canonical_payload": "eac0591d616c3e7e8d8765150e49c866c1c845d8e082def263ed1ee38354e2d6",
+   "artifact_payload_sha_ok": true,
+   "scaffold_own_deposit": {
+    "note": "the scaffold never ran (SCAFFOLD, EXP_NUM None): no deposit exists at its OUT path \u2014 the 'if any' clause of GATE-C3; the drafted gates' finalized+run deposit is carried in the finalized_run block",
+    "path": "results/expXXX_chinese_targets.json",
+    "present": false
+   },
+   "scaffold_own_deposit_ok": true,
+   "finalized_run_deposit_sha256": "ec5c2c06160a8062b48c0c0b8bf64bcf2424d7840aa33ef0e9cdf030fcffedac",
+   "finalized_run_deposit_sha_ok": true,
+   "n_gates_meta": 7,
+   "n_targets_meta": 3
+  },
+  "GATE-C4": {
+   "verdict": "PASS",
+   "scaffold_files_byte_unchanged": true,
+   "export_deterministic": true,
+   "artifact_file": "results/chinese_targets_gates_deposit.json",
+   "artifact_sha256_file": "cdff8edf4a060f504f6f6725d2931b8253acfbd7d528cd68700517cf6262dbe9",
+   "artifact_bytes": 40266,
+   "file_sha256": {
+    "experiments/scaffold_chinese_targets.py": "a13419727389be3796855b072d04e4b426496eb8eb25b59ade6b88fc8034f2ce",
+    "research/chinese_targets_gates.md": "23e4fc5e8c804d65aa8c65ddaa90011018e29617210f371383ad0bc23705cba7",
+    "results/exp129_chinese_targets.json": "ec5c2c06160a8062b48c0c0b8bf64bcf2424d7840aa33ef0e9cdf030fcffedac",
+    "results/exp118_corpus_full.json": "fb9a809b42f248d090c4a816438e4e7ef2ef4483fb61c26df05c4560b9d1a88d"
+   }
+  }
+ },
+ "artifact": "results/chinese_targets_gates_deposit.json",
+ "registration": "research/chinese_targets_gates.md",
+ "verdict": "4/4 gates PASS | the drafted 3-target/7-gate Chinese-targets scaffold exported as the wetlab companion's final form (1 anchor + 6 target gates, all scaffold stubs, machinery verbatim; the scaffold's own deposit absent per the C3 'if any' clause \u2014 the finalized run exp129's outcomes carried beside them) | artifact results/chinese_targets_gates_deposit.json deposited",
+ "wall_s": 0.0
+}
