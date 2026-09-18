@@ -1,0 +1,135 @@
+{
+ "exp": "exp252_deep_band_cost (exp243's registered next)",
+ "boundary_share_mean": 0.15126338261383745,
+ "interior_share_mean": 0.8487366173861626,
+ "per_seed_boundary_shares": [
+  0.15141299172382322,
+  0.1510947817447164,
+  0.15128237437297276
+ ],
+ "decompositions": [
+  {
+   "seed": 1,
+   "err": 3.68,
+   "decomposition": {
+    "per_class": [
+     {
+      "class": "CANON-BOUNDARY",
+      "n_cells": 66,
+      "sum_sq": 818.3550050960466,
+      "frac_of_sq": 0.15141299172382322,
+      "rms_contrib_mV": 1.4303452424992074
+     },
+     {
+      "class": "PAIR-JUNCTION",
+      "n_cells": 334,
+      "sum_sq": 4586.432231317084,
+      "frac_of_sq": 0.848587008276177,
+      "rms_contrib_mV": 3.386160152487285
+     },
+     {
+      "class": "INTERIOR",
+      "n_cells": 0,
+      "sum_sq": 0.0,
+      "frac_of_sq": 0.0,
+      "rms_contrib_mV": 0.0
+     }
+    ],
+    "identity_residual": 1.7763568394002505e-15
+   },
+   "class_counts": {
+    "CANON-BOUNDARY": 38,
+    "PAIR-JUNCTION": 334,
+    "INTERIOR": 28
+   }
+  },
+  {
+   "seed": 2,
+   "err": 3.68,
+   "decomposition": {
+    "per_class": [
+     {
+      "class": "CANON-BOUNDARY",
+      "n_cells": 66,
+      "sum_sq": 816.4243769241037,
+      "frac_of_sq": 0.1510947817447164,
+      "rms_contrib_mV": 1.4286570415289526
+     },
+     {
+      "class": "PAIR-JUNCTION",
+      "n_cells": 334,
+      "sum_sq": 4586.967901066681,
+      "frac_of_sq": 0.8489052182552835,
+      "rms_contrib_mV": 3.386357889040481
+     },
+     {
+      "class": "INTERIOR",
+      "n_cells": 0,
+      "sum_sq": 0.0,
+      "frac_of_sq": 0.0,
+      "rms_contrib_mV": 0.0
+     }
+    ],
+    "identity_residual": 0.0
+   },
+   "class_counts": {
+    "CANON-BOUNDARY": 38,
+    "PAIR-JUNCTION": 334,
+    "INTERIOR": 28
+   }
+  },
+  {
+   "seed": 3,
+   "err": 3.68,
+   "decomposition": {
+    "per_class": [
+     {
+      "class": "CANON-BOUNDARY",
+      "n_cells": 66,
+      "sum_sq": 817.8929233121578,
+      "frac_of_sq": 0.15128237437297276,
+      "rms_contrib_mV": 1.4299413653295
+     },
+     {
+      "class": "PAIR-JUNCTION",
+      "n_cells": 334,
+      "sum_sq": 4588.506379330449,
+      "frac_of_sq": 0.8487176256270272,
+      "rms_contrib_mV": 3.386925737055084
+     },
+     {
+      "class": "INTERIOR",
+      "n_cells": 0,
+      "sum_sq": 0.0,
+      "frac_of_sq": 0.0,
+      "rms_contrib_mV": 0.0
+     }
+    ],
+    "identity_residual": 0.0
+   },
+   "class_counts": {
+    "CANON-BOUNDARY": 38,
+    "PAIR-JUNCTION": 334,
+    "INTERIOR": 28
+   }
+  }
+ ],
+ "class_worsts": {
+  "P1_canon_zone_relabelings": 0.07,
+  "P2_boundary_double_frequency_rewiring": 0.19,
+  "P3_deep_band_substitution": 3.68
+ },
+ "deep_band_worst": 3.68,
+ "canonical_worst": 0.19,
+ "criteria": {
+  "B1_cost_addressed": true,
+  "B2_substitution_carries": true,
+  "B3_discipline": true
+ },
+ "branch": "INTERIOR-CARRIED",
+ "consumed_deposits": {
+  "exp243": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a"
+ },
+ "notes": "The decomposition records are exp243's own (exp208's machinery run on the argmax candidate's decode rows); this re-read aggregates them and splits the conjunction's price boundary-vs-interior. PAIR-JUNCTION is exp208's structure-coupled interior class.",
+ "read_only_verified": true
+}
