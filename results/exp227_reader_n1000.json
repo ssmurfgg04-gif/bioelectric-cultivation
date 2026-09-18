@@ -1,0 +1,1098 @@
+{
+ "exp": "exp227_reader_n1000",
+ "claim": "THE READER AT n=1000 (L199's registered next): the structured-media adversarial reader held at 0.62 mV worst at n=400 \u2014 the size axis's terminal point for the reader line: the same structured-media sweep at n=1000 \u2014 path(1000) as host (exp198's scale constructor, the SAME constructor that builds A_CHAIN and H1) + the n=1000 corner battery (exp166's CornerMedium at n=1000, 5 instances, gen-seed rule 166000 + j), 5 target classes x 3 seeds, the 6.0 bar unchanged \u2014 and the corner battery's boundary decomposition (exp208's three-class machinery verbatim) re-testing the interior-0.000 identity at the second large n",
+ "read": {
+  "wiring": "exp178's production scoped arm: exp169's f_max diagnostic + the pre-registered THRESHOLD (32.0); R_T (exp167's adopted read) iff f_max < 32.0, else exp148's raw temporal \u2014 one arm, one function, zero knobs",
+  "projection": "exp145/exp148 TC1-TC3: PN1/PN2 dominant-quadrature projection + TC1 flip-clock F + TC2 A_ext = A + F",
+  "executor": "exp142 execute_signed VERBATIM (R1 structure on |A|, R2 signed dynamics, walk frontier on |A|>0)",
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "op_source": "exp99's battery-wide STAR point (exp142's STAR_OP); STAR_OP IS S* = (64.0, 0.0), asserted",
+  "spec_input": "per-row target spec \u2014 the read stack's target parameter (exp148's MULTI default asserted bit-identical on path(1000) by the MULTI-identity audit)",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n": 1000,
+  "window_h": 24.0,
+  "commit_noise": 0.6,
+  "steps_per_cell": 8,
+  "floor": "production -60.0 restored post-import (exp218's disclosed exp169-import discipline; the -35.0 reader-line pin disclosed)",
+  "per_media_tuning": "none",
+  "fingerprint": "03602540b06a07e4",
+  "wiring_id": "exp148.decode('scoped') wiring | exp169 f_max/THRESHOLD | exp167 R_T | exp145/148 PN+TC | exp142 execute_signed@STAR_OP==S*"
+ },
+ "cohort": {
+  "hosts": [
+   "path1000",
+   "corner_n1000"
+  ],
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "target_list": "the host's own canon (wildtype) + manifest indices 0, 49, 99 + the deep band's -60.0 rung both instances (pre-named; exp225's target classes)",
+  "n_target_classes": 5,
+  "n_decode_rows_path1000": 6,
+  "corner_cell_mapping": "the pre-registered 'corner battery' = exp166's CornerMedium at the c6 cell (o+h), the battery class exp208's boundary phenomenon was named on; disclosed as the pre-named cell mapping"
+ },
+ "provenance": {
+  "exp182": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+  "exp198": "2addf20f5fb7593a949515678de5e1b972c05b3535ec8d63e9af72b2f29825c3",
+  "exp199": "6a9b755df588a7cb3cb1297f643ebb036a71932eb85504c928cee956101f9175",
+  "exp225": "1985a227a67a80c87f2ff4d5cdd5147724537b6263b46e298985523a32afbba3"
+ },
+ "sections": {
+  "path1000": {
+   "host": "path1000",
+   "n": 1000,
+   "kind": "exp198's scale constructor (graph_path) at the size axis's terminal rung",
+   "edges": 999,
+   "f_max": 0.0,
+   "dispatch_class": "diffuse",
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_rows": 6,
+   "n_decodes": 18,
+   "n_rejections": 0,
+   "worst_err": 0.54,
+   "median_err": 0.41000000000000003,
+   "per_row": [
+    {
+     "tclass": "canon",
+     "key": "canon",
+     "index": null,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "d280b30421176826b20f2d94c52a57b8f2675c1f72fac16a203061b490595c4a",
+     "errs": [
+      0.04,
+      0.04,
+      0.04
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.04,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.04,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.04,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.04,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m0",
+     "index": 0,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "6070b80c2426a4433424abafed65c6bb2757c0db495650c32abce99777471f91",
+     "errs": [
+      0.26,
+      0.25,
+      0.28
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.26,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.26,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.25,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.28,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m49",
+     "index": 49,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "7b344e7afa9d864294861438084a510cc56aea3e982951d00c812e264f9b65f9",
+     "errs": [
+      0.34,
+      0.3,
+      0.34
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.34,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.34,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.3,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.34,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m99",
+     "index": 99,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "d8e64e769d7be00cd2102e29911bf8e3fec4e31e11f416d356f117521cb6e52f",
+     "errs": [
+      0.54,
+      0.5,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.53,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.54,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.5,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.53,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "deep",
+     "key": "r-60i0",
+     "index": null,
+     "rung": -60.0,
+     "instance": 0,
+     "f_sha256": "4523c935a02755cb7a75a6c0ff5e1fe55d6136221c34f49a141b94136a0616e0",
+     "errs": [
+      0.52,
+      0.48,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.51,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.52,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.48,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.51,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "deep",
+     "key": "r-60i1",
+     "index": null,
+     "rung": -60.0,
+     "instance": 1,
+     "f_sha256": "a817d070a96bd0a35d5b6f976490abeef965ecd2f50d39008c798ad713e49856",
+     "errs": [
+      0.52,
+      0.48,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.51,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.52,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.48,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.51,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    }
+   ],
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.52
+   },
+   "runtime_s": 182.7,
+   "m4_evidence": {
+    "floors_pre_restore": {
+     "cultivation.bioelectric.collective": -35.0,
+     "experiments.exp142_sign_read": -35.0,
+     "experiments.exp145_phase_read": -35.0,
+     "experiments.exp148_temporal_read": -35.0,
+     "experiments.exp94_multizone_scale": -35.0
+    },
+    "floor_post_restore": -60.0,
+    "fingerprint": "03602540b06a07e4",
+    "threshold": 32.0,
+    "multi_identity_bit_identical": true
+   }
+  },
+  "corner_n1000": {
+   "battery": "exp166's CornerMedium at n=1000, the c6 cell (o+h \u2014 exp208's boundary-signature battery class), 5 instances, gen-seed rule 166000 + j (pre-registered, fresh cohort)",
+   "n_instances": 5,
+   "n_build": 1000,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_decodes": 15,
+   "n_rejections": 0,
+   "rejection_records": [],
+   "median_err": 3.36,
+   "median_of_instance_medians": 3.37,
+   "worst_err": 3.42,
+   "n_diffuse": 5,
+   "n_concentrated": 0,
+   "instances": [
+    {
+     "j": 0,
+     "gen_seed": 166000,
+     "cell": 6,
+     "n": 1000,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 5,
+     "n_oneway": 10451,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      3.41,
+      3.42,
+      3.42
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 335,
+         "sum_sq": 6877.936639188341,
+         "frac_of_sq": 0.5904096161484355,
+         "rms_contrib_mV": 2.622582055758855
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 665,
+         "sum_sq": 4771.495299364555,
+         "frac_of_sq": 0.4095903838515643,
+         "rms_contrib_mV": 2.1843752652336446
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.7763568394002505e-15
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 335,
+         "sum_sq": 6879.362357333392,
+         "frac_of_sq": 0.5877497968110081,
+         "rms_contrib_mV": 2.622853857410548
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 665,
+         "sum_sq": 4825.21396861209,
+         "frac_of_sq": 0.412250203188992,
+         "rms_contrib_mV": 2.1966369678697686
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.7763568394002505e-15
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 335,
+         "sum_sq": 6861.357665695884,
+         "frac_of_sq": 0.5849150513337064,
+         "rms_contrib_mV": 2.6194193375051436
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 665,
+         "sum_sq": 4869.162262028347,
+         "frac_of_sq": 0.4150849486662937,
+         "rms_contrib_mV": 2.2066178332525883
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 3.552713678800501e-15
+      }
+     ],
+     "median_err": 3.42,
+     "worst_err": 3.42
+    },
+    {
+     "j": 1,
+     "gen_seed": 166001,
+     "cell": 6,
+     "n": 1000,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 9,
+     "n_oneway": 10287,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      3.37,
+      3.36,
+      3.38
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 345,
+         "sum_sq": 6985.041130040096,
+         "frac_of_sq": 0.613308477725498,
+         "rms_contrib_mV": 2.642922838457471
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 655,
+         "sum_sq": 4404.074435335199,
+         "frac_of_sq": 0.38669152227450215,
+         "rms_contrib_mV": 2.0985886770244426
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 345,
+         "sum_sq": 6988.6283911088485,
+         "frac_of_sq": 0.619780735326626,
+         "rms_contrib_mV": 2.6436014054900276
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 655,
+         "sum_sq": 4287.340661762444,
+         "frac_of_sq": 0.38021926467337397,
+         "rms_contrib_mV": 2.0705894479018396
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 345,
+         "sum_sq": 7080.713203704054,
+         "frac_of_sq": 0.6205945771206357,
+         "rms_contrib_mV": 2.6609609549379063
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 655,
+         "sum_sq": 4328.850245200613,
+         "frac_of_sq": 0.37940542287936424,
+         "rms_contrib_mV": 2.0805889178789294
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ],
+     "median_err": 3.37,
+     "worst_err": 3.38
+    },
+    {
+     "j": 2,
+     "gen_seed": 166002,
+     "cell": 6,
+     "n": 1000,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 2,
+     "n_oneway": 10429,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      3.31,
+      3.33,
+      3.33
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 345,
+         "sum_sq": 6573.206771351143,
+         "frac_of_sq": 0.5994519749327017,
+         "rms_contrib_mV": 2.5638265876129656
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 655,
+         "sum_sq": 4392.153334584105,
+         "frac_of_sq": 0.40054802506729836,
+         "rms_contrib_mV": 2.0957464862392365
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 345,
+         "sum_sq": 6643.821258790791,
+         "frac_of_sq": 0.5997444251160999,
+         "rms_contrib_mV": 2.5775611067035427
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 655,
+         "sum_sq": 4433.932832053262,
+         "frac_of_sq": 0.40025557488390007,
+         "rms_contrib_mV": 2.105690583170581
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.7763568394002505e-15
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 345,
+         "sum_sq": 6669.313779098547,
+         "frac_of_sq": 0.6007643620796629,
+         "rms_contrib_mV": 2.582501457714699
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 655,
+         "sum_sq": 4432.066728911979,
+         "frac_of_sq": 0.3992356379203372,
+         "rms_contrib_mV": 2.1052474270051915
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 1.7763568394002505e-15
+      }
+     ],
+     "median_err": 3.33,
+     "worst_err": 3.33
+    },
+    {
+     "j": 3,
+     "gen_seed": 166003,
+     "cell": 6,
+     "n": 1000,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 20,
+     "n_oneway": 10507,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      3.32,
+      3.28,
+      3.32
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 324,
+         "sum_sq": 6062.044286627828,
+         "frac_of_sq": 0.5510769906418878,
+         "rms_contrib_mV": 2.4621219073449283
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 676,
+         "sum_sq": 4938.313902101541,
+         "frac_of_sq": 0.44892300935811225,
+         "rms_contrib_mV": 2.2222317390635795
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 324,
+         "sum_sq": 5882.944675494018,
+         "frac_of_sq": 0.5452424785748798,
+         "rms_contrib_mV": 2.425478236450292
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 676,
+         "sum_sq": 4906.648774507318,
+         "frac_of_sq": 0.45475752142512005,
+         "rms_contrib_mV": 2.2150956580940964
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 3.552713678800501e-15
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 324,
+         "sum_sq": 6066.2721001668515,
+         "frac_of_sq": 0.5505950247780115,
+         "rms_contrib_mV": 2.462980328822553
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 676,
+         "sum_sq": 4951.393928712809,
+         "frac_of_sq": 0.4494049752219886,
+         "rms_contrib_mV": 2.225172786260161
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      }
+     ],
+     "median_err": 3.32,
+     "worst_err": 3.32
+    },
+    {
+     "j": 4,
+     "gen_seed": 166004,
+     "cell": 6,
+     "n": 1000,
+     "violated": [
+      "A-SYM",
+      "A-PAIR"
+     ],
+     "T": 1,
+     "p_keep": 1.0,
+     "n_hyper": 5,
+     "n_oneway": 10483,
+     "f_max": 0.0,
+     "class": "diffuse",
+     "errs": [
+      3.37,
+      3.37,
+      3.36
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "branch": [
+      "real",
+      "real",
+      "real"
+     ],
+     "rho": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "decompositions": [
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 327,
+         "sum_sq": 6702.177438146141,
+         "frac_of_sq": 0.5909140504580092,
+         "rms_contrib_mV": 2.5888563958138233
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 673,
+         "sum_sq": 4639.87380086464,
+         "frac_of_sq": 0.40908594954199096,
+         "rms_contrib_mV": 2.154036629415721
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 327,
+         "sum_sq": 6742.23328206741,
+         "frac_of_sq": 0.5941992118032117,
+         "rms_contrib_mV": 2.5965810755813905
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 673,
+         "sum_sq": 4604.522398753518,
+         "frac_of_sq": 0.40580078819678833,
+         "rms_contrib_mV": 2.1458150895996417
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 0.0
+      },
+      {
+       "per_class": [
+        {
+         "class": "CANON-BOUNDARY",
+         "n_cells": 327,
+         "sum_sq": 6678.380232223759,
+         "frac_of_sq": 0.5905228937256667,
+         "rms_contrib_mV": 2.584256224182068
+        },
+        {
+         "class": "PAIR-JUNCTION",
+         "n_cells": 673,
+         "sum_sq": 4630.885341019653,
+         "frac_of_sq": 0.40947710627433354,
+         "rms_contrib_mV": 2.151949195733871
+        },
+        {
+         "class": "INTERIOR",
+         "n_cells": 0,
+         "sum_sq": 0.0,
+         "frac_of_sq": 0.0,
+         "rms_contrib_mV": 0.0
+        }
+       ],
+       "identity_residual": 3.552713678800501e-15
+      }
+     ],
+     "median_err": 3.37,
+     "worst_err": 3.37
+    }
+   ],
+   "runtime_s": 189.7,
+   "m4_evidence": {
+    "floors_pre_restore": {
+     "cultivation.bioelectric.collective": -35.0,
+     "experiments.exp142_sign_read": -35.0,
+     "experiments.exp145_phase_read": -35.0,
+     "experiments.exp148_temporal_read": -35.0,
+     "experiments.exp94_multizone_scale": -35.0
+    },
+    "floor_post_restore": -60.0,
+    "fingerprint": "03602540b06a07e4",
+    "threshold": 32.0
+   }
+  }
+ },
+ "pooled_median_err": 0.53,
+ "worst_err_n1000": 3.42,
+ "boundary_signature": {
+  "mean_rms_contrib_mV": {
+   "CANON-BOUNDARY": 2.5771002513190813,
+   "PAIR-JUNCTION": 2.1505588469162196,
+   "INTERIOR": 0.0
+  },
+  "excess_vs_interior_mV": {
+   "CANON-BOUNDARY": 2.5771002513190813,
+   "PAIR-JUNCTION": 2.1505588469162196,
+   "INTERIOR": 0.0
+  },
+  "branch": "REPRODUCED",
+  "boundary_frac_of_sq_mean": 0.5892846444384027
+ },
+ "contrast": {
+  "structured_worst_n400": 0.62,
+  "random_worst": 1.45,
+  "worst_err_n1000": 3.42
+ },
+ "gates": {
+  "E1_n1000_sweep": {
+   "pass": false,
+   "decodes": 33,
+   "expected": 33,
+   "rejections": 0,
+   "complete_not_sampled": false,
+   "path1000": {
+    "rows": 6,
+    "decodes": 18,
+    "rejections": 0
+   },
+   "corner_battery": {
+    "instances": 5,
+    "decodes": 15,
+    "rejections": 0
+   },
+   "n_target_classes": 5,
+   "note": "the pre-registration's '5 targets' = the 5 pre-named target classes; the deep band's -60.0 rung carries BOTH pre-named instances (2 decode rows), per exp225's pre-named target list"
+  },
+  "E2_reader_bar": {
+   "pass": true,
+   "bar_mV": 6.0,
+   "n_finite": 33,
+   "worst_err_n1000": 3.42,
+   "per_host_worst_case": {
+    "path1000": 0.54,
+    "corner_j0": 3.42,
+    "corner_j1": 3.38,
+    "corner_j2": 3.33,
+    "corner_j3": 3.32,
+    "corner_j4": 3.37
+   },
+   "contrast": {
+    "structured_worst_n400": 0.62,
+    "structured_worst_source": "exp225's deposit (L199), re-read at run time",
+    "random_worst": 1.45,
+    "random_worst_source": "exp198 pooled max 1.45 + exp199 pooled max 1.45, re-read at run time",
+    "reading": "n=1000 worst 3.42 vs n=400 structured worst 0.62 vs random worst 1.45"
+   }
+  },
+  "E3_boundary_signature": {
+   "pass": true,
+   "branch": "REPRODUCED",
+   "n_decompositions": 15,
+   "mean_rms_contrib_mV": {
+    "CANON-BOUNDARY": 2.5771002513190813,
+    "PAIR-JUNCTION": 2.1505588469162196,
+    "INTERIOR": 0.0
+   },
+   "excess_vs_interior_mV": {
+    "CANON-BOUNDARY": 2.5771002513190813,
+    "PAIR-JUNCTION": 2.1505588469162196,
+    "INTERIOR": 0.0
+   },
+   "interior_identity": "INTERIOR mean 0.0 \u2014 0.000 exactly at 2-dp (exp208's deposited identity, re-tested at the second large n)",
+   "boundary_frac_of_sq_mean": 0.5892846444384027,
+   "conventions": "CANON-BOUNDARY: a lattice neighbor's target value differs (the ring backbone); PAIR-JUNCTION: endpoint of >= 2 chords in the medium's pair support |Wbase| > 0; precedence = the registered listing order; the accounting identity on the mean-squared (mV^2) scale \u2014 exp208's machinery verbatim"
+  },
+  "E4_hygiene": {
+   "pass": true,
+   "rejections": 0,
+   "all_finite": true,
+   "floor_discipline": "production -60.0 restored post-import on all pinned modules; the -35.0 reader-line pin disclosed (exp218's discipline)",
+   "floors_pre_restore": {
+    "cultivation.bioelectric.collective": -35.0,
+    "experiments.exp142_sign_read": -35.0,
+    "experiments.exp145_phase_read": -35.0,
+    "experiments.exp148_temporal_read": -35.0,
+    "experiments.exp94_multizone_scale": -35.0
+   },
+   "threshold_asserted": 32.0,
+   "multi_identity_audit": "path1000 bit-identical",
+   "s_star_identity": "STAR_OP == S* == (64.0, 0.0), asserted",
+   "lock_log_entries": 33,
+   "fingerprint_pre": "03602540b06a07e4",
+   "fingerprint_post": "03602540b06a07e4",
+   "per_media_tuning": "none"
+  }
+ },
+ "verdict": "partial - sections ['corner_n1000', 'path1000'] merged; gates pending path1000 + corner_n1000",
+ "runtime_s": 345.1
+}
