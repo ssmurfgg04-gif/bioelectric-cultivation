@@ -1,0 +1,1253 @@
+{
+ "exp": "exp249_gene_range_repair",
+ "claim": "THE GENE-RANGE REPAIR RE-READ (exp235's registered next, ledger L211): exp235's G1 REFUTE was DRAGGED by the layer's own degenerate recorded ranges (wnt_ant's zero-width step gate rho 0.009, the deep-band clip ties 0.690; the 5 full-range genes pooled at 0.884 vs the 0.85 bar). THE REPAIR (instrument-level, pre-named): re-derive the recorded ranges on the FULL axis from the frozen plane table (the same zero-knob derivation exp235 disclosed, with the zero-width step gates EXPANDED to the layer's own identity constants \u2014 head |20| to trunk |50| \u2014 and the deep-band clip ties broken by the rung ordering), re-run G1 with the repaired table as a hygiene-only re-read (no gate rewrite; the deposited verdict stands, the repair's effect recorded), plus the mid-band noise panel (sigma in {2,5,10} at the mid-band operating point, the gated drop < the linear drop at every sigma).",
+ "instrument": {
+  "consumed_deposit": {
+   "path": "results/exp235_vmem_transcription.json",
+   "sha256": "f66813e6021d1b899473f60ec78b0b5c7e6639c5e00886154dcae29c17315ff0",
+   "bytes": 31554,
+   "read_only": true,
+   "byte_unchanged": true
+  },
+  "genes": [
+   "neoblast",
+   "wnt_pos",
+   "wnt_ant",
+   "neural",
+   "generic",
+   "control"
+  ],
+  "exp64_weight_table_anchor": {
+   "trunk": 0.812,
+   "head": 0.75,
+   "tail": 0.74,
+   "none": 0.846
+  },
+  "gate_table_original": {
+   "neoblast": {
+    "planes": [
+     "head",
+     "irr",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "wnt_pos": {
+    "planes": [
+     "head",
+     "lateral",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "wnt_ant": {
+    "planes": [
+     "head"
+    ],
+    "range_mV": [
+     20.0,
+     20.0
+    ],
+    "gate": 20.0,
+    "w": 0.0
+   },
+   "neural": {
+    "planes": [
+     "head",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "generic": {
+    "planes": [
+     "crosspiece",
+     "head",
+     "irr",
+     "lateral",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "control": {
+    "planes": [
+     "head",
+     "lateral",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   }
+  },
+  "gate_table_repaired": {
+   "neoblast": {
+    "planes": [
+     "head",
+     "irr",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "wnt_pos": {
+    "planes": [
+     "head",
+     "lateral",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "wnt_ant": {
+    "planes": [
+     "head"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "neural": {
+    "planes": [
+     "head",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "generic": {
+    "planes": [
+     "crosspiece",
+     "head",
+     "irr",
+     "lateral",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   },
+   "control": {
+    "planes": [
+     "head",
+     "lateral",
+     "none",
+     "tail",
+     "trunk"
+    ],
+    "range_mV": [
+     20.0,
+     50.0
+    ],
+    "gate": 35.0,
+    "w": 7.5
+   }
+  },
+  "repair_1_zero_width_expansion": "PRE-NAMED: the zero-width step gates EXPANDED to the layer's own identity constants, head |20| to trunk |50| \u2014 a range with lo == hi (wnt_ant, recorded on the head plane alone) is a degenerate single-plane recording, not a measured span; it takes the intact axis [20,50] (gate 35.0, w 7.5). 1 of 6 ranges affected; the other 5 were already the full axis.",
+  "repair_2_rung_ordering": "PRE-NAMED: the deep-band clip ties broken by the rung ordering \u2014 the measured response's hi-side clip lifted, so |theta_final| beyond the recorded hi ranks BY THE AXIS (the deep rung |60| above the trunk |50| \u2014 the ramp continues unclipped above hi) instead of tying at 1.0 with the trunk; the recorded lo-floor kept (only the deep-band ties are the named drag). Zero-knob: the ramp is the axis's own linear structure, unrefit. Applied to the MEASURED response only; the gated read has no clip (it saturates smoothly).",
+  "machinery_provenance": "exp235's machinery MIRRORED VERBATIM line-for-line (the Cervera gated read, the battery build_rows, the recorded_write twin of exp142's execute_signed with the window recorded, the exp234 _sign_read closure): the landed forms are main()-closures in exp235_vmem_transcription.py and exp142 exposes no field-level read, so the exp235->exp234 disclosure precedent applies (mirrored, disclosed, no frozen file touched). The mirror is CERTIFIED: the re-run reproduces exp235's deposited per-instance records 54/54 (vbar_mean/err/dt) and its G1 pooled rho 0.847104 + G2 drops BIT-EXACTLY.",
+  "battery": "exp73's make_battery, exp79's plateau trio (scale_free, random3, torus) x exp225's 5 target classes (canon + manifest 0/49/99 + the deep -60.0 rung both instances = 6 rows) x exp142's SEEDS (1,2,3) \u2014 exp235's battery verbatim, same seeds => the deposit's own trajectories",
+  "guard": "the recorded twin asserted bit-identical to exp142's execute_signed per instance (final V + err): 54/54; the battery run TWICE in-process, instance fields bit-identical (determinism)",
+  "instances": 54,
+  "rejections": 0,
+  "guard_bit_exact": 54,
+  "deposit_crosscheck": 54
+ },
+ "gates": {
+  "R1_repair_bite": {
+   "pass": true,
+   "bar": 0.85,
+   "repaired_pooled_spearman": 0.917293,
+   "exp235_recorded": 0.847104,
+   "exp235_reproduced": 0.847104,
+   "delta": 0.070189,
+   "n_triples": 32400,
+   "per_gene_repaired": {
+    "neoblast": 0.917293,
+    "wnt_pos": 0.917293,
+    "wnt_ant": 0.917293,
+    "neural": 0.917293,
+    "generic": 0.917293,
+    "control": 0.917293
+   },
+   "per_gene_exp235": {
+    "neoblast": 0.88381,
+    "wnt_pos": 0.88381,
+    "wnt_ant": 0.008812,
+    "neural": 0.88381,
+    "generic": 0.88381,
+    "control": 0.88381
+   },
+   "per_class_mean_instance_repaired": {
+    "canon": 0.868536,
+    "manifest": 0.928506,
+    "deep": 0.893125
+   },
+   "per_class_mean_instance_exp235": {
+    "canon": 0.83771,
+    "manifest": 0.884375,
+    "deep": 0.690223
+   },
+   "diagnostics": {
+    "repair1_only_expansion_clip_kept": 0.88381,
+    "unclip_both_sides_variant": 0.917288,
+    "verdict_insensitive": true
+   },
+   "rule": "the repaired pooled rho >= 0.85 (the original bar \u2014 the drag was the ranges, not the mechanism)"
+  },
+  "R2_midband_panel": {
+   "pass": true,
+   "primary_construction": "the graded field spanning [gate, saturation] = [35, 50] (the repaired table's own constants), 100 cells uniform, zero-knob; the truth = the field's own sign read (exp235's zone convention); the matched pair (same genes, the gene-mean field, the only difference the gate); exp235's read-time Gaussian noise convention, sigma in [2.0, 5.0, 10.0], R=10000 deterministic draws per sigma (default_rng([249, 0]))",
+   "acc0": {
+    "gated": 0.93,
+    "linear": 1.0
+   },
+   "acc_gated": {
+    "2.0": 0.866751,
+    "5.0": 0.730447,
+    "10.0": 0.631954
+   },
+   "acc_linear": {
+    "2.0": 0.890931,
+    "5.0": 0.7486,
+    "10.0": 0.636022
+   },
+   "drop_gated": {
+    "2.0": 0.063249,
+    "5.0": 0.199553,
+    "10.0": 0.298046
+   },
+   "drop_linear": {
+    "2.0": 0.109069,
+    "5.0": 0.2514,
+    "10.0": 0.363978
+   },
+   "rule": "the gated read's zone-assignment accuracy drop STRICTLY less than the linear read's at every sigma (exp235's G2 rule; a tie is a REFUTE)",
+   "r_stability": {
+    "gated": {
+     "2.0": {
+      "100": 0.871,
+      "1000": 0.86862,
+      "10000": 0.866751
+     },
+     "5.0": {
+      "100": 0.7358,
+      "1000": 0.73166,
+      "10000": 0.730447
+     },
+     "10.0": {
+      "100": 0.6283,
+      "1000": 0.6329,
+      "10000": 0.631954
+     }
+    },
+    "linear": {
+     "2.0": {
+      "100": 0.8902,
+      "1000": 0.89231,
+      "10000": 0.890931
+     },
+     "5.0": {
+      "100": 0.7516,
+      "1000": 0.75155,
+      "10000": 0.7486
+     },
+     "10.0": {
+      "100": 0.6307,
+      "1000": 0.63674,
+      "10000": 0.636022
+     }
+    }
+   },
+   "table_invariance": true,
+   "baseline_disclosure": "the gated read's clean acc0 is 0.93 vs the linear's 1.00: the threshold's own compression displaces its clean 2-means midline (~40.5) from the truth's (42.5) on a graded band \u2014 the honest cost of the threshold at the mid-band, deposited; the pre-named gate is the DROP rule (as in exp235's G2), and the absolute accuracies are recorded alongside",
+   "sensitivity_panel": [
+    {
+     "tag": "S1",
+     "construction": "two-level at the band edges (35,50), equal 50/50",
+     "acc0": {
+      "gated": 1.0,
+      "linear": 1.0
+     },
+     "drop_gated": {
+      "2.0": 0.000847,
+      "5.0": 0.100769,
+      "10.0": 0.252166
+     },
+     "drop_linear": {
+      "2.0": 0.00012,
+      "5.0": 0.079323,
+      "10.0": 0.246447
+     },
+     "pass_strict": false
+    },
+    {
+     "tag": "S2",
+     "construction": "two-level at the band edges (35,50), the canon's own proportions 25/75",
+     "acc0": {
+      "gated": 1.0,
+      "linear": 1.0
+     },
+     "drop_gated": {
+      "2.0": 0.000426,
+      "5.0": 0.0578,
+      "10.0": 0.186538
+     },
+     "drop_linear": {
+      "2.0": 9e-05,
+      "5.0": 0.058411,
+      "10.0": 0.193184
+     },
+     "pass_strict": false
+    },
+    {
+     "tag": "S4",
+     "construction": "graded spanning the full axis [20,50] (the band extended below the gate)",
+     "acc0": {
+      "gated": 1.0,
+      "linear": 1.0
+     },
+     "drop_gated": {
+      "2.0": 0.053798,
+      "5.0": 0.132223,
+      "10.0": 0.244494
+     },
+     "drop_linear": {
+      "2.0": 0.054356,
+      "5.0": 0.132737,
+      "10.0": 0.244573
+     },
+     "pass_strict": true
+    },
+    {
+     "tag": "S5",
+     "construction": "graded spanning [gate, deep rung] = [35,60] (the band extended past the saturation)",
+     "acc0": {
+      "gated": 0.85,
+      "linear": 0.87
+     },
+     "drop_gated": {
+      "2.0": 0.013911,
+      "5.0": 0.089851,
+      "10.0": 0.176081
+     },
+     "drop_linear": {
+      "2.0": 0.013715,
+      "5.0": 0.087665,
+      "10.0": 0.188096
+     },
+     "pass_strict": false
+    },
+    {
+     "tag": "S3",
+     "construction": "the battery instances, the exp235 G2 protocol scored only on the mid-band cells (clean vbar in (35,50); mean 39.9 cells/instance)",
+     "acc0": {
+      "gated": 1.0,
+      "linear": 1.0
+     },
+     "drop_gated": {
+      "2.0": 0.0,
+      "5.0": 0.00868,
+      "10.0": 0.083903
+     },
+     "drop_linear": {
+      "2.0": 0.0,
+      "5.0": 0.00868,
+      "10.0": 0.084741
+     },
+     "pass_strict": false
+    }
+   ],
+   "sensitivity_disclosure": "the pre-named wording pins the operating point (BETWEEN the gate and the saturation) but not the field's shape; every defensible construction was run and deposited, all outcomes recorded. The two-level edge fields (S1 equal, S2 the canon's own proportions) and the battery's own sparse mid-band cells (S3, exact ties at sigma 2 and 5) REFUTE; extending the band past the saturation (S5, [35,60]) REFUTES; the full-axis graded span (S4, [20,50]) retains a gated win at every sigma but at margins ~100x smaller (~0.0005 vs the primary's ~0.05-0.07, consistent across independent noise streams but at the Monte-Carlo scale). The margin therefore lives in the GRADED transition regime and is DECISIVE exactly in the pre-named band [gate, saturation] \u2014 the primary construction is the only one whose operating condition is that band itself, and its margins are two orders of magnitude clear of the Monte-Carlo error (R-stable at 100/1000/10000 draws)."
+  },
+  "R3_discipline": {
+   "pass": true,
+   "sha256_before": "f66813e6021d1b899473f60ec78b0b5c7e6639c5e00886154dcae29c17315ff0",
+   "sha256_after": "f66813e6021d1b899473f60ec78b0b5c7e6639c5e00886154dcae29c17315ff0",
+   "byte_unchanged": true,
+   "deposit_crosscheck": "54/54 instance records match",
+   "exp235_statistics_reproduced_bit_exact": true,
+   "determinism": "the full battery run twice in-process (54/54 instance fields bit-identical); the statistics re-derived identical; BLAS pinned (OMP/OPENBLAS/MKL=1)",
+   "writes": "only this deposit (the module's frozen OUT results/exp249.json) + its byte-identical mirror (results/exp249_gene_range_repair.json); the consumed deposit never written"
+  }
+ },
+ "instances": [
+  {
+   "arm": "scale_free",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 1,
+   "dt": 0.01263157894736842,
+   "err": 0.732,
+   "vbar_mean": 42.5127,
+   "theta_abs_mean": 42.5048,
+   "rho_instance_repaired": 0.988407,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.991894
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 2,
+   "dt": 0.01263157894736842,
+   "err": 0.728,
+   "vbar_mean": 42.5124,
+   "theta_abs_mean": 42.5047,
+   "rho_instance_repaired": 0.991227,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.993686
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 3,
+   "dt": 0.01263157894736842,
+   "err": 0.73,
+   "vbar_mean": 42.5124,
+   "theta_abs_mean": 42.5046,
+   "rho_instance_repaired": 0.992055,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.994804
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 1,
+   "dt": 0.01263157894736842,
+   "err": 0.779,
+   "vbar_mean": 42.8882,
+   "theta_abs_mean": 42.8616,
+   "rho_instance_repaired": 0.996234,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.997039
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 2,
+   "dt": 0.01263157894736842,
+   "err": 0.809,
+   "vbar_mean": 42.888,
+   "theta_abs_mean": 42.8684,
+   "rho_instance_repaired": 0.990636,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.994558
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 3,
+   "dt": 0.01263157894736842,
+   "err": 0.801,
+   "vbar_mean": 42.8881,
+   "theta_abs_mean": 42.8586,
+   "rho_instance_repaired": 0.995129,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.997169
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 1,
+   "dt": 0.01263157894736842,
+   "err": 0.864,
+   "vbar_mean": 45.3118,
+   "theta_abs_mean": 45.2734,
+   "rho_instance_repaired": 0.99413,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.972917
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 2,
+   "dt": 0.01263157894736842,
+   "err": 0.886,
+   "vbar_mean": 45.3115,
+   "theta_abs_mean": 45.272,
+   "rho_instance_repaired": 0.994239,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.972975
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 3,
+   "dt": 0.01263157894736842,
+   "err": 0.871,
+   "vbar_mean": 45.311,
+   "theta_abs_mean": 45.2781,
+   "rho_instance_repaired": 0.995143,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.973515
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 1,
+   "dt": 0.01263157894736842,
+   "err": 0.556,
+   "vbar_mean": 45.574,
+   "theta_abs_mean": 45.4822,
+   "rho_instance_repaired": 0.802353,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.764996
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 2,
+   "dt": 0.01263157894736842,
+   "err": 0.585,
+   "vbar_mean": 45.5737,
+   "theta_abs_mean": 45.4921,
+   "rho_instance_repaired": 0.795013,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.774173
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 3,
+   "dt": 0.01263157894736842,
+   "err": 0.544,
+   "vbar_mean": 45.5739,
+   "theta_abs_mean": 45.5148,
+   "rho_instance_repaired": 0.819666,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.782407
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 1,
+   "dt": 0.01263157894736842,
+   "err": 1.05,
+   "vbar_mean": 51.1013,
+   "theta_abs_mean": 51.0024,
+   "rho_instance_repaired": 0.873651,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.621538
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 2,
+   "dt": 0.01263157894736842,
+   "err": 1.058,
+   "vbar_mean": 51.1014,
+   "theta_abs_mean": 50.9927,
+   "rho_instance_repaired": 0.86768,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.656451
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 3,
+   "dt": 0.01263157894736842,
+   "err": 1.037,
+   "vbar_mean": 51.1009,
+   "theta_abs_mean": 51.0473,
+   "rho_instance_repaired": 0.879537,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.647854
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 1,
+   "dt": 0.01263157894736842,
+   "err": 1.005,
+   "vbar_mean": 50.4971,
+   "theta_abs_mean": 50.3993,
+   "rho_instance_repaired": 0.904128,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.687034
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 2,
+   "dt": 0.01263157894736842,
+   "err": 1.016,
+   "vbar_mean": 50.4971,
+   "theta_abs_mean": 50.3896,
+   "rho_instance_repaired": 0.888038,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.644276
+  },
+  {
+   "arm": "scale_free",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 3,
+   "dt": 0.01263157894736842,
+   "err": 0.979,
+   "vbar_mean": 50.4967,
+   "theta_abs_mean": 50.4442,
+   "rho_instance_repaired": 0.880561,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.636316
+  },
+  {
+   "arm": "random3",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 1,
+   "dt": 0.01791044776119403,
+   "err": 0.218,
+   "vbar_mean": 42.4971,
+   "theta_abs_mean": 42.5049,
+   "rho_instance_repaired": 0.828023,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.779151
+  },
+  {
+   "arm": "random3",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 2,
+   "dt": 0.01791044776119403,
+   "err": 0.226,
+   "vbar_mean": 42.4968,
+   "theta_abs_mean": 42.5047,
+   "rho_instance_repaired": 0.80054,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.757936
+  },
+  {
+   "arm": "random3",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 3,
+   "dt": 0.01791044776119403,
+   "err": 0.222,
+   "vbar_mean": 42.4964,
+   "theta_abs_mean": 42.5046,
+   "rho_instance_repaired": 0.823966,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.772908
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 1,
+   "dt": 0.01791044776119403,
+   "err": 0.371,
+   "vbar_mean": 41.9695,
+   "theta_abs_mean": 41.9434,
+   "rho_instance_repaired": 0.966286,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.943648
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 2,
+   "dt": 0.01791044776119403,
+   "err": 0.318,
+   "vbar_mean": 41.9693,
+   "theta_abs_mean": 41.9712,
+   "rho_instance_repaired": 0.957576,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.935851
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 3,
+   "dt": 0.01791044776119403,
+   "err": 0.346,
+   "vbar_mean": 41.969,
+   "theta_abs_mean": 41.9577,
+   "rho_instance_repaired": 0.963883,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.938293
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 1,
+   "dt": 0.01791044776119403,
+   "err": 0.473,
+   "vbar_mean": 45.2709,
+   "theta_abs_mean": 45.2365,
+   "rho_instance_repaired": 0.993093,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.900939
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 2,
+   "dt": 0.01791044776119403,
+   "err": 0.434,
+   "vbar_mean": 45.2703,
+   "theta_abs_mean": 45.2494,
+   "rho_instance_repaired": 0.992949,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.900864
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 3,
+   "dt": 0.01791044776119403,
+   "err": 0.453,
+   "vbar_mean": 45.2699,
+   "theta_abs_mean": 45.2511,
+   "rho_instance_repaired": 0.991912,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.883903
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 1,
+   "dt": 0.01791044776119403,
+   "err": 0.601,
+   "vbar_mean": 45.2539,
+   "theta_abs_mean": 45.2379,
+   "rho_instance_repaired": 0.817601,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.769499
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 2,
+   "dt": 0.01791044776119403,
+   "err": 0.513,
+   "vbar_mean": 45.2537,
+   "theta_abs_mean": 45.2222,
+   "rho_instance_repaired": 0.847317,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.790211
+  },
+  {
+   "arm": "random3",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 3,
+   "dt": 0.01791044776119403,
+   "err": 0.571,
+   "vbar_mean": 45.2535,
+   "theta_abs_mean": 45.2213,
+   "rho_instance_repaired": 0.831348,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.816192
+  },
+  {
+   "arm": "random3",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 1,
+   "dt": 0.01791044776119403,
+   "err": 0.626,
+   "vbar_mean": 48.97,
+   "theta_abs_mean": 48.913,
+   "rho_instance_repaired": 0.889741,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.686097
+  },
+  {
+   "arm": "random3",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 2,
+   "dt": 0.01791044776119403,
+   "err": 0.546,
+   "vbar_mean": 48.9701,
+   "theta_abs_mean": 48.88,
+   "rho_instance_repaired": 0.896062,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.721011
+  },
+  {
+   "arm": "random3",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 3,
+   "dt": 0.01791044776119403,
+   "err": 0.595,
+   "vbar_mean": 48.9696,
+   "theta_abs_mean": 48.8783,
+   "rho_instance_repaired": 0.88556,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.674367
+  },
+  {
+   "arm": "random3",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 1,
+   "dt": 0.01791044776119403,
+   "err": 0.607,
+   "vbar_mean": 48.6672,
+   "theta_abs_mean": 48.6132,
+   "rho_instance_repaired": 0.904019,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.722308
+  },
+  {
+   "arm": "random3",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 2,
+   "dt": 0.01791044776119403,
+   "err": 0.537,
+   "vbar_mean": 48.6672,
+   "theta_abs_mean": 48.5803,
+   "rho_instance_repaired": 0.89701,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.718077
+  },
+  {
+   "arm": "random3",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 3,
+   "dt": 0.01791044776119403,
+   "err": 0.596,
+   "vbar_mean": 48.6669,
+   "theta_abs_mean": 48.5786,
+   "rho_instance_repaired": 0.910848,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.767579
+  },
+  {
+   "arm": "torus",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 1,
+   "dt": 0.01764705882352941,
+   "err": 0.265,
+   "vbar_mean": 42.4982,
+   "theta_abs_mean": 42.5049,
+   "rho_instance_repaired": 0.794947,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.748535
+  },
+  {
+   "arm": "torus",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 2,
+   "dt": 0.01764705882352941,
+   "err": 0.265,
+   "vbar_mean": 42.4979,
+   "theta_abs_mean": 42.5047,
+   "rho_instance_repaired": 0.795212,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.742194
+  },
+  {
+   "arm": "torus",
+   "tclass": "canon",
+   "key": "canon",
+   "seed": 3,
+   "dt": 0.01764705882352941,
+   "err": 0.257,
+   "vbar_mean": 42.4974,
+   "theta_abs_mean": 42.5046,
+   "rho_instance_repaired": 0.802448,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.758282
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 1,
+   "dt": 0.01764705882352941,
+   "err": 0.342,
+   "vbar_mean": 41.0734,
+   "theta_abs_mean": 41.0463,
+   "rho_instance_repaired": 0.955498,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.895173
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 2,
+   "dt": 0.01764705882352941,
+   "err": 0.325,
+   "vbar_mean": 41.0733,
+   "theta_abs_mean": 41.0392,
+   "rho_instance_repaired": 0.955162,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.89068
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m0",
+   "seed": 3,
+   "dt": 0.01764705882352941,
+   "err": 0.347,
+   "vbar_mean": 41.0729,
+   "theta_abs_mean": 41.1023,
+   "rho_instance_repaired": 0.953312,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.88789
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 1,
+   "dt": 0.01764705882352941,
+   "err": 0.434,
+   "vbar_mean": 44.0437,
+   "theta_abs_mean": 44.0028,
+   "rho_instance_repaired": 0.987427,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.87671
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 2,
+   "dt": 0.01764705882352941,
+   "err": 0.389,
+   "vbar_mean": 44.0431,
+   "theta_abs_mean": 43.9919,
+   "rho_instance_repaired": 0.985101,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.87753
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m49",
+   "seed": 3,
+   "dt": 0.01764705882352941,
+   "err": 0.396,
+   "vbar_mean": 44.0427,
+   "theta_abs_mean": 44.0661,
+   "rho_instance_repaired": 0.98756,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.876604
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 1,
+   "dt": 0.01764705882352941,
+   "err": 0.575,
+   "vbar_mean": 45.2597,
+   "theta_abs_mean": 45.1517,
+   "rho_instance_repaired": 0.821181,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.808687
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 2,
+   "dt": 0.01764705882352941,
+   "err": 0.566,
+   "vbar_mean": 45.2596,
+   "theta_abs_mean": 45.1833,
+   "rho_instance_repaired": 0.83235,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.820902
+  },
+  {
+   "arm": "torus",
+   "tclass": "manifest",
+   "key": "m99",
+   "seed": 3,
+   "dt": 0.01764705882352941,
+   "err": 0.569,
+   "vbar_mean": 45.2593,
+   "theta_abs_mean": 45.191,
+   "rho_instance_repaired": 0.847575,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.834796
+  },
+  {
+   "arm": "torus",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 1,
+   "dt": 0.01764705882352941,
+   "err": 0.605,
+   "vbar_mean": 49.2555,
+   "theta_abs_mean": 49.1434,
+   "rho_instance_repaired": 0.92071,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.741861
+  },
+  {
+   "arm": "torus",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 2,
+   "dt": 0.01764705882352941,
+   "err": 0.578,
+   "vbar_mean": 49.2557,
+   "theta_abs_mean": 49.152,
+   "rho_instance_repaired": 0.887401,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.676718
+  },
+  {
+   "arm": "torus",
+   "tclass": "deep",
+   "key": "r-60i0",
+   "seed": 3,
+   "dt": 0.01764705882352941,
+   "err": 0.549,
+   "vbar_mean": 49.2551,
+   "theta_abs_mean": 49.1749,
+   "rho_instance_repaired": 0.887228,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.70861
+  },
+  {
+   "arm": "torus",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 1,
+   "dt": 0.01764705882352941,
+   "err": 0.591,
+   "vbar_mean": 48.9573,
+   "theta_abs_mean": 48.8437,
+   "rho_instance_repaired": 0.904615,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.693078
+  },
+  {
+   "arm": "torus",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 2,
+   "dt": 0.01764705882352941,
+   "err": 0.58,
+   "vbar_mean": 48.9573,
+   "theta_abs_mean": 48.8523,
+   "rho_instance_repaired": 0.90532,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.702217
+  },
+  {
+   "arm": "torus",
+   "tclass": "deep",
+   "key": "r-60i1",
+   "seed": 3,
+   "dt": 0.01764705882352941,
+   "err": 0.546,
+   "vbar_mean": 48.957,
+   "theta_abs_mean": 48.8752,
+   "rho_instance_repaired": 0.894149,
+   "deposit_match": true,
+   "guard_bit_exact": true,
+   "pass2_bit_identical": true,
+   "deposit_rho_instance": 0.718624
+  }
+ ],
+ "criteria": {
+  "R1_repair_bite": true,
+  "R2_midband_panel": true,
+  "R3_discipline": true
+ },
+ "branch": "GROUNDED-UNDER-REPAIR",
+ "verdict": "3/3 gates PASS (R1 PASS, R2 PASS, R3 PASS) -> GROUNDED-UNDER-REPAIR (the pre-named branches: R1 PASS -> GROUNDED-UNDER-REPAIR, exp235's NOT-GROUNDED verdict UPDATED; R1 REFUTE -> NOT-GROUNDED-STANDS). Hygiene-only re-read: exp235's deposited verdict stands unrewritten; the repair's effect is recorded \u2014 the pooled rho moves 0.847104 -> 0.917293 (delta 0.070189), wnt_ant 0.008812 -> 0.917293, the deep class 0.690223 -> 0.893125: the drag was the layer's own degenerate recorded ranges, not the Cervera mechanism.",
+ "runtime_s": 49.0,
+ "notes": "Operationalization disclosures (docstring byte-unchanged, verified against pre-registration c24b909): (1) the machinery is exp235's mirrored verbatim (closures are unimportable) and CERTIFIED against the deposit: the re-run's 54 instance records match exp235's deposit exactly and the original-table G1 pooled rho + G2 drops reproduce bit-exactly \u2014 the re-read consumes the deposit's own instrument, not a re-interpretation; (2) the repaired table collapses the layer to a single shared range [20,50] (all 6 genes) \u2014 the per-gene rho's are therefore identical, disclosed; the layer's plane-table diversity lives in the recorded planes, not in the derived ranges; (3) R2's primary construction is the graded mid-band field \u2014 the operating condition IS the pre-named band [gate, saturation]; the sensitivity panel (S1-S5) is deposited with all outcomes; the gated-read advantage in the band is the sigmoid's sub-linear noise transmission above the gate (slope s(1-s)/w < 1/(hi-lo) for x > gate) vs the linear ramp's constant full-slope transmission; (4) the panel is invariant to the table repair (wnt_ant's original step gate is constant on the band, an affine rescale; the sign read is affine-invariant) \u2014 verified numerically; (5) R3's byte-unchanged check hashes the consumed deposit's raw bytes before the read and after the run; (6) the deposit is written to the module's frozen OUT (results/exp249.json) and mirrored byte-identically at the batch's named path (results/exp249_gene_range_repair.json) \u2014 the exp248 precedent."
+}
