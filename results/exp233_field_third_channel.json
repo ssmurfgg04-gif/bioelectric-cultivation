@@ -1,0 +1,608 @@
+{
+ "exp": "exp233_field_third_channel (the Section 6 item; exp232's registered next (a); ledger L209)",
+ "field_kernel": {
+  "scale_free": {
+   "f_worst": 0.7333,
+   "worst_head_cell": 21,
+   "n_eff_min": 30.1
+  },
+  "random3": {
+   "f_worst": 0.8973,
+   "worst_head_cell": 14,
+   "n_eff_min": 16.1
+  },
+  "torus": {
+   "f_worst": 0.575,
+   "worst_head_cell": 24,
+   "n_eff_min": 13.5
+  }
+ },
+ "instrument": {
+  "kappa0_bit_exact_vs_run_gm": true
+ },
+ "F3_grid": {
+  "scale_free": {
+   "g0.25|k0.0": {
+    "err": 11.92,
+    "pred3": 21.24
+   },
+   "g0.25|k0.05": {
+    "err": 12.03,
+    "pred3": 21.24
+   },
+   "g0.25|k0.5": {
+    "err": 12.52,
+    "pred3": 21.24
+   },
+   "g4.0|k0.0": {
+    "err": 9.8,
+    "pred3": 21.24
+   },
+   "g4.0|k0.05": {
+    "err": 9.85,
+    "pred3": 21.24
+   },
+   "g4.0|k0.5": {
+    "err": 10.27,
+    "pred3": 21.24
+   },
+   "g64.0|k0.0": {
+    "err": 9.2,
+    "pred3": 21.24
+   },
+   "g64.0|k0.05": {
+    "err": 9.21,
+    "pred3": 21.24
+   },
+   "g64.0|k0.5": {
+    "err": 9.25,
+    "pred3": 21.24
+   }
+  },
+  "random3": {
+   "g0.25|k0.0": {
+    "err": 11.19,
+    "pred3": 19.81
+   },
+   "g0.25|k0.05": {
+    "err": 11.36,
+    "pred3": 19.81
+   },
+   "g0.25|k0.5": {
+    "err": 12.18,
+    "pred3": 19.81
+   },
+   "g4.0|k0.0": {
+    "err": 8.79,
+    "pred3": 19.81
+   },
+   "g4.0|k0.05": {
+    "err": 8.85,
+    "pred3": 19.81
+   },
+   "g4.0|k0.5": {
+    "err": 9.35,
+    "pred3": 19.81
+   },
+   "g64.0|k0.0": {
+    "err": 8.1,
+    "pred3": 19.81
+   },
+   "g64.0|k0.05": {
+    "err": 8.11,
+    "pred3": 19.81
+   },
+   "g64.0|k0.5": {
+    "err": 8.16,
+    "pred3": 19.81
+   }
+  },
+  "torus": {
+   "g0.25|k0.0": {
+    "err": 8.47,
+    "pred3": 11.45
+   },
+   "g0.25|k0.05": {
+    "err": 8.79,
+    "pred3": 11.45
+   },
+   "g0.25|k0.5": {
+    "err": 10.58,
+    "pred3": 11.45
+   },
+   "g4.0|k0.0": {
+    "err": 5.38,
+    "pred3": 11.45
+   },
+   "g4.0|k0.05": {
+    "err": 5.44,
+    "pred3": 11.45
+   },
+   "g4.0|k0.5": {
+    "err": 5.92,
+    "pred3": 11.45
+   },
+   "g64.0|k0.0": {
+    "err": 4.8,
+    "pred3": 11.45
+   },
+   "g64.0|k0.05": {
+    "err": 4.8,
+    "pred3": 11.45
+   },
+   "g64.0|k0.5": {
+    "err": 4.84,
+    "pred3": 11.45
+   }
+  }
+ },
+ "grid_points": [
+  {
+   "arm": "scale_free",
+   "gamma": 0.25,
+   "kappa": 0.0,
+   "err": 11.92,
+   "pred3": 21.24,
+   "v_term": 11.81,
+   "theta_term": 21.24,
+   "field_term": 0.0,
+   "pred_quad": 24.3,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 0.25,
+   "kappa": 0.05,
+   "err": 12.03,
+   "pred3": 21.24,
+   "v_term": 11.81,
+   "theta_term": 21.24,
+   "field_term": 3.27,
+   "pred_quad": 24.52,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 0.25,
+   "kappa": 0.5,
+   "err": 12.52,
+   "pred3": 21.24,
+   "v_term": 11.81,
+   "theta_term": 21.24,
+   "field_term": 9.85,
+   "pred_quad": 26.22,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 4.0,
+   "kappa": 0.0,
+   "err": 9.8,
+   "pred3": 21.24,
+   "v_term": 8.51,
+   "theta_term": 21.24,
+   "field_term": 0.0,
+   "pred_quad": 22.88,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 4.0,
+   "kappa": 0.05,
+   "err": 9.85,
+   "pred3": 21.24,
+   "v_term": 8.51,
+   "theta_term": 21.24,
+   "field_term": 0.27,
+   "pred_quad": 22.88,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 4.0,
+   "kappa": 0.5,
+   "err": 10.27,
+   "pred3": 21.24,
+   "v_term": 8.51,
+   "theta_term": 21.24,
+   "field_term": 2.26,
+   "pred_quad": 22.99,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 64.0,
+   "kappa": 0.0,
+   "err": 9.2,
+   "pred3": 21.24,
+   "v_term": 1.55,
+   "theta_term": 21.24,
+   "field_term": 0.0,
+   "pred_quad": 21.29,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 64.0,
+   "kappa": 0.05,
+   "err": 9.21,
+   "pred3": 21.24,
+   "v_term": 1.55,
+   "theta_term": 21.24,
+   "field_term": 0.02,
+   "pred_quad": 21.29,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 64.0,
+   "kappa": 0.5,
+   "err": 9.25,
+   "pred3": 21.24,
+   "v_term": 1.55,
+   "theta_term": 21.24,
+   "field_term": 0.17,
+   "pred_quad": 21.29,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "random3",
+   "gamma": 0.25,
+   "kappa": 0.0,
+   "err": 11.19,
+   "pred3": 19.81,
+   "v_term": 12.41,
+   "theta_term": 19.81,
+   "field_term": 0.0,
+   "pred_quad": 23.38,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "random3",
+   "gamma": 0.25,
+   "kappa": 0.05,
+   "err": 11.36,
+   "pred3": 19.81,
+   "v_term": 12.41,
+   "theta_term": 19.81,
+   "field_term": 3.9,
+   "pred_quad": 23.7,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "random3",
+   "gamma": 0.25,
+   "kappa": 0.5,
+   "err": 12.18,
+   "pred3": 19.81,
+   "v_term": 12.41,
+   "theta_term": 19.81,
+   "field_term": 11.23,
+   "pred_quad": 25.94,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "random3",
+   "gamma": 4.0,
+   "kappa": 0.0,
+   "err": 8.79,
+   "pred3": 19.81,
+   "v_term": 3.46,
+   "theta_term": 19.81,
+   "field_term": 0.0,
+   "pred_quad": 20.11,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "random3",
+   "gamma": 4.0,
+   "kappa": 0.05,
+   "err": 8.85,
+   "pred3": 19.81,
+   "v_term": 3.46,
+   "theta_term": 19.81,
+   "field_term": 0.33,
+   "pred_quad": 20.11,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "random3",
+   "gamma": 4.0,
+   "kappa": 0.5,
+   "err": 9.35,
+   "pred3": 19.81,
+   "v_term": 3.46,
+   "theta_term": 19.81,
+   "field_term": 2.72,
+   "pred_quad": 20.3,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "random3",
+   "gamma": 64.0,
+   "kappa": 0.0,
+   "err": 8.1,
+   "pred3": 19.81,
+   "v_term": 0.28,
+   "theta_term": 19.81,
+   "field_term": 0.0,
+   "pred_quad": 19.81,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "random3",
+   "gamma": 64.0,
+   "kappa": 0.05,
+   "err": 8.11,
+   "pred3": 19.81,
+   "v_term": 0.28,
+   "theta_term": 19.81,
+   "field_term": 0.02,
+   "pred_quad": 19.81,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "random3",
+   "gamma": 64.0,
+   "kappa": 0.5,
+   "err": 8.16,
+   "pred3": 19.81,
+   "v_term": 0.28,
+   "theta_term": 19.81,
+   "field_term": 0.21,
+   "pred_quad": 19.82,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "torus",
+   "gamma": 0.25,
+   "kappa": 0.0,
+   "err": 8.47,
+   "pred3": 11.45,
+   "v_term": 8.28,
+   "theta_term": 11.45,
+   "field_term": 0.0,
+   "pred_quad": 14.12,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "torus",
+   "gamma": 0.25,
+   "kappa": 0.05,
+   "err": 8.79,
+   "pred3": 11.45,
+   "v_term": 8.28,
+   "theta_term": 11.45,
+   "field_term": 2.62,
+   "pred_quad": 14.37,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "torus",
+   "gamma": 0.25,
+   "kappa": 0.5,
+   "err": 10.58,
+   "pred3": 11.45,
+   "v_term": 8.28,
+   "theta_term": 11.45,
+   "field_term": 8.31,
+   "pred_quad": 16.39,
+   "pass": false,
+   "pred_pass": false
+  },
+  {
+   "arm": "torus",
+   "gamma": 4.0,
+   "kappa": 0.0,
+   "err": 5.38,
+   "pred3": 11.45,
+   "v_term": 2.31,
+   "theta_term": 11.45,
+   "field_term": 0.0,
+   "pred_quad": 11.68,
+   "pass": true,
+   "pred_pass": false
+  },
+  {
+   "arm": "torus",
+   "gamma": 4.0,
+   "kappa": 0.05,
+   "err": 5.44,
+   "pred3": 11.45,
+   "v_term": 2.31,
+   "theta_term": 11.45,
+   "field_term": 0.21,
+   "pred_quad": 11.68,
+   "pass": true,
+   "pred_pass": false
+  },
+  {
+   "arm": "torus",
+   "gamma": 4.0,
+   "kappa": 0.5,
+   "err": 5.92,
+   "pred3": 11.45,
+   "v_term": 2.31,
+   "theta_term": 11.45,
+   "field_term": 1.8,
+   "pred_quad": 11.81,
+   "pass": true,
+   "pred_pass": false
+  },
+  {
+   "arm": "torus",
+   "gamma": 64.0,
+   "kappa": 0.0,
+   "err": 4.8,
+   "pred3": 11.45,
+   "v_term": 0.18,
+   "theta_term": 11.45,
+   "field_term": 0.0,
+   "pred_quad": 11.45,
+   "pass": true,
+   "pred_pass": false
+  },
+  {
+   "arm": "torus",
+   "gamma": 64.0,
+   "kappa": 0.05,
+   "err": 4.8,
+   "pred3": 11.45,
+   "v_term": 0.18,
+   "theta_term": 11.45,
+   "field_term": 0.01,
+   "pred_quad": 11.45,
+   "pass": true,
+   "pred_pass": false
+  },
+  {
+   "arm": "torus",
+   "gamma": 64.0,
+   "kappa": 0.5,
+   "err": 4.84,
+   "pred3": 11.45,
+   "v_term": 0.18,
+   "theta_term": 11.45,
+   "field_term": 0.13,
+   "pred_quad": 11.45,
+   "pass": true,
+   "pred_pass": false
+  }
+ ],
+ "law_stats": {
+  "spearman_pred3": 0.6996,
+  "boundary_agreement": 0.7778,
+  "spearman_quad_disclosure": 0.9328,
+  "agreement_quad_disclosure": 0.7778,
+  "exp79_deposited_spearman": 0.838
+ },
+ "F1_panel": [
+  {
+   "arm": "scale_free",
+   "k0.5|mu0.015": {
+    "err": 12.12,
+    "head_err": 19.91
+   },
+   "k0.0|mu0.015": {
+    "err": 7.75,
+    "head_err": 13.23
+   },
+   "k0.5|mu0.0": {
+    "err": 10.62,
+    "head_err": 16.18
+   },
+   "k0.5|g64|mu0": {
+    "err": 0.2,
+    "head_err": 0.3
+   }
+  },
+  {
+   "arm": "random3",
+   "k0.5|mu0.015": {
+    "err": 11.7,
+    "head_err": 20.27
+   },
+   "k0.0|mu0.015": {
+    "err": 6.52,
+    "head_err": 10.99
+   },
+   "k0.5|mu0.0": {
+    "err": 10.38,
+    "head_err": 18.02
+   },
+   "k0.5|g64|mu0": {
+    "err": 0.21,
+    "head_err": 0.35
+   }
+  },
+  {
+   "arm": "torus",
+   "k0.5|mu0.015": {
+    "err": 9.42,
+    "head_err": 16.65
+   },
+   "k0.0|mu0.015": {
+    "err": 3.34,
+    "head_err": 5.42
+   },
+   "k0.5|mu0.0": {
+    "err": 8.25,
+    "head_err": 14.64
+   },
+   "k0.5|g64|mu0": {
+    "err": 0.12,
+    "head_err": 0.18
+   }
+  }
+ ],
+ "F2_star_reassert": {
+  "verdict": 0.57,
+  "hold": 0.57
+ },
+ "F4_panel": [
+  {
+   "arm": "scale_free",
+   "init_noise": {
+    "k0.0": 11.92,
+    "k0.5": 12.52
+   },
+   "step_noise_disclosure": {
+    "k0.0": 13.2,
+    "k0.5": 13.38
+   },
+   "ratio": 1.05
+  },
+  {
+   "arm": "random3",
+   "init_noise": {
+    "k0.0": 11.19,
+    "k0.5": 12.18
+   },
+   "step_noise_disclosure": {
+    "k0.0": 12.67,
+    "k0.5": 13.11
+   },
+   "ratio": 1.088
+  },
+  {
+   "arm": "torus",
+   "init_noise": {
+    "k0.0": 8.47,
+    "k0.5": 10.58
+   },
+   "step_noise_disclosure": {
+    "k0.0": 9.91,
+    "k0.5": 11.5
+   },
+   "ratio": 1.249
+  }
+ ],
+ "criteria": {
+  "F1_field_write": false,
+  "F2_independence": false,
+  "F3_three_channel_law": false,
+  "F4_noise_price": false
+ },
+ "notes": "Protocol pins: arms = exp79's plateau arms (scale_free, random3, torus; fixed labeling). Field kernel (zero-knob): w_ij = 1/r_ij^2 row-normalized, r_ij = Euclidean distance on the torus lattice coordinates where defined, else the graph-distance embedding (hop counts); Phi = weighted mean of the other cells' Vmem, term = kappa*(Phi - V) on dV only. F1's primary condition is the pre-named one with the unnamed dials left at the frozen defaults (gamma=0.25, mu=0.015 \u2014 the run_gm operating point; kappa=0 IS the frozen stack); the panel also records the kappa=0 control, the anchor-mu=0 variant and the star+field variant, plus the head-region errs, so the attribution is checkable either way. F2(a) is F1's verdict per the docstring ('F1's condition'); F2(b) re-asserts exp79's TC-G3 with its own seeds (1,2,3)+(4,5,6). F3's field-term: phi_ratio = kappa*f_wrong/(gamma + kappa) at the worst head cell, f_wrong = the row-normalized field weight on wrong-pattern cells \u2014 the structural analog of exp79's y. F4's primary noise convention is the house one-time V-noise (exp232's v_noise family): the write's initialization V-noise raised from sigma=2 to sigma=5 at matched (arm, gamma, mu, W=1, seeds); the sustained per-step variant is disclosed non-gating. Instrument: the kappa=0 FieldCollective path is asserted bit-exact against exp79's run_gm (the PD-G0 pattern) before any panel is trusted.",
+ "finding": "F1 REFUTE: the head write at w=0 (exp79's head-shell protocol) + kappa=0.5 at the frozen defaults (g0.25/mu0.015, fresh seeds) errs 9.42-12.12 mV across the 3 plateau arms (0/3 under the 6.0 bar); the kappa=0 control already errs 3.34-7.75 (the mu=0.015 theta channel, whose diffusion rides the un-weighted topology and is NOT cut by the shell), and with the theta channel anchored (mu=0) the field's OWN drag at the frozen gamma still errs up to 10.62 \u2014 f_wrong 0.58-0.90 puts a 2/3-weighted trunk pull on every head cell, the field RE-INTRODUCES the cross-boundary hijack the shell cut removed; only the star gamma=64 dilutes the field-on write below the bar (0.12-0.21 mV); F2 REFUTE: (a)=F1 REFUTE, (b) the junction-only star (g64/mu0/kappa=0, TC-G3 re-asserted) holds at 0.57/0.57 PASS; F3 REFUTE: pred3=max(V,theta,field) over the 27-point (gamma x kappa) grid at mu=0.015 pools at Spearman 0.700 (exp79's own deposited 0.838) with 78% boundary agreement \u2014 the theta-term binds pred3 and is kappa-blind while the measured errs rise with kappa, and the field-term formula (CONTRAST*phi/(1+phi), phi=kappa*f/(gamma+kappa)) is the drag the max-form cannot add; the quadrature composition (disclosed, non-gating) pools at 0.933/78%; F4 REFUTE: under V-noise sigma=5 the kappa=0.5/kappa=0 write-err ratios are scale_free 1.05, random3 1.09, torus 1.25 \u2014 nowhere near the named 2x: the sigma=5 initialization transient decays to <0.3% inside the 24 t.u. window at both kappas (the ratios equal the no-noise drag ratios), and the sustained per-step disclosure shows the all-to-all field AVERAGING per-cell noise (differential fluctuations synchronize toward the weighted mean) instead of amplifying it \u2014 the named cost inverts in this stack."
+}

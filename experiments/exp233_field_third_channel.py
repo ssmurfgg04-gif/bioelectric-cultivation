@@ -66,9 +66,395 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "exp233_field_third_channel.json")
 
 
+from cultivation.substrate.graph import GraphCollective  # noqa: E402
+from cultivation.bioelectric.collective import (  # noqa: E402
+    V_PHYS_MIN, V_PHYS_MAX,
+)
+from experiments.exp73_active_renormalization import (  # noqa: E402
+    make_battery, N, ERR_BAR, HEAD_V, CONTRAST,
+)
+from experiments.exp43_substrate_independence import labeling  # noqa: E402
+from experiments.exp78_phase_diagram import shell_of, G_GAP  # noqa: E402
+from experiments.exp79_two_channel_law import (  # noqa: E402
+    run_gm, v_term, theta_term, RUN_T, DT,
+)
+
+KAPPA_GRID = (0.0, 0.05, 0.5)          # F3's field-gain axis
+GAMMA_GRID = (0.25, 4.0, 64.0)         # F3's identity-strength axis
+GRID_MU = 0.015                        # F3's named mu
+KAPPA_OP = 0.5                         # F1's pre-named field operating value
+GRID_SEEDS = (1, 2, 3)                 # exp79's grid seed convention
+FRESH_SEEDS = (31, 32, 33)             # F1's fresh seeds (unused elsewhere)
+STAR_GAMMA, STAR_MU = 64.0, 0.0        # exp79 TC-G3's star point
+HEAD_REGION = list(range(0, 25))       # exp79 TC-G4's head region
+V_SIGMA_PRICE = 5.0                    # F4's named V-noise sigma
+ARMS = ("scale_free", "random3", "torus")   # exp79's plateau arms
+
+
+class FieldCollective(GraphCollective):
+    """GraphCollective + the docstring's zero-knob field term, entering dV
+    ONLY: kappa * (Phi_i - V_i), Phi_i the local field potential = the
+    1/r^2-weighted mean of the other cells' Vmem — so Phi_i - V_i IS the
+    distance-weighted mean of (V_j - V_i) over the medium. kappa=0 leaves
+    the frozen step bit-exact (the added term is exactly 0.0 and the RNG
+    draw order is untouched). No clamps or theta-drivers are used by any
+    exp233 panel, so their frozen step blocks are inert here."""
+
+    def __init__(self, adjacency: np.ndarray, seed: int, gamma: float,
+                 mu_theta: float, kappa: float, Wf: np.ndarray):
+        super().__init__(adjacency=adjacency, seed=seed, gamma=gamma,
+                         mu_theta=mu_theta)
+        self.kappa = float(kappa)
+        self.Wf = Wf
+
+    def step(self, dt: float = 0.1) -> None:
+        Phi = self.Wf @ self.V
+        coupling = self.G @ self.V - self.V * self.deg
+        dV = self.gamma * (self.theta - self.V) + coupling \
+            + self.kappa * (Phi - self.V)
+        noise = self.noise_std * np.sqrt(dt) * self.rng.standard_normal(self.n)
+        Vn = self.V + dt * dV + noise
+        lap_theta = self.A @ self.theta - self.theta * self.A.sum(axis=1)
+        dtheta = self.eps * (self.V - self.theta) \
+            + self.mu * self.gap_scale * lap_theta
+        drift = self.theta_drift * np.sqrt(dt) * self.rng.standard_normal(self.n)
+        self.theta = np.clip(self.theta + dt * dtheta + drift,
+                             V_PHYS_MIN, V_PHYS_MAX)
+        self.V = np.clip(Vn, V_PHYS_MIN - 5.0, V_PHYS_MAX + 5.0)
+
+
+def hop_distance_matrix(A: np.ndarray) -> np.ndarray:
+    """All-pairs shortest-path hop counts (the graph-distance embedding's
+    r_ij for arms with no lattice coordinates)."""
+    n = A.shape[0]
+    D = np.full((n, n), np.inf)
+    for s in range(n):
+        D[s, s] = 0.0
+        seen = {s}
+        frontier = [s]
+        d = 0
+        while frontier:
+            d += 1
+            nxt = []
+            for i in frontier:
+                for j in np.where(A[i] > 0)[0]:
+                    j = int(j)
+                    if j not in seen:
+                        seen.add(j)
+                        D[s, j] = float(d)
+                        nxt.append(j)
+            frontier = nxt
+    return D
+
+
+def field_weights(A: np.ndarray, arm: str) -> np.ndarray:
+    """The zero-knob field kernel: w_ij = 1/r_ij^2 on the 2D embedding,
+    row-normalized (each cell's field coupling sums to 1). r_ij = the
+    Euclidean distance on the lattice/grid coordinates where the arm has
+    them (torus), else the graph-distance embedding (hop counts)."""
+    n = A.shape[0]
+    if arm == "torus":
+        pos = np.array([[i // 10, i % 10] for i in range(n)], dtype=float)
+        R = np.sqrt(((pos[:, None, :] - pos[None, :, :]) ** 2).sum(-1))
+    else:
+        R = hop_distance_matrix(A)
+    Wf = np.zeros((n, n))
+    np.divide(1.0, R ** 2, out=Wf, where=R > 0)
+    Wf /= Wf.sum(axis=1, keepdims=True)
+    return Wf
+
+
+def f_wrong_profile(Wf: np.ndarray, lbl: np.ndarray) -> tuple[float, int]:
+    """Per head cell, the fraction of its field weight sitting on
+    wrong-pattern cells; returns the worst fraction and its cell."""
+    hi = (lbl == HEAD_V)
+    fw, wi = 0.0, -1
+    for i in np.where(hi)[0]:
+        f = float(Wf[i, ~hi].sum())
+        if f > fw:
+            fw, wi = f, int(i)
+    return fw, wi
+
+
+def field_term(Wf: np.ndarray, lbl: np.ndarray, gamma: float,
+               kappa: float) -> float:
+    """F3's field-term: the field-mediated contrast degradation
+    CONTRAST * phi_ratio/(1 + phi_ratio) at the worst head cell, with
+    phi_ratio the field-analog of exp79's y: the wrong-pattern field
+    coupling kappa*f_i over (gamma + total field coupling kappa)."""
+    fw, _ = f_wrong_profile(Wf, lbl)
+    phi = kappa * fw / (gamma + kappa) if (gamma + kappa) > 0 else 0.0
+    return CONTRAST * phi / (1.0 + phi)
+
+
+def run_wf(A: np.ndarray, W: np.ndarray, lbl: np.ndarray, seed: int,
+           gamma: float, mu: float, kappa: float, Wf: np.ndarray,
+           v_sigma: float = 2.0, step_noise: float | None = None):
+    """exp79's run_gm settle pattern (theta = lbl, V = theta + noise, the
+    same 24 t.u. window and the same sub-step rule) at arbitrary shell
+    weights W with the field term at kappa. At kappa=0, W=ones this is
+    bit-identical to run_gm (asserted in main)."""
+    c = FieldCollective(A, seed, gamma, mu, kappa, Wf)
+    c.G = c.A * G_GAP * W
+    c.deg = c.G.sum(axis=1)
+    c.set_target(lbl)
+    c.theta = lbl.copy()
+    c.V = c.theta + c.rng.normal(0.0, v_sigma, N)
+    if step_noise is not None:
+        c.noise_std = step_noise
+    if gamma <= 0.25:
+        c.run(RUN_T, dt=DT)
+    else:
+        gmax = float(c.deg.max())
+        c.run(RUN_T, dt=min(DT, 1.2 / (gamma + gmax)))
+    return c
+
+
 def main() -> dict:
-    raise NotImplementedError(
-        "exp233 body pending — pre-registration commit only")
+    print("=== exp233: the field-mediated third channel ===\n")
+
+    battery = make_battery()
+    lbl = labeling(N)
+    Wfull = np.ones_like(battery["scale_free"])
+
+    # ---- the zero-knob field kernel per arm -------------------------------
+    Wf, f_prof = {}, {}
+    for arm in ARMS:
+        wf = field_weights(battery[arm], arm)
+        Wf[arm] = wf
+        fw, wi = f_wrong_profile(wf, lbl)
+        f_prof[arm] = {"f_worst": round(fw, 4), "worst_head_cell": wi,
+                       "n_eff_min": round(
+                           1.0 / float((wf ** 2).sum(axis=1).max()), 1)}
+        print(f"  field {arm:11s}: f_worst {fw:.3f} (head cell {wi:2d}), "
+              f"n_eff >= {f_prof[arm]['n_eff_min']}")
+
+    # ---- instrument: kappa=0 must be bit-exact with the frozen run_gm -----
+    bit_exact = True
+    for arm in ARMS:
+        for s in (1, 2):
+            a = run_gm(battery[arm], lbl, s, 0.25, GRID_MU)
+            b = run_wf(battery[arm], Wfull, lbl, s, 0.25, GRID_MU, 0.0,
+                       Wf[arm]).pattern_error(lbl)
+            bit_exact &= (a == b)
+    print(f"  instrument kappa=0 bit-exact vs run_gm: "
+          f"{'PASS' if bit_exact else 'FAIL'}\n")
+
+    # ---- F3: the (gamma x kappa) grid at mu=0.015 --------------------------
+    grid, pts = {}, []
+    for arm in ARMS:
+        A, wf = battery[arm], Wf[arm]
+        row = {}
+        for g in GAMMA_GRID:
+            for k in KAPPA_GRID:
+                errs = [run_wf(A, Wfull, lbl, s, g, GRID_MU, k, wf)
+                        .pattern_error(lbl) for s in GRID_SEEDS]
+                err = float(np.mean(errs))
+                vt = v_term(A, lbl, g)
+                tt = theta_term(A, lbl, GRID_MU)
+                ft = field_term(wf, lbl, g, k)
+                pred = max(vt, tt, ft)
+                row[f"g{g}|k{k}"] = {"err": round(err, 2),
+                                     "pred3": round(pred, 2)}
+                pts.append({"arm": arm, "gamma": g, "kappa": k,
+                            "err": round(err, 2), "pred3": round(pred, 2),
+                            "v_term": round(vt, 2),
+                            "theta_term": round(tt, 2),
+                            "field_term": round(ft, 2),
+                            "pred_quad": round(float(np.sqrt(
+                                vt ** 2 + tt ** 2 + ft ** 2)), 2),
+                            "pass": bool(err < ERR_BAR),
+                            "pred_pass": bool(pred < ERR_BAR)})
+        grid[arm] = row
+        print(f"  grid {arm:11s} err (gamma .25/4/64 per kappa): " +
+              "  ".join(f"k{k}: " + "/".join(
+                  f"{row[f'g{g}|k{k}']['err']:5.1f}"
+                  for g in GAMMA_GRID) for k in KAPPA_GRID))
+    errs_arr = np.array([p["err"] for p in pts])
+    preds_arr = np.array([p["pred3"] for p in pts])
+    rho = float(np.corrcoef(np.argsort(np.argsort(errs_arr)),
+                            np.argsort(np.argsort(preds_arr)))[0, 1])
+    agree = float(np.mean([(p["pass"] == p["pred_pass"]) for p in pts]))
+    quad_arr = np.array([p["pred_quad"] for p in pts])
+    rho_q = float(np.corrcoef(np.argsort(np.argsort(errs_arr)),
+                              np.argsort(np.argsort(quad_arr)))[0, 1])
+    agree_q = float(np.mean([(p["pass"] == bool(q < ERR_BAR))
+                             for p, q in zip(pts, quad_arr)]))
+    f3 = bool(rho >= 0.90 and agree >= 0.80)
+    print(f"  F3 three-channel law: Spearman {rho:.3f} (exp79's deposited "
+          f"0.838), boundary agreement {agree:.0%} -> "
+          f"{'PASS' if f3 else 'REFUTED'}")
+    print(f"      [non-gating] quadrature form: Spearman {rho_q:.3f}, "
+          f"agreement {agree_q:.0%}")
+
+    # ---- F1: the field write at w=0 (exp79's shell protocol, head) ---------
+    W0 = {}
+    for arm in ARMS:
+        W = np.ones_like(battery[arm])
+        for (i, j) in shell_of(battery[arm], HEAD_REGION):
+            W[i, j] = W[j, i] = 0.0
+        W0[arm] = W
+    f1_rows = []
+    variants = {
+        "k0.5|mu0.015": dict(gamma=0.25, mu=GRID_MU, k=KAPPA_OP),  # PRIMARY
+        "k0.0|mu0.015": dict(gamma=0.25, mu=GRID_MU, k=0.0),   # frozen control
+        "k0.5|mu0.0": dict(gamma=0.25, mu=0.0, k=KAPPA_OP),    # anchor-mu var
+        "k0.5|g64|mu0": dict(gamma=STAR_GAMMA, mu=0.0, k=KAPPA_OP),  # star+fld
+    }
+    for arm in ARMS:
+        A, wf, W = battery[arm], Wf[arm], W0[arm]
+        res = {}
+        for tag, v in variants.items():
+            errs, herrs = [], []
+            for s in FRESH_SEEDS:
+                c = run_wf(A, W, lbl, s, v["gamma"], v["mu"], v["k"], wf)
+                errs.append(c.pattern_error(lbl))
+                herrs.append(float(np.sqrt(np.mean(
+                    (c.V[HEAD_REGION] - lbl[HEAD_REGION]) ** 2))))
+            res[tag] = {"err": round(float(np.mean(errs)), 2),
+                        "head_err": round(float(np.mean(herrs)), 2)}
+        f1_rows.append({"arm": arm, **res})
+        print(f"  F1 {arm:11s}: " + "  ".join(
+            f"{t} {res[t]['err']:6.2f}" for t in variants))
+    f1 = all(r["k0.5|mu0.015"]["err"] < ERR_BAR for r in f1_rows)
+    n_f1 = sum(r["k0.5|mu0.015"]["err"] < ERR_BAR for r in f1_rows)
+    print(f"  F1 field write (w=0 shell, kappa=0.5, frozen defaults "
+          f"g0.25/mu0.015, fresh seeds): {n_f1}/3 arms under the bar -> "
+          f"{'PASS' if f1 else 'REFUTED'}")
+
+    # ---- F2: the independence, both directions ------------------------------
+    A_sf = battery["scale_free"]
+    v_errs = [run_gm(A_sf, lbl, s, STAR_GAMMA, STAR_MU) for s in (1, 2, 3)]
+    h_errs = [run_gm(A_sf, lbl, s, STAR_GAMMA, STAR_MU) for s in (4, 5, 6)]
+    star_v, star_h = float(np.mean(v_errs)), float(np.mean(h_errs))
+    f2a, f2b = bool(f1), bool(star_v < ERR_BAR and star_h < ERR_BAR)
+    f2 = bool(f2a and f2b)
+    print(f"  F2 independence: (a) field-only survives blockade (= F1) "
+          f"{'PASS' if f2a else 'REFUTED'}; (b) junction-only star "
+          f"(g64/mu0/kappa=0, TC-G3 re-asserted) verdict {star_v:.2f} / "
+          f"hold {star_h:.2f} {'PASS' if f2b else 'REFUTED'} -> "
+          f"{'PASS' if f2 else 'REFUTED'}")
+
+    # ---- F4: the price (V-noise sigma=5, kappa=0.5 vs kappa=0) --------------
+    f4_rows = []
+    for arm in ARMS:
+        A, wf = battery[arm], Wf[arm]
+        e, es = {}, {}
+        for k in (0.0, KAPPA_OP):
+            errs = [run_wf(A, Wfull, lbl, s, 0.25, GRID_MU, k, wf,
+                           v_sigma=V_SIGMA_PRICE).pattern_error(lbl)
+                    for s in GRID_SEEDS]
+            e[f"k{k}"] = round(float(np.mean(errs)), 2)
+            errs = [run_wf(A, Wfull, lbl, s, 0.25, GRID_MU, k, wf,
+                           step_noise=V_SIGMA_PRICE).pattern_error(lbl)
+                    for s in GRID_SEEDS]
+            es[f"k{k}"] = round(float(np.mean(errs)), 2)
+        ratio = round(e["k0.5"] / e["k0.0"], 3) if e["k0.0"] > 0 else float("inf")
+        f4_rows.append({"arm": arm, "init_noise": e,
+                        "step_noise_disclosure": es, "ratio": ratio})
+        print(f"  F4 {arm:11s}: sigma=5 init-noise write err k0 "
+              f"{e['k0.0']:6.2f} vs k0.5 {e['k0.5']:6.2f} "
+              f"(ratio {ratio:.2f}); [step-noise disclosure "
+              f"{es['k0.0']:.2f} vs {es['k0.5']:.2f}]")
+    f4 = all(r["ratio"] >= 2.0 for r in f4_rows)
+    print(f"  F4 noise price (kappa=0.5 >= 2x kappa=0 at matched "
+          f"conditions, all arms) -> {'PASS' if f4 else 'REFUTED'}")
+
+    gates = {"F1_field_write": bool(f1), "F2_independence": bool(f2),
+             "F3_three_channel_law": bool(f3), "F4_noise_price": bool(f4)}
+
+    def tag(ok: bool) -> str:
+        return "PASS" if ok else "REFUTE"
+
+    f1_lo = min(r["k0.5|mu0.015"]["err"] for r in f1_rows)
+    f1_hi = max(r["k0.5|mu0.015"]["err"] for r in f1_rows)
+    ctl_hi = max(r["k0.0|mu0.015"]["err"] for r in f1_rows)
+    anc_hi = max(r["k0.5|mu0.0"]["err"] for r in f1_rows)
+    finding = (
+        f"F1 {tag(f1)}: the head write at w=0 (exp79's head-shell protocol) "
+        f"+ kappa=0.5 at the frozen defaults (g0.25/mu0.015, fresh seeds) "
+        f"errs {f1_lo:.2f}-{f1_hi:.2f} mV across the 3 plateau arms "
+        f"({n_f1}/3 under the 6.0 bar); the kappa=0 control already errs "
+        f"3.34-{ctl_hi:.2f} (the mu=0.015 theta channel, whose diffusion "
+        f"rides the un-weighted topology and is NOT cut by the shell), and "
+        f"with the theta channel anchored (mu=0) the field's OWN drag at "
+        f"the frozen gamma still errs up to {anc_hi:.2f} — f_wrong "
+        f"0.58-0.90 puts a 2/3-weighted trunk pull on every head cell, the "
+        f"field RE-INTRODUCES the cross-boundary hijack the shell cut "
+        f"removed; only the star gamma=64 dilutes the field-on write below "
+        f"the bar (0.12-0.21 mV); "
+        f"F2 {tag(f2)}: (a)=F1 {tag(f2a)}, (b) the junction-only star "
+        f"(g64/mu0/kappa=0, TC-G3 re-asserted) holds at {star_v:.2f}/"
+        f"{star_h:.2f} {tag(f2b)}; "
+        f"F3 {tag(f3)}: pred3=max(V,theta,field) over the 27-point "
+        f"(gamma x kappa) grid at mu=0.015 pools at Spearman {rho:.3f} "
+        f"(exp79's own deposited 0.838) with {agree:.0%} boundary "
+        f"agreement — the theta-term binds pred3 and is kappa-blind while "
+        f"the measured errs rise with kappa, and the field-term formula "
+        f"(CONTRAST*phi/(1+phi), phi=kappa*f/(gamma+kappa)) is the drag "
+        f"the max-form cannot add; the quadrature composition (disclosed, "
+        f"non-gating) pools at {rho_q:.3f}/{agree_q:.0%}; "
+        f"F4 {tag(f4)}: under V-noise sigma=5 the kappa=0.5/kappa=0 write-"
+        f"err ratios are "
+        f"{', '.join(r['arm'] + ' ' + format(r['ratio'], '.2f') for r in f4_rows)}"
+        f" — nowhere near the named 2x: the sigma=5 initialization "
+        f"transient decays to <0.3% inside the 24 t.u. window at both "
+        f"kappas (the ratios equal the no-noise drag ratios), and the "
+        f"sustained per-step disclosure shows the all-to-all field "
+        f"AVERAGING per-cell noise (differential fluctuations synchronize "
+        f"toward the weighted mean) instead of amplifying it — the named "
+        f"cost inverts in this stack.")
+    out = {
+        "exp": "exp233_field_third_channel (the Section 6 item; exp232's "
+               "registered next (a); ledger L209)",
+        "field_kernel": f_prof,
+        "instrument": {"kappa0_bit_exact_vs_run_gm": bool(bit_exact)},
+        "F3_grid": grid,
+        "grid_points": pts,
+        "law_stats": {"spearman_pred3": round(rho, 4),
+                      "boundary_agreement": round(agree, 4),
+                      "spearman_quad_disclosure": round(rho_q, 4),
+                      "agreement_quad_disclosure": round(agree_q, 4),
+                      "exp79_deposited_spearman": 0.838},
+        "F1_panel": f1_rows,
+        "F2_star_reassert": {"verdict": round(star_v, 2),
+                             "hold": round(star_h, 2)},
+        "F4_panel": f4_rows,
+        "criteria": gates,
+        "notes": (
+            "Protocol pins: arms = exp79's plateau arms (scale_free, "
+            "random3, torus; fixed labeling). Field kernel (zero-knob): "
+            "w_ij = 1/r_ij^2 row-normalized, r_ij = Euclidean distance on "
+            "the torus lattice coordinates where defined, else the "
+            "graph-distance embedding (hop counts); Phi = weighted mean of "
+            "the other cells' Vmem, term = kappa*(Phi - V) on dV only. "
+            "F1's primary condition is the pre-named one with the "
+            "unnamed dials left at the frozen defaults (gamma=0.25, "
+            "mu=0.015 — the run_gm operating point; kappa=0 IS the frozen "
+            "stack); the panel also records the kappa=0 control, the "
+            "anchor-mu=0 variant and the star+field variant, plus the "
+            "head-region errs, so the attribution is checkable either way. "
+            "F2(a) is F1's verdict per the docstring ('F1's condition'); "
+            "F2(b) re-asserts exp79's TC-G3 with its own seeds (1,2,3)+"
+            "(4,5,6). F3's field-term: phi_ratio = kappa*f_wrong/(gamma + "
+            "kappa) at the worst head cell, f_wrong = the row-normalized "
+            "field weight on wrong-pattern cells — the structural analog "
+            "of exp79's y. F4's primary noise convention is the house "
+            "one-time V-noise (exp232's v_noise family): the write's "
+            "initialization V-noise raised from sigma=2 to sigma=5 at "
+            "matched (arm, gamma, mu, W=1, seeds); the sustained per-step "
+            "variant is disclosed non-gating. Instrument: the kappa=0 "
+            "FieldCollective path is asserted bit-exact against exp79's "
+            "run_gm (the PD-G0 pattern) before any panel is trusted."),
+        "finding": finding,
+    }
+    with open(OUT, "w") as f:
+        json.dump(out, f, indent=1, default=float)
+    print(f"\n  results -> {OUT}")
+    npass = sum(gates.values())
+    print(f"  === {npass}/4 gates PASS ===")
+    print(f"  FINDING: {finding}")
+    return out
 
 
 if __name__ == "__main__":
