@@ -1,0 +1,38 @@
+{
+ "exp": "exp254_pair_junction_geometry",
+ "records": [
+  {
+   "medium": "canonical (exp208's battery records)",
+   "class_counts": {
+    "CANON-BOUNDARY": 17934,
+    "PAIR-JUNCTION": 42066,
+    "n": 60000
+   }
+  },
+  {
+   "medium": "substituted (exp243's argmax records)",
+   "class_counts": {
+    "CANON-BOUNDARY": 198,
+    "PAIR-JUNCTION": 1002,
+    "n": 1200
+   }
+  }
+ ],
+ "pair_cell_rms_err": 3.706000220782688,
+ "canon_boundary_rms_err": 3.51955023622546,
+ "rest_rms_err": 3.51955023622546,
+ "n_pair": 1002,
+ "n_boundary": 198,
+ "n_rest": 0,
+ "criteria": {
+  "J1_pair_shift_recorded": true,
+  "J2_pair_err_exceeds": true,
+  "J3_discipline": true
+ },
+ "branch": "PAIR-GEOMETRY-CARRIED",
+ "consumed_deposits": {
+  "exp243": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a"
+ },
+ "notes": "the err split from exp243's own decomposition records (exp208's classify classes); the medium-rebuild path attempted through exp243's machinery, the record-only form the fallback",
+ "read_only_verified": true
+}
