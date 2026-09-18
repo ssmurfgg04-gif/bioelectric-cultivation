@@ -120,6 +120,17 @@ def main() -> dict:
     from experiments.exp94_multizone_scale import (  # noqa: E402
         MULTI, labeling_bfs_n, spec_target_n)
 
+    # THE FLOOR RESTORE (two-death fix, disclosed in the ledger): the
+    # body's import chain includes exp169_rt_scoping, whose import-time
+    # code sets CORE.NEURAL_SPEC_MIN = -35.0 (the R_T battery's floor).
+    # The read-chain modules (exp142/exp145/exp148/exp94) were imported
+    # BEFORE exp169 and captured CF-1's production -60.0 at their own
+    # import; exp169's flip is attribute-only. Restored here so the
+    # walk's write path runs at the CF-1 production floor the
+    # pre-registration asserts.
+    CORE.NEURAL_SPEC_MIN = -60.0
+    assert CORE.NEURAL_SPEC_MIN == -60.0, "floor restore failed"
+
     BAR = ERR_BAR                          # 6.0 mV — the unchanged bar
     WALK_BAR = WALK_ERR_BAR                # exp151's ring-err bar (6.0)
     WALK_SEEDS = list(SEEDS)               # exp142's (1, 2, 3) — P7
