@@ -1,0 +1,792 @@
+{
+ "exp": "exp257",
+ "claim": "the native 8-channel write-path schema lands ADDITIVELY with bit-exact compatibility shims: the paper's 8 channels all have native state (3 had NO substrate), dormant at defaults, activation one channel at a time (exp258: ctx; exp259: gj)",
+ "schema": {
+  "channel_names": [
+   "vmem",
+   "theta",
+   "gj",
+   "ctx",
+   "ca2",
+   "sht",
+   "apop",
+   "ichan"
+  ],
+  "active_channels": [
+   "vmem",
+   "theta"
+  ],
+  "dormant_channels": [
+   "gj",
+   "ctx",
+   "ca2",
+   "sht",
+   "apop",
+   "ichan"
+  ],
+  "dormancy_contract": "ch2..ch7 zero dynamics, zero feedback into ch0/ch1 at defaults; carried only",
+  "collective_py_sha256": "f8bd12a6a0c35342d35d20d7613b4e4e0ca5e081aba638e1ac46810fbf88f365"
+ },
+ "sections": {
+  "s1": {
+   "checks": {
+    "constants": true,
+    "S_shape": true,
+    "S_dormant_inits": true,
+    "shims_view": true,
+    "set_state": true,
+    "set_target": true,
+    "phi_spec_captured": true,
+    "clone_state_2tuple": true,
+    "restore_dormant_untouched": true,
+    "clone_full_8ch": true,
+    "restore_full_roundtrip": true,
+    "shim_item_assign": true,
+    "shim_item_assign_theta": true,
+    "unknown_raises": true,
+    "graph_collective_S": true,
+    "latching_collective_S": true
+   },
+   "n_checks": 16,
+   "n_pass": 16,
+   "pass": true
+  },
+  "s3s4": {
+   "determinism_probes": [
+    {
+     "arm": "scale_free",
+     "gamma": 64.0,
+     "mu": 0.0,
+     "err": 0.5682547072818995,
+     "err_rerun": 0.5682547072818995,
+     "bit_identical": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 4.0,
+     "mu": 0.015,
+     "err": 8.781453898137357,
+     "err_rerun": 8.781453898137357,
+     "bit_identical": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 0.25,
+     "mu": 0.0015,
+     "err": 7.485375168165551,
+     "err_rerun": 7.485375168165551,
+     "bit_identical": true
+    }
+   ],
+   "s4_determinism": true,
+   "dormancy_probes": [
+    {
+     "arm": "scale_free",
+     "gamma": 64.0,
+     "mu": 0.0,
+     "dt": 0.017094017094017092,
+     "V_bit_identical": true,
+     "theta_bit_identical": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 4.0,
+     "mu": 0.015,
+     "dt": 0.1,
+     "V_bit_identical": true,
+     "theta_bit_identical": true
+    }
+   ],
+   "s3_dormancy": true,
+   "floor_at_exit": -60.0,
+   "floor_ok": true,
+   "pass": true
+  },
+  "b1": {
+   "rows": [
+    {
+     "arm": "scale_free",
+     "gamma": 0.25,
+     "mu": 0.015,
+     "err_full": 11.918423407718835,
+     "err_round2": 11.92,
+     "deposited": 11.92,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 0.25,
+     "mu": 0.005,
+     "err_full": 11.326987531845853,
+     "err_round2": 11.33,
+     "deposited": 11.33,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 0.25,
+     "mu": 0.0015,
+     "err_full": 10.987995424431029,
+     "err_round2": 10.99,
+     "deposited": 10.99,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 0.25,
+     "mu": 0.0005,
+     "err_full": 10.866988729776665,
+     "err_round2": 10.87,
+     "deposited": 10.87,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 0.25,
+     "mu": 0.0,
+     "err_full": 10.800637130778794,
+     "err_round2": 10.8,
+     "deposited": 10.8,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 4.0,
+     "mu": 0.015,
+     "err_full": 9.796791693560607,
+     "err_round2": 9.8,
+     "deposited": 9.8,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 4.0,
+     "mu": 0.005,
+     "err_full": 7.2330422123065325,
+     "err_round2": 7.23,
+     "deposited": 7.23,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 4.0,
+     "mu": 0.0015,
+     "err_full": 5.45040874988385,
+     "err_round2": 5.45,
+     "deposited": 5.45,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 4.0,
+     "mu": 0.0005,
+     "err_full": 4.708404554227323,
+     "err_round2": 4.71,
+     "deposited": 4.71,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 4.0,
+     "mu": 0.0,
+     "err_full": 4.262097285827205,
+     "err_round2": 4.26,
+     "deposited": 4.26,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 64.0,
+     "mu": 0.015,
+     "err_full": 9.200966467150645,
+     "err_round2": 9.2,
+     "deposited": 9.2,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 64.0,
+     "mu": 0.005,
+     "err_full": 5.7451376131463165,
+     "err_round2": 5.75,
+     "deposited": 5.75,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 64.0,
+     "mu": 0.0015,
+     "err_full": 2.978874692242165,
+     "err_round2": 2.98,
+     "deposited": 2.98,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 64.0,
+     "mu": 0.0005,
+     "err_full": 1.5533352413054387,
+     "err_round2": 1.55,
+     "deposited": 1.55,
+     "bit_exact": true
+    },
+    {
+     "arm": "scale_free",
+     "gamma": 64.0,
+     "mu": 0.0,
+     "err_full": 0.5728432579293881,
+     "err_round2": 0.57,
+     "deposited": 0.57,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 0.25,
+     "mu": 0.015,
+     "err_full": 11.186680579008993,
+     "err_round2": 11.19,
+     "deposited": 11.19,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 0.25,
+     "mu": 0.005,
+     "err_full": 10.53705469617998,
+     "err_round2": 10.54,
+     "deposited": 10.54,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 0.25,
+     "mu": 0.0015,
+     "err_full": 10.183552434509181,
+     "err_round2": 10.18,
+     "deposited": 10.18,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 0.25,
+     "mu": 0.0005,
+     "err_full": 10.06436662221399,
+     "err_round2": 10.06,
+     "deposited": 10.06,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 0.25,
+     "mu": 0.0,
+     "err_full": 10.001239778238224,
+     "err_round2": 10.0,
+     "deposited": 10.0,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 4.0,
+     "mu": 0.015,
+     "err_full": 8.789461996903308,
+     "err_round2": 8.79,
+     "deposited": 8.79,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 4.0,
+     "mu": 0.005,
+     "err_full": 5.865474595213821,
+     "err_round2": 5.87,
+     "deposited": 5.87,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 4.0,
+     "mu": 0.0015,
+     "err_full": 4.040555527071317,
+     "err_round2": 4.04,
+     "deposited": 4.04,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 4.0,
+     "mu": 0.0005,
+     "err_full": 3.3956659163743503,
+     "err_round2": 3.4,
+     "deposited": 3.4,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 4.0,
+     "mu": 0.0,
+     "err_full": 3.048645613941907,
+     "err_round2": 3.05,
+     "deposited": 3.05,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 64.0,
+     "mu": 0.015,
+     "err_full": 8.103541678168485,
+     "err_round2": 8.1,
+     "deposited": 8.1,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 64.0,
+     "mu": 0.005,
+     "err_full": 4.1882473972000005,
+     "err_round2": 4.19,
+     "deposited": 4.19,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 64.0,
+     "mu": 0.0015,
+     "err_full": 1.6579243895691205,
+     "err_round2": 1.66,
+     "deposited": 1.66,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 64.0,
+     "mu": 0.0005,
+     "err_full": 0.7530754626821206,
+     "err_round2": 0.75,
+     "deposited": 0.75,
+     "bit_exact": true
+    },
+    {
+     "arm": "random3",
+     "gamma": 64.0,
+     "mu": 0.0,
+     "err_full": 0.2661955326166693,
+     "err_round2": 0.27,
+     "deposited": 0.27,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 0.25,
+     "mu": 0.015,
+     "err_full": 8.470713226223221,
+     "err_round2": 8.47,
+     "deposited": 8.47,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 0.25,
+     "mu": 0.005,
+     "err_full": 7.79526186973947,
+     "err_round2": 7.8,
+     "deposited": 7.8,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 0.25,
+     "mu": 0.0015,
+     "err_full": 7.4954333511565245,
+     "err_round2": 7.5,
+     "deposited": 7.5,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 0.25,
+     "mu": 0.0005,
+     "err_full": 7.401651212122541,
+     "err_round2": 7.4,
+     "deposited": 7.4,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 0.25,
+     "mu": 0.0,
+     "err_full": 7.353248743720421,
+     "err_round2": 7.35,
+     "deposited": 7.35,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 4.0,
+     "mu": 0.015,
+     "err_full": 5.38477181692186,
+     "err_round2": 5.38,
+     "deposited": 5.38,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 4.0,
+     "mu": 0.005,
+     "err_full": 3.2827217817551086,
+     "err_round2": 3.28,
+     "deposited": 3.28,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 4.0,
+     "mu": 0.0015,
+     "err_full": 2.199695600219862,
+     "err_round2": 2.2,
+     "deposited": 2.2,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 4.0,
+     "mu": 0.0005,
+     "err_full": 1.8399175137239585,
+     "err_round2": 1.84,
+     "deposited": 1.84,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 4.0,
+     "mu": 0.0,
+     "err_full": 1.6502071975900983,
+     "err_round2": 1.65,
+     "deposited": 1.65,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 64.0,
+     "mu": 0.015,
+     "err_full": 4.7980779934896,
+     "err_round2": 4.8,
+     "deposited": 4.8,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 64.0,
+     "mu": 0.005,
+     "err_full": 2.2312833078799668,
+     "err_round2": 2.23,
+     "deposited": 2.23,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 64.0,
+     "mu": 0.0015,
+     "err_full": 0.8496415519516131,
+     "err_round2": 0.85,
+     "deposited": 0.85,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 64.0,
+     "mu": 0.0005,
+     "err_full": 0.38273662593477115,
+     "err_round2": 0.38,
+     "deposited": 0.38,
+     "bit_exact": true
+    },
+    {
+     "arm": "torus",
+     "gamma": 64.0,
+     "mu": 0.0,
+     "err_full": 0.13807655833168384,
+     "err_round2": 0.14,
+     "deposited": 0.14,
+     "bit_exact": true
+    }
+   ],
+   "n": 45,
+   "n_bit_exact": 45,
+   "pass": true
+  },
+  "b2": {
+   "rows": [
+    {
+     "arm": "cutting_cross_a",
+     "err_per_seed": [
+      22.117026479442714,
+      21.776084228969207,
+      21.96721283385554
+     ],
+     "deposited": [
+      22.117026479442714,
+      21.776084228969207,
+      21.96721283385554
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "cutting_cross_b",
+     "err_per_seed": [
+      3.340420990838757,
+      3.4850418610861413,
+      3.7169939137829844
+     ],
+     "deposited": [
+      3.340420990838757,
+      3.4850418610861413,
+      3.7169939137829844
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "cutting_cross_c",
+     "err_per_seed": [
+      3.1310254625912934,
+      3.184867721966612,
+      3.162524789890893
+     ],
+     "deposited": [
+      3.1310254625912934,
+      3.184867721966612,
+      3.162524789890893
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "cutting_cross_d",
+     "err_per_seed": [
+      2.949225459886302,
+      2.9158890840967127,
+      2.942363261392767
+     ],
+     "deposited": [
+      2.949225459886302,
+      2.9158890840967127,
+      2.942363261392767
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "cutting_tail_g1",
+     "err_per_seed": [
+      3.0684796286317777,
+      3.0610022437825277,
+      3.112976607624335
+     ],
+     "deposited": [
+      3.0684796286317777,
+      3.0610022437825277,
+      3.112976607624335
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "cutting_head_g1",
+     "err_per_seed": [
+      3.3186236647733716,
+      3.2080388679130856,
+      3.240122463187324
+     ],
+     "deposited": [
+      3.3186236647733716,
+      3.2080388679130856,
+      3.240122463187324
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "cutting_trunk_g1",
+     "err_per_seed": [
+      3.084213549268101,
+      3.062798113540238,
+      3.152134099680541
+     ],
+     "deposited": [
+      3.084213549268101,
+      3.062798113540238,
+      3.152134099680541
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "ion_channel_tail_cns3",
+     "err_per_seed": [
+      4.515660276964777,
+      3.8103624877518634,
+      3.9323569894945254
+     ],
+     "deposited": [
+      4.515660276964777,
+      3.8103624877518634,
+      3.9323569894945254
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "ion_channel_head_cns3",
+     "err_per_seed": [
+      3.422782134549585,
+      4.082622970988022,
+      3.8766698655407392
+     ],
+     "deposited": [
+      3.422782134549585,
+      4.082622970988022,
+      3.8766698655407392
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "innexin_tail_recheck",
+     "err_per_seed": [
+      6.213958740658152,
+      6.997494043152483,
+      5.939808948824044
+     ],
+     "deposited": [
+      6.213958740658152,
+      6.997494043152483,
+      5.939808948824044
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "cutting_trunk_both",
+     "err_per_seed": [
+      3.306218206712809,
+      3.1109822240503946,
+      3.31444375604246
+     ],
+     "deposited": [
+      3.306218206712809,
+      3.1109822240503946,
+      3.31444375604246
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "wnt_trunk_both",
+     "err_per_seed": [
+      13.031452214072713,
+      13.058397945370496,
+      13.059059025697074
+     ],
+     "deposited": [
+      13.031452214072713,
+      13.058397945370496,
+      13.059059025697074
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "apc_trunk_both",
+     "err_per_seed": [
+      13.489619366341213,
+      13.419292226939897,
+      13.491716018138787
+     ],
+     "deposited": [
+      13.489619366341213,
+      13.419292226939897,
+      13.491716018138787
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "wnt_tail_g0",
+     "err_per_seed": [
+      12.788497184225204,
+      12.466089687227026,
+      12.468109814434289
+     ],
+     "deposited": [
+      12.788497184225204,
+      12.466089687227026,
+      12.468109814434289
+     ],
+     "bit_exact": true
+    },
+    {
+     "arm": "apc_head_g0",
+     "err_per_seed": [
+      12.609552364220665,
+      12.97412395248615,
+      12.9517415507922
+     ],
+     "deposited": [
+      12.609552364220665,
+      12.97412395248615,
+      12.9517415507922
+     ],
+     "bit_exact": true
+    }
+   ],
+   "n": 15,
+   "n_bit_exact": 15,
+   "pass": true
+  },
+  "b3": {
+   "section_summary": {
+    "cell": 3,
+    "n_instances": 25,
+    "n_build": 400,
+    "median_err": 0.62,
+    "median_of_instance_medians": 0.62,
+    "n_rejections": 0,
+    "verify_rate": 1.0,
+    "n_diffuse": 25,
+    "n_concentrated": 0,
+    "f_max_min": 6.0,
+    "f_max_max": 7.0
+   },
+   "matches": {
+    "median_err": true,
+    "median_of_instance_medians": true,
+    "n_rejections": true,
+    "verify_rate": true,
+    "n_diffuse": true,
+    "n_concentrated": true,
+    "f_max_min": true,
+    "f_max_max": true
+   },
+   "n_instance_bit_exact": 25,
+   "n_instances": 25,
+   "floor_restored": true,
+   "pass": true
+  },
+  "suite": {
+   "returncode": 0,
+   "n_pass_lines": 5,
+   "n_bad_lines": 0,
+   "bad_lines": [],
+   "pass": true
+  }
+ },
+ "criteria": {
+  "S1_schema": true,
+  "S2_bit_exact": true,
+  "S2_B1_exp79_grid_45": true,
+  "S2_B2_exp32_chain": true,
+  "S2_B3_exp198_n400_c3": true,
+  "S2_B4_suite_green": true,
+  "S3_migration_dormancy": true,
+  "S4_discipline": true
+ },
+ "branch": "SCHEMA-8-NATIVE",
+ "verdict": "SCHEMA-8-NATIVE",
+ "notes": [
+  "pre-registration 276e41e; docstring byte-unchanged; body written by the MAIN AGENT (the override priority)",
+  "B1 compares round(err,2) \u2014 the deposit's own precision; the full-precision errs are recorded in b1.rows",
+  "B2 compares err_per_seed at FULL float precision (exp32's deposited record)",
+  "B3 re-runs exp198's c3 cell (CornerMedium n=400, 25 instances x 3 seeds, the production scoped read) with exp198's own pin/restore discipline; per-instance errs compared exactly",
+  "the S3s4 dormancy probe scrambles ca2 AND ctx mid-run on exp79's settle path and asserts ch0/ch1 bit-identity",
+  "no experiment module modified; only collective.py state plumbing (sha256 recorded above)"
+ ],
+ "deposit_fingerprint": "df1fea2e8200e3da81197b4592b6014094437a275a5ff79357a80fffa7370d98"
+}

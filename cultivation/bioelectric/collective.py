@@ -35,6 +35,45 @@ import numpy as np
 V_PHYS_MIN = -85.0
 V_PHYS_MAX = 5.0
 
+# exp257 — THE NATIVE MULTI-CHANNEL WRITE-PATH SCHEMA (the architectural
+# override; ledger L234). The underlying state was a 2-tuple (V, theta);
+# exp232's S3b verdict (STACK-2CH) showed the stack cannot represent the
+# Sephirotic paper's 8 channels because there is nowhere to put them —
+# three of the paper's 8 channels (Ca2+ transients, 5-HT electrophoresis,
+# apoptosis) have no substrate at all. The state becomes a named
+# 8-channel array S of shape (n, 8). Channels, named per exp232's census:
+#
+#   ch0 "vmem"  Vmem bistability                — ACTIVE (the legacy self.V)
+#   ch1 "theta" homeostatic target / the epigenetic-proliferation
+#               memory face                     — ACTIVE (the legacy self.theta)
+#   ch2 "gj"    per-cell gap-junction state     — DORMANT (init 1.0;
+#               today a global scalar gap_scale; zero dynamics at defaults)
+#   ch3 "ctx"   interior-context channel        — DORMANT (init 0.0; no
+#               stack substrate before exp257)
+#   ch4 "ca2"   Ca2+ transient layer            — DORMANT (init 0.0;
+#               ABSENT before exp257 — now it has state)
+#   ch5 "sht"   serotonin/5-HT electrophoresis  — DORMANT (init 0.0;
+#               ABSENT before exp257 — now it has state)
+#   ch6 "apop"  apoptosis morphogenetic signal  — DORMANT (init 0.0;
+#               ABSENT before exp257 — now it has state)
+#   ch7 "ichan" per-cell ion-channel expression — DORMANT (init gamma;
+#               today a scalar dial; zero dynamics at defaults)
+#
+# DORMANCY CONTRACT: at defaults every dormant channel (ch2..ch7) has
+# ZERO dynamics, ZERO feedback into ch0/ch1, and is only CARRIED
+# (initialized, cloned, restored, read). step()'s arithmetic, the RNG
+# draw order, and every legacy code path are unchanged — the refactor is
+# ADDITIVE ONLY. self.V / self.theta are properties backed by S[:, 0] /
+# S[:, 1]; clone_state/restore_state keep their exact legacy signatures
+# (the 2-tuple is channels 0/1; restore writes 0/1 and leaves 2..7
+# untouched). Activation proceeds one channel at a time, each with its
+# own pre-registered test (exp258: ch3 ctx; exp259: ch2 gj).
+CHANNEL_NAMES: tuple[str, ...] = (
+    "vmem", "theta", "gj", "ctx", "ca2", "sht", "apop", "ichan")
+N_CHANNELS = 8
+ACTIVE_CHANNELS: tuple[str, ...] = ("vmem", "theta")
+DORMANT_CHANNELS: tuple[str, ...] = ("gj", "ctx", "ca2", "sht", "apop", "ichan")
+
 # M33 neural/muscle polarity channel: the fate-axis midpoint between the
 # WT head identity (-20 mV) and the WT trunk/tail identity (-50 mV). Only
 # ANTERIOR identities (spec >= this line) qualify for the non-junctional
@@ -98,6 +137,15 @@ class BioElectricCollective:
         self.gap_scale = 1.0  # global gap-junction health multiplier
         self.deg = (self.A * g_gap).sum(axis=1)
 
+        # exp257: the native 8-channel state S — channels 0/1 are the
+        # legacy (V, theta) 2-tuple; 2..7 the dormant carriers (see the
+        # module constants above). Created BEFORE the legacy init lines,
+        # which then write into S through the property setters — the RNG
+        # draw order is byte-identical to the legacy constructor.
+        self.S = np.zeros((n, N_CHANNELS))
+        self.S[:, CHANNEL_NAMES.index("gj")] = 1.0
+        self.S[:, CHANNEL_NAMES.index("ichan")] = float(gamma)
+
         self.theta = np.full(n, -50.0)
         self.V = self.theta + self.rng.normal(0.0, 2.0, n)
 
@@ -113,6 +161,25 @@ class BioElectricCollective:
         self.theta_drivers: list[tuple[np.ndarray, float, float, float]] = []
 
     # ------------------------------------------------------------------ state
+    # exp257: self.V / self.theta are bit-exact compatibility shims backed
+    # by S[:, 0] / S[:, 1]. Item assignment on the returned views writes
+    # through to S; whole-array assignment routes through the setters.
+    @property
+    def V(self) -> np.ndarray:
+        return self.S[:, 0]
+
+    @V.setter
+    def V(self, value) -> None:
+        self.S[:, 0] = value
+
+    @property
+    def theta(self) -> np.ndarray:
+        return self.S[:, 1]
+
+    @theta.setter
+    def theta(self, value) -> None:
+        self.S[:, 1] = value
+
     def set_target(self, theta: np.ndarray) -> None:
         self.theta = np.asarray(theta, dtype=float).copy()
         # M28: the identity-at-coordinate SPEC is captured when the animal's
@@ -152,10 +219,46 @@ class BioElectricCollective:
         self.V = np.asarray(V, dtype=float).copy()
 
     def clone_state(self) -> tuple[np.ndarray, np.ndarray]:
-        return self.V.copy(), self.theta.copy()
+        # exp257 shim: the legacy 2-tuple IS channels 0/1 — identical
+        # values to the legacy implementation, bit for bit.
+        return self.S[:, 0].copy(), self.S[:, 1].copy()
 
     def restore_state(self, state: tuple[np.ndarray, np.ndarray]) -> None:
-        self.V, self.theta = state[0].copy(), state[1].copy()
+        # exp257 shim: writes channels 0/1 ONLY — the dormant carriers
+        # (2..7) are untouched, the pre-registered migration contract.
+        self.S[:, 0] = state[0]
+        self.S[:, 1] = state[1]
+
+    # exp257: the full-state accessors (the 8-channel form)
+    def set_channel(self, name: str, values) -> None:
+        """Write a named channel (exp257). Dormant channels accept writes
+        (that is how an activation experiment primes state); at defaults
+        nothing reads them back into the ch0/ch1 dynamics (the dormancy
+        contract)."""
+        if name not in CHANNEL_NAMES:
+            raise ValueError(f"unknown channel {name!r}; "
+                             f"known: {CHANNEL_NAMES}")
+        self.S[:, CHANNEL_NAMES.index(name)] = np.asarray(values, dtype=float)
+
+    def read_channel(self, name: str) -> np.ndarray:
+        """Read a named channel as a copy (exp257)."""
+        if name not in CHANNEL_NAMES:
+            raise ValueError(f"unknown channel {name!r}; "
+                             f"known: {CHANNEL_NAMES}")
+        return self.S[:, CHANNEL_NAMES.index(name)].copy()
+
+    def clone_state_full(self) -> np.ndarray:
+        """The full 8-channel state, deep-copied (exp257)."""
+        return self.S.copy()
+
+    def restore_state_full(self, S: np.ndarray) -> None:
+        """Restore the full 8-channel state (exp257). Replaces the state
+        buffer; the V/theta shims follow the new buffer."""
+        arr = np.asarray(S, dtype=float)
+        if arr.shape != (self.n, N_CHANNELS):
+            raise ValueError(f"expected S shape ({self.n}, {N_CHANNELS}), "
+                             f"got {arr.shape}")
+        self.S = arr.copy()
 
     # ------------------------------------------------------------ interventions
     def clamp(self, region: slice | np.ndarray, voltage: float) -> None:
