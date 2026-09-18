@@ -1,0 +1,2235 @@
+{
+ "exp": "exp244_zero_substrate_7th (the zero-substrate 7th formalization; the Section 6 item; ledger L220)",
+ "pre_registration": "the module docstring, commit 1b98432 (gates fixed before any body); this body lands below the RUN marker only",
+ "machinery": {
+  "statics_and_predicate": "exp68_coherence_search: make_battery, metrics, sim_supports, bfs_order, ERR_BAR, B2V_LIMIT (imported verbatim)",
+  "sixth_formalization": "exp162_zero_substrate: the TEMPORAL-SCHEDULE writer census (L137) \u2014 constants and protocol imported verbatim",
+  "labeling": "exp43_substrate_independence.labeling / HEAD_N",
+  "star_panel": "exp79_two_channel_law.RUN_T at exp232's battery point (gamma=64, mu=0; exp234's star constants)"
+ },
+ "orbit": {
+  "definition": "the state modulo the uniform offset \u2014 exp234's exact conserved gauge mode",
+  "representatives_grid": [
+   0.0,
+   5.0,
+   10.0,
+   20.0
+  ],
+  "grid_provenance": "exp234's deposited OFFSETS (the record's pre-named offset grid; zero new knobs)",
+  "base_representative": 0.0,
+  "wrapper": "the gauge translation: every voltage constant (target, ground, clamp) translates by c; mu, the durations, the schedule structure, the seeds and noise_std are gauge-free"
+ },
+ "six_formalizations": {
+  "reading": "the record's count (L137): the FIVE static formalizations of exp68's CF-G3 separator battery (b2v, label energy, mean force, lambda2, conductance) + the TEMPORAL-SCHEDULE class (exp162's 6th); sim_supports is the coherence predicate those formalizations formalize \u2014 it is the predicate S2/S3 quantify over the orbit",
+  "static_predicates": "the metric values on the representative's zone map (bit-equal asserted per rep) + the b2v refusal (b2v > B2V_LIMIT) + the deposited pass-range membership",
+  "temporal_predicate": "the writer census: 7 deposited onsets + 5 fixed-seed shuffles x seeds 1-3 x 3 memoryless rounds; writes = mean read-end err < ERR_BAR; the verdict = no timing cell writes"
+ },
+ "S1_reproduction": {
+  "gates": {
+   "statics_bit_equal": true,
+   "static_outcomes_bit_equal": true,
+   "sim_predicate_verbatim_bit_equal": true,
+   "temporal_census_bit_equal": true
+  },
+  "pass": true,
+  "max_verbatim_dev_mV": 0.0,
+  "per_cell": {
+   "path|fixed": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 1.771055,
+      "p_cov": true,
+      "sim_supports_err": 1.771055,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 1.771055,
+      "p_cov": true,
+      "sim_supports_err": 1.771055,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 1.771055,
+      "p_cov": true,
+      "sim_supports_err": 1.771055,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 1.771055,
+      "p_cov": true,
+      "sim_supports_err": 1.771055,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "path|bfs": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 1.771055,
+      "p_cov": true,
+      "sim_supports_err": 1.771055,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 1.771055,
+      "p_cov": true,
+      "sim_supports_err": 1.771055,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 1.771055,
+      "p_cov": true,
+      "sim_supports_err": 1.771055,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 1.771055,
+      "p_cov": true,
+      "sim_supports_err": 1.771055,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "ring|fixed": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 2.473218,
+      "p_cov": true,
+      "sim_supports_err": 2.473218,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 2.473218,
+      "p_cov": true,
+      "sim_supports_err": 2.473218,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 2.473218,
+      "p_cov": true,
+      "sim_supports_err": 2.473218,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 2.473218,
+      "p_cov": true,
+      "sim_supports_err": 2.473218,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "ring|bfs": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 2.392855,
+      "p_cov": true,
+      "sim_supports_err": 2.392855,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 2.392855,
+      "p_cov": true,
+      "sim_supports_err": 2.392855,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 2.392855,
+      "p_cov": true,
+      "sim_supports_err": 2.392855,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 2.392855,
+      "p_cov": true,
+      "sim_supports_err": 2.392855,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "circulant4|fixed": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 3.134506,
+      "p_cov": true,
+      "sim_supports_err": 3.134506,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 3.134506,
+      "p_cov": true,
+      "sim_supports_err": 3.134506,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 3.134506,
+      "p_cov": true,
+      "sim_supports_err": 3.134506,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 3.134506,
+      "p_cov": true,
+      "sim_supports_err": 3.134506,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "circulant4|bfs": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 3.792471,
+      "p_cov": true,
+      "sim_supports_err": 3.792471,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 3.792471,
+      "p_cov": true,
+      "sim_supports_err": 3.792471,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 3.792471,
+      "p_cov": true,
+      "sim_supports_err": 3.792471,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 3.792471,
+      "p_cov": true,
+      "sim_supports_err": 3.792471,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "grid2d|fixed": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 5.68802,
+      "p_cov": true,
+      "sim_supports_err": 5.68802,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 5.68802,
+      "p_cov": true,
+      "sim_supports_err": 5.68802,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 5.68802,
+      "p_cov": true,
+      "sim_supports_err": 5.68802,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 5.68802,
+      "p_cov": true,
+      "sim_supports_err": 5.68802,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "grid2d|bfs": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": false
+       }
+      },
+      "err_cov": 5.575821,
+      "p_cov": true,
+      "sim_supports_err": 5.575821,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": false
+       }
+      },
+      "err_cov": 5.575821,
+      "p_cov": true,
+      "sim_supports_err": 5.575821,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": false
+       }
+      },
+      "err_cov": 5.575821,
+      "p_cov": true,
+      "sim_supports_err": 5.575821,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": false
+       }
+      },
+      "err_cov": 5.575821,
+      "p_cov": true,
+      "sim_supports_err": 5.575821,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "torus|fixed": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 8.470713,
+      "p_cov": false,
+      "sim_supports_err": 8.470713,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 8.470713,
+      "p_cov": false,
+      "sim_supports_err": 8.470713,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 8.470713,
+      "p_cov": false,
+      "sim_supports_err": 8.470713,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 8.470713,
+      "p_cov": false,
+      "sim_supports_err": 8.470713,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "torus|bfs": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 8.204203,
+      "p_cov": false,
+      "sim_supports_err": 8.204203,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 8.204203,
+      "p_cov": false,
+      "sim_supports_err": 8.204203,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 8.204203,
+      "p_cov": false,
+      "sim_supports_err": 8.204203,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 8.204203,
+      "p_cov": false,
+      "sim_supports_err": 8.204203,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "random3|fixed": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 11.186681,
+      "p_cov": false,
+      "sim_supports_err": 11.186681,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 11.186681,
+      "p_cov": false,
+      "sim_supports_err": 11.186681,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 11.186681,
+      "p_cov": false,
+      "sim_supports_err": 11.186681,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 11.186681,
+      "p_cov": false,
+      "sim_supports_err": 11.186681,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "random3|bfs": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 7.721402,
+      "p_cov": false,
+      "sim_supports_err": 7.721402,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 7.721402,
+      "p_cov": false,
+      "sim_supports_err": 7.721402,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 7.721402,
+      "p_cov": false,
+      "sim_supports_err": 7.721402,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 7.721402,
+      "p_cov": false,
+      "sim_supports_err": 7.721402,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "random6|fixed": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 3.815836,
+      "p_cov": true,
+      "sim_supports_err": 3.815836,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 3.815836,
+      "p_cov": true,
+      "sim_supports_err": 3.815836,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 3.815836,
+      "p_cov": true,
+      "sim_supports_err": 3.815836,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 3.815836,
+      "p_cov": true,
+      "sim_supports_err": 3.815836,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "random6|bfs": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 5.000182,
+      "p_cov": true,
+      "sim_supports_err": 5.000182,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 5.000182,
+      "p_cov": true,
+      "sim_supports_err": 5.000182,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 5.000182,
+      "p_cov": true,
+      "sim_supports_err": 5.000182,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 5.000182,
+      "p_cov": true,
+      "sim_supports_err": 5.000182,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "scale_free|fixed": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 11.918423,
+      "p_cov": false,
+      "sim_supports_err": 11.918423,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 11.918423,
+      "p_cov": false,
+      "sim_supports_err": 11.918423,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 11.918423,
+      "p_cov": false,
+      "sim_supports_err": 11.918423,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 11.918423,
+      "p_cov": false,
+      "sim_supports_err": 11.918423,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "scale_free|bfs": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 11.440745,
+      "p_cov": false,
+      "sim_supports_err": 11.440745,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 11.440745,
+      "p_cov": false,
+      "sim_supports_err": 11.440745,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 11.440745,
+      "p_cov": false,
+      "sim_supports_err": 11.440745,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": true,
+       "in_pass_range": {
+        "b2v": false,
+        "label_energy": false,
+        "mean_force": false,
+        "lambda2": false,
+        "conductance": false
+       }
+      },
+      "err_cov": 11.440745,
+      "p_cov": false,
+      "sim_supports_err": 11.440745,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "small_world|fixed": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 4.565488,
+      "p_cov": true,
+      "sim_supports_err": 4.565488,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 4.565488,
+      "p_cov": true,
+      "sim_supports_err": 4.565488,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 4.565488,
+      "p_cov": true,
+      "sim_supports_err": 4.565488,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 4.565488,
+      "p_cov": true,
+      "sim_supports_err": 4.565488,
+      "verbatim_bit_equal": true
+     }
+    }
+   },
+   "small_world|bfs": {
+    "reps": {
+     "0.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 2.965352,
+      "p_cov": true,
+      "sim_supports_err": 2.965352,
+      "verbatim_bit_equal": true
+     },
+     "5.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 2.965352,
+      "p_cov": true,
+      "sim_supports_err": 2.965352,
+      "verbatim_bit_equal": true
+     },
+     "10.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 2.965352,
+      "p_cov": true,
+      "sim_supports_err": 2.965352,
+      "verbatim_bit_equal": true
+     },
+     "20.0": {
+      "statics_bit_equal": true,
+      "zone_map_bit_equal": true,
+      "head_set_bit_equal": true,
+      "outcomes": {
+       "b2v_refused": false,
+       "in_pass_range": {
+        "b2v": true,
+        "label_energy": true,
+        "mean_force": true,
+        "lambda2": true,
+        "conductance": true
+       }
+      },
+      "err_cov": 2.965352,
+      "p_cov": true,
+      "sim_supports_err": 2.965352,
+      "verbatim_bit_equal": true
+     }
+    }
+   }
+  }
+ },
+ "S2_quotient_exists": {
+  "quantification": "orbit-coherent(cell) = EXISTS c in the grid: the exp68 predicate holds at representative c (the settle read against the orbit's base pattern \u2014 the constraint's object)",
+  "pass": true,
+  "constraint_holds": true,
+  "gauge_rescued_cells": 0,
+  "witness_representatives": {
+   "path|fixed": [
+    "0.0",
+    "5.0"
+   ],
+   "path|bfs": [
+    "0.0",
+    "5.0"
+   ],
+   "ring|fixed": [
+    "0.0",
+    "5.0"
+   ],
+   "ring|bfs": [
+    "0.0",
+    "5.0"
+   ],
+   "circulant4|fixed": [
+    "0.0",
+    "5.0"
+   ],
+   "circulant4|bfs": [
+    "0.0"
+   ],
+   "grid2d|fixed": [
+    "0.0"
+   ],
+   "grid2d|bfs": [
+    "0.0"
+   ],
+   "torus|fixed": [],
+   "torus|bfs": [],
+   "random3|fixed": [],
+   "random3|bfs": [],
+   "random6|fixed": [
+    "0.0"
+   ],
+   "random6|bfs": [
+    "0.0"
+   ],
+   "scale_free|fixed": [],
+   "scale_free|bfs": [],
+   "small_world|fixed": [
+    "0.0"
+   ],
+   "small_world|bfs": [
+    "0.0",
+    "5.0"
+   ]
+  },
+  "per_cell": {
+   "path|fixed": {
+    "err_abs": {
+     "0.0": 1.771055,
+     "5.0": 5.32635,
+     "10.0": 10.178651,
+     "20.0": 20.101608
+    },
+    "p_abs": {
+     "0.0": true,
+     "5.0": true,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": true,
+    "deposit_sim_pass": true
+   },
+   "path|bfs": {
+    "err_abs": {
+     "0.0": 1.771055,
+     "5.0": 5.32635,
+     "10.0": 10.178651,
+     "20.0": 20.101608
+    },
+    "p_abs": {
+     "0.0": true,
+     "5.0": true,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": true,
+    "deposit_sim_pass": true
+   },
+   "ring|fixed": {
+    "err_abs": {
+     "0.0": 2.473218,
+     "5.0": 5.599113,
+     "10.0": 10.324001,
+     "20.0": 20.175598
+    },
+    "p_abs": {
+     "0.0": true,
+     "5.0": true,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": true,
+    "deposit_sim_pass": true
+   },
+   "ring|bfs": {
+    "err_abs": {
+     "0.0": 2.392855,
+     "5.0": 5.564144,
+     "10.0": 10.305055,
+     "20.0": 20.165902
+    },
+    "p_abs": {
+     "0.0": true,
+     "5.0": true,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": true,
+    "deposit_sim_pass": true
+   },
+   "circulant4|fixed": {
+    "err_abs": {
+     "0.0": 3.134506,
+     "5.0": 5.921053,
+     "10.0": 10.502094,
+     "20.0": 20.26731
+    },
+    "p_abs": {
+     "0.0": true,
+     "5.0": true,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": true,
+    "deposit_sim_pass": true
+   },
+   "circulant4|bfs": {
+    "err_abs": {
+     "0.0": 3.792471,
+     "5.0": 6.294181,
+     "10.0": 10.716865,
+     "20.0": 20.379419
+    },
+    "p_abs": {
+     "0.0": true,
+     "5.0": false,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": true,
+    "deposit_sim_pass": true
+   },
+   "grid2d|fixed": {
+    "err_abs": {
+     "0.0": 5.68802,
+     "5.0": 7.588644,
+     "10.0": 11.52484,
+     "20.0": 20.815654
+    },
+    "p_abs": {
+     "0.0": true,
+     "5.0": false,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": true,
+    "deposit_sim_pass": true
+   },
+   "grid2d|bfs": {
+    "err_abs": {
+     "0.0": 5.575821,
+     "5.0": 7.504909,
+     "10.0": 11.469881,
+     "20.0": 20.785277
+    },
+    "p_abs": {
+     "0.0": true,
+     "5.0": false,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": true,
+    "deposit_sim_pass": true
+   },
+   "torus|fixed": {
+    "err_abs": {
+     "0.0": 8.470713,
+     "5.0": 9.848201,
+     "10.0": 13.123314,
+     "20.0": 21.741452
+    },
+    "p_abs": {
+     "0.0": false,
+     "5.0": false,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": false,
+    "deposit_sim_pass": false
+   },
+   "torus|bfs": {
+    "err_abs": {
+     "0.0": 8.204203,
+     "5.0": 9.619983,
+     "10.0": 12.952936,
+     "20.0": 21.639032
+    },
+    "p_abs": {
+     "0.0": false,
+     "5.0": false,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": false,
+    "deposit_sim_pass": false
+   },
+   "random3|fixed": {
+    "err_abs": {
+     "0.0": 11.186681,
+     "5.0": 12.262807,
+     "10.0": 15.020346,
+     "20.0": 22.936432
+    },
+    "p_abs": {
+     "0.0": false,
+     "5.0": false,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": false,
+    "deposit_sim_pass": false
+   },
+   "random3|bfs": {
+    "err_abs": {
+     "0.0": 7.721402,
+     "5.0": 9.211702,
+     "10.0": 12.652669,
+     "20.0": 21.460642
+    },
+    "p_abs": {
+     "0.0": false,
+     "5.0": false,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": false,
+    "deposit_sim_pass": false
+   },
+   "random6|fixed": {
+    "err_abs": {
+     "0.0": 3.815836,
+     "5.0": 6.308287,
+     "10.0": 10.725185,
+     "20.0": 20.383805
+    },
+    "p_abs": {
+     "0.0": true,
+     "5.0": false,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": true,
+    "deposit_sim_pass": true
+   },
+   "random6|bfs": {
+    "err_abs": {
+     "0.0": 5.000182,
+     "5.0": 7.087742,
+     "10.0": 11.201361,
+     "20.0": 20.638311
+    },
+    "p_abs": {
+     "0.0": true,
+     "5.0": false,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": true,
+    "deposit_sim_pass": true
+   },
+   "scale_free|fixed": {
+    "err_abs": {
+     "0.0": 11.918423,
+     "5.0": 12.933805,
+     "10.0": 15.572979,
+     "20.0": 23.302076
+    },
+    "p_abs": {
+     "0.0": false,
+     "5.0": false,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": false,
+    "deposit_sim_pass": false
+   },
+   "scale_free|bfs": {
+    "err_abs": {
+     "0.0": 11.440745,
+     "5.0": 12.494985,
+     "10.0": 15.210489,
+     "20.0": 23.061406
+    },
+    "p_abs": {
+     "0.0": false,
+     "5.0": false,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": false,
+    "deposit_sim_pass": false
+   },
+   "small_world|fixed": {
+    "err_abs": {
+     "0.0": 4.565488,
+     "5.0": 6.788018,
+     "10.0": 11.014158,
+     "20.0": 20.537314
+    },
+    "p_abs": {
+     "0.0": true,
+     "5.0": false,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": true,
+    "deposit_sim_pass": true
+   },
+   "small_world|bfs": {
+    "err_abs": {
+     "0.0": 2.965352,
+     "5.0": 5.833255,
+     "10.0": 10.452818,
+     "20.0": 20.241812
+    },
+    "p_abs": {
+     "0.0": true,
+     "5.0": true,
+     "10.0": false,
+     "20.0": false
+    },
+    "exists": true,
+    "deposit_sim_pass": true
+   }
+  }
+ },
+ "S3_break_probe": {
+  "quantification": "the converse: FOR ALL c in the grid the predicate holds \u2014 the orbit's coherence is gauge-invariant only if every representative satisfies it",
+  "pass": true,
+  "pre_named_expectation": "the converse FAILS (the predicate is not gauge-invariant \u2014 the absolute-RMS terms see the gauge)",
+  "expectation_fired": true,
+  "converse_fails_on": [
+   "path|fixed",
+   "path|bfs",
+   "ring|fixed",
+   "ring|bfs",
+   "circulant4|fixed",
+   "circulant4|bfs",
+   "grid2d|fixed",
+   "grid2d|bfs",
+   "random6|fixed",
+   "random6|bfs",
+   "small_world|fixed",
+   "small_world|bfs"
+  ],
+  "n_distinct_orbits": 12,
+  "max_gauge_term_mV": 18.330554,
+  "per_cell": {
+   "path|fixed": {
+    "forall": false,
+    "exists": true
+   },
+   "path|bfs": {
+    "forall": false,
+    "exists": true
+   },
+   "ring|fixed": {
+    "forall": false,
+    "exists": true
+   },
+   "ring|bfs": {
+    "forall": false,
+    "exists": true
+   },
+   "circulant4|fixed": {
+    "forall": false,
+    "exists": true
+   },
+   "circulant4|bfs": {
+    "forall": false,
+    "exists": true
+   },
+   "grid2d|fixed": {
+    "forall": false,
+    "exists": true
+   },
+   "grid2d|bfs": {
+    "forall": false,
+    "exists": true
+   },
+   "torus|fixed": {
+    "forall": false,
+    "exists": false
+   },
+   "torus|bfs": {
+    "forall": false,
+    "exists": false
+   },
+   "random3|fixed": {
+    "forall": false,
+    "exists": false
+   },
+   "random3|bfs": {
+    "forall": false,
+    "exists": false
+   },
+   "random6|fixed": {
+    "forall": false,
+    "exists": true
+   },
+   "random6|bfs": {
+    "forall": false,
+    "exists": true
+   },
+   "scale_free|fixed": {
+    "forall": false,
+    "exists": false
+   },
+   "scale_free|bfs": {
+    "forall": false,
+    "exists": false
+   },
+   "small_world|fixed": {
+    "forall": false,
+    "exists": true
+   },
+   "small_world|bfs": {
+    "forall": false,
+    "exists": true
+   }
+  },
+  "mechanism_panel_non_gating": {
+   "protocol": "exp232's th_offset move at the star (gamma=64, mu=0, RUN_T windows): settle, offset theta by c, run RUN_T, read the err against the ABSOLUTE base pattern",
+   "rows": [
+    {
+     "delta": 0.0,
+     "err_before": 0.1381,
+     "err_after_offset_vs_base": 0.1987
+    },
+    {
+     "delta": 5.0,
+     "err_before": 0.1381,
+     "err_after_offset_vs_base": 4.9948
+    },
+    {
+     "delta": 10.0,
+     "err_before": 0.1381,
+     "err_after_offset_vs_base": 9.9897
+    },
+    {
+     "delta": 20.0,
+     "err_before": 0.1381,
+     "err_after_offset_vs_base": 19.9824
+    }
+   ],
+   "exp232_deposited_battery_value": 19.98,
+   "exp234_T1_cross_check": 19.982,
+   "delta20_this_run": 19.9824
+  }
+ },
+ "S4_discipline": {
+  "pass": true,
+  "reset_violations": 0,
+  "deposits_byte_unchanged": true,
+  "sha256_exp68_before": "b3fcf23cf33dee8ad1ce555884e3c91fab691aee8b6739999100329c16f5118c",
+  "sha256_exp68_after": "b3fcf23cf33dee8ad1ce555884e3c91fab691aee8b6739999100329c16f5118c",
+  "sha256_exp162_before": "008daeeeb4736c299bf29dd2b3e8791caa4a2f79292f81a1bc324555cf4a6d28",
+  "sha256_exp162_after": "008daeeeb4736c299bf29dd2b3e8791caa4a2f79292f81a1bc324555cf4a6d28",
+  "rerun_deterministic": true,
+  "all_finite": true
+ },
+ "temporal_census_per_rep": {
+  "0.0": {
+   "writers": [],
+   "no_writer_verdict": true,
+   "cells": {
+    "onset_0": {
+     "mean_err": 9.44919,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.4492
+    },
+    "onset_6": {
+     "mean_err": 9.484635,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.4846
+    },
+    "onset_12": {
+     "mean_err": 9.569175,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.5692
+    },
+    "onset_18": {
+     "mean_err": 9.68115,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.6812
+    },
+    "onset_24": {
+     "mean_err": 9.806157,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.8062
+    },
+    "onset_36": {
+     "mean_err": 10.07854,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.0785
+    },
+    "onset_48": {
+     "mean_err": 10.350587,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.3506
+    },
+    "shuffle_seed_1": {
+     "mean_err": 9.819384,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.8194
+    },
+    "shuffle_seed_2": {
+     "mean_err": 9.57939,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.5794
+    },
+    "shuffle_seed_3": {
+     "mean_err": 9.465823,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.4658
+    },
+    "shuffle_seed_4": {
+     "mean_err": 10.290211,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.2902
+    },
+    "shuffle_seed_5": {
+     "mean_err": 10.138165,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.1382
+    }
+   }
+  },
+  "5.0": {
+   "writers": [],
+   "no_writer_verdict": true,
+   "cells": {
+    "onset_0": {
+     "mean_err": 9.44919,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.4492
+    },
+    "onset_6": {
+     "mean_err": 9.484635,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.4846
+    },
+    "onset_12": {
+     "mean_err": 9.569175,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.5692
+    },
+    "onset_18": {
+     "mean_err": 9.68115,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.6812
+    },
+    "onset_24": {
+     "mean_err": 9.806157,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.8062
+    },
+    "onset_36": {
+     "mean_err": 10.07854,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.0785
+    },
+    "onset_48": {
+     "mean_err": 10.350587,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.3506
+    },
+    "shuffle_seed_1": {
+     "mean_err": 9.819384,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.8194
+    },
+    "shuffle_seed_2": {
+     "mean_err": 9.57939,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.5794
+    },
+    "shuffle_seed_3": {
+     "mean_err": 9.465823,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.4658
+    },
+    "shuffle_seed_4": {
+     "mean_err": 10.290211,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.2902
+    },
+    "shuffle_seed_5": {
+     "mean_err": 10.138165,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.1382
+    }
+   }
+  },
+  "10.0": {
+   "writers": [],
+   "no_writer_verdict": true,
+   "cells": {
+    "onset_0": {
+     "mean_err": 9.44919,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.4492
+    },
+    "onset_6": {
+     "mean_err": 9.484635,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.4846
+    },
+    "onset_12": {
+     "mean_err": 9.569175,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.5692
+    },
+    "onset_18": {
+     "mean_err": 9.68115,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.6812
+    },
+    "onset_24": {
+     "mean_err": 9.806157,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.8062
+    },
+    "onset_36": {
+     "mean_err": 10.07854,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.0785
+    },
+    "onset_48": {
+     "mean_err": 10.350587,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.3506
+    },
+    "shuffle_seed_1": {
+     "mean_err": 9.819384,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.8194
+    },
+    "shuffle_seed_2": {
+     "mean_err": 9.57939,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.5794
+    },
+    "shuffle_seed_3": {
+     "mean_err": 9.465823,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.4658
+    },
+    "shuffle_seed_4": {
+     "mean_err": 10.290211,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.2902
+    },
+    "shuffle_seed_5": {
+     "mean_err": 10.138165,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.1382
+    }
+   }
+  },
+  "20.0": {
+   "writers": [],
+   "no_writer_verdict": true,
+   "cells": {
+    "onset_0": {
+     "mean_err": 9.44919,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.4492
+    },
+    "onset_6": {
+     "mean_err": 9.484635,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.4846
+    },
+    "onset_12": {
+     "mean_err": 9.569175,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.5692
+    },
+    "onset_18": {
+     "mean_err": 9.68115,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.6812
+    },
+    "onset_24": {
+     "mean_err": 9.806157,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.8062
+    },
+    "onset_36": {
+     "mean_err": 10.07854,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.0785
+    },
+    "onset_48": {
+     "mean_err": 10.350587,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.3506
+    },
+    "shuffle_seed_1": {
+     "mean_err": 9.819384,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.8194
+    },
+    "shuffle_seed_2": {
+     "mean_err": 9.57939,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.5794
+    },
+    "shuffle_seed_3": {
+     "mean_err": 9.465823,
+     "writes": false,
+     "deposit_mean_err_4dp": 9.4658
+    },
+    "shuffle_seed_4": {
+     "mean_err": 10.290211,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.2902
+    },
+    "shuffle_seed_5": {
+     "mean_err": 10.138165,
+     "writes": false,
+     "deposit_mean_err_4dp": 10.1382
+    }
+   }
+  }
+ },
+ "branch": "QUOTIENT-REFINES",
+ "criteria": {
+  "S1_reproduction": true,
+  "S2_quotient_exists": true,
+  "S3_break_probe_converse": true,
+  "S4_discipline": true
+ },
+ "notes": "Body-landing disclosures: (a) the six formalizations are the record's count (L137): exp68's five statics + exp162's TEMPORAL-SCHEDULE class; the sim settle (sim_supports) is the coherence predicate itself and is what S2/S3 quantify \u2014 imported verbatim, never re-implemented; (b) THE TWO READOUTS of the same settle runs: err_cov (vs the representative's own content \u2014 the instrument's gauge-covariant readout, the one S1's bit-equality lives on: it transports EXACTLY, max dev 0.0e+00 mV \u2014 the record's verdicts are gauge-stable at every representative) and err_abs (vs the orbit's base pattern \u2014 the constraint's object, the absolute-RMS readout whose gauge term is the docstring's S3 mechanism: max term +18.331 mV); exp232's THETA-STATE breakout is the post-write instance of the same term, reproduced in the non-gating star panel at 19.982 mV (deposited 19.98); (c) the pre-named grid is exp234's deposited OFFSETS (0/5/10/20) \u2014 the canonical mean-zero quotient representative is NOT instantiable in the stack (the physiological clips are absolute anchors, exp234's named breakers), which is why the orbit is sampled at the deposited offsets near the record's gauge; (d) the temporal census's voltage constants (target, ground, clamp) translate with the gauge and the census verdict (no timing cell writes) reproduces bit-equal at every representative \u2014 the 6th formalization is gauge-stable as a write protocol; (e) the EXISTS witnesses are deposited per orbit (witness sets: {'path|fixed': ['0.0', '5.0'], 'path|bfs': ['0.0', '5.0'], 'ring|fixed': ['0.0', '5.0'], 'ring|bfs': ['0.0', '5.0'], 'circulant4|fixed': ['0.0', '5.0'], 'circulant4|bfs': ['0.0'], 'grid2d|fixed': ['0.0'], 'grid2d|bfs': ['0.0'], 'random6|fixed': ['0.0'], 'random6|bfs': ['0.0'], 'small_world|fixed': ['0.0'], 'small_world|bfs': ['0.0', '5.0']}; EMPTY on every refused orbit \u2014 the refusal is gauge-stable, no representative of a refused orbit is supported); (f) the FORALL converse FAILS on 12 orbit(s) (['path|fixed', 'path|bfs', 'ring|fixed', 'ring|bfs', 'circulant4|fixed', 'circulant4|bfs', 'grid2d|fixed', 'grid2d|bfs', 'random6|fixed', 'random6|bfs', 'small_world|fixed', 'small_world|bfs']) \u2014 the EXISTS/ FORALL distinction the docstring pre-named: the orbit's coherence is NOT gauge-invariant, the 7th formalization is the strictly weaker-but-correct form; (g) determinism: the full probe ran twice, all raw floats bit-equal; exp68's and exp162's deposits byte-unchanged (sha256 deposited).",
+ "wall_seconds": 23.8
+}
