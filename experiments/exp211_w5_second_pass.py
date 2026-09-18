@@ -108,7 +108,7 @@ def main() -> dict:
             w5_rows[key] = r
 
     def merge() -> tuple:
-        entries, rejects, verdicts, fp_new = [], [], [], []
+        entries, rejects, verdicts = [], [], []
         for i, e in enumerate(series[:n_take]):
             base = w5_rows.get(e["id"])
             assert base is not None, \
@@ -117,16 +117,13 @@ def main() -> dict:
             prior_fields = {f for f in E206.FILL_FIELDS
                             if row.get(f) is not None}
             src_rec = src2["by_id"].get(e["id"])
-            newly = []
+            fills_prov = {}
             if src_rec is not None:
                 fills = E206.w5_fills(row, e, src_rec)
                 for field, value in fills.items():
                     row[field] = value
-                    prov = E206._fill_provenance(field, value, src_rec)
-                    fp_new.append({"source_key": e["id"],
-                                   "field": field,
-                                   "pass": 2, "provenance": prov})
-                    newly.append(field)
+                    fills_prov[field] = E206._fill_provenance(
+                        field, value, src_rec)
                 row["provenance"] = {
                     "source_deposit":
                         "results/w5_pass_sources2.json",
@@ -147,7 +144,7 @@ def main() -> dict:
             verdicts.append({
                 "index": i, "id": e["id"], "accepted": accepted,
                 "census_missing": cm,
-                "literature_filled_pass2": newly,
+                "literature_filled": fills_prov,
                 "prior_filled_fields": sorted(prior_fields),
                 "reasons": reasons,
                 "swept_pass2": src_rec is not None
@@ -157,7 +154,8 @@ def main() -> dict:
                   "accepted": len(entries),
                   "rejected": len(rejects)}
         bank2 = {
-            "bank": "wetlab_companion_bank_w5b",
+            "bank": "wetlab_companion",       # the validator's name rule
+            "bank_file": "results/wetlab_companion_bank_w5b.json",
             "pass": 2,
             "baseline": {"bank": "results/wetlab_companion_bank_w5.json",
                          "sha256": w5_sha0,
@@ -188,8 +186,7 @@ def main() -> dict:
             "import_rules": {k: v for k, v in E206.FILL_RULES.items()
                              if k not in ("ordering",
                                           "fill_never_overwrite")},
-            "field_provenance": (list(w5.get("field_provenance", []))
-                                 + fp_new),
+            "field_provenance": list(w5.get("field_provenance", [])),
             "entries": entries,
             "rejects": rejects,
             "counts": counts,
@@ -213,72 +210,115 @@ def main() -> dict:
               for f in E206.FILL_FIELDS}
 
     gates = {}
+    gate_errs = {}
     if not args.smoke:
-        # ---- GATE-E1 (the sweep): 119/119 covered; the 12 re-swept --
-        ids2 = [r.get("id") for r in src2["records"]] \
-            if isinstance(src2.get("records"), list) else \
-            sorted(src2.get("by_id", {}).keys())
-        want = [e["id"] for e in series]
-        n_reswept = sum(1 for v in verdicts if v["swept_pass2"])
-        e1 = {
-            "verdict": "PASS"
-            if (sorted(ids2) == sorted(want) and n_reswept >= len(failed1))
-            else "REFUTE",
-            "n_records_sources2": len(ids2),
-            "n_series": len(want),
-            "complete_not_sampled": sorted(ids2) == sorted(want),
-            "pass1_failed_ids": failed1,
-            "n_reswept_in_pass2": n_reswept}
-        gates["GATE-E1"] = e1
+        def _gate(name, fn):
+            try:
+                gates[name] = fn()
+            except AssertionError:
+                import traceback as _tb
+                tb = _tb.format_exc().strip().splitlines()
+                gates[name] = {"verdict": "REFUTE",
+                               "assert_failure": tb[-1] if tb
+                               else "AssertionError"}
+                gate_errs[name] = tb[-1] if tb else "AssertionError"
 
-        # ---- GATE-E2 (acceptance integrity) --------------------------
-        fp_index = {(x["source_key"], x["field"])
-                    for x in bank2["field_provenance"]}
-        bad_prov, bad_val = [], []
-        for r in bank2["entries"]:
-            key = (r.get("provenance") or {}).get("source_key")
-            for f in E206.FILL_FIELDS:
-                if r.get(f) is not None and (key, f) not in fp_index:
-                    bad_prov.append({"id": key, "field": f})
-            if E206.validate_row(r):
-                bad_val.append(key)
-        e2 = {
-            "verdict": "PASS" if not bad_prov and not bad_val
-            else "REFUTE",
-            "n_accepted": len(bank2["entries"]),
-            "accepted_fields_without_provenance": bad_prov,
-            "accepted_rows_failing_validator": bad_val,
-            "import_rules": bank2["import_rules"]}
-        gates["GATE-E2"] = e2
+        def _e1():
+            # ---- GATE-E1 (the sweep): 119/119 covered; the 12
+            #      re-swept ------------------------------------------
+            ids2 = [r.get("id") for r in src2["records"]] \
+                if isinstance(src2.get("records"), list) else \
+                sorted(src2.get("by_id", {}).keys())
+            want = [e["id"] for e in series]
+            n_reswept = sum(1 for v in verdicts if v["swept_pass2"])
+            return {
+                "verdict": "PASS"
+                if (sorted(ids2) == sorted(want)
+                    and n_reswept >= len(failed1))
+                else "REFUTE",
+                "n_records_sources2": len(ids2),
+                "n_series": len(want),
+                "complete_not_sampled": sorted(ids2) == sorted(want),
+                "pass1_failed_ids": failed1,
+                "n_reswept_in_pass2": n_reswept}
 
-        # ---- GATE-E3 (the yield) -------------------------------------
-        acc = bank2["counts"]["accepted"]
-        e3 = {
-            "verdict": "PASS" if acc >= 1 else "REFUTE",
-            "accepted": acc,
-            "baseline_accepted": w5.get("counts", {}).get("accepted", 0),
-            "goal_state": ">= 1 accepted entry",
-            "goal_met": acc >= 1,
-            "fill_rate_deltas_vs_w5": deltas}
-        gates["GATE-E3"] = e3
+        def _e2():
+            # ---- GATE-E2 (acceptance integrity; exp206's gate_d2
+            #      mechanism verbatim, the baseline line now the w5
+            #      bank's rows — pass-1's provenance) ----------------
+            bad = []
+            for r in bank2["entries"]:
+                key = r["provenance"]["source_key"]
+                assert not E206.census_missing(r), key
+                assert not E206.validate_row(r), \
+                    (key, E206.validate_row(r))
+                v = next(x for x in verdicts if x["id"] == key)
+                for f in E206.FILL_FIELDS:
+                    if r[f] is None:
+                        continue
+                    prov = v["literature_filled"].get(f)
+                    if prov is None:
+                        # pass-1-derived: must equal the w5 row's value
+                        base = w5_rows[key]
+                        if r[f] != base.get(f):
+                            bad.append({"id": key, "field": f,
+                                        "why": "baseline drift"})
+                    else:
+                        if not (prov.get("url") and prov.get("retrieved")
+                                and prov.get("verbatim_quote")):
+                            bad.append({"id": key, "field": f,
+                                        "why": "incomplete provenance"})
+            for r in bank2["rejects"]:
+                assert r["census_missing"], \
+                    r["provenance"]["source_key"]
+                assert not E206.validate_row(
+                    r, allow_census_missing=True)
+            vb = (E206.validate_bank(bank2)
+                  if hasattr(E206, "validate_bank") else [])
+            return {
+                "verdict": "PASS" if not bad and not vb else "REFUTE",
+                "n_accepted": len(bank2["entries"]),
+                "integrity_violations": bad,
+                "bank_validator_errors": vb,
+                "import_rules": bank2["import_rules"]}
 
-        # ---- GATE-E4 (hygiene) ---------------------------------------
-        os.makedirs(os.path.dirname(bank_path), exist_ok=True)
-        with open(bank_path, "w", encoding="utf-8") as f:
-            f.write(E206.ser(bank2))
-        bank2_rerun, _v2 = merge()
-        determinism = (E206.ser(bank2_rerun) == E206.ser(bank2))
-        w5_sha1 = E206.sha256_file(W5_BANK)
-        e4 = {
-            "verdict": "PASS" if (determinism and w5_sha1 == w5_sha0
-                                  and os.path.exists(sources_path))
-            else "REFUTE",
-            "w5_bank_byte_unchanged": w5_sha1 == w5_sha0,
-            "w5_sha256": w5_sha0,
-            "new_bank_deterministic": determinism,
-            "sources_file": os.path.relpath(sources_path, ROOT),
-            "sources_file_sha256": E206.sha256_file(sources_path)}
-        gates["GATE-E4"] = e4
+        def _e3():
+            # ---- GATE-E3 (the yield) ------------------------------
+            acc = bank2["counts"]["accepted"]
+            return {
+                "verdict": "PASS" if acc >= 1 else "REFUTE",
+                "accepted": acc,
+                "baseline_accepted":
+                    w5.get("counts", {}).get("accepted", 0),
+                "goal_state": ">= 1 accepted entry",
+                "goal_met": acc >= 1,
+                "fill_rate_deltas_vs_w5": deltas}
+
+        def _e4():
+            # ---- GATE-E4 (hygiene) --------------------------------
+            os.makedirs(os.path.dirname(bank_path), exist_ok=True)
+            with open(bank_path, "w", encoding="utf-8") as f:
+                f.write(E206.ser(bank2))
+            bank2_rerun, _v2 = merge()
+            determinism = (E206.ser(bank2_rerun) == E206.ser(bank2))
+            w5_sha1 = E206.sha256_file(W5_BANK)
+            return {
+                "verdict": "PASS" if (determinism and w5_sha1 == w5_sha0
+                                      and os.path.exists(sources_path))
+                else "REFUTE",
+                "w5_bank_byte_unchanged": w5_sha1 == w5_sha0,
+                "w5_sha256": w5_sha0,
+                "new_bank_deterministic": determinism,
+                "sources_file": os.path.relpath(sources_path, ROOT),
+                "sources_file_sha256":
+                    E206.sha256_file(sources_path)}
+
+        # ---- evaluate each gate exactly once, asserts recorded as
+        #      REFUTE with the failing line (exp206's gate discipline)
+        _gate("GATE-E1", _e1)
+        _gate("GATE-E2", _e2)
+        _gate("GATE-E3", _e3)
+        _gate("GATE-E4", _e4)
 
         n_pass = sum(1 for v in gates.values()
                      if v["verdict"] == "PASS")
