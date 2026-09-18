@@ -1,0 +1,1999 @@
+{
+ "exp": "exp230_reader_size_cost_curve",
+ "claim": "THE READER SIZE-COST CURVE (L204's registered next): the reader's worst-err profile graded in n as ONE deposited line \u2014 worst-err and mean-err vs n at n = 100/200/400/700/1000 on the path constructor (exp198's graph_path, the A_CHAIN family), 5 target classes x 3 seeds per n (exp225/exp227's sweep machinery verbatim: the production scoped read, exp225's target classes, exp142's 3 seeds), the 6.0 bar unchanged; PLUS the exp227 E1 checker repair \u2014 the completeness predicate rebuilt from the deposited grid definition and re-run as a hygiene-only pass (no gate rewrite)",
+ "read": {
+  "wiring": "exp178's production scoped arm: exp169's f_max diagnostic + the pre-registered THRESHOLD (32.0); R_T (exp167's adopted read) iff f_max < 32.0, else exp148's raw temporal \u2014 one arm, one function, zero knobs",
+  "projection": "exp145/exp148 TC1-TC3: PN1/PN2 dominant-quadrature projection + TC1 flip-clock F + TC2 A_ext = A + F",
+  "executor": "exp142 execute_signed VERBATIM (R1 structure on |A|, R2 signed dynamics, walk frontier on |A|>0)",
+  "op": {
+   "gamma": 64.0,
+   "mu": 0.0
+  },
+  "op_source": "exp99's battery-wide STAR point (exp142's STAR_OP); STAR_OP IS S* = (64.0, 0.0), asserted",
+  "spec_input": "per-row target spec \u2014 the read stack's target parameter (exp148's MULTI default asserted bit-identical per rung by the MULTI-identity audit)",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n": "the rung's own (100/200/400/700/1000 \u2014 the pre-named ns)",
+  "window_h": 24.0,
+  "commit_noise": 0.6,
+  "steps_per_cell": 8,
+  "floor": "production -60.0 restored post-import (exp218's disclosed exp169-import discipline; the -35.0 reader-line pin disclosed)",
+  "per_media_tuning": "none",
+  "fingerprint": "719d0f7c9984bdb4",
+  "wiring_id": "exp148.decode('scoped') wiring | exp169 f_max/THRESHOLD | exp167 R_T | exp145/148 PN+TC | exp142 execute_signed@STAR_OP==S*"
+ },
+ "cohort": {
+  "hosts": [
+   "path100",
+   "path200",
+   "path400",
+   "path700",
+   "path1000"
+  ],
+  "ns": [
+   100,
+   200,
+   400,
+   700,
+   1000
+  ],
+  "constructor": "exp198's scale constructor (cultivation.substrate.graph.path) \u2014 the SAME constructor that builds exp136's A_CHAIN (path(100) bit-asserted) and exp225's H1 / exp227's path1000",
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "target_list": "the host's own canon (wildtype) + manifest indices 0, 49, 99 + the deep band's -60.0 rung both instances (pre-named; exp225's target classes)",
+  "n_target_classes": 5,
+  "n_decode_rows_per_n": 6,
+  "grid": {
+   "n100": {
+    "n": 100,
+    "rows": 6,
+    "seeds": 3,
+    "decodes": 18
+   },
+   "n200": {
+    "n": 200,
+    "rows": 6,
+    "seeds": 3,
+    "decodes": 18
+   },
+   "n400": {
+    "n": 400,
+    "rows": 6,
+    "seeds": 3,
+    "decodes": 18
+   },
+   "n700": {
+    "n": 700,
+    "rows": 6,
+    "seeds": 3,
+    "decodes": 18
+   },
+   "n1000": {
+    "n": 1000,
+    "rows": 6,
+    "seeds": 3,
+    "decodes": 18
+   }
+  },
+  "expected_decodes": 90
+ },
+ "provenance": {
+  "exp182": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+  "exp225": "1985a227a67a80c87f2ff4d5cdd5147724537b6263b46e298985523a32afbba3",
+  "exp227": "c44d0afa9e14eccb6f9a96fa2b13668a6cd04db6ae7101d75a32e3c57ebd7b77"
+ },
+ "sections": {
+  "n100": {
+   "host": "path100",
+   "n": 100,
+   "kind": "exp198's scale constructor (graph_path) at the pre-named size-axis rung",
+   "edges": 99,
+   "f_max": 0.0,
+   "dispatch_class": "diffuse",
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_rows": 6,
+   "n_decodes": 18,
+   "n_rejections": 0,
+   "worst_err": 0.59,
+   "mean_err": 0.38499999999999995,
+   "median_err": 0.435,
+   "per_row": [
+    {
+     "tclass": "canon",
+     "key": "canon",
+     "index": null,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "6a29fc922222270d1aca78ceeb6529b08c9d27ada642cee4386d947ae1842953",
+     "errs": [
+      0.06,
+      0.06,
+      0.05
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.06,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.06,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.06,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.05,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m0",
+     "index": 0,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "a7d08a11fc5da624ce1457a06a9336cb59bdd45fdf44a6e4ad3ac17264e2ee65",
+     "errs": [
+      0.25,
+      0.29,
+      0.3
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.29,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.25,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.29,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.3,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m49",
+     "index": 49,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "f22ab2b8d18a97b7febb67f1a3be0edf7a2bc43bae10c723b636c58a191a4da7",
+     "errs": [
+      0.37,
+      0.34,
+      0.37
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.37,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.37,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.34,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.37,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m99",
+     "index": 99,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "a6085598e20ca5031a4c8e5026bb82dc66944bd6bb7ce9a3c84745cf340f9cd7",
+     "errs": [
+      0.58,
+      0.53,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.53,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.58,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.53,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.53,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "deep",
+     "key": "r-60i0",
+     "index": null,
+     "rung": -60.0,
+     "instance": 0,
+     "f_sha256": "4ea85c3be5a017d6a4ce22fe0939b58d5599678282bc047c189b2c1c6b9bf6f2",
+     "errs": [
+      0.58,
+      0.51,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.51,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.58,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.51,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.5,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "deep",
+     "key": "r-60i1",
+     "index": null,
+     "rung": -60.0,
+     "instance": 1,
+     "f_sha256": "88490236f99e205e325d075c28024cf0bed5543db253ac997e6aa0538ea3509a",
+     "errs": [
+      0.59,
+      0.51,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.51,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.59,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.51,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.51,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    }
+   ],
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.57
+   },
+   "runtime_s": 1.5,
+   "m4_evidence": {
+    "floors_pre_restore": {
+     "cultivation.bioelectric.collective": -35.0,
+     "experiments.exp142_sign_read": -35.0,
+     "experiments.exp145_phase_read": -35.0,
+     "experiments.exp148_temporal_read": -35.0,
+     "experiments.exp94_multizone_scale": -35.0
+    },
+    "floor_post_restore": -60.0,
+    "fingerprint": "719d0f7c9984bdb4",
+    "threshold": 32.0,
+    "multi_identity_bit_identical": true
+   }
+  },
+  "n200": {
+   "host": "path200",
+   "n": 200,
+   "kind": "exp198's scale constructor (graph_path) at the pre-named size-axis rung",
+   "edges": 199,
+   "f_max": 0.0,
+   "dispatch_class": "diffuse",
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_rows": 6,
+   "n_decodes": 18,
+   "n_rejections": 0,
+   "worst_err": 0.55,
+   "mean_err": 0.3494444444444445,
+   "median_err": 0.405,
+   "per_row": [
+    {
+     "tclass": "canon",
+     "key": "canon",
+     "index": null,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "29be7551521e221f2899d184965d31e4508d26901d894be04c43fe959658079a",
+     "errs": [
+      0.05,
+      0.05,
+      0.05
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.05,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.05,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.05,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.05,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m0",
+     "index": 0,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "7eb545e81591268b88a3ebddff96830cec8e53c96f151b1ef2f71c6d2eb6b7d7",
+     "errs": [
+      0.29,
+      0.24,
+      0.21
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.24,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.29,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.24,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.21,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m49",
+     "index": 49,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "1301c7d4bd891279de5f0dca180e243eb6759b6ec3aae16ba7c30990fec79523",
+     "errs": [
+      0.35,
+      0.32,
+      0.27
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.32,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.35,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.32,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.27,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m99",
+     "index": 99,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "5feafb084a8e2edf785d3996a308d5375032b0ef0245b218dbd363072878b8ef",
+     "errs": [
+      0.55,
+      0.48,
+      0.49
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.49,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.55,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.48,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.49,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "deep",
+     "key": "r-60i0",
+     "index": null,
+     "rung": -60.0,
+     "instance": 0,
+     "f_sha256": "b630872f52a53d393ad67f4a4aa8a4d151fc60dd9fcdbd5b2ee4180c505e5710",
+     "errs": [
+      0.52,
+      0.46,
+      0.48
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.48,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.52,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.46,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.48,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "deep",
+     "key": "r-60i1",
+     "index": null,
+     "rung": -60.0,
+     "instance": 1,
+     "f_sha256": "393cfe556bee379a3f39aada594227255a4f591e497a519a0b1a86a51ef8a4b8",
+     "errs": [
+      0.53,
+      0.47,
+      0.48
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.48,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.53,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.47,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.48,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    }
+   ],
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.52
+   },
+   "runtime_s": 2.7,
+   "m4_evidence": {
+    "floors_pre_restore": {
+     "cultivation.bioelectric.collective": -35.0,
+     "experiments.exp142_sign_read": -35.0,
+     "experiments.exp145_phase_read": -35.0,
+     "experiments.exp148_temporal_read": -35.0,
+     "experiments.exp94_multizone_scale": -35.0
+    },
+    "floor_post_restore": -60.0,
+    "fingerprint": "719d0f7c9984bdb4",
+    "threshold": 32.0,
+    "multi_identity_bit_identical": true
+   }
+  },
+  "n400": {
+   "host": "path400",
+   "n": 400,
+   "kind": "exp198's scale constructor (graph_path) at the pre-named size-axis rung",
+   "edges": 399,
+   "f_max": 0.0,
+   "dispatch_class": "diffuse",
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_rows": 6,
+   "n_decodes": 18,
+   "n_rejections": 0,
+   "worst_err": 0.58,
+   "mean_err": 0.38666666666666677,
+   "median_err": 0.45,
+   "per_row": [
+    {
+     "tclass": "canon",
+     "key": "canon",
+     "index": null,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "721b1e51772f1dfd0b4633b27d999fb9c15f29174b1b2113b95634788a7d1e9e",
+     "errs": [
+      0.04,
+      0.05,
+      0.04
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.04,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.04,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.05,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.04,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m0",
+     "index": 0,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "78fd5ee40abdbdd0fc236e7f94ef434e76bda72ddc1151f003705a467a341804",
+     "errs": [
+      0.26,
+      0.33,
+      0.28
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.28,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.26,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.33,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.28,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m49",
+     "index": 49,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "b1cc0e2e050a16b26041848d08616b27168d92c23732141d94a41bf8c453eb7f",
+     "errs": [
+      0.33,
+      0.38,
+      0.35
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.35,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.33,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.38,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.35,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m99",
+     "index": 99,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "e49605d6c5cc1e328458a12ea1821382d86f70ea16fef25d073f562d2704dde7",
+     "errs": [
+      0.54,
+      0.58,
+      0.55
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.55,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.54,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.58,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.55,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "deep",
+     "key": "r-60i0",
+     "index": null,
+     "rung": -60.0,
+     "instance": 0,
+     "f_sha256": "d940e88b6b268c6f547d78cd0c93a9237f86e337661dc89afae5a79b8ec6c431",
+     "errs": [
+      0.53,
+      0.56,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.53,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.53,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.56,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.53,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "deep",
+     "key": "r-60i1",
+     "index": null,
+     "rung": -60.0,
+     "instance": 1,
+     "f_sha256": "dd447e125f0e742299cfa974c442bc46a8396cf0fd8620437111833ecfc975be",
+     "errs": [
+      0.52,
+      0.56,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.53,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.52,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.56,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.53,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    }
+   ],
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.52
+   },
+   "runtime_s": 13.2,
+   "m4_evidence": {
+    "floors_pre_restore": {
+     "cultivation.bioelectric.collective": -35.0,
+     "experiments.exp142_sign_read": -35.0,
+     "experiments.exp145_phase_read": -35.0,
+     "experiments.exp148_temporal_read": -35.0,
+     "experiments.exp94_multizone_scale": -35.0
+    },
+    "floor_post_restore": -60.0,
+    "fingerprint": "719d0f7c9984bdb4",
+    "threshold": 32.0,
+    "multi_identity_bit_identical": true
+   }
+  },
+  "n700": {
+   "host": "path700",
+   "n": 700,
+   "kind": "exp198's scale constructor (graph_path) at the pre-named size-axis rung",
+   "edges": 699,
+   "f_max": 0.0,
+   "dispatch_class": "diffuse",
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_rows": 6,
+   "n_decodes": 18,
+   "n_rejections": 0,
+   "worst_err": 0.55,
+   "mean_err": 0.3588888888888889,
+   "median_err": 0.415,
+   "per_row": [
+    {
+     "tclass": "canon",
+     "key": "canon",
+     "index": null,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "f37b00028f507cb552ed6c55825bc3feaa3fdb4ab1ae340f3f4e059e2abdff1c",
+     "errs": [
+      0.05,
+      0.04,
+      0.04
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.04,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.05,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.04,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.04,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m0",
+     "index": 0,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "d9938ecfd13b63dd5f4febc9363c758bcee995be791485297afd27eff90ace94",
+     "errs": [
+      0.25,
+      0.29,
+      0.26
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.26,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.25,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.29,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.26,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m49",
+     "index": 49,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "aa50ad0e66f30a907e44b930562b9e2e3695d8d1dc13039651c39440b232f0c5",
+     "errs": [
+      0.31,
+      0.35,
+      0.31
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.31,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.31,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.35,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.31,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m99",
+     "index": 99,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "8f9013e9cb0064ba1c6148f170d98666de026067b2142dca4386c2054e9695e0",
+     "errs": [
+      0.52,
+      0.55,
+      0.5
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.52,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.52,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.55,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.5,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "deep",
+     "key": "r-60i0",
+     "index": null,
+     "rung": -60.0,
+     "instance": 0,
+     "f_sha256": "0115b8b126778f8f090b6333b053f9804b1bb91258d80e32eade454d8e4653d3",
+     "errs": [
+      0.49,
+      0.52,
+      0.48
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.49,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.49,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.52,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.48,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "deep",
+     "key": "r-60i1",
+     "index": null,
+     "rung": -60.0,
+     "instance": 1,
+     "f_sha256": "62d00c7a6e6330837fca3b03551224d311ac958e1fb1c10de7b163b50a897ac8",
+     "errs": [
+      0.5,
+      0.52,
+      0.48
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.5,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.5,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.52,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.48,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    }
+   ],
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.49
+   },
+   "runtime_s": 56.2,
+   "m4_evidence": {
+    "floors_pre_restore": {
+     "cultivation.bioelectric.collective": -35.0,
+     "experiments.exp142_sign_read": -35.0,
+     "experiments.exp145_phase_read": -35.0,
+     "experiments.exp148_temporal_read": -35.0,
+     "experiments.exp94_multizone_scale": -35.0
+    },
+    "floor_post_restore": -60.0,
+    "fingerprint": "719d0f7c9984bdb4",
+    "threshold": 32.0,
+    "multi_identity_bit_identical": true
+   }
+  },
+  "n1000": {
+   "host": "path1000",
+   "n": 1000,
+   "kind": "exp198's scale constructor (graph_path) at the pre-named size-axis rung",
+   "edges": 999,
+   "f_max": 0.0,
+   "dispatch_class": "diffuse",
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "n_rows": 6,
+   "n_decodes": 18,
+   "n_rejections": 0,
+   "worst_err": 0.54,
+   "mean_err": 0.36000000000000004,
+   "median_err": 0.41000000000000003,
+   "per_row": [
+    {
+     "tclass": "canon",
+     "key": "canon",
+     "index": null,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "d280b30421176826b20f2d94c52a57b8f2675c1f72fac16a203061b490595c4a",
+     "errs": [
+      0.04,
+      0.04,
+      0.04
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.04,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.04,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.04,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.04,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m0",
+     "index": 0,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "6070b80c2426a4433424abafed65c6bb2757c0db495650c32abce99777471f91",
+     "errs": [
+      0.26,
+      0.25,
+      0.28
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.26,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.26,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.25,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.28,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m49",
+     "index": 49,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "7b344e7afa9d864294861438084a510cc56aea3e982951d00c812e264f9b65f9",
+     "errs": [
+      0.34,
+      0.3,
+      0.34
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.34,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.34,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.3,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.34,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "manifest",
+     "key": "m99",
+     "index": 99,
+     "rung": null,
+     "instance": null,
+     "f_sha256": "d8e64e769d7be00cd2102e29911bf8e3fec4e31e11f416d356f117521cb6e52f",
+     "errs": [
+      0.54,
+      0.5,
+      0.53
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.53,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.54,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.5,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.53,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "deep",
+     "key": "r-60i0",
+     "index": null,
+     "rung": -60.0,
+     "instance": 0,
+     "f_sha256": "4523c935a02755cb7a75a6c0ff5e1fe55d6136221c34f49a141b94136a0616e0",
+     "errs": [
+      0.52,
+      0.48,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.51,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.52,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.48,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.51,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    },
+    {
+     "tclass": "deep",
+     "key": "r-60i1",
+     "index": null,
+     "rung": -60.0,
+     "instance": 1,
+     "f_sha256": "a817d070a96bd0a35d5b6f976490abeef965ecd2f50d39008c798ad713e49856",
+     "errs": [
+      0.52,
+      0.48,
+      0.51
+     ],
+     "verified": [
+      true,
+      true,
+      true
+     ],
+     "median_err": 0.51,
+     "seeds": [
+      1,
+      2,
+      3
+     ],
+     "records": [
+      {
+       "seed": 1,
+       "err": 0.52,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 2,
+       "err": 0.48,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      },
+      {
+       "seed": 3,
+       "err": 0.51,
+       "verified": true,
+       "rho": 0.0,
+       "branch": "real"
+      }
+     ]
+    }
+   ],
+   "multi_identity_audit": {
+    "seed": 1,
+    "bit_identical": true,
+    "prod_err": 0.52
+   },
+   "runtime_s": 136.5,
+   "m4_evidence": {
+    "floors_pre_restore": {
+     "cultivation.bioelectric.collective": -35.0,
+     "experiments.exp142_sign_read": -35.0,
+     "experiments.exp145_phase_read": -35.0,
+     "experiments.exp148_temporal_read": -35.0,
+     "experiments.exp94_multizone_scale": -35.0
+    },
+    "floor_post_restore": -60.0,
+    "fingerprint": "719d0f7c9984bdb4",
+    "threshold": 32.0,
+    "multi_identity_bit_identical": true
+   }
+  }
+ },
+ "curve": [
+  {
+   "n": 100,
+   "worst_err": 0.59,
+   "mean_err": 0.38499999999999995,
+   "median_err": 0.435,
+   "decodes": 18,
+   "rejections": 0
+  },
+  {
+   "n": 1000,
+   "worst_err": 0.54,
+   "mean_err": 0.36000000000000004,
+   "median_err": 0.41000000000000003,
+   "decodes": 18,
+   "rejections": 0
+  },
+  {
+   "n": 200,
+   "worst_err": 0.55,
+   "mean_err": 0.3494444444444445,
+   "median_err": 0.405,
+   "decodes": 18,
+   "rejections": 0
+  },
+  {
+   "n": 400,
+   "worst_err": 0.58,
+   "mean_err": 0.38666666666666677,
+   "median_err": 0.45,
+   "decodes": 18,
+   "rejections": 0
+  },
+  {
+   "n": 700,
+   "worst_err": 0.55,
+   "mean_err": 0.3588888888888889,
+   "median_err": 0.415,
+   "decodes": 18,
+   "rejections": 0
+  }
+ ],
+ "log_log_fit": {
+  "slope_worst": -0.029138965306577343,
+  "intercept_worst": -0.40577621133076885,
+  "r2_worst": 0.5026202574956846,
+  "slope_mean": -0.01763627783552677,
+  "branch": "SUB-LINEAR"
+ },
+ "n1000_provenance_crosscheck": {
+  "bit_identical": true,
+  "rows_compared": 6,
+  "source": "exp227's deposit sections/path1000 (the same instrument at the same rung), sha256 c44d0afa9e14eccb \u2014 re-read at run time; disclosed, non-gating"
+ },
+ "e1_repair_exp227": {
+  "predicate_value": true,
+  "deposited_counts": {
+   "decodes": 33,
+   "expected": 33,
+   "rejections": 0
+  },
+  "checks": {
+   "path_decodes": true,
+   "corner_decodes": true,
+   "path_rows": true,
+   "corner_instances": true,
+   "path_seeds": true,
+   "corner_seeds": true,
+   "corner_gen_seed_rule": true,
+   "zero_rejections": true,
+   "all_finite": true
+  },
+  "deposited_gate_state_read_at_runtime": {
+   "E1_pass": true,
+   "E1_complete_not_sampled": true,
+   "verdict": "4/4 gates - E3 REPRODUCED (interior 0.0); worst 3.42 vs n=400 structured 0.62 / random 1.45"
+  },
+  "disclosure": "exp227's deposited E1 recorded complete_not_sampled=false while its own counts prove 33/33 complete (the checker contradiction, disclosed in the ledger); the predicate is rebuilt here from the deposit's own grid definition and re-run \u2014 hygiene only; exp227's deposit untouched (NO gate rewrite)"
+ },
+ "worst_err": 0.59,
+ "worst_at_n": 100,
+ "pooled_median_err": 0.42000000000000004,
+ "context": {
+  "random_worst_pooled_n400": 1.45,
+  "random_worst_source": "exp198 pooled max 1.45 + exp199 pooled max 1.45, re-read at run time",
+  "structured_worst_n400": 0.62,
+  "structured_worst_n400_source": "exp225's deposit, re-read at run time",
+  "structured_worst_n1000_exp227": 0.54,
+  "structured_worst_n1000_source": "exp227's deposit path1000, re-read at run time",
+  "reading": "the curve's n=1000 worst 0.59 vs exp227's deposited 0.54 (bit-identical: True)"
+ },
+ "gates": {
+  "N1_size_curve": {
+   "pass": true,
+   "decodes": 90,
+   "expected": 90,
+   "rejections": 0,
+   "complete_from_grid": {
+    "per_n": {
+     "n100": {
+      "present": true,
+      "complete": true,
+      "decodes": 18,
+      "expected": 18,
+      "rejections": 0
+     },
+     "n1000": {
+      "present": true,
+      "complete": true,
+      "decodes": 18,
+      "expected": 18,
+      "rejections": 0
+     },
+     "n200": {
+      "present": true,
+      "complete": true,
+      "decodes": 18,
+      "expected": 18,
+      "rejections": 0
+     },
+     "n400": {
+      "present": true,
+      "complete": true,
+      "decodes": 18,
+      "expected": 18,
+      "rejections": 0
+     },
+     "n700": {
+      "present": true,
+      "complete": true,
+      "decodes": 18,
+      "expected": 18,
+      "rejections": 0
+     }
+    },
+    "complete": true,
+    "definition": "derived from GRID (5 ns x 6 rows x 3 seeds = 90), not hand-counted \u2014 the exp227 E1 repair, hygiene only"
+   },
+   "ns": [
+    100,
+    200,
+    400,
+    700,
+    1000
+   ],
+   "n_target_classes": 5,
+   "n_rows_per_n": 6,
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "curve": [
+    {
+     "n": 100,
+     "worst_err": 0.59,
+     "mean_err": 0.38499999999999995,
+     "median_err": 0.435,
+     "decodes": 18,
+     "rejections": 0
+    },
+    {
+     "n": 1000,
+     "worst_err": 0.54,
+     "mean_err": 0.36000000000000004,
+     "median_err": 0.41000000000000003,
+     "decodes": 18,
+     "rejections": 0
+    },
+    {
+     "n": 200,
+     "worst_err": 0.55,
+     "mean_err": 0.3494444444444445,
+     "median_err": 0.405,
+     "decodes": 18,
+     "rejections": 0
+    },
+    {
+     "n": 400,
+     "worst_err": 0.58,
+     "mean_err": 0.38666666666666677,
+     "median_err": 0.45,
+     "decodes": 18,
+     "rejections": 0
+    },
+    {
+     "n": 700,
+     "worst_err": 0.55,
+     "mean_err": 0.3588888888888889,
+     "median_err": 0.415,
+     "decodes": 18,
+     "rejections": 0
+    }
+   ],
+   "note": "the pre-registration's '5 target classes' = the 5 pre-named target classes; the deep band's -60.0 rung carries BOTH pre-named instances (2 decode rows), per exp225's pre-named target list \u2014 6 decode rows x 3 seeds per n"
+  },
+  "N2_reader_bar": {
+   "pass": true,
+   "bar_mV": 6.0,
+   "n_finite": 90,
+   "worst_err": 0.59,
+   "worst_at_n": 100,
+   "per_n_worst": {
+    "100": 0.59,
+    "1000": 0.54,
+    "200": 0.55,
+    "400": 0.58,
+    "700": 0.55
+   },
+   "context": {
+    "random_worst_pooled_n400": 1.45,
+    "random_worst_source": "exp198 pooled max 1.45 + exp199 pooled max 1.45, re-read at run time",
+    "structured_worst_n400": 0.62,
+    "structured_worst_n400_source": "exp225's deposit, re-read at run time",
+    "structured_worst_n1000_exp227": 0.54,
+    "structured_worst_n1000_source": "exp227's deposit path1000, re-read at run time",
+    "reading": "the curve's n=1000 worst 0.59 vs exp227's deposited 0.54 (bit-identical: True)"
+   }
+  },
+  "N3_loglog_slope": {
+   "pass": true,
+   "branch": "SUB-LINEAR",
+   "slope_worst": -0.029138965306577343,
+   "intercept_worst": -0.40577621133076885,
+   "r2_worst": 0.5026202574956846,
+   "slope_mean_disclosed": -0.01763627783552677,
+   "intercept_mean_disclosed": -0.8969634094836579,
+   "points_loglog": [
+    [
+     4.605170185988092,
+     -0.527632742082372
+    ],
+    [
+     6.907755278982137,
+     -0.616186139423817
+    ],
+    [
+     5.298317366548036,
+     -0.5978370007556204
+    ],
+    [
+     5.991464547107982,
+     -0.5447271754416722
+    ],
+    [
+     6.551080335043404,
+     -0.5978370007556204
+    ]
+   ],
+   "thresholds": "SUB-LINEAR (slope < 1) / LINEAR (1 <= slope < 2) / SUPER-LINEAR (>= 2)",
+   "fit": "one OLS line on (log n, log worst-err) over the 5 deposited curve points; zero fitting \u2014 the value disclosed"
+  },
+  "N4_hygiene": {
+   "pass": true,
+   "rejections": 0,
+   "all_finite": true,
+   "floor_discipline": "production -60.0 restored post-import on all pinned modules; the -35.0 reader-line pin disclosed (exp218's discipline, VERBATIM)",
+   "floors_pre_restore": {
+    "cultivation.bioelectric.collective": -35.0,
+    "experiments.exp142_sign_read": -35.0,
+    "experiments.exp145_phase_read": -35.0,
+    "experiments.exp148_temporal_read": -35.0,
+    "experiments.exp94_multizone_scale": -35.0
+   },
+   "threshold_asserted": 32.0,
+   "multi_identity_audit": "all 5 rungs bit-identical",
+   "s_star_identity": "STAR_OP == S* == (64.0, 0.0), asserted",
+   "lock_log_entries": 90,
+   "fingerprint_pre": "719d0f7c9984bdb4",
+   "fingerprint_post": "719d0f7c9984bdb4",
+   "completeness_predicate": "derived from GRID (5 ns x 6 rows x 3 seeds = 90), not hand-counted \u2014 the exp227 E1 repair, hygiene only",
+   "e1_repair_exp227": {
+    "predicate_value": true,
+    "deposited_counts": {
+     "decodes": 33,
+     "expected": 33,
+     "rejections": 0
+    },
+    "no_gate_rewrite": true,
+    "deposited_gate_state_read_at_runtime": {
+     "E1_pass": true,
+     "E1_complete_not_sampled": true,
+     "verdict": "4/4 gates - E3 REPRODUCED (interior 0.0); worst 3.42 vs n=400 structured 0.62 / random 1.45"
+    },
+    "disclosure": "exp227's deposited E1 recorded complete_not_sampled=false while its own counts prove 33/33 complete (the checker contradiction, disclosed in the ledger); the predicate is rebuilt here from the deposit's own grid definition and re-run \u2014 hygiene only; exp227's deposit untouched (NO gate rewrite)"
+   },
+   "n1000_provenance_crosscheck": {
+    "bit_identical": true,
+    "rows_compared": 6,
+    "source": "exp227's deposit sections/path1000 (the same instrument at the same rung), sha256 c44d0afa9e14eccb \u2014 re-read at run time; disclosed, non-gating"
+   },
+   "per_media_tuning": "none"
+  }
+ },
+ "verdict": "4/4 gates - N3 SUB-LINEAR (log-log slope -0.0291, r2 0.5026); worst 0.59 at n=100 under the 6.0 bar",
+ "runtime_s": 210.2
+}
