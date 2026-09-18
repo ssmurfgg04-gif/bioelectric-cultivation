@@ -977,7 +977,7 @@
      "worst_err": 3.37
     }
    ],
-   "runtime_s": 189.7,
+   "runtime_s": 200.1,
    "m4_evidence": {
     "floors_pre_restore": {
      "cultivation.bioelectric.collective": -35.0,
@@ -1015,11 +1015,11 @@
  },
  "gates": {
   "E1_n1000_sweep": {
-   "pass": false,
+   "pass": true,
    "decodes": 33,
    "expected": 33,
    "rejections": 0,
-   "complete_not_sampled": false,
+   "complete_not_sampled": true,
    "path1000": {
     "rows": 6,
     "decodes": 18,
@@ -1093,6 +1093,6 @@
    "per_media_tuning": "none"
   }
  },
- "verdict": "partial - sections ['corner_n1000', 'path1000'] merged; gates pending path1000 + corner_n1000",
- "runtime_s": 345.1
+ "verdict": "4/4 gates - E3 REPRODUCED (interior 0.0); worst 3.42 vs n=400 structured 0.62 / random 1.45",
+ "runtime_s": 382.9
 }
