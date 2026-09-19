@@ -1,0 +1,968 @@
+{
+ "exp": "exp272_host_premium_structure",
+ "claim": "THE HOST PREMIUM STRUCTURE (batch 30, L249's registered next (a), pre-registration commit 630600f): the per-host one-zone premium means (12 values, exp271's deposited grid) regressed against the host's canon-boundary count (exp243's classes records, the exp255 instrument) \u2014 Spearman + the OLS slope; the shelf-to-shelf regression (one-zone vs multi-zone premium means, the multi-zone shelf read from exp256's substituted i0 errs minus the canonical worst-errs \u2014 the same construction exp271 used, disclosed); branches PRICE-GEOMETRIC / PRICE-HOST-OTHER",
+ "method": {
+  "one_zone_source": "exp271's deposited premium_grid (36 rows: host, seed, d1_err, canon_worst_err, premium), re-read; per-host mean over seeds [1,2,3]; the deposit's own per-host means cross-checked bit-exact",
+  "boundary_source": "exp243's classes records, n_boundary_cells_base per host (the exp255 instrument); the deposit sha-recorded READ-ONLY",
+  "multi_zone_source": "exp256's substituted rows' r-60i0 instance errs (the saturated dose == exp256's deep form) minus the canonical rows' worst_err, per (host, seed); per-host mean over seeds [1,2,3] \u2014 THE SAME construction exp271 used (premium = the shelf errs minus the canon worst-errs per host/seed), disclosed",
+  "regressions": "Spearman (the exp262 convention: scipy rankdata's tied-average ranks; Spearman == Pearson on the ranks) + the raw-scale OLS slope with intercept, across the 12 hosts; zero knobs",
+  "discriminant": "H2's rho ONLY names the branch: >= 0.5 PRICE-GEOMETRIC / else PRICE-HOST-OTHER; H3 reported either way",
+  "method_source": "experiments/exp255_pair_count_regression.py (the boundary instrument), experiments/exp262_variance_components.py (the rank convention), experiments/exp271_one_zone_premium.py (the premium construction)"
+ },
+ "inputs": {
+  "exp271_deposit": {
+   "path": "results/exp271_one_zone_premium.json",
+   "sha256": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+   "role": "the one-zone premium grid (36 rows) + the deposited per-host means"
+  },
+  "exp256_deposit": {
+   "path": "results/exp256_row_pair_regression.json",
+   "sha256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+   "role": "the substituted r-60i0 errs + the canonical worst-errs (the multi-zone shelf)"
+  },
+  "exp243_deposit": {
+   "path": "results/exp243_structured_adversarial.json",
+   "sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "role": "the classes records' n_boundary_cells_base (the boundary counts)"
+  },
+  "exp270_deposit": {
+   "path": "results/exp270_structural_dose.json",
+   "sha256": "4a4978361800bdc66a91cfcf2a345654393c0e8332583beff20059ebd1d39033",
+   "role": "audit-only: the saturated per-row grid (z1) cross-check + the pooled per-dose means"
+  }
+ },
+ "data_audit": {
+  "saturated_is_deep_form_z1_vs_i0_bit_exact": true,
+  "exp270_pooled_per_dose_mean_err": {
+   "1": 0.7938888888888889,
+   "2": 1.0041666666666667,
+   "4": 1.0130555555555558,
+   "8": 1.0130555555555558,
+   "16": 1.0130555555555558
+  },
+  "exp270_multi_zone_count": 3,
+  "exp270_note": "the docstring's 'd>=3 rows' is the saturated dose (NZ=3): exp270's z1 per-row grid IS that dose, and its errs are bit-identical to exp256's r-60i0 errs 36/36 \u2014 the multi-zone shelf's errs are read from exp256's i0 rows as the docstring resolves",
+  "provenance_chain": {
+   "exp271_inputs_exp256_sha_matches": true,
+   "exp271_inputs_exp243_sha_matches": true,
+   "exp271_inputs_exp270_sha_matches": true,
+   "note": "the bytes read here are the bytes exp271 read \u2014 audit only, never gated"
+  },
+  "ties_census": {
+   "boundary_counts": {
+    "n_distinct": 11,
+    "n_tied_values": 1,
+    "max_multiplicity": 2
+   },
+   "one_zone_means": {
+    "n_distinct": 11,
+    "n_tied_values": 1,
+    "max_multiplicity": 2
+   },
+   "multi_zone_means": {
+    "n_distinct": 10,
+    "n_tied_values": 2,
+    "max_multiplicity": 2
+   }
+  },
+  "audit_only_never_gated": true
+ },
+ "per_host": [
+  {
+   "host": "H0",
+   "n_boundary_cells_base": 4,
+   "one_zone_premium_mean": 0.48666666666666664,
+   "multi_zone_premium_mean": 0.48666666666666664,
+   "one_zone_premiums_by_seed": [
+    0.47000000000000003,
+    0.51,
+    0.48000000000000004
+   ],
+   "multi_zone_premiums_by_seed": [
+    0.47000000000000003,
+    0.51,
+    0.48000000000000004
+   ]
+  },
+  {
+   "host": "H1",
+   "n_boundary_cells_base": 4,
+   "one_zone_premium_mean": 0.48666666666666664,
+   "multi_zone_premium_mean": 0.48666666666666664,
+   "one_zone_premiums_by_seed": [
+    0.47000000000000003,
+    0.51,
+    0.48000000000000004
+   ],
+   "multi_zone_premiums_by_seed": [
+    0.47000000000000003,
+    0.51,
+    0.48000000000000004
+   ]
+  },
+  {
+   "host": "H10",
+   "n_boundary_cells_base": 32,
+   "one_zone_premium_mean": 0.3633333333333333,
+   "multi_zone_premium_mean": 0.3633333333333333,
+   "one_zone_premiums_by_seed": [
+    0.36,
+    0.35,
+    0.38
+   ],
+   "multi_zone_premiums_by_seed": [
+    0.35,
+    0.36,
+    0.38
+   ]
+  },
+  {
+   "host": "H11",
+   "n_boundary_cells_base": 37,
+   "one_zone_premium_mean": 0.34,
+   "multi_zone_premium_mean": 0.3466666666666667,
+   "one_zone_premiums_by_seed": [
+    0.32999999999999996,
+    0.32999999999999996,
+    0.36
+   ],
+   "multi_zone_premiums_by_seed": [
+    0.33999999999999997,
+    0.33999999999999997,
+    0.36
+   ]
+  },
+  {
+   "host": "H2",
+   "n_boundary_cells_base": 42,
+   "one_zone_premium_mean": 0.3366666666666666,
+   "multi_zone_premium_mean": 0.3333333333333333,
+   "one_zone_premiums_by_seed": [
+    0.33999999999999997,
+    0.30999999999999994,
+    0.36
+   ],
+   "multi_zone_premiums_by_seed": [
+    0.32999999999999996,
+    0.31999999999999995,
+    0.35
+   ]
+  },
+  {
+   "host": "H3",
+   "n_boundary_cells_base": 47,
+   "one_zone_premium_mean": 1.946666666666667,
+   "multi_zone_premium_mean": 3.5066666666666664,
+   "one_zone_premiums_by_seed": [
+    1.9500000000000002,
+    1.9500000000000002,
+    1.9400000000000002
+   ],
+   "multi_zone_premiums_by_seed": [
+    3.5100000000000002,
+    3.5100000000000002,
+    3.5
+   ]
+  },
+  {
+   "host": "H4",
+   "n_boundary_cells_base": 41,
+   "one_zone_premium_mean": 0.36999999999999994,
+   "multi_zone_premium_mean": 0.36999999999999994,
+   "one_zone_premiums_by_seed": [
+    0.37,
+    0.35,
+    0.39
+   ],
+   "multi_zone_premiums_by_seed": [
+    0.36,
+    0.36,
+    0.39
+   ]
+  },
+  {
+   "host": "H5",
+   "n_boundary_cells_base": 48,
+   "one_zone_premium_mean": 2.1,
+   "multi_zone_premium_mean": 3.1666666666666665,
+   "one_zone_premiums_by_seed": [
+    2.1,
+    2.1,
+    2.1
+   ],
+   "multi_zone_premiums_by_seed": [
+    3.16,
+    3.17,
+    3.17
+   ]
+  },
+  {
+   "host": "H6",
+   "n_boundary_cells_base": 31,
+   "one_zone_premium_mean": 0.3666666666666667,
+   "multi_zone_premium_mean": 0.3633333333333333,
+   "one_zone_premiums_by_seed": [
+    0.36,
+    0.35,
+    0.39
+   ],
+   "multi_zone_premiums_by_seed": [
+    0.35,
+    0.35,
+    0.39
+   ]
+  },
+  {
+   "host": "H7",
+   "n_boundary_cells_base": 36,
+   "one_zone_premium_mean": 0.35333333333333333,
+   "multi_zone_premium_mean": 0.35333333333333333,
+   "one_zone_premiums_by_seed": [
+    0.33999999999999997,
+    0.33999999999999997,
+    0.38
+   ],
+   "multi_zone_premiums_by_seed": [
+    0.33999999999999997,
+    0.33999999999999997,
+    0.38
+   ]
+  },
+  {
+   "host": "H8",
+   "n_boundary_cells_base": 39,
+   "one_zone_premium_mean": 0.37333333333333335,
+   "multi_zone_premium_mean": 0.37666666666666665,
+   "one_zone_premiums_by_seed": [
+    0.38,
+    0.39,
+    0.35
+   ],
+   "multi_zone_premiums_by_seed": [
+    0.38,
+    0.39,
+    0.36
+   ]
+  },
+  {
+   "host": "H9",
+   "n_boundary_cells_base": 43,
+   "one_zone_premium_mean": 0.3499999999999999,
+   "multi_zone_premium_mean": 0.3499999999999999,
+   "one_zone_premiums_by_seed": [
+    0.33999999999999997,
+    0.33999999999999997,
+    0.37
+   ],
+   "multi_zone_premiums_by_seed": [
+    0.33999999999999997,
+    0.33999999999999997,
+    0.37
+   ]
+  }
+ ],
+ "one_zone_premium_grid_re_read": [
+  {
+   "host": "H0",
+   "seed": 1,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.06,
+   "premium": 0.47000000000000003
+  },
+  {
+   "host": "H0",
+   "seed": 2,
+   "d1_err": 0.56,
+   "canon_worst_err": 0.05,
+   "premium": 0.51
+  },
+  {
+   "host": "H0",
+   "seed": 3,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.05,
+   "premium": 0.48000000000000004
+  },
+  {
+   "host": "H1",
+   "seed": 1,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.06,
+   "premium": 0.47000000000000003
+  },
+  {
+   "host": "H1",
+   "seed": 2,
+   "d1_err": 0.56,
+   "canon_worst_err": 0.05,
+   "premium": 0.51
+  },
+  {
+   "host": "H1",
+   "seed": 3,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.05,
+   "premium": 0.48000000000000004
+  },
+  {
+   "host": "H10",
+   "seed": 1,
+   "d1_err": 0.5,
+   "canon_worst_err": 0.14,
+   "premium": 0.36
+  },
+  {
+   "host": "H10",
+   "seed": 2,
+   "d1_err": 0.48,
+   "canon_worst_err": 0.13,
+   "premium": 0.35
+  },
+  {
+   "host": "H10",
+   "seed": 3,
+   "d1_err": 0.52,
+   "canon_worst_err": 0.14,
+   "premium": 0.38
+  },
+  {
+   "host": "H11",
+   "seed": 1,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.16,
+   "premium": 0.32999999999999996
+  },
+  {
+   "host": "H11",
+   "seed": 2,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.16,
+   "premium": 0.32999999999999996
+  },
+  {
+   "host": "H11",
+   "seed": 3,
+   "d1_err": 0.52,
+   "canon_worst_err": 0.16,
+   "premium": 0.36
+  },
+  {
+   "host": "H2",
+   "seed": 1,
+   "d1_err": 0.5,
+   "canon_worst_err": 0.16,
+   "premium": 0.33999999999999997
+  },
+  {
+   "host": "H2",
+   "seed": 2,
+   "d1_err": 0.48,
+   "canon_worst_err": 0.17,
+   "premium": 0.30999999999999994
+  },
+  {
+   "host": "H2",
+   "seed": 3,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.17,
+   "premium": 0.36
+  },
+  {
+   "host": "H3",
+   "seed": 1,
+   "d1_err": 2.12,
+   "canon_worst_err": 0.17,
+   "premium": 1.9500000000000002
+  },
+  {
+   "host": "H3",
+   "seed": 2,
+   "d1_err": 2.12,
+   "canon_worst_err": 0.17,
+   "premium": 1.9500000000000002
+  },
+  {
+   "host": "H3",
+   "seed": 3,
+   "d1_err": 2.12,
+   "canon_worst_err": 0.18,
+   "premium": 1.9400000000000002
+  },
+  {
+   "host": "H4",
+   "seed": 1,
+   "d1_err": 0.5,
+   "canon_worst_err": 0.13,
+   "premium": 0.37
+  },
+  {
+   "host": "H4",
+   "seed": 2,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.14,
+   "premium": 0.35
+  },
+  {
+   "host": "H4",
+   "seed": 3,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.14,
+   "premium": 0.39
+  },
+  {
+   "host": "H5",
+   "seed": 1,
+   "d1_err": 2.29,
+   "canon_worst_err": 0.19,
+   "premium": 2.1
+  },
+  {
+   "host": "H5",
+   "seed": 2,
+   "d1_err": 2.29,
+   "canon_worst_err": 0.19,
+   "premium": 2.1
+  },
+  {
+   "host": "H5",
+   "seed": 3,
+   "d1_err": 2.29,
+   "canon_worst_err": 0.19,
+   "premium": 2.1
+  },
+  {
+   "host": "H6",
+   "seed": 1,
+   "d1_err": 0.5,
+   "canon_worst_err": 0.14,
+   "premium": 0.36
+  },
+  {
+   "host": "H6",
+   "seed": 2,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.14,
+   "premium": 0.35
+  },
+  {
+   "host": "H6",
+   "seed": 3,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.14,
+   "premium": 0.39
+  },
+  {
+   "host": "H7",
+   "seed": 1,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.15,
+   "premium": 0.33999999999999997
+  },
+  {
+   "host": "H7",
+   "seed": 2,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.15,
+   "premium": 0.33999999999999997
+  },
+  {
+   "host": "H7",
+   "seed": 3,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.15,
+   "premium": 0.38
+  },
+  {
+   "host": "H8",
+   "seed": 1,
+   "d1_err": 0.52,
+   "canon_worst_err": 0.14,
+   "premium": 0.38
+  },
+  {
+   "host": "H8",
+   "seed": 2,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.14,
+   "premium": 0.39
+  },
+  {
+   "host": "H8",
+   "seed": 3,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.14,
+   "premium": 0.35
+  },
+  {
+   "host": "H9",
+   "seed": 1,
+   "d1_err": 0.5,
+   "canon_worst_err": 0.16,
+   "premium": 0.33999999999999997
+  },
+  {
+   "host": "H9",
+   "seed": 2,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.15,
+   "premium": 0.33999999999999997
+  },
+  {
+   "host": "H9",
+   "seed": 3,
+   "d1_err": 0.52,
+   "canon_worst_err": 0.15,
+   "premium": 0.37
+  }
+ ],
+ "multi_zone_premium_grid": [
+  {
+   "host": "H0",
+   "seed": 1,
+   "subst_i0_err": 0.53,
+   "canon_worst_err": 0.06,
+   "premium_mz": 0.47000000000000003
+  },
+  {
+   "host": "H0",
+   "seed": 2,
+   "subst_i0_err": 0.56,
+   "canon_worst_err": 0.05,
+   "premium_mz": 0.51
+  },
+  {
+   "host": "H0",
+   "seed": 3,
+   "subst_i0_err": 0.53,
+   "canon_worst_err": 0.05,
+   "premium_mz": 0.48000000000000004
+  },
+  {
+   "host": "H1",
+   "seed": 1,
+   "subst_i0_err": 0.53,
+   "canon_worst_err": 0.06,
+   "premium_mz": 0.47000000000000003
+  },
+  {
+   "host": "H1",
+   "seed": 2,
+   "subst_i0_err": 0.56,
+   "canon_worst_err": 0.05,
+   "premium_mz": 0.51
+  },
+  {
+   "host": "H1",
+   "seed": 3,
+   "subst_i0_err": 0.53,
+   "canon_worst_err": 0.05,
+   "premium_mz": 0.48000000000000004
+  },
+  {
+   "host": "H10",
+   "seed": 1,
+   "subst_i0_err": 0.49,
+   "canon_worst_err": 0.14,
+   "premium_mz": 0.35
+  },
+  {
+   "host": "H10",
+   "seed": 2,
+   "subst_i0_err": 0.49,
+   "canon_worst_err": 0.13,
+   "premium_mz": 0.36
+  },
+  {
+   "host": "H10",
+   "seed": 3,
+   "subst_i0_err": 0.52,
+   "canon_worst_err": 0.14,
+   "premium_mz": 0.38
+  },
+  {
+   "host": "H11",
+   "seed": 1,
+   "subst_i0_err": 0.5,
+   "canon_worst_err": 0.16,
+   "premium_mz": 0.33999999999999997
+  },
+  {
+   "host": "H11",
+   "seed": 2,
+   "subst_i0_err": 0.5,
+   "canon_worst_err": 0.16,
+   "premium_mz": 0.33999999999999997
+  },
+  {
+   "host": "H11",
+   "seed": 3,
+   "subst_i0_err": 0.52,
+   "canon_worst_err": 0.16,
+   "premium_mz": 0.36
+  },
+  {
+   "host": "H2",
+   "seed": 1,
+   "subst_i0_err": 0.49,
+   "canon_worst_err": 0.16,
+   "premium_mz": 0.32999999999999996
+  },
+  {
+   "host": "H2",
+   "seed": 2,
+   "subst_i0_err": 0.49,
+   "canon_worst_err": 0.17,
+   "premium_mz": 0.31999999999999995
+  },
+  {
+   "host": "H2",
+   "seed": 3,
+   "subst_i0_err": 0.52,
+   "canon_worst_err": 0.17,
+   "premium_mz": 0.35
+  },
+  {
+   "host": "H3",
+   "seed": 1,
+   "subst_i0_err": 3.68,
+   "canon_worst_err": 0.17,
+   "premium_mz": 3.5100000000000002
+  },
+  {
+   "host": "H3",
+   "seed": 2,
+   "subst_i0_err": 3.68,
+   "canon_worst_err": 0.17,
+   "premium_mz": 3.5100000000000002
+  },
+  {
+   "host": "H3",
+   "seed": 3,
+   "subst_i0_err": 3.68,
+   "canon_worst_err": 0.18,
+   "premium_mz": 3.5
+  },
+  {
+   "host": "H4",
+   "seed": 1,
+   "subst_i0_err": 0.49,
+   "canon_worst_err": 0.13,
+   "premium_mz": 0.36
+  },
+  {
+   "host": "H4",
+   "seed": 2,
+   "subst_i0_err": 0.5,
+   "canon_worst_err": 0.14,
+   "premium_mz": 0.36
+  },
+  {
+   "host": "H4",
+   "seed": 3,
+   "subst_i0_err": 0.53,
+   "canon_worst_err": 0.14,
+   "premium_mz": 0.39
+  },
+  {
+   "host": "H5",
+   "seed": 1,
+   "subst_i0_err": 3.35,
+   "canon_worst_err": 0.19,
+   "premium_mz": 3.16
+  },
+  {
+   "host": "H5",
+   "seed": 2,
+   "subst_i0_err": 3.36,
+   "canon_worst_err": 0.19,
+   "premium_mz": 3.17
+  },
+  {
+   "host": "H5",
+   "seed": 3,
+   "subst_i0_err": 3.36,
+   "canon_worst_err": 0.19,
+   "premium_mz": 3.17
+  },
+  {
+   "host": "H6",
+   "seed": 1,
+   "subst_i0_err": 0.49,
+   "canon_worst_err": 0.14,
+   "premium_mz": 0.35
+  },
+  {
+   "host": "H6",
+   "seed": 2,
+   "subst_i0_err": 0.49,
+   "canon_worst_err": 0.14,
+   "premium_mz": 0.35
+  },
+  {
+   "host": "H6",
+   "seed": 3,
+   "subst_i0_err": 0.53,
+   "canon_worst_err": 0.14,
+   "premium_mz": 0.39
+  },
+  {
+   "host": "H7",
+   "seed": 1,
+   "subst_i0_err": 0.49,
+   "canon_worst_err": 0.15,
+   "premium_mz": 0.33999999999999997
+  },
+  {
+   "host": "H7",
+   "seed": 2,
+   "subst_i0_err": 0.49,
+   "canon_worst_err": 0.15,
+   "premium_mz": 0.33999999999999997
+  },
+  {
+   "host": "H7",
+   "seed": 3,
+   "subst_i0_err": 0.53,
+   "canon_worst_err": 0.15,
+   "premium_mz": 0.38
+  },
+  {
+   "host": "H8",
+   "seed": 1,
+   "subst_i0_err": 0.52,
+   "canon_worst_err": 0.14,
+   "premium_mz": 0.38
+  },
+  {
+   "host": "H8",
+   "seed": 2,
+   "subst_i0_err": 0.53,
+   "canon_worst_err": 0.14,
+   "premium_mz": 0.39
+  },
+  {
+   "host": "H8",
+   "seed": 3,
+   "subst_i0_err": 0.5,
+   "canon_worst_err": 0.14,
+   "premium_mz": 0.36
+  },
+  {
+   "host": "H9",
+   "seed": 1,
+   "subst_i0_err": 0.5,
+   "canon_worst_err": 0.16,
+   "premium_mz": 0.33999999999999997
+  },
+  {
+   "host": "H9",
+   "seed": 2,
+   "subst_i0_err": 0.49,
+   "canon_worst_err": 0.15,
+   "premium_mz": 0.33999999999999997
+  },
+  {
+   "host": "H9",
+   "seed": 3,
+   "subst_i0_err": 0.52,
+   "canon_worst_err": 0.15,
+   "premium_mz": 0.37
+  }
+ ],
+ "descriptive": {
+  "premium_hosts": [
+   "H3",
+   "H5"
+  ],
+  "premium_host_one_zone_means": {
+   "H3": 1.946666666666667,
+   "H5": 2.1
+  },
+  "premium_host_multi_zone_means": {
+   "H3": 3.5066666666666664,
+   "H5": 3.1666666666666665
+  },
+  "cluster_hosts": [
+   "H0",
+   "H1",
+   "H10",
+   "H11",
+   "H2",
+   "H4",
+   "H6",
+   "H7",
+   "H8",
+   "H9"
+  ],
+  "cluster_one_zone_mean_range": [
+   0.3366666666666666,
+   0.48666666666666664
+  ],
+  "cluster_multi_zone_mean_range": [
+   0.3333333333333333,
+   0.48666666666666664
+  ],
+  "premium_host_boundary_counts": {
+   "H3": 47,
+   "H5": 48
+  },
+  "note": "descriptive only \u2014 no gate reads it"
+ },
+ "regressions": {
+  "H2_boundary_price": {
+   "regressor": "the host's canon-boundary count (exp243's classes records, n_boundary_cells_base)",
+   "response": "the per-host one-zone premium mean (exp271's deposited grid, mean over seeds [1,2,3])",
+   "n": 12,
+   "spearman_rho": 0.052631578947368425,
+   "ols": {
+    "slope": 0.015913829689085716,
+    "intercept": 0.12034551157855902,
+    "r2": 0.13476256709279644
+   },
+   "pearson_raw": 0.36710021396452064
+  },
+  "H3_shelf_to_shelf": {
+   "regressor": "the per-host one-zone premium mean",
+   "response": "the per-host multi-zone premium mean (exp256's r-60i0 errs minus the canonical worst-errs, mean over seeds)",
+   "n": 12,
+   "spearman_rho": 0.9912141845604473,
+   "ols": {
+    "slope": 1.7848096656763266,
+    "intercept": -0.2957556750909675,
+    "r2": 0.9858409814045659
+   },
+   "pearson_raw": 0.9928952519800696
+  }
+ },
+ "gates": {
+  "H1_grids": {
+   "pass": true,
+   "bar": "exp271's 36-row premium grid complete (12 hosts x 3 seeds), the per-host means computed; exp243's boundary counts byte-verified; exp256's rows complete",
+   "one_zone_grid": {
+    "n_rows": 36,
+    "complete": true,
+    "finite": true,
+    "premium_arithmetic_recompute_ok": true,
+    "per_host_means_match_deposit": true
+   },
+   "boundary_counts": {
+    "n_hosts": 12,
+    "records_ok": true,
+    "min": 4,
+    "max": 48,
+    "source": "exp243's classes records, n_boundary_cells_base (the exp255 instrument); byte-verified via the deposit's READ-ONLY sha check"
+   },
+   "exp256_rows": {
+    "n_rows": 72,
+    "canonical_complete": true,
+    "substituted_complete": true,
+    "finite": true
+   },
+   "multi_zone_premium_grid": {
+    "n_rows": 36,
+    "finite": true
+   },
+   "source_deposit_shas_recorded": {
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp270_deposit": "4a4978361800bdc66a91cfcf2a345654393c0e8332583beff20059ebd1d39033"
+   }
+  },
+  "H2_boundary_price": {
+   "pass": false,
+   "bar": "Spearman(per-host one-zone premium mean, the host's canon-boundary count) >= 0.5 -> PRICE-GEOMETRIC; else PRICE-HOST-OTHER",
+   "n": 12,
+   "spearman_rho": 0.052631578947368425,
+   "ols": {
+    "slope": 0.015913829689085716,
+    "intercept": 0.12034551157855902,
+    "r2": 0.13476256709279644
+   },
+   "pearson_raw": 0.36710021396452064,
+   "ties_census": {
+    "boundary_counts": {
+     "n_distinct": 11,
+     "n_tied_values": 1,
+     "max_multiplicity": 2
+    },
+    "one_zone_means": {
+     "n_distinct": 11,
+     "n_tied_values": 1,
+     "max_multiplicity": 2
+    }
+   }
+  },
+  "H3_shelf_to_shelf": {
+   "pass": true,
+   "bar": "Spearman(one-zone premium mean, the multi-zone premium mean) across the 12 hosts >= 0.5 (the two shelves are the same host property at different depths \u2014 the step is a host-fixed price with a depth offset); reported either way",
+   "n": 12,
+   "spearman_rho": 0.9912141845604473,
+   "ols": {
+    "slope": 1.7848096656763266,
+    "intercept": -0.2957556750909675,
+    "r2": 0.9858409814045659
+   },
+   "pearson_raw": 0.9928952519800696,
+   "ties_census": {
+    "one_zone_means": {
+     "n_distinct": 11,
+     "n_tied_values": 1,
+     "max_multiplicity": 2
+    },
+    "multi_zone_means": {
+     "n_distinct": 10,
+     "n_tied_values": 2,
+     "max_multiplicity": 2
+    }
+   }
+  },
+  "H4_discipline": {
+   "pass": true,
+   "bar": "exp271's/exp256's/exp243's deposits READ-ONLY sha-recorded byte-unchanged; deterministic; no wall-clock fields; the -60.0 floor asserted at exit",
+   "read_only_shas_before": {
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp270_deposit": "4a4978361800bdc66a91cfcf2a345654393c0e8332583beff20059ebd1d39033"
+   },
+   "read_only_shas_after": {
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp270_deposit": "4a4978361800bdc66a91cfcf2a345654393c0e8332583beff20059ebd1d39033"
+   },
+   "read_only_byte_unchanged": true,
+   "deterministic_two_pass_bit_identical": true,
+   "payload_sha256_pass_a": "9c288bb4589e72d2521cd8ace93710a84976b24a08f7424cf4406c1eb9a9992f",
+   "payload_sha256_pass_b": "9c288bb4589e72d2521cd8ace93710a84976b24a08f7424cf4406c1eb9a9992f",
+   "no_wall_clock_fields": true,
+   "floor_at_entry": -60.0,
+   "floor_at_exit": -60.0,
+   "docstring_sha256": "956a9c4c39ceefb7c79c27e4d0163ca2aae2693b03197617fbf7ed531ba13c2b",
+   "docstring_byte_unchanged_vs_630600f": true,
+   "header_sha256": "95eb1c0705af8edfb694b02a75d21d9588e759f70688002be91dcd4cc6a466f4",
+   "header_byte_unchanged_vs_630600f": true,
+   "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically (verified by the run agent across processes)"
+  }
+ },
+ "branch": "PRICE-HOST-OTHER",
+ "verdict": "3/4 gates H1-H4 (3 PASS / 1 REFUTE) | PRICE-HOST-OTHER | H2 REFUTED: Spearman(per-host one-zone premium mean, canon-boundary count) 0.0526 < 0.5 (OLS slope +0.0159/cell, R2 0.1348) \u2014 the shelf's price is a host property OUTSIDE the boundary geometry, named honestly | H3 PASS: Spearman(one-zone premium mean, multi-zone premium mean) 0.9912 >= 0.5 (OLS slope +1.7848, R2 0.9858) \u2014 the two shelves ARE the same host property at different depths (a host-fixed price with a depth offset) | the premium hosts H3 (one-zone 1.95, multi-zone 3.51, boundary 47); H5 (one-zone 2.10, multi-zone 3.17, boundary 48) vs the ten-host cluster 0.34-0.49 one-zone / 0.33-0.49 multi-zone | deposits READ-ONLY byte-unchanged; two-pass bit-identical; floor -60.0",
+ "determinism": {
+  "computation_passes": 2,
+  "payload_sha256_pass_a": "9c288bb4589e72d2521cd8ace93710a84976b24a08f7424cf4406c1eb9a9992f",
+  "payload_sha256_pass_b": "9c288bb4589e72d2521cd8ace93710a84976b24a08f7424cf4406c1eb9a9992f",
+  "two_pass_bit_identical": true
+ },
+ "discipline": {
+  "no_wall_clock_fields": true,
+  "floor_at_entry": -60.0,
+  "floor_at_exit": -60.0,
+  "docstring_sha256": "956a9c4c39ceefb7c79c27e4d0163ca2aae2693b03197617fbf7ed531ba13c2b",
+  "docstring_byte_unchanged_vs_630600f": true,
+  "header_sha256": "95eb1c0705af8edfb694b02a75d21d9588e759f70688002be91dcd4cc6a466f4",
+  "header_byte_unchanged_vs_630600f": true,
+  "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically (verified by the run agent across processes)"
+ },
+ "deposit_fingerprint": "5b14aced755285cbb31f1448c76d8b56cc958a726521befc226d82c63fa94621"
+}
