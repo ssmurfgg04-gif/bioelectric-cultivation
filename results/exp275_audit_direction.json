@@ -1,0 +1,367 @@
+{
+ "exp": "exp275_audit_direction",
+ "claim": "THE AUDIT'S DIRECTION (batch 33, L252's registered next (a), pre-registration commit 347b434): is mia_prod_err mechanistically upstream of the one-zone rewrite premium or are both downstream of the same host defect? The conditioning test \u2014 the premium's partial correlation against the boundary count and the pair deficit UNDER mia's conditioning (the exp229 partial-rank identity on the tied-average ranks, 12 hosts) + the depth-offset re-read (exp272's multi-zone shelf under mia's conditioning: does the rho 0.9912 shelf-to-shelf identity survive mia?) \u2014 branches MIA-UPSTREAM / MIA-COLLINEAR / MIXED, the shelf re-read reported at its own 0.9 bar, never gating",
+ "method": {
+  "response": "the per-host one-zone premium mean (exp272's deposit per_host.<H>.one_zone_premium_mean, 12 values) \u2014 the shelf price whose direction w.r.t. the audit error is in question",
+  "second_shelf": "the per-host multi-zone premium mean (exp272's deposit per_host.<H>.multi_zone_premium_mean) \u2014 the depth-offset re-read's second shelf",
+  "mediators": "the three external separating fields from exp273's deposited 12-host field table, BY EXACT FIELD NAME: exp243.classes.multi_identity_audit.prod_err (semantic mia_prod_err \u2014 the conditioning variable Z), exp243.classes.n_boundary_cells_base, exp256.rows.pair_junction_count_mean_canonical (the pair deficit \u2014 LOWER is the deficit side); all three selection-tagged external in exp273's table \u2014 the non-circular discriminator set",
+  "partial_form": "exp229's GATE-K3 identity VERBATIM: partial(Y,X|Z) = (rho_YX - rho_YZ*rho_XZ) / sqrt((1-rho_YZ^2)(1-rho_XZ^2)) on the tied-average Spearman rhos (scipy rankdata both sides, exp272's _spearman convention); Y = the one-zone premium mean, Z = mia_prod_err, X in {boundary count, pair deficit, multi-zone premium mean}",
+  "bars": "geometric partials: COLLAPSES iff |partial| < 0.5, SURVIVES iff |partial| >= 0.5 (the house bar \u2014 exp272's H2/H3 and exp274's M2/M3 bar); the shelf re-read: SHELF-SURVIVES iff partial >= 0.9 (the identity grade), else SHELF-ABSORBED",
+  "anchors": "the unconditioned Spearmans reproduce exp274's deposited m2 spearman_rho values bit-exact and exp272's deposited H3 spearman_rho bit-exact (A2) \u2014 the machinery is the deposited machinery",
+  "method_source": "experiments/exp229_curvature_test.py (the partial-rank identity, GATE-K3), experiments/exp272_host_premium_structure.py (the _spearman convention, both premium shelves), experiments/exp273_outlier_hosts.py (the deposited field table), experiments/exp274_premium_mechanism.py (the deposited anchor rhos)"
+ },
+ "inputs": {
+  "exp272_deposit": {
+   "path": "results/exp272_host_premium_structure.json",
+   "sha256": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+   "role": "the per-host one-zone AND multi-zone premium means (both responses) + the deposited 36-row grids the means are re-derived from + the deposited H3 shelf rho (the shelf anchor)"
+  },
+  "exp273_deposit": {
+   "path": "results/exp273_outlier_hosts.json",
+   "sha256": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+   "role": "the deposited 12-host field table \u2014 the three mediators read from it BY EXACT FIELD NAME, with exp273's own provenance chain sha-verified against the actual deposit bytes"
+  },
+  "exp274_deposit": {
+   "path": "results/exp274_premium_mechanism.json",
+   "sha256": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+   "role": "the deposited m2 unconditioned Spearmans (the anchors A2 reproduces bit-exact) + the recorded input shas A1 verifies 6/6"
+  },
+  "exp243_deposit": {
+   "path": "results/exp243_structured_adversarial.json",
+   "sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "role": "the provenance chain: the classes records carrying mia_prod_err and n_boundary_cells_base \u2014 sha-verified, never opened for computation here"
+  },
+  "exp271_deposit": {
+   "path": "results/exp271_one_zone_premium.json",
+   "sha256": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+   "role": "the provenance chain: the one-zone premium grid \u2014 sha-verified, never opened"
+  },
+  "exp182_deposit": {
+   "path": "results/exp182_substrate_100.json",
+   "sha256": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+   "role": "the provenance chain: the margin profiles \u2014 sha-verified, never opened"
+  },
+  "exp256_deposit": {
+   "path": "results/exp256_row_pair_regression.json",
+   "sha256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+   "role": "the provenance chain: the row records carrying the canonical pair-junction mean \u2014 sha-verified, never opened"
+  }
+ },
+ "hosts": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H3",
+  "H4",
+  "H5",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "regression_table": [
+  {
+   "host": "H0",
+   "one_zone_premium_mean": 0.48666666666666664,
+   "multi_zone_premium_mean": 0.48666666666666664,
+   "mia_prod_err": 0.52,
+   "n_boundary_cells_base": 4.0,
+   "pair_junction_count_mean_canonical": 393.3333333333333
+  },
+  {
+   "host": "H1",
+   "one_zone_premium_mean": 0.48666666666666664,
+   "multi_zone_premium_mean": 0.48666666666666664,
+   "mia_prod_err": 0.52,
+   "n_boundary_cells_base": 4.0,
+   "pair_junction_count_mean_canonical": 393.3333333333333
+  },
+  {
+   "host": "H10",
+   "one_zone_premium_mean": 0.3633333333333333,
+   "multi_zone_premium_mean": 0.3633333333333333,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 32.0,
+   "pair_junction_count_mean_canonical": 324.0
+  },
+  {
+   "host": "H11",
+   "one_zone_premium_mean": 0.34,
+   "multi_zone_premium_mean": 0.3466666666666667,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 37.0,
+   "pair_junction_count_mean_canonical": 310.0
+  },
+  {
+   "host": "H2",
+   "one_zone_premium_mean": 0.3366666666666666,
+   "multi_zone_premium_mean": 0.3333333333333333,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 42.0,
+   "pair_junction_count_mean_canonical": 302.0
+  },
+  {
+   "host": "H3",
+   "one_zone_premium_mean": 1.946666666666667,
+   "multi_zone_premium_mean": 3.5066666666666664,
+   "mia_prod_err": 2.12,
+   "n_boundary_cells_base": 47.0,
+   "pair_junction_count_mean_canonical": 295.0
+  },
+  {
+   "host": "H4",
+   "one_zone_premium_mean": 0.36999999999999994,
+   "multi_zone_premium_mean": 0.36999999999999994,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 41.0,
+   "pair_junction_count_mean_canonical": 301.0
+  },
+  {
+   "host": "H5",
+   "one_zone_premium_mean": 2.1,
+   "multi_zone_premium_mean": 3.1666666666666665,
+   "mia_prod_err": 2.28,
+   "n_boundary_cells_base": 48.0,
+   "pair_junction_count_mean_canonical": 283.0
+  },
+  {
+   "host": "H6",
+   "one_zone_premium_mean": 0.3666666666666667,
+   "multi_zone_premium_mean": 0.3633333333333333,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 31.0,
+   "pair_junction_count_mean_canonical": 307.0
+  },
+  {
+   "host": "H7",
+   "one_zone_premium_mean": 0.35333333333333333,
+   "multi_zone_premium_mean": 0.35333333333333333,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 36.0,
+   "pair_junction_count_mean_canonical": 309.0
+  },
+  {
+   "host": "H8",
+   "one_zone_premium_mean": 0.37333333333333335,
+   "multi_zone_premium_mean": 0.37666666666666665,
+   "mia_prod_err": 0.52,
+   "n_boundary_cells_base": 39.0,
+   "pair_junction_count_mean_canonical": 308.0
+  },
+  {
+   "host": "H9",
+   "one_zone_premium_mean": 0.3499999999999999,
+   "multi_zone_premium_mean": 0.3499999999999999,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 43.0,
+   "pair_junction_count_mean_canonical": 307.0
+  }
+ ],
+ "mediator_provenance": {
+  "mia_prod_err": {
+   "field": "exp243.classes.multi_identity_audit.prod_err",
+   "semantic": "mia_prod_err",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.multi_identity_audit.prod_err",
+   "kind": "numeric",
+   "selection": "external"
+  },
+  "n_boundary_cells_base": {
+   "field": "exp243.classes.n_boundary_cells_base",
+   "semantic": "n_boundary_cells_base",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.n_boundary_cells_base",
+   "kind": "numeric",
+   "selection": "external"
+  },
+  "pair_junction_count_mean_canonical": {
+   "field": "exp256.rows.pair_junction_count_mean_canonical",
+   "semantic": "pair_junction_count_mean_canonical",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[arm=canonical].pair_junction_count, mean over seeds",
+   "kind": "numeric",
+   "selection": "external"
+  }
+ },
+ "conditioning": {
+  "boundary_count": {
+   "unconditioned_rho": 0.052631578947368425,
+   "partial_rho_given_mia": -0.3241708459632087,
+   "denominator": 0.44377725793125194,
+   "verdict": "COLLAPSES"
+  },
+  "pair_deficit": {
+   "unconditioned_rho": -0.16871730801028886,
+   "partial_rho_given_mia": -0.01571174180700716,
+   "denominator": 0.4474289305484138,
+   "verdict": "COLLAPSES"
+  },
+  "shelf_identity": {
+   "unconditioned_rho": 0.9912141845604473,
+   "partial_rho_given_mia": 0.9591093853142606,
+   "denominator": 0.21255839041998376,
+   "verdict": "SHELF-SURVIVES"
+  }
+ },
+ "ties_census": {
+  "one_zone_premium_mean": {
+   "n_distinct": 11,
+   "n_tied_values": 1,
+   "max_multiplicity": 2
+  },
+  "multi_zone_premium_mean": {
+   "n_distinct": 10,
+   "n_tied_values": 2,
+   "max_multiplicity": 2
+  },
+  "mia_prod_err": {
+   "n_distinct": 4,
+   "n_tied_values": 2,
+   "max_multiplicity": 7
+  },
+  "n_boundary_cells_base": {
+   "n_distinct": 11,
+   "n_tied_values": 1,
+   "max_multiplicity": 2
+  },
+  "pair_junction_count_mean_canonical": {
+   "n_distinct": 10,
+   "n_tied_values": 2,
+   "max_multiplicity": 2
+  }
+ },
+ "gates": {
+  "A1_grids": {
+   "pass": true,
+   "bar": "the 12-host table complete (5 columns, finite); both premium shelves re-derived bit-exact from exp272's deposited grids; exp273's carries bit-exact; the provenance chains sha-verified (exp273 5/5, exp274 6/6); READ-ONLY",
+   "complete_12x5": true,
+   "exp273_recorded_input_shas_match_actual_bytes": {
+    "exp243_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp256_deposit": true,
+    "exp272_deposit": true
+   },
+   "exp274_recorded_input_shas_match_actual_bytes": {
+    "exp272_deposit": true,
+    "exp273_deposit": true,
+    "exp243_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp256_deposit": true
+   },
+   "provenance_chains_sha_verified": true,
+   "exp272_one_zone_grid_arithmetic_recompute_ok": true,
+   "exp272_multi_zone_grid_arithmetic_recompute_ok": true,
+   "one_zone_means_bit_exact_vs_grid": true,
+   "multi_zone_means_bit_exact_vs_grid": true,
+   "exp273_carry_one_zone_bit_exact": true,
+   "exp273_carry_multi_zone_bit_exact": true,
+   "boundary_count_duplicate_carrier_identical": true
+  },
+  "A2_form": {
+   "pass": true,
+   "bar": "the three partials computed by the exp229 identity, each finite (denominator > 0); the anchors reproduce bit-exact: the three unconditioned Spearmans == exp274's deposited m2 spearman_rho values, the shelf rho == exp272's deposited H3 spearman_rho (0.9912)",
+   "unconditioned_spearman": {
+    "mia_prod_err": 0.890495623874902,
+    "n_boundary_cells_base": 0.052631578947368425,
+    "pair_junction_count_mean_canonical": -0.16871730801028886
+   },
+   "anchor_matches_exp274_m2": {
+    "mia_prod_err": true,
+    "n_boundary_cells_base": true,
+    "pair_junction_count_mean_canonical": true
+   },
+   "shelf_unconditioned_rho": 0.9912141845604473,
+   "shelf_anchor_matches_exp272_H3": true,
+   "conditioning_rhos": {
+    "rho(premium, mia)": 0.890495623874902,
+    "rho(mia, boundary)": 0.22065378290705534,
+    "rho(mia, pair)": -0.18157014570488322,
+    "rho(multi_zone, mia)": 0.8841676660411704
+   },
+   "partials_finite": true
+  },
+  "A3_branch": {
+   "pass": true,
+   "bar": "the discriminant pre-named, the bars numeric: COLLAPSES iff |partial| < 0.5, SURVIVES iff |partial| >= 0.5; MIA-UPSTREAM = both geometric partials collapse; MIA-COLLINEAR = both survive; MIXED = exactly one survives; the shelf re-read reported at the 0.9 bar (SHELF-SURVIVES >= 0.9 / SHELF-ABSORBED < 0.9), never read by the branch",
+   "branch": "MIA-UPSTREAM",
+   "shelf_re_read": "SHELF-SURVIVES",
+   "n_geometric_survivors": 0,
+   "boundary_count": {
+    "unconditioned_rho": 0.052631578947368425,
+    "partial_rho_given_mia": -0.3241708459632087,
+    "denominator": 0.44377725793125194,
+    "verdict": "COLLAPSES"
+   },
+   "pair_deficit": {
+    "unconditioned_rho": -0.16871730801028886,
+    "partial_rho_given_mia": -0.01571174180700716,
+    "denominator": 0.4474289305484138,
+    "verdict": "COLLAPSES"
+   },
+   "shelf_identity": {
+    "unconditioned_rho": 0.9912141845604473,
+    "partial_rho_given_mia": 0.9591093853142606,
+    "denominator": 0.21255839041998376,
+    "verdict": "SHELF-SURVIVES"
+   }
+  },
+  "A4_discipline": {
+   "pass": true,
+   "bar": "all deposits READ-ONLY sha-recorded byte-unchanged; deterministic \u2014 two-pass bit-identical; no wall-clock fields; the docstring+header pinned to 347b434 asserted at entry AND exit; NEURAL_SPEC_MIN == -60.0 asserted at exit",
+   "read_only_shas_before": {
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp274_deposit": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c"
+   },
+   "read_only_shas_after": {
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp274_deposit": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c"
+   },
+   "read_only_byte_unchanged": true,
+   "deterministic_two_pass_bit_identical": true,
+   "payload_sha256_pass_a": "55a5ac34aa4661dc8ff151fab57f5e1f30440b5924b4ce31dd583184d6f2ed38",
+   "payload_sha256_pass_b": "55a5ac34aa4661dc8ff151fab57f5e1f30440b5924b4ce31dd583184d6f2ed38",
+   "no_wall_clock_fields": true,
+   "floor_at_entry": -60.0,
+   "floor_at_exit": -60.0,
+   "docstring_sha256": "4381d5f83edfcd788dccf2822dda75e59f08df1de3b89b86ea0ae9c9a1253414",
+   "docstring_byte_unchanged_vs_347b434": true,
+   "header_sha256": "b8a38a851eff3694203e3872a3e9a4704f669417d8ea96bd9981b07a377b4804",
+   "header_byte_unchanged_vs_347b434": true,
+   "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+  }
+ },
+ "branch": "MIA-UPSTREAM",
+ "shelf_re_read": "SHELF-SURVIVES",
+ "verdict": "4/4 gates A1-A4 (4 PASS / 0 REFUTE) | MIA-UPSTREAM | SHELF-SURVIVES | A3: partial(one-zone premium, boundary count | mia) -0.324170846 (COLLAPSES, unconditioned 0.05263157895), partial(one-zone premium, pair deficit | mia) -0.01571174181 (COLLAPSES, unconditioned -0.168717308) \u2014 the geometry carries no premium rank variance beyond mia at the 0.5 house bar | the depth-offset re-read: partial(shelf | mia) 0.9591093853 vs the 0.9 bar (unconditioned 0.9912141846) \u2014 exp272's rho 0.9912 shelf-to-shelf identity survives mia (the depth offset is mia-independent) | 12 hosts, a pure re-read of exp272's premiums + exp273's field table + exp274's anchors, READ-ONLY byte-unchanged, two-pass bit-identical, floor -60.0",
+ "determinism": {
+  "computation_passes": 2,
+  "payload_sha256_pass_a": "55a5ac34aa4661dc8ff151fab57f5e1f30440b5924b4ce31dd583184d6f2ed38",
+  "payload_sha256_pass_b": "55a5ac34aa4661dc8ff151fab57f5e1f30440b5924b4ce31dd583184d6f2ed38",
+  "two_pass_bit_identical": true
+ },
+ "discipline": {
+  "no_wall_clock_fields": true,
+  "floor_at_entry": -60.0,
+  "floor_at_exit": -60.0,
+  "docstring_sha256": "4381d5f83edfcd788dccf2822dda75e59f08df1de3b89b86ea0ae9c9a1253414",
+  "docstring_byte_unchanged_vs_347b434": true,
+  "header_sha256": "b8a38a851eff3694203e3872a3e9a4704f669417d8ea96bd9981b07a377b4804",
+  "header_byte_unchanged_vs_347b434": true,
+  "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+ },
+ "deposit_fingerprint": "deb723e7b80f352dcb07dbbad26b47862b9fc7473331b1188ce59ffa3893fb31"
+}
