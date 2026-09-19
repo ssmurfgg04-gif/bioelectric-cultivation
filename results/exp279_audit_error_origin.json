@@ -1,0 +1,640 @@
+{
+ "exp": "exp279_audit_error_origin",
+ "claim": "THE AUDIT ERROR'S ORIGIN (batch 37, pre-registration commit 4a8d985): what makes the AUDIT err when the single-target reads err ~equal? The multi-target audit read (exp243's multi_identity_audit.prod_err \u2014 the MULTI-target production read on the base medium, seed 1) compared per host against the adversarial battery's own per-arm worst errs (P1 the mirror-medium canon row, P2 the boundary-double canon row, P3 the deep-band substitution rows r-60i0/r-60i1) at two pre-named grains (the seed-matched GATING grain and exp276's masses as the audit-only ROBUSTNESS grain); the branch AUDIT-MAX / AUDIT-EXCESS / AUDIT-INDEPENDENT at the >= 10/12 host bar with the 10%-of-prod_err and 1.1x bars",
+ "method": {
+  "audit_error": "exp243.classes.<H>.multi_identity_audit.prod_err \u2014 the MULTI-target production read on the base medium, seed 1, bit-identical 12/12; the records read AS DEPOSITED (no component fields \u2014 G2); the class records' runtime_s field EXCLUDED by the no-wall-clock discipline",
+  "battery_arms": {
+   "P1": "P1_canon_zone_relabelings \u2014 the canon row on the mirrored medium (the zero-knob label mirror pi(i)=n-1-i)",
+   "P2": "P2_boundary_double_frequency_rewiring \u2014 the canon row on the boundary-double medium (each canon-boundary cell chorded to its next two boundary peers)",
+   "P3": "P3_deep_band_substitution \u2014 the base medium read at the deep band's -60.0 rung rows r-60i0/r-60i1, BOTH pre-named instances"
+  },
+  "gating_grain": "the seed-matched errs: the audit record is the seed-1 read (deposited seed == 1 asserted 12/12), so p1 = P1.errs[0], p2 = P2.errs[0], p3 = max over the two P3 rows of errs[0] (exp255's/exp256's arm-worst convention); max_arm_err = max(p1, p2, p3); the argmax arm ties to the FIRST arm in the pre-named order P1 -> P2 -> P3 \u2014 zero grain mixing",
+  "robustness_grain": "exp276's arm masses m_P1/m_P2/m_P3 (the mean over the 3 seeds of the per-seed arm worsts), recomputed from exp243's candidates and cross-checked bit-exact vs exp276's deposited decomposition_table 12x3; AUDIT-ONLY, never gating",
+  "host_class_rule": "precedence FIXED: MAX-host iff |a - max_arm| <= 0.10*a (the 10% bar); else EXCESS-host iff a > 1.1*max_arm (the 1.1x bar); else INDEPENDENT-host (fails both bars \u2014 includes the disclosed below-worst face a < 0.9*max_arm, the audit erring LESS than the worst single-target arm)",
+  "branch_rule": "AUDIT-MAX iff the MAX-hosts >= 10 of 12; else AUDIT-EXCESS iff the EXCESS-hosts >= 10 of 12; else AUDIT-INDEPENDENT; evaluated on the gating grain, tested in that order",
+  "method_source": "experiments/exp243_structured_adversarial.py (the battery + the audit records), experiments/exp256_row_pair_regression.py (the per-seed arm worsts, re-deposited), experiments/exp272_host_premium_structure.py (the host frame + the outlier pre-name source), experiments/exp273_outlier_hosts.py (the deposited outlier pre-name + the mia field-table carry), experiments/exp276_audit_own_face.py (the arm masses + the recorded input chain + the audit-records' schema handling)"
+ },
+ "inputs": {
+  "exp243_deposit": {
+   "path": "results/exp243_structured_adversarial.json",
+   "sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "role": "the 48-record candidate battery (the arms' errs) + the 12 multi_identity_audit records (the audit error) \u2014 the computation's primary source"
+  },
+  "exp256_deposit": {
+   "path": "results/exp256_row_pair_regression.json",
+   "sha256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+   "role": "the 72 deposited per-seed arm worsts the derived arm worsts are cross-checked against, bit-exact"
+  },
+  "exp272_deposit": {
+   "path": "results/exp272_host_premium_structure.json",
+   "sha256": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+   "role": "the host frame + the outlier pre-name source (descriptive.premium_hosts)"
+  },
+  "exp273_deposit": {
+   "path": "results/exp273_outlier_hosts.json",
+   "sha256": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+   "role": "the deposited outlier pre-name + the field-table carry of mia_prod_err (bit-exact) + the recorded input shas verified 5/5"
+  },
+  "exp276_deposit": {
+   "path": "results/exp276_audit_own_face.json",
+   "sha256": "b96db86973284f2c27bdf1dd75e62f90d2b5832fa2673c86f5c77d63dfbdfba2",
+   "role": "the arm masses (the robustness grain, bit-exact) + the outliers + the recorded input shas verified 8/8"
+  },
+  "exp271_deposit": {
+   "path": "results/exp271_one_zone_premium.json",
+   "sha256": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+   "role": "the provenance chain: the one-zone premium grid \u2014 sha-verified via exp276's chain, never opened for computation"
+  },
+  "exp182_deposit": {
+   "path": "results/exp182_substrate_100.json",
+   "sha256": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+   "role": "the provenance chain: the margin profiles \u2014 sha-verified via exp276's chain, never opened"
+  },
+  "exp274_deposit": {
+   "path": "results/exp274_premium_mechanism.json",
+   "sha256": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+   "role": "the provenance chain: the rank-regression convention's source deposit \u2014 sha-verified via exp276's chain, never opened for computation"
+  },
+  "exp275_deposit": {
+   "path": "results/exp275_audit_direction.json",
+   "sha256": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879",
+   "role": "the provenance chain: the sha-discipline precedent's deposit \u2014 sha-verified via exp276's chain, never opened for computation"
+  }
+ },
+ "hosts": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H3",
+  "H4",
+  "H5",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "outliers": [
+  "H3",
+  "H5"
+ ],
+ "cluster": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H4",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "battery_arms": {
+  "P1_canon_zone_relabelings": "the canon row on the mirrored medium",
+  "P2_boundary_double_frequency_rewiring": "the canon row on the boundary-double medium",
+  "P3_deep_band_substitution": "the deep rows r-60i0/r-60i1 on the base medium"
+ },
+ "origin_table": [
+  {
+   "host": "H0",
+   "audit_prod_err": 0.52,
+   "p1_seed1_err": 0.04,
+   "p2_seed1_err": 0.06,
+   "p3_i0_seed1_err": 0.53,
+   "p3_i1_seed1_err": 0.52,
+   "p3_seed1_worst": 0.53,
+   "max_arm_err": 0.53,
+   "argmax_arm": "P3_deep_band_substitution",
+   "gap_seed1": -0.010000000000000009,
+   "excess_ratio_seed1": 0.9811320754716981,
+   "host_class": "MAX",
+   "m_P1": 0.043333333333333335,
+   "m_P2": 0.05333333333333334,
+   "m_P3": 0.54,
+   "max_mass_err": 0.54,
+   "gap_mass": -0.020000000000000018,
+   "excess_ratio_mass": 0.9629629629629629,
+   "host_class_mass": "MAX",
+   "outlier": false
+  },
+  {
+   "host": "H1",
+   "audit_prod_err": 0.52,
+   "p1_seed1_err": 0.04,
+   "p2_seed1_err": 0.06,
+   "p3_i0_seed1_err": 0.53,
+   "p3_i1_seed1_err": 0.52,
+   "p3_seed1_worst": 0.53,
+   "max_arm_err": 0.53,
+   "argmax_arm": "P3_deep_band_substitution",
+   "gap_seed1": -0.010000000000000009,
+   "excess_ratio_seed1": 0.9811320754716981,
+   "host_class": "MAX",
+   "m_P1": 0.043333333333333335,
+   "m_P2": 0.05333333333333334,
+   "m_P3": 0.54,
+   "max_mass_err": 0.54,
+   "gap_mass": -0.020000000000000018,
+   "excess_ratio_mass": 0.9629629629629629,
+   "host_class_mass": "MAX",
+   "outlier": false
+  },
+  {
+   "host": "H10",
+   "audit_prod_err": 0.49,
+   "p1_seed1_err": 0.06,
+   "p2_seed1_err": 0.14,
+   "p3_i0_seed1_err": 0.49,
+   "p3_i1_seed1_err": 0.49,
+   "p3_seed1_worst": 0.49,
+   "max_arm_err": 0.49,
+   "argmax_arm": "P3_deep_band_substitution",
+   "gap_seed1": 0.0,
+   "excess_ratio_seed1": 1.0,
+   "host_class": "MAX",
+   "m_P1": 0.05333333333333334,
+   "m_P2": 0.1366666666666667,
+   "m_P3": 0.5033333333333333,
+   "max_mass_err": 0.5033333333333333,
+   "gap_mass": -0.013333333333333308,
+   "excess_ratio_mass": 0.9735099337748345,
+   "host_class_mass": "MAX",
+   "outlier": false
+  },
+  {
+   "host": "H11",
+   "audit_prod_err": 0.49,
+   "p1_seed1_err": 0.06,
+   "p2_seed1_err": 0.16,
+   "p3_i0_seed1_err": 0.5,
+   "p3_i1_seed1_err": 0.49,
+   "p3_seed1_worst": 0.5,
+   "max_arm_err": 0.5,
+   "argmax_arm": "P3_deep_band_substitution",
+   "gap_seed1": -0.010000000000000009,
+   "excess_ratio_seed1": 0.98,
+   "host_class": "MAX",
+   "m_P1": 0.05333333333333334,
+   "m_P2": 0.16,
+   "m_P3": 0.5066666666666667,
+   "max_mass_err": 0.5066666666666667,
+   "gap_mass": -0.01666666666666672,
+   "excess_ratio_mass": 0.9671052631578947,
+   "host_class_mass": "MAX",
+   "outlier": false
+  },
+  {
+   "host": "H2",
+   "audit_prod_err": 0.49,
+   "p1_seed1_err": 0.06,
+   "p2_seed1_err": 0.16,
+   "p3_i0_seed1_err": 0.49,
+   "p3_i1_seed1_err": 0.5,
+   "p3_seed1_worst": 0.5,
+   "max_arm_err": 0.5,
+   "argmax_arm": "P3_deep_band_substitution",
+   "gap_seed1": -0.010000000000000009,
+   "excess_ratio_seed1": 0.98,
+   "host_class": "MAX",
+   "m_P1": 0.06,
+   "m_P2": 0.16666666666666666,
+   "m_P3": 0.5066666666666667,
+   "max_mass_err": 0.5066666666666667,
+   "gap_mass": -0.01666666666666672,
+   "excess_ratio_mass": 0.9671052631578947,
+   "host_class_mass": "MAX",
+   "outlier": false
+  },
+  {
+   "host": "H3",
+   "audit_prod_err": 2.12,
+   "p1_seed1_err": 0.05,
+   "p2_seed1_err": 0.17,
+   "p3_i0_seed1_err": 3.68,
+   "p3_i1_seed1_err": 3.24,
+   "p3_seed1_worst": 3.68,
+   "max_arm_err": 3.68,
+   "argmax_arm": "P3_deep_band_substitution",
+   "gap_seed1": -1.56,
+   "excess_ratio_seed1": 0.5760869565217391,
+   "host_class": "INDEPENDENT",
+   "m_P1": 0.05333333333333334,
+   "m_P2": 0.17333333333333334,
+   "m_P3": 3.68,
+   "max_mass_err": 3.68,
+   "gap_mass": -1.56,
+   "excess_ratio_mass": 0.5760869565217391,
+   "host_class_mass": "INDEPENDENT",
+   "outlier": true
+  },
+  {
+   "host": "H4",
+   "audit_prod_err": 0.49,
+   "p1_seed1_err": 0.06,
+   "p2_seed1_err": 0.13,
+   "p3_i0_seed1_err": 0.49,
+   "p3_i1_seed1_err": 0.49,
+   "p3_seed1_worst": 0.49,
+   "max_arm_err": 0.49,
+   "argmax_arm": "P3_deep_band_substitution",
+   "gap_seed1": 0.0,
+   "excess_ratio_seed1": 1.0,
+   "host_class": "MAX",
+   "m_P1": 0.06,
+   "m_P2": 0.1366666666666667,
+   "m_P3": 0.5066666666666667,
+   "max_mass_err": 0.5066666666666667,
+   "gap_mass": -0.01666666666666672,
+   "excess_ratio_mass": 0.9671052631578947,
+   "host_class_mass": "MAX",
+   "outlier": false
+  },
+  {
+   "host": "H5",
+   "audit_prod_err": 2.28,
+   "p1_seed1_err": 0.06,
+   "p2_seed1_err": 0.19,
+   "p3_i0_seed1_err": 3.35,
+   "p3_i1_seed1_err": 2.87,
+   "p3_seed1_worst": 3.35,
+   "max_arm_err": 3.35,
+   "argmax_arm": "P3_deep_band_substitution",
+   "gap_seed1": -1.0700000000000003,
+   "excess_ratio_seed1": 0.6805970149253731,
+   "host_class": "INDEPENDENT",
+   "m_P1": 0.06,
+   "m_P2": 0.19000000000000003,
+   "m_P3": 3.356666666666667,
+   "max_mass_err": 3.356666666666667,
+   "gap_mass": -1.076666666666667,
+   "excess_ratio_mass": 0.6792452830188678,
+   "host_class_mass": "INDEPENDENT",
+   "outlier": true
+  },
+  {
+   "host": "H6",
+   "audit_prod_err": 0.49,
+   "p1_seed1_err": 0.06,
+   "p2_seed1_err": 0.14,
+   "p3_i0_seed1_err": 0.49,
+   "p3_i1_seed1_err": 0.49,
+   "p3_seed1_worst": 0.49,
+   "max_arm_err": 0.49,
+   "argmax_arm": "P3_deep_band_substitution",
+   "gap_seed1": 0.0,
+   "excess_ratio_seed1": 1.0,
+   "host_class": "MAX",
+   "m_P1": 0.06,
+   "m_P2": 0.14,
+   "m_P3": 0.5033333333333333,
+   "max_mass_err": 0.5033333333333333,
+   "gap_mass": -0.013333333333333308,
+   "excess_ratio_mass": 0.9735099337748345,
+   "host_class_mass": "MAX",
+   "outlier": false
+  },
+  {
+   "host": "H7",
+   "audit_prod_err": 0.49,
+   "p1_seed1_err": 0.06,
+   "p2_seed1_err": 0.15,
+   "p3_i0_seed1_err": 0.49,
+   "p3_i1_seed1_err": 0.49,
+   "p3_seed1_worst": 0.49,
+   "max_arm_err": 0.49,
+   "argmax_arm": "P3_deep_band_substitution",
+   "gap_seed1": 0.0,
+   "excess_ratio_seed1": 1.0,
+   "host_class": "MAX",
+   "m_P1": 0.05333333333333334,
+   "m_P2": 0.15,
+   "m_P3": 0.5033333333333333,
+   "max_mass_err": 0.5033333333333333,
+   "gap_mass": -0.013333333333333308,
+   "excess_ratio_mass": 0.9735099337748345,
+   "host_class_mass": "MAX",
+   "outlier": false
+  },
+  {
+   "host": "H8",
+   "audit_prod_err": 0.52,
+   "p1_seed1_err": 0.07,
+   "p2_seed1_err": 0.14,
+   "p3_i0_seed1_err": 0.52,
+   "p3_i1_seed1_err": 0.52,
+   "p3_seed1_worst": 0.52,
+   "max_arm_err": 0.52,
+   "argmax_arm": "P3_deep_band_substitution",
+   "gap_seed1": 0.0,
+   "excess_ratio_seed1": 1.0,
+   "host_class": "MAX",
+   "m_P1": 0.07,
+   "m_P2": 0.14,
+   "m_P3": 0.5166666666666667,
+   "max_mass_err": 0.5166666666666667,
+   "gap_mass": 0.0033333333333332993,
+   "excess_ratio_mass": 1.0064516129032257,
+   "host_class_mass": "MAX",
+   "outlier": false
+  },
+  {
+   "host": "H9",
+   "audit_prod_err": 0.49,
+   "p1_seed1_err": 0.07,
+   "p2_seed1_err": 0.16,
+   "p3_i0_seed1_err": 0.5,
+   "p3_i1_seed1_err": 0.49,
+   "p3_seed1_worst": 0.5,
+   "max_arm_err": 0.5,
+   "argmax_arm": "P3_deep_band_substitution",
+   "gap_seed1": -0.010000000000000009,
+   "excess_ratio_seed1": 0.98,
+   "host_class": "MAX",
+   "m_P1": 0.06666666666666667,
+   "m_P2": 0.15333333333333332,
+   "m_P3": 0.5033333333333333,
+   "max_mass_err": 0.5033333333333333,
+   "gap_mass": -0.013333333333333308,
+   "excess_ratio_mass": 0.9735099337748345,
+   "host_class_mass": "MAX",
+   "outlier": false
+  }
+ ],
+ "audit_meta": {
+  "H0": {
+   "seed": 1,
+   "bit_identical": true,
+   "f_max": 0.0
+  },
+  "H1": {
+   "seed": 1,
+   "bit_identical": true,
+   "f_max": 0.0
+  },
+  "H10": {
+   "seed": 1,
+   "bit_identical": true,
+   "f_max": 0.0
+  },
+  "H11": {
+   "seed": 1,
+   "bit_identical": true,
+   "f_max": 0.0
+  },
+  "H2": {
+   "seed": 1,
+   "bit_identical": true,
+   "f_max": 0.0
+  },
+  "H3": {
+   "seed": 1,
+   "bit_identical": true,
+   "f_max": 0.0
+  },
+  "H4": {
+   "seed": 1,
+   "bit_identical": true,
+   "f_max": 0.0
+  },
+  "H5": {
+   "seed": 1,
+   "bit_identical": true,
+   "f_max": 0.0
+  },
+  "H6": {
+   "seed": 1,
+   "bit_identical": true,
+   "f_max": 0.0
+  },
+  "H7": {
+   "seed": 1,
+   "bit_identical": true,
+   "f_max": 0.0
+  },
+  "H8": {
+   "seed": 1,
+   "bit_identical": true,
+   "f_max": 0.0
+  },
+  "H9": {
+   "seed": 1,
+   "bit_identical": true,
+   "f_max": 0.0
+  }
+ },
+ "audit_record_key_sets": [
+  [
+   "bit_identical",
+   "f_max",
+   "prod_err",
+   "seed"
+  ]
+ ],
+ "gates": {
+  "G1_grids": {
+   "pass": true,
+   "bar": "integrity READ-ONLY sha-verified: the candidates grid complete (48 = 12 hosts x 4, 3 finite errs each, zero rejections, verified all-True); the audit records 12/12 (prod_err finite, bit_identical True, seed == 1); the P3 deep rows exactly r-60i0/r-60i1 on every host; exp256's 72 rows complete with worst_err == max of instance errs AND bit-exact vs the derived arm worsts; exp273's mia carry bit-exact 12/12; the outlier pre-name asserted (exp273 == exp272 == exp276 == ['H3','H5']); the provenance chains sha-verified (exp276 8/8, exp273 5/5); READ-ONLY",
+   "candidates_grid_complete_48": true,
+   "arm_worst_cross_check_vs_exp256": {
+    "n_checks": 72,
+    "n_bit_exact": 72,
+    "n_instance_structure_ok": 72
+   },
+   "arm_worst_cross_check_ok": true,
+   "exp273_mia_carry_bit_exact": true,
+   "exp276_recorded_input_shas_match_actual_bytes": {
+    "exp243_deposit": true,
+    "exp256_deposit": true,
+    "exp272_deposit": true,
+    "exp273_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp274_deposit": true,
+    "exp275_deposit": true
+   },
+   "exp273_recorded_input_shas_match_actual_bytes": {
+    "exp243_deposit": true,
+    "exp272_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp256_deposit": true
+   },
+   "provenance_chains_sha_verified": true,
+   "provenance_chain_counts": {
+    "exp276": [
+     8,
+     8
+    ],
+    "exp273": [
+     5,
+     5
+    ]
+   },
+   "read_only_complete": true
+  },
+  "G2_identity": {
+   "pass": true,
+   "bar": "the aggregation form asserted AS THE DATA DEFINES IT: a component-bearing audit record would be verified sum(components) == prod_err within 1e-9; the deposited records carry NONE (the key set exactly {seed, bit_identical, prod_err, f_max}, asserted 12/12) \u2014 the record ATOMIC as deposited, the identity clause vacuous-as-deposited, read as deposited NEVER repaired or reconstructed; the battery's own identities asserted: worst_err == max(errs) 48/48 candidates + 72/72 exp256 rows; the masses == exp276's deposit bit-exact 12x3",
+   "audit_records_atomic_as_deposited": true,
+   "audit_component_census": {
+    "H0": [],
+    "H1": [],
+    "H10": [],
+    "H11": [],
+    "H2": [],
+    "H3": [],
+    "H4": [],
+    "H5": [],
+    "H6": [],
+    "H7": [],
+    "H8": [],
+    "H9": []
+   },
+   "audit_record_key_sets": [
+    [
+     "bit_identical",
+     "f_max",
+     "prod_err",
+     "seed"
+    ]
+   ],
+   "worst_err_equals_max_errs_candidates": {
+    "n_checks": 48,
+    "n_ok": 48
+   },
+   "worst_err_equals_max_instance_errs_rows256": {
+    "n_checks": 72,
+    "n_ok": 72
+   },
+   "masses_bit_exact_vs_exp276": {
+    "n_checks": 36,
+    "n_bit_exact": 36
+   }
+  },
+  "G3_branch": {
+   "pass": true,
+   "bar": "the discriminant pre-named with the numeric bars at the fixed precedence, on the GATING grain: AUDIT-MAX iff the MAX-hosts >= 10/12 (|a - max_arm| <= 0.10*a); else AUDIT-EXCESS iff the EXCESS-hosts >= 10/12 (a > 1.1*max_arm); else AUDIT-INDEPENDENT; the robustness grain recorded audit-only, never gating",
+   "branch": "AUDIT-MAX",
+   "grain_gating": "the seed-matched errs (the audit's own seed-1 operating point)",
+   "bar_max_rel_gap": 0.1,
+   "bar_excess_ratio": 1.1,
+   "host_bar": 10,
+   "host_class_counts": {
+    "MAX": 10,
+    "EXCESS": 0,
+    "INDEPENDENT": 2
+   },
+   "host_class_counts_robustness_grain_audit_only": {
+    "MAX": 10,
+    "EXCESS": 0,
+    "INDEPENDENT": 2
+   },
+   "branch_robustness_grain_audit_only": "AUDIT-MAX",
+   "grains_agree_audit_only": true,
+   "max_arm_is_P3_on_all_hosts": true,
+   "outlier_excess_ratios": {
+    "H3": 0.5760869565217391,
+    "H5": 0.6805970149253731
+   },
+   "cluster_excess_ratio_range": [
+    0.98,
+    1.0
+   ],
+   "cluster_rel_gap_range": [
+    0.0,
+    0.02040816326530614
+   ]
+  },
+  "G4_discipline": {
+   "pass": true,
+   "bar": "all deposits READ-ONLY sha-recorded byte-unchanged; deterministic \u2014 two-pass bit-identical; no wall-clock fields; the docstring+header pinned to 4a8d985 asserted at entry AND exit; NEURAL_SPEC_MIN == -60.0 asserted at exit",
+   "read_only_shas_before": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp276_deposit": "b96db86973284f2c27bdf1dd75e62f90d2b5832fa2673c86f5c77d63dfbdfba2",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp274_deposit": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+    "exp275_deposit": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879"
+   },
+   "read_only_shas_after": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp276_deposit": "b96db86973284f2c27bdf1dd75e62f90d2b5832fa2673c86f5c77d63dfbdfba2",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp274_deposit": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+    "exp275_deposit": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879"
+   },
+   "read_only_byte_unchanged": true,
+   "deterministic_two_pass_bit_identical": true,
+   "payload_sha256_pass_a": "b1763b95565b5ba708be0b15f6fa96f09fa36c428d209d6c529fe5b8779d845a",
+   "payload_sha256_pass_b": "b1763b95565b5ba708be0b15f6fa96f09fa36c428d209d6c529fe5b8779d845a",
+   "no_wall_clock_fields": true,
+   "floor_at_entry": -60.0,
+   "floor_at_exit": -60.0,
+   "docstring_sha256": "6e6655b17937f4c383f021a39030220b4a76b7c20e9af1b2a179fb168c1494b8",
+   "docstring_byte_unchanged_vs_4a8d985": true,
+   "header_sha256": "879b7fb5b8d62c88317560c1d0616f7d4d4249e98606afe2c491fc6563332058",
+   "header_byte_unchanged_vs_4a8d985": true,
+   "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+  }
+ },
+ "branch": "AUDIT-MAX",
+ "branch_discriminant": {
+  "branch": "AUDIT-MAX",
+  "grain_gating": "the seed-matched errs (the audit's own seed-1 operating point)",
+  "bar_max_rel_gap": 0.1,
+  "bar_excess_ratio": 1.1,
+  "host_bar": 10,
+  "host_class_counts": {
+   "MAX": 10,
+   "EXCESS": 0,
+   "INDEPENDENT": 2
+  },
+  "host_class_counts_robustness_grain_audit_only": {
+   "MAX": 10,
+   "EXCESS": 0,
+   "INDEPENDENT": 2
+  },
+  "branch_robustness_grain_audit_only": "AUDIT-MAX",
+  "grains_agree_audit_only": true,
+  "max_arm_is_P3_on_all_hosts": true,
+  "outlier_excess_ratios": {
+   "H3": 0.5760869565217391,
+   "H5": 0.6805970149253731
+  },
+  "cluster_excess_ratio_range": [
+   0.98,
+   1.0
+  ],
+  "cluster_rel_gap_range": [
+   0.0,
+   0.02040816326530614
+  ]
+ },
+ "verdict": "4/4 gates G1-G4 (4 PASS / 0 REFUTE) | AUDIT-MAX \u2014 the audit's multi-target read errs within the 10% bar of the worst single-target arm on 10/12 hosts (the argmax arm is the P3 deep-band substitution on all 12; the cluster's |gap|/a in [0, 0.02040816327]), 0/12 hosts EXCESS \u2014 the simultaneous multi-target read NEVER costs more than the worst single-target read (the interference face refuted); the outliers H3/H5 are the two residual hosts, the audit erring BELOW the worst single-target arm (excess ratios 0.5760869565/0.6805970149) \u2014 the aggregation form is MAX-like, not SUM-like: the ~4x audit error is not a multi-target aggregation cost | the robustness grain (exp276's masses) agrees ({'MAX': 10, 'EXCESS': 0, 'INDEPENDENT': 2}, branch AUDIT-MAX) | 12 hosts, a pure re-read of exp243's battery + audit records + exp256's arm rows + exp273's pre-name + exp276's masses, READ-ONLY byte-unchanged, two-pass bit-identical, floor -60.0",
+ "determinism": {
+  "computation_passes": 2,
+  "payload_sha256_pass_a": "b1763b95565b5ba708be0b15f6fa96f09fa36c428d209d6c529fe5b8779d845a",
+  "payload_sha256_pass_b": "b1763b95565b5ba708be0b15f6fa96f09fa36c428d209d6c529fe5b8779d845a",
+  "two_pass_bit_identical": true
+ },
+ "discipline": {
+  "no_wall_clock_fields": true,
+  "floor_at_entry": -60.0,
+  "floor_at_exit": -60.0,
+  "docstring_sha256": "6e6655b17937f4c383f021a39030220b4a76b7c20e9af1b2a179fb168c1494b8",
+  "docstring_byte_unchanged_vs_4a8d985": true,
+  "header_sha256": "879b7fb5b8d62c88317560c1d0616f7d4d4249e98606afe2c491fc6563332058",
+  "header_byte_unchanged_vs_4a8d985": true,
+  "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+ },
+ "deposit_fingerprint": "20cff13fb5147ec057ed5c88eb9180ec75a971c7b6e5498d4875c805b81c1f81"
+}
