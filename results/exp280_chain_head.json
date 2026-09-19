@@ -1,0 +1,954 @@
+{
+ "exp": "exp280_chain_head",
+ "claim": "THE CHAIN'S HEAD (batch 38, pre-registration commit 421c742): why do the boundary-richest/pair-poorest hosts H3/H5 read the deep-band program worst? The deep-band read's per-host error (exp256's substituted worst_err per host) and the amplification ratio (exp278's deposit) regressed against the hosts' OWN adjacency structure \u2014 the 12 base adjacencies DETERMINISTICALLY REBUILT (exp269's/exp256's rebuild form: graph_path for H0/H1, small_world at the deposited rewire seeds), every rebuild sha-asserted against exp243's records; the zero-knob structural fields (the degree spectrum's mean/max/spread, the clustering coefficient, the boundary cells' own degree mean, the pair-support density); Spearman under the exp274/exp275 conventions; the branch TOPOLOGY-CARRIED (>= 1 of the five non-degenerate fields reaches the 0.5 SIGNED house bar against the deep-band err) / TOPOLOGY-ABSENT (named honestly); the abs variant + R2's regressions audit-only",
+ "method": {
+  "rebuild": "exp269's/exp256's rebuild form (the exp243/exp225 construction): H0/H1 graph_path(n); H2-H11 small_world(n, 0.10, int(rec['rewire_seed'])) at the deposited rewire seeds; n from exp243's per-host records; every rebuild asserted \u2014 sha256(|A| as float64) == rec['base_sha256'], the upper-triangle edge count == rec['edges_base'], the exp208 classify CANON-BOUNDARY count == rec['n_boundary_cells_base'] dual-carried vs exp272 + exp278, labeling_bfs_n(|A|) == labeling_bfs_n(A), H0 == H1 bit-exact; ZERO new simulation",
+  "structural_fields": {
+   "deg_mean": "F1 \u2014 the mean of the per-cell pair-support degree (support = |A| > 0, symmetric) over the n cells",
+   "deg_max": "F2 \u2014 the max of the degree spectrum",
+   "deg_spread": "F3 \u2014 the max minus the min of the degree spectrum",
+   "clustering": "F4 \u2014 the mean local Watts-Strogatz clustering coefficient (deg >= 2: 2*E(N_i)/(d_i*(d_i-1)); deg < 2: 0.0); DISCLOSED DEGENERACY (fixed BEFORE the body, the exp277 deposit-read disclosure precedent): the deposited seeds' chords form no triangles on any of the 12 rebuilt bases \u2014 F4 identically 0.0, ASSERTED at G2 (fail = STOP); a constant field has no rank variance: its rho is UNDEFINED (null) and it is EXCLUDED from the branch max, forced by the degeneracy, never chosen",
+   "boundary_degree_mean": "F5 \u2014 the mean pair-support degree over the CANON-BOUNDARY cells (exp208's classify instrument on the canon labeling, the ring backbone i\u00b11)",
+   "pair_support_density": "F6 \u2014 the support pairs in the upper triangle over n*(n-1)/2"
+  },
+  "h0_h1_note": "the H0 slot echoes H1 bit-exactly (the chain class's n=400 call site, exp243's own disclosure, asserted) \u2014 the field table carries both slots; the regressions run on the 12-slot frame (the house convention, exp278's ties-census precedent)",
+  "responses": {
+   "R1": "the deep-band read err per host \u2014 the mean over the 3 substituted rows' worst_err in exp256's 72 rows (the exp255/exp256 arm-worst convention); bit-exact vs exp276's m_P3, exp273's field-table worst_err_mean_substituted, exp278's m_P3",
+   "R2": "the amplification ratio per host, read from exp278's deposited per-host table; asserted == its m_P3/m_P12_pooled identity bit-exact with m_P12_pooled == the pooled mean over the 6 canonical instance errs replicated from exp256's rows in exp278's exact (seed, P1, P2) convention; AUDIT-ONLY in the branch"
+  },
+  "regressions": "the exp274/exp275 conventions VERBATIM: Spearman = Pearson on the tied-average ranks (scipy rankdata); the single-predictor OLS rank R2 (the response as its tied-average ranks, the field as the numeric design column); the all-ranks variant (the field ranked too, single R2 == rho^2 within 1e-12) audit-only; the ties census per vector; a single-level field's rho is UNDEFINED (null), disclosed",
+  "branch_rule": "TOPOLOGY-CARRIED iff >= 1 of the FIVE non-degenerate fields reaches Spearman >= 0.5 (the SIGNED house bar, the pre-named richness->exposure direction) against R1; else TOPOLOGY-ABSENT; the abs variant + R2's regressions audit-only, never gating",
+  "method_source": "experiments/exp243_structured_adversarial.py (the classes records = the rebuild's sha anchors), experiments/exp256_row_pair_regression.py (the 72 rows = R1's source), experiments/exp269_response_surface.py (the rebuild form), experiments/exp272_host_premium_structure.py (the host frame + the boundary counts), experiments/exp273_outlier_hosts.py (the outlier pre-name + the field table), experiments/exp276_audit_own_face.py (m_P3 + the recorded chain), experiments/exp278_amplification_factor.py (the ratio table + the recorded chain)"
+ },
+ "inputs": {
+  "exp243_deposit": {
+   "path": "results/exp243_structured_adversarial.json",
+   "sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "role": "the classes records \u2014 the rebuild's sha anchors (base_sha256, edges_base, n_boundary_cells_base, rewire_seed, n)"
+  },
+  "exp256_deposit": {
+   "path": "results/exp256_row_pair_regression.json",
+   "sha256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+   "role": "the 72 rows \u2014 R1's source (the substituted worst_err means) + the pooled-instance replication for exp278's m_P12 identity"
+  },
+  "exp272_deposit": {
+   "path": "results/exp272_host_premium_structure.json",
+   "sha256": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+   "role": "the host frame + the per-host boundary counts + the outlier pre-name source (descriptive.premium_hosts)"
+  },
+  "exp273_deposit": {
+   "path": "results/exp273_outlier_hosts.json",
+   "sha256": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+   "role": "the deposited outlier pre-name + the field-table carry of worst_err_mean_substituted (bit-exact) + the recorded input shas verified 5/5"
+  },
+  "exp276_deposit": {
+   "path": "results/exp276_audit_own_face.json",
+   "sha256": "b96db86973284f2c27bdf1dd75e62f90d2b5832fa2673c86f5c77d63dfbdfba2",
+   "role": "the m_P3 masses (the R1 triple carry) + the recorded input shas verified 8/8"
+  },
+  "exp278_deposit": {
+   "path": "results/exp278_amplification_factor.json",
+   "sha256": "3a7fa8b0a108c87c6124a791ddd60362a3b243171124382498c87cff40fc1d9e",
+   "role": "the amplification ratios (R2) + the boundary counts + the recorded input shas verified 11/11"
+  },
+  "exp255_deposit": {
+   "path": "results/exp255.json",
+   "sha256": "05cce27989654f1c39c6071645dea62aeb1b0f6ba035dd112f1b18fc4d0ab038",
+   "role": "the provenance chain: the arm-worst instrument's source deposit \u2014 sha-verified via exp278's chain, never opened for computation"
+  },
+  "exp271_deposit": {
+   "path": "results/exp271_one_zone_premium.json",
+   "sha256": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+   "role": "the provenance chain: the one-zone premium grid \u2014 sha-verified via the chains, never opened for computation"
+  },
+  "exp182_deposit": {
+   "path": "results/exp182_substrate_100.json",
+   "sha256": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+   "role": "the provenance chain: the margin profiles \u2014 sha-verified via the chains, never opened for computation"
+  },
+  "exp274_deposit": {
+   "path": "results/exp274_premium_mechanism.json",
+   "sha256": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+   "role": "the provenance chain: the rank-regression convention's source deposit \u2014 sha-verified via the chains, never opened for computation"
+  },
+  "exp275_deposit": {
+   "path": "results/exp275_audit_direction.json",
+   "sha256": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879",
+   "role": "the provenance chain: the sha-discipline precedent's deposit \u2014 sha-verified via the chains, never opened for computation"
+  },
+  "exp277_deposit": {
+   "path": "results/exp277_deep_band_break_face.json",
+   "sha256": "892e19d896f18b8eea19eedfab90830df1c3da26ce6d7fef4e5529aeb30a1e95",
+   "role": "the provenance chain: the pre-body disclosure precedent's deposit \u2014 sha-verified via exp278's chain, never opened for computation"
+  }
+ },
+ "hosts": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H3",
+  "H4",
+  "H5",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "outliers": [
+  "H3",
+  "H5"
+ ],
+ "cluster": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H4",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "rebuild_report": [
+  {
+   "host": "H0",
+   "n": 400,
+   "constructor": "graph_path (the chain/path constructor)",
+   "rewire_seed": null,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 399,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 4,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H1",
+   "n": 400,
+   "constructor": "graph_path (the chain/path constructor)",
+   "rewire_seed": null,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 399,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 4,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H10",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202215,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 32,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H11",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202216,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 37,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H2",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202201,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 42,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H3",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202202,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 47,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H4",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202203,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 41,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H5",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202206,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 48,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H6",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202207,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 31,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H7",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202208,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 36,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H8",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202209,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 39,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H9",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202213,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 43,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  }
+ ],
+ "field_table": [
+  {
+   "host": "H0",
+   "outlier": false,
+   "deg_mean": 1.995,
+   "deg_max": 2.0,
+   "deg_spread": 1.0,
+   "clustering": 0.0,
+   "boundary_degree_mean": 1.5,
+   "pair_support_density": 0.005
+  },
+  {
+   "host": "H1",
+   "outlier": false,
+   "deg_mean": 1.995,
+   "deg_max": 2.0,
+   "deg_spread": 1.0,
+   "clustering": 0.0,
+   "boundary_degree_mean": 1.5,
+   "pair_support_density": 0.005
+  },
+  {
+   "host": "H10",
+   "outlier": false,
+   "deg_mean": 2.0,
+   "deg_max": 4.0,
+   "deg_spread": 3.0,
+   "clustering": 0.0,
+   "boundary_degree_mean": 1.65625,
+   "pair_support_density": 0.005012531328320802
+  },
+  {
+   "host": "H11",
+   "outlier": false,
+   "deg_mean": 2.0,
+   "deg_max": 4.0,
+   "deg_spread": 3.0,
+   "clustering": 0.0,
+   "boundary_degree_mean": 1.6756756756756757,
+   "pair_support_density": 0.005012531328320802
+  },
+  {
+   "host": "H2",
+   "outlier": false,
+   "deg_mean": 2.0,
+   "deg_max": 4.0,
+   "deg_spread": 3.0,
+   "clustering": 0.0,
+   "boundary_degree_mean": 1.6904761904761905,
+   "pair_support_density": 0.005012531328320802
+  },
+  {
+   "host": "H3",
+   "outlier": true,
+   "deg_mean": 2.0,
+   "deg_max": 4.0,
+   "deg_spread": 3.0,
+   "clustering": 0.0,
+   "boundary_degree_mean": 1.5957446808510638,
+   "pair_support_density": 0.005012531328320802
+  },
+  {
+   "host": "H4",
+   "outlier": false,
+   "deg_mean": 2.0,
+   "deg_max": 4.0,
+   "deg_spread": 3.0,
+   "clustering": 0.0,
+   "boundary_degree_mean": 1.6097560975609757,
+   "pair_support_density": 0.005012531328320802
+  },
+  {
+   "host": "H5",
+   "outlier": true,
+   "deg_mean": 2.0,
+   "deg_max": 4.0,
+   "deg_spread": 3.0,
+   "clustering": 0.0,
+   "boundary_degree_mean": 1.5625,
+   "pair_support_density": 0.005012531328320802
+  },
+  {
+   "host": "H6",
+   "outlier": false,
+   "deg_mean": 2.0,
+   "deg_max": 4.0,
+   "deg_spread": 3.0,
+   "clustering": 0.0,
+   "boundary_degree_mean": 1.8064516129032258,
+   "pair_support_density": 0.005012531328320802
+  },
+  {
+   "host": "H7",
+   "outlier": false,
+   "deg_mean": 2.0,
+   "deg_max": 4.0,
+   "deg_spread": 3.0,
+   "clustering": 0.0,
+   "boundary_degree_mean": 1.7222222222222223,
+   "pair_support_density": 0.005012531328320802
+  },
+  {
+   "host": "H8",
+   "outlier": false,
+   "deg_mean": 2.0,
+   "deg_max": 3.0,
+   "deg_spread": 2.0,
+   "clustering": 0.0,
+   "boundary_degree_mean": 1.8974358974358974,
+   "pair_support_density": 0.005012531328320802
+  },
+  {
+   "host": "H9",
+   "outlier": false,
+   "deg_mean": 2.0,
+   "deg_max": 4.0,
+   "deg_spread": 3.0,
+   "clustering": 0.0,
+   "boundary_degree_mean": 1.6744186046511629,
+   "pair_support_density": 0.005012531328320802
+  }
+ ],
+ "field_censuses": {
+  "deg_mean": {
+   "n_distinct": 2,
+   "n_tied_values": 2,
+   "max_multiplicity": 10
+  },
+  "deg_max": {
+   "n_distinct": 3,
+   "n_tied_values": 2,
+   "max_multiplicity": 9
+  },
+  "deg_spread": {
+   "n_distinct": 3,
+   "n_tied_values": 2,
+   "max_multiplicity": 9
+  },
+  "clustering": {
+   "n_distinct": 1,
+   "n_tied_values": 1,
+   "max_multiplicity": 12
+  },
+  "boundary_degree_mean": {
+   "n_distinct": 11,
+   "n_tied_values": 1,
+   "max_multiplicity": 2
+  },
+  "pair_support_density": {
+   "n_distinct": 2,
+   "n_tied_values": 2,
+   "max_multiplicity": 10
+  }
+ },
+ "response_censuses": {
+  "R1_deep_band_err": {
+   "n_distinct": 6,
+   "n_tied_values": 3,
+   "max_multiplicity": 4
+  },
+  "R2_amplification_ratio": {
+   "n_distinct": 11,
+   "n_tied_values": 1,
+   "max_multiplicity": 2
+  }
+ },
+ "responses_table": [
+  {
+   "host": "H0",
+   "outlier": false,
+   "deep_band_err_R1": 0.54,
+   "amplification_ratio_R2": 11.172413793103448
+  },
+  {
+   "host": "H1",
+   "outlier": false,
+   "deep_band_err_R1": 0.54,
+   "amplification_ratio_R2": 11.172413793103448
+  },
+  {
+   "host": "H10",
+   "outlier": false,
+   "deep_band_err_R1": 0.5033333333333333,
+   "amplification_ratio_R2": 5.298245614035086
+  },
+  {
+   "host": "H11",
+   "outlier": false,
+   "deep_band_err_R1": 0.5066666666666667,
+   "amplification_ratio_R2": 4.75
+  },
+  {
+   "host": "H2",
+   "outlier": false,
+   "deep_band_err_R1": 0.5066666666666667,
+   "amplification_ratio_R2": 4.470588235294118
+  },
+  {
+   "host": "H3",
+   "outlier": true,
+   "deep_band_err_R1": 3.68,
+   "amplification_ratio_R2": 32.47058823529412
+  },
+  {
+   "host": "H4",
+   "outlier": false,
+   "deep_band_err_R1": 0.5066666666666667,
+   "amplification_ratio_R2": 5.1525423728813555
+  },
+  {
+   "host": "H5",
+   "outlier": true,
+   "deep_band_err_R1": 3.356666666666667,
+   "amplification_ratio_R2": 26.853333333333335
+  },
+  {
+   "host": "H6",
+   "outlier": false,
+   "deep_band_err_R1": 0.5033333333333333,
+   "amplification_ratio_R2": 5.033333333333332
+  },
+  {
+   "host": "H7",
+   "outlier": false,
+   "deep_band_err_R1": 0.5033333333333333,
+   "amplification_ratio_R2": 4.950819672131147
+  },
+  {
+   "host": "H8",
+   "outlier": false,
+   "deep_band_err_R1": 0.5166666666666667,
+   "amplification_ratio_R2": 4.92063492063492
+  },
+  {
+   "host": "H9",
+   "outlier": false,
+   "deep_band_err_R1": 0.5033333333333333,
+   "amplification_ratio_R2": 4.575757575757575
+  }
+ ],
+ "regressions": {
+  "R1_deep_band_err": {
+   "deg_mean": {
+    "rho": -0.3992613105422826,
+    "rho_abs": 0.3992613105422826,
+    "r2_single": 0.1594095940959409,
+    "r2_all_ranks": 0.1594095940959409,
+    "all_ranks_equals_rho_squared": true,
+    "ties_census": {
+     "n_distinct": 2,
+     "n_tied_values": 2,
+     "max_multiplicity": 10
+    },
+    "status": "ok"
+   },
+   "deg_max": {
+    "rho": -0.43980112000692145,
+    "rho_abs": 0.43980112000692145,
+    "r2_single": 0.19446049882185557,
+    "r2_all_ranks": 0.19342502515934235,
+    "all_ranks_equals_rho_squared": true,
+    "ties_census": {
+     "n_distinct": 3,
+     "n_tied_values": 2,
+     "max_multiplicity": 9
+    },
+    "status": "ok"
+   },
+   "deg_spread": {
+    "rho": -0.43980112000692145,
+    "rho_abs": 0.43980112000692145,
+    "r2_single": 0.19446049882185545,
+    "r2_all_ranks": 0.19342502515934235,
+    "all_ranks_equals_rho_squared": true,
+    "ties_census": {
+     "n_distinct": 3,
+     "n_tied_values": 2,
+     "max_multiplicity": 9
+    },
+    "status": "ok"
+   },
+   "clustering": {
+    "rho": null,
+    "rho_abs": null,
+    "r2_single": null,
+    "r2_all_ranks": null,
+    "all_ranks_equals_rho_squared": null,
+    "ties_census": {
+     "n_distinct": 1,
+     "n_tied_values": 1,
+     "max_multiplicity": 12
+    },
+    "status": "undefined_constant_field_disclosed"
+   },
+   "boundary_degree_mean": {
+    "rho": -0.6081064770322367,
+    "rho_abs": 0.6081064770322367,
+    "r2_single": 0.253178009557285,
+    "r2_all_ranks": 0.3697934874085582,
+    "all_ranks_equals_rho_squared": true,
+    "ties_census": {
+     "n_distinct": 11,
+     "n_tied_values": 1,
+     "max_multiplicity": 2
+    },
+    "status": "ok"
+   },
+   "pair_support_density": {
+    "rho": -0.3992613105422826,
+    "rho_abs": 0.3992613105422826,
+    "r2_single": 0.1594095940959408,
+    "r2_all_ranks": 0.1594095940959409,
+    "all_ranks_equals_rho_squared": true,
+    "ties_census": {
+     "n_distinct": 2,
+     "n_tied_values": 2,
+     "max_multiplicity": 10
+    },
+    "status": "ok"
+   }
+  },
+  "R2_amplification_ratio_audit_only": {
+   "deg_mean": {
+    "rho": -0.38933141071383015,
+    "rho_abs": 0.38933141071383015,
+    "r2_single": 0.15157894736842104,
+    "r2_all_ranks": 0.15157894736842104,
+    "all_ranks_equals_rho_squared": true,
+    "ties_census": {
+     "n_distinct": 2,
+     "n_tied_values": 2,
+     "max_multiplicity": 10
+    },
+    "status": "ok"
+   },
+   "deg_max": {
+    "rho": -0.24440577723267973,
+    "rho_abs": 0.24440577723267973,
+    "r2_single": 0.0915662650602409,
+    "r2_all_ranks": 0.05973418394471042,
+    "all_ranks_equals_rho_squared": true,
+    "ties_census": {
+     "n_distinct": 3,
+     "n_tied_values": 2,
+     "max_multiplicity": 9
+    },
+    "status": "ok"
+   },
+   "deg_spread": {
+    "rho": -0.24440577723267973,
+    "rho_abs": 0.24440577723267973,
+    "r2_single": 0.0915662650602409,
+    "r2_all_ranks": 0.05973418394471042,
+    "all_ranks_equals_rho_squared": true,
+    "ties_census": {
+     "n_distinct": 3,
+     "n_tied_values": 2,
+     "max_multiplicity": 9
+    },
+    "status": "ok"
+   },
+   "clustering": {
+    "rho": null,
+    "rho_abs": null,
+    "r2_single": null,
+    "r2_all_ranks": null,
+    "all_ranks_equals_rho_squared": null,
+    "ties_census": {
+     "n_distinct": 1,
+     "n_tied_values": 1,
+     "max_multiplicity": 12
+    },
+    "status": "undefined_constant_field_disclosed"
+   },
+   "boundary_degree_mean": {
+    "rho": -0.7263157894736844,
+    "rho_abs": 0.7263157894736844,
+    "r2_single": 0.37384643609972734,
+    "r2_all_ranks": 0.5275346260387812,
+    "all_ranks_equals_rho_squared": true,
+    "ties_census": {
+     "n_distinct": 11,
+     "n_tied_values": 1,
+     "max_multiplicity": 2
+    },
+    "status": "ok"
+   },
+   "pair_support_density": {
+    "rho": -0.38933141071383015,
+    "rho_abs": 0.38933141071383015,
+    "r2_single": 0.1515789473684208,
+    "r2_all_ranks": 0.15157894736842104,
+    "all_ranks_equals_rho_squared": true,
+    "ties_census": {
+     "n_distinct": 2,
+     "n_tied_values": 2,
+     "max_multiplicity": 10
+    },
+    "status": "ok"
+   }
+  }
+ },
+ "gates": {
+  "G1_rebuild_integrity": {
+   "pass": true,
+   "bar": "READ-ONLY sha-verified: the 12 rebuilt bases bit-asserted against exp243's records (base_sha256 12/12, edges_base 12/12, the classify boundary count 12/12 dual-carried vs exp272 + exp278, the canon identity 12/12, H0 == H1); exp256's 72 rows complete (12 x 2 x 3) with worst_err == the max of the instance errs 72/72 and the instance structure 72/72; the R1 triple carry bit-exact (exp276's m_P3 == exp273's field table == exp278's m_P3 == the recomputed mean, 12/12 each); exp278's ratio identity bit-exact 12/12; the outlier pre-name asserted 4-way (exp273 == exp272 == exp276 == exp278 == ['H3','H5']); the provenance chains sha-verified (exp278 11/11, exp276 8/8, exp273 5/5); READ-ONLY",
+   "rebuild_ok_12": true,
+   "rows256_ok": {
+    "n_rows": 72,
+    "n_worst_eq_max": 72,
+    "n_structure_ok": 72
+   },
+   "rows256_ok_bool": true,
+   "R1_triple_carry_bit_exact": {
+    "exp276_m_P3": 12,
+    "exp273_field_table": 12,
+    "exp278_table": 12,
+    "exp278_detail": 12
+   },
+   "R1_triple_carry_ok": true,
+   "exp278_ratio_identity_ok": true,
+   "responses_finite": true,
+   "chains": {
+    "exp278": [
+     11,
+     11
+    ],
+    "exp276": [
+     8,
+     8
+    ],
+    "exp273": [
+     5,
+     5
+    ]
+   },
+   "chains_ok": true
+  },
+  "G2_field_table_completeness": {
+   "pass": true,
+   "bar": "the 12 x 6 field table complete with every field value finite; the identities asserted per host (deg_mean == 2*edges/n within 1e-12; pair_support_density == edges/(n*(n-1)/2) bit-exact; the boundary mask nonempty); the DISCLOSED F4 degeneracy asserted (clustering == 0.0 on all 12 \u2014 fail = STOP); every field's distinct-level census recorded; the rho table complete (the five non-degenerate fields numeric on both responses with the all-ranks == rho^2 check, F4 null on both \u2014 the disclosed undefined)",
+   "identities": {
+    "n_checks": 12,
+    "n_deg_mean_ok": 12,
+    "n_density_ok": 12,
+    "n_boundary_nonempty": 12
+   },
+   "identities_ok": true,
+   "f4_degeneracy_asserted": true,
+   "rho_table_complete": true
+  },
+  "G3_branch": {
+   "pass": true,
+   "bar": "the discriminant pre-named with the numeric bar: TOPOLOGY-CARRIED iff >= 1 of the FIVE non-degenerate fields (deg_mean, deg_max, deg_spread, boundary_degree_mean, pair_support_density) reaches Spearman >= 0.5 (the SIGNED house bar \u2014 the pre-named richness->exposure direction) against the deep-band read err R1; else TOPOLOGY-ABSENT; the abs variant (max |rho|) and a negative crossing = the ANTI-ALIGNED face, NAMED, never gating; R2's regressions audit-only",
+   "branch": "TOPOLOGY-ABSENT",
+   "bar_signed_rho": 0.5,
+   "fields_in_max": [
+    "deg_mean",
+    "deg_max",
+    "deg_spread",
+    "boundary_degree_mean",
+    "pair_support_density"
+   ],
+   "excluded_field": "clustering",
+   "exclusion_reason": "the disclosed degeneracy: identically 0.0 on all 12 rebuilt bases (no triangles at the deposited seeds) \u2014 a constant field has no rank variance, its rho is undefined (null), the exclusion forced by the degeneracy, never chosen",
+   "rho_vs_R1_by_field": {
+    "deg_mean": -0.3992613105422826,
+    "deg_max": -0.43980112000692145,
+    "deg_spread": -0.43980112000692145,
+    "boundary_degree_mean": -0.6081064770322367,
+    "pair_support_density": -0.3992613105422826
+   },
+   "max_signed_rho": -0.3992613105422826,
+   "signed_leader": "deg_mean",
+   "abs_variant_audit_only": {
+    "max_abs_rho": 0.6081064770322367,
+    "abs_leader": "boundary_degree_mean",
+    "abs_leader_rho": -0.6081064770322367,
+    "anti_aligned_face_crossed": true,
+    "anti_aligned_note": "the field runs OPPOSITE the pre-named richness->exposure direction \u2014 named, never gating"
+   },
+   "R2_regressions_audit_only": {
+    "deg_mean": -0.38933141071383015,
+    "deg_max": -0.24440577723267973,
+    "deg_spread": -0.24440577723267973,
+    "boundary_degree_mean": -0.7263157894736844,
+    "pair_support_density": -0.38933141071383015
+   },
+   "R2_max_abs_rho_audit_only": 0.7263157894736844,
+   "field_margins_audit_only": {
+    "deg_mean": {
+     "outliers": {
+      "H3": 2.0,
+      "H5": 2.0
+     },
+     "cluster_min": 1.995,
+     "cluster_max": 2.0
+    },
+    "deg_max": {
+     "outliers": {
+      "H3": 4.0,
+      "H5": 4.0
+     },
+     "cluster_min": 2.0,
+     "cluster_max": 4.0
+    },
+    "deg_spread": {
+     "outliers": {
+      "H3": 3.0,
+      "H5": 3.0
+     },
+     "cluster_min": 1.0,
+     "cluster_max": 3.0
+    },
+    "clustering": {
+     "outliers": {
+      "H3": 0.0,
+      "H5": 0.0
+     },
+     "cluster_min": 0.0,
+     "cluster_max": 0.0
+    },
+    "boundary_degree_mean": {
+     "outliers": {
+      "H3": 1.5957446808510638,
+      "H5": 1.5625
+     },
+     "cluster_min": 1.5,
+     "cluster_max": 1.8974358974358974
+    },
+    "pair_support_density": {
+     "outliers": {
+      "H3": 0.005012531328320802,
+      "H5": 0.005012531328320802
+     },
+     "cluster_min": 0.005,
+     "cluster_max": 0.005012531328320802
+    }
+   },
+   "R2_note": "the amplification-ratio regressions are reported, never gating (the pre-named discriminant reads R1 only)"
+  },
+  "G4_discipline": {
+   "pass": true,
+   "bar": "all 12 deposits READ-ONLY sha-recorded byte-unchanged; deterministic \u2014 two-pass bit-identical; no wall-clock fields; the docstring+header pinned to 421c742 asserted at entry AND exit; NEURAL_SPEC_MIN == -60.0 asserted at exit",
+   "read_only_shas_before": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp276_deposit": "b96db86973284f2c27bdf1dd75e62f90d2b5832fa2673c86f5c77d63dfbdfba2",
+    "exp278_deposit": "3a7fa8b0a108c87c6124a791ddd60362a3b243171124382498c87cff40fc1d9e",
+    "exp255_deposit": "05cce27989654f1c39c6071645dea62aeb1b0f6ba035dd112f1b18fc4d0ab038",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp274_deposit": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+    "exp275_deposit": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879",
+    "exp277_deposit": "892e19d896f18b8eea19eedfab90830df1c3da26ce6d7fef4e5529aeb30a1e95"
+   },
+   "read_only_shas_after": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp276_deposit": "b96db86973284f2c27bdf1dd75e62f90d2b5832fa2673c86f5c77d63dfbdfba2",
+    "exp278_deposit": "3a7fa8b0a108c87c6124a791ddd60362a3b243171124382498c87cff40fc1d9e",
+    "exp255_deposit": "05cce27989654f1c39c6071645dea62aeb1b0f6ba035dd112f1b18fc4d0ab038",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp274_deposit": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+    "exp275_deposit": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879",
+    "exp277_deposit": "892e19d896f18b8eea19eedfab90830df1c3da26ce6d7fef4e5529aeb30a1e95"
+   },
+   "read_only_byte_unchanged": true,
+   "deterministic_two_pass_bit_identical": true,
+   "payload_sha256_pass_a": "99e1f76b2e8e1a68e8ee360048ffb140b90b59f4cb92075db27322222c2dbafc",
+   "payload_sha256_pass_b": "99e1f76b2e8e1a68e8ee360048ffb140b90b59f4cb92075db27322222c2dbafc",
+   "no_wall_clock_fields": true,
+   "floor_at_entry": -60.0,
+   "floor_at_exit": -60.0,
+   "docstring_sha256": "4ca6ed4df03360efedf8bed7b305d7db919beaa4bbd740d815f317868dd4b20d",
+   "docstring_byte_unchanged_vs_421c742": true,
+   "header_sha256": "0cc5d4f81888ad5ce16c14b5286bdadaea586dca5bbded6f3139841ac6e31f31",
+   "header_byte_unchanged_vs_421c742": true,
+   "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+  }
+ },
+ "branch": "TOPOLOGY-ABSENT",
+ "branch_discriminant": {
+  "branch": "TOPOLOGY-ABSENT",
+  "bar_signed_rho": 0.5,
+  "fields_in_max": [
+   "deg_mean",
+   "deg_max",
+   "deg_spread",
+   "boundary_degree_mean",
+   "pair_support_density"
+  ],
+  "excluded_field": "clustering",
+  "exclusion_reason": "the disclosed degeneracy: identically 0.0 on all 12 rebuilt bases (no triangles at the deposited seeds) \u2014 a constant field has no rank variance, its rho is undefined (null), the exclusion forced by the degeneracy, never chosen",
+  "rho_vs_R1_by_field": {
+   "deg_mean": -0.3992613105422826,
+   "deg_max": -0.43980112000692145,
+   "deg_spread": -0.43980112000692145,
+   "boundary_degree_mean": -0.6081064770322367,
+   "pair_support_density": -0.3992613105422826
+  },
+  "max_signed_rho": -0.3992613105422826,
+  "signed_leader": "deg_mean",
+  "abs_variant_audit_only": {
+   "max_abs_rho": 0.6081064770322367,
+   "abs_leader": "boundary_degree_mean",
+   "abs_leader_rho": -0.6081064770322367,
+   "anti_aligned_face_crossed": true,
+   "anti_aligned_note": "the field runs OPPOSITE the pre-named richness->exposure direction \u2014 named, never gating"
+  },
+  "R2_regressions_audit_only": {
+   "deg_mean": -0.38933141071383015,
+   "deg_max": -0.24440577723267973,
+   "deg_spread": -0.24440577723267973,
+   "boundary_degree_mean": -0.7263157894736844,
+   "pair_support_density": -0.38933141071383015
+  },
+  "R2_max_abs_rho_audit_only": 0.7263157894736844,
+  "field_margins_audit_only": {
+   "deg_mean": {
+    "outliers": {
+     "H3": 2.0,
+     "H5": 2.0
+    },
+    "cluster_min": 1.995,
+    "cluster_max": 2.0
+   },
+   "deg_max": {
+    "outliers": {
+     "H3": 4.0,
+     "H5": 4.0
+    },
+    "cluster_min": 2.0,
+    "cluster_max": 4.0
+   },
+   "deg_spread": {
+    "outliers": {
+     "H3": 3.0,
+     "H5": 3.0
+    },
+    "cluster_min": 1.0,
+    "cluster_max": 3.0
+   },
+   "clustering": {
+    "outliers": {
+     "H3": 0.0,
+     "H5": 0.0
+    },
+    "cluster_min": 0.0,
+    "cluster_max": 0.0
+   },
+   "boundary_degree_mean": {
+    "outliers": {
+     "H3": 1.5957446808510638,
+     "H5": 1.5625
+    },
+    "cluster_min": 1.5,
+    "cluster_max": 1.8974358974358974
+   },
+   "pair_support_density": {
+    "outliers": {
+     "H3": 0.005012531328320802,
+     "H5": 0.005012531328320802
+    },
+    "cluster_min": 0.005,
+    "cluster_max": 0.005012531328320802
+   }
+  },
+  "R2_note": "the amplification-ratio regressions are reported, never gating (the pre-named discriminant reads R1 only)"
+ },
+ "verdict": "4/4 gates G1-G4 (4 PASS / 0 REFUTE) | TOPOLOGY-ABSENT \u2014 no structural field of the rebuilt base adjacencies reaches the 0.5 SIGNED house bar against the deep-band read err (max rho -0.3992613105 on deg_mean; by field deg_mean -0.3992613105, deg_max -0.43980112, deg_spread -0.43980112, boundary_degree_mean -0.608106477, pair_support_density -0.3992613105) \u2014 the deep-band exposure is NOT carried in the richness->exposure direction by the deposited adjacency's own topology | THE ANTI-ALIGNED FACE (named honestly, audit-only): the boundary cells' own degree mean crosses the abs bar at rho -0.608106477 \u2014 hosts whose boundary cells carry MORE pair support read the deep band BETTER; H3/H5 hold 47/48 boundary cells but their boundary cells sit at the cluster-low degree 1.595744681/1.5625 vs the ten-host cluster's [1.5, 1.897435897] \u2014 the boundary-RICH hosts' boundary cells are chord-POOR, and the amplification-ratio regressions agree (max |rho| 0.7263157895, the same field, audit-only) | F4 the clustering coefficient is identically 0.0 on all 12 rebuilt bases (no triangles at the deposited seeds \u2014 the disclosed degeneracy; rho undefined, excluded from the max) | 12 hosts, a pure re-read + a deterministic sha-asserted rebuild (graph_path for H0/H1, small_world at the deposited rewire seeds \u2014 exp269's/exp256's form) of exp243's records, READ-ONLY byte-unchanged, two-pass bit-identical, floor -60.0",
+ "determinism": {
+  "computation_passes": 2,
+  "payload_sha256_pass_a": "99e1f76b2e8e1a68e8ee360048ffb140b90b59f4cb92075db27322222c2dbafc",
+  "payload_sha256_pass_b": "99e1f76b2e8e1a68e8ee360048ffb140b90b59f4cb92075db27322222c2dbafc",
+  "two_pass_bit_identical": true
+ },
+ "discipline": {
+  "no_wall_clock_fields": true,
+  "floor_at_entry": -60.0,
+  "floor_at_exit": -60.0,
+  "docstring_sha256": "4ca6ed4df03360efedf8bed7b305d7db919beaa4bbd740d815f317868dd4b20d",
+  "docstring_byte_unchanged_vs_421c742": true,
+  "header_sha256": "0cc5d4f81888ad5ce16c14b5286bdadaea586dca5bbded6f3139841ac6e31f31",
+  "header_byte_unchanged_vs_421c742": true,
+  "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+ },
+ "deposit_fingerprint": "31e70ece92cecb0451245976146d108167e9455796514420594e62ca2de56c18"
+}
