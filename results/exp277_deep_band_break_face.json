@@ -1,0 +1,783 @@
+{
+ "exp": "exp277_deep_band_break_face",
+ "claim": "THE DEEP-BAND BREAK FACE (batch 35, pre-registration commit aa0d3c2): why do the deep-band programs break on the boundary-richest hosts (H3/H5, 47/48 canon-boundary cells)? The P3 arm's OWN error decomposed per host by exp208's cell-class machinery \u2014 a pure re-read of exp256's 72 deposited rows' per_class decompositions (the 36 substituted rows = 12 hosts x 3 seeds): per-host mean CANON-BOUNDARY frac and PAIR-JUNCTION frac; the pre-named branch BOUNDARY-CLASS / PAIR-CLASS / SPLIT (the outliers' min share > the cluster's max) + NEITHER the exhaustive residual; the premium's mediator mia_prod_err rank-regressed on the two shares under the exp274/exp275 conventions (reported, never gating)",
+ "method": {
+  "source": "exp256's deposited 72 rows = 12 hosts x 2 arms x 3 seeds; each row's decomposition = exp208's classify(T_row, W_row) + decompose on the row's WORST instance's own state-carrying read (exp243's A3 path); the SUBSTITUTED arm (P3's own face: the deep rows r-60i0/r-60i1 on the base medium) is the 36 rows read here",
+  "mask_semantics": "DISCLOSED, read AS DEPOSITED: exp208's classify assigns cls 1 = PAIR-JUNCTION and 0 = otherwise (the boundary ring wins precedence; cls is never set to 2), so the deposited per_class CANON-BOUNDARY record is the NON-PAIR-JUNCTION complement of the squared error (boundary ring + interior) and the deposited INTERIOR record is empty \u2014 verified in-deposit 72/72, never repaired; the pure boundary-only share is not recoverable from the deposits",
+  "per_host_table": "per-host mean CANON-BOUNDARY frac / mean PAIR-JUNCTION frac over the 3 substituted seeds, alongside the mean worst_err (the P3 arm's own error, exp276's m_P3), the mean rms_contrib_mV, the mean pair-junction count, the mean precedence boundary-cell count, and the mia_prod_err context column",
+  "branch_rule": "the outliers = exp273's deposited outliers (asserted == exp272's descriptive.premium_hosts == ['H3','H5']); BOUNDARY-CLASS iff min(outlier cb share) > max(cluster cb share); PAIR-CLASS iff min(outlier pj share) > max(cluster pj share); SPLIT iff both; NEITHER (the exhaustive residual) otherwise; both margins recorded",
+  "regression": "the exp274/exp275 convention VERBATIM: the response = mia_prod_err (12 hosts, tied-average ranks); the two mediators = the two per-host mean shares; single-mediator Spearmans (mediator vector first, scipy rankdata both sides); the OLS-on-ranks single R2s + the full model (with two mediators the pair IS the full model); the shares by the two-order symmetric average on the pre-named entry order cb -> pj and its reverse pj -> cb; shares + unexplained == 1, no clamping; the all-ranks variant AUDIT-ONLY; REPORTED not gated \u2014 the branch is the only gated read",
+  "method_source": "experiments/exp256_row_pair_regression.py (the 72 decomposed rows \u2014 exp208's classify/decompose verbatim via exp243), experiments/exp273_outlier_hosts.py (the outlier pre-name + the mia field-table carry), experiments/exp272_host_premium_structure.py (the host frame + the premium_hosts pre-name + the _spearman convention), experiments/exp243_structured_adversarial.py (the audit records), experiments/exp274_premium_mechanism.py (the rank-regression convention), experiments/exp275_audit_direction.py (the sha discipline)"
+ },
+ "inputs": {
+  "exp256_deposit": {
+   "path": "results/exp256_row_pair_regression.json",
+   "sha256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+   "role": "the 72 decomposed rows \u2014 the computation's primary source: the 36 substituted rows' per_class fracs + the worst errs"
+  },
+  "exp273_deposit": {
+   "path": "results/exp273_outlier_hosts.json",
+   "sha256": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+   "role": "the deposited outlier pre-name + the field-table carry of mia_prod_err (bit-exact) + the recorded input shas verified 5/5"
+  },
+  "exp272_deposit": {
+   "path": "results/exp272_host_premium_structure.json",
+   "sha256": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+   "role": "the host frame + the outlier pre-name source (descriptive.premium_hosts)"
+  },
+  "exp243_deposit": {
+   "path": "results/exp243_structured_adversarial.json",
+   "sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "role": "the 12 multi_identity_audit records the mia_prod_err carry is bit-checked against"
+  },
+  "exp271_deposit": {
+   "path": "results/exp271_one_zone_premium.json",
+   "sha256": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+   "role": "the provenance chain: the one-zone premium grid \u2014 sha-verified via exp273's chain, never opened for computation"
+  },
+  "exp182_deposit": {
+   "path": "results/exp182_substrate_100.json",
+   "sha256": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+   "role": "the provenance chain: the margin profiles \u2014 sha-verified via exp273's chain, never opened"
+  },
+  "exp274_deposit": {
+   "path": "results/exp274_premium_mechanism.json",
+   "sha256": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+   "role": "the provenance chain: the rank-regression convention's source deposit \u2014 sha-verified 6/6, never opened for computation"
+  },
+  "exp275_deposit": {
+   "path": "results/exp275_audit_direction.json",
+   "sha256": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879",
+   "role": "the provenance chain: the sha-discipline precedent's deposit \u2014 sha-verified 7/7, never opened for computation"
+  }
+ },
+ "hosts": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H3",
+  "H4",
+  "H5",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "outliers": [
+  "H3",
+  "H5"
+ ],
+ "cluster": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H4",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "per_host_table": [
+  {
+   "host": "H0",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "mean_worst_err": 0.54,
+   "cb_frac_mean": 0.04733581259544503,
+   "pj_frac_mean": 0.9526641874045548,
+   "interior_frac_mean": 0.0,
+   "cb_rms_contrib_mean": 0.11261622746478099,
+   "pj_rms_contrib_mean": 0.5251833075253673,
+   "mean_pair_junction_count": 384.0,
+   "mean_boundary_cells": 16.0,
+   "mia_prod_err": 0.52
+  },
+  {
+   "host": "H1",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "mean_worst_err": 0.54,
+   "cb_frac_mean": 0.04733581259544503,
+   "pj_frac_mean": 0.9526641874045548,
+   "interior_frac_mean": 0.0,
+   "cb_rms_contrib_mean": 0.11261622746478099,
+   "pj_rms_contrib_mean": 0.5251833075253673,
+   "mean_pair_junction_count": 384.0,
+   "mean_boundary_cells": 16.0,
+   "mia_prod_err": 0.52
+  },
+  {
+   "host": "H10",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "mean_worst_err": 0.5033333333333333,
+   "cb_frac_mean": 0.1365097124657166,
+   "pj_frac_mean": 0.8634902875342835,
+   "interior_frac_mean": 0.0,
+   "cb_rms_contrib_mean": 0.1853072087875743,
+   "pj_rms_contrib_mean": 0.46658911070928394,
+   "mean_pair_junction_count": 343.0,
+   "mean_boundary_cells": 30.0,
+   "mia_prod_err": 0.49
+  },
+  {
+   "host": "H11",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "mean_worst_err": 0.5066666666666667,
+   "cb_frac_mean": 0.1767482674197659,
+   "pj_frac_mean": 0.8232517325802341,
+   "interior_frac_mean": 0.0,
+   "cb_rms_contrib_mean": 0.21235618856269167,
+   "pj_rms_contrib_mean": 0.45876378860332695,
+   "mean_pair_junction_count": 338.0,
+   "mean_boundary_cells": 34.0,
+   "mia_prod_err": 0.49
+  },
+  {
+   "host": "H2",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "mean_worst_err": 0.5066666666666667,
+   "cb_frac_mean": 0.1631849147988397,
+   "pj_frac_mean": 0.8368150852011601,
+   "interior_frac_mean": 0.0,
+   "cb_rms_contrib_mean": 0.20412759311107395,
+   "pj_rms_contrib_mean": 0.46237610658241635,
+   "mean_pair_junction_count": 340.6666666666667,
+   "mean_boundary_cells": 39.0,
+   "mia_prod_err": 0.49
+  },
+  {
+   "host": "H3",
+   "outlier": true,
+   "n_substituted_rows": 3,
+   "mean_worst_err": 3.68,
+   "cb_frac_mean": 0.15126338261383745,
+   "pj_frac_mean": 0.8487366173861627,
+   "interior_frac_mean": 0.0,
+   "cb_rms_contrib_mean": 1.4296478831192199,
+   "pj_rms_contrib_mean": 3.3864812595276166,
+   "mean_pair_junction_count": 334.0,
+   "mean_boundary_cells": 38.0,
+   "mia_prod_err": 2.12
+  },
+  {
+   "host": "H4",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "mean_worst_err": 0.5066666666666667,
+   "cb_frac_mean": 0.13833541896012877,
+   "pj_frac_mean": 0.8616645810398712,
+   "interior_frac_mean": 0.0,
+   "cb_rms_contrib_mean": 0.18731405767588372,
+   "pj_rms_contrib_mean": 0.46818047723378625,
+   "mean_pair_junction_count": 337.0,
+   "mean_boundary_cells": 36.0,
+   "mia_prod_err": 0.49
+  },
+  {
+   "host": "H5",
+   "outlier": true,
+   "n_substituted_rows": 3,
+   "mean_worst_err": 3.356666666666667,
+   "cb_frac_mean": 0.2265342442987223,
+   "pj_frac_mean": 0.7734657557012777,
+   "interior_frac_mean": 0.0,
+   "cb_rms_contrib_mean": 1.596829751285286,
+   "pj_rms_contrib_mean": 2.950620082503401,
+   "mean_pair_junction_count": 337.0,
+   "mean_boundary_cells": 31.0,
+   "mia_prod_err": 2.28
+  },
+  {
+   "host": "H6",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "mean_worst_err": 0.5033333333333333,
+   "cb_frac_mean": 0.11947232418546039,
+   "pj_frac_mean": 0.8805276758145396,
+   "interior_frac_mean": 0.0,
+   "cb_rms_contrib_mean": 0.17437386211946146,
+   "pj_rms_contrib_mean": 0.47337814599660116,
+   "mean_pair_junction_count": 345.0,
+   "mean_boundary_cells": 28.0,
+   "mia_prod_err": 0.49
+  },
+  {
+   "host": "H7",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "mean_worst_err": 0.5033333333333333,
+   "cb_frac_mean": 0.1363200316045383,
+   "pj_frac_mean": 0.8636799683954618,
+   "interior_frac_mean": 0.0,
+   "cb_rms_contrib_mean": 0.186482112028201,
+   "pj_rms_contrib_mean": 0.46958051899000236,
+   "mean_pair_junction_count": 340.0,
+   "mean_boundary_cells": 32.0,
+   "mia_prod_err": 0.49
+  },
+  {
+   "host": "H8",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "mean_worst_err": 0.5166666666666667,
+   "cb_frac_mean": 0.1762531295039541,
+   "pj_frac_mean": 0.8237468704960458,
+   "interior_frac_mean": 0.0,
+   "cb_rms_contrib_mean": 0.2163710020460122,
+   "pj_rms_contrib_mean": 0.469170316152652,
+   "mean_pair_junction_count": 343.0,
+   "mean_boundary_cells": 32.0,
+   "mia_prod_err": 0.52
+  },
+  {
+   "host": "H9",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "mean_worst_err": 0.5033333333333333,
+   "cb_frac_mean": 0.15673467403224153,
+   "pj_frac_mean": 0.8432653259677584,
+   "interior_frac_mean": 0.0,
+   "cb_rms_contrib_mean": 0.19873815676604376,
+   "pj_rms_contrib_mean": 0.4634869095986036,
+   "mean_pair_junction_count": 336.0,
+   "mean_boundary_cells": 30.0,
+   "mia_prod_err": 0.49
+  }
+ ],
+ "substituted_rows_detail": [
+  {
+   "host": "H0",
+   "seed": 1,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.53,
+   "cb_frac": 0.0638045286255048,
+   "pj_frac": 0.9361954713744952,
+   "pair_junction_count": 384
+  },
+  {
+   "host": "H0",
+   "seed": 2,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.56,
+   "cb_frac": 0.01780596344237542,
+   "pj_frac": 0.9821940365576244,
+   "pair_junction_count": 384
+  },
+  {
+   "host": "H0",
+   "seed": 3,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.53,
+   "cb_frac": 0.06039694571845487,
+   "pj_frac": 0.939603054281545,
+   "pair_junction_count": 384
+  },
+  {
+   "host": "H1",
+   "seed": 1,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.53,
+   "cb_frac": 0.0638045286255048,
+   "pj_frac": 0.9361954713744952,
+   "pair_junction_count": 384
+  },
+  {
+   "host": "H1",
+   "seed": 2,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.56,
+   "cb_frac": 0.01780596344237542,
+   "pj_frac": 0.9821940365576244,
+   "pair_junction_count": 384
+  },
+  {
+   "host": "H1",
+   "seed": 3,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.53,
+   "cb_frac": 0.06039694571845487,
+   "pj_frac": 0.939603054281545,
+   "pair_junction_count": 384
+  },
+  {
+   "host": "H10",
+   "seed": 1,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.49,
+   "cb_frac": 0.1110303340972515,
+   "pj_frac": 0.8889696659027484,
+   "pair_junction_count": 343
+  },
+  {
+   "host": "H10",
+   "seed": 2,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.49,
+   "cb_frac": 0.1504492460654739,
+   "pj_frac": 0.849550753934526,
+   "pair_junction_count": 343
+  },
+  {
+   "host": "H10",
+   "seed": 3,
+   "worst_row_key": "r-60i1",
+   "worst_err": 0.53,
+   "cb_frac": 0.1480495572344244,
+   "pj_frac": 0.8519504427655757,
+   "pair_junction_count": 343
+  },
+  {
+   "host": "H11",
+   "seed": 1,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.5,
+   "cb_frac": 0.1735229881873092,
+   "pj_frac": 0.8264770118126908,
+   "pair_junction_count": 338
+  },
+  {
+   "host": "H11",
+   "seed": 2,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.5,
+   "cb_frac": 0.1904632168529647,
+   "pj_frac": 0.8095367831470354,
+   "pair_junction_count": 338
+  },
+  {
+   "host": "H11",
+   "seed": 3,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.52,
+   "cb_frac": 0.16625859721902378,
+   "pj_frac": 0.8337414027809762,
+   "pair_junction_count": 338
+  },
+  {
+   "host": "H2",
+   "seed": 1,
+   "worst_row_key": "r-60i1",
+   "worst_err": 0.5,
+   "cb_frac": 0.17735386577603865,
+   "pj_frac": 0.8226461342239614,
+   "pair_junction_count": 340
+  },
+  {
+   "host": "H2",
+   "seed": 2,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.49,
+   "cb_frac": 0.1452768525508502,
+   "pj_frac": 0.8547231474491496,
+   "pair_junction_count": 342
+  },
+  {
+   "host": "H2",
+   "seed": 3,
+   "worst_row_key": "r-60i1",
+   "worst_err": 0.53,
+   "cb_frac": 0.16692402606963033,
+   "pj_frac": 0.8330759739303697,
+   "pair_junction_count": 340
+  },
+  {
+   "host": "H3",
+   "seed": 1,
+   "worst_row_key": "r-60i0",
+   "worst_err": 3.68,
+   "cb_frac": 0.15141299172382322,
+   "pj_frac": 0.848587008276177,
+   "pair_junction_count": 334
+  },
+  {
+   "host": "H3",
+   "seed": 2,
+   "worst_row_key": "r-60i0",
+   "worst_err": 3.68,
+   "cb_frac": 0.1510947817447164,
+   "pj_frac": 0.8489052182552835,
+   "pair_junction_count": 334
+  },
+  {
+   "host": "H3",
+   "seed": 3,
+   "worst_row_key": "r-60i0",
+   "worst_err": 3.68,
+   "cb_frac": 0.15128237437297276,
+   "pj_frac": 0.8487176256270272,
+   "pair_junction_count": 334
+  },
+  {
+   "host": "H4",
+   "seed": 1,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.49,
+   "cb_frac": 0.10968884989154853,
+   "pj_frac": 0.8903111501084514,
+   "pair_junction_count": 337
+  },
+  {
+   "host": "H4",
+   "seed": 2,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.5,
+   "cb_frac": 0.15695954676704799,
+   "pj_frac": 0.8430404532329521,
+   "pair_junction_count": 337
+  },
+  {
+   "host": "H4",
+   "seed": 3,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.53,
+   "cb_frac": 0.14835786022178982,
+   "pj_frac": 0.8516421397782101,
+   "pair_junction_count": 337
+  },
+  {
+   "host": "H5",
+   "seed": 1,
+   "worst_row_key": "r-60i0",
+   "worst_err": 3.35,
+   "cb_frac": 0.2248590035544459,
+   "pj_frac": 0.7751409964455543,
+   "pair_junction_count": 337
+  },
+  {
+   "host": "H5",
+   "seed": 2,
+   "worst_row_key": "r-60i0",
+   "worst_err": 3.36,
+   "cb_frac": 0.2270635702907293,
+   "pj_frac": 0.7729364297092705,
+   "pair_junction_count": 337
+  },
+  {
+   "host": "H5",
+   "seed": 3,
+   "worst_row_key": "r-60i0",
+   "worst_err": 3.36,
+   "cb_frac": 0.22768015905099165,
+   "pj_frac": 0.7723198409490082,
+   "pair_junction_count": 337
+  },
+  {
+   "host": "H6",
+   "seed": 1,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.49,
+   "cb_frac": 0.11401210800799369,
+   "pj_frac": 0.8859878919920063,
+   "pair_junction_count": 345
+  },
+  {
+   "host": "H6",
+   "seed": 2,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.49,
+   "cb_frac": 0.12314400334730584,
+   "pj_frac": 0.8768559966526942,
+   "pair_junction_count": 345
+  },
+  {
+   "host": "H6",
+   "seed": 3,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.53,
+   "cb_frac": 0.12126086120108165,
+   "pj_frac": 0.8787391387989183,
+   "pair_junction_count": 345
+  },
+  {
+   "host": "H7",
+   "seed": 1,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.49,
+   "cb_frac": 0.14640643383193871,
+   "pj_frac": 0.8535935661680614,
+   "pair_junction_count": 340
+  },
+  {
+   "host": "H7",
+   "seed": 2,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.49,
+   "cb_frac": 0.1269674482368775,
+   "pj_frac": 0.8730325517631226,
+   "pair_junction_count": 340
+  },
+  {
+   "host": "H7",
+   "seed": 3,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.53,
+   "cb_frac": 0.13558621274479868,
+   "pj_frac": 0.8644137872552015,
+   "pair_junction_count": 340
+  },
+  {
+   "host": "H8",
+   "seed": 1,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.52,
+   "cb_frac": 0.15813760266033497,
+   "pj_frac": 0.841862397339665,
+   "pair_junction_count": 343
+  },
+  {
+   "host": "H8",
+   "seed": 2,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.53,
+   "cb_frac": 0.16683266193154478,
+   "pj_frac": 0.8331673380684552,
+   "pair_junction_count": 343
+  },
+  {
+   "host": "H8",
+   "seed": 3,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.5,
+   "cb_frac": 0.20378912391998263,
+   "pj_frac": 0.7962108760800175,
+   "pair_junction_count": 343
+  },
+  {
+   "host": "H9",
+   "seed": 1,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.5,
+   "cb_frac": 0.14632538644754708,
+   "pj_frac": 0.8536746135524531,
+   "pair_junction_count": 336
+  },
+  {
+   "host": "H9",
+   "seed": 2,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.49,
+   "cb_frac": 0.19334638955503278,
+   "pj_frac": 0.8066536104449671,
+   "pair_junction_count": 336
+  },
+  {
+   "host": "H9",
+   "seed": 3,
+   "worst_row_key": "r-60i0",
+   "worst_err": 0.52,
+   "cb_frac": 0.1305322460941448,
+   "pj_frac": 0.869467753905855,
+   "pair_junction_count": 336
+  }
+ ],
+ "branch_discriminant": {
+  "branch": "NEITHER",
+  "outlier_cb_shares": {
+   "H3": 0.15126338261383745,
+   "H5": 0.2265342442987223
+  },
+  "outlier_pj_shares": {
+   "H3": 0.8487366173861627,
+   "H5": 0.7734657557012777
+  },
+  "cluster_cb_share_max": 0.1767482674197659,
+  "cluster_pj_share_max": 0.9526641874045548,
+  "cluster_cb_share_min": 0.04733581259544503,
+  "cluster_pj_share_min": 0.8232517325802341,
+  "cb_outlier_margin": -0.02548488480592845,
+  "pj_outlier_margin": -0.1791984317032771,
+  "cb_exceeds_cluster_max": false,
+  "pj_exceeds_cluster_max": false
+ },
+ "mediator_regression": {
+  "response": "the premium's mediator mia_prod_err \u2014 exp243.classes.multi_identity_audit.prod_err via exp273's deposited field table (selection external), bit-exact vs exp243's records (12 hosts)",
+  "mediators": "the two per-host mean cell-class shares over the 36 substituted rows: cb_frac_mean (exp208's CANON-BOUNDARY record AS DEPOSITED \u2014 the non-PAIR-JUNCTION complement) and pj_frac_mean (PAIR-JUNCTION)",
+  "spearman_rho": {
+   "cb_frac_mean": 0.11820738370020822,
+   "pj_frac_mean": -0.11820738370020822
+  },
+  "r2_single": {
+   "cb_frac_mean": 0.0003921083367910416,
+   "pj_frac_mean": 0.00039210833679126367
+  },
+  "r2_pairs": {
+   "cb+pj": 0.00039210833679115265
+  },
+  "r2_pairs_note": "with two mediators the only pair IS the full model",
+  "r2_full": 0.00039210833679115265,
+  "order_decompositions": {
+   "order_cb_pj": {
+    "cb_frac_mean": 0.0003921083367910416,
+    "pj_frac_mean": 1.1102230246251565e-16
+   },
+   "order_pj_cb": {
+    "pj_frac_mean": 0.00039210833679126367,
+    "cb_frac_mean": -1.1102230246251565e-16
+   }
+  },
+  "shares_of_rank_variance": {
+   "cb_frac_mean": 0.0001960541683954653,
+   "pj_frac_mean": 0.00019605416839568734
+  },
+  "unexplained": 0.9996078916632088,
+  "shares_sum": 1.0,
+  "audit_all_ranks_variant": {
+   "r2_single": {
+    "cb_frac_mean": 0.013972985561248263,
+    "pj_frac_mean": 0.013972985561248041
+   },
+   "r2_full": 0.013972985561248152,
+   "single_equals_spearman_squared": true
+  }
+ },
+ "ties_census": {
+  "mia_prod_err": {
+   "n_distinct": 4,
+   "n_tied_values": 2,
+   "max_multiplicity": 7
+  },
+  "cb_frac_mean": {
+   "n_distinct": 11,
+   "n_tied_values": 1,
+   "max_multiplicity": 2
+  },
+  "pj_frac_mean": {
+   "n_distinct": 11,
+   "n_tied_values": 1,
+   "max_multiplicity": 2
+  }
+ },
+ "gates": {
+  "D1_grids": {
+   "pass": true,
+   "bar": "exp256's 72 rows re-read complete (12 hosts x 2 arms x 3 seeds), every decomposition carrying the three pre-named per_class records with finite entries; the mask semantics verified in-deposit 72/72; the 36 substituted rows complete 12 x 3; the outlier pre-name asserted (exp273 == exp272 == ['H3','H5']); exp273's mia carry bit-exact vs exp243's records; the provenance chains sha-verified (exp273 5/5, exp274 6/6, exp275 7/7); READ-ONLY",
+   "rows_complete_72": true,
+   "canonical_rows_complete_36": true,
+   "substituted_rows_complete_36": true,
+   "decompositions_complete_72": true,
+   "mask_semantics_verified_72": true,
+   "class_counts_sum_400_72": true,
+   "worst_err_finite_72": true,
+   "table_finite": true,
+   "exp273_mia_carry_bit_exact": true,
+   "exp273_recorded_input_shas_match_actual_bytes": {
+    "exp243_deposit": true,
+    "exp272_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp256_deposit": true
+   },
+   "exp274_recorded_input_shas_match_actual_bytes": {
+    "exp272_deposit": true,
+    "exp273_deposit": true,
+    "exp243_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp256_deposit": true
+   },
+   "exp275_recorded_input_shas_match_actual_bytes": {
+    "exp272_deposit": true,
+    "exp273_deposit": true,
+    "exp274_deposit": true,
+    "exp243_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp256_deposit": true
+   },
+   "provenance_chains_sha_verified": true
+  },
+  "D2_identity": {
+   "pass": true,
+   "bar": "per row, all 72: the per-class frac_of_sq sums to 1 within 1e-9; the deposited identity_residual <= 1e-9; the RMS-reconstruction face |sqrt(sum sum_sq / 400) - worst_err| <= 0.0051 (exp256's 2-decimal rounding bound + margin)",
+   "n_rows_checked": 72,
+   "tolerance": 1e-09,
+   "rms_reconstruction_bar": 0.0051,
+   "max_abs_frac_sum_deviation": 4.440892098500626e-16,
+   "max_abs_identity_residual": 5.329070518200751e-15,
+   "max_abs_rms_reconstruction_deviation": 0.004833370562637912
+  },
+  "D3_branch": {
+   "pass": true,
+   "bar": "the discriminant pre-named, the bars numeric: BOUNDARY-CLASS iff min(outlier cb share) > max(cluster cb share); PAIR-CLASS iff min(outlier pj share) > max(cluster pj share); SPLIT iff both exceed; NEITHER (the exhaustive residual) otherwise; the mediator rank regression reported alongside (exp274 conventions), audit-only, never gating",
+   "branch": "NEITHER",
+   "outlier_cb_shares": {
+    "H3": 0.15126338261383745,
+    "H5": 0.2265342442987223
+   },
+   "outlier_pj_shares": {
+    "H3": 0.8487366173861627,
+    "H5": 0.7734657557012777
+   },
+   "cluster_cb_share_max": 0.1767482674197659,
+   "cluster_pj_share_max": 0.9526641874045548,
+   "cluster_cb_share_min": 0.04733581259544503,
+   "cluster_pj_share_min": 0.8232517325802341,
+   "cb_outlier_margin": -0.02548488480592845,
+   "pj_outlier_margin": -0.1791984317032771,
+   "cb_exceeds_cluster_max": false,
+   "pj_exceeds_cluster_max": false
+  },
+  "D4_discipline": {
+   "pass": true,
+   "bar": "all deposits READ-ONLY sha-recorded byte-unchanged; deterministic \u2014 two-pass bit-identical; no wall-clock fields; the docstring+header pinned to aa0d3c2 asserted at entry AND exit; NEURAL_SPEC_MIN == -60.0 asserted at exit",
+   "read_only_shas_before": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp274_deposit": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+    "exp275_deposit": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879"
+   },
+   "read_only_shas_after": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp274_deposit": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+    "exp275_deposit": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879"
+   },
+   "read_only_byte_unchanged": true,
+   "deterministic_two_pass_bit_identical": true,
+   "payload_sha256_pass_a": "329b48319a90140286c4ff4c9d8b5925abaec68c195f420edad7c4cdfb21362e",
+   "payload_sha256_pass_b": "329b48319a90140286c4ff4c9d8b5925abaec68c195f420edad7c4cdfb21362e",
+   "no_wall_clock_fields": true,
+   "floor_at_entry": -60.0,
+   "floor_at_exit": -60.0,
+   "docstring_sha256": "0be79f988a1a3901dd22a3ff7f003c8f103c515019f4e2b352675810fc0bc6a6",
+   "docstring_byte_unchanged_vs_aa0d3c2": true,
+   "header_sha256": "799c38706ce5f18ca30cd0c488e869e501799d55b9b7dc957fae4505afc5bf89",
+   "header_byte_unchanged_vs_aa0d3c2": true,
+   "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+  }
+ },
+ "branch": "NEITHER",
+ "verdict": "4/4 gates D1-D4 (4 PASS / 0 REFUTE) | NEITHER | NEITHER: neither share exceeds the cluster's max on both outliers \u2014 the outliers' deep-band error is class-typical of the cluster | the outliers' mean shares over the 36 substituted rows: cb 0.1513/0.2265 vs cluster max 0.1767 (margin -0.0255), pj 0.8487/0.7735 vs cluster max 0.9527 (margin -0.1792) | P3's own error (mean substituted worst) H3 3.68 / H5 3.36 mV | the mediator regression (exp274 convention, audit-only): Spearman(mia, cb) 0.1182073837, Spearman(mia, pj) -0.1182073837, full rank R2 0.0003921083368, shares cb 0.0001960541684 / pj 0.0001960541684 / unexplained 0.9996078917 | 12 hosts x 3 seeds = 36 substituted rows, a pure re-read of exp256's 72 decomposed rows, READ-ONLY byte-unchanged, two-pass bit-identical, no wall-clock fields, floor -60.0 asserted at exit",
+ "determinism": {
+  "computation_passes": 2,
+  "payload_sha256_pass_a": "329b48319a90140286c4ff4c9d8b5925abaec68c195f420edad7c4cdfb21362e",
+  "payload_sha256_pass_b": "329b48319a90140286c4ff4c9d8b5925abaec68c195f420edad7c4cdfb21362e",
+  "two_pass_bit_identical": true
+ },
+ "discipline": {
+  "no_wall_clock_fields": true,
+  "floor_at_entry": -60.0,
+  "floor_at_exit": -60.0,
+  "docstring_sha256": "0be79f988a1a3901dd22a3ff7f003c8f103c515019f4e2b352675810fc0bc6a6",
+  "docstring_byte_unchanged_vs_aa0d3c2": true,
+  "header_sha256": "799c38706ce5f18ca30cd0c488e869e501799d55b9b7dc957fae4505afc5bf89",
+  "header_byte_unchanged_vs_aa0d3c2": true,
+  "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+ },
+ "deposit_fingerprint": "fd87a870f9ea07bee9d41fe3cff77b1ae5d35b314ce5d7b0d31436e70e68f65a"
+}
