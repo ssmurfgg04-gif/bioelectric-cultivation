@@ -1,0 +1,1653 @@
+{
+ "exp": "exp273_outlier_hosts",
+ "claim": "THE OUTLIER HOSTS (batch 31, L250's registered next (a), pre-registration commit 26946af): the discriminant search across the deposited host records \u2014 every host-level numeric field the five deposits carry (exp243's classes records, exp256's per-host row aggregates, exp271's/exp272's premium grids, exp182's margin data where host-keyed) tested against the pre-named separation: the field separates {H3, H5} from the ten-host cluster iff both outliers' values lie strictly outside the cluster's [min, max] range ON THE SAME SIDE; branches OUTLIER-DEPOSIT-CARRIED / OUTLIER-DEPOSIT-ABSENT",
+ "method": {
+  "outliers": "H3 and H5, read from exp272's deposit descriptive.premium_hosts and asserted",
+  "cluster": "the other ten hosts (H0, H1, H2, H4, H6-H11), cross-checked against exp272's descriptive.cluster_hosts",
+  "test": "per NUMERIC host-level field: cluster range = [min, max] over the TEN cluster hosts; SEPARATING iff BOTH H3's and H5's values lie strictly outside that range ON THE SAME SIDE; one outlier outside only -> one-sided (X3: reported, never counted); incomplete coverage -> partial-coverage (reported, never counted)",
+  "provenance_tags": "definitional = the shelf/premium field the outliers were NAMED from (separating is circular, flagged); component = enters the premium definition; external = independent of the outlier definition (the non-circular hunt)",
+  "excluded": "exp243's classes runtime_s (wall-clock, X4); string fields (base, base_sha256, worst_pert, worst_medium, ...) \u2014 numeric fields only",
+  "method_source": "experiments/exp272_host_premium_structure.py (the outlier naming + the grids), experiments/exp271_one_zone_premium.py (the one-zone shelf), experiments/exp256_row_pair_regression.py (the row records), experiments/exp243_structured_adversarial.py (the classes records)"
+ },
+ "inputs": {
+  "exp243_deposit": {
+   "path": "results/exp243_structured_adversarial.json",
+   "sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "role": "the classes records (rewire_seed, edges_base, n_boundary_cells_base, f_max_base, multi_identity_audit, ...) \u2014 the host dossier"
+  },
+  "exp272_deposit": {
+   "path": "results/exp272_host_premium_structure.json",
+   "sha256": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+   "role": "the premium hosts' pre-naming, the per-host premium records, both premium grids (the grids byte-verified here)"
+  },
+  "exp271_deposit": {
+   "path": "results/exp271_one_zone_premium.json",
+   "sha256": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+   "role": "the deposited 36-row premium grid + the per-host means (byte-verified vs exp272's re-read)"
+  },
+  "exp182_deposit": {
+   "path": "results/exp182_substrate_100.json",
+   "sha256": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+   "role": "the margin profiles \u2014 target-keyed, NOT host-keyed (the X1 scan is the evidence); 0 host-level fields"
+  },
+  "exp256_deposit": {
+   "path": "results/exp256_row_pair_regression.json",
+   "sha256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+   "role": "the 72 row records \u2014 the per-host canon/substituted worst means + the row-geometry aggregates"
+  }
+ },
+ "hosts": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H3",
+  "H4",
+  "H5",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "outliers": [
+  "H3",
+  "H5"
+ ],
+ "cluster": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H4",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "outlier_prename_source": "exp272's deposit descriptive.premium_hosts (asserted == ['H3', 'H5'])",
+ "field_table": [
+  {
+   "field": "exp243.classes.n",
+   "semantic": "n",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.n",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 400,
+    "H1": 400,
+    "H10": 400,
+    "H11": 400,
+    "H2": 400,
+    "H3": 400,
+    "H4": 400,
+    "H5": 400,
+    "H6": 400,
+    "H7": 400,
+    "H8": 400,
+    "H9": 400
+   },
+   "cluster_range": [
+    400.0,
+    400.0
+   ],
+   "H3": 400.0,
+   "H5": 400.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "constant"
+  },
+  {
+   "field": "exp243.classes.rewire_seed",
+   "semantic": "rewire_seed",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.rewire_seed",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 10,
+   "values": {
+    "H0": null,
+    "H1": null,
+    "H10": 202215,
+    "H11": 202216,
+    "H2": 202201,
+    "H3": 202202,
+    "H4": 202203,
+    "H5": 202206,
+    "H6": 202207,
+    "H7": 202208,
+    "H8": 202209,
+    "H9": 202213
+   },
+   "status": "partial-coverage",
+   "missing_hosts": [
+    "H0",
+    "H1"
+   ],
+   "never_counted": true,
+   "note": "incomplete coverage \u2014 the pre-registration computes the field for all 12 hosts; this field cannot be, so it is reported and never counted",
+   "informational_range_over_available": [
+    202201,
+    202216
+   ],
+   "informational_H3": 202202,
+   "informational_H5": 202206,
+   "informational_separates": false
+  },
+  {
+   "field": "exp243.classes.edges_base",
+   "semantic": "edges_base",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.edges_base",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 399,
+    "H1": 399,
+    "H10": 400,
+    "H11": 400,
+    "H2": 400,
+    "H3": 400,
+    "H4": 400,
+    "H5": 400,
+    "H6": 400,
+    "H7": 400,
+    "H8": 400,
+    "H9": 400
+   },
+   "cluster_range": [
+    399.0,
+    400.0
+   ],
+   "H3": 400.0,
+   "H5": 400.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "not-separating"
+  },
+  {
+   "field": "exp243.classes.n_boundary_cells_base",
+   "semantic": "n_boundary_cells_base",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.n_boundary_cells_base",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 4,
+    "H1": 4,
+    "H10": 32,
+    "H11": 37,
+    "H2": 42,
+    "H3": 47,
+    "H4": 41,
+    "H5": 48,
+    "H6": 31,
+    "H7": 36,
+    "H8": 39,
+    "H9": 43
+   },
+   "cluster_range": [
+    4.0,
+    43.0
+   ],
+   "H3": 47.0,
+   "H5": 48.0,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp243.classes.f_max_base",
+   "semantic": "f_max_base",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.f_max_base",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 0.0,
+    "H1": 0.0,
+    "H10": 0.0,
+    "H11": 0.0,
+    "H2": 0.0,
+    "H3": 0.0,
+    "H4": 0.0,
+    "H5": 0.0,
+    "H6": 0.0,
+    "H7": 0.0,
+    "H8": 0.0,
+    "H9": 0.0
+   },
+   "cluster_range": [
+    0.0,
+    0.0
+   ],
+   "H3": 0.0,
+   "H5": 0.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "constant"
+  },
+  {
+   "field": "exp243.classes.n_candidate_reads",
+   "semantic": "n_candidate_reads",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.n_candidate_reads",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 4,
+    "H1": 4,
+    "H10": 4,
+    "H11": 4,
+    "H2": 4,
+    "H3": 4,
+    "H4": 4,
+    "H5": 4,
+    "H6": 4,
+    "H7": 4,
+    "H8": 4,
+    "H9": 4
+   },
+   "cluster_range": [
+    4.0,
+    4.0
+   ],
+   "H3": 4.0,
+   "H5": 4.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "constant"
+  },
+  {
+   "field": "exp243.classes.n_rejections",
+   "semantic": "n_rejections",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.n_rejections",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 0,
+    "H1": 0,
+    "H10": 0,
+    "H11": 0,
+    "H2": 0,
+    "H3": 0,
+    "H4": 0,
+    "H5": 0,
+    "H6": 0,
+    "H7": 0,
+    "H8": 0,
+    "H9": 0
+   },
+   "cluster_range": [
+    0.0,
+    0.0
+   ],
+   "H3": 0.0,
+   "H5": 0.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "constant"
+  },
+  {
+   "field": "exp243.classes.multi_identity_audit.seed",
+   "semantic": "mia_seed",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.multi_identity_audit.seed",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 1,
+    "H1": 1,
+    "H10": 1,
+    "H11": 1,
+    "H2": 1,
+    "H3": 1,
+    "H4": 1,
+    "H5": 1,
+    "H6": 1,
+    "H7": 1,
+    "H8": 1,
+    "H9": 1
+   },
+   "cluster_range": [
+    1.0,
+    1.0
+   ],
+   "H3": 1.0,
+   "H5": 1.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "constant"
+  },
+  {
+   "field": "exp243.classes.multi_identity_audit.prod_err",
+   "semantic": "mia_prod_err",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.multi_identity_audit.prod_err",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 0.52,
+    "H1": 0.52,
+    "H10": 0.49,
+    "H11": 0.49,
+    "H2": 0.49,
+    "H3": 2.12,
+    "H4": 0.49,
+    "H5": 2.28,
+    "H6": 0.49,
+    "H7": 0.49,
+    "H8": 0.52,
+    "H9": 0.49
+   },
+   "cluster_range": [
+    0.49,
+    0.52
+   ],
+   "H3": 2.12,
+   "H5": 2.28,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp243.classes.multi_identity_audit.f_max",
+   "semantic": "mia_f_max",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.multi_identity_audit.f_max",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 0.0,
+    "H1": 0.0,
+    "H10": 0.0,
+    "H11": 0.0,
+    "H2": 0.0,
+    "H3": 0.0,
+    "H4": 0.0,
+    "H5": 0.0,
+    "H6": 0.0,
+    "H7": 0.0,
+    "H8": 0.0,
+    "H9": 0.0
+   },
+   "cluster_range": [
+    0.0,
+    0.0
+   ],
+   "H3": 0.0,
+   "H5": 0.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "constant"
+  },
+  {
+   "field": "exp243.classes.multi_identity_audit.bit_identical",
+   "semantic": "mia_bit_identical",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.multi_identity_audit.bit_identical",
+   "kind": "boolean",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 1.0,
+    "H1": 1.0,
+    "H10": 1.0,
+    "H11": 1.0,
+    "H2": 1.0,
+    "H3": 1.0,
+    "H4": 1.0,
+    "H5": 1.0,
+    "H6": 1.0,
+    "H7": 1.0,
+    "H8": 1.0,
+    "H9": 1.0
+   },
+   "cluster_range": [
+    1.0,
+    1.0
+   ],
+   "H3": 1.0,
+   "H5": 1.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "constant"
+  },
+  {
+   "field": "exp256.rows.worst_err_mean_canonical",
+   "semantic": "canon_worst_err_mean",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[arm=canonical].worst_err, mean over seeds",
+   "kind": "numeric",
+   "selection": "component",
+   "coverage": 12,
+   "values": {
+    "H0": 0.05333333333333334,
+    "H1": 0.05333333333333334,
+    "H10": 0.1366666666666667,
+    "H11": 0.16,
+    "H2": 0.16666666666666666,
+    "H3": 0.17333333333333334,
+    "H4": 0.1366666666666667,
+    "H5": 0.19000000000000003,
+    "H6": 0.14,
+    "H7": 0.15,
+    "H8": 0.14,
+    "H9": 0.15333333333333332
+   },
+   "cluster_range": [
+    0.05333333333333334,
+    0.16666666666666666
+   ],
+   "H3": 0.17333333333333334,
+   "H5": 0.19000000000000003,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp256.rows.worst_err_mean_substituted",
+   "semantic": "subst_worst_err_mean",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[arm=substituted].worst_err, mean over seeds",
+   "kind": "numeric",
+   "selection": "component",
+   "coverage": 12,
+   "values": {
+    "H0": 0.54,
+    "H1": 0.54,
+    "H10": 0.5033333333333333,
+    "H11": 0.5066666666666667,
+    "H2": 0.5066666666666667,
+    "H3": 3.68,
+    "H4": 0.5066666666666667,
+    "H5": 3.356666666666667,
+    "H6": 0.5033333333333333,
+    "H7": 0.5033333333333333,
+    "H8": 0.5166666666666667,
+    "H9": 0.5033333333333333
+   },
+   "cluster_range": [
+    0.5033333333333333,
+    0.54
+   ],
+   "H3": 3.68,
+   "H5": 3.356666666666667,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp256.rows.worst_err_mean_all_arms",
+   "semantic": "worst_err_mean_all_arms",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[*].worst_err, mean over the 6 rows",
+   "kind": "numeric",
+   "selection": "component",
+   "coverage": 12,
+   "values": {
+    "H0": 0.2966666666666667,
+    "H1": 0.2966666666666667,
+    "H10": 0.32,
+    "H11": 0.3333333333333333,
+    "H2": 0.33666666666666667,
+    "H3": 1.9266666666666667,
+    "H4": 0.3216666666666667,
+    "H5": 1.7733333333333334,
+    "H6": 0.3216666666666667,
+    "H7": 0.32666666666666666,
+    "H8": 0.32833333333333337,
+    "H9": 0.3283333333333333
+   },
+   "cluster_range": [
+    0.2966666666666667,
+    0.33666666666666667
+   ],
+   "H3": 1.9266666666666667,
+   "H5": 1.7733333333333334,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp256.rows.pair_junction_count_mean_canonical",
+   "semantic": "pair_junction_count_mean_canonical",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[arm=canonical].pair_junction_count, mean over seeds",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 393.3333333333333,
+    "H1": 393.3333333333333,
+    "H10": 324.0,
+    "H11": 310.0,
+    "H2": 302.0,
+    "H3": 295.0,
+    "H4": 301.0,
+    "H5": 283.0,
+    "H6": 307.0,
+    "H7": 309.0,
+    "H8": 308.0,
+    "H9": 307.0
+   },
+   "cluster_range": [
+    301.0,
+    393.3333333333333
+   ],
+   "H3": 295.0,
+   "H5": 283.0,
+   "H3_position": "below",
+   "H5_position": "below",
+   "status": "separating"
+  },
+  {
+   "field": "exp256.rows.pair_junction_count_mean_substituted",
+   "semantic": "pair_junction_count_mean_substituted",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[arm=substituted].pair_junction_count, mean",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 384.0,
+    "H1": 384.0,
+    "H10": 343.0,
+    "H11": 338.0,
+    "H2": 340.6666666666667,
+    "H3": 334.0,
+    "H4": 337.0,
+    "H5": 337.0,
+    "H6": 345.0,
+    "H7": 340.0,
+    "H8": 343.0,
+    "H9": 336.0
+   },
+   "cluster_range": [
+    336.0,
+    384.0
+   ],
+   "H3": 334.0,
+   "H5": 337.0,
+   "H3_position": "below",
+   "H5_position": "inside",
+   "status": "one-sided"
+  },
+  {
+   "field": "exp256.rows.pair_junction_count_mean_all_arms",
+   "semantic": "pair_junction_count_mean_all_arms",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[*].pair_junction_count, mean over the 6 rows",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 388.6666666666667,
+    "H1": 388.6666666666667,
+    "H10": 333.5,
+    "H11": 324.0,
+    "H2": 321.3333333333333,
+    "H3": 314.5,
+    "H4": 319.0,
+    "H5": 310.0,
+    "H6": 326.0,
+    "H7": 324.5,
+    "H8": 325.5,
+    "H9": 321.5
+   },
+   "cluster_range": [
+    319.0,
+    388.6666666666667
+   ],
+   "H3": 314.5,
+   "H5": 310.0,
+   "H3_position": "below",
+   "H5_position": "below",
+   "status": "separating"
+  },
+  {
+   "field": "exp256.rows.canon_boundary_cells_mean_canonical",
+   "semantic": "canon_boundary_cells_mean_canonical",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[arm=canonical].class_counts['CANON-BOUNDARY'], mean",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 6.666666666666667,
+    "H1": 6.666666666666667,
+    "H10": 63.0,
+    "H11": 70.0,
+    "H2": 91.0,
+    "H3": 90.0,
+    "H4": 85.0,
+    "H5": 103.0,
+    "H6": 77.0,
+    "H7": 75.0,
+    "H8": 77.0,
+    "H9": 76.0
+   },
+   "cluster_range": [
+    6.666666666666667,
+    91.0
+   ],
+   "H3": 90.0,
+   "H5": 103.0,
+   "H3_position": "inside",
+   "H5_position": "above",
+   "status": "one-sided"
+  },
+  {
+   "field": "exp256.rows.canon_boundary_cells_mean_substituted",
+   "semantic": "canon_boundary_cells_mean_substituted",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[arm=substituted].class_counts['CANON-BOUNDARY'], mean",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 16.0,
+    "H1": 16.0,
+    "H10": 30.0,
+    "H11": 34.0,
+    "H2": 39.0,
+    "H3": 38.0,
+    "H4": 36.0,
+    "H5": 31.0,
+    "H6": 28.0,
+    "H7": 32.0,
+    "H8": 32.0,
+    "H9": 30.0
+   },
+   "cluster_range": [
+    16.0,
+    39.0
+   ],
+   "H3": 38.0,
+   "H5": 31.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "not-separating"
+  },
+  {
+   "field": "exp256.rows.interior_cells_mean_canonical",
+   "semantic": "interior_cells_mean_canonical",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[arm=canonical].class_counts['INTERIOR'], mean",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 0.0,
+    "H1": 0.0,
+    "H10": 13.0,
+    "H11": 20.0,
+    "H2": 7.0,
+    "H3": 15.0,
+    "H4": 14.0,
+    "H5": 14.0,
+    "H6": 16.0,
+    "H7": 16.0,
+    "H8": 15.0,
+    "H9": 17.0
+   },
+   "cluster_range": [
+    0.0,
+    20.0
+   ],
+   "H3": 15.0,
+   "H5": 14.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "not-separating"
+  },
+  {
+   "field": "exp256.rows.interior_cells_mean_substituted",
+   "semantic": "interior_cells_mean_substituted",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[arm=substituted].class_counts['INTERIOR'], mean",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 0.0,
+    "H1": 0.0,
+    "H10": 27.0,
+    "H11": 28.0,
+    "H2": 20.333333333333332,
+    "H3": 28.0,
+    "H4": 27.0,
+    "H5": 32.0,
+    "H6": 27.0,
+    "H7": 28.0,
+    "H8": 25.0,
+    "H9": 34.0
+   },
+   "cluster_range": [
+    0.0,
+    34.0
+   ],
+   "H3": 28.0,
+   "H5": 32.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "not-separating"
+  },
+  {
+   "field": "exp256.rows.f_max_mean_all_arms",
+   "semantic": "f_max_mean_all_arms",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[*].f_max, mean over the 6 rows",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 0.0,
+    "H1": 0.0,
+    "H10": 0.0,
+    "H11": 0.0,
+    "H2": 0.0,
+    "H3": 0.0,
+    "H4": 0.0,
+    "H5": 0.0,
+    "H6": 0.0,
+    "H7": 0.0,
+    "H8": 0.0,
+    "H9": 0.0
+   },
+   "cluster_range": [
+    0.0,
+    0.0
+   ],
+   "H3": 0.0,
+   "H5": 0.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "constant"
+  },
+  {
+   "field": "exp256.rows.identity_residual_mean_all_arms",
+   "semantic": "identity_residual_mean_all_arms",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[*].decomposition.identity_residual, mean",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 1.8648277366750676e-17,
+    "H1": 1.8648277366750676e-17,
+    "H10": 2.42861286636753e-17,
+    "H11": 4.625929269271485e-18,
+    "H2": 1.2721305490496585e-17,
+    "H3": 2.9721595555069297e-16,
+    "H4": 6.3606527452482924e-18,
+    "H5": 2.37425819745359e-15,
+    "H6": 1.0986582014519778e-17,
+    "H7": 1.5034270125132327e-17,
+    "H8": 2.3707887505016363e-17,
+    "H9": 1.9660199394403815e-17
+   },
+   "cluster_range": [
+    4.625929269271485e-18,
+    2.42861286636753e-17
+   ],
+   "H3": 2.9721595555069297e-16,
+   "H5": 2.37425819745359e-15,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp271.premium_grid.d1_err_mean",
+   "semantic": "d1_err_mean",
+   "deposit": "exp271_one_zone_premium.json",
+   "path": "premium_grid.<H,s>.d1_err, mean over seeds",
+   "kind": "numeric",
+   "selection": "definitional",
+   "coverage": 12,
+   "values": {
+    "H0": 0.54,
+    "H1": 0.54,
+    "H10": 0.5,
+    "H11": 0.5,
+    "H2": 0.5033333333333333,
+    "H3": 2.12,
+    "H4": 0.5066666666666667,
+    "H5": 2.29,
+    "H6": 0.5066666666666667,
+    "H7": 0.5033333333333333,
+    "H8": 0.5133333333333333,
+    "H9": 0.5033333333333333
+   },
+   "cluster_range": [
+    0.5,
+    0.54
+   ],
+   "H3": 2.12,
+   "H5": 2.29,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp271.premium_grid.canon_worst_err_mean",
+   "semantic": "canon_worst_err_mean",
+   "deposit": "exp271_one_zone_premium.json",
+   "path": "premium_grid.<H,s>.canon_worst_err, mean over seeds",
+   "kind": "numeric",
+   "selection": "component",
+   "coverage": 12,
+   "values": {
+    "H0": 0.05333333333333334,
+    "H1": 0.05333333333333334,
+    "H10": 0.1366666666666667,
+    "H11": 0.16,
+    "H2": 0.16666666666666666,
+    "H3": 0.17333333333333334,
+    "H4": 0.1366666666666667,
+    "H5": 0.19000000000000003,
+    "H6": 0.14,
+    "H7": 0.15,
+    "H8": 0.14,
+    "H9": 0.15333333333333332
+   },
+   "cluster_range": [
+    0.05333333333333334,
+    0.16666666666666666
+   ],
+   "H3": 0.17333333333333334,
+   "H5": 0.19000000000000003,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp271.premium_grid.one_zone_premium_mean",
+   "semantic": "one_zone_premium_mean",
+   "deposit": "exp271_one_zone_premium.json",
+   "path": "premium_grid.<H,s>.premium, mean over seeds",
+   "kind": "numeric",
+   "selection": "definitional",
+   "coverage": 12,
+   "values": {
+    "H0": 0.48666666666666664,
+    "H1": 0.48666666666666664,
+    "H10": 0.3633333333333333,
+    "H11": 0.34,
+    "H2": 0.3366666666666666,
+    "H3": 1.946666666666667,
+    "H4": 0.36999999999999994,
+    "H5": 2.1,
+    "H6": 0.3666666666666667,
+    "H7": 0.35333333333333333,
+    "H8": 0.37333333333333335,
+    "H9": 0.3499999999999999
+   },
+   "cluster_range": [
+    0.3366666666666666,
+    0.48666666666666664
+   ],
+   "H3": 1.946666666666667,
+   "H5": 2.1,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp271.premium_summary.per_host.all_positive",
+   "semantic": "one_zone_all_positive",
+   "deposit": "exp271_one_zone_premium.json",
+   "path": "premium_summary.per_host.<H>.all_positive",
+   "kind": "boolean",
+   "selection": "definitional",
+   "coverage": 12,
+   "values": {
+    "H0": 1.0,
+    "H1": 1.0,
+    "H10": 1.0,
+    "H11": 1.0,
+    "H2": 1.0,
+    "H3": 1.0,
+    "H4": 1.0,
+    "H5": 1.0,
+    "H6": 1.0,
+    "H7": 1.0,
+    "H8": 1.0,
+    "H9": 1.0
+   },
+   "cluster_range": [
+    1.0,
+    1.0
+   ],
+   "H3": 1.0,
+   "H5": 1.0,
+   "H3_position": "inside",
+   "H5_position": "inside",
+   "status": "constant"
+  },
+  {
+   "field": "exp272.per_host.n_boundary_cells_base",
+   "semantic": "n_boundary_cells_base",
+   "deposit": "exp272_host_premium_structure.json",
+   "path": "per_host.<H>.n_boundary_cells_base",
+   "kind": "numeric",
+   "selection": "external",
+   "coverage": 12,
+   "values": {
+    "H0": 4,
+    "H1": 4,
+    "H10": 32,
+    "H11": 37,
+    "H2": 42,
+    "H3": 47,
+    "H4": 41,
+    "H5": 48,
+    "H6": 31,
+    "H7": 36,
+    "H8": 39,
+    "H9": 43
+   },
+   "cluster_range": [
+    4.0,
+    43.0
+   ],
+   "H3": 47.0,
+   "H5": 48.0,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp272.per_host.one_zone_premium_mean",
+   "semantic": "one_zone_premium_mean",
+   "deposit": "exp272_host_premium_structure.json",
+   "path": "per_host.<H>.one_zone_premium_mean",
+   "kind": "numeric",
+   "selection": "definitional",
+   "coverage": 12,
+   "values": {
+    "H0": 0.48666666666666664,
+    "H1": 0.48666666666666664,
+    "H10": 0.3633333333333333,
+    "H11": 0.34,
+    "H2": 0.3366666666666666,
+    "H3": 1.946666666666667,
+    "H4": 0.36999999999999994,
+    "H5": 2.1,
+    "H6": 0.3666666666666667,
+    "H7": 0.35333333333333333,
+    "H8": 0.37333333333333335,
+    "H9": 0.3499999999999999
+   },
+   "cluster_range": [
+    0.3366666666666666,
+    0.48666666666666664
+   ],
+   "H3": 1.946666666666667,
+   "H5": 2.1,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp272.per_host.multi_zone_premium_mean",
+   "semantic": "multi_zone_premium_mean",
+   "deposit": "exp272_host_premium_structure.json",
+   "path": "per_host.<H>.multi_zone_premium_mean",
+   "kind": "numeric",
+   "selection": "definitional",
+   "coverage": 12,
+   "values": {
+    "H0": 0.48666666666666664,
+    "H1": 0.48666666666666664,
+    "H10": 0.3633333333333333,
+    "H11": 0.3466666666666667,
+    "H2": 0.3333333333333333,
+    "H3": 3.5066666666666664,
+    "H4": 0.36999999999999994,
+    "H5": 3.1666666666666665,
+    "H6": 0.3633333333333333,
+    "H7": 0.35333333333333333,
+    "H8": 0.37666666666666665,
+    "H9": 0.3499999999999999
+   },
+   "cluster_range": [
+    0.3333333333333333,
+    0.48666666666666664
+   ],
+   "H3": 3.5066666666666664,
+   "H5": 3.1666666666666665,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp272.one_zone_premium_grid_re_read.d1_err_mean",
+   "semantic": "d1_err_mean",
+   "deposit": "exp272_host_premium_structure.json",
+   "path": "one_zone_premium_grid_re_read.<H,s>.d1_err, mean",
+   "kind": "numeric",
+   "selection": "definitional",
+   "coverage": 12,
+   "values": {
+    "H0": 0.54,
+    "H1": 0.54,
+    "H10": 0.5,
+    "H11": 0.5,
+    "H2": 0.5033333333333333,
+    "H3": 2.12,
+    "H4": 0.5066666666666667,
+    "H5": 2.29,
+    "H6": 0.5066666666666667,
+    "H7": 0.5033333333333333,
+    "H8": 0.5133333333333333,
+    "H9": 0.5033333333333333
+   },
+   "cluster_range": [
+    0.5,
+    0.54
+   ],
+   "H3": 2.12,
+   "H5": 2.29,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp272.one_zone_premium_grid_re_read.canon_worst_err_mean",
+   "semantic": "canon_worst_err_mean",
+   "deposit": "exp272_host_premium_structure.json",
+   "path": "one_zone_premium_grid_re_read.<H,s>.canon_worst_err, mean",
+   "kind": "numeric",
+   "selection": "component",
+   "coverage": 12,
+   "values": {
+    "H0": 0.05333333333333334,
+    "H1": 0.05333333333333334,
+    "H10": 0.1366666666666667,
+    "H11": 0.16,
+    "H2": 0.16666666666666666,
+    "H3": 0.17333333333333334,
+    "H4": 0.1366666666666667,
+    "H5": 0.19000000000000003,
+    "H6": 0.14,
+    "H7": 0.15,
+    "H8": 0.14,
+    "H9": 0.15333333333333332
+   },
+   "cluster_range": [
+    0.05333333333333334,
+    0.16666666666666666
+   ],
+   "H3": 0.17333333333333334,
+   "H5": 0.19000000000000003,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp272.multi_zone_premium_grid.subst_i0_err_mean",
+   "semantic": "subst_i0_err_mean",
+   "deposit": "exp272_host_premium_structure.json",
+   "path": "multi_zone_premium_grid.<H,s>.subst_i0_err, mean",
+   "kind": "numeric",
+   "selection": "definitional",
+   "coverage": 12,
+   "values": {
+    "H0": 0.54,
+    "H1": 0.54,
+    "H10": 0.5,
+    "H11": 0.5066666666666667,
+    "H2": 0.5,
+    "H3": 3.68,
+    "H4": 0.5066666666666667,
+    "H5": 3.356666666666667,
+    "H6": 0.5033333333333333,
+    "H7": 0.5033333333333333,
+    "H8": 0.5166666666666667,
+    "H9": 0.5033333333333333
+   },
+   "cluster_range": [
+    0.5,
+    0.54
+   ],
+   "H3": 3.68,
+   "H5": 3.356666666666667,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp272.multi_zone_premium_grid.canon_worst_err_mean",
+   "semantic": "canon_worst_err_mean",
+   "deposit": "exp272_host_premium_structure.json",
+   "path": "multi_zone_premium_grid.<H,s>.canon_worst_err, mean",
+   "kind": "numeric",
+   "selection": "component",
+   "coverage": 12,
+   "values": {
+    "H0": 0.05333333333333334,
+    "H1": 0.05333333333333334,
+    "H10": 0.1366666666666667,
+    "H11": 0.16,
+    "H2": 0.16666666666666666,
+    "H3": 0.17333333333333334,
+    "H4": 0.1366666666666667,
+    "H5": 0.19000000000000003,
+    "H6": 0.14,
+    "H7": 0.15,
+    "H8": 0.14,
+    "H9": 0.15333333333333332
+   },
+   "cluster_range": [
+    0.05333333333333334,
+    0.16666666666666666
+   ],
+   "H3": 0.17333333333333334,
+   "H5": 0.19000000000000003,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  },
+  {
+   "field": "exp272.multi_zone_premium_grid.multi_zone_premium_mean",
+   "semantic": "multi_zone_premium_mean",
+   "deposit": "exp272_host_premium_structure.json",
+   "path": "multi_zone_premium_grid.<H,s>.premium_mz, mean",
+   "kind": "numeric",
+   "selection": "definitional",
+   "coverage": 12,
+   "values": {
+    "H0": 0.48666666666666664,
+    "H1": 0.48666666666666664,
+    "H10": 0.3633333333333333,
+    "H11": 0.3466666666666667,
+    "H2": 0.3333333333333333,
+    "H3": 3.5066666666666664,
+    "H4": 0.36999999999999994,
+    "H5": 3.1666666666666665,
+    "H6": 0.3633333333333333,
+    "H7": 0.35333333333333333,
+    "H8": 0.37666666666666665,
+    "H9": 0.3499999999999999
+   },
+   "cluster_range": [
+    0.3333333333333333,
+    0.48666666666666664
+   ],
+   "H3": 3.5066666666666664,
+   "H5": 3.1666666666666665,
+   "H3_position": "above",
+   "H5_position": "above",
+   "status": "separating"
+  }
+ ],
+ "separation_summary": {
+  "rule": "cluster range = [min, max] over the ten cluster hosts; the field SEPARATES iff BOTH H3's and H5's values lie strictly outside that range ON THE SAME SIDE",
+  "n_field_records": 35,
+  "n_tested_records": 34,
+  "n_separating_records": 19,
+  "n_distinct_separating_fields": 12,
+  "distinct_separating_fields": [
+   {
+    "semantic_field": "canon_worst_err_mean",
+    "carried_by": [
+     "exp256",
+     "exp271",
+     "exp272"
+    ],
+    "cluster_range": [
+     0.05333333333333334,
+     0.16666666666666666
+    ],
+    "H3": 0.17333333333333334,
+    "H5": 0.19000000000000003,
+    "side": "above",
+    "selection": "component"
+   },
+   {
+    "semantic_field": "d1_err_mean",
+    "carried_by": [
+     "exp271",
+     "exp272"
+    ],
+    "cluster_range": [
+     0.5,
+     0.54
+    ],
+    "H3": 2.12,
+    "H5": 2.29,
+    "side": "above",
+    "selection": "definitional"
+   },
+   {
+    "semantic_field": "identity_residual_mean_all_arms",
+    "carried_by": [
+     "exp256"
+    ],
+    "cluster_range": [
+     4.625929269271485e-18,
+     2.42861286636753e-17
+    ],
+    "H3": 2.9721595555069297e-16,
+    "H5": 2.37425819745359e-15,
+    "side": "above",
+    "selection": "external"
+   },
+   {
+    "semantic_field": "mia_prod_err",
+    "carried_by": [
+     "exp243"
+    ],
+    "cluster_range": [
+     0.49,
+     0.52
+    ],
+    "H3": 2.12,
+    "H5": 2.28,
+    "side": "above",
+    "selection": "external"
+   },
+   {
+    "semantic_field": "multi_zone_premium_mean",
+    "carried_by": [
+     "exp272"
+    ],
+    "cluster_range": [
+     0.3333333333333333,
+     0.48666666666666664
+    ],
+    "H3": 3.5066666666666664,
+    "H5": 3.1666666666666665,
+    "side": "above",
+    "selection": "definitional"
+   },
+   {
+    "semantic_field": "n_boundary_cells_base",
+    "carried_by": [
+     "exp243",
+     "exp272"
+    ],
+    "cluster_range": [
+     4.0,
+     43.0
+    ],
+    "H3": 47.0,
+    "H5": 48.0,
+    "side": "above",
+    "selection": "external"
+   },
+   {
+    "semantic_field": "one_zone_premium_mean",
+    "carried_by": [
+     "exp271",
+     "exp272"
+    ],
+    "cluster_range": [
+     0.3366666666666666,
+     0.48666666666666664
+    ],
+    "H3": 1.946666666666667,
+    "H5": 2.1,
+    "side": "above",
+    "selection": "definitional"
+   },
+   {
+    "semantic_field": "pair_junction_count_mean_all_arms",
+    "carried_by": [
+     "exp256"
+    ],
+    "cluster_range": [
+     319.0,
+     388.6666666666667
+    ],
+    "H3": 314.5,
+    "H5": 310.0,
+    "side": "below",
+    "selection": "external"
+   },
+   {
+    "semantic_field": "pair_junction_count_mean_canonical",
+    "carried_by": [
+     "exp256"
+    ],
+    "cluster_range": [
+     301.0,
+     393.3333333333333
+    ],
+    "H3": 295.0,
+    "H5": 283.0,
+    "side": "below",
+    "selection": "external"
+   },
+   {
+    "semantic_field": "subst_i0_err_mean",
+    "carried_by": [
+     "exp272"
+    ],
+    "cluster_range": [
+     0.5,
+     0.54
+    ],
+    "H3": 3.68,
+    "H5": 3.356666666666667,
+    "side": "above",
+    "selection": "definitional"
+   },
+   {
+    "semantic_field": "subst_worst_err_mean",
+    "carried_by": [
+     "exp256"
+    ],
+    "cluster_range": [
+     0.5033333333333333,
+     0.54
+    ],
+    "H3": 3.68,
+    "H5": 3.356666666666667,
+    "side": "above",
+    "selection": "component"
+   },
+   {
+    "semantic_field": "worst_err_mean_all_arms",
+    "carried_by": [
+     "exp256"
+    ],
+    "cluster_range": [
+     0.2966666666666667,
+     0.33666666666666667
+    ],
+    "H3": 1.9266666666666667,
+    "H5": 1.7733333333333334,
+    "side": "above",
+    "selection": "component"
+   }
+  ],
+  "by_selection_tag": {
+   "component": [
+    "canon_worst_err_mean",
+    "subst_worst_err_mean",
+    "worst_err_mean_all_arms"
+   ],
+   "definitional": [
+    "d1_err_mean",
+    "multi_zone_premium_mean",
+    "one_zone_premium_mean",
+    "subst_i0_err_mean"
+   ],
+   "external": [
+    "identity_residual_mean_all_arms",
+    "mia_prod_err",
+    "n_boundary_cells_base",
+    "pair_junction_count_mean_all_arms",
+    "pair_junction_count_mean_canonical"
+   ]
+  },
+  "external_separating_fields": [
+   {
+    "semantic_field": "mia_prod_err",
+    "carried_by": [
+     "exp243"
+    ],
+    "cluster_range": [
+     0.49,
+     0.52
+    ],
+    "H3": 2.12,
+    "H5": 2.28,
+    "side": "above",
+    "selection": "external"
+   },
+   {
+    "semantic_field": "n_boundary_cells_base",
+    "carried_by": [
+     "exp243",
+     "exp272"
+    ],
+    "cluster_range": [
+     4.0,
+     43.0
+    ],
+    "H3": 47.0,
+    "H5": 48.0,
+    "side": "above",
+    "selection": "external"
+   },
+   {
+    "semantic_field": "pair_junction_count_mean_all_arms",
+    "carried_by": [
+     "exp256"
+    ],
+    "cluster_range": [
+     319.0,
+     388.6666666666667
+    ],
+    "H3": 314.5,
+    "H5": 310.0,
+    "side": "below",
+    "selection": "external"
+   },
+   {
+    "semantic_field": "pair_junction_count_mean_canonical",
+    "carried_by": [
+     "exp256"
+    ],
+    "cluster_range": [
+     301.0,
+     393.3333333333333
+    ],
+    "H3": 295.0,
+    "H5": 283.0,
+    "side": "below",
+    "selection": "external"
+   }
+  ],
+  "external_note": "the definitional tags separate BY CONSTRUCTION (H3/H5 were named the premium hosts FROM those fields in exp272's deposit \u2014 circular); the non-circular discriminants are the external fields (4 distinct)",
+  "identity_residual_caveat": "identity_residual_mean_all_arms separates only at floating-point noise scale (~1e-16/1e-15 vs the cluster's ~1e-18..1e-17) \u2014 reported per the registered arithmetic, carries no physical meaning",
+  "range_vs_rank_note": "n_boundary_cells_base separates the outliers as a RANGE discriminant (H3 47 / H5 48 vs cluster [4, 43]) while exp272's H2 showed no across-host rank correlation (rho 0.0526) \u2014 both deposited facts stand: range separation of the two extremes is not a graded rank law"
+ },
+ "partial_coverage_fields": [
+  {
+   "field": "exp243.classes.rewire_seed",
+   "missing_hosts": [
+    "H0",
+    "H1"
+   ],
+   "note": "incomplete coverage \u2014 the pre-registration computes the field for all 12 hosts; this field cannot be, so it is reported and never counted",
+   "informational_range_over_available": [
+    202201,
+    202216
+   ],
+   "informational_H3": 202202,
+   "informational_H5": 202206,
+   "informational_separates": false
+  }
+ ],
+ "excluded_fields": [
+  {
+   "field": "exp243.classes.runtime_s",
+   "reason": "wall-clock field \u2014 excluded by the X4 discipline (no wall-clock fields); not assembled, not tested, not counted",
+   "values_recorded": false
+  }
+ ],
+ "non_numeric_fields_note": "string host-level fields exist but are not numeric candidates: exp243 classes base/base_sha256; exp256 rows worst_pert/worst_row_key/worst_medium/medium shas; the instrument tests NUMERIC fields only",
+ "gates": {
+  "X1_field_table": {
+   "pass": true,
+   "bar": "the 12-host field table assembled from the deposits (every field provenance-tagged); exp271's/exp272's premium grids byte-verified",
+   "field_table": {
+    "n_records": 35,
+    "n_complete_numeric": 34,
+    "n_partial_coverage": 1,
+    "provenance_tagged": true
+   },
+   "grids_byte_verification": {
+    "exp271_premium_grid_vs_exp272_re_read": true,
+    "exp272_multi_zone_grid_vs_exp256_reconstruction": true,
+    "n_rows_each": 36,
+    "method": "row-json exact, order preserved: json.dumps(row_a) == json.dumps(row_b) for all 36 rows, both grids"
+   },
+   "grid_arithmetic_recompute": {
+    "one_zone_premium_column_ok": true,
+    "multi_zone_premium_column_ok": true
+   },
+   "deposited_per_host_means_bit_exact": true,
+   "exp182_margin_profiles": {
+    "deposit": "exp182_substrate_100.json",
+    "margin_profiles_host_keyed": false,
+    "host_keys_found": [],
+    "n_keys_scanned": 72,
+    "finding": "exp182's margin profiles are TARGET-keyed (100 targets; manifest/battery/per_target), not host-keyed \u2014 0 host-level fields; reported per X1, contributes nothing to the table"
+   },
+   "source_deposit_shas_recorded": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c"
+   }
+  },
+  "X2_separation": {
+   "pass": true,
+   "bar": "at least ONE deposited field separates {H3, H5} from the ten-host cluster on the same side (the gate) \u2014 the count and the fields named; ZERO separating fields -> OUTLIER-DEPOSIT-ABSENT",
+   "n_tested_records": 34,
+   "n_separating_records": 19,
+   "n_distinct_separating_fields": 12,
+   "distinct_separating_fields": [
+    "canon_worst_err_mean",
+    "d1_err_mean",
+    "identity_residual_mean_all_arms",
+    "mia_prod_err",
+    "multi_zone_premium_mean",
+    "n_boundary_cells_base",
+    "one_zone_premium_mean",
+    "pair_junction_count_mean_all_arms",
+    "pair_junction_count_mean_canonical",
+    "subst_i0_err_mean",
+    "subst_worst_err_mean",
+    "worst_err_mean_all_arms"
+   ],
+   "by_selection_tag": {
+    "component": [
+     "canon_worst_err_mean",
+     "subst_worst_err_mean",
+     "worst_err_mean_all_arms"
+    ],
+    "definitional": [
+     "d1_err_mean",
+     "multi_zone_premium_mean",
+     "one_zone_premium_mean",
+     "subst_i0_err_mean"
+    ],
+    "external": [
+     "identity_residual_mean_all_arms",
+     "mia_prod_err",
+     "n_boundary_cells_base",
+     "pair_junction_count_mean_all_arms",
+     "pair_junction_count_mean_canonical"
+    ]
+   },
+   "external_separating_fields": [
+    "mia_prod_err",
+    "n_boundary_cells_base",
+    "pair_junction_count_mean_all_arms",
+    "pair_junction_count_mean_canonical"
+   ]
+  },
+  "X3_honesty": {
+   "pass": true,
+   "bar": "fields that separate ONE outlier but not the other are reported as one-sided (never counted as separating)",
+   "n_one_sided_records": 2,
+   "one_sided_fields": [
+    "canon_boundary_cells_mean_canonical",
+    "pair_junction_count_mean_substituted"
+   ],
+   "one_sided_detail": [
+    {
+     "field": "exp256.rows.pair_junction_count_mean_substituted",
+     "H3": 334.0,
+     "H5": 337.0,
+     "cluster_range": [
+      336.0,
+      384.0
+     ],
+     "H3_position": "below",
+     "H5_position": "inside"
+    },
+    {
+     "field": "exp256.rows.canon_boundary_cells_mean_canonical",
+     "H3": 90.0,
+     "H5": 103.0,
+     "cluster_range": [
+      6.666666666666667,
+      91.0
+     ],
+     "H3_position": "inside",
+     "H5_position": "above"
+    }
+   ],
+   "never_counted": true
+  },
+  "X4_discipline": {
+   "pass": true,
+   "bar": "all deposits READ-ONLY sha-recorded byte-unchanged; deterministic; no wall-clock fields; the -60.0 floor asserted at exit",
+   "read_only_shas_before": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c"
+   },
+   "read_only_shas_after": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c"
+   },
+   "read_only_byte_unchanged": true,
+   "deterministic_two_pass_bit_identical": true,
+   "payload_sha256_pass_a": "13ba5460f16f8d69ddfe95b5bbf2949cd280ae9f870b716022ad750286f4c8e8",
+   "payload_sha256_pass_b": "13ba5460f16f8d69ddfe95b5bbf2949cd280ae9f870b716022ad750286f4c8e8",
+   "no_wall_clock_fields": true,
+   "floor_at_entry": -60.0,
+   "floor_at_exit": -60.0,
+   "docstring_sha256": "d02fba471fd4a307b42e8649f01514097119d8f8a761e12e8b64464fdcfb5ed5",
+   "docstring_byte_unchanged_vs_26946af": true,
+   "header_sha256": "3641f91d602826b1ccfcc36796e6c4b67c6fe98ec5b607e09c1f61687f7c4b83",
+   "header_byte_unchanged_vs_26946af": true,
+   "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+  }
+ },
+ "branch": "OUTLIER-DEPOSIT-CARRIED",
+ "verdict": "4/4 gates X1-X4 (4 PASS / 0 REFUTE) | OUTLIER-DEPOSIT-CARRIED | 19/34 tested host-field records separate {H3, H5} from the ten-host cluster on the same side (12 distinct fields; external discriminants: mia_prod_err 2.12/2.28 vs [0.49, 0.52]; n_boundary_cells_base 47/48 vs [4, 43]; pair_junction_count_mean_all_arms BELOW 314.5/310 vs [319, 388.6666667]; pair_junction_count_mean_canonical BELOW 295/283 vs [301, 393.3333333] \u2014 plus the noise-scale identity-residual; the shelf/premium fields separate by construction, the outliers were named from them) | 2 one-sided fields named, never counted (canon_boundary_cells_mean_canonical, pair_junction_count_mean_substituted) | pure deposit re-read, seconds: 5 deposits READ-ONLY byte-unchanged, both premium grids byte-verified, two-pass bit-identical, floor -60.0",
+ "determinism": {
+  "computation_passes": 2,
+  "payload_sha256_pass_a": "13ba5460f16f8d69ddfe95b5bbf2949cd280ae9f870b716022ad750286f4c8e8",
+  "payload_sha256_pass_b": "13ba5460f16f8d69ddfe95b5bbf2949cd280ae9f870b716022ad750286f4c8e8",
+  "two_pass_bit_identical": true
+ },
+ "discipline": {
+  "no_wall_clock_fields": true,
+  "floor_at_entry": -60.0,
+  "floor_at_exit": -60.0,
+  "docstring_sha256": "d02fba471fd4a307b42e8649f01514097119d8f8a761e12e8b64464fdcfb5ed5",
+  "docstring_byte_unchanged_vs_26946af": true,
+  "header_sha256": "3641f91d602826b1ccfcc36796e6c4b67c6fe98ec5b607e09c1f61687f7c4b83",
+  "header_byte_unchanged_vs_26946af": true,
+  "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+ },
+ "deposit_fingerprint": "5ff8752cc14b3f6b2cacf28cb8f2b41146215f09bf1fb7b90974e81d42c969d6"
+}
