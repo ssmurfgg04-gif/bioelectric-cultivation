@@ -1,0 +1,556 @@
+{
+ "exp": "exp278_amplification_factor",
+ "claim": "THE AMPLIFICATION FACTOR (batch 36, pre-registration commit b42fbc0): the ~7x deep-band break (exp277) is itself the measurement \u2014 the per-host amplification ratio = the P3 arm's mean err / the P1+P2 arms' mean err, zero-knob from exp256's deposited 72 rows (12 hosts x 3 seeds, the means over the rows; the denominator the POOLED mean over the 6 canonical instance errs, NOT the per-seed max); the ratio vs mia_prod_err (exp273's field table) and vs the canon-boundary count (the exp255 instrument \u2014 exp272 refuted it for the PREMIUM level; here the AMPLIFICATION level), Spearman + the OLS rank R2 under the exp274/exp275 conventions; the branch pre-named MIA-SCALED (mia rho >= 0.5, tested first) / GEOMETRY-SCALED / UNATTACHED",
+ "method": {
+  "source": "exp256's deposited 72 rows = 12 hosts x 2 arms x 3 seeds; the substituted arm's rows carry the P3 face (the deep rows r-60i0/r-60i1 on the base medium, worst_err = the per-seed arm worst), the canonical arm's rows carry the P1+P2 face (the canon row on the mirror medium and on the boundary-double medium, the instance errs the per-arm per-seed values)",
+  "ratio_definition": "R_h = m_P3(h) / m_P12(h); m_P3 = the mean over the 3 substituted rows' worst_err (== exp276's m_P3 == exp277's mean_worst_err, bit-exact asserted); m_P12 = the POOLED mean over the 6 canonical instance errs (P1 x 3 seeds + P2 x 3 seeds) \u2014 NOT the mean of the per-seed maxima (the deposited worst_err_mean_canonical IS the max variant; recorded audit-only, never entering the ratio)",
+  "regressors": "mia_prod_err = exp243.classes.multi_identity_audit.prod_err via exp273's deposited field table (selection external), bit-exact vs exp243's records; boundary count = exp243.classes.n_boundary_cells_base \u2014 the exp255 zero-knob instrument, bit-exact vs exp243's classes, exp272's per_host records, and exp255's 24 rows",
+  "branch_rule": "MIA-SCALED iff Spearman(ratio, mia) >= 0.5 (the house bar, tested FIRST \u2014 the pre-named precedence); else GEOMETRY-SCALED iff Spearman(ratio, boundary count) >= 0.5; else UNATTACHED (the exhaustive residual); both rhos recorded regardless",
+  "regression": "the exp274/exp275 convention VERBATIM: the response = the amplification ratio (12 hosts, tied-average ranks); the two regressors numeric; single-regressor Spearmans (regressor vector first, scipy rankdata both sides); the OLS-on-ranks single R2s + the full model (with two regressors the pair IS the full model); the shares by the two-order symmetric average on the pre-named entry order mia -> bc and its reverse bc -> mia; shares + unexplained == 1, no clamping; the all-ranks variant AUDIT-ONLY; REPORTED not gated \u2014 the branch is the only gated read",
+  "method_source": "experiments/exp256_row_pair_regression.py (the 72 deposited rows), experiments/exp273_outlier_hosts.py (the carries + the outlier pre-name), experiments/exp272_host_premium_structure.py (the host frame + the per-host records + the PREMIUM-level boundary refutation this run re-tests at the AMPLIFICATION level), experiments/exp255_pair_count_regression.py (the boundary-count instrument), experiments/exp243_structured_adversarial.py (the audit + classes records), experiments/exp276_audit_own_face.py (the arm-mass convention m_P1/m_P2/m_P3), experiments/exp277_deep_band_break_face.py (the mean_worst_err table), experiments/exp274_premium_mechanism.py (the rank-regression convention), experiments/exp275_audit_direction.py (the sha discipline)"
+ },
+ "inputs": {
+  "exp243_deposit": {
+   "path": "results/exp243_structured_adversarial.json",
+   "sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a"
+  },
+  "exp255_deposit": {
+   "path": "results/exp255.json",
+   "sha256": "05cce27989654f1c39c6071645dea62aeb1b0f6ba035dd112f1b18fc4d0ab038"
+  },
+  "exp256_deposit": {
+   "path": "results/exp256_row_pair_regression.json",
+   "sha256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c"
+  },
+  "exp272_deposit": {
+   "path": "results/exp272_host_premium_structure.json",
+   "sha256": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4"
+  },
+  "exp273_deposit": {
+   "path": "results/exp273_outlier_hosts.json",
+   "sha256": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78"
+  },
+  "exp274_deposit": {
+   "path": "results/exp274_premium_mechanism.json",
+   "sha256": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552"
+  },
+  "exp275_deposit": {
+   "path": "results/exp275_audit_direction.json",
+   "sha256": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879"
+  },
+  "exp276_deposit": {
+   "path": "results/exp276_audit_own_face.json",
+   "sha256": "b96db86973284f2c27bdf1dd75e62f90d2b5832fa2673c86f5c77d63dfbdfba2"
+  },
+  "exp277_deposit": {
+   "path": "results/exp277_deep_band_break_face.json",
+   "sha256": "892e19d896f18b8eea19eedfab90830df1c3da26ce6d7fef4e5529aeb30a1e95"
+  },
+  "exp271_deposit": {
+   "path": "results/exp271_one_zone_premium.json",
+   "sha256": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c"
+  },
+  "exp182_deposit": {
+   "path": "results/exp182_substrate_100.json",
+   "sha256": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a"
+  }
+ },
+ "inputs_roles": {
+  "exp256_deposit": "the 72 deposited rows \u2014 the computation's primary source: the 36 substituted worst_errs (the numerator) + the 36 canonical rows' instance errs (the denominator)",
+  "exp273_deposit": "the deposited carries BY EXACT FIELD NAME (mia_prod_err, n_boundary_cells_base, the three worst_err means) + the outlier pre-name + the recorded input shas verified 5/5",
+  "exp272_deposit": "the host frame + the per-host boundary-count records + both grids' canon_worst_err columns (the bit-exact exp272 records) + the premium_hosts pre-name source",
+  "exp243_deposit": "the 12 multi_identity_audit + classes records the mia and boundary carries are bit-checked against",
+  "exp255_deposit": "the exp255 instrument's 24 rows \u2014 the boundary-count cross-check",
+  "exp276_deposit": "the deposited per-arm masses m_P1/m_P2/m_P3 the recomputed means are bit-checked against + the recorded input shas verified 8/8",
+  "exp277_deposit": "the deposited per-host mean_worst_err table bit-checked against + the recorded input shas verified 8/8",
+  "exp274_deposit": "the provenance chain: the rank-regression convention's source deposit \u2014 sha-verified 6/6, never opened for computation",
+  "exp275_deposit": "the provenance chain: the sha-discipline precedent's deposit \u2014 sha-verified 7/7, never opened for computation",
+  "exp271_deposit": "the provenance chain: the one-zone premium grid \u2014 sha-verified via exp273's chain, never opened for computation",
+  "exp182_deposit": "the provenance chain: the margin profiles \u2014 sha-verified via exp273's chain, never opened for computation"
+ },
+ "hosts": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H3",
+  "H4",
+  "H5",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "outliers": [
+  "H3",
+  "H5"
+ ],
+ "cluster": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H4",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "per_host_table": [
+  {
+   "host": "H0",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "m_P3": 0.54,
+   "m_P12_pooled": 0.04833333333333334,
+   "m_can_max_variant_audit_only": 0.05333333333333334,
+   "amplification_ratio": 11.172413793103448,
+   "ratio_max_variant_audit_only": 10.125,
+   "mia_prod_err": 0.52,
+   "n_boundary_cells_base": 4
+  },
+  {
+   "host": "H1",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "m_P3": 0.54,
+   "m_P12_pooled": 0.04833333333333334,
+   "m_can_max_variant_audit_only": 0.05333333333333334,
+   "amplification_ratio": 11.172413793103448,
+   "ratio_max_variant_audit_only": 10.125,
+   "mia_prod_err": 0.52,
+   "n_boundary_cells_base": 4
+  },
+  {
+   "host": "H10",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "m_P3": 0.5033333333333333,
+   "m_P12_pooled": 0.09500000000000001,
+   "m_can_max_variant_audit_only": 0.1366666666666667,
+   "amplification_ratio": 5.298245614035086,
+   "ratio_max_variant_audit_only": 3.682926829268292,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 32
+  },
+  {
+   "host": "H11",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "m_P3": 0.5066666666666667,
+   "m_P12_pooled": 0.10666666666666667,
+   "m_can_max_variant_audit_only": 0.16,
+   "amplification_ratio": 4.75,
+   "ratio_max_variant_audit_only": 3.166666666666667,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 37
+  },
+  {
+   "host": "H2",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "m_P3": 0.5066666666666667,
+   "m_P12_pooled": 0.11333333333333334,
+   "m_can_max_variant_audit_only": 0.16666666666666666,
+   "amplification_ratio": 4.470588235294118,
+   "ratio_max_variant_audit_only": 3.0400000000000005,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 42
+  },
+  {
+   "host": "H3",
+   "outlier": true,
+   "n_substituted_rows": 3,
+   "m_P3": 3.68,
+   "m_P12_pooled": 0.11333333333333333,
+   "m_can_max_variant_audit_only": 0.17333333333333334,
+   "amplification_ratio": 32.47058823529412,
+   "ratio_max_variant_audit_only": 21.23076923076923,
+   "mia_prod_err": 2.12,
+   "n_boundary_cells_base": 47
+  },
+  {
+   "host": "H4",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "m_P3": 0.5066666666666667,
+   "m_P12_pooled": 0.09833333333333334,
+   "m_can_max_variant_audit_only": 0.1366666666666667,
+   "amplification_ratio": 5.1525423728813555,
+   "ratio_max_variant_audit_only": 3.7073170731707314,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 41
+  },
+  {
+   "host": "H5",
+   "outlier": true,
+   "n_substituted_rows": 3,
+   "m_P3": 3.356666666666667,
+   "m_P12_pooled": 0.125,
+   "m_can_max_variant_audit_only": 0.19000000000000003,
+   "amplification_ratio": 26.853333333333335,
+   "ratio_max_variant_audit_only": 17.666666666666664,
+   "mia_prod_err": 2.28,
+   "n_boundary_cells_base": 48
+  },
+  {
+   "host": "H6",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "m_P3": 0.5033333333333333,
+   "m_P12_pooled": 0.10000000000000002,
+   "m_can_max_variant_audit_only": 0.14,
+   "amplification_ratio": 5.033333333333332,
+   "ratio_max_variant_audit_only": 3.5952380952380945,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 31
+  },
+  {
+   "host": "H7",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "m_P3": 0.5033333333333333,
+   "m_P12_pooled": 0.10166666666666667,
+   "m_can_max_variant_audit_only": 0.15,
+   "amplification_ratio": 4.950819672131147,
+   "ratio_max_variant_audit_only": 3.3555555555555556,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 36
+  },
+  {
+   "host": "H8",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "m_P3": 0.5166666666666667,
+   "m_P12_pooled": 0.10500000000000002,
+   "m_can_max_variant_audit_only": 0.14,
+   "amplification_ratio": 4.92063492063492,
+   "ratio_max_variant_audit_only": 3.6904761904761907,
+   "mia_prod_err": 0.52,
+   "n_boundary_cells_base": 39
+  },
+  {
+   "host": "H9",
+   "outlier": false,
+   "n_substituted_rows": 3,
+   "m_P3": 0.5033333333333333,
+   "m_P12_pooled": 0.11,
+   "m_can_max_variant_audit_only": 0.15333333333333332,
+   "amplification_ratio": 4.575757575757575,
+   "ratio_max_variant_audit_only": 3.282608695652174,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 43
+  }
+ ],
+ "ratio_audit_detail": {
+  "H0": {
+   "m_P3": 0.54,
+   "m_P12_pooled": 0.04833333333333334,
+   "m_can_max_variant": 0.05333333333333334,
+   "pooled_minus_max_variant": -0.0049999999999999975,
+   "ratio_max_variant_audit_only": 10.125
+  },
+  "H1": {
+   "m_P3": 0.54,
+   "m_P12_pooled": 0.04833333333333334,
+   "m_can_max_variant": 0.05333333333333334,
+   "pooled_minus_max_variant": -0.0049999999999999975,
+   "ratio_max_variant_audit_only": 10.125
+  },
+  "H10": {
+   "m_P3": 0.5033333333333333,
+   "m_P12_pooled": 0.09500000000000001,
+   "m_can_max_variant": 0.1366666666666667,
+   "pooled_minus_max_variant": -0.04166666666666667,
+   "ratio_max_variant_audit_only": 3.682926829268292
+  },
+  "H11": {
+   "m_P3": 0.5066666666666667,
+   "m_P12_pooled": 0.10666666666666667,
+   "m_can_max_variant": 0.16,
+   "pooled_minus_max_variant": -0.05333333333333333,
+   "ratio_max_variant_audit_only": 3.166666666666667
+  },
+  "H2": {
+   "m_P3": 0.5066666666666667,
+   "m_P12_pooled": 0.11333333333333334,
+   "m_can_max_variant": 0.16666666666666666,
+   "pooled_minus_max_variant": -0.053333333333333316,
+   "ratio_max_variant_audit_only": 3.0400000000000005
+  },
+  "H3": {
+   "m_P3": 3.68,
+   "m_P12_pooled": 0.11333333333333333,
+   "m_can_max_variant": 0.17333333333333334,
+   "pooled_minus_max_variant": -0.06000000000000001,
+   "ratio_max_variant_audit_only": 21.23076923076923
+  },
+  "H4": {
+   "m_P3": 0.5066666666666667,
+   "m_P12_pooled": 0.09833333333333334,
+   "m_can_max_variant": 0.1366666666666667,
+   "pooled_minus_max_variant": -0.038333333333333344,
+   "ratio_max_variant_audit_only": 3.7073170731707314
+  },
+  "H5": {
+   "m_P3": 3.356666666666667,
+   "m_P12_pooled": 0.125,
+   "m_can_max_variant": 0.19000000000000003,
+   "pooled_minus_max_variant": -0.06500000000000003,
+   "ratio_max_variant_audit_only": 17.666666666666664
+  },
+  "H6": {
+   "m_P3": 0.5033333333333333,
+   "m_P12_pooled": 0.10000000000000002,
+   "m_can_max_variant": 0.14,
+   "pooled_minus_max_variant": -0.039999999999999994,
+   "ratio_max_variant_audit_only": 3.5952380952380945
+  },
+  "H7": {
+   "m_P3": 0.5033333333333333,
+   "m_P12_pooled": 0.10166666666666667,
+   "m_can_max_variant": 0.15,
+   "pooled_minus_max_variant": -0.048333333333333325,
+   "ratio_max_variant_audit_only": 3.3555555555555556
+  },
+  "H8": {
+   "m_P3": 0.5166666666666667,
+   "m_P12_pooled": 0.10500000000000002,
+   "m_can_max_variant": 0.14,
+   "pooled_minus_max_variant": -0.03499999999999999,
+   "ratio_max_variant_audit_only": 3.6904761904761907
+  },
+  "H9": {
+   "m_P3": 0.5033333333333333,
+   "m_P12_pooled": 0.11,
+   "m_can_max_variant": 0.15333333333333332,
+   "pooled_minus_max_variant": -0.04333333333333332,
+   "ratio_max_variant_audit_only": 3.282608695652174
+  }
+ },
+ "branch_discriminant": {
+  "branch": "MIA-SCALED",
+  "spearman_rho_ratio_mia": 0.7250052866946104,
+  "spearman_rho_ratio_boundary": -0.05964912280701754,
+  "mia_bar": 0.5,
+  "boundary_bar": 0.5,
+  "mia_tested_first": true,
+  "mia_exceeds_bar": true,
+  "boundary_exceeds_bar": false,
+  "ratio_outlier_min": 26.853333333333335,
+  "ratio_cluster_max": 11.172413793103448,
+  "ratio_cluster_min": 4.470588235294118,
+  "ratio_outlier_margin_descriptive": 15.680919540229887
+ },
+ "regressions": {
+  "response": "the per-host amplification ratio m_P3 / m_P12_pooled \u2014 12 hosts, tied-average ranks",
+  "regressors": "mia_prod_err (exp243.classes.multi_identity_audit.prod_err via exp273's deposited field table, selection external, bit-exact vs exp243's records) and the canon-boundary count (exp243.classes.n_boundary_cells_base \u2014 the exp255 instrument; bit-exact vs exp243's classes, exp272's per_host records, exp255's 24 rows)",
+  "spearman_rho": {
+   "mia_prod_err": 0.7250052866946104,
+   "boundary_count": -0.05964912280701754
+  },
+  "r2_single": {
+   "mia_prod_err": 0.4254690405703738,
+   "boundary_count": 0.0690955176482585
+  },
+  "r2_pairs": {
+   "mia+bc": 0.7802724037198101
+  },
+  "r2_pairs_note": "with two regressors the only pair IS the full model",
+  "r2_full": 0.7802724037198101,
+  "order_decompositions": {
+   "order_mia_bc": {
+    "mia_prod_err": 0.4254690405703738,
+    "boundary_count": 0.3548033631494363
+   },
+   "order_bc_mia": {
+    "boundary_count": 0.0690955176482585,
+    "mia_prod_err": 0.7111768860715516
+   }
+  },
+  "shares_of_rank_variance": {
+   "mia_prod_err": 0.5683229633209628,
+   "boundary_count": 0.2119494403988474
+  },
+  "unexplained": 0.2197275962801899,
+  "shares_sum": 1.0,
+  "audit_all_ranks_variant": {
+   "r2_single": {
+    "mia_prod_err": 0.5256326657351343,
+    "boundary_count": 0.0035580178516465555
+   },
+   "r2_full": 0.5763361466956878,
+   "single_equals_spearman_squared": true
+  }
+ },
+ "ties_census": {
+  "amplification_ratio": {
+   "n_distinct": 11,
+   "n_tied_values": 1,
+   "max_multiplicity": 2
+  },
+  "mia_prod_err": {
+   "n_distinct": 4,
+   "n_tied_values": 2,
+   "max_multiplicity": 7
+  },
+  "boundary_count": {
+   "n_distinct": 11,
+   "n_tied_values": 1,
+   "max_multiplicity": 2
+  }
+ },
+ "gates": {
+  "G1_grids": {
+   "pass": true,
+   "bar": "exp256's 72 rows re-read complete (12 hosts x 2 arms x 3 seeds), every canonical row carrying exactly the two pre-named P1/P2 instances and every substituted row exactly the two pre-named deep instances r-60i0/r-60i1, every worst_err finite AND == the max of its instance errs (the deposited arm-worst convention, 72/72); the per-host means recomputed bit-exact vs EVERY deposited record where present \u2014 exp273's field table (worst_err_mean_substituted / _canonical / _all_arms), exp276's decomposition_table (m_P1/m_P2/m_P3), exp277's per_host_table (mean_worst_err), exp272's deposited records where present (per_host n_boundary_cells_base; both grids' canon_worst_err columns == exp256's canonical row worst_err 36/36 each), exp243's classes records, exp255's 24 rows; the outlier pre-name asserted (exp273 == exp272 == ['H3','H5']); the provenance chains sha-verified (exp273 5/5, exp274 6/6, exp275 7/7, exp276 8/8, exp277 8/8); READ-ONLY",
+   "rows_complete_72": true,
+   "canonical_rows_complete_36": true,
+   "substituted_rows_complete_36": true,
+   "instance_structure_verified_72": true,
+   "worst_equals_max_instance_err_72": true,
+   "worst_err_finite_72": true,
+   "table_finite": true,
+   "exp273_mia_carry_bit_exact": true,
+   "exp273_boundary_carry_bit_exact_vs_exp243_exp272_exp255": true,
+   "per_host_means_bit_exact_vs_exp273_field_table": true,
+   "exp272_grids_canon_worst_err_bit_exact_36x2": true,
+   "exp273_recorded_input_shas_match_actual_bytes": {
+    "exp243_deposit": true,
+    "exp272_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp256_deposit": true
+   },
+   "exp274_recorded_input_shas_match_actual_bytes": {
+    "exp272_deposit": true,
+    "exp273_deposit": true,
+    "exp243_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp256_deposit": true
+   },
+   "exp275_recorded_input_shas_match_actual_bytes": {
+    "exp272_deposit": true,
+    "exp273_deposit": true,
+    "exp274_deposit": true,
+    "exp243_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp256_deposit": true
+   },
+   "exp276_recorded_input_shas_match_actual_bytes": {
+    "exp243_deposit": true,
+    "exp256_deposit": true,
+    "exp272_deposit": true,
+    "exp273_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp274_deposit": true,
+    "exp275_deposit": true
+   },
+   "exp277_recorded_input_shas_match_actual_bytes": {
+    "exp256_deposit": true,
+    "exp273_deposit": true,
+    "exp272_deposit": true,
+    "exp243_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp274_deposit": true,
+    "exp275_deposit": true
+   },
+   "provenance_chains_sha_verified": true
+  },
+  "G2_ratio_definition": {
+   "pass": true,
+   "bar": "one closed-form for all 12 hosts \u2014 R_h = m_P3(h) / m_P12(h), m_P12 = the POOLED mean over the 6 canonical instance errs (identified by the deposited pert names, 3 seeds each), NOT the mean of the per-seed maxima; the max variant computed alongside, bit-exact vs exp273's deposited worst_err_mean_canonical, recorded audit-only \u2014 never entering the ratio; all 12 ratios finite and > 0; no parameters, no per-host cases",
+   "definition": "R_h = m_P3(h) / m_P12(h); m_P3 = the mean over the 3 substituted rows' deposited worst_err (the per-seed arm-worst convention); m_P12 = the POOLED mean over the 6 canonical instance errs (P1 x 3 seeds + P2 x 3 seeds) \u2014 NOT the mean of the per-seed maxima",
+   "n_hosts": 12,
+   "one_formula_no_parameters": true,
+   "pooled_not_per_seed_max": true,
+   "pooled_strictly_below_max_variant_all_hosts": true,
+   "max_pooled_minus_max_variant_gap": -0.0049999999999999975,
+   "ratios_finite_positive": true,
+   "numerator_bit_exact_vs_exp276_m_P3_and_exp277_mean_worst_err": true
+  },
+  "G3_branch": {
+   "pass": true,
+   "bar": "the discriminant pre-named, the bars numeric: MIA-SCALED iff Spearman(ratio, mia_prod_err) >= 0.5 (the house bar, tested FIRST \u2014 the pre-named precedence); else GEOMETRY-SCALED iff Spearman(ratio, boundary count) >= 0.5; else UNATTACHED (the exhaustive residual); both rhos recorded; the regressions reported alongside (exp274/exp275 conventions), audit-only, never gating",
+   "branch": "MIA-SCALED",
+   "spearman_rho_ratio_mia": 0.7250052866946104,
+   "spearman_rho_ratio_boundary": -0.05964912280701754,
+   "mia_bar": 0.5,
+   "boundary_bar": 0.5,
+   "mia_tested_first": true,
+   "mia_exceeds_bar": true,
+   "boundary_exceeds_bar": false,
+   "ratio_outlier_min": 26.853333333333335,
+   "ratio_cluster_max": 11.172413793103448,
+   "ratio_cluster_min": 4.470588235294118,
+   "ratio_outlier_margin_descriptive": 15.680919540229887
+  },
+  "G4_discipline": {
+   "pass": true,
+   "bar": "all deposits READ-ONLY sha-recorded byte-unchanged; deterministic \u2014 two-pass bit-identical; no wall-clock fields; the docstring+header pinned to b42fbc0 asserted at entry AND exit; NEURAL_SPEC_MIN == -60.0 asserted at exit",
+   "read_only_shas_before": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp255_deposit": "05cce27989654f1c39c6071645dea62aeb1b0f6ba035dd112f1b18fc4d0ab038",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp274_deposit": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+    "exp275_deposit": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879",
+    "exp276_deposit": "b96db86973284f2c27bdf1dd75e62f90d2b5832fa2673c86f5c77d63dfbdfba2",
+    "exp277_deposit": "892e19d896f18b8eea19eedfab90830df1c3da26ce6d7fef4e5529aeb30a1e95",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a"
+   },
+   "read_only_shas_after": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp255_deposit": "05cce27989654f1c39c6071645dea62aeb1b0f6ba035dd112f1b18fc4d0ab038",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp274_deposit": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+    "exp275_deposit": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879",
+    "exp276_deposit": "b96db86973284f2c27bdf1dd75e62f90d2b5832fa2673c86f5c77d63dfbdfba2",
+    "exp277_deposit": "892e19d896f18b8eea19eedfab90830df1c3da26ce6d7fef4e5529aeb30a1e95",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a"
+   },
+   "read_only_byte_unchanged": true,
+   "deterministic_two_pass_bit_identical": true,
+   "payload_sha256_pass_a": "523b8a0eb123fad61683167ebacb6adb1254ea95dac45a8c5b2569b78e8b482f",
+   "payload_sha256_pass_b": "523b8a0eb123fad61683167ebacb6adb1254ea95dac45a8c5b2569b78e8b482f",
+   "no_wall_clock_fields": true,
+   "floor_at_entry": -60.0,
+   "floor_at_exit": -60.0,
+   "docstring_sha256": "a3506ebc85c616555f99ddaf247443f9f4abb17ad805b227a034ce053e2b8cc3",
+   "docstring_byte_unchanged_vs_b42fbc0": true,
+   "header_sha256": "8d28a3ea9eeb923f2695566fbe65cf883641a10d6e136f1577e12b778e85bfff",
+   "header_byte_unchanged_vs_b42fbc0": true,
+   "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+  }
+ },
+ "branch": "MIA-SCALED",
+ "verdict": "4/4 gates G1-G4 (4 PASS / 0 REFUTE) | MIA-SCALED | the per-host amplification ratio tracks the audit error: Spearman(ratio, mia_prod_err) >= 0.5 \u2014 what the deep-band substitution amplifies tracks what the multi-identity audit sees, host by host | Spearman(ratio, mia) 0.7250052867, Spearman(ratio, boundary) -0.05964912281 (bars 0.5; mia tested first) | rank R2 singles mia 0.4254690406 / bc 0.06909551765, full 0.7802724037, shares mia 0.5683229633 / bc 0.2119494404 / unexplained 0.2197275963 | the ratio H3 32.47 / H5 26.85 vs the cluster's [4.47, 11.17] (m_P3 over the POOLED P1+P2 mean, exp256's 72 deposited rows) | 12 hosts x 3 seeds, a pure re-read, READ-ONLY byte-unchanged, two-pass bit-identical, no wall-clock fields, floor -60.0 asserted at exit",
+ "determinism": {
+  "computation_passes": 2,
+  "payload_sha256_pass_a": "523b8a0eb123fad61683167ebacb6adb1254ea95dac45a8c5b2569b78e8b482f",
+  "payload_sha256_pass_b": "523b8a0eb123fad61683167ebacb6adb1254ea95dac45a8c5b2569b78e8b482f",
+  "two_pass_bit_identical": true
+ },
+ "discipline": {
+  "no_wall_clock_fields": true,
+  "floor_at_entry": -60.0,
+  "floor_at_exit": -60.0,
+  "docstring_sha256": "a3506ebc85c616555f99ddaf247443f9f4abb17ad805b227a034ce053e2b8cc3",
+  "docstring_byte_unchanged_vs_b42fbc0": true,
+  "header_sha256": "8d28a3ea9eeb923f2695566fbe65cf883641a10d6e136f1577e12b778e85bfff",
+  "header_byte_unchanged_vs_b42fbc0": true,
+  "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+ },
+ "deposit_fingerprint": "b3ef8e7526ebbc2267be42be0e6738e928255773e7a5e4a43e512027907f45e1"
+}
