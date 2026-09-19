@@ -1,0 +1,336 @@
+{
+ "exp": "exp274_premium_mechanism",
+ "claim": "THE PREMIUM MECHANISM (batch 32, L251's registered next (a), pre-registration commit 60aff99): the 12-host mediator regression \u2014 the per-host one-zone premium means (exp272's deposit) against the three external mediators exp273 named (mia_prod_err, n_boundary_cells_base, the canonical pair-junction mean), each alone (Spearman) and jointly (the OLS rank R2 on the tied-average ranks, the exp262 convention; three single-mediator models + the full model; the shares by the two-order symmetric average on the entry order mia_prod_err -> boundary count -> pair deficit); is the external signature the PRICE itself or a correlate? \u2014 branches PRICE-MEDIATED / PRICE-UNMEDIATED",
+ "method": {
+  "response": "the per-host one-zone premium mean (exp272's deposit per_host.<H>.one_zone_premium_mean, 12 values) \u2014 the shelf price whose carrier is in question",
+  "mediators": "the three external separating fields from exp273's deposited 12-host field table, BY EXACT FIELD NAME: exp243.classes.multi_identity_audit.prod_err (semantic mia_prod_err), exp243.classes.n_boundary_cells_base (semantic n_boundary_cells_base), exp256.rows.pair_junction_count_mean_canonical (semantic pair_junction_count_mean_canonical); all three selection-tagged external in exp273's table \u2014 the non-circular discriminator set",
+  "spearman": "Pearson on the tied-average ranks (scipy rankdata both sides), exp272's exact _spearman convention",
+  "ols_rank_r2": "the exp262 convention VERBATIM: the response enters as its tied-average ranks (rankdata over the 12 hosts), the mediators enter as the deposited numeric values (exp262's predictors were the factor design columns; the numeric mediator IS its design column here); OLS with intercept, np.linalg.lstsq",
+  "models": "three single-mediator models + the full model + the three pairs the shares need; entry order the docstring pre-names: mia_prod_err -> boundary count -> pair deficit, and its reverse pd -> bc -> mia",
+  "shares": "exp229's/exp262's exact convention: each mediator's share the symmetric average of its two sequential R2 increments; unexplained = 1 - R2_full; sums to 1 exactly, no clamping",
+  "convention_disclosure": "the single-mediator OLS rank R2s and the Spearmans are SEPARATE pre-registered reports (M2 reads the Spearmans, M3 the full-model R2); the all-ranks variant (mediators ranked too \u2014 single-mediator R2 == Spearman^2 by construction) is reported AUDIT-ONLY, never gated",
+  "method_source": "experiments/exp262_variance_components.py (the OLS-on-tied-average-ranks convention, verbatim arithmetic), experiments/exp272_host_premium_structure.py (the _spearman/_ols helpers, the premium means), experiments/exp273_outlier_hosts.py (the deposited field table)"
+ },
+ "inputs": {
+  "exp272_deposit": {
+   "path": "results/exp272_host_premium_structure.json",
+   "sha256": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+   "role": "the per-host one-zone premium means (the response) + the deposited one-zone grid the means are re-derived from"
+  },
+  "exp273_deposit": {
+   "path": "results/exp273_outlier_hosts.json",
+   "sha256": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+   "role": "the deposited 12-host field table \u2014 the three mediators read from it BY EXACT FIELD NAME, with exp273's own provenance chain sha-verified against the actual deposit bytes"
+  },
+  "exp243_deposit": {
+   "path": "results/exp243_structured_adversarial.json",
+   "sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "role": "exp273's provenance: the classes records carrying mia_prod_err and n_boundary_cells_base \u2014 sha-verified, never opened for computation here"
+  },
+  "exp271_deposit": {
+   "path": "results/exp271_one_zone_premium.json",
+   "sha256": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+   "role": "exp273's provenance: the one-zone premium grid \u2014 sha-verified, never opened"
+  },
+  "exp182_deposit": {
+   "path": "results/exp182_substrate_100.json",
+   "sha256": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+   "role": "exp273's provenance: the margin profiles \u2014 sha-verified, never opened"
+  },
+  "exp256_deposit": {
+   "path": "results/exp256_row_pair_regression.json",
+   "sha256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+   "role": "exp273's provenance: the row records carrying the canonical pair-junction mean \u2014 sha-verified, never opened"
+  }
+ },
+ "hosts": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H3",
+  "H4",
+  "H5",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "regression_table": [
+  {
+   "host": "H0",
+   "one_zone_premium_mean": 0.48666666666666664,
+   "mia_prod_err": 0.52,
+   "n_boundary_cells_base": 4.0,
+   "pair_junction_count_mean_canonical": 393.3333333333333
+  },
+  {
+   "host": "H1",
+   "one_zone_premium_mean": 0.48666666666666664,
+   "mia_prod_err": 0.52,
+   "n_boundary_cells_base": 4.0,
+   "pair_junction_count_mean_canonical": 393.3333333333333
+  },
+  {
+   "host": "H10",
+   "one_zone_premium_mean": 0.3633333333333333,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 32.0,
+   "pair_junction_count_mean_canonical": 324.0
+  },
+  {
+   "host": "H11",
+   "one_zone_premium_mean": 0.34,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 37.0,
+   "pair_junction_count_mean_canonical": 310.0
+  },
+  {
+   "host": "H2",
+   "one_zone_premium_mean": 0.3366666666666666,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 42.0,
+   "pair_junction_count_mean_canonical": 302.0
+  },
+  {
+   "host": "H3",
+   "one_zone_premium_mean": 1.946666666666667,
+   "mia_prod_err": 2.12,
+   "n_boundary_cells_base": 47.0,
+   "pair_junction_count_mean_canonical": 295.0
+  },
+  {
+   "host": "H4",
+   "one_zone_premium_mean": 0.36999999999999994,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 41.0,
+   "pair_junction_count_mean_canonical": 301.0
+  },
+  {
+   "host": "H5",
+   "one_zone_premium_mean": 2.1,
+   "mia_prod_err": 2.28,
+   "n_boundary_cells_base": 48.0,
+   "pair_junction_count_mean_canonical": 283.0
+  },
+  {
+   "host": "H6",
+   "one_zone_premium_mean": 0.3666666666666667,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 31.0,
+   "pair_junction_count_mean_canonical": 307.0
+  },
+  {
+   "host": "H7",
+   "one_zone_premium_mean": 0.35333333333333333,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 36.0,
+   "pair_junction_count_mean_canonical": 309.0
+  },
+  {
+   "host": "H8",
+   "one_zone_premium_mean": 0.37333333333333335,
+   "mia_prod_err": 0.52,
+   "n_boundary_cells_base": 39.0,
+   "pair_junction_count_mean_canonical": 308.0
+  },
+  {
+   "host": "H9",
+   "one_zone_premium_mean": 0.3499999999999999,
+   "mia_prod_err": 0.49,
+   "n_boundary_cells_base": 43.0,
+   "pair_junction_count_mean_canonical": 307.0
+  }
+ ],
+ "mediator_provenance": {
+  "mia_prod_err": {
+   "field": "exp243.classes.multi_identity_audit.prod_err",
+   "semantic": "mia_prod_err",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.multi_identity_audit.prod_err",
+   "kind": "numeric",
+   "selection": "external"
+  },
+  "n_boundary_cells_base": {
+   "field": "exp243.classes.n_boundary_cells_base",
+   "semantic": "n_boundary_cells_base",
+   "deposit": "exp243_structured_adversarial.json",
+   "path": "classes.<H>.n_boundary_cells_base",
+   "kind": "numeric",
+   "selection": "external"
+  },
+  "pair_junction_count_mean_canonical": {
+   "field": "exp256.rows.pair_junction_count_mean_canonical",
+   "semantic": "pair_junction_count_mean_canonical",
+   "deposit": "exp256_row_pair_regression.json",
+   "path": "rows[arm=canonical].pair_junction_count, mean over seeds",
+   "kind": "numeric",
+   "selection": "external"
+  }
+ },
+ "attribution": {
+  "r2_full": 0.7374066433231707,
+  "r2_single": {
+   "mia_prod_err": 0.4394959312837009,
+   "n_boundary_cells_base": 0.04407767273151042,
+   "pair_junction_count_mean_canonical": 0.0489008503852395
+  },
+  "r2_pairs": {
+   "mia_prod_err+n_boundary_cells_base": 0.7334995578687931,
+   "mia_prod_err+pair_deficit": 0.7061965499526179,
+   "n_boundary_cells_base+pair_deficit": 0.050042334054698934
+  },
+  "order_decompositions": {
+   "order_mia_bc_pd": {
+    "mia_prod_err": 0.4394959312837009,
+    "n_boundary_cells_base": 0.29400362658509216,
+    "pair_junction_count_mean_canonical": 0.003907085454377679
+   },
+   "order_pd_bc_mia": {
+    "pair_junction_count_mean_canonical": 0.0489008503852395,
+    "n_boundary_cells_base": 0.001141483669459431,
+    "mia_prod_err": 0.6873643092684718
+   }
+  },
+  "shares_of_rank_variance": {
+   "mia_prod_err": 0.5634301202760863,
+   "n_boundary_cells_base": 0.1475725551272758,
+   "pair_junction_count_mean_canonical": 0.02640396791980859
+  },
+  "unexplained": 0.26259335667682926,
+  "shares_sum": 1.0,
+  "ties_census": {
+   "one_zone_premium_mean": {
+    "n_distinct": 11,
+    "n_tied_values": 1,
+    "max_multiplicity": 2
+   },
+   "mia_prod_err": {
+    "n_distinct": 4,
+    "n_tied_values": 2,
+    "max_multiplicity": 7
+   },
+   "n_boundary_cells_base": {
+    "n_distinct": 11,
+    "n_tied_values": 1,
+    "max_multiplicity": 2
+   },
+   "pair_junction_count_mean_canonical": {
+    "n_distinct": 10,
+    "n_tied_values": 2,
+    "max_multiplicity": 2
+   }
+  }
+ },
+ "gates": {
+  "M1_grids": {
+   "pass": true,
+   "bar": "the 12-host table complete (the premium means from exp272's deposit; the three mediators from exp273's deposited field table); sha-verified READ-ONLY",
+   "complete_12x4": true,
+   "all_finite": true,
+   "exp273_recorded_input_shas_match_actual_bytes": {
+    "exp243_deposit": true,
+    "exp271_deposit": true,
+    "exp182_deposit": true,
+    "exp256_deposit": true,
+    "exp272_deposit": true
+   },
+   "exp273_provenance_chain_sha_verified": true,
+   "exp272_grid_arithmetic_recompute_ok": true,
+   "grid_means_bit_exact_vs_per_host": true,
+   "exp273_carry_of_means_bit_exact": true,
+   "boundary_count_duplicate_carrier_identical": true
+  },
+  "M2_single_mediators": {
+   "pass": true,
+   "bar": "each mediator's Spearman against the premium reported; the gate: >= 1 mediator reaches >= 0.5",
+   "spearman_rho": {
+    "mia_prod_err": 0.890495623874902,
+    "n_boundary_cells_base": 0.052631578947368425,
+    "pair_junction_count_mean_canonical": -0.16871730801028886
+   },
+   "spearman_rho_abs": {
+    "mia_prod_err": 0.890495623874902,
+    "n_boundary_cells_base": 0.052631578947368425,
+    "pair_junction_count_mean_canonical": 0.16871730801028886
+   },
+   "gate_read": "the SIGNED rho, the pre-registered text as written: >= 1 mediator reaches >= 0.5; the pair deficit's negative signed rho is the direction its name pre-names (fewer pair junctions <-> higher premium)"
+  },
+  "M3_joint_model": {
+   "pass": true,
+   "bar": "the full model's rank R2 reported; the gate: R2 >= 0.5 (the mediators jointly carry the shelf price)",
+   "r2_full": 0.7374066433231707,
+   "r2_single": {
+    "mia_prod_err": 0.4394959312837009,
+    "n_boundary_cells_base": 0.04407767273151042,
+    "pair_junction_count_mean_canonical": 0.0489008503852395
+   },
+   "r2_pairs": {
+    "mia_prod_err+n_boundary_cells_base": 0.7334995578687931,
+    "mia_prod_err+pair_deficit": 0.7061965499526179,
+    "n_boundary_cells_base+pair_deficit": 0.050042334054698934
+   },
+   "audit_all_ranks_variant": {
+    "r2_single": {
+     "mia_prod_err": 0.7929824561403509,
+     "n_boundary_cells_base": 0.0027700831024930483,
+     "pair_junction_count_mean_canonical": 0.028465530022238505
+    },
+    "r2_full": 0.8882099376318652,
+    "single_equals_spearman_squared": true
+   }
+  },
+  "M4_discipline": {
+   "pass": true,
+   "bar": "all deposits READ-ONLY sha-recorded byte-unchanged; deterministic; no wall-clock fields; the -60.0 floor asserted at exit",
+   "read_only_shas_before": {
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c"
+   },
+   "read_only_shas_after": {
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c"
+   },
+   "read_only_byte_unchanged": true,
+   "deterministic_two_pass_bit_identical": true,
+   "payload_sha256_pass_a": "4f35cb6cf6d536742bc522c609ada8a81c23171c074f7f6554c144220b243eab",
+   "payload_sha256_pass_b": "4f35cb6cf6d536742bc522c609ada8a81c23171c074f7f6554c144220b243eab",
+   "no_wall_clock_fields": true,
+   "floor_at_entry": -60.0,
+   "floor_at_exit": -60.0,
+   "docstring_sha256": "4d079b4ad8bd0c389888a6849926ca5aa09e7c51643a5da14fa50ee93c345e06",
+   "docstring_byte_unchanged_vs_60aff99": true,
+   "header_sha256": "3bcfcfda715f5a2a22433034f9fcfb66dda984a018b817290c86df4780bff44e",
+   "header_byte_unchanged_vs_60aff99": true,
+   "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+  }
+ },
+ "branch": "PRICE-MEDIATED",
+ "verdict": "4/4 gates M1-M4 (4 PASS / 0 REFUTE) | PRICE-MEDIATED | M2 PASS: Spearman(mia_prod_err, one-zone premium) 0.8904956239 vs the 0.5 bar (boundary count 0.05263157895, pair deficit -0.168717308 signed \u2014 the direction its name pre-names) | M3 PASS: full rank R2 0.7374066433 vs the 0.5 bar (singles mia 0.4394959313 / boundary 0.04407767273 / pair 0.04890085039) | shares (two-order symmetric, mia->bc->pd): mia 0.5634301203 / boundary 0.1475725551 / pair 0.02640396792 / unexplained 0.2625933567 | 12 hosts, a pure re-read of exp272's premium means + exp273's field table, READ-ONLY byte-unchanged, two-pass bit-identical, floor -60.0",
+ "determinism": {
+  "computation_passes": 2,
+  "payload_sha256_pass_a": "4f35cb6cf6d536742bc522c609ada8a81c23171c074f7f6554c144220b243eab",
+  "payload_sha256_pass_b": "4f35cb6cf6d536742bc522c609ada8a81c23171c074f7f6554c144220b243eab",
+  "two_pass_bit_identical": true
+ },
+ "discipline": {
+  "no_wall_clock_fields": true,
+  "floor_at_entry": -60.0,
+  "floor_at_exit": -60.0,
+  "docstring_sha256": "4d079b4ad8bd0c389888a6849926ca5aa09e7c51643a5da14fa50ee93c345e06",
+  "docstring_byte_unchanged_vs_60aff99": true,
+  "header_sha256": "3bcfcfda715f5a2a22433034f9fcfb66dda984a018b817290c86df4780bff44e",
+  "header_byte_unchanged_vs_60aff99": true,
+  "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+ },
+ "deposit_fingerprint": "84ab1888c49de0003b71eb50bd6e3f5a20a0950a17f7d5c2c3020f8a72432d2c"
+}
