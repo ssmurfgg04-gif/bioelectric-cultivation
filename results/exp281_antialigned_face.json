@@ -1,0 +1,713 @@
+{
+ "exp": "exp281_antialigned_face",
+ "claim": "THE ANTI-ALIGNED FACE TESTED AT THE SIGNED BAR (batch 39, pre-registration commit a52a14a): exp280's boundary_degree_mean (the boundary cells' own degree mean over the exp208 classify CANON-BOUNDARY set \u2014 the chord-poorest face of the deposited topology on H3/H5) regressed at the SIGNED 0.5 house bar against the premium's three carriers \u2014 T1 exp272's per-host one-zone premium means (the premium level itself), T2 exp278's per-host amplification ratios, T3 the audit error mia_prod_err (exp276's/exp279's/exp243's 4-way carry); a pure re-read + a deterministic sha-asserted rebuild of the 12 base adjacencies (exp280's rebuild verbatim), the field asserted BIT-EXACT vs exp280's deposited field table 12/12; Spearman under the exp274/exp275 conventions; the branch CHORD-CARRIED (>= 1 of the three targets reaches the signed bar \u2014 the mechanism line re-opens at the chord level) / CHORD-ABSENT (it clears nothing \u2014 the line stands closed at mia and the premium's origin is formally OUTSIDE the deposited host records); the abs variant \u2014 a negative crossing of |rho| >= 0.5 \u2014 is the ANTI-ALIGNED face, named in the deposit and the verdict per target, never gating",
+ "method": {
+  "rebuild": "exp280's rebuild VERBATIM (the exp269/exp256 form \u2014 the exp243/exp225 construction): H0/H1 graph_path(n); H2-H11 small_world(n, 0.10, int(rec['rewire_seed'])) at the deposited rewire seeds; n from exp243's per-host records; every rebuild asserted \u2014 sha256(|A| as float64) == rec['base_sha256'], the upper-triangle edge count == rec['edges_base'], the exp208 classify CANON-BOUNDARY count == rec['n_boundary_cells_base'] dual-carried vs exp272 + exp278, labeling_bfs_n(|A|) == labeling_bfs_n(A), H0 == H1 bit-exact; ZERO new simulation",
+  "field": {
+   "boundary_degree_mean": "F5, exp280's EXACT definition, never re-fit \u2014 the mean pair-support degree over the CANON-BOUNDARY cells (exp208's classify instrument on the canon labeling, the ring backbone i\u00b11; support = |A| > 0, symmetric; degree = the per-cell support degree); asserted BIT-EXACT vs exp280's deposited field table 12/12 at G2"
+  },
+  "targets": {
+   "T1_one_zone_premium": "exp272's per-host ONE-ZONE PREMIUM means \u2014 the premium level itself; the mean identity asserted bit-exact 12/12 (the recomputed mean over the deposited per-seed rows one_zone_premiums_by_seed == the deposited mean == exp273's field-table carry)",
+   "T2_amplification_ratio": "exp278's per-host AMPLIFICATION RATIOS; asserted == its own m_P3/m_P12_pooled identity bit-exact 12/12 (exp280's carry)",
+   "T3_mia_prod_err": "the AUDIT ERROR mia_prod_err \u2014 the 4-way carry asserted bit-exact 12/12 each: exp243's classes[h][multi_identity_audit][prod_err] == exp276's decomposition_table audit_prod_err == exp279's origin_table audit_prod_err == exp273's field-table values"
+  },
+  "h0_h1_note": "the H0 slot echoes H1 bit-exactly (the chain class's n=400 call site, exp243's own disclosure, asserted) \u2014 the field table carries both slots; the regressions run on the 12-slot frame (the house convention, exp278's ties-census precedent); the field's ties census recorded (the H0/H1 echo ties one pair)",
+  "regressions": "the exp274/exp275 conventions VERBATIM: Spearman = Pearson on the tied-average ranks (scipy rankdata) of boundary_degree_mean vs each target on the 12-slot frame; the single-predictor OLS rank R2 (the target as its tied-average ranks, the field as the numeric design column); the all-ranks variant (the field ranked too \u2014 single R2 == rho^2 within 1e-12) audit-only; the ties census per vector",
+  "branch_rule": "CHORD-CARRIED iff boundary_degree_mean reaches Spearman >= 0.5 (the SIGNED house bar) against >= 1 of the three targets; else CHORD-ABSENT; the abs variant (a NEGATIVE crossing of |rho| >= 0.5) is the ANTI-ALIGNED face \u2014 named per target in the deposit and the verdict, never gating",
+  "method_source": "experiments/exp280_chain_head.py (the rebuild + the field definition + the deposited field table), experiments/exp243_structured_adversarial.py (the classes records = the rebuild's sha anchors + T3's primary source), experiments/exp272_host_premium_structure.py (T1 + the host frame + the boundary counts), experiments/exp273_outlier_hosts.py (the outlier pre-name + the T1/T3 carries), experiments/exp276_audit_own_face.py (T3), experiments/exp278_amplification_factor.py (T2), experiments/exp279_audit_error_origin.py (T3)"
+ },
+ "inputs": {
+  "exp243_deposit": {
+   "path": "results/exp243_structured_adversarial.json",
+   "sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "role": "the classes records \u2014 the rebuild's sha anchors (base_sha256, edges_base, n_boundary_cells_base, rewire_seed, n) + T3's primary source (multi_identity_audit.prod_err)"
+  },
+  "exp272_deposit": {
+   "path": "results/exp272_host_premium_structure.json",
+   "sha256": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+   "role": "the host frame + T1 (the per-host one-zone premium means + the per-seed rows) + the per-host boundary counts + the outlier pre-name source (descriptive.premium_hosts)"
+  },
+  "exp273_deposit": {
+   "path": "results/exp273_outlier_hosts.json",
+   "sha256": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+   "role": "the deposited outlier pre-name + the T1/T3 field-table carries (exp272.per_host.one_zone_premium_mean, exp243.classes.multi_identity_audit.prod_err) + the recorded input shas verified 5/5"
+  },
+  "exp276_deposit": {
+   "path": "results/exp276_audit_own_face.json",
+   "sha256": "b96db86973284f2c27bdf1dd75e62f90d2b5832fa2673c86f5c77d63dfbdfba2",
+   "role": "T3's audit_prod_err (the decomposition table) + the recorded input shas verified 8/8"
+  },
+  "exp278_deposit": {
+   "path": "results/exp278_amplification_factor.json",
+   "sha256": "3a7fa8b0a108c87c6124a791ddd60362a3b243171124382498c87cff40fc1d9e",
+   "role": "T2 (the per-host amplification ratios + the m_P3/m_P12_pooled identity) + the boundary counts + the recorded input shas verified 11/11"
+  },
+  "exp279_deposit": {
+   "path": "results/exp279_audit_error_origin.json",
+   "sha256": "3b7dd6a55cc45dd8787f18cc3f669e53f3fe62c2c49d751462af406df6625507",
+   "role": "T3's audit_prod_err (the origin table) + the recorded input shas verified 9/9"
+  },
+  "exp280_deposit": {
+   "path": "results/exp280_chain_head.json",
+   "sha256": "d157fc894d5bccc3e153bbb001a8b91093469c1ada0aede31982827e3b2925bc",
+   "role": "G2's bit-exact anchor \u2014 the deposited field table's boundary_degree_mean per host (the definition exp281 asserts itself against) + the recorded input shas verified 12/12"
+  },
+  "exp255_deposit": {
+   "path": "results/exp255.json",
+   "sha256": "05cce27989654f1c39c6071645dea62aeb1b0f6ba035dd112f1b18fc4d0ab038",
+   "role": "the provenance chain: the arm-worst instrument's source deposit \u2014 sha-verified via the chains, never opened for computation"
+  },
+  "exp256_deposit": {
+   "path": "results/exp256_row_pair_regression.json",
+   "sha256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+   "role": "the provenance chain: the 72-row battery underlying exp272's/exp278's/exp279's grids \u2014 sha-verified via the chains, never opened for computation"
+  },
+  "exp270_deposit": {
+   "path": "results/exp270_structural_dose.json",
+   "sha256": "4a4978361800bdc66a91cfcf2a345654393c0e8332583beff20059ebd1d39033",
+   "role": "the provenance chain: exp272's structural-dose input \u2014 sha-verified via exp272's chain, never opened for computation"
+  },
+  "exp271_deposit": {
+   "path": "results/exp271_one_zone_premium.json",
+   "sha256": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+   "role": "the provenance chain: the one-zone premium grid \u2014 sha-verified via the chains, never opened for computation"
+  },
+  "exp182_deposit": {
+   "path": "results/exp182_substrate_100.json",
+   "sha256": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+   "role": "the provenance chain: the margin profiles \u2014 sha-verified via the chains, never opened for computation"
+  },
+  "exp274_deposit": {
+   "path": "results/exp274_premium_mechanism.json",
+   "sha256": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+   "role": "the provenance chain: the rank-regression convention's source deposit \u2014 sha-verified via the chains, never opened for computation"
+  },
+  "exp275_deposit": {
+   "path": "results/exp275_audit_direction.json",
+   "sha256": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879",
+   "role": "the provenance chain: the sha-discipline precedent's deposit \u2014 sha-verified via the chains, never opened for computation"
+  },
+  "exp277_deposit": {
+   "path": "results/exp277_deep_band_break_face.json",
+   "sha256": "892e19d896f18b8eea19eedfab90830df1c3da26ce6d7fef4e5529aeb30a1e95",
+   "role": "the provenance chain: the pre-body disclosure precedent's deposit \u2014 sha-verified via the chains, never opened for computation"
+  }
+ },
+ "hosts": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H3",
+  "H4",
+  "H5",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "outliers": [
+  "H3",
+  "H5"
+ ],
+ "cluster": [
+  "H0",
+  "H1",
+  "H10",
+  "H11",
+  "H2",
+  "H4",
+  "H6",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "rebuild_report": [
+  {
+   "host": "H0",
+   "n": 400,
+   "constructor": "graph_path (the chain/path constructor)",
+   "rewire_seed": null,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 399,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 4,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H1",
+   "n": 400,
+   "constructor": "graph_path (the chain/path constructor)",
+   "rewire_seed": null,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 399,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 4,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H10",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202215,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 32,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H11",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202216,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 37,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H2",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202201,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 42,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H3",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202202,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 47,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H4",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202203,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 41,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H5",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202206,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 48,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H6",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202207,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 31,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H7",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202208,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 36,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H8",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202209,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 39,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  },
+  {
+   "host": "H9",
+   "n": 400,
+   "constructor": "small_world(n, 0.10, rewire_seed)",
+   "rewire_seed": 202213,
+   "sha256_matches_exp243_record": true,
+   "edges_base": 400,
+   "edges_match_exp243_record": true,
+   "n_boundary_cells": 43,
+   "boundary_count_matches_3way": true,
+   "canon_identity_ok": true
+  }
+ ],
+ "field_table": [
+  {
+   "host": "H0",
+   "outlier": false,
+   "boundary_degree_mean": 1.5
+  },
+  {
+   "host": "H1",
+   "outlier": false,
+   "boundary_degree_mean": 1.5
+  },
+  {
+   "host": "H10",
+   "outlier": false,
+   "boundary_degree_mean": 1.65625
+  },
+  {
+   "host": "H11",
+   "outlier": false,
+   "boundary_degree_mean": 1.6756756756756757
+  },
+  {
+   "host": "H2",
+   "outlier": false,
+   "boundary_degree_mean": 1.6904761904761905
+  },
+  {
+   "host": "H3",
+   "outlier": true,
+   "boundary_degree_mean": 1.5957446808510638
+  },
+  {
+   "host": "H4",
+   "outlier": false,
+   "boundary_degree_mean": 1.6097560975609757
+  },
+  {
+   "host": "H5",
+   "outlier": true,
+   "boundary_degree_mean": 1.5625
+  },
+  {
+   "host": "H6",
+   "outlier": false,
+   "boundary_degree_mean": 1.8064516129032258
+  },
+  {
+   "host": "H7",
+   "outlier": false,
+   "boundary_degree_mean": 1.7222222222222223
+  },
+  {
+   "host": "H8",
+   "outlier": false,
+   "boundary_degree_mean": 1.8974358974358974
+  },
+  {
+   "host": "H9",
+   "outlier": false,
+   "boundary_degree_mean": 1.6744186046511629
+  }
+ ],
+ "field_census": {
+  "n_distinct": 11,
+  "n_tied_values": 1,
+  "max_multiplicity": 2
+ },
+ "target_censuses": {
+  "T1_one_zone_premium": {
+   "n_distinct": 11,
+   "n_tied_values": 1,
+   "max_multiplicity": 2
+  },
+  "T2_amplification_ratio": {
+   "n_distinct": 11,
+   "n_tied_values": 1,
+   "max_multiplicity": 2
+  },
+  "T3_mia_prod_err": {
+   "n_distinct": 4,
+   "n_tied_values": 2,
+   "max_multiplicity": 7
+  }
+ },
+ "targets_table": [
+  {
+   "host": "H0",
+   "outlier": false,
+   "boundary_degree_mean": 1.5,
+   "T1_one_zone_premium": 0.48666666666666664,
+   "T2_amplification_ratio": 11.172413793103448,
+   "T3_mia_prod_err": 0.52
+  },
+  {
+   "host": "H1",
+   "outlier": false,
+   "boundary_degree_mean": 1.5,
+   "T1_one_zone_premium": 0.48666666666666664,
+   "T2_amplification_ratio": 11.172413793103448,
+   "T3_mia_prod_err": 0.52
+  },
+  {
+   "host": "H10",
+   "outlier": false,
+   "boundary_degree_mean": 1.65625,
+   "T1_one_zone_premium": 0.3633333333333333,
+   "T2_amplification_ratio": 5.298245614035086,
+   "T3_mia_prod_err": 0.49
+  },
+  {
+   "host": "H11",
+   "outlier": false,
+   "boundary_degree_mean": 1.6756756756756757,
+   "T1_one_zone_premium": 0.34,
+   "T2_amplification_ratio": 4.75,
+   "T3_mia_prod_err": 0.49
+  },
+  {
+   "host": "H2",
+   "outlier": false,
+   "boundary_degree_mean": 1.6904761904761905,
+   "T1_one_zone_premium": 0.3366666666666666,
+   "T2_amplification_ratio": 4.470588235294118,
+   "T3_mia_prod_err": 0.49
+  },
+  {
+   "host": "H3",
+   "outlier": true,
+   "boundary_degree_mean": 1.5957446808510638,
+   "T1_one_zone_premium": 1.946666666666667,
+   "T2_amplification_ratio": 32.47058823529412,
+   "T3_mia_prod_err": 2.12
+  },
+  {
+   "host": "H4",
+   "outlier": false,
+   "boundary_degree_mean": 1.6097560975609757,
+   "T1_one_zone_premium": 0.36999999999999994,
+   "T2_amplification_ratio": 5.1525423728813555,
+   "T3_mia_prod_err": 0.49
+  },
+  {
+   "host": "H5",
+   "outlier": true,
+   "boundary_degree_mean": 1.5625,
+   "T1_one_zone_premium": 2.1,
+   "T2_amplification_ratio": 26.853333333333335,
+   "T3_mia_prod_err": 2.28
+  },
+  {
+   "host": "H6",
+   "outlier": false,
+   "boundary_degree_mean": 1.8064516129032258,
+   "T1_one_zone_premium": 0.3666666666666667,
+   "T2_amplification_ratio": 5.033333333333332,
+   "T3_mia_prod_err": 0.49
+  },
+  {
+   "host": "H7",
+   "outlier": false,
+   "boundary_degree_mean": 1.7222222222222223,
+   "T1_one_zone_premium": 0.35333333333333333,
+   "T2_amplification_ratio": 4.950819672131147,
+   "T3_mia_prod_err": 0.49
+  },
+  {
+   "host": "H8",
+   "outlier": false,
+   "boundary_degree_mean": 1.8974358974358974,
+   "T1_one_zone_premium": 0.37333333333333335,
+   "T2_amplification_ratio": 4.92063492063492,
+   "T3_mia_prod_err": 0.52
+  },
+  {
+   "host": "H9",
+   "outlier": false,
+   "boundary_degree_mean": 1.6744186046511629,
+   "T1_one_zone_premium": 0.3499999999999999,
+   "T2_amplification_ratio": 4.575757575757575,
+   "T3_mia_prod_err": 0.49
+  }
+ ],
+ "regressions": {
+  "T1_one_zone_premium": {
+   "rho": -0.6000000000000001,
+   "rho_abs": 0.6000000000000001,
+   "r2_single": 0.1803950573380514,
+   "r2_all_ranks": 0.36,
+   "all_ranks_equals_rho_squared": true,
+   "status": "ok"
+  },
+  "T2_amplification_ratio": {
+   "rho": -0.7263157894736844,
+   "rho_abs": 0.7263157894736844,
+   "r2_single": 0.37384643609972734,
+   "r2_all_ranks": 0.5275346260387812,
+   "all_ranks_equals_rho_squared": true,
+   "status": "ok"
+  },
+  "T3_mia_prod_err": {
+   "rho": -0.5358734727742772,
+   "rho_abs": 0.5358734727742772,
+   "r2_single": 0.14504142249142038,
+   "r2_all_ranks": 0.28716037882316414,
+   "all_ranks_equals_rho_squared": true,
+   "status": "ok"
+  }
+ },
+ "gates": {
+  "G1_rebuild_integrity": {
+   "pass": true,
+   "bar": "READ-ONLY sha-verified (the exp280 precedent): the 12 rebuilt bases bit-asserted against exp243's records (base_sha256 12/12, edges_base 12/12, the classify boundary count 12/12 dual-carried vs exp272 + exp278, the canon identity 12/12, H0 == H1); exp278's ratio identity bit-exact 12/12; the T1 mean identity bit-exact 12/12; the T3 4-way carry bit-exact 12/12 each; the outlier pre-name asserted 6-way (exp273 == exp272 == exp276 == exp278 == exp279 == exp280 == ['H3','H5']); the provenance chains sha-verified (exp280 12/12, exp279 9/9, exp278 11/11, exp276 8/8, exp273 5/5, exp272 4/4); READ-ONLY",
+   "rebuild_ok_12": true,
+   "T1_mean_identity": {
+    "n_recomputed": 12,
+    "n_exp273_carry": 12
+   },
+   "T1_mean_identity_ok": true,
+   "T2_ratio_identity_ok": true,
+   "T3_carry_bit_exact": {
+    "exp276": 12,
+    "exp279": 12,
+    "exp273": 12
+   },
+   "T3_carry_ok": true,
+   "targets_finite": true,
+   "chains": {
+    "exp280": [
+     12,
+     12
+    ],
+    "exp279": [
+     9,
+     9
+    ],
+    "exp278": [
+     11,
+     11
+    ],
+    "exp276": [
+     8,
+     8
+    ],
+    "exp273": [
+     5,
+     5
+    ],
+    "exp272": [
+     4,
+     4
+    ]
+   },
+   "chains_ok": true
+  },
+  "G2_field_definition_bit_identical": {
+   "pass": true,
+   "bar": "the field definition BIT-IDENTICAL to exp280's: the boundary cells' own degree mean over the exp208 classify CANON-BOUNDARY set (exp280's code path, never re-fit) \u2014 the masks nonempty 12/12, the recomputed boundary_degree_mean == exp280's deposited field-table values BIT-EXACT 12/12, the ties census recorded, the rho table complete",
+   "field_definition_identities": {
+    "n_masks_nonempty": 12,
+    "n_bit_exact_vs_exp280": 12
+   },
+   "field_definition_ok": true,
+   "field_census": {
+    "n_distinct": 11,
+    "n_tied_values": 1,
+    "max_multiplicity": 2
+   },
+   "rho_table_complete": true
+  },
+  "G3_branch": {
+   "pass": true,
+   "bar": "the discriminant pre-named with the numeric bar: CHORD-CARRIED iff boundary_degree_mean reaches Spearman >= 0.5 (the SIGNED house bar) against >= 1 of the three targets (T1 exp272's one-zone premium means / T2 exp278's amplification ratios / T3 the audit error mia_prod_err); else CHORD-ABSENT; the abs variant \u2014 a NEGATIVE crossing of |rho| >= 0.5 \u2014 is the ANTI-ALIGNED face, NAMED in the deposit and the verdict per target, never gating",
+   "branch": "CHORD-ABSENT",
+   "bar_signed_rho": 0.5,
+   "targets_in_max": [
+    "T1_one_zone_premium",
+    "T2_amplification_ratio",
+    "T3_mia_prod_err"
+   ],
+   "rho_by_target": {
+    "T1_one_zone_premium": -0.6000000000000001,
+    "T2_amplification_ratio": -0.7263157894736844,
+    "T3_mia_prod_err": -0.5358734727742772
+   },
+   "max_signed_rho": -0.5358734727742772,
+   "signed_leader": "T3_mia_prod_err",
+   "n_targets_carried": 0,
+   "abs_variant_audit_only": {
+    "T1_one_zone_premium": {
+     "rho": -0.6000000000000001,
+     "rho_abs": 0.6000000000000001,
+     "crosses_abs_bar": true,
+     "signed_bar_met": false,
+     "anti_aligned_face": true
+    },
+    "T2_amplification_ratio": {
+     "rho": -0.7263157894736844,
+     "rho_abs": 0.7263157894736844,
+     "crosses_abs_bar": true,
+     "signed_bar_met": false,
+     "anti_aligned_face": true
+    },
+    "T3_mia_prod_err": {
+     "rho": -0.5358734727742772,
+     "rho_abs": 0.5358734727742772,
+     "crosses_abs_bar": true,
+     "signed_bar_met": false,
+     "anti_aligned_face": true
+    }
+   },
+   "n_anti_aligned_crossings": 3,
+   "anti_aligned_note": "the chord runs OPPOSITE the pre-named direction on the crossed targets \u2014 named, never gating (exp280's precedent)",
+   "field_margin_audit_only": {
+    "outliers": {
+     "H3": 1.5957446808510638,
+     "H5": 1.5625
+    },
+    "cluster_min": 1.5,
+    "cluster_max": 1.8974358974358974
+   }
+  },
+  "G4_discipline": {
+   "pass": true,
+   "bar": "all 15 deposits READ-ONLY sha-recorded byte-unchanged; deterministic \u2014 two-pass bit-identical; no wall-clock fields; the docstring+header pinned to a52a14a asserted at entry AND exit; NEURAL_SPEC_MIN == -60.0 asserted at exit",
+   "read_only_shas_before": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp276_deposit": "b96db86973284f2c27bdf1dd75e62f90d2b5832fa2673c86f5c77d63dfbdfba2",
+    "exp278_deposit": "3a7fa8b0a108c87c6124a791ddd60362a3b243171124382498c87cff40fc1d9e",
+    "exp279_deposit": "3b7dd6a55cc45dd8787f18cc3f669e53f3fe62c2c49d751462af406df6625507",
+    "exp280_deposit": "d157fc894d5bccc3e153bbb001a8b91093469c1ada0aede31982827e3b2925bc",
+    "exp255_deposit": "05cce27989654f1c39c6071645dea62aeb1b0f6ba035dd112f1b18fc4d0ab038",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp270_deposit": "4a4978361800bdc66a91cfcf2a345654393c0e8332583beff20059ebd1d39033",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp274_deposit": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+    "exp275_deposit": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879",
+    "exp277_deposit": "892e19d896f18b8eea19eedfab90830df1c3da26ce6d7fef4e5529aeb30a1e95"
+   },
+   "read_only_shas_after": {
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+    "exp272_deposit": "215f3649ee4bc9762da4d7cc0f430352b0fd80b415f4005631c477bf551d3de4",
+    "exp273_deposit": "2633730656f4fe13b65e89da358de23e795e69ad040793a58396a67d30b30d78",
+    "exp276_deposit": "b96db86973284f2c27bdf1dd75e62f90d2b5832fa2673c86f5c77d63dfbdfba2",
+    "exp278_deposit": "3a7fa8b0a108c87c6124a791ddd60362a3b243171124382498c87cff40fc1d9e",
+    "exp279_deposit": "3b7dd6a55cc45dd8787f18cc3f669e53f3fe62c2c49d751462af406df6625507",
+    "exp280_deposit": "d157fc894d5bccc3e153bbb001a8b91093469c1ada0aede31982827e3b2925bc",
+    "exp255_deposit": "05cce27989654f1c39c6071645dea62aeb1b0f6ba035dd112f1b18fc4d0ab038",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp270_deposit": "4a4978361800bdc66a91cfcf2a345654393c0e8332583beff20059ebd1d39033",
+    "exp271_deposit": "725924783af6cf46e872252cfcec56c9fa81186dce29a6f8e34e77e60edb697c",
+    "exp182_deposit": "b8b49211758740372258df102ce37c7fdf72a726c9d827346cd91bc222a29f5a",
+    "exp274_deposit": "c8dbb4ee0b51d53bce57c50643d74c90726ffe8d498c38ea3c99ad5c665c0552",
+    "exp275_deposit": "4fbc0a90b6d15ac679e3966cc02304f865478181d7fb9ba3b58255cbc41fd879",
+    "exp277_deposit": "892e19d896f18b8eea19eedfab90830df1c3da26ce6d7fef4e5529aeb30a1e95"
+   },
+   "read_only_byte_unchanged": true,
+   "deterministic_two_pass_bit_identical": true,
+   "payload_sha256_pass_a": "3337e2f0fff5f800156438b02519677219903783bd6e5b11874eaa73647d6310",
+   "payload_sha256_pass_b": "3337e2f0fff5f800156438b02519677219903783bd6e5b11874eaa73647d6310",
+   "no_wall_clock_fields": true,
+   "floor_at_entry": -60.0,
+   "floor_at_exit": -60.0,
+   "docstring_sha256": "7285312033d3909de8c37de35990099f078fbe4161fe3e1c67b82ba4e2e042a3",
+   "docstring_byte_unchanged_vs_a52a14a": true,
+   "header_sha256": "6665058099a3d6a3db859b18ab3eca472c4dad73f0e09653434e99deece846f0",
+   "header_byte_unchanged_vs_a52a14a": true,
+   "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+  }
+ },
+ "branch": "CHORD-ABSENT",
+ "branch_discriminant": {
+  "branch": "CHORD-ABSENT",
+  "bar_signed_rho": 0.5,
+  "targets_in_max": [
+   "T1_one_zone_premium",
+   "T2_amplification_ratio",
+   "T3_mia_prod_err"
+  ],
+  "rho_by_target": {
+   "T1_one_zone_premium": -0.6000000000000001,
+   "T2_amplification_ratio": -0.7263157894736844,
+   "T3_mia_prod_err": -0.5358734727742772
+  },
+  "max_signed_rho": -0.5358734727742772,
+  "signed_leader": "T3_mia_prod_err",
+  "n_targets_carried": 0,
+  "abs_variant_audit_only": {
+   "T1_one_zone_premium": {
+    "rho": -0.6000000000000001,
+    "rho_abs": 0.6000000000000001,
+    "crosses_abs_bar": true,
+    "signed_bar_met": false,
+    "anti_aligned_face": true
+   },
+   "T2_amplification_ratio": {
+    "rho": -0.7263157894736844,
+    "rho_abs": 0.7263157894736844,
+    "crosses_abs_bar": true,
+    "signed_bar_met": false,
+    "anti_aligned_face": true
+   },
+   "T3_mia_prod_err": {
+    "rho": -0.5358734727742772,
+    "rho_abs": 0.5358734727742772,
+    "crosses_abs_bar": true,
+    "signed_bar_met": false,
+    "anti_aligned_face": true
+   }
+  },
+  "n_anti_aligned_crossings": 3,
+  "anti_aligned_note": "the chord runs OPPOSITE the pre-named direction on the crossed targets \u2014 named, never gating (exp280's precedent)",
+  "field_margin_audit_only": {
+   "outliers": {
+    "H3": 1.5957446808510638,
+    "H5": 1.5625
+   },
+   "cluster_min": 1.5,
+   "cluster_max": 1.8974358974358974
+  }
+ },
+ "verdict": "4/4 gates G1-G4 (4 PASS / 0 REFUTE) | CHORD-ABSENT \u2014 the boundary cells' own degree mean clears NOTHING at the 0.5 SIGNED house bar (max signed rho -0.5358734728 on T3_mia_prod_err; by target T1 -0.6, T2 -0.7263157895, T3 -0.5358734728) \u2014 the line stands closed at mia and the premium's origin is formally OUTSIDE the deposited host records | THE ANTI-ALIGNED FACE (named honestly, audit-only): 3/3 targets cross the abs bar NEGATIVE (T1_one_zone_premium rho -0.6; T2_amplification_ratio rho -0.7263157895; T3_mia_prod_err rho -0.5358734728) \u2014 hosts whose boundary cells carry FEWER chords read the premium/amplification/audit HIGHER; consistent with exp280's |rho| 0.6081 face on the deep-band err \u2014 the boundary-RICH hosts' boundary cells are chord-POOR (H3 1.595744681 / H5 1.5625 vs the ten-host cluster's [1.5, 1.897435897]) and the premium runs WITH the chord-poverty, not with the chord | G2 the field definition bit-identical to exp280's: the recomputed boundary_degree_mean == exp280's deposited field table 12/12 bit-exact | 12 hosts, a pure re-read + a deterministic sha-asserted rebuild (exp280's form \u2014 graph_path for H0/H1, small_world at the deposited rewire seeds) of exp243's records, READ-ONLY byte-unchanged, two-pass bit-identical, floor -60.0",
+ "determinism": {
+  "computation_passes": 2,
+  "payload_sha256_pass_a": "3337e2f0fff5f800156438b02519677219903783bd6e5b11874eaa73647d6310",
+  "payload_sha256_pass_b": "3337e2f0fff5f800156438b02519677219903783bd6e5b11874eaa73647d6310",
+  "two_pass_bit_identical": true
+ },
+ "discipline": {
+  "no_wall_clock_fields": true,
+  "floor_at_entry": -60.0,
+  "floor_at_exit": -60.0,
+  "docstring_sha256": "7285312033d3909de8c37de35990099f078fbe4161fe3e1c67b82ba4e2e042a3",
+  "docstring_byte_unchanged_vs_a52a14a": true,
+  "header_sha256": "6665058099a3d6a3db859b18ab3eca472c4dad73f0e09653434e99deece846f0",
+  "header_byte_unchanged_vs_a52a14a": true,
+  "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically"
+ },
+ "deposit_fingerprint": "43cbc9fce3c333a4c5b4a446e58d7f5387f6a2b58aab1ebd979aa2b90f5d85b3"
+}
