@@ -1,0 +1,637 @@
+{
+ "exp": "exp271_one_zone_premium",
+ "claim": "THE ONE-ZONE PREMIUM (batch 29, L248's registered next, pre-registration commit 5a67df7): the step's lower shelf decomposed \u2014 premium = the d=1 errs [exp270's deposit] minus the canon worst-errs [exp256's canonical rows] per host/seed over 36 rows; the premium's mean, sign consistency, and its host/seed rank shares by the exp229/exp262 tied-average-rank OLS convention; the SEED share is the pre-named discriminant",
+ "method": {
+  "premium": "per (host, seed): premium = d1_err - canon_worst_err; 36 rows = 12 hosts x 3 seeds",
+  "d1_source": "the pre-registered source (exp270's deposit z2 rows) does not exist \u2014 the deposit's z2 block carries only summary fields; the disclosed repair reconstructed the grid by re-running exp270's pre-named d=1 dose with exp270's VERBATIM machinery, verified against the deposit's own errs (tier 1: the saturated grid 36/36 bit-exact; tier 2: the d=1 mean bit-exact)",
+  "canon_source": "exp256's canonical rows (arm == canonical), worst_err per (host, seed), re-read from the deposit",
+  "structure": "the exp262/exp229 tied-average-rank OLS convention on the 36 premiums: rankdata's tied average ranks, OLS with intercept on reference-coded dummies (the deposit's own level order, first level dropped; R^2 invariant to the choice \u2014 asserted), two factors entered host->seed and reversed, each share the symmetric average of the two R^2 increments; unexplained = 1 - R^2_full; sums to 1 exactly, no clamping",
+  "discriminant": "the SEED share ONLY: <= 0.10 PREMIUM-STRUCTURAL / <= 0.30 PREMIUM-MIXED / else NOISE-LIKE; P2 failing names PREMIUM-ABSENT",
+  "method_source": "experiments/exp262_variance_components.py (the precedent) and experiments/exp270_structural_dose.py (the verbatim machinery)"
+ },
+ "inputs": {
+  "exp270_deposit": {
+   "path": "results/exp270_structural_dose.json",
+   "sha256": "4a4978361800bdc66a91cfcf2a345654393c0e8332583beff20059ebd1d39033",
+   "z2_block_fields": [
+    "n_finite",
+    "n_rejections",
+    "n_rows",
+    "pass"
+   ],
+   "d1_mean_anchor_z3": 0.7938888888888889
+  },
+  "exp256_deposit": {
+   "path": "results/exp256_row_pair_regression.json",
+   "sha256": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+   "canonical_rows": 36
+  },
+  "exp243_deposit": {
+   "path": "results/exp243_structured_adversarial.json",
+   "sha256": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a",
+   "role": "the host rebuild source (the machinery's input, sha-recorded; not a gate source)"
+  }
+ },
+ "p1_source_discrepancy": {
+  "as_registered_source": "results/exp270_structural_dose.json z2 rows (dose==1, 'err' key)",
+  "z2_rows_present_in_deposit": false,
+  "z2_block_fields": [
+   "n_finite",
+   "n_rejections",
+   "n_rows",
+   "pass"
+  ],
+  "disclosure": "the pre-registered source field does not exist: exp270's deposit z2 block carries only the summary fields \u2014 the per-row z2 grid was computed in exp270's process and never deposited (z1's rows were deposited, z2's counts only), so the d=1 errs exist nowhere in the deposits; the disclosed repair below reconstructs the grid and verifies it against the deposit's own errs (exp270's Z1 precedent: a docstring misdescription is repaired body-side, disclosed, and the gate reads the substance)"
+ },
+ "repair": {
+  "disclosed": true,
+  "what": "the d=1 grid (36 rows) reconstructed by re-running exp270's pre-named d=1 dose (dose_spec(1): the FIRST zone of MULTI's (3-zone) skeleton at the -60 rung, the rest at MULTI's own voltages; the i0 instance axis) on the 12 hosts x 3 seeds",
+  "machinery": "exp270's VERBATIM blocks: the reader-line import block, the floor restore, the exp160 fingerprint + repertoire asserts, the exp243 host rebuild (base sha-asserted), dose_spec, the scoped read pipeline, _decode_row; the dose_spec copy certified by exp270's own deep-form identity assert",
+  "verification": {
+   "tier1_saturated_grid_bit_exact": "36/36",
+   "tier1_meaning": "the machinery reproduces exp270's DEPOSITED per-row saturated-dose errs (the z1 rows) bit-exact \u2014 per-row proof the pipeline is the exp270 run's pipeline",
+   "tier2_d1_mean_bit_exact": true,
+   "deposited_d1_mean": 0.7938888888888889,
+   "reconstructed_d1_mean": 0.7938888888888889,
+   "two_pass_bit_identical": true
+  },
+  "runtime_consequence": "the docstring's 'zero new simulation' / 'pure deposit re-read; seconds' clauses are waived by the repair: 108 decode rows (~minutes); the arithmetic itself (the premium + the rank shares) remains a pure computation over 36 rows"
+ },
+ "data_audit": {
+  "hosts": [
+   "H0",
+   "H1",
+   "H10",
+   "H11",
+   "H2",
+   "H3",
+   "H4",
+   "H5",
+   "H6",
+   "H7",
+   "H8",
+   "H9"
+  ],
+  "seeds": [
+   1,
+   2,
+   3
+  ],
+  "n_rows_expected": 36,
+  "n_premium_rows": 36,
+  "canon_grid_complete": true,
+  "canon_grid_finite": true,
+  "d1_grid_complete": true,
+  "d1_grid_finite": true,
+  "all_premiums_finite": true,
+  "audits_only_never_gated": {
+   "d1_err_range": [
+    0.48,
+    2.29
+   ],
+   "canon_worst_err_range": [
+    0.05,
+    0.19
+   ],
+   "canon_mean": 0.13777777777777783,
+   "docstring_canon_range_note": "the docstring's descriptive canon range (~0.55-0.62) does not match exp256's deposited canonical worst-errs (0.05-0.19); descriptive only \u2014 no gate reads it",
+   "exp270_z1_rows_all_bit_exact": true
+  }
+ },
+ "premium_grid": [
+  {
+   "host": "H0",
+   "seed": 1,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.06,
+   "premium": 0.47000000000000003
+  },
+  {
+   "host": "H0",
+   "seed": 2,
+   "d1_err": 0.56,
+   "canon_worst_err": 0.05,
+   "premium": 0.51
+  },
+  {
+   "host": "H0",
+   "seed": 3,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.05,
+   "premium": 0.48000000000000004
+  },
+  {
+   "host": "H1",
+   "seed": 1,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.06,
+   "premium": 0.47000000000000003
+  },
+  {
+   "host": "H1",
+   "seed": 2,
+   "d1_err": 0.56,
+   "canon_worst_err": 0.05,
+   "premium": 0.51
+  },
+  {
+   "host": "H1",
+   "seed": 3,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.05,
+   "premium": 0.48000000000000004
+  },
+  {
+   "host": "H10",
+   "seed": 1,
+   "d1_err": 0.5,
+   "canon_worst_err": 0.14,
+   "premium": 0.36
+  },
+  {
+   "host": "H10",
+   "seed": 2,
+   "d1_err": 0.48,
+   "canon_worst_err": 0.13,
+   "premium": 0.35
+  },
+  {
+   "host": "H10",
+   "seed": 3,
+   "d1_err": 0.52,
+   "canon_worst_err": 0.14,
+   "premium": 0.38
+  },
+  {
+   "host": "H11",
+   "seed": 1,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.16,
+   "premium": 0.32999999999999996
+  },
+  {
+   "host": "H11",
+   "seed": 2,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.16,
+   "premium": 0.32999999999999996
+  },
+  {
+   "host": "H11",
+   "seed": 3,
+   "d1_err": 0.52,
+   "canon_worst_err": 0.16,
+   "premium": 0.36
+  },
+  {
+   "host": "H2",
+   "seed": 1,
+   "d1_err": 0.5,
+   "canon_worst_err": 0.16,
+   "premium": 0.33999999999999997
+  },
+  {
+   "host": "H2",
+   "seed": 2,
+   "d1_err": 0.48,
+   "canon_worst_err": 0.17,
+   "premium": 0.30999999999999994
+  },
+  {
+   "host": "H2",
+   "seed": 3,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.17,
+   "premium": 0.36
+  },
+  {
+   "host": "H3",
+   "seed": 1,
+   "d1_err": 2.12,
+   "canon_worst_err": 0.17,
+   "premium": 1.9500000000000002
+  },
+  {
+   "host": "H3",
+   "seed": 2,
+   "d1_err": 2.12,
+   "canon_worst_err": 0.17,
+   "premium": 1.9500000000000002
+  },
+  {
+   "host": "H3",
+   "seed": 3,
+   "d1_err": 2.12,
+   "canon_worst_err": 0.18,
+   "premium": 1.9400000000000002
+  },
+  {
+   "host": "H4",
+   "seed": 1,
+   "d1_err": 0.5,
+   "canon_worst_err": 0.13,
+   "premium": 0.37
+  },
+  {
+   "host": "H4",
+   "seed": 2,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.14,
+   "premium": 0.35
+  },
+  {
+   "host": "H4",
+   "seed": 3,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.14,
+   "premium": 0.39
+  },
+  {
+   "host": "H5",
+   "seed": 1,
+   "d1_err": 2.29,
+   "canon_worst_err": 0.19,
+   "premium": 2.1
+  },
+  {
+   "host": "H5",
+   "seed": 2,
+   "d1_err": 2.29,
+   "canon_worst_err": 0.19,
+   "premium": 2.1
+  },
+  {
+   "host": "H5",
+   "seed": 3,
+   "d1_err": 2.29,
+   "canon_worst_err": 0.19,
+   "premium": 2.1
+  },
+  {
+   "host": "H6",
+   "seed": 1,
+   "d1_err": 0.5,
+   "canon_worst_err": 0.14,
+   "premium": 0.36
+  },
+  {
+   "host": "H6",
+   "seed": 2,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.14,
+   "premium": 0.35
+  },
+  {
+   "host": "H6",
+   "seed": 3,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.14,
+   "premium": 0.39
+  },
+  {
+   "host": "H7",
+   "seed": 1,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.15,
+   "premium": 0.33999999999999997
+  },
+  {
+   "host": "H7",
+   "seed": 2,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.15,
+   "premium": 0.33999999999999997
+  },
+  {
+   "host": "H7",
+   "seed": 3,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.15,
+   "premium": 0.38
+  },
+  {
+   "host": "H8",
+   "seed": 1,
+   "d1_err": 0.52,
+   "canon_worst_err": 0.14,
+   "premium": 0.38
+  },
+  {
+   "host": "H8",
+   "seed": 2,
+   "d1_err": 0.53,
+   "canon_worst_err": 0.14,
+   "premium": 0.39
+  },
+  {
+   "host": "H8",
+   "seed": 3,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.14,
+   "premium": 0.35
+  },
+  {
+   "host": "H9",
+   "seed": 1,
+   "d1_err": 0.5,
+   "canon_worst_err": 0.16,
+   "premium": 0.33999999999999997
+  },
+  {
+   "host": "H9",
+   "seed": 2,
+   "d1_err": 0.49,
+   "canon_worst_err": 0.15,
+   "premium": 0.33999999999999997
+  },
+  {
+   "host": "H9",
+   "seed": 3,
+   "d1_err": 0.52,
+   "canon_worst_err": 0.15,
+   "premium": 0.37
+  }
+ ],
+ "premium_summary": {
+  "mean": 0.6561111111111111,
+  "n_positive": 36,
+  "n_negative": 0,
+  "n_zero": 0,
+  "min": 0.30999999999999994,
+  "max": 2.1,
+  "n_hosts_all_positive": 12,
+  "per_host": {
+   "H0": {
+    "mean": 0.48666666666666664,
+    "all_positive": true
+   },
+   "H1": {
+    "mean": 0.48666666666666664,
+    "all_positive": true
+   },
+   "H10": {
+    "mean": 0.3633333333333333,
+    "all_positive": true
+   },
+   "H11": {
+    "mean": 0.34,
+    "all_positive": true
+   },
+   "H2": {
+    "mean": 0.3366666666666666,
+    "all_positive": true
+   },
+   "H3": {
+    "mean": 1.946666666666667,
+    "all_positive": true
+   },
+   "H4": {
+    "mean": 0.36999999999999994,
+    "all_positive": true
+   },
+   "H5": {
+    "mean": 2.1,
+    "all_positive": true
+   },
+   "H6": {
+    "mean": 0.3666666666666667,
+    "all_positive": true
+   },
+   "H7": {
+    "mean": 0.35333333333333333,
+    "all_positive": true
+   },
+   "H8": {
+    "mean": 0.37333333333333335,
+    "all_positive": true
+   },
+   "H9": {
+    "mean": 0.3499999999999999,
+    "all_positive": true
+   }
+  }
+ },
+ "attribution": {
+  "r2": {
+   "full": 0.872330999308437,
+   "host": 0.8142721300138313,
+   "seed": 0.0580588692946058
+  },
+  "order_decompositions": {
+   "order_host_seed": {
+    "host": 0.8142721300138313,
+    "seed": 0.0580588692946058
+   },
+   "order_seed_host": {
+    "seed": 0.0580588692946058,
+    "host": 0.8142721300138313
+   }
+  },
+  "shares_of_rank_variance": {
+   "host": 0.8142721300138313,
+   "seed": 0.0580588692946058,
+   "unexplained": 0.12766900069156295
+  },
+  "shares_sum": 1.0,
+  "ties_census": {
+   "n_distinct_premiums": 14,
+   "n_tied_values": 12,
+   "max_multiplicity": 5
+  }
+ },
+ "gates": {
+  "P1_reconstruction": {
+   "pass": true,
+   "bar": "the d=1 errs (36 rows) re-read from exp270's deposit; the canon worst-errs (36 rows) re-read from exp256's canonical rows (the same host/seed keys); both grids complete, finite, sha-verified",
+   "as_registered_re_read": {
+    "exp270_z2_rows": {
+     "as_registered_source": "results/exp270_structural_dose.json z2 rows (dose==1, 'err' key)",
+     "z2_rows_present_in_deposit": false,
+     "z2_block_fields": [
+      "n_finite",
+      "n_rejections",
+      "n_rows",
+      "pass"
+     ],
+     "disclosure": "the pre-registered source field does not exist: exp270's deposit z2 block carries only the summary fields \u2014 the per-row z2 grid was computed in exp270's process and never deposited (z1's rows were deposited, z2's counts only), so the d=1 errs exist nowhere in the deposits; the disclosed repair below reconstructs the grid and verifies it against the deposit's own errs (exp270's Z1 precedent: a docstring misdescription is repaired body-side, disclosed, and the gate reads the substance)"
+    },
+    "re_read_possible": false
+   },
+   "substance_with_disclosed_repair": {
+    "canon_grid": {
+     "n": 36,
+     "re_read": true,
+     "complete": true,
+     "finite": true,
+     "min": 0.05,
+     "max": 0.19,
+     "mean": 0.13777777777777783
+    },
+    "d1_grid": {
+     "n": 36,
+     "re_read": false,
+     "reconstructed_by_repair": true,
+     "complete": true,
+     "finite": true,
+     "n_rejections": 0,
+     "two_pass_bit_identical": true,
+     "min": 0.48,
+     "max": 2.29
+    },
+    "repair_verification": {
+     "tier1_saturated_grid_bit_exact": "36/36",
+     "tier1_ok": true,
+     "tier2_d1_mean_bit_exact": true,
+     "deposited_d1_mean": 0.7938888888888889,
+     "reconstructed_d1_mean": 0.7938888888888889
+    },
+    "source_deposit_shas_recorded": {
+     "exp270_deposit": "4a4978361800bdc66a91cfcf2a345654393c0e8332583beff20059ebd1d39033",
+     "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+     "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a"
+    },
+    "read_only_byte_unchanged": true
+   }
+  },
+  "P2_premium": {
+   "pass": true,
+   "bar": "the mean premium > 0 (the one-zone rewrite costs more than canon \u2014 the step's lower shelf is still above the canon floor) AND the sign consistency >= 30/36 rows positive (the premium is systematic, not host-noise)",
+   "mean_premium": 0.6561111111111111,
+   "n_positive": 36,
+   "n_negative": 0,
+   "n_zero": 0,
+   "n_hosts_all_positive": 12,
+   "per_host": {
+    "H0": {
+     "mean": 0.48666666666666664,
+     "all_positive": true
+    },
+    "H1": {
+     "mean": 0.48666666666666664,
+     "all_positive": true
+    },
+    "H10": {
+     "mean": 0.3633333333333333,
+     "all_positive": true
+    },
+    "H11": {
+     "mean": 0.34,
+     "all_positive": true
+    },
+    "H2": {
+     "mean": 0.3366666666666666,
+     "all_positive": true
+    },
+    "H3": {
+     "mean": 1.946666666666667,
+     "all_positive": true
+    },
+    "H4": {
+     "mean": 0.36999999999999994,
+     "all_positive": true
+    },
+    "H5": {
+     "mean": 2.1,
+     "all_positive": true
+    },
+    "H6": {
+     "mean": 0.3666666666666667,
+     "all_positive": true
+    },
+    "H7": {
+     "mean": 0.35333333333333333,
+     "all_positive": true
+    },
+    "H8": {
+     "mean": 0.37333333333333335,
+     "all_positive": true
+    },
+    "H9": {
+     "mean": 0.3499999999999999,
+     "all_positive": true
+    }
+   }
+  },
+  "P3_structure": {
+   "pass": true,
+   "bar": "the premium's host/seed rank shares reported (the exp262 convention); the gate reads the SEED share only: seed share <= 0.10 -> the premium is deterministic-per-host (structural \u2014 the step's shelf height is a host property); else MIXED/NOISE-LIKE honestly named",
+   "r2_full": 0.872330999308437,
+   "r2_host_alone": 0.8142721300138313,
+   "r2_seed_alone": 0.0580588692946058,
+   "order_decompositions": {
+    "order_host_seed": {
+     "host": 0.8142721300138313,
+     "seed": 0.0580588692946058
+    },
+    "order_seed_host": {
+     "seed": 0.0580588692946058,
+     "host": 0.8142721300138313
+    }
+   },
+   "shares_of_rank_variance": {
+    "host": 0.8142721300138313,
+    "seed": 0.0580588692946058,
+    "unexplained": 0.12766900069156295
+   },
+   "shares_sum": 1.0,
+   "reference_coding_invariance_ok": true,
+   "ties_census": {
+    "n_distinct_premiums": 14,
+    "n_tied_values": 12,
+    "max_multiplicity": 5
+   },
+   "seed_share": 0.0580588692946058,
+   "branch": "PREMIUM-STRUCTURAL"
+  },
+  "P4_discipline": {
+   "pass": true,
+   "bar": "exp270's/exp256's deposits READ-ONLY sha-recorded byte-unchanged; deterministic; no wall-clock fields; the -60.0 floor asserted at exit (no exp169 import)",
+   "read_only_shas_before": {
+    "exp270_deposit": "4a4978361800bdc66a91cfcf2a345654393c0e8332583beff20059ebd1d39033",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a"
+   },
+   "read_only_shas_after": {
+    "exp270_deposit": "4a4978361800bdc66a91cfcf2a345654393c0e8332583beff20059ebd1d39033",
+    "exp256_deposit": "3c8f04737f11fed572ca8104d60a6987f48c6c8ca0806d68a48de4e14cddaf7c",
+    "exp243_deposit": "26239a504fe836bfc4a0bdb8e7ed227ce20b77c431caabae2cbff6d0cd5e223a"
+   },
+   "read_only_byte_unchanged": true,
+   "deterministic_two_pass_bit_identical": true,
+   "deterministic_attribution_bit_identical": true,
+   "no_wall_clock_fields": true,
+   "no_exp169_import": false,
+   "no_exp169_import_waived_by_repair": true,
+   "exp169_waiver_note": "the disclosed repair re-runs exp270's verbatim machinery, whose reader-line block imports exp169_rt_scoping; exp218's floor-restore discipline applies \u2014 the floor restored at entry and asserted at exit",
+   "docstring_sha256": "d348f0ef02b9ec7c134755c49b1dc4047d5f705771eaf5bd78c0abea59390c11",
+   "docstring_byte_unchanged_vs_5a67df7": true,
+   "header_sha256": "853c055da8c51ea9c3e50e346dd323f86c4ad2d2d219fd164a2173b1b218de97",
+   "header_byte_unchanged_vs_5a67df7": true,
+   "floor_at_entry": -60.0,
+   "floor_at_exit": -60.0
+  }
+ },
+ "branch": "PREMIUM-STRUCTURAL",
+ "verdict": "4/4 gates P1-P4 | PREMIUM-STRUCTURAL | mean premium +0.6561 (36/36 rows positive, 12/12 hosts all-positive) | shares host 0.8143 / seed 0.0581 / unexplained 0.1277 of the 36 premiums' rank variance (R2_full 0.8723) | the d=1 grid RECONSTRUCTED (the disclosed repair: exp270's z2 rows never deposited \u2014 the verbatim machinery reproduced exp270's deposited saturated grid 36/36 bit-exact and the d=1 mean bit-exact) | canon errs re-read from exp256's deposit 36/36",
+ "determinism": {
+  "d1_grid_passes": 2,
+  "d1_two_pass_bit_identical": true,
+  "attribution_passes": 2,
+  "attribution_bit_identical": true,
+  "attribution_sha256_pass_a": "cddf1fc38d3de3af2cce9723e439d5b497f9b5d0bd1294a40b001e4a34dab65d",
+  "attribution_sha256_pass_b": "cddf1fc38d3de3af2cce9723e439d5b497f9b5d0bd1294a40b001e4a34dab65d"
+ },
+ "discipline": {
+  "no_exp169_import": false,
+  "no_exp169_import_waived_by_repair": true,
+  "no_wall_clock_fields": true,
+  "floor_at_entry": -60.0,
+  "floor_at_exit": -60.0,
+  "docstring_sha256": "d348f0ef02b9ec7c134755c49b1dc4047d5f705771eaf5bd78c0abea59390c11",
+  "docstring_byte_unchanged_vs_5a67df7": true,
+  "header_sha256": "853c055da8c51ea9c3e50e346dd323f86c4ad2d2d219fd164a2173b1b218de97",
+  "header_byte_unchanged_vs_5a67df7": true,
+  "deposit_form": "deterministic: no wall-clock fields \u2014 a re-run of this module reproduces this file byte-identically (verified by the run agent across processes)"
+ },
+ "deposit_fingerprint": "e9454c67c87df1d30168ef8f6026245aa24b10ca08407f91c94133db0ab80cdc"
+}
