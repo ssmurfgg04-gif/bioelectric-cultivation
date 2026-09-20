@@ -1342,22 +1342,25 @@ def main() -> dict:
         deltas = {}
         host_deltas = {}
         for faces in FACES_BATTERY:
+            arm_name = ("UNION" if len(faces) == 3
+                        else "|".join(faces))
             arows = [r for r in rows if r["faces"] == list(faces)]
             d = {}
             for r in arows:
                 k = (r["host"], int(r["seed"]), r["row_key"])
                 d[k] = float(r["err"]) - float(base_ctrl[k])
-            deltas["|".join(faces)] = d
+            deltas[arm_name] = d
             hd = {}
             for h in hosts:
                 hds = [v for k, v in d.items() if k[0] == h]
                 hd[h] = float(np.mean(hds))
-            host_deltas["|".join(faces)] = hd
+            host_deltas[arm_name] = hd
         mean_d = {a: float(np.mean(list(d.values())))
                   for a, d in deltas.items()}
         n_imp = {a: sum(1 for h in hosts if host_deltas[a][h] < 0.0)
                  for a in mean_d}
         singles = {a: v for a, v in mean_d.items() if a != "UNION"}
+        assert len(singles) == 3, "the singles drifted"
         best_single = min(singles, key=singles.get)
         d_union = mean_d["UNION"]
         d_best = singles[best_single]
