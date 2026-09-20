@@ -1448,10 +1448,19 @@ def main() -> dict:
         # the best single's delta at each shared dose
         gain_face = {}
         for g in UNION_LADDER:
-            best = min(mean_d[key0][g] for key0 in ("ctx", "gj", "apop"))
-            gain_face[str(g)] = {"union": mean_d["UNION"][g],
-                                 "best_single": best,
-                                 "gain": mean_d["UNION"][g] - best}
+            avail = [mean_d[key0][g] for key0 in ("ctx", "gj", "apop")
+                     if g in mean_d[key0]]
+            best = min(avail) if avail else None
+            gain_face[str(g)] = {
+                "union": mean_d["UNION"][g],
+                "best_single": best,
+                "gain": (mean_d["UNION"][g] - best
+                         if best is not None else None),
+                "note": ("the singles' deposited doses do not include "
+                         "0.75 -- the gain face at 0.75 is None, "
+                         "disclosed (the pre-registered anchor set "
+                         "follows the deposited ladders)") if best
+                is None else "the deposited doses' best single"}
 
         # the audit faces
         worst = {str(g): float(max(
