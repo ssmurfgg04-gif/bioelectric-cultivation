@@ -1285,6 +1285,26 @@ def main() -> dict:
                 bad.extend(_scan_wall_clock_keys(v, f"{prefix}[{i}]"))
         return bad
 
+    # ---- the hard rules, re-asserted after the work ----------------------
+    def _exit_checks():
+        docstring_sha = hashlib.sha256(__doc__.encode()).hexdigest()
+        with open(__file__, "r", encoding="utf-8") as _f:
+            _src = _f.read()
+        header_sha = hashlib.sha256(
+            _src[:_src.index(_marker) + len(_marker)].encode()).hexdigest()
+        assert docstring_sha == EXPECTED_DOCSTRING_SHA256, \
+            "docstring drifted at exit"
+        assert header_sha == EXPECTED_HEADER_SHA256, \
+            "header drifted at exit"
+        assert _sha(PORT_FILE) == port_sha_entry, \
+            "the ported collective.py drifted across the run"
+        assert _sha(EXP142_FILE) == exp142_sha_entry, \
+            "exp142 drifted across the run"
+        ro_after = {n: _sha(p) for n, p in RO_PATHS.items()}
+        assert ro_after == ro_before, \
+            "a read-only deposit changed across the run"
+        return ro_after
+
     _MODE = os.environ.get("EXP301_MODE", "all")
     assert _MODE == "all", \
         f"EXP301_MODE {_MODE!r} is not pre-named (216 decodes fit one " \
