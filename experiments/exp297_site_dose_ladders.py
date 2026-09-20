@@ -249,7 +249,20 @@ def main() -> dict:
     SITE_LABELS = {"gj": "GJ-HIST", "str": "STR-HIST",
                    "apop": "AP-HIST"}
     LADDER = (0.25, 0.5, 1.0, 1.5)        # the pre-named dose ladder
-    N_DECODES = len(SITES) * len(LADDER) * 72   # 864
+    # THE DOMAIN DISCLOSURE (fixed here, disclosed in the ledger; the
+    # run caught it before any apop row ran): the pre-registration's
+    # ladder named 1.5 for ALL THREE sites, but the apop site's landed
+    # form (exp264's sigma relaxation, sigma = COMMIT_NOISE * (1 - g))
+    # has domain g in [0, 1] BY CONSTRUCTION -- sigma < 0 at g = 1.5
+    # (the rng raised scale < 0). The honest fix: the apop ladder is
+    # DOMAIN-RESTRICTED to {0.25, 0.5, 1.0}; the branch face for apop
+    # reads on the available doses (the saturation at g=1.0 is the
+    # form's own maximum BY CONSTRUCTION -- the pre-named apop
+    # branches: DOSE-INERT / CARRYING-MONOTONE / MIXED). The docstring
+    # pin stands (the pre-registration's bytes unchanged); this body
+    # disclosure + the ledger entry carry the deviation.
+    LADDERS = {"gj": LADDER, "str": LADDER, "apop": (0.25, 0.5, 1.0)}
+    N_DECODES = 72 * sum(len(LADDERS[s]) for s in SITES)   # 792
     PASS_SITES = {"pass1": ("gj",), "pass2": ("str",),
                   "pass3": ("apop",)}
     # the dose-branch bars (pre-named at the exp297 pre-registration)
@@ -611,6 +624,10 @@ def main() -> dict:
             if g > 0.0:
                 hist_i = float(c.phi_history[i])
                 if arm == "apop":
+                    assert 0.0 <= g <= 1.0, \
+                        "the apop sigma form's domain is g in [0, 1] " \
+                        "(sigma = COMMIT_NOISE * (1 - g)); the ladder " \
+                        "is domain-restricted, disclosed"
                     # exp264's landed form: the sigma relaxation at the
                     # marked cell + the channel-write face (the mark is
                     # state, carried in ch6); the draw's SCALE changes,
@@ -1129,7 +1146,8 @@ def main() -> dict:
         bases = rb["bases"]
         ai = _arm_inputs(bases)
         rows: list = []
-        for g in LADDER:
+        ladder = LADDERS[site]
+        for g in ladder:
             for k in hosts:
                 ctx = bases[k]
                 med = HostWMedium(ctx["A"])
@@ -1160,10 +1178,11 @@ def main() -> dict:
                       f"{hs[0]['n_arm_writes']}/row | reg replay "
                       f"{sum(r['register']['replay_ok'] for r in hs)}/6",
                       flush=True)
-        assert len(rows) == 4 * 72, \
-            f"the ladder produced {len(rows)} rows != 288"
-        assert len(_LOCK_LOG) == 4 * 72, \
-            f"the S* lock count {len(_LOCK_LOG)} != 288 reads"
+        n_exp = len(ladder) * 72
+        assert len(rows) == n_exp, \
+            f"the ladder produced {len(rows)} rows != {n_exp}"
+        assert len(_LOCK_LOG) == n_exp, \
+            f"the S* lock count {len(_LOCK_LOG)} != {n_exp} reads"
         return {"site": site, "rows": rows,
                 "arm_inputs_digest": _arm_inputs_digest(ai),
                 "arm_inputs_record": {
@@ -1335,9 +1354,10 @@ def main() -> dict:
         branches = {}
         sweep = {}
         for site in SITES:
+            ladder = LADDERS[site]
             deltas_by_g = {}
             host_deltas_by_g = {}
-            for g in LADDER:
+            for g in ladder:
                 grows = [r for r in all_rows
                          if r["arm"] == site and float(r["g"]) == g]
                 d = {}
@@ -1351,45 +1371,56 @@ def main() -> dict:
                     hd[h] = float(np.mean(hds))
                 host_deltas_by_g[g] = hd
             md = {g: float(np.mean(list(deltas_by_g[g].values())))
-                  for g in LADDER}
+                  for g in ladder}
             n_imp = {g: sum(1 for h in hosts
                             if host_deltas_by_g[g][h] < 0.0)
-                     for g in LADDER}
-            spread = abs(md[1.5] - md[0.5])
-            if all(abs(md[g]) < DOSE_INERT_BAR for g in LADDER):
-                branch = "DOSE-INERT"
-            elif md[1.0] < md[0.5] and md[1.5] > md[1.0]:
-                branch = "PEAKED-AT-1.0"
-            elif spread <= PLATEAU_SPREAD:
-                branch = "PLATEAU"
-            elif md[1.5] < md[1.0] < md[0.5]:
-                branch = "MONOTONE-RISING"
+                     for g in ladder}
+            if site == "apop":
+                # the domain-restricted branch face (the disclosure
+                # above): the saturation at g=1.0 is the form's own
+                # maximum BY CONSTRUCTION
+                if all(abs(md[g]) < DOSE_INERT_BAR for g in ladder):
+                    branch = "DOSE-INERT"
+                elif md[1.0] < md[0.5] < 0.0:
+                    branch = "CARRYING-MONOTONE"
+                else:
+                    branch = "MIXED"
             else:
-                branch = "MIXED"
+                spread = abs(md[1.5] - md[0.5])
+                if all(abs(md[g]) < DOSE_INERT_BAR for g in ladder):
+                    branch = "DOSE-INERT"
+                elif md[1.0] < md[0.5] and md[1.5] > md[1.0]:
+                    branch = "PEAKED-AT-1.0"
+                elif spread <= PLATEAU_SPREAD:
+                    branch = "PLATEAU"
+                elif md[1.5] < md[1.0] < md[0.5]:
+                    branch = "MONOTONE-RISING"
+                else:
+                    branch = "MIXED"
             branches[site] = branch
             sweep[site] = {
                 "site_label": SITE_LABELS[site],
-                "mean_deltas": {str(g): md[g] for g in LADDER},
-                "n_hosts_improved": {str(g): n_imp[g] for g in LADDER},
+                "mean_deltas": {str(g): md[g] for g in ladder},
+                "n_hosts_improved": {str(g): n_imp[g] for g in ladder},
                 "host_deltas": {str(g): host_deltas_by_g[g]
-                                for g in LADDER},
+                                for g in ladder},
                 "spread_05_15": spread,
                 "branch": branch,
                 "worst_err": {str(g): float(max(
                     r["err"] for r in all_rows
                     if r["arm"] == site and float(r["g"]) == g))
-                    for g in LADDER},
+                    for g in ladder},
                 "worst_under_bar": all(
                     max(r["err"] for r in all_rows
                         if r["arm"] == site and float(r["g"]) == g)
-                    < ERR_BAR for g in LADDER),
+                    < ERR_BAR for g in ladder),
                 "n_verified": {str(g): int(sum(
                     r["verified"] for r in all_rows
                     if r["arm"] == site and float(r["g"]) == g))
-                    for g in LADDER}}
+                    for g in ladder}}
         h3h5 = {site: {str(g): {h: sweep[site]["host_deltas"][str(g)][h]
                                 for h in outliers}
-                       for g in LADDER} for site in SITES}
+                       for g in LADDERS[site]} for site in SITES}
 
         # ---- the deposit -------------------------------------------------
         deposit = {
@@ -1528,7 +1559,7 @@ def main() -> dict:
             sw = sweep[s]
             parts = "; ".join(f"g={g} {sw['mean_deltas'][str(g)]:+.4f}"
                               f" ({sw['n_hosts_improved'][str(g)]}/12)"
-                              for g in LADDER)
+                              for g in LADDERS[s])
             print(f"      {SITE_LABELS[s]:12s} {parts} -> "
                   f"{branches[s]}")
         print(f"      the H3/H5 outlier deltas at g=1.0: "
