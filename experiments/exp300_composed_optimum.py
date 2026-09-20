@@ -1141,9 +1141,18 @@ def main() -> dict:
         bases = rb["bases"]
         ai = _arm_inputs(bases)
         rows: list = []
-        if tag == 1:
-            plan = [(faces, g) for faces in FACES_BATTERY[:3]
-                    for g in ANCHOR_DOSES[faces[0]]]
+        # THE SUB-PASS GRANULARITY (the body disclosure: the
+        # pre-registered pass1 = 648 decodes + the suite exceeds the
+        # foreground cap; the honest fix = the per-cell sub-passes
+        # pass1..pass4, each within the cap; the gates, the arithmetic
+        # and the bars are UNCHANGED -- the granularity is plumbing):
+        #   pass1: the ctx anchors   (3 doses x 72 = 216)
+        #   pass2: the gj anchors    (216)
+        #   pass3: the apop anchors  (216)
+        #   pass4: the union ladder  (4 doses x 72 = 288)
+        if tag in (1, 2, 3):
+            faces = FACES_BATTERY[tag - 1]
+            plan = [(faces, g) for g in ANCHOR_DOSES[faces[0]]]
         else:
             plan = [(("ctx", "gj", "apop"), g) for g in UNION_LADDER]
         for faces, g in plan:
@@ -1196,10 +1205,11 @@ def main() -> dict:
                 "zero_reader_scan": zero_reader_scan}
 
     _MODE = os.environ.get("EXP300_MODE", "all")
-    assert _MODE in ("all", "pass1", "pass2", "merge"), \
+    assert _MODE in ("all", "pass1", "pass2", "pass3", "pass4",
+                     "merge"), \
         f"EXP300_MODE {_MODE!r} is not pre-named"
     _CK = {t: os.path.join(RES, f"exp300_pass{t}.cache.json")
-           for t in (1, 2)}
+           for t in (1, 2, 3, 4)}
 
     def _payload_sha(p):
         return hashlib.sha256(json.dumps(
@@ -1285,8 +1295,7 @@ def main() -> dict:
                 "the ported collective.py drifted mid-run"
             assert p["exp142_sha256"] == _sha(EXP142_FILE), \
                 "exp142 was modified -- the NOT-modified rule"
-        assert payloads[0]["arm_inputs_digest"] == \
-            payloads[1]["arm_inputs_digest"], \
+        assert len({p["arm_inputs_digest"] for p in payloads}) == 1, \
             "the arm inputs drifted across passes"
         rows = list(payloads[0]["rows"]) + list(payloads[1]["rows"])
         assert len(rows) == N_DECODES, \
@@ -1666,7 +1675,7 @@ def main() -> dict:
         return ro_after
 
     # ---- THE DISPATCH -----------------------------------------------------
-    if _MODE in ("pass1", "pass2"):
+    if _MODE in ("pass1", "pass2", "pass3", "pass4"):
         t = int(_MODE[-1])
         p = _run_pass(t, with_suite=(t == 1))
         with open(_CK[t], "w") as fh:
@@ -1677,14 +1686,15 @@ def main() -> dict:
         return {"mode": _MODE, "payload_sha256": _payload_sha(p)}
     if _MODE == "merge":
         payloads = []
-        for t in (1, 2):
+        for t in (1, 2, 3, 4):
             with open(_CK[t]) as fh:
                 payloads.append(json.load(fh))
         deposit = _assemble(payloads, run_form="checkpoint-split "
-                                             "pass1|pass2 + merge")
+                                             "pass1|pass2|pass3|pass4 "
+                                             "+ merge")
     else:
-        payloads = [_run_pass(1, with_suite=True),
-                    _run_pass(2, with_suite=False)]
+        payloads = [_run_pass(t, with_suite=(t == 1))
+                    for t in (1, 2, 3, 4)]
         deposit = _assemble(payloads, run_form="in-process all (936 "
                                                "decodes)")
 
