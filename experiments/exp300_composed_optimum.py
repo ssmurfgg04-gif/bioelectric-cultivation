@@ -349,7 +349,8 @@ def main() -> dict:
                            "exp296_channel_sweep.py",
                            "exp297_site_dose_ladders.py",
                            "exp298_combined_site_carrier.py",
-                           "exp299_subsaturation_faces.py")
+                           "exp299_subsaturation_faces.py",
+                           "exp300_composed_optimum.py")
 
     def _zero_reader_scan():
         hits = {}
@@ -1530,7 +1531,7 @@ def main() -> dict:
             "test_suite": suite,
             "rows": rows,
             "anchor_tallies": anchor_tallies,
-            "dose": G_SUB,
+            "dose_ladder_note": ("the anchors run at their deposited doses; the union at the composed ladder"),
             "per_arm_g2": per_arm_g2,
             "overlap_census": overlap_census,
             "gj_non_history_assert_ok": bool(gj_assert_ok),
