@@ -1339,14 +1339,17 @@ def main() -> dict:
         per_arm_g2 = {}
         overlap_census = {}
         for faces in FACES_BATTERY:
-            arows = [r for r in rows if r["faces"] == list(faces)]
-            assert len(arows) == 72, "the arm's 72 rows drifted"
-            reg_ok = sum(1 for r in arows if all(
+            arm_rows = [r for r in rows if r["faces"] == list(faces)]
+            n_exp = (4 * 72 if len(faces) == 3
+                     else 3 * 72 * len(ANCHOR_DOSES[faces[0]]))
+            assert len(arm_rows) == n_exp, \
+                f"the {'|'.join(faces)} arm's {n_exp} rows drifted"
+            reg_ok = sum(1 for r in arm_rows if all(
                 r["register"][k] for k in
                 ("present_ok", "init_ok", "replay_ok", "complement_ok",
                  "finite_ok")))
             stream_ok = sum(
-                1 for r in arows
+                1 for r in arm_rows
                 if r["walk_steps"] == int(
                     _a282[(r["host"], int(r["seed"]),
                            r["row_key"])]["walk_steps"])
@@ -1354,33 +1357,31 @@ def main() -> dict:
                     _a287[(r["host"], int(r["seed"]),
                            r["row_key"])]["n_commits"]))
             const_ok = all(
-                len(set(r["n_arm_writes"] for r in arows
+                len(set(r["n_arm_writes"] for r in arm_rows
                         if r["host"] == h and r["instance"] == i)) == 1
                 for h in hosts for i in DEEP_INSTANCES)
             per_arm_g2["|".join(faces)] = {
+                "n_rows": n_exp,
                 "n_register_ok": reg_ok, "n_stream_ok": stream_ok,
                 "site_writes_constant_across_seeds": const_ok,
-                "sigma_first_row": arows[0]["n_sigma_writes"],
-                "blend_first_row": arows[0]["n_blend_writes"],
-                "armed_first_row": arows[0]["n_arm_writes"]}
+                "sigma_first_row": arm_rows[0]["n_sigma_writes"],
+                "blend_first_row": arm_rows[0]["n_blend_writes"],
+                "armed_first_row": arm_rows[0]["n_arm_writes"]}
             if len(faces) == 3:
-                # the overlap census (pooled over the 72 rows): the
-                # cells where the sigma face and the blend face act on
-                # the SAME commit
-                both = sum(r["n_sigma_writes"] and r["n_blend_writes"]
-                           and 1 or 0 for r in arows)
                 overlap_census = {
                     "note": ("per-row the sigma and blend write counts; "
                              "the union's per-row armed count <= the "
                              "sum of the singles' (the overlap face)"),
                     "union_sigma_first_row":
-                        arows[0]["n_sigma_writes"],
+                        arm_rows[0]["n_sigma_writes"],
                     "union_blend_first_row":
-                        arows[0]["n_blend_writes"],
+                        arm_rows[0]["n_blend_writes"],
                     "union_armed_first_row":
-                        arows[0]["n_arm_writes"]}
+                        arm_rows[0]["n_arm_writes"]}
         gj_asserts = [r.get("gj_landed_assert") for r in rows
                       if "gj" in r["faces"]]
+        assert len(gj_asserts) == 3 * 3 * 72 + 4 * 72, \
+            "the gj landed-assert tally drifted"
         gj_assert_ok = all(a is not None
                            and a["conservation_residual"] < 1e-9
                            for a in gj_asserts)
@@ -1582,7 +1583,8 @@ def main() -> dict:
             and payloads[0]["rebuild_counts"]["n_288_chain_ok"] == 72
             and lock_ok and bool(suite["green"]))
         g2_pass = bool(
-            all(v["n_register_ok"] == 72 and v["n_stream_ok"] == 72
+            all(v["n_register_ok"] == v["n_rows"]
+                and v["n_stream_ok"] == v["n_rows"]
                 for v in per_arm_g2.values())
             and all(v["site_writes_constant_across_seeds"]
                     for v in per_arm_g2.values())
