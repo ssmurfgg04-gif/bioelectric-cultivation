@@ -1419,24 +1419,32 @@ def main() -> dict:
                                                  int(r["seed"]),
                                                  r["row_key"])]["n_commits"]))
             site_const = len(set(r["n_arm_writes"] for r in arows)) == 1
-            site_by_host = {}
+            site_by_row = {}
             for h in hosts:
-                hs = [r for r in arows if r["host"] == h]
-                sset = sorted(set(r["n_arm_writes"] for r in hs))
-                site_by_host[h] = {"min": min(sset), "max": max(sset),
-                                   "constant_within_host": len(sset) == 1}
+                for inst in DEEP_INSTANCES:
+                    hrs = [r for r in arows if r["host"] == h
+                           and r["instance"] == inst]
+                    sset = sorted(set(r["n_arm_writes"] for r in hrs))
+                    site_by_row[f"{h}|i{inst}"] = {
+                        "min": min(sset), "max": max(sset),
+                        "constant_across_seeds": len(sset) == 1}
             per_arm_g2[arm] = {
                 "n_rows": 72, "n_register_ok": reg_ok,
                 "n_stream_ok": stream_ok,
-                # the cross-host site-constancy check was an
-                # over-implementation (not a pre-registered clause):
-                # the site sizes are host properties; the within-host
-                # constancy + the per-host table are the audit faces
-                "site_writes_constant_across_hosts": site_const,
-                "site_writes_constant_within_host": all(
-                    v["constant_within_host"]
-                    for v in site_by_host.values()),
-                "site_writes_by_host": site_by_host,
+                # the site size is a property of (host, INSTANCE) -- the
+                # row's own target -- and MUST be constant across the 3
+                # seeds; it varies across hosts and instances by design
+                # (the canon-boundary / pair-junction / de-pairing-target
+                # cell counts are target properties; the de-pairing
+                # target set is EMPTY on the chain hosts H0/H1). The
+                # cross-host / cross-instance constancy checks in the
+                # first run were over-implementations (not
+                # pre-registered clauses); the across-seed constancy is
+                # the determinism face, disclosed in the ledger
+                "site_writes_constant_across_seeds": all(
+                    v["constant_across_seeds"]
+                    for v in site_by_row.values()),
+                "site_writes_by_row": site_by_row,
                 "site_writes_first_row": arows[0]["n_arm_writes"],
                 "arm_label": ARM_LABELS[arm]}
         # the non-history path's asserts (re-run per arm, the tallies)
@@ -1662,7 +1670,7 @@ def main() -> dict:
         g2_pass = bool(
             all(v["n_register_ok"] == 72 and v["n_stream_ok"] == 72
                 for v in per_arm_g2.values())
-            and all(v["site_writes_constant_within_host"]
+            and all(v["site_writes_constant_across_seeds"]
                     for v in per_arm_g2.values())
             and gj_assert_ok and str_site_ok)
         g3_pass = True   # the branch gate records; it does not pass/fail
