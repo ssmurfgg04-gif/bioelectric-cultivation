@@ -1604,3 +1604,6 @@ def main() -> dict:
                 os.remove(_CK[t])
         print("  the checkpoint caches removed after the merge")
     return deposit
+
+if __name__ == "__main__":
+    main()
