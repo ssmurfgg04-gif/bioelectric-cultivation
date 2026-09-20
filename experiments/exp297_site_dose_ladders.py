@@ -1340,8 +1340,12 @@ def main() -> dict:
                 for inst in DEEP_INSTANCES:
                     hrs = [r for r in srows if r["host"] == h
                            and r["instance"] == inst]
-                    assert len(hrs) == len(LADDERS[site]), \
+                    assert len(hrs) == len(LADDERS[site]) * len(SEEDS_RUN), \
                         f"{site} {h} i{inst}: the ladder drifted"
+                    # the site-write count constant across the seeds AND
+                    # the doses (the site is a (host, instance) property;
+                    # the dose must not move it -- exp289's hist_const
+                    # face, generalized to the ladder)
                     if len(set(r["n_arm_writes"] for r in hrs)) != 1:
                         site_const_ok = False
         gj_asserts = [r.get("gj_landed_assert") for r in all_rows
