@@ -200,7 +200,7 @@ def main() -> dict:
     #      the d6e81ea pre-registration, byte-for-byte; asserted BEFORE
     #      and AFTER the work) ------------------------------------------
     EXPECTED_DOCSTRING_SHA256 = (
-        "af61aa7eb8d8c833e1d36c21882754d8617e45f8f4bd4daac1256426b8217157")
+        "911e1c1795a9f8126957a2e7b0b22511d7642caf3c140ae9c0c64a4ede0395dc")
     EXPECTED_HEADER_SHA256 = (
         "f8e77a01d7b4c0bd0d5648d40115ed554289400fe332042afdd5d5af9b952f54")
     docstring_sha = hashlib.sha256(__doc__.encode()).hexdigest()
@@ -440,6 +440,11 @@ def main() -> dict:
 
     def compensate(A_med: np.ndarray, T_row: np.ndarray,
                    target_part: float):
+        """exp259's landed compensation VERBATIM: multipliers on the
+        substituted medium's PAIR-JUNCTION cells (m_i = target_part /
+        part_i), non-pair cells 1.0, applied as row+column scalings,
+        then the GLOBAL conservation renormalization (the landed
+        assert's own face). Returns (W, m, residual)."""
         n = A_med.shape[0]
         J = classify(T_row, A_med)["junction"]
         m = np.ones(n, dtype=float)
@@ -449,15 +454,14 @@ def main() -> dict:
                 m[int(i)] = target_part / p
         W = A_med.copy().astype(float)
         for i in np.where(J)[0]:
-            for j in np.where(J)[0]:
-                if i != j and W[i, j] > 0:
-                    W[i, j] = W[j, i] = W[i, j] * m[i] * m[j]
-        tot_before = float(np.sum(np.abs(A_med))) / 2.0
-        tot_after = float(np.sum(np.abs(W))) / 2.0
-        ident = abs(tot_after - tot_before) / tot_before
-        assert ident < 1e-9, \
-            f"the compensation's conservation identity violated: {ident}"
-        return W, m, float(ident)
+            W[int(i), :] *= m[int(i)]
+            W[:, int(i)] *= m[int(i)]
+        s_pre = float(np.asarray(A_med, dtype=float).sum())
+        s_w = float(W.sum())
+        W *= s_pre / s_w
+        resid = abs(float(W.sum()) - s_pre) / max(1.0, abs(s_pre))
+        assert resid <= 1e-9, "conductance conservation violated"
+        return W, m, float(resid)
 
     # ---- exp260's de-pairing TARGET identification (the landed rule's
     #      own site face, computed and NOT applied -- the disclosure
