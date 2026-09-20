@@ -1340,7 +1340,7 @@ def main() -> dict:
                 for inst in DEEP_INSTANCES:
                     hrs = [r for r in srows if r["host"] == h
                            and r["instance"] == inst]
-                    assert len(hrs) == len(LADDER), \
+                    assert len(hrs) == len(LADDERS[site]), \
                         f"{site} {h} i{inst}: the ladder drifted"
                     if len(set(r["n_arm_writes"] for r in hrs)) != 1:
                         site_const_ok = False
