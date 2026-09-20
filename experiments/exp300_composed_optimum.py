@@ -1586,7 +1586,8 @@ def main() -> dict:
 
         lock_ok = sum(p["lock_reads"] for p in payloads) == N_DECODES
         g1_pass = bool(
-            all(v["n_err_bit_exact"] == 72 and v["n_trace_sha_ok"] == 72
+            all(v["n_err_bit_exact"] == 72 * v["n_points"]
+                and v["n_trace_sha_ok"] == 72 * v["n_points"]
                 for v in anchor_tallies.values())
             and payloads[0]["rebuild_counts"]["n_sha_ok"] == 12
             and payloads[0]["rebuild_counts"]["n_288_chain_ok"] == 72
@@ -1634,7 +1635,8 @@ def main() -> dict:
               f"{'PASS' if g1_pass else 'FAIL'} (the deposited "
               f"single-face rows reproduced bit-exact per dose: "
               + ", ".join(f"{s} {anchor_tallies[s]['n_err_bit_exact']}"
-                          f"/72" for s in anchor_tallies)
+                          f"/{72 * anchor_tallies[s]['n_points']}"
+                          for s in anchor_tallies)
               + f"; the S* lock reads {p['lock_reads']}/{N_DECODES}; "
                 f"the test suite green: {bool(suite['green'])})")
         print(f"  G2 the forms: {'PASS' if g2_pass else 'FAIL'} "
@@ -1644,9 +1646,12 @@ def main() -> dict:
         print("  G3 the composed-optimum branch (the union's mean "
               "paired deltas vs exp256's dormant baseline):")
         for g in UNION_LADDER:
+            gain = gain_face[str(g)]["gain"]
+            gain_s = (f"{gain:+.4f}" if gain is not None else "n/a "
+                      "(the singles' doses exclude 0.75)")
             print(f"      g={g}: {md[g]:+.4f} mV "
                   f"({n_imp['UNION'][g]}/12 hosts) | the gain vs the "
-                  f"best single {gain_face[str(g)]['gain']:+.4f}")
+                  f"best single {gain_s}")
         print(f"      -> BRANCH: {branch}")
         print(f"      the H3/H5 union deltas: "
               + "; ".join(f"g={g} H3 {h3h5[str(g)]['H3']:+.3f} / "
