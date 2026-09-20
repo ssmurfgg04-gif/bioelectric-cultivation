@@ -492,8 +492,8 @@ def main() -> dict:
     #      c.rng.normal per commit for EVERY arm (exp264's stream
     #      discipline -- the scale never moves the stream position) ----
     def _execute_signed_traced(spec, adjacency, seed, op, budget,
-                               arm="ctx", g=G_PLATEAU, a_base=None,
-                               pbar=None, mark_mask=None):
+                               arm="ctx", g=1.0, a_base=None,
+                               pbar=None, mark_mask=None, g_arm=1.0):
         assert arm in ARMS_ORDER, f"the arm {arm!r} is not pre-named"
         n = adjacency.shape[0]
         gamma, mu = op["gamma"], op["mu"]
@@ -721,8 +721,8 @@ def main() -> dict:
 
     # ---- the state-carrying replica read (exp289's form VERBATIM) -----
     def _scoped_row_read_traced(spec, med, seed, fmax, budget,
-                                arm="ctx", g=G_PLATEAU, a_base=None,
-                                pbar=None, mark_mask=None):
+                                arm="ctx", g=1.0, a_base=None,
+                                pbar=None, mark_mask=None, g_arm=1.0):
         with warnings_as_errors():
             if fmax < SCOPED_THRESHOLD:
                 inner = (RTMasked(med)
@@ -1000,7 +1000,7 @@ def main() -> dict:
     #      decomposition carried for the pooled-R_max audit face) -------
     def _decode_arm_row(host, row_key, spec, med, seed, fmax, arm,
                         a_base, pbar, mark_mask, anchor282, anchor287,
-                        g=G_PLATEAU):
+                        g=1.0):
         _lock_read(host, row_key, seed)
         out = _scoped_row_read_traced(spec, med, seed, fmax, BUDGET,
                                       arm=arm, g=g, a_base=a_base,
