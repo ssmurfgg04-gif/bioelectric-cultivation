@@ -494,7 +494,8 @@ def main() -> dict:
     def _execute_signed_traced(spec, adjacency, seed, op, budget,
                                arm="ctx", g=1.0, a_base=None,
                                pbar=None, mark_mask=None, g_arm=1.0):
-        assert arm in ARMS_ORDER, f"the arm {arm!r} is not pre-named"
+        assert arm in ("gj", "str", "ca2", "apop", "ctx"), \
+            f"the arm {arm!r} is not pre-named"
         n = adjacency.shape[0]
         gamma, mu = op["gamma"], op["mu"]
         absA = np.abs(adjacency)
