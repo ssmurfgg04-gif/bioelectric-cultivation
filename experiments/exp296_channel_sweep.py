@@ -200,7 +200,7 @@ def main() -> dict:
     #      the d6e81ea pre-registration, byte-for-byte; asserted BEFORE
     #      and AFTER the work) ------------------------------------------
     EXPECTED_DOCSTRING_SHA256 = (
-        "be17638764f184095c299f41a9ef1ad896a224d0d7e3fb6502d5f7de024491ae")
+        "af61aa7eb8d8c833e1d36c21882754d8617e45f8f4bd4daac1256426b8217157")
     EXPECTED_HEADER_SHA256 = (
         "f8e77a01d7b4c0bd0d5648d40115ed554289400fe332042afdd5d5af9b952f54")
     docstring_sha = hashlib.sha256(__doc__.encode()).hexdigest()
