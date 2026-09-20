@@ -332,7 +332,8 @@ def main() -> dict:
                            "exp295_dose_curve_leak_repair.py",
                            "exp296_channel_sweep.py",
                            "exp297_site_dose_ladders.py",
-                           "exp298_combined_site_carrier.py")
+                           "exp298_combined_site_carrier.py",
+                           "exp299_subsaturation_faces.py")
 
     def _zero_reader_scan():
         hits = {}
