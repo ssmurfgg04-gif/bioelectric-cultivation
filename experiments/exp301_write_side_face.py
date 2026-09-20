@@ -1339,8 +1339,10 @@ def main() -> dict:
         # G2: the register + stream faces per arm
         per_arm_g2 = {}
         for arm_name, g in WRITE_BATTERY:
-            arows = [r for r in rows if r["arm_name"] == arm_name]
-            assert len(arows) == 72, f"the {arm_name} arm's rows drifted"
+            arows = [r for r in rows if r["arm_name"] == arm_name
+                     and (float(r["g"]) == g if arm_name == "union"
+                          else True)]
+            assert len(arows) == 72, f"the {arm_name} g={g} rows drifted"
             reg_ok = sum(1 for r in arows if all(
                 r["register"][k] for k in
                 ("present_ok", "init_ok", "replay_ok", "complement_ok",
@@ -1357,7 +1359,7 @@ def main() -> dict:
                 len(set(r["n_arm_writes"] for r in arows
                         if r["host"] == h and r["instance"] == i)) == 1
                 for h in hosts for i in DEEP_INSTANCES)
-            per_arm_g2[arm_name] = {
+            per_arm_g2[f"{arm_name}_g{g}"] = {
                 "n_register_ok": reg_ok, "n_stream_ok": stream_ok,
                 "site_writes_constant_across_seeds": const_ok}
 
