@@ -1211,8 +1211,7 @@ def main() -> dict:
         # ctx: exp289's deposited g=1.0 grid rows
         ctx_ctrl = {}
         for key, v in r289g.items():
-            h, s, rk = key.split("|")
-            ctx_ctrl[(h, int(s), rk)] = float(v["err"])
+            ctx_ctrl[key] = float(v["err"])
         assert len(ctx_ctrl) == 72, "the ctx control extract drifted"
         ctrl["ctx"] = ctx_ctrl
         provenance["ctx"] = ("exp289's deposited g=1.0 grid rows (the "
