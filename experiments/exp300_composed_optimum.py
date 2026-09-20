@@ -1637,7 +1637,8 @@ def main() -> dict:
               + ", ".join(f"{s} {anchor_tallies[s]['n_err_bit_exact']}"
                           f"/{72 * anchor_tallies[s]['n_points']}"
                           for s in anchor_tallies)
-              + f"; the S* lock reads {p['lock_reads']}/{N_DECODES}; "
+              + f"; the S* lock reads "
+                f"{sum(pp['lock_reads'] for pp in payloads)}/{N_DECODES}; "
                 f"the test suite green: {bool(suite['green'])})")
         print(f"  G2 the forms: {'PASS' if g2_pass else 'FAIL'} "
               f"(the register + stream faces 72/72 per arm; the site "
