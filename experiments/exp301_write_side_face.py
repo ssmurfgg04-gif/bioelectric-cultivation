@@ -356,7 +356,8 @@ def main() -> dict:
                            "exp297_site_dose_ladders.py",
                            "exp298_combined_site_carrier.py",
                            "exp299_subsaturation_faces.py",
-                           "exp300_composed_optimum.py")
+                           "exp300_composed_optimum.py",
+                           "exp301_write_side_face.py")
 
     def _zero_reader_scan():
         hits = {}
