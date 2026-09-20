@@ -1769,7 +1769,8 @@ def main() -> dict:
 
     def _iter_r289g(p1):
         for k, v in p1["r289g"].items():
-            yield tuple(k.split("|")), v
+            h, s, rk = k.split("|")
+            yield (h, int(s), rk), v
 
     # ---- the hard rules, re-asserted after the work ----------------------
     def _exit_checks():
