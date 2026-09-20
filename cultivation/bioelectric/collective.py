@@ -214,6 +214,17 @@ class BioElectricCollective:
         if prev is not None:
             self.phi_spec_canon = np.asarray(prev, dtype=float).copy()
         self.phi_spec = np.asarray(spec_map, dtype=float).copy()
+        # exp289 — THE HISTORY REGISTER (the port; additive, zero-knob at
+        # defaults): a per-cell register carrying the identity values as
+        # of the LAST commit write (the 8-channel state's history face).
+        # Initialized to the spec layer's own values — the history starts
+        # as the program's own target (the never-written cells' history
+        # IS the spec's install). NOTHING reads phi_history at defaults —
+        # the register is recorded, never consumed — so every legacy call
+        # site is bit-exact by construction (exp289's G1: exp256's
+        # deposited substituted errs bit-exact 72/72 with the register
+        # live).
+        self.phi_history = np.asarray(spec_map, dtype=float).copy()
 
     def set_state(self, V: np.ndarray) -> None:
         self.V = np.asarray(V, dtype=float).copy()
@@ -706,6 +717,16 @@ class BioElectricCollective:
                     theta_new = (1.0 - nb_w) * theta_new + nb_w * wound_center
                 self.theta[i] = theta_new
                 self.V[i] = theta_new
+                # exp289 — the history register populated AT EACH commit
+                # write (the port's write-site face, the traced replica's
+                # disclosed addition (f) analog: after the write, the
+                # register holds the committed value). Additive: the
+                # register is recorded, never consumed at defaults (the
+                # exp289 G1 bit-exact anchor is the proof); absent when
+                # no spec layer was ever written — the pre-spec legacy
+                # paths stay untouched.
+                if getattr(self, "phi_history", None) is not None:
+                    self.phi_history[i] = theta_new
                 src = i
 
         if direction == "forward":
