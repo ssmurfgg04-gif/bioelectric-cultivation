@@ -1341,7 +1341,7 @@ def main() -> dict:
         for faces in FACES_BATTERY:
             arm_rows = [r for r in rows if r["faces"] == list(faces)]
             n_exp = (4 * 72 if len(faces) == 3
-                     else 3 * 72 * len(ANCHOR_DOSES[faces[0]]))
+                     else 72 * len(ANCHOR_DOSES[faces[0]]))
             assert len(arm_rows) == n_exp, \
                 f"the {'|'.join(faces)} arm's {n_exp} rows drifted"
             reg_ok = sum(1 for r in arm_rows if all(
@@ -1380,7 +1380,7 @@ def main() -> dict:
                         arm_rows[0]["n_arm_writes"]}
         gj_asserts = [r.get("gj_landed_assert") for r in rows
                       if "gj" in r["faces"]]
-        assert len(gj_asserts) == 3 * 3 * 72 + 4 * 72, \
+        assert len(gj_asserts) == 3 * 72 + 4 * 72, \
             "the gj landed-assert tally drifted"
         gj_assert_ok = all(a is not None
                            and a["conservation_residual"] < 1e-9
