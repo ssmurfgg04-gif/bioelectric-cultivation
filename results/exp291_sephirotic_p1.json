@@ -1,0 +1,271 @@
+{
+  "exp": "exp291_sephirotic_p1",
+  "claim": "THE P1 SEPHIROTIC TEST (L267's (d); batch 47; zero new simulation): the record's own arithmetic (Zenodo 19042388's paper25_computation.py, run AS-IS, byte-sha recorded) reproduces locally, and the record's 8-mode spec is reconciled against exp257's 8-channel native schema \u2014 the honest 3/1/4 trichotomy vs the record's 7+1 in-silico scorecard, RECONCILED not equated.",
+  "read": "R1 the local reproduction (the deterministic face) + R2 the mapping reconciliation; the record's own code imported AS-IS, two in-process passes",
+  "provenance": {
+    "pre_registration_commit": "982cb81",
+    "docstring_sha256": "e370f73ce4a40d5cdcfd234fb51f77a8559745982d20ac288ce5995261940576",
+    "header_sha256": "f184cd2120ec0ce4097f47b8404e181d71e09a041c2c23c89903bc38153f8fea",
+    "deposits": {
+      "paper25_results.json": {
+        "sha256": "ea2d6963fd1b67d683309afebb25ffb95939b2d32a6f2e3c50451c9129950fea"
+      },
+      "paper25_computation.py": {
+        "sha256": "40bfaf2455e69f403826d2f854f9250b7c3a3d382771a5d63880984233af25c7"
+      },
+      "paper25.pdf": {
+        "sha256": "6caa86e29fb4d76f110e92c11d5921dc4c37da28460abf8182bdfbbf05031f34"
+      }
+    },
+    "record_code_bytes": 19367,
+    "ledger_citations": {
+      "exp257": "L235",
+      "exp258": "L236",
+      "exp259": "L237",
+      "exp260": "L238",
+      "exp261": "L239",
+      "exp263": "L241",
+      "exp264": "L242",
+      "exp256": "L234"
+    }
+  },
+  "g1_deposit_integrity": {
+    "deposits_exist": true,
+    "results_json_parses": true,
+    "fields_12_present": true,
+    "missing_fields": [],
+    "shas_recorded_before_and_after": true
+  },
+  "g2_local_reproduction": {
+    "run_mode": "imported AS-IS (importlib exec_module; the file byte-unchanged)",
+    "terminal_status": "completed-except-own-save (the record's own /workspace machine path absent here \u2014 the record's own artifact, pre-named, disclosed)",
+    "passes": 2,
+    "pass_determinism": {
+      "results_bit_identical": true,
+      "eigen_arrays_bit_identical": true,
+      "stdout_sha_identical": true,
+      "stdout_sha256": "4f404a5ff21e036a25c6e4500476c1963cee1d506bad5b9d4161e48daed09a14"
+    },
+    "checks": {
+      "lambda_6_exact_1.2": true,
+      "lambda_distance_exact_0": true,
+      "spatial_spectrum_3of3": true,
+      "internal_spectrum_8of8": true,
+      "indices_exact": true,
+      "graph_identity_exact": true
+    },
+    "max_abs_diff_spatial": 0.0,
+    "max_abs_diff_internal": 0.0,
+    "spec_tol": 1e-12,
+    "lambda_6_computed": 1.2,
+    "audit_all_deposit_fields_agree": {
+      "graph": true,
+      "lambda_6": true,
+      "lambda_distance": true,
+      "spatial_modes": true,
+      "internal_modes": true,
+      "spatial_indices": true,
+      "internal_indices": true,
+      "spatial_eigenvalues": true,
+      "internal_eigenvalues": true,
+      "channels_mapped": true,
+      "edges_verified": true,
+      "knockout_confirmed": true,
+      "knockout_partial": true,
+      "null_lambda_hits": true,
+      "null_both_hits": true,
+      "null_total": true,
+      "p_null": true,
+      "bio_mean_pathways": true,
+      "bio_std_pathways": true,
+      "p_count": true,
+      "z_count": true
+    },
+    "audit_note": "audit-only: the record's straight-line body runs its own seeded null (the record's seed 42) in any as-is exec; the stochastic face is NOT a reproduction target \u2014 the recorded p_null is the deposit's 0.00039 as-deposited per the pre-registration; the as-is exec's own null counts reproduced the deposit (3011/39/100000) bit-exact.",
+    "recorded_p_null_as_deposited": 0.00039
+  },
+  "g3_mapping_reconciliation": {
+    "schema": "exp257's native 8-channel state S (n, 8) \u2014 L235: ch0 vmem / ch1 theta ACTIVE (the legacy pair), ch2 gj / ch3 ctx / ch4 ca2 / ch5 sht / ch6 apop / ch7 ichan DORMANT",
+    "rows": [
+      {
+        "mode_position": 0,
+        "internal_index": 0,
+        "internal_eigenvalue": -3.3339140041568416e-16,
+        "docstring_name": "Vmem-bistability",
+        "record_channel": "Vmem bistability",
+        "record_edge": [
+          "Chesed",
+          "Gevurah"
+        ],
+        "record_knockout": "CONFIRMED",
+        "stack_channels": [
+          "ch0_vmem",
+          "ch1_theta"
+        ],
+        "stack_state": "CONFIRMED",
+        "ledger_citation": "L235 (exp257 SCHEMA-8-NATIVE: the legacy pair named ACTIVE ch0/ch1; the S2 zero-delta batteries are the pair's landed causal record)"
+      },
+      {
+        "mode_position": 1,
+        "internal_index": 1,
+        "internal_eigenvalue": 0.2914530680265409,
+        "docstring_name": "GJ-morphogenesis",
+        "record_channel": "Gap junctional morphogenesis",
+        "record_edge": [
+          "Yesod",
+          "Malkuth"
+        ],
+        "record_knockout": "CONFIRMED",
+        "stack_channels": [
+          "ch2_gj"
+        ],
+        "stack_state": "CONFIRMED",
+        "ledger_citation": "L235 (exp257: ch2 gj named) + L234 (exp256: the pair mechanism REAL WITHIN hosts, 10/12 hosts >= 0.75 within-host \u2014 the GJ/pair face's landed record)"
+      },
+      {
+        "mode_position": 2,
+        "internal_index": 2,
+        "internal_eigenvalue": 0.7492106694585209,
+        "docstring_name": "Ca2+",
+        "record_channel": "Ca\u00b2\u207a transient signaling",
+        "record_edge": [
+          "Netzach",
+          "Hod"
+        ],
+        "record_knockout": "CONFIRMED",
+        "stack_channels": [
+          "ch4_ca2"
+        ],
+        "stack_state": "PARTIAL",
+        "ledger_citation": "L239 (exp261 CA2-INERT: the port clean, the association 0.1738 << 0.5 \u2014 dynamics ported, the association below the bar)"
+      },
+      {
+        "mode_position": 3,
+        "internal_index": 4,
+        "internal_eigenvalue": 0.92638755352091,
+        "docstring_name": "Vmem-propagation",
+        "record_channel": "Vmem propagation through GJ networks",
+        "record_edge": [
+          "Tiferet",
+          "Yesod"
+        ],
+        "record_knockout": "CONFIRMED",
+        "stack_channels": [
+          "ch0_vmem",
+          "ch2_gj"
+        ],
+        "stack_state": "CONFIRMED",
+        "ledger_citation": "L235 (exp257 S2: the write-path propagation bit-exact across exp79 45/45 + exp32 15/15 + exp198 25/25 \u2014 the vmem-through-coupling joint)"
+      },
+      {
+        "mode_position": 4,
+        "internal_index": 5,
+        "internal_eigenvalue": 1.1826370308652203,
+        "docstring_name": "epigenetic-proliferation",
+        "record_channel": "Epigenetic control of proliferation",
+        "record_edge": [
+          "Da'at",
+          "Chokmah"
+        ],
+        "record_knockout": "CONFIRMED",
+        "stack_channels": [
+          "ch3_ctx"
+        ],
+        "stack_state": "INERT",
+        "ledger_citation": "L236 (exp258 CONTEXT-INERT \u2014 the ctx-form activation: schema-only, no dynamics)"
+      },
+      {
+        "mode_position": 5,
+        "internal_index": 7,
+        "internal_eigenvalue": 1.277679233729791,
+        "docstring_name": "ion-channel-expression",
+        "record_channel": "Ion channel expression (voltage-gated)",
+        "record_edge": [
+          "Chesed",
+          "Netzach"
+        ],
+        "record_knockout": "PARTIAL",
+        "stack_channels": [
+          "ch7_ichan"
+        ],
+        "stack_state": "INERT",
+        "ledger_citation": "L237 (exp259 COMPENSATION-INERT) + L238 (exp260 STRUCTURE-INERT) \u2014 the pair-form activations; the schema carrier ch7 ichan dormant (schema-only)"
+      },
+      {
+        "mode_position": 6,
+        "internal_index": 8,
+        "internal_eigenvalue": 1.4026087170686832,
+        "docstring_name": "5-HT",
+        "record_channel": "Serotonin transport (5-HT electrophoresis)",
+        "record_edge": [
+          "Hod",
+          "Malkuth"
+        ],
+        "record_knockout": "CONFIRMED",
+        "stack_channels": [
+          "ch5_sht"
+        ],
+        "stack_state": "INERT",
+        "ledger_citation": "L241 (exp263 SHT-INERT)"
+      },
+      {
+        "mode_position": 7,
+        "internal_index": 9,
+        "internal_eigenvalue": 1.5200237273303339,
+        "docstring_name": "apoptosis",
+        "record_channel": "Apoptosis as morphogenetic signal",
+        "record_edge": [
+          "Gevurah",
+          "Hod"
+        ],
+        "record_knockout": "CONFIRMED",
+        "stack_channels": [
+          "ch6_apop"
+        ],
+        "stack_state": "INERT",
+        "ledger_citation": "L242 (exp264 APOP-INERT with inversion)"
+      }
+    ],
+    "trichotomy": {
+      "CONFIRMED": 3,
+      "PARTIAL": 1,
+      "INERT": 4
+    },
+    "record_scorecard": {
+      "confirmed": 7,
+      "partial": 1,
+      "untested": 0
+    },
+    "scorecard_reconciliation": "RECONCILED, not equated: the record's 7 CONFIRMED + 1 PARTIAL is its IN-SILICO knockout test on its own model; the stack's 3 CONFIRMED / 1 PARTIAL / 4 INERT is the ledger's causal record (the landed activations L236/L237/L238/L239/L241/L242 + the schema's landed records L234/L235) \u2014 the two scorecards score different instruments, disclosed",
+    "totality": {
+      "stack_channels_covered_8of8": true,
+      "record_modes_carried_8of8": true,
+      "mapping_total_8of8": true,
+      "note": "a two-way set-cover, not a strict bijection: the record's mode 1 carries the stack's legacy PAIR ch0+ch1 and the propagation face is the ch0 x ch2 joint \u2014 disclosed"
+    },
+    "branch_rule": "P1-ALIGNED iff G2 passes AND the mapping is total (8/8); P1-DRIFTED otherwise"
+  },
+  "g4_discipline": {
+    "deterministic": true,
+    "two_in_process_passes_bit_identical": true,
+    "no_wall_clock_fields": true,
+    "core_not_imported": true,
+    "floor_discipline": "N/A \u2014 the core not imported, no stack state touched",
+    "docstring_header_pinned": "982cb81, asserted at entry AND exit"
+  },
+  "gates": {
+    "G1": "PASS",
+    "G2": "PASS",
+    "G3": "PASS",
+    "G4": "PASS"
+  },
+  "branch": "P1-ALIGNED",
+  "verdict": "P1-ALIGNED \u2014 the record's deterministic arithmetic reproduces locally (lambda_6 == 1.2 exact, the spectra 11/11 within 1e-12, the indices [3,6,10]/[0,1,2,4,5,7,8,9] exact, the graph identity exact) and the 8-mode mapping is total 8/8 against exp257's schema; the honest trichotomy 3 CONFIRMED / 1 PARTIAL / 4 INERT reconciles (not equates) the record's 7+1 in-silico scorecard against the ledger's causal record.",
+  "notes": [
+    "the record's terminal save targets its own machine path /workspace/mpfst_levin_channels/paper25_results.json (absent here) \u2014 the pre-named FileNotFoundError fires at the record's LAST statement, after the arithmetic; caught narrowly, the namespace completeness asserted",
+    "zero new simulation; the record's deposits READ-ONLY, byte-sha recorded before and after; the record's code 19,367 bytes, byte-unchanged",
+    "the floor discipline is N/A \u2014 the core not imported, no stack state touched (sys.modules audited)",
+    "the mapping is a two-way set-cover, not a strict bijection (the legacy pair shared, the propagation joint) \u2014 the pre-named totality holds 8/8 both ways, disclosed"
+  ],
+  "deposit_form": "single JSON, deterministic, no wall-clock fields"
+}
