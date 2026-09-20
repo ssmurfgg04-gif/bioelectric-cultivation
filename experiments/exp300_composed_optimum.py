@@ -1297,7 +1297,7 @@ def main() -> dict:
                 "exp142 was modified -- the NOT-modified rule"
         assert len({p["arm_inputs_digest"] for p in payloads}) == 1, \
             "the arm inputs drifted across passes"
-        rows = list(payloads[0]["rows"]) + list(payloads[1]["rows"])
+        rows = [r for p in payloads for r in p["rows"]]
         assert len(rows) == N_DECODES, \
             f"the assembled battery {len(rows)} != {N_DECODES}"
         suite = payloads[0]["test_suite"]
