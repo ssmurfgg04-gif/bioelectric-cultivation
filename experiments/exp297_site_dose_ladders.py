@@ -1315,7 +1315,7 @@ def main() -> dict:
         per_cell_g2 = {}
         site_const_ok = True
         for site in SITES:
-            for g in LADDER:
+            for g in LADDERS[site]:
                 grows = [r for r in all_rows
                          if r["arm"] == site and float(r["g"]) == g]
                 assert len(grows) == 72, \
