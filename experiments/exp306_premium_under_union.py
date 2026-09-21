@@ -1048,12 +1048,38 @@ def main() -> dict:
                 "max_multiplicity": int(max(mults))}
 
     def _regression_record(xs, tvals, tk):
-        rho = _spearman(xs, tvals)
         rk_resp = rankdata(np.asarray(xs, dtype=float))
+        # THE DEGENERATE-CONSTANT FACE (disclosed, never hidden): if the
+        # response has zero rank variance (all 12 hosts tied -- which is
+        # the DISSOLUTION LIMIT ITSELF: the committed pattern's host
+        # dependence is identically zero, the commit layer literally
+        # the target on every host), the correlation is mathematically
+        # undefined (0/0) and is recorded as exactly 0.0 under the
+        # pre-named dissolution semantics -- the least possible host
+        # dependence, strictly below the dissolved bar; the ties census
+        # carries the disclosure (n_distinct == 1)
+        if float(rk_resp.max()) == float(rk_resp.min()):
+            return {"quantity": "mean_cvt", "target": tk,
+                    "rho": 0.0, "rho_abs": 0.0,
+                    "degenerate_constant_response": True,
+                    "rho_note": ("the response (the fresh per-host "
+                                 "mean_cvt) is EXACTLY constant across "
+                                 "the 12 hosts -- the committed "
+                                 "pattern's host dependence is "
+                                 "identically zero; the Spearman rho "
+                                 "is undefined (0/0) and is recorded "
+                                 "as 0.0 under the pre-named "
+                                 "dissolution semantics"),
+                    "rank_R2_single": None, "rank_R2_all_ranks": None,
+                    "all_ranks_minus_rho2": None,
+                    "ties_carrier": _ties_census(xs),
+                    "ties_target": _ties_census(tvals)}
+        rho = _spearman(xs, tvals)
         r2_single = _r2([tvals], rk_resp)
         r2_all = _r2([rankdata(np.asarray(tvals, dtype=float))], rk_resp)
         return {"quantity": "mean_cvt", "target": tk,
                 "rho": rho, "rho_abs": abs(rho),
+                "degenerate_constant_response": False,
                 "rank_R2_single": r2_single,
                 "rank_R2_all_ranks": r2_all,
                 "all_ranks_minus_rho2": r2_all - rho * rho,
