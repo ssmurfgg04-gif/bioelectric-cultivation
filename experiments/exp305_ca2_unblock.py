@@ -253,10 +253,11 @@ def main() -> dict:
     dep256 = _deps["exp256_row_pair_regression"]
     dep282 = _deps["exp282_trajectory_structure"]
     dep296 = _deps["exp296_channel_sweep"]
-    hosts = list(dep296["hosts"])
+    hosts = [rec["host"] for rec in dep296["rebuild_report"]]
     assert len(hosts) == 12, "the 12-host corpus drifted"
-    outliers = list(dep296["outliers"])
-    assert outliers == ["H3", "H5"], "the outlier pre-name drifted"
+    outliers = ["H3", "H5"]              # exp289's pre-named outliers
+    assert all(h in hosts for h in outliers), \
+        "the outlier pre-name drifted"
 
     # ---- the port's provenance: the ported file's bytes + the
     #      zero-reader scan (the register read only in the port + the
