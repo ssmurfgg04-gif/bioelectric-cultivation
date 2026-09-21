@@ -1,0 +1,91 @@
+{
+  "mi_vs_noise": [
+    {
+      "age": 0.0,
+      "MI_bits": 1.5500144630994765
+    },
+    {
+      "age": 0.2,
+      "MI_bits": 1.4553222707790798
+    },
+    {
+      "age": 0.4,
+      "MI_bits": 1.4142800499583155
+    },
+    {
+      "age": 0.6,
+      "MI_bits": 1.1706246436433552
+    },
+    {
+      "age": 0.8,
+      "MI_bits": 0.7699655689551423
+    },
+    {
+      "age": 1.0,
+      "MI_bits": 0.4425567761020339
+    }
+  ],
+  "C_mi_high_when_healthy": 1.0,
+  "C_mi_decays_with_noise": 1.0,
+  "phi_family": {
+    "chain": 0.8300633175264651,
+    "er_p0.15": -1.27675647831893e-15,
+    "er_p0.3": 0.0,
+    "er_p0.5": -52.54227578992328,
+    "er_p0.8": -41.69888905960752,
+    "smallworld": 2.9795878027501104,
+    "alltoall_w0.1": 0.1710366195551417,
+    "two_modules": -5.329070518200751e-15
+  },
+  "phi_coupling_sweep": [
+    [
+      0.05,
+      0.0072497849625462255
+    ],
+    [
+      0.15,
+      0.06803166576541866
+    ],
+    [
+      0.3,
+      0.3223677681932986
+    ],
+    [
+      0.5,
+      5.658247098022789
+    ],
+    [
+      0.8,
+      -5.895672040559786
+    ],
+    [
+      1.2,
+      -211.46144810907597
+    ]
+  ],
+  "C_phi_peaks_intermediate": true,
+  "ctrnn_states": {
+    "rest": {
+      "phi": 0.0311439324079803,
+      "I_whole": 6.269704736086071
+    },
+    "coherent_drive": {
+      "phi": 0.018805927177544035,
+      "I_whole": 10.785974482448372
+    },
+    "incoherent_drive": {
+      "phi": 0.06470006237730619,
+      "I_whole": 6.97225088099933
+    }
+  },
+  "C_coherent_drive_raises_phi": false,
+  "ctrnn_note": "Linearized fixed-point Phi depends on activation magnitude, not coherence; time-resolved measures required. Honest negative.",
+  "celegans_motif_phi": {
+    "n_motifs": 25,
+    "mean": 0.12081599658363885,
+    "std": 0.042099046479924115,
+    "max": 0.2102197567790518,
+    "n_cells_in_gap_network": 271,
+    "gap_edges": 552
+  }
+}

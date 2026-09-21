@@ -1,0 +1,101 @@
+{
+ "exp": "exp85_plane_anchors (M37-A' on trial)",
+ "record_profile": {
+  "head": {
+   "n": 5,
+   "rate": 0.75
+  },
+  "tail": {
+   "n": 2,
+   "rate": 0.74
+  },
+  "trunk": {
+   "n": 28,
+   "rate": 0.812
+  }
+ },
+ "record_pool": 0.799,
+ "flat_z_scores": {
+  "head": -0.26,
+  "tail": -0.2,
+  "trunk": 0.13
+ },
+ "trunk_head_z": 0.32,
+ "biology_baseline": {
+  "head": 0.7,
+  "tail": 0.0,
+  "trunk": 0.0
+ },
+ "uniform_sim": {
+  "head": 1.0,
+  "tail": 0.833,
+  "trunk": 0.75
+ },
+ "uniform_pool": 0.79,
+ "per_plane_tolerances": {
+  "head": 0.48,
+  "tail": 0.708,
+  "trunk": 0.245
+ },
+ "anchors": {
+  "head": 0.167,
+  "tail": 0.74,
+  "trunk": 0.812
+ },
+ "anchor_sim": {},
+ "panel_e": {
+  "head_metrics": [
+   {
+    "seed": 1,
+    "regen_err": 4.8,
+    "head_likeness": 0.0,
+    "fired": "none"
+   },
+   {
+    "seed": 2,
+    "regen_err": 6.3,
+    "head_likeness": 0.0,
+    "fired": "err"
+   },
+   {
+    "seed": 3,
+    "regen_err": 6.1,
+    "head_likeness": 0.0,
+    "fired": "err"
+   },
+   {
+    "seed": 4,
+    "regen_err": 5.5,
+    "head_likeness": 0.0,
+    "fired": "none"
+   },
+   {
+    "seed": 5,
+    "regen_err": 6.2,
+    "head_likeness": 0.0,
+    "fired": "err"
+   }
+  ],
+  "err_profile_head": [
+   7.8,
+   6.4,
+   5.2
+  ],
+  "err_profile_trunk": [
+   1.0,
+   2.7,
+   2.5
+  ],
+  "dominant_fired": "err",
+  "direction_dependent": false
+ },
+ "disposition": "M37-A' REFUTED AS MIS-TARGETED \u2014 the record profile is flat (z 0.32) but the uniform coin still fails the direction gate because the sim's HEAD regen is fragile with the coin OFF (b_head=0.70 vs trunk 0.00, tail 0.00): the plane axis is REGEN-MECHANISM biology (dominant fired criterion 'err', target-intrinsic), not penetrance. The repair RE-REGISTERS to the regen layer (the head walk's identity sharpness); the gene layer CLOSES \u2014 the coin's rates are plane-flat and the pool matches at adequate n.",
+ "criteria": {
+  "UP_G1_record_profile_flat": true,
+  "UP_G2_uniform_profile_at_n": false,
+  "UP_G3_pool_holds": true,
+  "UP_G4_disposition_rule": true,
+  "UP_G5_baseline_deposited": true
+ },
+ "notes": "exp83's profile refutation ran on 3 seeds/plane (realized coin se ~0.23) \u2014 the head 1.0 / trunk 0.667 inversion was inside sampling noise. This trial adds the record's own power analysis: a profile the record cannot resolve at 2 sigma cannot refute a one-parameter coin, and per-plane anchors fitted to it would fit noise. The binding disposition rule was registered before the runs."
+}

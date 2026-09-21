@@ -1,0 +1,79 @@
+{
+ "exp": "exp39_levin_voltage",
+ "items": {
+  "V1_head_depolarized_vs_trunk": {
+   "published": "H,K-ATPase-mediated depolarization essential for anterior gene expression; depolarization drives head formation (Beane 2011, PMID 21276941)",
+   "model": {
+    "head_vmem_mV": -24.859522940576216,
+    "tail_vmem_mV": -50.25690149582484
+   },
+   "direction": "MATCH"
+  },
+  "V2_hyperpolarization_abnormal": {
+   "published": "H,K-ATPase RNAi hyperpolarizes -> shrunken heads, disproportional anatomy (Beane 2013, PMID 23250205)",
+   "model": {
+    "ion_channel_tail_abn_rate": 1.0,
+    "cutting_tail_abn_rate": 0.0
+   },
+   "direction": "MATCH"
+  },
+  "V3_posterior_depol_ectopic_head": {
+   "published": "GJ/neural modulation induces ectopic ANTERIOR blastemas at posterior wounds (Oviedo 2010, PMID 20026026)",
+   "model": {
+    "posterior_depol_head_likeness_tail": 0.9462486413762442,
+    "threshold": 0.7
+   },
+   "direction": "MATCH"
+  },
+  "V4_junction_block_graded": {
+   "published": "innexin smedinx-11 RNAi inhibits regeneration (mixed/graded outcomes); AP neoblast gradient (Oviedo 2007, PMID 17670787)",
+   "model": {
+    "innexin_tail_abn_rate": 0.6666666666666666,
+    "err_per_seed_mV": [
+     6.21,
+     7.0,
+     5.94
+    ],
+    "mechanism": "M25 blastema blind-guess under blockade"
+   },
+   "direction": "MATCH"
+  },
+  "V5_wound_depolarized": {
+   "published": "wounds depolarize relative to intact tissue (wound-current literature; implied by Beane 2011 wound-polarity manipulations, PMID 21276941)",
+   "model": {
+    "wound_face_vmem_mV": -38.02933652459853,
+    "intact_tail_vmem_mV": -50.25690149582484,
+    "settled_body_mean_mV": -43.63232637821335
+   },
+   "direction": "MATCH"
+  },
+  "V6_stochastic_identical_perturbation": {
+   "published": "stochastic regenerative phenotypes under identical bioelectric perturbation; bistable pattern memories (Pezzulo/Levin 2021, PMID 33550952)",
+   "model": {
+    "exp38_reanchor_q055_err_per_seed": [
+     16.511613247609013,
+     14.659963768027408,
+     2.810797813672374
+    ],
+    "exp12_bistability": "latch verified (exp12 B6)"
+   },
+   "direction": "MATCH"
+  }
+ },
+ "summary": {
+  "match": 6,
+  "mismatch": 0,
+  "not_extractable": 0
+ },
+ "verdict": "PASS",
+ "honest_scope": "Planarian absolute mV values are not published (dye ratios only); the comparison tests every published DIRECTION/ORDERING claim. The model's absolute scale is an exp1 calibration choice, not a fit to these papers.",
+ "sources": {
+  "V1": "PMID 21276941 (Beane 2011, Chem Biol)",
+  "V2": "PMID 23250205 (Beane 2013)",
+  "V3": "PMID 20026026 (Oviedo 2010)",
+  "V4": "PMID 17670787 (Oviedo 2007)",
+  "V5": "PMID 21276941 + wound-current literature",
+  "V6": "PMID 33550952 (Pezzulo & Levin 2021)"
+ },
+ "abstracts_fetched_via": "Europe PMC REST (free, no key; the z-ai search backend is quota-gated)"
+}

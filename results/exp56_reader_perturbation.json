@@ -1,0 +1,391 @@
+{
+ "exp": "exp56_reader_perturbation",
+ "arms": {
+  "sg_reader_on_head": {
+   "pred_abn_rate": 0.0,
+   "err_mean": 2.502438958184458,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 2.581888831266897,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "head_region_err": 5.005065222228207,
+     "head_region_hl": 1.0,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 2.4230676310255195,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "head_region_err": 4.670253656669966,
+     "head_region_hl": 1.0,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 2.502360412260958,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "head_region_err": 4.787584416849656,
+     "head_region_hl": 1.0,
+     "seed": 3
+    }
+   ]
+  },
+  "sg_reader_off_head": {
+   "pred_abn_rate": 1.0,
+   "err_mean": 11.34987914496404,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 10.322959140717197,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "head_region_err": 20.612112554813617,
+     "head_region_hl": 0.28535982758388106,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 11.621984715716128,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "head_region_err": 23.20498724558273,
+     "head_region_hl": 0.20577011122297176,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 12.104693578458793,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "head_region_err": 24.16834230194183,
+     "head_region_hl": 0.09844572965929833,
+     "seed": 3
+    }
+   ]
+  },
+  "sg_reader_on_tail": {
+   "pred_abn_rate": 0.6666666666666666,
+   "err_mean": 6.38259703606262,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 6.211978320446968,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 6.998431699509132,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 5.937381088231759,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 3
+    }
+   ]
+  },
+  "sg_reader_off_tail": {
+   "pred_abn_rate": 0.6666666666666666,
+   "err_mean": 6.383753910878227,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 6.213958740658152,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 6.997494043152483,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 5.939808948824044,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 3
+    }
+   ]
+  },
+  "sg_pattern_clamped_on": {
+   "pred_abn_rate": 0.0,
+   "err_mean": 2.482837029539605,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 2.605235050836357,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "head_region_err": 5.024958071295975,
+     "head_region_hl": 1.0,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 2.4359413677779362,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "head_region_err": 4.689591937653401,
+     "head_region_hl": 1.0,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 2.407334670004521,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "head_region_err": 4.6369417854869805,
+     "head_region_hl": 1.0,
+     "seed": 3
+    }
+   ]
+  },
+  "sg_pattern_clamped_off": {
+   "pred_abn_rate": 1.0,
+   "err_mean": 11.343981563648802,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 10.337724556063966,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "head_region_err": 20.62947893006629,
+     "head_region_hl": 0.2816880881746802,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 11.61158858999503,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "head_region_err": 23.18562031703934,
+     "head_region_hl": 0.2077155520122517,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 12.082631544887404,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "head_region_err": 24.130481314437237,
+     "head_region_hl": 0.10878921208673281,
+     "seed": 3
+    }
+   ]
+  },
+  "sg_fullcoupling_reader_off": {
+   "pred_abn_rate": 0.0,
+   "err_mean": 3.2349309433678997,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 3.3361658420658356,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 3.143569641070562,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 3.2250573469673025,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 3
+    }
+   ]
+  },
+  "sg_fullcoupling_reader_on": {
+   "pred_abn_rate": 0.0,
+   "err_mean": 3.0781011764607413,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 3.082758738904791,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 3.058633279160334,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 3.0929115113170997,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 3
+    }
+   ]
+  },
+  "sg_lookup_scrambled_head": {
+   "pred_abn_rate": 1.0,
+   "err_mean": 11.353968126455756,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 10.327836221392499,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "head_region_err": 20.62188270629687,
+     "head_region_hl": 0.28478394916078853,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 11.626607583846676,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "head_region_err": 23.21424850761584,
+     "head_region_hl": 0.20537228379270117,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 12.107460574128096,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "head_region_err": 24.17388568944947,
+     "head_region_hl": 0.09799695879427238,
+     "seed": 3
+    }
+   ]
+  },
+  "sg_lookup_scrambled_tail": {
+   "pred_abn_rate": 1.0,
+   "err_mean": 10.721624675466133,
+   "hl_tail_mean": 1.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 10.364687402283796,
+     "head_likeness_tail": 1.0,
+     "pred_abnormal": true,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 11.081351835276928,
+     "head_likeness_tail": 1.0,
+     "pred_abnormal": true,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 10.718834788837674,
+     "head_likeness_tail": 1.0,
+     "pred_abnormal": true,
+     "seed": 3
+    }
+   ]
+  },
+  "sg_carrier_corrupted_on": {
+   "pred_abn_rate": 1.0,
+   "err_mean": 17.696344816258623,
+   "hl_tail_mean": 0.6681306332231403,
+   "per_seed": [
+    {
+     "wt_pattern_error": 17.710283526156427,
+     "head_likeness_tail": 0.6742748290086539,
+     "pred_abnormal": true,
+     "head_region_err": 7.317900400973426,
+     "head_region_hl": 0.9110104664852575,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 17.674389570352613,
+     "head_likeness_tail": 0.6661327017503325,
+     "pred_abnormal": true,
+     "head_region_err": 7.161625111661459,
+     "head_region_hl": 0.9819391548022056,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 17.70436135226683,
+     "head_likeness_tail": 0.6639843689104341,
+     "pred_abnormal": true,
+     "head_region_err": 7.26020770677504,
+     "head_region_hl": 0.944062718712357,
+     "seed": 3
+    }
+   ]
+  },
+  "sg_carrier_corrupted_off": {
+   "pred_abn_rate": 1.0,
+   "err_mean": 20.895258855666892,
+   "hl_tail_mean": 0.6639666150421603,
+   "per_seed": [
+    {
+     "wt_pattern_error": 20.346527191655078,
+     "head_likeness_tail": 0.6702791848567194,
+     "pred_abnormal": true,
+     "head_region_err": 21.32278409048764,
+     "head_region_hl": 0.15080087580271073,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 21.030024934072056,
+     "head_likeness_tail": 0.6616163495185634,
+     "pred_abnormal": true,
+     "head_region_err": 23.87018021304667,
+     "head_region_hl": 0.06585537695914732,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 21.309224441273546,
+     "head_likeness_tail": 0.6600043107511977,
+     "pred_abnormal": true,
+     "head_region_err": 24.804920675537137,
+     "head_region_hl": 0.0,
+     "seed": 3
+    }
+   ]
+  }
+ },
+ "gates": {
+  "SG-G1": {
+   "verdict": "PASS",
+   "reader_on_abn": 0.0,
+   "reader_off_abn": 1.0,
+   "gate": "head plane: reader ON restores (abn <= 0.2), OFF does not (>= 0.8)"
+  },
+  "SG-G1t": {
+   "verdict": "PASS",
+   "reader_on_tail_abn": 0.6666666666666666,
+   "reader_off_tail_abn": 0.6666666666666666,
+   "gate": "tail plane: reader inert BY DESIGN (posterior immunity, delta <= 0.15)"
+  },
+  "SG-G1c": {
+   "verdict": "PASS",
+   "clamped_on_abn": 0.0,
+   "clamped_off_abn": 1.0,
+   "delta": 1.0,
+   "gate": "clamped-carrier delta >= 0.5 with ON <= 0.2"
+  },
+  "SG-G2": {
+   "verdict": "PASS",
+   "fullcoupling_off_abn": 0.0,
+   "fullcoupling_on_abn": 0.0,
+   "gate": "full coupling restores with reader OFF (<= 0.2)"
+  },
+  "SG-G3": {
+   "verdict": "PASS",
+   "scrambled_head_abn": 1.0,
+   "scrambled_tail_hl": 1.0,
+   "reader_off_tail_hl": 0.0,
+   "gate": "scrambled lookup: head NOT restored (>= 0.8) AND tail becomes head-like (>= 0.5) \u2014 the mirror form"
+  },
+  "SG-G4": {
+   "verdict": "PASS",
+   "amended_form": "SG-G4' (form-restoration; err bar released)",
+   "corrupted_on_region_err": 7.246577739803308,
+   "corrupted_on_region_hl": 0.94567077999994,
+   "corrupted_off_region_err": 23.33262832635715,
+   "carrier_assistance_offset_mv": 4.744138781618849,
+   "gate": "destroyed carrier + reader ON: head FORM restored (region head-likeness >= 0.85, err delta >= 5.0); the residual precision offset recorded as the carrier-assistance term"
+  }
+ },
+ "summary": "6/6 gates PASS"
+}

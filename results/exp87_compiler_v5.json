@@ -1,0 +1,51 @@
+{
+ "exp": "exp87_compiler_v5 (the reader connected)",
+ "instrument_findings": {
+  "phi_spec_absent_in_v4_verify": true,
+  "blend_residual_wrong_for_novel_zones": true,
+  "operating_point_unspecified": true,
+  "generator_zone_plane_overlap": false
+ },
+ "v4_reproduction": "0/6",
+ "v5_in_domain": "6/6",
+ "domain_rule": {
+  "gated_read_fails": "8/8",
+  "latch_verifies": "8/8"
+ },
+ "multi_region": {
+  "latch": "10/10",
+  "plain_domain_split": "10/10"
+ },
+ "graph_panel": [
+  {
+   "z0": 0.61,
+   "z1": 0.57
+  },
+  {
+   "z0": 0.63,
+   "z1": 0.7,
+   "z2": 0.65
+  },
+  {
+   "z0": 0.61,
+   "z1": 0.56
+  },
+  {
+   "z0": 0.73,
+   "z1": 7.01
+  },
+  {
+   "z0": 0.5,
+   "z1": 9.71
+  }
+ ],
+ "stability": "4/4",
+ "criteria": {
+  "CV_G1_reader_connected": true,
+  "CV_G2_domain_rule": true,
+  "CV_G3_multi_region": true,
+  "CV_G4_graph_substrate": true,
+  "CV_G5_stability": true
+ },
+ "notes": "Compiler v5 = R1 memory write (write_spec_layer) + the exp79 reader weight (w=1.0) with the M33 domain gate + the star operating point as an emitted precondition (R7') + the domain-to-substrate rule (R7: below-line zones require the latch). The exp81 'write-only compile' was an instrument gap: no spec layer, corpus blend weight, unspecified operating point, and generator specs whose zones did not overlap the trigger's plane."
+}

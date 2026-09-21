@@ -1,0 +1,273 @@
+{
+ "exp": "exp73_active_renormalization (the star-search step 2)",
+ "static_anchor": {
+  "torus|fixed": {
+   "err": 8.47,
+   "pass": false
+  },
+  "torus|bfs": {
+   "err": 8.2,
+   "pass": false
+  },
+  "random3|fixed": {
+   "err": 11.19,
+   "pass": false
+  },
+  "random3|bfs": {
+   "err": 7.72,
+   "pass": false
+  },
+  "scale_free|fixed": {
+   "err": 11.92,
+   "pass": false
+  },
+  "scale_free|bfs": {
+   "err": 11.44,
+   "pass": false
+  },
+  "path|fixed": {
+   "err": 1.77,
+   "pass": true
+  },
+  "grid2d|fixed": {
+   "err": 5.69,
+   "pass": true
+  },
+  "random6|fixed": {
+   "err": 3.82,
+   "pass": true
+  },
+  "small_world|fixed": {
+   "err": 4.57,
+   "pass": true
+  }
+ },
+ "renorm": {
+  "torus|fixed": {
+   "matched": {
+    "verdict_err": 1.96,
+    "verdict_pass": true,
+    "hold_err": 1.92,
+    "hold_pass": true,
+    "b2v": 0.01,
+    "first_pass_round": 2,
+    "accepted": 2566,
+    "err_trace_tail": [
+     1.88,
+     1.874,
+     1.869,
+     1.869,
+     1.896
+    ]
+   },
+   "reversed": {
+    "verdict_err": 1.84,
+    "verdict_pass": true,
+    "hold_err": 1.84,
+    "hold_pass": true,
+    "b2v": 0.01,
+    "first_pass_round": 5,
+    "accepted": 2841,
+    "err_trace_tail": [
+     1.822,
+     1.815,
+     1.895,
+     1.859,
+     1.838
+    ]
+   }
+  },
+  "torus|bfs": {
+   "matched": {
+    "verdict_err": 3.36,
+    "verdict_pass": true,
+    "hold_err": 3.33,
+    "hold_pass": true,
+    "b2v": 0.03,
+    "first_pass_round": 3,
+    "accepted": 2797,
+    "err_trace_tail": [
+     3.418,
+     3.412,
+     3.392,
+     3.355,
+     3.418
+    ]
+   },
+   "reversed": {
+    "verdict_err": 3.34,
+    "verdict_pass": true,
+    "hold_err": 3.31,
+    "hold_pass": true,
+    "b2v": 0.03,
+    "first_pass_round": 17,
+    "accepted": 3226,
+    "err_trace_tail": [
+     3.329,
+     3.315,
+     3.251,
+     3.361,
+     3.334
+    ]
+   }
+  },
+  "random3|fixed": {
+   "matched": {
+    "verdict_err": 3.99,
+    "verdict_pass": true,
+    "hold_err": 3.96,
+    "hold_pass": true,
+    "b2v": 0.0467,
+    "first_pass_round": 9,
+    "accepted": 2811,
+    "err_trace_tail": [
+     4.012,
+     4.032,
+     3.977,
+     3.962,
+     4.004
+    ]
+   },
+   "reversed": {
+    "verdict_err": 3.33,
+    "verdict_pass": true,
+    "hold_err": 3.33,
+    "hold_pass": true,
+    "b2v": 0.0333,
+    "first_pass_round": 4,
+    "accepted": 2429,
+    "err_trace_tail": [
+     3.015,
+     2.993,
+     2.999,
+     3.31,
+     3.319
+    ]
+   }
+  },
+  "random3|bfs": {
+   "matched": {
+    "verdict_err": 3.33,
+    "verdict_pass": true,
+    "hold_err": 3.31,
+    "hold_pass": true,
+    "b2v": 0.0333,
+    "first_pass_round": 2,
+    "accepted": 2319,
+    "err_trace_tail": [
+     2.49,
+     2.627,
+     3.267,
+     3.257,
+     3.385
+    ]
+   },
+   "reversed": {
+    "verdict_err": 1.43,
+    "verdict_pass": true,
+    "hold_err": 1.41,
+    "hold_pass": true,
+    "b2v": 0.0067,
+    "first_pass_round": 3,
+    "accepted": 2989,
+    "err_trace_tail": [
+     1.461,
+     1.466,
+     1.448,
+     1.499,
+     1.457
+    ]
+   }
+  },
+  "scale_free|fixed": {
+   "matched": {
+    "verdict_err": 10.58,
+    "verdict_pass": false,
+    "hold_err": 10.54,
+    "hold_pass": false,
+    "b2v": 0.3756,
+    "first_pass_round": null,
+    "accepted": 3860,
+    "err_trace_tail": [
+     10.759,
+     10.703,
+     10.662,
+     10.49,
+     10.421
+    ]
+   },
+   "reversed": {
+    "verdict_err": 10.2,
+    "verdict_pass": false,
+    "hold_err": 10.17,
+    "hold_pass": false,
+    "b2v": 0.4467,
+    "first_pass_round": null,
+    "accepted": 3818,
+    "err_trace_tail": [
+     10.646,
+     10.251,
+     10.46,
+     9.991,
+     9.888
+    ]
+   }
+  },
+  "scale_free|bfs": {
+   "matched": {
+    "verdict_err": 9.32,
+    "verdict_pass": false,
+    "hold_err": 9.35,
+    "hold_pass": false,
+    "b2v": 0.4873,
+    "first_pass_round": null,
+    "accepted": 3682,
+    "err_trace_tail": [
+     9.003,
+     9.302,
+     9.368,
+     9.426,
+     9.014
+    ]
+   },
+   "reversed": {
+    "verdict_err": 9.6,
+    "verdict_pass": false,
+    "hold_err": 9.63,
+    "hold_pass": false,
+    "b2v": 0.4873,
+    "first_pass_round": null,
+    "accepted": 3890,
+    "err_trace_tail": [
+     9.935,
+     9.849,
+     9.834,
+     9.82,
+     9.741
+    ]
+   }
+  }
+ },
+ "shatter_control": {
+  "components": 2,
+  "verdict_err": 10.71,
+  "verdict_pass": false
+ },
+ "criteria": {
+  "SR_G1_static_anchor": true,
+  "SR_G2_boundary_moves": false,
+  "SR_G3_target_blind_specific": false,
+  "SR_G4_state_not_drive": false,
+  "SR_G5_compiler_metric_agrees": false,
+  "SR_G6_price_deposited": true
+ },
+ "price": {
+  "torus|fixed": 2,
+  "torus|bfs": 3,
+  "random3|fixed": 9,
+  "random3|bfs": 2,
+  "scale_free|fixed": null,
+  "scale_free|bfs": null
+ },
+ "notes": "The star-search step 2 (L49's registered candidate): the substrate is a PLASTIC opponent. Conflict-driven, target-blind, degree- and connectivity-preserving rewiring during the write (transjunctional-voltage-remodeling semantics). SR-G2 is the boundary question at the higher order: the fail set of exp68 made writable by the substrate's own renormalization. SR-G5 separates the two star paths: the substrate moved (b2v admits it) vs the metric must move (M41 candidate)."
+}

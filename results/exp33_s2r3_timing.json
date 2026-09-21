@@ -1,0 +1,429 @@
+{
+ "exp": "exp33_s2r3_timing",
+ "source": "PlanformDB 2.5.0 ExperimentDrug timing (no concentrations)",
+ "timing_semantics_assumption": "StartTime = hours pre-treatment before the cut; EndTime = hours post-cut washout; (0,0) = unspecified \u2014 recorded BEFORE the outcome query",
+ "arms": {
+  "washout_before_regen": [
+   {
+    "exp": 322,
+    "drug": "Heptanol",
+    "start": 2.0,
+    "end": 0.0,
+    "abnormal": 0.43,
+    "plane": "trunk",
+    "group": "gj_block"
+   },
+   {
+    "exp": 325,
+    "drug": "Heptanol",
+    "start": 2.0,
+    "end": 0.0,
+    "abnormal": 0.17,
+    "plane": "head",
+    "group": "gj_block"
+   },
+   {
+    "exp": 326,
+    "drug": "Heptanol",
+    "start": 2.0,
+    "end": 0.0,
+    "abnormal": 0.52,
+    "plane": "head",
+    "group": "gj_block"
+   },
+   {
+    "exp": 327,
+    "drug": "Heptanol",
+    "start": 2.0,
+    "end": 0.0,
+    "abnormal": 0.68,
+    "plane": "trunk",
+    "group": "gj_block"
+   },
+   {
+    "exp": 328,
+    "drug": "Heptanol",
+    "start": 2.0,
+    "end": 0.0,
+    "abnormal": 0.19,
+    "plane": "tail",
+    "group": "gj_block"
+   },
+   {
+    "exp": 324,
+    "drug": "Hexanol",
+    "start": 2.0,
+    "end": 0.0,
+    "abnormal": 0.2,
+    "plane": "trunk",
+    "group": "gj_block"
+   },
+   {
+    "exp": 435,
+    "drug": "Octanol",
+    "start": 0.13,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 436,
+    "drug": "Octanol",
+    "start": 0.25,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 437,
+    "drug": "Octanol",
+    "start": 0.5,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 438,
+    "drug": "Octanol",
+    "start": 1.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 439,
+    "drug": "Octanol",
+    "start": 2.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 440,
+    "drug": "Octanol",
+    "start": 3.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   }
+  ],
+  "regen_covered": [
+   {
+    "exp": 329,
+    "drug": "Heptanol",
+    "start": 0.0,
+    "end": 2.0,
+    "abnormal": 0.0,
+    "plane": "tail",
+    "group": "gj_block"
+   }
+  ],
+  "timing_unspecified": [
+   {
+    "exp": 415,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.05,
+    "plane": "head",
+    "group": "gj_block"
+   },
+   {
+    "exp": 416,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.28,
+    "plane": "head",
+    "group": "gj_block"
+   },
+   {
+    "exp": 417,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.5,
+    "plane": "trunk",
+    "group": "gj_block"
+   },
+   {
+    "exp": 418,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 1.0,
+    "plane": "tail",
+    "group": "gj_block"
+   },
+   {
+    "exp": 419,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.0,
+    "plane": "tail",
+    "group": "gj_block"
+   },
+   {
+    "exp": 420,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.04,
+    "plane": "head",
+    "group": "gj_block"
+   },
+   {
+    "exp": 421,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.0,
+    "plane": "head_tail",
+    "group": "gj_block"
+   },
+   {
+    "exp": 422,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.0,
+    "plane": "head",
+    "group": "gj_block"
+   },
+   {
+    "exp": 423,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.05,
+    "plane": "head_tail",
+    "group": "gj_block"
+   },
+   {
+    "exp": 424,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.0,
+    "plane": "lateral",
+    "group": "gj_block"
+   },
+   {
+    "exp": 425,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.0,
+    "plane": "lateral",
+    "group": "gj_block"
+   },
+   {
+    "exp": 426,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.35,
+    "plane": "lateral",
+    "group": "gj_block"
+   },
+   {
+    "exp": 427,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.34,
+    "plane": "lateral",
+    "group": "gj_block"
+   },
+   {
+    "exp": 428,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.25,
+    "plane": "lateral",
+    "group": "gj_block"
+   },
+   {
+    "exp": 429,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.55,
+    "plane": "lateral",
+    "group": "gj_block"
+   },
+   {
+    "exp": 430,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.0,
+    "plane": "trunk",
+    "group": "gj_block"
+   },
+   {
+    "exp": 431,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.58,
+    "plane": "trunk",
+    "group": "gj_block"
+   },
+   {
+    "exp": 432,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 1.0,
+    "plane": "lateral",
+    "group": "gj_block"
+   },
+   {
+    "exp": 433,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 0.0,
+    "plane": "lateral",
+    "group": "gj_block"
+   },
+   {
+    "exp": 434,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 441,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 442,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 443,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 444,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 452,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 1.0,
+    "plane": "tail",
+    "group": "gj_block"
+   },
+   {
+    "exp": 453,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 1.0,
+    "plane": "tail",
+    "group": "gj_block"
+   },
+   {
+    "exp": 455,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": 1.0,
+    "plane": "tail",
+    "group": "gj_block"
+   },
+   {
+    "exp": 1063,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 1068,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 1069,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 1070,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   },
+   {
+    "exp": 1071,
+    "drug": "Octanol",
+    "start": 0.0,
+    "end": 0.0,
+    "abnormal": null,
+    "plane": null,
+    "group": null
+   }
+  ],
+  "other": []
+ },
+ "washout_mean": 0.36500000000000005,
+ "regen_covered_mean": 0.0,
+ "criteria": {
+  "S2R3a_1_washout_recovers": false,
+  "S2R3a_2_sim_counterpart": true,
+  "S2R3a_3_power_flag": "exploratory, n=13 usable rows",
+  "S2R3b_concentration_axis": "NOT CHECKABLE against PlanformDB 2.5.0 (no dose column) \u2014 literature task; prediction stands untested, not falsified"
+ },
+ "prediction_rule": "unchanged from exp27: abnormal iff pattern_error >= 6.0 mV OR head_likeness(tail) >= 0.7 (sim side); recorded abnormality is Num-weighted 1 - freq(WT) (exp21 metric)",
+ "notes": "The M25 mechanism predicts restoration timing matters: a pulse that ends at the cut leaves junctions readable during regeneration (S2C control logic, per experiment). Directional test only \u2014 n is small; a direction miss is a real refutation signal for the restoration mechanism."
+}

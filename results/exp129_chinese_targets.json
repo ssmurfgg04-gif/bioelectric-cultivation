@@ -1,0 +1,651 @@
+{
+ "exp": "exp129_chinese_targets",
+ "registration": "research/chinese_targets_gates.md (Task 5-c pre-registration) finalized from experiments/scaffold_chinese_targets.py by Task 5-f; exp number 129 assigned here",
+ "execution_order_note": "A-G1 read FIRST (the registered blocking rule); the minutes-scale T2-G2 timing anchor scheduled LAST \u2014 a wall-clock scheduling choice, not a gate-semantic one",
+ "pin_provenance": {
+  "t1_metformin": "PMC12026922 (Genes 16(4):365, PMID 40282325) Results section 3.1 TEXT (Europe PMC full-text XML; the values are in the text, not only Fig. 2)",
+  "t1_ijms_10mM": "PMC12345652 (IJMS 26(15):7092, PMID 40806224) section 2.1 TEXT (Europe PMC full-text XML)",
+  "t2_usp7": "UNPINNED \u2014 no numeric penetrance in the machine-readable record (main text, figure captions, and the supplementary bundle all searched); the finalization protocol's web-search allowance was not needed \u2014 0 of 4 queries spent",
+  "t3_opa1": "UNPINNED \u2014 no numeric regeneration percentages in the machine-readable record (main text, figure captions, and the supplementary bundle incl. Supplementary Data 1 all searched); the finalization protocol's web-search allowance was not needed \u2014 0 of 4 queries spent",
+  "web_search_budget": "0 of 4 searches used \u2014 the verification channel was Europe PMC full-text XML + supplementary-file pulls for all four PMCIDs (main text, figure captions, supplementary data tables); no numeric T2/T3 record exists to retrieve"
+ },
+ "provenance_corrections": {
+  "t2_species": "Dugesia constrictiva (NOT D. japonica as the 2-b deposit / gates doc recorded)",
+  "t3_species": "Schmidtea mediterranea, asexual CIW4 (NOT D. japonica as the 2-b deposit / gates doc recorded)",
+  "impact": "no gate arithmetic changes \u2014 the gates bind rows to arms by pathway/family, never by species; the gates doc's 'all three targets are DJ rows' circularity note (\u00a74 risk 6) is factually wrong for T2/T3; the DJ baseline remains the only deposited reference bar but is cross-species for T2/T3 \u2014 weaker than registered, owned"
+ },
+ "anchor_first_pass_note": "AUDIT TRAIL (Task 5-f finalization): (1) an earlier pass of this finalization applied a stricter-than-registered DB-pin check (3-dp exact on the 2-dp-quoted ctrl rates 0.38/0.49) and returned the registered THIRD outcome \u2014 the diagnosis found build_rows re-derives the pins exactly as exp118's own deposited run did (true values 0.377 / 0.4949999... whose ledger quotings ARE 0.38 / 0.49; exp118's own G1 judged these identical deterministic values at its registered tol 0.01 and PASSED) \u2014 the miss was the check's rounding convention, not record-side drift; the check was aligned to the pins' own quoted precision. (2) The workspace also held an uncommitted draft finalization of this same registration (no worklog entry); this run audited it against the scaffold + gates document, applied four corrections (the T1 band labeling now matches the registered T1_COARSENING exactly \u2014 no value changes, every affected f is 0.0 under both labelings; a safe edge guard in T2-G2; the blocking rule scoped to REFUTE as registered, with the THIRD outcome carrying its diagnosis without blocking; provenance restated from this run's own Europe PMC verification incl. the supplementary bundles) \u2014 and re-ran everything from scratch. (3) No mapping constant, class rule, gate branch, or pin value was touched; the comparison of this run's values against the audited draft's deposit is recorded in the worklog.",
+ "preflight": {
+  "exp_num": 129,
+  "n_db_total": 1716,
+  "coverage_mapped_fraction": 0.619,
+  "db_pins": {
+   "l73_block": {
+    "n": 17,
+    "mean": 0.1888235294117647
+   },
+   "l74_modulator": {
+    "n": 11,
+    "mean": 0.10545454545454545
+   },
+   "ctrl_rate": {
+    "tail": 0.49499999999999994,
+    "trunk": 0.377,
+    "head": 0.0
+   },
+   "n_c4": 21,
+   "pinned_expectations": {
+    "l73_block": {
+     "n": 17,
+     "mean": 0.189
+    },
+    "l74_modulator": {
+     "n": 11,
+     "mean": 0.105
+    },
+    "ctrl_rate": {
+     "head": 0.0,
+     "trunk": 0.38,
+     "tail": 0.49
+    },
+    "n_c4": 21
+   }
+  },
+  "dj_slice_baseline": {
+   "n_dj_total": 383,
+   "n_dj_scored": 182,
+   "dj_decoded_mae": null,
+   "n_dj_decoded": 0,
+   "dj_decode_accuracy": null,
+   "dj_groups": {
+    "ion_channel": 70,
+    "morphogen": 19,
+    "cutting": 40,
+    "other_rnai": 27,
+    "gj_block": 21,
+    "innexin": 5
+   }
+  },
+  "anchor_reference": {
+   "decoded_mae": 0.29,
+   "decoded_n": 884,
+   "raw_mae": 0.3705,
+   "decode_accuracy": 0.6928,
+   "source": "results/exp118_corpus_full.json (L99; the L74 G5 re-deposit \u2014 exp91/92's own JSONs are lost)"
+  },
+  "record_pins_pinned": false,
+  "record_pins_detail": {
+   "t1_metformin": "PINNED (PMC12026922 text + PMC12345652 for the 10 mM band)",
+   "t2_usp7": "UNPINNED \u2014 no numeric penetrance in the machine-readable record (main text, figure captions, and the supplementary bundle all searched); the finalization protocol's web-search allowance was not needed \u2014 0 of 4 queries spent",
+   "t3_opa1": "UNPINNED \u2014 no numeric regeneration percentages in the machine-readable record (main text, figure captions, and the supplementary bundle incl. Supplementary Data 1 all searched); the finalization protocol's web-search allowance was not needed \u2014 0 of 4 queries spent"
+  },
+  "arm_anchors_to_verify": {
+   "('wnt', 'tail', 0.5, 0.25)": 0.0,
+   "('wnt', 'tail', 0.5, 1.0)": 1.0,
+   "('wnt', 'trunk', 0.5, 0.25)": 0.0,
+   "('wnt', 'trunk', 0.5, 1.0)": 1.0,
+   "('generic', 'trunk', 0.5, None)": 0.667,
+   "('cutting', 'trunk', 0.5, None)": 0.0
+  }
+ },
+ "gates": {
+  "A_G1_anchor": {
+   "gate": "A-G1 (the L74/exp118 reference reproduces bit-exactly)",
+   "outcome": "CONFIRM",
+   "decoded_mae": 0.29,
+   "decoded_n": 884,
+   "raw_mae": 0.3705,
+   "raw_n": 905,
+   "decode_accuracy": 0.6928,
+   "rederived_db_pin_values": {
+    "l73_block": {
+     "n": 17,
+     "mean": 0.1888235294117647
+    },
+    "l74_modulator": {
+     "n": 11,
+     "mean": 0.10545454545454545
+    },
+    "ctrl_rate": {
+     "tail": 0.49499999999999994,
+     "trunk": 0.377,
+     "head": 0.0
+    },
+    "n_c4": 21,
+    "convention_note": "counts exact; means exact to each pin's own quoted precision (L73/L74 3 dp, ctrl rates 2 dp \u2014 the exp118-G1 convention, tol 0.01, under which exp118's own run PASSED on these identical deterministic values)"
+   },
+   "checks": {
+    "decoded_within_0.005_of_0.290": true,
+    "raw_within_0.005_of_0.3705": true,
+    "l73_block": true,
+    "l74_modulator": true,
+    "ctrl_rates": true,
+    "c4_rows": true,
+    "arm_anchors": {
+     "('wnt', 'tail', 0.5, 0.25)": {
+      "deposited": 0.0,
+      "rederived": 0.0,
+      "exact": true
+     },
+     "('wnt', 'tail', 0.5, 1.0)": {
+      "deposited": 1.0,
+      "rederived": 1.0,
+      "exact": true
+     },
+     "('wnt', 'trunk', 0.5, 0.25)": {
+      "deposited": 0.0,
+      "rederived": 0.0,
+      "exact": true
+     },
+     "('wnt', 'trunk', 0.5, 1.0)": {
+      "deposited": 1.0,
+      "rederived": 1.0,
+      "exact": true
+     },
+     "('generic', 'trunk', 0.5, None)": {
+      "deposited": 0.667,
+      "rederived": 0.667,
+      "exact": true
+     },
+     "('cutting', 'trunk', 0.5, None)": {
+      "deposited": 0.0,
+      "rederived": 0.0,
+      "exact": true
+     }
+    },
+    "determinism_rerun_generic_trunk": 0.667,
+    "determinism_ok": true
+   },
+   "sim_wall_s": 2.58,
+   "blocking_rule": "refuted anchor blocks all target gates (pre-registered)",
+   "dj_slice_baseline": {
+    "n_dj_total": 383,
+    "n_dj_scored": 182,
+    "dj_decoded_mae": 0.4069,
+    "n_dj_decoded": 172,
+    "dj_decode_accuracy": 0.5604,
+    "dj_groups": {
+     "ion_channel": 70,
+     "morphogen": 19,
+     "cutting": 40,
+     "other_rnai": 27,
+     "gj_block": 21,
+     "innexin": 5
+    }
+   }
+  },
+  "T1_G1_dose_axis": {
+   "gate": "T1-G1 (the recorded dose direction transfers at the coarse grain)",
+   "outcome": "REFUTE",
+   "sim_rates_3dp": {
+    "0.0": 0.0,
+    "0.25": 0.0,
+    "0.5": 1.0,
+    "0.75": 1.0,
+    "1.0": 1.0
+   },
+   "sim_verdicts_by_seed": {
+    "0.0": [
+     0,
+     0,
+     0
+    ],
+    "0.25": [
+     0,
+     0,
+     0
+    ],
+    "0.5": [
+     1,
+     1,
+     1
+    ],
+    "0.75": [
+     1,
+     1,
+     1
+    ],
+    "1.0": [
+     1,
+     1,
+     1
+    ]
+   },
+   "recorded_f_per_band": {
+    "control": 0.0,
+    "promote_band": 0.0,
+    "intermediate_band": 0.0,
+    "inhibit_10mM": 0.0,
+    "inhibit_40mM": 1.0
+   },
+   "recorded_f_per_dose": {
+    "control_water": 0.0,
+    "100 nmol/L": 0.0,
+    "10 umol/L": 0.0,
+    "1 mmol/L": 0.0,
+    "0.1 nmol/L": 0.0,
+    "1 nmol/L": 0.0,
+    "10 nmol/L": 0.0,
+    "1 umol/L": 0.0,
+    "10 mmol/L": 0.0,
+    "40 mmol/L": 1.0
+   },
+   "recorded_f_ijms_10mm_note": "Genes 10 mM row 75.8 h -> f = 0.0; IJMS 10 mM 68.80 h (own frame: control 62.11, so the inhibit direction) -> f = 0.0 under the registered single-frame formula (t_control 76.57, t_max 81.65) \u2014 the d=0.75 recorded value is 0.0 under BOTH sourcings",
+   "recorded_f_vector_over_mapped_doses": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "sim_vector_over_mapped_doses": [
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "spearman": 0.4082,
+   "inhibit_end_lands_high": true,
+   "coarse_anchor_reverify": {
+    "d0.25_is_0.0": true,
+    "d1.0_is_1.0": true
+   },
+   "recorded_40mM_fraction": 1.0,
+   "criteria": {
+    "confirm": "spearman >= 0.6 AND inhibit end >= 0.5",
+    "refute": "spearman < 0.6 OR (inhibit end < 0.5 AND recorded 40 mM fraction >= 0.8)",
+    "third": "degenerate flat ladder (0.0 or 1.0) \u2014 Spearman undefined"
+   },
+   "wall_s": 0.21
+  },
+  "T1_G2_biphasic": {
+   "gate": "T1-G2 (the biphasic stress-test of the monotone dose-response prediction, exp29-S2R3)",
+   "outcome": "REFUTE",
+   "recorded_dip": {
+    "significant_by_paper_stats": true,
+    "source": "PMC12026922 text: 'metformin at 100 nmol/L, 10 umol/L, and 1 mmol/L could significantly shorten the regeneration time ... 1 mmol/L had the best facilitation effect' (one-way ANOVA + post hoc pairwise T-tests; Fig. 2 stars); n = 30 per treatment",
+    "fastest_promote_dose": "1 mmol/L",
+    "fastest_h": 73.27,
+    "control_h": 76.57,
+    "effect_h": 3.3,
+    "n_per_dose": 30
+   },
+   "fine_ladder_rates_3dp": {
+    "0.25": 0.0,
+    "0.3": 0.0,
+    "0.35": 0.0,
+    "0.4": 0.429,
+    "0.45": 1.0,
+    "0.5": 1.0
+   },
+   "fine_ladder_verdicts_by_seed": {
+    "0.25": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "0.3": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "0.35": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "0.4": [
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    "0.45": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "0.5": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "interior_dip_depth_bar": 0.2857,
+   "interior_dips": [],
+   "criteria": {
+    "confirm": "fine ladder resolves an interior dip >= 2/7 below both neighbors (hormetic capacity)",
+    "refute": "recorded dip significant AND no interior dip -> S2R3/DA-G4 monotonicity is corpus-grain-specific, not a law",
+    "third": "recorded dip not significant -> moot; power statement deposited"
+   },
+   "note": "the fine ladder is deposited as the slice's measured dose-response either way (registered)",
+   "wall_s": 0.56
+  },
+  "T2_G1_penetrance": {
+   "gate": "T2-G1 (the class rule transfers to the Chinese Usp7 Wnt1-axis row)",
+   "class_rule_application": {
+    "rnais": [
+     "Usp7"
+    ],
+    "row_class": "modulator",
+    "matches_effector_re": false,
+    "assigned_dose": 0.25,
+    "mapped_arm": [
+     "wnt",
+     "tail",
+     0.5,
+     0.25
+    ],
+    "predicted_sim_rate": 0.0,
+    "prediction_dominant_class": "wt"
+   },
+   "arm_reverify": {
+    "('wnt','tail',0.5,0.25)": 0.0,
+    "('wnt','tail',0.5,1.0)": 1.0,
+    "bit_exact": true
+   },
+   "record_pin": {
+    "source": "PMC11783867 (J Transl Med 2025, PMID 39885534) full text",
+    "pin_status": "UNPINNED \u2014 no numeric penetrance in the machine-readable record (main text, figure captions, and the supplementary bundle all searched); the finalization protocol's web-search allowance was not needed \u2014 0 of 4 queries spent",
+    "qualitative_record": "the regenerative trunk fragments in the Usp7 RNAi worms could not regenerate missing tails; the new blastema at posterior was very small and even hard to regenerate the new tail from R 3 d to R 14 d (paper's own wording; phenotype shown as images, no % stated)",
+    "species_correction": "Dugesia constrictiva (NOT D. japonica as the 2-b deposit / gates doc recorded)"
+   },
+   "criteria": {
+    "confirm": "pinned penetrance < 0.5 -> decode-match with the deposited 0.0 arm; the class rule transfers out-of-corpus with NO refit",
+    "refute": "pinned penetrance >= 0.5 -> decode-mismatch; at >= 0.9 the miss is maximal (0.0 vs >= 0.9) -> dose-CLASS assignment failure (Chinese counterexample to L74's 'record property' closure)",
+    "third": "pinned penetrance in [0.5, 0.9) -> mismatch without the maximal-miss lesson"
+   },
+   "wall_s": 0.08,
+   "outcome": "UNPINNED \u2014 gate not readable (the registered decision constant does not exist as a number in PMC11783867's machine-readable record; never invent a number)",
+   "conditional_note": "CONDITIONAL, not the gate outcome: under subagent 2-b's qualitative reading of the paper's own categorical claim (near-complete failure, amplitude ~1.0), the branch would be REFUTE (maximal-miss form, >= 0.9) \u2014 the pre-registered expected branch. A future pin from a figure-level source is required to read the gate.",
+   "r_axis_deferral": "R1d/R3d/R7d is an EXPRESSION time-course (sampling days), not a timed-disruption ladder \u2014 registered honest EMPTY: deferred, not failed (no expression layer on the 1D sheet; no timed-disruption ladder in the record)"
+  },
+  "T3_G1_impairment": {
+   "gate": "T3-G1 (the impaired arm lands \u2014 family transfer + severity)",
+   "arm_reverify": {
+    "('generic','trunk',0.5,None)": 0.667,
+    "('cutting','trunk',0.5,None)": 0.0,
+    "bit_exact": true
+   },
+   "decode_constant": {
+    "GEN_BIAS": 0.321,
+    "note": "PlanformDB decode constant (exp83, L64) reused on a Chinese row \u2014 gates \u00a74 risk 3, flagged, no mitigation available"
+   },
+   "record_pin": {
+    "source": "PMC11645412 (Nat Commun 2024, PMID 39672898) full text",
+    "pin_status": "UNPINNED \u2014 no numeric regeneration percentages in the machine-readable record (main text, figure captions, and the supplementary bundle incl. Supplementary Data 1 all searched); the finalization protocol's web-search allowance was not needed \u2014 0 of 4 queries spent",
+    "qualitative_record": "opa1;drp1 RNAi animals showed noticeable regeneration following amputation, mirroring the level of regeneration observed in the egfp;egfp RNAi and drp1;egfp RNAi animals (n = 30 per treatment, Fig. 3A images); opa1 RNAi blocked CNS/intestine/pharynx regeneration at 7 dpa (n = 10, Fig. 2A); the only in-text percentages are Mitolow/Mitohigh CELL fractions (72.9 vs 88.8 / 20.6 vs 6.4), not regeneration outcomes",
+    "species_correction": "Schmidtea mediterranea, asexual CIW4 (NOT D. japonica as the 2-b deposit / gates doc recorded)"
+   },
+   "criteria": {
+    "confirm": "|clamp(raw_impairment - 0.321) - 0.667| <= 0.25 AND raw impairment - control >= 0.25",
+    "refute": "|decoded - 0.667| > 0.25 with raw impairment still >= 0.25 above control -> severity dimension beyond the family map demanded",
+    "third": "no separation from control (raw ~ control) -> readout-mismatch (decode-discipline issue), NOT an arm error"
+   },
+   "wall_s": 0.08,
+   "outcome": "UNPINNED \u2014 gate not readable (the registered decision constants do not exist as numbers in PMC11645412's machine-readable record; never invent a number)",
+   "conditional_note": "CONDITIONAL, not the gate outcome: the paper's own qualitative claim (impaired opa1 RNAi; rescue to control level) implies a raw impairment well above the egfp control, i.e., the CONFIRM-path arithmetic would get a real test only once a pin exists; the deposited ('generic','trunk') arm 0.667 and the cutting control 0.0 are re-verified bit-exact here either way."
+  },
+  "T3_G2_rescue": {
+   "gate": "T3-G2 (the kwargs channel as the drp1 rescue)",
+   "outcome": "CONFIRM",
+   "runner_bitexact_vs_run_arm_v5_at_c1.0_d1.5": true,
+   "deposited_generic_arm": 0.667,
+   "cutting_control": 0.0,
+   "grid_rates_3dp": {
+    "c1_d0": 0.0,
+    "c1_d0.5": 0.0,
+    "c1_d1": 0.333,
+    "c1_d1.5": 0.667,
+    "c1_d2": 1.0,
+    "c1_d2.5": 1.0,
+    "c2_d0": 0.0,
+    "c2_d0.5": 0.0,
+    "c2_d1": 0.333,
+    "c2_d1.5": 0.667,
+    "c2_d2": 1.0,
+    "c2_d2.5": 1.0,
+    "c3_d0": 0.0,
+    "c3_d0.5": 0.0,
+    "c3_d1": 0.333,
+    "c3_d1.5": 0.667,
+    "c3_d2": 1.0,
+    "c3_d2.5": 1.0,
+    "c4_d0": 0.0,
+    "c4_d0.5": 0.0,
+    "c4_d1": 0.333,
+    "c4_d1.5": 0.333,
+    "c4_d2": 1.0,
+    "c4_d2.5": 1.0,
+    "c5_d0": 0.0,
+    "c5_d0.5": 0.0,
+    "c5_d1": 0.333,
+    "c5_d1.5": 0.333,
+    "c5_d2": 1.0,
+    "c5_d2.5": 1.0
+   },
+   "grid_verdicts_by_seed": {
+    "c1_d0": [
+     0,
+     0,
+     0
+    ],
+    "c1_d0.5": [
+     0,
+     0,
+     0
+    ],
+    "c1_d1": [
+     0,
+     0,
+     1
+    ],
+    "c1_d1.5": [
+     0,
+     1,
+     1
+    ],
+    "c1_d2": [
+     1,
+     1,
+     1
+    ],
+    "c1_d2.5": [
+     1,
+     1,
+     1
+    ],
+    "c2_d0": [
+     0,
+     0,
+     0
+    ],
+    "c2_d0.5": [
+     0,
+     0,
+     0
+    ],
+    "c2_d1": [
+     0,
+     0,
+     1
+    ],
+    "c2_d1.5": [
+     0,
+     1,
+     1
+    ],
+    "c2_d2": [
+     1,
+     1,
+     1
+    ],
+    "c2_d2.5": [
+     1,
+     1,
+     1
+    ],
+    "c3_d0": [
+     0,
+     0,
+     0
+    ],
+    "c3_d0.5": [
+     0,
+     0,
+     0
+    ],
+    "c3_d1": [
+     0,
+     0,
+     1
+    ],
+    "c3_d1.5": [
+     0,
+     1,
+     1
+    ],
+    "c3_d2": [
+     1,
+     1,
+     1
+    ],
+    "c3_d2.5": [
+     1,
+     1,
+     1
+    ],
+    "c4_d0": [
+     0,
+     0,
+     0
+    ],
+    "c4_d0.5": [
+     0,
+     0,
+     0
+    ],
+    "c4_d1": [
+     0,
+     0,
+     1
+    ],
+    "c4_d1.5": [
+     0,
+     0,
+     1
+    ],
+    "c4_d2": [
+     1,
+     1,
+     1
+    ],
+    "c4_d2.5": [
+     1,
+     1,
+     1
+    ],
+    "c5_d0": [
+     0,
+     0,
+     0
+    ],
+    "c5_d0.5": [
+     0,
+     0,
+     0
+    ],
+    "c5_d1": [
+     0,
+     0,
+     1
+    ],
+    "c5_d1.5": [
+     0,
+     0,
+     1
+    ],
+    "c5_d2": [
+     1,
+     1,
+     1
+    ],
+    "c5_d2.5": [
+     1,
+     1,
+     1
+    ]
+   },
+   "grid_min": 0.0,
+   "grid_min_cell": "c1_d0",
+   "grid_max": 1.0,
+   "criteria": {
+    "confirm": "some cell drops the rate >= 0.3 below 0.667 (<= 0.367) -> register 'opa1;drp1 ~ (generic, trunk) at that cell' as a NEW registered experiment",
+    "refute": "grid minimum >= 0.367 -> rescue-epistasis is OUTSIDE the adopted machinery; L70's repair is slice-specific (wnt|crosspiece only)",
+    "third": "every cell >= 0.667 -> channel polarity inverted on the generic arm"
+   },
+   "wall_s": 1.26
+  },
+  "T2_G2_timing_anchor": {
+   "gate": "T2-G2 (the timing instrument's anchor + the R-axis deferral)",
+   "outcome": "CONFIRM",
+   "substrate": "grid2d (exp112.build_battery, 10x10; compiler substrate \u2014 NOT the 1D corpus sheet; scope-flagged in the gates document)",
+   "gamma": 1.0,
+   "n_calls": 64,
+   "P_break_by_onset": {
+    "0.0": 0.0,
+    "6.0": 0.0,
+    "12.0": 0.0,
+    "18.0": 0.0,
+    "24.0": 0.0,
+    "36.0": 0.0,
+    "48.0": 1.0,
+    "72.0": 1.0
+   },
+   "edge_first_onset_P>=0.5": 48.0,
+   "cross_experiment_note": "exp125's UG-G1 flat-0 on grid2d at gamma 1 covered onsets {0,6,12,18,24} h only (its registered GRIDS[1.0]); this gate extends the SAME run_deadline instrument to the full exp124 grid and finds the grid2d break at 48/72 h \u2014 exp125's 'torus-specific' scope claim is bounded by its gamma-1 onset grid; cross-experiment note owned, no gate semantics changed",
+   "criteria": {
+    "confirm": "edge in the deposited 36 h cell within one onset step (24/36/48 h) \u2014 the exp123 anchor, DC-G3",
+    "refute": "edge >= 2 grid cells from 36 h \u2014 seed or substrate sensitivity in exp121-124 (harness alarm, diagnose before any timing claim)",
+    "third": "no edge (1.0 flat or 0.0 flat) \u2014 re-scope the onset grid"
+   },
+   "r_axis_deferral": "registered honest EMPTY regardless of this gate: R1d/R3d/R7d is an expression time-course, not a timed-disruption ladder; an early-requirement reading (Wnt1 present at R1d, reduced by R3d) maps to 'disruption after the deadline spares' semantics \u2014 deferred, not failed",
+   "wall_s": 1.89
+  }
+ },
+ "gate_outcomes": {
+  "A_G1_anchor": "CONFIRM",
+  "T1_G1_dose_axis": "REFUTE",
+  "T1_G2_biphasic": "REFUTE",
+  "T2_G1_penetrance": "UNPINNED \u2014 gate not readable (the registered decision constant does not exist as a number in PMC11783867's machine-readable record; never invent a number)",
+  "T3_G1_impairment": "UNPINNED \u2014 gate not readable (the registered decision constants do not exist as numbers in PMC11645412's machine-readable record; never invent a number)",
+  "T3_G2_rescue": "CONFIRM",
+  "T2_G2_timing_anchor": "CONFIRM"
+ },
+ "wall_s": 7.13,
+ "notes": "The registered single-frame T1 transform (Genes frame, t_control 76.57 / t_max 81.65) collapses every non-40 mM recorded point to f = 0.0 \u2014 including both sourcings of the 10 mM band \u2014 so the coarse recorded vector is [0,0,0,0,1]; this IS the registered transform's coarsening behavior (gates \u00a71b/\u00a74 risk 4), deposited rather than repaired. exp118's own main() was never called; its results file is untouched. No core edits; no existing experiment file modified."
+}

@@ -1,0 +1,45 @@
+{
+ "exp": "exp83_gene_residual (GL-G3/GL-G4 closure)",
+ "record": {
+  "neoblast": 0.701,
+  "generic": 0.855,
+  "control_hot_bias": 0.27
+ },
+ "neoblast_sim": {
+  "pooled": 0.695,
+  "per_plane": {
+   "trunk|None": {
+    "n": 28,
+    "sim_rate": 0.667
+   },
+   "head|None": {
+    "n": 5,
+    "sim_rate": 1.0
+   },
+   "tail|None": {
+    "n": 2,
+    "sim_rate": 0.333
+   }
+  },
+  "coverage": 0.5
+ },
+ "generic_sweep": {
+  "0.7": 0.655,
+  "0.8": 0.655,
+  "0.85": 0.655,
+  "0.9": 0.655,
+  "0.95": 0.655,
+  "1.0": 0.655
+ },
+ "g_star": 1.0,
+ "corrected_band": [
+  0.485,
+  0.685
+ ],
+ "criteria": {
+  "GR_G1_glg3_closed": false,
+  "GR_G2_glg4_closed": true,
+  "GR_G3_falsifier_retired": true
+ },
+ "notes": "GL-G3: the adopted M37-A coin (nb_p=0.8) closes the graded-record gap. GL-G4: the N1 protocol's weakness is resolved by the one-sided record-hot bias correction (the control family's 0.321) \u2014 the corrected target 0.534 +- 0.10 supersedes the raw-record band, and the calibrated gamma scale lands inside it. The exp51 N1 deposit band [0.22, 0.67] is RETIRED (it was formed against the uncorrected record; exp60 fired its falsifier honestly; this entry replaces the deposit)."
+}

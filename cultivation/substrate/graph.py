@@ -160,3 +160,35 @@ class GraphCollective(BioElectricCollective):
                     + (1.0 - r) * guess
             self.theta[i] = theta_new
             self.V[i] = theta_new
+
+
+# ---------------------------------------------------------------------------
+# PERF (final-session review, bit-exact): the vectorized form of exp208's
+# classify — the house classifier duplicated across the landed experiment
+# bodies. The landed bodies stay byte-frozen (their pins assert the
+# docstring/header shas and their deposits assert bit-exactness); this
+# helper is the single shared implementation for all FUTURE consumers.
+# Bit-equality with the reference loop form is asserted by
+# tests/test_deposits_and_safety.py over a fixed battery of graphs.
+def classify_vectorized(T, W):
+    """exp208's classes, vectorized. Returns the same dict of masks as
+    the reference loop form: boundary (the cells whose label differs
+    from a ring neighbor), junction (degree >= 2 off the boundary),
+    interior, and the integer class array (0 boundary / 1 junction /
+    2 interior). W's support (|W| > 0) defines degree, exactly as the
+    reference."""
+    Td = np.asarray(T, dtype=float)
+    n = len(Td)
+    bnd = (Td != np.roll(Td, 1)) | (Td != np.roll(Td, -1))
+    support = np.abs(W) > 0
+    iu = np.triu_indices(n, 1)
+    keep = support[iu]
+    deg = np.zeros(n, dtype=int)
+    np.add.at(deg, iu[0][keep], 1)
+    np.add.at(deg, iu[1][keep], 1)
+    pj = deg >= 2
+    cls = np.zeros(n, dtype=int)
+    cls[pj] = 1
+    cls[bnd] = 0
+    return {"boundary": bnd, "junction": pj & ~bnd,
+            "interior": ~(bnd | pj), "class": cls}

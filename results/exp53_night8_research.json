@@ -1,0 +1,721 @@
+{
+ "exp": "exp53_night8_research",
+ "sources": [
+  "europepmc",
+  "pubmed",
+  "crossref",
+  "arxiv",
+  "openalex",
+  "zenodo"
+ ],
+ "items": {
+  "V-WIN-3H": {
+   "label": "the 3-hour critical window (nigericin washout protocol)",
+   "calls": {
+    "pubmed::30824103": {
+     "hit_count": 1,
+     "hits": [
+      {
+       "id": "PMID:30824103",
+       "year": "2019",
+       "title": "Preparation and characterization of cellulose nanofibrils from coconut coir fibers and their reinforcements in biodegradable composite films.",
+       "journal": "Carbohydr Polym",
+       "authors": "Wu J, Du X, Yin Z, Xu S, Xu S, Zhang Y",
+       "abstract": "(esummary record \u2014 no abstract field; title+journal carry the verification)",
+       "doi": "10.1016/j.carbpol.2019.01.093"
+      }
+     ]
+    },
+    "europepmc::planarian bioelectric \"3 h\" post-amputation polarity nigeric": {
+     "hit_count": 0,
+     "hits": []
+    },
+    "openalex::planarian regeneration bioelectric three hours amputation po": {
+     "error": "HTTP Error 429: Too Many Requests"
+    }
+   }
+  },
+  "V-WIN-6H": {
+   "label": "the 6h write deadline (wnt1 generic / notum anterior timing)",
+   "calls": {
+    "europepmc::planarian wnt1 expressed all wounds six hours injury": {
+     "hit_count": 5,
+     "hits": [
+      {
+       "id": "MED40739628",
+       "year": "2025",
+       "title": "NR1I3 modulates Wnt signaling to promote anterior-posterior axis patterning.",
+       "journal": "",
+       "authors": "Sun Y, Ding N, Li S, Zhang Y, Qin Y, Hao Z, Zhang S, Tian Q.",
+       "abstract": "BackgroundRegeneration of missing structures and tissue turnover during homeostasis require positional information to instruct the reestablishment of body axes and to specify new cells to replace aged tissues. Planarians present an ideal model for positional information studies, as they can regenerate any missing parts and replace aged cells during tissue turnover. Position control genes (PCGs) characterized by constitutive and regional expression in planarians have been identified to instruct regeneration and tissue turnover. However, it is not entirely understood how these genes coordinate in maintaining proper tissue structures.ResultsHere we report that NR1I3, a nuclear receptor family transcription factor, functions in the establishment and maintenance of the anteroposterior (AP) axis in planarians. NR1I3 RNA interference (RNAi) during regeneration caused ectopic head formation in the posterior blastema, correlated with symmetric notum expression at wounds. Loss of NR1I3 function in intact planarians resulted in ectopic anterior eye formation and the absence or reduction of posterior PCG expression. Notably, the phenotype of two-headed planarians after NR1I3 RNAi can be suppressed by APC, axins, and notum, which are components of the Wnt signaling.ConclusionsOur data reveal that NR1I3 in planarians acts as an upstream regulator of Wnt signaling, mediating AP patterning through regulating the activation of notum.",
+       "doi": "10.1186/s12915-025-02346-0"
+      },
+      {
+       "id": "MED41218061",
+       "year": "2025",
+       "title": "The planarian dorsal-ventral boundary regulates anterior-posterior axis growth and patterning.",
+       "journal": "",
+       "authors": "Maybrun CL, Oderberg IM, Gavi\u00f1o MA, Cooke TF, Choi K, Han J, Reddien PW.",
+       "abstract": "Regeneration can involve the coordination of pattern formation in an outgrowth with the spatial pattern of pre-existing tissues, such as along body axes. Planarian adult axis patterning serves as a robust context for uncovering the mechanisms of such pattern integration. We investigated how the dorsal-ventral boundary (DVB), which surrounds the animal periphery at the dorsal-ventral (DV) median plane, regulates anterior-posterior (AP) axis growth and patterning. We define a spatial DVB gene expression atlas that includes genes encoding signaling, adhesion, and transcription factors. Wnt inhibition results in anterior positional information induction and ectopic head formation that is restricted to the DVB. DVB can be transplanted, and DVB identity can be experimentally induced at ectopic locations. Ectopic DVB is competent for anterior positional identity induction following Wnt inhibition, enabling the generation of animals with ectopic heads at experimentally dictated locations. DVB removal blocks the anteriorization that normally follows Wnt inhibition and prevents anterior positional information expression during head regeneration. Anterior positional information induction at the DVB after Wnt inhibition occurs independently from anterior pole formation, which promotes head patterning in regeneration. Our findings reveal a hierarchical model of pattern integration across body axes in which DV patterning is central by producing a DVB with competence to direct formation of large AP axis regions. This mechanism enables coordination of orthogonal positional information in the context of regeneration.",
+       "doi": "10.1371/journal.pbio.3003482"
+      },
+      {
+       "id": "MED42160431",
+       "year": "2026",
+       "title": "Deciphering the ancestral mechanisms of neural regeneration through single-cell analyses of jellyfish rhopalium repair.",
+       "journal": "",
+       "authors": "Li Y, Wang F, Sun T, Ma X, Yu Z, Xu Z, Wang W, Xing Y, Peng S, Wang L, Zhao J, Dong Z.",
+       "abstract": "The rhopalium, an early specialized centralized nervous structure in medusozoans, exhibits a remarkable regenerative capacity after removal, offering a unique model for investigating the ancestral regulatory logic of neural regeneration. However, the cellular and molecular mechanisms underlying the process remain unknown. Here, we defined distinct stages of rhopalium regeneration in the jellyfish Aurelia coerulea and constructed a stage-specific cell landscape and gene regulatory networks. Notably, we identified a population of wound-induced cells that emerges rapidly postinjury and activates Wnt signaling to initiate blastema formation; cross-species comparisons revealed that this regulatory mechanism is conserved across metazoans. We further identified that retinoic acid signaling is essential for photoreceptor regeneration and ocelli reconstruction. The findings presented herein uncover the ancestral regulatory mechanisms governing neural regeneration in the early centralized nervous system, providing insights into the common evolutionary origins of neural repair across organisms.",
+       "doi": "10.1126/sciadv.aeb8034"
+      },
+      {
+       "id": "MED36495871",
+       "year": "2022",
+       "title": "A Wnt11 and Dishevelled signaling pathway acts prior to injury to control wound polarization for the onset of planarian regeneration.",
+       "journal": "",
+       "authors": "Gittin DI, Petersen CP.",
+       "abstract": "Regeneration is initiated by wounding, but it is unclear how injury-induced signals precisely convey the identity of the tissues requiring replacement. In the planarian Schmidtea mediterranea, the first event in head regeneration is the asymmetric activation of the Wnt inhibitor notum in longitudinal body-wall muscle cells, preferentially at anterior-facing versus posterior-facing wound sites. However, the mechanism driving this early symmetry-breaking event is unknown. We identify a noncanonical Wnt11 and Dishevelled pathway regulating notum polarization, which opposes injury-induced notum-activating Wnt/\u03b2-catenin signals and regulates muscle orientation. Using expression analysis and experiments to define a critical time of action, we demonstrate that Wnt11 and Dishevelled signals act prior to injury and in a growth-dependent manner to orient the polarization of notum induced by wounding. In turn, injury-induced notum dictates polarization used in the next round of regeneration. These results identify a self-reinforcing feedback system driving the polarization of blastema outgrowth and indicate that regeneration uses pre-existing tissue information to determine the outcome of wound-induced signals.",
+       "doi": "10.1016/j.cub.2022.10.071"
+      },
+      {
+       "id": "PPRPPR948239",
+       "year": "2024",
+       "title": "A comparative analysis of planarian regeneration specificity reveals tissue polarity contributions of the axial cWnt signalling gradient",
+       "journal": "bioRxiv",
+       "authors": "Cleland JP, Vu HT, Dickmann JEM, Rozanski A, Werner S, Schuhmann A, Shevchenko A, Rink JC.",
+       "abstract": "Summary Planarians exhibit remarkable whole-body regeneration abilities. The formation of heads at forward-facing wounds and tails at rearward-facing wounds suggests an intrinsic tissue polarity guiding regeneration. While the underlying mechanisms remain unclear, reports of double-headed regenerates from increasingly narrow tissue fragments have long been hypothesised to reflect gradient-based polarity specification. Here, we systematically re-examine this hypothesis in the modern model species Schmidtea mediterranea and a representative of the genus likely used in the original studies, Girardia sinensis . While we never observed double-heads in S. mediterranea , G. sinensis readily regenerated double-heads in a manner dependent on piece length, anatomical position and body size. We found that the reduced regeneration robustness of G. sinensis was partially explained by wound site-symmetric expression of the head determinant notum , which is highly anterior-specific in S. mediterranea . Exploring what else might mediate head/tail regeneration specificity in G. sinensis , we examined the role of the conserved tail-to-head cWnt signalling gradient. By developing a time-resolved pharmacological approach to reduce the cWnt gradient slope without affecting wound-induced cWnt signalling dynamics, we observed an increased incidence of double-headed regenerates. In addition, the body size-dependence of double-head formation correlated with the decreasing steepness of the cWnt gradient due to scaling. Taken together, our results indicate that the slope of the cWnt gradient may contribute to planarian head/tail regeneration specificity. Furthermore, they suggest that planarian tissue polarity is composed of multiple parallely-acting polarity cues, the differential reliance on which contributes to the observed interspecies variation in regeneration specificity.",
+       "doi": "10.1101/2024.12.01.626254"
+      }
+     ]
+    },
+    "europepmc::planarian notum anterior wounds expression timing regenerati": {
+     "hit_count": 5,
+     "hits": [
+      {
+       "id": "MED41099309",
+       "year": "2025",
+       "title": "Planarian microtubules form a network within muscle and regulate injury-induced genes essential for regeneration patterning.",
+       "journal": "",
+       "authors": "Anderson XN, Petersen CP.",
+       "abstract": "Planarian muscle produces key wound signal patterning whole-body regeneration. Within muscle, generic induction of wnt1 promotes tail regeneration, while polarized expression of the Wnt inhibitor notum at anterior-facing wounds drives head regeneration. Classic experiments indicate that microtubules are also involved in blastema fating, but the cell biology of planarian muscle is still poorly understood. We raised an antibody to muscle-expressed TUBA-2 and found that planarian muscle possesses a microtubule network linking contractile fibers with their mononucleated cell bodies. Microtubules were required for muscle fiber regrowth across wound sites at times that correlated with expression of wound-induced genes. Expression profiling found that sublethal colchicine treatment disrupted a subset of muscle-expressed injury-induced genes, with strongest effects on wnt1 and notum. Higher colchicine doses (>200 \u00b5g/ml) prevented wnt1 and notum expression, while, surprisingly, lower doses (125 \u00b5g/ml) elevated notum at posterior-facing wounds, thereby implicating microtubules in both the activation and polarization of genes expressed from injured muscle. Furthermore, microtubules functionally interact with Wnts to control head/tail determination. Together, planarian microtubules act in specific regulatory pathways to express key muscle-expressed and injury-induced factors used for blastema fating.",
+       "doi": "10.1242/dev.204669"
+      },
+      {
+       "id": "MED42164519",
+       "year": "2026",
+       "title": "Redox-modulated ERK dynamics support wound-dependent tissue formation during early planarian regeneration.",
+       "journal": "",
+       "authors": "Heleven M, Molina MD, Jaenen V, Bijnens K, Cebri\u00e0 F, Smeets K.",
+       "abstract": "The mitogen-activated protein kinase-extracellular signal-regulated kinase (MAPK-ERK) pathway is essential during regeneration as it guides stem cell proliferation, differentiation, and survival. We identified redox-dependent components of MAPK-ERK signaling whose coordinated activity is required for full-body regeneration and patterning. Wound orientation was found to influence ERK activation and redox dynamics, with anterior-facing wounds showing elevated ERK activity 3-6 h post-amputation, together with increased superoxide and hydrogen peroxide levels, compared to posterior-facing wounds. Disruption of MAPK signaling produced distinct effects on anterior versus posterior regeneration that depended on both wound orientation and the fragment's original anterior-posterior identity. In fragments containing anterior- and posterior-facing wounds, this molecular gradient was re-established within 6 h. Additionally, our findings suggest a feedback regulatory circuit controlling ERK activation, in which the transcription factor egr-4 (early growth response protein 4) inhibits MAPK phosphatase activity. In summary, amputation-induced redox signals coordinate with the MAPK-ERK-egr4 signaling pathway to ensure correct regeneration and tissue patterning in planarians.",
+       "doi": "10.1016/j.isci.2026.115640"
+      },
+      {
+       "id": "MED40921377",
+       "year": "2025",
+       "title": "Injury-induced Neuregulin-EGFR signaling from muscle mobilizes stem cells for whole-body regeneration in acoels.",
+       "journal": "",
+       "authors": "Stevens B, Popp R, Valera H, Krueger K, Petersen CP.",
+       "abstract": "The activation of progenitor cells near wound sites is a common feature of regeneration across species, but the conserved signaling mechanisms responsible for this step in whole-body regeneration are still incompletely understood. The acoel Hofstenia miamia undergoes whole-body regeneration using Piwi + pluripotent adult stem cells (neoblasts) that accumulate at amputation sites early in regeneration. The EGFR signaling pathway has broad roles in controlling proliferation, migration, differentiation, and cell survival across metazoans. Using candidate RNAi screening, we identify the Hofstenia EGFR egfr-1 and Neuregulin nrg-1 genes as essential for blastema formation. Structure prediction of NRG-1 and EGFR-1 proteins suggests these factors interact directly. After amputation injuries, nrg-1 expression is induced in body-wall muscle cells at the wound site by 6 h and localizes to the tip of the outgrowing blastema by 24 h and sustains for several days, while egfr-1 is broadly expressed, including in muscle and neoblasts. The early phase of nrg-1 expression occurs at incision sites that repair through wound healing while the late phase is specific to blastema formation. Under nrg-1(RNAi) and egfr-1(RNAi) conditions that impair blastema formation, animals still undergo the earliest responses to injury to activate expression of the Early Growth Response transcription factor egr. In addition, RNAi of nrg-1 only after amputation results in regeneration failure, indicating regeneration requires new nrg-1 expression. nrg-1(RNAi) and egfr-1(RNAi) animals possess Piwi+ and H3P + mitotic neoblasts which hyperproliferate normally after amputation, but these cells fail to accumulate at the wound site. Therefore, muscle provides a source for Neuregulin-EGFR signaling after injury and is necessary for the mobilization of proliferative progenitors to enable blastema outgrowth for whole-body regeneration in Hofstenia. These results indicate a shared functional requirement for muscle signaling to enable regeneration between planarians and acoels across 550 million years of evolution.",
+       "doi": "10.1016/j.ydbio.2025.08.024"
+      },
+      {
+       "id": "MED37681295",
+       "year": "2023",
+       "title": "aristaless-like homeobox-3 is wound induced and promotes a low-Wnt environment required for planarian head regeneration.",
+       "journal": "",
+       "authors": "Akheralie Z, Scidmore TJ, Pearson BJ.",
+       "abstract": "The planarian Schmidtea mediterranea is a well-established model of adult regeneration, which is dependent on a large population of adult stem cells called neoblasts. Upon amputation, planarians undergo transcriptional wounding programs and coordinated stem cell proliferation to give rise to missing tissues. Interestingly, the Wnt signaling pathway is key to guiding what tissues are regenerated, yet less known are the transcriptional regulators that ensure proper activation and timing of signaling pathway components. Here, we have identified an aristaless-like homeobox transcription factor, alx-3, that is enriched in a population of putative neural-fated progenitor cells at homeostasis, and is also upregulated in stem cells and muscle cells at anterior-facing wounds upon amputation. Knockdown of alx-3 results in failure of head regeneration and patterning defects in amputated tail fragments. alx-3 is required for the expression of several early wound-induced genes, including the Wnt inhibitor notum, which is required to establish anterior polarity during regeneration. Together, these findings reveal a role for alx-3 as an early wound-response transcriptional regulator in both muscle cells and stem cells that is required for anterior regeneration by promoting a low-Wnt environment.",
+       "doi": "10.1242/dev.201777"
+      },
+      {
+       "id": "MED36495871",
+       "year": "2022",
+       "title": "A Wnt11 and Dishevelled signaling pathway acts prior to injury to control wound polarization for the onset of planarian regeneration.",
+       "journal": "",
+       "authors": "Gittin DI, Petersen CP.",
+       "abstract": "Regeneration is initiated by wounding, but it is unclear how injury-induced signals precisely convey the identity of the tissues requiring replacement. In the planarian Schmidtea mediterranea, the first event in head regeneration is the asymmetric activation of the Wnt inhibitor notum in longitudinal body-wall muscle cells, preferentially at anterior-facing versus posterior-facing wound sites. However, the mechanism driving this early symmetry-breaking event is unknown. We identify a noncanonical Wnt11 and Dishevelled pathway regulating notum polarization, which opposes injury-induced notum-activating Wnt/\u03b2-catenin signals and regulates muscle orientation. Using expression analysis and experiments to define a critical time of action, we demonstrate that Wnt11 and Dishevelled signals act prior to injury and in a growth-dependent manner to orient the polarization of notum induced by wounding. In turn, injury-induced notum dictates polarization used in the next round of regeneration. These results identify a self-reinforcing feedback system driving the polarization of blastema outgrowth and indicate that regeneration uses pre-existing tissue information to determine the outcome of wound-induced signals.",
+       "doi": "10.1016/j.cub.2022.10.071"
+      }
+     ]
+    },
+    "openalex::planarian wound-induced gene expression kinetics wnt notum h": {
+     "error": "HTTP Error 429: Too Many Requests"
+    }
+   }
+  },
+  "V-ML-INT": {
+   "label": "mediolateral intercalation / graft representation",
+   "calls": {
+    "crossref::10.1002/dvdy.10246": {
+     "hit_count": 1,
+     "hits": [
+      {
+       "id": "DOI:10.1002/dvdy.10246",
+       "year": 2003,
+       "title": "Mediolateral intercalation in planarians revealed by grafting experiments",
+       "journal": "Developmental Dynamics",
+       "authors": "Yumi Saito, Satoshi Koinuma, Kenji Watanabe, Kiyokazu Agata",
+       "abstract": "AbstractWe investigated how planarians organize their left\u2013right axis by using ectopic grafting. Planarians have three body axes: anteroposterior (A\u2010P), dorsoventral (D\u2010V), and left\u2013right (L\u2010R). When a small piece is implanted into an ectopic region along the A\u2010P and D\u2010V axes, intercalary structures are always formed to compensate for positional gaps. There are two hypotheses regarding L\u2010R axis formation in this organism: first, that the left and right sides of the animal may be recognized as different parts, and L\u2010R intercalation can induce midline structures (asymmetry hypothesis); second, that both sides may have symmetrical positional values, and mediolateral (M\u2010L) intercalation creates positional values along the L\u2010R axis (symmetry hypothesis). We performed ectopic grafting experiments in the head region of the planarian, Dugesia japonica, to examine these hypotheses. A left lateral fragment containing a left auricle was implanted into the medial region of the host. Ectopic structures were always formed only on the left side of the graft, where lateral tissues abutted onto the medial tissues. However, no morphologic change was induced on the right side of the graft, where left\u2010sided tissues faced onto right\u2010sided tissues. Molecular marker analyses indicated that ectopic structures formed on the left side of the graft were induced by M\u2010L intercalation, supporting the \u201csymmetry hypothesis.\u201d When the midline tissues were implanted into a lateral region, they induced a complete ectopic head, demonstrating that M\u2010L intercalation may be sufficient to establish the L\u2010R axis in planarians. Developmental Dynamics 226:334\u2013340, 2003.\u00a9 2003 Wiley\u2010Liss, Inc.",
+       "doi": "10.1002/dvdy.10246"
+      }
+     ]
+    },
+    "europepmc::planarian graft mediolateral intercalation ectopic head late": {
+     "hit_count": 0,
+     "hits": []
+    },
+    "openalex::planarian tissue intercalation positional values left right ": {
+     "error": "HTTP Error 429: Too Many Requests"
+    }
+   }
+  },
+  "V-ARZ": {
+   "label": "anterior regenerative zone as a spatial domain",
+   "calls": {
+    "europepmc::planarian injury-induced anterior regenerative zone position": {
+     "hit_count": 5,
+     "hits": [
+      {
+       "id": "MED42172041",
+       "year": "2026",
+       "title": "4D single-cell spatial transcriptomics reveals dynamic morphogenetic gradients and regenerative domains in planarians.",
+       "journal": "",
+       "authors": "Han K, Wang Y, Li Y, Guo L, Chen Y, Liu X, Lin Y, Huang Z, Liu Q, Guo W, Zhang R, Zhao W, Liang L, Wei X, Zhou L, Mao X, Wang J, Wu W, Pan H, Yang T, Zhang H, S",
+       "abstract": "BackgroundUnderstanding how organisms reconstruct complex tissue architectures following injury requires precise mapping of gene expression and cellular responses across space and time. Although planarians serve as a classic model for whole-body regeneration, capturing the continuous spatiotemporal dynamics of positional information and cell fate decisions at the organismal scale remains a significant challenge.ResultsUsing high-definition spatial transcriptomics, we generated a 4-dimensional atlas encompassing over 3.5 million cells from whole animals across 8 distinct regeneration timepoints. This comprehensive dataset enabled the definition of 36 spatial domains and the tracing of body axis restoration, revealing that positional control genes recover through self-organizing dynamics analogous to an underdamped control system. We identified an injury-induced spatial domain termed the anterior regenerative zone. This unique region is characterized by the convergence of epidermal, muscular, and neural lineages enriched with positional signals. Furthermore, we demonstrated that the transcriptional co-factor Mediator 8 is a critical regulator of this zone. Depletion of Mediator 8 impairs the formation of the anterior regenerative zone, disrupts polarity establishment, and prevents successful blastema formation.ConclusionsOur study provides a holistic molecular and cellular reconstruction of whole-body regeneration, directly linking dynamic gene expression gradients to morphological restoration. The discovery of the Mediator 8-regulated anterior regenerative zone highlights the importance of spatial domains in coordinating tissue repair. The resulting interactive atlas serves as a foundational resource for deciphering the logic of spatiotemporal patterning in regeneration.",
+       "doi": "10.1093/gigascience/giag064"
+      },
+      {
+       "id": "MED42388976",
+       "year": "2026",
+       "title": "Embryonic scaling: morphogen gradients, size sensing, and scaler genes.",
+       "journal": "",
+       "authors": "Timoshina PS, Zaraisky AG.",
+       "abstract": "Embryonic scaling is the ability of developing embryos to preserve proportional patterning despite differences in overall size. This phenomenon has long been recognized in many animal groups and represents a central example of developmental robustness and self-regulation. Its mechanisms are now being clarified through quantitative embryology, theoretical modeling, molecular developmental biology, and mechanobiology. The best-characterized framework for understanding embryonic scaling is morphogen-gradient scaling. In this view, pattern proportions are preserved when morphogen gradients adjust their range and threshold positions according to the size of the embryo or morphogenetic field. Several mechanisms can contribute to this adjustment, including feedback regulation within morphogen networks, size-dependent morphogen production or degradation, ligand transport, and mechanical or geometric constraints. Earlier theoretical studies anticipated the possibility that morphogen-gradient scaling may require size-dependent modulators, that is, regulatory components whose concentration or activity changes with system size. This review considers such size-dependent regulation in the context of the Scalers Hypothesis, which focuses on experimentally identifiable genes and proteins whose expression, concentration, or activity changes systematically with embryo size. Their products can therefore act as molecular links between global geometry and local patterning dynamics. In this way, they may adjust morphogen production, degradation, transport, diffusion range, or threshold interpretation in a size-dependent manner. The review places scaler genes within a broader comparative framework that includes Drosophila BMP/Dpp-Sog and Bicoid systems, chick blastoderm regulation, mechanical models of epithelial patterning, and regenerative or synthetic systems such as Hydra, planarians, and gastruloids. It then distinguishes between internal scalers, which are embedded within morphogenetic feedback networks such as BMP-Chordin and Nodal-Lefty systems, and external scalers, whose regulation is independent of the core pattern-forming circuitry. Finally, the review summarizes experimental evidence from amphibian and echinoderm embryos showing that matrix metalloproteinase Mmp3 in Xenopus laevis and the astacin-like proteases Span and Bp10 in sea urchins function as external scalers",
+       "doi": "10.3389/fcell.2026.1858676"
+      },
+      {
+       "id": "MED39163854",
+       "year": "2024",
+       "title": "Hallmarks of regeneration.",
+       "journal": "",
+       "authors": "Poss KD, Tanaka EM.",
+       "abstract": "Regeneration is a heroic biological process that restores tissue architecture and function in the face of day-to-day cell loss or the aftershock of injury. Capacities and mechanisms for regeneration can vary widely among species, organs, and injury contexts. Here, we describe \"hallmarks\" of regeneration found in diverse settings of the animal kingdom, including activation of a cell source, initiation of regenerative programs in the source, interplay with supporting cell types, and control of tissue size and function. We discuss these hallmarks with an eye toward major challenges and applications of regenerative biology.",
+       "doi": "10.1016/j.stem.2024.07.007"
+      },
+      {
+       "id": "MED39595973",
+       "year": "2024",
+       "title": "Nature's Secret Neuro-Regeneration Pathway in Axolotls, Polychaetes and Planarians for Human Therapeutic Target Pathways.",
+       "journal": "",
+       "authors": "Mansor NI, Balqis TN, Lani MN, Lye KL, Nor Muhammad NA, Ismail WIW, Abidin SZ.",
+       "abstract": "Despite significant improvements in the comprehension of neuro-regeneration, restoring nerve injury in humans continues to pose a substantial therapeutic difficulty. In the peripheral nervous system (PNS), the nerve regeneration process after injury relies on Schwann cells. These cells play a crucial role in regulating and releasing different extracellular matrix proteins, including laminin and fibronectin, which are essential for facilitating nerve regeneration. However, during regeneration, the nerve is required to regenerate for a long distance and, subsequently, loses its capacity to facilitate regeneration during this progression. Meanwhile, it has been noted that nerve regeneration has limited capabilities in the central nervous system (CNS) compared to in the PNS. The CNS contains factors that impede the regeneration of axons following injury to the axons. The presence of glial scar formation results from this unfavourable condition, where glial cells accumulate at the injury site, generating a physical and chemical barrier that hinders the regeneration of neurons. In contrast to humans, several species, such as axolotls, polychaetes, and planarians, possess the ability to regenerate their neural systems following amputation. This ability is based on the vast amount of pluripotent stem cells that have the remarkable capacity to differentiate and develop into any cell within their body. Although humans also possess these cells, their numbers are extremely limited. Examining the molecular pathways exhibited by these organisms has the potential to offer a foundational understanding of the human regeneration process. This review provides a concise overview of the molecular pathways involved in axolotl, polychaete, and planarian neuro-regeneration. It has the potential to offer a new perspective on therapeutic approaches for neuro-regeneration in humans.",
+       "doi": "10.3390/ijms252211904"
+      },
+      {
+       "id": "MED40096024",
+       "year": "2025",
+       "title": "map3k1 suppresses terminal differentiation of migratory eye progenitors in planarian regeneration.",
+       "journal": "",
+       "authors": "Lo KC, Petersen CP.",
+       "abstract": "Proper stem cell targeting and differentiation is necessary for regeneration to succeed. In organisms capable of whole body regeneration, considerable progress has been made identifying wound signals initiating this process, but the mechanisms that control the differentiation of progenitors into mature organs are not fully understood. Using the planarian as a model system, we identify a novel function for map3k1, a MAP3K family member possessing both kinase and ubiquitin ligase domains, to negatively regulate terminal differentiation of stem cells during eye regeneration. Inhibition of map3k1 caused the formation of multiple ectopic eyes within the head, but without controlling overall head, brain, or body patterning. By contrast, other known regulators of planarian eye patterning like wnt11-6/wntA and notum also regulate head regionalization, suggesting map3k1 acts distinctly. Consistent with these results, eye resection and regeneration experiments suggest that unlike Wnt signaling perturbation, map3k1 inhibition did not shift the target destination of eye formation in the animal. map3k1(RNAi) ectopic eyes emerged in the regions normally occupied by migratory eye progenitors, and these animals produced a net excess of differentiated eye cells. Furthermore, the formation of ectopic eyes after map3k1 inhibition coincided with an increase to numbers of differentiated eye cells, a decrease in numbers of ovo+ eye progenitors, and also was preceded by eye progenitors prematurely expressing opsin/tyosinase markers of eye cell terminal differentiation. Therefore, map3k1 negatively regulates the process of terminal differentiation within the eye lineage. Similar ectopic eye phenotypes were also observed after inhibition of map2k4, map2k7, jnk, and p38, identifying a putative pathway through which map3k1 prevents differentiation. Together, these results suggest that map3k1 regulates a novel control point in the eye regeneration pathway which suppresses the terminal differentiation of progenitors during their migration to target destinations.",
+       "doi": "10.1371/journal.pgen.1011457"
+      }
+     ]
+    },
+    "europepmc::planarian wound-proximal region multi-lineage convergence bl": {
+     "hit_count": 5,
+     "hits": [
+      {
+       "id": "MED42172041",
+       "year": "2026",
+       "title": "4D single-cell spatial transcriptomics reveals dynamic morphogenetic gradients and regenerative domains in planarians.",
+       "journal": "",
+       "authors": "Han K, Wang Y, Li Y, Guo L, Chen Y, Liu X, Lin Y, Huang Z, Liu Q, Guo W, Zhang R, Zhao W, Liang L, Wei X, Zhou L, Mao X, Wang J, Wu W, Pan H, Yang T, Zhang H, S",
+       "abstract": "BackgroundUnderstanding how organisms reconstruct complex tissue architectures following injury requires precise mapping of gene expression and cellular responses across space and time. Although planarians serve as a classic model for whole-body regeneration, capturing the continuous spatiotemporal dynamics of positional information and cell fate decisions at the organismal scale remains a significant challenge.ResultsUsing high-definition spatial transcriptomics, we generated a 4-dimensional atlas encompassing over 3.5 million cells from whole animals across 8 distinct regeneration timepoints. This comprehensive dataset enabled the definition of 36 spatial domains and the tracing of body axis restoration, revealing that positional control genes recover through self-organizing dynamics analogous to an underdamped control system. We identified an injury-induced spatial domain termed the anterior regenerative zone. This unique region is characterized by the convergence of epidermal, muscular, and neural lineages enriched with positional signals. Furthermore, we demonstrated that the transcriptional co-factor Mediator 8 is a critical regulator of this zone. Depletion of Mediator 8 impairs the formation of the anterior regenerative zone, disrupts polarity establishment, and prevents successful blastema formation.ConclusionsOur study provides a holistic molecular and cellular reconstruction of whole-body regeneration, directly linking dynamic gene expression gradients to morphological restoration. The discovery of the Mediator 8-regulated anterior regenerative zone highlights the importance of spatial domains in coordinating tissue repair. The resulting interactive atlas serves as a foundational resource for deciphering the logic of spatiotemporal patterning in regeneration.",
+       "doi": "10.1093/gigascience/giag064"
+      },
+      {
+       "id": "MED33515282",
+       "year": "2021",
+       "title": "Animal regeneration in the era of transcriptomics.",
+       "journal": "",
+       "authors": "Bideau L, Kerner P, Hui J, Vervoort M, Gazave E.",
+       "abstract": "Animal regeneration, the ability to restore a lost body part, is a process that has fascinated scientists for centuries. In this review, we first present what regeneration is and how it relates to development, as well as the widespread and diverse nature of regeneration in animals. Despite this diversity, animal regeneration includes three common mechanistic steps: initiation, induction and activation of progenitors, and morphogenesis. In this review article, we summarize and discuss, from an evolutionary perspective, the recent data obtained for a variety of regeneration models which have allowed to identify key shared mechanisms that control these main steps of animal regeneration. This review also synthesizes the wealth of high-throughput mRNA sequencing data (bulk mRNA-seq) concerning regeneration which have been obtained in recent years, highlighting the major advances in the regeneration field that these studies have revealed. We stress out that, through a comparative approach, these data provide opportunities to further shed light on the evolution of regeneration in animals. Finally, we point out how the use of single-cell mRNA-seq technology and integration with epigenomic approaches may further help researchers to decipher mechanisms controlling regeneration and their evolution in animals.",
+       "doi": "10.1007/s00018-021-03760-7"
+      },
+      {
+       "id": "PMCPMC12375535",
+       "year": "2025",
+       "title": "Proceedings of the 2025 ORS Musculoskeletal Biology Workshop",
+       "journal": "",
+       "authors": "",
+       "abstract": "",
+       "doi": ""
+      },
+      {
+       "id": "PMCPMC10187017",
+       "year": "2023",
+       "title": "ISEV2023 Abstract Book",
+       "journal": "",
+       "authors": "",
+       "abstract": "",
+       "doi": ""
+      },
+      {
+       "id": "MED16858760",
+       "year": "2006",
+       "title": "Abstracts of the 29th Annual Meeting of the Japan Neuroscience Society, July 19-21, 2006.",
+       "journal": "",
+       "authors": "",
+       "abstract": "",
+       "doi": ""
+      }
+     ]
+    },
+    "openalex::anterior regenerative zone planarian single-cell atlas injur": {
+     "error": "HTTP Error 429: Too Many Requests"
+    }
+   }
+  },
+  "V-UNDM": {
+   "label": "underdamped positional-control-gene recovery",
+   "calls": {
+    "europepmc::planarian positional control gene expression dynamics recove": {
+     "hit_count": 1,
+     "hits": [
+      {
+       "id": "PMCPMC10722638",
+       "year": "2015",
+       "title": "Poster Presentations : Day 1 (March 21, 12:45 \u2248 14:00)",
+       "journal": "",
+       "authors": "",
+       "abstract": "",
+       "doi": ""
+      }
+     ]
+    },
+    "openalex::planarian regeneration gene expression time series dynamics ": {
+     "error": "HTTP Error 429: Too Many Requests"
+    }
+   }
+  },
+  "V-GEOM": {
+   "label": "coupling response geometry (fixed structural form)",
+   "calls": {
+    "europepmc::bioelectric perturbation response saturation transition widt": {
+     "hit_count": 5,
+     "hits": [
+      {
+       "id": "MED42002736",
+       "year": "2026",
+       "title": "Ultrasound-Assisted multimodal neuromodulation via nanosystems.",
+       "journal": "",
+       "authors": "Nizami SB, Toschi N, Conti A.",
+       "abstract": "Neuromodulation techniques have emerged as transformative tools for treating several neurological and psychiatric disorders, offering alternatives to traditional pharmacological approaches often hindered by the blood-brain barrier and off-target effects. While conventional modalities like deep brain stimulation, transcranial magnetic stimulation, and optogenetics have shown promise, they each face limitations in invasiveness, spatial resolution, or clinical applicability. In recent years, low-intensity ultrasound has gained attention as a noninvasive, deep-penetrating modality capable of modulating brain circuits with millimeter-sized spatial precision. This review explores the synergistic integration of ultrasound with engineered nanosystems to achieve multimodal neuromodulation such as electrical, mechanical, optical, and chemical via acoustic energy. We describe how nanoscale materials can transduce ultrasound into localized bioelectric signals, mechanical stress, light emission, or controlled drug release. These interactions enable precise, on-demand stimulation or inhibition of neuronal activity, including in deep brain regions. Experimental studies have demonstrated neuromodulatory effects across a variety of models, with applications ranging from optogenetics and drug delivery to behavioral modulation in rodents and primates. The review concludes with a critical assessment of the translational challenges such as nanoparticle delivery, biocompatibility, long-term clearance, and safety thresholds for human use while outlining promising strategies like cell-based delivery, biodegradable materials, and closed-loop control systems. These innovations highlight the potential of ultrasound-assisted nanosystems as transformative tools for precise neuromodulation in both experimental neuroscience and clinical applications.",
+       "doi": "10.1186/s12951-026-04205-8"
+      },
+      {
+       "id": "PMCPMC10643713",
+       "year": "2023",
+       "title": "The 7th Congress of Biophysicists of Russia - conference proceedings : Abstracts",
+       "journal": "",
+       "authors": "",
+       "abstract": "",
+       "doi": ""
+      },
+      {
+       "id": "PMCPMC9243943",
+       "year": "2022",
+       "title": "Abstract",
+       "journal": "",
+       "authors": "",
+       "abstract": "",
+       "doi": ""
+      },
+      {
+       "id": "MED21847795",
+       "year": "2011",
+       "title": "Abstracts of the 8th EBSA (European Biophysical Societies Association) European Biophysics Congress. August 23-27, 2011. Budapest, Hungary.",
+       "journal": "",
+       "authors": "",
+       "abstract": "",
+       "doi": ""
+      },
+      {
+       "id": "MED34468792",
+       "year": "2021",
+       "title": "57th EASD Annual Meeting of the European Association for the Study of Diabetes.",
+       "journal": "",
+       "authors": "",
+       "abstract": "",
+       "doi": "10.1007/s00125-021-05519-y"
+      }
+     ]
+    },
+    "arxiv::all:\"bioelectric\" AND all:\"regeneration\" AND all:\"response\"": {
+     "error": "HTTP Error 429: Unknown Error"
+    },
+    "openalex::coupling response geometry regeneration polarity perturbatio": {
+     "error": "HTTP Error 429: Too Many Requests"
+    },
+    "zenodo::bioelectric regeneration coupling response geometry": {
+     "hit_count": 5,
+     "hits": [
+      {
+       "id": "ZENODO:18262678",
+       "year": "2026",
+       "title": "Carbon and Minerals as the Bioelectric Lattice of the Human Body: Plasma, Coherence, and the Geometry of Life",
+       "journal": "",
+       "authors": "Lesperance, Joel Michael",
+       "abstract": "The human body is a living electrical field stabilized by mineral geometry and carbon-based lattice structures. Carbon provides the torsional framework that holds electron flow in coherent pathways, while minerals supply the conductive and resonant properties that allow that flow to remain ordered. Together, they form a bioelectric architecture that governs metabolism, neural signaling, tissue repair, and consciousness itself. This paper presents a geometric and plasma-based model of human physiology in which carbon and minerals operate as the foundational elements of biological coherence. carbon lattice, bioelectric field, mineral resonance, mitochondria, electron transport, CO\u2082 physiology, grounding, fascia conductivity, neural coherence, plasma biology, ionic balance, electromagnetic health, living hologram, cellular electricity, respiration physics, mineral nutrition, quantum biology, human coherence, Earth coupling, photonic geometry",
+       "doi": "10.5281/zenodo.18262678"
+      },
+      {
+       "id": "ZENODO:18896564",
+       "year": "2026",
+       "title": "The Compression Principle of Life: A Unified Theory of Cognition, Control, and Biological Information",
+       "journal": "",
+       "authors": "Hunt, Treasure A.",
+       "abstract": "Biological systems maintain coherent organization despite constant exposure to noise, perturbation, and structural turnover. From embryonic development and fungal signaling networks to nervous systems and artificial learning architectures, adaptive systems repeatedly demonstrate the ability to preserve structure, repair damage, and recover from disturbance. While modern biology has successfully identified many of the mechanisms underlying these processes, a general principle explaining why such systems persist under stochastic conditions remains largely absent. This paper proposes the Compression Principle of Life, a theoretical framework suggesting that living systems maintain persistence by balancing two competing informational constraints: the need to compress high-dimensional environmental information and the need to preserve coherence sufficient to maintain functional identity. Excessive redundancy produces inefficient systems unable to regulate complexity, while excessive compression destroys the structural relationships required for stable behavior. Adaptive systems therefore operate within a regime that jointly optimizes informational compression and coherence. Within this framework, biological and artificial adaptive systems can be understood as operating on low-dimensional informational manifolds shaped by energetic and informational constraints. Stable behaviors correspond to attractor basins within these manifolds, while noise acts as a selective pressure that eliminates fragile structures and favors compressible, reconstructible architectures. Control emerges not primarily through centralized computation but through constraints on viable state spaces, allowing coordinated behavior to arise even in distributed systems lacking nervous systems. The framework integrates observations from morphogenesis, neural population dynamics, fungal electrical signaling, decentralized biological control systems, and artificial learning architectures. It also proposes a geometric organization of biological repair processes in which maintenance events follow hierarchical temporal patterns that stabilize attractor structures across multiple scales. Finally, the theory generates testable predictions and diagnostic metrics for detecting instability in adaptive systems, including measures of intrinsic dimensionality, recurrence structure, and attractor collapse. These",
+       "doi": "10.5281/zenodo.18896564"
+      },
+      {
+       "id": "ZENODO:16990796",
+       "year": "2025",
+       "title": "The Pure Cell: Universal Foundation of Total Regeneration",
+       "journal": "",
+       "authors": "Bulla, Francesco",
+       "abstract": "This publication introduces the concept of the pure cell, a biological unit free from epigenetic and environmental constraints, capable of activating its full regenerative potential. The theory proposes that every human cell has a latent ability to rebuild tissues and organs, which can be reactivated through targeted signals. A new paradigm for total regeneration and the medicine of the future.",
+       "doi": "10.5281/zenodo.16990796"
+      },
+      {
+       "id": "ZENODO:19928879",
+       "year": "2026",
+       "title": "ELECTRIC CURRENT IN LIVING ORGANISMS",
+       "journal": "JOURNAL OF APPLIED MEDICAL SCIENCES",
+       "authors": "Ochildiyev, Hasan, Qayimova, Sitora",
+       "abstract": "Bioelectrical activity is an intrinsic property of living organisms that reflects the dynamic interaction between ionic movements and cellular structures. Unlike artificial electrical systems, biological electrical processes are self-regulated and tightly integrated with metabolic and signaling pathways. This article examines the fundamental nature of electrical currents in living systems, emphasizing their role in cellular communication, functional coordination, and adaptive responses. Special focus is placed on how electrical signals contribute to the regulation of physiological stability and the integration of complex biological functions. The study also highlights the growing importance of bioelectricity in modern biomedical research and innovative therapeutic strategies.",
+       "doi": "10.5281/zenodo.19928879"
+      },
+      {
+       "id": "ZENODO:8361754",
+       "year": "2023",
+       "title": "Deep-learning model coupling wearable bioelectric and mechanical sensors for refined muscle strength assessment",
+       "journal": "",
+       "authors": "Chengyu Li, Tingyu Wang, Siyu Zhou, Weishi Li, Wei Tang",
+       "abstract": "Code for&nbsp;Deep-learning model coupling wearable bioelectric and mechanical sensors for refined muscle strength assessment",
+       "doi": "10.5281/zenodo.8361754"
+      }
+     ]
+    }
+   }
+  },
+  "V-SYM": {
+   "label": "symbol grounding \u2014 reader, not carrier",
+   "calls": {
+    "zenodo::developmental bioelectricity syntax semantics inspection spa": {
+     "hit_count": 5,
+     "hits": [
+      {
+       "id": "ZENODO:22299362",
+       "year": "2026",
+       "title": "Partial Order Semantics and Operational Semantics for Strand Spaces, via Rocq",
+       "journal": "",
+       "authors": "Busi, Matteo, Focardi, Riccardo, Guttman, Joshua, Luccio, Flaminia",
+       "abstract": "Rocq mechanization accompanying \"Partial Order Semantics and Operational Semantics for Strand Spaces, via Rocq\" by Matteo Busi, Riccardo Focardi, Joshua Guttman, and Flaminia Luccio, submitted to JLAMP. This release extends the StrandsRocq framework with: an inductive characterization of bundles, with soundness and completeness theorems; a CPSA-style protocol syntax embedded in Rocq; a structured operational semantics for protocol execution; correspondence theorems showing that reachable thread pools and bundles carry exactly the same information; a computational labeled semantics, including the realization of compatible enumerations. Build with dune build. Requires dune&gt;=3.21 and Rocq 9.1.0.",
+       "doi": "10.5281/zenodo.22299362"
+      },
+      {
+       "id": "ZENODO:22287671",
+       "year": "2026",
+       "title": "Partial Order Semantics and Operational Semantics for Strand Spaces, via Rocq",
+       "journal": "",
+       "authors": "Busi, Matteo, Focardi, Riccardo, Guttman, Joshua, Luccio, Flaminia",
+       "abstract": "Rocq mechanization accompanying &quot;Partial Order Semantics and Operational Semantics for Strand Spaces, via Rocq&quot; by Matteo Busi, Riccardo Focardi, Joshua Guttman, and Flaminia Luccio, submitted to JLAMP. This release extends the StrandsRocq framework with: an inductive characterization of bundles, with soundness and completeness theorems; a CPSA-style protocol syntax embedded in Rocq; a structured operational semantics for protocol execution; correspondence theorems showing that reachable thread pools and bundles carry exactly the same information; a computational labeled semantics, including the realization of compatible enumerations. Build with dune build. Requires dune&gt;=3.21 and Rocq 9.1.0.",
+       "doi": "10.5281/zenodo.22287671"
+      },
+      {
+       "id": "ZENODO:20561523",
+       "year": "2026",
+       "title": "IRONY AS A COMPLEX COGNITIVE MECHANISM",
+       "journal": "International Journal of Literature and Language Studies",
+       "authors": "Djumaniyazov Doniyor Aleksandrovich",
+       "abstract": "Irony is a complex pragmatic phenomenon that occupies a central place in human communication. This article examines the cognitive foundations of irony, the mental mechanisms involved in its comprehension &mdash; namely Theory of Mind, metarepresentation, and inferential reasoning &mdash; as well as its pragmatic and social functions. The study aims to analyse irony as a complex cognitive mechanism and to illuminate its role in human cognition on the basis of recent findings in cognitive linguistics, pragmatics, and neuroscience. The analysis draws on a theoretical-descriptive method and is supported by examples from Uzbek language data. The results demonstrate that comprehending irony requires higher-order cognitive capacities, and that this process varies according to cultural and contextual factors.",
+       "doi": "10.5281/zenodo.20561523"
+      },
+      {
+       "id": "ZENODO:11024163",
+       "year": "2018",
+       "title": "Determining the Relationship Between Semantics and Syntax in Certain Lexical Subsets \u2013 A Corpus Linguistic Study\" (December 2018)",
+       "journal": "",
+       "authors": "Siam, Emad Eddin R.",
+       "abstract": "This study aims to explore the relationship between semantics and syntax within specific lexical subsets from the verbal domain. Specifically, it seeks to address the following semantic-oriented questions: A. Is there a specific relationship between semantics and syntax in lexical units that belong to a particular semantic field? B. To what extent does semantic analysis contribute to identifying the relationship between semantics and syntax? C. What role can the valency approach play in this process? D. What relationship exists between the semantic and syntactic levels in the analysis of verbs denoting agreement and divergence? E. How can the relationship between semantics and syntax be utilized to address learning challenges associated with verbs? &nbsp;",
+       "doi": "10.5281/zenodo.11024163"
+      },
+      {
+       "id": "ZENODO:16885098",
+       "year": "2025",
+       "title": "Bioelectric Coherence Across Scales: Unifying Neural Oscillations and Morphogenetic Fields Through Expectation-Biased Stochastic Resonance",
+       "journal": "",
+       "authors": "Todd, Ian",
+       "abstract": "Neural oscillations in the brain and bioelectric patterns in developing tissues&nbsp;may represent two scales of the same computational strategy. This perspective&nbsp;explores whether Miller&rsquo;s ephaptic field theory and Levin&rsquo;s morphogenetic bioelectricity could be unified through expectation-biased stochastic resonance (EBSR).&nbsp;In this framework, biological systems selectively amplify expected signals using&nbsp;structured noise. The framework makes four testable predictions and suggests that&nbsp;cognitive and developmental processes might share a common bioelectric computational substrate.",
+       "doi": "10.5281/zenodo.16885098"
+      }
+     ]
+    },
+    "europepmc::bioelectric pattern memory reader semantics morphogenesis Le": {
+     "hit_count": 2,
+     "hits": [
+      {
+       "id": "MED27807271",
+       "year": "2016",
+       "title": "Top-down models in biology: explanation and control of complex living systems above the molecular level.",
+       "journal": "",
+       "authors": "Pezzulo G, Levin M.",
+       "abstract": "It is widely assumed in developmental biology and bioengineering that optimal understanding and control of complex living systems follows from models of molecular events. The success of reductionism has overshadowed attempts at top-down models and control policies in biological systems. However, other fields, including physics, engineering and neuroscience, have successfully used the explanations and models at higher levels of organization, including least-action principles in physics and control-theoretic models in computational neuroscience. Exploiting the dynamic regulation of pattern formation in embryogenesis and regeneration requires new approaches to understand how cells cooperate towards large-scale anatomical goal states. Here, we argue that top-down models of pattern homeostasis serve as proof of principle for extending the current paradigm beyond emergence and molecule-level rules. We define top-down control in a biological context, discuss the examples of how cognitive neuroscience and physics exploit these strategies, and illustrate areas in which they may offer significant advantages as complements to the mainstream paradigm. By targeting system controls at multiple levels of organization and demystifying goal-directed (cybernetic) processes, top-down strategies represent a roadmap for using the deep insights of other fields for transformative advances in regenerative medicine and systems bioengineering.",
+       "doi": "10.1098/rsif.2016.0555"
+      },
+      {
+       "id": "PMCPMC10643713",
+       "year": "2023",
+       "title": "The 7th Congress of Biophysicists of Russia - conference proceedings : Abstracts",
+       "journal": "",
+       "authors": "",
+       "abstract": "",
+       "doi": ""
+      }
+     ]
+    },
+    "openalex::symbol grounding morphogenesis bioelectric code": {
+     "error": "HTTP Error 429: Too Many Requests"
+    }
+   }
+  },
+  "V-TAS": {
+   "label": "tangential action spaces (geometric memory model)",
+   "calls": {
+    "europepmc::tangential action spaces bioelectric memory geometric model ": {
+     "hit_count": 4,
+     "hits": [
+      {
+       "id": "PPRPPR1216581",
+       "year": "2026",
+       "title": "Hidden regenerative state in planarians: A geometric model of bioelectric memory using Tangential Action Spaces",
+       "journal": "bioRxiv",
+       "authors": "Blattner M.",
+       "abstract": "Planarian fragments can regenerate with normal gross anatomy after a transient bioelectric perturbation yet display altered outcomes upon re-cutting, implying that regeneration can store a persistent hidden state. Here we formulate an open-path version of Tangential Action Spaces (TAS) for this setting. Regeneration after a given cut is represented as a prescribed coarse anatomical trajectory together with multiple physiological lifts in a higher-dimensional state space. A metric on physiological state space defines a baseline lift, an effective excess-cost functional, and a baseline-relative endpoint displacement that serves as written hidden regenerative state. Re-cutting converts this open-path construction into a challenge readout. Locally, the theory yields a cut-dependent memory co-metric that identifies latent directions that are easy, difficult, or inaccessible to rewrite. We show that this geometry is consistent with published observations of cryptic phenotypes, stable re-challenge ratios, and near-absorbing double-headed outcomes. A reduced rank-one latent-threshold realization fitted to published 8-OH immediate and re-challenge counts identifies a challenge-sensitive cryptic interval below the immediate double-headed threshold and predicts out-of-sample re-challenge penetrances near 15% for nigericin- and monensin-treated immediate single-headed survivors using only their immediate phenotype penetrances. As a mechanistic bridge, a local electrodiffusive in-silico example instantiates a local version of the physiological-state effort metric G . This metric defines the baseline lift and excess rewriting cost, in relative biophysical units, and yields explicit example local write geometry. An illustrative semimechanistic readout based on integrated wound-edge gap-junction contrast and Na/K-ATPase load reproduces the treated-family ordering and similar transfer predictions when the untreated baseline is softly anchored near zero. These quantitative layers are intended as proof-of-concept calibratability and mechanistic-grounding checks rather than full validation of the complete open-path model. The framework therefore turns cryptic regenerative memory into a geometric, costed, and experimentally testable object, yielding predictions about temporal-profile dependence, compensatory cancellation, sign-reversing controls, cut dependence, anisotropic rewr",
+       "doi": "10.64898/2026.04.01.715890"
+      },
+      {
+       "id": "PMCPMC10643713",
+       "year": "2023",
+       "title": "The 7th Congress of Biophysicists of Russia - conference proceedings : Abstracts",
+       "journal": "",
+       "authors": "",
+       "abstract": "",
+       "doi": ""
+      },
+      {
+       "id": "MED24821532",
+       "year": "2014",
+       "title": "Visualizing simulated electrical fields from electroencephalography and transcranial electric brain stimulation: a comparative evaluation.",
+       "journal": "",
+       "authors": "Eichelbaum S, Dannhauer M, Hlawitschka M, Brooks D, Kn\u00f6sche TR, Scheuermann G.",
+       "abstract": "Electrical activity of neuronal populations is a crucial aspect of brain activity. This activity is not measured directly but recorded as electrical potential changes using head surface electrodes (electroencephalogram - EEG). Head surface electrodes can also be deployed to inject electrical currents in order to modulate brain activity (transcranial electric stimulation techniques) for therapeutic and neuroscientific purposes. In electroencephalography and noninvasive electric brain stimulation, electrical fields mediate between electrical signal sources and regions of interest (ROI). These fields can be very complicated in structure, and are influenced in a complex way by the conductivity profile of the human head. Visualization techniques play a central role to grasp the nature of those fields because such techniques allow for an effective conveyance of complex data and enable quick qualitative and quantitative assessments. The examination of volume conduction effects of particular head model parameterizations (e.g., skull thickness and layering), of brain anomalies (e.g., holes in the skull, tumors), location and extent of active brain areas (e.g., high concentrations of current densities) and around current injecting electrodes can be investigated using visualization. Here, we evaluate a number of widely used visualization techniques, based on either the potential distribution or on the current-flow. In particular, we focus on the extractability of quantitative and qualitative information from the obtained images, their effective integration of anatomical context information, and their interaction. We present illustrative examples from clinically and neuroscientifically relevant cases and discuss the pros and cons of the various visualization techniques.",
+       "doi": "10.1016/j.neuroimage.2014.04.085"
+      },
+      {
+       "id": "MED33231810",
+       "year": "2020",
+       "title": "Abstracts of the 51st Annual Conference of the Italian Society of Neurology : November 28- 30, 2020.",
+       "journal": "",
+       "authors": "",
+       "abstract": "",
+       "doi": "10.1007/s10072-020-04753-3"
+      }
+     ]
+    },
+    "openalex::tangential action spaces bioelectric memory": {
+     "error": "HTTP Error 429: Too Many Requests"
+    },
+    "zenodo::tangential action spaces bioelectric memory": {
+     "hit_count": 5,
+     "hits": [
+      {
+       "id": "ZENODO:19643497",
+       "year": "2026",
+       "title": "tasGTC: Numerical experiments for 'Non-Abelian Fibre-Bundle Geometry for Stochastic Computation'",
+       "journal": "",
+       "authors": "Blattner, Marcel",
+       "abstract": "Python scripts and processed numerical data accompanying the article 'Non-Abelian Fibre-Bundle Geometry for Stochastic Computation: Memory Co-Metrics and Heisenberg-Group Commutator Gates' by M. Blattner, submitted to Journal of Physics A: Mathematical and Theoretical (2026). The repository contains the simulation and plotting scripts that generate Figures 1 and 2 of the article, as well as auxiliary verification scripts (BCH exactness, refinement invariance, path-dependent write cost, committor-threshold crossover). The article builds on the author's prior preprint arXiv:2509.03399 ('Tangential Action Spaces: Geometry, Memory and Cost in Holonomic and Nonholonomic Agents').",
+       "doi": "10.5281/zenodo.19643497"
+      },
+      {
+       "id": "ZENODO:18276642",
+       "year": "2026",
+       "title": "Living Information Theory: Morphogenesis as Compression-Driven Navigation on an Information Geometric Substrate",
+       "journal": "",
+       "authors": "Hunt, Treasure A.",
+       "abstract": "Living systems reliably achieve stable outcomes despite noise, damage, and incomplete information. Developing tissues regenerate correct anatomy, non-neural networks learn and remember, and evolution itself selects architectures capable of navigating uncertain environments. While these phenomena are well documented experimentally, they remain theoretically fragmented across biology, physics, and cognitive science. This preprint presents Living Information Theory II, an extension and deepening of Living Information Theory (LIT), which formalizes persistence under noise as a governing principle for cognition, morphogenesis, and agency across biological and artificial systems. We introduce the Information Geometric Substrate (IGS) as the necessary mathematical structure implied by LIT: a constrained manifold on which system dynamics, robustness, memory, and control are geometrically encoded. Building on extensive experimental work in developmental bioelectricity&mdash;particularly the research program led by Michael Levin&mdash;we show that morphogenesis is best understood as goal-directed navigation on IGS, where attractors correspond to viable anatomical states and bioelectric networks act as high-leverage control coordinates that deform basin structure. In this framework, memory is reconstruction rather than storage, goals are dynamical invariants rather than representations, and learning corresponds to flow reconfiguration under noise. The paper integrates: A law-level account of persistence and compression (Living Information Theory), A formal geometric substrate forced by noise-filtered dynamics (IGS), A mechanistic explanation via selection by noise, Empirical grounding in bioelectric control of growth, regeneration, and pattern memory, A unification of morphogenesis, learning, and evolution as the same navigational process operating across timescales. We further connect IGS to measurable causal integration, top-down control, and competency-based definitions of intelligence, yielding testable predictions for developmental biology, regenerative medicine, artificial life, and adaptive AI systems. This work is intended as a foundational, law-level contribution rather than a domain-specific review, and is released as a preprint to enable immediate use, critique, and extension.",
+       "doi": "10.5281/zenodo.18276642"
+      },
+      {
+       "id": "ZENODO:10520766",
+       "year": "2020",
+       "title": "Fig. 3 in A New Species Of Juniperoxylon From The Early Miocene Of Northwestern Turkey",
+       "journal": "Acta Palaeontologica Romaniae",
+       "authors": "Akkemik, Unal",
+       "abstract": "Fig. 3 The thin sections of Juniperoxylon acarcae Akkemik sp. nov. a) Transversal section with false rings and without resin canals, b) Marginal (zonate) axial parenchyma (arrows) and spaces between tracheids, c) Spaces between tracheids, and diffuse axial parenchyma cells, d) Tangential section with uni-to partly biseriate rays, e) Uniseriate pits on tangential walls of tracheids, f) Biseriate and alternate pits on tangential walls of tracheids.",
+       "doi": "10.5281/zenodo.10520766"
+      },
+      {
+       "id": "ZENODO:20586816",
+       "year": "2026",
+       "title": "The Geometry of Time: How Cognition Emerges from Persistence Across Temporal Scales",
+       "journal": "",
+       "authors": "Hunt, Treasure A.",
+       "abstract": "This paper examines cognition through the broader problem of persistence across time. Building upon Living Information Theory, Persistence Geometry, Control Before Cognition, and Regulated Entropy Injection Theory, it proposes that cognition emerges when systems must maintain viable trajectories across temporal horizons that exceed the limits of reactive regulation. Within this framework, persistence is treated as a property of trajectories rather than states, control emerges through the regulation of future accessibility, and cognition emerges through mechanisms that support prediction, memory, compression, and adaptive navigation. A central contribution of the paper is the introduction of temporal coarse-graining as a process through which systems construct compressed representations that preserve information relevant to future viability. Evidence from reinforcement learning, ecosystem learning, developmental biology, morphogenesis, bioelectric memory, and resilience science is examined within a common framework. The resulting synthesis proposes a general definition of cognition as the adaptive navigation of temporally extended possibility spaces in service of persistence and generates a series of testable predictions regarding learning, memory, adaptation, and cognition across biological and non-neural systems.",
+       "doi": "10.5281/zenodo.20586816"
+      },
+      {
+       "id": "ZENODO:3942439",
+       "year": "2020",
+       "title": "La memoria collettiva dell'Europa come promessa di libert\u00e0. La lezione di Axel Honneth",
+       "journal": "",
+       "authors": "Leone, Francesco",
+       "abstract": "The aim of this paper is to highlight the role that collective memory plays in Honneth&rsquo;s theory of justice exposed in Freedom&rsquo;s Right. Honneth develops his theory on the basis on a &laquo;normative reconstruction&raquo; of the forms of recognition institutionalized within the Western societies starting from the modern era. The author of the return to Hegel in Critical Theory recovers a Kantian teleological philosophy of history to ground his normative theory. Kantian &laquo;signs of history&raquo; becomes the subject of a collective memory. Honneth argues that only the recourse to a collective memory can motivate subjects and groups to expand the spaces of social freedom and drive history towards better. The memory of significant events and moral conquests can arouse enthusiasm to defend the Europeans spaces of social freedom and for their relaunch. A stronger European integration can only take place with the struggles of groups and individuals motivated by action through the memory of moral and normative achievements. Europe needs a broader concept of constitutional patriotism: a kind of patriotism of collective memory. &nbsp;",
+       "doi": "10.5281/zenodo.3942439"
+      }
+     ]
+    }
+   }
+  },
+  "V-NEURO": {
+   "label": "neurobots / synthetic-construct memory (wet-lab anchors)",
+   "calls": {
+    "europepmc::neurobots living robots self-organized nervous system frog c": {
+     "hit_count": 1,
+     "hits": [
+      {
+       "id": "MED41717829",
+       "year": "2026",
+       "title": "Engineered Living Systems With Self-Organizing Neural Networks: From Anatomy to Behavior and Gene Expression.",
+       "journal": "",
+       "authors": "Fotowat H, O'Neill L, Pio-Lopez L, Sperry MM, Erickson P, Lin T, Levin M.",
+       "abstract": "A great deal is known about the formation and architecture of biological neural networks in animal models, which have arrived at their current structure-function relationship through evolution by natural selection. Little is known about the development of such structure-function relationships in a scenario where neurons are allowed to grow within evolutionarily-novel, motile bodies. Previous work showed that ectodermal tissue excised from Xenopus embryos, develops into a three-dimensional mucociliary epidermal organoid ex vivo and exhibits movements distinct from age-matched tadpoles. These 'biobots' are autonomous, self-powered, and able to move through aqueous environments. Here, we report a new type of biobot, the neurobot, composed of mucociliary epidermis and neural tissue. We show that neural precursor cells implanted in explanted Xenopus ectodermal tissue develop into mature neurons, extending processes both toward the surface and among each other. These self-organized neurobots exhibit unique morphology, more complex movements, and different responses to neuroactive drugs compared to non-neuronal counterparts. Calcium imaging confirms neuronal activity in neurobots. Transcriptomics reveals increased transcript variability, expression of genes related to nervous system development, a shift toward ancient genes, and up-regulation of neuronal genes linked to visual perception.",
+       "doi": "10.1002/advs.202508967"
+      }
+     ]
+    },
+    "europepmc::xenobots memory synthetic living constructs stimulus-specifi": {
+     "hit_count": 5,
+     "hits": [
+      {
+       "id": "PPRPPR1219439",
+       "year": "2026",
+       "title": "Behavioral, Physiological, and Transcriptional Mechanisms of Memory in a Synthetic Living Construct",
+       "journal": "bioRxiv",
+       "authors": "Pai VP, Traer JA, Sperry MM, Zeng Y, Levin M.",
+       "abstract": "Synthetic living constructs, which lack the long histories of selection in ecological contexts that shape behaviors of conventional organisms, offer an important complement to traditional studies of learning. Could novel biobots exhibit sensing and memory of experiences? Here, we investigated the effects of chemical stimuli on basal Xenobots \u2013 autonomously motile entities derived from Xenopus embryonic ectodermal explants (with no additional sculpting or bioengineering). We quantified and characterized the coordinated ciliary activity that generates fluid flow fields guiding the trajectory of Xenobot motion. We also show distinct and specific changes in Xenobot behavior after brief exposure to Xenopus embryonic cell extract and to ATP. These two experiences produced distinct, long-term, stimulus-specific memories, detectable through both transcriptional and physiological signatures. Exposure to specific environmental stimuli induced alterations in the spatiotemporal patterns of calcium signaling across Xenobots. Together, these data lay a foundation for characterizing the capabilities of synthetic cellular collectives to sense and discriminate among stimuli, as well as store functional information in a non-neural context. Understanding behavioral competencies in novel, non-neural systems have broad implications across evolutionary biology, behavioral science, bioengineering, and bio/hybrid robotics.",
+       "doi": "10.64898/2026.03.17.712168"
+      },
+      {
+       "id": "MED41561686",
+       "year": "2025",
+       "title": "Wetware network-based AI: a chemical approach to embodied cognition for robotics and artificial intelligence.",
+       "journal": "",
+       "authors": "Damiano L, Fleres A, Roli A, Stano P.",
+       "abstract": "Wetware Network-Based Artificial Intelligence (WNAI) introduces a new approach to robotic cognition and artificial intelligence: autonomous cognitive agents built from synthetic chemical networks. Rooted in Wetware Neuromorphic Engineering, WNAI shifts the focus of this emerging field from disembodied computation and biological mimicry to reticular chemical self-organization as a substrate for cognition. At the theoretical level, WNAI integrates insights from network cybernetics, autopoietic theory and enaction to frame cognition as a materially grounded, emergent phenomenon. At the heuristic level, WNAI defines its role as complementary to existing leading approaches. On the one hand, it complements embodied AI and xenobotics by expanding the design space of artificial embodied cognition into fully synthetic domains. On the other hand, it engages in mutual exchange with neural network architectures, advancing cross-substrate principles of network-based cognition. At the technological level, WNAI offers a roadmap for implementing chemical neural networks and protocellular agents, with potential applications in robotic systems requiring minimal, adaptive, and substrate-sensitive intelligence. By situating wetware neuromorphic engineering within the broader landscape of robotics and AI, this article outlines a programmatic framework that highlights its potential to expand artificial cognition beyond silicon and biohybrid systems.",
+       "doi": "10.3389/frobt.2025.1694338"
+      },
+      {
+       "id": "MED42183019",
+       "year": "2026",
+       "title": "Mind Everywhere: A Framework for Conceptualizing Goal-Directedness in Biology and Other Domains-Part One.",
+       "journal": "",
+       "authors": "Levin M, Resnik DB.",
+       "abstract": "What makes a system-evolved, engineered, or hybrid-describable by teleological and mentalistic terms such as intelligent, goal-directed, cognitive, and intentional? In this two-part article, we review classical thought on teleology in the life sciences and defend a new approach to goal-directedness that stems from an emerging field-diverse intelligence. This field seeks to characterize what all active agents, regardless of their composition or provenance, have in common. Our approach emphasizes: (1) empirical testability (not philosophical commitments to linguistic categories), (2) fecundity in discovery of new capabilities (not just reductive mechanistic explanations of results after they are made, but worldviews that facilitate and enable novel research), (3) operationalization of terminology by reference to conceptual and empirical toolkits shown to be effective for a given system (cognitive and teleological claims are really hypotheses of optimal interaction protocols), and (4) continuity of human goal-directedness with our unicellular origins (which implies a need for models of scaling of cognition). In Part One, we review historical and contemporary debates about teleology in biology and describe some ground-breaking experimental results from morphogenesis, synthetic biology, and other areas of research involving the coordination of cellular behavior by means of bioelectric networks. In Part Two, we argue that current approaches, which tend to minimize the emphasis on goal-directedness in biology (and thus suppress the use of powerful tools from behavioral science), cannot account for these experimental results in a manner that helps us better understand how to control living systems toward new large-scale functions and fruitfully guide novel experimental work and practical applications in these areas of research. What is needed, therefore, is an approach to teleology in biology informed by mentalistic concepts, such as intelligence, cognition, and intentionality. We describe and explain our mentalistic approach in greater depth, show how it can be applied to specific cases, and address some important objections to our view. By abandoning the reductionistic aversion to mentalistic concepts in biology in favor of principled and testable frameworks for understanding diverse minds across a spectrum, embodied in the physical world, the plasticity and probl",
+       "doi": "10.1007/s13752-025-00523-6"
+      },
+      {
+       "id": "MED34925687",
+       "year": "2021",
+       "title": "Behaviorist approaches to investigating memory and learning: A primer for synthetic biology and bioengineering.",
+       "journal": "",
+       "authors": "Abramson CI, Levin M.",
+       "abstract": "The fields of developmental biology, biomedicine, and artificial life are being revolutionized by advances in synthetic morphology. The next phase of synthetic biology and bioengineering is resulting in the construction of novel organisms (biobots), which exhibit not only morphogenesis and physiology but functional behavior. It is now essential to begin to characterize the behavioral capacity of novel living constructs in terms of their ability to make decisions, form memories, learn from experience, and anticipate future stimuli. These synthetic organisms are highly diverse, and often do not resemble familiar model systems used in behavioral science. Thus, they represent an important context in which to begin to unify and standardize vocabulary and techniques across developmental biology, behavioral ecology, and neuroscience. To facilitate the study of behavior in novel living systems, we present a primer on techniques from the behaviorist tradition that can be used to probe the functions of any organism - natural, chimeric, or synthetic - regardless of the details of their construction or origin. These techniques provide a rich toolkit for advancing the fields of synthetic bioengineering, evolutionary developmental biology, basal cognition, exobiology, and robotics.",
+       "doi": "10.1080/19420889.2021.2005863"
+      },
+      {
+       "id": "MED37156924",
+       "year": "2023",
+       "title": "Darwin's agential materials: evolutionary implications of multiscale competency in developmental biology.",
+       "journal": "",
+       "authors": "Levin M.",
+       "abstract": "A critical aspect of evolution is the layer of developmental physiology that operates between the genotype and the anatomical phenotype. While much work has addressed the evolution of developmental mechanisms and the evolvability of specific genetic architectures with emergent complexity, one aspect has not been sufficiently explored: the implications of morphogenetic problem-solving competencies for the evolutionary process itself. The cells that evolution works with are not passive components: rather, they have numerous capabilities for behavior because they derive from ancestral unicellular organisms with rich repertoires. In multicellular organisms, these capabilities must be tamed, and can be exploited, by the evolutionary process. Specifically, biological structures have a multiscale competency architecture where cells, tissues, and organs exhibit regulative plasticity-the ability to adjust to perturbations such as external injury or internal modifications and still accomplish specific adaptive tasks across metabolic, transcriptional, physiological, and anatomical problem spaces. Here, I review examples illustrating how physiological circuits guiding cellular collective behavior impart computational properties to the agential material that serves as substrate for the evolutionary process. I then explore the ways in which the collective intelligence of cells during morphogenesis affect evolution, providing a new perspective on the evolutionary search process. This key feature of the physiological software of life helps explain the remarkable speed and robustness of biological evolution, and sheds new light on the relationship between genomes and functional anatomical phenotypes.",
+       "doi": "10.1007/s00018-023-04790-z"
+      }
+     ]
+    },
+    "openalex::synthetic living constructs memory xenobot bioelectric": {
+     "error": "HTTP Error 429: Too Many Requests"
+    }
+   }
+  },
+  "V-Q8ANOM": {
+   "label": "gjblock|head_tail both-faces anomaly (night-eight queue)",
+   "calls": {
+    "europepmc::planarian gap junction blockade both anterior posterior ampu": {
+     "hit_count": 5,
+     "hits": [
+      {
+       "id": "MED39372228",
+       "year": "2022",
+       "title": "A Computational Approach to Explaining Bioelectrically Induced Persistent, Stochastic Changes of Axial Polarity in Planarian Regeneration.",
+       "journal": "",
+       "authors": "Grodstein J, Levin M.",
+       "abstract": "Morphogenesis results when cells cooperate to construct a specific anatomical structure. The behavior of such cell swarms exhibits not only robustness but also plasticity with respect to what specific anatomies will be built. Important aspects of evolutionary biology, regenerative medicine, and cancer are impacted by the algorithms by which instructive information guides invariant or stochastic outcomes of such collective activity. Planarian flatworms are an important model system in this field, as flatworms reliably regenerate a primary body axis after diverse kinds of injury. Importantly, the number of heads to which they regenerate is not determined genetically: lines of worms can be produced, which, with no further manipulation, regenerate as two-headed (2H) worms, or as \"Cryptic\" worms. When cut into pieces, Cryptic worms produce one-headed (1H) and 2H regenerates stochastically. Neural and bioelectric mechanisms have been proposed to explain aspects of the regenerative dataset. However, these models have not been unified and do not explain all of the Cryptic worm data. In this study, we propose a model in which two separate systems (a bioelectric circuit and a neural polarity mechanism) compete to determine the anatomical structure of a regenerate. We show how our model accounts for existing data and provides a consistent synthesis of mechanisms that explain both the robustness of planarian regeneration and its remarkable re-writability toward novel stable and stochastic anatomical states.",
+       "doi": "10.1089/bioe.2021.0036"
+      },
+      {
+       "id": "MED27499881",
+       "year": "2016",
+       "title": "Physiological controls of large-scale patterning in planarian regeneration: a molecular and computational perspective on growth and form.",
+       "journal": "",
+       "authors": "Durant F, Lobo D, Hammelman J, Levin M.",
+       "abstract": "Planaria are complex metazoans that repair damage to their bodies and cease remodeling when a correct anatomy has been achieved. This model system offers a unique opportunity to understand how large-scale anatomical homeostasis emerges from the activities of individual cells. Much progress has been made on the molecular genetics of stem cell activity in planaria. However, recent data also indicate that the global pattern is regulated by physiological circuits composed of ionic and neurotransmitter signaling. Here, we overview the multi-scale problem of understanding pattern regulation in planaria, with specific focus on bioelectric signaling via ion channels and gap junctions (electrical synapses), and computational efforts to extract explanatory models from functional and molecular data on regeneration. We present a perspective that interprets results in this fascinating field using concepts from dynamical systems theory and computational neuroscience. Serving as a tractable nexus between genetic, physiological, and computational approaches to pattern regulation, planarian pattern homeostasis harbors many deep insights for regenerative medicine, evolutionary biology, and engineering.",
+       "doi": "10.1002/reg2.54"
+      },
+      {
+       "id": "MED26610482",
+       "year": "2015",
+       "title": "Gap Junctional Blockade Stochastically Induces Different Species-Specific Head Anatomies in Genetically Wild-Type Girardia dorotocephala Flatworms.",
+       "journal": "",
+       "authors": "Emmons-Bell M, Durant F, Hammelman J, Bessonov N, Volpert V, Morokuma J, Pinet K, Adams DS, Pietak A, Lobo D, Levin M.",
+       "abstract": "The shape of an animal body plan is constructed from protein components encoded by the genome. However, bioelectric networks composed of many cell types have their own intrinsic dynamics, and can drive distinct morphological outcomes during embryogenesis and regeneration. Planarian flatworms are a popular system for exploring body plan patterning due to their regenerative capacity, but despite considerable molecular information regarding stem cell differentiation and basic axial patterning, very little is known about how distinct head shapes are produced. Here, we show that after decapitation in G. dorotocephala, a transient perturbation of physiological connectivity among cells (using the gap junction blocker octanol) can result in regenerated heads with quite different shapes, stochastically matching other known species of planaria (S. mediterranea, D. japonica, and P. felina). We use morphometric analysis to quantify the ability of physiological network perturbations to induce different species-specific head shapes from the same genome. Moreover, we present a computational agent-based model of cell and physical dynamics during regeneration that quantitatively reproduces the observed shape changes. Morphological alterations induced in a genomically wild-type G. dorotocephala during regeneration include not only the shape of the head but also the morphology of the brain, the characteristic distribution of adult stem cells (neoblasts), and the bioelectric gradients of resting potential within the anterior tissues. Interestingly, the shape change is not permanent; after regeneration is complete, intact animals remodel back to G. dorotocephala-appropriate head shape within several weeks in a secondary phase of remodeling following initial complete regeneration. We present a conceptual model to guide future work to delineate the molecular mechanisms by which bioelectric networks stochastically select among a small set of discrete head morphologies. Taken together, these data and analyses shed light on important physiological modifiers of morphological information in dictating species-specific shape, and reveal them to be a novel instructive input into head patterning in regenerating planaria.",
+       "doi": "10.3390/ijms161126065"
+      },
+      {
+       "id": "MED27574538",
+       "year": "2016",
+       "title": "Physiological inputs regulate species-specific anatomy during embryogenesis and regeneration.",
+       "journal": "",
+       "authors": "Sullivan KG, Emmons-Bell M, Levin M.",
+       "abstract": "A key problem in evolutionary developmental biology is identifying the sources of instructive information that determine species-specific anatomical pattern. Understanding the inputs to large-scale morphology is also crucial for efforts to manipulate pattern formation in regenerative medicine and synthetic bioengineering. Recent studies have revealed a physiological system of communication among cells that regulates pattern during embryogenesis and regeneration in vertebrate and invertebrate models. Somatic tissues form networks using the same ion channels, electrical synapses, and neurotransmitter mechanisms exploited by the brain for information-processing. Experimental manipulation of these circuits was recently shown to override genome default patterning outcomes, resulting in head shapes resembling those of other species in planaria and Xenopus. The ability to drastically alter macroscopic anatomy to that of other extant species, despite a wild-type genomic sequence, suggests exciting new approaches to the understanding and control of patterning. Here, we review these results and discuss hypotheses regarding non-genomic systems of instructive information that determine biological growth and form.",
+       "doi": "10.1080/19420889.2016.1192733"
+      },
+      {
+       "id": "MED22350846",
+       "year": "2013",
+       "title": "Endogenous voltage gradients as mediators of cell-cell communication: strategies for investigating bioelectrical signals during pattern formation.",
+       "journal": "",
+       "authors": "Adams DS, Levin M.",
+       "abstract": "Alongside the well-known chemical modes of cell-cell communication, we find an important and powerful system of bioelectrical signaling: changes in the resting voltage potential (Vmem) of the plasma membrane driven by ion channels, pumps and gap junctions. Slow Vmem changes in all cells serve as a highly conserved, information-bearing pathway that regulates cell proliferation, migration and differentiation. In embryonic and regenerative pattern formation and in the disorganization of neoplasia, bioelectrical cues serve as mediators of large-scale anatomical polarity, organ identity and positional information. Recent developments have resulted in tools that enable a high-resolution analysis of these biophysical signals and their linkage with upstream and downstream canonical genetic pathways. Here, we provide an overview for the study of bioelectric signaling, focusing on state-of-the-art approaches that use molecular physiology and developmental genetics to probe the roles of bioelectric events functionally. We highlight the logic, strategies and well-developed technologies that any group of researchers can employ to identify and dissect ionic signaling components in their own work and thus to help crack the bioelectric code. The dissection of bioelectric events as instructive signals enabling the orchestration of cell behaviors into large-scale coherent patterning programs will enrich on-going work in diverse areas of biology, as biophysical factors become incorporated into our systems-level understanding of cell interactions.",
+       "doi": "10.1007/s00441-012-1329-4"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

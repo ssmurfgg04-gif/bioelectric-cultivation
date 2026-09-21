@@ -1,0 +1,182 @@
+{
+ "exp": "exp74_renormalization_ladder (the star-search step 3)",
+ "rung1_anchor": {
+  "torus|fixed": {
+   "err": 1.96,
+   "pass": true
+  },
+  "random3|fixed": {
+   "err": 3.99,
+   "pass": true
+  },
+  "scale_free|fixed": {
+   "err": 10.58,
+   "pass": false
+  }
+ },
+ "climb": {
+  "torus|fixed": {
+   "final_rung": 1,
+   "writable": true,
+   "verdict_err": 5.7,
+   "hold_err": 5.67,
+   "hold_pass": true,
+   "b2v": 0.08,
+   "cut": {
+    "cut_edges": 16,
+    "head_components": 3
+   },
+   "edges_start": 200,
+   "edges_final": 200,
+   "rung_verdicts": [
+    {
+     "err": 5.7,
+     "pass": true
+    }
+   ]
+  },
+  "torus|bfs": {
+   "final_rung": 1,
+   "writable": true,
+   "verdict_err": 1.86,
+   "hold_err": 1.83,
+   "hold_pass": true,
+   "b2v": 0.01,
+   "cut": {
+    "cut_edges": 2,
+    "head_components": 1
+   },
+   "edges_start": 200,
+   "edges_final": 200,
+   "rung_verdicts": [
+    {
+     "err": 1.86,
+     "pass": true
+    }
+   ]
+  },
+  "random3|fixed": {
+   "final_rung": 1,
+   "writable": true,
+   "verdict_err": 4.77,
+   "hold_err": 4.75,
+   "hold_pass": true,
+   "b2v": 0.06,
+   "cut": {
+    "cut_edges": 9,
+    "head_components": 2
+   },
+   "edges_start": 150,
+   "edges_final": 150,
+   "rung_verdicts": [
+    {
+     "err": 4.77,
+     "pass": true
+    }
+   ]
+  },
+  "random3|bfs": {
+   "final_rung": 1,
+   "writable": true,
+   "verdict_err": 1.48,
+   "hold_err": 1.48,
+   "hold_pass": true,
+   "b2v": 0.0067,
+   "cut": {
+    "cut_edges": 1,
+    "head_components": 1
+   },
+   "edges_start": 150,
+   "edges_final": 150,
+   "rung_verdicts": [
+    {
+     "err": 1.48,
+     "pass": true
+    }
+   ]
+  },
+  "scale_free|fixed": {
+   "final_rung": 3,
+   "writable": false,
+   "verdict_err": 10.17,
+   "hold_err": 10.15,
+   "hold_pass": false,
+   "b2v": 0.4075,
+   "cut": {
+    "cut_edges": 152,
+    "head_components": 1
+   },
+   "edges_start": 197,
+   "edges_final": 373,
+   "rung_verdicts": [
+    {
+     "err": 10.46,
+     "pass": false
+    },
+    {
+     "err": 8.92,
+     "pass": false
+    },
+    {
+     "err": 10.17,
+     "pass": false
+    }
+   ]
+  },
+  "scale_free|bfs": {
+   "final_rung": 3,
+   "writable": false,
+   "verdict_err": 9.05,
+   "hold_err": 9.06,
+   "hold_pass": false,
+   "b2v": 0.3454,
+   "cut": {
+    "cut_edges": 134,
+    "head_components": 1
+   },
+   "edges_start": 197,
+   "edges_final": 388,
+   "rung_verdicts": [
+    {
+     "err": 9.16,
+     "pass": false
+    },
+    {
+     "err": 8.67,
+     "pass": false
+    },
+    {
+     "err": 9.05,
+     "pass": false
+    }
+   ]
+  }
+ },
+ "controls": {
+  "path|fixed": {
+   "err": 1.77,
+   "pass": true,
+   "edges": [
+    99,
+    99
+   ]
+  },
+  "grid2d|fixed": {
+   "err": 5.69,
+   "pass": true,
+   "edges": [
+    180,
+    180
+   ]
+  }
+ },
+ "criteria": {
+  "RL_G1_rung1_anchor": true,
+  "RL_G2_ladder_climbs": false,
+  "RL_G4_hold_semantics": false,
+  "RL_G5a_fraction_tracks": true,
+  "RL_G5b_absolute_separates": true,
+  "RL_G7_no_regression": true
+ },
+ "notes": "The star-search step 3: the ladder relaxes the degree budget rung by rung (rewire -> +prune -> +grow). RL-G2's lowest sufficient rung is the last wall's position; RL-G3 deposits the residual cut as the readout capacity (the write-coherence vs readout-bandwidth trade-off; the substrate-level instance of the 'everything is bought' law)."
+}

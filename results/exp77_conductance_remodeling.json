@@ -1,0 +1,190 @@
+{
+ "exp": "exp77_conductance_remodeling (the star-search step 6, rung 6)",
+ "theorem_contrast": {
+  "scale_free|fixed": {
+   "hot_eps_slow": 25,
+   "hot_frozen": 35
+  },
+  "scale_free|bfs": {
+   "hot_eps_slow": 25,
+   "hot_frozen": 35
+  }
+ },
+ "wall_arms": {
+  "scale_free|fixed": {
+   "verdict_err": 9.66,
+   "verdict_pass": false,
+   "hold_err": 9.61,
+   "hold_pass": false,
+   "b2v": 0.4873,
+   "wc": 0.5115,
+   "A_unchanged": true,
+   "cut": {
+    "cut_edges": 96,
+    "head_components": 1
+   },
+   "G_over_G0": 0.6985,
+   "first_pass": null
+  },
+  "scale_free|bfs": {
+   "verdict_err": 8.75,
+   "verdict_pass": false,
+   "hold_err": 8.79,
+   "hold_pass": false,
+   "b2v": 0.4569,
+   "wc": 0.4506,
+   "A_unchanged": true,
+   "cut": {
+    "cut_edges": 90,
+    "head_components": 1
+   },
+   "G_over_G0": 0.7131,
+   "first_pass": null
+  }
+ },
+ "controls": {
+  "torus|fixed": {
+   "err": 4.7,
+   "pass": true,
+   "G_over_G0": 0.8176
+  },
+  "random3|fixed": {
+   "err": 7.26,
+   "pass": false,
+   "G_over_G0": 0.5966
+  },
+  "path|fixed": {
+   "err": 0.95,
+   "pass": true,
+   "G_over_G0": 0.9837
+  },
+  "grid2d|fixed": {
+   "err": 3.39,
+   "pass": true,
+   "G_over_G0": 0.9218
+  }
+ },
+ "metric_table": [
+  {
+   "arm": "path|fixed (static)",
+   "wc": 0.010101010101010121,
+   "b2v": 0.010101010101010102,
+   "pass": true,
+   "err": 1.77
+  },
+  {
+   "arm": "path|bfs (static)",
+   "wc": 0.010101010101010121,
+   "b2v": 0.010101010101010102,
+   "pass": true,
+   "err": 1.77
+  },
+  {
+   "arm": "grid2d|fixed (static)",
+   "wc": 0.06111111111111115,
+   "b2v": 0.06111111111111111,
+   "pass": true,
+   "err": 5.69
+  },
+  {
+   "arm": "grid2d|bfs (static)",
+   "wc": 0.07222222222222228,
+   "b2v": 0.07222222222222222,
+   "pass": true,
+   "err": 5.58
+  },
+  {
+   "arm": "torus|fixed (static)",
+   "wc": 0.10999999999999996,
+   "b2v": 0.11,
+   "pass": false,
+   "err": 8.47
+  },
+  {
+   "arm": "torus|bfs (static)",
+   "wc": 0.13999999999999996,
+   "b2v": 0.14,
+   "pass": false,
+   "err": 8.2
+  },
+  {
+   "arm": "random3|fixed (static)",
+   "wc": 0.353333333333334,
+   "b2v": 0.35333333333333333,
+   "pass": false,
+   "err": 11.19
+  },
+  {
+   "arm": "random3|bfs (static)",
+   "wc": 0.15333333333333377,
+   "b2v": 0.15333333333333332,
+   "pass": false,
+   "err": 7.72
+  },
+  {
+   "arm": "random6|fixed (static)",
+   "wc": 0.023728813559321913,
+   "b2v": 0.023728813559322035,
+   "pass": true,
+   "err": 3.82
+  },
+  {
+   "arm": "random6|bfs (static)",
+   "wc": 0.04067796610169471,
+   "b2v": 0.04067796610169491,
+   "pass": true,
+   "err": 5.0
+  },
+  {
+   "arm": "scale_free|fixed (static)",
+   "wc": 0.4873096446700496,
+   "b2v": 0.4873096446700508,
+   "pass": false,
+   "err": 11.92
+  },
+  {
+   "arm": "scale_free|bfs (static)",
+   "wc": 0.45685279187817157,
+   "b2v": 0.45685279187817257,
+   "pass": false,
+   "err": 11.44
+  },
+  {
+   "arm": "small_world|fixed (static)",
+   "wc": 0.07000000000000013,
+   "b2v": 0.07,
+   "pass": true,
+   "err": 4.57
+  },
+  {
+   "arm": "small_world|bfs (static)",
+   "wc": 0.03000000000000006,
+   "b2v": 0.03,
+   "pass": true,
+   "err": 2.97
+  },
+  {
+   "arm": "scale_free|fixed (thinned)",
+   "wc": 0.5115,
+   "b2v": 0.4873,
+   "pass": false,
+   "err": 9.66
+  },
+  {
+   "arm": "scale_free|bfs (thinned)",
+   "wc": 0.4506,
+   "b2v": 0.4569,
+   "pass": false,
+   "err": 8.75
+  }
+ ],
+ "criteria": {
+  "TH_G1_theorem_contrast": false,
+  "TH_G2_thin_writes_A_unchanged": false,
+  "TH_G3_hold_semantics": false,
+  "TH_G4_no_regression": false,
+  "TH_G5_M41_fires": true,
+  "TH_G6_price_deposited": true
+ },
+ "notes": "Rung 6: conductance remodeling \u2014 the bridge stays (anatomy, degrees, readout capacity preserved; A untouched) and the CHANNEL is down-regulated (connexin gating semantics). The corrected theorem contrast (anchor dragged by V at eps_slow) is also decided here. M41 pre-declared: if A is unchanged while the dynamics flips, every topology metric is blind and the conductance-weighted crossing wc is the re-derived coherence metric."
+}

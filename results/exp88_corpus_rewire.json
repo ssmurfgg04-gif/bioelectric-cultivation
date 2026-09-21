@@ -1,0 +1,97 @@
+{
+ "exp": "exp88_corpus_rewire",
+ "arm_table": {
+  "('apc', 'head', 0.5)": 1.0,
+  "('apc', 'tail', 0.5)": 1.0,
+  "('apc', 'trunk', 0.5)": 1.0,
+  "('cutting', 'crosspiece', 0.08)": 0.0,
+  "('cutting', 'crosspiece', 0.12)": 0.0,
+  "('cutting', 'crosspiece', 0.17)": 0.0,
+  "('cutting', 'crosspiece', 0.25)": 0.0,
+  "('cutting', 'crosspiece', 0.33)": 0.0,
+  "('cutting', 'crosspiece', 0.38)": 0.0,
+  "('cutting', 'crosspiece', 0.42)": 0.0,
+  "('cutting', 'crosspiece', 0.5)": 0.0,
+  "('cutting', 'crosspiece', 0.58)": 0.0,
+  "('cutting', 'crosspiece', 0.67)": 0.0,
+  "('cutting', 'crosspiece', 0.75)": 0.0,
+  "('cutting', 'crosspiece', 0.83)": 0.0,
+  "('cutting', 'crosspiece', 0.92)": 0.0,
+  "('cutting', 'crosspiece', 0.95)": 0.0,
+  "('cutting', 'head', 0.5)": 0.0,
+  "('cutting', 'head_tail', 0.5)": 0.0,
+  "('cutting', 'tail', 0.5)": 0.0,
+  "('cutting', 'trunk', 0.5)": 0.0,
+  "('generic', 'crosspiece', 0.12)": 0.667,
+  "('generic', 'head', 0.5)": 0.333,
+  "('generic', 'tail', 0.5)": 1.0,
+  "('generic', 'trunk', 0.5)": 0.667,
+  "('gjblock', 'head', 0.5)": 0.0,
+  "('gjblock', 'head_tail', 0.5)": 0.0,
+  "('gjblock', 'tail', 0.5)": 1.0,
+  "('gjblock', 'trunk', 0.5)": 1.0,
+  "('ion_channel', 'head', 0.5)": 0.333,
+  "('ion_channel', 'tail', 0.5)": 1.0,
+  "('ion_channel', 'trunk', 0.5)": 0.667,
+  "('neoblast', 'head', 0.5)": 1.0,
+  "('neoblast', 'tail', 0.5)": 0.333,
+  "('neoblast', 'trunk', 0.5)": 0.667,
+  "('wnt', 'crosspiece', 0.12)": 0.0,
+  "('wnt', 'head', 0.5)": 1.0,
+  "('wnt', 'head_tail', 0.5)": 1.0,
+  "('wnt', 'tail', 0.5)": 1.0,
+  "('wnt', 'trunk', 0.5)": 1.0
+ },
+ "control_rates_by_plane": {
+  "trunk": 0.377,
+  "tail": 0.495,
+  "head": 0.0
+ },
+ "c4_exclusions": {
+  "rows": 21,
+  "n": 21
+ },
+ "mae_raw": 0.3648,
+ "mae_corrected_conservative": 0.3201,
+ "mae_corrected_decoded": 0.3041,
+ "decomposition": {
+  "cutting": {
+   "n": 272,
+   "contrib": 88.5,
+   "share": 0.1
+  },
+  "morphogen": {
+   "n": 126,
+   "contrib": 69.62,
+   "share": 0.079
+  },
+  "other_rnai": {
+   "n": 389,
+   "contrib": 64.05,
+   "share": 0.072
+  },
+  "ion_channel": {
+   "n": 70,
+   "contrib": 32.17,
+   "share": 0.036
+  },
+  "gj_block": {
+   "n": 21,
+   "contrib": 11.41,
+   "share": 0.013
+  },
+  "innexin": {
+   "n": 6,
+   "contrib": 3.07,
+   "share": 0.003
+  }
+ },
+ "target_status": "NOT REACHED (0.304); the residual is carried by the named gaps (the exp40 dose axis for the partial-modulation morphogen rows; the record's own series-variance floor on plain-cut rows). The registered repair: wire the exp40 (cns, diffusion) dose axis into the morphogen arms.",
+ "criteria": {
+  "CW_G1_stale_block_collapses": true,
+  "CW_G2_no_cooking_raw_improves": true,
+  "CW_G3_corrected_frame": false,
+  "CW_G4_residual_named": true
+ },
+ "notes": "The corpus mapping is brought up to the adopted stack: C1 the exp60/83 24h protocol-development window (exp70 had dropped it \u2014 the single largest residual block); C2 the exp86 neoblast composition; C3 the generic family scored against exp83's corrected target; C3' the per-plane control anchor; C4 the pre-registered scoring-inconsistency exclusion. No parameters were fitted to the corpus."
+}

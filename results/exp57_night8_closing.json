@@ -1,0 +1,227 @@
+{
+ "exp": "exp57_night8_closing",
+ "A_tas_recut": {
+  "naive_rate": 0.9166666666666666,
+  "recut_rate": 1.0,
+  "n_discordant": 1,
+  "all_bitexact": true
+ },
+ "B_underdamped": {
+  "per_seed": [
+   0.29620440413710014,
+   0.2254430109743879,
+   0.05708254193840645
+  ],
+  "max_overshoot_mv": 0.29620440413710014,
+  "mean_overshoot_mv": 0.19290998568329817
+ },
+ "C_misanchor": {
+  "tail_blocked_misanchor": {
+   "pred_abn_rate": 1.0,
+   "hl_tail_mean": 1.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 10.34275723083409,
+     "head_likeness_tail": 1.0,
+     "pred_abnormal": true,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 11.05942516526466,
+     "head_likeness_tail": 1.0,
+     "pred_abnormal": true,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 10.696919449429856,
+     "head_likeness_tail": 1.0,
+     "pred_abnormal": true,
+     "seed": 3
+    }
+   ]
+  },
+  "tail_blocked_plain": {
+   "pred_abn_rate": 0.6666666666666666,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 6.211978320446968,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 6.998431699509132,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": true,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 5.937381088231759,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 3
+    }
+   ]
+  },
+  "head_blocked_misanchor": {
+   "pred_abn_rate": 0.0,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 2.581888831266897,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 2.4230676310255195,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 2.502360412260958,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 3
+    }
+   ]
+  },
+  "head_blocked_plain": {
+   "pred_abn_rate": 0.0,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 2.581888831266897,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 2.4230676310255195,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 2.502360412260958,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 3
+    }
+   ]
+  },
+  "tail_full_misanchor": {
+   "pred_abn_rate": 0.0,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 3.082758738904791,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 3.058633279160334,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 3.0929115113170997,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 3
+    }
+   ]
+  },
+  "tail_full_plain": {
+   "pred_abn_rate": 0.0,
+   "hl_tail_mean": 0.0,
+   "per_seed": [
+    {
+     "wt_pattern_error": 3.082758738904791,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 1
+    },
+    {
+     "wt_pattern_error": 3.058633279160334,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 2
+    },
+    {
+     "wt_pattern_error": 3.0929115113170997,
+     "head_likeness_tail": 0.0,
+     "pred_abnormal": false,
+     "seed": 3
+    }
+   ]
+  }
+ },
+ "D_head_tail": {
+  "pred_abn_rate": 0.6666666666666666,
+  "per_seed": [
+   {
+    "wt_pattern_error": 6.035397750679858,
+    "head_likeness_tail": 0.0,
+    "pred_abnormal": true,
+    "seed": 1
+   },
+   {
+    "wt_pattern_error": 6.441988922546419,
+    "head_likeness_tail": 0.0,
+    "pred_abnormal": true,
+    "seed": 2
+   },
+   {
+    "wt_pattern_error": 5.835660253414419,
+    "head_likeness_tail": 0.0,
+    "pred_abnormal": false,
+    "seed": 3
+   }
+  ]
+ },
+ "gates": {
+  "TA-G1": {
+   "verdict": "PASS",
+   "naive_rate": 0.9166666666666666,
+   "recut_rate": 1.0,
+   "n_discordant": 1,
+   "gate": "re-cut rate differs from naive (>= 1 discordant seed) \u2014 the cryptic interval exists"
+  },
+  "TA-G2": {
+   "verdict": "PASS",
+   "gate": "re-cut outcome deterministic given the stored state (bit-exact replay)"
+  },
+  "UD-G1": {
+   "verdict": "WEAK",
+   "max_overshoot_mv": 0.29620440413710014,
+   "mean_overshoot_mv": 0.19290998568329817,
+   "gate": "measurement: overshoot >= 0.5 mV -> underdamped (atlas match); < 0.1 -> overdamped (calibration target)"
+  },
+  "EG-G1": {
+   "verdict": "PASS",
+   "tail_blocked_misanchor_hl": 1.0,
+   "gate": "mis-anchored pole: tail blockade regen becomes head-like"
+  },
+  "EG-G2": {
+   "verdict": "PASS",
+   "head_plane_delta": 0.0,
+   "gate": "head plane unchanged by the misanchor (<= 0.15)"
+  },
+  "EG-G3": {
+   "verdict": "PASS",
+   "fullcoupling_delta": 0.0,
+   "gate": "misanchor inert at full coupling (<= 0.15)"
+  },
+  "HT-D0": {
+   "verdict": "LEDGERED (recorded n=2; no gate)",
+   "model_pred_abn": 0.6666666666666666,
+   "recorded": 0.025
+  }
+ },
+ "summary": "5/7 gates resolved"
+}

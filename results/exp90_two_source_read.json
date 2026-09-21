@@ -1,0 +1,28 @@
+{
+ "exp": "exp90_two_source_read",
+ "multi_errs": {
+  "path": 0.54,
+  "grid2d": 0.49,
+  "torus": 0.53,
+  "random3": 0.55,
+  "random6": 0.52,
+  "scale_free": 0.7,
+  "small_world": 0.51
+ },
+ "no_canon_errs": {
+  "path": 10.98,
+  "grid2d": 9.75,
+  "torus": 10.97,
+  "random3": 4.04,
+  "random6": 14.05,
+  "scale_free": 8.05,
+  "small_world": 11.55
+ },
+ "criteria": {
+  "TS_G1_contamination_closes": true,
+  "TS_G2_pole_read_unaffected": true,
+  "TS_G3_no_backdoor": true,
+  "TS_G4_canon_load_bearing": true
+ },
+ "notes": "The two-source read: the pole read (above-line, constitutive, w=1.0) + the canon read (below-line, the pre-program D3 memory preserved by write_spec_layer as phi_spec_canon). The canon read restores the cell's own coordinate identity \u2014 it is not a backdoor for below-line novel specs (the M33 domain rule survives intact). The graph-native analog of the chain walk's face anchor."
+}

@@ -1,0 +1,67 @@
+{
+  "baseline": {
+    "medians": [
+      71.25,
+      69.0,
+      71.25
+    ],
+    "betas": [
+      0.07622910222584407,
+      0.072050152990296,
+      0.08570450875411749
+    ],
+    "best_models": [
+      "weibull",
+      "weibull",
+      "weibull"
+    ],
+    "gompertz_aic_gaps": [
+      16.639233887204227,
+      31.768596422323753,
+      23.250583009449656
+    ]
+  },
+  "C1_gompertz_competitive": true,
+  "C1b_gompertz_wins_narrow_window": true,
+  "beta_tracking": [
+    {
+      "h_sys": 0.05,
+      "beta_adult": 0.08242387577004316,
+      "beta_narrow": 0.1750077130124277,
+      "median": 72.75
+    },
+    {
+      "h_sys": 0.08,
+      "beta_adult": 0.08042372563184076,
+      "beta_narrow": 0.16632750826530868,
+      "median": 70.25
+    },
+    {
+      "h_sys": 0.1,
+      "beta_adult": 0.07867348808912249,
+      "beta_narrow": 0.1626900756769492,
+      "median": 69.75
+    },
+    {
+      "h_sys": 0.13,
+      "beta_adult": 0.07821140783989186,
+      "beta_narrow": 0.1607190143092268,
+      "median": 69.0
+    },
+    {
+      "h_sys": 0.16,
+      "beta_adult": 0.0766156796530596,
+      "beta_narrow": 0.15413554286629688,
+      "median": 67.5
+    }
+  ],
+  "C2_beta_tracks_engine": false,
+  "intervention": {
+    "median_baseline": 71.25,
+    "median_intervened": 76.5,
+    "gain": 1.0736842105263158,
+    "alpha_baseline": 0.00020948237178767612,
+    "alpha_intervened": 0.00014532323167261305
+  },
+  "C3_maintenance_extends_life": true
+}

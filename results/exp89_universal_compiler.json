@@ -1,0 +1,47 @@
+{
+ "exp": "exp89_universal_compiler",
+ "r5_classification": {
+  "path": true,
+  "grid2d": true,
+  "torus": false,
+  "random3": false,
+  "random6": true,
+  "scale_free": false,
+  "small_world": true
+ },
+ "default_errs": {
+  "path": 2.0,
+  "grid2d": 5.67,
+  "torus": 8.0,
+  "random3": 9.11,
+  "random6": 4.49,
+  "scale_free": 11.08,
+  "small_world": 3.64
+ },
+ "star_errs": {
+  "path": 0.25,
+  "grid2d": 0.26,
+  "torus": 0.33,
+  "random3": 0.33,
+  "random6": 0.26,
+  "scale_free": 0.63,
+  "small_world": 0.26
+ },
+ "multi_errs": {
+  "path": 8.5,
+  "grid2d": 7.94,
+  "torus": 7.16,
+  "random3": 7.73,
+  "random6": 6.5,
+  "scale_free": 7.56,
+  "small_world": 5.77
+ },
+ "criteria": {
+  "UC_G1_r5_signature_at_default": true,
+  "UC_G2_star_lift": true,
+  "UC_G3_domain_substrate_independent": true,
+  "UC_G4_stability_refused": true,
+  "UC_G5_multi_region_generalizes": false
+ },
+ "notes": "R5' (the conditional rule, if the gates hold): the partition refusal is an OPERATING-POINT statement \u2014 the default operating point reproduces the exp43 signature, the star point lifts it on every substrate. The compiler's refusal output becomes a price tag: 'not writable at your operating point; the star architecture buys it.' The M33 read's domain (the neural line) is identity-based and does NOT move with the substrate \u2014 the domain rule and the operating-point rule are orthogonal."
+}

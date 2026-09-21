@@ -1,0 +1,299 @@
+{
+ "exp": "exp58_msheet_repair",
+ "derived": {
+  "t_onset": 200.0,
+  "leak": 0.01,
+  "drive_ref": 0.0680437295151661,
+  "budget_commit": 5.9,
+  "budget_copy": 3.0,
+  "copy_cadence": 40,
+  "s1_contrast": 0.5580484413599315,
+  "s2_contrast": 0.3360874590303322
+ },
+ "arms": {
+  "G1_midline_to_flank": [
+   {
+    "seed": 1,
+    "graft_head_fraction": 1.0,
+    "left_half_fraction": 1.0,
+    "right_half_fraction": 1.0,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 1.0,
+    "depth_cols": 5,
+    "commit_step": 15,
+    "copies": 40,
+    "right_junction_drive": 0.0
+   },
+   {
+    "seed": 2,
+    "graft_head_fraction": 1.0,
+    "left_half_fraction": 1.0,
+    "right_half_fraction": 1.0,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 1.0,
+    "depth_cols": 5,
+    "commit_step": 15,
+    "copies": 40,
+    "right_junction_drive": 0.0
+   },
+   {
+    "seed": 3,
+    "graft_head_fraction": 1.0,
+    "left_half_fraction": 1.0,
+    "right_half_fraction": 1.0,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 1.0,
+    "depth_cols": 5,
+    "commit_step": 15,
+    "copies": 40,
+    "right_junction_drive": 0.0
+   }
+  ],
+  "G2_lateral_to_midline": [
+   {
+    "seed": 1,
+    "graft_head_fraction": 0.2,
+    "left_half_fraction": 0.5,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 0.2,
+    "depth_cols": 1,
+    "commit_step": 40,
+    "copies": 0,
+    "right_junction_drive": 0.0
+   },
+   {
+    "seed": 2,
+    "graft_head_fraction": 0.2,
+    "left_half_fraction": 0.5,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 0.2,
+    "depth_cols": 1,
+    "commit_step": 40,
+    "copies": 0,
+    "right_junction_drive": 0.0
+   },
+   {
+    "seed": 3,
+    "graft_head_fraction": 0.2,
+    "left_half_fraction": 0.5,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 0.2,
+    "depth_cols": 1,
+    "commit_step": 40,
+    "copies": 0,
+    "right_junction_drive": 0.0
+   }
+  ],
+  "G3_true_isograft": [
+   {
+    "seed": 1,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 0.0,
+    "depth_cols": 0,
+    "commit_step": null,
+    "copies": 0,
+    "right_junction_drive": 0.0
+   },
+   {
+    "seed": 2,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 0.0,
+    "depth_cols": 0,
+    "commit_step": null,
+    "copies": 0,
+    "right_junction_drive": 0.0
+   },
+   {
+    "seed": 3,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 0.0,
+    "depth_cols": 0,
+    "commit_step": null,
+    "copies": 0,
+    "right_junction_drive": 0.0
+   }
+  ],
+  "G4_midline_ablated": [
+   {
+    "seed": 1,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 0.0,
+    "depth_cols": 0,
+    "commit_step": null,
+    "copies": 0,
+    "right_junction_drive": 0.0
+   },
+   {
+    "seed": 2,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 0.0,
+    "depth_cols": 0,
+    "commit_step": null,
+    "copies": 0,
+    "right_junction_drive": 0.0
+   },
+   {
+    "seed": 3,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 0.0,
+    "depth_cols": 0,
+    "commit_step": null,
+    "copies": 0,
+    "right_junction_drive": 0.0
+   }
+  ],
+  "G8_gap_graft_probe": [
+   {
+    "seed": 1,
+    "graft_head_fraction": 0.2,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.3333333333333333,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 0.2,
+    "depth_cols": 1,
+    "commit_step": 54,
+    "copies": 0,
+    "right_junction_drive": 485.5030411516479
+   },
+   {
+    "seed": 2,
+    "graft_head_fraction": 0.2,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.3333333333333333,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 0.2,
+    "depth_cols": 1,
+    "commit_step": 54,
+    "copies": 0,
+    "right_junction_drive": 485.5030411516479
+   },
+   {
+    "seed": 3,
+    "graft_head_fraction": 0.2,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.3333333333333333,
+    "native_head_fraction": 1.0,
+    "committed_fraction": 0.2,
+    "depth_cols": 1,
+    "commit_step": 54,
+    "copies": 0,
+    "right_junction_drive": 485.5030411516479
+   }
+  ]
+ },
+ "gates": {
+  "MSh-G1_complete_ectopic_head": {
+   "verdict": "PASS",
+   "fractions": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "gate": "graft head fraction >= 0.8 (majority of seeds)"
+  },
+  "MSh-G2_local_one_sided": {
+   "verdict": "PASS",
+   "fractions": [
+    0.2,
+    0.2,
+    0.2
+   ],
+   "left_minus_right": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "gate": "LEFT-RIGHT >= 0.2 AND overall <= 0.6 (side re-registered per the corrected geometry)"
+  },
+  "MSh-G3_true_isograft_null": {
+   "verdict": "PASS",
+   "fractions": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gate": "zero-gap isograft fraction <= 0.1 (re-registered arm)"
+  },
+  "MSh-G4_source_load_bearing": {
+   "verdict": "PASS",
+   "s1_fractions": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "s4_fractions": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gate": "G1 - G4 >= 0.3 (majority of seeds)"
+  },
+  "MSh-G5_native_axis_integrity": {
+   "verdict": "PASS",
+   "min_native_fraction": 1.0,
+   "gate": "native head zone fraction >= 0.9 in ALL arms"
+  },
+  "MSh-G6_propagation_depth_ordering": {
+   "verdict": "PASS",
+   "depths": {
+    "G1_midline_to_flank": [
+     5,
+     5,
+     5
+    ],
+    "G2_lateral_to_midline": [
+     1,
+     1,
+     1
+    ],
+    "G3_true_isograft": [
+     0,
+     0,
+     0
+    ],
+    "G4_midline_ablated": [
+     0,
+     0,
+     0
+    ],
+    "G8_gap_graft_probe": [
+     1,
+     1,
+     1
+    ]
+   },
+   "gate": "depth(G1) >= 4 > depth(G2) <= 2 > depth(G4) == 0"
+  },
+  "MSh-G7_structural_silence_LR": {
+   "verdict": "PASS",
+   "right_junction_drives": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gate": "cumulative drive at the G2 right junction == 0.0 exactly"
+  }
+ },
+ "summary": "7/7 gates PASS"
+}

@@ -1,0 +1,637 @@
+{
+ "exp": "exp79_two_channel_law (the star-search step 8)",
+ "grid": {
+  "scale_free": {
+   "g0.25|mu0.015": {
+    "err": 11.92,
+    "pred": 21.24
+   },
+   "g0.25|mu0.005": {
+    "err": 11.33,
+    "pred": 19.65
+   },
+   "g0.25|mu0.0015": {
+    "err": 10.99,
+    "pred": 12.93
+   },
+   "g0.25|mu0.0005": {
+    "err": 10.87,
+    "pred": 11.81
+   },
+   "g0.25|mu0.0": {
+    "err": 10.8,
+    "pred": 11.81
+   },
+   "g4.0|mu0.015": {
+    "err": 9.8,
+    "pred": 21.24
+   },
+   "g4.0|mu0.005": {
+    "err": 7.23,
+    "pred": 19.65
+   },
+   "g4.0|mu0.0015": {
+    "err": 5.45,
+    "pred": 12.93
+   },
+   "g4.0|mu0.0005": {
+    "err": 4.71,
+    "pred": 8.51
+   },
+   "g4.0|mu0.0": {
+    "err": 4.26,
+    "pred": 8.51
+   },
+   "g64.0|mu0.015": {
+    "err": 9.2,
+    "pred": 21.24
+   },
+   "g64.0|mu0.005": {
+    "err": 5.75,
+    "pred": 19.65
+   },
+   "g64.0|mu0.0015": {
+    "err": 2.98,
+    "pred": 12.93
+   },
+   "g64.0|mu0.0005": {
+    "err": 1.55,
+    "pred": 5.81
+   },
+   "g64.0|mu0.0": {
+    "err": 0.57,
+    "pred": 1.55
+   }
+  },
+  "random3": {
+   "g0.25|mu0.015": {
+    "err": 11.19,
+    "pred": 19.81
+   },
+   "g0.25|mu0.005": {
+    "err": 10.54,
+    "pred": 12.41
+   },
+   "g0.25|mu0.0015": {
+    "err": 10.18,
+    "pred": 12.41
+   },
+   "g0.25|mu0.0005": {
+    "err": 10.06,
+    "pred": 12.41
+   },
+   "g0.25|mu0.0": {
+    "err": 10.0,
+    "pred": 12.41
+   },
+   "g4.0|mu0.015": {
+    "err": 8.79,
+    "pred": 19.81
+   },
+   "g4.0|mu0.005": {
+    "err": 5.87,
+    "pred": 9.07
+   },
+   "g4.0|mu0.0015": {
+    "err": 4.04,
+    "pred": 3.46
+   },
+   "g4.0|mu0.0005": {
+    "err": 3.4,
+    "pred": 3.46
+   },
+   "g4.0|mu0.0": {
+    "err": 3.05,
+    "pred": 3.46
+   },
+   "g64.0|mu0.015": {
+    "err": 8.1,
+    "pred": 19.81
+   },
+   "g64.0|mu0.005": {
+    "err": 4.19,
+    "pred": 9.07
+   },
+   "g64.0|mu0.0015": {
+    "err": 1.66,
+    "pred": 3.07
+   },
+   "g64.0|mu0.0005": {
+    "err": 0.75,
+    "pred": 1.06
+   },
+   "g64.0|mu0.0": {
+    "err": 0.27,
+    "pred": 0.28
+   }
+  },
+  "torus": {
+   "g0.25|mu0.015": {
+    "err": 8.47,
+    "pred": 11.45
+   },
+   "g0.25|mu0.005": {
+    "err": 7.8,
+    "pred": 8.28
+   },
+   "g0.25|mu0.0015": {
+    "err": 7.5,
+    "pred": 8.28
+   },
+   "g0.25|mu0.0005": {
+    "err": 7.4,
+    "pred": 8.28
+   },
+   "g0.25|mu0.0": {
+    "err": 7.35,
+    "pred": 8.28
+   },
+   "g4.0|mu0.015": {
+    "err": 5.38,
+    "pred": 11.45
+   },
+   "g4.0|mu0.005": {
+    "err": 3.28,
+    "pred": 5.72
+   },
+   "g4.0|mu0.0015": {
+    "err": 2.2,
+    "pred": 2.31
+   },
+   "g4.0|mu0.0005": {
+    "err": 1.84,
+    "pred": 2.31
+   },
+   "g4.0|mu0.0": {
+    "err": 1.65,
+    "pred": 2.31
+   },
+   "g64.0|mu0.015": {
+    "err": 4.8,
+    "pred": 11.45
+   },
+   "g64.0|mu0.005": {
+    "err": 2.23,
+    "pred": 5.72
+   },
+   "g64.0|mu0.0015": {
+    "err": 0.85,
+    "pred": 2.01
+   },
+   "g64.0|mu0.0005": {
+    "err": 0.38,
+    "pred": 0.7
+   },
+   "g64.0|mu0.0": {
+    "err": 0.14,
+    "pred": 0.18
+   }
+  }
+ },
+ "grid_points": [
+  {
+   "arm": "scale_free",
+   "gamma": 0.25,
+   "mu": 0.015,
+   "err": 11.92,
+   "pred": 21.24,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 0.25,
+   "mu": 0.005,
+   "err": 11.33,
+   "pred": 19.65,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 0.25,
+   "mu": 0.0015,
+   "err": 10.99,
+   "pred": 12.93,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 0.25,
+   "mu": 0.0005,
+   "err": 10.87,
+   "pred": 11.81,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 0.25,
+   "mu": 0.0,
+   "err": 10.8,
+   "pred": 11.81,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 4.0,
+   "mu": 0.015,
+   "err": 9.8,
+   "pred": 21.24,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 4.0,
+   "mu": 0.005,
+   "err": 7.23,
+   "pred": 19.65,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 4.0,
+   "mu": 0.0015,
+   "err": 5.45,
+   "pred": 12.93,
+   "pass": true,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 4.0,
+   "mu": 0.0005,
+   "err": 4.71,
+   "pred": 8.51,
+   "pass": true,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 4.0,
+   "mu": 0.0,
+   "err": 4.26,
+   "pred": 8.51,
+   "pass": true,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 64.0,
+   "mu": 0.015,
+   "err": 9.2,
+   "pred": 21.24,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 64.0,
+   "mu": 0.005,
+   "err": 5.75,
+   "pred": 19.65,
+   "pass": true,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 64.0,
+   "mu": 0.0015,
+   "err": 2.98,
+   "pred": 12.93,
+   "pass": true,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 64.0,
+   "mu": 0.0005,
+   "err": 1.55,
+   "pred": 5.81,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "scale_free",
+   "gamma": 64.0,
+   "mu": 0.0,
+   "err": 0.57,
+   "pred": 1.55,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 0.25,
+   "mu": 0.015,
+   "err": 11.19,
+   "pred": 19.81,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 0.25,
+   "mu": 0.005,
+   "err": 10.54,
+   "pred": 12.41,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 0.25,
+   "mu": 0.0015,
+   "err": 10.18,
+   "pred": 12.41,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 0.25,
+   "mu": 0.0005,
+   "err": 10.06,
+   "pred": 12.41,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 0.25,
+   "mu": 0.0,
+   "err": 10.0,
+   "pred": 12.41,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 4.0,
+   "mu": 0.015,
+   "err": 8.79,
+   "pred": 19.81,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 4.0,
+   "mu": 0.005,
+   "err": 5.87,
+   "pred": 9.07,
+   "pass": true,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 4.0,
+   "mu": 0.0015,
+   "err": 4.04,
+   "pred": 3.46,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 4.0,
+   "mu": 0.0005,
+   "err": 3.4,
+   "pred": 3.46,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 4.0,
+   "mu": 0.0,
+   "err": 3.05,
+   "pred": 3.46,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 64.0,
+   "mu": 0.015,
+   "err": 8.1,
+   "pred": 19.81,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 64.0,
+   "mu": 0.005,
+   "err": 4.19,
+   "pred": 9.07,
+   "pass": true,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 64.0,
+   "mu": 0.0015,
+   "err": 1.66,
+   "pred": 3.07,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 64.0,
+   "mu": 0.0005,
+   "err": 0.75,
+   "pred": 1.06,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "random3",
+   "gamma": 64.0,
+   "mu": 0.0,
+   "err": 0.27,
+   "pred": 0.28,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 0.25,
+   "mu": 0.015,
+   "err": 8.47,
+   "pred": 11.45,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 0.25,
+   "mu": 0.005,
+   "err": 7.8,
+   "pred": 8.28,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 0.25,
+   "mu": 0.0015,
+   "err": 7.5,
+   "pred": 8.28,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 0.25,
+   "mu": 0.0005,
+   "err": 7.4,
+   "pred": 8.28,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 0.25,
+   "mu": 0.0,
+   "err": 7.35,
+   "pred": 8.28,
+   "pass": false,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 4.0,
+   "mu": 0.015,
+   "err": 5.38,
+   "pred": 11.45,
+   "pass": true,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 4.0,
+   "mu": 0.005,
+   "err": 3.28,
+   "pred": 5.72,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 4.0,
+   "mu": 0.0015,
+   "err": 2.2,
+   "pred": 2.31,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 4.0,
+   "mu": 0.0005,
+   "err": 1.84,
+   "pred": 2.31,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 4.0,
+   "mu": 0.0,
+   "err": 1.65,
+   "pred": 2.31,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 64.0,
+   "mu": 0.015,
+   "err": 4.8,
+   "pred": 11.45,
+   "pass": true,
+   "pred_pass": 0.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 64.0,
+   "mu": 0.005,
+   "err": 2.23,
+   "pred": 5.72,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 64.0,
+   "mu": 0.0015,
+   "err": 0.85,
+   "pred": 2.01,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 64.0,
+   "mu": 0.0005,
+   "err": 0.38,
+   "pred": 0.7,
+   "pass": true,
+   "pred_pass": 1.0
+  },
+  {
+   "arm": "torus",
+   "gamma": 64.0,
+   "mu": 0.0,
+   "err": 0.14,
+   "pred": 0.18,
+   "pass": true,
+   "pred_pass": 1.0
+  }
+ ],
+ "reader_panel": {
+  "w1.0|inherit": 27.88,
+  "w1.0|spec_junctional": 17.67,
+  "w1.0|spec_nonjunctional": 17.63,
+  "w0.0|inherit": 23.59,
+  "w0.0|spec_junctional": 21.92,
+  "w0.0|spec_nonjunctional": 9.52
+ },
+ "reader_theta_panel": {
+  "w1.0|inherit": 27.76,
+  "w1.0|spec_junctional": 13.57,
+  "w1.0|spec_nonjunctional": 13.58,
+  "w0.0|inherit": 24.71,
+  "w0.0|spec_junctional": 23.8,
+  "w0.0|spec_nonjunctional": 12.13
+ },
+ "star_composition": {
+  "V": 0.43,
+  "theta": 0.44
+ },
+ "v_term_baseline": 11.81,
+ "trunk_reader_err": 9.1,
+ "propagation_price": {
+  "0.015": 8.76,
+  "0.0": 8.76
+ },
+ "star_point": {
+  "verdict": 0.57,
+  "hold": 0.57
+ },
+ "criteria": {
+  "TC_G1_two_channel_law": false,
+  "TC_G2_homogenization_number": true,
+  "TC_G3_star_point_no_remodeling": true,
+  "TC_G4_universal_reader": true,
+  "TC_G5_reader_domain_anterior_only": true,
+  "TC_G6_price_named": false
+ },
+ "notes": "The two-channel law: writability = (V-channel ratio below the bar) AND (theta homogenization number below the bar). The star point: identity strength x non-diffusing anchor writes ANY substrate with no remodeling. The universal reader: the non-junctional anterior read (M33) is the only architecture that survives the window-leak theorem; the model already carried it."
+}

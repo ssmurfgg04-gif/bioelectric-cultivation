@@ -1,0 +1,41 @@
+{
+ "exp": "exp81_compiler_v4 (the generator)",
+ "class_inventory": {
+  "single-zone (corpus: wt-like)": 12,
+  "multi-zone-4+island": 5,
+  "multi-zone-3+island": 11,
+  "two-zone-island": 12
+ },
+ "novel_classes": [
+  "multi-zone-4+island",
+  "multi-zone-3+island",
+  "two-zone-island"
+ ],
+ "chain": {
+  "admitted_r5": 40,
+  "verified_r5": 6,
+  "precision_r5": 0.15,
+  "calibrated_rule": {
+   "min_width": 8,
+   "min_contrast": 4
+  },
+  "admitted_v4": 8,
+  "verified_v4": 8,
+  "precision_v4": 1.0,
+  "coverage_v4": 0.4,
+  "refused_v4": 12
+ },
+ "scale_free": {
+  "refused_baseline": 35,
+  "escaped_star": 35,
+  "rate": 1.0
+ },
+ "criteria": {
+  "GV_G1_generator_works": true,
+  "GV_G2_filter_precision": true,
+  "GV_G3_novelty": true,
+  "GV_G4_stability": true,
+  "GV_G5_operating_point_escape": true
+ },
+ "notes": "Compiler v4: the direction reverses \u2014 the generator samples the multi-zone space, R5 gates it, and the two-channel law supplies the OPERATING-POINT ESCAPE: a baseline refusal is no longer final, it names the conditions (identity strength + non-diffusing anchor) under which the substrate becomes admissible. The compiler now emits the law as an audit-ready precondition."
+}

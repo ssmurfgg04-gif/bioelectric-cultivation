@@ -1,0 +1,150 @@
+{
+ "exp": "exp75_drag_remodeling (the star-search step 4, rung 4)",
+ "signal": {
+  "scale_free|fixed": {
+   "mean_drag": 1.91,
+   "hot": 0,
+   "static_err": 11.92
+  },
+  "scale_free|bfs": {
+   "mean_drag": 1.96,
+   "hot": 0,
+   "static_err": 11.4
+  },
+  "torus|fixed": {
+   "mean_drag": 2.13,
+   "hot": 0,
+   "static_err": 8.46
+  },
+  "random3|fixed": {
+   "mean_drag": 2.1,
+   "hot": 0,
+   "static_err": 11.19
+  },
+  "path|fixed": {
+   "mean_drag": 0.33,
+   "hot": 0,
+   "static_err": 1.75
+  },
+  "grid2d|fixed": {
+   "mean_drag": 1.31,
+   "hot": 0,
+   "static_err": 5.69
+  }
+ },
+ "wall_arms": {
+  "scale_free|fixed": {
+   "verdict_err": 11.92,
+   "verdict_pass": false,
+   "hold_err": 11.88,
+   "hold_pass": false,
+   "b2v": 0.4873,
+   "cut": {
+    "cut_edges": 96,
+    "head_components": 1
+   },
+   "edges": [
+    197,
+    197
+   ],
+   "shed_total": 0,
+   "bridges_blocked": 0,
+   "first_pass": null,
+   "connected_every_round": true,
+   "hot_first5": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err_trace_tail": [
+    11.88,
+    11.886,
+    11.882,
+    11.881,
+    11.854
+   ]
+  },
+  "scale_free|bfs": {
+   "verdict_err": 11.44,
+   "verdict_pass": false,
+   "hold_err": 11.47,
+   "hold_pass": false,
+   "b2v": 0.4569,
+   "cut": {
+    "cut_edges": 90,
+    "head_components": 1
+   },
+   "edges": [
+    197,
+    197
+   ],
+   "shed_total": 0,
+   "bridges_blocked": 0,
+   "first_pass": null,
+   "connected_every_round": true,
+   "hot_first5": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "err_trace_tail": [
+    11.46,
+    11.436,
+    11.458,
+    11.401,
+    11.452
+   ]
+  }
+ },
+ "controls": {
+  "torus|fixed": {
+   "err": 8.47,
+   "pass": false,
+   "shed_total": 0,
+   "edges": [
+    200,
+    200
+   ]
+  },
+  "random3|fixed": {
+   "err": 11.19,
+   "pass": false,
+   "shed_total": 0,
+   "edges": [
+    150,
+    150
+   ]
+  },
+  "path|fixed": {
+   "err": 1.77,
+   "pass": true,
+   "shed_total": 0,
+   "edges": [
+    99,
+    99
+   ]
+  },
+  "grid2d|fixed": {
+   "err": 5.69,
+   "pass": true,
+   "shed_total": 0,
+   "edges": [
+    180,
+    180
+   ]
+  }
+ },
+ "criteria": {
+  "DR_G1_signal_separation": false,
+  "DR_G2_rung4_writes_scale_free": false,
+  "DR_G3_hold_semantics": false,
+  "DR_G4_no_regression": false,
+  "DR_G5_metric_tracking": true,
+  "DR_G6_price_deposited": true
+ },
+ "notes": "Rung 4 of the renormalization ladder: the homeostatic drag |V - theta| as the remodeling signal \u2014 per-cell (undiluted by degree), local, target-blind. DR-G2 is the registered prediction: cells that cannot hold their identity shed their most-conflicting junction, and the hub substrate becomes writable. Refutation paths are pre-diagnosed: signal stall vs connectivity block (bridges_blocked counter)."
+}

@@ -1,0 +1,43 @@
+{
+ "experiment": "exp188_the_density_conditioned_ensemble",
+ "task_id": "4-e",
+ "smoke": true,
+ "job": "smoke -- ladder pairs 0-1, features only (permitted pre-registered check; DISCARDED, not the credited deposit)",
+ "no_decode": true,
+ "cohort_features": [
+  {
+   "i": 0,
+   "seed_construct": 188001,
+   "slot": 0,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 48.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "b8e0064ae0220574d204420a3d41418710ee136d6720e462f3512472e22cf442"
+  },
+  {
+   "i": 1,
+   "seed_construct": 188002,
+   "slot": 1,
+   "n": 30,
+   "k_realized": 3,
+   "k_field": 3,
+   "cancel_entries_S1": 10,
+   "cancel_entries_S2": 0,
+   "density_d_k": 44.0,
+   "sw1_stats": {
+    "nnz_entries": 50,
+    "max": 3.0
+   },
+   "digest_A": "a33851fb534b0632b9fd0e9f4f90a8b231c789ed84122a9228b04f4157182920"
+  }
+ ],
+ "note": "construction + structural features only; no null decodes, no real decodes, no pin, no gates",
+ "wall_seconds": 0.0
+}

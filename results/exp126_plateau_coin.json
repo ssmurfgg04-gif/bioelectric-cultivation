@@ -1,0 +1,41 @@
+{
+ "exp": "exp126_plateau_coin",
+ "panels": {
+  "panel_A": {
+   "p=0.0": 0.0,
+   "p=0.4": 0.4167,
+   "p=0.8": 0.75,
+   "p=None": 0.0
+  },
+  "panel_B": {
+   "gamma x0.7": 0.7778,
+   "gamma x4.0": 0.8056
+  },
+  "panel_C": {
+   "coin=0.8_sustained": 0.8889,
+   "coin=0.8_delayed": 0.9444,
+   "coin=0.8_washout": 0.0278,
+   "coin=None_sustained": 0.6667,
+   "coin=None_delayed": 0.9444,
+   "coin=None_washout": 0.0278
+  },
+  "panel_D_gamma16": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ },
+ "criteria": {
+  "CG3_A1_harness_continuity": true,
+  "CG3_G1_plateau_coin_carried": false,
+  "CG3_G2_onset_not_plateau": true,
+  "CG3_G3_convergence_survives": false
+ },
+ "L_hat": 0.0,
+ "notes": "CG-P3 the plateau split: coin ladder vs coupling at fixed coin vs the GJ-block family's schedule arms at coin {0.8, None}. Panel C owned resolution: the three schedule classes are the family's stack arms (the draft's 2.3 'sustained-only' phrasing would make CG3-G3 trivially true); the neoblast coin kwargs are injected into exp70's regrow kwarg so coin-off is meaningful."
+}

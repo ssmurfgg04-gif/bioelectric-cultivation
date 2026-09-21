@@ -136,6 +136,15 @@ class BioElectricCollective:
         self.G0 = self.G.copy()  # youthful reference
         self.gap_scale = 1.0  # global gap-junction health multiplier
         self.deg = (self.A * g_gap).sum(axis=1)
+        # PERF (final-session review, bit-exact): A is FIXED after
+        # construction (amputate touches V/theta only; no method and no
+        # landed experiment writes GraphCollective.A), so the Laplacian
+        # row sums are a per-instance constant. step() used to recompute
+        # this O(n^2) reduction on EVERY step — the hottest loop in the
+        # project. Cached once here; the floats are identical (the same
+        # deterministic reduction), so every deposit reproduces
+        # bit-exactly (verified by the full suite + the exp304 re-run).
+        self._A_rowsum = self.A.sum(axis=1)
 
         # exp257: the native 8-channel state S — channels 0/1 are the
         # legacy (V, theta) 2-tuple; 2..7 the dormant carriers (see the
@@ -771,7 +780,7 @@ class BioElectricCollective:
         noise = self.noise_std * np.sqrt(dt) * self.rng.standard_normal(self.n)
         Vn = self.V + dt * dV + noise
 
-        lap_theta = self.A @ self.theta - self.theta * self.A.sum(axis=1)
+        lap_theta = self.A @ self.theta - self.theta * self._A_rowsum
         # M25: pattern propagation is ALSO junction-carried — theta diffusion
         # scales with gap-junction health (bit-exact at gap_scale == 1.0).
         # With junctions down the stored pattern can no longer spread, so a

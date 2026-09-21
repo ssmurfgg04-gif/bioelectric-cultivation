@@ -1,0 +1,73 @@
+{
+  "wt_pattern_error_final": 2.8722232190844155,
+  "wt_stable": true,
+  "twoheaded_pattern_error": 3.8684169202635794,
+  "twoheaded_achieved": true,
+  "tail_theta_before": -50.05305915445527,
+  "tail_theta_after": -24.15850878149026,
+  "amputation_rounds": [
+    {
+      "round": 1,
+      "head_likeness_head": 0.999313239440472,
+      "head_likeness_tail": 0.8558571010436038,
+      "tail_theta_mean": -26.94072572578812
+    },
+    {
+      "round": 2,
+      "head_likeness_head": 0.973403417301437,
+      "head_likeness_tail": 0.9544094352394069,
+      "tail_theta_mean": -25.597117807844967
+    }
+  ],
+  "memory_persists": true,
+  "control_gjblock_tail_headlikeness": 0.0,
+  "control_gjblock_no_reprogram": true,
+  "dose_response": [
+    {
+      "clamp_voltage": -35.0,
+      "tail_headlikeness": 0.15058929099065257,
+      "tail_theta": -37.57483886698923
+    },
+    {
+      "clamp_voltage": -32.5,
+      "tail_headlikeness": 0.2800582869418591,
+      "tail_theta": -35.620725318939456
+    },
+    {
+      "clamp_voltage": -30.0,
+      "tail_headlikeness": 0.40952728289307033,
+      "tail_theta": -33.66661177088958
+    },
+    {
+      "clamp_voltage": -27.5,
+      "tail_headlikeness": 0.5389962788442787,
+      "tail_theta": -31.712498222839766
+    },
+    {
+      "clamp_voltage": -25.0,
+      "tail_headlikeness": 0.6684652747954865,
+      "tail_theta": -29.75838467478995
+    },
+    {
+      "clamp_voltage": -22.5,
+      "tail_headlikeness": 0.7979342707466953,
+      "tail_theta": -27.804271126740122
+    },
+    {
+      "clamp_voltage": -20.0,
+      "tail_headlikeness": 0.9274032666979027,
+      "tail_theta": -25.850157578690318
+    },
+    {
+      "clamp_voltage": -17.5,
+      "tail_headlikeness": 1.0,
+      "tail_theta": -23.896044030640464
+    },
+    {
+      "clamp_voltage": -15.0,
+      "tail_headlikeness": 1.0,
+      "tail_theta": -21.941930482590642
+    }
+  ],
+  "dose_response_present": true
+}

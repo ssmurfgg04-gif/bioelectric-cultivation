@@ -1,0 +1,18 @@
+{
+ "exp": "exp80_external_storage (the Stage-5 storage protocol)",
+ "medium_bytes": 818,
+ "dest_grid_err": null,
+ "criteria": {
+  "ES_G1_byte_exact": true,
+  "ES_G2_substrate_independent": true,
+  "ES_G3_total_destruction": true,
+  "ES_G4_form_regenerates": true,
+  "ES_G5_medium_does_not_age": true,
+  "ES_G6_conditions_required": true
+ },
+ "notes": "The storage protocol: capture (identity-at-coordinate map) -> store (bytes, ageless) -> destroy (the source substrate is discarded entirely) -> re-instantiate (the protocol's operating point: the L60 star architecture). ES-G6 is the theorem in protocol form: the medium alone is not the pattern; the re-instantiation architecture is a required part of the protocol.",
+ "operating_point": {
+  "gamma": 64.0,
+  "mu": 0.0
+ }
+}

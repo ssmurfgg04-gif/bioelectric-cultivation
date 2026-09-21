@@ -1,0 +1,317 @@
+{
+ "exp": "exp125_u_shape_generalization",
+ "censoring_map": {
+  "torus_g1": {
+   "t_pre_h": 82.4,
+   "censored_deposited": []
+  },
+  "torus_g4": {
+   "t_pre_h": 82.4,
+   "censored_deposited": []
+  },
+  "torus_g16": {
+   "t_pre_h": 59.04,
+   "censored_deposited": [
+    72.0
+   ]
+  },
+  "torus_g64": {
+   "t_pre_h": 34.31,
+   "censored_deposited": [
+    36.0,
+    48.0,
+    72.0
+   ]
+  },
+  "grid2d_g1": {
+   "t_pre_h": 82.4,
+   "censored_deposited": []
+  },
+  "grid2d_g4": {
+   "t_pre_h": 82.4,
+   "censored_deposited": []
+  },
+  "grid2d_g16": {
+   "t_pre_h": 59.04,
+   "censored_deposited": [
+    72.0
+   ]
+  },
+  "grid2d_g64": {
+   "t_pre_h": 34.31,
+   "censored_deposited": [
+    36.0,
+    48.0,
+    72.0
+   ]
+  },
+  "path_g1": {
+   "t_pre_h": 82.4,
+   "censored_deposited": []
+  },
+  "path_g4": {
+   "t_pre_h": 82.4,
+   "censored_deposited": []
+  },
+  "path_g16": {
+   "t_pre_h": 62.93,
+   "censored_deposited": [
+    72.0
+   ]
+  },
+  "path_g64": {
+   "t_pre_h": 34.62,
+   "censored_deposited": [
+    36.0,
+    48.0,
+    72.0
+   ]
+  }
+ },
+ "curves": {
+  "torus_g1_t0": 1.0,
+  "torus_g1_t6": 1.0,
+  "torus_g1_t12": 1.0,
+  "torus_g1_t18": 1.0,
+  "torus_g1_t24": 1.0,
+  "torus_g1": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "torus_g4_t0": 0.0,
+  "torus_g4_t6": 0.0,
+  "torus_g4_t12": 0.0,
+  "torus_g4_t18": 0.0,
+  "torus_g4_t24": 0.0,
+  "torus_g4_t36": 0.0,
+  "torus_g4_t48": 1.0,
+  "torus_g4_t72": 1.0,
+  "torus_g4_anchor": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "torus_g4_t26": 0.0,
+  "torus_g4_t30": 0.0,
+  "torus_g4_t34": 0.0,
+  "torus_g4": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "torus_g16_t0": 0.0,
+  "torus_g16_t24": 0.0,
+  "torus_g16_t36": 0.0,
+  "torus_g16_t48": 0.0,
+  "torus_g16_t52": 1.0,
+  "torus_g16_t56": 1.0,
+  "torus_g16_t58": 1.0,
+  "torus_g16": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "torus_g64_t0": 0.0,
+  "torus_g64_t16": 0.0,
+  "torus_g64_t24": 0.0,
+  "torus_g64_t28": 0.0,
+  "torus_g64_t31": 0.0,
+  "torus_g64_t34": 0.0,
+  "torus_g64": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "torus_control_g16_t72": 1.0,
+  "torus_control_g64_t36": 1.0,
+  "grid2d_g1_t0": 0.0,
+  "grid2d_g1_t6": 0.0,
+  "grid2d_g1_t12": 0.0,
+  "grid2d_g1_t18": 0.0,
+  "grid2d_g1_t24": 0.0,
+  "grid2d_g1": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "grid2d_g4_t0": 0.0,
+  "grid2d_g4_t12": 0.0,
+  "grid2d_g4_t24": 0.0,
+  "grid2d_g4_t26": 0.0,
+  "grid2d_g4_t30": 0.0,
+  "grid2d_g4_t34": 0.0,
+  "grid2d_g4_t36": 0.0,
+  "grid2d_g4_t48": 0.0,
+  "grid2d_g4": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "grid2d_g16_t0": 0.0,
+  "grid2d_g16_t24": 0.0,
+  "grid2d_g16_t36": 0.0,
+  "grid2d_g16_t48": 0.0,
+  "grid2d_g16_t52": 0.0,
+  "grid2d_g16_t56": 0.0,
+  "grid2d_g16_t58": 0.0,
+  "grid2d_g16": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "grid2d_g64_t0": 0.0,
+  "grid2d_g64_t16": 0.0,
+  "grid2d_g64_t24": 0.0,
+  "grid2d_g64_t28": 0.0,
+  "grid2d_g64_t31": 0.0,
+  "grid2d_g64_t34": 0.0,
+  "grid2d_g64": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "path_g1_t0": 0.0,
+  "path_g1_t6": 0.0,
+  "path_g1_t12": 0.0,
+  "path_g1_t18": 0.0,
+  "path_g1_t24": 0.0,
+  "path_g1": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "path_g4_t0": 0.0,
+  "path_g4_t12": 0.0,
+  "path_g4_t24": 0.0,
+  "path_g4_t26": 0.0,
+  "path_g4_t30": 0.0,
+  "path_g4_t34": 0.0,
+  "path_g4_t36": 0.0,
+  "path_g4_t48": 0.0,
+  "path_g4": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "path_g16_t0": 0.0,
+  "path_g16_t24": 0.0,
+  "path_g16_t36": 0.0,
+  "path_g16_t48": 0.0,
+  "path_g16_t52": 0.0,
+  "path_g16_t56": 0.0,
+  "path_g16_t58": 0.0,
+  "path_g16": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "path_g64_t0": 0.0,
+  "path_g64_t16": 0.0,
+  "path_g64_t24": 0.0,
+  "path_g64_t28": 0.0,
+  "path_g64_t31": 0.0,
+  "path_g64_t34": 0.0,
+  "path_g64": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "edges": {
+  "torus_g1": 0.0,
+  "torus_g4": 48.0,
+  "torus_g16": 52.0,
+  "torus_g64": null,
+  "grid2d_g1": null,
+  "grid2d_g4": null,
+  "grid2d_g16": null,
+  "grid2d_g64": null,
+  "path_g1": null,
+  "path_g4": null,
+  "path_g16": null,
+  "path_g64": null
+ },
+ "analytic": {
+  "H1": {
+   "theta_min": 12.8729,
+   "theta_max": 8.6593,
+   "feasible": false,
+   "n_lo_constraints": 17,
+   "n_hi_constraints": 11,
+   "violated_pair": [
+    "rescue (16.0, 48.0)",
+    "break (1.0, 0.0)"
+   ]
+  },
+  "H2": {
+   "theta_min": 0.3822,
+   "theta_max": 0.0176,
+   "feasible": false,
+   "n_lo_constraints": 17,
+   "n_hi_constraints": 9,
+   "violated_pair": [
+    "rescue (4.0, 0.0)",
+    "break (16.0, 58.0)"
+   ]
+  }
+ },
+ "an_g2_variant": null,
+ "criteria": {
+  "AX_G0_anchor_continuity": true,
+  "AX_G1_censoring_map": true,
+  "DCG1R_monotone_repaired": true,
+  "UG_G1_baseline_invulnerable": true,
+  "UG_G2_generalization_fork": true,
+  "AN_G1_analytic_fit": false,
+  "AN_G2_transfer": null
+ },
+ "notes": "Censoring-free deadline curves on torus/grid2d/path; the exp124 U-shape's right flank owned as protocol censoring (gamma-dependent walk duration); the registered analytic deadline tested in both readings (H1 cumulative, H2 remaining-time integral)."
+}

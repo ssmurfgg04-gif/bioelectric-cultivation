@@ -1,0 +1,661 @@
+{
+ "exp": "exp38_m30_spec_expression",
+ "mechanism": "REGISTERED: spec_expression_p \u2014 per-committing-cell Bernoulli on the phi_spec read. AMENDED (exploratory): spec_reanchor_p \u2014 one-time per-blastema Bernoulli on the wound-face re-anchoring of the positional read; draws gated \u2014 no RNG contact at defaults or when the phi read is inactive (bit-exact)",
+ "phi_readout": 0.75,
+ "p_scan": [
+  0.55,
+  0.65,
+  0.72,
+  0.8,
+  0.9
+ ],
+ "q_scan": [
+  0.4,
+  0.45,
+  0.5,
+  0.55,
+  0.6
+ ],
+ "sim_arms": {
+  "cutting_cross_a_q55": {
+   "err_mean": 3.4062096257615337,
+   "err_se": 0.3035802741907178,
+   "err_per_seed": [
+    4.011594855357455,
+    3.1436977460670312,
+    3.063336275860114
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_b_q55": {
+   "err_mean": 3.3141013475855288,
+   "err_se": 0.006489954586346334,
+   "err_per_seed": [
+    3.3126828608098107,
+    3.3259841961681693,
+    3.3036369857786063
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_c_q55": {
+   "err_mean": 3.1635078077359307,
+   "err_se": 0.00829432888638485,
+   "err_per_seed": [
+    3.154738930452715,
+    3.155697256897408,
+    3.1800872358576684
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_d_q55": {
+   "err_mean": 2.9358268849888254,
+   "err_se": 0.010107013996529227,
+   "err_per_seed": [
+    2.9493110602421324,
+    2.9160430199111613,
+    2.942126574813183
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_a_q65": {
+   "err_mean": 3.337524712296536,
+   "err_se": 0.3007504147220532,
+   "err_per_seed": [
+    3.9390248300256094,
+    3.0359733136827503,
+    3.037575993181247
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_b_q65": {
+   "err_mean": 3.3096925261101986,
+   "err_se": 0.004449355844524358,
+   "err_per_seed": [
+    3.3069166751639614,
+    3.3184024247420236,
+    3.3037584784246112
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_c_q65": {
+   "err_mean": 3.1586518575364217,
+   "err_se": 0.007277234676185503,
+   "err_per_seed": [
+    3.155032894337695,
+    3.148252663424574,
+    3.172670014846997
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_d_q65": {
+   "err_mean": 2.9358268849888254,
+   "err_se": 0.010107013996529227,
+   "err_per_seed": [
+    2.9493110602421324,
+    2.9160430199111613,
+    2.942126574813183
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_a_q72": {
+   "err_mean": 3.1121458249997587,
+   "err_se": 0.0836460820168717,
+   "err_per_seed": [
+    3.2793942225144344,
+    3.031835424199342,
+    3.025207828285498
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_b_q72": {
+   "err_mean": 3.305286703771822,
+   "err_se": 0.007729727849696048,
+   "err_per_seed": [
+    3.3060750301439423,
+    3.3182634038353567,
+    3.291521677336167
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_c_q72": {
+   "err_mean": 3.156265822020128,
+   "err_se": 0.006370024165364911,
+   "err_per_seed": [
+    3.1535862873715477,
+    3.1468191768661056,
+    3.1683920018227303
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_d_q72": {
+   "err_mean": 2.935767008928971,
+   "err_se": 0.01006717129009064,
+   "err_per_seed": [
+    2.949131432062569,
+    2.9160430199111613,
+    2.942126574813183
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_a_q80": {
+   "err_mean": 3.066868918045575,
+   "err_se": 0.10720500300511657,
+   "err_per_seed": [
+    3.277450587992351,
+    2.9266458884689066,
+    2.9965102776754664
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_b_q80": {
+   "err_mean": 3.2997448362912762,
+   "err_se": 0.009542608440388733,
+   "err_per_seed": [
+    3.3028872524801622,
+    3.314476328675944,
+    3.2818709277177223
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_c_q80": {
+   "err_mean": 3.1563533211338055,
+   "err_se": 0.006409388833981278,
+   "err_per_seed": [
+    3.1535677993569537,
+    3.146909964313453,
+    3.16858219973101
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_d_q80": {
+   "err_mean": 2.9358450467010706,
+   "err_se": 0.009990736285080765,
+   "err_per_seed": [
+    2.949131432062569,
+    2.9162771332274606,
+    2.942126574813183
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_a_q90": {
+   "err_mean": 2.9436004628335355,
+   "err_se": 0.0154938835278076,
+   "err_per_seed": [
+    2.9447995957551476,
+    2.916184803434029,
+    2.9698169893114303
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_b_q90": {
+   "err_mean": 3.292241327929268,
+   "err_se": 0.010766149978415912,
+   "err_per_seed": [
+    3.299260241688033,
+    3.3063608555160564,
+    3.2711028865837144
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_c_q90": {
+   "err_mean": 3.154465515377956,
+   "err_se": 0.007785317408603827,
+   "err_per_seed": [
+    3.149255153928867,
+    3.1443635090953186,
+    3.169777883109684
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_d_q90": {
+   "err_mean": 2.9358450467010706,
+   "err_se": 0.009990736285080765,
+   "err_per_seed": [
+    2.949131432062569,
+    2.9162771332274606,
+    2.942126574813183
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_a_r40": {
+   "err_mean": 15.72819907994734,
+   "err_se": 0.553170787964303,
+   "err_per_seed": [
+    16.511613247609013,
+    14.659963768027408,
+    16.013020224205594
+   ],
+   "pred_abn_rate": 1.0
+  },
+  "cutting_cross_b_r40": {
+   "err_mean": 4.138371675610348,
+   "err_se": 0.37472640920862493,
+   "err_per_seed": [
+    4.6221776660395095,
+    3.4007787894419446,
+    4.392158571349591
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_c_r40": {
+   "err_mean": 3.5783836733241845,
+   "err_se": 0.14241296314445537,
+   "err_per_seed": [
+    3.754804262861295,
+    3.296521144111289,
+    3.68382561299997
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_d_r40": {
+   "err_mean": 2.9197692322448514,
+   "err_se": 0.01062811892298309,
+   "err_per_seed": [
+    2.9342304735990785,
+    2.9260302797149422,
+    2.8990469434205326
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_tail_r40": {
+   "err_mean": 3.112993401297554,
+   "err_se": 0.043095957238188994,
+   "err_per_seed": [
+    3.194219244221163,
+    3.0474093680895873,
+    3.0973515915819116
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_head_r40": {
+   "err_mean": 3.7028036453286117,
+   "err_se": 0.08659660609065578,
+   "err_per_seed": [
+    3.5490043672250806,
+    3.7107376907819387,
+    3.8486688779788167
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_trunk_r40": {
+   "err_mean": 3.127635491083869,
+   "err_se": 0.0435972269361383,
+   "err_per_seed": [
+    3.1984625003034433,
+    3.048178761531746,
+    3.136265211416418
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "restored_tail_r40": {
+   "err_mean": 3.1816478508230364,
+   "err_se": 0.022036122323022787,
+   "err_per_seed": [
+    3.218094692270886,
+    3.1419653324372305,
+    3.184883527760992
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_a_r45": {
+   "err_mean": 15.72819907994734,
+   "err_se": 0.553170787964303,
+   "err_per_seed": [
+    16.511613247609013,
+    14.659963768027408,
+    16.013020224205594
+   ],
+   "pred_abn_rate": 1.0
+  },
+  "cutting_cross_b_r45": {
+   "err_mean": 4.138371675610348,
+   "err_se": 0.37472640920862493,
+   "err_per_seed": [
+    4.6221776660395095,
+    3.4007787894419446,
+    4.392158571349591
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_c_r45": {
+   "err_mean": 3.5783836733241845,
+   "err_se": 0.14241296314445537,
+   "err_per_seed": [
+    3.754804262861295,
+    3.296521144111289,
+    3.68382561299997
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_d_r45": {
+   "err_mean": 2.9197692322448514,
+   "err_se": 0.01062811892298309,
+   "err_per_seed": [
+    2.9342304735990785,
+    2.9260302797149422,
+    2.8990469434205326
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_tail_r45": {
+   "err_mean": 3.112993401297554,
+   "err_se": 0.043095957238188994,
+   "err_per_seed": [
+    3.194219244221163,
+    3.0474093680895873,
+    3.0973515915819116
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_head_r45": {
+   "err_mean": 3.7028036453286117,
+   "err_se": 0.08659660609065578,
+   "err_per_seed": [
+    3.5490043672250806,
+    3.7107376907819387,
+    3.8486688779788167
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_trunk_r45": {
+   "err_mean": 3.127635491083869,
+   "err_se": 0.0435972269361383,
+   "err_per_seed": [
+    3.1984625003034433,
+    3.048178761531746,
+    3.136265211416418
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "restored_tail_r45": {
+   "err_mean": 3.1816478508230364,
+   "err_se": 0.022036122323022787,
+   "err_per_seed": [
+    3.218094692270886,
+    3.1419653324372305,
+    3.184883527760992
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_a_r50": {
+   "err_mean": 15.72819907994734,
+   "err_se": 0.553170787964303,
+   "err_per_seed": [
+    16.511613247609013,
+    14.659963768027408,
+    16.013020224205594
+   ],
+   "pred_abn_rate": 1.0
+  },
+  "cutting_cross_b_r50": {
+   "err_mean": 4.138371675610348,
+   "err_se": 0.37472640920862493,
+   "err_per_seed": [
+    4.6221776660395095,
+    3.4007787894419446,
+    4.392158571349591
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_c_r50": {
+   "err_mean": 3.5783836733241845,
+   "err_se": 0.14241296314445537,
+   "err_per_seed": [
+    3.754804262861295,
+    3.296521144111289,
+    3.68382561299997
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_d_r50": {
+   "err_mean": 2.9197692322448514,
+   "err_se": 0.01062811892298309,
+   "err_per_seed": [
+    2.9342304735990785,
+    2.9260302797149422,
+    2.8990469434205326
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_tail_r50": {
+   "err_mean": 3.112993401297554,
+   "err_se": 0.043095957238188994,
+   "err_per_seed": [
+    3.194219244221163,
+    3.0474093680895873,
+    3.0973515915819116
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_head_r50": {
+   "err_mean": 3.7028036453286117,
+   "err_se": 0.08659660609065578,
+   "err_per_seed": [
+    3.5490043672250806,
+    3.7107376907819387,
+    3.8486688779788167
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_trunk_r50": {
+   "err_mean": 3.127635491083869,
+   "err_se": 0.0435972269361383,
+   "err_per_seed": [
+    3.1984625003034433,
+    3.048178761531746,
+    3.136265211416418
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "restored_tail_r50": {
+   "err_mean": 3.1816478508230364,
+   "err_se": 0.022036122323022787,
+   "err_per_seed": [
+    3.218094692270886,
+    3.1419653324372305,
+    3.184883527760992
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_a_r55": {
+   "err_mean": 11.327458276436266,
+   "err_se": 4.291747139464803,
+   "err_per_seed": [
+    16.511613247609013,
+    14.659963768027408,
+    2.810797813672374
+   ],
+   "pred_abn_rate": 0.6666666666666666
+  },
+  "cutting_cross_b_r55": {
+   "err_mean": 3.77160491736573,
+   "err_se": 0.42644711240247507,
+   "err_per_seed": [
+    4.6221776660395095,
+    3.4007787894419446,
+    3.291858296615736
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_c_r55": {
+   "err_mean": 3.411090264982295,
+   "err_se": 0.17501084273749518,
+   "err_per_seed": [
+    3.754804262861295,
+    3.296521144111289,
+    3.1819453879743
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_d_r55": {
+   "err_mean": 2.9197830563504925,
+   "err_se": 0.010614642520458952,
+   "err_per_seed": [
+    2.9342304735990785,
+    2.9260302797149422,
+    2.899088415737456
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_tail_r55": {
+   "err_mean": 3.1056374524295265,
+   "err_se": 0.04501590681633014,
+   "err_per_seed": [
+    3.194219244221163,
+    3.0474093680895873,
+    3.0752837449778303
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_head_r55": {
+   "err_mean": 3.2917179359123403,
+   "err_se": 0.3413609819963617,
+   "err_per_seed": [
+    3.5490043672250806,
+    3.7107376907819387,
+    2.615411749730003
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_trunk_r55": {
+   "err_mean": 3.1186037562404643,
+   "err_se": 0.04363884834624302,
+   "err_per_seed": [
+    3.1984625003034433,
+    3.048178761531746,
+    3.109170006886203
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "restored_tail_r55": {
+   "err_mean": 3.1816478508230364,
+   "err_se": 0.022036122323022787,
+   "err_per_seed": [
+    3.218094692270886,
+    3.1419653324372305,
+    3.184883527760992
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_a_r60": {
+   "err_mean": 11.327458276436266,
+   "err_se": 4.291747139464803,
+   "err_per_seed": [
+    16.511613247609013,
+    14.659963768027408,
+    2.810797813672374
+   ],
+   "pred_abn_rate": 0.6666666666666666
+  },
+  "cutting_cross_b_r60": {
+   "err_mean": 3.77160491736573,
+   "err_se": 0.42644711240247507,
+   "err_per_seed": [
+    4.6221776660395095,
+    3.4007787894419446,
+    3.291858296615736
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_c_r60": {
+   "err_mean": 3.411090264982295,
+   "err_se": 0.17501084273749518,
+   "err_per_seed": [
+    3.754804262861295,
+    3.296521144111289,
+    3.1819453879743
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_d_r60": {
+   "err_mean": 2.9197830563504925,
+   "err_se": 0.010614642520458952,
+   "err_per_seed": [
+    2.9342304735990785,
+    2.9260302797149422,
+    2.899088415737456
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_tail_r60": {
+   "err_mean": 3.1056374524295265,
+   "err_se": 0.04501590681633014,
+   "err_per_seed": [
+    3.194219244221163,
+    3.0474093680895873,
+    3.0752837449778303
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_head_r60": {
+   "err_mean": 3.2917179359123403,
+   "err_se": 0.3413609819963617,
+   "err_per_seed": [
+    3.5490043672250806,
+    3.7107376907819387,
+    2.615411749730003
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_trunk_r60": {
+   "err_mean": 3.1186037562404643,
+   "err_se": 0.04363884834624302,
+   "err_per_seed": [
+    3.1984625003034433,
+    3.048178761531746,
+    3.109170006886203
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "restored_tail_r60": {
+   "err_mean": 3.1816478508230364,
+   "err_se": 0.022036122323022787,
+   "err_per_seed": [
+    3.218094692270886,
+    3.1419653324372305,
+    3.184883527760992
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "innexin_tail_m30": {
+   "err_mean": 6.912891313582886,
+   "err_se": 0.3408674161560804,
+   "err_per_seed": [
+    7.554938437282922,
+    6.790370659525552,
+    6.3933648439401844
+   ],
+   "pred_abn_rate": 1.0
+  },
+  "cutting_tail_inert": {
+   "err_mean": 3.2349309433678997,
+   "err_se": 0.055816485285455436,
+   "err_per_seed": [
+    3.3361658420658356,
+    3.143569641070562,
+    3.2250573469673025
+   ],
+   "pred_abn_rate": 0.0
+  }
+ },
+ "qualifying_p_registered": null,
+ "qualifying_q_amended": 0.55,
+ "criteria": {
+  "M30_G1_seed_splitting_registered_per_cell": false,
+  "M30_G2_collateral_lock_registered": null,
+  "M30_G3_recorded_direction_rho_registered": false,
+  "M30_A1_seed_splitting_amended_reanchor": true,
+  "M30_A2_collateral_lock_amended": true,
+  "M30_A3_bins_bcd_unchanged": true,
+  "M30_G4_innexin_preserved": false,
+  "M30_G5_inertness_bitexact": true
+ },
+ "recorded_reference": {
+  "a": 0.52,
+  "b": 0.432,
+  "c": 0.269,
+  "d": 0.266
+ },
+ "prediction_rule": "unchanged from exp27: abnormal iff pattern_error >= 6.0 mV OR head_likeness(tail) >= 0.7",
+ "notes": "Registered per-cell version REFUTED: the chain re-carries the spec blend (each committed cell writes its blended value; the next inherits it), so per-cell expression failures cannot accumulate \u2014 cross_a stayed 0.00 at every p with err ~3 mV. The graded penetrance must live at the regenerate level. Amendment (exploratory, exp36 precedent): per-blastema re-anchoring draw; qualifying q is the M30 amended mapping candidate. Pointwise fit is NOT claimed \u2014 the record's absolute rates run hot (publication bias); gates test seed-splitting, ordering, collateral safety."
+}

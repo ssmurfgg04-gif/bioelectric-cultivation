@@ -1,0 +1,549 @@
+{
+ "exp": "exp41_anatomical_compiler",
+ "stage": "3 \u2014 Golden Core (anatomical compiler v0)",
+ "compiler": "cultivation/compiler/anatomy.py",
+ "rules": {
+  "R1": "identity zones -> sustained clamps over the 24h window",
+  "R2": "trigger plane -> amputate + phi_readout=0.75 spec read",
+  "R3": "junction-health precondition (gap_scale >= 1.0)",
+  "R4": "repertoire check at compile time (safety refusal)"
+ },
+ "programs": {
+  "CP-G1_restore": {
+   "rejected": [],
+   "clamps": [
+    {
+     "zone": "head",
+     "i0": 0,
+     "i1": 25,
+     "voltage": -20.0,
+     "hours": 24.0
+    },
+    {
+     "zone": "trunk",
+     "i0": 25,
+     "i1": 100,
+     "voltage": -50.0,
+     "hours": 24.0
+    }
+   ],
+   "regen": {
+    "plane": "tail",
+    "cut_f": 0.5,
+    "phi_readout": 0.75,
+    "window_h": 24.0
+   },
+   "preconditions": {
+    "gap_scale": 1.0,
+    "rationale": "M25/M28: the positional spec read runs through the junction network"
+   },
+   "description": "PRESCRIPTION [restore_wt]\n  1. CLAMP cells 0..25 at -20.0 mV for 24 h  (head)\n  1. CLAMP cells 25..100 at -50.0 mV for 24 h  (trunk)\n  2. AMPUTATE tail plane, regrow with spec readout phi=0.75\n  3. PRECONDITION: gap junctions >= 1.0 (junction-carried spec read)\n  VERIFY: zone head holds -20.0 mV (|zone mean - -20.0| <= 6.0 mV)\n  VERIFY: zone trunk holds -50.0 mV (|zone mean - -50.0| <= 6.0 mV)\n  VERIFY: regenerated tissue matches the spec (pattern error) (wt_pattern_error vs spec-derived target < 6.0 mV)"
+  },
+  "CP-G2_twohead": {
+   "rejected": [],
+   "clamps": [
+    {
+     "zone": "head_anterior",
+     "i0": 0,
+     "i1": 25,
+     "voltage": -20.0,
+     "hours": 24.0
+    },
+    {
+     "zone": "head_posterior",
+     "i0": 75,
+     "i1": 100,
+     "voltage": -20.0,
+     "hours": 24.0
+    },
+    {
+     "zone": "trunk",
+     "i0": 25,
+     "i1": 75,
+     "voltage": -50.0,
+     "hours": 24.0
+    }
+   ],
+   "regen": {
+    "plane": "tail",
+    "cut_f": 0.5,
+    "phi_readout": 0.75,
+    "window_h": 24.0
+   },
+   "preconditions": {
+    "gap_scale": 1.0,
+    "rationale": "M25/M28: the positional spec read runs through the junction network"
+   },
+   "description": "PRESCRIPTION [two_headed]\n  1. CLAMP cells 0..25 at -20.0 mV for 24 h  (head_anterior)\n  1. CLAMP cells 75..100 at -20.0 mV for 24 h  (head_posterior)\n  1. CLAMP cells 25..75 at -50.0 mV for 24 h  (trunk)\n  2. AMPUTATE tail plane, regrow with spec readout phi=0.75\n  3. PRECONDITION: gap junctions >= 1.0 (junction-carried spec read)\n  VERIFY: zone head_anterior holds -20.0 mV (|zone mean - -20.0| <= 6.0 mV)\n  VERIFY: zone head_posterior holds -20.0 mV (|zone mean - -20.0| <= 6.0 mV)\n  VERIFY: zone trunk holds -50.0 mV (|zone mean - -50.0| <= 6.0 mV)\n  VERIFY: regenerated tissue matches the spec (pattern error) (wt_pattern_error vs spec-derived target < 6.0 mV)"
+  },
+  "CP-G3_ectopic": {
+   "rejected": [],
+   "clamps": [
+    {
+     "zone": "head_native",
+     "i0": 0,
+     "i1": 25,
+     "voltage": -20.0,
+     "hours": 24.0
+    },
+    {
+     "zone": "head_ectopic_midtrunk",
+     "i0": 45,
+     "i1": 60,
+     "voltage": -20.0,
+     "hours": 24.0
+    },
+    {
+     "zone": "trunk_a",
+     "i0": 25,
+     "i1": 45,
+     "voltage": -50.0,
+     "hours": 24.0
+    },
+    {
+     "zone": "trunk_b",
+     "i0": 60,
+     "i1": 100,
+     "voltage": -50.0,
+     "hours": 24.0
+    }
+   ],
+   "regen": {
+    "plane": "tail",
+    "cut_f": 0.5,
+    "phi_readout": 0.75,
+    "window_h": 24.0
+   },
+   "preconditions": {
+    "gap_scale": 1.0,
+    "rationale": "M25/M28: the positional spec read runs through the junction network"
+   },
+   "description": "PRESCRIPTION [third_head]\n  1. CLAMP cells 0..25 at -20.0 mV for 24 h  (head_native)\n  1. CLAMP cells 45..60 at -20.0 mV for 24 h  (head_ectopic_midtrunk)\n  1. CLAMP cells 25..45 at -50.0 mV for 24 h  (trunk_a)\n  1. CLAMP cells 60..100 at -50.0 mV for 24 h  (trunk_b)\n  2. AMPUTATE tail plane, regrow with spec readout phi=0.75\n  3. PRECONDITION: gap junctions >= 1.0 (junction-carried spec read)\n  VERIFY: zone head_native holds -20.0 mV (|zone mean - -20.0| <= 6.0 mV)\n  VERIFY: zone head_ectopic_midtrunk holds -20.0 mV (|zone mean - -20.0| <= 6.0 mV)\n  VERIFY: zone trunk_a holds -50.0 mV (|zone mean - -50.0| <= 6.0 mV)\n  VERIFY: zone trunk_b holds -50.0 mV (|zone mean - -50.0| <= 6.0 mV)\n  VERIFY: regenerated tissue matches the spec (pattern error) (wt_pattern_error vs spec-derived target < 6.0 mV)"
+  },
+  "CP-G4_refusal": {
+   "rejected": [
+    "zone impossible_identity: voltage 10.0 outside the identity repertoire [-60.0, -15.0]"
+   ],
+   "clamps": [],
+   "regen": null,
+   "preconditions": {},
+   "description": "REJECTED [out_of_repertoire]: zone impossible_identity: voltage 10.0 outside the identity repertoire [-60.0, -15.0]"
+  }
+ },
+ "runs": {
+  "CP-G1_restore": [
+   {
+    "err_vs_spec_target": 3.0253298099793127,
+    "final_mean_vmem": -43.07982262396314,
+    "zone head holds -20.0 mV": {
+     "zone_mean": -24.595578899265853,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -49.241237198862244,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 3.0253298099793127,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain"
+    }
+   },
+   {
+    "err_vs_spec_target": 3.1002696328443062,
+    "final_mean_vmem": -42.9931781601272,
+    "zone head holds -20.0 mV": {
+     "zone_mean": -24.600376869923583,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -49.12411192352841,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 3.1002696328443062,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain"
+    }
+   },
+   {
+    "err_vs_spec_target": 2.8284734407372167,
+    "final_mean_vmem": -43.20173472360661,
+    "zone head holds -20.0 mV": {
+     "zone_mean": -24.508027553948033,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -49.43297044682614,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 2.8284734407372167,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain"
+    }
+   }
+  ],
+  "CP-G2_twohead": [
+   {
+    "err_vs_spec_target": 4.105122503730674,
+    "final_mean_vmem": -37.101935276228915,
+    "zone head_anterior holds -20.0 mV": {
+     "zone_mean": -24.595578899265853,
+     "ok": true
+    },
+    "zone head_posterior holds -20.0 mV": {
+     "zone_mean": -25.285975777345325,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -49.263093214152235,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 4.105122503730674,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain"
+    }
+   },
+   {
+    "err_vs_spec_target": 4.001491514152153,
+    "final_mean_vmem": -37.015290812392976,
+    "zone head_anterior holds -20.0 mV": {
+     "zone_mean": -24.600376869923583,
+     "ok": true
+    },
+    "zone head_posterior holds -20.0 mV": {
+     "zone_mean": -24.79121209946732,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -49.334787140090505,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 4.001491514152153,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain"
+    }
+   },
+   {
+    "err_vs_spec_target": 4.278184743767297,
+    "final_mean_vmem": -37.223847375872396,
+    "zone head_anterior holds -20.0 mV": {
+     "zone_mean": -24.508027553948033,
+     "ok": true
+    },
+    "zone head_posterior holds -20.0 mV": {
+     "zone_mean": -25.792428236986645,
+     "ok": true
+    },
+    "zone trunk holds -50.0 mV": {
+     "zone_mean": -49.297466856277445,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 4.278184743767297,
+     "ok": true
+    },
+    "program_verified": true,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain"
+    }
+   }
+  ],
+  "CP-G3_ectopic": [
+   {
+    "err_vs_spec_target": 4.354205390384177,
+    "final_mean_vmem": -39.148444802830255,
+    "zone head_native holds -20.0 mV": {
+     "zone_mean": -24.59557889923826,
+     "ok": true
+    },
+    "zone head_ectopic_midtrunk holds -20.0 mV": {
+     "zone_mean": -26.22135608315477,
+     "ok": false
+    },
+    "zone trunk_a holds -50.0 mV": {
+     "zone_mean": -48.048735084450435,
+     "ok": true
+    },
+    "zone trunk_b holds -50.0 mV": {
+     "zone_mean": -48.64149912164346,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 4.354205390384177,
+     "ok": true
+    },
+    "program_verified": false,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain"
+    }
+   },
+   {
+    "err_vs_spec_target": 4.394420349385667,
+    "final_mean_vmem": -39.061800338994324,
+    "zone head_native holds -20.0 mV": {
+     "zone_mean": -24.600376869895985,
+     "ok": true
+    },
+    "zone head_ectopic_midtrunk holds -20.0 mV": {
+     "zone_mean": -26.29982717479061,
+     "ok": false
+    },
+    "zone trunk_a holds -50.0 mV": {
+     "zone_mean": -48.34700735840604,
+     "ok": true
+    },
+    "zone trunk_b holds -50.0 mV": {
+     "zone_mean": -48.243326434051326,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 4.394420349385667,
+     "ok": true
+    },
+    "program_verified": false,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain"
+    }
+   },
+   {
+    "err_vs_spec_target": 4.23823616158462,
+    "final_mean_vmem": -39.270356902473736,
+    "zone head_native holds -20.0 mV": {
+     "zone_mean": -24.50802755392043,
+     "ok": true
+    },
+    "zone head_ectopic_midtrunk holds -20.0 mV": {
+     "zone_mean": -26.27378954787121,
+     "ok": false
+    },
+    "zone trunk_a holds -50.0 mV": {
+     "zone_mean": -48.19291382689199,
+     "ok": true
+    },
+    "zone trunk_b holds -50.0 mV": {
+     "zone_mean": -48.90924704108638,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 4.23823616158462,
+     "ok": true
+    },
+    "program_verified": false,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "plain"
+    }
+   }
+  ]
+ },
+ "cp_g3_amendment": {
+  "status": "exploratory (exp36 precedent)",
+  "rule": "R1': zones without anatomical support require the somatic latch",
+  "runs": [
+   {
+    "err_vs_spec_target": 6.996424977667541,
+    "final_mean_vmem": -41.90471649682368,
+    "zone head_native holds -20.0 mV": {
+     "zone_mean": -30.416280019341023,
+     "ok": false
+    },
+    "zone head_ectopic_midtrunk holds -20.0 mV": {
+     "zone_mean": -31.330070812626314,
+     "ok": false
+    },
+    "zone trunk_a holds -50.0 mV": {
+     "zone_mean": -48.916561989732614,
+     "ok": true
+    },
+    "zone trunk_b holds -50.0 mV": {
+     "zone_mean": -49.544558680369896,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 6.996424977667541,
+     "ok": false
+    },
+    "program_verified": false,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "latching"
+    }
+   },
+   {
+    "err_vs_spec_target": 6.929038569018137,
+    "final_mean_vmem": -41.91398036836863,
+    "zone head_native holds -20.0 mV": {
+     "zone_mean": -30.40949932324763,
+     "ok": false
+    },
+    "zone head_ectopic_midtrunk holds -20.0 mV": {
+     "zone_mean": -31.075790107866066,
+     "ok": false
+    },
+    "zone trunk_a holds -50.0 mV": {
+     "zone_mean": -49.11715661382451,
+     "ok": true
+    },
+    "zone trunk_b holds -50.0 mV": {
+     "zone_mean": -49.567014246529766,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 6.929038569018137,
+     "ok": false
+    },
+    "program_verified": false,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "latching"
+    }
+   },
+   {
+    "err_vs_spec_target": 7.150092563111205,
+    "final_mean_vmem": -41.296528854606166,
+    "zone head_native holds -20.0 mV": {
+     "zone_mean": -30.32319742493944,
+     "ok": false
+    },
+    "zone head_ectopic_midtrunk holds -20.0 mV": {
+     "zone_mean": -31.194567740045084,
+     "ok": false
+    },
+    "zone trunk_a holds -50.0 mV": {
+     "zone_mean": -49.12767805338534,
+     "ok": true
+    },
+    "zone trunk_b holds -50.0 mV": {
+     "zone_mean": -48.0275218167187,
+     "ok": true
+    },
+    "regenerated tissue matches the spec (pattern error)": {
+     "err": 7.150092563111205,
+     "ok": false
+    },
+    "program_verified": false,
+    "regen": {
+     "plane": "slice(85, 100, None)",
+     "phi": 0.75,
+     "substrate": "latching"
+    }
+   }
+  ],
+  "verified": false
+ },
+ "cp_g5_blocked_runs": [
+  {
+   "err_vs_spec_target": 6.834555534945102,
+   "final_mean_vmem": -41.79012630058353,
+   "zone head holds -20.0 mV": {
+    "zone_mean": -23.968775590959254,
+    "ok": true
+   },
+   "zone trunk holds -50.0 mV": {
+    "zone_mean": -47.73057653712495,
+    "ok": true
+   },
+   "regenerated tissue matches the spec (pattern error)": {
+    "err": 6.834555534945102,
+    "ok": false
+   },
+   "program_verified": false,
+   "regen": {
+    "plane": "slice(85, 100, None)",
+    "phi": 0.75,
+    "substrate": "plain"
+   }
+  },
+  {
+   "err_vs_spec_target": 6.717523227065522,
+   "final_mean_vmem": -42.65732899250832,
+   "zone head holds -20.0 mV": {
+    "zone_mean": -23.973591411292535,
+    "ok": true
+   },
+   "zone trunk holds -50.0 mV": {
+    "zone_mean": -48.88524151958025,
+    "ok": true
+   },
+   "regenerated tissue matches the spec (pattern error)": {
+    "err": 6.717523227065522,
+    "ok": false
+   },
+   "program_verified": false,
+   "regen": {
+    "plane": "slice(85, 100, None)",
+    "phi": 0.75,
+    "substrate": "plain"
+   }
+  },
+  {
+   "err_vs_spec_target": 10.209785360144167,
+   "final_mean_vmem": -40.180392144317715,
+   "zone head holds -20.0 mV": {
+    "zone_mean": -23.871597138759544,
+    "ok": true
+   },
+   "zone trunk holds -50.0 mV": {
+    "zone_mean": -45.61665714617044,
+    "ok": true
+   },
+   "regenerated tissue matches the spec (pattern error)": {
+    "err": 10.209785360144167,
+    "ok": false
+   },
+   "program_verified": false,
+   "regen": {
+    "plane": "slice(85, 100, None)",
+    "phi": 0.75,
+    "substrate": "plain"
+   }
+  }
+ ],
+ "verifier_bug_note": "first run's verifier skipped the whole-spec pattern-error gate (substring 'pattern error' vs 'wt_pattern_error'); all verdicts here come from the fixed verifier",
+ "criteria": {
+  "CP_G1_restorative": true,
+  "CP_G2_two_head": true,
+  "CP_G3_novel_anatomy": false,
+  "CP_G4_safety_refusal": true,
+  "CP_G5_coupling_necessity": true
+ },
+ "notes": "Compilation, not search: zero CEM iterations. The M28 phi layer is the target representation \u2014 write the spec, trigger a regen that reads it. The prescription is the lab-executable deliverable: regions, voltages, durations, coupling preconditions, verification criteria."
+}

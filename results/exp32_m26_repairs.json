@@ -1,0 +1,187 @@
+{
+ "exp": "exp32_m26_repairs",
+ "source": "PlanformDB 2.5.0 (Lobo 2013), in-repo .edb",
+ "recorded_bin_means": {
+  "a": 0.52,
+  "b": 0.43175824175824173,
+  "c": 0.269,
+  "d": 0.265625
+ },
+ "recorded_bin_n": {
+  "a": 36,
+  "b": 91,
+  "c": 10,
+  "d": 16
+ },
+ "sim_arms": {
+  "cutting_cross_a": {
+   "err_mean": 21.95344118075582,
+   "err_se": 0.09866213113670506,
+   "err_per_seed": [
+    22.117026479442714,
+    21.776084228969207,
+    21.96721283385554
+   ],
+   "pred_abn_rate": 1.0
+  },
+  "cutting_cross_b": {
+   "err_mean": 3.514152255235961,
+   "err_se": 0.10967733412052845,
+   "err_per_seed": [
+    3.340420990838757,
+    3.4850418610861413,
+    3.7169939137829844
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_c": {
+   "err_mean": 3.1594726581495998,
+   "err_se": 0.015617659393396387,
+   "err_per_seed": [
+    3.1310254625912934,
+    3.184867721966612,
+    3.162524789890893
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_d": {
+   "err_mean": 2.9358259351252607,
+   "err_se": 0.01016334859092633,
+   "err_per_seed": [
+    2.949225459886302,
+    2.9158890840967127,
+    2.942363261392767
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_tail_g1": {
+   "err_mean": 3.0808194933462136,
+   "err_se": 0.016222801032991344,
+   "err_per_seed": [
+    3.0684796286317777,
+    3.0610022437825277,
+    3.112976607624335
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_head_g1": {
+   "err_mean": 3.2555949986245936,
+   "err_se": 0.03284711473275776,
+   "err_per_seed": [
+    3.3186236647733716,
+    3.2080388679130856,
+    3.240122463187324
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_trunk_g1": {
+   "err_mean": 3.0997152541629602,
+   "err_se": 0.026928651073411084,
+   "err_per_seed": [
+    3.084213549268101,
+    3.062798113540238,
+    3.152134099680541
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "ion_channel_tail_cns3": {
+   "err_mean": 4.086126584737055,
+   "err_se": 0.21763506088782697,
+   "err_per_seed": [
+    4.515660276964777,
+    3.8103624877518634,
+    3.9323569894945254
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "ion_channel_head_cns3": {
+   "err_mean": 3.7940249903594485,
+   "err_se": 0.19491033314770018,
+   "err_per_seed": [
+    3.422782134549585,
+    4.082622970988022,
+    3.8766698655407392
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "innexin_tail_recheck": {
+   "err_mean": 6.383753910878227,
+   "err_se": 0.3169107337846036,
+   "err_per_seed": [
+    6.213958740658152,
+    6.997494043152483,
+    5.939808948824044
+   ],
+   "pred_abn_rate": 0.6666666666666666
+  },
+  "cutting_trunk_both": {
+   "err_mean": 3.2438813956018877,
+   "err_se": 0.06649199767578191,
+   "err_per_seed": [
+    3.306218206712809,
+    3.1109822240503946,
+    3.31444375604246
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "wnt_trunk_both": {
+   "err_mean": 13.049636395046761,
+   "err_se": 0.009094093047545436,
+   "err_per_seed": [
+    13.031452214072713,
+    13.058397945370496,
+    13.059059025697074
+   ],
+   "pred_abn_rate": 1.0
+  },
+  "apc_trunk_both": {
+   "err_mean": 13.4668758704733,
+   "err_se": 0.023799519155685157,
+   "err_per_seed": [
+    13.489619366341213,
+    13.419292226939897,
+    13.491716018138787
+   ],
+   "pred_abn_rate": 1.0
+  },
+  "wnt_tail_g0": {
+   "err_mean": 12.574232228628839,
+   "err_se": 0.10713406496226632,
+   "err_per_seed": [
+    12.788497184225204,
+    12.466089687227026,
+    12.468109814434289
+   ],
+   "pred_abn_rate": 1.0
+  },
+  "apc_head_g0": {
+   "err_mean": 12.845139289166339,
+   "err_se": 0.11797053640692932,
+   "err_per_seed": [
+    12.609552364220665,
+    12.97412395248615,
+    12.9517415507922
+   ],
+   "pred_abn_rate": 1.0
+  }
+ },
+ "deviation": {
+  "D_g0": 1.4463832417582418,
+  "D_g1": 1.4463832417582418
+ },
+ "criteria": {
+  "M26A_G1_cross_a_gradient": false,
+  "M26A_G2_no_collateral": true,
+  "M26A_G3_bin_deviation_shrinks": false,
+  "M26B_G1_ion_commitment_noise": false,
+  "M26B_G2_default_inert_bit_exact": true,
+  "M26B_G3_innexin_unchanged": true,
+  "M26C_G1_cutting_trunk_both": true,
+  "M26C_G2_wnt_trunk_both_reachable": true,
+  "S2W3b_1_morphogen_plane_invariant_recorded": true,
+  "S2W3b_2_morphogen_above_cutting_recorded": true,
+  "S2W3b_3_sim_plane_invariance": true
+ },
+ "prediction_rule": "unchanged from exp27: abnormal iff pattern_error >= 6.0 mV OR head_likeness(tail) >= 0.7",
+ "notes": "Night-three M26 candidates evaluated one at a time against exp31's published cells; S2W3b is the honest re-registration of the wrong-bio S2W3 criterion (plane-invariance, not plane-gradient). Bit-exact gate: verify_m26_bitexact.py ran green before this run (exp29 controls to 1e-9)."
+}

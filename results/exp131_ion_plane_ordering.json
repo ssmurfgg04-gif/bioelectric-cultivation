@@ -1,0 +1,261 @@
+{
+ "exp": "exp131_ion_plane_ordering",
+ "task": "T2 of the Levin-series ranked targets (research/levin_voltage_series.md): the ion-arm headless ordering vs Beane 2011's plane series + the strict ivermectin/SCH 2x2 sign test, on the chain corpus machinery.",
+ "record": {
+  "pub_headless_by_plane": {
+   "head": 0.0,
+   "pre_pharyngeal": 0.0,
+   "pharyngeal": 0.67,
+   "post_pharyngeal": 0.16,
+   "tail": 0.4
+  },
+  "pub_eids": {
+   "head": 391,
+   "pre_pharyngeal": 392,
+   "pharyngeal": 393,
+   "post_pharyngeal": 394,
+   "tail": 395
+  },
+  "pub_order": [
+   "head",
+   "pre_pharyngeal",
+   "pharyngeal",
+   "post_pharyngeal",
+   "tail"
+  ],
+  "ivermectin_dh": 0.92,
+  "sch_headless": 1.0,
+  "source": "research/levin_voltage_series.json DB-391..395, DB-411/412 (Beane 2011, PMID 21276941); 0 of 3 web-search queries spent \u2014 every number was already in the repo's series JSON"
+ },
+ "mapping": {
+  "sch_28080": "ion_channel arm family (gamma x0.5, noise x3.0, commitment_noise_scale 3.0, commitment_diffusion 1.5): exp39 V2's arm; exp70.run_arm protocol 'ion_channel'; exp118.map_arm sends the DB ion_channel group's rows there",
+  "ivermectin": "its recorded arm = the posterior-depolarization arm (exp39 V3: corrupt POST_Q to head identity; deposited HL 0.9462 >= 0.7)",
+  "plane_taxonomy": {
+   "head": "head",
+   "pre_pharyngeal": "head",
+   "pharyngeal": "trunk",
+   "post_pharyngeal": "tail",
+   "tail": "tail"
+  },
+  "taxonomy_provenance": "experiments/planform_mining.py 'PLANE TAXONOMY (pre-registered 2026-09-15, BEFORE any per-plane outcome)': pre-pharyngeal -> head, post-pharyngeal -> tail; no mapping chosen for this test",
+  "scoping_note": "run_arm86 (exp86) carries no ion_channel/wnt protocol (neoblast/generic/control only); the gates run on the ion_channel family's arms verbatim (exp39 V2/V3; exp70.run_arm); run_arm86+M33_KW serve the not-gated continuity panel."
+ },
+ "anchor": {
+  "gate": "IP-A1 (exp39 V2/V3 quantities within 0.125)",
+  "fresh": {
+   "ion_tail_abn": 1.0,
+   "cut_tail_abn": 0.0,
+   "wnt_hl_tail": 0.9462486413762442
+  },
+  "deposited": {
+   "ion_tail_abn": 1.0,
+   "cut_tail_abn": 0.0,
+   "wnt_hl_tail": 0.9462486413762442
+  },
+  "max_abs_delta": 0.0,
+  "verdict": "PASS"
+ },
+ "ordering": {
+  "sim_by_plane": {
+   "head": 0.3333333333333333,
+   "trunk": 0.6666666666666666,
+   "tail": 1.0
+  },
+  "per_seed": {
+   "head": [
+    {
+     "seed": 1,
+     "abn": false,
+     "ea": false,
+     "af": false,
+     "err": 3.72,
+     "hl": 0.0
+    },
+    {
+     "seed": 2,
+     "abn": false,
+     "ea": false,
+     "af": false,
+     "err": 5.86,
+     "hl": 0.0
+    },
+    {
+     "seed": 3,
+     "abn": true,
+     "ea": false,
+     "af": true,
+     "err": 6.91,
+     "hl": 0.0
+    }
+   ],
+   "trunk": [
+    {
+     "seed": 1,
+     "abn": false,
+     "ea": false,
+     "af": false,
+     "err": 5.29,
+     "hl": 0.0
+    },
+    {
+     "seed": 2,
+     "abn": true,
+     "ea": false,
+     "af": true,
+     "err": 6.54,
+     "hl": 0.0
+    },
+    {
+     "seed": 3,
+     "abn": true,
+     "ea": false,
+     "af": true,
+     "err": 8.13,
+     "hl": 0.0
+    }
+   ],
+   "tail": [
+    {
+     "seed": 1,
+     "abn": true,
+     "ea": false,
+     "af": true,
+     "err": 6.56,
+     "hl": 0.0
+    },
+    {
+     "seed": 2,
+     "abn": true,
+     "ea": false,
+     "af": true,
+     "err": 8.74,
+     "hl": 0.0
+    },
+    {
+     "seed": 3,
+     "abn": true,
+     "ea": false,
+     "af": true,
+     "err": 12.28,
+     "hl": 0.32
+    }
+   ]
+  },
+  "sim_vector_pub_order": [
+   0.3333333333333333,
+   0.3333333333333333,
+   0.6666666666666666,
+   1.0,
+   1.0
+  ],
+  "pub_vector": [
+   0.0,
+   0.0,
+   0.67,
+   0.16,
+   0.4
+  ],
+  "spearman": 0.6488856845230502,
+  "verdict": "PASS",
+  "robustness_exp70_run_arm": {
+   "rates_by_plane": {
+    "head": 0.6666666666666666,
+    "trunk": 0.0,
+    "tail": 0.6666666666666666
+   },
+   "vector_pub_order": [
+    0.6666666666666666,
+    0.6666666666666666,
+    0.0,
+    0.6666666666666666,
+    0.6666666666666666
+   ],
+   "spearman": -0.7254762501100117,
+   "wnt_abn_exp70_kwargs": 1.0,
+   "note": "the corpus-mapped kwargs variant adds phi_readout/neural_readout/arz_readout/commitment_delay; deposited, not gated"
+  }
+ },
+ "two_by_two": {
+  "p_iverm_ectopic_anterior": 1.0,
+  "p_iverm_anterior_failure": 0.0,
+  "p_sch_ectopic_anterior": 0.0,
+  "p_sch_anterior_failure": 1.0,
+  "per_seed_iverm": [
+   {
+    "seed": 1,
+    "hl": 0.9763,
+    "ea": true,
+    "af": false,
+    "err": 12.79
+   },
+   {
+    "seed": 2,
+    "hl": 0.9309,
+    "ea": true,
+    "af": false,
+    "err": 12.47
+   },
+   {
+    "seed": 3,
+    "hl": 0.9316,
+    "ea": true,
+    "af": false,
+    "err": 12.47
+   }
+  ],
+  "per_seed_sch": [
+   {
+    "seed": 1,
+    "ea": false,
+    "af": true,
+    "abn": true,
+    "err": 6.56,
+    "hl": 0.0
+   },
+   {
+    "seed": 2,
+    "ea": false,
+    "af": true,
+    "abn": true,
+    "err": 8.74,
+    "hl": 0.0
+   },
+   {
+    "seed": 3,
+    "ea": false,
+    "af": true,
+    "abn": true,
+    "err": 12.28,
+    "hl": 0.32
+   }
+  ],
+  "inverted": false,
+  "diagonal_majority_strict": true,
+  "verdict": "PASS"
+ },
+ "continuity_panel_not_gated": {
+  "run_arm86_m33_read": {
+   "head": 0.0,
+   "trunk": 0.0,
+   "tail": 0.0
+  },
+  "deposited_exp86": {
+   "head": 0.0,
+   "tail": 0.0,
+   "trunk": 0.0
+  },
+  "max_abs_delta": 0.0
+ },
+ "criteria": {
+  "IP_A1_anchor_exp39": true,
+  "IP_G1_plane_ordering": "PASS",
+  "IP_G2_two_by_two_sign": "PASS"
+ },
+ "verdict": "3/3 gates PASS (ordering PASS, 2x2 PASS; anchor PASS)",
+ "notes": "Zero-free-parameter test at the recorded operating points: the ion_channel family's arm and the posterior-depol arm are the deposited exp39 V2/V3 objects run verbatim (anchored to their deposited quantities, seeds 1-3, the md T2's '5 planes x 3 seeds; exp39 machinery' runtime); the plane mapping is the corpus's pre-registered taxonomy. The 2x2's readouts: EA = head-likeness >= 0.7 (the DH sign, exp39 V3's deposited threshold = the corpus's ABN_HL), AF = pattern error >= 6.0 without EA (the headless sign). HONEST SCOPE OF IP-G1's PASS: it is specific to the anchored exp39-verbatim arm; the corpus-mapped exp70.run_arm kwargs variant (readout knobs + commitment_delay) ANTI-ORDERS (Spearman -0.725, trunk 0.0) \u2014 deposited under robustness, so the ordering claim's arm-dependence is on record, not hidden. The 2x2's ivermectin cell is robust (the exp70-kwargs wnt arm also reads abnormal 1.0). Context rows deposited not gated: chloride rescue WT 0.63 (eid 413), K+ rescue WT 0.94 (eid 297), nicardipine cyclop 0.34 / headless 0.08 (eid 414).",
+ "sources": {
+  "record": "research/levin_voltage_series.json DB-391..395, DB-411..414, DB-296/297 (Beane 2011, PMID 21276941)",
+  "arms": "experiments/exp39_levin_voltage.py V2/V3 arms (verbatim; results/exp39_levin_voltage.json anchor); experiments/exp70_onset_corpus.py run_arm/run_gj_onset protocol table (robustness); experiments/exp86_regen_read.py run_arm86+M33_KW (continuity, not gated)",
+  "harness_continuity": "ledger L103-L104 (the record mapping completes: dual-channel pharmacology vs partial-channel); results/exp86_regen_read.json"
+ }
+}

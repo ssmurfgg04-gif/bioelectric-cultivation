@@ -1,0 +1,141 @@
+{
+ "exp": "exp76_slow_anchor (the star-search step 5, rung 5)",
+ "diagnosis": {
+  "scale_free|fixed": {
+   "anchor_drift": 0.0,
+   "hot": 35,
+   "err": 11.92
+  },
+  "scale_free|bfs": {
+   "anchor_drift": 0.0,
+   "hot": 35,
+   "err": 11.4
+  }
+ },
+ "signal": {
+  "scale_free|fixed": {
+   "hot": 35,
+   "mean_drag": 9.81
+  },
+  "scale_free|bfs": {
+   "hot": 35,
+   "mean_drag": 9.31
+  },
+  "path|fixed": {
+   "hot": 2,
+   "mean_drag": 0.58
+  },
+  "grid2d|fixed": {
+   "hot": 19,
+   "mean_drag": 3.44
+  }
+ },
+ "wall_arms": {
+  "scale_free|fixed": {
+   "verdict_err": 8.45,
+   "verdict_pass": false,
+   "hold_err": 8.42,
+   "hold_pass": false,
+   "b2v": 0.4485,
+   "cut": {
+    "cut_edges": 61,
+    "head_components": 5
+   },
+   "edges": [
+    197,
+    136
+   ],
+   "shed_total": 61,
+   "bridges_blocked": 801,
+   "first_pass": null,
+   "connected_every_round": true
+  },
+  "scale_free|bfs": {
+   "verdict_err": 7.27,
+   "verdict_pass": false,
+   "hold_err": 7.32,
+   "hold_pass": false,
+   "b2v": 0.25,
+   "cut": {
+    "cut_edges": 27,
+    "head_components": 7
+   },
+   "edges": [
+    197,
+    108
+   ],
+   "shed_total": 89,
+   "bridges_blocked": 600,
+   "first_pass": null,
+   "connected_every_round": true
+  }
+ },
+ "controls": {
+  "torus|fixed": {
+   "err": 1.73,
+   "pass": true,
+   "shed_total": 41,
+   "edges": [
+    200,
+    159
+   ]
+  },
+  "random3|fixed": {
+   "err": 8.15,
+   "pass": false,
+   "shed_total": 38,
+   "edges": [
+    150,
+    112
+   ]
+  },
+  "path|fixed": {
+   "err": 1.77,
+   "pass": true,
+   "shed_total": 0,
+   "edges": [
+    99,
+    99
+   ]
+  },
+  "grid2d|fixed": {
+   "err": 1.47,
+   "pass": true,
+   "shed_total": 20,
+   "edges": [
+    180,
+    160
+   ]
+  }
+ },
+ "timescale_sweep": {
+  "0.04": {
+   "err": 8.45,
+   "pass": false,
+   "shed": 61,
+   "anchor_drift_end": 0.0
+  },
+  "0.004": {
+   "err": 8.45,
+   "pass": false,
+   "shed": 61,
+   "anchor_drift_end": 0.0
+  },
+  "0.0": {
+   "err": 8.45,
+   "pass": false,
+   "shed": 61,
+   "anchor_drift_end": 0.0
+  }
+ },
+ "criteria": {
+  "AN_G1_diagnosis_quantified": false,
+  "AN_G2_signal_separation": false,
+  "AN_G3_prediction_frozen_writes": false,
+  "AN_G4_hold_semantics": false,
+  "AN_G5_no_regression": false,
+  "AN_G6_metric_tracking": true,
+  "AN_G7_timescale_boundary": false
+ },
+ "notes": "Rung 5: the two-timescale identity. The slow anchor is M28's phi_spec semantics implemented as a cell state; the remodeling signal is the slow drag |V - anchor|. AN-G7 is the theorem gate: the repair exists only when the anchor outlives the write window \u2014 the quantitative form of 'coherence requires an anchor slower than the hijack'."
+}

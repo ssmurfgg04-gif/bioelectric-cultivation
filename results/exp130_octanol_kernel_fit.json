@@ -1,0 +1,180 @@
+{
+ "exp": "exp130_octanol_kernel_fit",
+ "task": "T1 of the Levin-series ranked targets (research/levin_voltage_series.md): fit the Oviedo-2010 octanol kernel with the exp124 mu-silence deadline machinery, one zero-free-parameter axis-map fit, predict the Fig 2B VNC kernel.",
+ "units_resolution": {
+  "adopted": "days reading: onset_hours = 24 x DB rung",
+  "evidence": "PMC2823934 full text (re-fetched and verified VERBATIM this session via NCBI E-utilities efetch db=pmc id=2823934; the Europe PMC fullTextXML endpoint returned HTTP 500 this session): 'Regenerating tissue without head (post-pharyngeal fragment) was treated with GJ inhibitor at different time-points after amputation (Figure 2A) ... the most significant effect results from starting GJ blockade within the first 3-6 hours post-amputation. The effect on A/P patterning dropped significantly (<60%) for treatments beginning >12 hours of regeneration ... the primary role of GJ-mediated information occurs within 12 hours of amputation'; the rungs match ONLY as 0.125d=3h ... 3d=72h (0.85/0.90 in the 3-6 h window, 0.58 = the paper's '<60%' at 12 h, 0.10 at 24 h+ = 'insignificant'); Fig 2B DB panels are labelled '0.125days' (research/levin_voltage_series.json db_figure_panel fields, eids 441-444), and exp70's registered delayed-onset class (start>0, end=0) is the DB semantics these rows carry.",
+  "protocol_note": "The paper's protocol is a DELAYED-ONSET bath (treatment began at the recorded time post-amputation) \u2014 the DB StartTime semantics (exp70 delayed class); 'pre-treat-ment' is the md's shorthand. Under ledger L103-L104 the octanol IS the theta-diffusion cut; DH at posterior wounds is the stack's BREAK mode (eid 418 sustained -> DH 1.00)."
+ },
+ "fresh_curves": {
+  "1.0": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "4.0": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "16.0": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "64.0": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "fresh_edges": {
+  "1.0": 0.0,
+  "4.0": 48.0,
+  "16.0": 72.0,
+  "64.0": 36.0
+ },
+ "deposited_edges": {
+  "1.0": 0.0,
+  "4.0": 48.0,
+  "16.0": 72.0,
+  "64.0": 36.0
+ },
+ "anchor": {
+  "gate": "OK-A1 (gamma-4 curve within 0.125 of exp124)",
+  "fresh": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "deposited": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "max_abs_delta": 0.0,
+  "verdict": "PASS"
+ },
+ "fig2a_fit": {
+  "reading": "days (adopted)",
+  "onsets_h": [
+   3.12,
+   6.0,
+   12.0,
+   24.0,
+   48.0,
+   72.0
+  ],
+  "stack_prediction": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "published_dh": [
+   0.85,
+   0.9,
+   0.58,
+   0.1,
+   0.1,
+   0.1
+  ],
+  "spearman": -0.6599120175960898,
+  "pearson": -0.6784404689420862,
+  "mae": 0.705,
+  "mirror_mae": 0.295,
+  "verdict": "REFUTED",
+  "hours_alternative": {
+   "onsets_h": [
+    0.13,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    3.0
+   ],
+   "stack_prediction": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "spearman": null,
+   "mae": 0.4383
+  },
+  "mirror_note_spearman": 0.6599120175960898,
+  "control_note": "eid 434 (no octanol) DH 0.00 vs the stack's torus control P(break)=1.0 (exp100's refusal): the torus's baseline polarity is inverted relative to the record \u2014 the deadline curve is a rescue curve, the record's kernel is a damage kernel."
+ },
+ "fig2b_prediction": {
+  "onsets_h": [
+   0.0,
+   3.0,
+   12.0,
+   24.0
+  ],
+  "stack_prediction": [
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "published_vnc_dh": [
+   0.18,
+   0.75,
+   0.2,
+   0.0
+  ],
+  "spearman": null,
+  "pearson": null,
+  "mae": 0.2825,
+  "mirror_mae": 0.7175,
+  "verdict": "REFUTED",
+  "paper_check": "PMC2823934 (verified verbatim this session): 'Significant A/P duplications were observed when VNC contiguity was disrupted prior to 12 hours after amputation' and 'dramatic decrease (4-fold) in the incidence of A/P defects if the VNC was disrupted after the first 3 hours post-amputation' \u2014 the 3 h peak (0.75 vs 0.18 at t=0, ~4-fold) is the paper's own reading; the flat stack curve misses it."
+ },
+ "criteria": {
+  "OK_A1_anchor_gamma4_curve": true,
+  "OK_G1_direction_fig2a": "REFUTED",
+  "OK_G2_fit_quality_fig2b": "REFUTED"
+ },
+ "verdict": "1/3 gates PASS (direction REFUTED, fit-quality REFUTED; anchor PASS)",
+ "notes": "Zero-free-parameter test: the deposited/anchor-verified gamma-4 torus deadline curve evaluated at the paper-resolved onsets; no amplitude, sign, or edge refit. The md T1's analytic-rate variant was pre-refuted by exp125 AN-G1 (ledger L106); the axis-map fit is the registered remaining form. The mirror observation (rho_mirror) is deposited as a NOTE, not a gated rescue \u2014 a sign flip would be a free parameter; the OK-G2 refutation is polarity-invariant on this grid (mirror MAE deposited). Next-object named by the data: the record's kernel polarity matches the chain corpus's delayed-vs-sustained ordering (exp70 ON-G3), not the torus rescue curve; the Fig 2B 3 h peak is a write-window object (exp54), not a deadline object. AUDIT TRAIL: an uncommitted draft finalization of this target existed in the workspace (no worklog entry); this run audited it, re-verified every quoted paper passage verbatim (NCBI efetch PMC2823934), fixed the OK-G1 degenerate-prediction zone (was routed to PASS; now PARTIAL \u2014 outcome unchanged, rho defined), and deposited Pearson/mirror-MAE as non-gated descriptives.",
+ "sources": {
+  "record": "research/levin_voltage_series.json eids 434-444 (Oviedo 2010, PMID 20026026)",
+  "paper_full_text": "PMC2823934 (Oviedo 2010, PMID 20026026) full text; quotes verified verbatim this session via NCBI E-utilities efetch db=pmc id=2823934 (Europe PMC fullTextXML endpoint: HTTP 500 this session)",
+  "harness": "experiments/exp124_deadline_curve.py run_deadline (verbatim); results/exp124_deadline_curve.json (anchor); ledger L103-L106"
+ }
+}

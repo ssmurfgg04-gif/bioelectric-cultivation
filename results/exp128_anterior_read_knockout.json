@@ -1,0 +1,92 @@
+{
+ "exp": "exp128_anterior_read_knockout",
+ "bridge": {
+  "grid2d": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "torus": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0
+  ]
+ },
+ "grid": {
+  "grid2d_intact": {
+   "err_z0": 3.213,
+   "err_z2": 9.648,
+   "brk_z0": 0.0,
+   "brk_z2": 1.0,
+   "overall": 7.923,
+   "rebuilt_frac": 0.356,
+   "line_frac": 0.684931506849315
+  },
+  "grid2d_stripped": {
+   "err_z0": 1.19,
+   "err_z2": 7.002,
+   "brk_z0": 0.0,
+   "brk_z2": 1.0,
+   "overall": 9.518,
+   "rebuilt_frac": 0.397,
+   "line_frac": 0.684931506849315
+  },
+  "grid2d_gate_open": {
+   "err_z0": 3.213,
+   "err_z2": 9.648,
+   "brk_z0": 0.0,
+   "brk_z2": 1.0,
+   "overall": 7.923,
+   "rebuilt_frac": 0.356,
+   "line_frac": 0.684931506849315
+  },
+  "torus_intact": {
+   "err_z0": 6.026,
+   "err_z2": 7.519,
+   "brk_z0": 0.5,
+   "brk_z2": 1.0,
+   "overall": 9.992,
+   "rebuilt_frac": 0.287,
+   "line_frac": 0.6301369863013698
+  },
+  "torus_stripped": {
+   "err_z0": 3.384,
+   "err_z2": 4.708,
+   "brk_z0": 0.0,
+   "brk_z2": 0.0,
+   "overall": 11.317,
+   "rebuilt_frac": 0.467,
+   "line_frac": 0.6301369863013698
+  },
+  "torus_gate_open": {
+   "err_z0": 6.026,
+   "err_z2": 7.519,
+   "brk_z0": 0.5,
+   "brk_z2": 1.0,
+   "overall": 9.992,
+   "rebuilt_frac": 0.287,
+   "line_frac": 0.6301369863013698
+  }
+ },
+ "chain_reanchor": {
+  "no_m33": 0.7,
+  "m33": 0.0
+ },
+ "criteria": {
+  "HP2_A1_harness_continuity": true,
+  "HP2_G1_polarity_asymmetry": false,
+  "HP2_G2_reader_not_pattern": "REFUTE-A (letter) \u2014 diagnosis EXCLUDED: the intact arm IS the default-mu run (exp122's damage, common to all arms; the draft's verification target was exp120's BLOCKADE curve \u2014 mis-mapping owned); anchors PASS and gate_open == intact bit-identically, so the knockout procedure corrupted nothing; the within-harness reader-swap contrast is the deposit",
+  "HP2_G3_gating_separable": true
+ },
+ "notes": "H-P2 the Med8/ARZ depletion phenocopy test: the M33 anterior-read knockout (canon-stripped) vs intact vs gate-open on grid2d/torus; bridge anchor via exp120's run_kernel verbatim; full settle in the arms (the L102 zero-settle artifact avoided)."
+}

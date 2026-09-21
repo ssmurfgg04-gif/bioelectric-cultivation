@@ -1,0 +1,240 @@
+{
+ "exp": "exp127_onset_oracle",
+ "v2_in_run": {
+  "path": 0.603,
+  "grid2d": 4.174,
+  "torus": 4.8083,
+  "random3": 7.5118,
+  "random6": 2.0378,
+  "scale_free": 8.6209,
+  "small_world": 1.3
+ },
+ "v2_deposit_check": {
+  "grid2d": true,
+  "torus": true,
+  "random3": true,
+  "random6": true,
+  "scale_free": true
+ },
+ "curves": {
+  "path_g16": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "path_g4": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "path_g64": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "grid2d_g16": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "grid2d_g4": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "grid2d_g64": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "torus_g16": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "torus_g4": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "random3_g16": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "random3_g4": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "random6_g16": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "random6_g4": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "scale_free_g16": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "scale_free_g4": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "small_world_g16": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "small_world_g4": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "small_world_g64": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "grid2d_g1_full": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "path_g1_full": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "uc_hat": {
+  "path": null,
+  "grid2d": null,
+  "torus": 48.0,
+  "random3": 48.0,
+  "random6": 72.0,
+  "scale_free": 36.0,
+  "small_world": null
+ },
+ "fallback_rung": {
+  "torus": 4.0,
+  "random3": 4.0,
+  "random6": 4.0,
+  "scale_free": 4.0
+ },
+ "gamma1_repair_edges": {
+  "grid2d": 48.0,
+  "path": null
+ },
+ "spearman_all": -0.8795,
+ "spearman_finite": -0.9487,
+ "criteria": {
+  "CG4_A1_harness_continuity": true,
+  "CG4_G1_same_object_ordering": "PASS",
+  "CG4_G2_censoring_consistency": false,
+  "CG4_G3_analytic_crosscheck": "VOID (dependency: exp125 AN-G1 refuted, AN-G2 void \u2014 no predicted edges deposited)",
+  "RG1_gamma1_repair": true
+ },
+ "notes": "CG-P4 the oracle-onset order test at the standardized gamma-16 cell with censoring-aware real-cell edges; gamma-1 full-grid repair arms own exp129's cross-finding and correct exp125's UG-G1/UG-G2 breadth."
+}

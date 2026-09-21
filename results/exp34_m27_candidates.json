@@ -1,0 +1,146 @@
+{
+ "exp": "exp34_m27_candidates",
+ "source": "sim-only candidate evaluation against exp31/exp32 records",
+ "m27a_params": {
+  "length_gradient": 1.0,
+  "gradient_window": 0,
+  "gradient_clip": true
+ },
+ "m27b_params": {
+  "commitment_noise_scale": 3.0,
+  "commitment_diffusion": 1.5
+ },
+ "sim_arms": {
+  "cutting_cross_a_m27": {
+   "err_mean": 22.02074875300148,
+   "err_se": 0.06821316918940236,
+   "err_per_seed": [
+    21.896730089714215,
+    22.033527629437824,
+    22.131988539852394
+   ],
+   "pred_abn_rate": 1.0
+  },
+  "cutting_cross_b_m27": {
+   "err_mean": 3.2779809707135974,
+   "err_se": 0.008164819943603453,
+   "err_per_seed": [
+    3.2905471729438047,
+    3.262666769152449,
+    3.280728970044537
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_c_m27": {
+   "err_mean": 3.143703520526845,
+   "err_se": 0.016974018395717244,
+   "err_per_seed": [
+    3.130581456393605,
+    3.177379317504059,
+    3.1231497876828707
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_cross_d_m27": {
+   "err_mean": 2.9357473522624224,
+   "err_se": 0.010158776932473815,
+   "err_per_seed": [
+    2.9492615247657605,
+    2.9158514836298095,
+    2.9421290483916973
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_tail_m27": {
+   "err_mean": 3.06801901543702,
+   "err_se": 0.009772715577585505,
+   "err_per_seed": [
+    3.069238471478425,
+    3.050515424492064,
+    3.0843031503405705
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_head_m27": {
+   "err_mean": 3.8746816057729006,
+   "err_se": 0.0020498304290380727,
+   "err_per_seed": [
+    3.8708791865889496,
+    3.8779100759367204,
+    3.875255554793031
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "cutting_trunk_m27": {
+   "err_mean": 3.0891180399567406,
+   "err_se": 0.01666287436425235,
+   "err_per_seed": [
+    3.082897872983425,
+    3.0638743531763835,
+    3.1205818937104124
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "ion_channel_tail_m27": {
+   "err_mean": 9.190961566846648,
+   "err_se": 1.6663708866276283,
+   "err_per_seed": [
+    6.5554266533253305,
+    8.742138356500726,
+    12.27531969071389
+   ],
+   "pred_abn_rate": 1.0
+  },
+  "ion_channel_head_m27": {
+   "err_mean": 5.498731382494401,
+   "err_se": 0.937949348822359,
+   "err_per_seed": [
+    3.723640752635715,
+    5.860884572711368,
+    6.911668822136118
+   ],
+   "pred_abn_rate": 0.3333333333333333
+  },
+  "cutting_tail_inert": {
+   "err_mean": 3.2349309433678997,
+   "err_se": 0.055816485285455436,
+   "err_per_seed": [
+    3.3361658420658356,
+    3.143569641070562,
+    3.2250573469673025
+   ],
+   "pred_abn_rate": 0.0
+  },
+  "innexin_tail_m27": {
+   "err_mean": 6.383753910878227,
+   "err_se": 0.3169107337846036,
+   "err_per_seed": [
+    6.213958740658152,
+    6.997494043152483,
+    5.939808948824044
+   ],
+   "pred_abn_rate": 0.6666666666666666
+  }
+ },
+ "criteria": {
+  "M27A_G1_cross_a_whole_fragment_clip": false,
+  "M27A_G2_no_new_overshoot": true,
+  "M27A_G3_plane_collaterals": true,
+  "M27B_G1_ion_chain_diffusion": true,
+  "M27B_G2_ion_head_direction": true,
+  "M27B_G3_default_inertness": true
+ },
+ "recorded_reference": {
+  "cross_bins": {
+   "a": 0.52,
+   "b": 0.43175824175824173,
+   "c": 0.269,
+   "d": 0.265625
+  },
+  "ion_mean": 0.45,
+  "exp32_cross_a_g1": 1.0,
+  "exp32_ion_tail_cns3": 0.0
+ },
+ "prediction_rule": "unchanged from exp27: abnormal iff pattern_error >= 6.0 mV OR head_likeness(tail) >= 0.7",
+ "notes": "M27a redesign justification: exp32 showed the 5-cell face window is a no-op on head-only fragments (plateau slope); the whole-fragment secant carries the head->trunk depolarization trend; the clip bounds commitment by the fragment's own identity repertoire (intrinsic, no target knowledge). M27b: chain-accumulating wander compounds commitment error (sd ~ diffusion*sqrt(d)) \u2014 the mechanism junction loss already has coherently, and i.i.d. noise (M26b) lacks."
+}

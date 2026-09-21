@@ -1,0 +1,49 @@
+{
+  "predicted_vs_observed": [
+    {
+      "species": "mouse",
+      "predicted_yr": 3.4999999999999996,
+      "observed_yr": 3.5
+    },
+    {
+      "species": "rat",
+      "predicted_yr": 3.950402144772118,
+      "observed_yr": 4.5
+    },
+    {
+      "species": "naked_mole_rat",
+      "predicted_yr": 5.827077747989276,
+      "observed_yr": 30.0
+    },
+    {
+      "species": "human",
+      "predicted_yr": 5.873994638069704,
+      "observed_yr": 80.0
+    },
+    {
+      "species": "bowhead_whale",
+      "predicted_yr": 8.24798927613941,
+      "observed_yr": 200.0
+    },
+    {
+      "species": "hydra",
+      "predicted_yr": Infinity,
+      "observed_yr": 1400.0
+    }
+  ],
+  "spearman_rho": 0.9999999999999999,
+  "spearman_p": 1.4042654220543672e-24,
+  "hydra_immortal": 1.0,
+  "C_species_ordering": 1.0,
+  "jitter_rhos": [
+    0.9999999999999999,
+    0.9999999999999999,
+    0.8999999999999998,
+    0.9999999999999999,
+    0.8999999999999998
+  ],
+  "coarse_contrasts_stable": 1.0,
+  "ordering_robust": true,
+  "C_species_robust": true,
+  "ratio_compression_limitation": true
+}

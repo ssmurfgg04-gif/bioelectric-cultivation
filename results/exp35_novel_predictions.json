@@ -1,0 +1,90 @@
+{
+ "exp": "exp35_novel_predictions",
+ "source": "PlanformDB 2.5.0 coverage grid + sim arms (exp31 protocol)",
+ "deposits": {
+  "ion_channel|head_tail": {
+   "arm": "ion_channel_head_tail",
+   "pred_abn_rate": 1.0,
+   "err_mean": 9.551712074803012,
+   "err_per_seed": [
+    6.735414788189177,
+    9.46515144351291,
+    12.454569992706949
+   ],
+   "falsification_threshold": "future series recorded mean abnormal <= 0.10 REFUTES; >= 0.50 confirms direction",
+   "status": "FORWARD PREDICTION (untested)"
+  },
+  "ion_channel|crosspiece": {
+   "arm": "ion_channel_crosspiece",
+   "pred_abn_rate": 1.0,
+   "err_mean": 35.366875072767826,
+   "err_per_seed": [
+    30.967889962130453,
+    37.34495576754711,
+    37.787779488625915
+   ],
+   "falsification_threshold": "future series recorded mean abnormal <= 0.10 REFUTES; >= 0.50 confirms direction",
+   "status": "FORWARD PREDICTION (untested)"
+  },
+  "innexin|head_tail": {
+   "arm": "innexin_head_tail",
+   "pred_abn_rate": 1.0,
+   "err_mean": 10.442264109018893,
+   "err_per_seed": [
+    10.94233607785459,
+    9.72768531925854,
+    10.65677092994355
+   ],
+   "falsification_threshold": "future series recorded mean abnormal <= 0.10 REFUTES; >= 0.50 confirms direction",
+   "status": "FORWARD PREDICTION (untested)"
+  },
+  "gj_block|crosspiece": {
+   "arm": "gjblock_crosspiece",
+   "pred_abn_rate": 1.0,
+   "err_mean": 12.781209390319722,
+   "err_per_seed": [
+    12.559998850174106,
+    13.651442123268557,
+    12.1321871975165
+   ],
+   "falsification_threshold": "future series recorded mean abnormal <= 0.10 REFUTES; >= 0.50 confirms direction",
+   "status": "FORWARD PREDICTION (untested)"
+  },
+  "morphogen|crosspiece": {
+   "arm": "wnt_crosspiece",
+   "pred_abn_rate": 0.0,
+   "err_mean": 4.397737083253741,
+   "err_per_seed": [
+    4.529718455763314,
+    3.6163318499071604,
+    5.047160944090748
+   ],
+   "falsification_threshold": "future series recorded mean abnormal <= 0.10 REFUTES; >= 0.50 confirms direction",
+   "status": "FORWARD PREDICTION (untested)"
+  },
+  "cutting|lateral": {
+   "status": "STRUCTURAL GAP \u2014 2D cuts not representable on the 1D AP sheet",
+   "pred_abn_rate": null
+  }
+ },
+ "refutation_candidates": {
+  "innexin|head": {
+   "recorded_mean": 0.0,
+   "recorded_n": 2,
+   "sim_pred_abn_rate": 1.0,
+   "sim_err_mean": 11.34987914496404,
+   "gap": 1.0,
+   "verdict": "REFUTATION CANDIDATE \u2014 record says head regeneration under junction loss is fully protected (0.00, n=2) while tail/trunk suffer (0.40/0.60); the M25 blind-guess corruption is plane-agnostic. M28-style head-specific readout candidate."
+  },
+  "ion_channel|trunk": {
+   "recorded_mean": 0.46199999999999997,
+   "recorded_n": 60,
+   "sim_pred_abn_rate": 0.0,
+   "sim_err_mean": 3.8339130793397813,
+   "gap": -0.46199999999999997,
+   "verdict": "M27b mapping UNDERSHOOTS at trunk (sim 0.00 vs recorded 0.46 at n=60): the chain-diffusion corruption crosses the abnormality threshold at the tail-plane readout but not at trunk \u2014 the commitment-diffusion calibration is plane-sensitive. Night-four dose scan queued (cns/diffusion grid). Recorded as measured, superseding the overshoot expectation written before the run."
+  }
+ },
+ "prediction_rule": "unchanged from exp27: abnormal iff pattern_error >= 6.0 mV OR head_likeness(tail) >= 0.7",
+ "notes": "QUEST task 6. Forward deposits are untested predictions with pre-registered falsification thresholds; refutation-candidate checks compare the CURRENT model against recorded cells it has never faced per-plane. Nothing hidden: gaps, overshoots, and structural limits all recorded."
+}

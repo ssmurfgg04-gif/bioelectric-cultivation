@@ -1,0 +1,68 @@
+{
+ "exp": "exp86_regen_read (the M33-gated chain read)",
+ "baseline_coin_off": {
+  "head": 0.7,
+  "tail": 0.0,
+  "trunk": 0.0
+ },
+ "m33_read_coin_off": {
+  "head": 0.0,
+  "tail": 0.0,
+  "trunk": 0.0
+ },
+ "gap_panel": {
+  "no_read": 1.0,
+  "blend_bypass": 1.0,
+  "blend_plus_pole": 0.0
+ },
+ "coin_read_composition": {
+  "head": 0.83,
+  "tail": 0.83,
+  "trunk": 0.75
+ },
+ "record_pool": 0.799,
+ "composition_pool": 0.767,
+ "control_at_read": 0.0,
+ "generic_at_read": {
+  "trunk|None": {
+   "n": 252,
+   "rate": 0.667
+  },
+  "head|None": {
+   "n": 30,
+   "rate": 0.0
+  },
+  "tail|None": {
+   "n": 19,
+   "rate": 1.0
+  },
+  "crosspiece|0.125": {
+   "n": 1,
+   "rate": 1.0
+  }
+ },
+ "generic_pool": 0.623,
+ "digest_artifact": {
+  "old_window_u": [
+   0.212,
+   0.212,
+   0.212,
+   0.212
+  ],
+  "repaired_window_u": [
+   0.308,
+   0.419,
+   0.206,
+   0.696
+  ],
+  "verified": true
+ },
+ "criteria": {
+  "RR_G1_head_fragility_closes": true,
+  "RR_G2_junction_independent": true,
+  "RR_G3_gene_layer_recomposed": true,
+  "RR_G4_no_regression": true,
+  "PE_G1_digest_artifact_verified": true
+ },
+ "notes": "The exp85 re-registered repair: the M33 non-junctional anterior read applied to the chain walk's spec blend via two bit-exact-at-default parameters (spec_min, spec_read_bypass_gap). The read fires only where the stored identity is above the neural line (the M33 domain discipline, TC-G5's chain analog) and bypasses the junction scaling (the exp79-verified architecture)."
+}

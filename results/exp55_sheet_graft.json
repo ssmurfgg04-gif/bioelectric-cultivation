@@ -1,0 +1,163 @@
+{
+ "exp": "exp55_sheet_graft",
+ "arms": {
+  "S1_midline_to_flank": [
+   {
+    "seed": 1,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 0.9,
+    "graft_mean_ap_mv": -42.977967016742674
+   },
+   {
+    "seed": 2,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 0.9,
+    "graft_mean_ap_mv": -43.03455870399568
+   },
+   {
+    "seed": 3,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 0.9,
+    "graft_mean_ap_mv": -42.99106836827912
+   }
+  ],
+  "S2_lateral_to_midline": [
+   {
+    "seed": 1,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 0.9,
+    "graft_mean_ap_mv": -44.959881172548286
+   },
+   {
+    "seed": 2,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 0.9,
+    "graft_mean_ap_mv": -44.95338292538358
+   },
+   {
+    "seed": 3,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 0.9,
+    "graft_mean_ap_mv": -44.92580535631831
+   }
+  ],
+  "S3_isograft_control": [
+   {
+    "seed": 1,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 0.9,
+    "graft_mean_ap_mv": -45.62635782132037
+   },
+   {
+    "seed": 2,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 0.9,
+    "graft_mean_ap_mv": -45.64634429211785
+   },
+   {
+    "seed": 3,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 0.9,
+    "graft_mean_ap_mv": -45.60742417181001
+   }
+  ],
+  "S4_midline_to_flank_nosource": [
+   {
+    "seed": 1,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 0.9,
+    "graft_mean_ap_mv": -42.977967016742674
+   },
+   {
+    "seed": 2,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 0.9,
+    "graft_mean_ap_mv": -43.03455870399568
+   },
+   {
+    "seed": 3,
+    "graft_head_fraction": 0.0,
+    "left_half_fraction": 0.0,
+    "right_half_fraction": 0.0,
+    "native_head_fraction": 0.9,
+    "graft_mean_ap_mv": -42.99106836827912
+   }
+  ]
+ },
+ "gates": {
+  "S1_complete_ectopic_head": {
+   "verdict": "REFUTED",
+   "fractions": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gate": "graft head fraction >= 0.8 (majority of seeds)"
+  },
+  "S2_asymmetric_local": {
+   "verdict": "REFUTED",
+   "fractions": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "right_minus_left": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gate": "right-left >= 0.2 AND overall <= 0.6 (majority of seeds)"
+  },
+  "S3_isograft_zero_collateral": {
+   "verdict": "PASS",
+   "fractions": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gate": "graft head fraction <= 0.1 (majority of seeds)"
+  },
+  "S4_source_load_bearing": {
+   "verdict": "REFUTED",
+   "s1_fractions": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s4_fractions": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "gate": "S1 fraction - S4 fraction >= 0.3 (majority of seeds)"
+  },
+  "S5_native_axis_integrity": {
+   "verdict": "PASS",
+   "min_native_fraction": 0.9,
+   "gate": "native head zone fraction >= 0.9 in ALL arms"
+  }
+ },
+ "summary": "2/5 gates PASS"
+}

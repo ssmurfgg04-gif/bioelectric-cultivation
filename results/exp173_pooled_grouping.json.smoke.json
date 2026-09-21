@@ -1,0 +1,157 @@
+{
+ "experiment": "exp173_the_pooled_grouping_statistic",
+ "task_id": "1-e",
+ "repair_of": "exp163 (ledger L144) registered repair (b): pooled/ensemble statistic across pairs",
+ "smoke": true,
+ "pre_registered": {
+  "source": "module docstring, committed at HEAD (0f55852) BEFORE any decode; the credited run used this file unchanged",
+  "statistic": "stat = mean over pairs of dev_signed; dev1_signed = err(A + F*Sw1, T1) - err(A, T1); dev2_signed = err(A + F*Sw2, T2) - err(A, T2); V2 weighting verbatim",
+  "gates": "E1 construction replay; E2 null deposit first (byte-offset discipline); E3 |stat_m1| > bar AND >= 9/12 majority sign; E4 |stat_m2| <= bar",
+  "seeds": {
+   "exec": 1,
+   "null_protocol": [
+    1,
+    2,
+    3
+   ]
+  }
+ },
+ "construction": {
+  "F": 0.75,
+  "F_matches_exp163_deposit": true,
+  "pairs_constructed": 12,
+  "decode_scope": "smoke pairs 0-1 (discarded instrument check)"
+ },
+ "phase_a": {
+  "phase": "A (null deposit; frozen before any real-arm decode)",
+  "null_protocol": {
+   "augmentation": "exp163's deposited null augmentation: the arm-1 null arm = the shared bit-identical plain projection A (no S term)",
+   "baseline": "exp163's DEPOSITED null_err values per pair/target",
+   "placeholder": "one placeholder member per pair, decoded on the null augmentation at each protocol seed, signed dev vs the deposited null_err",
+   "seeds": [
+    1,
+    2,
+    3
+   ],
+   "seed_source": "exp142's deposited SEEDS (1,2,3) \u2014 the read core's own seed convention (asserted at runtime); seed 1 = exp163's credited-run seed, replayed bit-exactly",
+   "pooled_null_stat": "mean over pairs of [err(A, own_target, seed) - deposited null_err], SIGNED",
+   "bar_rule": "null bar = max |pooled null stat| over the protocol's seeds x the shared null's own-targets (T1/T2) \u2014 one bar, frozen once, gating E3 and E4"
+  },
+  "seed1_replay_bit_exact": "4/4",
+  "pooled_null_stats": {
+   "T1@seed1": 0.0,
+   "T2@seed1": 0.0,
+   "T1@seed2": 0.0,
+   "T2@seed2": 0.005,
+   "T1@seed3": 0.05,
+   "T2@seed3": -0.11
+  },
+  "null_bar": 0.11,
+  "null_bar_finite_positive": true,
+  "frozen_before_phase_b_decode": true,
+  "byte_offset_evidence": {
+   "phase_a_write_byte": 6980,
+   "first_phase_b_decode_byte": 7058,
+   "order_held": true
+  },
+  "pair_scope": "2 pairs",
+  "smoke": true
+ },
+ "phase_a_write_evidence": {
+  "byte_offset_order": {
+   "phase_a_write_byte": 6980,
+   "first_phase_b_decode_byte": 7058,
+   "order_held": true
+  },
+  "phase_a_record_bytes_on_disk": 1454,
+  "record_confirmed_on_disk_before_phase_b_decode": true
+ },
+ "pairs": [
+  {
+   "p": 0,
+   "n": 30,
+   "k": 3,
+   "cancel_entries_S1": 10,
+   "null_err_deposited": {
+    "T1": 0.55,
+    "T2": 3.81
+   },
+   "err_m1_own_T1": 0.78,
+   "err_m2_own_T2": 3.81,
+   "dev1_signed": 0.23,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1,
+   "dev1_deposited_v2": 0.23,
+   "dev2_deposited_v2": 0.0,
+   "unsigned_dev_match_m1": true,
+   "unsigned_dev_match_m2": true
+  },
+  {
+   "p": 1,
+   "n": 30,
+   "k": 3,
+   "cancel_entries_S1": 10,
+   "null_err_deposited": {
+    "T1": 0.43,
+    "T2": 3.72
+   },
+   "err_m1_own_T1": 0.71,
+   "err_m2_own_T2": 3.72,
+   "dev1_signed": 0.28,
+   "dev2_signed": 0.0,
+   "sign_dev1": 1,
+   "dev1_deposited_v2": 0.28,
+   "dev2_deposited_v2": 0.0,
+   "unsigned_dev_match_m1": true,
+   "unsigned_dev_match_m2": true
+  }
+ ],
+ "statistic": {
+  "stat_m1_signed_mean": 0.255,
+  "median_m1": 0.255,
+  "stat_m2_signed_mean": 0.0,
+  "median_m2": 0.0,
+  "majority_sign": 1,
+  "n_pairs_sharing_majority_sign": 2,
+  "n_pos": 2,
+  "n_neg": 0,
+  "n_zero": 0
+ },
+ "null_bar": 0.11,
+ "gates": {
+  "E1_construction_replay": {
+   "pass": false,
+   "projections_bit_identical": "2/2",
+   "unsigned_dev_match_m1_le_0.005": "2/2",
+   "unsigned_dev_match_m2_le_0.005": "2/2",
+   "m2_aug_bit_exact_identity": "2/2"
+  },
+  "E2_null_deposit_first": {
+   "pass": false,
+   "byte_offset_order_held": true,
+   "phase_a_record_on_disk_before_phase_b_decode": true,
+   "phase_a_record_bytes_on_disk": 1454,
+   "seed1_replay_bit_exact": "4/4",
+   "null_bar": 0.11,
+   "null_bar_finite_positive": true
+  },
+  "E3_ensemble_verdict": {
+   "pass": false,
+   "stat_m1_signed_mean": 0.255,
+   "abs_stat_m1_gt_bar": true,
+   "n_majority_sign": 2,
+   "required": 9,
+   "n_pos": 2,
+   "n_neg": 0,
+   "n_zero": 0
+  },
+  "E4_attribution_ensemble": {
+   "pass": true,
+   "stat_m2_signed_mean": 0.0,
+   "abs_stat_m2_le_bar": true
+  }
+ },
+ "all_gates_pass": false,
+ "verdict": "INSTRUMENT/CONSTRUCTION FAIL \u2014 see gates E1/E2",
+ "wall_seconds": 0.9
+}
