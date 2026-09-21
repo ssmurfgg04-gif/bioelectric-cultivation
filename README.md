@@ -1,5 +1,28 @@
 # bioelectric-cultivation
 
+> ## ✅ PROJECT COMPLETE (2026-09-21)
+>
+> The project has closed cleanly at HEAD `0938512`. Read
+> **[docs/PROJECT_COMPLETE.md](docs/PROJECT_COMPLETE.md)** for the
+> one-page completion summary; the full verdict ledger is
+> **[docs/FALSIFICATION.md](docs/FALSIFICATION.md)** (L1 → L290b).
+>
+> - **5 stages** at their achieved maximum (Map 95% / Validate 90% /
+>   Engineer 95% with 101% PASSED / Expand 90% / Transfer 90%).
+> - **The reframed star crossed**: the universal reader + the universal
+>   substrate, bit-exact.
+> - **The breakthrough**: the self-history register — the first
+>   non-inert channel — characterized end-to-end (exp289–304); the
+>   composed carrier makes write-time ionic stress decode-invisible
+>   (+13.13 mV protection, ~18× the single register's, exp302).
+> - **The honest negative**: the zero-substrate star is blocked at
+>   8 formalizations — the write product is a complete representation
+>   *relative to its own wiring* (0.05 mV!) and transports *nowhere*
+>   (0/130 cross-wirings, exp303/304). The binding is the indexation.
+> - **Run:** `python3 -m tests.run_tests` (67+ tests green + the
+>   deposit/safety sweep).
+
+
 **A computational research framework for bioelectric morphogenesis, aging-as-attractor-degradation, and inverse design of bioelectric interventions.**
 
 If the body runs software — a bioelectric control layer of membrane voltages coupled by gap junctions — then morphogenesis is what that software computes, aging is the slow corruption of the stored program, regeneration is a restore-from-backup, and cancer is a decode failure into a wrong attractor. This repository implements that framing as runnable code: coupled-ODE cell collectives with homeostatic target memory, an aging model (gap-junction decay + noise growth + target drift), an error-correcting "cultivation codec" on top, information-theoretic metrics (mutual information I(V;M), linear-Gaussian integrated information Φ), and inverse-design search for interventions.
