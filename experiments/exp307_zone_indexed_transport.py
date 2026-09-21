@@ -555,7 +555,15 @@ def main() -> dict:
         assert np.isfinite(region_rms), f"{label}: non-finite region rms"
         full_err = float(c.pattern_error(target))
         assert np.isfinite(full_err), f"{label}: non-finite full err"
+        # the settled-state digest (the state-level bit-exact face; the
+        # region_rms SCALAR is gather-order dependent at the ULP level
+        # -- np.mean sums in the gather order -- so the state digest is
+        # the honest identity carrier, the scalar carries the ULP note)
+        final_V_sha256 = hashlib.sha256(
+            np.ascontiguousarray(V, dtype=np.float64).tobytes()
+        ).hexdigest()
         return {"region_rms": region_rms, "full_err": full_err,
+                "final_V_sha256": final_V_sha256,
                 "n_written": int(len(cells)), "dt": dt,
                 "region_within_bar": bool(region_rms <= CONTENT_BAR),
                 "full_within_bar": bool(full_err <= CONTENT_BAR)}
@@ -918,10 +926,36 @@ def main() -> dict:
                     label=f"Z2 {k}")
         ok = bool(r["region_rms"] == f2_replays[k]["region_rms"]
                   and r["full_err"] == f2_replays[k]["full_err"])
-        assert ok, \
-            (f"Z2 {k}: the class-reindexed same-substrate replay drifted "
-             "from the plain F2 replay — the re-index is NOT a no-op on "
-             "own substrate, the identity face REFUTED")
+        if not ok:
+            # THE ULP DISCLOSURE (the runtime diagnosis, disclosed in the
+            # ledger): the (cell -> value) write sets are IDENTICAL and
+            # the settled STATES are bit-identical (the final_V_sha256
+            # equality asserted below) -- the region_rms SCALAR differs
+            # in the last ULP because np.mean sums the squared errors in
+            # the GATHER order, which the class re-index permutes. The
+            # identity face is therefore carried by the state digest,
+            # and the scalar carries the pre-named ULP tolerance 1e-9.
+            ulp_ok = bool(
+                r["final_V_sha256"] == f2_replays[k]["final_V_sha256"]
+                and abs(r["region_rms"]
+                        - f2_replays[k]["region_rms"]) <= 1e-9
+                and r["full_err"] == f2_replays[k]["full_err"])
+            assert ulp_ok, \
+                (f"Z2 {k}: the class-reindexed same-substrate replay "
+                 "drifted from the plain F2 replay beyond the ULP "
+                 "tolerance -- the identity face REFUTED")
+            ok = True
+            r["ulp_disclosure"] = {
+                "region_rms_plain": f2_replays[k]["region_rms"],
+                "region_rms_z2": r["region_rms"],
+                "ulp_delta": float(r["region_rms"]
+                                   - f2_replays[k]["region_rms"]),
+                "state_sha_identical": bool(
+                    r["final_V_sha256"]
+                    == f2_replays[k]["final_V_sha256"]),
+                "note": ("the write sets and the settled states are "
+                         "bit-identical; the scalar delta is the "
+                         "gather-order float-summation artifact")}
         n_z2_ok += int(ok)
         z2_rows.append({"host": k, "region_rms": r["region_rms"],
                         "identity_ok": ok, "per_class": per_class})
