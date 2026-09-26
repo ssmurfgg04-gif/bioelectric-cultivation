@@ -162,7 +162,13 @@ def main() -> dict:
     c.run(30.0, dt=0.1)
     err100 = float(c.pattern_error(tgt100))
     sha100 = _sha16(np.concatenate([[err100], c.V[:5].copy()]))
-    assert err100 == REF_ERR, repr((err100, REF_ERR))
+    # the byte-exact face is the sha256 digest; the scalar pin is the
+    # pre-registered 10-decimal representation (RUNTIME BODY FIX,
+    # disclosed: the first run compared float64 bytes against the
+    # 10-decimal literal — 4.356267223128525 != 4.3562672231 — the
+    # gates are unchanged, the binding bit-exact face remains G3's
+    # digest check)
+    assert round(err100, 10) == REF_ERR, repr((err100, REF_ERR))
     assert sha100 == REF_HEAD_SHA, repr((sha100, REF_HEAD_SHA))
     diff = subprocess.run(
         ["git", "diff", "--stat", "HEAD", "--", "cultivation/"],
