@@ -226,7 +226,16 @@ def main() -> dict:
         deltas[g] = float(np.mean([e_on - e_off for e_off, e_on in
                                    zip(errs[(g, False)], errs[(g, True)])]))
     seq = [abs(deltas[g]) for g in GLADDER]
-    assert all(seq[i] <= seq[i + 1] + 1e-12 for i in range(len(seq) - 1)), seq
+    # RUNTIME BODY FIX, disclosed (gates unchanged in intent): the
+    # first run asserted seq in GLADDER's ASCENDING order, which
+    # asserts |delta| increasing with g — the REVERSE of the
+    # pre-registered gate text ("|stress delta| monotone
+    # NON-DECREASING as g falls 1.0 -> 0.75 -> 0.5 -> 0.25 -> 0.0").
+    # The assertion now walks the reversed ladder; the deposited data
+    # is unchanged and confirms the gate as written.
+    seq_desc = list(reversed(seq))          # g: 1.0 -> 0.0
+    assert all(seq_desc[i] <= seq_desc[i + 1] + 1e-12
+               for i in range(len(seq_desc) - 1)), seq_desc
     verdicts["G4"] = "PASS"
     detail["mean_delta_per_g"] = {str(g): deltas[g] for g in GLADDER}
     print("G4 PASS (|delta| ladder %s monotone non-decreasing toward g=0)"
