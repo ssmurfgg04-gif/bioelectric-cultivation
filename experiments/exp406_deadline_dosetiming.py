@@ -137,10 +137,6 @@ def _corrective_walk(h, region):
 
 
 def main() -> dict:
-    """THE BODY IS WRITTEN AT THE BODY COMMIT (pre-registration)."""
-    raise NotImplementedError("exp406 body lands at the body commit")
-
-
     verdicts: dict[str, str] = {}
     detail: dict[str, object] = {}
 
