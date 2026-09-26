@@ -160,10 +160,6 @@ def _walk(h, target, region, g_ctx, gap, stress, floor_log):
 
 
 def main() -> dict:
-    """THE BODY IS WRITTEN AT THE BODY COMMIT (pre-registration)."""
-    raise NotImplementedError("exp404 body lands at the body commit")
-
-
     verdicts: dict[str, str] = {}
     detail: dict[str, object] = {}
     floor_log: list = []
