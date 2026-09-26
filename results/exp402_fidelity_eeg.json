@@ -1,0 +1,107 @@
+{
+ "data": {
+  "epochs": [
+   2650,
+   2830
+  ],
+  "hours": [
+   22.083333333333332,
+   23.583333333333332
+  ],
+  "night1": "SC4001E0-PSG.edf",
+  "night2": "SC4002E0-PSG.edf",
+  "sha_night1": "2b40a18adf76af69a42d6db1f30f31d26b369f6d27ca0050ef30147ef892b131",
+  "sha_night2": "bf91934cdbf7c9577bc91b411462ddb51c418e17e10a2f59a15feeeb917b0a5f",
+  "source": "Sleep-EDF sleep-cassette, subject SC4001, two consecutive nights, PhysioNet"
+ },
+ "experiment": "exp402",
+ "features": {
+  "CV": {
+   "('EEG Fpz-Cz', 'alpha')": 0.7432642943279444,
+   "('EEG Fpz-Cz', 'beta')": 1.1856138453290341,
+   "('EEG Fpz-Cz', 'delta')": 0.7835486319460543,
+   "('EEG Fpz-Cz', 'theta')": 0.5469365654959577,
+   "('EEG Pz-Oz', 'alpha')": 0.9459981934367618,
+   "('EEG Pz-Oz', 'beta')": 0.9386530906220365,
+   "('EEG Pz-Oz', 'delta')": 1.7793305158872461,
+   "('EEG Pz-Oz', 'theta')": 0.7676265823335299
+  },
+  "R": {
+   "('EEG Fpz-Cz', 'alpha')": 1.2091016124091516,
+   "('EEG Fpz-Cz', 'beta')": 1.9969122081118438,
+   "('EEG Fpz-Cz', 'delta')": 0.20124323211633552,
+   "('EEG Fpz-Cz', 'theta')": 0.4337295901550836,
+   "('EEG Pz-Oz', 'alpha')": 0.5588084102811366,
+   "('EEG Pz-Oz', 'beta')": 0.0871914923191339,
+   "('EEG Pz-Oz', 'delta')": 0.42420847889441426,
+   "('EEG Pz-Oz', 'theta')": 0.6123292068626247
+  },
+  "R_high_power": [
+   0.20124323211633552,
+   0.4337295901550836,
+   0.42420847889441426,
+   0.6123292068626247
+  ],
+  "R_hmed": 0.42896903452474894,
+  "high_power_set": [
+   "('EEG Fpz-Cz', 'delta')",
+   "('EEG Fpz-Cz', 'theta')",
+   "('EEG Pz-Oz', 'delta')",
+   "('EEG Pz-Oz', 'theta')"
+  ],
+  "night_means": {
+   "('EEG Fpz-Cz', 'alpha')": [
+    9.734850031698541e-08,
+    2.1505272901586528e-07
+   ],
+   "('EEG Fpz-Cz', 'beta')": [
+    4.0796294374554394e-08,
+    1.222629126568266e-07
+   ],
+   "('EEG Fpz-Cz', 'delta')": [
+    6.242912047271974e-06,
+    7.499255845482995e-06
+   ],
+   "('EEG Fpz-Cz', 'theta')": [
+    5.181842513327789e-07,
+    7.42936094288164e-07
+   ],
+   "('EEG Pz-Oz', 'alpha')": [
+    6.636941960363045e-08,
+    1.0345720946361688e-07
+   ],
+   "('EEG Pz-Oz', 'beta')": [
+    2.4203567723482955e-08,
+    2.6313912912740656e-08
+   ],
+   "('EEG Pz-Oz', 'delta')": [
+    9.369450774956993e-07,
+    1.334405123627759e-06
+   ],
+   "('EEG Pz-Oz', 'theta')": [
+    1.2696691472983438e-07,
+    2.0471246492414836e-07
+   ]
+  }
+ },
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "PASS",
+  "G4": "PASS"
+ },
+ "model": {
+  "D_med": 0.14477788973808697,
+  "drift_per_seed": [
+   0.14477788973808697,
+   0.14652532801498547,
+   0.1392107180142033,
+   0.1483521601960106,
+   0.13389975034042356
+  ],
+  "envelope_bar": 0.8579380690494979,
+  "instrument": "exp401's pre-registered human adjacency + identity target, seeds 0-4, e30 vs e60"
+ },
+ "title": "THE FIDELITY\u2013EEG STABILITY MAPPING (batch HU-2)",
+ "verdict": "FIDELITY-MAPS"
+}
