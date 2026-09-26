@@ -125,10 +125,6 @@ def _lf_hf(tb, rr, t0, t1):
 
 
 def main() -> dict:
-    """THE BODY IS WRITTEN AT THE BODY COMMIT (pre-registration)."""
-    raise NotImplementedError("exp405 body lands at the body commit")
-
-
     verdicts: dict[str, str] = {}
     detail: dict[str, object] = {}
 
