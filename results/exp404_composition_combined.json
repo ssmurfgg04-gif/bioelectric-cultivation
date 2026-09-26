@@ -1,0 +1,105 @@
+{
+ "branch": "COMPOSITION-CLASS-MATCH",
+ "class_rule": "f = P_comp/(impA+impB); SUPER > +0.10, SUB < -0.10, else ADDITIVE; UNDEFINED if impA+impB <= 0",
+ "composition": {
+  "P_comp": -0.02432500337224397,
+  "class_model": "ADDITIVE",
+  "errs": {
+   "A": [
+    7.378898211440089,
+    7.296158589672995,
+    7.37555704327431,
+    7.24960321235573,
+    7.313820040107567
+   ],
+   "AB": [
+    7.496839145300243,
+    7.4156693297530145,
+    7.492868071301497,
+    7.367254211252695,
+    7.4320323308179095
+   ],
+   "B": [
+    8.570013476559529,
+    8.440621759084307,
+    8.544577286037192,
+    8.400663562133932,
+    8.422849717485088
+   ],
+   "base": [
+    8.478529901771996,
+    8.343917235214132,
+    8.452986615296044,
+    8.307269962086364,
+    8.327021112218047
+   ]
+  },
+  "f_model": -0.025198448342366987,
+  "impA": 1.0591375459471788,
+  "impAB": 0.9410123476322436,
+  "impB": -0.0938001949426912
+ },
+ "errs_per_seed": {
+  "A": [
+   7.378898211440089,
+   7.296158589672995,
+   7.37555704327431,
+   7.24960321235573,
+   7.313820040107567
+  ],
+  "AB": [
+   7.496839145300243,
+   7.4156693297530145,
+   7.492868071301497,
+   7.367254211252695,
+   7.4320323308179095
+  ],
+  "B": [
+   8.570013476559529,
+   8.440621759084307,
+   8.544577286037192,
+   8.400663562133932,
+   8.422849717485088
+  ],
+  "base": [
+   8.478529901771996,
+   8.343917235214132,
+   8.452986615296044,
+   8.307269962086364,
+   8.327021112218047
+  ]
+ },
+ "experiment": "exp404",
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "PASS",
+  "G4": "PASS"
+ },
+ "instrument": {
+  "A": "the register blend g_ctx 0.5 (exp403's arm)",
+  "AB": "both composed",
+  "B": "the gap-junction reinforcement gap_scale 1.25 during the walk (pre-named, disclosed)",
+  "base": "the exp403 H0-S1 stressed walk re-run",
+  "constants": {
+   "COMMIT_NOISE": 0.6,
+   "GAP_REINFORCE": 1.25,
+   "G_CTX": 0.5,
+   "STEPS_PER_CELL": 8,
+   "STRESS_FLOOR": -35.0,
+   "WOUND_V": -30.0
+  }
+ },
+ "literature": {
+  "additive_prediction_pct": 44.5,
+  "class": "ADDITIVE",
+  "combined_pct": 41.3,
+  "excess_fraction": -0.07191011235955057,
+  "excess_pct": -3.2,
+  "pns_single_pct": 25.9,
+  "source": "Celnik et al. 2009, the published 4-cell composition factorial (post-stroke motor training, humans): 41.3% over double sham; 15.4% over PNS+sham -> E_PNS 25.9; 22.7% over sham+PNS -> E_tDCS 18.6",
+  "tdcs_single_pct": 18.6
+ },
+ "title": "THE COMPOSED CARRIER <-> THE COMBINED-INTERVENTION LITERATURE (batch HU-4)",
+ "verdict": "COMPOSITION-CLASS-MATCH"
+}
