@@ -170,10 +170,6 @@ def _run_arm(g, stress, seed):
 
 
 def main() -> dict:
-    """THE BODY IS WRITTEN AT THE BODY COMMIT (pre-registration)."""
-    raise NotImplementedError("exp407 body lands at the body commit")
-
-
     verdicts: dict[str, str] = {}
     detail: dict[str, object] = {}
 
