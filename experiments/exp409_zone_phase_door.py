@@ -268,10 +268,6 @@ def _replay(A_dst, seed, tgt_dst, commits_src, ann_src, mode):
 
 
 def main() -> dict:
-    """THE BODY IS WRITTEN AT THE BODY COMMIT (pre-registration)."""
-    raise NotImplementedError("exp409 body lands at the body commit")
-
-
     verdicts: dict[str, str] = {}
     rows = []
     for s in range(PAIRS):
