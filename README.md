@@ -1,11 +1,27 @@
 # bioelectric-cultivation
 
-> ## ✅ PROJECT COMPLETE (2026-09-21)
+> ## ✅ PROJECT COMPLETE (2026-09-21) · 🌉 HUMAN EXTENSION CLOSED (2026-09-27)
 >
-> The project has closed cleanly at HEAD `0938512`. Read
-> **[docs/PROJECT_COMPLETE.md](docs/PROJECT_COMPLETE.md)** for the
-> one-page completion summary; the full verdict ledger is
-> **[docs/FALSIFICATION.md](docs/FALSIFICATION.md)** (L1 → L290b).
+> The project closed cleanly (the gap session documented the search and
+> ran the last candidates — L1 → L294). The **human extension** then
+> crossed the species bridge by mining real human data only —
+> **Outcome B, PARTIAL TRANSFER** (L295 → L301):
+>
+> - The model runs on the real HCP connectome (Schaefer-400) with
+>   zero re-tuning, bit-exact at the planarian anchors (exp401).
+> - **Transfers in direction/shape/class/range**: the fidelity–stability
+>   envelope (real two-night EEG), the history register's protection
+>   (P = +1.06 mV under stress — the preconditioning direction), the
+>   two-channel voltage gating (the responder sweep through the
+>   literature band; the real LF/HF day-night shift), the deadline
+>   window's shape (the model's τ* finite; Lees 2010's decay).
+> - **Does not transfer**: the composition law's class — additive on
+>   the human graph (agreeing with Celnik 2009's human data) where the
+>   planarian stack was super-additive. The grammar is species-general;
+>   the numbers are species-specific.
+> - Read **[docs/HUMAN_EXTENSION.md](docs/HUMAN_EXTENSION.md)** for the
+>   outcome determination; the ledger is
+>   **[docs/FALSIFICATION.md](docs/FALSIFICATION.md)** (L1 → L301).
 >
 > - **5 stages** at their achieved maximum (Map 95% / Validate 90% /
 >   Engineer 95% with 101% PASSED / Expand 90% / Transfer 90%).
