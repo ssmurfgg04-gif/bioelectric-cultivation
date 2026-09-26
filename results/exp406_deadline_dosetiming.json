@@ -1,0 +1,82 @@
+{
+ "R": {
+  "0": 1.0,
+  "100": 0.8539498724324431,
+  "200": 0.7559064450427879,
+  "400": 0.6288495115983168,
+  "600": 0.53103716283478
+ },
+ "R_ratio_600_0": 0.53103716283478,
+ "e_nocorr_mean": 12.071317079620831,
+ "errs_per_seed": {
+  "0": [
+   6.149017707147759,
+   6.141330600331647,
+   6.137721922889918
+  ],
+  "100": [
+   7.006056241933457,
+   7.023618140660741,
+   6.9960260379669394
+  ],
+  "200": [
+   7.603959359094856,
+   7.624157934615229,
+   7.541371860068298
+  ],
+  "400": [
+   8.353156730978398,
+   8.33838471834528,
+   8.337767204002105
+  ],
+  "600": [
+   8.893945246833784,
+   8.907410264572043,
+   8.967631938189456
+  ]
+ },
+ "experiment": "exp406",
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "PASS",
+  "G4": "PASS",
+  "G5": "PASS"
+ },
+ "instrument": {
+  "correction": "the exp403 walk form, register ON g_ctx 0.5, no stress",
+  "read": "R(tau) = 1 - (e(tau)-e0)/(e_nocorr-e0)",
+  "wait": "tau in {0,100,200,400,600} tu, 3 seeds",
+  "wound": "zone 0 -> -30.0"
+ },
+ "literature": {
+  "bins_min": [
+   45,
+   135,
+   225,
+   315
+  ],
+  "normalized": [
+   1.0,
+   0.435,
+   0.313,
+   0.116
+  ],
+  "or_series": [
+   2.81,
+   1.55,
+   1.4,
+   1.15
+  ],
+  "source": "Lees, Bluhmki, von Kummer et al. 2010, Lancet 375:1695-1703, the pooled alteplase analysis; the 91-180 min OR is quoted as 1.6 in the secondary literature (disclosed); benefit gone beyond ~4.5-6 h"
+ },
+ "ols": {
+  "intercept": 0.948270356222544,
+  "slope": -0.0007473913763110711,
+  "tau_star_model_units": 1268.773478365457
+ },
+ "rate_comparison": "AUDIT-ONLY (tu vs minutes; shape transfer only)",
+ "spearman": -0.9999999999999999,
+ "title": "THE DEADLINE LAW <-> THE DOSE-TIMING LITERATURE (batch HU-6)",
+ "verdict": "DEADLINE-MAPS"
+}
