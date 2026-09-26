@@ -1,0 +1,75 @@
+{
+ "P_human": 1.0591078610577354,
+ "errs_per_seed": {
+  "H0-S0": [
+   6.15207393125121,
+   6.141417534318481,
+   6.140607678496977,
+   6.101943762499791,
+   6.17668214852893
+  ],
+  "H0-S1": [
+   8.478529901771996,
+   8.343917235214132,
+   8.452986615296044,
+   8.307269962086364,
+   8.327021112218047
+  ],
+  "H1-S0": [
+   6.151258622890761,
+   6.140895085122361,
+   6.140477909444266,
+   6.101808408312762,
+   6.178136604878017
+  ],
+  "H1-S1": [
+   7.378898211440089,
+   7.296158589672995,
+   7.37555704327431,
+   7.24960321235573,
+   7.313820040107567
+  ]
+ },
+ "experiment": "exp403",
+ "floor_log_n": 20,
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "PASS",
+  "G4": "PASS"
+ },
+ "harm_ratio": 1.1446354499430875,
+ "instrument": {
+  "adjacency": "exp401's pre-registered human adjacency (top-6 symmetric, row-sum 0.4)",
+  "constants": {
+   "COMMIT_NOISE": 0.6,
+   "G_CTX": 0.5,
+   "STEPS_PER_CELL": 8,
+   "STRESS_FLOOR": -35.0,
+   "WOUND_V": -30.0
+  },
+  "stress": "the floor pinned -35.0 during the walk (the exp290 A1 form), restored -60.0",
+  "walk": "BFS boundary-inward; STEPS_PER_CELL 8, COMMIT_NOISE 0.6 (exp142's landed constants); the register blend at the boundary cells, g_ctx 0.0/0.5 (the exp289 dose-face midpoint, pre-named); the canon layer ABSENT (disclosed)",
+  "wound": "zone 0 (80 cells) -> -30.0"
+ },
+ "literature": [
+  {
+   "claim": "ischemic preconditioning reduces infarct size ~75%",
+   "damage_ratio": 4.0,
+   "source": "Murry, Jennings & Reimer 1986 (canine; the discovery)"
+  },
+  {
+   "claim": "remote ischemic conditioning: infarct 19\u00b14% vs 39\u00b17% sham",
+   "damage_ratio": 2.0526315789473686,
+   "source": "Li et al. 2011 (rat limb model)"
+  },
+  {
+   "claim": "TIA before ischemic stroke -> smaller final lesions (endogenous neuroprotection in the human brain)",
+   "damage_ratio": null,
+   "source": "Wegener et al. 2004 (humans; direction only)"
+  }
+ ],
+ "magnitude_comparison": "AUDIT-ONLY (mV error vs infarct %; units differ)",
+ "title": "THE HISTORY REGISTER ON THE HUMAN SUBSTRATE <-> THE PRECONDITIONING LITERATURE (batch HU-3)",
+ "verdict": "HISTORY-PROTECTS-HUMAN"
+}
