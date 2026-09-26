@@ -112,11 +112,6 @@ def _sha16(arr: np.ndarray) -> str:
 
 
 def main() -> dict:
-    """THE BODY IS WRITTEN AT THE BODY COMMIT (the pre-registration
-    discipline: the gates above are frozen before any run)."""
-    raise NotImplementedError("exp401 body lands at the body commit")
-
-
     verdicts: dict[str, str] = {}
     detail: dict[str, object] = {}
 
