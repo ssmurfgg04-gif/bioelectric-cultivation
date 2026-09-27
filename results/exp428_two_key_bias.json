@@ -1,0 +1,166 @@
+{
+ "anchor": {
+  "block_corrected_test_mae": 0.25522766439909295,
+  "entry_mae": 0.2552,
+  "exp423_deposited": 0.25522766439909295,
+  "mae_decoded": 0.2899665158371041,
+  "mae_raw": 0.37050640883977903
+ },
+ "disclosures": [
+  "the corpus rows and the train/test split are exp423's verbatim (the rows' corpus order, even = train, odd = test; excluded_C4 dropped); the key extends from the corpus's own `group` field to the (group, plane) pair \u2014 both fields are the corpus's own per-record columns, no invention",
+  "the two-key bias = the (group, plane) cell's median residual (sim - recorded_corrected) on its TRAIN rows, applied as sim' = sim - bias to the TEST rows; cells with train support < MIN_SUPPORT or absent from train carry bias 0 (the pre-named fallback)",
+  "the ladder stage-2 (block-corrected) re-fits exp423's per-block bias on the same train rows (the entry-point reproduction); the two-key stage subsumes it (the cell median includes the block shift)",
+  "exp423's _runs_test_z imported verbatim; the runs test evaluated TWO-SIDED at every rung (the exp415 lesson)",
+  "RE-RUN DISCLOSURE: the first credited run omitted the block rung of the frozen three-rung z ladder (a G4 completeness gap, not a verdict change \u2014 G3's inputs were identical); this re-run is the credited deposit; the analysis is deterministic (zero rng)"
+ ],
+ "experiment": "exp428",
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "REFUTE",
+  "G4": "PASS"
+ },
+ "runs_test": {
+  "runs": 135,
+  "z_block": -6.721364988870244,
+  "z_raw": -9.09524348579193,
+  "z_two_key": -5.145143395759615
+ },
+ "split": {
+  "cells_seen": 22,
+  "cells_used": 14,
+  "test": 441,
+  "train": 443
+ },
+ "support_cells": {
+  "cutting|crosspiece": 78,
+  "cutting|head": 26,
+  "cutting|head_tail": 1,
+  "cutting|tail": 12,
+  "cutting|trunk": 24,
+  "gj_block|head": 4,
+  "gj_block|tail": 5,
+  "gj_block|trunk": 2,
+  "innexin|head": 1,
+  "innexin|tail": 1,
+  "innexin|trunk": 2,
+  "ion_channel|head": 4,
+  "ion_channel|tail": 1,
+  "ion_channel|trunk": 29,
+  "morphogen|crosspiece": 1,
+  "morphogen|head": 11,
+  "morphogen|head_tail": 1,
+  "morphogen|tail": 11,
+  "morphogen|trunk": 38,
+  "other_rnai|head": 27,
+  "other_rnai|tail": 12,
+  "other_rnai|trunk": 152
+ },
+ "test_mae": {
+  "block": 0.25522766439909295,
+  "raw": 0.29888934240362813,
+  "two_key": 0.2317036281179138
+ },
+ "title": "THE TWO-KEY DECODE BIAS: GROUP x PLANE (batch HU-12)",
+ "two_key_table": {
+  "cutting|crosspiece": {
+   "bias": -0.265,
+   "n_test": 75,
+   "n_train": 78,
+   "test_mae_after": 0.3654,
+   "test_mae_before": 0.4449
+  },
+  "cutting|head": {
+   "bias": -0.3384,
+   "n_test": 20,
+   "n_train": 26,
+   "test_mae_after": 0.191,
+   "test_mae_before": 0.2785
+  },
+  "cutting|tail": {
+   "bias": 0.0,
+   "n_test": 15,
+   "n_train": 12,
+   "test_mae_after": 0.145,
+   "test_mae_before": 0.145
+  },
+  "cutting|trunk": {
+   "bias": 0.0,
+   "n_test": 20,
+   "n_train": 24,
+   "test_mae_after": 0.1244,
+   "test_mae_before": 0.1244
+  },
+  "gj_block|head": {
+   "bias": -0.02,
+   "n_test": 2,
+   "n_train": 4,
+   "test_mae_after": 0.44,
+   "test_mae_before": 0.44
+  },
+  "gj_block|tail": {
+   "bias": 0.495,
+   "n_test": 2,
+   "n_train": 5,
+   "test_mae_after": 0.5,
+   "test_mae_before": 0.5
+  },
+  "ion_channel|head": {
+   "bias": -0.047,
+   "n_test": 4,
+   "n_train": 4,
+   "test_mae_after": 0.2125,
+   "test_mae_before": 0.2125
+  },
+  "ion_channel|trunk": {
+   "bias": 0.644,
+   "n_test": 31,
+   "n_train": 29,
+   "test_mae_after": 0.2134,
+   "test_mae_before": 0.4542
+  },
+  "morphogen|head": {
+   "bias": 0.0,
+   "n_test": 9,
+   "n_train": 11,
+   "test_mae_after": 0.3956,
+   "test_mae_before": 0.3956
+  },
+  "morphogen|tail": {
+   "bias": 0.495,
+   "n_test": 13,
+   "n_train": 11,
+   "test_mae_after": 0.3085,
+   "test_mae_before": 0.575
+  },
+  "morphogen|trunk": {
+   "bias": 0.377,
+   "n_test": 40,
+   "n_train": 38,
+   "test_mae_after": 0.3437,
+   "test_mae_before": 0.4945
+  },
+  "other_rnai|head": {
+   "bias": 0.0,
+   "n_test": 27,
+   "n_train": 27,
+   "test_mae_after": 0.2595,
+   "test_mae_before": 0.2595
+  },
+  "other_rnai|tail": {
+   "bias": 0.321,
+   "n_test": 17,
+   "n_train": 12,
+   "test_mae_after": 0.2518,
+   "test_mae_before": 0.4973
+  },
+  "other_rnai|trunk": {
+   "bias": -0.012,
+   "n_test": 153,
+   "n_train": 152,
+   "test_mae_after": 0.1184,
+   "test_mae_before": 0.1235
+  }
+ },
+ "verdict": "BIAS-STRUCTURAL"
+}
