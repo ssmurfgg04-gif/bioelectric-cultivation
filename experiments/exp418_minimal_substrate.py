@@ -291,7 +291,7 @@ def main(budget_mode: str = "full") -> dict:
         A400 = small_world(400, rewire_p=0.05, seed=13)
         tgt400 = _target(400)
         reg400 = list(range(0, 100))
-        b = _battery(A400, tgt400, reg400, 0)
+        b = _battery_graph(A400, tgt400, reg400, 0)
         assert b["t_protect"], "the n=400 P sign diverged from the corpus"
         print("  top rung n=400: P_single %.4f > 0 (the corpus sign)"
               % b["P_single"])
