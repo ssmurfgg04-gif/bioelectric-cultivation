@@ -1,0 +1,112 @@
+{
+ "canonical": {
+  "human|0": {
+   "P_single": 1.0988163819714574,
+   "P_union": 2.3264559705207857,
+   "class": "SUPER-ADDITIVE",
+   "e_norm": 1.1172381561573927
+  },
+  "human|1": {
+   "P_single": 1.0472361963450174,
+   "P_union": 2.2024997008956513,
+   "class": "SUPER-ADDITIVE",
+   "e_norm": 1.1031546737809914
+  },
+  "human|2": {
+   "P_single": 1.0772998029690237,
+   "P_union": 2.3123789367990675,
+   "class": "SUPER-ADDITIVE",
+   "e_norm": 1.146458145101468
+  },
+  "planarian|0": {
+   "P_single": 0.38236808132889255,
+   "P_union": 1.6340909462306712,
+   "class": "SUPER-ADDITIVE",
+   "e_norm": 3.2736070975158453
+  },
+  "planarian|1": {
+   "P_single": 0.3767417511008482,
+   "P_union": 1.580790286537947,
+   "class": "SUPER-ADDITIVE",
+   "e_norm": 3.1959519536097103
+  },
+  "planarian|2": {
+   "P_single": 0.3757673791043752,
+   "P_union": 1.634493765444942,
+   "class": "SUPER-ADDITIVE",
+   "e_norm": 3.349748957295562
+  }
+ },
+ "d1_swap": {
+  "human-on-planarian|0": {
+   "stressed_errs": {
+    "off": 5.659174295277617,
+    "single": 5.276675583718286,
+    "union": 4.026767785060318
+   }
+  },
+  "planarian-on-human|0": {
+   "stressed_errs": {
+    "off": 8.478529901771996,
+    "single": 7.378898211440089,
+    "union": 6.146456328990358
+   }
+  }
+ },
+ "d2_rest_context": {
+  "human|0": {
+   "errs": {
+    "off": 6.15207393125121,
+    "single": 6.151258622890761,
+    "union": 6.146456328990358
+   },
+   "rest_excess_union_minus_single": -0.004802293900402432
+  },
+  "planarian|0": {
+   "errs": {
+    "off": 4.0250833490469455,
+    "single": 4.0249527188165075,
+    "union": 4.026767785060318
+   },
+   "rest_excess_union_minus_single": 0.001815066243810115
+  }
+ },
+ "d3_canon": {
+  "human|0|False": {
+   "P_single": 1.0988163819714574,
+   "P_union": 2.3264559705207857,
+   "class": "SUPER-ADDITIVE"
+  },
+  "human|0|True": {
+   "P_single": 0.0,
+   "P_union": 0.0,
+   "class": "ADDITIVE"
+  },
+  "planarian|0|False": {
+   "P_single": 0.38236808132889255,
+   "P_union": 1.6340909462306712,
+   "class": "SUPER-ADDITIVE"
+  },
+  "planarian|0|True": {
+   "P_single": 0.0,
+   "P_union": 0.0,
+   "class": "ADDITIVE"
+  }
+ },
+ "determinant": null,
+ "disclosures": [
+  "substrates: the planarian replica = small_world(400, p 0.05, seed 13) (the exp410-validated stand-in; the amputation walk home); the human = the exp401 adjacency (the exp403 port; the value-corruption form \u2014 its native wound semantics); each substrate's P measured with ITS own landed form, the class comparison via the shared excess arithmetic",
+  "the composition class arithmetic (the frozen \u00b10.10 band applied to the composition excess): E_norm = (P_union - P_single) / max(|P_single|, 1e-6); SUPER-ADDITIVE iff E_norm > 0.10, ADDITIVE iff |E_norm| <= 0.10, AMPLIFYING iff E_norm < -0.10; P_single = the boundary-blend 2x2 (g 0.5, the exp293 form), P_union = the all-cells blend at g 1.0 (the exp302/exp300 composed form)",
+  "D1's swap = the direct graph swap (the human walk on the planarian-shaped replica and vice versa) \u2014 the docstring's degree-matched construction realized by the substrates themselves, disclosed",
+  "D3's canon arm: the canon layer = phi_spec_canon (the model's spec-install memory, collective.py); the CANON-ABSENT form is the canonical stress channel (the exp403 disclosure: with the canon present the sub-floor commits fall to the INSTALL branch \u2014 the same target values \u2014 and the pin never bites; the smoke confirmed P == 0 exactly with the canon present); PRESENT = the canon crossed back in as D3's arm"
+ ],
+ "experiment": "exp419",
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "PASS",
+  "G4": "PASS"
+ },
+ "title": "WHAT FIXES THE COMPOSITION CLASS? (batch HU-10)",
+ "verdict": "NO-SINGLE-DETERMINANT"
+}

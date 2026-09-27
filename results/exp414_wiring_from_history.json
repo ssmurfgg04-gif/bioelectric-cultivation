@@ -1,0 +1,110 @@
+{
+ "disclosures": [
+  "the commit stream = 10 repeated correction-walk rounds on ONE build (the register carries across rounds \u2014 the memory chain is the signal), each round under the write-time -35.0 pin (the corpus's stress context: unstressed spec-branch commits are spec + iid noise and carry NO co-movement \u2014 the stress-routed parent inheritance is what the reconstruction reads); disclosed in lieu of a gate rewrite",
+  "the planarian400 graph = the exp410-validated replica stand-in (small_world(400, p 0.05, seed 13)); the walk regions: path100 [20:60), planarian400 [0:100), human400 the value-corruption zone-0 form (the exp403 port \u2014 the human zone-0 cells are non-contiguous, amputation needs a slice)",
+  "the decoy = the exp413 degree-preserving rewire at frac 1.0 of the TRUE graph (the same degree sequence, a different structure)",
+  "S_ij = Pearson across the 10 rounds between cells' commit trajectories; edges := top-k pairs by |S_ij|, k = the true edge count (the oracle-k disclosure, pre-registered)"
+ ],
+ "experiment": "exp414",
+ "gates": {
+  "G1": "PASS",
+  "G2": "REFUTE",
+  "G3": "PASS",
+  "G4": "PASS"
+ },
+ "instrument": {
+  "constants": {
+   "COMMIT_NOISE": 0.6,
+   "G_CTX": 0.5,
+   "STEPS_PER_CELL": 8
+  },
+  "graphs": [
+   "path100",
+   "planarian400",
+   "human400"
+  ],
+  "rounds": 10,
+  "stress": "the write-time -35.0 pin each round"
+ },
+ "per_graph_best_auc": {
+  "human400": 0.6349100515123498,
+  "path100": 0.6796774974912627,
+  "planarian400": 0.6615339584801344
+ },
+ "results": {
+  "human400|0": {
+   "auc": 0.6209832254655924,
+   "auc_decoy": 0.5192690757405324,
+   "auc_null": 0.520872804120988,
+   "k_true": 335,
+   "n_cells_walked": 80,
+   "precision_at_k": 0.16119402985074627
+  },
+  "human400|1": {
+   "auc": 0.6349100515123498,
+   "auc_decoy": 0.5723381829491654,
+   "auc_null": 0.4860219257693832,
+   "k_true": 335,
+   "n_cells_walked": 80,
+   "precision_at_k": 0.191044776119403
+  },
+  "human400|2": {
+   "auc": 0.6202086910579844,
+   "auc_decoy": 0.5719225037257825,
+   "auc_null": 0.49443191124025887,
+   "k_true": 335,
+   "n_cells_walked": 80,
+   "precision_at_k": 0.18208955223880596
+  },
+  "path100|0": {
+   "auc": 0.6061801446416831,
+   "auc_decoy": 0.5367965367965368,
+   "auc_null": 0.4543063773833005,
+   "k_true": 39,
+   "n_cells_walked": 40,
+   "precision_at_k": 0.1794871794871795
+  },
+  "path100|1": {
+   "auc": 0.6192601820132184,
+   "auc_decoy": 0.5846118263819289,
+   "auc_null": 0.42209072978303747,
+   "k_true": 39,
+   "n_cells_walked": 40,
+   "precision_at_k": 0.20512820512820512
+  },
+  "path100|2": {
+   "auc": 0.6796774974912627,
+   "auc_decoy": 0.48907894736842106,
+   "auc_null": 0.45129589259143915,
+   "k_true": 39,
+   "n_cells_walked": 40,
+   "precision_at_k": 0.23076923076923078
+  },
+  "planarian400|0": {
+   "auc": 0.6506130413572552,
+   "auc_decoy": 0.5348237244552714,
+   "auc_null": 0.5161537210688926,
+   "k_true": 95,
+   "n_cells_walked": 100,
+   "precision_at_k": 0.15789473684210525
+  },
+  "planarian400|1": {
+   "auc": 0.6074909209171229,
+   "auc_decoy": 0.5901201602136181,
+   "auc_null": 0.49504905414927636,
+   "k_true": 95,
+   "n_cells_walked": 100,
+   "precision_at_k": 0.17894736842105263
+  },
+  "planarian400|2": {
+   "auc": 0.6615339584801344,
+   "auc_decoy": 0.4894551021683434,
+   "auc_null": 0.4354122174643612,
+   "k_true": 95,
+   "n_cells_walked": 100,
+   "precision_at_k": 0.14736842105263157
+  }
+ },
+ "title": "WIRING RECOVERABLE FROM THE COMMIT STREAM ALONE (batch HU-10)",
+ "verdict": "WIRING-PARTIAL"
+}
