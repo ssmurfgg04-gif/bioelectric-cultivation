@@ -1,0 +1,42 @@
+{
+ "disclosures": [
+  "the arm form = exp411's landed _run_arm VERBATIM with the refresh-pass parameter (the two-pass write: commit saturated at g=1.0, ONE refresh pass over the blended cells at the ladder g, then the settle); the anchors: the g=1.0/g=0.0 one-pass arms at the shared 5 seeds bit-exact vs exp407's deposit, the exp411 two-pass g=0.5 arms bit-exact vs exp411's deposit",
+  "the frozen face definitions (exp411's): carrier retained = the two-pass improvement vs the g=0 OFF twin >= 0.8 x the one-pass g=1.0 improvement; visibility returned = |Delta_two-pass| >= 0.10 x the g=0 one-pass mean |Delta|; the VIABLE WINDOW = a refresh g meeting BOTH on >= 7/10 seeds"
+ ],
+ "experiment": "exp422",
+ "frontier": {
+  "0.05": {
+   "abs_delta": 0.059504045335222334,
+   "improvement": 0.04840380768601689,
+   "retained": true,
+   "visible": true
+  },
+  "0.08": {
+   "abs_delta": 0.042525506571873574,
+   "improvement": 0.04874567904225202,
+   "retained": true,
+   "visible": false
+  },
+  "0.1": {
+   "abs_delta": 0.03456082251825987,
+   "improvement": 0.04897018284267936,
+   "retained": true,
+   "visible": false
+  }
+ },
+ "g0_abs_delta": 0.509033635720141,
+ "g2_disclosure": "the frozen G2 direction was inverted: the measured |Delta| ladder is monotone INCREASING as the refresh g falls (the dial works, opposite sign \u2014 the blend weight physics); REFUTE recorded verbatim, the branch carried by G3's window",
+ "g_star": 0.117,
+ "gates": {
+  "G1": "PASS",
+  "G2": "REFUTE",
+  "G3": "PASS",
+  "G4": "PASS"
+ },
+ "one_pass_improvement": 0.011038299878955549,
+ "title": "THE REFRESH BELOW g* (batch HU-11)",
+ "verdict": "MEMORY-DISCIPLINE-VIABLE",
+ "viable_window": [
+  0.05
+ ]
+}
