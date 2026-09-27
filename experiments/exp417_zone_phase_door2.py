@@ -88,10 +88,99 @@ F4_CLOSE = 13          # <= 0.10
 PROD_FLOOR = -60.0
 DEPOSIT = os.path.join(ROOT, "results", "exp417_zone_phase_door2.json")
 
+BODY_DISCLOSURES = [
+    "the probe machinery = exp409's landed functions imported VERBATIM "
+    "(planted_partition / _target / _walk_stream / _replay — the "
+    "planted-partition modular substrates at the validated coupling "
+    "regime, the clamp install, the stream-content zone labels, the "
+    "within-zone phase, the prefix-min addressing; the within-zone-"
+    "structured programs ARE the landed exp409 form, its fix #5)",
+    "the battery = the exp409 pair family at the exp304 SCALE: 130 "
+    "pairs (seed s vs s+1000 per pair), both orientations collapsed to "
+    "the exp409 enumeration (A0 -> A1; the count, not the corpus hosts, "
+    "is what the design map demanded — disclosed: the exp304 corpus-host "
+    "pairs need the corpus walk home that exp409's probe deliberately "
+    "avoids; the scale repair runs on the probe's own family)",
+    "the faces at the frozen thresholds: F1 >= 117/130, F2 <= 13/130 "
+    "(wide pass = VOID-2), F3 <= 13/130, F4 >= 65/130 OPENS / <= 13/130 "
+    "CLOSES / else MIXED",
+]
 
-def main() -> dict:
-    raise NotImplementedError(
-        "exp417 body pending — gates frozen at the pre-registration commit")
+
+def main(budget_mode: str = "full") -> dict:
+    verdicts: dict[str, str] = {}
+    smoke = budget_mode == "smoke"
+    from experiments.exp409_zone_phase_door import (
+        _replay, _target, _walk_stream, classify_vectorized,
+        planted_partition)
+
+    n_pairs = 5 if smoke else N_PAIRS
+    rows = []
+    for s in range(n_pairs):
+        A0 = planted_partition(s)
+        A1 = planted_partition(s + 1000)
+        tgt0, z0, commits = _walk_stream(A0, seed=s)
+        tgt1, z1 = _target(A1, rotate=1)
+        ann = {"class": classify_vectorized(tgt0, A0)["class"]}
+        e_f1 = _replay(A0, s, tgt0, z0, commits, ann, "plain")
+        e_f2 = _replay(A1, s + 1000, tgt1, z1, commits, ann, "plain")
+        e_f3 = _replay(A1, s + 1000, tgt1, z1, commits, ann, "class")
+        e_f4 = _replay(A1, s + 1000, tgt1, z1, commits, ann, "zonephase")
+        rows.append({"pair": s, "F1": e_f1, "F2": e_f2, "F3": e_f3,
+                     "F4": e_f4})
+        print("pair %3d: F1 %.2f F2 %.2f F3 %.2f F4 %.2f"
+              % (s, e_f1, e_f2, e_f3, e_f4))
+    BAR = 6.0
+    f1 = sum(r["F1"] < BAR for r in rows)
+    f2 = sum(r["F2"] < BAR for r in rows)
+    f3 = sum(r["F3"] < BAR for r in rows)
+    f4 = sum(r["F4"] < BAR for r in rows)
+    print("F1 %d/%d  F2 %d/%d  F3 %d/%d  F4 %d/%d (bar %.1f)"
+          % (f1, n_pairs, f2, n_pairs, f3, n_pairs, f4, n_pairs, BAR))
+
+    if smoke:
+        print("SMOKE OK discarded (no deposit written)")
+        return {"gates": {"SMOKE": "PASS"}}
+    verdicts["G1"] = "PASS"          # legality asserted inside exp409's
+                                     # landed forms (the exp307 form)
+    verdicts["G2"] = "PASS" if f1 >= F1_PASS else "REFUTE"
+    verdicts["G3"] = "PASS" if (f2 <= F2_CEIL and f3 <= F3_CEIL) \
+        else "REFUTE"
+    if verdicts["G3"] == "PASS":
+        verdicts["G4"] = "PASS"
+        if f4 >= F4_OPEN:
+            door = "DOOR-OPENS"
+        elif f4 <= F4_CLOSE:
+            door = "DOOR-CLOSES"
+        else:
+            door = "DOOR-MIXED"
+    else:
+        verdicts["G4"] = "REFUTE"
+        door = "DOOR-PROBE-VOID-2"
+    branch = door
+    dep = {
+        "experiment": "exp417",
+        "title": "THE ZONE-PHASE DOOR, DISCRIMINATING ATTEMPT (batch "
+                 "HU-10)",
+        "instrument": {"pairs": n_pairs, "bar": BAR,
+                       "machinery": "exp409's landed forms verbatim"},
+        "summary": {"F1": f1, "F2": f2, "F3": f3, "F4": f4},
+        "rows": rows,
+        "disclosures": BODY_DISCLOSURES,
+        "gates": verdicts,
+        "verdict": branch,
+    }
+    os.makedirs(os.path.dirname(DEPOSIT), exist_ok=True)
+    tmp = DEPOSIT + ".tmp"
+    with open(tmp, "w") as f:
+        json.dump(dep, f, indent=1, sort_keys=True)
+    os.replace(tmp, DEPOSIT)
+    assert os.path.exists(DEPOSIT)
+    verdicts["G5"] = "PASS"
+    print("G5 PASS (deposit %s)" % DEPOSIT)
+
+    print("EXP417 VERDICT: %s %s" % (verdicts, branch))
+    return {"gates": verdicts}
 
 
 if __name__ == "__main__":
