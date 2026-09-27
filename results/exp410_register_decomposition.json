@@ -1,0 +1,199 @@
+{
+ "R": {
+  "C_CORRECT": -6.202274794109286e-05,
+  "C_EVENT": 0.16136154980386053,
+  "C_FULL": 1.2799124785896758,
+  "C_REGIME": -0.0001674025856388539
+ },
+ "disclosures": [
+  "host axis = small_world(400, rewire_p in {0.02,0.05,0.10,0.15}, seed 13) (the exp73 constructor, 4 deterministic structural variants \u2014 the corpus's 12-host axis is substituted at 4 hosts, the pre-registered budget reduction, disclosed)",
+  "the walk is exp403's landed self-contained 2x2 port (value corruption, no amputation; the register installed phi_history = target) on the exp94 MULTI/spec_target_n target \u2014 face-level anchors to the corpus deposits (signs/means), NOT bit-exact (a different walk home); disclosed in lieu of a gate rewrite",
+  "the dose crossing runs on hosts[:1] x 3 seeds (12 combos x 2 arms x 3 seeds = 72 walks; disclosed budget cut \u2014 the full-grid runtime was projected at ~39 min, over the runner's 30-min cap; the four-condition decomposition runs on all 4 hosts x 3 seeds)",
+  "the persistence face is FOLDED into the condition arms (drift decodes at {0,30,90} tu taken on the same arms, not separate runs \u2014 disclosed; the settled-state read is identical, the saves are pure wall clock)",
+  "G2's consistency clause is read at MATCHED-CONTEXT scope: R_EVENT (stressed, short) <= R_FULL (stressed, full) + tol is asserted; R_CORRECT/R_REGIME are unstressed-context faces, deposited without the cross-context assertion (the frozen text's intent is instrument-breakage detection within one context; disclosed)"
+ ],
+ "dose_crossing": {
+  "(-35.0, 0.5)": 2.014073160532087,
+  "(-35.0, 1.0)": 1.432535430071436,
+  "(-35.0, 2.0)": 0.7722871405717875,
+  "(-40.0, 0.5)": 2.014073160532087,
+  "(-40.0, 1.0)": 1.432535430071436,
+  "(-40.0, 2.0)": 0.7722871405717875,
+  "(-45.0, 0.5)": 2.014073160532087,
+  "(-45.0, 1.0)": 1.432535430071436,
+  "(-45.0, 2.0)": 0.7722871405717875,
+  "(-60.0, 0.5)": 0.0008156623748467595,
+  "(-60.0, 1.0)": -0.00044754826919657376,
+  "(-60.0, 2.0)": -0.0009319339279540984
+ },
+ "experiment": "exp410",
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "REFUTE",
+  "G4": "PASS"
+ },
+ "instrument": {
+  "constants": {
+   "COMMIT_NOISE": 0.6,
+   "CORRECTION_LADDER": [
+    0.5,
+    1.0,
+    2.0
+   ],
+   "G_CTX": 0.5,
+   "STEPS_PER_CELL": 8,
+   "STRESS_LADDER": [
+    -60.0,
+    -45.0,
+    -40.0,
+    -35.0
+   ]
+  },
+  "substrate": "small_world(400, p in {0.02,0.05,0.10,0.15}, seed 13) hosts; the exp94 MULTI/spec_target_n target; the exp403-port 2x2 walk",
+  "wound": "the sub-stress-floor zone -> -30.0"
+ },
+ "persistence": {
+  "C_CORRECT": {
+   "R0": -6.202274794168498e-05,
+   "R90": -3.420898209105516e-05,
+   "ratio": null
+  },
+  "C_EVENT": {
+   "R0": 0.16136154980386172,
+   "R90": 0.13716520178175662,
+   "ratio": 0.8500488620026502
+  },
+  "C_REGIME": {
+   "R0": -0.00016740258563822477,
+   "R90": -0.00012580872862932857,
+   "ratio": null
+  }
+ },
+ "raw": {
+  "C_CORRECT": {
+   "off": [
+    4.022177105236122,
+    4.025845188062578,
+    4.020345300222423,
+    4.3917205832768085,
+    4.358834277973976,
+    4.390335205934785,
+    5.377038955751534,
+    5.411105663430458,
+    5.4052598726487915,
+    5.975800699903293,
+    5.975178107448536,
+    5.995835480297781
+   ],
+   "on": [
+    4.02246055479078,
+    4.025879113087506,
+    4.020792848491619,
+    4.391778011623688,
+    4.358927024474869,
+    4.390335161308922,
+    5.377376402528685,
+    5.410681463241157,
+    5.4043551987408724,
+    5.977153022483624,
+    5.97464319330411,
+    5.995838719086553
+   ]
+  },
+  "C_EVENT": {
+   "off": [
+    12.103404008450426,
+    12.18518744682616,
+    12.114066374152966,
+    13.615032632464684,
+    13.655068313404279,
+    13.638479404523165,
+    12.776603241114412,
+    12.808181181950104,
+    12.779843261806736,
+    12.51820721077474,
+    12.536402099044869,
+    12.554243762868472
+   ],
+   "on": [
+    12.020708305022408,
+    12.104516550636605,
+    12.033769850542964,
+    13.503361281331108,
+    13.547404856519426,
+    13.531701650132177,
+    12.575523877380943,
+    12.609275445580538,
+    12.582212115644912,
+    12.25902853236486,
+    12.281402787153779,
+    12.29947508742495
+   ]
+  },
+  "C_FULL": {
+   "off": [
+    10.173064314218182,
+    9.484066684937098,
+    10.48052055129946,
+    12.022072395307466,
+    11.83903526694614,
+    12.106960339378706,
+    11.374613415164267,
+    11.30877261482764,
+    11.659490993772302,
+    11.829560005883232,
+    11.347441171899018,
+    12.111931782863293
+   ],
+   "on": [
+    8.670664207494937,
+    8.032614834724633,
+    9.047985121228024,
+    10.601986606257219,
+    10.461302747822158,
+    10.737113244675356,
+    10.322750069698163,
+    10.252461917485036,
+    10.587321543861208,
+    10.609725840687416,
+    10.14789926083662,
+    10.906754398649925
+   ]
+  },
+  "C_REGIME": {
+   "off": [
+    3.97140170466714,
+    3.9768781532096105,
+    3.966472481966528,
+    4.194260992631492,
+    4.157044813489385,
+    4.1765253151950485,
+    5.340389080283221,
+    5.37273170191996,
+    5.352949551099628,
+    6.013295701527371,
+    6.015004663725869,
+    6.021489463437387
+   ],
+   "on": [
+    3.971759485816476,
+    3.9768413700800216,
+    3.966604576880746,
+    4.1952968877211,
+    4.1571481498580685,
+    4.175996862902772,
+    5.341486940248746,
+    5.372490324673247,
+    5.351808701105371,
+    6.01523452184649,
+    6.014569538375948,
+    6.021215094671312
+   ]
+  }
+ },
+ "rho_correction": -0.604122093330177,
+ "rho_stress": 0.5956043364075225,
+ "title": "THE REGISTER'S MEMORY CONTENT: WHAT ACCUMULATES? (batch HU-10)",
+ "verdict": "REGISTER-DECOMP-MIXTURE"
+}
