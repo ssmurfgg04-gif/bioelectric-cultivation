@@ -1,0 +1,329 @@
+{
+ "blockers": null,
+ "class_table": {
+  "apc": {
+   "dose_range": [
+    1.0,
+    1.0
+   ],
+   "doses": [
+    1.0
+   ],
+   "n": 30
+  },
+  "cutting": {
+   "dose_range": null,
+   "doses": [],
+   "n": 314
+  },
+  "generic": {
+   "dose_range": null,
+   "doses": [],
+   "n": 319
+  },
+  "gjblock": {
+   "dose_range": null,
+   "doses": [],
+   "n": 20
+  },
+  "gjblock_delayed": {
+   "dose_range": null,
+   "doses": [],
+   "n": 6
+  },
+  "gjblock_washout": {
+   "dose_range": null,
+   "doses": [],
+   "n": 1
+  },
+  "ion_channel": {
+   "dose_range": null,
+   "doses": [],
+   "n": 70
+  },
+  "neoblast": {
+   "dose_range": null,
+   "doses": [],
+   "n": 35
+  },
+  "wnt": {
+   "dose_range": [
+    0.25,
+    1.0
+   ],
+   "doses": [
+    0.25,
+    1.0
+   ],
+   "n": 110
+  }
+ },
+ "disclosures": [
+  "the novel-anatomy set = results/exp150_generator_complete.json's anatomy_programs (10 records: the [f0, f1, voltage] zone specs the generator produced and computationally validated 10/10)",
+  "the intervention class table = the exp118 corpus's realized protocol set {wnt, apc, ion_channel, cutting, gjblock(+delayed/washout), neoblast, generic} with the corpus's own dose ranges per class (the 1716-row mine) \u2014 the wet-lab toolbox is the corpus's OWN toolbox",
+  "the expressible-band rules (pre-named here, disclosed): a zone spec is COVERED iff every voltage lands in the house ladder band [-50, -10] mV (the corpus's target semantics everywhere) and every zone span >= 0.05 (the decode's resolution scale); FEASIBLE iff the realization needs no class outside the corpus's 9 (true by construction \u2014 the generator compiled within the model stack whose intervention semantics the corpus classes implement; deposited with this disclosure) and the max voltage contrast <= 40 mV (the demonstrated band)",
+  "cost = rung_cost (the generator's own price) + the zone count; the rank = (coverage, feasibility, -cost) lexicographic"
+ ],
+ "experiment": "exp416",
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "PASS",
+  "G4": "PASS"
+ },
+ "minimal_spec": {
+  "anatomy": "d-02",
+  "falsification_threshold": "2x the corpus's own decoded MAE (2 x 0.29 = 0.58 morphology units)",
+  "interventions": [
+   {
+    "class": "wnt",
+    "dose": [
+     0.25,
+     1.0
+    ]
+   },
+   {
+    "class": "apc",
+    "dose": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "class": "ion_channel",
+    "dose": null
+   },
+   {
+    "class": "cutting",
+    "note": "the plane/fraction per the zone geometry"
+   },
+   {
+    "class": "gjblock",
+    "note": "the junction control"
+   }
+  ],
+  "n_worms": 1,
+  "predicted_readout": {
+   "voltages": [
+    -40.8,
+    -30.8
+   ],
+   "zones": 2
+  }
+ },
+ "scoring_table": [
+  {
+   "cost": 3.25,
+   "coverage": true,
+   "decode_bar": [
+    3.828,
+    3.861,
+    3.933
+   ],
+   "feasible": true,
+   "max_contrast": 14.100000000000001,
+   "min_span": 0.06099999999999994,
+   "name": "d-01",
+   "rung_cost": 0.25,
+   "voltages": [
+    -40.8,
+    -28.6,
+    -42.7
+   ],
+   "zones": 3
+  },
+  {
+   "cost": 2.25,
+   "coverage": true,
+   "decode_bar": [
+    2.748,
+    2.764,
+    2.868
+   ],
+   "feasible": true,
+   "max_contrast": 9.999999999999996,
+   "min_span": 0.07999999999999996,
+   "name": "d-02",
+   "rung_cost": 0.25,
+   "voltages": [
+    -40.8,
+    -30.8
+   ],
+   "zones": 2
+  },
+  {
+   "cost": 3.25,
+   "coverage": false,
+   "decode_bar": [
+    9.099,
+    9.119,
+    9.077
+   ],
+   "feasible": false,
+   "max_contrast": 6.899999999999999,
+   "min_span": 0.04700000000000004,
+   "name": "d-03",
+   "rung_cost": 0.25,
+   "voltages": [
+    -51.0,
+    -48.6,
+    -55.5
+   ],
+   "zones": 3
+  },
+  {
+   "cost": 3.25,
+   "coverage": false,
+   "decode_bar": [
+    3.774,
+    3.736,
+    3.799
+   ],
+   "feasible": false,
+   "max_contrast": 28.799999999999997,
+   "min_span": 0.06099999999999994,
+   "name": "d-04",
+   "rung_cost": 0.25,
+   "voltages": [
+    -40.8,
+    -28.6,
+    -57.4
+   ],
+   "zones": 3
+  },
+  {
+   "cost": 5.25,
+   "coverage": false,
+   "decode_bar": [
+    4.438,
+    4.516,
+    4.494
+   ],
+   "feasible": false,
+   "max_contrast": 35.5,
+   "min_span": 0.06899999999999998,
+   "name": "d-05",
+   "rung_cost": 0.25,
+   "voltages": [
+    -35.2,
+    -53.9,
+    -29.2,
+    -18.4,
+    -38.1
+   ],
+   "zones": 5
+  },
+  {
+   "cost": 4.25,
+   "coverage": true,
+   "decode_bar": [
+    1.467,
+    1.516,
+    1.526
+   ],
+   "feasible": true,
+   "max_contrast": 14.0,
+   "min_span": 0.06899999999999998,
+   "name": "d-06",
+   "rung_cost": 0.25,
+   "voltages": [
+    -32.4,
+    -29.2,
+    -18.4,
+    -29.3
+   ],
+   "zones": 4
+  },
+  {
+   "cost": 4.25,
+   "coverage": false,
+   "decode_bar": [
+    1.855,
+    1.724,
+    1.878
+   ],
+   "feasible": false,
+   "max_contrast": 35.1,
+   "min_span": 0.05499999999999999,
+   "name": "d-07",
+   "rung_cost": 0.25,
+   "voltages": [
+    -32.4,
+    -29.2,
+    -18.4,
+    -53.5
+   ],
+   "zones": 4
+  },
+  {
+   "cost": 3.25,
+   "coverage": false,
+   "decode_bar": [
+    9.576,
+    9.607,
+    9.57
+   ],
+   "feasible": false,
+   "max_contrast": 4.700000000000003,
+   "min_span": 0.04700000000000004,
+   "name": "d-08",
+   "rung_cost": 0.25,
+   "voltages": [
+    -52.5,
+    -50.8,
+    -55.5
+   ],
+   "zones": 3
+  },
+  {
+   "cost": 4.25,
+   "coverage": false,
+   "decode_bar": [
+    2.616,
+    2.562,
+    2.608
+   ],
+   "feasible": false,
+   "max_contrast": 40.300000000000004,
+   "min_span": 0.0656134575414129,
+   "name": "d-09",
+   "rung_cost": 0.25,
+   "voltages": [
+    -32.4,
+    -29.2,
+    -18.4,
+    -58.7
+   ],
+   "zones": 4
+  },
+  {
+   "cost": 5.25,
+   "coverage": false,
+   "decode_bar": [
+    2.506,
+    2.482,
+    2.54
+   ],
+   "feasible": false,
+   "max_contrast": 15.500000000000004,
+   "min_span": 0.041999999999999926,
+   "name": "d-10",
+   "rung_cost": 0.25,
+   "voltages": [
+    -40.8,
+    -28.6,
+    -42.7,
+    -27.2,
+    -34.2
+   ],
+   "zones": 5
+  }
+ ],
+ "title": "THE GENERATOR'S WET-LAB PATH (batch HU-10)",
+ "top3": [
+  "d-02",
+  "d-01",
+  "d-06"
+ ],
+ "verdict": "WETLAB-PATH-OPEN"
+}

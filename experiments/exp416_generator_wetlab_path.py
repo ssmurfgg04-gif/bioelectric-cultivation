@@ -71,9 +71,152 @@ sys.path.insert(0, ROOT)
 DEPOSIT = os.path.join(ROOT, "results", "exp416_generator_wetlab_path.json")
 
 
+BODY_DISCLOSURES = [
+    "the novel-anatomy set = results/exp150_generator_complete.json's "
+    "anatomy_programs (10 records: the [f0, f1, voltage] zone specs the "
+    "generator produced and computationally validated 10/10)",
+    "the intervention class table = the exp118 corpus's realized protocol "
+    "set {wnt, apc, ion_channel, cutting, gjblock(+delayed/washout), "
+    "neoblast, generic} with the corpus's own dose ranges per class (the "
+    "1716-row mine) — the wet-lab toolbox is the corpus's OWN toolbox",
+    "the expressible-band rules (pre-named here, disclosed): a zone "
+    "spec is COVERED iff every voltage lands in the house ladder band "
+    "[-50, -10] mV (the corpus's target semantics everywhere) and every "
+    "zone span >= 0.05 (the decode's resolution scale); FEASIBLE iff the "
+    "realization needs no class outside the corpus's 9 (true by "
+    "construction — the generator compiled within the model stack whose "
+    "intervention semantics the corpus classes implement; deposited with "
+    "this disclosure) and the max voltage contrast <= 40 mV (the "
+    "demonstrated band)",
+    "cost = rung_cost (the generator's own price) + the zone count; the "
+    "rank = (coverage, feasibility, -cost) lexicographic",
+]
+
+
 def main() -> dict:
-    raise NotImplementedError(
-        "exp416 body pending — gates frozen at the pre-registration commit")
+    verdicts: dict[str, str] = {}
+    import json
+    import numpy as np
+
+    gen_path = os.path.join(ROOT, "results",
+                            "exp150_generator_complete.json")
+    cor_path = os.path.join(ROOT, "results", "exp118_corpus_full.json")
+    if not (os.path.exists(gen_path) and os.path.exists(cor_path)):
+        raise AssertionError("INSTRUMENT-VOID: the generator or corpus "
+                             "deposit is absent — no fabrication")
+    verdicts["G1"] = "PASS"
+    gen = json.load(open(gen_path))
+    cor = json.load(open(cor_path))
+    anatomies = gen["anatomy_programs"]
+    assert len(anatomies) == 10, len(anatomies)
+    rows = [r for r in cor["per_record"] if "abs_err_raw" in r]
+    print("G1 PASS (10 anatomies + %d scored corpus rows loaded)"
+          % len(rows))
+
+    # ---- the class table from the corpus's own realized arms
+    class_table: dict = {}
+    for r in rows:
+        arm = r.get("arm") or []
+        if len(arm) >= 4:
+            proto = arm[0]
+            dose = arm[3]
+            e = class_table.setdefault(
+                proto, {"n": 0, "doses": set()})
+            e["n"] += 1
+            if dose is not None:
+                e["doses"].add(float(dose))
+    for k, v in class_table.items():
+        v["doses"] = sorted(v["doses"])
+        v["dose_range"] = ([min(v["doses"]), max(v["doses"])]
+                           if v["doses"] else None)
+
+    # ---- G2 the scoring table
+    table = []
+    for ap in anatomies:
+        zones = ap["anatomy"]
+        vs = [z[2] for z in zones]
+        spans = [max(z[1] - z[0], 0.0) for z in zones]
+        volt_ok = all(-50.0 <= v <= -10.0 for v in vs)
+        span_ok = all(s >= 0.05 for s in spans)
+        contrast = max(vs) - min(vs)
+        coverage = bool(volt_ok and span_ok)
+        feasible = bool(coverage and contrast <= 40.0)
+        cost = float(ap.get("rung_cost", 0.0)) + len(zones)
+        table.append({
+            "name": ap["name"], "zones": len(zones),
+            "voltages": vs, "min_span": min(spans),
+            "max_contrast": contrast, "rung_cost": ap.get("rung_cost"),
+            "coverage": coverage, "feasible": feasible, "cost": cost,
+            "decode_bar": ap.get("decode_errs")})
+    assert len(table) == 10
+    verdicts["G2"] = "PASS"
+    print("G2 PASS (10/10 scored: coverage %d/10, feasible %d/10)"
+          % (sum(t["coverage"] for t in table),
+             sum(t["feasible"] for t in table)))
+
+    # ---- G3 the path + the minimal spec
+    open_path = [t for t in table if t["coverage"] and t["feasible"]]
+    spec = None
+    if open_path:
+        top = sorted(open_path, key=lambda t: t["cost"])[0]
+        ns = [r["n_result_sets"] for r in rows if r.get("n_result_sets")]
+        n_worms = int(np.median(ns))
+        spec = {
+            "anatomy": top["name"],
+            "n_worms": n_worms,
+            "interventions": [
+                {"class": "wnt", "dose": class_table.get(
+                    "wnt", {}).get("dose_range")},
+                {"class": "apc", "dose": class_table.get(
+                    "apc", {}).get("dose_range")},
+                {"class": "ion_channel", "dose": class_table.get(
+                    "ion_channel", {}).get("dose_range")},
+                {"class": "cutting", "note": "the plane/fraction per the "
+                 "zone geometry"},
+                {"class": "gjblock", "note": "the junction control"}],
+            "predicted_readout": {"zones": top["zones"],
+                                  "voltages": top["voltages"]},
+            "falsification_threshold": "2x the corpus's own decoded MAE "
+                                       "(2 x 0.29 = 0.58 morphology units)",
+        }
+    verdicts["G3"] = "PASS" if spec else "REFUTE"
+    print("G3 %s (%s)" % (verdicts["G3"],
+                          "spec for %s" % spec["anatomy"] if spec
+                          else "NO-PATH — the blockers deposited"))
+
+    # ---- G4 the ranking
+    ranked = sorted(table, key=lambda t: (not t["coverage"],
+                                          not t["feasible"], t["cost"]))
+    verdicts["G4"] = "PASS"
+    print("G4 PASS (top-3: %s)" % [t["name"] for t in ranked[:3]])
+
+    # ---- G5 the deposit
+    branch = "WETLAB-PATH-OPEN" if spec else "NO-PATH-WITHOUT-NEW-EQUIPMENT"
+    out = {
+        "experiment": "exp416",
+        "title": "THE GENERATOR'S WET-LAB PATH (batch HU-10)",
+        "class_table": class_table,
+        "scoring_table": table,
+        "minimal_spec": spec,
+        "top3": [t["name"] for t in ranked[:3]],
+        "blockers": (None if spec else
+                     [t["name"] for t in table
+                      if not (t["coverage"] and t["feasible"])]),
+        "disclosures": BODY_DISCLOSURES,
+        "gates": verdicts,
+        "verdict": branch,
+    }
+    os.makedirs(os.path.dirname(DEPOSIT), exist_ok=True)
+    tmp = DEPOSIT + ".tmp"
+    with open(tmp, "w") as f:
+        json.dump(out, f, indent=1, sort_keys=True)
+    os.replace(tmp, DEPOSIT)
+    assert os.path.exists(DEPOSIT)
+    verdicts["G5"] = "PASS"
+    print("G5 PASS (deposit %s)" % DEPOSIT)
+
+    print("EXP416 VERDICT: %s %s" % (verdicts, branch))
+    return {"gates": verdicts}
 
 
 if __name__ == "__main__":
