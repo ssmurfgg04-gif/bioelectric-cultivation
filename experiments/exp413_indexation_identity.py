@@ -377,7 +377,8 @@ def main(budget_mode: str = "full") -> dict:
             "constants": {"COMMIT_NOISE": COMMIT_NOISE,
                           "STEPS_PER_CELL": STEPS_PER_CELL,
                           "SEEDS": list(seeds)}},
-        "arms": {str(k): v for k, v in out.items()},
+        "arms": {str(sk): {str(k): v for k, v in s.items()}
+                 for sk, s in out.items()},
         "summary": {"err_A_immediate": err_A, "err_B100_immediate": err_B100,
                     "anchor_reg": anchor_reg, "A_after_reg": a_after,
                     "B100_10x_reg": b100_10x, "R_A": R_A, "R_B100": R_B100,

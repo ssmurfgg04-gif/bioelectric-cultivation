@@ -279,7 +279,8 @@ def main(budget_mode: str = "full") -> dict:
             Sn = np.nan_to_num(np.corrcoef(Xn.T), nan=0.0)
             auc_null = _auc(Sn, edges_mask)
             # the decoy: the degree-matched rewire of the true graph
-            A_dec, _ = _degree_preserving_rewire(c.A, 1.0, seed)
+            A_bin = (np.abs(c.A) > 0).astype(float)
+            A_dec, _ = _degree_preserving_rewire(A_bin, 1.0, seed)
             dec_full = (np.abs(A_dec) > 0)
             np.fill_diagonal(dec_full, False)
             dec_mask = dec_full[np.ix_(cells, cells)]
