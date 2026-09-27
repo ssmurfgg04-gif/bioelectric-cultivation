@@ -1,0 +1,238 @@
+{
+ "bypass_face": {
+  "bit_exact": true,
+  "cells_checked": 400,
+  "delta_g100_per_seed": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "head_errs": {
+   "off": [
+    6.146456328990358,
+    6.14159622548638,
+    6.135371873353681,
+    6.103581637968353,
+    6.179165231970415
+   ],
+   "on": [
+    6.146456328990358,
+    6.14159622548638,
+    6.135371873353681,
+    6.103581637968353,
+    6.179165231970415
+   ]
+  }
+ },
+ "cross_species_table": {
+  "0.0": {
+   "human_abs_delta": 2.2804448694051684,
+   "planarian_deposited_abs_delta": 0.539330093482635,
+   "planarian_fresh_abs_delta": 0.5843406753833866
+  },
+  "0.25": {
+   "human_abs_delta": 1.1077623972407675,
+   "planarian_deposited_abs_delta": 0.07624252680646348,
+   "planarian_fresh_abs_delta": 0.08088349787662175
+  },
+  "0.5": {
+   "human_abs_delta": 0.484504005414216,
+   "planarian_deposited_abs_delta": 0.022856537006927802,
+   "planarian_fresh_abs_delta": 0.023220023696989944
+  },
+  "0.75": {
+   "human_abs_delta": 0.16233995138873158,
+   "planarian_deposited_abs_delta": 0.007049464636273761,
+   "planarian_fresh_abs_delta": 0.00708504684091027
+  },
+  "1.0": {
+   "human_abs_delta": 0.0,
+   "planarian_deposited_abs_delta": 0.0,
+   "planarian_fresh_abs_delta": 0.0
+  }
+ },
+ "disclosures": [
+  "the union-OFF head arms ARE exp403's H0/H1 arms re-run VERBATIM at the shared seeds \u2014 bit-exact against the deposited errs (the anchor reuse, no re-derivation)",
+  "the gj junction rule covers every non-boundary region cell on both substrates (the chain's interior degree 2; the human k=6 min degree >= 6) \u2014 the ported rule's coverage is the same whole-band face exp407 landed",
+  "the ladder's 3 seeds and the head's 5 seeds ran as pre-registered; no budget cut was needed"
+ ],
+ "experiment": "exp412",
+ "floor_log_n": 60,
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "PASS",
+  "G4": "PASS"
+ },
+ "instrument": {
+  "adjacency": "exp401's pre-registered human adjacency (top-6 symmetric, row-sum 0.4, sha-pinned FC)",
+  "constants": {
+   "COMMIT_NOISE": 0.6,
+   "GLADDER": [
+    1.0,
+    0.75,
+    0.5,
+    0.25,
+    0.0
+   ],
+   "HEAD_SEEDS": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "LADDER_SEEDS": [
+    0,
+    1,
+    2
+   ],
+   "PROD_FLOOR": -60.0,
+   "STEPS_PER_CELL": 8,
+   "STRESS_FLOOR": -35.0,
+   "WOUND_VOLT": -30.0
+  },
+  "stress": "the write-time -35.0 floor pin during the walk (the exp290 A1 form), restored -60.0",
+  "union": "(ctx, gj) at dose g; the apop sigma face excluded as exp407 excluded it (it scales the noise, not the blend; disclosed)",
+  "walk": "exp403's ported human walk VERBATIM (BFS boundary-inward, STEPS_PER_CELL 8, COMMIT_NOISE 0.6, the register blend at the boundary cells, the canon layer ABSENT as exp403) + the union's gj face (exp407's junction rule ported: the region's non-boundary cells with support-degree >= 2)",
+  "wound": "zone 0 (80 cells) -> -30.0"
+ },
+ "ladder": {
+  "abs_seq_g100_to_g0": [
+   0.0,
+   0.16233995138873158,
+   0.484504005414216,
+   1.1077623972407675,
+   2.2804448694051684
+  ],
+  "errs_per_g": {
+   "0.0": {
+    "off": [
+     6.15207393125121,
+     6.141417534318481,
+     6.140607678496977
+    ],
+    "on": [
+     8.478529901771996,
+     8.343917235214132,
+     8.452986615296044
+    ]
+   },
+   "0.25": {
+    "off": [
+     6.150484006761752,
+     6.1413299969450215,
+     6.139097881363044
+    ],
+    "on": [
+     7.27933855303998,
+     7.220785274402087,
+     7.254075249350053
+    ]
+   },
+   "0.5": {
+    "off": [
+     6.149017707147759,
+     6.141330600331647,
+     6.137721922889918
+    ],
+    "on": [
+     6.642474115322732,
+     6.617001514732835,
+     6.622106616556404
+    ]
+   },
+   "0.75": {
+    "off": [
+     6.147675120867604,
+     6.141419344452371,
+     6.136479893107931
+    ],
+    "on": [
+     6.313093190535584,
+     6.30169925123988,
+     6.297801770818638
+    ]
+   },
+   "1.0": {
+    "off": [
+     6.146456328990358,
+     6.14159622548638,
+     6.135371873353681
+    ],
+    "on": [
+     6.146456328990358,
+     6.14159622548638,
+     6.135371873353681
+    ]
+   }
+  },
+  "mean_delta_per_g": {
+   "0.0": 2.2804448694051684,
+   "0.25": 1.1077623972407675,
+   "0.5": 0.484504005414216,
+   "0.75": 0.16233995138873158,
+   "1.0": 0.0
+  }
+ },
+ "planarian_deposited_delta_signed": {
+  "0.0": 0.539330093482635,
+  "0.25": 0.07624252680646348,
+  "0.5": 0.022856537006927802,
+  "0.75": 0.007049464636273761,
+  "1.0": 0.0
+ },
+ "planarian_fresh_delta_signed": {
+  "0.0": 0.5843406753833866,
+  "0.25": 0.08088349787662175,
+  "0.5": 0.023220023696989944,
+  "0.75": 0.00708504684091027,
+  "1.0": 0.0
+ },
+ "ratio_at_g05": 20.86578427898087,
+ "species_class": "human-raises",
+ "title": "THE STRESS-INVISIBILITY ON THE HUMAN CONNECTOME (batch HU-10; Test 2b)",
+ "union_off_anchor": {
+  "errs": {
+   "H0-S0": [
+    6.15207393125121,
+    6.141417534318481,
+    6.140607678496977,
+    6.101943762499791,
+    6.17668214852893
+   ],
+   "H0-S1": [
+    8.478529901771996,
+    8.343917235214132,
+    8.452986615296044,
+    8.307269962086364,
+    8.327021112218047
+   ],
+   "H1-S0": [
+    6.151258622890761,
+    6.140895085122361,
+    6.140477909444266,
+    6.101808408312762,
+    6.178136604878017
+   ],
+   "H1-S1": [
+    7.378898211440089,
+    7.296158589672995,
+    7.37555704327431,
+    7.24960321235573,
+    7.313820040107567
+   ]
+  },
+  "errs_bit_exact_vs_exp403": true,
+  "shared_seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "verdict": "INVISIBLE-TRANSFERS"
+}
