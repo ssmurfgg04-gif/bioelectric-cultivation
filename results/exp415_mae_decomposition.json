@@ -1,0 +1,86 @@
+{
+ "a_max": 0.08053989300267494,
+ "a_max_name": "a1_decode_to_raw",
+ "anchor": {
+  "decode_acc": 0.6928176795580111,
+  "deposit_aggregates": {
+   "confusion_recorded_vs_pred": {
+    "abnormal->abnormal": 389,
+    "abnormal->wt": 179,
+    "wt->abnormal": 99,
+    "wt->wt": 238
+   },
+   "decode_accuracy": 0.6928,
+   "decode_by_group": {
+    "cutting": {
+     "accuracy": 0.6109,
+     "n": 293
+    },
+    "gj_block": {
+     "accuracy": 0.7143,
+     "n": 21
+    },
+    "innexin": {
+     "accuracy": 0.6667,
+     "n": 6
+    },
+    "ion_channel": {
+     "accuracy": 0.5,
+     "n": 70
+    },
+    "morphogen": {
+     "accuracy": 0.6746,
+     "n": 126
+    },
+    "other_rnai": {
+     "accuracy": 0.7943,
+     "n": 389
+    }
+   },
+   "mae_corrected_conservative": 0.3063,
+   "mae_corrected_decoded": 0.29,
+   "mae_raw": 0.3705,
+   "n_conservative": 905,
+   "n_decoded": 884,
+   "n_raw": 905
+  },
+  "mae_decoded": 0.2899665158371041,
+  "mae_raw": 0.37050640883977903,
+  "rows": 905
+ },
+ "band": {
+  "cells_used": 20,
+  "max": 0.306771932912765,
+  "min": 0.28609515504055744,
+  "rows_in_cells": 866,
+  "width": 0.020676777872207563
+ },
+ "disclosures": [
+  "the per-row corpus = results/exp118_corpus_full.json's per_record (1,716 rows, the L74-adopted full mine: abs_err_raw, abs_err_corrected, excluded_C4, arm, sim per row); the G1 anchor recomputes the deposited aggregates from the rows (the exp138 REF constants: mae_raw 0.3705, mae_decoded 0.29, decode_acc 0.6928)",
+  "P-DATA is the ANALYTIC band (disclosed in lieu of the frozen re-simulation text): the dose-uncertainty propagation is approximated by the corpus's own cell-wise sim spread \u2014 rows grouped by (protocol, plane); each row's sim redrawn from its cell's empirical distribution, N=200 resamples, the decoded MAE recomputed per resample; W_data = the band width. The full re-simulation (re-running the model per resampled dose) is the named follow-up \u2014 deposited, not run here",
+  "P-MODEL's dose-axis ablation uses the deposited L70->L73->L74 chain constants (0.304 -> 0.290 -> 0.290; the exp118 deposit's comparison block) \u2014 the axis repairs' deltas are the deposited record",
+  "P-STRUCT's runs test walks the per-row residual sign sequence (sim - recorded_corrected, corpus order)"
+ ],
+ "experiment": "exp415",
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "PASS",
+  "G4": "PASS"
+ },
+ "ladder": {
+  "a1_decode_to_raw": 0.08053989300267494,
+  "a2_c4_exclusion_dropped": 0.016365417864553367,
+  "a3_dose_axis_off": 0.014000000000000012,
+  "a4_rowmap_off": 0.0
+ },
+ "named_gap": "the residual sign sequence is SYSTEMATIC (|z| 17.209 > 2, 187 runs vs 442.3 expected \u2014 the model-side gap is named: the decode's sign structure, not noise)",
+ "runs_test": {
+  "n": 884,
+  "named_gap": true,
+  "runs": 187,
+  "z": -17.209419108966607
+ },
+ "title": "THE MAE 0.290 RESIDUAL: DATA-SIDE OR MODEL-SIDE? (batch HU-10)",
+ "verdict": "MODEL-SIDE-DOMINANT"
+}
