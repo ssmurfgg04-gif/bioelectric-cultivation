@@ -277,7 +277,7 @@ def main(budget_mode: str = "full") -> dict:
     out_d = {
         "experiment": "exp434",
         "title": "THE IDENTITY ASYMMETRY, THE TIGHTENED BAR (batch HU-13)",
-        "arms": {"%s|%d|%s" % (k[0], k[1], k[2]):
+        "arms": {"%s|%d" % k:
                  {str(kk): vv for kk, vv in out[k].items()}
                  for k in out},
         "anchor": detail_a,
