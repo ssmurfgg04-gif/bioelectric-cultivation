@@ -1,0 +1,495 @@
+{
+ "census_table": {
+  "complete4": {
+   "flags": {
+    "m_cycle": true,
+    "m_hub3": true,
+    "m_mindeg2": true,
+    "m_twochannel": true,
+    "max_deg": 3,
+    "min_deg": 3,
+    "n_edges": 6
+   },
+   "n_protect": 0,
+   "n_seeds": 5,
+   "per_seed": [
+    {
+     "P_single": -0.4579,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": true
+    },
+    {
+     "P_single": -0.3135,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": false
+    },
+    {
+     "P_single": -0.3411,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": true
+    },
+    {
+     "P_single": -0.2275,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": false
+    },
+    {
+     "P_single": -0.3264,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": true
+    }
+   ],
+   "protective": false,
+   "t_compose": 5,
+   "t_register": 3
+  },
+  "diamond4": {
+   "flags": {
+    "m_cycle": true,
+    "m_hub3": true,
+    "m_mindeg2": true,
+    "m_twochannel": true,
+    "max_deg": 3,
+    "min_deg": 2,
+    "n_edges": 5
+   },
+   "n_protect": 0,
+   "n_seeds": 5,
+   "per_seed": [
+    {
+     "P_single": -0.457,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": true
+    },
+    {
+     "P_single": -0.313,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": false
+    },
+    {
+     "P_single": -0.3392,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": true
+    },
+    {
+     "P_single": -0.2249,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": false
+    },
+    {
+     "P_single": -0.3253,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": true
+    }
+   ],
+   "protective": false,
+   "t_compose": 5,
+   "t_register": 3
+  },
+  "motif4": {
+   "flags": {
+    "m_cycle": false,
+    "m_hub3": false,
+    "m_mindeg2": false,
+    "m_twochannel": true,
+    "max_deg": 2,
+    "min_deg": 1,
+    "n_edges": 3
+   },
+   "n_protect": 5,
+   "n_seeds": 5,
+   "per_seed": [
+    {
+     "P_single": 1.0839,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 1.3134,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 1.2535,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 1.5732,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 1.1715,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": true
+    }
+   ],
+   "protective": true,
+   "t_compose": 5,
+   "t_register": 1
+  },
+  "path3": {
+   "flags": {
+    "m_cycle": false,
+    "m_hub3": false,
+    "m_mindeg2": false,
+    "m_twochannel": false,
+    "max_deg": 2,
+    "min_deg": 1,
+    "n_edges": 2
+   },
+   "n_protect": 5,
+   "n_seeds": 5,
+   "per_seed": [
+    {
+     "P_single": 0.1994,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 0.2584,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 0.2719,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": true
+    },
+    {
+     "P_single": 0.0476,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": true
+    },
+    {
+     "P_single": 0.3392,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    }
+   ],
+   "protective": true,
+   "t_compose": 5,
+   "t_register": 2
+  },
+  "path4": {
+   "flags": {
+    "m_cycle": false,
+    "m_hub3": false,
+    "m_mindeg2": false,
+    "m_twochannel": true,
+    "max_deg": 2,
+    "min_deg": 1,
+    "n_edges": 3
+   },
+   "n_protect": 5,
+   "n_seeds": 5,
+   "per_seed": [
+    {
+     "P_single": 1.0765,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 1.3054,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 1.246,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 1.5387,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 1.1465,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": true
+    }
+   ],
+   "protective": true,
+   "t_compose": 5,
+   "t_register": 1
+  },
+  "paw4": {
+   "flags": {
+    "m_cycle": true,
+    "m_hub3": true,
+    "m_mindeg2": false,
+    "m_twochannel": true,
+    "max_deg": 3,
+    "min_deg": 1,
+    "n_edges": 4
+   },
+   "n_protect": 0,
+   "n_seeds": 5,
+   "per_seed": [
+    {
+     "P_single": -0.2683,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": true
+    },
+    {
+     "P_single": -0.1063,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": false
+    },
+    {
+     "P_single": -0.1485,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": true
+    },
+    {
+     "P_single": -0.0983,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": false
+    },
+    {
+     "P_single": -0.1902,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": true
+    }
+   ],
+   "protective": false,
+   "t_compose": 5,
+   "t_register": 3
+  },
+  "ring4": {
+   "flags": {
+    "m_cycle": true,
+    "m_hub3": false,
+    "m_mindeg2": true,
+    "m_twochannel": true,
+    "max_deg": 2,
+    "min_deg": 2,
+    "n_edges": 4
+   },
+   "n_protect": 4,
+   "n_seeds": 5,
+   "per_seed": [
+    {
+     "P_single": -0.1039,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": true
+    },
+    {
+     "P_single": 0.0593,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 0.0206,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": true
+    },
+    {
+     "P_single": 0.1811,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 0.0512,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": true
+    }
+   ],
+   "protective": true,
+   "t_compose": 5,
+   "t_register": 3
+  },
+  "star4": {
+   "flags": {
+    "m_cycle": false,
+    "m_hub3": true,
+    "m_mindeg2": false,
+    "m_twochannel": true,
+    "max_deg": 3,
+    "min_deg": 1,
+    "n_edges": 3
+   },
+   "n_protect": 5,
+   "n_seeds": 5,
+   "per_seed": [
+    {
+     "P_single": 0.2778,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 0.4987,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 0.4326,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 0.679,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": false
+    },
+    {
+     "P_single": 0.3765,
+     "t_compose": true,
+     "t_protect": true,
+     "t_register": true
+    }
+   ],
+   "protective": true,
+   "t_compose": 5,
+   "t_register": 1
+  },
+  "triangle3": {
+   "flags": {
+    "m_cycle": true,
+    "m_hub3": false,
+    "m_mindeg2": true,
+    "m_twochannel": false,
+    "max_deg": 2,
+    "min_deg": 2,
+    "n_edges": 3
+   },
+   "n_protect": 0,
+   "n_seeds": 5,
+   "per_seed": [
+    {
+     "P_single": -0.3816,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": false
+    },
+    {
+     "P_single": -0.3309,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": false
+    },
+    {
+     "P_single": -0.3032,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": true
+    },
+    {
+     "P_single": -0.5061,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": true
+    },
+    {
+     "P_single": -0.2611,
+     "t_compose": true,
+     "t_protect": false,
+     "t_register": false
+    }
+   ],
+   "protective": false,
+   "t_compose": 5,
+   "t_register": 2
+  }
+ },
+ "consistent_candidates": [],
+ "disclosures": [
+  "the battery is exp418's landed machinery imported verbatim (_battery_graph, _target, _adjacency for the path/ring/star/motif forms); the census constructors (triangle3, complete4, paw4, diamond4) are the corpus's own adjacency style, deterministic, zero new knobs",
+  "the region rule is exp418's own (_battery: per = max(1, n//4) if n >= 8 else max(1, n//2)) \u2014 the face semantics are the battery's, not redefined",
+  "the candidate flags are computed from the BUILT adjacency + region: cycle = cycle rank > 0 (E - V + components); degree = the graph's min/max degree; TWOKCHANNEL = the battery's own two faces present (an internal region edge AND a boundary cell) \u2014 the operational form of 'a ctx face AND a gj face both present'",
+  "G4's holdout runs ONLY when exactly one candidate is consistent; with NONE or >= 2 consistent, G4 deposits VACUOUS with the reason (nothing was predicted; the branch lattice carries the verdict)",
+  "exp424's landed census (NO-SINGLE-CARRIER at the (form, wound)-cell granularity, bridge/cut/cycle candidates) is deposited beside this run as the cross-experiment continuity field; this census's granularity is the FORM (exp418's region rule fixes the wound), its candidate set adds min-degree, hub, and the two-channel face pair",
+  "the target ladder extended to n=3 body-side: exp418's _target jumps from n=2 to n=4 (its ladder never ran n=3); the census uses the n>=5 rule's own formula at n=3 (t[:n//2] = -50, rest = -30 \u2014 one low cell, two high), disclosed; no gate touches the target ladder"
+ ],
+ "exp424_cross_check": {
+  "census_size": 11,
+  "gates": {
+   "G1": "PASS",
+   "G2": "PASS",
+   "G3": "REFUTE",
+   "G4": "REFUTE"
+  },
+  "verdict": "NO-SINGLE-CARRIER"
+ },
+ "experiment": "exp427",
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "REFUTE",
+  "G4": "VACUOUS-NO-CARRIER"
+ },
+ "holdout": {},
+ "instrument": {
+  "candidates": [
+   "m_cycle",
+   "m_mindeg2",
+   "m_hub3",
+   "m_twochannel"
+  ],
+  "forms": [
+   "path3",
+   "triangle3",
+   "path4",
+   "star4",
+   "ring4",
+   "complete4",
+   "paw4",
+   "diamond4",
+   "motif4"
+  ],
+  "holdout": [
+   "ring5",
+   "path5"
+  ],
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "title": "WHAT WIRING CARRIES THE PROTECTION? THE MOTIF CENSUS (batch HU-12)",
+ "verdict": "NO-CARRIER"
+}
