@@ -1,0 +1,74 @@
+{
+ "anchor": {
+  "mae_decoded": 0.2899665158371041,
+  "mae_raw": 0.37050640883977903
+ },
+ "bias_table": {
+  "cutting": {
+   "bias": -0.17,
+   "n_test": 131,
+   "n_train": 141,
+   "test_mae_after": 0.30354427480916024,
+   "test_mae_before": 0.33541297709923673
+  },
+  "gj_block": {
+   "bias": 0.495,
+   "n_test": 10,
+   "n_train": 11,
+   "test_mae_after": 0.4311,
+   "test_mae_before": 0.5301
+  },
+  "innexin": {
+   "bias": 0.6885,
+   "n_test": 2,
+   "n_train": 4,
+   "test_mae_after": 0.34750000000000003,
+   "test_mae_before": 0.34750000000000003
+  },
+  "ion_channel": {
+   "bias": 0.5690000000000001,
+   "n_test": 36,
+   "n_train": 34,
+   "test_mae_after": 0.2476388888888889,
+   "test_mae_before": 0.44247222222222227
+  },
+  "morphogen": {
+   "bias": 0.377,
+   "n_test": 64,
+   "n_train": 62,
+   "test_mae_after": 0.382390625,
+   "test_mae_before": 0.483203125
+  },
+  "other_rnai": {
+   "bias": -0.01200000000000001,
+   "n_test": 198,
+   "n_train": 191,
+   "test_mae_after": 0.1737227272727273,
+   "test_mae_before": 0.17687424242424243
+  }
+ },
+ "disclosures": [
+  "the per-row corpus = exp118's per_record (the scored 905); the blocks = the corpus's own `group` field (the exp118 decode_by_group keys \u2014 no invention); the split = the rows' corpus ORDER (even index = train, odd = test) \u2014 the pre-registered holdout",
+  "the bias = the block's median residual (sim - recorded_corrected) on its TRAIN rows, applied as sim' = sim - bias to the TEST rows (test rows of train-unseen blocks carry bias 0 \u2014 disclosed)"
+ ],
+ "experiment": "exp423",
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "REFUTE",
+  "G4": "PASS"
+ },
+ "runs_test": {
+  "runs": 129,
+  "z": -6.721364988870244
+ },
+ "split": {
+  "blocks": 6,
+  "test": 441,
+  "train": 443
+ },
+ "test_mae_after": 0.25522766439909295,
+ "test_mae_before": 0.29888934240362813,
+ "title": "THE PER-BLOCK DECODE BIAS (batch HU-11)",
+ "verdict": "BIAS-PARTIAL"
+}
