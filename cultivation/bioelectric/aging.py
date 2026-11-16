@@ -46,6 +46,9 @@ class AgingParams:
     h_inflam: float = 0.05  # 1/yr local (neighbor) senesced-burden feedback
     seed_rate: float = 1.5e-4  # 1/yr constant baseline damage per cell (sets alpha)
     mortality_k: float = 0.12  # 1/yr vital fragility: death hazard = k * senesced burden
+    hazard_link: str = "linear"  # "linear": k*s (legacy) | "odds": k*s/(1-s)
+    #   The odds link makes a logistic burden s(t) produce an exactly
+    #   exponential hazard (odds of a logistic grow as e^{rate*t}); see P3'.
     frailty_cv: float = 0.20  # gamma frailty on the damage seed (alpha heterogeneity)
     heterogeneity: float = 0.18  # per-individual CV on lambda/kappa
     target0: np.ndarray = field(default=None)  # wild-type pattern; built if None
@@ -189,7 +192,11 @@ class AgingCohort:
         # error-driven senescence term (h0 * exp(excess/soft)), not h_sys.
         # The Gompertz FORM emerges; the RATE is not controlled by h_sys.
         sen_frac = self.senesced.mean(axis=1)
-        death_hazard = p.mortality_k * sen_frac
+        if p.hazard_link == "odds":
+            s_c = np.minimum(sen_frac, 0.995)
+            death_hazard = p.mortality_k * s_c / (1.0 - s_c)
+        else:
+            death_hazard = p.mortality_k * sen_frac
         dd = self.rng.random(self.K)
         died = self.alive & (dd < dt * death_hazard)
         if died.any():

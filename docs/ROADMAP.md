@@ -14,7 +14,11 @@
 - [ ] **Wet-lab collaborator.** Send W1–W4 plus the protocol doc to a planarian lab. W4 is the novel test.
 - [ ] **Shrink the repo.** Approve a history rewrite (`git filter-repo`) to move `results/` (54 MB) and `research/data` (18 MB) to a Zenodo record.
 
+## Round 2 done (docs/PRIMARY_RESULTS_ROUND2.md)
+- [x] P5 robustness: PASS (ε cliff found)
+- [x] P4 information loss: PASS, narrowed
+- [x] P3′ odds link: FAIL, root cause = stochastic single-onset
+
 ## Next science (each must be pre-registered first)
-- **P3′:** an exponential burden-to-hazard link `k·(exp(c·burden) − 1)`; require elasticity(h_sys) ≥ 0.5.
-- **P1 robustness beyond seeds:** a Sobol sweep over γ, g, ε, μ and σ. Report where memory is lost (the phase boundary in ε/γ).
-- **P4 candidate:** "aging = information loss", tested against a noise-matched null with intact coupling.
+- [x] **P6** (round 3): ε × exposure-time threshold. PASS, with collapse at ε·T ≈ 0.65
+- **P3″:** a redundant-subsystem (reliability-theory) aging structure, as the only credible route to a rate-setting mechanism.
