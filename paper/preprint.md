@@ -13,7 +13,7 @@ In a companion aging model, sustained low-dose target correction extends median 
 
 We also report a pre-registered negative result: the aging model yields Gompertz-shaped mortality, but no model parameter sets the Gompertz rate. The cause is the saturating burden-to-hazard link.
 
-We derive four falsifiable wet-lab predictions. The novel one is W4: blocking slow channel re-expression during the perturbation should abolish memory.
+A pre-registered parameter sweep (400 runs) shows the memory is robust to ×0.5–×2 changes in every parameter except θ plasticity, which has a sharp threshold at ε/γ ≈ 0.12 (ε·T_clamp ≈ 0.7). We derive four falsifiable wet-lab predictions. The novel one is W4: blocking slow channel re-expression during the perturbation should abolish memory.
 
 ## 1. Introduction
 Bioelectric patterns carried by gap-junction-coupled tissues instruct large-scale anatomy (Levin 2021). In planaria, transient manipulation produces two-headed animals whose altered target morphology persists across rounds of amputation (Durant et al. 2017).
@@ -49,6 +49,8 @@ See `docs/PRIMARY_RESULTS.md`; all numbers are reproducible with `python -m expe
 
 - **P1 passes all four gates** (p = 9.5 × 10⁻⁷).
 - **P2 passes both gates** (p = 1 × 10⁻⁴).
+- **P5 (robustness) passes:** γ, g, μ and noise ×0.5–×2 give 10/10 rewrites everywhere; ε below ×0.71 abolishes memory; ε = 0 fails in all 20 cells.
+- **P4:** aging-like noise plus junction decay cuts I(V;M) from 1.55 to 0.48 bits, but noise alone accounts for 92% of the loss. Junction decay adds 0.08 bits (CI 0.06–0.10), and only in the presence of noise.
 - **P3 fails.** β falls with h_sys (elasticity −0.16 ± 0.04). The exploratory trace shows why: hazard = k·burden is capped at k, so a faster engine saturates the burden earlier.
 
 ## 5. Discussion

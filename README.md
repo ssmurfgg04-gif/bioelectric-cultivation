@@ -24,6 +24,10 @@
 > P1 target memory **PASS** (20/20 seeds; θ plasticity necessary);
 > P2 sustained > dose-matched one-shot maintenance **PASS**
 > (×1.087 vs ×1.044); P3 Gompertz-rate repair **FAIL** (diagnosed).
+> Round 2 ([docs/PRIMARY_RESULTS_ROUND2.md](docs/PRIMARY_RESULTS_ROUND2.md)):
+> P5 memory robust to parameters **PASS** (only ε matters); P4 information
+> loss beyond noise **PASS, small** (+0.08 bits; noise explains 92%);
+> P3′ odds-link Gompertz repair **FAIL** (single-onset dynamics).
 > Draft preprint: [paper/preprint.md](paper/preprint.md).
 >
 > Earlier status banners ("PROJECT COMPLETE", "101% PASSED") are retired.

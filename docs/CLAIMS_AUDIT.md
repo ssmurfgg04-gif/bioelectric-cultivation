@@ -22,6 +22,9 @@ This audit re-checks the README's headline claims against the code and the depos
 | A10 | Target memory needs θ plasticity (P1) | **CONFIRMED** (pre-registered) | exp448: 20/20, ε=0 ablation 0/20 |
 | A11 | Sustained > one-shot maintenance (P2) | **CONFIRMED** (pre-registered) | exp449 |
 | A12 | A mechanism sets the Gompertz rate (P3) | **REFUTED** (pre-registered) | exp450, exp451 |
+| A13 | P1 memory robust to parameters (P5) | **CONFIRMED** — sensitive only to ε (cliff at ε/γ ≈ 0.12) | exp453 |
+| A14 | Aging = information loss beyond noise (P4) | **CONFIRMED but narrowed** — GJ decay adds 0.08 bits; noise explains 92% | exp454 |
+| A15 | Odds hazard link sets the Gompertz rate (P3′) | **REFUTED** — stochastic single-onset dynamics flatten hazard | exp452, exp455 |
 
 ---
 
