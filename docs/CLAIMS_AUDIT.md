@@ -19,6 +19,9 @@ This audit re-checks the README's headline claims against the code and the depos
 | A7 | Stage scores "95% / 101% PASSED" | **WITHDRAWN** | no definition of the percentages exists |
 | A8 | Level-1 planarian memory and cancer-normalisation reproductions | **STANDS** (qualitative) | tests green; structure matches Durant 2017 / Chernet & Levin 2015 |
 | A9 | RS/GF(256) codec layer | **STANDS** | unit tests |
+| A10 | Target memory needs θ plasticity (P1) | **CONFIRMED** (pre-registered) | exp448: 20/20, ε=0 ablation 0/20 |
+| A11 | Sustained > one-shot maintenance (P2) | **CONFIRMED** (pre-registered) | exp449 |
+| A12 | A mechanism sets the Gompertz rate (P3) | **REFUTED** (pre-registered) | exp450, exp451 |
 
 ---
 
