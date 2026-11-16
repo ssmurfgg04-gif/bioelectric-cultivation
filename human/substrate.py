@@ -1,5 +1,11 @@
 """The human substrate ingestion layer (real HCP data, zero knobs).
 
+SCOPE NOTE (review 2026-11-16, docs/CLAIMS_AUDIT.md A5): the input is
+HCP group-average FUNCTIONAL connectivity (BOLD correlations), not a
+structural connectome. Using it as gap-junction conductance makes the
+runs below a graph-robustness test of the planarian model. They are
+not evidence of transfer to human physiology.
+
 THE PRE-REGISTERED PREPROCESSING RULE (frozen at the exp401
 pre-registration commit; every step deterministic, nothing tuned to
 the outcome):
