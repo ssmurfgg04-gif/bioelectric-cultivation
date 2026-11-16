@@ -20,6 +20,12 @@
 > - **Post-hoc:** exp443's calibrated falsifier is tautological. d-02
 >   failed its original gate (exp437).
 >
+> **Pre-registered primaries** ([docs/PRIMARY_RESULTS.md](docs/PRIMARY_RESULTS.md)):
+> P1 target memory **PASS** (20/20 seeds; θ plasticity necessary);
+> P2 sustained > dose-matched one-shot maintenance **PASS**
+> (×1.087 vs ×1.044); P3 Gompertz-rate repair **FAIL** (diagnosed).
+> Draft preprint: [paper/preprint.md](paper/preprint.md).
+>
 > Earlier status banners ("PROJECT COMPLETE", "101% PASSED") are retired.
 > The roadmap is in [docs/ROADMAP.md](docs/ROADMAP.md).
 > **Run:** `python3 -m tests.run_tests`.
