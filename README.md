@@ -28,6 +28,8 @@
 > P5 memory robust to parameters **PASS** (only ε matters); P4 information
 > loss beyond noise **PASS, small** (+0.08 bits; noise explains 92%);
 > P3′ odds-link Gompertz repair **FAIL** (single-onset dynamics).
+> Round 3: P6 memory threshold = plasticity × exposure time **PASS**
+> (collapse at ε·T ≈ 0.65; [docs/PRIMARY_RESULTS_ROUND3.md](docs/PRIMARY_RESULTS_ROUND3.md)).
 > Draft preprint: [paper/preprint.md](paper/preprint.md).
 >
 > Earlier status banners ("PROJECT COMPLETE", "101% PASSED") are retired.

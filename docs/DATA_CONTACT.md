@@ -14,6 +14,8 @@ These are model predictions, stated before any wet-lab data. Translating clamp m
 | W2 | A rewrite that survives one re-cut survives the next (P1 arm A: 20/20 after 2 rounds) | persistence decays across successive re-cuts |
 | W3 | GJ block *alone* does not rewrite (arm B: 0/20) | GJ block alone yields head-likeness comparable to arm A |
 | W4 | Blocking the slow re-setting of resting potential (the θ analogue, e.g. inhibiting ion-channel transcription during the exposure) **abolishes** persistence (arm C: 0/20) | persistence survives transcriptional block of channel expression |
+| W5 | Two-headed probability is a steep function of exposure **duration** at a fixed dose. Slowing resting-potential re-setting shifts the duration curve right by the same factor (model: collapse at ε·T ≈ 0.65, exp456) | the duration curve is flat, or the shift is not proportional |
+
 
 W4 is the one prediction the model makes that the original experiments do not already contain. It is the experiment worth proposing to a collaborator.
 

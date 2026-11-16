@@ -9,6 +9,7 @@
 | exp452_p3prime_odds_link.py | P3′ odds hazard link | FAIL |
 | exp453_p5_p1_robustness.py | P5 P1 parameter robustness | PASS |
 | exp454_p4_information_loss.py | P4 information loss beyond noise | PASS (small) |
+| exp456_p6_eps_time.py | P6 ε × exposure-time threshold | PASS |
 
 ## Review diagnostics
 | Script | Purpose |

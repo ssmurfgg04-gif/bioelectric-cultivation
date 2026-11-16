@@ -20,5 +20,5 @@
 - [x] P3′ odds link: FAIL, root cause = stochastic single-onset
 
 ## Next science (each must be pre-registered first)
-- **W5 → P6:** test that the memory threshold depends on ε × exposure time (duration sweep at fixed dose).
+- [x] **P6** (round 3): ε × exposure-time threshold. PASS, with collapse at ε·T ≈ 0.65
 - **P3″:** a redundant-subsystem (reliability-theory) aging structure, as the only credible route to a rate-setting mechanism.
