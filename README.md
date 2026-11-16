@@ -1,42 +1,29 @@
 # bioelectric-cultivation
 
-> ## ✅ PROJECT COMPLETE (2026-09-21) · 🌉 HUMAN EXTENSION CLOSED (2026-09-27)
+> ## Status (2026-11-16): exploratory simulation toolkit, claims under audit
 >
-> The project closed cleanly (the gap session documented the search and
-> ran the last candidates — L1 → L294). The **human extension** then
-> crossed the species bridge by mining real human data only —
-> **Outcome B, PARTIAL TRANSFER** (L295 → L301):
+> This repository is a **simulation toolkit plus a set of open
+> hypotheses**. It is not a completed result. An external review
+> ([docs/CLAIMS_AUDIT.md](docs/CLAIMS_AUDIT.md)) re-checked the headline
+> claims:
 >
-> - The model runs on the real HCP connectome (Schaefer-400) with
->   zero re-tuning, bit-exact at the planarian anchors (exp401).
-> - **Transfers in direction/shape/class/range**: the fidelity–stability
->   envelope (real two-night EEG), the history register's protection
->   (P = +1.06 mV under stress — the preconditioning direction), the
->   two-channel voltage gating (the responder sweep through the
->   literature band; the real LF/HF day-night shift), the deadline
->   window's shape (the model's τ* finite; Lees 2010's decay).
-> - **Does not transfer**: the composition law's class — additive on
->   the human graph (agreeing with Celnik 2009's human data) where the
->   planarian stack was super-additive. The grammar is species-general;
->   the numbers are species-specific.
-> - Read **[docs/HUMAN_EXTENSION.md](docs/HUMAN_EXTENSION.md)** for the
->   outcome determination; the ledger is
->   **[docs/FALSIFICATION.md](docs/FALSIFICATION.md)** (L1 → L301).
+> - **Stands:** the Level-1 qualitative reproductions (planarian
+>   two-head memory, cancer normalisation), the Gompertz *form* of
+>   emergent mortality, and the RS/GF(256) codec layer.
+> - **Withdrawn:** "β ≈ 0.09/yr, the human range". With the
+>   truncation-corrected fit, β = 0.054 and no model parameter controls
+>   it (exp447). Also withdrawn: the cross-species ρ = 1.00 (the presets
+>   are ordered by lifespan by construction) and the stage percentages.
+> - **Narrowed:** the "human extension" runs on HCP *functional
+>   connectivity*, not a connectome. It is a graph-robustness test, not
+>   evidence of human transfer.
+> - **Post-hoc:** exp443's calibrated falsifier is tautological. d-02
+>   failed its original gate (exp437).
 >
-> - **5 stages** at their achieved maximum (Map 95% / Validate 90% /
->   Engineer 95% with 101% PASSED / Expand 90% / Transfer 90%).
-> - **The reframed star crossed**: the universal reader + the universal
->   substrate, bit-exact.
-> - **The breakthrough**: the self-history register — the first
->   non-inert channel — characterized end-to-end (exp289–304); the
->   composed carrier makes write-time ionic stress decode-invisible
->   (+13.13 mV protection, ~18× the single register's, exp302).
-> - **The honest negative**: the zero-substrate star is blocked at
->   8 formalizations — the write product is a complete representation
->   *relative to its own wiring* (0.05 mV!) and transports *nowhere*
->   (0/130 cross-wirings, exp303/304). The binding is the indexation.
-> - **Run:** `python3 -m tests.run_tests` (67+ tests green + the
->   deposit/safety sweep).
+> Earlier status banners ("PROJECT COMPLETE", "101% PASSED") are retired.
+> The roadmap is in [docs/ROADMAP.md](docs/ROADMAP.md).
+> **Run:** `python3 -m tests.run_tests`.
+
 
 
 **A computational research framework for bioelectric morphogenesis, aging-as-attractor-degradation, and inverse design of bioelectric interventions.**
@@ -141,8 +128,8 @@ python -m experiments.exp7_stress --shard 0/4 --out results/   # sharded sweep
 **Level 1 — reproducing known biology: 9/9 PASS.** Two-headed planarian reprogramming with memory across amputations + dose-response + GJ-block negative control (Durant et al. 2017 structure); the full cancer-normalization matrix including the long-range gap-junction requirement and the locked-driver boundary (Chernet & Levin 2015 structure).
 
 **Level 2 — the aging hypothesis: 7 PASS + 5 diagnosed negatives (2 now resolved).**
-- Gompertz-form mortality EMERGES and wins the pre-saturation window (all seeds); Weibull edges the full adult window; mean fitted beta across the 162-run sweep: **0.090/yr** — the empirical human range.
-- Cross-species: Spearman **rho = 1.00** (mouse, rat, naked mole rat, human, bowhead; hydra negligible senescence by preset), robust to +-20% jitter. Documented limitation: Gompertz-family ratio compression (Strehler-Mildvan).
+- Gompertz-form mortality EMERGES and wins the pre-saturation window (all seeds); Weibull edges the full adult window; mean fitted beta across the 162-run sweep: 0.090/yr. *[WITHDRAWN 2026-11-16: that fit ignored left truncation; the corrected β is 0.054 and is not controlled by any model parameter. See exp447 / docs/CLAIMS_AUDIT.md A2.]*
+- Cross-species: Spearman **rho = 1.00** (mouse, rat, naked mole rat, human, bowhead; hydra negligible senescence by preset), robust to +-20% jitter. *[WITHDRAWN as evidence: presets are monotone in lifespan by construction. See CLAIMS_AUDIT A4.]* Documented limitation: Gompertz-family ratio compression (Strehler-Mildvan).
 - I(V;M): **1.55 -> 0.83 bits** as the gap-junction denoiser degrades (aging = information loss, measured).
 - Phi: peaks at intermediate coupling, ~0 for modular systems; **0.12 bits mean on real C. elegans gap-junction motifs** (Cook et al. 2019 connectome).
 - Maintenance: error-corrected write-back extends median lifespan **x1.08-1.10** single-cohort, **x1.13 mean across the 162-run parameter sweep** (24 GitHub runners). One-shot mid-life correction gains nothing; sustained practice does.

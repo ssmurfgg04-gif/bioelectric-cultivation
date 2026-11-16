@@ -41,7 +41,8 @@ class AgingParams:
     margin: float = 6.0  # mV beyond healthy envelope before hazard rises
     soft: float = 2.5  # mV hazard softness
     h0: float = 0.05  # 1/yr hazard scale at envelope edge
-    h_sys: float = 0.10  # 1/yr SYSTEMIC inflammaging feedback (the Gompertz engine)
+    h_sys: float = 0.10  # 1/yr SYSTEMIC inflammaging feedback (intended as the
+    #                      Gompertz engine; exp3/exp447 show beta barely tracks it)
     h_inflam: float = 0.05  # 1/yr local (neighbor) senesced-burden feedback
     seed_rate: float = 1.5e-4  # 1/yr constant baseline damage per cell (sets alpha)
     mortality_k: float = 0.12  # 1/yr vital fragility: death hazard = k * senesced burden
@@ -180,10 +181,13 @@ class AgingCohort:
         self._newly_senesced = newly
 
         # death as a HAZARD proportional to senesced burden (not a threshold):
-        # mu_i(t) = k * sen_frac_i(t) ~ k*(s/h)(e^{h t}-1)  =>  Gompertz with
-        # beta = h_sys, alpha = k*s/h^2. Threshold-crossing timing would give
-        # lognormal/Weibull shapes; the hazard formulation gives exact
-        # Gompertz in the adult window and saturation-deceleration late.
+        # mu_i(t) = k * sen_frac_i(t). The ORIGINAL design intent was
+        # sen_frac ~ (s/h)(e^{h t}-1) => Gompertz with beta = h_sys.
+        # MEASURED (exp3 C2 = False; exp447 sensitivity): this does NOT
+        # hold at defaults — the fitted adult beta is ~0.075-0.08/yr and
+        # nearly flat across h_sys in [0.04, 0.16]. The slope is set by the
+        # error-driven senescence term (h0 * exp(excess/soft)), not h_sys.
+        # The Gompertz FORM emerges; the RATE is not controlled by h_sys.
         sen_frac = self.senesced.mean(axis=1)
         death_hazard = p.mortality_k * sen_frac
         dd = self.rng.random(self.K)
@@ -228,10 +232,16 @@ class AgingCohort:
 
 
 # --------------------------------------------------------------------- fitting
-def hazard_and_fits(death_ages: np.ndarray, years: float, dt: float = 0.25) -> dict:
+def hazard_and_fits(death_ages: np.ndarray, years: float, dt: float = 0.25,
+                    entry: float = 0.0) -> dict:
     """Nelson-Aalen hazard + MLE fits (Gompertz / Weibull / lognormal / Gompertz-Makeham).
 
     death_ages: inf = censored (still alive at end). Lower AIC wins.
+    entry: left-truncation age. When the sample is restricted to people
+    alive at `entry` (e.g. an adult window starting at 35), the likelihood
+    must condition on survival to `entry`: every log-likelihood subtracts
+    log S(entry) per individual. entry=0 (default) is bit-exact with the
+    legacy behaviour.
     """
     from scipy.optimize import minimize
     from scipy.stats import norm
@@ -271,6 +281,27 @@ def hazard_and_fits(death_ages: np.ndarray, years: float, dt: float = 0.25) -> d
         ll += n_cens * (-H(years))
         return -ll
 
+    n_tot = obs.size + n_cens
+
+    def _cumhaz(name, x, t):
+        if t <= 0.0:
+            return 0.0
+        if name == "gompertz":
+            a, b = np.exp(x[0]), np.exp(x[1])
+            return (a / b) * (np.exp(b * t) - 1.0)
+        if name == "weibull":
+            s_, k_ = np.exp(x[0]), np.exp(x[1])
+            return (t / s_) ** k_
+        if name == "lognormal":
+            return -float(norm.logsf((np.log(t) - x[0]) / np.exp(x[1])))
+        a, b, c = np.exp(x[0]), np.exp(x[1]), np.exp(x[2])
+        return (a / b) * (np.exp(b * t) - 1.0) + c * t
+
+    def _truncated(name, fn):
+        if entry <= 0.0:
+            return fn
+        return lambda x: fn(x) - n_tot * _cumhaz(name, x, entry)
+
     fits = {}
     specs = {
         "gompertz": (loglik_gompertz, [np.log(0.01), np.log(0.08)], 2),
@@ -279,6 +310,7 @@ def hazard_and_fits(death_ages: np.ndarray, years: float, dt: float = 0.25) -> d
         "gompertz_makeham": (loglik_gm, [np.log(0.01), np.log(0.08), np.log(1e-4)], 3),
     }
     for name, (fn, x0, k) in specs.items():
+        fn = _truncated(name, fn)
         try:
             res = minimize(fn, x0, method="Nelder-Mead",
                            options={"xatol": 1e-6, "fatol": 1e-6, "maxiter": 2000})

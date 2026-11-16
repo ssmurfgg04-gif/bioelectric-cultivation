@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""exp443 — THE SUBSTRATE-CALIBRATED FALSIFIER FOR d-02 (batch HU-14;
+"""REVIEW NOTE (2026-11-16, docs/CLAIMS_AUDIT.md A6): this gate is
+TAUTOLOGICAL. The kill window is (achieved - band), and G3 tests
+achieved >= window, which holds for any achieved value when band > 0.
+The verdict CALIBRATED-AND-ALIVE carries no evidential weight; d-02
+failed its original non-circular gate in exp437. Kept for the record.
+
+exp443 — THE SUBSTRATE-CALIBRATED FALSIFIER FOR d-02 (batch HU-14;
 exp437's pre-named repair). exp437 deposited the minimal falsifiable
 wet-lab test and exposed the in-silico tension: the sim's arms land
 at contrast 7.41-7.86 mV, below the 9.42 bar derived from exp416's

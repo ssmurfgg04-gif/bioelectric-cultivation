@@ -1,0 +1,10 @@
+# Exact environment in which the 2026-11-16 review re-ran the test suite
+# and exp447 (Python 3.13). "Bit-exact" claims are only meaningful against
+# a pinned environment: NumPy RNG streams and BLAS builds change results.
+# Install with: pip install -r requirements-lock.txt
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+networkx==3.7
+pandas==3.0.5
