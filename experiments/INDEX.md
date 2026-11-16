@@ -10,6 +10,7 @@
 | exp453_p5_p1_robustness.py | P5 P1 parameter robustness | PASS |
 | exp454_p4_information_loss.py | P4 information loss beyond noise | PASS (small) |
 | exp456_p6_eps_time.py | P6 ε × exposure-time threshold | PASS |
+| exp457_p7_escape.py | P7 what must be repaired for escape | PASS |
 
 ## Review diagnostics
 | Script | Purpose |

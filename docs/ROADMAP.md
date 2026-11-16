@@ -19,6 +19,11 @@
 - [x] P4 information loss: PASS, narrowed
 - [x] P3′ odds link: FAIL, root cause = stochastic single-onset
 
+- [x] **P7** (round 4): escape in the model needs state + clock repair; synergy found
+- [x] README cut to 65 lines; the night-by-night log moved to docs/HISTORY.md; censoring-aware median added
+
 ## Next science (each must be pre-registered first)
+- **P8: repair-budget frontier.** Minimum repair frequency and completeness for escape (partial clock reset, partial clearance). This gives the trade-off curve a real therapy would have to hit.
+- **P9: which biological quantity is the "clock"?** Separate junction loss (λ) from noise growth (κ) repair to find which one carries the synergy.
 - [x] **P6** (round 3): ε × exposure-time threshold. PASS, with collapse at ε·T ≈ 0.65
 - **P3″:** a redundant-subsystem (reliability-theory) aging structure, as the only credible route to a rate-setting mechanism.
