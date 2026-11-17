@@ -24,6 +24,7 @@
 
 ## Next science (each must be pre-registered first)
 - [x] **P8/P9** (round 5): frontier = ≥75% every 10 yr; the noise clock carries the effect, junction loss is irrelevant
-- **Next: P10.** In the current model, noise growth is purely time-driven (σ₀·e^{κt}) *by construction*, so state repair cannot touch it. P10 would add a feedback (noise grows with accumulated damage) and test whether state repair alone then slows the noise clock. That would decide whether a separate noise-reset therapy is needed.
+- [x] **P10** (round 6): FAIL, near miss. Damage repair alone reaches 47% alive at φ = 0.9; a noise reset is still needed
+- **Key biological unknown:** the damage-driven fraction φ of age-related noise. Proposed measurement: does senolytic clearance slow epigenetic-clock drift, and by how much?
 - [x] **P6** (round 3): ε × exposure-time threshold. PASS, with collapse at ε·T ≈ 0.65
 - **P3″:** a redundant-subsystem (reliability-theory) aging structure, as the only credible route to a rate-setting mechanism.

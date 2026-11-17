@@ -28,6 +28,7 @@ This audit re-checks the README's headline claims against the code and the depos
 | A17 | Model escape (negligible senescence) needs state + clock repair together (P7) | **CONFIRMED in-model** | exp457 |
 | A18 | Escape needs ≥75% repair every 10 yr; partial repair sub-proportional (P8) | **CONFIRMED in-model** | exp458 |
 | A19 | The noise clock, not junction loss, carries the synergy (P9) | **CONFIRMED in-model** | exp459 |
+| A20 | With damage→noise feedback, state repair alone escapes (P10) | **NOT CONFIRMED** (near miss: 47% alive at φ = 0.9) | exp460 |
 | A15 | Odds hazard link sets the Gompertz rate (P3′) | **REFUTED** — stochastic single-onset dynamics flatten hazard | exp452, exp455 |
 
 ---

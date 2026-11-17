@@ -36,6 +36,9 @@
 > Round 5: the synergy is state × **noise** (junction loss is irrelevant to
 > lifespan); escape needs ≥75%-complete repair every 10 yr
 > ([docs/PRIMARY_RESULTS_ROUND5.md](docs/PRIMARY_RESULTS_ROUND5.md)).
+> Round 6: even if 90% of noise is damage-driven, damage repair alone
+> reaches only 47% alive at 300 yr. P10 **FAIL** (near miss); a noise
+> reset is still needed ([docs/PRIMARY_RESULTS_ROUND6.md](docs/PRIMARY_RESULTS_ROUND6.md)).
 > Draft preprint: [paper/preprint.md](paper/preprint.md).
 >
 > Earlier status banners ("PROJECT COMPLETE", "101% PASSED") are retired.
