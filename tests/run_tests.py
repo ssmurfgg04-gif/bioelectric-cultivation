@@ -13,6 +13,8 @@ def main() -> int:
     test_fidelity.main()
     from tests import test_d3_semantics
     test_d3_semantics.main()
+    from tests import test_reliability
+    test_reliability.main()
     from tests import test_survival_fit
     test_survival_fit.main()
     from tests import test_vmem_inference
