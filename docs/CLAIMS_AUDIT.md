@@ -25,9 +25,16 @@ This audit re-checks the README's headline claims against the code and the depos
 | A13 | P1 memory robust to parameters (P5) | **CONFIRMED** — sensitive only to ε (cliff at ε/γ ≈ 0.12) | exp453 |
 | A14 | Aging = information loss beyond noise (P4) | **CONFIRMED but narrowed** — GJ decay adds 0.08 bits; noise explains 92% | exp454 |
 | A16 | Memory threshold set by ε × exposure time (P6) | **CONFIRMED** (pre-registered) — collapses at ε·T ≈ 0.65 | exp456 |
+| A17 | Model escape (negligible senescence) needs state + clock repair together (P7) | **CONFIRMED in-model** | exp457 |
+| A18 | Escape needs ≥75% repair every 10 yr; partial repair sub-proportional (P8) | **CONFIRMED in-model** | exp458 |
+| A19 | The noise clock, not junction loss, carries the synergy (P9) | **CONFIRMED in-model** | exp459 |
+| A20 | With damage→noise feedback, state repair alone escapes (P10) | **NOT CONFIRMED** (near miss: 47% alive at φ = 0.9) | exp460 |
 | A15 | Odds hazard link sets the Gompertz rate (P3′) | **REFUTED** — stochastic single-onset dynamics flatten hazard | exp452, exp455 |
 
 ---
+
+## Note on `median_lifespan` (fixed 2026-11-16)
+The legacy `summary()['median_lifespan']` is the median of *observed deaths only*, so it is biased low when individuals survive to the end of a run. `median_lifespan_km` is the censoring-aware replacement. P2 (exp449) used the legacy field, but no sustained-arm median exceeded 78 yr in a 130-yr run, so its conclusions are unaffected.
 
 ## A2/A3: what sets the Gompertz slope (exp447)
 

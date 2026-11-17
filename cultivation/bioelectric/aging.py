@@ -36,6 +36,9 @@ class AgingParams:
     mu_theta: float = 0.003  # slow pattern smoothing (boundaries persist for decades)
     lambda_gap: float = 0.030  # 1/yr — gap junction decay
     kappa_noise: float = 0.048  # 1/yr — noise growth
+    noise_kappa_damage: float = 0.0  # damage->noise feedback: sigma also grows
+    #   as exp(noise_kappa_damage * D), D = integral of senesced fraction
+    #   (cumulative damage dose). 0 = legacy, purely time-driven noise.
     sigma0: float = 0.20  # mV / sqrt(yr) at t=0
     theta_drift: float = 0.045  # mV / sqrt(yr) target diffusion
     margin: float = 6.0  # mV beyond healthy envelope before hazard rises
@@ -95,6 +98,15 @@ class AgingCohort:
         fcv = self.p.frailty_cv
         self.frailty = self.rng.gamma(shape=1.0 / fcv**2, scale=fcv**2, size=K)
         self.t = 0.0
+        # per-individual "biological clock" offset for the time-driven decay
+        # (junction loss, noise growth). Effective age = t - clock_offset.
+        # Zero by default (bit-exact); rejuvenation interventions raise it.
+        self.clock_offset = np.zeros(K)
+        # channel-specific offsets (added to clock_offset): junction-loss
+        # clock and noise-growth clock can be repaired separately (P9).
+        self.gap_offset = np.zeros(K)
+        self.noise_offset = np.zeros(K)
+        self.damage_dose = np.zeros(K)  # integral of senesced fraction (yr)
 
         # healthy operating envelope: per-cell baseline |V - theta| at t=0
         # (boundary cells legitimately sit between head and trunk levels —
@@ -142,8 +154,11 @@ class AgingCohort:
              theta_pull: np.ndarray | None = None) -> None:
         p = self.p
         t = self.t
-        g = np.exp(-self.lam * t) * p.g0 if g_override is None else g_override
-        sigma = p.sigma0 * np.exp(self.kap * t)
+        t_bio = t - self.clock_offset
+        g = (np.exp(-self.lam * (t_bio - self.gap_offset)) * p.g0
+             if g_override is None else g_override)
+        sigma = p.sigma0 * np.exp(self.kap * (t_bio - self.noise_offset)
+                                  + p.noise_kappa_damage * self.damage_dose)
 
         self._integrate(dt, g, sigma)
 
@@ -192,6 +207,7 @@ class AgingCohort:
         # error-driven senescence term (h0 * exp(excess/soft)), not h_sys.
         # The Gompertz FORM emerges; the RATE is not controlled by h_sys.
         sen_frac = self.senesced.mean(axis=1)
+        self.damage_dose += dt * sen_frac * self.alive
         if p.hazard_link == "odds":
             s_c = np.minimum(sen_frac, 0.995)
             death_hazard = p.mortality_k * s_c / (1.0 - s_c)
@@ -223,6 +239,11 @@ class AgingCohort:
                 self.hist_sen.append(float(sen_frac))
         return self.summary()
 
+    def _km_median(self) -> float:
+        d = np.sort(self.death_age[np.isfinite(self.death_age)])
+        half = self.K / 2.0
+        return float(d[int(np.ceil(half)) - 1]) if d.size >= half else float("inf")
+
     def summary(self) -> dict:
         ages = np.where(np.isinf(self.death_age), np.nan, self.death_age)
         return {
@@ -230,6 +251,12 @@ class AgingCohort:
             "median_lifespan": float(np.nanmedian(ages)) if np.any(~np.isnan(ages)) else float("inf"),
             "max_lifespan": float(np.nanmax(ages)) if np.any(~np.isnan(ages)) else float("inf"),
             "survivors_at_end": int(self.alive.sum()),
+            # censoring-aware median (Kaplan-Meier with no entry/loss: the
+            # age at which half the ORIGINAL cohort has died; inf if more
+            # than half survive). "median_lifespan" above is the legacy
+            # median of observed deaths only and is biased low when
+            # survivors remain at the end of the run.
+            "median_lifespan_km": self._km_median(),
             "death_ages": self.death_age.tolist(),
             "hist_t": self.hist_t,
             "hist_alive": self.hist_alive,

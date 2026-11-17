@@ -10,6 +10,10 @@
 | exp453_p5_p1_robustness.py | P5 P1 parameter robustness | PASS |
 | exp454_p4_information_loss.py | P4 information loss beyond noise | PASS (small) |
 | exp456_p6_eps_time.py | P6 ε × exposure-time threshold | PASS |
+| exp457_p7_escape.py | P7 what must be repaired for escape | PASS |
+| exp458_p8_repair_frontier.py | P8 repair-budget frontier | PASS |
+| exp459_p9_which_clock.py | P9 noise clock carries synergy | PASS |
+| exp460_p10_noise_feedback.py | P10 damage→noise feedback, state repair alone | FAIL (near miss) |
 
 ## Review diagnostics
 | Script | Purpose |
