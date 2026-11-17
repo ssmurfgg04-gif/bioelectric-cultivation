@@ -26,6 +26,8 @@ This audit re-checks the README's headline claims against the code and the depos
 | A14 | Aging = information loss beyond noise (P4) | **CONFIRMED but narrowed** — GJ decay adds 0.08 bits; noise explains 92% | exp454 |
 | A16 | Memory threshold set by ε × exposure time (P6) | **CONFIRMED** (pre-registered) — collapses at ε·T ≈ 0.65 | exp456 |
 | A17 | Model escape (negligible senescence) needs state + clock repair together (P7) | **CONFIRMED in-model** | exp457 |
+| A18 | Escape needs ≥75% repair every 10 yr; partial repair sub-proportional (P8) | **CONFIRMED in-model** | exp458 |
+| A19 | The noise clock, not junction loss, carries the synergy (P9) | **CONFIRMED in-model** | exp459 |
 | A15 | Odds hazard link sets the Gompertz rate (P3′) | **REFUTED** — stochastic single-onset dynamics flatten hazard | exp452, exp455 |
 
 ---

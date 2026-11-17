@@ -33,6 +33,9 @@
 > Round 4: P7 negligible senescence in the model needs **both** state
 > repair and clock repair. Either alone adds ~25–30 yr; both every 10 yr →
 > 83% alive at 300 yr ([docs/PRIMARY_RESULTS_ROUND4.md](docs/PRIMARY_RESULTS_ROUND4.md)).
+> Round 5: the synergy is state × **noise** (junction loss is irrelevant to
+> lifespan); escape needs ≥75%-complete repair every 10 yr
+> ([docs/PRIMARY_RESULTS_ROUND5.md](docs/PRIMARY_RESULTS_ROUND5.md)).
 > Draft preprint: [paper/preprint.md](paper/preprint.md).
 >
 > Earlier status banners ("PROJECT COMPLETE", "101% PASSED") are retired.

@@ -23,7 +23,7 @@
 - [x] README cut to 65 lines; the night-by-night log moved to docs/HISTORY.md; censoring-aware median added
 
 ## Next science (each must be pre-registered first)
-- **P8: repair-budget frontier.** Minimum repair frequency and completeness for escape (partial clock reset, partial clearance). This gives the trade-off curve a real therapy would have to hit.
-- **P9: which biological quantity is the "clock"?** Separate junction loss (λ) from noise growth (κ) repair to find which one carries the synergy.
+- [x] **P8/P9** (round 5): frontier = ≥75% every 10 yr; the noise clock carries the effect, junction loss is irrelevant
+- **Next: P10.** In the current model, noise growth is purely time-driven (σ₀·e^{κt}) *by construction*, so state repair cannot touch it. P10 would add a feedback (noise grows with accumulated damage) and test whether state repair alone then slows the noise clock. That would decide whether a separate noise-reset therapy is needed.
 - [x] **P6** (round 3): ε × exposure-time threshold. PASS, with collapse at ε·T ≈ 0.65
 - **P3″:** a redundant-subsystem (reliability-theory) aging structure, as the only credible route to a rate-setting mechanism.
