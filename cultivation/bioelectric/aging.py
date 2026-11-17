@@ -99,6 +99,10 @@ class AgingCohort:
         # (junction loss, noise growth). Effective age = t - clock_offset.
         # Zero by default (bit-exact); rejuvenation interventions raise it.
         self.clock_offset = np.zeros(K)
+        # channel-specific offsets (added to clock_offset): junction-loss
+        # clock and noise-growth clock can be repaired separately (P9).
+        self.gap_offset = np.zeros(K)
+        self.noise_offset = np.zeros(K)
 
         # healthy operating envelope: per-cell baseline |V - theta| at t=0
         # (boundary cells legitimately sit between head and trunk levels —
@@ -147,8 +151,9 @@ class AgingCohort:
         p = self.p
         t = self.t
         t_bio = t - self.clock_offset
-        g = np.exp(-self.lam * t_bio) * p.g0 if g_override is None else g_override
-        sigma = p.sigma0 * np.exp(self.kap * t_bio)
+        g = (np.exp(-self.lam * (t_bio - self.gap_offset)) * p.g0
+             if g_override is None else g_override)
+        sigma = p.sigma0 * np.exp(self.kap * (t_bio - self.noise_offset))
 
         self._integrate(dt, g, sigma)
 
