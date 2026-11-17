@@ -75,3 +75,22 @@ The readout is tail head-likeness at the end.
 ## Not doable from code (recorded)
 - **OSF registration:** Jack has to register these files at osf.io; the git commit hash is the interim timestamp.
 - **Independent human review:** still pending.
+
+---
+
+# Amendment A, frozen after P13 FAILED and before any P13′, P11 or P12 run
+
+**P13 result.** FAIL, with 0/150 parameter sets accepted. Exploratory diagnosis: at median ≈ 80, β is always ≥ 0.106. The homogeneous model concentrates deaths too tightly.
+
+**Code added.** `ReliabilityParams.k_cv`, a gamma frailty on each individual's failure rate (the standard demographic heterogeneity term; Vaupel et al. 1979). Default 0 is bit-exact.
+
+## P13′: frailty-extended fit (exp461b)
+Same targets, held-out observable, seeds, K and gates as P13 (G13a, G13b), with a new grid:
+- n ∈ {2, 4, 8}
+- λ ∈ {300, 1000, 3000}
+- k ∈ {0.04, 0.06, 0.08, 0.10, 0.12}
+- k_cv ∈ {0.1, 0.2, 0.3, 0.5}
+
+The calibration seed is 1101 (new). P13′ is labelled a **repair of a failed primary**. Even if it passes, the paper reports P13 as FAIL alongside it.
+
+**P11 and P12** use the P13′ best fit, including its k_cv. If P13′ accepts nothing, they use n = 8, λ = 1000, k = 0.06, k_cv = 0.

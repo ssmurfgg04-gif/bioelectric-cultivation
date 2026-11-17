@@ -36,6 +36,7 @@ class ReliabilityParams:
     k: float = 0.085       # 1/yr element failure rate
     mu_ext: float = 0.0    # 1/yr extrinsic (age-independent) hazard
     harm: float = 0.0      # 1/yr permanent hazard added per repair event
+    k_cv: float = 0.0      # gamma-frailty CV of the per-individual failure rate
 
     def with_updates(self, **kw) -> "ReliabilityParams":
         return replace(self, **kw)
@@ -52,7 +53,11 @@ def simulate(p: ReliabilityParams, K: int, years: float, seed: int,
     alive = (cur > 0).all(axis=1)
     death[~alive] = 0.0
     extra = np.zeros(K)
-    q = 1.0 - np.exp(-p.k * dt)
+    if p.k_cv > 0:
+        ki = p.k * rng.gamma(1.0 / p.k_cv ** 2, p.k_cv ** 2, size=K)
+    else:
+        ki = np.full(K, p.k)
+    q = 1.0 - np.exp(-ki * dt)
     steps = int(round(years / dt))
     next_rep = repair_start
     for i in range(1, steps + 1):
@@ -60,7 +65,7 @@ def simulate(p: ReliabilityParams, K: int, years: float, seed: int,
         idx = np.where(alive)[0]
         if idx.size == 0:
             break
-        cur[idx] -= rng.binomial(cur[idx], q)
+        cur[idx] -= rng.binomial(cur[idx], q[idx][:, None])
         dead_blk = (cur[idx] == 0).any(axis=1)
         haz = p.mu_ext + extra[idx]
         dead_ext = rng.random(idx.size) < 1.0 - np.exp(-haz * dt)
