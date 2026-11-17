@@ -22,7 +22,12 @@
 - [x] **P7** (round 4): escape in the model needs state + clock repair; synergy found
 - [x] README cut to 65 lines; the night-by-night log moved to docs/HISTORY.md; censoring-aware median added
 
+- [x] **Round 7:** reliability model (650× faster), first real-data contact (Barbi 2018 plateau), repair with harm, 2D tissue. 5/5 FAIL as frozen; 2D memory decay found
+
 ## Next science (each must be pre-registered first)
+- **TOP: bistable cells.** Add voltage-gated nonlinearity so rewritten patterns are true attractors; re-test P1 and P14 in 2D/3D.
+- **Gompertz-regime reliability model:** small λ, many elements; match the plateau level of 0.7.
+- **Optimal-control repair scheduling** on the fast model.
 - [x] **P8/P9** (round 5): frontier = ≥75% every 10 yr; the noise clock carries the effect, junction loss is irrelevant
 - [x] **P10** (round 6): FAIL, near miss. Damage repair alone reaches 47% alive at φ = 0.9; a noise reset is still needed
 - **Key biological unknown:** the damage-driven fraction φ of age-related noise. Proposed measurement: does senolytic clearance slow epigenetic-clock drift, and by how much?

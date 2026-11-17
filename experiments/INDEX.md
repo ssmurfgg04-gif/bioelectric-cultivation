@@ -14,6 +14,11 @@
 | exp458_p8_repair_frontier.py | P8 repair-budget frontier | PASS |
 | exp459_p9_which_clock.py | P9 noise clock carries synergy | PASS |
 | exp460_p10_noise_feedback.py | P10 damage→noise feedback, state repair alone | FAIL (near miss) |
+| exp461_p13_human_plateau.py | P13 human fit + plateau prediction | FAIL |
+| exp461b_p13prime_frailty.py | P13′ frailty repair | FAIL (shape right, level wrong) |
+| exp462_p11_rate_by_mechanism.py | P11 rate set by mechanism | FAIL (elasticity 0.99; Weibull shape) |
+| exp463_p12_costly_repair.py | P12 interior optimum under harm | FAIL (optimum beyond grid) |
+| exp464_p14_2d_memory.py | P14 2D memory | FAIL (memory decays in 2D) |
 
 ## Review diagnostics
 | Script | Purpose |

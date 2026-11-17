@@ -29,6 +29,11 @@ This audit re-checks the README's headline claims against the code and the depos
 | A18 | Escape needs ≥75% repair every 10 yr; partial repair sub-proportional (P8) | **CONFIRMED in-model** | exp458 |
 | A19 | The noise clock, not junction loss, carries the synergy (P9) | **CONFIRMED in-model** | exp459 |
 | A20 | With damage→noise feedback, state repair alone escapes (P10) | **NOT CONFIRMED** (near miss: 47% alive at φ = 0.9) | exp460 |
+| A21 | Reliability model fits human median + β and predicts the late plateau (P13, P13′) | **FAILED** — plateau shape right, level ~4× too low | exp461, exp461b |
+| A22 | Element failure rate sets the Gompertz rate (P11) | **FAILED as frozen** — elasticity 0.99, but Weibull-shaped | exp462 |
+| A23 | Interior optimal repair interval under harm (P12) | **FAILED as frozen**; exploratory optimum ~50–60 yr | exp463 |
+| A24 | P1 target memory persists in 2D (P14) | **FAILED** — decays (h 0.53 at 200 h); 1D memory is a slow transient, not an attractor | exp464 |
+| A10 | (qualified by A24) P1 "persistent memory" holds on the 1D chain over P1's protocol length only | **NARROWED** | exp464 follow-up |
 | A15 | Odds hazard link sets the Gompertz rate (P3′) | **REFUTED** — stochastic single-onset dynamics flatten hazard | exp452, exp455 |
 
 ---
