@@ -36,6 +36,9 @@ class AgingParams:
     mu_theta: float = 0.003  # slow pattern smoothing (boundaries persist for decades)
     lambda_gap: float = 0.030  # 1/yr — gap junction decay
     kappa_noise: float = 0.048  # 1/yr — noise growth
+    noise_kappa_damage: float = 0.0  # damage->noise feedback: sigma also grows
+    #   as exp(noise_kappa_damage * D), D = integral of senesced fraction
+    #   (cumulative damage dose). 0 = legacy, purely time-driven noise.
     sigma0: float = 0.20  # mV / sqrt(yr) at t=0
     theta_drift: float = 0.045  # mV / sqrt(yr) target diffusion
     margin: float = 6.0  # mV beyond healthy envelope before hazard rises
@@ -103,6 +106,7 @@ class AgingCohort:
         # clock and noise-growth clock can be repaired separately (P9).
         self.gap_offset = np.zeros(K)
         self.noise_offset = np.zeros(K)
+        self.damage_dose = np.zeros(K)  # integral of senesced fraction (yr)
 
         # healthy operating envelope: per-cell baseline |V - theta| at t=0
         # (boundary cells legitimately sit between head and trunk levels —
@@ -153,7 +157,8 @@ class AgingCohort:
         t_bio = t - self.clock_offset
         g = (np.exp(-self.lam * (t_bio - self.gap_offset)) * p.g0
              if g_override is None else g_override)
-        sigma = p.sigma0 * np.exp(self.kap * (t_bio - self.noise_offset))
+        sigma = p.sigma0 * np.exp(self.kap * (t_bio - self.noise_offset)
+                                  + p.noise_kappa_damage * self.damage_dose)
 
         self._integrate(dt, g, sigma)
 
@@ -202,6 +207,7 @@ class AgingCohort:
         # error-driven senescence term (h0 * exp(excess/soft)), not h_sys.
         # The Gompertz FORM emerges; the RATE is not controlled by h_sys.
         sen_frac = self.senesced.mean(axis=1)
+        self.damage_dose += dt * sen_frac * self.alive
         if p.hazard_link == "odds":
             s_c = np.minimum(sen_frac, 0.995)
             death_hazard = p.mortality_k * s_c / (1.0 - s_c)
