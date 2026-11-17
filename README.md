@@ -39,6 +39,11 @@
 > Round 6: even if 90% of noise is damage-driven, damage repair alone
 > reaches only 47% alive at 300 yr. P10 **FAIL** (near miss); a noise
 > reset is still needed ([docs/PRIMARY_RESULTS_ROUND6.md](docs/PRIMARY_RESULTS_ROUND6.md)).
+> Round 7 ([docs/PRIMARY_RESULTS_ROUND7.md](docs/PRIMARY_RESULTS_ROUND7.md)): new fast
+> reliability-theory aging model (~650× faster). 5/5 primaries **FAIL** as frozen, but
+> key findings: β finally tracks a mechanism (elasticity 0.99); the human late-life
+> plateau shape is reproduced but its level is 4× too low; **P1 memory decays in 2D
+> tissue**, so the model needs bistable cells for genuine memory.
 > Draft preprint: [paper/preprint.md](paper/preprint.md).
 >
 > Earlier status banners ("PROJECT COMPLETE", "101% PASSED") are retired.
